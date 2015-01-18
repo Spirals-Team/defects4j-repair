@@ -1,0 +1,22 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2007-06-19T13:54:17.595520Z
+K 7
+svn:log
+V 464
+2007-06-19  David Gilbert  <david.gilbert@object-refinery.com>
+
+	* source/org/jfree/chart/block/AbstractBlock.java
+	(getBorder): Removed, previously deprecated,
+	(setBorder(BlockBorder)): Likewise,
+	(setBorder(double, double, double, double)): Likewise,
+	* source/org/jfree/chart/title/PaintScaleLegend.java
+	(draw(Graphics2D, Rectangle2D, Object)): Fixed deprecation warnings,
+	* tests/org/jfree/chart/title/junit/CompositeTitleTests.java
+	(testEquals): Likewise.
+END

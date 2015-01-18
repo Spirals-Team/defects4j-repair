@@ -1,0 +1,30 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2009-01-13T07:35:08.749819Z
+K 7
+svn:log
+V 818
+2009-01-13  David Gilbert  <david.gilbert@object-refinery.com>
+
+    * source/org/jfree/data/time/TimeSeries.java
+    (TimeSeries(Comparable, Class)): Deprecated,
+    (TimeSeries(Comparable, String, String, Class)): Likewise,
+    (TimeSeries(Comparable)): Delegate to new constructor,
+    (TimeSeries(Comparable, String, String)): New constructor,
+    (add): Update timePeriodClass if necessary,
+    (addAndOrUpdate): Use new constructor,
+    (addOrUpdate): Reset timePeriodClass if necessary,
+    (removeAgedItems): Check for empty series,
+    (clear): Reset timePeriodClass,
+    (delete): Reset timePeriodClass if series is empty,
+    (delete(int, int)): Likewise,
+    (equals): Reorganised,
+    * tests/org/jfree/data/time/junit/TimeSeriesTests.java
+    (testEquals3): New test,
+    (testRemoveAgedItems3): Likewise.
+END

@@ -1,0 +1,26 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2008-09-19T06:51:15.623890Z
+K 7
+svn:log
+V 560
+2008-09-19  David Gilbert  <david.gilbert@object-refinery.com>
+
+    * source/org/jfree/chart/StandardChartTheme.java
+    (smallFont): New field,
+    (crosshairPaint): New field,
+    (createDarknessTheme): Initilise crosshairPaint,
+    (StandardChartTheme): Initialise new fields,
+    (getCrosshairPaint): New method,
+    (setCrosshairPaint): Likewise,
+    (applyToXYPlot): Apply crosshair paint and process annotations,
+    (applyToXYAnnotation): New method,
+    (equals): Check new fields,
+    (writeObject): Handle crosshairPaint,
+    (readObject): Likewise.
+END

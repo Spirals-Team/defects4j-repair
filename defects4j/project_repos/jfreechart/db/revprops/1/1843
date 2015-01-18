@@ -1,0 +1,23 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2009-02-05T07:36:05.119370Z
+K 7
+svn:log
+V 469
+2009-02-05  David Gilbert  <david.gilbert@object-refinery.com>
+
+    * source/org/jfree/chart/renderer/category/StatisticalLineAndShapeRenderer.java
+    (errorIndicatorStroke): New field,
+    (StatisticalLineAndShapeREnderer): Initialise new field,
+    (getErrorIndicatorStroke): New method,
+    (setErrorIndicatorStroke): Likewise,
+    (drawItem): Use errorIndicatorStroke,
+    (equals): Check new field,
+    (readObject): Handle new field,
+    (writeObject): Likewise.
+END

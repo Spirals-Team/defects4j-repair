@@ -1,0 +1,29 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2007-06-20T09:36:31.265353Z
+K 7
+svn:log
+V 871
+2007-06-20  David Gilbert  <david.gilbert@object-refinery.com>
+
+	* source/org/jfree/data/time/RegularTimePeriod.java
+	(WORKING_CALENDAR): Removed,
+	(getFirstMillisecond(TimeZone)): Removed,
+	(getLastMillisecond(TimeZone)): Likewise,
+	(getMiddleMillisecond(TimeZone)): Likewise,
+	* tests/org/jfree/data/time/junit/DayTests.java: Updated for deprecated
+	method removals,
+	* tests/org/jfree/data/time/junit/HourTests.java: Likewise,
+	* tests/org/jfree/data/time/junit/MillisecondTests.java: Likewise,
+	* tests/org/jfree/data/time/junit/MinuteTests.java: Likewise,
+	* tests/org/jfree/data/time/junit/MonthTests.java: Likewise,
+	* tests/org/jfree/data/time/junit/QuarterTests.java: Likewise,
+	* tests/org/jfree/data/time/junit/SecondTests.java: Likewise,
+	* tests/org/jfree/data/time/junit/WeekTests.java: Likewise,
+	* tests/org/jfree/data/time/junit/YearTests.java: Likewise.
+END

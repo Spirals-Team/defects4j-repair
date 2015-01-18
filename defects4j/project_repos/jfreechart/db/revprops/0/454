@@ -1,0 +1,22 @@
+K 10
+svn:author
+V 5
+taqua
+K 8
+svn:date
+V 27
+2007-10-31T12:50:26.834355Z
+K 7
+svn:log
+V 475
+This patch improves the performance of the DefaultKeyedValues by replacing
+the single combined key-value-list with separate lists for keys and values
+and by adding a key-to-index mapping for faster lookups. 
+
+The implementation behaves a lot faster for read operations and for plain
+add operations. It greatly sucks for insert-operations and sort operations.
+But people who sort the data after each insert should be shot anyway or 
+should implement a better suited version.
+
+
+END

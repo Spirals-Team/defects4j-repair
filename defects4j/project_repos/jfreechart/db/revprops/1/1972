@@ -1,0 +1,22 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2009-04-08T09:00:50.515078Z
+K 7
+svn:log
+V 469
+2009-04-08  David Gilbert  <david.gilbert@object-refinery.com>
+
+    * source/org/jfree/chart/ChartTransferable.java : New file,
+    * source/org/jfree/chart/ChartPanel.java
+    (COPY_COMMAND): New field,
+    ChartPanel(JFreeChart, int, int, int, int, int, int, boolean, boolean,
+    boolean, boolean, boolean, boolean, boolean)): New constructor,
+    (actionPerformed): Check for copy action,
+    (doCopy): Tranfer chart to clipboard,
+    (createPopupMenu): New method.
+END

@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+nenry
+K 8
+svn:date
+V 27
+2007-10-13T11:49:05.916761Z
+K 7
+svn:log
+V 249
+Fixed compositing issues when having both (i) alpha compositing channel and (ii) awt alpha transparent colors. SWT do not handle color transparency (only in the GC) so a composite object must be maintained and appropriately used when setting colors.
+END

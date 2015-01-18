@@ -1,0 +1,22 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2009-02-12T14:24:31.316690Z
+K 7
+svn:log
+V 440
+2009-02-12  David Gilbert  <david.gilbert@object-refinery.com>
+
+    * source/org/jfree/data/general/DatasetUtilities.java
+    (sampleFunction2D): Delegate to new method,
+    (sampleFunction2DToSeries): New method,
+    * source/org/jfree/data/function/NormalDistributionFunction2D.java
+    (factor): New field,
+    (denominator): Likewise,
+    (NormalDistributionFunction2D): Initialise new fields,
+    (getValue): Use precomputed constants.
+END

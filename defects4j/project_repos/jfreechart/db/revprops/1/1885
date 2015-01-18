@@ -1,0 +1,29 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2009-03-10T09:01:59.109394Z
+K 7
+svn:log
+V 731
+2009-03-10  David Gilbert  <david.gilbert@object-refinery.com>
+
+    * source/org/jfree/chart/annotations/XYAnnotationBoundsInfo.java:
+    New interface,
+    * source/org/jfree/chart/renderer/xy/AbstractXYItemRenderer.java
+    (getAnnotations): New method,
+    * source/org/jfree/chart/annotations/XYDataImageAnnotation.java:
+    Implemented XYAnnotationBoundsInfo interface,
+    (includeInDataBounds): New field,
+    (XYDataImageAnnotation(Image, double, double, double, double, boolean)):
+    New constructor,
+    (getIncludeInDataBounds): New methodn,
+    (getXRange): Likewise,
+    (getYRange): Likewise,
+    (equals): Check new field,
+    * source/org/jfree/chart/plot/XYPlot.java
+    (getDataRange): Include annotation bounds.
+END

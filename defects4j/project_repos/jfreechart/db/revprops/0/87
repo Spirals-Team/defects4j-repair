@@ -1,0 +1,69 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2007-06-27T14:27:13.044736Z
+K 7
+svn:log
+V 2551
+2007-06-27  David Gilbert  <david.gilbert@object-refinery.com>
+
+	* source/org/jfree/chart/ChartFactory.java
+	(createScatterPlot): Updated for method name changes in XYItemRenderer,
+	(createXYBarChart): Likewise,
+	(createXYLineChart): Likewise,
+	(createTimeSeriesChart): Likewise,
+	(createBubbleChart): Likewise,
+	(createHistogram): Likewise,
+	(createWindPlot): Likewise,
+	* source/org/jfree/chart/renderer/xy/AbstractXYItemRenderer.java
+	(urlGeneratorList): New field,
+	(baseURLGenerator): New field,
+	(urlGenerator): Removed,
+	(AbstractXYItemRenderer): Updated for removed/added fields,
+	(getURLGenerator()): Removed,
+	(setURLGenerator(XYURLGenerator)): Removed,
+	(getURLGenerator(int, int)): New method,
+	(getSeriesURLGenerator(int)): Likewise,
+	(setSeriesURLGenerator(int, XYURLGenerator)): Likewise,
+	(setSeriesURLGenerator(int, XYURLGenerator, boolean)): Likewise,
+	(getBaseURLGenerator): Likewise,
+	(setBaseURLGenerator(XYURLGenerator)): Likewise,
+	(setBaseURLGenerator(XYURLGenerator, boolean)): Likewise,
+	(equals): Updated for removed/added fields,
+	(addEntity): Likewise,
+	* source/org/jfree/chart/renderer/xy/XYItemRenderer.java
+	(getURLGenerator(int, int)): New method,
+	(getSeriesURLGenerator(int)): Likewise,
+	(setSeriesURLGenerator(int, XYURLGenerator)): Likewise,
+	(setSeriesURLGenerator(int, XYURLGenerator, boolean)): Likewise,
+	(getBaseURLGenerator): Likewise,
+	(setBaseURLGenerator(XYURLGenerator)): Likewise,
+	(setBaseURLGenerator(XYURLGenerator, boolean)): Likewise,	
+	* source/org/jfree/chart/renderer/xy/CandlestickRenderer.java
+	(drawItem): Updated to use addEntity(),
+	* source/org/jfree/chart/renderer/xy/HighLowRenderer.java
+	(drawItem): Likewise,
+	* source/org/jfree/chart/renderer/xy/StackedXYAreaRenderer.java
+	(drawItem): Likewise,
+	* source/org/jfree/chart/renderer/xy/StandardXYItemRenderer.java
+	(StandardXYItemRenderer(int, XYToolTipGenerator, XYURLGenerator): 
+	Updated for changes in method names in XYItemRenderer,
+	* source/org/jfree/chart/renderer/xy/XYAreaRenderer.java
+	(drawItem): Updated to use addEntity(),
+	* source/org/jfree/chart/renderer/xy/XYAreaRenderer2.java
+	(drawItem): Likewise,
+	* source/org/jfree/chart/renderer/xy/XYBarRenderer.java
+	(drawItem): Likewise,
+	* source/org/jfree/chart/renderer/xy/XYDifferenceRenderer.java
+	(drawItem): Likewise,
+	* source/org/jfree/chart/renderer/xy/XYStepAreaRenderer.java
+	(drawItem): Likewise,
+	* source/org/jfree/chart/renderer/xy/XYStepRenderer.java
+	(drawItem): Likewise,
+	* source/org/jfree/chart/renderer/xy/YIntervalRenderer.java
+	(drawItem): Likewise.
+END

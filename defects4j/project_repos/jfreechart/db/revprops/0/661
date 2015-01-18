@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2007-12-04T11:45:24.374524Z
+K 7
+svn:log
+V 309
+2007-12-04  David Gilbert  <david.gilbert@object-refinery.com>
+
+	Bugs 1363043 and 1840139:
+	* source/org/jfree/chart/entity/ChartEntity.java
+	(getImageMapAreaTag): Escape toolTipText and urlText,
+	* source/org/jfree/chart/imagemap/ImageMapUtilities.java
+	(getImageMap): Escape name,
+	(htmlEscape): New method.
+END

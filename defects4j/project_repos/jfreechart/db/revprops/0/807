@@ -1,0 +1,22 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2008-04-07T12:41:15.427872Z
+K 7
+svn:log
+V 446
+2008-04-07  David Gilbert  <david.gilbert@object-refinery.com>
+
+    * source/org/jfree/chart/renderer/xy/AbstractXYItemRenderer.java:
+    Updated various method to use fireChangeEvent(),
+    * source/org/jfree/chart/renderer/xy/XYBlockRenderer.java:
+    (setBlockWidth): Use fireChangeEvent(),
+    (setBlockHeight): Likewise,
+    (setBlockAnchor): Likewise,
+    (setPaintScale): Likewise,
+    (drawItem): Added code to collect entity information.
+END

@@ -1,0 +1,23 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2009-06-09T09:50:52.920871Z
+K 7
+svn:log
+V 441
+2009-06-09  David Gilbert  <david.gilbert@object-refinery.com>
+
+    Bug 2802014:
+    * source/org/jfree/chart/plot/dial/DialValueIndicator.java
+    (maxTemplateValue): New field,
+    (DialValueIndicator): Initialise new field,
+    (getMaxTemplateValue): New method,
+    (setMaxTemplateValue): Likewise,
+    (draw): Rewrite for indicator bounds, now supports clipping also,
+    (fixToRange): New private method,
+    (equals): Check new field.
+END

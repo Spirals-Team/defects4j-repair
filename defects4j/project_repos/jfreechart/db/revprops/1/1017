@@ -1,0 +1,27 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2008-05-26T18:07:13.336248Z
+K 7
+svn:log
+V 664
+2008-05-26  David Gilbert  <david.gilbert@object-refinery.com> 
+
+    * source/org/jfree/chart/labels/AbstractXYItemLabelGenerator.java
+    (getNullYString): New method,
+    (equals): Check nullYString,
+    * source/org/jfree/chart/labels/IntervalXYItemLabelGenerator.java:
+    New file,
+    * source/org/jfree/chart/renderer/xy/YIntervalRenderer.java
+    (additionalItemLabelGenerator): New field,
+    (YIntervalRenderer): Initialise new field,
+    (getAdditionalItemLabelGenerator): New method,
+    (setAdditionalItemLabelGenerator): Likewise,
+    (drawItem): Added item label support,
+    (drawAdditionalItemLabel): New method,
+    (equals): New method override.
+END

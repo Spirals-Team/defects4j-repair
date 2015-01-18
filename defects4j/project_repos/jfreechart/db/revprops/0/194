@@ -1,0 +1,28 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2007-09-27T10:06:13.786929Z
+K 7
+svn:log
+V 671
+2007-09-27  David Gilbert  <david.gilbert@object-refinery.com>
+
+	* source/org/jfree/chart/axis/CategoryAxis.java
+	(getCategorySeriesMiddle): New method,
+	* source/org/jfree/chart/renderer/category/LineAndShapeRenderer.java
+	(useSeriesOffset): New field,
+	(itemMargin): Likewise,
+	(LineAndShapeRenderer(boolean, boolean)): Initialise new fields,
+	(getUseSeriesOffset): New method,
+	(setUseSeriesOffset): Likewise,
+	(getItemMargin): Likewise,
+	(setItemMargin): Likewise,
+	(drawItem): Apply new offset option to x-coordinates,
+	(equals): Check new fields,
+	* tests/org/jfree/chart/renderer/category/junit/LineAndShapeRendererTests.java
+	(testEquals): Updated for new fields.
+END

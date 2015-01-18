@@ -1,0 +1,37 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2009-01-09T09:52:08.768723Z
+K 7
+svn:log
+V 1008
+2009-01-09  David Gilbert  <david.gilbert@object-refinery.com>
+
+    * source/org/jfree/chart/axis/DateTickUnit.java
+    (unit): Deprecated,
+    (unitType): New field,
+    (rollUnit): Deprecated,
+    (rollUnitType): New field,
+    (DateTickUnit): Deprecated existing constructors, replaced with new ones,
+    (getUnitType): New method,
+    (getRollUnitType): Likewise,
+    (getCount): Renamed getMultiple(),
+    (getRollCount): Renamed getRollMultiple(),
+    (addToDate): Updated for new fields,
+    (rollDate): Likewise,
+    (getCalendarField): Likewise,
+    (getMillisecondCount): Updated for new type,
+    (intToUnitType): Utility method for deprecated constants,
+    (unitTypeToInt): Likewise,
+    (notNull): Utility method for deprecated constructor,
+    (equals): Updated for new fields,
+    (units): Removed,
+    (YEAR, MONTH, DAY, HOUR, MINUTE, SECOND, MILLISECOND): Deprecated,
+    (getUnit): Deprecated,
+    (getRollUnit): Likewise,
+    * source/org/jfree/chart/axis/DateTickUnitType.java: New file.
+END

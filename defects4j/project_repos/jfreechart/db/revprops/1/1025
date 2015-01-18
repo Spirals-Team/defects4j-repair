@@ -1,0 +1,22 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2008-06-02T07:27:30.199971Z
+K 7
+svn:log
+V 534
+2008-06-02  David Gilbert  <david.gilbert@object-refinery.com>
+
+    Bug 1977609:
+    * source/org/jfree/chart/util/SerialUtilities.java
+    (readShape): Handle SEG_CLOSE for GeneralPath,
+    * source/org/jfree/chart/util/ShapeUtilities.java
+    (equal(GeneralPath, GeneralPath)): Use correct path for comparison,
+    * tests/org/jfree/chart/util/junit/SerialUtilities.java: New file,
+    * tests/org/jfree/chart/util/junit/ShapeUtilities.java: Likewise,
+    * tests/org/jfree/chart/util/junit/UtilPackageTests.java: Include new tests.
+END

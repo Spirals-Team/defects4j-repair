@@ -1,0 +1,12 @@
+#!/bin/bash
+
+export PATH=$PATH:~/defects4j/framework/bin
+export http_proxy="http://proxy:3128/"
+export https_proxy="https://proxy:3128/"
+
+echo "Starting checkout Closure ..."
+for bug in `seq 1 133`;
+do
+	echo 'Checkout Closure_'$bug'_buggy'	
+	defects4j checkout -p Closure -v $bug'b' -w ~/ressources/Closure_$bug'_buggy'
+done

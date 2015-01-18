@@ -1,0 +1,31 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2009-04-01T14:51:29.177724Z
+K 7
+svn:log
+V 916
+2009-04-01  David Gilbert  <david.gilbert@object-refinery.com>
+
+    * source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java
+    (addItemEntity): Check getItemCreateEntity(),
+    (addEntity): New method,
+    * source/org/jfree/chart/renderer/AbstractRenderer.java
+    (defaultEntityRadius): New field,
+    (AbstractRenderer): Initialise new field,
+    (getDefaultEntityRadius): New method,
+    (setDefaultEntityRadius): New method,
+    (equals): Check new field,
+    * source/org/jfree/chart/renderer/xy/AbstractXYItemRenderer.java
+    (defaultEntityRadius): Moved to superclass,
+    (getDefaultEntityRadius): Likewise,
+    (setDefaultEntityRadius): Likewise,
+    (equals): Moved check for defaultEntityRadius to superclass,
+    * source/org/jfree/chart/renderer/category/StatisticalLineAndShapeRenderer.java
+    (findRangeBounds): New method override,
+    (drawItem): Use new addEntity() method.
+END

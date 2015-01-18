@@ -1,0 +1,34 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2007-09-28T15:11:58.349295Z
+K 7
+svn:log
+V 947
+2007-09-28  David Gilbert  <david.gilbert@object-refinery.com>
+
+	* source/org/jfree/data/KeyedObjects.java
+	(equals): Cleaned up,
+	* source/org/jfree/data/KeyedObjects2D.java
+	(equals): Likewise,
+	(clone): Clone data storage,
+	* source/org/jfree/data/statistics/DefaultBoxAndWhiskerCategoryDataset.java
+	(clone): New method override,
+	* source/org/jfree/data/statistics/DefaultStatisticalCategoryDataset.java
+	(clone): Likewise,
+	* tests/org/jfree/data/junit/KeyedObjects2DTests.java
+	(testEquals): New test,
+	(testCloning): Check independence,
+	* tests/org/jfree/data/junit/KeyedObjectsTests.java
+	(testCloning2): New test,
+	* tests/org/jfree/data/junit/KeyedObjectTests.java
+	(testCloning2): New test,
+	* tests/org/jfree/data/statistics/junit/DefaultBoxAndWhiskerCategoryDatasetTests.java
+	(testCloning): Check independence,
+	* tests/org/jfree/data/statistics/junit/DefaultStatisticalCategoryDatasetTests.java
+	(testCloning): Check independence.
+END

@@ -1,0 +1,26 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2008-02-15T00:40:28.143063Z
+K 7
+svn:log
+V 545
+2008-02-15  David Gilbert  <david.gilbert@object-refinery.com>
+
+    Patch 1873328:
+    * source/org/jfree/chart/util/RelativeDateFormat.java
+    (showZeroHours): New field,
+    (positivePrefix): Likewise,
+    (RelativeDateFormat(long)): Initialise new fields,
+    (getShowZeroHours): New method,
+    (setShowZeroHours): Likewise,
+    (getPositivePrefix): Likewise,
+    (setPositivePrefix): Likewise,
+    (format): Apply positive prefix, and fix formatting for negative values,
+    (equals): Handle new fields,
+    (hashCode): Use positivePrefix.
+END

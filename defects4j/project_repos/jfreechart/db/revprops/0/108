@@ -1,0 +1,28 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2007-07-06T15:14:34.732768Z
+K 7
+svn:log
+V 751
+2007-07-06  David Gilbert  <david.gilbert@object-refinery.com>
+
+	* source/org/jfree/chart/renderer/category/BarRenderer.java
+	(BarRenderer): Changed default value for drawBarOutline,
+	* source/org/jfree/chart/renderer/category/IntervalBarRenderer.java
+	(drawInterval): Respect drawBarOutline setting,
+	* source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java
+	(errorIndicatorStroke): New field,
+	(StatisticalBarRenderer): Initialise new field,
+	(getErrorIndicatorStroke): New method,
+	(setErrorIndicatorStroke): Likewise,
+	(drawHorizontalItem): Respect drawBarOutline setting, and set appropriate 
+	stroke,
+	(drawVerticalItem): Likewise,
+	* source/org/jfree/chart/renderer/xy/YIntervalRenderer.java
+	(getLegendItem): New method override.
+END

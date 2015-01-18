@@ -1,0 +1,27 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2008-06-02T18:15:08.263376Z
+K 7
+svn:log
+V 653
+2008-06-02  David Gilbert  <david.gilbert@object-refinery.com>
+
+    Patches by Henry Proudhon:
+    * swt/org/jfree/experimental/chart/swt/ChartComposite.java
+    (ChartComposite): Removed duplicate listener registration,
+    (paintControl): Switched horizontalAxisTrace and verticalAxisTrace,
+    (dispose): New method,
+    * swt/org/jfree/experimental/swt/SWTGraphics2D.java
+    (transformsPool): New field,
+    (setBackground): Use color pool,
+    (setTransform): Use transform pool,
+    (transform): Likewise,
+    (disposeResourcePool): Clear the fontsPool and transformsPool,
+    (getSwtTransformFromPool): New method,
+    (toSwtTransform): Removed.
+END

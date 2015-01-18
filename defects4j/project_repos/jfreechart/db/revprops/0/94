@@ -1,0 +1,43 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2007-07-02T14:43:38.232906Z
+K 7
+svn:log
+V 1176
+2007-07-02  David Gilbert  <david.gilbert@object-refinery.com>
+
+	* experimental/org/jfree/experimental/chart/axis/LogAxis.java
+	(draw): Updated for change in method signature,
+	* source/org/jfree/chart/axis/Axis.java
+	(labelToolTip): New field,
+	(labelURL): Likewise,
+	(Axis(String)): Initialise new fields,
+	(getLabelToolTip): New method,
+	(setLabelToolTip): Likewise,
+	(getLabelURL): Likewise,
+	(setLabelURL): Likewise,
+	(drawLabel): Added PlotRenderingInfo parameter and create entity if needed,
+	(equals): Check new fields,
+	* source/org/jfree/chart/axis/CategoryAxis.java	
+	(draw): Updated for change in method signature,
+	* source/org/jfree/chart/axis/CategoryAxis3D.java
+	(draw): Likewise,
+	* source/org/jfree/chart/axis/DateAxis.java
+	(draw): Likewise,
+	* source/org/jfree/chart/axis/NumberAxis.java
+	(draw): Likewise,
+	* source/org/jfree/chart/axis/NumberAxis3D.java
+	(draw): Likewise,
+	* source/org/jfree/chart/axis/PeriodAxis.java
+	(draw): Likewise,
+	* source/org/jfree/chart/axis/SubCategoryAxis.java
+	(draw): Likewise,
+	* source/org/jfree/chart/entity/AxisLabelEntity.java: New file,
+	* tests/org/jfree/chart/axis/junit/AxisTests.java
+	(equals): Check new fields.
+END

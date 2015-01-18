@@ -1,0 +1,85 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2007-06-27T13:15:01.536671Z
+K 7
+svn:log
+V 3524
+2007-06-27  David Gilbert  <david.gilbert@object-refinery.com>
+
+	* source/org/jfree/chart/plot/XYPlot.java
+	(drawDomainGridlines): Updated for method name change in 
+	XYItemRenderer,
+	* source/org/jfree/chart/renderer/AbstractRenderer.java
+	(baseItemLabelsVisible): Changed from Boolean to boolean,
+	(AbstractRenderer): Updated for field type change,
+	(isSeriesItemLabelsVisible): Likewise,
+	(getBaseItemLabelsVisible): Modified return type,
+	(setBaseItemLabelsVisible(boolean)): Updated for field type change,
+	(setBaseItemLabelsVisible(Boolean)): Removed,
+	(setBaseItemLabelsVisbile(boolean, boolean)): Updated for field type
+	change,
+	(equals): Likewise,
+	* source/org/jfree/chart/renderer/category/CategoryItemRenderer.java
+	(getBaseItemLabelsVisible): Modified return type,
+	(setBaseItemLabelsVisible(Boolean)): Removed,
+	(setBaseItemLabelsVisible(Boolean, boolean)): Removed,
+	(setBaseItemLabelsVisible(boolean)): New method,
+	(setBaseItemLabelsVisible(boolean, boolean)): New method,
+	(getLegendItemLabelGenerator): New method,
+	(setLegendItemLabelGenerator): Likewise,
+	(getLegendItemToolTipGenerator): Likewise,
+	(setLegendItemToolTipGenerator): Likewise,
+	(getLegendItemURLGenerator): Likewise,
+	(setLegendItemURLGenerator): Likewise,
+	* source/org/jfree/chart/renderer/xy/AbstractXYItemRenderer.java
+	(setSeriesItemLabelGenerator(int, XYItemLabelGenerator, boolean)): New
+	method,
+	(setBaseItemLabelGenerator(XYItemLabelGenerator, boolean)): Likewise,
+	(setSeriesToolTipGenerator(int, XYToolTipGenerator, boolean)): Likewise,
+	(setBaseToolTipGenerator(XYToolTipGenerator, boolean)): Likewise,
+	(drawDomainGridline): Removed,
+	* source/org/jfree/chart/renderer/xy/XYItemRenderer.java
+	(setSeriesPaint(int, Paint, boolean)): New method,
+	(setBasePaint(Paint, boolean)): Likewise,
+	(getItemFillPaint(int, int)): Likewise,
+	(getSeriesFillPaint(int)): Likewise,
+	(setSeriesFillPaint(int, Paint)): Likewise,
+	(setSeriesFillPaint(int, Paint, boolean)): Likewise,
+	(getBaseFillPaint): Likewise,
+	(setBaseFillPaint(Paint)): Likewise,
+	(setBaseFillPaint(Paint, boolean)): Likewise,
+	(setSeriesOutlinePaint(int, Paint, boolean)): Likewise,
+	(setBaseOutlinePaint(Paint, boolean)): Likewise,
+	(setSeriesStroke(int, Stroke, boolean)): Likewise,
+	(setBaseStroke(Stroke, boolean)): Likewise,
+	(setSeriesOutlineStroke(int, Stroke, boolean)): Likewise,
+	(setBaseOutlineStroke(Stroke, boolean)): Likewise,
+	(setSeriesShape(int, Shape, boolean)): Likewise,
+	(setBaseShape(Shape, boolean)): Likewise,
+	(getLegendItemToolTipGenerator): Likewise,
+	(setLegendItemToolTipGenerator): Likewise,
+	(getLegendItemURLGenerator)): Likewise,
+	(setLegendItemURLGenerator)): Likewise,
+	(setSeriesToolTipGenerator(int, XYToolTipGenerator, boolean)): Likewise,
+	(setBaseToolTipGenerator(XYToolTipGenerator, boolean)): Likewise,
+	(setSeriesItemLabelGenerator(int, XYItemLabelGenerator, boolean)): 
+	Likewise,
+	(setBaseItemLabelGenerator(XYItemLabelGenerator, boolean)): Likewise,
+	(setSeriesItemLabelFont(int, Font, boolean)): New method,
+	(setBaseItemLabelFont(Font, boolean)): Likewise,
+	(setSeriesItemLabelPaint(int, Paint, boolean)): Likewise,
+	(setBaseItemLabelPaint(Paint, boolean)): Likewise,
+	(getItemCreateEntity): Likewise,
+	(getSeriesCreateEntities): Likewise,
+	(setSeriesCreateEntities(int, Boolean)): Likewise,
+	(setSeriesCreateEntities(int, Boolean, boolean)): Likewise,
+	(getBaseCreateEntities): Likewise,
+	(setBaseCreateEntities(boolean)): Likewise,
+	(setBaseCreateEntities(boolean, boolean)): Likewise,
+	(drawDomainLine): New method.	
+END

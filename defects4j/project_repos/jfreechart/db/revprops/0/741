@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2008-02-19T09:27:40.475672Z
+K 7
+svn:log
+V 364
+2008-02-19  David Gilbert  <david.gilbert@object-refinery.com>
+
+    * org/jfree/chart/util/LogFormat.java
+    (powerLabel): New field,
+    (LogFormat(double, String, boolean)): Delegate to new constructor,
+    (LogFormat(double, String, String, boolean)): New constructor,
+    (format): Use new powerLabel,
+    (equals): New method override,
+    (clone): Likewise.
+END

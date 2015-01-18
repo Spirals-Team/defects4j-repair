@@ -1,0 +1,12 @@
+#!/bin/bash
+
+export PATH=$PATH:~/defects4j/framework/bin
+export http_proxy="http://proxy:3128/"
+export https_proxy="https://proxy:3128/"
+
+echo "Starting checkout Time ..."
+for bug in `seq 1 27`;
+do
+	echo 'Checkout Time_'$bug'_buggy'	
+	defects4j checkout -p Time -v $bug'b' -w ~/ressources/Time_$bug'_buggy'
+done

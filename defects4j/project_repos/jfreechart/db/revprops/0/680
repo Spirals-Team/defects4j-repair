@@ -1,0 +1,37 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2007-12-06T16:49:09.345439Z
+K 7
+svn:log
+V 1229
+2007-12-06  David Gilbert  <david.gilbert@object-refinery.com>
+
+	* source/org/jfree/chart/entity/ChartEntity.java: API doc updates,
+	* source/org/jfree/chart/imagemap/DynamicDriveToolTipTagFragmentGenerator.java
+	(generateToolTipFragment): Escape tool tip text,
+	* source/org/jfree/chart/imagemap/ImageMapUtilities.java
+	(getImageMap): Escape map name,
+	(htmlEscape): New method,
+	* source/org/jfree/chart/imagemap/OverLIBToolTipTagFragmentGenerator.java
+	(generateToolTipFragment): Escape tool tip text,
+	* source/org/jfree/chart/imagemap/StandardToolTipTagFragmentGenerator.java
+	(generateToolTipFragment): Likewise,
+	* source/org/jfree/chart/imagemap/StandardURLTagFragmentGenerator.java
+	(generateURLFragment): Encode URL,
+	* source/org/jfree/chart/imagemap/ToolTipTagFragmentGenerator.java:
+	Updated API docs,
+	* source/org/jfree/chart/imagemap/URLTagFragmentGenerator.java:
+	Likewise,
+	* source/org/jfree/chart/resources/JFreeChartResources.java: Updated
+	version number,
+	* tests/org/jfree/chart/imagemap/ImageMapPackageTests.java: New file,
+	* tests/org/jfree/chart/imagemap/StandardToolTipTagFragmentGeneratorTests.java: 
+	Likewise,
+	* tests/org/jfree/chart/imagemap/StandardURLTagFragmentGeneratorTests.java:
+	Likewise.
+END

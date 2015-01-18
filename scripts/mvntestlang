@@ -1,0 +1,9 @@
+#!/bin/bash
+
+export http_proxy="http://proxy:3128/"
+export https_proxy="https://proxy:3128/"
+
+export PATH=$PATH:~/maven/bin
+
+oarsub -O ~/results/d4j-tests/Lang/Lang_1_buggy.stdout -E ~/results/d4j-tests/Lang/Lang_1_buggy.stderr "cd ~/ressources/Lang/Lang_1_buggy && mvn clean install && ~/bin/pushongithub"
+

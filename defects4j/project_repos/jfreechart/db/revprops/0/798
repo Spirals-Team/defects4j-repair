@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2008-03-31T19:34:01.935630Z
+K 7
+svn:log
+V 365
+2008-03-31  David Gilbert  <david.gilbert@object-refinery.com>
+
+    * source/org/jfree/chart/plot/PieLabelDistributor.java
+    (distributeLabels): Comment out adjustInwards() until it is working,
+    (adjustDownwards): Fix check for lower bound,
+    (adjustUpwards): Fix check for upper bound,
+    (distributeEvenly): Allow overlapping rather than exceeding bounds.
+END

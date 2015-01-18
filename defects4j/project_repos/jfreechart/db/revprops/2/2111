@@ -1,0 +1,25 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2009-06-11T06:56:51.832131Z
+K 7
+svn:log
+V 498
+2009-06-11  David Gilbert  <david.gilbert@object-refinery.com>
+
+    * source/org/jfree/chart/renderer/xy/XYAreaRenderer.java
+    (useFillPaint): New attribute,
+    (gradientTransformer): Likewise,
+    (XYAreaRenderer): Initialise new fields,
+    (getUseFillPaint): New method,
+    (setUseFillPaint): Likewise,
+    (getGradientTransformer): Likewise,
+    (setGradientTransformer): Likewise,
+    (drawItem): Handle gradient transform,
+    (equals): Updated for new fields,
+    (hashCode): New method.
+END

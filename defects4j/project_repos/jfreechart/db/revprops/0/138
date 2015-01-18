@@ -1,0 +1,25 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2007-07-25T10:16:42.751429Z
+K 7
+svn:log
+V 501
+2007-07-25  David Gilbert  <david.gilbert@object-refinery.com>
+
+	* source/org/jfree/chart/axis/SymbolAxis.java
+	(DEFAULT_GRID_BAND_ALTERNATE_PAINT): New field,
+	(gridBandAlternatePaint): New field,
+	(SymbolAxis): Initialise new field,
+	(getGridBandAlternatePaint): New method,
+	(setGridBandAlternatePaint): Likewise,
+	(equals): Test new field,
+	(writeObject): Handle new field,
+	(readObject): Likewise,
+	* tests/org/jfree/chart/axis/junit/SymbolAxisTests.java
+	(testEquals): Added check for new field.
+END

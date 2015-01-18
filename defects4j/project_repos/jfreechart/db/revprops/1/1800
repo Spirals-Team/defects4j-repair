@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2009-01-16T14:52:02.751117Z
+K 7
+svn:log
+V 410
+2009-01-16  David Gilbert  <david.gilbert@object-refinery.com>
+
+    Bug 2490803:
+    * source/org/jfree/chart/axis/PeriodAxis.java
+    (getRange): Removed, rely on superclass implementation,
+    (setRange): Update range with end points of whole periods,
+    (drawTickMarksHorizontal): Include first and last ticks,
+    * tests/org/jfree/chart/axis/junit/PeriodAxisTests.java
+    (test2490803): New test method.
+END

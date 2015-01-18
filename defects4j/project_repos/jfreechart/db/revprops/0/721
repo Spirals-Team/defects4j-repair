@@ -1,0 +1,23 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2008-02-14T03:52:55.633445Z
+K 7
+svn:log
+V 438
+2008-02-14  David Gilbert  <david.gilbert@object-refinery.com>
+
+    Patch 1874890 (Ulrich Voigt with contributions from Martin Hoeller):
+    * source/org/jfree/chart/renderer/xy/XYStepRenderer.java
+    (stepPoint): New field,
+    (getStepPoint): New method,
+    (setStepPoint): Likewise,
+    (drawItem): Calculate step point using new field,
+    (drawLine): New private method,
+    (equals): New method override,
+    (hashCode): Likewise.
+END

@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2011-10-20T03:22:28.050101Z
+K 7
+svn:log
+V 301
+2011-10-19  David Gilbert <david.gilbert@object-refinery.com>
+
+    Bug 3072674:
+    * org/jfree/data/statistics/DefaultStatisticalCategoryDataset.java
+    (getRangeLowerBound): Check for NaN,
+    (getRangeUpperBound): Likewise,
+    (getRangeBounds): Call getRangeLowerBound() and getRangeUpperBound().
+END

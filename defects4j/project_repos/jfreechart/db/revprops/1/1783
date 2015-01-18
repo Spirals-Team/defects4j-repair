@@ -1,0 +1,26 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2009-01-14T09:33:05.770792Z
+K 7
+svn:log
+V 599
+2009-01-14  David Gilbert  <david.gilbert@object-refinery.com>
+
+    * source/org/jfree/chart/axis/LogAxis.java
+    (refreshTicksHorizontal): Read minorTickCount from the tick unit,
+    (refreshTicksVertical): Likewise,
+    (createLogTickUnits): Corrected the tick unit sizes and added
+    minor tick counts,
+    * source/org/jfree/chart/util/LogFormat.java
+    (LogFormat): New constructor,
+    (getExponentFormat): New method,
+    (setExponentFormat): Likewise,
+    (equals): Test formatter field,
+    * tests/org/jfree/chart/util/junit/LogFormatTests.java
+    (testEquals): Check formatter field. 
+END

@@ -1,0 +1,23 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2008-12-17T07:38:11.075116Z
+K 7
+svn:log
+V 401
+2008-12-17  David Gilbert  <david.gilbert@object-refinery.com>
+
+    * source/org/jfree/chart/plot/PieLabelRecord.java
+    (url): New field,
+    (PieLabelRecord): Initialise new field,
+    (getURL): New method,
+    (setURL): New method,
+    (equals): Updated for new field,
+    * source/org/jfree/chart/plot/PiePlot.java
+    (drawLeftLabels): Added URL to label entity,
+    (drawRightLabels): Likewise.
+END

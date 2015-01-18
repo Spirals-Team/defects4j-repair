@@ -1,0 +1,27 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2007-06-19T14:11:04.419894Z
+K 7
+svn:log
+V 523
+2007-06-19  David Gilbert  <david.gilbert@object-refinery.com>
+
+	* source/org/jfree/chart/entity/CategoryItemEntity.java
+	(series): Removed, previously deprecated,
+	(category): Likewise,
+	(categoryIndex): Likewise,
+	(CategoryItemEntity()): Likewise,
+	(getSeries): Likewise,
+	(setSeries): Likewise,
+	(getCategory): Likewise,
+	(setCategory): Likewise,
+	(getCategoryIndex): Likewise,
+	(setCategoryIndex): Likewise,
+	* source/org/jfree/chart/entity/junit/CategoryItemEntityTests.java
+	(testEquals): Updated for removed methods.
+END

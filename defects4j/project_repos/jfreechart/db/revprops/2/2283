@@ -1,0 +1,58 @@
+K 10
+svn:author
+V 6
+matinh
+K 8
+svn:date
+V 27
+2011-10-07T08:57:06.456817Z
+K 7
+svn:log
+V 1825
+new features for the PolarCharts:
+    * source/org/jfree/chart/renderer/PolarItemRenderer.java
+      (useFillPaint): New field,
+      (legendLine): Likewise;
+      (connectFirstAndLastPoint): New method,
+      (toolTipGeneratorList): Likewise,
+      (baseToolTipGenerator): Likewise,
+      (urlGenerator): Likewise,
+      (legendItemToolTipGenerator): Likewise,
+      (legendItemURLGenerator): Likewise,
+      (getConnectFirstAndLastPoint): Likewise,
+      (setConnectFirstAndLastPoint): Likewise,
+      (getUseFillPaint): Likewise,
+      (setUseFillPaint): Likewise,
+      (getLegendLine): Likewise,
+      (setLegendLine): Likewise,
+      (getToolTipGenerator): Likewise,
+      (getSeriesToolTipGenerator): Likewise,
+      (setSeriesToolTipGenerator): Likewise,
+      (getBaseToolTipGenerator): Likewise,
+      (setBaseToolTipGenerator): Likewise,
+      (getURLGenerator): Likewise,
+      (setURLGenerator): Likewise,
+      (getLegendItemToolTipGenerator): Likewise,
+      (setLegendItemToolTipGenerator): Likewise,
+      (getLegendItemURLGenerator): Likewise,
+      (setLegendItemURLGenerator): Likewise.
+    * source/org/jfree/chart/renderer/DefaultPolarItemRenderer.java
+      (getToolTipGenerator): New method,
+      (getSeriesToolTipGenerator): Likewise,
+      (setSeriesToolTipGenerator): Likewise,
+      (getBaseToolTipGenerator): Likewise,
+      (setBaseToolTipGenerator): Likewise,
+      (getURLGenerator): Likewise,
+      (setURLGenerator): Likewise.
+    * source/org/jfree/chart/plot/PolarPlot.java
+      (angleOffset): New field,
+      (counterClockwise): Likewise;
+      (getAxisCount): New method,
+      (getDatasetCount): Likewise,
+      (getAngleOffset): Likewise,
+      (setAngleOffset): Likewise,
+      (isCounterClockwise): Likewise,
+      (setCounterClockwise): Likewise,
+      (getAxisIndex): Likewise,
+
+END

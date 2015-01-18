@@ -1,0 +1,24 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2007-12-05T12:18:05.444710Z
+K 7
+svn:log
+V 595
+2007-12-05  David Gilbert  <david.gilbert@object-refinery.com>
+
+	* source/org/jfree/chart/entity/ChartEntity.java
+	(getImageMapAreaTag): Don't escape tooltips and urls, delegate that to 
+	the tag generators,
+	* source/org/jfree/chart/imagemap/StandardURLTagFragmentGenerator.java
+	(generateURLFragment): Encode the url text,
+	* tests/org/jfree/chart/imagemap/junit/ImageMapPackageTests.java: New file,
+	* tests/org/jfree/chart/imagemap/junit/StandardToolTipTagFragmentGeneratorTests.java: 
+	Likewise,
+	* tests/org/jfree/chart/imagemap/junit/StandardURLTagFragmentGeneratorTests.java: 
+	Likewise.
+END

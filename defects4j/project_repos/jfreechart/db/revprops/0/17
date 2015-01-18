@@ -1,0 +1,28 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2007-06-19T15:17:54.944060Z
+K 7
+svn:log
+V 605
+2007-06-19  David Gilbert  <david.gilbert@object-refinery.com>
+
+	* source/org/jfree/chart/plot/JThermometer.java
+	(setShowValueLines): Removed,
+	* source/org/jfree/chart/plot/ThermometerPlot.java
+	(showValueLines): Removed,
+	(setUnits(String)): Removed,
+	(getShowValueLines): Likewise,
+	(setShowValueLines): Likewise,
+	(draw): Updated for removed code,
+	(getMinimumVerticalDataValue): Removed,
+	(getMaximumVerticalDataValue): Likewise,
+	(equals): Updated for removed fields,
+	* tests/org/jfree/chart/plot/junit/ThermometerPlotTests.java
+	(testEquals): Updated for removed fields,
+	(testSetUnits): Removed.
+END

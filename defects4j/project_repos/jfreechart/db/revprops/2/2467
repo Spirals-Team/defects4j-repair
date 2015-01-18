@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 6
+matinh
+K 8
+svn:date
+V 27
+2012-03-11T16:22:21.255880Z
+K 7
+svn:log
+V 328
+Patch 3500621 by Simon Kaczor
+    * org/jfree/chart/title/LegendTitle
+    (sortOrder): New field,
+    (getSortOrder): New method,
+    (setSortOrder): Likewise,
+    (fetchLgendItems): Updated to support new sort order,
+    (equals): Likewise.
+    * tests/org/jfree/chart/title/LegendTitle
+    (testEquals): Adapted for new field.
+END

@@ -1,0 +1,37 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2013-08-01T15:08:14.749371Z
+K 7
+svn:log
+V 1146
+2013-08-01  David Gilbert  <david.gilbert@object-refinery.com>
+
+    * org/jfree/chart/axis/Axis.java
+    (attributedLabel): New field,
+    (setLabel): Simplified,
+    (getAttributedLabel): New method,
+    (setAttributedLabel(String)): Likewise,
+    (setAttributedLabel(AttributedString)): Likewise,
+    (createAttributedLabel(String)): New private method,
+    (getLabelEnclosure): Use attributedLabel if not null,¨
+    (drawAttributedLabel): New method,
+    (equals): Check new attributedLabel field,
+    (hashCode): Call super,
+    (writeObject): Write attributedLabel,
+    (readObject): Read attributedLabel,
+    * org/jfree/chart/axis/NumberAxis.java
+    (draw): Use attributedLabel if not null,
+    * org/jfree/chart/axis/NumberAxis3D.java: Likewise,
+    * org/jfree/chart/axis/CategoryAxis.java: Likewise,
+    * org/jfree/chart/axis/CategoryAxis3D.java: Likewise,
+    * org/jfree/chart/axis/SubCategoryAxis.java: Likewise,
+    * org/jfree/chart/axis/DateAxis.java: Likewise,
+    * org/jfree/chart/axis/LogAxis.java: Likewise,
+    * org/jfree/chart/axis/PeriodAxis.java: Likewise,
+    * org/jfree/chart/utils/AttrStringUtils.java: New class.
+END

@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2008-03-28T08:13:45.684876Z
+K 7
+svn:log
+V 382
+2008-03-27  David Gilbert  <david.gilbert@object-refinery.com>
+
+    Bug 1927239:
+    * source/org/jfree/chart/renderer/category/WaterfallBarRenderer.java
+    (findRangeBounds): Reimplemented to account for the special treatment of
+    the value in the final category,
+    * source/org/jfree/data/general/DatasetUtilities.java
+    (findCumulativeRangeBounds): Include final category.
+END

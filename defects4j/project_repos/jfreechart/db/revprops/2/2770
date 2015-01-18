@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2013-07-25T09:51:29.778527Z
+K 7
+svn:log
+V 287
+2013-07-25  David Gilbert <david.gilbert@object-refinery.com>
+
+    * org/jfree/chart/axis/PeriodAxisLabelInfo.java
+    (PeriodAxisLabelInfo): clone dateFormat,
+    (getDateFormat): return clone,
+    * org/jfree/chart/axis/PeriodAxis.java
+    (drawTickLabels): fetch dateFormat only once.
+END

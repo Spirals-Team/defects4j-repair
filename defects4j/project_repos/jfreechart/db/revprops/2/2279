@@ -1,0 +1,22 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2011-10-06T21:28:54.551846Z
+K 7
+svn:log
+V 426
+2011-10-06  David Gilbert  <david.gilbert@object-refinery.com>
+
+    * source/org/jfree/chart/renderer/xy/AbstractXYItemRenderer.java
+    (lineTo): New method;
+    (moveTo): New method;
+    * source/org/jfree/chart/renderer/xy/XYAreaRenderer.java
+    (drawItem): Replace GeneralPath lineTo() and moveTo();
+    * source/org/jfree/chart/renderer/xy/XYAreaRenderer2.java
+    (drawItem): Replace GeneralPath lineTo() and moveTo();
+
+END

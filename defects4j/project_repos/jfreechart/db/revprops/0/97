@@ -1,0 +1,30 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2007-07-02T15:39:06.601618Z
+K 7
+svn:log
+V 750
+2007-07-02  David Gilbert  <david.gilbert@object-refinery.com>
+
+	* source/org/jfree/chart/editor/DefaultPlotEditor.java
+	(updatePlotProperties): Updated for changes to LineAndShapeRenderer,
+	* source/org/jfree/chart/renderer/category/LineAndShapeRenderer.java
+	(linesVisible): Removed,
+	(shapesVisible): Likewise,
+	(shapesFilled): Likewise,
+	(LineAndShapeRenderer(boolean, boolean)): Likewise,
+	(getItemLineVisible): Adjust lookup for removed field,
+	(getLinesVisible): Removed,
+	(setLinesVisible): Likewise,
+	(getItemShapeVisible): Adjust lookup for removed field,
+	(getShapesVisible): Removed,
+	(setShapesVisible): Likewise,
+	(getItemShapeFilled): Adjust lookup for removed field,
+	(setShapesFilled): Removed,
+	(equals): Updated for removed fields.
+END

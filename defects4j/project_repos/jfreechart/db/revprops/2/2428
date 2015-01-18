@@ -1,0 +1,22 @@
+K 10
+svn:author
+V 6
+matinh
+K 8
+svn:date
+V 27
+2011-11-12T23:04:50.814426Z
+K 7
+svn:log
+V 459
+2011-11-12  Martin Hoeller <martin.hoeller@xss.co.at>
+
+    Bug 3432721:
+    * org/jfree/chart/plot/PolarPlot.java
+    (translateToJava2D): Fix calculation to work with any axis,
+    (translateValueThetaRadiusToJava2D): eliminate duplicate code;
+    * tests/org/jfree/chart/plot/PolarPlotTests.java
+    (testTranslateToJava2D_NumberAxis): New method,
+    (testTranslateToJava2D_NumberAxisAndMargin): New method,
+    (testTranslateToJava2D_LogAxis): New method;
+END

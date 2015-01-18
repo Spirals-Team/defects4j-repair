@@ -1,0 +1,41 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2007-06-26T14:42:39.500978Z
+K 7
+svn:log
+V 1349
+2007-06-27  David Gilbert  <david.gilbert@object-refinery.com>
+
+	* source/org/jfree/chart/ChartFactory.java
+	(createAreaChart): Updated for renamed method,
+	(createBarChart): Likewise,
+	(createBarChart3D): Likewise,
+	(createGanttChart): Likewise,
+	(createLineChart): Likewise,
+	(createLineChart3D): Likewise,
+	(createStackedAreaChart): Likewise,
+	(createStackedBarChart): Likewise,
+	(createStackedBarChart3D): Likewise,
+	(createWaterfallChart): Likewise,
+	* source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java
+	(itemURLGeneratorList): Renamed urlGeneratorList,
+	(baseItemURLGenerator): Renamed baseURLGenerator,
+	(AbstractCategoryItemRenderer): Updated for renamed fields,
+	(getItemURLGenerator): Updated for renamed fields,
+	(getSeriesItemURLGenerator): Renamed getSeriesURLGenerator,
+	(setSeriesItemURLGenerator): Renamed setSeriesURLGenerator,
+	(getBaseItemURLGenerator): Renamed getBaseURLGenerator,
+	(setBaseItemURLGenerator): Renamed setBaseURLGenerator,
+	(equals): Updated for renamed fields,
+	(clone): Likewise,
+	* source/org/jfree/chart/renderer/category/CategoryItemRenderer.java
+	(getSeriesItemURLGenerator): Renamed getSeriesURLGenerator,
+	(setSeriesItemURLGenerator): Renamed setSeriesURLGenerator,
+	(getBaseItemURLGenerator): Renamed getBaseURLGenerator,
+	(setBaseItemURLGenerator): Renamed setBaseURLGenerator.	
+END

@@ -1,0 +1,37 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2007-07-18T14:01:19.325400Z
+K 7
+svn:log
+V 889
+2007-07-18	David Gilbert  <david.gilbert@object-refinery.com>
+
+	* source/org/jfree/chart/demo/PieChartDemo1.java
+	(createChart): Modified settings,
+	* source/org/jfree/chart/plot/PiePlot.java
+	(DEFAULT_INTERIOR_GAP): Modified default,
+	(DEFAULT_LABEL_SHADOW_PAINT): Likewise,
+	(simpleLabels): New field,
+	(labelPadding): Likewise,
+	(simpleLabelOffset): Likewise,
+	(PiePlot(PieDataset)): Initialise new fields,
+	(getLabelPadding): New method,
+	(setLabelPadding): Likewise,
+	(getSimpleLabels): Likewise,
+	(setSimpleLabels): Likewise,
+	(getSimpleLabelOffset): Likewise,
+	(setSimpleLabelOffset): Likewise,
+	(drawPie): Added simple label handling,
+	(drawSimpleLabels): New method,
+	(drawLabels): Reformatting,
+	(drawLeftLabels): Set label padding,
+	(drawRightLabels): Likewise,
+	(equals): Updated for new fields,
+	* source/org/jfree/chart/plot/PiePlot3D.java
+	(draw): Updated for simple labels.
+END

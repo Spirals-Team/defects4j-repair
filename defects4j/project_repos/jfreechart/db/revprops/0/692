@@ -1,0 +1,22 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2007-12-19T17:30:19.610121Z
+K 7
+svn:log
+V 454
+2007-12-19  David Gilbert  <david.gilbert@object-refinery.com>
+
+    * source/org/jfree/data/time/Week.java
+    (Week(Date, TimeZone)): Hand on the zone,
+    * tests/org/jfree/data/time/junit/WeekTests.java
+    (testBug1448828): Control the default locale,
+    (testBug1498805): Likewise,
+    (testGetFirstMillisecondWithTimeZone): Control the default locale, and
+    modify expected result accordingly,
+    (testGetLastMillisecondWithTimeZone): Likewise.
+END

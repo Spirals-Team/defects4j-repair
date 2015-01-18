@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2008-08-15T14:32:46.238446Z
+K 7
+svn:log
+V 325
+2008-08-15  David Gilbert  <david.gilbert@object-refinery.com>
+
+    Bug 2031407:
+    * source/org/jfree/chart/renderer/category/StackedBarRenderer3D.java
+    (createStackedValueList): Encode series with negative values using -1 
+    offset,
+    (drawStackHorizontal): Account for -1 offset,
+    (drawStackVertical): Likewise.
+END

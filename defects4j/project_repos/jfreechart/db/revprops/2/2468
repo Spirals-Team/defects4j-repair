@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2012-05-10T04:09:15.767615Z
+K 7
+svn:log
+V 393
+2012-05-10  David Gilbert <david.gilbert@object-refinery.com>
+
+    * org/jfree/chart/renderer/xy/XYBarRenderer.java
+    (findDomainBounds): call new method in super-class to take account of
+    non-visible series,
+    (findRangeBounds): likewise;
+    * tests/org/jfree/chart/renderer/xy/junit/XYBarRendererTests.java
+    (testFindDomainBounds2): new test;
+    (testFindRangeBounds2): Likewise.
+END

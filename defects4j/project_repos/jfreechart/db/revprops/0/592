@@ -1,0 +1,29 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2007-11-21T10:51:58.207109Z
+K 7
+svn:log
+V 731
+2007-11-21  David Gilbert  <david.gilbert@object-refinery.com>
+
+	* source/org/jfree/chart/plot/PiePlot.java
+	(DEFAULT_INTERIOR_GAP): Modified default value,
+	(maximumLabelWidth): Likewise,
+	(labelGap): Likewise,
+	(labelLinkMargin): Likewise,
+	(DEBUG_DRAW_INTERIOR): New debug flag,
+	(DEBUG_DRAW_LINK_AREA): Likewise,
+	(DEBUG_DRAW_PIE_AREA): Likewise,
+	(PiePlot(PieDataset)): Removed background paint setting,
+	(drawPie): Modified label position calculations and added debug code,
+	(drawLabels): Modified label width calculation,
+	* source/org/jfree/chart/plot/PiePlot3D.java
+	(depthFactor): Changed default value,
+	(draw): Modified chart dimension calculations and added debug code, in line
+	with changes made to the PiePlot class.
+END

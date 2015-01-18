@@ -1,0 +1,28 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2008-02-14T02:14:47.076563Z
+K 7
+svn:log
+V 728
+2008-02-14  David Gilbert  <david.gilbert@object-refinery.com>
+
+    Includes patches 1866446 and 1888422 from Rob Van der Sanden:
+    * source/org/jfree/chart/renderer/category/BoxAndWhiskerRenderer.java
+    (maximumBarWidth): New field,
+    (BoxAndWhiskerRenderer): Initialise maximumBarWidth,
+    (setArtifactPaint): Simplify event firing,
+    (setFillBox): Likewise,
+    (setItemMargin): Likewise,
+    (getMaximumBarWidth): New method,
+    (setMaximumBarWidth): Likewise,
+    (initialise): Use new maximumBarWidth attribute,
+    (drawHorizontalItem): Use correct data area dimension, and check for
+    visibility of average marker,
+    (drawVerticalItem): Check for visibility of average marker,
+    (equals): Minor clean-up.
+END

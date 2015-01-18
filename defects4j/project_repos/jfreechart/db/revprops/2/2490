@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2012-07-28T14:36:41.286616Z
+K 7
+svn:log
+V 386
+2012-07-28  David Gilbert <david.gilbert@object-refinery.com>
+
+    * org/jfree/data/general/Series.java
+    (setKey): Update exception argument and Javadocs,
+    * org/jfree/data/general/XYSeriesCollection.java
+    (vetoableChange) : Call getSeriesIndex() rather than getSeries(),
+    * tests/org/jfree/data/xy/junit/XYSeriesCollectionTests.java
+    (testSeriesRename): New test method.
+END

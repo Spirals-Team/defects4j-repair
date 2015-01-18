@@ -1,0 +1,33 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2007-11-22T16:56:30.051694Z
+K 7
+svn:log
+V 1233
+2007-11-22  David Gilbert  <david.gilbert@object-refinery.com>
+
+	* source/org/jfree/chart/renderer/xy/AbstractXYItemRenderer.java
+	* source/org/jfree/chart/renderer/xy/CandlestickRenderer.java
+	* source/org/jfree/chart/renderer/xy/DeviationRenderer.java
+	* source/org/jfree/chart/renderer/xy/HighLowRenderer.java
+	* source/org/jfree/chart/renderer/xy/StackedXYAreaRenderer2.java
+	* source/org/jfree/chart/renderer/xy/StackedXYBarRenderer.java
+	* source/org/jfree/chart/renderer/xy/XYAreaRenderer.java
+	* source/org/jfree/chart/renderer/xy/XYAreaRenderer2.java
+	* source/org/jfree/chart/renderer/xy/XYBarRenderer.java
+	* source/org/jfree/chart/renderer/xy/XYBlockRenderer.java
+	* source/org/jfree/chart/renderer/xy/XYBoxAndWhiskerRenderer.java
+	* source/org/jfree/chart/renderer/xy/XYDifferenceRenderer.java
+	* source/org/jfree/chart/renderer/xy/XYDotRenderer.java
+	* source/org/jfree/chart/renderer/xy/XYErrormRenderer.java
+	* source/org/jfree/chart/renderer/xy/XYLine3DRenderer.java
+	* source/org/jfree/chart/renderer/xy/XYLineAndShapeRenderer.java
+	* source/org/jfree/chart/renderer/xy/XYSplineRenderer.java
+	* source/org/jfree/chart/renderer/xy/XYStepAreaRenderer.java:
+	Replaced calls to notifyListeners() with fireChangeEvent().
+END

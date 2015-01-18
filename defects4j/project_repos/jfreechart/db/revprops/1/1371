@@ -1,0 +1,23 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2008-08-15T08:55:53.833876Z
+K 7
+svn:log
+V 476
+2008-08-15  David Gilbert  <david.gilbert@object-refinery.com>
+
+    * source/org/jfree/chart/ChartFactory.java:
+    (currentTheme): New field,
+    (getChartTheme): New method,
+    (setChartTheme): Likewise,
+    ...and applied current theme in all chart creation methods,
+    * source/org/jfree/chart/ChartTheme.java: New file,
+    * source/org/jfree/chart/ChartUtilities.java
+    (applyCurrentTheme): New method,
+    * source/org/jfree/chart/StandardChartTheme.java: New file.
+END

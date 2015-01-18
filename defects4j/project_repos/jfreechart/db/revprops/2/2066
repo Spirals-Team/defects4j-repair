@@ -1,0 +1,25 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2009-05-16T07:43:17.338510Z
+K 7
+svn:log
+V 755
+2009-05-16  David Gilbert  <david.gilbert@object-refinery.com>
+
+    Patch 2791407 by Peter Kolb:
+    * source/org/jfree/chart/renderer/category/BarRenderer.java
+    (findRangeBounds): Call method in super class, not DatasetUtilities,
+    * source/org/jfree/chart/renderer/category/IntervalBarRenderer.java
+    (findRangeBounds): Override to include dataset interval,
+    * source/org/jfree/chart/renderer/category/ScatterRenderer.java
+    (findRangeBounds): Override to include dataset interval,
+    * source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java
+    (findRangeBounds): Override to include dataset interval,
+    * source/org/jfree/data/general/DatasetUtilities.java
+    (iterateToFindRangeBounds): Handle MultiValueCategoryDataset.
+END

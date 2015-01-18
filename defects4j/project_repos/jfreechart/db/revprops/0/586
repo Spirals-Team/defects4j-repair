@@ -1,0 +1,25 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2007-11-14T16:53:52.166408Z
+K 7
+svn:log
+V 537
+2007-11-14  David Gilbert  <david.gilbert@object-refinery.com>
+
+	* source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java
+	(errorIndicatorStroke): New field,
+	(StatisticalBarRenderer): Initialise new field,
+	(getErrorIndicatorStroke): New method,
+	(setErrorIndicatorStroke): Likewise,
+	(drawHorizontalItem): Fix drawBarOutline and gradientPaintTransformer
+	omissions, and use new errorIndicatorStroke field,
+	(drawVerticalItem): Likewise,
+	(equals): Updated for new field,
+	(writeObject): Likewise,
+	(readObject): Likewise.
+END

@@ -1,0 +1,23 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2008-07-09T15:15:56.563535Z
+K 7
+svn:log
+V 445
+2008-07-09  David Gilbert  <david.gilbert@object-refinery.com>
+
+    * source/org/jfree/chart/title/CompositeTitle.java
+    (backgroundPaint): New field,
+    (CompositeTitle): Initialise new field,
+    (getBackgroundPaint): New method,
+    (setBackgroundPaint): Likewise,
+    (draw): Fill background if necessary,
+    (equals): Check backgroundPaint,
+    (writeObject): Added serialization support for backgroundPaint,
+    (readObject): Likewise.
+END

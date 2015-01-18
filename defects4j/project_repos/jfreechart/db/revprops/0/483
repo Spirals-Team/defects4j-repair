@@ -1,0 +1,23 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2007-11-09T14:36:19.142633Z
+K 7
+svn:log
+V 375
+2007-11-09  David Gilbert  <david.gilbert@object-refinery.com>
+
+	* source/org/jfree/chart/renderer/xy/XYDotRenderer.java
+	(legendShape): New field,
+	(XYDotRenderer): Initialise new field,
+	(getLegendShape): New method,
+	(setLegendShape): Likewise,
+	(getLegendItem): New method override,
+	(equals): Updated for new field,
+	(readObject): New method,
+	(writeObject): New method.
+END

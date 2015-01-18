@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2008-09-01T13:18:20.086701Z
+K 7
+svn:log
+V 319
+2008-09-01  David Gilbert  <david.gilbert@object-refinery.com>
+
+    * source/org/jfree/chart/axis/DateAxis.java
+    (valueToJava2D): Use DateRange methods that return millis,
+    (java2DToValue): Likewise,
+    * source/org/jfree/data/time/DateRange.java
+    (getLowerMillis): New method,
+    (getUpperMillis): Likewise.
+END

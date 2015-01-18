@@ -1,0 +1,78 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2007-06-26T13:19:42.075035Z
+K 7
+svn:log
+V 2995
+2007-06-26  David Gilbert  <david.gilbert@object-refinery.com>
+
+	* source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java
+	(setSeriesItemLabelGenerator(int, CategoryItemLabelGenerator)): 
+	Delegate to new method,
+	(setSeriesItemLabelGenerator(int, CategoryItemLabelGenerator, boolean)): 
+	New method,
+	(setBaseItemLabelGenerator(CategoryItemLabelGenerator)): Delegate to
+	new method,
+	(setBaseItemLabelGenerator(CategoryItemLabelGenerator, boolean)):
+	New method,
+	(setSeriesToolTipGenerator(int, CategoryToolTipGenerator)): Delegate to 
+	new method,
+	(setSeriesToolTipGenerator(int, CategoryToolTipGenerator, boolean)):
+	New method,
+	(setBaseToolTipGenerator(CategoryToolTipGenerator)): Delegate to new
+	method,
+	(setBaseToolTipGenerator(CategoryToolTipGenerator, boolean)): New 
+	method,
+	(setSeriesItemURLGenerator(int, CategoryURLGenerator)): Delegate to
+	new method,
+	(setSeriesItemURLGenerator(int, CategoryURLGenerator, boolean)): New
+	method,
+	(setBaseItemURLGenerator(CategoryURLGenerator)): Delegate to new 
+	method,
+	(setBaseItemURLGenerator(CategoryURLGenerator, boolean)): New method,
+	* source/org/jfree/chart/renderer/category/CategoryItemRenderer.java
+	(setSeriesPaint(int, Paint, boolean)): New method,
+	(setBasePaint(Paint, boolean)): Likewise,
+	(getItemFillPaint(int, int)): Likewise,
+	(getSeriesFillPaint(int)): Likewise,
+	(setSeriesFillPaint(int, Paint)): Likewise,
+	(setSeriesFillPaint(int, Paint, boolean)): Likewise,
+	(getBaseFillPaint): Likewise,
+	(setBaseFillPaint(Paint)): Likewise,
+	(setBaseFillPaint(Paint, boolean)): Likewise,
+	(setSeriesOutlinePaint(int, Paint, boolean)): Likewise,
+	(setBaseOutlinePaint(Paint, boolean)): Likewise,
+	(setSeriesStroke(int, Stroke, boolean)): Likewise,
+	(setBaseStroke(Stroke, boolean)): Likewise,
+	(setSeriesOutlineStroke(int, Stroke, boolean)): Likewise,
+	(setBaseOutlineStroke(Stroke, boolean)): Likewise,
+	(setSeriesShape(int, Shape, boolean)): Likewise,
+	(setBaseShape(Shape, boolean)): Likewise,
+	(setSeriesItemLabelGenerator(int, CategoryItemLabelGenerator, boolean)): 
+	Likewise,
+	(setBaseItemLabelGenerator(CategoryItemLabelGenerator, boolean)): 
+	Likewise,
+	(setSeriesToolTipGenerator(int, CategoryItemLabelGenerator, boolean)): 
+	Likewise,
+	(setBaseToolTipGenerator(CategoryItemLabelGenerator, boolean)): 
+	Likewise,
+	(setSeriesItemLabelFont(int, Font, boolean)): Likewise,
+	(setBaseItemLabelFont(Font, boolean)): Likewise,
+	(setSeriesItemLabelPaint(int, Paint, boolean)): Likewise,
+	(setBaseItemLabelPaint(Paint, boolean)): Likewise,
+	(getItemCreateEntity): Likewise,
+	(getSeriesCreateEntities): Likewise,
+	(setSeriesCreateEntities(int, Boolean)): Likewise,
+	(setSeriesCreateEntities(int, Boolean, boolean)): Likewise,
+	(getBaseCreateEntities): Likewise,
+	(setBaseCreateEntities(boolean)): Likewise,
+	(setBaseCreateEntities(boolean, boolean)): Likewise,
+	(setSeriesItemURLGenerator(int, CategoryURLGenerator, boolean)): 
+	Likewise,
+	(setBaseItemURLGenerator(CategoryURLGenerator, boolean)): Likewise.
+END

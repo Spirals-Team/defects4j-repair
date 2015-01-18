@@ -1,0 +1,11 @@
+#!/bin/bash
+
+export PATH=$PATH:~/defects4j/framework/bin
+
+for bug in `seq 1 133`;
+do
+	echo 'Stating Closure_'$bug'_buggy compilation'
+	cd ~/ressources/Closure/Closure_$bug'_buggy'
+	defects4j compile
+	echo 'Closure_'$bug'_buggy compiled!'
+done

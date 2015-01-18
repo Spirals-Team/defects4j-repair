@@ -1,0 +1,24 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2013-07-25T13:31:08.249810Z
+K 7
+svn:log
+V 433
+2013-07-25  David Gilbert <david.gilbert@object-refinery.com>
+
+    * org/jfree/chart/axis/CategoryAxis.java
+    (categoryLabelURLs): New field,
+    (CategoryAxis): Initialise URL storage,
+    (addCategoryLabelURL): New method,
+    (getCategoryLabelURL): Likewise,
+    (removeCategoryLabelURL): Likewise,
+    (clearCategoryLabelURLs): Likewise,
+    (drawCategoryLabels): Add URL info,
+    (clone): Clone URLs,
+    (equals): Test URLs.
+END

@@ -1,0 +1,32 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2007-10-22T15:28:19.193800Z
+K 7
+svn:log
+V 776
+2007-10-22  Henry Proudhon  <henry.proudhon@insa-lyon.fr>
+
+	* source/swt/org/jfree/experimental/chart/swt/ChartComposite.java: 
+	(chart): Made the chart field be private again,
+	(ChartComposite): Refactored class, now implements PaintListener, 
+	MouseListener and MouseMovedListener,
+	(zoom): Fixed bug with multiple plots,
+	(addChartMouseListener): Implemented,
+	(removeChartMouseListener): Likewise,
+	(restoreAutoDomainBounds): Fixed NPE,
+	(restoreAutoRangeBounds): Likewise,
+	(widgetDefaultSelected): Implemented,
+	(addSWTListener): New method,
+	(mouseDoubleClick): Likewise,
+	(mouseDown): Likewise,
+	(mouseUp): Likewise,
+	(mouseMove): Likewise,
+	(paintControl): Likewise,
+	* source/swt/org/jfree/experimental/swt/SWTUtils.java
+	(toAwtMouseEvent): changed method signature.
+END

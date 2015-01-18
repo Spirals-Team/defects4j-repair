@@ -1,0 +1,22 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2009-03-02T13:55:11.356799Z
+K 7
+svn:log
+V 472
+2009-03-02  David Gilbert  <david.gilbert@object-refinery.com>
+
+    * source/org/jfree/chart/axis/PeriodAxis.java
+    (draw): Check tickMarksVisible and tickLabelsVisible,
+    (drawTickMarksHorizontal): Removed unnecessary calendar references,
+    (drawTickLabels): Likewise,
+    (valueToJava2D): Likewise,
+    (java2DtoValue): Likewise,
+    * source/org/jfree/chart/axis/PeriodAxisLabelInfo.java
+    (createInstance): Deprecated and added new method with locale argument.
+END

@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2008-06-16T18:33:49.232586Z
+K 7
+svn:log
+V 310
+2006-06-16  David Gilbert  <david.gilbert@object-refinery.com>
+
+    * source/org/jfree/chart/labels/AbstractXYItemLabelGenerator.java
+    (nullXString): Removed,
+    (getNullYString): New method,
+    (createItemArray): Removed redundant code,
+    (equals): Check nullYString field,
+    (hashCode): Implemented.
+END

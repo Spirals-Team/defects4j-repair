@@ -1,0 +1,30 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2009-03-18T10:00:29.776917Z
+K 7
+svn:log
+V 777
+2009-03-18  David Gilbert  <david.gilbert@object-refinery.com>
+
+    * source/org/jfree/chart/ChartPanel.java
+    (mouseWheelHandler): New field,
+    (isMouseWheelEnabled): New method,
+    (setMouseWheelEnabled): Likewise,
+    * source/org/jfree/chart/MouseWheelHandler.java: New class,
+    * source/org/jfree/chart/axis/ValueAxis.java
+    (resizeRange2): New method,
+    * source/org/jfree/chart/demo/BarChartDemo1.java
+    (BarChartDemo1): Enable mouse wheel,
+    * source/org/jfree/chart/demo/TimeSeriesChartDemo1.java
+    (createDemoPanel): Enable mouse wheel,
+    * source/org/jfree/chart/plot/CategoryPlot.java
+    (zoomRangeAxes): Modify anchored zoom behaviour,
+    * source/org/jfree/chart/plot/XYPlot.java
+    (zoomDomainAxes): Likewise,
+    (zoomRangeAxes): Likewise.
+END

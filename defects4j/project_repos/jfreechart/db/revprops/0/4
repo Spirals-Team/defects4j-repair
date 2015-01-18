@@ -1,0 +1,32 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2007-06-19T13:29:13.444645Z
+K 7
+svn:log
+V 854
+2007-06-19  David Gilbert  <david.gilbert@object-refinery.com>
+
+	* source/org/jfree/chart/axis/ColorBar.java: Removed (previously 
+	deprecated);
+	* source/org/jfree/chart/editor/DefaultColorBarEditor.java: Likewise,
+	* source/org/jfree/chart/editor/DefaultPlotEditor.java
+	(colorBarAxisPropertyPanel): Removed,
+	(DefaultPlotEditor(Plot)): Removed references to 
+	colorBarAxisPropertyPanel,
+	(updatePlotProperties): Likewise,
+	* source/org/jfree/chart/plot/ContourPlot.java: Removed (previously 
+	deprecated),
+	* tests/org/jfree/chart/axis/junit/AxisPackageTests.java
+	(suite): Removed ColorBarTests,
+	* tests/org/jfree/chart/axis/junit/ColorBarTests.java: Removed 
+	(previously deprecated),
+	* tests/org/jfree/chart/plot/junit/ContourPlotTests.java: Likewise,
+	* tests/org/jfree/chart/plot/junit/PlotPackageTests.java
+	(suite): Removed ContourPlotTests.
+
+END

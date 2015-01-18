@@ -1,0 +1,23 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2007-06-19T14:31:52.815446Z
+K 7
+svn:log
+V 447
+2007-06-19  David Gilbert  <david.gilbert@object-refinery.com>
+
+	* source/org/jfree/chart/entity/LegendItemEntity.java
+	(seriesIndex): Removed,
+	(getSeriesIndex): Likewise,
+	(setSeriesIndex): Likewise,
+	(equals): Updated for removed field,
+	* source/org/jfree/chart/title/LegendItemBlockContainer.java
+	(draw): Updated for removed method in LegendItemEntity,
+	* tests/org/jfree/chart/title/junit/LegendItemEntityTests.java
+	(testEquals): Likewise.
+END

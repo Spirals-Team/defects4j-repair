@@ -1,0 +1,12 @@
+#!/bin/bash
+
+export PATH=$PATH:~/defects4j/framework/bin
+export http_proxy="http://proxy:3128/"
+export https_proxy="https://proxy:3128/"
+
+echo "Starting checkout Math ..."
+for bug in `seq 1 106`;
+do
+	echo 'Checkout Math_'$bug'_buggy'	
+	defects4j checkout -p Math -v $bug'b' -w ~/ressources/Math_$bug'_buggy'
+done

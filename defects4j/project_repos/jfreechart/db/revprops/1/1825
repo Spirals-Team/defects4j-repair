@@ -1,0 +1,24 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2009-02-02T07:46:13.297453Z
+K 7
+svn:log
+V 516
+2009-02-02  David Gilbert  <david.gilbert@object-refinery.com>
+
+    * source/org/jfree/chart/renderer/GrayPaintScale.java
+    (alpha): New field,
+    (GrayPaintScale(double, double)): Delegate to new constructor,
+    (GrayPaintScale(double, double, int)): New constructor,
+    (getAlpha): New method,
+    (getPaint): Use alpha setting for returned paint,
+    (equals): Check new field,
+    (hashCode): New method,
+    * tests/org/jfree/chart/renderer/junit/GrayPaintScaleTests.java
+    (testEquals): Check new field.
+END

@@ -1,0 +1,32 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2009-02-12T15:31:25.481969Z
+K 7
+svn:log
+V 716
+2009-02-12  David Gilbert  <david.gilbert@object-refinery.com>
+
+    * source/org/jfree/chart/annotations/XYTextAnnotation.java
+    (backgroundPaint): New field,
+    (outlineVisible): Likewise,
+    (outlinePaint): Likewise,
+    (outlineStroke): Likewise,
+    (XYTextAnnotation): Initialise new fields,
+    (getBackgroundPaint): New method,
+    (setBackgroundPaint): Likewise,
+    (getOutlinePaint): Likewise,
+    (setOutlinePaint): Likewise,
+    (getOutlineStroke): Likewise,
+    (setOutlineStroke): Likewise,
+    (isOutlineVisible): Likewuse,
+    (setOutlineVisible): Likewise,
+    (draw): Draw background and outline,
+    (equals): Check new fields,
+    (writeObject): Handle new fields,
+    (readObject): Likewise.
+END

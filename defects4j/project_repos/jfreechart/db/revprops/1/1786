@@ -1,0 +1,41 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2009-01-14T14:59:11.389906Z
+K 7
+svn:log
+V 1374
+2009-01-14  David Gilbert  <david.gilbert@object-refinery.com>
+
+    Patch 2497611 by Peter Kolb:
+    * source/org/jfree/chart/axis/CategoryAxis.java
+    (getCategorySeriesMiddle): New method,
+    * source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java
+    (initialise): Record visible series indices,
+    * source/org/jfree/chart/renderer/category/BarRenderer.java
+    (calculateBarWidth): Look for visible series count in state,
+    (calculateBarW0): Likewise,
+    (drawItem): Use the visible row index,
+    * source/org/jfree/chart/renderer/category/CategoryItemRendererState.java
+    (visibleSeries): New field,
+    (getVisibleSeriesIndex): New method,
+    (getVisibleSeriesCount): Likewise,
+    (setVisibleSeriesArray): Likewise,
+    * source/org/jfree/chart/renderer/category/IntervalBarRenderer.java
+    (drawInterval): Use the visible row index,
+    * source/org/jfree/chart/renderer/category/LineAndShapeRenderer.java
+    (drawItem): Likewise,
+    * source/org/jfree/chart/renderer/category/ScatterRenderer.java
+    (drawItem): Likewise,
+    * source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java
+    (drawItem): Likewise,
+    (drawHorizontalItem): Changed signature,
+    (drawVerticalItem): Likewise,
+    * source/org/jfree/chart/renderer/category/StatisticalLineAndShapeRenderer.java
+    (drawItem): Use the visible row index.
+
+END

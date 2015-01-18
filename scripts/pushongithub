@@ -1,0 +1,10 @@
+#!/bin/bash
+
+export http_proxy="http://proxy:3128/"
+export https_proxy="https://proxy:3128/"
+
+cd ~/results/
+
+git add .
+git commit -m "Commit results"
+git push -u origin master

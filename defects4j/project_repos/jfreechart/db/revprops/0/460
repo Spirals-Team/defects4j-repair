@@ -1,0 +1,34 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2007-10-31T15:12:20.923297Z
+K 7
+svn:log
+V 626
+2007-10-31  David Gilbert  <david.gilbert@object-refinery.com>
+
+	* source/org/jfree/data/DefaultKeyedValues.java
+	(data): Removed,
+	(keys): New field,
+	(values): Likewise,
+	(indexMap): New field,
+	(DefaultKeyedValues): Initialise new fields,
+	(getItemCount): Use new data fields,
+	(getValue(int)): Likewise,
+	(getKey(int)): Likewise,
+	(getIndex(Comparable)): Likewise,
+	(getKeys): Likewise,
+	(setValue(Comparable, Number)): Likewise,
+	(insertValue): Likewise,
+	(rebuildIndex): Likewise,
+	(removeValue): Likewise,
+	(clear): Likewise,
+	(sortByKeys): Likewise,
+	(sortByValue): Likewise,
+	(hashCode): Likewise,
+	(clone): Likewise.
+END

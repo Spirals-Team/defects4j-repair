@@ -1,0 +1,36 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2007-06-29T12:56:09.409983Z
+K 7
+svn:log
+V 1164
+2007-06-29  David Gilbert  <david.gilbert@object-refinery.com>
+
+	* source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java
+	(getItemURLGenerator): Renamed getURLGenerator(),
+	(addItemEntity): Updated for renamed method,
+	* source/org/jfree/chart/renderer/category/BoxAndWhiskerRenderer.java
+	(drawHorizontalItem): Call addEntity() to handle entity generation,
+	(drawVerticalItem): Likewise,
+	* source/org/jfree/chart/renderer/category/CategoryItemRenderer.java:
+	Reorganised source file,
+	* source/org/jfree/chart/renderer/category/GanttRenderer.java
+	(drawTasks): Call addEntity() to handle entity generation,
+	(drawTask): Likewise,
+	* source/org/jfree/chart/renderer/category/GroupedStackedBarRenderer.java
+	(drawItem): Likewise,
+	* source/org/jfree/chart/renderer/category/IntervalBarRenderer.java
+	(drawItem): Likewise,
+	* source/org/jfree/chart/renderer/category/LayeredBarRenderer.java
+	(drawHorizontalItem): Likewise,
+	(drawVerticalItem): Likewise,
+	* source/org/jfree/chart/renderer/category/LevelRenderer.java
+	(drawItem): Likewise,
+	* source/org/jfree/chart/renderer/category/StatisticalLineAndShapeRenderer.java
+	(drawItem): Likewise.
+END

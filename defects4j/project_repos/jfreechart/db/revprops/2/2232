@@ -1,0 +1,38 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2009-09-03T22:30:35.885292Z
+K 7
+svn:log
+V 1046
+2009-09-04  David Gilbert  <david.gilbert@object-refinery.com>
+
+    Patch 2850344 by Martin Hoeller:
+    * source/org/jfree/chart/plot/PolarPlot.java
+    (margin): New field,
+    (PolarPlot): Initialise new field,
+    (getMargin): New method,
+    (setMargin): Likewise,
+    (refreshAngleTicks): Set label anchors according to angle,
+    (draw): Use margin attribute,
+    (equals): Updated for margin,
+    (translateValueThetaRadiusToJava2D): Use new margin attribute,
+    * source/org/jfree/chart/renderer/DefaultPolarRenderer.java
+    (drawOutlineWhenFilled): New attribute,
+    (fillComposite): Likewise,
+    (shapesVisible): Likewise,
+    (DefaultPolarItemRenderer): Initialise new fields,
+    (drawSeries): Use new attributes,
+    (drawAngularGridlines): Use new tick label anchors,
+    (getDrawOutlineWhenFilled): New method,
+    (setDrawOutlineWhenFilled): Likewise,
+    (getFillComposite): Likewise,
+    (setFillComposite): Likewise,
+    (getShapesVisible): Likewise,
+    (setShapesVisible): Likewise,
+    (equals): Updated for new fields.
+END

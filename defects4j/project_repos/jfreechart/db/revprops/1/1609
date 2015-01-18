@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2008-09-18T09:17:07.619169Z
+K 7
+svn:log
+V 408
+2008-08-18  David Gilbert  <david.gilbert@object-refinery.com>
+
+    * source/org/jfree/chart/axis/DateAxis.java
+    (locale): New field,
+    (DateAxis(String, TimeZone, Locale)): New constructor,
+    (setTimeZone): Updated to use new locale field,
+    (previousStandardDate): Likewise,
+    (createStandardDateTickUnits(TimeZone)): Deprecated, 
+    (createStandardDateTickUnits(TimeZone, Locale)): New method.
+END

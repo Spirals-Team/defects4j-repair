@@ -1,0 +1,34 @@
+K 10
+svn:author
+V 7
+mungady
+K 8
+svn:date
+V 27
+2007-06-19T15:04:12.800268Z
+K 7
+svn:log
+V 839
+2007-06-19  David Gilbert  <david.gilbert@object-refinery.com>
+
+	* source/org/jfree/chart/plot/PiePlot.java
+	(sectionPaint): Removed,
+	(sectionOutlinePaint): Likewise,
+	(sectionOutlineStroke): Likewise,
+	(PiePlot(PieDataset)): Updated for removed fields,
+	(lookupSectionPaint): No longer any override,
+	(getSectionPaint): Removed,
+	(setSectionPaint): Likewise,
+	(lookupSectionOutlinePaint): No longer any override,
+	(getSectionOutlinePaint): Removed,
+	(setSectionOutlinePaint): Likewise,
+	(lookupSectionOutlineStroke): No longer any override,
+	(getSectionOutlineStroke): Removed,
+	(setSectionOutlineStroke): Likewise,
+	(drawItem): Updated for removed method,
+	(equals): Updated for removed fields,
+	(writeObject): Likewise,
+	(readObject): Likewise,
+	* tests/org/jfree/chart/plot/PiePlotTests.java
+	(testEquals): Updated for removed fields.
+END
