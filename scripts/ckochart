@@ -1,12 +1,10 @@
 #!/bin/bash
 
-export PATH=$PATH:~/defects4j/framework/bin
-export http_proxy="http://proxy:3128/"
-export https_proxy="https://proxy:3128/"
+export PATH="~/defects4j/framework/bin:$PATH"
 
-echo "Starting checkout Chart ..."
+echo "Starting checkout chart ..."
 for bug in `seq 1 26`;
 do
-	echo 'Checkout Chart_'$bug'_buggy'	
-	defects4j checkout -p Chart -v $bug'b' -w ~/ressources/Chart_$bug'_buggy'
+	echo 'Checkout chart_'$bug'_buggy'
+	defects4j checkout -p Chart -v $bug'b' -w ~/defects4j-nopol/projects/chart/buggy/chart_$bug'_buggy'
 done
