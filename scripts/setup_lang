@@ -1,0 +1,11 @@
+#!/bin/bash
+
+export PATH="~/defects4j-nopol/defects4j/framework/bin:$PATH"
+
+echo "Starting Lang setup ..."
+for bug in `seq 1 65`;
+do
+  echo "Setting up Lang_${bug}_buggy"
+  defects4j checkout -p Lang -v ${bug}b -w ~/defects4j-nopol/projects/lang/buggy/lang_${bug}_buggy
+  defects4j checkout -p Lang -v ${bug}f -w ~/defects4j-nopol/projects/lang/fix/lang_${bug}_fix
+done
