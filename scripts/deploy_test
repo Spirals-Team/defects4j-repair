@@ -1,9 +1,7 @@
 #!/bin/bash
 
-export PATH="~/defects4j-nopol/defects4j/framework/bin:$PATH"
-
 echo 'Starting Lang deployment ...'
 
 let 'bug = 1'
 
-oarsub -O ~/defects4j-nopol/results/d4j-tests/lang/buggy/lang_${bug}_buggy.stdout -E ~/defects4j-nopol/results/d4j-tests/lang/buggy/lang_${bug}_buggy.stderr "cd /tmp/ && defects4j checkout -p Lang -v ${bug}b -w /tmp/lang_${bug}_buggy/ && cd /tmp/lang_${bug}_buggy/ && defects4j compile && time defects4j test"
+oarsub -O ~/defects4j-nopol/results/d4j-tests/lang/buggy/lang_${bug}_buggy.stdout -E ~/defects4j-nopol/results/d4j-tests/lang/buggy/lang_${bug}_buggy.stderr "cd /tmp/ && ~/defects4j-nopol/defects4j/framework/bin/defects4j checkout -p Lang -v ${bug}b -w /tmp/lang_${bug}_buggy/ && cd /tmp/lang_${bug}_buggy/ && ~/defects4j-nopol/defects4j/framework/bin/defects4j compile && time ~/defects4j-nopol/defects4j/framework/bin/defects4j test"
