@@ -1,0 +1,73 @@
+#!/bin/bash
+
+for bug in `seq 1 50`
+do
+  echo "Closure_${bug}_buggy"
+  oarsub -l walltime=00:10:00 -O ~/defects4j-nopol/results/d4j-tests/closure/buggy/closure_${bug}_buggy.stdout -E ~/defects4j-nopol/results/d4j-tests/closure/buggy/closure_${bug}_buggy.stderr "cp -r ~/defects4j-nopol/projects/closure/buggy/closure_${bug}_buggy /tmp/ && cd /tmp/closure_${bug}_buggy/ && ~/defects4j-nopol/defects4j/framework/bin/defects4j compile && ~/defects4j-nopol/defects4j/framework/bin/defects4j test && cd /tmp/ && rm -rf closure_${bug}_buggy/"
+done
+
+for t in `seq 10 -1 1`
+do
+  echo "Closure buggy tests remaining time: ${t} minutes ..."
+  sleep 60
+done
+
+for bug in `seq 51 100`
+do
+  echo "Closure_${bug}_buggy"
+  oarsub -l walltime=00:10:00 -O ~/defects4j-nopol/results/d4j-tests/closure/buggy/closure_${bug}_buggy.stdout -E ~/defects4j-nopol/results/d4j-tests/closure/buggy/closure_${bug}_buggy.stderr "cp -r ~/defects4j-nopol/projects/closure/buggy/closure_${bug}_buggy /tmp/ && cd /tmp/closure_${bug}_buggy/ && ~/defects4j-nopol/defects4j/framework/bin/defects4j compile && ~/defects4j-nopol/defects4j/framework/bin/defects4j test && cd /tmp/ && rm -rf closure_${bug}_buggy/"
+done
+
+for t in `seq 10 -1 1`
+do
+  echo "Closure buggy tests remaining time: ${t} minutes ..."
+  sleep 60
+done
+
+for bug in `seq 101 133`
+do
+  echo "Closure_${bug}_buggy"
+  oarsub -l walltime=00:10:00 -O ~/defects4j-nopol/results/d4j-tests/closure/buggy/closure_${bug}_buggy.stdout -E ~/defects4j-nopol/results/d4j-tests/closure/buggy/closure_${bug}_buggy.stderr "cp -r ~/defects4j-nopol/projects/closure/buggy/closure_${bug}_buggy /tmp/ && cd /tmp/closure_${bug}_buggy/ && ~/defects4j-nopol/defects4j/framework/bin/defects4j compile && ~/defects4j-nopol/defects4j/framework/bin/defects4j test && cd /tmp/ && rm -rf closure_${bug}_buggy/"
+done
+
+for t in `seq 10 -1 1`
+do
+  echo "Closure buggy tests remaining time: ${t} minutes ..."
+  sleep 60
+done
+
+for bug in `seq 1 50`
+do
+  echo "Closure_${bug}_fix"
+  oarsub -l walltime=00:10:00 -O ~/defects4j-nopol/results/d4j-tests/closure/fix/closure_${bug}_fix.stdout -E ~/defects4j-nopol/results/d4j-tests/closure/fix/closure_${bug}_fix.stderr "cp -r ~/defects4j-nopol/projects/closure/fix/closure_${bug}_fix /tmp/ && cd /tmp/closure_${bug}_fix/ && ~/defects4j-nopol/defects4j/framework/bin/defects4j compile && ~/defects4j-nopol/defects4j/framework/bin/defects4j test && cd /tmp/ && rm -rf closure_${bug}_fix/"
+done
+
+for t in `seq 10 -1 1`
+do
+  echo "Closure fix tests remaining time: ${t} minutes ..."
+  sleep 60
+done
+
+for bug in `seq 51 100`
+do
+  echo "Closure_${bug}_fix"
+  oarsub -l walltime=00:10:00 -O ~/defects4j-nopol/results/d4j-tests/closure/fix/closure_${bug}_fix.stdout -E ~/defects4j-nopol/results/d4j-tests/closure/fix/closure_${bug}_fix.stderr "cp -r ~/defects4j-nopol/projects/closure/fix/closure_${bug}_fix /tmp/ && cd /tmp/closure_${bug}_fix/ && ~/defects4j-nopol/defects4j/framework/bin/defects4j compile && ~/defects4j-nopol/defects4j/framework/bin/defects4j test && cd /tmp/ && rm -rf closure_${bug}_fix/"
+done
+
+for t in `seq 10 -1 1`
+do
+  echo "Closure fix tests remaining time: ${t} minutes ..."
+  sleep 60
+done
+
+for bug in `seq 101 133`
+do
+  echo "Closure_${bug}_fix"
+  oarsub -l walltime=00:10:00 -O ~/defects4j-nopol/results/d4j-tests/closure/fix/closure_${bug}_fix.stdout -E ~/defects4j-nopol/results/d4j-tests/closure/fix/closure_${bug}_fix.stderr "cp -r ~/defects4j-nopol/projects/closure/fix/closure_${bug}_fix /tmp/ && cd /tmp/closure_${bug}_fix/ && ~/defects4j-nopol/defects4j/framework/bin/defects4j compile && ~/defects4j-nopol/defects4j/framework/bin/defects4j test && cd /tmp/ && rm -rf closure_${bug}_fix/"
+done
+
+for t in `seq 10 -1 1`
+do
+  echo "Closure fix tests remaining time: ${t} minutes ..."
+  sleep 60
+done
