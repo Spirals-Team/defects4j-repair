@@ -1,0 +1,71 @@
+Running ant (compile) ... OK
+Buildfile: /home/rsommerard/defects4j-nopol/defects4j/framework/projects/Math/Math.build.xml
+
+init:
+     [echo] -------- Commons MATH 3.0-SNAPSHOT --------
+    [mkdir] Created dir: /tmp/math_47_fix/target
+    [mkdir] Created dir: /tmp/math_47_fix/target/classes
+    [mkdir] Created dir: /tmp/math_47_fix/target/test-classes
+    [mkdir] Created dir: /tmp/math_47_fix/target/classes/META-INF
+     [copy] Copying 1 file to /tmp/math_47_fix/target/classes/META-INF
+
+compile:
+    [javac] Compiling 568 source files to /tmp/math_47_fix/target/classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.5
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+    [javac] 1 warning
+
+BUILD SUCCESSFUL
+Total time: 11 seconds
+Running ant (compile.tests) ... OK
+Buildfile: /home/rsommerard/defects4j-nopol/defects4j/framework/projects/Math/Math.build.xml
+
+init:
+     [echo] -------- Commons MATH 3.0-SNAPSHOT --------
+
+compile:
+
+check-availability:
+     [echo] doing check-availability...
+
+download-dependencies:
+     [echo] doing download-dependencies...
+
+download-junit:
+
+compile.tests:
+    [javac] Compiling 333 source files to /tmp/math_47_fix/target/test-classes
+    [javac] Note: /tmp/math_47_fix/src/test/java/org/apache/commons/math/linear/UnmodifiableRealVectorAbstractTest.java uses or overrides a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: /tmp/math_47_fix/src/test/java/org/apache/commons/math/PerfTestUtils.java uses unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+     [copy] Copying 13 files to /tmp/math_47_fix/target/test-classes
+
+BUILD SUCCESSFUL
+Total time: 11 seconds
+Running ant (test) ... OK
+Buildfile: /home/rsommerard/defects4j-nopol/defects4j/framework/projects/Math/Math.build.xml
+
+init:
+     [echo] -------- Commons MATH 3.0-SNAPSHOT --------
+
+compile:
+
+check-availability:
+     [echo] doing check-availability...
+
+download-dependencies:
+     [echo] doing download-dependencies...
+
+download-junit:
+
+compile.tests:
+
+test:
+
+BUILD SUCCESSFUL
+Total time: 1 minute 28 seconds
+Failing tests: 0

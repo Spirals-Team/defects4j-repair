@@ -1,0 +1,70 @@
+Running ant (compile) ... OK
+Buildfile: /home/rsommerard/defects4j-nopol/defects4j/framework/projects/Math/Math.build.xml
+
+init:
+     [echo] -------- Commons MATH 2.0-SNAPSHOT --------
+    [mkdir] Created dir: /tmp/math_90_fix/target
+    [mkdir] Created dir: /tmp/math_90_fix/target/classes
+    [mkdir] Created dir: /tmp/math_90_fix/target/test-classes
+
+compile:
+    [javac] /tmp/math_90_fix/build.xml:151: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 329 source files to /tmp/math_90_fix/target/classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.5
+    [javac] Note: /tmp/math_90_fix/src/java/org/apache/commons/math/stat/Frequency.java uses unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+    [javac] 1 warning
+
+BUILD SUCCESSFUL
+Total time: 9 seconds
+Running ant (compile.tests) ... OK
+Buildfile: /home/rsommerard/defects4j-nopol/defects4j/framework/projects/Math/Math.build.xml
+
+init:
+     [echo] -------- Commons MATH 2.0-SNAPSHOT --------
+
+compile:
+    [javac] /tmp/math_90_fix/build.xml:151: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+check-availability:
+     [echo] doing check-availability...
+
+download-dependencies:
+     [echo] doing download-dependencies...
+
+download-junit:
+
+compile.tests:
+    [javac] /tmp/math_90_fix/build.xml:165: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 213 source files to /tmp/math_90_fix/target/test-classes
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+     [copy] Copying 12 files to /tmp/math_90_fix/target/test-classes
+
+BUILD SUCCESSFUL
+Total time: 8 seconds
+Running ant (test) ... OK
+Buildfile: /home/rsommerard/defects4j-nopol/defects4j/framework/projects/Math/Math.build.xml
+
+init:
+     [echo] -------- Commons MATH 2.0-SNAPSHOT --------
+
+compile:
+    [javac] /tmp/math_90_fix/build.xml:151: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+check-availability:
+     [echo] doing check-availability...
+
+download-dependencies:
+     [echo] doing download-dependencies...
+
+download-junit:
+
+compile.tests:
+    [javac] /tmp/math_90_fix/build.xml:165: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+test:
+
+BUILD SUCCESSFUL
+Total time: 18 seconds
+Failing tests: 0
