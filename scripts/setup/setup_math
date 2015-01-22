@@ -1,0 +1,13 @@
+#!/bin/bash
+
+export PATH="~/defects4j-nopol/defects4j/framework/bin:$PATH"
+
+echo "Starting math setup ..."
+for bug in `seq 1 106`;
+do
+  echo "Setting up math_${bug}_buggy"
+  defects4j checkout -p Math -v ${bug}b -w ~/defects4j-nopol/projects/math/buggy/math_${bug}_buggy
+
+  echo "Setting up math_${bug}_fix"
+  defects4j checkout -p Math -v ${bug}f -w ~/defects4j-nopol/projects/math/fix/math_${bug}_fix
+done
