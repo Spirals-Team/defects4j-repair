@@ -1,0 +1,13 @@
+#!/bin/bash
+
+export PATH="~/defects4j-nopol/defects4j/framework/bin:$PATH"
+
+echo "Starting closure setup ..."
+for bug in `seq 1 133`;
+do
+  echo "Setting up closure_${bug}_buggy"
+  defects4j checkout -p Closure -v ${bug}b -w ~/defects4j-nopol/projects/closure/buggy/closure_${bug}_buggy
+
+  echo "Setting up closure_${bug}_fix"
+  defects4j checkout -p Closure -v ${bug}f -w ~/defects4j-nopol/projects/closure/fix/closure_${bug}_fix
+done
