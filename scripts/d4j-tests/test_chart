@@ -1,0 +1,56 @@
+#!/bin/bash
+
+for bug in `seq 1 26`;
+do
+  oarsub -l walltime=00:15:00 -O ~/defects4j-nopol/results/d4j-tests/chart/buggy/chart_${bug}_buggy.stdout -E ~/defects4j-nopol/results/d4j-tests/chart/buggy/chart_${bug}_buggy.stderr "cp -r ~/defects4j-nopol/projects/chart/buggy/chart_${bug}_buggy /tmp/ && cd /tmp/chart_${bug}_buggy/ && ~/defects4j/framework/bin/defects4j compile && ~/defects4j/framework/bin/defects4j test && cd /tmp/ && rm -rf chart_${bug}_buggy/"
+done
+
+echo "Chart buggy tests remaining time: 10 minutes ..."
+sleep 60
+echo "Chart buggy tests remaining time: 9 minutes ..."
+sleep 60
+echo "Chart buggy tests remaining time: 8 minutes ..."
+sleep 60
+echo "Chart buggy tests remaining time: 7 minutes ..."
+sleep 60
+echo "Chart buggy tests remaining time: 6 minutes ..."
+sleep 60
+echo "Chart buggy tests remaining time: 5 minutes ..."
+sleep 60
+echo "Chart buggy tests remaining time: 4 minutes ..."
+sleep 60
+echo "Chart buggy tests remaining time: 3 minutes ..."
+sleep 60
+echo "Chart buggy tests remaining time: 2 minutes ..."
+sleep 60
+echo "Chart buggy tests remaining time: 1 minutes ..."
+sleep 60
+
+
+for bug in `seq 1 26`;
+do
+  oarsub -l walltime=00:15:00 -O ~/defects4j-nopol/results/d4j-tests/chart/fix/chart_${bug}_fix.stdout -E ~/defects4j-nopol/results/d4j-tests/chart/fix/chart_${bug}_fix.stderr "cp -r ~/defects4j-nopol/projects/chart/fix/chart_${bug}_fix /tmp/ && cd /tmp/chart_${bug}_fix/ && ~/defects4j/framework/bin/defects4j compile && ~/defects4j/framework/bin/defects4j test && cd /tmp/ && rm -rf chart_${bug}_fix/"
+done
+
+echo "Chart fix tests remaining time: 10 minutes ..."
+sleep 60
+echo "Chart fix tests remaining time: 9 minutes ..."
+sleep 60
+echo "Chart fix tests remaining time: 8 minutes ..."
+sleep 60
+echo "Chart fix tests remaining time: 7 minutes ..."
+sleep 60
+echo "Chart fix tests remaining time: 6 minutes ..."
+sleep 60
+echo "Chart fix tests remaining time: 5 minutes ..."
+sleep 60
+echo "Chart fix tests remaining time: 4 minutes ..."
+sleep 60
+echo "Chart fix tests remaining time: 3 minutes ..."
+sleep 60
+echo "Chart fix tests remaining time: 2 minutes ..."
+sleep 60
+echo "Chart fix tests remaining time: 1 minutes ..."
+sleep 60
+
+echo "Done."
