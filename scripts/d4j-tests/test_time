@@ -1,0 +1,25 @@
+#!/bin/bash
+
+for bug in `seq 1 27`
+do
+  echo "Time_${bug}_buggy"
+  oarsub -l walltime=00:10:00 -O ~/defects4j-nopol/results/d4j-tests/time/buggy/time_${bug}_buggy.stdout -E ~/defects4j-nopol/results/d4j-tests/time/buggy/time_${bug}_buggy.stderr "cp -r ~/defects4j-nopol/projects/time/buggy/time_${bug}_buggy /tmp/ && cd /tmp/time_${bug}_buggy/ && ~/defects4j-nopol/defects4j/framework/bin/defects4j compile && ~/defects4j-nopol/defects4j/framework/bin/defects4j test && cd /tmp/ && rm -rf time_${bug}_buggy/"
+done
+
+while [ $(oarstat -u | grep rsommerard | wc -l) -gt 0 ]
+do
+  echo "Time buggy tests running."
+  sleep 5
+done
+
+for bug in `seq 1 27`
+do
+  echo "Time_${bug}_fix"
+  oarsub -l walltime=00:10:00 -O ~/defects4j-nopol/results/d4j-tests/time/fix/time_${bug}_fix.stdout -E ~/defects4j-nopol/results/d4j-tests/time/fix/time_${bug}_fix.stderr "cp -r ~/defects4j-nopol/projects/time/fix/time_${bug}_fix /tmp/ && cd /tmp/time_${bug}_fix/ && ~/defects4j-nopol/defects4j/framework/bin/defects4j compile && ~/defects4j-nopol/defects4j/framework/bin/defects4j test && cd /tmp/ && rm -rf time_${bug}_fix/"
+done
+
+while [ $(oarstat -u | grep rsommerard | wc -l) -gt 0 ]
+do
+  echo "Time fix tests running."
+  sleep 5
+done
