@@ -1,0 +1,13 @@
+#!/bin/bash
+
+export PATH="~/defects4j-nopol/defects4j/framework/bin:$PATH"
+
+echo "Starting chart setup ..."
+for bug in `seq 1 26`;
+do
+  echo "Setting up chart_${bug}_buggy"
+  defects4j checkout -p Chart -v ${bug}b -w ~/defects4j-nopol/projects/chart/buggy/chart_${bug}_buggy
+
+  echo "Setting up chart_${bug}_fix"
+  defects4j checkout -p Chart -v ${bug}f -w ~/defects4j-nopol/projects/chart/fix/chart_${bug}_fix
+done
