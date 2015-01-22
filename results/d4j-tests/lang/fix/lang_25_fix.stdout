@@ -1,0 +1,149 @@
+Running ant (compile) ... OK
+Buildfile: /home/rsommerard/defects4j-nopol/defects4j/framework/projects/Lang/Lang.build.xml
+
+test-offline:
+
+get-deps:
+
+compile:
+    [mkdir] Created dir: /tmp/lang_25_fix/target/classes
+    [javac] /tmp/lang_25_fix/maven-build.xml:75: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 93 source files to /tmp/lang_25_fix/target/classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.5
+    [javac] 1 warning
+    [mkdir] Created dir: /tmp/lang_25_fix/target/classes/META-INF
+     [copy] Copying 2 files to /tmp/lang_25_fix/target/classes/META-INF
+
+BUILD SUCCESSFUL
+Total time: 7 seconds
+Running ant (compile.tests) ... OK
+Buildfile: /home/rsommerard/defects4j-nopol/defects4j/framework/projects/Lang/Lang.build.xml
+
+test-offline:
+
+get-deps:
+
+compile:
+    [javac] /tmp/lang_25_fix/maven-build.xml:75: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+compile-tests:
+    [mkdir] Created dir: /tmp/lang_25_fix/target/test-classes
+    [javac] /tmp/lang_25_fix/maven-build.xml:108: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 109 source files to /tmp/lang_25_fix/target/test-classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.5
+    [javac] /tmp/lang_25_fix/src/test/java/org/apache/commons/lang3/CharSequenceUtilsTest.java:19: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac] import junit.framework.Assert;
+    [javac]                       ^
+    [javac] /tmp/lang_25_fix/src/test/java/org/apache/commons/lang3/SystemUtilsTest.java:27: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac] import junit.framework.Assert;
+    [javac]                       ^
+    [javac] /tmp/lang_25_fix/src/test/java/org/apache/commons/lang3/builder/ReflectionToStringBuilderExcludeTest.java:24: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac] import junit.framework.Assert;
+    [javac]                       ^
+    [javac] /tmp/lang_25_fix/src/test/java/org/apache/commons/lang3/time/StopWatchTest.java:19: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac] import junit.framework.Assert;
+    [javac]                       ^
+    [javac] /tmp/lang_25_fix/src/test/java/org/apache/commons/lang3/CharSequenceUtilsTest.java:34: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertEquals(null, CharSequenceUtils.subSequence(null, -1));
+    [javac]         ^
+    [javac] /tmp/lang_25_fix/src/test/java/org/apache/commons/lang3/CharSequenceUtilsTest.java:35: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertEquals(null, CharSequenceUtils.subSequence(null, 0));
+    [javac]         ^
+    [javac] /tmp/lang_25_fix/src/test/java/org/apache/commons/lang3/CharSequenceUtilsTest.java:36: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertEquals(null, CharSequenceUtils.subSequence(null, 1));
+    [javac]         ^
+    [javac] /tmp/lang_25_fix/src/test/java/org/apache/commons/lang3/CharSequenceUtilsTest.java:40: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertEquals(StringUtils.EMPTY, CharSequenceUtils.subSequence(StringUtils.EMPTY, 0));
+    [javac]         ^
+    [javac] /tmp/lang_25_fix/src/test/java/org/apache/commons/lang3/CharSequenceUtilsTest.java:41: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertEquals("012", CharSequenceUtils.subSequence("012", 0));
+    [javac]         ^
+    [javac] /tmp/lang_25_fix/src/test/java/org/apache/commons/lang3/CharSequenceUtilsTest.java:42: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertEquals("12", CharSequenceUtils.subSequence("012", 1));
+    [javac]         ^
+    [javac] /tmp/lang_25_fix/src/test/java/org/apache/commons/lang3/CharSequenceUtilsTest.java:43: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertEquals("2", CharSequenceUtils.subSequence("012", 2));
+    [javac]         ^
+    [javac] /tmp/lang_25_fix/src/test/java/org/apache/commons/lang3/CharSequenceUtilsTest.java:44: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertEquals(StringUtils.EMPTY, CharSequenceUtils.subSequence("012", 3));
+    [javac]         ^
+    [javac] /tmp/lang_25_fix/src/test/java/org/apache/commons/lang3/CharSequenceUtilsTest.java:49: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]             Assert.assertEquals(null, CharSequenceUtils.subSequence(StringUtils.EMPTY, -1));
+    [javac]             ^
+    [javac] /tmp/lang_25_fix/src/test/java/org/apache/commons/lang3/CharSequenceUtilsTest.java:50: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]             Assert.fail("Expected " + IndexOutOfBoundsException.class.getName());
+    [javac]             ^
+    [javac] /tmp/lang_25_fix/src/test/java/org/apache/commons/lang3/CharSequenceUtilsTest.java:55: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]             Assert.assertEquals(null, CharSequenceUtils.subSequence(StringUtils.EMPTY, 1));
+    [javac]             ^
+    [javac] /tmp/lang_25_fix/src/test/java/org/apache/commons/lang3/CharSequenceUtilsTest.java:56: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]             Assert.fail("Expected " + IndexOutOfBoundsException.class.getName());
+    [javac]             ^
+    [javac] /tmp/lang_25_fix/src/test/java/org/apache/commons/lang3/SystemUtilsTest.java:60: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertNotNull(dir);
+    [javac]         ^
+    [javac] /tmp/lang_25_fix/src/test/java/org/apache/commons/lang3/SystemUtilsTest.java:61: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertTrue(dir.exists());
+    [javac]         ^
+    [javac] /tmp/lang_25_fix/src/test/java/org/apache/commons/lang3/SystemUtilsTest.java:69: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertNotNull(dir);
+    [javac]         ^
+    [javac] /tmp/lang_25_fix/src/test/java/org/apache/commons/lang3/SystemUtilsTest.java:70: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertTrue(dir.exists());
+    [javac]         ^
+    [javac] /tmp/lang_25_fix/src/test/java/org/apache/commons/lang3/SystemUtilsTest.java:78: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertNotNull(dir);
+    [javac]         ^
+    [javac] /tmp/lang_25_fix/src/test/java/org/apache/commons/lang3/SystemUtilsTest.java:79: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertTrue(dir.exists());
+    [javac]         ^
+    [javac] /tmp/lang_25_fix/src/test/java/org/apache/commons/lang3/SystemUtilsTest.java:87: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertNotNull(dir);
+    [javac]         ^
+    [javac] /tmp/lang_25_fix/src/test/java/org/apache/commons/lang3/SystemUtilsTest.java:88: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertTrue(dir.exists());
+    [javac]         ^
+    [javac] /tmp/lang_25_fix/src/test/java/org/apache/commons/lang3/builder/ReflectionToStringBuilderExcludeTest.java:114: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertTrue(toString.indexOf(NOT_SECRET_FIELD) > ArrayUtils.INDEX_NOT_FOUND);
+    [javac]         ^
+    [javac] /tmp/lang_25_fix/src/test/java/org/apache/commons/lang3/builder/ReflectionToStringBuilderExcludeTest.java:115: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertTrue(toString.indexOf(NOT_SECRET_VALUE) > ArrayUtils.INDEX_NOT_FOUND);
+    [javac]         ^
+    [javac] /tmp/lang_25_fix/src/test/java/org/apache/commons/lang3/builder/ReflectionToStringBuilderExcludeTest.java:119: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertEquals(ArrayUtils.INDEX_NOT_FOUND, toString.indexOf(SECRET_VALUE));
+    [javac]         ^
+    [javac] /tmp/lang_25_fix/src/test/java/org/apache/commons/lang3/builder/ReflectionToStringBuilderExcludeTest.java:124: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertTrue(toString.indexOf(SECRET_VALUE) > 0);
+    [javac]         ^
+    [javac] /tmp/lang_25_fix/src/test/java/org/apache/commons/lang3/time/StopWatchTest.java:208: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]             Assert.assertTrue(watch.getStartTime() >= beforeStopWatch);
+    [javac]             ^
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+    [javac] 30 warnings
+
+compile.tests:
+
+BUILD SUCCESSFUL
+Total time: 8 seconds
+Running ant (test) ... OK
+Buildfile: /home/rsommerard/defects4j-nopol/defects4j/framework/projects/Lang/Lang.build.xml
+
+test-offline:
+
+get-deps:
+
+compile:
+    [javac] /tmp/lang_25_fix/maven-build.xml:75: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+compile-tests:
+    [javac] /tmp/lang_25_fix/maven-build.xml:108: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+compile.tests:
+
+test:
+    [junit] Can't test IS_JAVA value
+
+BUILD SUCCESSFUL
+Total time: 15 seconds
+Failing tests: 0

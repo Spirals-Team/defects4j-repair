@@ -1,0 +1,66 @@
+Running ant (compile) ... OK
+Buildfile: /home/rsommerard/defects4j-nopol/defects4j/framework/projects/Lang/Lang.build.xml
+
+init:
+     [echo] -------- commons-lang3 3.2-SNAPSHOT --------
+    [mkdir] Created dir: /tmp/lang_2_buggy/target
+
+compile:
+    [mkdir] Created dir: /tmp/lang_2_buggy/target/classes
+    [javac] Compiling 108 source files to /tmp/lang_2_buggy/target/classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.5
+    [javac] 1 warning
+
+BUILD SUCCESSFUL
+Total time: 8 seconds
+Running ant (compile.tests) ... OK
+Buildfile: /home/rsommerard/defects4j-nopol/defects4j/framework/projects/Lang/Lang.build.xml
+
+init:
+     [echo] -------- commons-lang3 3.2-SNAPSHOT --------
+
+compile:
+
+compile.tests:
+    [mkdir] Created dir: /tmp/lang_2_buggy/target/tests
+    [javac] Compiling 128 source files to /tmp/lang_2_buggy/target/tests
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.5
+    [javac] 1 warning
+     [copy] Copying 1 file to /tmp/lang_2_buggy/target/tests
+
+BUILD SUCCESSFUL
+Total time: 10 seconds
+Running ant (test) ... OK
+Buildfile: /home/rsommerard/defects4j-nopol/defects4j/framework/projects/Lang/Lang.build.xml
+
+init:
+     [echo] -------- commons-lang3 3.2-SNAPSHOT --------
+
+compile:
+
+compile.tests:
+
+test:
+    [junit] Ratio=123% array=100 count=1 extract=25916533 bitset=31886332
+    [junit] Ratio=46% array=100 count=10 extract=6327933 bitset=2947466
+    [junit] Ratio=11% array=100 count=50 extract=9780472 bitset=1141720
+    [junit] Ratio=3% array=100 count=100 extract=16628841 bitset=544461
+    [junit] Ratio=93% array=1000 count=10 extract=31430983 bitset=29393376
+    [junit] Ratio=105% array=1000 count=100 extract=36616357 bitset=38625195
+    [junit] Ratio=11% array=1000 count=500 extract=87870320 bitset=10449246
+    [junit] Ratio=1% array=1000 count=1000 extract=128029729 bitset=1818875
+    [junit] Ratio=7% count=0 hash=3622107 bits=288014
+    [junit] Ratio=6% count=5 hash=7506248 bits=476299
+    [junit] Ratio=8% count=10 hash=7908798 bits=636090
+    [junit] Ratio=14% count=200 hash=64574132 bits=9115050
+    [junit] Ratio=12% count=50 hash=15496618 bits=1919164
+    [junit] Ratio=14% count=100 hash=23150365 bits=3426280
+    [junit] Ratio=14% count=1000 hash=181339179 bits=26463787
+    [junit] Ratio=12% count=2000 hash=481213415 bits=62344050
+    [junit] Can't test IS_JAVA value: 1.7.0_65
+    [junit] DateUtilsTest: Default Locale=en_US
+    [junit] >>FastDateFormatTest: FastDateParser:19184  SimpleDateFormat:5151
+
+BUILD SUCCESSFUL
+Total time: 34 seconds
+Failing tests: 0
