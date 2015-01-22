@@ -1,0 +1,658 @@
+Running ant (compile) ... OK
+Buildfile: /home/rsommerard/defects4j-nopol/defects4j/framework/projects/Closure/Closure.build.xml
+
+rhino:
+
+properties:
+
+init:
+    [mkdir] Created dir: /tmp/closure_108_fix/build/lib
+    [mkdir] Created dir: /tmp/closure_108_fix/build/lib/classes
+    [mkdir] Created dir: /tmp/closure_108_fix/build/lib/rhino1_7R5pre
+
+compile:
+
+compile-most:
+    [javac] Compiling 218 source files to /tmp/closure_108_fix/build/lib/classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.5
+    [javac] Note: /tmp/closure_108_fix/lib/rhino/src/org/mozilla/javascript/commonjs/module/provider/SoftCachingModuleScriptProvider.java uses unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+    [javac] 1 warning
+     [copy] Copying 2 files to /tmp/closure_108_fix/build/lib/classes
+
+compile-jdk15:
+    [javac] Compiling 1 source file to /tmp/closure_108_fix/build/lib/classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.5
+    [javac] 1 warning
+
+compile:
+
+properties:
+
+compile:
+    [javac] Compiling 29 source files to /tmp/closure_108_fix/build/lib/classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.5
+    [javac] Note: /tmp/closure_108_fix/lib/rhino/toolsrc/org/mozilla/javascript/tools/debugger/SwingGui.java uses unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+    [javac] 1 warning
+     [copy] Copying 1 file to /tmp/closure_108_fix/build/lib/classes
+
+xmlimplsrc-compile:
+     [echo] Calling /tmp/closure_108_fix/lib/rhino/xmlimplsrc/build.xml
+
+compile:
+
+compile-all:
+
+compile:
+    [javac] Compiling 3 source files to /tmp/closure_108_fix/build/lib/classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.5
+    [javac] 1 warning
+
+jar:
+     [copy] Copying 1 file to /tmp/closure_108_fix/build/lib/classes
+      [jar] Building jar: /tmp/closure_108_fix/build/lib/rhino1_7R5pre/js.jar
+
+rhino-jarjar:
+   [jarjar] Building jar: /tmp/closure_108_fix/build/lib/rhino.jar
+
+relversion:
+
+compile:
+    [mkdir] Created dir: /tmp/closure_108_fix/build/classes
+    [javac] /tmp/closure_108_fix/build.xml:262: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 7 source files to /tmp/closure_108_fix/build/classes
+    [javac] /tmp/closure_108_fix/build.xml:268: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 520 source files to /tmp/closure_108_fix/build/classes
+    [javac] Note: /tmp/closure_108_fix/src/com/google/debugging/sourcemap/SourceMapConsumerV3.java uses unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+    [mkdir] Created dir: /tmp/closure_108_fix/build/classes/rhino_ast/java/com/google/javascript/rhino
+     [copy] Copying 1 file to /tmp/closure_108_fix/build/classes/rhino_ast/java/com/google/javascript/rhino
+     [copy] Copying 1 file to /tmp/closure_108_fix/build/classes/com/google/javascript/jscomp/parsing
+[propertyfile] Updating property file: /tmp/closure_108_fix/build/classes/com/google/javascript/jscomp/parsing/ParserConfig.properties
+    [mkdir] Created dir: /tmp/closure_108_fix/build/classes/com/google/javascript/jscomp/js
+     [copy] Copying 2 files to /tmp/closure_108_fix/build/classes/com/google/javascript/jscomp/js
+
+BUILD SUCCESSFUL
+Total time: 14 seconds
+Running ant (compile.tests) ... OK
+Buildfile: /home/rsommerard/defects4j-nopol/defects4j/framework/projects/Closure/Closure.build.xml
+
+rhino:
+
+properties:
+
+init:
+
+compile:
+
+compile-most:
+
+compile-jdk15:
+
+compile:
+
+properties:
+
+compile:
+
+xmlimplsrc-compile:
+     [echo] Calling /tmp/closure_108_fix/lib/rhino/xmlimplsrc/build.xml
+
+compile:
+
+compile-all:
+
+compile:
+
+jar:
+
+rhino-jarjar:
+   [jarjar] Updating jar: /tmp/closure_108_fix/build/lib/rhino.jar
+
+relversion:
+
+compile:
+    [javac] /tmp/closure_108_fix/build.xml:262: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] /tmp/closure_108_fix/build.xml:268: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+[propertyfile] Updating property file: /tmp/closure_108_fix/build/classes/com/google/javascript/jscomp/parsing/ParserConfig.properties
+
+compile-tests:
+    [mkdir] Created dir: /tmp/closure_108_fix/build/test
+    [javac] /tmp/closure_108_fix/build.xml:336: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 543 source files to /tmp/closure_108_fix/build/test
+    [javac] Note: /tmp/closure_108_fix/src/com/google/debugging/sourcemap/SourceMapConsumerV3.java uses unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+    [javac] /tmp/closure_108_fix/build.xml:342: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 241 source files to /tmp/closure_108_fix/build/test
+
+compile.tests:
+
+BUILD SUCCESSFUL
+Total time: 12 seconds
+Running ant (test) ... OK
+Buildfile: /home/rsommerard/defects4j-nopol/defects4j/framework/projects/Closure/Closure.build.xml
+
+rhino:
+
+properties:
+
+init:
+
+compile:
+
+compile-most:
+
+compile-jdk15:
+
+compile:
+
+properties:
+
+compile:
+
+xmlimplsrc-compile:
+     [echo] Calling /tmp/closure_108_fix/lib/rhino/xmlimplsrc/build.xml
+
+compile:
+
+compile-all:
+
+compile:
+
+jar:
+
+rhino-jarjar:
+   [jarjar] Updating jar: /tmp/closure_108_fix/build/lib/rhino.jar
+
+relversion:
+
+compile:
+    [javac] /tmp/closure_108_fix/build.xml:262: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] /tmp/closure_108_fix/build.xml:268: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+[propertyfile] Updating property file: /tmp/closure_108_fix/build/classes/com/google/javascript/jscomp/parsing/ParserConfig.properties
+
+compile-tests:
+    [javac] /tmp/closure_108_fix/build.xml:336: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] /tmp/closure_108_fix/build.xml:342: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+compile.tests:
+
+test:
+     [echo] Classpath:: /tmp/closure_108_fix/build/classes:/tmp/closure_108_fix/lib/ant-launcher.jar:/tmp/closure_108_fix/lib/ant.jar:/tmp/closure_108_fix/lib/args4j.jar:/tmp/closure_108_fix/lib/caja-r4314.jar:/tmp/closure_108_fix/lib/guava.jar:/tmp/closure_108_fix/lib/jarjar.jar:/tmp/closure_108_fix/lib/json.jar:/tmp/closure_108_fix/lib/jsr305.jar:/tmp/closure_108_fix/lib/junit.jar:/tmp/closure_108_fix/lib/mockito-core.jar:/tmp/closure_108_fix/lib/objenesis.jar:/tmp/closure_108_fix/lib/protobuf-java.jar:/tmp/closure_108_fix/build/lib/rhino.jar:/tmp/closure_108_fix/build/test
+    [junit] Running com.google.debugging.sourcemap.Base64Test
+    [junit] Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.001 sec
+    [junit] Running com.google.debugging.sourcemap.Base64VLQTest
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 0.025 sec
+    [junit] Running com.google.debugging.sourcemap.SourceMapConsumerV1Test
+    [junit] Tests run: 14, Failures: 0, Errors: 0, Time elapsed: 0.104 sec
+    [junit] Running com.google.debugging.sourcemap.SourceMapConsumerV2Test
+    [junit] Tests run: 6, Failures: 0, Errors: 0, Time elapsed: 0.036 sec
+    [junit] Running com.google.debugging.sourcemap.SourceMapConsumerV3Test
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.03 sec
+    [junit] Running com.google.debugging.sourcemap.SourceMapGeneratorV1Test
+    [junit] Tests run: 15, Failures: 0, Errors: 0, Time elapsed: 0.427 sec
+    [junit] Running com.google.debugging.sourcemap.SourceMapGeneratorV2Test
+    [junit] Tests run: 16, Failures: 0, Errors: 0, Time elapsed: 0.362 sec
+    [junit] Running com.google.debugging.sourcemap.SourceMapGeneratorV3Test
+    [junit] Tests run: 23, Failures: 0, Errors: 0, Time elapsed: 0.379 sec
+    [junit] Running com.google.javascript.jscomp.AliasExternalsTest
+    [junit] Tests run: 23, Failures: 0, Errors: 0, Time elapsed: 0.686 sec
+    [junit] Running com.google.javascript.jscomp.AliasKeywordsTest
+    [junit] Tests run: 6, Failures: 0, Errors: 0, Time elapsed: 0.362 sec
+    [junit] Running com.google.javascript.jscomp.AliasStringsTest
+    [junit] Tests run: 14, Failures: 0, Errors: 0, Time elapsed: 0.478 sec
+    [junit] Running com.google.javascript.jscomp.AmbiguatePropertiesTest
+    [junit] Tests run: 40, Failures: 0, Errors: 0, Time elapsed: 0.974 sec
+    [junit] Running com.google.javascript.jscomp.AngularPassTest
+    [junit] Tests run: 10, Failures: 0, Errors: 0, Time elapsed: 0.341 sec
+    [junit] Running com.google.javascript.jscomp.AstParallelizerTest
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.217 sec
+    [junit] Running com.google.javascript.jscomp.AstValidatorTest
+    [junit] Tests run: 7, Failures: 0, Errors: 0, Time elapsed: 0.274 sec
+    [junit] Running com.google.javascript.jscomp.BasicErrorManagerTest
+    [junit] Tests run: 9, Failures: 0, Errors: 0, Time elapsed: 0 sec
+    [junit] Running com.google.javascript.jscomp.CallGraphTest
+    [junit] Tests run: 38, Failures: 0, Errors: 0, Time elapsed: 0.532 sec
+    [junit] Running com.google.javascript.jscomp.ChainCallsTest
+    [junit] Tests run: 6, Failures: 0, Errors: 0, Time elapsed: 0.303 sec
+    [junit] Running com.google.javascript.jscomp.CheckAccessControlsTest
+    [junit] Tests run: 87, Failures: 0, Errors: 0, Time elapsed: 1.584 sec
+    [junit] Running com.google.javascript.jscomp.CheckDebuggerStatementTest
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 0.263 sec
+    [junit] Running com.google.javascript.jscomp.CheckEventfulObjectDisposalTest
+    [junit] Tests run: 22, Failures: 0, Errors: 0, Time elapsed: 0.972 sec
+    [junit] Running com.google.javascript.jscomp.CheckGlobalNamesTest
+    [junit] Tests run: 46, Failures: 0, Errors: 0, Time elapsed: 0.672 sec
+    [junit] Running com.google.javascript.jscomp.CheckGlobalThisTest
+    [junit] Tests run: 48, Failures: 0, Errors: 0, Time elapsed: 0.517 sec
+    [junit] Running com.google.javascript.jscomp.CheckMissingGetCssNameTest
+    [junit] Tests run: 6, Failures: 0, Errors: 0, Time elapsed: 0.266 sec
+    [junit] Running com.google.javascript.jscomp.CheckMissingReturnTest
+    [junit] Tests run: 8, Failures: 0, Errors: 0, Time elapsed: 0.625 sec
+    [junit] Running com.google.javascript.jscomp.CheckPathsBetweenNodesTest
+    [junit] Tests run: 10, Failures: 0, Errors: 0, Time elapsed: 0.014 sec
+    [junit] Running com.google.javascript.jscomp.CheckProvidesTest
+    [junit] Tests run: 10, Failures: 0, Errors: 0, Time elapsed: 0.261 sec
+    [junit] Running com.google.javascript.jscomp.CheckRegExpTest
+    [junit] Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.38 sec
+    [junit] Running com.google.javascript.jscomp.CheckRequiresForConstructorsTest
+    [junit] Tests run: 29, Failures: 0, Errors: 0, Time elapsed: 0.424 sec
+    [junit] Running com.google.javascript.jscomp.CheckSideEffectsTest
+    [junit] Tests run: 6, Failures: 0, Errors: 0, Time elapsed: 0.409 sec
+    [junit] Running com.google.javascript.jscomp.CheckSuspiciousCodeTest
+    [junit] Tests run: 6, Failures: 0, Errors: 0, Time elapsed: 0.467 sec
+    [junit] Running com.google.javascript.jscomp.CheckUnreachableCodeTest
+    [junit] Tests run: 20, Failures: 0, Errors: 0, Time elapsed: 0.535 sec
+    [junit] Running com.google.javascript.jscomp.CleanupPassesTest
+    [junit] Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.002 sec
+    [junit] Running com.google.javascript.jscomp.ClosureCodeRemovalTest
+    [junit] Tests run: 10, Failures: 0, Errors: 0, Time elapsed: 0.265 sec
+    [junit] Running com.google.javascript.jscomp.ClosureCodingConventionTest
+    [junit] Tests run: 24, Failures: 0, Errors: 0, Time elapsed: 0.222 sec
+    [junit] Running com.google.javascript.jscomp.ClosureOptimizePrimitivesTest
+    [junit] Tests run: 7, Failures: 0, Errors: 0, Time elapsed: 0.246 sec
+    [junit] Running com.google.javascript.jscomp.ClosureReverseAbstractInterpreterTest
+    [junit] Tests run: 34, Failures: 0, Errors: 0, Time elapsed: 0.338 sec
+    [junit] Running com.google.javascript.jscomp.ClosureRewriteClassTest
+    [junit] Tests run: 13, Failures: 0, Errors: 0, Time elapsed: 0.356 sec
+    [junit] Running com.google.javascript.jscomp.CoalesceVariableNamesTest
+    [junit] Tests run: 28, Failures: 0, Errors: 0, Time elapsed: 0.678 sec
+    [junit] Running com.google.javascript.jscomp.CodePrinterTest
+    [junit] Tests run: 72, Failures: 0, Errors: 0, Time elapsed: 0.892 sec
+    [junit] Running com.google.javascript.jscomp.CollapseAnonymousFunctionsTest
+    [junit] Tests run: 19, Failures: 0, Errors: 0, Time elapsed: 0.36 sec
+    [junit] Running com.google.javascript.jscomp.CollapsePropertiesTest
+    [junit] Tests run: 241, Failures: 0, Errors: 0, Time elapsed: 1.456 sec
+    [junit] Running com.google.javascript.jscomp.CollapseVariableDeclarationsTest
+    [junit] Tests run: 6, Failures: 0, Errors: 0, Time elapsed: 0.308 sec
+    [junit] Running com.google.javascript.jscomp.CombinedCompilerPassTest
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.174 sec
+    [junit] Running com.google.javascript.jscomp.CommandLineRunnerTest
+    [junit] Tests run: 114, Failures: 0, Errors: 0, Time elapsed: 2.442 sec
+    [junit] Running com.google.javascript.jscomp.CompilerOptionsTest
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.036 sec
+    [junit] Running com.google.javascript.jscomp.CompilerTest
+    [junit] Tests run: 6, Failures: 0, Errors: 0, Time elapsed: 0.366 sec
+    [junit] Running com.google.javascript.jscomp.ConcreteTypeTest
+    [junit] Tests run: 6, Failures: 0, Errors: 0, Time elapsed: 0.067 sec
+    [junit] Running com.google.javascript.jscomp.ConstCheckTest
+    [junit] Tests run: 28, Failures: 0, Errors: 0, Time elapsed: 0.361 sec
+    [junit] Running com.google.javascript.jscomp.ConstParamCheckTest
+    [junit] Tests run: 13, Failures: 0, Errors: 0, Time elapsed: 0.325 sec
+    [junit] Running com.google.javascript.jscomp.ControlFlowAnalysisTest
+    [junit] Tests run: 41, Failures: 0, Errors: 0, Time elapsed: 0.248 sec
+    [junit] Running com.google.javascript.jscomp.ControlStructureCheckTest
+    [junit] Tests run: 17, Failures: 0, Errors: 0, Time elapsed: 0.281 sec
+    [junit] Running com.google.javascript.jscomp.ConvertToDottedPropertiesTest
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.366 sec
+    [junit] Running com.google.javascript.jscomp.CreateSyntheticBlocksTest
+    [junit] Tests run: 13, Failures: 0, Errors: 0, Time elapsed: 0.301 sec
+    [junit] Running com.google.javascript.jscomp.CrossModuleCodeMotionTest
+    [junit] Tests run: 45, Failures: 0, Errors: 0, Time elapsed: 0.363 sec
+    [junit] Running com.google.javascript.jscomp.CrossModuleMethodMotionTest
+    [junit] Tests run: 27, Failures: 0, Errors: 0, Time elapsed: 0.423 sec
+    [junit] Running com.google.javascript.jscomp.DataFlowAnalysisTest
+    [junit] Tests run: 7, Failures: 0, Errors: 0, Time elapsed: 0.021 sec
+    [junit] Running com.google.javascript.jscomp.DeadAssignmentsEliminationTest
+    [junit] Tests run: 47, Failures: 0, Errors: 0, Time elapsed: 0.873 sec
+    [junit] Running com.google.javascript.jscomp.DefaultCodingConventionTest
+    [junit] Tests run: 17, Failures: 0, Errors: 0, Time elapsed: 0.202 sec
+    [junit] Running com.google.javascript.jscomp.DefinitionsRemoverTest
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 0.296 sec
+    [junit] Running com.google.javascript.jscomp.DenormalizeTest
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.311 sec
+    [junit] Running com.google.javascript.jscomp.DevirtualizePrototypeMethodsTest
+    [junit] Tests run: 44, Failures: 0, Errors: 0, Time elapsed: 0.539 sec
+    [junit] Running com.google.javascript.jscomp.DiagnosticGroupTest
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.054 sec
+    [junit] Running com.google.javascript.jscomp.DisambiguatePrivatePropertiesTest
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.323 sec
+    [junit] Running com.google.javascript.jscomp.DisambiguatePropertiesTest
+    [junit] Tests run: 65, Failures: 0, Errors: 0, Time elapsed: 1.724 sec
+    [junit] Running com.google.javascript.jscomp.DotFormatterTest
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.003 sec
+    [junit] Running com.google.javascript.jscomp.ExpandJqueryAliasesTest
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.391 sec
+    [junit] Running com.google.javascript.jscomp.ExploitAssignsTest
+    [junit] Tests run: 9, Failures: 0, Errors: 0, Time elapsed: 0.495 sec
+    [junit] Running com.google.javascript.jscomp.ExportTestFunctionsTest
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.336 sec
+    [junit] Running com.google.javascript.jscomp.ExpressionDecomposerTest
+    [junit] Tests run: 35, Failures: 0, Errors: 0, Time elapsed: 0.322 sec
+    [junit] Running com.google.javascript.jscomp.ExternExportsPassTest
+    [junit] Tests run: 31, Failures: 0, Errors: 0, Time elapsed: 0.565 sec
+    [junit] Running com.google.javascript.jscomp.ExtractPrototypeMemberDeclarationsTest
+    [junit] Tests run: 12, Failures: 0, Errors: 0, Time elapsed: 0.428 sec
+    [junit] Running com.google.javascript.jscomp.FixedPointGraphTraversalTest
+    [junit] Tests run: 9, Failures: 0, Errors: 0, Time elapsed: 0.016 sec
+    [junit] Running com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest
+    [junit] Tests run: 76, Failures: 0, Errors: 0, Time elapsed: 1.261 sec
+    [junit] Running com.google.javascript.jscomp.FunctionArgumentInjectorTest
+    [junit] Tests run: 39, Failures: 0, Errors: 0, Time elapsed: 0.252 sec
+    [junit] Running com.google.javascript.jscomp.FunctionInjectorTest
+    [junit] Tests run: 133, Failures: 0, Errors: 0, Time elapsed: 0.455 sec
+    [junit] Running com.google.javascript.jscomp.FunctionNamesTest
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.222 sec
+    [junit] Running com.google.javascript.jscomp.FunctionRewriterTest
+    [junit] Tests run: 15, Failures: 0, Errors: 0, Time elapsed: 0.43 sec
+    [junit] Running com.google.javascript.jscomp.FunctionToBlockMutatorTest
+    [junit] Tests run: 15, Failures: 0, Errors: 0, Time elapsed: 0.234 sec
+    [junit] Running com.google.javascript.jscomp.FunctionTypeBuilderTest
+    [junit] Tests run: 9, Failures: 0, Errors: 0, Time elapsed: 0.367 sec
+    [junit] Running com.google.javascript.jscomp.GatherCharacterEncodingBiasTest
+    [junit] Tests run: 16, Failures: 0, Errors: 0, Time elapsed: 0.288 sec
+    [junit] Running com.google.javascript.jscomp.GatherRawExportsTest
+    [junit] Tests run: 18, Failures: 0, Errors: 0, Time elapsed: 0.327 sec
+    [junit] Running com.google.javascript.jscomp.GatherSideEffectSubexpressionsCallbackTest
+    [junit] Tests run: 7, Failures: 0, Errors: 0, Time elapsed: 0.14 sec
+    [junit] Running com.google.javascript.jscomp.GenerateExportsTest
+    [junit] Tests run: 14, Failures: 0, Errors: 0, Time elapsed: 0.329 sec
+    [junit] Running com.google.javascript.jscomp.GlobalNamespaceTest
+    [junit] Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.005 sec
+    [junit] Running com.google.javascript.jscomp.GlobalVarReferenceMapTest
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 0.002 sec
+    [junit] Running com.google.javascript.jscomp.GoogleCodingConventionTest
+    [junit] Tests run: 16, Failures: 0, Errors: 0, Time elapsed: 0.188 sec
+    [junit] Running com.google.javascript.jscomp.GroupVariableDeclarationsTest
+    [junit] Tests run: 7, Failures: 0, Errors: 0, Time elapsed: 0.385 sec
+    [junit] Running com.google.javascript.jscomp.IgnoreCajaPropertiesTest
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 0.272 sec
+    [junit] Running com.google.javascript.jscomp.InferJSDocInfoTest
+    [junit] Tests run: 6, Failures: 0, Errors: 0, Time elapsed: 0.308 sec
+    [junit] Running com.google.javascript.jscomp.InlineCostEstimatorTest
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.207 sec
+    [junit] Running com.google.javascript.jscomp.InlineFunctionsTest
+    [junit] Tests run: 233, Failures: 0, Errors: 0, Time elapsed: 1.575 sec
+    [junit] Running com.google.javascript.jscomp.InlineObjectLiteralsTest
+    [junit] Tests run: 31, Failures: 0, Errors: 0, Time elapsed: 0.63 sec
+    [junit] Running com.google.javascript.jscomp.InlinePropertiesTest
+    [junit] Tests run: 13, Failures: 0, Errors: 0, Time elapsed: 0.459 sec
+    [junit] Running com.google.javascript.jscomp.InlineSimpleMethodsTest
+    [junit] Tests run: 35, Failures: 0, Errors: 0, Time elapsed: 0.482 sec
+    [junit] Running com.google.javascript.jscomp.InlineVariablesConstantsTest
+    [junit] Tests run: 10, Failures: 0, Errors: 0, Time elapsed: 0.419 sec
+    [junit] Running com.google.javascript.jscomp.InlineVariablesTest
+    [junit] Tests run: 135, Failures: 0, Errors: 0, Time elapsed: 1.092 sec
+    [junit] Running com.google.javascript.jscomp.InstrumentFunctionsTest
+    [junit] Tests run: 14, Failures: 0, Errors: 0, Time elapsed: 0.477 sec
+    [junit] Running com.google.javascript.jscomp.InstrumentMemoryAllocPassTest
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.29 sec
+    [junit] Running com.google.javascript.jscomp.IntegrationTest
+    [junit] Tests run: 190, Failures: 0, Errors: 0, Time elapsed: 2.238 sec
+    [junit] Running com.google.javascript.jscomp.JSCompilerSourceExcerptProviderTest
+    [junit] Tests run: 7, Failures: 0, Errors: 0, Time elapsed: 0.146 sec
+    [junit] Running com.google.javascript.jscomp.JSModuleGraphTest
+    [junit] Tests run: 11, Failures: 0, Errors: 0, Time elapsed: 0.17 sec
+    [junit] Running com.google.javascript.jscomp.JSModuleTest
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.16 sec
+    [junit] Running com.google.javascript.jscomp.JsMessageExtractorTest
+    [junit] Tests run: 10, Failures: 0, Errors: 0, Time elapsed: 0.217 sec
+    [junit] Running com.google.javascript.jscomp.JsMessageTest
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.009 sec
+    [junit] Running com.google.javascript.jscomp.JsMessageVisitorTest
+    [junit] Tests run: 42, Failures: 0, Errors: 0, Time elapsed: 0.24 sec
+    [junit] Running com.google.javascript.jscomp.LightweightMessageFormatterTest
+    [junit] Tests run: 12, Failures: 0, Errors: 0, Time elapsed: 0.012 sec
+    [junit] Running com.google.javascript.jscomp.LinkedFlowScopeTest
+    [junit] Tests run: 10, Failures: 0, Errors: 0, Time elapsed: 0.502 sec
+    [junit] Running com.google.javascript.jscomp.LiveVariableAnalysisTest
+    [junit] Tests run: 21, Failures: 0, Errors: 0, Time elapsed: 0.349 sec
+    [junit] Running com.google.javascript.jscomp.LooseTypeCheckTest
+    [junit] Tests run: 781, Failures: 0, Errors: 0, Time elapsed: 4.214 sec
+    [junit] Running com.google.javascript.jscomp.MakeDeclaredNamesUniqueTest
+    [junit] Tests run: 14, Failures: 0, Errors: 0, Time elapsed: 0.543 sec
+    [junit] Running com.google.javascript.jscomp.MarkNoSideEffectCallsTest
+    [junit] Tests run: 19, Failures: 0, Errors: 0, Time elapsed: 0.597 sec
+    [junit] Running com.google.javascript.jscomp.MaybeReachingVariableUseTest
+    [junit] Tests run: 11, Failures: 0, Errors: 0, Time elapsed: 0.262 sec
+    [junit] Running com.google.javascript.jscomp.MemoizedScopeCreatorTest
+    [junit] Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.14 sec
+    [junit] Running com.google.javascript.jscomp.MinimizeExitPointsTest
+    [junit] Tests run: 7, Failures: 0, Errors: 0, Time elapsed: 0.608 sec
+    [junit] Running com.google.javascript.jscomp.MinimizedConditionTest
+    [junit] Tests run: 6, Failures: 0, Errors: 0, Time elapsed: 0.231 sec
+    [junit] Running com.google.javascript.jscomp.MoveFunctionDeclarationsTest
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.278 sec
+    [junit] Running com.google.javascript.jscomp.MultiPassTest
+    [junit] Tests run: 7, Failures: 0, Errors: 0, Time elapsed: 0.361 sec
+    [junit] Running com.google.javascript.jscomp.MustBeReachingVariableDefTest
+    [junit] Tests run: 20, Failures: 0, Errors: 0, Time elapsed: 0.273 sec
+    [junit] Running com.google.javascript.jscomp.NameAnalyzerTest
+    [junit] Tests run: 335, Failures: 0, Errors: 0, Time elapsed: 1.604 sec
+    [junit] Running com.google.javascript.jscomp.NameAnonymousFunctionsMappedTest
+    [junit] Tests run: 15, Failures: 0, Errors: 0, Time elapsed: 0.321 sec
+    [junit] Running com.google.javascript.jscomp.NameAnonymousFunctionsTest
+    [junit] Tests run: 14, Failures: 0, Errors: 0, Time elapsed: 0.314 sec
+    [junit] Running com.google.javascript.jscomp.NodeIteratorsTest
+    [junit] Tests run: 17, Failures: 0, Errors: 0, Time elapsed: 0.208 sec
+    [junit] Running com.google.javascript.jscomp.NodeTraversalTest
+    [junit] Tests run: 6, Failures: 0, Errors: 0, Time elapsed: 0.19 sec
+    [junit] Running com.google.javascript.jscomp.NodeUtilTest
+    [junit] Tests run: 55, Failures: 0, Errors: 0, Time elapsed: 0.546 sec
+    [junit] Running com.google.javascript.jscomp.NormalizeTest
+    [junit] Tests run: 32, Failures: 0, Errors: 0, Time elapsed: 0.724 sec
+    [junit] Running com.google.javascript.jscomp.ObjectPropertyStringPostprocessTest
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.236 sec
+    [junit] Running com.google.javascript.jscomp.ObjectPropertyStringPreprocessTest
+    [junit] Tests run: 6, Failures: 0, Errors: 0, Time elapsed: 0.233 sec
+    [junit] Running com.google.javascript.jscomp.OptimizeArgumentsArrayTest
+    [junit] Tests run: 18, Failures: 0, Errors: 0, Time elapsed: 0.376 sec
+    [junit] Running com.google.javascript.jscomp.OptimizeCallsTest
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.257 sec
+    [junit] Running com.google.javascript.jscomp.OptimizeParametersTest
+    [junit] Tests run: 56, Failures: 0, Errors: 0, Time elapsed: 0.964 sec
+    [junit] Running com.google.javascript.jscomp.OptimizeReturnsTest
+    [junit] Tests run: 22, Failures: 0, Errors: 0, Time elapsed: 0.388 sec
+    [junit] Running com.google.javascript.jscomp.PeepholeCollectPropertyAssignmentsTest
+    [junit] Tests run: 34, Failures: 0, Errors: 0, Time elapsed: 0.425 sec
+    [junit] Running com.google.javascript.jscomp.PeepholeFoldConstantsTest
+    [junit] Tests run: 58, Failures: 0, Errors: 0, Time elapsed: 3.673 sec
+    [junit] Running com.google.javascript.jscomp.PeepholeFoldWithTypesTest
+    [junit] Tests run: 8, Failures: 0, Errors: 0, Time elapsed: 0.334 sec
+    [junit] Running com.google.javascript.jscomp.PeepholeIntegrationTest
+    [junit] Tests run: 35, Failures: 0, Errors: 0, Time elapsed: 0.732 sec
+    [junit] Running com.google.javascript.jscomp.PeepholeMinimizeConditionsTest
+    [junit] Tests run: 46, Failures: 0, Errors: 0, Time elapsed: 0.958 sec
+    [junit] Running com.google.javascript.jscomp.PeepholeOptimizationsPassTest
+    [junit] Tests run: 7, Failures: 0, Errors: 0, Time elapsed: 0.303 sec
+    [junit] Running com.google.javascript.jscomp.PeepholeRemoveDeadCodeTest
+    [junit] Tests run: 80, Failures: 0, Errors: 0, Time elapsed: 1.171 sec
+    [junit] Running com.google.javascript.jscomp.PeepholeReplaceKnownMethodsTest
+    [junit] Tests run: 14, Failures: 0, Errors: 0, Time elapsed: 0.767 sec
+    [junit] Running com.google.javascript.jscomp.PeepholeSimplifyRegExpTest
+    [junit] Tests run: 15, Failures: 0, Errors: 0, Time elapsed: 0.783 sec
+    [junit] Running com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntaxTest
+    [junit] Tests run: 23, Failures: 0, Errors: 0, Time elapsed: 1.019 sec
+    [junit] Running com.google.javascript.jscomp.PerformanceTrackerTest
+    [junit] Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.08 sec
+    [junit] Running com.google.javascript.jscomp.PhaseOptimizerTest
+    [junit] Tests run: 13, Failures: 0, Errors: 0, Time elapsed: 0.145 sec
+    [junit] Running com.google.javascript.jscomp.PrepareAstTest
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.193 sec
+    [junit] Running com.google.javascript.jscomp.ProcessClosurePrimitivesTest
+    [junit] Tests run: 83, Failures: 0, Errors: 0, Time elapsed: 0.717 sec
+    [junit] Running com.google.javascript.jscomp.ProcessCommonJSModulesTest
+    [junit] Tests run: 7, Failures: 0, Errors: 0, Time elapsed: 0.381 sec
+    [junit] Running com.google.javascript.jscomp.ProcessDefinesTest
+    [junit] Tests run: 39, Failures: 0, Errors: 0, Time elapsed: 0.426 sec
+    [junit] Running com.google.javascript.jscomp.ProcessTweaksTest
+    [junit] Tests run: 35, Failures: 0, Errors: 0, Time elapsed: 0.431 sec
+    [junit] Running com.google.javascript.jscomp.PureFunctionIdentifierTest
+    [junit] Tests run: 117, Failures: 0, Errors: 0, Time elapsed: 4.461 sec
+    [junit] Running com.google.javascript.jscomp.RecordFunctionInformationTest
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.299 sec
+    [junit] Running com.google.javascript.jscomp.RemoveTryCatchTest
+    [junit] Tests run: 8, Failures: 0, Errors: 0, Time elapsed: 0.296 sec
+    [junit] Running com.google.javascript.jscomp.RemoveUnusedClassPropertiesTest
+    [junit] Tests run: 18, Failures: 0, Errors: 0, Time elapsed: 0.475 sec
+    [junit] Running com.google.javascript.jscomp.RemoveUnusedNamesTest
+    [junit] Tests run: 7, Failures: 0, Errors: 0, Time elapsed: 0.349 sec
+    [junit] Running com.google.javascript.jscomp.RemoveUnusedPrototypePropertiesTest
+    [junit] Tests run: 30, Failures: 0, Errors: 0, Time elapsed: 0.628 sec
+    [junit] Running com.google.javascript.jscomp.RemoveUnusedVarsTest
+    [junit] Tests run: 83, Failures: 0, Errors: 0, Time elapsed: 1.012 sec
+    [junit] Running com.google.javascript.jscomp.RenameLabelsTest
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.323 sec
+    [junit] Running com.google.javascript.jscomp.RenameLocalVarsTest
+    [junit] Tests run: 14, Failures: 0, Errors: 0, Time elapsed: 0.324 sec
+    [junit] Running com.google.javascript.jscomp.RenamePropertiesTest
+    [junit] Tests run: 39, Failures: 0, Errors: 0, Time elapsed: 0.698 sec
+    [junit] Running com.google.javascript.jscomp.RenamePrototypesTest
+    [junit] Tests run: 12, Failures: 0, Errors: 0, Time elapsed: 0.551 sec
+    [junit] Running com.google.javascript.jscomp.RenameVars2Test
+    [junit] Tests run: 42, Failures: 0, Errors: 0, Time elapsed: 0.603 sec
+    [junit] Running com.google.javascript.jscomp.RenameVarsTest
+    [junit] Tests run: 42, Failures: 0, Errors: 0, Time elapsed: 0.596 sec
+    [junit] Running com.google.javascript.jscomp.ReorderConstantExpressionTest
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.74 sec
+    [junit] Running com.google.javascript.jscomp.ReplaceCssNamesTest
+    [junit] Tests run: 16, Failures: 0, Errors: 0, Time elapsed: 0.432 sec
+    [junit] Running com.google.javascript.jscomp.ReplaceIdGeneratorsTest
+    [junit] Tests run: 23, Failures: 0, Errors: 0, Time elapsed: 0.523 sec
+    [junit] Running com.google.javascript.jscomp.ReplaceMessagesForChromeTest
+    [junit] Tests run: 7, Failures: 0, Errors: 0, Time elapsed: 0.285 sec
+    [junit] Running com.google.javascript.jscomp.ReplaceMessagesTest
+    [junit] Tests run: 34, Failures: 0, Errors: 0, Time elapsed: 0.403 sec
+    [junit] Running com.google.javascript.jscomp.ReplaceStringsTest
+    [junit] Tests run: 31, Failures: 0, Errors: 0, Time elapsed: 0.891 sec
+    [junit] Running com.google.javascript.jscomp.RescopeGlobalSymbolsTest
+    [junit] Tests run: 10, Failures: 0, Errors: 0, Time elapsed: 0.494 sec
+    [junit] Running com.google.javascript.jscomp.RhinoErrorReporterTest
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.213 sec
+    [junit] Running com.google.javascript.jscomp.RuntimeTypeCheckTest
+    [junit] Tests run: 20, Failures: 0, Errors: 0, Time elapsed: 1.301 sec
+    [junit] Running com.google.javascript.jscomp.SanityCheckTest
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.264 sec
+    [junit] Running com.google.javascript.jscomp.ScopedAliasesTest
+    [junit] Tests run: 62, Failures: 0, Errors: 0, Time elapsed: 0.664 sec
+    [junit] Running com.google.javascript.jscomp.SemanticReverseAbstractInterpreterTest
+    [junit] Tests run: 31, Failures: 0, Errors: 0, Time elapsed: 0.331 sec
+    [junit] Running com.google.javascript.jscomp.ShadowVariables2Test
+    [junit] Tests run: 21, Failures: 0, Errors: 0, Time elapsed: 0.421 sec
+    [junit] Running com.google.javascript.jscomp.ShadowVariablesTest
+    [junit] Tests run: 21, Failures: 0, Errors: 0, Time elapsed: 0.426 sec
+    [junit] Running com.google.javascript.jscomp.SideEffectsAnalysisTest
+    [junit] Tests run: 7, Failures: 0, Errors: 0, Time elapsed: 0.557 sec
+    [junit] Running com.google.javascript.jscomp.SimpleDefinitionFinderTest
+    [junit] Tests run: 10, Failures: 0, Errors: 0, Time elapsed: 0.459 sec
+    [junit] Running com.google.javascript.jscomp.SimpleFunctionAliasAnalysisTest
+    [junit] Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.298 sec
+    [junit] Running com.google.javascript.jscomp.SourceInformationAnnotatorTest
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.088 sec
+    [junit] Running com.google.javascript.jscomp.SourceMapTest
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.245 sec
+    [junit] Running com.google.javascript.jscomp.SpecializeModuleTest$SpecializeModuleSpecializationStateTest
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.26 sec
+    [junit] Running com.google.javascript.jscomp.SpecializeModuleTest
+    [junit] Tests run: 12, Failures: 0, Errors: 0, Time elapsed: 0.409 sec
+    [junit] Running com.google.javascript.jscomp.StatementFusionTest
+    [junit] Tests run: 19, Failures: 0, Errors: 0, Time elapsed: 0.47 sec
+    [junit] Running com.google.javascript.jscomp.StrictModeCheckTest
+    [junit] Tests run: 36, Failures: 0, Errors: 0, Time elapsed: 0.494 sec
+    [junit] Running com.google.javascript.jscomp.StripCodeTest
+    [junit] Tests run: 59, Failures: 0, Errors: 0, Time elapsed: 0.585 sec
+    [junit] Running com.google.javascript.jscomp.SymbolTableTest
+    [junit] Tests run: 51, Failures: 0, Errors: 0, Time elapsed: 1.451 sec
+    [junit] Running com.google.javascript.jscomp.SyntacticScopeCreatorTest
+    [junit] Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.202 sec
+    [junit] Running com.google.javascript.jscomp.TightenTypesTest
+    [junit] Tests run: 44, Failures: 0, Errors: 0, Time elapsed: 0.898 sec
+    [junit] Running com.google.javascript.jscomp.TransformAMDToCJSModuleTest
+    [junit] Tests run: 7, Failures: 0, Errors: 0, Time elapsed: 0.378 sec
+    [junit] Running com.google.javascript.jscomp.TypeCheckFunctionCheckTest
+    [junit] Tests run: 15, Failures: 0, Errors: 0, Time elapsed: 0.616 sec
+    [junit] Running com.google.javascript.jscomp.TypeCheckTest
+    [junit] Tests run: 1236, Failures: 0, Errors: 0, Time elapsed: 5.252 sec
+    [junit] Running com.google.javascript.jscomp.TypeInferenceTest
+    [junit] Tests run: 115, Failures: 0, Errors: 0, Time elapsed: 0.955 sec
+    [junit] Running com.google.javascript.jscomp.TypeValidatorTest
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 0.337 sec
+    [junit] Running com.google.javascript.jscomp.TypedScopeCreatorTest
+    [junit] Tests run: 125, Failures: 0, Errors: 0, Time elapsed: 1.032 sec
+    [junit] Running com.google.javascript.jscomp.UnreachableCodeEliminationTest
+    [junit] Tests run: 28, Failures: 0, Errors: 0, Time elapsed: 0.739 sec
+    [junit] Running com.google.javascript.jscomp.VarCheckTest
+    [junit] Tests run: 48, Failures: 0, Errors: 0, Time elapsed: 0.43 sec
+    [junit] Running com.google.javascript.jscomp.VariableMapTest
+    [junit] Tests run: 8, Failures: 0, Errors: 0, Time elapsed: 0.04 sec
+    [junit] Running com.google.javascript.jscomp.VariableReferenceCheckTest
+    [junit] Tests run: 26, Failures: 0, Errors: 0, Time elapsed: 0.492 sec
+    [junit] Running com.google.javascript.jscomp.VariableVisibilityAnalysisTest
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.257 sec
+    [junit] Running com.google.javascript.jscomp.XtbMessageBundleTest
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.037 sec
+    [junit] Running com.google.javascript.jscomp.deps.DepsFileParserTest
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 0.035 sec
+    [junit] Running com.google.javascript.jscomp.deps.JsFileLineParserTest
+    [junit] Tests run: 10, Failures: 0, Errors: 0, Time elapsed: 0.016 sec
+    [junit] Running com.google.javascript.jscomp.deps.JsFileParserTest
+    [junit] Tests run: 9, Failures: 0, Errors: 0, Time elapsed: 0.034 sec
+    [junit] Running com.google.javascript.jscomp.deps.JsFunctionParserTest
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 0.021 sec
+    [junit] Running com.google.javascript.jscomp.deps.SortedDependenciesTest
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 0.049 sec
+    [junit] Running com.google.javascript.jscomp.fuzzing.FuzzerTest
+    [junit] Tests run: 30, Failures: 0, Errors: 0, Time elapsed: 0.505 sec
+    [junit] Running com.google.javascript.jscomp.graph.GraphColoringTest
+    [junit] Tests run: 7, Failures: 0, Errors: 0, Time elapsed: 0.263 sec
+    [junit] Running com.google.javascript.jscomp.graph.GraphPrunerTest
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 0.021 sec
+    [junit] Running com.google.javascript.jscomp.graph.GraphReachabilityTest
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.02 sec
+    [junit] Running com.google.javascript.jscomp.graph.GraphTest
+    [junit] Tests run: 13, Failures: 0, Errors: 0, Time elapsed: 0.024 sec
+    [junit] Running com.google.javascript.jscomp.graph.StandardUnionFindTest
+    [junit] Tests run: 13, Failures: 0, Errors: 0, Time elapsed: 0.041 sec
+    [junit] Running com.google.javascript.jscomp.jsonml.JsonMLConversionTest
+    [junit] Tests run: 34, Failures: 0, Errors: 0, Time elapsed: 0.873 sec
+    [junit] Running com.google.javascript.jscomp.jsonml.JsonMLValidationTest
+    [junit] Tests run: 35, Failures: 0, Errors: 0, Time elapsed: 0.019 sec
+    [junit] Running com.google.javascript.jscomp.jsonml.SecureCompilerTest
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.294 sec
+    [junit] Running com.google.javascript.jscomp.parsing.IRFactoryTest
+    [junit] Tests run: 54, Failures: 0, Errors: 0, Time elapsed: 0.354 sec
+    [junit] Running com.google.javascript.jscomp.parsing.JsDocInfoParserTest
+    [junit] Tests run: 446, Failures: 0, Errors: 0, Time elapsed: 0.649 sec
+    [junit] Running com.google.javascript.jscomp.parsing.JsDocTokenStreamTest
+    [junit] Tests run: 21, Failures: 0, Errors: 0, Time elapsed: 0.016 sec
+    [junit] Running com.google.javascript.jscomp.parsing.ParserTest
+    [junit] Tests run: 123, Failures: 0, Errors: 0, Time elapsed: 0.46 sec
+    [junit] Running com.google.javascript.jscomp.regex.CharRangesTest
+    [junit] Tests run: 7, Failures: 0, Errors: 0, Time elapsed: 0.044 sec
+    [junit] Running com.google.javascript.rhino.IRTest
+    [junit] Tests run: 15, Failures: 0, Errors: 0, Time elapsed: 0.01 sec
+    [junit] Running com.google.javascript.rhino.JSDocInfoTest
+    [junit] Tests run: 25, Failures: 0, Errors: 0, Time elapsed: 0.004 sec
+    [junit] Running com.google.javascript.rhino.NodeTest
+    [junit] Tests run: 34, Failures: 0, Errors: 0, Time elapsed: 0.075 sec
+    [junit] Running com.google.javascript.rhino.jstype.BooleanLiteralSetTest
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.001 sec
+    [junit] Running com.google.javascript.rhino.jstype.EnumElementTypeTest
+    [junit] Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.068 sec
+    [junit] Running com.google.javascript.rhino.jstype.FunctionParamBuilderTest
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.063 sec
+    [junit] Running com.google.javascript.rhino.jstype.FunctionTypeTest
+    [junit] Tests run: 24, Failures: 0, Errors: 0, Time elapsed: 0.135 sec
+    [junit] Running com.google.javascript.rhino.jstype.JSTypeRegistryTest
+    [junit] Tests run: 7, Failures: 0, Errors: 0, Time elapsed: 0.159 sec
+    [junit] Running com.google.javascript.rhino.jstype.JSTypeTest
+    [junit] Tests run: 143, Failures: 0, Errors: 0, Time elapsed: 0.964 sec
+    [junit] Running com.google.javascript.rhino.jstype.NamedTypeTest
+    [junit] Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.083 sec
+    [junit] Running com.google.javascript.rhino.jstype.PrototypeObjectTypeTest
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.07 sec
+    [junit] Running com.google.javascript.rhino.jstype.RecordTypeTest
+    [junit] Tests run: 7, Failures: 0, Errors: 0, Time elapsed: 0.094 sec
+    [junit] Running com.google.javascript.rhino.jstype.TemplatizedTypeTest
+    [junit] Tests run: 6, Failures: 0, Errors: 0, Time elapsed: 0.082 sec
+    [junit] Running com.google.javascript.rhino.jstype.TernaryValueTest
+    [junit] Tests run: 7, Failures: 0, Errors: 0, Time elapsed: 0.002 sec
+    [junit] Running com.google.javascript.rhino.jstype.UnionTypeBuilderTest
+    [junit] Tests run: 7, Failures: 0, Errors: 0, Time elapsed: 0.081 sec
+    [junit] Running com.google.javascript.rhino.jstype.UnionTypeTest
+    [junit] Tests run: 20, Failures: 0, Errors: 0, Time elapsed: 0.125 sec
+
+BUILD SUCCESSFUL
+Total time: 2 minutes 1 second
+Failing tests: 0
