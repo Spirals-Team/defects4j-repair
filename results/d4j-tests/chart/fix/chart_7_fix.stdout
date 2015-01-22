@@ -1,0 +1,1050 @@
+Running ant (compile) ... OK
+Buildfile: /home/rsommerard/defects4j-nopol/defects4j/framework/projects/Chart/Chart.build.xml
+
+initialise:
+
+compile:
+    [mkdir] Created dir: /tmp/chart_7_fix/build
+    [javac] /home/rsommerard/defects4j-nopol/defects4j/framework/projects/Chart/Chart.build.xml:49: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 578 source files to /tmp/chart_7_fix/build
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.4
+    [javac] 1 warning
+     [copy] Copying 1 file to /tmp/chart_7_fix/build/org/jfree/chart
+     [copy] Copying 12 files to /tmp/chart_7_fix/build/org/jfree/chart
+     [copy] Copying 9 files to /tmp/chart_7_fix/build/org/jfree/chart/plot
+     [copy] Copying 10 files to /tmp/chart_7_fix/build/org/jfree/chart/editor
+     [copy] Copying 5 files to /tmp/chart_7_fix/build/org/jfree/chart/ui
+
+BUILD SUCCESSFUL
+Total time: 6 seconds
+Running ant (compile.tests) ... OK
+Buildfile: /home/rsommerard/defects4j-nopol/defects4j/framework/projects/Chart/Chart.build.xml
+
+initialise:
+
+compile:
+    [javac] /home/rsommerard/defects4j-nopol/defects4j/framework/projects/Chart/Chart.build.xml:49: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+compile-experimental:
+    [javac] /home/rsommerard/defects4j-nopol/defects4j/framework/projects/Chart/Chart.build.xml:98: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 4 source files to /tmp/chart_7_fix/build
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.4
+    [javac] 1 warning
+
+compile.tests:
+    [mkdir] Created dir: /tmp/chart_7_fix/build-tests
+    [javac] /home/rsommerard/defects4j-nopol/defects4j/framework/projects/Chart/Chart.build.xml:115: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 359 source files to /tmp/chart_7_fix/build-tests
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.4
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] 1 warning
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
+Running ant (test) ... OK
+Buildfile: /home/rsommerard/defects4j-nopol/defects4j/framework/projects/Chart/Chart.build.xml
+
+initialise:
+
+compile:
+    [javac] /home/rsommerard/defects4j-nopol/defects4j/framework/projects/Chart/Chart.build.xml:49: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+compile-experimental:
+    [javac] /home/rsommerard/defects4j-nopol/defects4j/framework/projects/Chart/Chart.build.xml:98: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+compile.tests:
+    [javac] /home/rsommerard/defects4j-nopol/defects4j/framework/projects/Chart/Chart.build.xml:115: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+test:
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.annotations.junit.CategoryLineAnnotationTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.038 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.annotations.junit.CategoryPointerAnnotationTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.026 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.annotations.junit.CategoryTextAnnotationTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.018 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.annotations.junit.TextAnnotationTests
+    [junit] Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.004 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.annotations.junit.XYBoxAnnotationTests
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 0.265 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.annotations.junit.XYDrawableAnnotationTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.012 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.annotations.junit.XYImageAnnotationTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.074 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.annotations.junit.XYLineAnnotationTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.015 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.annotations.junit.XYPointerAnnotationTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.018 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.annotations.junit.XYPolygonAnnotationTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.015 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.annotations.junit.XYShapeAnnotationTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.015 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.annotations.junit.XYTextAnnotationTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.016 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.axis.junit.AxisLocationTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.002 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.axis.junit.AxisSpaceTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.002 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.axis.junit.AxisTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.013 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.axis.junit.CategoryAnchorTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.002 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.axis.junit.CategoryAxis3DTests
+    [junit] Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.031 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.axis.junit.CategoryAxisTests
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 0.029 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.axis.junit.CategoryLabelPositionTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.007 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.axis.junit.CategoryLabelPositionsTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.008 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.axis.junit.CategoryLabelWidthTypeTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.001 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.axis.junit.CategoryTickTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.012 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.axis.junit.CyclicNumberAxisTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.06 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.axis.junit.DateAxisTests
+    [junit] Tests run: 21, Failures: 0, Errors: 0, Time elapsed: 0.142 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.axis.junit.DateTickMarkPositionTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.002 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.axis.junit.DateTickTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.007 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.axis.junit.DateTickUnitTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.035 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.axis.junit.ExtendedCategoryAxisTests
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 0.039 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.axis.junit.LogAxisTests
+    [junit] Tests run: 11, Failures: 0, Errors: 0, Time elapsed: 0.122 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.axis.junit.LogarithmicAxisTests
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 0.04 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.axis.junit.MarkerAxisBandTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.007 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.axis.junit.MonthDateFormatTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.033 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.axis.junit.NumberAxis3DTests
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.035 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.axis.junit.NumberAxisTests
+    [junit] Tests run: 12, Failures: 0, Errors: 0, Time elapsed: 0.142 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.axis.junit.NumberTickUnitTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.004 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.axis.junit.PeriodAxisLabelInfoTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.02 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.axis.junit.PeriodAxisTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.049 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.axis.junit.QuarterDateFormatTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.005 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.axis.junit.SegmentedTimelineTests
+    [junit] Tests run: 31, Failures: 0, Errors: 0, Time elapsed: 4.246 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.axis.junit.StandardTickUnitSourceTests
+    [junit] Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.002 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.axis.junit.SubCategoryAxisTests
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 0.027 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.axis.junit.SymbolAxisTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.038 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.axis.junit.TickUnitsTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.015 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.axis.junit.ValueAxisTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.08 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.block.junit.AbstractBlockTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.012 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.block.junit.BlockBorderTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.007 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.block.junit.BlockContainerTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.017 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.block.junit.BorderArrangementTests
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 0.013 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.block.junit.ColorBlockTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.012 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.block.junit.ColumnArrangementTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.007 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.block.junit.EmptyBlockTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.012 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.block.junit.FlowArrangementTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.007 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.block.junit.GridArrangementTests
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 0.007 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.block.junit.LabelBlockTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.02 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.block.junit.LineBorderTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.007 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.block.junit.RectangleConstraintTests
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.002 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.entity.junit.CategoryItemEntityTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.015 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.entity.junit.LegendItemEntityTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.01 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.entity.junit.PieSectionEntityTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.011 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.entity.junit.StandardEntityCollectionTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.011 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.entity.junit.TickLabelEntityTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.005 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.entity.junit.XYItemEntityTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.01 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.imagemap.junit.StandardToolTipTagFragmentGeneratorTests
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.002 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.imagemap.junit.StandardURLTagFragmentGeneratorTests
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.junit.AreaChartTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.113 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.junit.BarChart3DTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.111 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.junit.BarChartTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.105 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.junit.ChartPanelTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.092 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.junit.ChartRenderingInfoTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.008 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.junit.GanttChartTests
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 0.14 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.junit.JFreeChartTests
+    [junit] Tests run: 12, Failures: 0, Errors: 0, Time elapsed: 0.241 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.junit.LegendItemCollectionTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.01 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.junit.LegendItemTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.012 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.junit.LineChart3DTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.115 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.junit.LineChartTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.108 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.junit.MeterChartTests
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.046 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.junit.PaintMapTests
+    [junit] Tests run: 7, Failures: 0, Errors: 0, Time elapsed: 0.004 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.junit.PieChart3DTests
+    [junit] Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.093 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.junit.PieChartTests
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.051 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.junit.ScatterPlotTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.105 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.junit.StackedAreaChartTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.108 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.junit.StackedBarChart3DTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.11 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.junit.StackedBarChartTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.103 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.junit.StrokeMapTests
+    [junit] Tests run: 6, Failures: 0, Errors: 0, Time elapsed: 0.004 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.junit.TimeSeriesChartTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.11 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.junit.WaterfallChartTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.106 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.junit.XYAreaChartTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.101 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.junit.XYBarChartTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.102 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.junit.XYLineChartTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.101 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.junit.XYStepAreaChartTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.1 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.junit.XYStepChartTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.11 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.labels.junit.BoxAndWhiskerToolTipGeneratorTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.007 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.labels.junit.BoxAndWhiskerXYToolTipGeneratorTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.007 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.labels.junit.BubbleXYItemLabelGeneratorTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.013 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.labels.junit.CustomXYItemLabelGeneratorTests
+    [junit] Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.003 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.labels.junit.HighLowItemLabelGeneratorTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.009 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.labels.junit.IntervalCategoryLabelGeneratorTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.012 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.labels.junit.ItemLabelAnchorTests
+    [junit] Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.002 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.labels.junit.ItemLabelPositionTests
+    [junit] Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.004 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.labels.junit.MultipleXYSeriesLabelGeneratorTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.004 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.labels.junit.StandardCategoryItemLabelGeneratorTests
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 0.015 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.labels.junit.StandardCategorySeriesLabelGeneratorTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.006 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.labels.junit.StandardCategoryToolTipGeneratorTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.01 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.labels.junit.StandardPieSectionLabelGeneratorTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.008 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.labels.junit.StandardPieToolTipGeneratorTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.005 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.labels.junit.StandardXYItemLabelGeneratorTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.007 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.labels.junit.StandardXYSeriesLabelGeneratorTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.008 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.labels.junit.StandardXYToolTipGeneratorTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.006 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.labels.junit.StandardXYZToolTipGeneratorTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.007 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.labels.junit.SymbolicXYItemLabelGeneratorTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.003 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.needle.junit.ArrowNeedleTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.005 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.needle.junit.LineNeedleTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.004 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.needle.junit.LongNeedleTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.005 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.needle.junit.MeterNeedleTests
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.003 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.needle.junit.MiddlePinNeedleTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.005 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.needle.junit.PinNeedleTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.005 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.needle.junit.PlumNeedleTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.005 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.needle.junit.PointerNeedleTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.005 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.needle.junit.ShipNeedleTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.005 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.needle.junit.WindNeedleTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.005 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.plot.dial.junit.AbstractDialLayerTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.008 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.plot.dial.junit.ArcDialFrameTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.01 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.plot.dial.junit.DialBackgroundTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.011 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.plot.dial.junit.DialCapTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.009 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.plot.dial.junit.DialPlotTests
+    [junit] Tests run: 9, Failures: 0, Errors: 0, Time elapsed: 0.029 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.plot.dial.junit.DialPointerTests
+    [junit] Tests run: 7, Failures: 0, Errors: 0, Time elapsed: 0.01 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.plot.dial.junit.DialTextAnnotationTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.01 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.plot.dial.junit.DialValueIndicatorTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.015 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.plot.dial.junit.StandardDialFrameTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.009 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.plot.dial.junit.StandardDialRangeTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.009 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.plot.dial.junit.StandardDialScaleTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.012 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.plot.junit.CategoryMarkerTests
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 0.013 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.plot.junit.CategoryPlotTests
+    [junit] Tests run: 18, Failures: 0, Errors: 0, Time elapsed: 0.226 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.plot.junit.CombinedDomainCategoryPlotTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.1 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.plot.junit.CombinedDomainXYPlotTests
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 0.094 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.plot.junit.CombinedRangeCategoryPlotTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.091 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.plot.junit.CombinedRangeXYPlotTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.131 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.plot.junit.CompassPlotTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.024 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.plot.junit.DefaultDrawingSupplierTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.007 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.plot.junit.FastScatterPlotTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.075 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.plot.junit.IntervalMarkerTests
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 0.011 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.plot.junit.MarkerTests
+    [junit] Tests run: 14, Failures: 0, Errors: 0, Time elapsed: 0.026 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.plot.junit.MeterIntervalTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.005 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.plot.junit.MeterPlotTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.027 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.plot.junit.MultiplePiePlotTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.074 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.plot.junit.PieLabelRecordTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.013 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.plot.junit.PiePlot3DTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.074 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.plot.junit.PiePlotTests
+    [junit] Tests run: 11, Failures: 0, Errors: 0, Time elapsed: 0.088 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.plot.junit.PlotOrientationTests
+    [junit] Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.002 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.plot.junit.PlotRenderingInfoTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.006 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.plot.junit.PlotTests
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.028 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.plot.junit.PolarPlotTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.042 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.plot.junit.RingPlotTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.035 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.plot.junit.SpiderWebPlotTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.064 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.plot.junit.ThermometerPlotTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.045 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.plot.junit.ValueMarkerTests
+    [junit] Tests run: 6, Failures: 0, Errors: 0, Time elapsed: 0.011 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.plot.junit.XYPlotTests
+    [junit] Tests run: 23, Failures: 0, Errors: 0, Time elapsed: 0.234 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.renderer.category.junit.AbstractCategoryItemRendererTests
+    [junit] Tests run: 8, Failures: 0, Errors: 0, Time elapsed: 0.018 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.renderer.category.junit.AreaRendererTests
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 0.07 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.renderer.category.junit.BarRenderer3DTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.039 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.renderer.category.junit.BarRendererTests
+    [junit] Tests run: 7, Failures: 0, Errors: 0, Time elapsed: 0.072 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.renderer.category.junit.BoxAndWhiskerRendererTests
+    [junit] Tests run: 17, Failures: 0, Errors: 0, Time elapsed: 0.142 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.renderer.category.junit.CategoryStepRendererTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.069 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.renderer.category.junit.DefaultCategoryItemRendererTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.035 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.renderer.category.junit.GanttRendererTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.039 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.renderer.category.junit.GroupedStackedBarRendererTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.092 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.renderer.category.junit.IntervalBarRendererTests
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 0.091 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.renderer.category.junit.LayeredBarRendererTests
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 0.089 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.renderer.category.junit.LevelRendererTests
+    [junit] Tests run: 6, Failures: 0, Errors: 0, Time elapsed: 0.087 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.renderer.category.junit.LineAndShapeRendererTests
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 0.067 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.renderer.category.junit.LineRenderer3DTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.033 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.renderer.category.junit.MinMaxCategoryRendererTests
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 0.087 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.renderer.category.junit.ScatterRendererTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.033 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.renderer.category.junit.StackedAreaRendererTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.038 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.renderer.category.junit.StackedBarRenderer3DTests
+    [junit] Tests run: 21, Failures: 0, Errors: 0, Time elapsed: 0.047 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.renderer.category.junit.StackedBarRendererTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.039 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.renderer.category.junit.StatisticalBarRendererTests
+    [junit] Tests run: 9, Failures: 0, Errors: 0, Time elapsed: 0.107 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.renderer.category.junit.StatisticalLineAndShapeRendererTests
+    [junit] Tests run: 6, Failures: 0, Errors: 0, Time elapsed: 0.085 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.renderer.category.junit.WaterfallBarRendererTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.037 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.renderer.junit.AbstractRendererTests
+    [junit] Tests run: 10, Failures: 0, Errors: 0, Time elapsed: 0.058 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.renderer.junit.AreaRendererEndTypeTests
+    [junit] Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.001 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.renderer.junit.DefaultPolarItemRendererTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.023 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.renderer.junit.GrayPaintScaleTests
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 0.002 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.renderer.junit.LookupPaintScaleTests
+    [junit] Tests run: 6, Failures: 0, Errors: 0, Time elapsed: 0.005 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.renderer.junit.OutlierTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.001 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.renderer.junit.RendererUtilitiesTests
+    [junit] Tests run: 6, Failures: 0, Errors: 0, Time elapsed: 0.002 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.renderer.xy.junit.AbstractXYItemRendererTests
+    [junit] Tests run: 6, Failures: 0, Errors: 0, Time elapsed: 0.029 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.renderer.xy.junit.CandlestickRendererTests
+    [junit] Tests run: 6, Failures: 0, Errors: 0, Time elapsed: 0.044 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.renderer.xy.junit.ClusteredXYBarRendererTests
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 0.037 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.renderer.xy.junit.DeviationRendererTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.036 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.renderer.xy.junit.HighLowRendererTests
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 0.033 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.renderer.xy.junit.StackedXYAreaRenderer2Tests
+    [junit] Tests run: 6, Failures: 0, Errors: 0, Time elapsed: 0.098 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.renderer.xy.junit.StackedXYAreaRendererTests
+    [junit] Tests run: 7, Failures: 0, Errors: 0, Time elapsed: 0.108 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.renderer.xy.junit.StackedXYBarRendererTests
+    [junit] Tests run: 6, Failures: 0, Errors: 0, Time elapsed: 0.086 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.renderer.xy.junit.StandardXYItemRendererTests
+    [junit] Tests run: 6, Failures: 0, Errors: 0, Time elapsed: 0.097 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.renderer.xy.junit.VectorRendererTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.033 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.renderer.xy.junit.WindItemRendererTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.033 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.renderer.xy.junit.XYAreaRenderer2Tests
+    [junit] Tests run: 6, Failures: 0, Errors: 0, Time elapsed: 0.087 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.renderer.xy.junit.XYAreaRendererTests
+    [junit] Tests run: 6, Failures: 0, Errors: 0, Time elapsed: 0.086 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.renderer.xy.junit.XYBarRendererTests
+    [junit] Tests run: 7, Failures: 0, Errors: 0, Time elapsed: 0.083 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.renderer.xy.junit.XYBlockRendererTests
+    [junit] Tests run: 6, Failures: 0, Errors: 0, Time elapsed: 0.041 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.renderer.xy.junit.XYBoxAndWhiskerRendererTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.036 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.renderer.xy.junit.XYBubbleRendererTests
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 0.064 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.renderer.xy.junit.XYDifferenceRendererTests
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 0.067 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.renderer.xy.junit.XYDotRendererTests
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 0.066 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.renderer.xy.junit.XYErrorRendererTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.035 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.renderer.xy.junit.XYLine3DRendererTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.035 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.renderer.xy.junit.XYLineAndShapeRendererTests
+    [junit] Tests run: 8, Failures: 0, Errors: 0, Time elapsed: 0.084 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.renderer.xy.junit.XYSplineAndShapeRendererTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.035 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.renderer.xy.junit.XYStepAreaRendererTests
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 0.083 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.renderer.xy.junit.XYStepRendererTests
+    [junit] Tests run: 6, Failures: 0, Errors: 0, Time elapsed: 0.092 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.renderer.xy.junit.YIntervalRendererTests
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 0.068 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.title.junit.CompositeTitleTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.019 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.title.junit.DateTitleTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.017 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.title.junit.ImageTitleTests
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 0.015 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.title.junit.LegendGraphicTests
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 0.015 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.title.junit.LegendTitleTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.045 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.title.junit.PaintScaleLegendTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.036 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.title.junit.TextTitleTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.017 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.title.junit.TitleTests
+    [junit] Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.007 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.urls.junit.CustomPieURLGeneratorTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.003 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.urls.junit.CustomXYURLGeneratorTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.002 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.urls.junit.StandardCategoryURLGeneratorTests
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.003 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.urls.junit.StandardPieURLGeneratorTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.006 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.urls.junit.StandardXYURLGeneratorTests
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.003 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.urls.junit.TimeSeriesURLGeneratorTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.009 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.util.junit.BooleanListTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.003 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.util.junit.HashUtilitiesTests
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.001 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.util.junit.LogFormatTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.003 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.util.junit.PaintListTests
+    [junit] Tests run: 6, Failures: 0, Errors: 0, Time elapsed: 0.004 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.util.junit.RelativeDateFormatTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.002 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.util.junit.ShapeUtilitiesTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.003 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.chart.util.junit.StrokeListTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.004 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.category.junit.CategoryToPieDatasetTests
+    [junit] Tests run: 6, Failures: 0, Errors: 0, Time elapsed: 0.01 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.category.junit.DefaultCategoryDatasetTests
+    [junit] Tests run: 11, Failures: 0, Errors: 0, Time elapsed: 0.01 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.category.junit.DefaultIntervalCategoryDatasetTests
+    [junit] Tests run: 20, Failures: 0, Errors: 0, Time elapsed: 0.01 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.gantt.junit.TaskSeriesCollectionTests
+    [junit] Tests run: 24, Failures: 0, Errors: 0, Time elapsed: 0.01 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.gantt.junit.TaskSeriesTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.006 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.gantt.junit.TaskTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.004 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.general.junit.DatasetGroupTests
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.001 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.general.junit.DatasetUtilitiesTests
+    [junit] Tests run: 27, Failures: 0, Errors: 0, Time elapsed: 0.016 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.general.junit.DefaultKeyedValueDatasetTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.006 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.general.junit.DefaultKeyedValues2DDatasetTests
+    [junit] Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.01 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.general.junit.DefaultKeyedValuesDatasetTests
+    [junit] Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.007 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.general.junit.DefaultPieDatasetTests
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 0.006 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.junit.ComparableObjectItemTests
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 0.002 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.junit.ComparableObjectSeriesTests
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 0.006 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.junit.DataUtilitiesTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.003 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.junit.DefaultKeyedValueTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.002 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.junit.DefaultKeyedValues2DTests
+    [junit] Tests run: 14, Failures: 0, Errors: 0, Time elapsed: 0.006 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.junit.DefaultKeyedValuesTests
+    [junit] Tests run: 18, Failures: 0, Errors: 0, Time elapsed: 0.005 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.junit.DomainOrderTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.001 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.junit.KeyToGroupMapTests
+    [junit] Tests run: 8, Failures: 0, Errors: 0, Time elapsed: 0.003 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.junit.KeyedObjectTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.005 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.junit.KeyedObjects2DTests
+    [junit] Tests run: 11, Failures: 0, Errors: 0, Time elapsed: 0.005 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.junit.KeyedObjectsTests
+    [junit] Tests run: 10, Failures: 0, Errors: 0, Time elapsed: 0.006 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.junit.RangeTests
+    [junit] Tests run: 6, Failures: 0, Errors: 0, Time elapsed: 0.002 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.junit.RangeTypeTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.002 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.statistics.junit.BoxAndWhiskerCalculatorTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.002 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.statistics.junit.BoxAndWhiskerItemTests
+    [junit] Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.002 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.statistics.junit.DefaultBoxAndWhiskerCategoryDatasetTests
+    [junit] Tests run: 9, Failures: 0, Errors: 0, Time elapsed: 0.012 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.statistics.junit.DefaultMultiValueCategoryDatasetTests
+    [junit] Tests run: 8, Failures: 0, Errors: 0, Time elapsed: 0.011 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.statistics.junit.DefaultStatisticalCategoryDatasetTests
+    [junit] Tests run: 10, Failures: 0, Errors: 0, Time elapsed: 0.012 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.statistics.junit.HistogramBinTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.001 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.statistics.junit.HistogramDatasetTests
+    [junit] Tests run: 8, Failures: 0, Errors: 0, Time elapsed: 0.011 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.statistics.junit.MeanAndStandardDeviationTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.002 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.statistics.junit.RegressionTests
+    [junit] Tests run: 8, Failures: 0, Errors: 0, Time elapsed: 0.008 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.statistics.junit.SimpleHistogramBinTests
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 0.001 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.statistics.junit.SimpleHistogramDatasetTests
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 0.009 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.statistics.junit.StatisticsTests
+    [junit] Tests run: 12, Failures: 0, Errors: 0, Time elapsed: 0.002 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.time.junit.DateRangeTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.002 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.time.junit.DayTests
+    [junit] Tests run: 22, Failures: 0, Errors: 0, Time elapsed: 0.009 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.time.junit.FixedMillisecondTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.002 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.time.junit.HourTests
+    [junit] Tests run: 22, Failures: 0, Errors: 0, Time elapsed: 0.011 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.time.junit.MillisecondTests
+    [junit] Tests run: 18, Failures: 0, Errors: 0, Time elapsed: 0.019 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.time.junit.MinuteTests
+    [junit] Tests run: 18, Failures: 0, Errors: 0, Time elapsed: 0.012 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.time.junit.MonthTests
+    [junit] Tests run: 22, Failures: 0, Errors: 0, Time elapsed: 0.012 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.time.junit.MovingAverageTests
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.007 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.time.junit.QuarterTests
+    [junit] Tests run: 23, Failures: 0, Errors: 0, Time elapsed: 0.011 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.time.junit.SecondTests
+    [junit] Tests run: 17, Failures: 0, Errors: 0, Time elapsed: 0.012 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.time.junit.SimpleTimePeriodTests
+    [junit] Tests run: 7, Failures: 0, Errors: 0, Time elapsed: 0.002 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.time.junit.TimePeriodAnchorTests
+    [junit] Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.001 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.time.junit.TimePeriodValueTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.006 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.time.junit.TimePeriodValuesCollectionTests
+    [junit] Tests run: 6, Failures: 0, Errors: 0, Time elapsed: 0.016 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.time.junit.TimePeriodValuesTests
+    [junit] Tests run: 10, Failures: 0, Errors: 0, Time elapsed: 0.016 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.time.junit.TimeSeriesCollectionTests
+    [junit] Tests run: 6, Failures: 0, Errors: 0, Time elapsed: 0.018 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.time.junit.TimeSeriesDataItemTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.005 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.time.junit.TimeSeriesTests
+    [junit] Tests run: 22, Failures: 0, Errors: 0, Time elapsed: 0.026 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.time.junit.TimeTableXYDatasetTests
+    [junit] Tests run: 6, Failures: 0, Errors: 0, Time elapsed: 0.084 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.time.junit.WeekTests
+    [junit] Tests run: 23, Failures: 0, Errors: 0, Time elapsed: 0.011 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.time.junit.YearTests
+    [junit] Tests run: 22, Failures: 0, Errors: 0, Time elapsed: 0.004 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.time.ohlc.junit.OHLCItemTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.006 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.time.ohlc.junit.OHLCSeriesCollectionTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.017 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.time.ohlc.junit.OHLCSeriesTests
+    [junit] Tests run: 9, Failures: 0, Errors: 0, Time elapsed: 0.01 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.time.ohlc.junit.OHLCTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.001 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.xy.junit.CategoryTableXYDatasetTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.015 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.xy.junit.DefaultHighLowDatasetTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.007 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.xy.junit.DefaultIntervalXYDatasetTests
+    [junit] Tests run: 15, Failures: 0, Errors: 0, Time elapsed: 0.007 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.xy.junit.DefaultOHLCDatasetTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.007 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.xy.junit.DefaultTableXYDatasetTests
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 0.015 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.xy.junit.DefaultWindDatasetTests
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 0.009 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.xy.junit.DefaultXYDatasetTests
+    [junit] Tests run: 6, Failures: 0, Errors: 0, Time elapsed: 0.005 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.xy.junit.DefaultXYZDatasetTests
+    [junit] Tests run: 6, Failures: 0, Errors: 0, Time elapsed: 0.006 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.xy.junit.IntervalXYDelegateTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.013 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.xy.junit.MatrixSeriesCollectionTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.01 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.xy.junit.MatrixSeriesTests
+    [junit] Tests run: 6, Failures: 0, Errors: 0, Time elapsed: 0.004 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.xy.junit.OHLCDataItemTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.002 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.xy.junit.TableXYDatasetTests
+    [junit] Tests run: 8, Failures: 0, Errors: 0, Time elapsed: 0.015 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.xy.junit.VectorDataItemTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.004 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.xy.junit.VectorSeriesCollectionTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.014 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.xy.junit.VectorSeriesTests
+    [junit] Tests run: 11, Failures: 0, Errors: 0, Time elapsed: 0.008 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.xy.junit.VectorTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.001 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.xy.junit.XIntervalDataItemTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.004 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.xy.junit.XIntervalSeriesCollectionTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.011 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.xy.junit.XIntervalSeriesTests
+    [junit] Tests run: 13, Failures: 0, Errors: 0, Time elapsed: 0.008 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.xy.junit.XYBarDatasetTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.009 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.xy.junit.XYCoordinateTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.002 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.xy.junit.XYDataItemTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.002 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.xy.junit.XYIntervalDataItemTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.004 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.xy.junit.XYIntervalSeriesCollectionTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.011 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.xy.junit.XYIntervalSeriesTests
+    [junit] Tests run: 12, Failures: 0, Errors: 0, Time elapsed: 0.008 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.xy.junit.XYIntervalTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.002 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.xy.junit.XYSeriesCollectionTests
+    [junit] Tests run: 8, Failures: 0, Errors: 0, Time elapsed: 0.014 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.xy.junit.XYSeriesTests
+    [junit] Tests run: 19, Failures: 0, Errors: 0, Time elapsed: 0.009 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.xy.junit.YIntervalDataItemTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.003 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.xy.junit.YIntervalSeriesCollectionTests
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.012 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.xy.junit.YIntervalSeriesTests
+    [junit] Tests run: 11, Failures: 0, Errors: 0, Time elapsed: 0.008 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.xy.junit.YIntervalTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.002 sec
+    [junit] dir attribute ignored if running in the same VM
+    [junit] Running org.jfree.data.xy.junit.YWithXIntervalTests
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.001 sec
+
+BUILD SUCCESSFUL
+Total time: 18 seconds
+Failing tests: 0
