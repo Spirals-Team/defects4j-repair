@@ -1,0 +1,25 @@
+#!/bin/bash
+
+export PATH="~/defects4j/defects4j/framework/bin:$PATH"
+
+for bug in `seq 1 26`
+do
+  echo "Chart ${bug} buggy"
+
+  exec 6<&1
+  exec 7<&2
+
+  exec 1> ~/defects4j-nopol/results/d4j-tests/chart/buggy/chart_${bug}_buggy.stdout
+  exec 2> ~/defects4j-nopol/results/d4j-tests/chart/buggy/chart_${bug}_buggy.stderr
+
+  defects4j checkout -p Chart -v ${bug}b -w /tmp/chart_${bug}_buggy
+
+  cd /tmp/chart_${bug}_buggy/
+  defects4j compile
+  defects4j test
+  cd /tmp/
+  rm -rf chart_${bug}_buggy/
+
+  exec 1<&6 6<&-
+  exec 2<&7 7<&-
+done
