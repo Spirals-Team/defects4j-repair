@@ -2,23 +2,23 @@
 
 export PATH="~/defects4j/framework/bin:$PATH"
 
-echo 'Chart 1 buggy'
+echo 'Chart 1'
 
 exec 6<&1
 #exec 7<&2
 
-exec 1> ~/defects4j-nopol/logs/d4j-tests/chart/buggy/chart_1_buggy.stdout
-#exec 2> ~/defects4j-nopol/logs/d4j-tests/chart/buggy/chart_1_buggy.stderr
+exec 1> ~/defects4j-nopol/logs/d4j-tests/chart/chart_1.stdout
+#exec 2> ~/defects4j-nopol/logs/d4j-tests/chart/chart_1.stderr
 
 defects4j info -p Chart -v 1
 
-defects4j checkout -p Chart -v 1b -w /tmp/chart_1_buggy
+defects4j checkout -p Chart -v 1b -w /tmp/chart_1
 
-cd /tmp/chart_1_buggy/
+cd /tmp/chart_1/
 defects4j compile
 defects4j test
 cd /tmp/
-rm -rf chart_1_buggy/
+rm -rf chart_1/
 
 exec 1<&6 6<&-
 #exec 2<&7 7<&-
