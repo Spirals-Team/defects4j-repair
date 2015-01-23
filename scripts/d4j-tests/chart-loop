@@ -12,8 +12,6 @@ do
   exec 1> ~/defects4j-nopol/logs/d4j-tests/chart/chart_${bug}.stdout
   #exec 2> ~/defects4j-nopol/logs/d4j-tests/chart/chart_${bug}.stderr
 
-  defects4j info -p Chart -v ${bug}
-
   defects4j checkout -p Chart -v ${bug}b -w /tmp/chart_${bug}
 
   cd /tmp/chart_${bug}/

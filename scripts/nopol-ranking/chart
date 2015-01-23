@@ -8,13 +8,13 @@ defects4j checkout -p Chart -v 1b -w /tmp/chart_1
 cd /tmp/chart_1/
 defects4j compile
 
+echo 'Starting Nopol ranking on Chart 1 ...'
+
 exec 6<&1
 #exec 7<&2
 
 exec 1> ~/defects4j-nopol/logs/nopol-ranking/chart/chart_1.stdout
 #exec 2> ~/defects4j-nopol/logs/nopol-ranking/chart/chart_1.stderr
-
-defects4j info -p Chart -v 1
 
 cp ~/nopol/nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar .
 
@@ -25,6 +25,10 @@ rm -rf chart_1/
 
 exec 1<&6 6<&-
 #exec 2<&7 7<&-
+
+cd ~/defects4j-nopol/logs/nopol-ranking/chart/
+tail -n +1310933 chart_1.stdout > chart_1_cut.stdout
+mv chart_1_cut.stdout chart_1.stdout
 
 echo 'Done'
 

@@ -10,8 +10,6 @@ exec 6<&1
 exec 1> ~/defects4j-nopol/logs/d4j-tests/chart/chart_1.stdout
 #exec 2> ~/defects4j-nopol/logs/d4j-tests/chart/chart_1.stderr
 
-defects4j info -p Chart -v 1
-
 defects4j checkout -p Chart -v 1b -w /tmp/chart_1
 
 cd /tmp/chart_1/
