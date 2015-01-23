@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export PATH="~/defects4j/defects4j/framework/bin:$PATH"
+export PATH="~/defects4j/framework/bin:$PATH"
 
 for bug in `seq 1 26`
 do
@@ -9,8 +9,8 @@ do
   exec 6<&1
   exec 7<&2
 
-  exec 1> ~/defects4j-nopol/results/d4j-tests/chart/buggy/chart_${bug}_buggy.stdout
-  exec 2> ~/defects4j-nopol/results/d4j-tests/chart/buggy/chart_${bug}_buggy.stderr
+  exec 1> ~/defects4j-nopol/logs/d4j-tests/chart/buggy/chart_${bug}_buggy.stdout
+  exec 2> ~/defects4j-nopol/logs/d4j-tests/chart/buggy/chart_${bug}_buggy.stderr
 
   defects4j checkout -p Chart -v ${bug}b -w /tmp/chart_${bug}_buggy
 
