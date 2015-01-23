@@ -2,13 +2,13 @@
 
 export PATH="~/defects4j/framework/bin:$PATH"
 
-echo "Chart 1 buggy"
+echo 'Chart 1 buggy'
 
 exec 6<&1
-exec 7<&2
+#exec 7<&2
 
 exec 1> ~/defects4j-nopol/logs/d4j-tests/chart/buggy/chart_1_buggy.stdout
-exec 2> ~/defects4j-nopol/logs/d4j-tests/chart/buggy/chart_1_buggy.stderr
+#exec 2> ~/defects4j-nopol/logs/d4j-tests/chart/buggy/chart_1_buggy.stderr
 
 defects4j info -p Chart -v 1
 
@@ -21,4 +21,7 @@ cd /tmp/
 rm -rf chart_1_buggy/
 
 exec 1<&6 6<&-
-exec 2<&7 7<&-
+#exec 2<&7 7<&-
+
+echo 'Done.'
+
