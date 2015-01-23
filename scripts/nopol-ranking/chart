@@ -2,7 +2,7 @@
 
 export PATH="~/defects4j/framework/bin:$PATH"
 
-echo 'Chart 1'
+echo 'Setting up Chart 1 ...'
 
 defects4j checkout -p Chart -v 1b -w /tmp/chart_1
 cd /tmp/chart_1/
@@ -26,9 +26,9 @@ rm -rf chart_1/
 exec 1<&6 6<&-
 #exec 2<&7 7<&-
 
-cd ~/defects4j-nopol/logs/nopol-ranking/chart/
-tail -n +1310933 chart_1.stdout > chart_1_cut.stdout
-mv chart_1_cut.stdout chart_1.stdout
+#cd ~/defects4j-nopol/logs/nopol-ranking/chart/
+#tail -n +1310933 chart_1.stdout > chart_1_cut.stdout
+#mv chart_1_cut.stdout chart_1.stdout
 
-echo 'Done'
+echo 'Done.'
 

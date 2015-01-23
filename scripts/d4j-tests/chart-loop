@@ -4,7 +4,7 @@ export PATH="~/defects4j/framework/bin:$PATH"
 
 for bug in `seq 1 26`
 do
-  echo "Chart ${bug}"
+  echo "Starting tests Chart ${bug} ..."
 
   exec 6<&1
   #exec 7<&2
@@ -24,5 +24,5 @@ do
   #exec 2<&7 7<&-
 done
 
-echo 'Done'
+echo 'Done.'
 
