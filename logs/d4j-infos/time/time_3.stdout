@@ -1,0 +1,34 @@
+Summary of configuration for Project: Time
+--------------------------------------------------------------------------------
+    Script dir: /home/rsommerard/defects4j/framework
+      Base dir: /home/rsommerard/defects4j
+    Major root: /home/rsommerard/defects4j/major
+      Repo dir: /home/rsommerard/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Time
+       Program: joda-time
+    Build file: /home/rsommerard/defects4j/framework/projects/Time/Time.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/rsommerard/defects4j/project_repos/joda-time.git
+     Commit db: /home/rsommerard/defects4j/framework/projects/Time/commit-db
+Number of bugs: 27
+--------------------------------------------------------------------------------
+
+Summary for Bug: 3
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.joda.time.TestMutableDateTime_Adds::testAddYears_int_dstOverlapWinter_addZero
+   --> junit.framework.ComparisonFailure: expected:<...10-30T02:30:00.000+0[1]:00> but was:<...10-30T02:30:00.000+0[2]:00>
+ - org.joda.time.TestMutableDateTime_Adds::testAddDays_int_dstOverlapWinter_addZero
+   --> junit.framework.ComparisonFailure: expected:<...10-30T02:30:00.000+0[1]:00> but was:<...10-30T02:30:00.000+0[2]:00>
+ - org.joda.time.TestMutableDateTime_Adds::testAddWeeks_int_dstOverlapWinter_addZero
+   --> junit.framework.ComparisonFailure: expected:<...10-30T02:30:00.000+0[1]:00> but was:<...10-30T02:30:00.000+0[2]:00>
+ - org.joda.time.TestMutableDateTime_Adds::testAdd_DurationFieldType_int_dstOverlapWinter_addZero
+   --> junit.framework.ComparisonFailure: expected:<...10-30T02:30:00.000+0[1]:00> but was:<...10-30T02:30:00.000+0[2]:00>
+ - org.joda.time.TestMutableDateTime_Adds::testAddMonths_int_dstOverlapWinter_addZero
+   --> junit.framework.ComparisonFailure: expected:<...10-30T02:30:00.000+0[1]:00> but was:<...10-30T02:30:00.000+0[2]:00>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.joda.time.MutableDateTime
+--------------------------------------------------------------------------------

@@ -1,0 +1,41 @@
+Summary of configuration for Project: Time
+--------------------------------------------------------------------------------
+    Script dir: /home/rsommerard/defects4j/framework
+      Base dir: /home/rsommerard/defects4j
+    Major root: /home/rsommerard/defects4j/major
+      Repo dir: /home/rsommerard/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Time
+       Program: joda-time
+    Build file: /home/rsommerard/defects4j/framework/projects/Time/Time.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/rsommerard/defects4j/project_repos/joda-time.git
+     Commit db: /home/rsommerard/defects4j/framework/projects/Time/commit-db
+Number of bugs: 27
+--------------------------------------------------------------------------------
+
+Summary for Bug: 12
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.joda.time.TestLocalDateTime_Constructors::testFactory_fromDateFields_beforeYearZero1
+   --> junit.framework.AssertionFailedError: expected:<0000-02-03T04:05:06.007> but was:<0001-02-03T04:05:06.007>
+ - org.joda.time.TestLocalDateTime_Constructors::testFactory_fromDateFields_beforeYearZero3
+   --> junit.framework.AssertionFailedError: expected:<-0002-02-03T04:05:06.007> but was:<0003-02-03T04:05:06.007>
+ - org.joda.time.TestLocalDateTime_Constructors::testFactory_fromCalendarFields_beforeYearZero1
+   --> junit.framework.AssertionFailedError: expected:<0000-02-03T04:05:06.007> but was:<0001-02-03T04:05:06.007>
+ - org.joda.time.TestLocalDateTime_Constructors::testFactory_fromCalendarFields_beforeYearZero3
+   --> junit.framework.AssertionFailedError: expected:<-0002-02-03T04:05:06.007> but was:<0003-02-03T04:05:06.007>
+ - org.joda.time.TestLocalDate_Constructors::testFactory_fromDateFields_beforeYearZero1
+   --> junit.framework.AssertionFailedError: expected:<0000-02-03> but was:<0001-02-03>
+ - org.joda.time.TestLocalDate_Constructors::testFactory_fromDateFields_beforeYearZero3
+   --> junit.framework.AssertionFailedError: expected:<-0002-02-03> but was:<0003-02-03>
+ - org.joda.time.TestLocalDate_Constructors::testFactory_fromCalendarFields_beforeYearZero1
+   --> junit.framework.AssertionFailedError: expected:<0000-02-03> but was:<0001-02-03>
+ - org.joda.time.TestLocalDate_Constructors::testFactory_fromCalendarFields_beforeYearZero3
+   --> junit.framework.AssertionFailedError: expected:<-0002-02-03> but was:<0003-02-03>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.joda.time.LocalDate
+ - org.joda.time.LocalDateTime
+--------------------------------------------------------------------------------

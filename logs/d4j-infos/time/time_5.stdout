@@ -1,0 +1,30 @@
+Summary of configuration for Project: Time
+--------------------------------------------------------------------------------
+    Script dir: /home/rsommerard/defects4j/framework
+      Base dir: /home/rsommerard/defects4j
+    Major root: /home/rsommerard/defects4j/major
+      Repo dir: /home/rsommerard/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Time
+       Program: joda-time
+    Build file: /home/rsommerard/defects4j/framework/projects/Time/Time.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/rsommerard/defects4j/project_repos/joda-time.git
+     Commit db: /home/rsommerard/defects4j/framework/projects/Time/commit-db
+Number of bugs: 27
+--------------------------------------------------------------------------------
+
+Summary for Bug: 5
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.joda.time.TestPeriod_Basics::testNormalizedStandard_periodType_months1
+   --> java.lang.UnsupportedOperationException: Field is not supported
+ - org.joda.time.TestPeriod_Basics::testNormalizedStandard_periodType_months2
+   --> java.lang.UnsupportedOperationException: Field is not supported
+ - org.joda.time.TestPeriod_Basics::testNormalizedStandard_periodType_monthsWeeks
+   --> java.lang.UnsupportedOperationException: Field is not supported
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.joda.time.Period
+--------------------------------------------------------------------------------

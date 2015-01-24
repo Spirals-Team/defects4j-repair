@@ -1,0 +1,38 @@
+Summary of configuration for Project: Time
+--------------------------------------------------------------------------------
+    Script dir: /home/rsommerard/defects4j/framework
+      Base dir: /home/rsommerard/defects4j
+    Major root: /home/rsommerard/defects4j/major
+      Repo dir: /home/rsommerard/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Time
+       Program: joda-time
+    Build file: /home/rsommerard/defects4j/framework/projects/Time/Time.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/rsommerard/defects4j/project_repos/joda-time.git
+     Commit db: /home/rsommerard/defects4j/framework/projects/Time/commit-db
+Number of bugs: 27
+--------------------------------------------------------------------------------
+
+Summary for Bug: 24
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.joda.time.format.TestDateTimeFormatter::testParseLocalDate_weekyear_month_week_2010
+   --> junit.framework.AssertionFailedError: expected:<2010-01-04> but was:<2008-12-29>
+ - org.joda.time.format.TestDateTimeFormatter::testParseLocalDate_weekyear_month_week_2011
+   --> junit.framework.AssertionFailedError: expected:<2011-01-03> but was:<2010-01-04>
+ - org.joda.time.format.TestDateTimeFormatter::testParseLocalDate_weekyear_month_week_2012
+   --> junit.framework.AssertionFailedError: expected:<2012-01-02> but was:<2011-01-03>
+ - org.joda.time.format.TestDateTimeFormatter::testParseLocalDate_year_month_week_2010
+   --> junit.framework.AssertionFailedError: expected:<2010-01-04> but was:<2008-12-29>
+ - org.joda.time.format.TestDateTimeFormatter::testParseLocalDate_year_month_week_2011
+   --> junit.framework.AssertionFailedError: expected:<2011-01-03> but was:<2010-01-04>
+ - org.joda.time.format.TestDateTimeFormatter::testParseLocalDate_year_month_week_2012
+   --> junit.framework.AssertionFailedError: expected:<2012-01-02> but was:<2011-01-03>
+ - org.joda.time.format.TestDateTimeFormatter::testParseLocalDate_year_month_week_2016
+   --> junit.framework.AssertionFailedError: expected:<2016-01-04> but was:<2014-12-29>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.joda.time.format.DateTimeParserBucket
+--------------------------------------------------------------------------------
