@@ -2,36 +2,42 @@
 
 export PATH="~/defects4j/framework/bin:$PATH"
 
-echo 'Setting up Chart 1 ...'
+for bug in `seq 1 26`
+do
+  echo "Setting up Chart ${bug} ..."
 
-defects4j checkout -p Chart -v 1b -w /tmp/chart_1
-cd /tmp/chart_1/
-defects4j compile
+  defects4j checkout -p Chart -v ${bug}b -w /tmp/chart_${bug}
+  cd /tmp/chart_${bug}/
+  defects4j compile
 
-echo 'Starting Nopol ranking on Chart 1 ...'
+  echo "Starting Nopol ranking on Chart ${bug} ..."
 
-exec 6<&1
-#exec 7<&2
+  exec 6<&1
+  #exec 7<&2
 
-exec 1> ~/defects4j-nopol/logs/nopol-ranking/chart/chart_1.stdout
-#exec 2> ~/defects4j-nopol/logs/nopol-ranking/chart/chart_1.stderr
+  exec 1> ~/defects4j-nopol/logs/nopol-ranking/chart/chart_${bug}.stdout
+  #exec 2> ~/defects4j-nopol/logs/nopol-ranking/chart/chart_${bug}.stderr
 
-cp ~/nopol/nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar .
+  cp ~/nopol/nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar .
 
-time java -cp nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar:build/:build-tests/ fr.inria.lille.repair.Main ranking source/ build/:build-tests/:nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar
+  time java -cp nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar:build/:build-tests/ fr.inria.lille.repair.Main ranking source/ build/:build-tests/:nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar
 
-cd /tmp/
-rm -rf chart_1/
+  cd /tmp/
+  rm -rf chart_${bug}/
 
-exec 1<&6 6<&-
-#exec 2<&7 7<&-
+  exec 1<&6 6<&-
+  #exec 2<&7 7<&-
 
-cd ~/defects4j-nopol/logs/nopol-ranking/chart/
+  echo "Formatting Nopol ranking for Chart ${bug} ..."
+  
+  cd ~/defects4j-nopol/logs/nopol-ranking/chart/
 
-line=`grep -m 1 -n "^\/\*" chart_1.stdout | cut -f 1 -d :`
+  line=`grep -m 1 -n "^\/\*" chart_${bug}.stdout | cut -f 1 -d :`
 
-tail -n +$line chart_1.stdout > chart_1_tmp.stdout
+  tail -n +$line chart_${bug}.stdout > chart_${bug}_tmp.stdout
 
-mv chart_1_tmp.stdout chart_1.stdout
+  mv chart_${bug}_tmp.stdout chart_${bug}.stdout
+
+done
 
 echo 'Done.'
