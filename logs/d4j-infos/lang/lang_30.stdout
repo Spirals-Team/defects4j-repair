@@ -1,0 +1,44 @@
+Summary of configuration for Project: Lang
+--------------------------------------------------------------------------------
+    Script dir: /home/rsommerard/defects4j/framework
+      Base dir: /home/rsommerard/defects4j
+    Major root: /home/rsommerard/defects4j/major
+      Repo dir: /home/rsommerard/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Lang
+       Program: commons-lang
+    Build file: /home/rsommerard/defects4j/framework/projects/Lang/Lang.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/rsommerard/defects4j/project_repos/commons-lang.git
+     Commit db: /home/rsommerard/defects4j/framework/projects/Lang/commit-db
+Number of bugs: 65
+--------------------------------------------------------------------------------
+
+Summary for Bug: 30
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.lang3.StringUtilsEqualsIndexOfTest::testContainsNone_CharArrayWithSupplementaryChars
+   --> junit.framework.AssertionFailedError: expected:<true> but was:<false>
+ - org.apache.commons.lang3.StringUtilsEqualsIndexOfTest::testContainsNone_StringWithSupplementaryChars
+   --> junit.framework.AssertionFailedError: expected:<true> but was:<false>
+ - org.apache.commons.lang3.StringUtilsEqualsIndexOfTest::testContainsAny_StringCharArrayWithBadSupplementaryChars
+   --> junit.framework.AssertionFailedError: expected:<false> but was:<true>
+ - org.apache.commons.lang3.StringUtilsEqualsIndexOfTest::testIndexOfAnyBut_StringStringWithSupplementaryChars
+   --> junit.framework.AssertionFailedError: expected:<2> but was:<3>
+ - org.apache.commons.lang3.StringUtilsEqualsIndexOfTest::testContainsAny_StringWithBadSupplementaryChars
+   --> junit.framework.AssertionFailedError: expected:<false> but was:<true>
+ - org.apache.commons.lang3.StringUtilsEqualsIndexOfTest::testIndexOfAny_StringCharArrayWithSupplementaryChars
+   --> junit.framework.AssertionFailedError: expected:<2> but was:<0>
+ - org.apache.commons.lang3.StringUtilsEqualsIndexOfTest::testIndexOfAnyBut_StringCharArrayWithSupplementaryChars
+   --> junit.framework.AssertionFailedError: expected:<2> but was:<3>
+ - org.apache.commons.lang3.StringUtilsEqualsIndexOfTest::testContainsNone_StringWithBadSupplementaryChars
+   --> junit.framework.AssertionFailedError: expected:<true> but was:<false>
+ - org.apache.commons.lang3.StringUtilsEqualsIndexOfTest::testIndexOfAny_StringStringWithSupplementaryChars
+   --> junit.framework.AssertionFailedError: expected:<2> but was:<0>
+ - org.apache.commons.lang3.StringUtilsEqualsIndexOfTest::testContainsNone_CharArrayWithBadSupplementaryChars
+   --> junit.framework.AssertionFailedError: expected:<true> but was:<false>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.lang3.StringUtils
+--------------------------------------------------------------------------------

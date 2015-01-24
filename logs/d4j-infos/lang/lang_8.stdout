@@ -1,0 +1,28 @@
+Summary of configuration for Project: Lang
+--------------------------------------------------------------------------------
+    Script dir: /home/rsommerard/defects4j/framework
+      Base dir: /home/rsommerard/defects4j
+    Major root: /home/rsommerard/defects4j/major
+      Repo dir: /home/rsommerard/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Lang
+       Program: commons-lang
+    Build file: /home/rsommerard/defects4j/framework/projects/Lang/Lang.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/rsommerard/defects4j/project_repos/commons-lang.git
+     Commit db: /home/rsommerard/defects4j/framework/projects/Lang/commit-db
+Number of bugs: 65
+--------------------------------------------------------------------------------
+
+Summary for Bug: 8
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.lang3.time.FastDateFormat_PrinterTest::testCalendarTimezoneRespected
+   --> junit.framework.AssertionFailedError: expected:<8:33PM [LIN]T> but was:<8:33PM [PS]T>
+ - org.apache.commons.lang3.time.FastDatePrinterTest::testCalendarTimezoneRespected
+   --> junit.framework.AssertionFailedError: expected:<8:33PM [LIN]T> but was:<8:33PM [PS]T>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.lang3.time.FastDatePrinter
+--------------------------------------------------------------------------------

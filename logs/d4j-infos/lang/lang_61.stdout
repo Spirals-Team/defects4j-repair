@@ -1,0 +1,28 @@
+Summary of configuration for Project: Lang
+--------------------------------------------------------------------------------
+    Script dir: /home/rsommerard/defects4j/framework
+      Base dir: /home/rsommerard/defects4j
+    Major root: /home/rsommerard/defects4j/major
+      Repo dir: /home/rsommerard/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Lang
+       Program: commons-lang
+    Build file: /home/rsommerard/defects4j/framework/projects/Lang/Lang.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/rsommerard/defects4j/project_repos/commons-lang.git
+     Commit db: /home/rsommerard/defects4j/framework/projects/Lang/commit-db
+Number of bugs: 65
+--------------------------------------------------------------------------------
+
+Summary for Bug: 61
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.lang.text.StrBuilderTest::testIndexOfLang294
+   --> junit.framework.AssertionFailedError: expected:<-1> but was:<6>
+ - org.apache.commons.lang.text.StrBuilderTest::testLang294
+   --> java.lang.ArrayIndexOutOfBoundsException
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.lang.text.StrBuilder
+--------------------------------------------------------------------------------

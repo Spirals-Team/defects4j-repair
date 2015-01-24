@@ -1,0 +1,28 @@
+Summary of configuration for Project: Lang
+--------------------------------------------------------------------------------
+    Script dir: /home/rsommerard/defects4j/framework
+      Base dir: /home/rsommerard/defects4j
+    Major root: /home/rsommerard/defects4j/major
+      Repo dir: /home/rsommerard/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Lang
+       Program: commons-lang
+    Build file: /home/rsommerard/defects4j/framework/projects/Lang/Lang.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/rsommerard/defects4j/project_repos/commons-lang.git
+     Commit db: /home/rsommerard/defects4j/framework/projects/Lang/commit-db
+Number of bugs: 65
+--------------------------------------------------------------------------------
+
+Summary for Bug: 15
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.lang3.reflect.TypeUtilsTest::testGetTypeArguments
+   --> junit.framework.AssertionFailedError: expected:<2> but was:<0>
+ - org.apache.commons.lang3.reflect.TypeUtilsTest::testIsAssignable
+   --> junit.framework.AssertionFailedError: type class org.apache.commons.lang3.reflect.TypeUtilsTest$Thing not assignable to org.apache.commons.lang3.reflect.TypeUtilsTest.org.apache.commons.lang3.reflect.TypeUtilsTest$This<java.lang.String, java.lang.String>!
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.lang3.reflect.TypeUtils
+--------------------------------------------------------------------------------

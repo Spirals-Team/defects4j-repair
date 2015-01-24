@@ -1,0 +1,78 @@
+Summary of configuration for Project: Lang
+--------------------------------------------------------------------------------
+    Script dir: /home/rsommerard/defects4j/framework
+      Base dir: /home/rsommerard/defects4j
+    Major root: /home/rsommerard/defects4j/major
+      Repo dir: /home/rsommerard/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Lang
+       Program: commons-lang
+    Build file: /home/rsommerard/defects4j/framework/projects/Lang/Lang.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/rsommerard/defects4j/project_repos/commons-lang.git
+     Commit db: /home/rsommerard/defects4j/framework/projects/Lang/commit-db
+Number of bugs: 65
+--------------------------------------------------------------------------------
+
+Summary for Bug: 34
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.lang3.builder.ToStringBuilderTest::testObjectCycle
+   --> junit.framework.AssertionFailedError: Expected: <null> but was: []
+ - org.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionHierarchy
+   --> junit.framework.AssertionFailedError: Expected: <null> but was: []
+ - org.apache.commons.lang3.builder.ToStringBuilderTest::testSelfInstanceTwoVarsReflectionObjectCycle
+   --> junit.framework.AssertionFailedError: Expected: <null> but was: []
+ - org.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionArrayCycle
+   --> junit.framework.AssertionFailedError: Expected: <null> but was: []
+ - org.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionLongArrayArray
+   --> junit.framework.AssertionFailedError: Expected: <null> but was: []
+ - org.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionArrayArrayCycle
+   --> junit.framework.AssertionFailedError: Expected: <null> but was: []
+ - org.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionFloatArray
+   --> junit.framework.AssertionFailedError: Expected: <null> but was: []
+ - org.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionDoubleArrayArray
+   --> junit.framework.AssertionFailedError: Expected: <null> but was: []
+ - org.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionBooleanArray
+   --> junit.framework.AssertionFailedError: Expected: <null> but was: []
+ - org.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionyteArray
+   --> junit.framework.AssertionFailedError: Expected: <null> but was: []
+ - org.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionDoubleArray
+   --> junit.framework.AssertionFailedError: Expected: <null> but was: []
+ - org.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionIntArrayArray
+   --> junit.framework.AssertionFailedError: Expected: <null> but was: []
+ - org.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionLongArray
+   --> junit.framework.AssertionFailedError: Expected: <null> but was: []
+ - org.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionhortArrayArray
+   --> junit.framework.AssertionFailedError: Expected: <null> but was: []
+ - org.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionObjectArray
+   --> junit.framework.AssertionFailedError: Expected: <null> but was: []
+ - org.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionObjectCycle
+   --> junit.framework.AssertionFailedError: Expected: <null> but was: []
+ - org.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionBooleanArrayArray
+   --> junit.framework.AssertionFailedError: Expected: <null> but was: []
+ - org.apache.commons.lang3.builder.ToStringBuilderTest::testSimpleReflectionObjectCycle
+   --> junit.framework.AssertionFailedError: Expected: <null> but was: []
+ - org.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionByteArrayArray
+   --> junit.framework.AssertionFailedError: Expected: <null> but was: []
+ - org.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionArrayCycleLevel2
+   --> junit.framework.AssertionFailedError: Expected: <null> but was: []
+ - org.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionArrayAndObjectCycle
+   --> junit.framework.AssertionFailedError: Expected: <null> but was: []
+ - org.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionCharArrayArray
+   --> junit.framework.AssertionFailedError: Expected: <null> but was: []
+ - org.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionShortArray
+   --> junit.framework.AssertionFailedError: Expected: <null> but was: []
+ - org.apache.commons.lang3.builder.ToStringBuilderTest::testSelfInstanceVarReflectionObjectCycle
+   --> junit.framework.AssertionFailedError: Expected: <null> but was: []
+ - org.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionIntArray
+   --> junit.framework.AssertionFailedError: Expected: <null> but was: []
+ - org.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionCharArray
+   --> junit.framework.AssertionFailedError: Expected: <null> but was: []
+ - org.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionFloatArrayArray
+   --> junit.framework.AssertionFailedError: Expected: <null> but was: []
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.lang3.builder.ToStringStyle
+--------------------------------------------------------------------------------
