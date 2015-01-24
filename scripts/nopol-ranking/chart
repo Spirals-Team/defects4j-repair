@@ -30,8 +30,8 @@ cd ~/defects4j-nopol/logs/nopol-ranking/chart/
 
 line=`grep -m 1 -n "^\/\*" chart_1.stdout | cut -f 1 -d :`
 
-tail -n +$line chart_1.stdout > chart_1_cut.stdout
+tail -n +$line chart_1.stdout > chart_1_tmp.stdout
 
-mv chart_1_cut.stdout chart_1.stdout
+mv chart_1_tmp.stdout chart_1.stdout
 
 echo 'Done.'
