@@ -1,0 +1,26 @@
+Summary of configuration for Project: Chart
+--------------------------------------------------------------------------------
+    Script dir: /home/rsommerard/defects4j/framework
+      Base dir: /home/rsommerard/defects4j
+    Major root: /home/rsommerard/defects4j/major
+      Repo dir: /home/rsommerard/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Chart
+       Program: jfreechart
+    Build file: /home/rsommerard/defects4j/framework/projects/Chart/Chart.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Svn
+    Repository: file:///home/rsommerard/defects4j/project_repos/jfreechart/trunk
+     Commit db: /home/rsommerard/defects4j/framework/projects/Chart/commit-db
+Number of bugs: 26
+--------------------------------------------------------------------------------
+
+Summary for Bug: 20
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.jfree.chart.plot.junit.ValueMarkerTests::test1808376
+   --> junit.framework.AssertionFailedError: expected:<java.awt.Color[r=0,g=0,b=255]> but was:<java.awt.Color[r=255,g=0,b=0]>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.jfree.chart.plot.ValueMarker
+--------------------------------------------------------------------------------

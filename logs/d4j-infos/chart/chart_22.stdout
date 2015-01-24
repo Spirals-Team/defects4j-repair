@@ -1,0 +1,36 @@
+Summary of configuration for Project: Chart
+--------------------------------------------------------------------------------
+    Script dir: /home/rsommerard/defects4j/framework
+      Base dir: /home/rsommerard/defects4j
+    Major root: /home/rsommerard/defects4j/major
+      Repo dir: /home/rsommerard/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Chart
+       Program: jfreechart
+    Build file: /home/rsommerard/defects4j/framework/projects/Chart/Chart.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Svn
+    Repository: file:///home/rsommerard/defects4j/project_repos/jfreechart/trunk
+     Commit db: /home/rsommerard/defects4j/framework/projects/Chart/commit-db
+Number of bugs: 26
+--------------------------------------------------------------------------------
+
+Summary for Bug: 22
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.jfree.data.junit.KeyedObjects2DTests::testRemoveColumnByKey
+   --> org.jfree.data.UnknownKeyException: The key (C2) is not recognised.
+ - org.jfree.data.junit.KeyedObjects2DTests::testRemoveValue
+   --> junit.framework.AssertionFailedError: expected:<1> but was:<2>
+ - org.jfree.data.junit.KeyedObjects2DTests::testGetValueByKey
+   --> org.jfree.data.UnknownKeyException: The key (C2) is not recognised.
+ - org.jfree.data.junit.KeyedObjects2DTests::testRemoveColumnByIndex
+   --> org.jfree.data.UnknownKeyException: The key (C1) is not recognised.
+ - org.jfree.data.junit.KeyedObjects2DTests::testSetObject
+   --> org.jfree.data.UnknownKeyException: The key (C2) is not recognised.
+ - org.jfree.data.junit.KeyedObjects2DTests::testRemoveRowByKey
+   --> java.lang.ArrayIndexOutOfBoundsException: -1
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.jfree.data.KeyedObjects2D
+--------------------------------------------------------------------------------

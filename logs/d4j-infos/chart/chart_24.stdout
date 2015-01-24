@@ -1,0 +1,26 @@
+Summary of configuration for Project: Chart
+--------------------------------------------------------------------------------
+    Script dir: /home/rsommerard/defects4j/framework
+      Base dir: /home/rsommerard/defects4j
+    Major root: /home/rsommerard/defects4j/major
+      Repo dir: /home/rsommerard/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Chart
+       Program: jfreechart
+    Build file: /home/rsommerard/defects4j/framework/projects/Chart/Chart.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Svn
+    Repository: file:///home/rsommerard/defects4j/project_repos/jfreechart/trunk
+     Commit db: /home/rsommerard/defects4j/framework/projects/Chart/commit-db
+Number of bugs: 26
+--------------------------------------------------------------------------------
+
+Summary for Bug: 24
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.jfree.chart.renderer.junit.GrayPaintScaleTests::testGetPaint
+   --> java.lang.IllegalArgumentException: Color parameter outside of expected range: Red Green Blue
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.jfree.chart.renderer.GrayPaintScale
+--------------------------------------------------------------------------------

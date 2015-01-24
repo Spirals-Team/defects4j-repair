@@ -1,0 +1,40 @@
+Summary of configuration for Project: Chart
+--------------------------------------------------------------------------------
+    Script dir: /home/rsommerard/defects4j/framework
+      Base dir: /home/rsommerard/defects4j
+    Major root: /home/rsommerard/defects4j/major
+      Repo dir: /home/rsommerard/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Chart
+       Program: jfreechart
+    Build file: /home/rsommerard/defects4j/framework/projects/Chart/Chart.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Svn
+    Repository: file:///home/rsommerard/defects4j/project_repos/jfreechart/trunk
+     Commit db: /home/rsommerard/defects4j/framework/projects/Chart/commit-db
+Number of bugs: 26
+--------------------------------------------------------------------------------
+
+Summary for Bug: 16
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.jfree.data.category.junit.DefaultIntervalCategoryDatasetTests::testGetCategoryIndex
+   --> java.lang.NullPointerException
+ - org.jfree.data.category.junit.DefaultIntervalCategoryDatasetTests::testSetCategoryKeys
+   --> junit.framework.AssertionFailedError
+ - org.jfree.data.category.junit.DefaultIntervalCategoryDatasetTests::testGetSeriesIndex
+   --> java.lang.NullPointerException
+ - org.jfree.data.category.junit.DefaultIntervalCategoryDatasetTests::testGetRowCount
+   --> java.lang.NullPointerException
+ - org.jfree.data.category.junit.DefaultIntervalCategoryDatasetTests::testGetRowIndex
+   --> java.lang.NullPointerException
+ - org.jfree.data.category.junit.DefaultIntervalCategoryDatasetTests::testGetColumnCount
+   --> java.lang.NullPointerException
+ - org.jfree.data.category.junit.DefaultIntervalCategoryDatasetTests::testGetColumnIndex
+   --> java.lang.NullPointerException
+ - org.jfree.data.category.junit.DefaultIntervalCategoryDatasetTests::testCloning2
+   --> java.lang.NullPointerException
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.jfree.data.category.DefaultIntervalCategoryDataset
+--------------------------------------------------------------------------------
