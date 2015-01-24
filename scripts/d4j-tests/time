@@ -1,0 +1,26 @@
+#!/bin/bash
+
+#export PATH="~/defects4j/framework/bin:$PATH"
+
+#for bug in `seq 1 27`
+#do
+  #echo "Starting tests Time ${bug} ..."
+
+  #exec 6<&1
+
+  #exec 1> ~/defects4j-nopol/logs/d4j-tests/time/time_${bug}.stdout
+
+  #defects4j checkout -p Time -v ${bug}b -w /tmp/time_${bug}
+
+  #cd /tmp/time_${bug}/
+  #defects4j compile
+  #defects4j test
+  #cd /tmp/
+  #rm -rf time_${bug}/
+
+  #exec 1<&6 6<&-
+
+#done
+
+#echo 'Done.'
+
