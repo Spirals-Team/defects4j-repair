@@ -23,6 +23,30 @@ do
   exec 1<&6 6<&-
   #exec 2<&7 7<&-
 
+  cd ~/defects4j-nopol/logs/d4j-tests/chart/
+  
+  grep "Tests run" chart_${bug}.stdout > chart_${bug}_grep.stdout
+  cut -f 1 -d "," chart_${bug}_grep.stdout > chart_${bug}_cut_1.stdout
+  cut -f 2 -d ":" chart_${bug}_cut_1.stdout > chart_${bug}_cut_2.stdout
+  testsRun=`sum=0; while read num; do sum=$(($sum + $num)); done < chart_${bug}_cut_2.stdout ; echo $sum`
+  
+  cut -f 2 -d "," chart_${bug}_grep.stdout > chart_${bug}_cut_1.stdout
+  cut -f 2 -d ":" chart_${bug}_cut_1.stdout > chart_${bug}_cut_2.stdout
+  failures=`sum=0; while read num; do sum=$(($sum + $num)); done < chart_${bug}_cut_2.stdout ; echo $sum`  
+  
+  cut -f 3 -d "," chart_${bug}_grep.stdout > chart_${bug}_cut_1.stdout
+  cut -f 2 -d ":" chart_${bug}_cut_1.stdout > chart_${bug}_cut_2.stdout
+  errors=`sum=0; while read num; do sum=$(($sum + $num)); done < chart_${bug}_cut_2.stdout ; echo $sum`
+
+  echo "" >> chart_${bug}.stdout
+  echo "Total tests run: $testsRun" >> chart_${bug}.stdout
+  echo "Total failures: $failures" >> chart_${bug}.stdout
+  echo "Total errors: $errors" >> chart_${bug}.stdout
+
+  rm chart_${bug}_grep.stdout
+  rm chart_${bug}_cut_1.stdout
+  rm chart_${bug}_cut_2.stdout
+
 done
 
 echo 'Done.'
