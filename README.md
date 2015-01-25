@@ -1,30 +1,34 @@
 # Defects4j-Nopol
 
-## Run Defects4j infos
+## Defects4j tests
 
-Scripts: scripts/d4j-infos/
+### Chart project
 
-Logs: logs/d4j-infos/
-
-## Run Defects4j tests
-
-### Chart
-
-Script: scripts/d4j-tests/chart
-
-Logs: logs/d4j-tests/chart/
-
-### Time
-
-TODO: buggy
-
-### Lang
-
-TODO: buggy
-
-## Run Nopol ranking
-
-Scripts: scripts/nopol-ranking/
-
-Logs: logs/nopol-ranking/
-
+| #Bug | Nb. tests run | Nb. failures | Nb. errors | Exec. time |
+|:----:|:-------------:|:------------:|:----------:|:----------:|
+| 1    | 2,193         | 1            | 0          | 23s        |
+| 2    | 2,191         | 0            | 2          | 25s        |
+| 3    | 2,187         | 1            | 0          | 24s        |
+| 4    | 2,179         | 0            | 22         | 23s        |
+| 5    | 2,205    |||
+| 6    | 2,205    |||
+| 7    | 2,205    |||
+| 8    | 2,205    |||
+| 9    | 2,205    |||
+| 10   | 2,205    |||
+| 11   | 2,205    |||
+| 12   | 2,205    |||
+| 13   | 2,205    |||
+| 14   | 2,205    |||
+| 15   | 2,205    |||
+| 16   | 2,205    |||
+| 17   | 2,205    |||
+| 18   | 2,205    |||
+| 19   | 2,205    |||
+| 20   | 2,205    |||
+| 21   | 2,205    |||
+| 22   | 2,205    |||
+| 23   | 2,205    |||
+| 24   | 2,205    |||
+| 25   | 2,205    |||
+| 26   | 2,205    |||
