@@ -2,6 +2,12 @@
 
 export PATH="~/defects4j/framework/bin:$PATH"
 
+cd ~/defects4j-nopol/logs/d4j-tests/chart/
+
+echo '# Chart' > README.md
+echo '| #Bug | Nb. tests run | Nb. failures | Nb. errors | Exec. time |' >> README.md
+echo '|:----:|:-------------:|:------------:|:----------:|:----------:|' >> README.md
+
 for bug in `seq 1 26`
 do
   echo "Starting tests Chart ${bug} ..."
@@ -46,6 +52,10 @@ do
   rm chart_${bug}_grep.stdout
   rm chart_${bug}_cut_1.stdout
   rm chart_${bug}_cut_2.stdout
+  
+  testsTime=`grep 'Total time:' chart_${bug}.stdout | tail -1 | cut -f 2 -d ':'`
+  
+  echo '| ${bug} | ${testsRun} | ${failures} | ${errors} | ${testsTime} |' >> README
 
 done
 
