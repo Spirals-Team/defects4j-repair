@@ -38,7 +38,7 @@ do
 
   mv chart_${bug}_tmp.stdout chart_${bug}.stdout
 
-  cat chart_${bug}.stderr >> chart_${bug}.stdout
+  cat chart_${bug}.stderr | tail -4 >> chart_${bug}.stdout
   
   rm chart_${bug}.stderr
 
