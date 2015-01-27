@@ -20,7 +20,7 @@ do
 
   cp ~/nopol/nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar .
 
-  time java -cp nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar:build/:build-tests/:lib/servlet.jar fr.inria.lille.repair.Main ranking source/ build/:build-tests/:lib/servlet.jar:nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar
+  time java -cp nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar fr.inria.lille.repair.Main ranking source/ build/:build-tests/:lib/servlet.jar:nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar
 
   cd /tmp/
   rm -rf chart_${bug}/
