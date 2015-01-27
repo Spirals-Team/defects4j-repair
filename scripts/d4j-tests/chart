@@ -55,7 +55,7 @@ do
   
   testsTime=`grep 'Total time:' chart_${bug}.stdout | tail -1 | cut -f 2 -d ':'`
   
-  echo '| ${bug} | ${testsRun} | ${failures} | ${errors} | ${testsTime} |' >> README
+  echo "| ${bug} | ${testsRun} | ${failures} | ${errors} | ${testsTime} |" >> README.md
 
 done
 
