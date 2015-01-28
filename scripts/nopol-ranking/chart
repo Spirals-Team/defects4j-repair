@@ -83,7 +83,6 @@ do
     if [[ ! $nopolLineNumber ]]; then
       rank=-1
     else
-      echo "rank=($nopolLineNumber-$statementStart)+1"
       let "rank=($nopolLineNumber-$statementStart)+1"
     fi
 
