@@ -1,4 +1,4 @@
-# Chart
+# Chart - Defects4j tests
 | #Bug | Nb. tests run | Nb. failures | Nb. errors | Exec. time |
 |-----:|--------------:|-------------:|-----------:|-----------:|
 | 1 | 2193 | 1 | 0 |  23 seconds |
