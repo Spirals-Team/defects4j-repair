@@ -1,52 +1,13 @@
 #!/bin/bash
 
-export PATH="~/defects4j/framework/bin:$PATH"
-
 cd ~/defects4j-nopol/logs/nopol-ranking/chart
 
 echo '# Chart - Nopol ranking' >> README.md
 
 for bug in `seq 1 26`
 do
-  echo "Setting up Chart ${bug} ..."
-
-  defects4j checkout -p Chart -v ${bug}b -w /tmp/chart_${bug}
-  cd /tmp/chart_${bug}/
-  defects4j compile
-
-  echo "Starting Nopol ranking on Chart ${bug} ..."
-
-  exec 6<&1
-  exec 7<&2
-
-  exec 1> ~/defects4j-nopol/logs/nopol-ranking/chart/chart_${bug}.stdout
-  exec 2> ~/defects4j-nopol/logs/nopol-ranking/chart/chart_${bug}.stderr
-
-  cp ~/nopol/nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar .
-
-  time java -cp nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar fr.inria.lille.repair.Main ranking source/ build/:build-tests/:lib/servlet.jar:nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar
-
-  cd /tmp/
-  rm -rf chart_${bug}/
-
-  exec 1<&6 6<&-
-  exec 2<&7 7<&-
-
   echo "Formatting Nopol ranking for Chart ${bug} ..."
   
-  cd ~/defects4j-nopol/logs/nopol-ranking/chart/
-
-  line=`grep -m 1 -n "^\/\*" chart_${bug}.stdout | cut -f 1 -d :`
-
-  tail -n +$line chart_${bug}.stdout > chart_${bug}_tmp.stdout
-
-  mv chart_${bug}_tmp.stdout chart_${bug}.stdout
-
-  cat chart_${bug}.stderr | tail -4 >> chart_${bug}.stdout
-  
-  rm chart_${bug}.stderr
-
-  echo "" >> chart_${bug}.stdout
 
   echo "## Bug ${bug}" >> README.md
 
