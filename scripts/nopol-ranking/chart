@@ -62,6 +62,10 @@ do
   modifiedSources=`tail -n +$line ../../../logs/d4j-infos/chart/chart_${bug}.stdout | tac | tail -n +2 | cut -f 3 -d ' '`
 
   statementStart=`grep -m 1 -n "org" chart_${bug}.stdout | cut -f 1 -d :`
+  
+  if [[ ! $statementStart ]]; then
+    statementStart=-1
+  fi
 
   for s in $modifiedSources
   do
@@ -69,8 +73,19 @@ do
     echo "" >> README.md
 
     nopolLine=`grep -m 1 $s chart_${bug}.stdout`
+    
+    if [[ ! $nopolLine ]]; then
+      nopolLine='none'
+    fi
+    
     nopolLineNumber=`grep -m 1 -n $s chart_${bug}.stdout | cut -f 1 -d :`
-    let "rank=($nopolLineNumber-$statementStart)+1"
+    
+    if [[ ! $nopolLineNumber ]]; then
+      rank=-1
+    else
+      echo "rank=($nopolLineNumber-$statementStart)+1"
+      let "rank=($nopolLineNumber-$statementStart)+1"
+    fi
 
     echo '| Rank | Nopol log |' >> README.md
     echo '|------|-----------|' >> README.md
