@@ -50,7 +50,7 @@ do
 
   echo "## Bug ${bug}" >> README.md
 
-  line=`grep -m 1 -n "List of modified sources:" chart_${bug}.stdout | cut -f 1 -d :`
+  line=`grep -m 1 -n "List of modified sources:" ../../../logs/d4j-infos/chart/chart_${bug}.stdout | cut -f 1 -d :`
 
   let "line++"
 
