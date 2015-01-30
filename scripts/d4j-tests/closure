@@ -1,0 +1,63 @@
+#!/bin/bash
+
+export PATH="~/defects4j/framework/bin:$PATH"
+
+cd ~/defects4j-nopol/logs/d4j-tests/closure/
+
+echo '# Closure - Defects4j tests' > README.md
+echo '| #Bug | Nb. tests run | Nb. failures | Nb. errors | Exec. time |' >> README.md
+echo '|------|---------------|--------------|------------|------------|' >> README.md
+
+for bug in `seq 1 133`
+do
+  echo "Starting tests Closure ${bug} ..."
+
+  exec 6<&1
+  #exec 7<&2
+
+  exec 1> ~/defects4j-nopol/logs/d4j-tests/closure/closure_${bug}.stdout
+  #exec 2> ~/defects4j-nopol/logs/d4j-tests/closure/closure_${bug}.stderr
+
+  defects4j checkout -p Closure -v ${bug}b -w /tmp/closure_${bug}
+
+  cd /tmp/closure_${bug}/
+  defects4j compile
+  defects4j test
+  cd /tmp/
+  rm -rf closure_${bug}/
+
+  exec 1<&6 6<&-
+  #exec 2<&7 7<&-
+
+  cd ~/defects4j-nopol/logs/d4j-tests/closure/
+  
+  grep "Tests run" closure_${bug}.stdout > closure_${bug}_grep.stdout
+  cut -f 1 -d "," closure_${bug}_grep.stdout > closure_${bug}_cut_1.stdout
+  cut -f 2 -d ":" closure_${bug}_cut_1.stdout > closure_${bug}_cut_2.stdout
+  testsRun=`sum=0; while read num; do sum=$(($sum + $num)); done < closure_${bug}_cut_2.stdout ; echo $sum`
+  
+  cut -f 2 -d "," closure_${bug}_grep.stdout > closure_${bug}_cut_1.stdout
+  cut -f 2 -d ":" closure_${bug}_cut_1.stdout > closure_${bug}_cut_2.stdout
+  failures=`sum=0; while read num; do sum=$(($sum + $num)); done < closure_${bug}_cut_2.stdout ; echo $sum`  
+  
+  cut -f 3 -d "," closure_${bug}_grep.stdout > closure_${bug}_cut_1.stdout
+  cut -f 2 -d ":" closure_${bug}_cut_1.stdout > closure_${bug}_cut_2.stdout
+  errors=`sum=0; while read num; do sum=$(($sum + $num)); done < closure_${bug}_cut_2.stdout ; echo $sum`
+
+  echo "" >> closure_${bug}.stdout
+  echo "Total tests run: $testsRun" >> closure_${bug}.stdout
+  echo "Total failures: $failures" >> closure_${bug}.stdout
+  echo "Total errors: $errors" >> closure_${bug}.stdout
+
+  rm closure_${bug}_grep.stdout
+  rm closure_${bug}_cut_1.stdout
+  rm closure_${bug}_cut_2.stdout
+  
+  testsTime=`grep 'Total time:' closure_${bug}.stdout | tail -1 | cut -f 2 -d ':'`
+  
+  echo "| ${bug} | ${testsRun} | ${failures} | ${errors} | ${testsTime} |" >> README.md
+
+done
+
+echo 'Done.'
+
