@@ -1,0 +1,29 @@
+Summary of configuration for Project: Closure
+--------------------------------------------------------------------------------
+    Script dir: /home/rsommerard/defects4j/framework
+      Base dir: /home/rsommerard/defects4j
+    Major root: /home/rsommerard/defects4j/major
+      Repo dir: /home/rsommerard/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Closure
+       Program: closure-compiler
+    Build file: /home/rsommerard/defects4j/framework/projects/Closure/Closure.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/rsommerard/defects4j/project_repos/closure-compiler.git
+     Commit db: /home/rsommerard/defects4j/framework/projects/Closure/commit-db
+Number of bugs: 133
+--------------------------------------------------------------------------------
+
+Summary for Bug: 110
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.google.javascript.jscomp.ScopedAliasesTest::testHoistedFunctionDeclaration
+   --> junit.framework.AssertionFailedError: Unexpected error(s): JSC_GOOG_SCOPE_NON_ALIAS_LOCAL. The local variable f is in a goog.scope and is not an alias. at testcode line 1 : 39 expected:<0> but was:<1>
+ - com.google.javascript.jscomp.ScopedAliasesTest::testFunctionDeclaration
+   --> junit.framework.AssertionFailedError: Unexpected error(s): JSC_GOOG_SCOPE_NON_ALIAS_LOCAL. The local variable f is in a goog.scope and is not an alias. at testcode line 1 : 41 expected:<0> but was:<1>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.google.javascript.rhino.Node
+ - com.google.javascript.jscomp.ScopedAliases
+--------------------------------------------------------------------------------

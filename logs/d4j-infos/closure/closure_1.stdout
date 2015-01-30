@@ -1,0 +1,40 @@
+Summary of configuration for Project: Closure
+--------------------------------------------------------------------------------
+    Script dir: /home/rsommerard/defects4j/framework
+      Base dir: /home/rsommerard/defects4j
+    Major root: /home/rsommerard/defects4j/major
+      Repo dir: /home/rsommerard/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Closure
+       Program: closure-compiler
+    Build file: /home/rsommerard/defects4j/framework/projects/Closure/Closure.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/rsommerard/defects4j/project_repos/closure-compiler.git
+     Commit db: /home/rsommerard/defects4j/framework/projects/Closure/commit-db
+Number of bugs: 133
+--------------------------------------------------------------------------------
+
+Summary for Bug: 1
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.google.javascript.jscomp.CommandLineRunnerTest::testSimpleModeLeavesUnusedParams
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.CommandLineRunnerTest::testForwardDeclareDroppedTypes
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.CommandLineRunnerTest::testDebugFlag1
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.IntegrationTest::testIssue787
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.RemoveUnusedVarsTest::testRemoveGlobal1
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.RemoveUnusedVarsTest::testRemoveGlobal2
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.RemoveUnusedVarsTest::testRemoveGlobal3
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.RemoveUnusedVarsTest::testIssue168b
+   --> junit.framework.AssertionFailedError: 
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.google.javascript.jscomp.RemoveUnusedVars
+--------------------------------------------------------------------------------

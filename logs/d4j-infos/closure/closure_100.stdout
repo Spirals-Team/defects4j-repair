@@ -1,0 +1,46 @@
+Summary of configuration for Project: Closure
+--------------------------------------------------------------------------------
+    Script dir: /home/rsommerard/defects4j/framework
+      Base dir: /home/rsommerard/defects4j
+    Major root: /home/rsommerard/defects4j/major
+      Repo dir: /home/rsommerard/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Closure
+       Program: closure-compiler
+    Build file: /home/rsommerard/defects4j/framework/projects/Closure/Closure.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/rsommerard/defects4j/project_repos/closure-compiler.git
+     Commit db: /home/rsommerard/defects4j/framework/projects/Closure/commit-db
+Number of bugs: 133
+--------------------------------------------------------------------------------
+
+Summary for Bug: 100
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.google.javascript.jscomp.CheckGlobalThisTest::testStaticFunction6
+   --> junit.framework.AssertionFailedError: Unexpected error(s): JSC_USED_GLOBAL_THIS. dangerous use of the global this object at testcode line 1 : 35 expected:<0> but was:<1>
+ - com.google.javascript.jscomp.CheckGlobalThisTest::testStaticFunction7
+   --> junit.framework.AssertionFailedError: Unexpected error(s): JSC_USED_GLOBAL_THIS. dangerous use of the global this object at testcode line 1 : 41 expected:<0> but was:<1>
+ - com.google.javascript.jscomp.CheckGlobalThisTest::testStaticFunction8
+   --> junit.framework.AssertionFailedError: There should be one error.  expected:<1> but was:<0>
+ - com.google.javascript.jscomp.CheckGlobalThisTest::testGlobalThis7
+   --> junit.framework.AssertionFailedError: There should be one error.  expected:<1> but was:<0>
+ - com.google.javascript.jscomp.CheckGlobalThisTest::testStaticMethod2
+   --> junit.framework.AssertionFailedError: Unexpected error(s): JSC_USED_GLOBAL_THIS. dangerous use of the global this object at testcode line 1 : 39 expected:<0> but was:<1>
+ - com.google.javascript.jscomp.CheckGlobalThisTest::testStaticMethod3
+   --> junit.framework.AssertionFailedError: Unexpected error(s): JSC_USED_GLOBAL_THIS. dangerous use of the global this object at testcode line 1 : 41 expected:<0> but was:<1>
+ - com.google.javascript.jscomp.CheckGlobalThisTest::testInnerFunction1
+   --> junit.framework.AssertionFailedError: There should be one error.  expected:<1> but was:<0>
+ - com.google.javascript.jscomp.CheckGlobalThisTest::testInnerFunction2
+   --> junit.framework.AssertionFailedError: There should be one error.  expected:<1> but was:<0>
+ - com.google.javascript.jscomp.CheckGlobalThisTest::testInnerFunction3
+   --> junit.framework.AssertionFailedError: There should be one error.  expected:<1> but was:<0>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.google.javascript.rhino.jstype.FunctionType
+ - com.google.javascript.jscomp.SourceFile
+ - com.google.javascript.jscomp.CheckGlobalThis
+ - com.google.javascript.jscomp.parsing.JsDocInfoParser
+ - com.google.javascript.rhino.jstype.NamedType
+--------------------------------------------------------------------------------

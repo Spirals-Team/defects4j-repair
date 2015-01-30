@@ -1,0 +1,28 @@
+Summary of configuration for Project: Math
+--------------------------------------------------------------------------------
+    Script dir: /home/rsommerard/defects4j/framework
+      Base dir: /home/rsommerard/defects4j
+    Major root: /home/rsommerard/defects4j/major
+      Repo dir: /home/rsommerard/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Math
+       Program: commons-math
+    Build file: /home/rsommerard/defects4j/framework/projects/Math/Math.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/rsommerard/defects4j/project_repos/commons-math.git
+     Commit db: /home/rsommerard/defects4j/framework/projects/Math/commit-db
+Number of bugs: 106
+--------------------------------------------------------------------------------
+
+Summary for Bug: 86
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.math.linear.CholeskyDecompositionImplTest::testMath274
+   --> junit.framework.AssertionFailedError: Expected exception: org.apache.commons.math.linear.NotPositiveDefiniteMatrixException
+ - org.apache.commons.math.linear.CholeskyDecompositionImplTest::testNotPositiveDefinite
+   --> junit.framework.AssertionFailedError: Expected exception: org.apache.commons.math.linear.NotPositiveDefiniteMatrixException
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.math.linear.CholeskyDecompositionImpl
+--------------------------------------------------------------------------------

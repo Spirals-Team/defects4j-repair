@@ -1,0 +1,31 @@
+Summary of configuration for Project: Closure
+--------------------------------------------------------------------------------
+    Script dir: /home/rsommerard/defects4j/framework
+      Base dir: /home/rsommerard/defects4j
+    Major root: /home/rsommerard/defects4j/major
+      Repo dir: /home/rsommerard/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Closure
+       Program: closure-compiler
+    Build file: /home/rsommerard/defects4j/framework/projects/Closure/Closure.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/rsommerard/defects4j/project_repos/closure-compiler.git
+     Commit db: /home/rsommerard/defects4j/framework/projects/Closure/commit-db
+Number of bugs: 133
+--------------------------------------------------------------------------------
+
+Summary for Bug: 103
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.google.javascript.jscomp.CheckUnreachableCodeTest::testInstanceOfThrowsException
+   --> junit.framework.AssertionFailedError: Unexpected error(s): JSC_UNREACHABLE_CODE. unreachable code at testcode line 1 expected:<0> but was:<1>
+ - com.google.javascript.jscomp.ControlFlowAnalysisTest::testInstanceOf
+   --> junit.framework.AssertionFailedError: No cross edges found
+ - com.google.javascript.jscomp.DisambiguatePropertiesTest::testSupertypeReferenceOfSubtypeProperty
+   --> junit.framework.AssertionFailedError: 
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.google.javascript.jscomp.DisambiguateProperties
+ - com.google.javascript.jscomp.ControlFlowAnalysis
+--------------------------------------------------------------------------------

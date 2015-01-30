@@ -1,0 +1,38 @@
+Summary of configuration for Project: Closure
+--------------------------------------------------------------------------------
+    Script dir: /home/rsommerard/defects4j/framework
+      Base dir: /home/rsommerard/defects4j
+    Major root: /home/rsommerard/defects4j/major
+      Repo dir: /home/rsommerard/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Closure
+       Program: closure-compiler
+    Build file: /home/rsommerard/defects4j/framework/projects/Closure/Closure.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/rsommerard/defects4j/project_repos/closure-compiler.git
+     Commit db: /home/rsommerard/defects4j/framework/projects/Closure/commit-db
+Number of bugs: 133
+--------------------------------------------------------------------------------
+
+Summary for Bug: 86
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.google.javascript.jscomp.NodeUtilTest::testLocalValue1
+   --> junit.framework.AssertionFailedError
+ - com.google.javascript.jscomp.PureFunctionIdentifierTest::testLocalizedSideEffects8
+   --> junit.framework.AssertionFailedError: expected:<[A]> but was:<[A, f]>
+ - com.google.javascript.jscomp.PureFunctionIdentifierTest::testLocalizedSideEffects9
+   --> junit.framework.AssertionFailedError: expected:<[A]> but was:<[A, f]>
+ - com.google.javascript.jscomp.PureFunctionIdentifierTest::testAnnotationInExterns_new4
+   --> junit.framework.AssertionFailedError: expected:<[externObjSEThis]> but was:<[externObjSEThis, NEW STRING externObjSEThisMethod]>
+ - com.google.javascript.jscomp.PureFunctionIdentifierTest::testAnnotationInExterns_new6
+   --> junit.framework.AssertionFailedError: expected:<[externObjSEThis]> but was:<[externObjSEThis, NEW STRING externObjSEThisMethod, f]>
+ - com.google.javascript.jscomp.PureFunctionIdentifierTest::testIssue303b
+   --> junit.framework.AssertionFailedError: expected:<[]> but was:<[NEW STRING setLocation]>
+ - com.google.javascript.jscomp.PureFunctionIdentifierTest::testIssue303
+   --> junit.framework.AssertionFailedError: expected:<[]> but was:<[NEW STRING setLocation]>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.google.javascript.jscomp.NodeUtil
+--------------------------------------------------------------------------------

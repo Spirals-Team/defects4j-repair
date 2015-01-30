@@ -1,0 +1,86 @@
+Summary of configuration for Project: Math
+--------------------------------------------------------------------------------
+    Script dir: /home/rsommerard/defects4j/framework
+      Base dir: /home/rsommerard/defects4j
+    Major root: /home/rsommerard/defects4j/major
+      Repo dir: /home/rsommerard/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Math
+       Program: commons-math
+    Build file: /home/rsommerard/defects4j/framework/projects/Math/Math.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/rsommerard/defects4j/project_repos/commons-math.git
+     Commit db: /home/rsommerard/defects4j/framework/projects/Math/commit-db
+Number of bugs: 106
+--------------------------------------------------------------------------------
+
+Summary for Bug: 6
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.math3.optim.nonlinear.scalar.gradient.NonLinearConjugateGradientOptimizerTest::testTrivial
+   --> junit.framework.AssertionFailedError
+ - org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest::testConstrainedRosen
+   --> junit.framework.AssertionFailedError
+ - org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest::testElliRotated
+   --> junit.framework.AssertionFailedError
+ - org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest::testEllipse
+   --> junit.framework.AssertionFailedError
+ - org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest::testTwoAxes
+   --> junit.framework.AssertionFailedError
+ - org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest::testCigar
+   --> junit.framework.AssertionFailedError
+ - org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest::testRosen
+   --> junit.framework.AssertionFailedError
+ - org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest::testRastrigin
+   --> junit.framework.AssertionFailedError
+ - org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest::testDiagonalRosen
+   --> junit.framework.AssertionFailedError
+ - org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest::testSsDiffPow
+   --> junit.framework.AssertionFailedError
+ - org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest::testMaximize
+   --> junit.framework.AssertionFailedError
+ - org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest::testAckley
+   --> junit.framework.AssertionFailedError
+ - org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest::testCigTab
+   --> junit.framework.AssertionFailedError
+ - org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest::testDiffPow
+   --> junit.framework.AssertionFailedError
+ - org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest::testSphere
+   --> junit.framework.AssertionFailedError
+ - org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest::testTablet
+   --> junit.framework.AssertionFailedError
+ - org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest::testCigarWithBoundaries
+   --> junit.framework.AssertionFailedError
+ - org.apache.commons.math3.optim.nonlinear.scalar.noderiv.PowellOptimizerTest::testSumSinc
+   --> junit.framework.AssertionFailedError
+ - org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizerMultiDirectionalTest::testMaximize1
+   --> junit.framework.AssertionFailedError
+ - org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizerMultiDirectionalTest::testMaximize2
+   --> junit.framework.AssertionFailedError
+ - org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizerMultiDirectionalTest::testMinimize1
+   --> junit.framework.AssertionFailedError
+ - org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizerMultiDirectionalTest::testMinimize2
+   --> junit.framework.AssertionFailedError
+ - org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizerNelderMeadTest::testMaximize1
+   --> junit.framework.AssertionFailedError
+ - org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizerNelderMeadTest::testMaximize2
+   --> junit.framework.AssertionFailedError
+ - org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizerNelderMeadTest::testMinimize1
+   --> junit.framework.AssertionFailedError
+ - org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizerNelderMeadTest::testMinimize2
+   --> junit.framework.AssertionFailedError
+ - org.apache.commons.math3.optim.nonlinear.vector.jacobian.GaussNewtonOptimizerTest::testGetIterations
+   --> junit.framework.AssertionFailedError
+ - org.apache.commons.math3.optim.nonlinear.vector.jacobian.LevenbergMarquardtOptimizerTest::testGetIterations
+   --> junit.framework.AssertionFailedError
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.math3.optim.nonlinear.scalar.noderiv.PowellOptimizer
+ - org.apache.commons.math3.optim.nonlinear.scalar.gradient.NonLinearConjugateGradientOptimizer
+ - org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizer
+ - org.apache.commons.math3.optim.nonlinear.vector.jacobian.GaussNewtonOptimizer
+ - org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizer
+ - org.apache.commons.math3.optim.BaseOptimizer
+ - org.apache.commons.math3.optim.nonlinear.vector.jacobian.LevenbergMarquardtOptimizer
+--------------------------------------------------------------------------------
