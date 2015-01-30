@@ -8,7 +8,19 @@ echo '# Time - Defects4j tests' > README.md
 echo '| #Bug | Nb. tests run | Nb. failures | Nb. errors | Exec. time |' >> README.md
 echo '|------|---------------|--------------|------------|------------|' >> README.md
 
-for bug in `seq 1 27`
+min=1
+max=27
+
+if [[ $1 ]]; then
+  if [[ $1 -gt 0 ]]; then
+    if [[ $1 -lt 28 ]]; then
+      min=$1
+      max=$1
+    fi
+  fi
+fi
+
+for bug in `seq $min $max`
 do
   echo "Starting tests Time ${bug} ..."
 
