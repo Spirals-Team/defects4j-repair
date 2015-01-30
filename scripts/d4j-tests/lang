@@ -8,7 +8,19 @@ echo '# Lang - Defects4j tests' > README.md
 echo '| #Bug | Nb. tests run | Nb. failures | Nb. errors | Exec. time |' >> README.md
 echo '|------|---------------|--------------|------------|------------|' >> README.md
 
-for bug in `seq 1 65`
+min=1
+max=65
+
+if [[ $1 ]]; then
+  if [[ $1 -gt 0 ]]; then
+    if [[ $1 -lt 66 ]]; then
+      min=$1
+      max=$1
+    fi
+  fi
+fi
+
+for bug in `seq $min $max`
 do
   echo "Starting tests Lang ${bug} ..."
 
