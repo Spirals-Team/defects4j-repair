@@ -1,0 +1,132 @@
+Running ant (compile) ... OK
+Buildfile: /home/user/defects4j/framework/projects/Time/Time.build.xml
+
+init:
+     [echo] -------- joda-time 2.0 --------
+
+getjunit:
+
+installjunit:
+
+getjodaconvert:
+
+prepare:
+    [mkdir] Created dir: /tmp/time_23/build
+    [mkdir] Created dir: /tmp/time_23/build/classes
+    [mkdir] Created dir: /tmp/time_23/build/conf
+
+static:
+     [copy] Copying 1 file to /tmp/time_23/build/conf
+
+compile.main:
+    [javac] Compiling 156 source files to /tmp/time_23/build/classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.5
+    [javac] 1 warning
+     [copy] Copying 6 files to /tmp/time_23/build/classes
+
+compile.zoneinfo:
+
+joda-time.compile:
+
+compile:
+    [mkdir] Created dir: /tmp/time_23/build/classes/org/joda/time/tz/data
+     [java] Writing zoneinfo files
+     [java] Writing ZoneInfoMap
+
+BUILD SUCCESSFUL
+Total time: 16 seconds
+Running ant (compile.tests) ... OK
+Buildfile: /home/user/defects4j/framework/projects/Time/Time.build.xml
+
+init:
+     [echo] -------- joda-time 2.0 --------
+
+getjunit:
+
+installjunit:
+
+getjodaconvert:
+
+prepare:
+
+static:
+
+compile.main:
+
+compile.zoneinfo:
+
+joda-time.compile:
+
+compile:
+     [java] Writing zoneinfo files
+     [java] Writing ZoneInfoMap
+
+joda-time.compile.tests:
+    [mkdir] Created dir: /tmp/time_23/build/tests
+    [javac] Compiling 154 source files to /tmp/time_23/build/tests
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+     [copy] Copying 2 files to /tmp/time_23/build/tests
+
+compile.tests:
+
+BUILD SUCCESSFUL
+Total time: 20 seconds
+Running ant (test) ... OK
+Buildfile: /home/user/defects4j/framework/projects/Time/Time.build.xml
+
+init:
+     [echo] -------- joda-time 2.0 --------
+
+getjunit:
+
+installjunit:
+
+getjodaconvert:
+
+prepare:
+
+static:
+
+compile.main:
+
+compile.zoneinfo:
+
+joda-time.compile:
+
+compile:
+     [java] Writing zoneinfo files
+     [java] Writing ZoneInfoMap
+
+joda-time.compile.tests:
+
+compile.tests:
+
+test:
+    [junit] Running org.joda.time.TestAll
+    [junit] Tests run: 2796, Failures: 2, Errors: 0, Time elapsed: 1,445 sec
+    [junit] Test org.joda.time.TestAll FAILED
+    [junit] Running org.joda.time.chrono.TestAll
+    [junit] Tests run: 145, Failures: 0, Errors: 0, Time elapsed: 4,607 sec
+    [junit] Running org.joda.time.chrono.gj.TestAll
+    [junit] Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0,862 sec
+    [junit] Running org.joda.time.convert.TestAll
+    [junit] Tests run: 187, Failures: 0, Errors: 0, Time elapsed: 0,118 sec
+    [junit] Running org.joda.time.field.TestAll
+    [junit] Tests run: 275, Failures: 0, Errors: 0, Time elapsed: 0,063 sec
+    [junit] Running org.joda.time.format.TestAll
+    [junit] Tests run: 406, Failures: 0, Errors: 0, Time elapsed: 0,386 sec
+    [junit] Running org.joda.time.tz.TestAll
+    [junit] Tests run: 19, Failures: 0, Errors: 0, Time elapsed: 0,525 sec
+
+BUILD SUCCESSFUL
+Total time: 13 seconds
+Failing tests: 2
+  - org.joda.time.TestMonthDay_Properties::testPropertyGetMonthOfYear
+  - org.joda.time.TestDateTimeZone::testForID_String_old
+
+Total tests run: 3830
+Total failures: 2
+Total errors: 0
