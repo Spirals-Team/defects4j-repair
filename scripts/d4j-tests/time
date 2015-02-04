@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#for bug in $(seq 1 27); do defects4j checkout -p Time -v ${bug}b -w /tmp/time_${bug}; done
+
 export PATH="~/defects4j/framework/bin:$PATH"
 
 cd ~/defects4j-nopol/logs/d4j-tests/time/
