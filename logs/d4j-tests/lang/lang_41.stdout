@@ -1,0 +1,366 @@
+Running ant (compile) ... OK
+Buildfile: /home/user/defects4j/framework/projects/Lang/Lang.build.xml
+
+test-offline:
+
+get-deps:
+
+compile:
+    [mkdir] Created dir: /tmp/lang_41/target/classes
+    [javac] /tmp/lang_41/maven-build.xml:74: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 82 source files to /tmp/lang_41/target/classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.5
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+    [javac] 1 warning
+    [mkdir] Created dir: /tmp/lang_41/target/classes/META-INF
+     [copy] Copying 2 files to /tmp/lang_41/target/classes/META-INF
+
+BUILD SUCCESSFUL
+Total time: 10 seconds
+Running ant (compile.tests) ... OK
+Buildfile: /home/user/defects4j/framework/projects/Lang/Lang.build.xml
+
+test-offline:
+
+get-deps:
+
+compile:
+    [javac] /tmp/lang_41/maven-build.xml:74: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+compile-tests:
+    [mkdir] Created dir: /tmp/lang_41/target/test-classes
+    [javac] /tmp/lang_41/maven-build.xml:107: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 98 source files to /tmp/lang_41/target/test-classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.5
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/SystemUtilsTest.java:27: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac] import junit.framework.Assert;
+    [javac]                       ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/builder/ReflectionToStringBuilderExcludeTest.java:24: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac] import junit.framework.Assert;
+    [javac]                       ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/exception/ExceptionUtilsTest.java:30: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac] import junit.framework.Assert;
+    [javac]                       ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/time/StopWatchTest.java:19: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac] import junit.framework.Assert;
+    [javac]                       ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/ArrayUtilsAddTest.java:229: warning: non-varargs call of varargs method with inexact argument type for last parameter;
+    [javac]         newArray = ArrayUtils.addAll(stringArray1, null);
+    [javac]                                                    ^
+    [javac]   cast to String for a varargs call
+    [javac]   cast to String[] for a non-varargs call and to suppress this warning
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/ArrayUtilsAddTest.java:242: warning: non-varargs call of varargs method with inexact argument type for last parameter;
+    [javac]         newArray = ArrayUtils.addAll(ArrayUtils.EMPTY_STRING_ARRAY, null);
+    [javac]                                                                     ^
+    [javac]   cast to String for a varargs call
+    [javac]   cast to String[] for a non-varargs call and to suppress this warning
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:54: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]         assertNotNull(new StringEscapeUtils());
+    [javac]                           ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:55: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]         Constructor[] cons = StringEscapeUtils.class.getDeclaredConstructors();
+    [javac]                              ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:58: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]         assertEquals(true, Modifier.isPublic(StringEscapeUtils.class.getModifiers()));
+    [javac]                                              ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:59: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]         assertEquals(false, Modifier.isFinal(StringEscapeUtils.class.getModifiers()));
+    [javac]                                              ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:64: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]         assertEquals(null, StringEscapeUtils.escapeJava(null));
+    [javac]                            ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:66: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]             StringEscapeUtils.escapeJava(null, null);
+    [javac]             ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:73: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]             StringEscapeUtils.escapeJava(null, "");
+    [javac]             ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:107: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]         final String actual = StringEscapeUtils.escapeJava(input);
+    [javac]                               ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:121: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]         String converted = StringEscapeUtils.escapeJava(original);
+    [javac]                            ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:126: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]         StringEscapeUtils.escapeJava(writer, original);
+    [javac]         ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:131: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]         assertEquals(null, StringEscapeUtils.unescapeJava(null));
+    [javac]                            ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:133: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]             StringEscapeUtils.unescapeJava(null, null);
+    [javac]             ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:140: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]             StringEscapeUtils.unescapeJava(null, "");
+    [javac]             ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:147: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]             StringEscapeUtils.unescapeJava("\\u02-3");
+    [javac]             ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:170: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]         String actual = StringEscapeUtils.unescapeJava(original);
+    [javac]                         ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:174: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]                 ": expected '" + StringEscapeUtils.escapeJava(expected) +
+    [javac]                                  ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:176: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]                 "' actual '" + StringEscapeUtils.escapeJava(actual) + "'",
+    [javac]                                ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:180: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]         StringEscapeUtils.unescapeJava(writer, original);
+    [javac]         ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:186: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]         assertEquals(null, StringEscapeUtils.escapeJavaScript(null));
+    [javac]                            ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:188: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]             StringEscapeUtils.escapeJavaScript(null, null);
+    [javac]             ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:195: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]             StringEscapeUtils.escapeJavaScript(null, "");
+    [javac]             ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:202: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]         assertEquals("He didn\\'t say, \\\"stop!\\\"", StringEscapeUtils.escapeJavaScript("He didn't say, \"stop!\""));
+    [javac]                                                        ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:204: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]                 StringEscapeUtils.escapeJavaScript("document.getElementById(\"test\").value = '<script>alert('aaa');</script>';"));
+    [javac]                 ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:231: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]             assertEquals(message, expected, StringEscapeUtils.escapeHtml(original));
+    [javac]                                             ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:234: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]                 StringEscapeUtils.escapeHtml(sw, original);
+    [javac]                 ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:247: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]             assertEquals(message, expected, StringEscapeUtils.unescapeHtml(original));
+    [javac]                                             ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:251: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]                 StringEscapeUtils.unescapeHtml(sw, original);
+    [javac]                 ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:260: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]         assertEquals("funny chars pass through OK", "Fran\u00E7ais", StringEscapeUtils.unescapeHtml("Fran\u00E7ais"));
+    [javac]                                                                      ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:262: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]         assertEquals("Hello&;World", StringEscapeUtils.unescapeHtml("Hello&;World"));
+    [javac]                                      ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:263: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]         assertEquals("Hello&#;World", StringEscapeUtils.unescapeHtml("Hello&#;World"));
+    [javac]                                       ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:264: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]         assertEquals("Hello&# ;World", StringEscapeUtils.unescapeHtml("Hello&# ;World"));
+    [javac]                                        ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:265: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]         assertEquals("Hello&##;World", StringEscapeUtils.unescapeHtml("Hello&##;World"));
+    [javac]                                        ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:270: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]         assertEquals("hex number unescape", "\u0080\u009F", StringEscapeUtils.unescapeHtml("&#x80;&#x9F;"));
+    [javac]                                                             ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:271: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]         assertEquals("hex number unescape", "\u0080\u009F", StringEscapeUtils.unescapeHtml("&#X80;&#X9F;"));
+    [javac]                                                             ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:279: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]             assertEquals("hex number unescape index " + (int)i, expected, StringEscapeUtils.unescapeHtml(escapedC1 + escapedC2));
+    [javac]                                                                           ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:285: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]         assertEquals("&zzzz;", StringEscapeUtils.unescapeHtml("&zzzz;"));
+    [javac]                                ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:290: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]         assertEquals("&Beta;", StringEscapeUtils.escapeHtml("\u0392"));
+    [javac]                                ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:291: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]         assertEquals("\u0392", StringEscapeUtils.unescapeHtml("&Beta;"));
+    [javac]                                ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:298: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]         assertEquals("&lt;abc&gt;", StringEscapeUtils.escapeXml("<abc>"));
+    [javac]                                     ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:299: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]         assertEquals("<abc>", StringEscapeUtils.unescapeXml("&lt;abc&gt;"));
+    [javac]                               ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:302: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]                 "&#161;", StringEscapeUtils.escapeXml("\u00A1"));
+    [javac]                           ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:304: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]                 "\u00A0", StringEscapeUtils.unescapeXml("&#160;"));
+    [javac]                           ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:306: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]         assertEquals("ain't", StringEscapeUtils.unescapeXml("ain&apos;t"));
+    [javac]                               ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:307: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]         assertEquals("ain&apos;t", StringEscapeUtils.escapeXml("ain't"));
+    [javac]                                    ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:308: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]         assertEquals("", StringEscapeUtils.escapeXml(""));
+    [javac]                          ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:309: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]         assertEquals(null, StringEscapeUtils.escapeXml(null));
+    [javac]                            ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:310: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]         assertEquals(null, StringEscapeUtils.unescapeXml(null));
+    [javac]                            ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:314: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]             StringEscapeUtils.escapeXml(sw, "<abc>");
+    [javac]             ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:321: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]             StringEscapeUtils.unescapeXml(sw, "&lt;abc&gt;");
+    [javac]             ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:330: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]         assertEquals("<P&O>", StringEscapeUtils.unescapeHtml("&lt;P&O&gt;"));
+    [javac]                               ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:331: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]         assertEquals("test & <", StringEscapeUtils.unescapeHtml("test & &lt;"));
+    [javac]                                  ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:332: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]         assertEquals("<P&O>", StringEscapeUtils.unescapeXml("&lt;P&O&gt;"));
+    [javac]                               ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:333: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]         assertEquals("test & <", StringEscapeUtils.unescapeXml("test & &lt;"));
+    [javac]                                  ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:337: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]         assertEquals("& &", StringEscapeUtils.unescapeHtml("& &amp;"));
+    [javac]                             ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:342: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]         assertEquals("foo.bar",          StringEscapeUtils.escapeCsv("foo.bar"));
+    [javac]                                          ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:343: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]         assertEquals("\"foo,bar\"",      StringEscapeUtils.escapeCsv("foo,bar"));
+    [javac]                                          ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:344: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]         assertEquals("\"foo\nbar\"",     StringEscapeUtils.escapeCsv("foo\nbar"));
+    [javac]                                          ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:345: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]         assertEquals("\"foo\rbar\"",     StringEscapeUtils.escapeCsv("foo\rbar"));
+    [javac]                                          ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:346: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]         assertEquals("\"foo\"\"bar\"",   StringEscapeUtils.escapeCsv("foo\"bar"));
+    [javac]                                          ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:347: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]         assertEquals("",   StringEscapeUtils.escapeCsv(""));
+    [javac]                            ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:348: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]         assertEquals(null, StringEscapeUtils.escapeCsv(null));
+    [javac]                            ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:365: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]             StringEscapeUtils.escapeCsv(writer, value);
+    [javac]             ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:374: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]         assertEquals("foo.bar",          StringEscapeUtils.unescapeCsv("foo.bar"));
+    [javac]                                          ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:375: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]         assertEquals("foo,bar",      StringEscapeUtils.unescapeCsv("\"foo,bar\""));
+    [javac]                                      ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:376: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]         assertEquals("foo\nbar",     StringEscapeUtils.unescapeCsv("\"foo\nbar\""));
+    [javac]                                      ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:377: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]         assertEquals("foo\rbar",     StringEscapeUtils.unescapeCsv("\"foo\rbar\""));
+    [javac]                                      ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:378: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]         assertEquals("foo\"bar",   StringEscapeUtils.unescapeCsv("\"foo\"\"bar\""));
+    [javac]                                    ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:379: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]         assertEquals("",   StringEscapeUtils.unescapeCsv(""));
+    [javac]                            ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:380: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]         assertEquals(null, StringEscapeUtils.unescapeCsv(null));
+    [javac]                            ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:382: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]         assertEquals("\"foo.bar\"",          StringEscapeUtils.unescapeCsv("\"foo.bar\""));
+    [javac]                                              ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:401: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]             StringEscapeUtils.unescapeCsv(writer, value);
+    [javac]             ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:416: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]         String escaped = StringEscapeUtils.escapeHtml( new String(data, "UTF8") );
+    [javac]                          ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:417: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]         String unescaped = StringEscapeUtils.unescapeHtml( escaped );
+    [javac]                            ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:425: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]         String escaped = StringEscapeUtils.escapeHtml( "\u304B\u304C\u3068" );
+    [javac]                          ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/StringEscapeUtilsTest.java:429: warning: [deprecation] StringEscapeUtils in org.apache.commons.lang has been deprecated
+    [javac]         String unescaped = StringEscapeUtils.unescapeHtml( escaped );
+    [javac]                            ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/SystemUtilsTest.java:216: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertNotNull(dir);
+    [javac]         ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/SystemUtilsTest.java:217: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertTrue(dir.exists());
+    [javac]         ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/SystemUtilsTest.java:225: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertNotNull(dir);
+    [javac]         ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/SystemUtilsTest.java:226: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertTrue(dir.exists());
+    [javac]         ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/SystemUtilsTest.java:234: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertNotNull(dir);
+    [javac]         ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/SystemUtilsTest.java:235: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertTrue(dir.exists());
+    [javac]         ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/SystemUtilsTest.java:243: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertNotNull(dir);
+    [javac]         ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/SystemUtilsTest.java:244: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertTrue(dir.exists());
+    [javac]         ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/builder/ReflectionToStringBuilderExcludeTest.java:114: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertTrue(toString.indexOf(NOT_SECRET_FIELD) > ArrayUtils.INDEX_NOT_FOUND);
+    [javac]         ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/builder/ReflectionToStringBuilderExcludeTest.java:115: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertTrue(toString.indexOf(NOT_SECRET_VALUE) > ArrayUtils.INDEX_NOT_FOUND);
+    [javac]         ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/builder/ReflectionToStringBuilderExcludeTest.java:119: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertEquals(ArrayUtils.INDEX_NOT_FOUND, toString.indexOf(SECRET_VALUE));
+    [javac]         ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/builder/ReflectionToStringBuilderExcludeTest.java:124: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertTrue(toString.indexOf(SECRET_VALUE) > 0);
+    [javac]         ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/exception/ExceptionUtilsTest.java:148: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]             Assert.assertFalse(ExceptionUtils.isCauseMethodName(methodName));
+    [javac]             ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/exception/ExceptionUtilsTest.java:151: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]             Assert.assertTrue(ExceptionUtils.isCauseMethodName(methodName));
+    [javac]             ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/exception/ExceptionUtilsTest.java:154: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]             Assert.assertFalse(
+    [javac]             ^
+    [javac] /tmp/lang_41/src/test/org/apache/commons/lang/time/StopWatchTest.java:221: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]             Assert.assertTrue(watch.getStartTime() >= beforeStopWatch);
+    [javac]             ^
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+    [javac] 98 warnings
+
+compile.tests:
+
+BUILD SUCCESSFUL
+Total time: 10 seconds
+Running ant (test) ... OK
+Buildfile: /home/user/defects4j/framework/projects/Lang/Lang.build.xml
+
+test-offline:
+
+get-deps:
+
+compile:
+    [javac] /tmp/lang_41/maven-build.xml:74: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+compile-tests:
+    [javac] /tmp/lang_41/maven-build.xml:107: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+compile.tests:
+
+test:
+    [junit] Test org.apache.commons.lang.ClassUtilsTest FAILED
+    [junit] Can't test IS_JAVA value
+
+BUILD SUCCESSFUL
+Total time: 14 seconds
+Failing tests: 2
+  - org.apache.commons.lang.ClassUtilsTest::test_getShortClassName_Class
+  - org.apache.commons.lang.ClassUtilsTest::test_getPackageName_Class
+
+Total tests run: 0
+Total failures: 0
+Total errors: 0
