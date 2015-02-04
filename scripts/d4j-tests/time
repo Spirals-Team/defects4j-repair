@@ -30,7 +30,7 @@ do
   exec 1> ~/defects4j-nopol/logs/d4j-tests/time/time_${bug}.stdout
   #exec 2> ~/defects4j-nopol/logs/d4j-tests/time/time_${bug}.stderr
 
-  defects4j checkout -p Time -v ${bug}b -w /tmp/time_${bug}
+  #defects4j checkout -p Time -v ${bug}b -w /tmp/time_${bug}
 
   cd /tmp/time_${bug}/
   defects4j compile
