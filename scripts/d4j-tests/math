@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#for bug in $(seq 1 106); do defects4j checkout -p Math -v ${bug}b -w /tmp/math_${bug}; done
+
 export PATH="~/defects4j/framework/bin:$PATH"
 
 cd ~/defects4j-nopol/logs/d4j-tests/math/
@@ -30,7 +32,7 @@ do
   exec 1> ~/defects4j-nopol/logs/d4j-tests/math/math_${bug}.stdout
   #exec 2> ~/defects4j-nopol/logs/d4j-tests/math/math_${bug}.stderr
 
-  defects4j checkout -p Math -v ${bug}b -w /tmp/math_${bug}
+  #defects4j checkout -p Math -v ${bug}b -w /tmp/math_${bug}
 
   cd /tmp/math_${bug}/
   defects4j compile

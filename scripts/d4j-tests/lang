@@ -45,31 +45,14 @@ do
 
   cd ~/defects4j-nopol/logs/d4j-tests/lang/
   
-  grep "Tests run" lang_${bug}.stdout > lang_${bug}_grep.stdout
-  cut -f 1 -d "," lang_${bug}_grep.stdout > lang_${bug}_cut_1.stdout
-  cut -f 2 -d ":" lang_${bug}_cut_1.stdout > lang_${bug}_cut_2.stdout
-  testsRun=`sum=0; while read num; do sum=$(($sum + $num)); done < lang_${bug}_cut_2.stdout ; echo $sum`
-  
-  cut -f 2 -d "," lang_${bug}_grep.stdout > lang_${bug}_cut_1.stdout
-  cut -f 2 -d ":" lang_${bug}_cut_1.stdout > lang_${bug}_cut_2.stdout
-  failures=`sum=0; while read num; do sum=$(($sum + $num)); done < lang_${bug}_cut_2.stdout ; echo $sum`  
-  
-  cut -f 3 -d "," lang_${bug}_grep.stdout > lang_${bug}_cut_1.stdout
-  cut -f 2 -d ":" lang_${bug}_cut_1.stdout > lang_${bug}_cut_2.stdout
-  errors=`sum=0; while read num; do sum=$(($sum + $num)); done < lang_${bug}_cut_2.stdout ; echo $sum`
-
-  echo "" >> lang_${bug}.stdout
-  echo "Total tests run: $testsRun" >> lang_${bug}.stdout
-  echo "Total failures: $failures" >> lang_${bug}.stdout
-  echo "Total errors: $errors" >> lang_${bug}.stdout
+  grep "Failing tests" lang_${bug}.stdout > lang_${bug}_grep.stdout
+  failures=`cut -f 2 -d ":" lang_${bug}_grep.stdout`
 
   rm lang_${bug}_grep.stdout
-  rm lang_${bug}_cut_1.stdout
-  rm lang_${bug}_cut_2.stdout
   
   testsTime=`grep 'Total time:' lang_${bug}.stdout | tail -1 | cut -f 2 -d ':'`
   
-  echo "| ${bug} | ${testsRun} | ${failures} | ${errors} | ${testsTime} |" >> README.md
+  echo "| ${bug} | unknown | ${failures} | none | ${testsTime} |" >> README.md
 
 done
 
