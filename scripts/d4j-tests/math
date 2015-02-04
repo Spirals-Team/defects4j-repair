@@ -44,32 +44,15 @@ do
   #exec 2<&7 7<&-
 
   cd ~/defects4j-nopol/logs/d4j-tests/math/
-  
-  grep "Tests run" math_${bug}.stdout > math_${bug}_grep.stdout
-  cut -f 1 -d "," math_${bug}_grep.stdout > math_${bug}_cut_1.stdout
-  cut -f 2 -d ":" math_${bug}_cut_1.stdout > math_${bug}_cut_2.stdout
-  testsRun=`sum=0; while read num; do sum=$(($sum + $num)); done < math_${bug}_cut_2.stdout ; echo $sum`
-  
-  cut -f 2 -d "," math_${bug}_grep.stdout > math_${bug}_cut_1.stdout
-  cut -f 2 -d ":" math_${bug}_cut_1.stdout > math_${bug}_cut_2.stdout
-  failures=`sum=0; while read num; do sum=$(($sum + $num)); done < math_${bug}_cut_2.stdout ; echo $sum`  
-  
-  cut -f 3 -d "," math_${bug}_grep.stdout > math_${bug}_cut_1.stdout
-  cut -f 2 -d ":" math_${bug}_cut_1.stdout > math_${bug}_cut_2.stdout
-  errors=`sum=0; while read num; do sum=$(($sum + $num)); done < math_${bug}_cut_2.stdout ; echo $sum`
 
-  echo "" >> math_${bug}.stdout
-  echo "Total tests run: $testsRun" >> math_${bug}.stdout
-  echo "Total failures: $failures" >> math_${bug}.stdout
-  echo "Total errors: $errors" >> math_${bug}.stdout
+  grep "Failing tests" math_${bug}.stdout > math_${bug}_grep.stdout
+  failures=`cut -f 2 -d ":" math_${bug}_grep.stdout`
 
   rm math_${bug}_grep.stdout
-  rm math_${bug}_cut_1.stdout
-  rm math_${bug}_cut_2.stdout
-  
+
   testsTime=`grep 'Total time:' math_${bug}.stdout | tail -1 | cut -f 2 -d ':'`
   
-  echo "| ${bug} | ${testsRun} | ${failures} | ${errors} | ${testsTime} |" >> README.md
+  echo "| ${bug} | unknown | ${failures} | none | ${testsTime} |" >> README.md
 
 done
 
