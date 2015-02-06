@@ -100,8 +100,7 @@
 | 97 | unknown |  1 | none |  9 seconds |
 | 98 | unknown |  2 | none |  9 seconds |
 | 99 | unknown |  1 | none |  2 minutes 16 seconds |
-| 100 | unknown |  1
- 1 | none |  2 minutes 17 seconds |
+| 100 | unknown |  1 | none |  2 minutes 17 seconds |
 | 101 | unknown |  2 | none |  2 minutes 17 seconds |
 | 102 | unknown |  6 | none |  2 minutes 17 seconds |
 | 103 | unknown |  1 | none |  2 minutes 17 seconds |
