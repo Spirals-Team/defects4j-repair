@@ -29,5 +29,5 @@ for bug in $(seq 1 106); do defects4j checkout -p Math -v ${bug}b -w ~/projects/
 Time:
 
 ```
-for bug in $(seq 1 27); do defects4j checkout -p Time -v ${bug}b -w /home/rsommerard/projects/time/time_${bug}; done
+for bug in $(seq 1 27); do defects4j checkout -p Time -v ${bug}b -w ~/projects/time/time_${bug}; done
 ```
