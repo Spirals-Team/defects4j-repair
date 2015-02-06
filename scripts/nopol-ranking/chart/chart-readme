@@ -1,0 +1,68 @@
+#!/bin/bash
+
+cd ~/defects4j-nopol/logs/nopol-ranking/chart
+
+echo '# Chart - Nopol ranking' > README.md
+echo "" >> README.md
+
+for bug in `seq 1 26`
+do
+
+  line=`grep -m 1 -n "^\/\*" stdout/chart_${bug}.stdout | cut -f 1 -d :`
+
+  tail -n +$line stdout/chart_${bug}.stdout > chart_${bug}_tmp.stdout
+
+  mv chart_${bug}_tmp.stdout stdout/chart_${bug}.stdout
+
+  cat stderr/chart_${bug}.stderr | tail -4 >> stdout/chart_${bug}.stdout
+
+  echo "" >> stdout/chart_${bug}.stdout  
+
+  echo "## Bug ${bug}" >> README.md
+
+  line=`grep -m 1 -n "List of modified sources:" ~/defects4j-nopol/logs/d4j-infos/chart/chart_${bug}.stdout | cut -f 1 -d :`
+
+  let "line++"
+
+  nbModifiedSources=`tail -n +$line ~/defects4j-nopol/logs/d4j-infos/chart/chart_${bug}.stdout | tac | tail -n +2 | wc -l`
+
+  echo "Number of modified sources: $nbModifiedSources" >> README.md
+  echo "" >> README.md
+
+  modifiedSources=`tail -n +$line ~/defects4j-nopol/logs/d4j-infos/chart/chart_${bug}.stdout | tac | tail -n +2 | cut -f 3 -d ' '`
+
+  statementStart=`grep -m 1 -n "org" stdout/chart_${bug}.stdout | cut -f 1 -d :`
+  
+  if [[ ! $statementStart ]]; then
+    statementStart=-1
+  fi
+
+  for s in $modifiedSources
+  do
+    echo "- $s" >> README.md
+    echo "" >> README.md
+
+    nopolLine=`grep -m 1 $s stdout/chart_${bug}.stdout`
+    
+    if [[ ! $nopolLine ]]; then
+      nopolLine='none'
+    fi
+    
+    nopolLineNumber=`grep -m 1 -n $s stdout/chart_${bug}.stdout | cut -f 1 -d :`
+    
+    if [[ ! $nopolLineNumber ]]; then
+      rank=-1
+    else
+      let "rank=($nopolLineNumber-$statementStart)+1"
+    fi
+
+    echo '| Rank | Nopol log |' >> README.md
+    echo '|------|-----------|' >> README.md
+    
+    echo "| $rank | $nopolLine |" >> README.md
+    echo "" >> README.md
+  done
+  
+done
+
+echo 'Done.'
