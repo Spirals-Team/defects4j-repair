@@ -1,0 +1,403 @@
+Running ant (compile) ... OK
+Buildfile: /home/rsommerard/defects4j/framework/projects/Time/Time.build.xml
+
+test-offline:
+
+get-deps:
+
+joda-time-from-maven.compile:
+    [mkdir] Created dir: /tmp/time_2/target/classes
+    [javac] /tmp/time_2/maven-build.xml:77: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 157 source files to /tmp/time_2/target/classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.5
+    [javac] 1 warning
+    [mkdir] Created dir: /tmp/time_2/target/classes/META-INF
+     [copy] Copying 2 files to /tmp/time_2/target/classes/META-INF
+     [copy] Copying 9 files to /tmp/time_2/target/classes
+
+joda-time.compile:
+
+compile:
+     [java] Writing zoneinfo files
+     [java] Writing ZoneInfoMap
+
+BUILD SUCCESSFUL
+Total time: 8 seconds
+Running ant (compile.tests) ... OK
+Buildfile: /home/rsommerard/defects4j/framework/projects/Time/Time.build.xml
+
+test-offline:
+
+get-deps:
+
+joda-time-from-maven.compile:
+    [javac] /tmp/time_2/maven-build.xml:77: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+joda-time.compile:
+
+compile:
+     [java] Writing zoneinfo files
+     [java] Writing ZoneInfoMap
+
+joda-time-from-maven.compile-tests:
+    [mkdir] Created dir: /tmp/time_2/target/test-classes
+    [javac] /tmp/time_2/maven-build.xml:114: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 155 source files to /tmp/time_2/target/test-classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.5
+    [javac] /tmp/time_2/src/test/java/org/joda/time/chrono/TestGJChronology.java:24: warning: [deprecation] DateMidnight in org.joda.time has been deprecated
+    [javac] import org.joda.time.DateMidnight;
+    [javac]                     ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/chrono/TestGJChronology.java:34: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac] import org.joda.time.TimeOfDay;
+    [javac]                     ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/chrono/TestGJChronology.java:35: warning: [deprecation] YearMonthDay in org.joda.time has been deprecated
+    [javac] import org.joda.time.YearMonthDay;
+    [javac]                     ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/chrono/TestGregorianChronology.java:25: warning: [deprecation] DateMidnight in org.joda.time has been deprecated
+    [javac] import org.joda.time.DateMidnight;
+    [javac]                     ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/chrono/TestGregorianChronology.java:29: warning: [deprecation] YearMonthDay in org.joda.time has been deprecated
+    [javac] import org.joda.time.YearMonthDay;
+    [javac]                     ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/chrono/TestISOChronology.java:24: warning: [deprecation] DateMidnight in org.joda.time has been deprecated
+    [javac] import org.joda.time.DateMidnight;
+    [javac]                     ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/chrono/TestISOChronology.java:34: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac] import org.joda.time.TimeOfDay;
+    [javac]                     ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/chrono/TestISOChronology.java:35: warning: [deprecation] YearMonthDay in org.joda.time has been deprecated
+    [javac] import org.joda.time.YearMonthDay;
+    [javac]                     ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/convert/TestCalendarConverter.java:32: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac] import org.joda.time.TimeOfDay;
+    [javac]                     ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/convert/TestConverterManager.java:52: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac] import org.joda.time.TimeOfDay;
+    [javac]                     ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/convert/TestConverterSet.java:26: warning: [deprecation] DateMidnight in org.joda.time has been deprecated
+    [javac] import org.joda.time.DateMidnight;
+    [javac]                     ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/convert/TestDateConverter.java:29: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac] import org.joda.time.TimeOfDay;
+    [javac]                     ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/convert/TestLongConverter.java:28: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac] import org.joda.time.TimeOfDay;
+    [javac]                     ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/convert/TestNullConverter.java:35: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac] import org.joda.time.TimeOfDay;
+    [javac]                     ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/convert/TestReadableInstantConverter.java:32: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac] import org.joda.time.TimeOfDay;
+    [javac]                     ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/convert/TestReadablePartialConverter.java:30: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac] import org.joda.time.TimeOfDay;
+    [javac]                     ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/convert/TestReadablePartialConverter.java:31: warning: [deprecation] YearMonthDay in org.joda.time has been deprecated
+    [javac] import org.joda.time.YearMonthDay;
+    [javac]                     ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/convert/TestStringConverter.java:33: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac] import org.joda.time.TimeOfDay;
+    [javac]                     ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/field/TestBaseDateTimeField.java:29: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac] import org.joda.time.TimeOfDay;
+    [javac]                     ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/field/TestOffsetDateTimeField.java:27: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac] import org.joda.time.TimeOfDay;
+    [javac]                     ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/field/TestPreciseDateTimeField.java:27: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac] import org.joda.time.TimeOfDay;
+    [javac]                     ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/field/TestPreciseDurationDateTimeField.java:27: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac] import org.joda.time.TimeOfDay;
+    [javac]                     ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/TestDateTimeZoneCutover.java:225: warning: [deprecation] toDateMidnight(DateTimeZone) in LocalDate has been deprecated
+    [javac]             date.toDateMidnight(MOCK_GAZA);
+    [javac]                 ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/TestDateTimeZoneCutover.java:441: warning: [deprecation] toDateMidnight(DateTimeZone) in LocalDate has been deprecated
+    [javac]             date.toDateMidnight(MOCK_TURK);
+    [javac]                 ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/TestInstant_Basics.java:403: warning: [deprecation] toDateTimeISO() in Instant has been deprecated
+    [javac]         DateTime result = test.toDateTimeISO();
+    [javac]                               ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/TestInstant_Basics.java:452: warning: [deprecation] toMutableDateTimeISO() in Instant has been deprecated
+    [javac]         MutableDateTime result = test.toMutableDateTimeISO();
+    [javac]                                      ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/convert/TestCalendarConverter.java:170: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]         TimeOfDay tod = new TimeOfDay();
+    [javac]         ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/convert/TestCalendarConverter.java:170: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]         TimeOfDay tod = new TimeOfDay();
+    [javac]                             ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/convert/TestConverterManager.java:337: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]         c = ConverterManager.getInstance().getPartialConverter(new TimeOfDay());
+    [javac]                                                                    ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/convert/TestConverterSet.java:104: warning: [deprecation] DateMidnight in org.joda.time has been deprecated
+    [javac]         set.select(DateMidnight.class);
+    [javac]                    ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/convert/TestDateConverter.java:108: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]         TimeOfDay tod = new TimeOfDay();
+    [javac]         ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/convert/TestDateConverter.java:108: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]         TimeOfDay tod = new TimeOfDay();
+    [javac]                             ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/convert/TestLongConverter.java:105: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]         TimeOfDay tod = new TimeOfDay();
+    [javac]         ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/convert/TestLongConverter.java:105: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]         TimeOfDay tod = new TimeOfDay();
+    [javac]                             ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/convert/TestNullConverter.java:142: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]         TimeOfDay tod = new TimeOfDay();
+    [javac]         ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/convert/TestNullConverter.java:142: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]         TimeOfDay tod = new TimeOfDay();
+    [javac]                             ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/convert/TestReadableInstantConverter.java:136: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]         TimeOfDay tod = new TimeOfDay();
+    [javac]         ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/convert/TestReadableInstantConverter.java:136: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]         TimeOfDay tod = new TimeOfDay();
+    [javac]                             ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/convert/TestReadablePartialConverter.java:95: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]         assertEquals(ISO_PARIS, ReadablePartialConverter.INSTANCE.getChronology(new TimeOfDay(123L), PARIS));
+    [javac]                                                                                     ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/convert/TestReadablePartialConverter.java:96: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]         assertEquals(ISO, ReadablePartialConverter.INSTANCE.getChronology(new TimeOfDay(123L), DateTimeZone.getDefault()));
+    [javac]                                                                               ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/convert/TestReadablePartialConverter.java:97: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]         assertEquals(ISO, ReadablePartialConverter.INSTANCE.getChronology(new TimeOfDay(123L), (DateTimeZone) null));
+    [javac]                                                                               ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/convert/TestReadablePartialConverter.java:101: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]         assertEquals(JULIAN, ReadablePartialConverter.INSTANCE.getChronology(new TimeOfDay(123L, BUDDHIST), JULIAN));
+    [javac]                                                                                  ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/convert/TestReadablePartialConverter.java:102: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]         assertEquals(JULIAN, ReadablePartialConverter.INSTANCE.getChronology(new TimeOfDay(123L), JULIAN));
+    [javac]                                                                                  ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/convert/TestReadablePartialConverter.java:103: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]         assertEquals(BUDDHIST.withUTC(), ReadablePartialConverter.INSTANCE.getChronology(new TimeOfDay(123L, BUDDHIST), (Chronology) null));
+    [javac]                                                                                              ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/convert/TestReadablePartialConverter.java:108: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]         TimeOfDay tod = new TimeOfDay();
+    [javac]         ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/convert/TestReadablePartialConverter.java:108: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]         TimeOfDay tod = new TimeOfDay();
+    [javac]                             ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/convert/TestReadablePartialConverter.java:110: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]         int[] actual = ReadablePartialConverter.INSTANCE.getPartialValues(tod, new TimeOfDay(1, 2, 3, 4), ISOChronology.getInstance(PARIS));
+    [javac]                                                                                    ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/convert/TestReadablePartialConverter.java:114: warning: [deprecation] YearMonthDay in org.joda.time has been deprecated
+    [javac]             ReadablePartialConverter.INSTANCE.getPartialValues(tod, new YearMonthDay(2005, 6, 9), JULIAN);
+    [javac]                                                                         ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/convert/TestStringConverter.java:203: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]         TimeOfDay tod = new TimeOfDay();
+    [javac]         ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/convert/TestStringConverter.java:203: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]         TimeOfDay tod = new TimeOfDay();
+    [javac]                             ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/field/TestBaseDateTimeField.java:109: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]         assertEquals("20", field.getAsText(new TimeOfDay(12, 30, 40, 50), 20, Locale.ENGLISH));
+    [javac]                                                ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/field/TestBaseDateTimeField.java:110: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]         assertEquals("20", field.getAsText(new TimeOfDay(12, 30, 40, 50), 20, null));
+    [javac]                                                ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/field/TestBaseDateTimeField.java:115: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]         assertEquals("40", field.getAsText(new TimeOfDay(12, 30, 40, 50), Locale.ENGLISH));
+    [javac]                                                ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/field/TestBaseDateTimeField.java:116: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]         assertEquals("40", field.getAsText(new TimeOfDay(12, 30, 40, 50), null));
+    [javac]                                                ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/field/TestBaseDateTimeField.java:139: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]         assertEquals("20", field.getAsShortText(new TimeOfDay(12, 30, 40, 50), 20, Locale.ENGLISH));
+    [javac]                                                     ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/field/TestBaseDateTimeField.java:140: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]         assertEquals("20", field.getAsShortText(new TimeOfDay(12, 30, 40, 50), 20, null));
+    [javac]                                                     ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/field/TestBaseDateTimeField.java:145: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]         assertEquals("40", field.getAsShortText(new TimeOfDay(12, 30, 40, 50), Locale.ENGLISH));
+    [javac]                                                     ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/field/TestBaseDateTimeField.java:146: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]         assertEquals("40", field.getAsShortText(new TimeOfDay(12, 30, 40, 50), null));
+    [javac]                                                     ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/field/TestBaseDateTimeField.java:174: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]         int[] result = field.add(new TimeOfDay(), 2, values, 0);
+    [javac]                                      ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/field/TestBaseDateTimeField.java:179: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]         result = field.add(new TimeOfDay(), 2, values, 1);
+    [javac]                                ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/field/TestBaseDateTimeField.java:184: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]         result = field.add(new TimeOfDay(), 2, values, 30);
+    [javac]                                ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/field/TestBaseDateTimeField.java:189: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]             field.add(new TimeOfDay(), 2, values, 30);
+    [javac]                           ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/field/TestBaseDateTimeField.java:195: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]         result = field.add(new TimeOfDay(), 2, values, -1);
+    [javac]                                ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/field/TestBaseDateTimeField.java:200: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]         result = field.add(new TimeOfDay(), 2, values, -31);
+    [javac]                                ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/field/TestBaseDateTimeField.java:205: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]             field.add(new TimeOfDay(), 2, values, -31);
+    [javac]                           ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/field/TestBaseDateTimeField.java:234: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]         int[] result = field.addWrapField(new TimeOfDay(), 2, values, 0);
+    [javac]                                               ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/field/TestBaseDateTimeField.java:239: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]         result = field.addWrapField(new TimeOfDay(), 2, values, 29);
+    [javac]                                         ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/field/TestBaseDateTimeField.java:244: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]         result = field.addWrapField(new TimeOfDay(), 2, values, 30);
+    [javac]                                         ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/field/TestBaseDateTimeField.java:249: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]         result = field.addWrapField(new TimeOfDay(), 2, values, 31);
+    [javac]                                         ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/field/TestBaseDateTimeField.java:279: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]         int[] result = field.set(new TimeOfDay(), 2, values, 30);
+    [javac]                                      ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/field/TestBaseDateTimeField.java:284: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]         result = field.set(new TimeOfDay(), 2, values, 29);
+    [javac]                                ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/field/TestBaseDateTimeField.java:290: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]             field.set(new TimeOfDay(), 2, values, 60);
+    [javac]                           ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/field/TestBaseDateTimeField.java:298: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]             field.set(new TimeOfDay(), 2, values, -1);
+    [javac]                           ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/field/TestBaseDateTimeField.java:320: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]         int[] result = field.set(new TimeOfDay(), 2, values, "30", null);
+    [javac]                                      ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/field/TestBaseDateTimeField.java:325: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]         result = field.set(new TimeOfDay(), 2, values, "29", Locale.ENGLISH);
+    [javac]                                ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/field/TestBaseDateTimeField.java:331: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]             field.set(new TimeOfDay(), 2, values, "60", null);
+    [javac]                           ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/field/TestBaseDateTimeField.java:339: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]             field.set(new TimeOfDay(), 2, values, "-1", null);
+    [javac]                           ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/field/TestBaseDateTimeField.java:392: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]         assertEquals(0, field.getMinimumValue(new TimeOfDay()));
+    [javac]                                                   ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/field/TestBaseDateTimeField.java:397: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]         assertEquals(0, field.getMinimumValue(new TimeOfDay(), new int[4]));
+    [javac]                                                   ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/field/TestBaseDateTimeField.java:412: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]         assertEquals(59, field.getMaximumValue(new TimeOfDay()));
+    [javac]                                                    ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/field/TestBaseDateTimeField.java:417: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]         assertEquals(59, field.getMaximumValue(new TimeOfDay(), new int[4]));
+    [javac]                                                    ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/field/TestOffsetDateTimeField.java:161: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]         assertEquals("20", field.getAsText(new TimeOfDay(12, 30, 40, 50), 20, Locale.ENGLISH));
+    [javac]                                                ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/field/TestOffsetDateTimeField.java:162: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]         assertEquals("20", field.getAsText(new TimeOfDay(12, 30, 40, 50), 20, null));
+    [javac]                                                ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/field/TestOffsetDateTimeField.java:167: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]         assertEquals("40", field.getAsText(new TimeOfDay(12, 30, 40, 50), Locale.ENGLISH));
+    [javac]                                                ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/field/TestOffsetDateTimeField.java:168: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]         assertEquals("40", field.getAsText(new TimeOfDay(12, 30, 40, 50), null));
+    [javac]                                                ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/field/TestOffsetDateTimeField.java:191: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]         assertEquals("20", field.getAsShortText(new TimeOfDay(12, 30, 40, 50), 20, Locale.ENGLISH));
+    [javac]                                                     ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/field/TestOffsetDateTimeField.java:192: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]         assertEquals("20", field.getAsShortText(new TimeOfDay(12, 30, 40, 50), 20, null));
+    [javac]                                                     ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/field/TestOffsetDateTimeField.java:197: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]         assertEquals("40", field.getAsShortText(new TimeOfDay(12, 30, 40, 50), Locale.ENGLISH));
+    [javac]                                                     ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/field/TestOffsetDateTimeField.java:198: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]         assertEquals("40", field.getAsShortText(new TimeOfDay(12, 30, 40, 50), null));
+    [javac]                                                     ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/field/TestOffsetDateTimeField.java:222: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]         int[] result = field.add(new TimeOfDay(), 2, values, 0);
+    [javac]                                      ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/field/TestOffsetDateTimeField.java:227: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]         result = field.add(new TimeOfDay(), 2, values, 1);
+    [javac]                                ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/field/TestOffsetDateTimeField.java:232: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]         result = field.add(new TimeOfDay(), 2, values, 32);
+    [javac]                                ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/field/TestOffsetDateTimeField.java:237: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]         result = field.add(new TimeOfDay(), 2, values, 33);
+    [javac]                                ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/field/TestOffsetDateTimeField.java:242: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]             field.add(new TimeOfDay(), 2, values, 33);
+    [javac]                           ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/field/TestOffsetDateTimeField.java:248: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]         result = field.add(new TimeOfDay(), 2, values, -1);
+    [javac]                                ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/field/TestOffsetDateTimeField.java:253: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]         result = field.add(new TimeOfDay(), 2, values, -31);
+    [javac]                                ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/field/TestOffsetDateTimeField.java:258: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]             field.add(new TimeOfDay(), 2, values, -31);
+    [javac]                           ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/field/TestOffsetDateTimeField.java:275: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]         int[] result = field.addWrapField(new TimeOfDay(), 2, values, 0);
+    [javac]                                               ^
+    [javac] /tmp/time_2/src/test/java/org/joda/time/field/TestOffsetDateTimeField.java:280: warning: [deprecation] TimeOfDay in org.joda.time has been deprecated
+    [javac]         result = field.addWrapField(new TimeOfDay(), 2, values, 29);
+    [javac]                                         ^
+    [javac] Note: Some input files additionally use or override a deprecated API.
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+    [javac] 100 warnings
+     [copy] Copying 32 files to /tmp/time_2/target/test-classes
+
+joda-time.compile.tests:
+
+compile.tests:
+
+BUILD SUCCESSFUL
+Total time: 8 seconds
+Running ant (test) ... OK
+Buildfile: /home/rsommerard/defects4j/framework/projects/Time/Time.build.xml
+
+test-offline:
+
+get-deps:
+
+joda-time-from-maven.compile:
+    [javac] /tmp/time_2/maven-build.xml:77: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+joda-time.compile:
+
+compile:
+     [java] Writing zoneinfo files
+     [java] Writing ZoneInfoMap
+
+joda-time-from-maven.compile-tests:
+    [javac] /tmp/time_2/maven-build.xml:114: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+joda-time.compile.tests:
+
+compile.tests:
+
+test:
+    [junit] Running org.joda.time.TestAll
+    [junit] Tests run: 2930, Failures: 0, Errors: 1, Time elapsed: 1.01 sec
+    [junit] Test org.joda.time.TestAll FAILED
+    [junit] Running org.joda.time.chrono.TestAll
+    [junit] Tests run: 160, Failures: 0, Errors: 0, Time elapsed: 3.759 sec
+    [junit] Running org.joda.time.chrono.gj.TestAll
+    [junit] Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.543 sec
+    [junit] Running org.joda.time.convert.TestAll
+    [junit] Tests run: 187, Failures: 0, Errors: 0, Time elapsed: 0.11 sec
+    [junit] Running org.joda.time.field.TestAll
+    [junit] Tests run: 278, Failures: 0, Errors: 0, Time elapsed: 0.069 sec
+    [junit] Running org.joda.time.format.TestAll
+    [junit] Tests run: 464, Failures: 0, Errors: 0, Time elapsed: 0.239 sec
+    [junit] Running org.joda.time.tz.TestAll
+    [junit] Tests run: 22, Failures: 0, Errors: 0, Time elapsed: 0.331 sec
+
+BUILD SUCCESSFUL
+Total time: 9 seconds
+Failing tests: 1
+  - org.joda.time.TestPartial_Basics::testWith_baseAndArgHaveNoRange
+
+Total tests run: 4043
+Total failures: 0
+Total errors: 1
