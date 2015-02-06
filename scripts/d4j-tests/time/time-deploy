@@ -1,49 +1,7 @@
 #!/bin/bash
 
-#for bug in $(seq 1 27); do defects4j checkout -p Time -v ${bug}b -w /tmp/time_${bug}; done
-
-export PATH="~/defects4j/framework/bin:$PATH"
-
-cd ~/defects4j-nopol/logs/d4j-tests/time/
-
-echo '# Time - Defects4j tests' > README.md
-echo '| #Bug | Nb. tests run | Nb. failures | Nb. errors | Exec. time |' >> README.md
-echo '|------|---------------|--------------|------------|------------|' >> README.md
-
-min=1
-max=27
-
-if [[ $1 ]]; then
-  if [[ $1 -gt 0 ]]; then
-    if [[ $1 -lt 28 ]]; then
-      min=$1
-      max=$1
-    fi
-  fi
-fi
-
-for bug in `seq $min $max`
+for bug in `seq 1 27`
 do
-  echo "Starting tests Time ${bug} ..."
-
-  exec 6<&1
-  #exec 7<&2
-
-  exec 1> ~/defects4j-nopol/logs/d4j-tests/time/time_${bug}.stdout
-  #exec 2> ~/defects4j-nopol/logs/d4j-tests/time/time_${bug}.stderr
-
-  #defects4j checkout -p Time -v ${bug}b -w /tmp/time_${bug}
-
-  cd /tmp/time_${bug}/
-  defects4j compile
-  defects4j test
-  cd /tmp/
-  rm -rf time_${bug}/
-
-  exec 1<&6 6<&-
-  #exec 2<&7 7<&-
-
-  cd ~/defects4j-nopol/logs/d4j-tests/time/
   
   grep "Tests run" time_${bug}.stdout > time_${bug}_grep.stdout
   cut -f 1 -d "," time_${bug}_grep.stdout > time_${bug}_cut_1.stdout

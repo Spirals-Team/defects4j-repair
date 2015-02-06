@@ -1,0 +1,10 @@
+#!/bin/bash
+
+export PATH="~/defects4j/framework/bin:$PATH"
+
+cp -r ~/projects/time/time_${1}/ /tmp/
+cd /tmp/time_${1}/
+defects4j compile
+defects4j test
+cd /tmp/
+rm -rf time_${1}/

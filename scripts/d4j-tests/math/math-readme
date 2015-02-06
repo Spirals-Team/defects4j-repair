@@ -1,0 +1,23 @@
+#!/bin/bash
+
+cd ~/defects4j-nopol/logs/d4j-tests/math/
+
+echo '# Math - Defects4j tests' > README.md
+echo '| #Bug | Nb. tests run | Nb. failures | Nb. errors | Exec. time |' >> README.md
+echo '|------|---------------|--------------|------------|------------|' >> README.md
+
+for bug in `seq 1 106`
+do
+
+  grep "Failing tests" stdout/math_${bug}.stdout > math_${bug}_grep.stdout
+  failures=`cut -f 2 -d ":" math_${bug}_grep.stdout`
+
+  rm math_${bug}_grep.stdout
+
+  testsTime=`grep 'Total time:' stdout/math_${bug}.stdout | tail -1 | cut -f 2 -d ':'`
+  
+  echo "| ${bug} | unknown | ${failures} | none | ${testsTime} |" >> README.md
+
+done
+
+echo 'Done.'

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+export PATH="~/defects4j/framework/bin:$PATH"
+
+cp -r ~/projects/chart/chart_${1}/ /tmp/
+cd /tmp/chart_${1}/
+defects4j compile
+defects4j test
+cd /tmp/
+rm -rf chart_${1}/
