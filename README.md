@@ -31,3 +31,13 @@ Time:
 ```
 for bug in $(seq 1 27); do defects4j checkout -p Time -v ${bug}b -w ~/projects/time/time_${bug}; done
 ```
+#!/bin/bash
+
+export HTTP_PROXY="http://proxy:3128/"
+export HTTPS_PROXY="https://proxy:3128/"
+
+rm -rf defects4j/ defects4j-nopol/ nopol/
+
+git clone https://github.com/rsommerard/nopol.git
+git clone https://github.com/rsommerard/defects4j.git
+git clone https://github.com/rsommerard/defects4j-nopol.git
