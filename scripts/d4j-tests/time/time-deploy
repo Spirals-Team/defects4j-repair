@@ -2,34 +2,15 @@
 
 for bug in `seq 1 27`
 do
-  
-  grep "Tests run" time_${bug}.stdout > time_${bug}_grep.stdout
-  cut -f 1 -d "," time_${bug}_grep.stdout > time_${bug}_cut_1.stdout
-  cut -f 2 -d ":" time_${bug}_cut_1.stdout > time_${bug}_cut_2.stdout
-  testsRun=`sum=0; while read num; do sum=$(($sum + $num)); done < time_${bug}_cut_2.stdout ; echo $sum`
-  
-  cut -f 2 -d "," time_${bug}_grep.stdout > time_${bug}_cut_1.stdout
-  cut -f 2 -d ":" time_${bug}_cut_1.stdout > time_${bug}_cut_2.stdout
-  failures=`sum=0; while read num; do sum=$(($sum + $num)); done < time_${bug}_cut_2.stdout ; echo $sum`  
-  
-  cut -f 3 -d "," time_${bug}_grep.stdout > time_${bug}_cut_1.stdout
-  cut -f 2 -d ":" time_${bug}_cut_1.stdout > time_${bug}_cut_2.stdout
-  errors=`sum=0; while read num; do sum=$(($sum + $num)); done < time_${bug}_cut_2.stdout ; echo $sum`
-
-  echo "" >> time_${bug}.stdout
-  echo "Total tests run: $testsRun" >> time_${bug}.stdout
-  echo "Total failures: $failures" >> time_${bug}.stdout
-  echo "Total errors: $errors" >> time_${bug}.stdout
-
-  rm time_${bug}_grep.stdout
-  rm time_${bug}_cut_1.stdout
-  rm time_${bug}_cut_2.stdout
-  
-  testsTime=`grep 'Total time:' time_${bug}.stdout | tail -1 | cut -f 2 -d ':'`
-  
-  echo "| ${bug} | ${testsRun} | ${failures} | ${errors} | ${testsTime} |" >> README.md
-
+  echo "Launching tests node for time_${bug} ..."
+  oarsub -l walltime=00:10:00 -O ~/defects4j-nopol/logs/d4j-tests/time/stdout/time_${bug}.stdout -E ~/defects4j-nopol/logs/d4j-tests/time/stderr/time_${bug}.stderr "~/defects4j-nopol/scripts/d4j-tests/time/time-node ${bug}"
 done
 
-echo 'Done.'
+while [ $(oarstat -u | grep rsommerard | wc -l) -gt 0 ]
+do
+  echo "Time tests node running: $(oarstat -u | grep rsommerard | wc -l)"
+  sleep 5
+done
+
+echo "Done."
 
