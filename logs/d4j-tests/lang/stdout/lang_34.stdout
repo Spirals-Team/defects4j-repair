@@ -1,0 +1,168 @@
+Running ant (compile) ... OK
+Buildfile: /home/rsommerard/defects4j/framework/projects/Lang/Lang.build.xml
+
+test-offline:
+
+get-deps:
+
+compile:
+    [mkdir] Created dir: /tmp/lang_34/target/classes
+    [javac] /tmp/lang_34/maven-build.xml:75: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 80 source files to /tmp/lang_34/target/classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.5
+    [javac] 1 warning
+    [mkdir] Created dir: /tmp/lang_34/target/classes/META-INF
+     [copy] Copying 2 files to /tmp/lang_34/target/classes/META-INF
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
+Running ant (compile.tests) ... OK
+Buildfile: /home/rsommerard/defects4j/framework/projects/Lang/Lang.build.xml
+
+test-offline:
+
+get-deps:
+
+compile:
+    [javac] /tmp/lang_34/maven-build.xml:75: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+compile-tests:
+    [mkdir] Created dir: /tmp/lang_34/target/test-classes
+    [javac] /tmp/lang_34/maven-build.xml:108: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 98 source files to /tmp/lang_34/target/test-classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.5
+    [javac] /tmp/lang_34/src/test/java/org/apache/commons/lang3/SystemUtilsTest.java:27: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac] import junit.framework.Assert;
+    [javac]                       ^
+    [javac] /tmp/lang_34/src/test/java/org/apache/commons/lang3/builder/ReflectionToStringBuilderExcludeTest.java:24: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac] import junit.framework.Assert;
+    [javac]                       ^
+    [javac] /tmp/lang_34/src/test/java/org/apache/commons/lang3/reflect/TypeUtilsTest.java:19: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac] import static junit.framework.Assert.*;
+    [javac]                              ^
+    [javac] /tmp/lang_34/src/test/java/org/apache/commons/lang3/time/StopWatchTest.java:19: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac] import junit.framework.Assert;
+    [javac]                       ^
+    [javac] /tmp/lang_34/src/test/java/org/apache/commons/lang3/SystemUtilsTest.java:194: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertNotNull(dir);
+    [javac]         ^
+    [javac] /tmp/lang_34/src/test/java/org/apache/commons/lang3/SystemUtilsTest.java:195: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertTrue(dir.exists());
+    [javac]         ^
+    [javac] /tmp/lang_34/src/test/java/org/apache/commons/lang3/SystemUtilsTest.java:203: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertNotNull(dir);
+    [javac]         ^
+    [javac] /tmp/lang_34/src/test/java/org/apache/commons/lang3/SystemUtilsTest.java:204: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertTrue(dir.exists());
+    [javac]         ^
+    [javac] /tmp/lang_34/src/test/java/org/apache/commons/lang3/SystemUtilsTest.java:212: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertNotNull(dir);
+    [javac]         ^
+    [javac] /tmp/lang_34/src/test/java/org/apache/commons/lang3/SystemUtilsTest.java:213: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertTrue(dir.exists());
+    [javac]         ^
+    [javac] /tmp/lang_34/src/test/java/org/apache/commons/lang3/SystemUtilsTest.java:221: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertNotNull(dir);
+    [javac]         ^
+    [javac] /tmp/lang_34/src/test/java/org/apache/commons/lang3/SystemUtilsTest.java:222: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertTrue(dir.exists());
+    [javac]         ^
+    [javac] /tmp/lang_34/src/test/java/org/apache/commons/lang3/builder/ReflectionToStringBuilderExcludeTest.java:114: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertTrue(toString.indexOf(NOT_SECRET_FIELD) > ArrayUtils.INDEX_NOT_FOUND);
+    [javac]         ^
+    [javac] /tmp/lang_34/src/test/java/org/apache/commons/lang3/builder/ReflectionToStringBuilderExcludeTest.java:115: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertTrue(toString.indexOf(NOT_SECRET_VALUE) > ArrayUtils.INDEX_NOT_FOUND);
+    [javac]         ^
+    [javac] /tmp/lang_34/src/test/java/org/apache/commons/lang3/builder/ReflectionToStringBuilderExcludeTest.java:119: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertEquals(ArrayUtils.INDEX_NOT_FOUND, toString.indexOf(SECRET_VALUE));
+    [javac]         ^
+    [javac] /tmp/lang_34/src/test/java/org/apache/commons/lang3/builder/ReflectionToStringBuilderExcludeTest.java:124: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertTrue(toString.indexOf(SECRET_VALUE) > 0);
+    [javac]         ^
+    [javac] /tmp/lang_34/src/test/java/org/apache/commons/lang3/time/StopWatchTest.java:208: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]             Assert.assertTrue(watch.getStartTime() >= beforeStopWatch);
+    [javac]             ^
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+    [javac] 18 warnings
+
+compile.tests:
+
+BUILD SUCCESSFUL
+Total time: 5 seconds
+Running ant (test) ... OK
+Buildfile: /home/rsommerard/defects4j/framework/projects/Lang/Lang.build.xml
+
+test-offline:
+
+get-deps:
+
+compile:
+    [javac] /tmp/lang_34/maven-build.xml:75: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+compile-tests:
+    [javac] /tmp/lang_34/maven-build.xml:108: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+compile.tests:
+
+test:
+    [junit] Can't test IS_JAVA value
+    [junit] []
+    [junit] []
+    [junit] []
+    [junit] []
+    [junit] []
+    [junit] []
+    [junit] []
+    [junit] []
+    [junit] []
+    [junit] []
+    [junit] []
+    [junit] []
+    [junit] []
+    [junit] []
+    [junit] []
+    [junit] []
+    [junit] []
+    [junit] []
+    [junit] []
+    [junit] []
+    [junit] []
+    [junit] []
+    [junit] []
+    [junit] []
+    [junit] []
+    [junit] []
+    [junit] []
+    [junit] Test org.apache.commons.lang3.builder.ToStringBuilderTest FAILED
+
+BUILD SUCCESSFUL
+Total time: 11 seconds
+Failing tests: 27
+  - org.apache.commons.lang3.builder.ToStringBuilderTest::testObjectCycle
+  - org.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionHierarchy
+  - org.apache.commons.lang3.builder.ToStringBuilderTest::testSelfInstanceTwoVarsReflectionObjectCycle
+  - org.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionArrayCycle
+  - org.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionLongArrayArray
+  - org.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionArrayArrayCycle
+  - org.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionFloatArray
+  - org.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionDoubleArrayArray
+  - org.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionBooleanArray
+  - org.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionyteArray
+  - org.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionDoubleArray
+  - org.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionIntArrayArray
+  - org.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionLongArray
+  - org.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionhortArrayArray
+  - org.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionObjectArray
+  - org.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionObjectCycle
+  - org.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionBooleanArrayArray
+  - org.apache.commons.lang3.builder.ToStringBuilderTest::testSimpleReflectionObjectCycle
+  - org.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionByteArrayArray
+  - org.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionArrayCycleLevel2
+  - org.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionArrayAndObjectCycle
+  - org.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionCharArrayArray
+  - org.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionShortArray
+  - org.apache.commons.lang3.builder.ToStringBuilderTest::testSelfInstanceVarReflectionObjectCycle
+  - org.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionIntArray
+  - org.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionCharArray
+  - org.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionFloatArrayArray

@@ -1,0 +1,136 @@
+# Closure - Defects4j tests
+| #Bug | Nb. tests run | Nb. failures | Nb. errors | Exec. time |
+|------|---------------|--------------|------------|------------|
+| 1 | 7911 | 8 | 0 |  2 minutes 31 seconds |
+| 2 | 7864 | 0 | 1 |  2 minutes 28 seconds |
+| 3 | 7865 | 3 | 0 |  2 minutes 29 seconds |
+| 4 | 7859 | 2 | 1 |  2 minutes 27 seconds |
+| 5 | 7782 | 1 | 0 |  2 minutes 22 seconds |
+| 6 | 7758 | 3 | 0 |  2 minutes 28 seconds |
+| 7 | 7719 | 2 | 0 |  2 minutes 20 seconds |
+| 8 | 7658 | 1 | 0 |  2 minutes 23 seconds |
+| 9 | 7655 | 1 | 0 |  2 minutes 8 seconds |
+| 10 | 7653 | 1 | 0 |  2 minutes 40 seconds |
+| 11 | 7647 | 2 | 0 |  1 minute 57 seconds |
+| 12 | 7614 | 1 | 0 |  2 minutes 14 seconds |
+| 13 | 7607 | 1 | 0 |  1 minute 51 seconds |
+| 14 | 7601 | 3 | 0 |  1 minute 44 seconds |
+| 15 | 7595 | 1 | 0 |  1 minute 42 seconds |
+| 16 | 7595 | 2 | 0 |  1 minute 42 seconds |
+| 17 | 7593 | 1 | 0 |  1 minute 42 seconds |
+| 18 | 7592 | 1 | 0 |  1 minute 42 seconds |
+| 19 | 7591 | 0 | 1 |  1 minute 43 seconds |
+| 20 | 7583 | 1 | 0 |  1 minute 42 seconds |
+| 21 | 7583 | 1 | 0 |  1 minute 42 seconds |
+| 22 | 7583 | 1 | 0 |  1 minute 42 seconds |
+| 23 | 7563 | 1 | 0 |  1 minute 42 seconds |
+| 24 | 7526 | 1 | 0 |  1 minute 42 seconds |
+| 25 | 7523 | 1 | 0 |  1 minute 40 seconds |
+| 26 | 7521 | 7 | 0 |  1 minute 42 seconds |
+| 27 | 7518 | 0 | 3 |  1 minute 42 seconds |
+| 28 | 7515 | 2 | 0 |  2 minutes 0 seconds |
+| 29 | 7514 | 5 | 0 |  1 minute 41 seconds |
+| 30 | 7468 | 3 | 0 |  1 minute 41 seconds |
+| 31 | 7462 | 1 | 0 |  1 minute 44 seconds |
+| 32 | 7461 | 4 | 0 |  1 minute 40 seconds |
+| 33 | 7457 | 1 | 0 |  1 minute 41 seconds |
+| 34 | 7450 | 0 | 1 |  1 minute 42 seconds |
+| 35 | 7418 | 1 | 0 |  1 minute 40 seconds |
+| 36 | 7417 | 1 | 0 |  1 minute 41 seconds |
+| 37 | 7409 | 0 | 1 |  1 minute 39 seconds |
+| 38 | 7401 | 1 | 0 |  1 minute 40 seconds |
+| 39 | 7390 | 2 | 0 |  1 minute 37 seconds |
+| 40 | 7389 | 1 | 1 |  1 minute 38 seconds |
+| 41 | 7382 | 3 | 0 |  1 minute 37 seconds |
+| 42 | 7241 | 1 | 0 |  1 minute 36 seconds |
+| 43 | 7240 | 2 | 0 |  1 minute 36 seconds |
+| 44 | 7197 | 1 | 0 |  1 minute 35 seconds |
+| 45 | 7193 | 1 | 0 |  1 minute 35 seconds |
+| 46 | 7245 | 3 | 0 |  1 minute 35 seconds |
+| 47 | 7232 | 16 | 0 |  1 minute 35 seconds |
+| 48 | 7210 | 1 | 0 |  1 minute 34 seconds |
+| 49 | 7315 | 66 | 0 |  1 minute 35 seconds |
+| 50 | 7303 | 2 | 0 |  1 minute 34 seconds |
+| 51 | 7287 | 1 | 0 |  2 minutes 4 seconds |
+| 52 | 7267 | 1 | 0 |  1 minute 51 seconds |
+| 53 | 7245 | 0 | 1 |  1 minute 49 seconds |
+| 54 | 7228 | 3 | 0 |  1 minute 49 seconds |
+| 55 | 7204 | 0 | 1 |  1 minute 49 seconds |
+| 56 | 7194 | 3 | 0 |  1 minute 50 seconds |
+| 57 | 7175 | 1 | 0 |  1 minute 50 seconds |
+| 58 | 7172 | 0 | 1 |  1 minute 48 seconds |
+| 59 | 7147 | 1 | 0 |  1 minute 47 seconds |
+| 60 | 7123 | 2 | 0 |  1 minute 44 seconds |
+| 61 | 7117 | 3 | 0 |  1 minute 44 seconds |
+| 62 | 7117 | 2 | 0 |  1 minute 37 seconds |
+| 63 | 7117 | 2 | 0 |  1 minute 30 seconds |
+| 64 | 7101 | 1 | 0 |  1 minute 28 seconds |
+| 65 | 7098 | 1 | 0 |  1 minute 28 seconds |
+| 66 | 7078 | 2 | 0 |  1 minute 28 seconds |
+| 67 | 7070 | 1 | 0 |  1 minute 27 seconds |
+| 68 | 7064 | 1 | 0 |  1 minute 27 seconds |
+| 69 | 7071 | 3 | 0 |  1 minute 28 seconds |
+| 70 | 7055 | 5 | 0 |  1 minute 27 seconds |
+| 71 | 6995 | 2 | 0 |  1 minute 25 seconds |
+| 72 | 6964 | 1 | 0 |  1 minute 24 seconds |
+| 73 | 6909 | 1 | 0 |  1 minute 23 seconds |
+| 74 | 6890 | 3 | 0 |  1 minute 21 seconds |
+| 75 | 6855 | 1 | 0 |  1 minute 21 seconds |
+| 76 | 6752 | 4 | 0 |  1 minute 21 seconds |
+| 77 | 6743 | 1 | 0 |  1 minute 19 seconds |
+| 78 | 6741 | 1 | 0 |  1 minute 20 seconds |
+| 79 | 6702 | 4 | 1 |  1 minute 21 seconds |
+| 80 | 6696 | 1 | 1 |  1 minute 20 seconds |
+| 81 | 6641 | 1 | 0 |  1 minute 18 seconds |
+| 82 | 6573 | 2 | 0 |  1 minute 17 seconds |
+| 83 | 6500 | 1 | 0 |  1 minute 16 seconds |
+| 84 | 6483 | 1 | 0 |  1 minute 14 seconds |
+| 85 | 6470 | 1 | 1 |  1 minute 14 seconds |
+| 86 | 6424 | 7 | 0 |  1 minute 14 seconds |
+| 87 | 6329 | 1 | 0 |  1 minute 12 seconds |
+| 88 | 6322 | 7 | 0 |  1 minute 12 seconds |
+| 89 | 6235 | 8 | 0 |  1 minute 8 seconds |
+| 90 | 6208 | 2 | 0 |  1 minute 5 seconds |
+| 91 | 6184 | 1 | 0 |  1 minute 4 seconds |
+| 92 | 6170 | 1 | 0 |  1 minute 4 seconds |
+| 93 | 6162 | 1 | 0 |  1 minute 4 seconds |
+| 94 | 6153 | 3 | 0 |  1 minute 4 seconds |
+| 95 | 6111 | 2 | 0 |  1 minute 4 seconds |
+| 96 | 6018 | 1 | 0 |  1 minute 3 seconds |
+| 97 | 5836 | 1 | 0 |  58 seconds |
+| 98 | 5696 | 1 | 0 |  55 seconds |
+| 99 | 5694 | 3 | 0 |  55 seconds |
+| 100 | 5656 | 9 | 0 |  54 seconds |
+| 101 | 4551 | 1 | 0 |  1 minute 5 seconds |
+| 102 | 4519 | 1 | 0 |  56 seconds |
+| 103 | 4516 | 3 | 0 |  55 seconds |
+| 104 | 4512 | 1 | 0 |  56 seconds |
+| 105 | 4484 | 1 | 0 |  54 seconds |
+| 106 | 2595 | 3 | 1 |  43 seconds |
+| 107 | 8443 | 1 | 0 |  2 minutes 32 seconds |
+| 108 | 8442 | 0 | 1 |  2 minutes 33 seconds |
+| 109 | 8415 | 2 | 0 |  2 minutes 32 seconds |
+| 110 | 8359 | 2 | 0 |  2 minutes 31 seconds |
+| 111 | 8357 | 1 | 0 |  2 minutes 31 seconds |
+| 112 | 8324 | 2 | 0 |  2 minutes 37 seconds |
+| 113 | 8321 | 1 | 0 |  2 minutes 31 seconds |
+| 114 | 8320 | 1 | 0 |  2 minutes 19 seconds |
+| 115 | 8312 | 7 | 0 |  2 minutes 8 seconds |
+| 116 | 8315 | 8 | 0 |  2 minutes 7 seconds |
+| 117 | 8301 | 1 | 0 |  2 minutes 8 seconds |
+| 118 | 8294 | 2 | 0 |  2 minutes 8 seconds |
+| 119 | 8292 | 1 | 0 |  2 minutes 6 seconds |
+| 120 | 8282 | 1 | 0 |  2 minutes 6 seconds |
+| 121 | 8282 | 1 | 0 |  2 minutes 7 seconds |
+| 122 | 8269 | 3 | 0 |  2 minutes 8 seconds |
+| 123 | 8264 | 1 | 0 |  2 minutes 7 seconds |
+| 124 | 8228 | 1 | 0 |  2 minutes 5 seconds |
+| 125 | 8194 | 0 | 1 |  2 minutes 2 seconds |
+| 126 | 8014 | 2 | 0 |  1 minute 59 seconds |
+| 127 | 8012 | 6 | 0 |  1 minute 59 seconds |
+| 128 | 7996 | 1 | 0 |  1 minute 55 seconds |
+| 129 | 7995 | 1 | 0 |  1 minute 57 seconds |
+| 130 | 7967 | 1 | 0 |  1 minute 54 seconds |
+| 131 | 7966 | 2 | 0 |  2 minutes 10 seconds |
+| 132 | 7966 | 1 | 0 |  2 minutes 8 seconds |
+| 133 | 7960 | 0 | 1 |  2 minutes 9 seconds |

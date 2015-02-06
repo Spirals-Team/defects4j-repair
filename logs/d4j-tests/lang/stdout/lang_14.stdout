@@ -1,0 +1,52 @@
+Running ant (compile) ... OK
+Buildfile: /home/rsommerard/defects4j/framework/projects/Lang/Lang.build.xml
+
+init:
+     [echo] -------- commons-lang3 3.2-SNAPSHOT --------
+    [mkdir] Created dir: /tmp/lang_14/target
+
+compile:
+    [mkdir] Created dir: /tmp/lang_14/target/classes
+    [javac] Compiling 102 source files to /tmp/lang_14/target/classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.5
+    [javac] 1 warning
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+Running ant (compile.tests) ... OK
+Buildfile: /home/rsommerard/defects4j/framework/projects/Lang/Lang.build.xml
+
+init:
+     [echo] -------- commons-lang3 3.2-SNAPSHOT --------
+
+compile:
+
+compile.tests:
+    [mkdir] Created dir: /tmp/lang_14/target/tests
+    [javac] Compiling 122 source files to /tmp/lang_14/target/tests
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.5
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] 1 warning
+     [copy] Copying 1 file to /tmp/lang_14/target/tests
+
+BUILD SUCCESSFUL
+Total time: 5 seconds
+Running ant (test) ... OK
+Buildfile: /home/rsommerard/defects4j/framework/projects/Lang/Lang.build.xml
+
+init:
+     [echo] -------- commons-lang3 3.2-SNAPSHOT --------
+
+compile:
+
+compile.tests:
+
+test:
+    [junit] Test org.apache.commons.lang3.StringUtilsEqualsIndexOfTest FAILED
+    [junit] Can't test IS_JAVA value
+
+BUILD SUCCESSFUL
+Total time: 17 seconds
+Failing tests: 1
+  - org.apache.commons.lang3.StringUtilsEqualsIndexOfTest::testEquals

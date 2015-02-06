@@ -1,0 +1,57 @@
+Running ant (compile) ... OK
+Buildfile: /home/rsommerard/defects4j/framework/projects/Lang/Lang.build.xml
+
+init:
+     [echo] -------- commons-lang3 3.0.1 --------
+    [mkdir] Created dir: /tmp/lang_16/target
+
+compile:
+    [mkdir] Created dir: /tmp/lang_16/target/classes
+    [javac] Compiling 105 source files to /tmp/lang_16/target/classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.5
+    [javac] Note: /tmp/lang_16/src/main/java/org/apache/commons/lang3/SerializationUtils.java uses unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+    [javac] 1 warning
+     [copy] Copying 14 files to /tmp/lang_16/target/classes
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+Running ant (compile.tests) ... OK
+Buildfile: /home/rsommerard/defects4j/framework/projects/Lang/Lang.build.xml
+
+init:
+     [echo] -------- commons-lang3 3.0.1 --------
+
+compile:
+
+compile.tests:
+    [mkdir] Created dir: /tmp/lang_16/target/tests
+    [javac] Compiling 120 source files to /tmp/lang_16/target/tests
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.5
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+    [javac] 1 warning
+     [copy] Copying 1 file to /tmp/lang_16/target/tests
+
+BUILD SUCCESSFUL
+Total time: 5 seconds
+Running ant (test) ... OK
+Buildfile: /home/rsommerard/defects4j/framework/projects/Lang/Lang.build.xml
+
+init:
+     [echo] -------- commons-lang3 3.0.1 --------
+
+compile:
+
+compile.tests:
+
+test:
+    [junit] Can't test IS_JAVA value
+    [junit] Test org.apache.commons.lang3.math.NumberUtilsTest FAILED
+
+BUILD SUCCESSFUL
+Total time: 11 seconds
+Failing tests: 1
+  - org.apache.commons.lang3.math.NumberUtilsTest::testCreateNumber

@@ -1,0 +1,177 @@
+Running ant (compile) ... OK
+Buildfile: /home/rsommerard/defects4j/framework/projects/Lang/Lang.build.xml
+
+test-offline:
+
+get-deps:
+
+compile:
+    [mkdir] Created dir: /tmp/lang_35/target/classes
+    [javac] /tmp/lang_35/maven-build.xml:75: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 80 source files to /tmp/lang_35/target/classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.5
+    [javac] Note: /tmp/lang_35/src/main/java/org/apache/commons/lang3/ArrayUtils.java uses unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+    [javac] 1 warning
+    [mkdir] Created dir: /tmp/lang_35/target/classes/META-INF
+     [copy] Copying 2 files to /tmp/lang_35/target/classes/META-INF
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+Running ant (compile.tests) ... OK
+Buildfile: /home/rsommerard/defects4j/framework/projects/Lang/Lang.build.xml
+
+test-offline:
+
+get-deps:
+
+compile:
+    [javac] /tmp/lang_35/maven-build.xml:75: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+compile-tests:
+    [mkdir] Created dir: /tmp/lang_35/target/test-classes
+    [javac] /tmp/lang_35/maven-build.xml:108: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 98 source files to /tmp/lang_35/target/test-classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.5
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/SystemUtilsTest.java:27: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac] import junit.framework.Assert;
+    [javac]                       ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/builder/ReflectionToStringBuilderExcludeTest.java:24: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac] import junit.framework.Assert;
+    [javac]                       ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/exception/ExceptionUtilsTest.java:30: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac] import junit.framework.Assert;
+    [javac]                       ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/reflect/TypeUtilsTest.java:19: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac] import static junit.framework.Assert.*;
+    [javac]                              ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/time/StopWatchTest.java:19: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac] import junit.framework.Assert;
+    [javac]                       ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/SystemUtilsTest.java:194: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertNotNull(dir);
+    [javac]         ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/SystemUtilsTest.java:195: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertTrue(dir.exists());
+    [javac]         ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/SystemUtilsTest.java:203: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertNotNull(dir);
+    [javac]         ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/SystemUtilsTest.java:204: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertTrue(dir.exists());
+    [javac]         ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/SystemUtilsTest.java:212: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertNotNull(dir);
+    [javac]         ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/SystemUtilsTest.java:213: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertTrue(dir.exists());
+    [javac]         ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/SystemUtilsTest.java:221: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertNotNull(dir);
+    [javac]         ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/SystemUtilsTest.java:222: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertTrue(dir.exists());
+    [javac]         ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/builder/ReflectionToStringBuilderExcludeTest.java:114: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertTrue(toString.indexOf(NOT_SECRET_FIELD) > ArrayUtils.INDEX_NOT_FOUND);
+    [javac]         ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/builder/ReflectionToStringBuilderExcludeTest.java:115: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertTrue(toString.indexOf(NOT_SECRET_VALUE) > ArrayUtils.INDEX_NOT_FOUND);
+    [javac]         ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/builder/ReflectionToStringBuilderExcludeTest.java:119: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertEquals(ArrayUtils.INDEX_NOT_FOUND, toString.indexOf(SECRET_VALUE));
+    [javac]         ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/builder/ReflectionToStringBuilderExcludeTest.java:124: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertTrue(toString.indexOf(SECRET_VALUE) > 0);
+    [javac]         ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/exception/ExceptionUtilsTest.java:127: warning: [deprecation] getCause(Throwable) in ExceptionUtils has been deprecated
+    [javac]         assertSame(null, ExceptionUtils.getCause(null));
+    [javac]                                        ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/exception/ExceptionUtilsTest.java:128: warning: [deprecation] getCause(Throwable) in ExceptionUtils has been deprecated
+    [javac]         assertSame(null, ExceptionUtils.getCause(withoutCause));
+    [javac]                                        ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/exception/ExceptionUtilsTest.java:129: warning: [deprecation] getCause(Throwable) in ExceptionUtils has been deprecated
+    [javac]         assertSame(withoutCause, ExceptionUtils.getCause(nested));
+    [javac]                                                ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/exception/ExceptionUtilsTest.java:130: warning: [deprecation] getCause(Throwable) in ExceptionUtils has been deprecated
+    [javac]         assertSame(nested, ExceptionUtils.getCause(withCause));
+    [javac]                                          ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/exception/ExceptionUtilsTest.java:131: warning: [deprecation] getCause(Throwable) in ExceptionUtils has been deprecated
+    [javac]         assertSame(null, ExceptionUtils.getCause(jdkNoCause));
+    [javac]                                        ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/exception/ExceptionUtilsTest.java:132: warning: [deprecation] getCause(Throwable) in ExceptionUtils has been deprecated
+    [javac]         assertSame(cyclicCause.getCause(), ExceptionUtils.getCause(cyclicCause));
+    [javac]                                                          ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/exception/ExceptionUtilsTest.java:133: warning: [deprecation] getCause(Throwable) in ExceptionUtils has been deprecated
+    [javac]         assertSame(((ExceptionWithCause) cyclicCause.getCause()).getCause(), ExceptionUtils.getCause(cyclicCause.getCause()));
+    [javac]                                                                                            ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/exception/ExceptionUtilsTest.java:134: warning: [deprecation] getCause(Throwable) in ExceptionUtils has been deprecated
+    [javac]         assertSame(cyclicCause.getCause(), ExceptionUtils.getCause(((ExceptionWithCause) cyclicCause.getCause()).getCause()));
+    [javac]                                                          ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/exception/ExceptionUtilsTest.java:138: warning: [deprecation] getCause(Throwable,String[]) in ExceptionUtils has been deprecated
+    [javac]         assertSame(null, ExceptionUtils.getCause(null, null));
+    [javac]                                        ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/exception/ExceptionUtilsTest.java:139: warning: [deprecation] getCause(Throwable,String[]) in ExceptionUtils has been deprecated
+    [javac]         assertSame(null, ExceptionUtils.getCause(null, new String[0]));
+    [javac]                                        ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/exception/ExceptionUtilsTest.java:142: warning: [deprecation] getCause(Throwable,String[]) in ExceptionUtils has been deprecated
+    [javac]         assertSame(nested, ExceptionUtils.getCause(withCause, null));  // default names
+    [javac]                                          ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/exception/ExceptionUtilsTest.java:143: warning: [deprecation] getCause(Throwable,String[]) in ExceptionUtils has been deprecated
+    [javac]         assertSame(null, ExceptionUtils.getCause(withCause, new String[0]));
+    [javac]                                        ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/exception/ExceptionUtilsTest.java:144: warning: [deprecation] getCause(Throwable,String[]) in ExceptionUtils has been deprecated
+    [javac]         assertSame(null, ExceptionUtils.getCause(withCause, new String[] {null}));
+    [javac]                                        ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/exception/ExceptionUtilsTest.java:145: warning: [deprecation] getCause(Throwable,String[]) in ExceptionUtils has been deprecated
+    [javac]         assertSame(nested, ExceptionUtils.getCause(withCause, new String[] {"getCause"}));
+    [javac]                                          ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/exception/ExceptionUtilsTest.java:148: warning: [deprecation] getCause(Throwable,String[]) in ExceptionUtils has been deprecated
+    [javac]         assertSame(null, ExceptionUtils.getCause(withoutCause, null));
+    [javac]                                        ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/exception/ExceptionUtilsTest.java:149: warning: [deprecation] getCause(Throwable,String[]) in ExceptionUtils has been deprecated
+    [javac]         assertSame(null, ExceptionUtils.getCause(withoutCause, new String[0]));
+    [javac]                                        ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/exception/ExceptionUtilsTest.java:150: warning: [deprecation] getCause(Throwable,String[]) in ExceptionUtils has been deprecated
+    [javac]         assertSame(null, ExceptionUtils.getCause(withoutCause, new String[] {null}));
+    [javac]                                        ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/exception/ExceptionUtilsTest.java:151: warning: [deprecation] getCause(Throwable,String[]) in ExceptionUtils has been deprecated
+    [javac]         assertSame(null, ExceptionUtils.getCause(withoutCause, new String[] {"getCause"}));
+    [javac]                                        ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/exception/ExceptionUtilsTest.java:152: warning: [deprecation] getCause(Throwable,String[]) in ExceptionUtils has been deprecated
+    [javac]         assertSame(null, ExceptionUtils.getCause(withoutCause, new String[] {"getTargetException"}));
+    [javac]                                        ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/time/StopWatchTest.java:208: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]             Assert.assertTrue(watch.getStartTime() >= beforeStopWatch);
+    [javac]             ^
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+    [javac] 38 warnings
+
+compile.tests:
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
+Running ant (test) ... OK
+Buildfile: /home/rsommerard/defects4j/framework/projects/Lang/Lang.build.xml
+
+test-offline:
+
+get-deps:
+
+compile:
+    [javac] /tmp/lang_35/maven-build.xml:75: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+compile-tests:
+    [javac] /tmp/lang_35/maven-build.xml:108: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+compile.tests:
+
+test:
+    [junit] Test org.apache.commons.lang3.ArrayUtilsAddTest FAILED
+    [junit] Can't test IS_JAVA value
+
+BUILD SUCCESSFUL
+Total time: 10 seconds
+Failing tests: 1
+  - org.apache.commons.lang3.ArrayUtilsAddTest::testLANG571

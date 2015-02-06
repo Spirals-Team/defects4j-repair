@@ -1,0 +1,67 @@
+Running ant (compile) ... OK
+Buildfile: /home/rsommerard/defects4j/framework/projects/Math/Math.build.xml
+
+init:
+     [echo] -------- Commons MATH 3.0-SNAPSHOT --------
+    [mkdir] Created dir: /tmp/math_54/target
+    [mkdir] Created dir: /tmp/math_54/target/classes
+    [mkdir] Created dir: /tmp/math_54/target/test-classes
+    [mkdir] Created dir: /tmp/math_54/target/classes/META-INF
+     [copy] Copying 1 file to /tmp/math_54/target/classes/META-INF
+
+compile:
+    [javac] Compiling 502 source files to /tmp/math_54/target/classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.5
+    [javac] Note: /tmp/math_54/src/main/java/org/apache/commons/math/stat/Frequency.java uses unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+    [javac] 1 warning
+
+BUILD SUCCESSFUL
+Total time: 6 seconds
+Running ant (compile.tests) ... OK
+Buildfile: /home/rsommerard/defects4j/framework/projects/Math/Math.build.xml
+
+init:
+     [echo] -------- Commons MATH 3.0-SNAPSHOT --------
+
+compile:
+
+check-availability:
+     [echo] doing check-availability...
+
+download-dependencies:
+     [echo] doing download-dependencies...
+
+download-junit:
+
+compile.tests:
+    [javac] Compiling 303 source files to /tmp/math_54/target/test-classes
+     [copy] Copying 11 files to /tmp/math_54/target/test-classes
+
+BUILD SUCCESSFUL
+Total time: 7 seconds
+Running ant (test) ... OK
+Buildfile: /home/rsommerard/defects4j/framework/projects/Math/Math.build.xml
+
+init:
+     [echo] -------- Commons MATH 3.0-SNAPSHOT --------
+
+compile:
+
+check-availability:
+     [echo] doing check-availability...
+
+download-dependencies:
+     [echo] doing download-dependencies...
+
+download-junit:
+
+compile.tests:
+
+test:
+    [junit] Test org.apache.commons.math.dfp.DfpTest FAILED
+
+BUILD SUCCESSFUL
+Total time: 57 seconds
+Failing tests: 1
+  - org.apache.commons.math.dfp.DfpTest::testIssue567

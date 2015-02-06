@@ -1,0 +1,71 @@
+Running ant (compile) ... OK
+Buildfile: /home/rsommerard/defects4j/framework/projects/Math/Math.build.xml
+
+init:
+     [echo] -------- Commons MATH 3.0-SNAPSHOT --------
+    [mkdir] Created dir: /tmp/math_52/target
+    [mkdir] Created dir: /tmp/math_52/target/classes
+    [mkdir] Created dir: /tmp/math_52/target/test-classes
+    [mkdir] Created dir: /tmp/math_52/target/classes/META-INF
+     [copy] Copying 1 file to /tmp/math_52/target/classes/META-INF
+
+compile:
+    [javac] Compiling 565 source files to /tmp/math_52/target/classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.5
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: /tmp/math_52/src/main/java/org/apache/commons/math/stat/Frequency.java uses unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+    [javac] 1 warning
+
+BUILD SUCCESSFUL
+Total time: 7 seconds
+Running ant (compile.tests) ... OK
+Buildfile: /home/rsommerard/defects4j/framework/projects/Math/Math.build.xml
+
+init:
+     [echo] -------- Commons MATH 3.0-SNAPSHOT --------
+
+compile:
+
+check-availability:
+     [echo] doing check-availability...
+
+download-dependencies:
+     [echo] doing download-dependencies...
+
+download-junit:
+
+compile.tests:
+    [javac] Compiling 327 source files to /tmp/math_52/target/test-classes
+    [javac] Note: /tmp/math_52/src/test/java/org/apache/commons/math/PerfTestUtils.java uses unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+     [copy] Copying 13 files to /tmp/math_52/target/test-classes
+
+BUILD SUCCESSFUL
+Total time: 8 seconds
+Running ant (test) ... OK
+Buildfile: /home/rsommerard/defects4j/framework/projects/Math/Math.build.xml
+
+init:
+     [echo] -------- Commons MATH 3.0-SNAPSHOT --------
+
+compile:
+
+check-availability:
+     [echo] doing check-availability...
+
+download-dependencies:
+     [echo] doing download-dependencies...
+
+download-junit:
+
+compile.tests:
+
+test:
+    [junit] Test org.apache.commons.math.geometry.euclidean.threed.RotationTest FAILED
+
+BUILD SUCCESSFUL
+Total time: 1 minute 0 seconds
+Failing tests: 1
+  - org.apache.commons.math.geometry.euclidean.threed.RotationTest::testIssue639

@@ -1,0 +1,70 @@
+Running ant (compile) ... OK
+Buildfile: /home/rsommerard/defects4j/framework/projects/Math/Math.build.xml
+
+init:
+     [echo] -------- Commons MATH 2.1-SNAPSHOT --------
+    [mkdir] Created dir: /tmp/math_73/target
+    [mkdir] Created dir: /tmp/math_73/target/classes
+    [mkdir] Created dir: /tmp/math_73/target/test-classes
+
+compile:
+    [javac] /tmp/math_73/build.xml:154: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 399 source files to /tmp/math_73/target/classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.5
+    [javac] 1 warning
+
+BUILD SUCCESSFUL
+Total time: 5 seconds
+Running ant (compile.tests) ... OK
+Buildfile: /home/rsommerard/defects4j/framework/projects/Math/Math.build.xml
+
+init:
+     [echo] -------- Commons MATH 2.1-SNAPSHOT --------
+
+compile:
+    [javac] /tmp/math_73/build.xml:154: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+check-availability:
+     [echo] doing check-availability...
+
+download-dependencies:
+     [echo] doing download-dependencies...
+
+download-junit:
+
+compile.tests:
+    [javac] /tmp/math_73/build.xml:168: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 263 source files to /tmp/math_73/target/test-classes
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+     [copy] Copying 11 files to /tmp/math_73/target/test-classes
+
+BUILD SUCCESSFUL
+Total time: 5 seconds
+Running ant (test) ... OK
+Buildfile: /home/rsommerard/defects4j/framework/projects/Math/Math.build.xml
+
+init:
+     [echo] -------- Commons MATH 2.1-SNAPSHOT --------
+
+compile:
+    [javac] /tmp/math_73/build.xml:154: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+check-availability:
+     [echo] doing check-availability...
+
+download-dependencies:
+     [echo] doing download-dependencies...
+
+download-junit:
+
+compile.tests:
+    [javac] /tmp/math_73/build.xml:168: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+test:
+    [junit] Test org.apache.commons.math.analysis.solvers.BrentSolverTest FAILED
+
+BUILD SUCCESSFUL
+Total time: 14 seconds
+Failing tests: 1
+  - org.apache.commons.math.analysis.solvers.BrentSolverTest::testBadEndpoints
