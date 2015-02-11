@@ -1,0 +1,14 @@
+org.jfree.data.xy.XYSeries
+
+543a544,549
+>         if (this.allowDuplicateXValues) {
+>             add(x, y);
+>             return null;
+>         }
+> 
+>         // if we get to here, we know that duplicate X values are not permitted
+546c552
+<         if (index >= 0 && !this.allowDuplicateXValues) {
+---
+>         if (index >= 0) {
+

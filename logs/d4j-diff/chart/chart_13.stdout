@@ -1,0 +1,276 @@
+org.jfree.chart.block.BorderArrangement
+
+166,169c166,167
+<                 contentSize = arrangeRR(
+<                     container, constraint.getWidthRange(),
+<                     constraint.getHeightRange(), g2
+<                 );  
+---
+>                 contentSize = arrangeRR(container, constraint.getWidthRange(),
+>                         constraint.getHeightRange(), g2);
+172,175c170,171
+<         return new Size2D(
+<             container.calculateTotalWidth(contentSize.getWidth()),
+<             container.calculateTotalHeight(contentSize.getHeight())
+<         );
+---
+>         return new Size2D(container.calculateTotalWidth(contentSize.getWidth()),
+>                 container.calculateTotalHeight(contentSize.getHeight()));
+190,192c186
+<             Size2D size = this.topBlock.arrange(
+<                 g2, RectangleConstraint.NONE
+<             );
+---
+>             Size2D size = this.topBlock.arrange(g2, RectangleConstraint.NONE);
+197,199c191,192
+<             Size2D size = this.bottomBlock.arrange(
+<                 g2, RectangleConstraint.NONE
+<             );
+---
+>             Size2D size = this.bottomBlock.arrange(g2,
+>                     RectangleConstraint.NONE);
+204,206c197
+<             Size2D size = this.leftBlock.arrange(
+<                 g2, RectangleConstraint.NONE
+<             );
+---
+>             Size2D size = this.leftBlock.arrange(g2, RectangleConstraint.NONE);
+211,213c202
+<             Size2D size = this.rightBlock.arrange(
+<                 g2, RectangleConstraint.NONE
+<             );
+---
+>             Size2D size = this.rightBlock.arrange(g2, RectangleConstraint.NONE);
+222,224c211,212
+<             Size2D size = this.centerBlock.arrange(
+<                 g2, RectangleConstraint.NONE
+<             );
+---
+>             Size2D size = this.centerBlock.arrange(g2,
+>                     RectangleConstraint.NONE);
+232,234c220,221
+<             this.topBlock.setBounds(
+<                 new Rectangle2D.Double(0.0, 0.0, width, h[0])
+<             );
+---
+>             this.topBlock.setBounds(new Rectangle2D.Double(0.0, 0.0, width,
+>                     h[0]));
+237,239c224,225
+<             this.bottomBlock.setBounds(
+<                 new Rectangle2D.Double(0.0, height - h[1], width, h[1])
+<             );
+---
+>             this.bottomBlock.setBounds(new Rectangle2D.Double(0.0,
+>                     height - h[1], width, h[1]));
+242,244c228,229
+<             this.leftBlock.setBounds(
+<                 new Rectangle2D.Double(0.0, h[0], w[2], centerHeight)
+<             );
+---
+>             this.leftBlock.setBounds(new Rectangle2D.Double(0.0, h[0], w[2],
+>                     centerHeight));
+247,249c232,233
+<             this.rightBlock.setBounds(
+<                 new Rectangle2D.Double(width - w[3], h[0], w[3], centerHeight)
+<             );
+---
+>             this.rightBlock.setBounds(new Rectangle2D.Double(width - w[3],
+>                     h[0], w[3], centerHeight));
+253,257c237,238
+<             this.centerBlock.setBounds(
+<                 new Rectangle2D.Double(
+<                     w[2], h[0], width - w[2] - w[3], centerHeight
+<                 )
+<             );
+---
+>             this.centerBlock.setBounds(new Rectangle2D.Double(w[2], h[0],
+>                     width - w[2] - w[3], centerHeight));
+298,301c279,281
+<         RectangleConstraint c1 = new RectangleConstraint(
+<             width, null, LengthConstraintType.FIXED,
+<             0.0, null, LengthConstraintType.NONE
+<         );
+---
+>         RectangleConstraint c1 = new RectangleConstraint(width, null,
+>                 LengthConstraintType.FIXED, 0.0, null,
+>                 LengthConstraintType.NONE);
+312,315c292,294
+<         RectangleConstraint c2 = new RectangleConstraint(
+<             0.0, new Range(0.0, width), LengthConstraintType.RANGE,
+<             0.0, null, LengthConstraintType.NONE
+<         );
+---
+>         RectangleConstraint c2 = new RectangleConstraint(0.0,
+>                 new Range(0.0, width), LengthConstraintType.RANGE,
+>                 0.0, null, LengthConstraintType.NONE);
+323,327c302,305
+<             RectangleConstraint c3 = new RectangleConstraint(
+<                 0.0, new Range(Math.min(w[2], maxW), maxW), 
+<                 LengthConstraintType.RANGE,
+<                 0.0, null, LengthConstraintType.NONE
+<             );    
+---
+>             RectangleConstraint c3 = new RectangleConstraint(0.0,
+>                     new Range(Math.min(w[2], maxW), maxW),
+>                     LengthConstraintType.RANGE, 0.0, null,
+>                     LengthConstraintType.NONE);
+337,340c315,317
+<             RectangleConstraint c4 = new RectangleConstraint(
+<                 width - w[2] - w[3], null, LengthConstraintType.FIXED,
+<                 0.0, null, LengthConstraintType.NONE
+<             );    
+---
+>             RectangleConstraint c4 = new RectangleConstraint(width - w[2]
+>                     - w[3], null, LengthConstraintType.FIXED, 0.0, null,
+>                     LengthConstraintType.NONE);
+366,368c343,344
+<             RectangleConstraint c1 = new RectangleConstraint(
+<                 widthRange, heightRange
+<             );
+---
+>             RectangleConstraint c1 = new RectangleConstraint(widthRange,
+>                     heightRange);
+375,377c351,352
+<             RectangleConstraint c2 = new RectangleConstraint(
+<                 widthRange, heightRange2
+<             );  
+---
+>             RectangleConstraint c2 = new RectangleConstraint(widthRange,
+>                     heightRange2);
+384,386c359,360
+<             RectangleConstraint c3 = new RectangleConstraint(
+<                 widthRange, heightRange3
+<             );
+---
+>             RectangleConstraint c3 = new RectangleConstraint(widthRange,
+>                     heightRange3);
+393,395c367,368
+<             RectangleConstraint c4 = new RectangleConstraint(
+<                 widthRange2, heightRange3
+<             );
+---
+>             RectangleConstraint c4 = new RectangleConstraint(widthRange2,
+>                     heightRange3);
+405,407c378,379
+<             RectangleConstraint c5 = new RectangleConstraint(
+<                 widthRange3, heightRange3
+<             );
+---
+>             RectangleConstraint c5 = new RectangleConstraint(widthRange3,
+>                     heightRange3);
+418,420c390,391
+<             this.topBlock.setBounds(
+<                 new Rectangle2D.Double(0.0, 0.0, width, h[0])
+<             );
+---
+>             this.topBlock.setBounds(new Rectangle2D.Double(0.0, 0.0, width,
+>                     h[0]));
+423,425c394,395
+<             this.bottomBlock.setBounds(
+<                 new Rectangle2D.Double(0.0, height - h[1], width, h[1])
+<             );
+---
+>             this.bottomBlock.setBounds(new Rectangle2D.Double(0.0,
+>                     height - h[1], width, h[1]));
+428,430c398,399
+<             this.leftBlock.setBounds(
+<                 new Rectangle2D.Double(0.0, h[0], w[2], h[2])
+<             );
+---
+>             this.leftBlock.setBounds(new Rectangle2D.Double(0.0, h[0], w[2],
+>                     h[2]));
+433,435c402,403
+<             this.rightBlock.setBounds(
+<                 new Rectangle2D.Double(width - w[3], h[0], w[3], h[3])
+<             );
+---
+>             this.rightBlock.setBounds(new Rectangle2D.Double(width - w[3],
+>                     h[0], w[3], h[3]));
+439,443c407,408
+<             this.centerBlock.setBounds(
+<                 new Rectangle2D.Double(
+<                     w[2], h[0], width - w[2] - w[3], height - h[0] - h[1]
+<                 )
+<             );
+---
+>             this.centerBlock.setBounds(new Rectangle2D.Double(w[2], h[0],
+>                     width - w[2] - w[3], height - h[0] - h[1]));
+463,467c428,431
+<             RectangleConstraint c1 = new RectangleConstraint(
+<                 w[0], null, LengthConstraintType.FIXED,
+<                 0.0, new Range(0.0, constraint.getHeight()), 
+<                 LengthConstraintType.RANGE
+<             );
+---
+>             RectangleConstraint c1 = new RectangleConstraint(w[0], null,
+>                     LengthConstraintType.FIXED, 0.0,
+>                     new Range(0.0, constraint.getHeight()),
+>                     LengthConstraintType.RANGE);
+473,477c437,439
+<             RectangleConstraint c2 = new RectangleConstraint(
+<                 w[0], null, LengthConstraintType.FIXED,
+<                 0.0, new Range(0.0, constraint.getHeight() - h[0]), 
+<                 LengthConstraintType.RANGE
+<             );
+---
+>             RectangleConstraint c2 = new RectangleConstraint(w[0], null,
+>                     LengthConstraintType.FIXED, 0.0, new Range(0.0,
+>                     constraint.getHeight() - h[0]), LengthConstraintType.RANGE);
+483,487c445,448
+<             RectangleConstraint c3 = new RectangleConstraint(
+<                 0.0, new Range(0.0, constraint.getWidth()), 
+<                 LengthConstraintType.RANGE,
+<                 h[2], null, LengthConstraintType.FIXED
+<             );
+---
+>             RectangleConstraint c3 = new RectangleConstraint(0.0,
+>                     new Range(0.0, constraint.getWidth()),
+>                     LengthConstraintType.RANGE, h[2], null,
+>                     LengthConstraintType.FIXED);
+493,497c454,457
+<             RectangleConstraint c4 = new RectangleConstraint(
+<                 0.0, new Range(0.0, constraint.getWidth() - w[2]), 
+<                 LengthConstraintType.RANGE,
+<                 h[2], null, LengthConstraintType.FIXED
+<             );
+---
+>             RectangleConstraint c4 = new RectangleConstraint(0.0,
+>                     new Range(0.0, Math.max(constraint.getWidth() - w[2], 0.0)),
+>                     LengthConstraintType.RANGE, h[2], null,
+>                     LengthConstraintType.FIXED);
+509,511c469,470
+<             this.topBlock.setBounds(
+<                 new Rectangle2D.Double(0.0, 0.0, w[0], h[0])
+<             );
+---
+>             this.topBlock.setBounds(new Rectangle2D.Double(0.0, 0.0, w[0],
+>                     h[0]));
+514,516c473,474
+<             this.bottomBlock.setBounds(
+<                 new Rectangle2D.Double(0.0, h[0] + h[2], w[1], h[1])
+<             );
+---
+>             this.bottomBlock.setBounds(new Rectangle2D.Double(0.0, h[0] + h[2],
+>                     w[1], h[1]));
+519,521c477,478
+<             this.leftBlock.setBounds(
+<                 new Rectangle2D.Double(0.0, h[0], w[2], h[2])
+<             );
+---
+>             this.leftBlock.setBounds(new Rectangle2D.Double(0.0, h[0], w[2],
+>                     h[2]));
+524,526c481,482
+<             this.rightBlock.setBounds(
+<                 new Rectangle2D.Double(w[2] + w[4], h[0], w[3], h[3])
+<             );
+---
+>             this.rightBlock.setBounds(new Rectangle2D.Double(w[2] + w[4], h[0],
+>                     w[3], h[3]));
+529,531c485,486
+<             this.centerBlock.setBounds(
+<                 new Rectangle2D.Double(w[2], h[0], w[4], h[4])
+<             );
+---
+>             this.centerBlock.setBounds(new Rectangle2D.Double(w[2], h[0], w[4],
+>                     h[4]));
+
