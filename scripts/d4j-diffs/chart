@@ -1,0 +1,33 @@
+#!/bin/bash
+
+for bug in `seq 1 26`
+do
+
+  echo "Chart ${bug} diffs ..."
+
+  exec 6<&1
+
+  exec 1> ~/defects4j-nopol/logs/d4j-diffs/chart/chart_${bug}.stdout
+
+  line=`grep -m 1 -n "List of modified sources:" ~/defects4j-nopol/logs/d4j-infos/projects/chart/chart_${bug}.stdout | cut -f 1 -d :`
+  let "line++"
+  modifiedSources=`tail -n +$line ~/defects4j-nopol/logs/d4j-infos/projects/chart/chart_${bug}.stdout | tac | tail -n +2 | cut -f 3 -d ' '`
+
+  # < delete in buggy
+  # > add in fix
+  for modifiedSource in $modifiedSources
+  do
+    echo $modifiedSource
+    echo ""
+    pathModifiedSource=`echo $modifiedSource | tr . /`
+    pathModifiedSource="$pathModifiedSource.java"
+    diff -b ~/projects/chart/buggy/chart_${bug}/source/$pathModifiedSource ~/projects/chart/fix/chart_${bug}/source/$pathModifiedSource
+    echo ""
+    echo ""
+  done
+
+  exec 1<&6 6<&-
+
+done
+
+echo 'Done.'

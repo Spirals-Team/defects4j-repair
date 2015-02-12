@@ -4,12 +4,12 @@ export PATH="~/defects4j/framework/bin:$PATH"
 
 for bug in `seq 1 133`
 do
-  
+
   echo "Closure ${bug} infos ..."
-  
+
   exec 6<&1
 
-  exec 1> ~/defects4j-nopol/logs/d4j-infos/closure/closure_${bug}.stdout
+  exec 1> ~/defects4j-nopol/logs/d4j-infos/projects/closure/closure_${bug}.stdout
 
   defects4j info -p Closure -v ${bug}
 
@@ -18,4 +18,3 @@ do
 done
 
 echo 'Done.'
-

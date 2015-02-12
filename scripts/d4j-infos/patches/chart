@@ -3,11 +3,11 @@
 for bug in `seq 1 26`
 do
 
-  echo "Chart ${bug} infos ..."
+  echo "Chart ${bug} diffs ..."
 
   exec 6<&1
 
-  exec 1> ~/defects4j-nopol/logs/d4j-diff/chart/chart_${bug}.stdout
+  exec 1> ~/defects4j-nopol/logs/d4j-diffs/chart/chart_${bug}.stdout
 
   line=`grep -m 1 -n "List of modified sources:" ~/defects4j-nopol/logs/d4j-infos/chart/chart_${bug}.stdout | cut -f 1 -d :`
   let "line++"
@@ -21,7 +21,7 @@ do
     echo ""
     pathModifiedSource=`echo $modifiedSource | tr . /`
     pathModifiedSource="$pathModifiedSource.java"
-    diff -b ~/projects/chart/chart_${bug}_buggy/source/$pathModifiedSource ~/projects/chart/chart_${bug}_fix/source/$pathModifiedSource
+    diff -b ~/projects/chart/buggy/chart_${bug}/source/$pathModifiedSource ~/projects/chart/fix/chart_${bug}/source/$pathModifiedSource
     echo ""
     echo ""
   done

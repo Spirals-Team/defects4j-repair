@@ -16,23 +16,23 @@ do
 
   cat stderr/chart_${bug}.stderr | tail -4 >> stdout/chart_${bug}.stdout
 
-  echo "" >> stdout/chart_${bug}.stdout  
+  echo "" >> stdout/chart_${bug}.stdout
 
   echo "## Bug ${bug}" >> README.md
 
-  line=`grep -m 1 -n "List of modified sources:" ~/defects4j-nopol/logs/d4j-infos/chart/chart_${bug}.stdout | cut -f 1 -d :`
+  line=`grep -m 1 -n "List of modified sources:" ~/defects4j-nopol/logs/d4j-infos/projects/chart/chart_${bug}.stdout | cut -f 1 -d :`
 
   let "line++"
 
-  nbModifiedSources=`tail -n +$line ~/defects4j-nopol/logs/d4j-infos/chart/chart_${bug}.stdout | tac | tail -n +2 | wc -l`
+  nbModifiedSources=`tail -n +$line ~/defects4j-nopol/logs/d4j-infos/projects/chart/chart_${bug}.stdout | tac | tail -n +2 | wc -l`
 
   echo "Number of modified sources: $nbModifiedSources" >> README.md
   echo "" >> README.md
 
-  modifiedSources=`tail -n +$line ~/defects4j-nopol/logs/d4j-infos/chart/chart_${bug}.stdout | tac | tail -n +2 | cut -f 3 -d ' '`
+  modifiedSources=`tail -n +$line ~/defects4j-nopol/logs/d4j-infos/projects/chart/chart_${bug}.stdout | tac | tail -n +2 | cut -f 3 -d ' '`
 
   statementStart=`grep -m 1 -n "org" stdout/chart_${bug}.stdout | cut -f 1 -d :`
-  
+
   if [[ ! $statementStart ]]; then
     statementStart=-1
   fi
@@ -43,13 +43,13 @@ do
     echo "" >> README.md
 
     nopolLine=`grep -m 1 $s stdout/chart_${bug}.stdout`
-    
+
     if [[ ! $nopolLine ]]; then
       nopolLine='none'
     fi
-    
+
     nopolLineNumber=`grep -m 1 -n $s stdout/chart_${bug}.stdout | cut -f 1 -d :`
-    
+
     if [[ ! $nopolLineNumber ]]; then
       rank=-1
     else
@@ -58,11 +58,11 @@ do
 
     echo '| Rank | Nopol log |' >> README.md
     echo '|------|-----------|' >> README.md
-    
+
     echo "| $rank | $nopolLine |" >> README.md
     echo "" >> README.md
   done
-  
+
 done
 
 echo 'Done.'

@@ -4,12 +4,12 @@ export PATH="~/defects4j/framework/bin:$PATH"
 
 for bug in `seq 1 65`
 do
-  
+
   echo "Lang ${bug} infos ..."
-  
+
   exec 6<&1
 
-  exec 1> ~/defects4j-nopol/logs/d4j-infos/lang/lang_${bug}.stdout
+  exec 1> ~/defects4j-nopol/logs/d4j-infos/projects/lang/lang_${bug}.stdout
 
   defects4j info -p Lang -v ${bug}
 
@@ -18,4 +18,3 @@ do
 done
 
 echo 'Done.'
-
