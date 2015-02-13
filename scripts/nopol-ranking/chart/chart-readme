@@ -22,7 +22,7 @@ do
   modifiedSources=`grep -e '->' ~/defects4j-nopol/logs/d4j-infos/patches/chart/chart_$bug.stdout`
 
   nbModifiedSources=`grep -e '->' ~/defects4j-nopol/logs/d4j-infos/patches/chart/chart_$bug.stdout | wc -l`
-  echo "Nb. modified sources: $nbModifiedSources" >> README.md
+  echo "- Nb. modified sources: $nbModifiedSources" >> README.md
   echo "" >> README.md
 
   statementStart=`grep -m 1 -n "org" stdout/chart_${bug}.stdout | cut -f 1 -d :`
@@ -39,35 +39,35 @@ do
 
     modifiedLines=`echo $modifiedSource | cut -f 2 -d :`
 
-    echo "- $sourceName" >> README.md
+    echo "### $sourceName" >> README.md
     echo "" >> README.md
 
     className=`echo $sourceName | tr . ' ' | awk '{print $NF}'`
-    echo -e '```' >> README.md
+    echo '```' >> README.md
     cat ~/defects4j-nopol/logs/d4j-infos/patches/chart/chart_${bug}_${className}.stdout >> README.md
-    echo -e '```' >> README.md
+    echo '```' >> README.md
     deleted=`cat ~/defects4j-nopol/logs/d4j-infos/patches/chart/chart_${bug}_${className}.stdout | grep '<' | wc -l`
     added=`cat ~/defects4j-nopol/logs/d4j-infos/patches/chart/chart_${bug}_${className}.stdout | grep '>' | wc -l`
     echo "" >> README.md
-    echo "Deleted lines: $deleted" >> README.md
-    echo "Added lines: $added" >> README.md
+    echo "- Deleted lines: $deleted<br />" >> README.md
+    echo "- Added lines: $added<br />" >> README.md
     difference=0
     let "difference=added-deleted"
-    echo "Diff added/deleted: $difference" >> README.md
+    echo "- Diff added/deleted: $difference" >> README.md
     echo "" >> README.md
 
-    echo '| Line | Rank | Nopol log |' >> README.md
-    echo '|------|------|-----------|' >> README.md
+    echo '| Line | Nopol log | Rank |' >> README.md
+    echo '|------|-----------|------|' >> README.md
 
+    undetectedLines=0
+    undetectedLinesNumber=" "
     for line in $modifiedLines
     do
-      rank=-1
+      unset rank
+      unset nopolLine
+      unset nopolLineNumber
 
-      nopolLine=`grep $sourceName:$line stdout/chart_$bug.stdout`
-
-      if [[ ! $nopolLine ]]; then
-        nopolLine='none'
-      fi
+      nopolLine=`grep -m 1 $sourceName:$line stdout/chart_$bug.stdout`
 
       nopolLineNumber=`grep -m 1 -n "$nopolLine" stdout/chart_$bug.stdout | cut -f 1 -d :`
 
@@ -75,8 +75,22 @@ do
         let "rank=($nopolLineNumber-$statementStart)+1"
       fi
 
-      echo "| $line | $rank | $nopolLine |" >> README.md
+      if [[ $nopolLine ]]; then
+        echo "| $line | $nopolLine | $rank |" >> README.md
+      else
+        let "undetectedLines++"
+        undetectedLinesNumber="$undetectedLinesNumber$line "
+      fi
+
     done
+
+    echo "" >> README.md
+
+    if [[ $undetectedLines == 0 ]]; then
+      echo "- Nb. undetected lines: $undetectedLines/$(echo $modifiedLines | wc -w)" >> README.md
+    else
+      echo "- Nb. undetected lines: $undetectedLines/$(echo $modifiedLines | wc -w) ($undetectedLinesNumber)" >> README.md
+    fi
 
     echo "" >> README.md
   done
