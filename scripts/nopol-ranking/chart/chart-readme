@@ -56,11 +56,9 @@ do
     echo "- Diff added/deleted: $difference" >> README.md
     echo "" >> README.md
 
-    echo '| Line | Nopol log | Rank |' >> README.md
-    echo '|------|-----------|------|' >> README.md
-
     undetectedLines=0
     undetectedLinesNumber=" "
+    headerTab=1
     for line in $modifiedLines
     do
       unset rank
@@ -73,6 +71,15 @@ do
 
       if [[ $nopolLineNumber ]]; then
         let "rank=($nopolLineNumber-$statementStart)+1"
+      fi
+
+      if [[ $nopolLine ]]; then
+        if [[ $headerTab ]]; then
+          echo '| Line | Nopol log | Nopol rank |' >> README.md
+          echo '|------|-----------|------|' >> README.md
+
+          unset headerTab
+        fi
       fi
 
       if [[ $nopolLine ]]; then
