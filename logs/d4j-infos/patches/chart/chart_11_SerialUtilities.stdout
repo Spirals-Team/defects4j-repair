@@ -1,0 +1,17 @@
+318,321c318,319
+<                             gp.curveTo(
+<                                 args[0], args[1], args[2],
+<                                 args[3], args[4], args[5]
+<                             );
+---
+>                             gp.curveTo(args[0], args[1], args[2],
+>                                     args[3], args[4], args[5]);
+327c325
+<                             //result = gp;
+---
+>                             gp.closePath();
+331,332c329
+<                                 "JFreeChart - No path exists"
+<                             );
+---
+>                                     "JFreeChart - No path exists");

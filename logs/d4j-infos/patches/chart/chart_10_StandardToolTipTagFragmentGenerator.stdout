@@ -1,0 +1,13 @@
+50a51,57
+>      * Creates a new instance.
+>      */
+>     public StandardToolTipTagFragmentGenerator() {
+>         super();
+>     }
+> 	
+>     /**
+58c65,66
+<         return " title=\"" + toolTipText + "\" alt=\"\"";
+---
+>         return " title=\"" + ImageMapUtilities.htmlEscape(toolTipText) 
+>             + "\" alt=\"\"";

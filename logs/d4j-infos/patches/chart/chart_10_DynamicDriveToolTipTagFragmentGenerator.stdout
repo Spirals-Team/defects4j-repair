@@ -1,0 +1,21 @@
+5c5
+<  * (C) Copyright 2000-2007, by Object Refinery Limited and Contributors.
+---
+>  * (C) Copyright 2000-2008, by Object Refinery Limited and Contributors.
+30c30
+<  * (C) Copyright 2003-2007, by Richard Atkinson and Contributors.
+---
+>  * (C) Copyright 2003-2008, by Richard Atkinson and Contributors.
+32a33
+>  * Contributors:     David Gilbert (for Object Refinery Limited);
+36a38
+>  * 04-Dec-2007 : Escape tool tip text to fix bug 1400917 (DG);
+83,85c85,88
+<         return " onMouseOver=\"return stm(['" + this.title + "','" 
+<             + toolTipText + "'],Style[" + this.style + "]);\"" 
+<             + " onMouseOut=\"return htm();\"";
+---
+>         return " onMouseOver=\"return stm(['"
+>             + ImageMapUtilities.htmlEscape(this.title) + "','"
+>             + ImageMapUtilities.htmlEscape(toolTipText) + "'],Style["
+>             + this.style + "]);\"" + " onMouseOut=\"return htm();\"";

@@ -1,0 +1,24 @@
+258a259,261
+>         if (meanValue == null) {
+>             return;
+>         }
+315c318,320
+<         double valueDelta = dataset.getStdDevValue(row, column).doubleValue();
+---
+>         Number n = dataset.getStdDevValue(row, column);
+>         if (n != null) {
+>             double valueDelta = n.doubleValue();
+343a349
+>         }
+402a409,411
+>         if (meanValue == null) {
+>             return;
+>         }
+459c468,470
+<         double valueDelta = dataset.getStdDevValue(row, column).doubleValue();
+---
+>         Number n = dataset.getStdDevValue(row, column);
+>         if (n != null) {
+>             double valueDelta = n.doubleValue();
+486a498
+>         }

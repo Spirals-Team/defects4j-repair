@@ -7,29 +7,23 @@ echo "" >> README.md
 
 for bug in `seq 1 26`
 do
+  echo "Chart ${bug} nopol ranking readme"
+  #Cut log
+  #line=`grep -m 1 -n "^\/\*" stdout/chart_${bug}.stdout | cut -f 1 -d :`
+  #tail -n +$line stdout/chart_${bug}.stdout > chart_${bug}_tmp.stdout
+  #mv chart_${bug}_tmp.stdout stdout/chart_${bug}.stdout
 
-  line=`grep -m 1 -n "^\/\*" stdout/chart_${bug}.stdout | cut -f 1 -d :`
+  #Add time at the end log
+  #cat stderr/chart_${bug}.stderr | tail -4 >> stdout/chart_${bug}.stdout
+  #echo "" >> stdout/chart_${bug}.stdout
 
-  tail -n +$line stdout/chart_${bug}.stdout > chart_${bug}_tmp.stdout
-
-  mv chart_${bug}_tmp.stdout stdout/chart_${bug}.stdout
-
-  cat stderr/chart_${bug}.stderr | tail -4 >> stdout/chart_${bug}.stdout
-
-  echo "" >> stdout/chart_${bug}.stdout
-
-  echo "## Bug ${bug}" >> README.md
-
-  line=`grep -m 1 -n "List of modified sources:" ~/defects4j-nopol/logs/d4j-infos/projects/chart/chart_${bug}.stdout | cut -f 1 -d :`
-
-  let "line++"
-
-  nbModifiedSources=`tail -n +$line ~/defects4j-nopol/logs/d4j-infos/projects/chart/chart_${bug}.stdout | tac | tail -n +2 | wc -l`
-
-  echo "Number of modified sources: $nbModifiedSources" >> README.md
+  echo "## Bug $bug" >> README.md
   echo "" >> README.md
+  modifiedSources=`grep -e '->' ~/defects4j-nopol/logs/d4j-infos/patches/chart/chart_$bug.stdout`
 
-  modifiedSources=`tail -n +$line ~/defects4j-nopol/logs/d4j-infos/projects/chart/chart_${bug}.stdout | tac | tail -n +2 | cut -f 3 -d ' '`
+  nbModifiedSources=`grep -e '->' ~/defects4j-nopol/logs/d4j-infos/patches/chart/chart_$bug.stdout | wc -l`
+  echo "Nb. modified sources: $nbModifiedSources" >> README.md
+  echo "" >> README.md
 
   statementStart=`grep -m 1 -n "org" stdout/chart_${bug}.stdout | cut -f 1 -d :`
 
@@ -37,29 +31,53 @@ do
     statementStart=-1
   fi
 
-  for s in $modifiedSources
+  for index in `seq 1 $nbModifiedSources`
   do
-    echo "- $s" >> README.md
+    modifiedSource=`grep -e '->' ~/defects4j-nopol/logs/d4j-infos/patches/chart/chart_$bug.stdout | sed -n ${index}p`
+
+    sourceName=`echo $modifiedSource | cut -f 2 -d '>' | cut -f 1 -d : | cut -f 1 -d . | tr / .`
+
+    modifiedLines=`echo $modifiedSource | cut -f 2 -d :`
+
+    echo "- $sourceName" >> README.md
     echo "" >> README.md
 
-    nopolLine=`grep -m 1 $s stdout/chart_${bug}.stdout`
+    className=`echo $sourceName | tr . ' ' | awk '{print $NF}'`
+    echo -e '```' >> README.md
+    cat ~/defects4j-nopol/logs/d4j-infos/patches/chart/chart_${bug}_${className}.stdout >> README.md
+    echo -e '```' >> README.md
+    deleted=`cat ~/defects4j-nopol/logs/d4j-infos/patches/chart/chart_${bug}_${className}.stdout | grep '<' | wc -l`
+    added=`cat ~/defects4j-nopol/logs/d4j-infos/patches/chart/chart_${bug}_${className}.stdout | grep '>' | wc -l`
+    echo "" >> README.md
+    echo "Deleted lines: $deleted" >> README.md
+    echo "Added lines: $added" >> README.md
+    difference=0
+    let "difference=added-deleted"
+    echo "Diff added/deleted: $difference" >> README.md
+    echo "" >> README.md
 
-    if [[ ! $nopolLine ]]; then
-      nopolLine='none'
-    fi
+    echo '| Line | Rank | Nopol log |' >> README.md
+    echo '|------|------|-----------|' >> README.md
 
-    nopolLineNumber=`grep -m 1 -n $s stdout/chart_${bug}.stdout | cut -f 1 -d :`
-
-    if [[ ! $nopolLineNumber ]]; then
+    for line in $modifiedLines
+    do
       rank=-1
-    else
-      let "rank=($nopolLineNumber-$statementStart)+1"
-    fi
 
-    echo '| Rank | Nopol log |' >> README.md
-    echo '|------|-----------|' >> README.md
+      nopolLine=`grep $sourceName:$line stdout/chart_$bug.stdout`
 
-    echo "| $rank | $nopolLine |" >> README.md
+      if [[ ! $nopolLine ]]; then
+        nopolLine='none'
+      fi
+
+      nopolLineNumber=`grep -m 1 -n "$nopolLine" stdout/chart_$bug.stdout | cut -f 1 -d :`
+
+      if [[ $nopolLineNumber ]]; then
+        let "rank=($nopolLineNumber-$statementStart)+1"
+      fi
+
+      echo "| $line | $rank | $nopolLine |" >> README.md
+    done
+
     echo "" >> README.md
   done
 

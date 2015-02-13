@@ -1,0 +1,75 @@
+86d85
+< import org.jfree.chart.entity.CategoryItemEntity;
+89d87
+< import org.jfree.chart.labels.CategoryToolTipGenerator;
+91a90
+> import org.jfree.chart.util.PaintUtilities;
+220c219,220
+<      * value.
+---
+>      * value and sends a {@link RendererChangeEvent} to all registered 
+>      * listeners.
+222c222
+<      * @param groupStroke The new stroke
+---
+>      * @param stroke the new stroke (<code>null</code> not permitted).
+224,225c224,229
+<     public void setGroupStroke(Stroke groupStroke) {
+<         this.groupStroke = groupStroke;
+---
+>     public void setGroupStroke(Stroke stroke) {
+>         if (stroke == null) {
+>             throw new IllegalArgumentException("Null 'stroke' argument.");
+>         }
+>         this.groupStroke = stroke;
+>         notifyListeners(new RendererChangeEvent(this));        
+413,414c417
+<             // collect entity and tool tip information...
+<             if (state.getInfo() != null) {
+---
+>             // add an item entity, if this information is being collected
+417,426c420,444
+<                     String tip = null;
+<                     CategoryToolTipGenerator tipster = getToolTipGenerator(row,
+<                             column);
+<                     if (tipster != null) {
+<                         tip = tipster.generateToolTip(dataset, row, column);
+<                     }
+<                     CategoryItemEntity entity = new CategoryItemEntity(
+<                             shape, tip, null, dataset, dataset.getRowKey(row), 
+<                             dataset.getColumnKey(column));
+<                     entities.add(entity);
+---
+>                 addItemEntity(entities, dataset, row, column, shape);
+>             }
+>         }
+>     }
+>     
+>     /**
+>      * Tests this instance for equality with an arbitrary object.  The icon fields
+>      * are NOT included in the test, so this implementation is a little weak.
+>      * 
+>      * @param obj  the object (<code>null</code> permitted).
+>      * 
+>      * @return A boolean.
+>      *
+>      * @since 1.0.7
+>      */
+>     public boolean equals(Object obj) {
+>         if (obj == this) {
+>             return true;
+>         }
+>         if (!(obj instanceof MinMaxCategoryRenderer)) {
+>             return false;
+>         }
+>         MinMaxCategoryRenderer that = (MinMaxCategoryRenderer) obj;
+>         if (this.plotLines != that.plotLines) {
+>             return false;
+427a446,447
+>         if (!PaintUtilities.equal(this.groupPaint, that.groupPaint)) {
+>             return false;
+428a449,450
+>         if (!this.groupStroke.equals(that.groupStroke)) {
+>             return false;
+429a452
+>         return super.equals(obj);

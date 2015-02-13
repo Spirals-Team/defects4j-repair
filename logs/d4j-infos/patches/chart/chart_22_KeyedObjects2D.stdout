@@ -1,0 +1,199 @@
+204,205c204,205
+<      * @param rowKey  the row key.
+<      * @param columnKey  the column key.
+---
+>      * @param rowKey  the row key (<code>null</code> not permitted).
+>      * @param columnKey  the column key (<code>null</code> not permitted).
+207c207,212
+<      * @return The object.
+---
+>      * @return The object (possibly <code>null</code>).
+>      * 
+>      * @throws IllegalArgumentException if <code>rowKey<code> or 
+>      *         <code>columnKey</code> is <code>null</code>.
+>      * @throws UnknownKeyException if <code>rowKey</code> or 
+>      *         <code>columnKey</code> is not recognised.
+210,211c215,220
+< 
+<         Object result = null;
+---
+>         if (rowKey == null) {
+>             throw new IllegalArgumentException("Null 'rowKey' argument.");
+>         }
+>         if (columnKey == null) {
+>             throw new IllegalArgumentException("Null 'columnKey' argument.");
+>         }
+213c222,230
+<         if (row >= 0) {
+---
+>         if (row < 0) {
+>             throw new UnknownKeyException("Row key (" + rowKey 
+>                     + ") not recognised.");
+>         }
+>         int column = this.columnKeys.indexOf(columnKey);
+>         if (column < 0) {
+>             throw new UnknownKeyException("Column key (" + columnKey 
+>                     + ") not recognised.");
+>         }
+215c232,237
+<             result = rowData.getObject(columnKey);
+---
+>         int index = rowData.getIndex(columnKey);
+>         if (index >= 0) {
+>             return rowData.getObject(index);
+>         }
+>         else {
+>             return null;
+217,218d238
+<         return result;
+< 
+225,226c245,246
+<      * @param rowKey  the row key.
+<      * @param columnKey  the column key.
+---
+>      * @param rowKey  the row key (<code>null</code> not permitted).
+>      * @param columnKey  the column key (<code>null</code> not permitted).
+228,229c248
+<     public void addObject(Object object, 
+<                           Comparable rowKey, 
+---
+>     public void addObject(Object object, Comparable rowKey, 
+238,239c257,258
+<      * @param rowKey  the row key.
+<      * @param columnKey  the column key.
+---
+>      * @param rowKey  the row key (<code>null</code> not permitted).
+>      * @param columnKey  the column key (<code>null</code> not permitted).
+241,242c260
+<     public void setObject(Object object, 
+<                           Comparable rowKey, 
+---
+>     public void setObject(Object object, Comparable rowKey, 
+244a263,268
+>         if (rowKey == null) {
+>             throw new IllegalArgumentException("Null 'rowKey' argument.");
+>         }
+>         if (columnKey == null) {
+>             throw new IllegalArgumentException("Null 'columnKey' argument.");
+>         }
+264c288,293
+<      * Removes an object.
+---
+>      * Removes an object from the table by setting it to <code>null</code>.  If
+>      * all the objects in the specified row and/or column are now 
+>      * <code>null</code>, the row and/or column is removed from the table.
+>      *
+>      * @param rowKey  the row key (<code>null</code> not permitted).
+>      * @param columnKey  the column key (<code>null</code> not permitted).
+266,267c295
+<      * @param rowKey  the row key.
+<      * @param columnKey  the column key.
+---
+>      * @see #addObject(Object, Comparable, Comparable)
+271,272c299,341
+<         // actually, a null value is different to a value that doesn't exist 
+<         // at all, need to fix this code.
+---
+>         
+>         // 1. check whether the row is now empty.
+>         boolean allNull = true;
+>         int rowIndex = getRowIndex(rowKey);
+>         KeyedObjects row = (KeyedObjects) this.rows.get(rowIndex);
+> 
+>         for (int item = 0, itemCount = row.getItemCount(); item < itemCount; 
+>              item++) {
+>             if (row.getObject(item) != null) {
+>                 allNull = false;
+>                 break;
+>             }
+>         }
+>         
+>         if (allNull) {
+>             this.rowKeys.remove(rowIndex);
+>             this.rows.remove(rowIndex);
+>         }
+>         
+>         // 2. check whether the column is now empty.
+>         allNull = true;
+>         
+>         for (int item = 0, itemCount = this.rows.size(); item < itemCount; 
+>              item++) {
+>             row = (KeyedObjects) this.rows.get(item);
+>             int columnIndex = row.getIndex(columnKey);
+>             if (columnIndex >= 0 && row.getObject(columnIndex) != null) {
+>                 allNull = false;
+>                 break;
+>             }
+>         }
+>         
+>         if (allNull) {
+>             for (int item = 0, itemCount = this.rows.size(); item < itemCount; 
+>                  item++) {
+>                 row = (KeyedObjects) this.rows.get(item);
+>                 int columnIndex = row.getIndex(columnKey);
+>                 if (columnIndex >= 0) {
+>                     row.removeValue(columnIndex);
+>                 }
+>             }
+>             this.columnKeys.remove(columnKey);
+>         }
+276c345
+<      * Removes a row.
+---
+>      * Removes an entire row from the table.
+278a348,349
+>      * 
+>      * @see #removeColumn(int)
+286c357,361
+<      * Removes a row.
+---
+>      * Removes an entire row from the table.
+>      *
+>      * @param rowKey  the row key (<code>null</code> not permitted).
+>      * 
+>      * @throws UnknownKeyException if <code>rowKey</code> is not recognised.
+288c363
+<      * @param rowKey  the row key.
+---
+>      * @see #removeColumn(Comparable)
+291c366,371
+<         removeRow(getRowIndex(rowKey));
+---
+>         int index = getRowIndex(rowKey);
+>         if (index < 0) {
+>             throw new UnknownKeyException("Row key (" + rowKey 
+>                     + ") not recognised.");
+>         }
+>         removeRow(index);
+295c375
+<      * Removes a column.
+---
+>      * Removes an entire column from the table.
+297a378,379
+>      * 
+>      * @see #removeRow(int)
+305c387
+<      * Removes a column.
+---
+>      * Removes an entire column from the table.
+307c389,393
+<      * @param columnKey  the column key.
+---
+>      * @param columnKey  the column key (<code>null</code> not permitted).
+>      * 
+>      * @throws UnknownKeyException if <code>rowKey</code> is not recognised.
+>      * 
+>      * @see #removeRow(Comparable)
+309a396,400
+>         int index = getColumnIndex(columnKey);
+>         if (index < 0) {
+>             throw new UnknownKeyException("Column key (" + columnKey 
+>                     + ") not recognised.");
+>         }
+313c404,407
+<             rowData.removeValue(columnKey);
+---
+>             int i = rowData.getIndex(columnKey);
+>             if (i >= 0) {
+>                 rowData.removeValue(i);
+>             }

@@ -1,0 +1,8 @@
+91c91
+<      * @param alpha  the alpha transparency.
+---
+>      * @param alpha  the alpha transparency (in the range 0.0f to 1.0f).
+95c95
+<         super(paint, stroke, paint, stroke, alpha);
+---
+>         super(paint, stroke, outlinePaint, outlineStroke, alpha);

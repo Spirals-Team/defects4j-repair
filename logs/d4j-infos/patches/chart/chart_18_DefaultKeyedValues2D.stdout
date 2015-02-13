@@ -1,0 +1,22 @@
+442c442
+<      * Removes a column.
+---
+>      * Removes a column from the table.
+445a446,450
+>      * @throws UnknownKeyException if the table does not contain a column with
+>      *     the specified key.
+>      * @throws IllegalArgumentException if <code>columnKey</code> is 
+>      *     <code>null</code>.
+>      * 
+449a455,460
+>     	if (columnKey == null) {
+>     		throw new IllegalArgumentException("Null 'columnKey' argument.");
+>     	}
+>     	if (!this.columnKeys.contains(columnKey)) {
+>     		throw new UnknownKeyException("Unknown key: " + columnKey);
+>     	}
+452a464,465
+>             int index = rowData.getIndex(columnKey);
+>             if (index >= 0) {
+454a468
+>         }

@@ -20,11 +20,11 @@ do
     echo "Class: $modifiedSource"
     echo ""
     pathModifiedSource=`echo $modifiedSource | tr . /`
+    className=`echo $pathModifiedSource | tr / ' ' | awk '{print $NF}'`
     pathModifiedSource="$pathModifiedSource.java"
     linePrint="-> $pathModifiedSource"
-    diff -b ~/projects/chart/buggy/chart_${bug}/source/$pathModifiedSource ~/projects/chart/fix/chart_${bug}/source/$pathModifiedSource > /tmp/modifiedSourceDiff
-    modifiedLinesBrut=`grep '^\d' /tmp/modifiedSourceDiff | cut -f 1 -d c | cut -f 1 -d a | cut -f 1 -d d`
-    rm /tmp/modifiedSourceDiff
+    diff -b ~/projects/chart/buggy/chart_${bug}/source/$pathModifiedSource ~/projects/chart/fix/chart_${bug}/source/$pathModifiedSource > ~/defects4j-nopol/logs/d4j-infos/patches/chart/chart_${bug}_$className.stdout
+    modifiedLinesBrut=`grep '^\d' ~/defects4j-nopol/logs/d4j-infos/patches/chart/chart_${bug}_$className.stdout | cut -f 1 -d c | cut -f 1 -d a | cut -f 1 -d d`
 
     modifiedLines=""
 

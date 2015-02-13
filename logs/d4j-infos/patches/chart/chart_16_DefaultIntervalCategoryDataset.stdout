@@ -1,0 +1,10 @@
+207,208c207,208
+<                 this.seriesKeys = null;
+<                 this.categoryKeys = null;
+---
+>                 this.seriesKeys = new Comparable[0];
+>                 this.categoryKeys = new Comparable[0];
+338c338
+<         if (categoryKeys.length != this.startData[0].length) {
+---
+>         if (categoryKeys.length != getCategoryCount()) {

@@ -1,0 +1,17 @@
+51a52,58
+>      * Creates a new instance.
+>      */
+>     public OverLIBToolTipTagFragmentGenerator() {
+>         super();
+>     }
+> 	
+>     /**
+54c61
+<      * @param toolTipText  the tooltip.
+---
+>      * @param toolTipText  the tooltip text.
+59c66,67
+<         return " onMouseOver=\"return overlib('" + toolTipText 
+---
+>         return " onMouseOver=\"return overlib('" 
+>                 + ImageMapUtilities.htmlEscape(toolTipText) 
