@@ -17,21 +17,44 @@ do
   # > add in fix
   for modifiedSource in $modifiedSources
   do
-
-    #TODO: Add patch lines number
-    grep '^\d' logs/d4j-diffs/chart/chart_11.stdout | cut -f 1 -d c | cut -f 1 -d a | cut -f 1 -d d
-
+    echo "Class: $modifiedSource"
+    echo ""
     pathModifiedSource=`echo $modifiedSource | tr . /`
     pathModifiedSource="$pathModifiedSource.java"
+    linePrint="-> $pathModifiedSource"
+    diff -b ~/projects/chart/buggy/chart_${bug}/source/$pathModifiedSource ~/projects/chart/fix/chart_${bug}/source/$pathModifiedSource > /tmp/modifiedSourceDiff
+    modifiedLinesBrut=`grep '^\d' /tmp/modifiedSourceDiff | cut -f 1 -d c | cut -f 1 -d a | cut -f 1 -d d`
+    rm /tmp/modifiedSourceDiff
+
+    modifiedLines=""
+
+    for modifiedLine in $modifiedLinesBrut
+    do
+
+      sequence=`echo $modifiedLine | grep ,`
+      if [[ $sequence ]]; then
+        min=`echo $sequence | cut -f 1 -d ,`
+        max=`echo $sequence | cut -f 2 -d ,`
+        sequenceExtends=`seq $min $max`
+        modifiedLines="$modifiedLines $sequenceExtends"
+      else
+        modifiedLines="$modifiedLines $modifiedLine"
+      fi
+
+    done
+
+    modifiedLinesClean=`echo $modifiedLines | tr -d '\n'`
+    linePrint="$linePrint:$modifiedLinesClean"
+    echo $linePrint
     deleted=`diff -b ~/projects/chart/buggy/chart_${bug}/source/$pathModifiedSource ~/projects/chart/fix/chart_${bug}/source/$pathModifiedSource | grep '<' | wc -l`
     added=`diff -b ~/projects/chart/buggy/chart_${bug}/source/$pathModifiedSource ~/projects/chart/fix/chart_${bug}/source/$pathModifiedSource | grep '>' | wc -l`
-    echo $modifiedSource
     echo ""
-    echo "Total deleted lines: $deleted"
-    echo "Total added lines: $added"
-    diff=0
-    let "diff=added-deleted"
-    echo "Diff added/deleted: $diff"
+    echo "Deleted lines: $deleted"
+    echo "Added lines: $added"
+    difference=0
+    let "difference=added-deleted"
+    echo "Diff added/deleted: $difference"
+
     echo ""
     echo ""
   done
