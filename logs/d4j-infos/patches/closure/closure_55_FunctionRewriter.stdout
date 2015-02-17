@@ -1,0 +1,22 @@
+115a116,120
+>   private static boolean isReduceableFunctionExpression(Node n) {
+>     return NodeUtil.isFunctionExpression(n)
+>         && !NodeUtil.isGetOrSetKey(n.getParent());
+>   }
+> 
+303c308
+<       if (!NodeUtil.isFunctionExpression(node)) {
+---
+>       if (!isReduceableFunctionExpression(node)) {
+363c368
+<       if (!NodeUtil.isFunctionExpression(node)) {
+---
+>       if (!isReduceableFunctionExpression(node)) {
+417c422
+<       if (!NodeUtil.isFunctionExpression(node)) {
+---
+>       if (!isReduceableFunctionExpression(node)) {
+479c484
+<       if (!NodeUtil.isFunctionExpression(node)) {
+---
+>       if (!isReduceableFunctionExpression(node)) {

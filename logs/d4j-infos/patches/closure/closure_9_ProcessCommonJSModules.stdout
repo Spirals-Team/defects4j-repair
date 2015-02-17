@@ -1,0 +1,12 @@
+116a117,120
+>     // The DOS command shell will normalize "/" to "\", so we have to
+>     // wrestle it back.
+>     filename = filename.replace("\\", "/");
+> 
+119a124
+> 
+179,180c184
+<       String moduleName = guessCJSModuleName(normalizeSourceName(script
+<           .getSourceFileName()));
+---
+>       String moduleName = guessCJSModuleName(script.getSourceFileName());

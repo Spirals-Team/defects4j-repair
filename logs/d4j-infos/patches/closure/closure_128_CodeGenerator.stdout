@@ -1,0 +1,8 @@
+784a785,787
+>     if (len == 0) {
+>       return false;
+>     }
+791c794
+<     return len > 0 && s.charAt(0) != '0';
+---
+>     return len == 1 || s.charAt(0) != '0';

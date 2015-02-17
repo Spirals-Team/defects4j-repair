@@ -1,0 +1,18 @@
+466a467,475
+>             char firstSigDigit = 0; // strip leading zeroes
+>             for(int i = pfxLen; i < str.length(); i++) {
+>                 firstSigDigit = str.charAt(i);
+>                 if (firstSigDigit == '0') { // count leading zeroes
+>                     pfxLen++;
+>                 } else {
+>                     break;
+>                 }
+>             }
+468c477
+<             if (hexDigits > 16) { // too many for Long
+---
+>             if (hexDigits > 16 || (hexDigits == 16 && firstSigDigit > '7')) { // too many for Long
+471c480
+<             if (hexDigits > 8) { // too many for an int
+---
+>             if (hexDigits > 8 || (hexDigits == 8 && firstSigDigit > '7')) { // too many for an int

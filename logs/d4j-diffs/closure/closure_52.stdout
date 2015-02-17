@@ -1,0 +1,8 @@
+com.google.javascript.jscomp.CodeGenerator
+
+745c745
+<     return len > 0;
+---
+>     return len > 0 && s.charAt(0) != '0';
+
+

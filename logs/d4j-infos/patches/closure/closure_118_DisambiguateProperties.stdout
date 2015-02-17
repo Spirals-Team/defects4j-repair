@@ -1,0 +1,13 @@
+491,492c491,493
+<       Node child = n.getFirstChild();
+<       while (child != null) {
+---
+>       for (Node child = n.getFirstChild();
+>           child != null;
+>           child = child.getNext()) {
+493a495,497
+>         if (child.isQuotedString()) {
+>           continue;
+>         }
+511d514
+<         child = child.getNext();

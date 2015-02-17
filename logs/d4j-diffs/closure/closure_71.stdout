@@ -1,0 +1,8 @@
+com.google.javascript.jscomp.CheckAccessControls
+
+416c416
+<       boolean isOverride = t.inGlobalScope() &&
+---
+>       boolean isOverride = parent.getJSDocInfo() != null &&
+
+

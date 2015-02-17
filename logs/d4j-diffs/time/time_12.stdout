@@ -1,0 +1,36 @@
+org.joda.time.LocalDateTime
+
+198a199,200
+>         int era = calendar.get(Calendar.ERA);
+>         int yearOfEra = calendar.get(Calendar.YEAR);
+200c202
+<             calendar.get(Calendar.YEAR),
+---
+>             (era == GregorianCalendar.AD ? yearOfEra : 1 - yearOfEra),
+234a237,242
+>         if (date.getTime() < 0) {
+>             // handle years in era BC
+>             GregorianCalendar cal = new GregorianCalendar();
+>             cal.setTime(date);
+>             return fromCalendarFields(cal);
+>         }
+
+
+org.joda.time.LocalDate
+
+209a210,211
+>         int era = calendar.get(Calendar.ERA);
+>         int yearOfEra = calendar.get(Calendar.YEAR);
+211c213
+<             calendar.get(Calendar.YEAR),
+---
+>             (era == GregorianCalendar.AD ? yearOfEra : 1 - yearOfEra),
+241a244,249
+>         if (date.getTime() < 0) {
+>             // handle years in era BC
+>             GregorianCalendar cal = new GregorianCalendar();
+>             cal.setTime(date);
+>             return fromCalendarFields(cal);
+>         }
+
+

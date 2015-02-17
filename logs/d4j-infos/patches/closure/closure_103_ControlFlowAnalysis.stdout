@@ -1,0 +1,6 @@
+893a894
+>       case Token.INSTANCEOF:
+899c900
+<       if (mayThrowException(c)) {
+---
+>       if (!ControlFlowGraph.isEnteringNewCfgNode(c) && mayThrowException(c)) {

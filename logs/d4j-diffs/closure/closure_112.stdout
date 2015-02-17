@@ -1,0 +1,23 @@
+com.google.javascript.jscomp.TypeInference
+
+1185c1185,1187
+<     if (fnType.getTemplateTypeMap().getTemplateKeys().isEmpty()) {
+---
+>     final ImmutableList<TemplateType> keys = fnType.getTemplateTypeMap()
+>         .getTemplateKeys();
+>     if (keys.isEmpty()) {
+1190,1191c1192,1200
+<     Map<TemplateType, JSType> inferred = inferTemplateTypesFromParameters(
+<         fnType, n);
+---
+>     Map<TemplateType, JSType> inferred = Maps.filterKeys(
+>         inferTemplateTypesFromParameters(fnType, n),
+>         new Predicate<TemplateType>() {
+> 
+>           @Override
+>           public boolean apply(TemplateType key) {
+>             return keys.contains(key);
+>           }}
+>         );
+
+

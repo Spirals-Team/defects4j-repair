@@ -1,0 +1,10 @@
+63c63,67
+<             // TODO: if(entityValue > 0xFFFF) {
+---
+>             if(entityValue > 0xFFFF) {
+>                 char[] chrs = Character.toChars(entityValue);
+>                 out.write(chrs[0]);
+>                 out.write(chrs[1]);
+>             } else {
+64a69
+>             }

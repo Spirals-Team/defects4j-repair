@@ -1,0 +1,6 @@
+433,435d432
+<     if (flags.process_closure_primitives) {
+<       options.closurePass = true;
+<     }
+436a434
+>     options.closurePass = flags.process_closure_primitives;

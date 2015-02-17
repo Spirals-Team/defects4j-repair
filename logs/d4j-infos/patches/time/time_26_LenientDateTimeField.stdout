@@ -1,0 +1,4 @@
+75c75
+<         return iBase.getZone().convertLocalToUTC(localInstant, false);
+---
+>         return iBase.getZone().convertLocalToUTC(localInstant, false, instant);

@@ -1,0 +1,11 @@
+org.joda.time.base.BaseSingleFieldPeriod
+
+50a51,52
+>     /** The start of 1972. */
+>     private static final long START_1972 = 2L * 365L * 86400L * 1000L;
+103c105
+<         int[] values = chrono.get(zeroInstance, chrono.set(start, 0L), chrono.set(end, 0L));
+---
+>         int[] values = chrono.get(zeroInstance, chrono.set(start, START_1972), chrono.set(end, START_1972));
+
+

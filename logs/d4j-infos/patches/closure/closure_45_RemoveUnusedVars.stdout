@@ -1,0 +1,20 @@
+731a732
+>           boolean maybeEscaped = false;
+738a740,742
+>             if (assign.maybeAliased) {
+>               maybeEscaped = true;
+>             }
+741c745
+<           if (assignedToUnknownValue && hasPropertyAssign) {
+---
+>           if ((assignedToUnknownValue || maybeEscaped) && hasPropertyAssign) {
+894a899,901
+>     // If true, the value may have escaped and any modification is a use.
+>     final boolean maybeAliased;
+> 
+900a908
+>       this.maybeAliased = NodeUtil.isExpressionResultUsed(assignNode);
+902c910
+<           !assignNode.getParent().isExprResult() ||
+---
+>           maybeAliased ||

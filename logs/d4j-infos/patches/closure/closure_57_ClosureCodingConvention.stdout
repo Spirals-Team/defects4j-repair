@@ -1,0 +1,9 @@
+195,196c195,199
+<         if ((functionName).equals(qualifiedName)) {
+<           className = callee.getNext().getString();
+---
+>         if (functionName.equals(qualifiedName)) {
+>           Node target = callee.getNext();
+>           if (target != null && target.getType() == Token.STRING) {
+>             className = target.getString();
+>           }

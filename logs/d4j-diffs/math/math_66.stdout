@@ -1,0 +1,68 @@
+org.apache.commons.math.optimization.univariate.BrentOptimizer
+
+44c44,47
+<         super(100, 1E-10);
+---
+>         setMaxEvaluations(1000);
+>         setMaximalIterationCount(100);
+>         setAbsoluteAccuracy(1e-11);
+>         setRelativeAccuracy(1e-9);
+54,62c57,58
+<         throw new UnsupportedOperationException();
+<     }
+< 
+<     /** {@inheritDoc} */
+<     public double optimize(final UnivariateRealFunction f, final GoalType goalType,
+<                            final double min, final double max, final double startValue)
+<         throws MaxIterationsExceededException, FunctionEvaluationException {
+<         clearResult();
+<         return localMin(f, goalType, min, startValue, max,
+---
+>         return localMin(getGoalType() == GoalType.MINIMIZE,
+>                         getMin(), getStartValue(), getMax(),
+66,72d61
+<     /** {@inheritDoc} */
+<     public double optimize(final UnivariateRealFunction f, final GoalType goalType,
+<                            final double min, final double max)
+<         throws MaxIterationsExceededException, FunctionEvaluationException {
+<         return optimize(f, goalType, min, max, min + GOLDEN_SECTION * (max - min));
+<     }
+< 
+97,98c86
+<     private double localMin(UnivariateRealFunction f,
+<                             GoalType goalType,
+---
+>     private double localMin(boolean isMinim,
+119a108
+>         double d = 0;
+121,122c110,111
+<         double fx = computeObjectiveValue(f, x);
+<         if (goalType == GoalType.MAXIMIZE) {
+---
+>         double fx = computeObjectiveValue(x);
+>         if (!isMinim) {
+128,129c117
+<         int count = 0;
+<         while (count < maximalIterationCount) {
+---
+>         while (true) {
+139d126
+<                 double d = 0;
+203,204c190,191
+<                 double fu = computeObjectiveValue(f, u);
+<                 if (goalType == GoalType.MAXIMIZE) {
+---
+>                 double fu = computeObjectiveValue(u);
+>                 if (!isMinim) {
+241c228
+<                 setResult(x, (goalType == GoalType.MAXIMIZE) ? -fx : fx, count);
+---
+>                 setFunctionValue(isMinim ? fx : -fx);
+244c231
+<             ++count;
+---
+>             incrementIterationsCounter();
+246d232
+<         throw new MaxIterationsExceededException(maximalIterationCount);
+
+

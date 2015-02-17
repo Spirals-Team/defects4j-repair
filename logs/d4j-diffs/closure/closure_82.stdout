@@ -1,0 +1,10 @@
+com.google.javascript.rhino.jstype.JSType
+
+163c163,165
+<     return isNoType() || isNoObjectType() || isNoResolvedType();
+---
+>     return isNoType() || isNoObjectType() || isNoResolvedType() ||
+>         (registry.getNativeFunctionType(
+>              JSTypeNative.LEAST_FUNCTION_TYPE) == this);
+
+

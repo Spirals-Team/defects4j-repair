@@ -1,0 +1,16 @@
+697,706d696
+<     boolean hasSideEffects = false;  // empty function case
+<     if (block.hasChildren()) {
+<       Preconditions.checkState(block.hasOneChild());
+<       Node stmt = block.getFirstChild();
+<       if (stmt.isReturn()) {
+<         hasSideEffects = NodeUtil.mayHaveSideEffects(
+<             stmt.getFirstChild(), compiler);
+<       }
+<     }
+< 
+732,735d721
+<           if (hasSideEffects && NodeUtil.canBeSideEffected(cArg)) {
+<             return CanInlineResult.NO;
+<           }
+< 

@@ -1,0 +1,20 @@
+110a111,114
+>   private static Node blockUnchecked(Node stmt) {
+>     return new Node(Token.BLOCK, stmt);
+>   }
+> 
+223,224c227,228
+<     Preconditions.checkState(tryBody.isLabelName());
+<     Preconditions.checkState(finallyBody.isLabelName());
+---
+>     Preconditions.checkState(tryBody.isBlock());
+>     Preconditions.checkState(finallyBody.isBlock());
+232c236
+<     Node catchBody = block(catchNode).copyInformationFrom(catchNode);
+---
+>     Node catchBody = blockUnchecked(catchNode).copyInformationFrom(catchNode);
+236c240,241
+<   public static Node tryCatchFinally(Node tryBody, Node catchNode, Node finallyBody) {
+---
+>   public static Node tryCatchFinally(
+>       Node tryBody, Node catchNode, Node finallyBody) {

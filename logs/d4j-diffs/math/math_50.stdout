@@ -1,0 +1,15 @@
+org.apache.commons.math.analysis.solvers.BaseSecantSolver
+
+186,193c186
+<                     if (x == x1) {
+<                         final double delta = FastMath.max(rtol * FastMath.abs(x1),
+<                                                           atol);
+<                         // Update formula cannot make any progress: Update the
+<                         // search interval.
+<                         x0 = 0.5 * (x0 + x1 - delta);
+<                         f0 = computeObjectiveValue(x0);
+<                     }
+---
+>                     // Nothing.
+
+

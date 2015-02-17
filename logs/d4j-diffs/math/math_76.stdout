@@ -1,0 +1,60 @@
+org.apache.commons.math.linear.SingularValueDecompositionImpl
+
+162c162
+<                     eigenDecomposition.getV().getSubMatrix(0, p - 1, 0, p - 1);
+---
+>                     eigenDecomposition.getV().getSubMatrix(0, n - 1, 0, p - 1);
+166c166
+<                 for (int i = 0; i < p - 1; ++i) {
+---
+>                 for (int i = 0; i < p; ++i) {
+169d168
+<                     final double si = secondaryBidiagonal[i];
+171a171
+>                     if (i < n - 1) {
+172a173
+>                         final double si = secondaryBidiagonal[i];
+176,179c177
+<                 }
+<                 // last row
+<                 final double lastMain = mainBidiagonal[p - 1];
+<                 final double[] wr1  = wData[p - 1];
+---
+>                     } else {
+181c179,180
+<                     wr1[j] = ei1[j] * lastMain / singularValues[j];
+---
+>                             wi[j] = mi * ei0[j] / singularValues[j];
+>                         }
+182a182,183
+>                 }
+> 
+250c251
+<                     eigenDecomposition.getV().getSubMatrix(0, p - 1, 0, p - 1);
+---
+>                     eigenDecomposition.getV().getSubMatrix(0, m - 1, 0, p - 1);
+254c255
+<                 for (int i = 0; i < p - 1; ++i) {
+---
+>                 for (int i = 0; i < p; ++i) {
+256d256
+<                     final double si = secondaryBidiagonal[i];
+258a259
+>                     if (i < m - 1) {
+259a261
+>                         final double si = secondaryBidiagonal[i];
+263,266c265
+<                 }
+<                 // last row
+<                 final double lastMain = mainBidiagonal[p - 1];
+<                 final double[] wr1  = wData[p - 1];
+---
+>                     } else {
+268c267,269
+<                     wr1[j] = ei1[j] * lastMain / singularValues[j];
+---
+>                             wi[j] = mi * ei0[j] / singularValues[j];
+>                         }
+>                     }
+
+

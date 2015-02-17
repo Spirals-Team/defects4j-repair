@@ -1,0 +1,42 @@
+org.apache.commons.lang3.builder.HashCodeBuilder
+
+104,111c104
+<     private static final ThreadLocal<Set<IDKey>> registry = new ThreadLocal<Set<IDKey>>() {
+<         @Override
+<         protected Set<IDKey> initialValue() {
+<             // The HashSet implementation is not synchronized,
+<             // which is just what we need here.
+<             return new HashSet<IDKey>();
+<         }
+<     };
+---
+>     private static final ThreadLocal<Set<IDKey>> REGISTRY = new ThreadLocal<Set<IDKey>>();
+139c132
+<         return registry.get();
+---
+>         return REGISTRY.get();
+154c147,148
+<         return getRegistry().contains(new IDKey(value));
+---
+>         Set<IDKey> registry = getRegistry();
+>         return registry != null && registry.contains(new IDKey(value));
+523a518,522
+>         synchronized (HashCodeBuilder.class) {
+>             if (getRegistry() == null) {
+>                 REGISTRY.set(new HashSet<IDKey>());
+>             }
+>         }
+540c539,547
+<         getRegistry().remove(new IDKey(value));
+---
+>         Set<IDKey> s = getRegistry();
+>         if (s != null) {
+>             s.remove(new IDKey(value));
+>             synchronized (HashCodeBuilder.class) {
+>                 if (s.isEmpty()) {
+>                     REGISTRY.remove();
+>                 }
+>             }
+>         }
+
+

@@ -1,0 +1,19 @@
+70a71,72
+>     private boolean unknownDependencies = false;
+> 
+395,396c397,403
+<         if (n.isName() && jsScope.isDeclared(n.getString(), true)) {
+<           def.depends.add(jsScope.getVar(n.getString()));
+---
+>         if (n.isName()) {
+>           Var dep = jsScope.getVar(n.getString());
+>           if (dep == null) {
+>             def.unknownDependencies = true;
+>           } else {
+>             def.depends.add(dep);
+>           }
+427a435,438
+>     if (def.unknownDependencies) {
+>       return true;
+>     }
+> 

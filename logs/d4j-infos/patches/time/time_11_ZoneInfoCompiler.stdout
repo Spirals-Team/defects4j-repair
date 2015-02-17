@@ -1,0 +1,10 @@
+68,70c68,70
+<     static ThreadLocal<Boolean> cVerbose = new ThreadLocal<Boolean>();
+<     static {
+<         cVerbose.set(Boolean.FALSE);
+---
+>     static ThreadLocal<Boolean> cVerbose = new ThreadLocal<Boolean>() {
+>         protected Boolean initialValue() {
+>             return Boolean.FALSE;
+71a72
+>     };

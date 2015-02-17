@@ -1,0 +1,71 @@
+com.google.javascript.rhino.jstype.NamedType
+
+112a113
+>   @Override
+
+
+com.google.javascript.jscomp.parsing.JsDocInfoParser
+
+1037,1044d1036
+< 
+<     public String getString() {
+<       return string;
+<     }
+< 
+<     public JsDocToken getToken() {
+<       return token;
+<     }
+
+
+com.google.javascript.jscomp.CheckGlobalThis
+
+92a93,105
+> 
+>       // Don't traverse functions unless they would normally
+>       // be able to have a @this annotation associated with them. e.g.,
+>       // var a = function() { }; // or
+>       // function a() {} // or
+>       // a.x = function() {};
+>       int pType = parent.getType();
+>       if (!(pType == Token.BLOCK ||
+>             pType == Token.SCRIPT ||
+>             pType == Token.NAME ||
+>             pType == Token.ASSIGN)) {
+>         return false;
+>       }
+125c138
+<     if (assignLhsChild != null && n.getType() == Token.THIS) {
+---
+>     if (n.getType() == Token.THIS && shouldReportThis(n, parent)) {
+132a146,155
+>   private boolean shouldReportThis(Node n, Node parent) {
+>     if (assignLhsChild != null) {
+>       // Always report a THIS on the left side of an assign.
+>       return true;
+>     }
+> 
+>     // Also report a THIS with a property access.
+>     return parent != null && NodeUtil.isGet(parent);
+>   }
+> 
+
+
+com.google.javascript.jscomp.SourceFile
+
+373a374
+>     @Override
+
+
+com.google.javascript.rhino.jstype.FunctionType
+
+44,45d43
+< import com.google.common.annotations.VisibleForTesting;
+< import com.google.common.base.Objects;
+825,829d822
+<   // A helper method for creating arrow types.
+<   private ArrowType createArrowType(Node parameters, JSType returnType) {
+<     return registry.createArrowType(parameters, returnType);
+<   }
+< 
+
+

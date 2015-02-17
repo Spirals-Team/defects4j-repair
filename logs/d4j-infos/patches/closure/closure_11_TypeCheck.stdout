@@ -1,0 +1,8 @@
+1312d1311
+<     // Do this first b/c we want to check even when the getprop is an lvalue
+1315,1319d1313
+<     } else if (n.getJSType() != null && parent.isAssign()) {
+<       // GETPROP nodes have an assigned type on their node by the scope creator
+<       // if this is an enum declaration. The only namespaced enum declarations
+<       // that we allow are of the form object.name = ...;
+<       return;

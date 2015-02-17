@@ -1,0 +1,10 @@
+173c173
+<         final int n1n2prod = n1 * n2;
+---
+>         final double n1n2prod = n1 * n2;
+176,177c176,177
+<         final double EU = (double) n1n2prod / 2.0;
+<         final double VarU = (double) (n1n2prod * (n1 + n2 + 1)) / 12.0;
+---
+>         final double EU = n1n2prod / 2.0;
+>         final double VarU = n1n2prod * (n1 + n2 + 1) / 12.0;

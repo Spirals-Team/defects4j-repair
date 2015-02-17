@@ -1,0 +1,4 @@
+241c241
+<     if ((long) x == x) {
+---
+>     if ((long) x == x && !isNegativeZero(x)) {

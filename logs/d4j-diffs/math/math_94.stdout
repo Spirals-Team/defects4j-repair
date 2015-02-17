@@ -1,0 +1,8 @@
+org.apache.commons.math.util.MathUtils
+
+412c412
+<         if (u * v == 0) {
+---
+>         if ((u == 0) || (v == 0)) {
+
+

@@ -1,0 +1,6 @@
+120,121c120,121
+<         return fit(new Gaussian.Parametric(),
+<                    (new ParameterGuesser(getObservations())).guess());
+---
+>         final double[] guess = (new ParameterGuesser(getObservations())).guess();
+>         return fit(guess);

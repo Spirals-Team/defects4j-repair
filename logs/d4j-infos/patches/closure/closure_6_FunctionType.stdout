@@ -1,0 +1,11 @@
+1009a1010
+> 
+1014,1015c1015
+<       // this as an error. It also screws up out standard method
+<       // for aliasing constructors. Let's punt on all this for now.
+---
+>       // this as an error. Let's punt on all this for now.
+1018,1020d1017
+<         // If either one of these is a ctor, skip 'this' checking.
+<         isConstructor() || other.isConstructor() ||
+< 

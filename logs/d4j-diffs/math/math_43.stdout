@@ -1,0 +1,16 @@
+org.apache.commons.math.stat.descriptive.SummaryStatistics
+
+158c158
+<         if (!(meanImpl instanceof Mean)) {
+---
+>         if (meanImpl != mean) {
+161c161
+<         if (!(varianceImpl instanceof Variance)) {
+---
+>         if (varianceImpl != variance) {
+164c164
+<         if (!(geoMeanImpl instanceof GeometricMean)) {
+---
+>         if (geoMeanImpl != geoMean) {
+
+

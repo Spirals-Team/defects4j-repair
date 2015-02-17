@@ -1,0 +1,23 @@
+18a19,20
+> import java.io.Serializable;
+> 
+23c25
+< 
+---
+>  *
+26d27
+< 
+28,29c29,33
+< public abstract class BitsStreamGenerator implements RandomGenerator {
+< 
+---
+> public abstract class BitsStreamGenerator
+>     implements RandomGenerator,
+>                Serializable {
+>     /** Serializable version identifier */
+>     private static final long serialVersionUID = 20130104L;
+33c37,38
+<     /** Creates a new random number generator.
+---
+>     /**
+>      * Creates a new random number generator.

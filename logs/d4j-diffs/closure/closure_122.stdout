@@ -1,0 +1,11 @@
+com.google.javascript.jscomp.parsing.IRFactory
+
+252,254c252,253
+<     String value = comment.getValue();
+<     if (value.indexOf("/* @") != -1 ||
+<         value.indexOf("\n * @") != -1) {
+---
+>     Pattern p = Pattern.compile("(/|(\n[ \t]*))\\*[ \t]*@[a-zA-Z]");
+>     if (p.matcher(comment.getValue()).find()) {
+
+

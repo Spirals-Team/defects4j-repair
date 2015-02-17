@@ -1,0 +1,4 @@
+268c268
+<         return (double) (getSampleSize() * getNumberOfSuccesses()) / (double) getPopulationSize();
+---
+>         return getSampleSize() * (getNumberOfSuccesses() / (double) getPopulationSize());

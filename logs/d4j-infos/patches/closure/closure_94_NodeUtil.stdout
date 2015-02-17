@@ -1,0 +1,27 @@
+328c328,329
+<       // Single operators are valid if the child is valid.
+---
+>       // Binary operators are only valid if both children are valid.
+>       case Token.ADD:
+332a334,352
+>       case Token.DIV:
+>       case Token.EQ:
+>       case Token.GE:
+>       case Token.GT:
+>       case Token.LE:
+>       case Token.LSH:
+>       case Token.LT:
+>       case Token.MOD:
+>       case Token.MUL:
+>       case Token.NE:
+>       case Token.RSH:
+>       case Token.SHEQ:
+>       case Token.SHNE:
+>       case Token.SUB:
+>       case Token.URSH:
+>         return isValidDefineValue(val.getFirstChild(), defines)
+>             && isValidDefineValue(val.getLastChild(), defines);
+> 
+>       // Uniary operators are valid if the child is valid.
+334a355
+>       case Token.POS:

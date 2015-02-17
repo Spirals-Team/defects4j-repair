@@ -1,0 +1,4 @@
+338c338
+<             if (Precision.compareTo(entry, 0d, maxUlps) > 0) {
+---
+>             if (Precision.compareTo(entry, 0d, epsilon) > 0) {

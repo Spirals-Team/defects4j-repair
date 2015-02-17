@@ -1,0 +1,37 @@
+#!/bin/bash
+
+for bug in `seq 1 106`
+do
+
+  echo "Math ${bug} diffs ..."
+
+  exec 6<&1
+
+  exec 1> ~/defects4j-nopol/logs/d4j-diffs/math/math_${bug}.stdout
+
+  line=`grep -m 1 -n "List of modified sources:" ~/defects4j-nopol/logs/d4j-infos/projects/math/math_${bug}.stdout | cut -f 1 -d :`
+  let "line++"
+  modifiedSources=`tail -n +$line ~/defects4j-nopol/logs/d4j-infos/projects/math/math_${bug}.stdout | tac | tail -n +2 | cut -f 3 -d ' '`
+
+  # < delete in buggy
+  # > add in fix
+  for modifiedSource in $modifiedSources
+  do
+    echo $modifiedSource
+    echo ""
+    pathModifiedSource=`echo $modifiedSource | tr . /`
+    pathModifiedSource="$pathModifiedSource.java"
+    if [[ $bug -lt 85 ]]; then
+      diff -b ~/projects/math/buggy/math_${bug}/src/main/java/$pathModifiedSource ~/projects/math/fix/math_${bug}/src/main/java/$pathModifiedSource
+    else
+      diff -b ~/projects/math/buggy/math_${bug}/src/java/$pathModifiedSource ~/projects/math/fix/math_${bug}/src/java/$pathModifiedSource
+    fi
+    echo ""
+    echo ""
+  done
+
+  exec 1<&6 6<&-
+
+done
+
+echo 'Done.'

@@ -1,0 +1,8 @@
+org.apache.commons.lang3.text.translate.CharSequenceTranslator
+
+95c95
+<                 pos += Character.charCount(Character.codePointAt(input, pos));
+---
+>                 pos += Character.charCount(Character.codePointAt(input, pt));
+
+

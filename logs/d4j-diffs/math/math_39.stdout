@@ -1,0 +1,14 @@
+org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator
+
+249a250,258
+>         if (forward) {
+>             if (stepStart + stepSize >= t) {
+>                 stepSize = t - stepStart;
+>             }
+>         } else {
+>             if (stepStart + stepSize <= t) {
+>                 stepSize = t - stepStart;
+>             }
+>         }
+
+

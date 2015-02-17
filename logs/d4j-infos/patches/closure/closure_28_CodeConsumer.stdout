@@ -1,0 +1,17 @@
+260c260
+<         add(Long.toString(mantissa) + "E" + Integer.toString(exp));
+---
+>         addConstant(Long.toString(mantissa) + "E" + Integer.toString(exp));
+262c262
+<         add(Long.toString(value));
+---
+>         addConstant(Long.toString(value));
+265c265
+<       add(String.valueOf(x));
+---
+>       addConstant(String.valueOf(x));
+268a269,272
+>   void addConstant(String newcode) {
+>     add(newcode);
+>   }
+> 

@@ -1,0 +1,12 @@
+org.apache.commons.math.optimization.MultiStartUnivariateRealOptimizer
+
+92c92
+<         return optimizer.getFunctionValue();
+---
+>         return optimaValues[0];
+97c97
+<         return optimizer.getResult();
+---
+>         return optima[0];
+
+

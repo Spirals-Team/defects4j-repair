@@ -1,0 +1,71 @@
+org.apache.commons.lang3.LocaleUtils
+
+88c88
+<     public static Locale toLocale(String str) {
+---
+>     public static Locale toLocale(final String str) {
+92,93c92,93
+<         int len = str.length();
+<         if (len != 2 && len != 5 && len < 7) {
+---
+>         final int len = str.length();
+>         if (len < 2) {
+96,98c96,98
+<         char ch0 = str.charAt(0);
+<         char ch1 = str.charAt(1);
+<         if (ch0 < 'a' || ch0 > 'z' || ch1 < 'a' || ch1 > 'z') {
+---
+>         final char ch0 = str.charAt(0);
+>         if (ch0 == '_') {
+>             if (len < 3) {
+101,102c101,115
+<         if (len == 2) {
+<             return new Locale(str, "");
+---
+>             final char ch1 = str.charAt(1);
+>             final char ch2 = str.charAt(2);
+>             if (!Character.isUpperCase(ch1) || !Character.isUpperCase(ch2)) {
+>                 throw new IllegalArgumentException("Invalid locale format: " + str);
+>             }
+>             if (len == 3) {
+>                 return new Locale("", str.substring(1, 3));
+>             }
+>             if (len < 5) {
+>                 throw new IllegalArgumentException("Invalid locale format: " + str);
+>             }
+>             if (str.charAt(3) != '_') {
+>                 throw new IllegalArgumentException("Invalid locale format: " + str);
+>             }
+>             return new Locale("", str.substring(1, 3), str.substring(4));
+103a117,126
+>             final char ch1 = str.charAt(1);
+>             if (!Character.isLowerCase(ch0) || !Character.isLowerCase(ch1)) {
+>                 throw new IllegalArgumentException("Invalid locale format: " + str);
+>             }
+>             if (len == 2) {
+>                 return new Locale(str);
+>             }
+>             if (len < 5) {
+>                 throw new IllegalArgumentException("Invalid locale format: " + str);
+>             }
+107c130
+<             char ch3 = str.charAt(3);
+---
+>             final char ch3 = str.charAt(3);
+111,112c134,135
+<             char ch4 = str.charAt(4);
+<             if (ch3 < 'A' || ch3 > 'Z' || ch4 < 'A' || ch4 > 'Z') {
+---
+>             final char ch4 = str.charAt(4);
+>             if (!Character.isUpperCase(ch3) || !Character.isUpperCase(ch4)) {
+117c140,143
+<             } else {
+---
+>             }
+>             if (len < 7) {
+>                 throw new IllegalArgumentException("Invalid locale format: " + str);
+>             }
+124d149
+<     }
+
+

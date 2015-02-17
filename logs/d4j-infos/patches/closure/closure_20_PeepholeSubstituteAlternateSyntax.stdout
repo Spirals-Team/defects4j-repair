@@ -1,0 +1,14 @@
+213c213,218
+<       // Fold String(a) to ''+(a) - which allows further optimizations
+---
+>       // Fold String(a) to '' + (a) on immutable literals,
+>       // which allows further optimizations
+>       //
+>       // We can't do this in the general case, because String(a) has
+>       // slightly different semantics than '' + (a). See
+>       // http://code.google.com/p/closure-compiler/issues/detail?id=759
+215c220,221
+<       if (value != null) {
+---
+>       if (value != null && value.getNext() == null &&
+>           NodeUtil.isImmutableValue(value)) {

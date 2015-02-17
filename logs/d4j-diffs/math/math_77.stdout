@@ -1,0 +1,92 @@
+org.apache.commons.math.linear.AbstractRealVector
+
+208a209,242
+>     public double getNorm() {
+>         double sum = 0;
+>         Iterator<Entry> it = sparseIterator();
+>         Entry e;
+>         while (it.hasNext() && (e = it.next()) != null) {
+>             final double value = e.getValue();
+>             sum += value * value;
+>         }
+>         return Math.sqrt(sum);
+>     }
+> 
+>     /** {@inheritDoc} */
+>     public double getL1Norm() {
+>         double norm = 0;
+>         Iterator<Entry> it = sparseIterator();
+>         Entry e;
+>         while (it.hasNext() && (e = it.next()) != null) {
+>             norm += Math.abs(e.getValue());
+>         }
+>         return norm;
+>     }
+> 
+>     /** {@inheritDoc} */
+>     public double getLInfNorm() {
+>         double norm = 0;
+>         Iterator<Entry> it = sparseIterator();
+>         Entry e;
+>         while (it.hasNext() && (e = it.next()) != null) {
+>             norm = Math.max(norm, Math.abs(e.getValue()));
+>         }
+>         return norm;
+>     }
+> 
+>     /** {@inheritDoc} */
+
+
+org.apache.commons.math.linear.OpenMapRealVector
+
+498,508d497
+<     /** {@inheritDoc} */
+<     public double getL1Norm() {
+<         double res = 0;
+<         Iterator iter = entries.iterator();
+<         while (iter.hasNext()) {
+<             iter.advance();
+<             res += Math.abs(iter.value());
+<         }
+<         return res;
+<     }
+< 
+560,581d548
+<     public double getLInfNorm() {
+<         double max = 0;
+<         Iterator iter = entries.iterator();
+<         while (iter.hasNext()) {
+<             iter.advance();
+<             max += iter.value();
+<         }
+<         return max;
+<     }
+< 
+<     /** {@inheritDoc} */
+<     public double getNorm() {
+<         double res = 0;
+<         Iterator iter = entries.iterator();
+<         while (iter.hasNext()) {
+<             iter.advance();
+<             res += iter.value() * iter.value();
+<         }
+<         return Math.sqrt(res);
+<     }
+< 
+<     /** {@inheritDoc} */
+
+
+org.apache.commons.math.linear.ArrayRealVector
+
+696a697
+>     @Override
+705a707
+>     @Override
+714a717
+>     @Override
+718c721
+<             max += Math.max(max, Math.abs(a));
+---
+>             max = Math.max(max, Math.abs(a));
+
+

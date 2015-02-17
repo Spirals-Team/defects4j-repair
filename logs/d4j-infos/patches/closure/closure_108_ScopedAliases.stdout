@@ -1,0 +1,15 @@
+257a258,260
+>     // Also temporary and cleared for each scope.
+>     private final Set<Node> injectedDecls = Sets.newHashSet();
+> 
+313a317
+>         injectedDecls.clear();
+429a434
+>             injectedDecls.add(newDecl.getFirstChild());
+575a581,582
+>         // When we inject declarations, we duplicate jsdoc. Make sure
+>         // we only process that jsdoc once.
+577c584
+<         if (info != null) {
+---
+>         if (info != null && !injectedDecls.contains(n)) {

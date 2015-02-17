@@ -1,0 +1,5 @@
+184c184,185
+<       if (!type.isSubtype(typeRegistry.getNativeType(OBJECT_TYPE))) {
+---
+>       if (!type.restrictByNotNullOrUndefined().isSubtype(
+>               typeRegistry.getNativeType(OBJECT_TYPE))) {

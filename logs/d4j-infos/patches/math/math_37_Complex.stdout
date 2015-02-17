@@ -1,0 +1,24 @@
+1018c1018
+<         if (isNaN) {
+---
+>         if (isNaN || Double.isInfinite(real)) {
+1020a1021,1026
+>         if (imaginary > 20.0) {
+>             return createComplex(0.0, 1.0);
+>         }
+>         if (imaginary < -20.0) {
+>             return createComplex(0.0, -1.0);
+>         }
+1063c1069
+<         if (isNaN) {
+---
+>         if (isNaN || Double.isInfinite(imaginary)) {
+1066c1072,1077
+< 
+---
+>         if (real > 20.0) {
+>             return createComplex(1.0, 0.0);
+>         }
+>         if (real < -20.0) {
+>             return createComplex(-1.0, 0.0);
+>         }

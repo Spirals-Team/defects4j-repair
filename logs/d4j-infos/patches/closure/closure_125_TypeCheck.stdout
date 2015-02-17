@@ -1,0 +1,8 @@
+1179c1179
+<   private boolean propertyIsImplicitCast(ObjectType type, String prop) {
+---
+>   private static boolean propertyIsImplicitCast(ObjectType type, String prop) {
+1661c1661
+<       if (fnType != null) {
+---
+>       if (fnType != null && fnType.hasInstanceType()) {

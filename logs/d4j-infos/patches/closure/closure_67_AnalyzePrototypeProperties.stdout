@@ -1,0 +1,7 @@
+316,317c316,318
+<       if (n != null && NodeUtil.isVarOrSimpleAssignLhs(n, assign) &&
+<           n.getType() == Token.GETPROP) {
+---
+>       if (n != null && NodeUtil.isVarOrSimpleAssignLhs(n, assign)
+>           && n.getType() == Token.GETPROP
+>           && assign.getParent().getType() == Token.EXPR_RESULT) {

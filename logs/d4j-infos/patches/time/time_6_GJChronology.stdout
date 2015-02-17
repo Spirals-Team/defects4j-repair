@@ -1,0 +1,29 @@
+195a196,199
+>             LocalDate cutoverDate = new LocalDate(cutoverInstant.getMillis(), GregorianChronology.getInstance(zone));
+>             if (cutoverDate.getYear() <= 0) {
+>                 throw new IllegalArgumentException("Cutover too early. Must be on or after 0001-01-01.");
+>             }
+978a983,993
+>                         if (iConvertByWeekyear) {
+>                             int wyear = iGregorianChronology.weekyear().get(instant);
+>                             if (wyear <= 0) {
+>                                 instant = iGregorianChronology.weekyear().add(instant, -1);
+>                             }
+>                         } else {
+>                             int year = iGregorianChronology.year().get(instant);
+>                             if (year <= 0) {
+>                                 instant = iGregorianChronology.year().add(instant, -1);
+>                             }
+>                         }
+1000a1016,1026
+>                         if (iConvertByWeekyear) {
+>                             int wyear = iGregorianChronology.weekyear().get(instant);
+>                             if (wyear <= 0) {
+>                                 instant = iGregorianChronology.weekyear().add(instant, -1);
+>                             }
+>                         } else {
+>                             int year = iGregorianChronology.year().get(instant);
+>                             if (year <= 0) {
+>                                 instant = iGregorianChronology.year().add(instant, -1);
+>                             }
+>                         }

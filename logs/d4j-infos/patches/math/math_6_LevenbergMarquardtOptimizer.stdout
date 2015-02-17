@@ -1,0 +1,11 @@
+322d321
+<         int iter = 0;
+325c324,325
+<             ++iter;
+---
+>             incrementIterationCount();
+> 
+489c489
+<                         if (checker.converged(iter, previous, current)) {
+---
+>                         if (checker.converged(getIterations(), previous, current)) {

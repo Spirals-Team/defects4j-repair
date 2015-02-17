@@ -1,0 +1,66 @@
+#!/bin/bash
+
+for bug in `seq 1 133`
+do
+
+  echo "Closure ${bug} patches infos ..."
+
+  exec 6<&1
+
+  exec 1> ~/defects4j-nopol/logs/d4j-infos/patches/closure/closure_${bug}.stdout
+
+  line=`grep -m 1 -n "List of modified sources:" ~/defects4j-nopol/logs/d4j-infos/projects/closure/closure_${bug}.stdout | cut -f 1 -d :`
+  let "line++"
+  modifiedSources=`tail -n +$line ~/defects4j-nopol/logs/d4j-infos/projects/closure/closure_${bug}.stdout | tac | tail -n +2 | cut -f 3 -d ' '`
+
+  # < delete in buggy
+  # > add in fix
+  for modifiedSource in $modifiedSources
+  do
+    echo "Class: $modifiedSource"
+    echo ""
+    pathModifiedSource=`echo $modifiedSource | tr . /`
+    className=`echo $pathModifiedSource | tr / ' ' | awk '{print $NF}'`
+    pathModifiedSource="$pathModifiedSource.java"
+    linePrint="-> $pathModifiedSource"
+    diff -b ~/projects/closure/buggy/closure_${bug}/src/$pathModifiedSource ~/projects/closure/fix/closure_${bug}/src/$pathModifiedSource > ~/defects4j-nopol/logs/d4j-infos/patches/closure/closure_${bug}_$className.stdout
+    modifiedLinesBrut=`grep '^\d' ~/defects4j-nopol/logs/d4j-infos/patches/closure/closure_${bug}_$className.stdout | cut -f 1 -d c | cut -f 1 -d a | cut -f 1 -d d`
+
+    modifiedLines=""
+
+    for modifiedLine in $modifiedLinesBrut
+    do
+
+      sequence=`echo $modifiedLine | grep ,`
+      if [[ $sequence ]]; then
+        min=`echo $sequence | cut -f 1 -d ,`
+        max=`echo $sequence | cut -f 2 -d ,`
+        sequenceExtends=`seq $min $max`
+        modifiedLines="$modifiedLines $sequenceExtends"
+      else
+        modifiedLines="$modifiedLines $modifiedLine"
+      fi
+
+    done
+
+    modifiedLinesClean=`echo $modifiedLines | tr -d '\n'`
+    linePrint="$linePrint:$modifiedLinesClean"
+    echo $linePrint
+    deleted=`diff -b ~/projects/closure/buggy/closure_${bug}/src/$pathModifiedSource ~/projects/closure/fix/closure_${bug}/src/$pathModifiedSource | grep '<' | wc -l`
+    added=`diff -b ~/projects/closure/buggy/closure_${bug}/src/$pathModifiedSource ~/projects/closure/fix/closure_${bug}/src/$pathModifiedSource | grep '>' | wc -l`
+    echo ""
+    echo "Deleted lines: $deleted"
+    echo "Added lines: $added"
+    difference=0
+    let "difference=added-deleted"
+    echo "Diff added/deleted: $difference"
+
+    echo ""
+    echo ""
+  done
+
+  exec 1<&6 6<&-
+
+done
+
+echo 'Done.'

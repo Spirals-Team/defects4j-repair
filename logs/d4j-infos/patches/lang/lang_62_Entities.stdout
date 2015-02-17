@@ -1,0 +1,14 @@
+849a850,852
+>                             if (entityValue > 0xFFFF) {
+>                                 entityValue = -1;
+>                             }
+919a923
+>                                         break;
+924a929,931
+>                                 if (entityValue > 0xFFFF) {
+>                                     entityValue = -1;
+>                                 }
+926c933
+<                                 // ignore the escaped value content
+---
+>                                 entityValue = -1;

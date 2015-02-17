@@ -1,0 +1,19 @@
+259,272c259,261
+<         int ret = 0;
+<         
+<         if (this != object) { 
+<             double first = doubleValue();
+<             double second = object.doubleValue();
+<             
+<             if (first < second) {
+<                 ret = -1;
+<             } else if (first > second) {
+<                 ret = 1;
+<             }
+<         }
+<         
+<         return ret;
+---
+>         long nOd = ((long) numerator) * object.denominator;
+>         long dOn = ((long) denominator) * object.numerator;
+>         return (nOd < dOn) ? -1 : ((nOd > dOn) ? +1 : 0);

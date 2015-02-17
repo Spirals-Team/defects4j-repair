@@ -1,0 +1,8 @@
+479c479
+<                 if (expPos < decPos) {
+---
+>                 if (expPos < decPos || expPos > str.length()) {
+488a489,491
+>                 if (expPos > str.length()) {
+>                     throw new NumberFormatException(str + " is not a valid number.");
+>                 }

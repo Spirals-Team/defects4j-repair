@@ -1,0 +1,13 @@
+193c193,195
+<       if (length == 0 || !Character.isJavaIdentifierStart(s.charAt(0)))
+---
+>       if (length == 0 ||
+>           Character.isIdentifierIgnorable(s.charAt(0)) ||
+>           !Character.isJavaIdentifierStart(s.charAt(0))) {
+194a197
+>       }
+197c200,201
+<         if (!Character.isJavaIdentifierPart(s.charAt(i))) {
+---
+>         if (Character.isIdentifierIgnorable(s.charAt(i)) ||
+>             !Character.isJavaIdentifierPart(s.charAt(i))) {

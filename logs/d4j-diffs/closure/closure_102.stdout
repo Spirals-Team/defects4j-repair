@@ -1,0 +1,22 @@
+com.google.javascript.jscomp.Normalize
+
+88a89
+>     removeDuplicateDeclarations(root);
+94d94
+<     removeDuplicateDeclarations(root);
+
+
+com.google.javascript.jscomp.SyntacticScopeCreator
+
+39a40,43
+>   // The arguments variable is special, in that it's declared in every local
+>   // scope, but not explicitly declared.
+>   private static final String ARGUMENTS = "arguments";
+> 
+229c233,234
+<     if (scope.isDeclared(name, false)) {
+---
+>     if (scope.isDeclared(name, false)
+>         || (scope.isLocal() && name.equals(ARGUMENTS))) {
+
+

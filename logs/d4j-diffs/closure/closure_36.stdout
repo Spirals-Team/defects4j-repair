@@ -1,0 +1,22 @@
+com.google.javascript.jscomp.InlineVariables
+
+561,562d560
+<       // Bug 2388531: Don't inline subclass definitions into class defining
+<       // calls as this confused class removing logic.
+565a564,566
+>           CodingConvention convention = compiler.getCodingConvention();
+>           // Bug 2388531: Don't inline subclass definitions into class defining
+>           // calls as this confused class removing logic.
+567c568
+<               compiler.getCodingConvention().getClassesDefinedByCall(callNode);
+---
+>               convention.getClassesDefinedByCall(callNode);
+570a572,577
+> 
+>           // issue 668: Don't inline singleton getter methods
+>           // calls as this confused class removing logic.
+>           if (convention.getSingletonGetterClassName(callNode) != null) {
+>             return false;
+>           }
+
+

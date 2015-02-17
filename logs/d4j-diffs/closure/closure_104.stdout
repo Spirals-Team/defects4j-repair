@@ -1,0 +1,10 @@
+com.google.javascript.rhino.jstype.UnionType
+
+46d45
+< import com.google.javascript.rhino.jstype.JSType.TypePair;
+292c291
+<     if (result != null) {
+---
+>     if (!result.isNoType()) {
+
+

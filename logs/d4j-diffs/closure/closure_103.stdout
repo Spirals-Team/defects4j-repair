@@ -1,0 +1,31 @@
+com.google.javascript.jscomp.ControlFlowAnalysis
+
+893a894
+>       case Token.INSTANCEOF:
+899c900
+<       if (mayThrowException(c)) {
+---
+>       if (!ControlFlowGraph.isEnteringNewCfgNode(c) && mayThrowException(c)) {
+
+
+com.google.javascript.jscomp.DisambiguateProperties
+
+736c736
+<     @Override public JSType getTypeWithProperty(String field, JSType type) {
+---
+>     @Override public ObjectType getTypeWithProperty(String field, JSType type) {
+760a761,772
+>       // If the property does not exist on the referenced type but the original
+>       // type is an object type, see if any subtype has the property.
+>       if (foundType == null) {
+>         ObjectType maybeType = ObjectType.cast(
+>             registry.getGreatestSubtypeWithProperty(type, field));
+>         // getGreatestSubtypeWithProperty does not guarantee that the property
+>         // is defined on the returned type, it just indicates that it might be,
+>         // so we have to double check.
+>         if (maybeType != null && maybeType.hasOwnProperty(field)) {
+>           foundType = maybeType;
+>         }
+>       }
+
+

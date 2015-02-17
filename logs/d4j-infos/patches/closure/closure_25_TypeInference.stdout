@@ -1,0 +1,14 @@
+1036,1037c1036
+<     Node constructor = n.getFirstChild();
+<     scope = traverse(constructor, scope);
+---
+>     scope = traverseChildren(n, scope);
+1038a1038
+>     Node constructor = n.getFirstChild();
+1054a1055
+>           backwardsInferenceFromCallSite(n, ct);
+1059,1062d1059
+< 
+<     for (Node arg = constructor.getNext(); arg != null; arg = arg.getNext()) {
+<       scope = traverse(arg, scope);
+<     }

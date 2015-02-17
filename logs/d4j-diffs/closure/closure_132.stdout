@@ -1,0 +1,10 @@
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax
+
+782c782,784
+<               !mayEffectMutableState(lhs)) {
+---
+>               !mayEffectMutableState(lhs) &&
+>               (!mayHaveSideEffects(cond) ||
+>                   (thenOp.isAssign() && thenOp.getFirstChild().isName()))) {
+
+

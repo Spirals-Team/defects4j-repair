@@ -1,0 +1,4 @@
+51c51
+<         iterations = new Incrementor(0, new MaxIterCallback());
+---
+>         iterations = new Incrementor(Integer.MAX_VALUE, new MaxIterCallback());

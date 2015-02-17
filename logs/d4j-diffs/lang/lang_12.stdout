@@ -1,0 +1,22 @@
+org.apache.commons.lang3.RandomStringUtils
+
+229a230,232
+>         if (chars != null && chars.length == 0) {
+>             throw new IllegalArgumentException("The chars array must not be empty");
+>         }
+232,233c235,237
+<             end = 'z' + 1;
+<             start = ' ';
+---
+>             if (chars != null) {
+>                 end = chars.length;
+>             } else {
+235d238
+<                 start = 0;
+236a240,243
+>                 } else {
+>                     end = 'z' + 1;
+>                     start = ' ';                
+>                 }
+
+

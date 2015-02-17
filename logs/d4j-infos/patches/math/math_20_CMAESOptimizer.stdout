@@ -1,0 +1,15 @@
+419c419
+<                             fitfun.decode(bestArx.getColumn(0)),
+---
+>                             fitfun.repairAndDecode(bestArx.getColumn(0)),
+917a918,927
+>          * @return the original objective variables, possibly repaired.
+>          */
+>         public double[] repairAndDecode(final double[] x) {
+>             return boundaries != null && isRepairMode ?
+>                 decode(repair(x)) :
+>                 decode(x);
+>         }
+> 
+>         /**
+>          * @param x Normalized objective variables.

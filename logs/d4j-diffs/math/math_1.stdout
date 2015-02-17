@@ -1,0 +1,30 @@
+org.apache.commons.math3.fraction.BigFraction
+
+303a304,308
+>                 // in maxDenominator mode, if the last fraction was very close to the actual value
+>                 // q2 may overflow in the next iteration; in this case return the last one.
+>                 if (epsilon == 0.0 && FastMath.abs(q1) < maxDenominator) {
+>                     break;
+>                 }
+
+
+org.apache.commons.math3.fraction.Fraction
+
+85a86,88
+>     /** The default epsilon used for convergence. */
+>     private static final double DEFAULT_EPSILON = 1e-5;
+> 
+99c102
+<         this(value, 1.0e-5, 100);
+---
+>         this(value, DEFAULT_EPSILON, 100);
+207a211
+> 
+208a213,217
+>                 // in maxDenominator mode, if the last fraction was very close to the actual value
+>                 // q2 may overflow in the next iteration; in this case return the last one.
+>                 if (epsilon == 0.0 && FastMath.abs(q1) < maxDenominator) {
+>                     break;
+>                 }
+
+

@@ -1,0 +1,10 @@
+613c613,619
+<         return resultEqualsValue && ctorType.isSubtype(type) ? ctorType : null;
+---
+>         if (resultEqualsValue) {
+>           // Objects are restricted to "Function", subtypes are left
+>           return ctorType.getGreatestSubtype(type);
+>         } else {
+>           // Only filter out subtypes of "function"
+>           return type.isSubtype(ctorType) ? null : type;
+>         }

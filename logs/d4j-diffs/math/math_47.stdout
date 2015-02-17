@@ -1,0 +1,25 @@
+org.apache.commons.math.complex.Complex
+
+80a81,82
+>     /** Record whether this complex number is zero. */
+>     private final transient boolean isZero;
+103a106
+>         isZero = real == 0 && imaginary == 0;
+255,258c258,259
+<         final double c = divisor.getReal();
+<         final double d = divisor.getImaginary();
+<         if (c == 0.0 && d == 0.0) {
+<             return NaN;
+---
+>         if (divisor.isZero) {
+>             return isZero ? NaN : INF;
+264a266,268
+>         final double c = divisor.getReal();
+>         final double d = divisor.getImaginary();
+> 
+291c295
+<             return NaN;
+---
+>             return isZero ? NaN : INF;
+
+

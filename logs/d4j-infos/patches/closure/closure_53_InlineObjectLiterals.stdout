@@ -1,0 +1,11 @@
+329a330,333
+>       Node replacement;
+>       if (nodes.isEmpty()) {
+>         replacement = new Node(Token.TRUE);
+>       } else {
+338c342
+<       Node replacement = new Node(Token.COMMA);
+---
+>         replacement = new Node(Token.COMMA);
+348a353
+>       }

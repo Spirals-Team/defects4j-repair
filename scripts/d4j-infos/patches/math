@@ -1,0 +1,75 @@
+#!/bin/bash
+
+for bug in `seq 1 106`
+do
+
+  echo "Math ${bug} patches infos ..."
+
+  exec 6<&1
+
+  exec 1> ~/defects4j-nopol/logs/d4j-infos/patches/math/math_${bug}.stdout
+
+  line=`grep -m 1 -n "List of modified sources:" ~/defects4j-nopol/logs/d4j-infos/projects/math/math_${bug}.stdout | cut -f 1 -d :`
+  let "line++"
+  modifiedSources=`tail -n +$line ~/defects4j-nopol/logs/d4j-infos/projects/math/math_${bug}.stdout | tac | tail -n +2 | cut -f 3 -d ' '`
+
+  # < delete in buggy
+  # > add in fix
+  for modifiedSource in $modifiedSources
+  do
+    echo "Class: $modifiedSource"
+    echo ""
+    pathModifiedSource=`echo $modifiedSource | tr . /`
+    className=`echo $pathModifiedSource | tr / ' ' | awk '{print $NF}'`
+    pathModifiedSource="$pathModifiedSource.java"
+    linePrint="-> $pathModifiedSource"
+    if [[ $bug -lt 85 ]]; then
+      diff -b ~/projects/math/buggy/math_${bug}/src/main/java/$pathModifiedSource ~/projects/math/fix/math_${bug}/src/main/java/$pathModifiedSource > ~/defects4j-nopol/logs/d4j-infos/patches/math/math_${bug}_$className.stdout
+    else
+      diff -b ~/projects/math/buggy/math_${bug}/src/java/$pathModifiedSource ~/projects/math/fix/math_${bug}/src/java/$pathModifiedSource > ~/defects4j-nopol/logs/d4j-infos/patches/math/math_${bug}_$className.stdout
+    fi
+    modifiedLinesBrut=`grep '^\d' ~/defects4j-nopol/logs/d4j-infos/patches/math/math_${bug}_$className.stdout | cut -f 1 -d c | cut -f 1 -d a | cut -f 1 -d d`
+
+    modifiedLines=""
+
+    for modifiedLine in $modifiedLinesBrut
+    do
+
+      sequence=`echo $modifiedLine | grep ,`
+      if [[ $sequence ]]; then
+        min=`echo $sequence | cut -f 1 -d ,`
+        max=`echo $sequence | cut -f 2 -d ,`
+        sequenceExtends=`seq $min $max`
+        modifiedLines="$modifiedLines $sequenceExtends"
+      else
+        modifiedLines="$modifiedLines $modifiedLine"
+      fi
+
+    done
+
+    modifiedLinesClean=`echo $modifiedLines | tr -d '\n'`
+    linePrint="$linePrint:$modifiedLinesClean"
+    echo $linePrint
+    if [[ $bug -lt 85 ]]; then
+      deleted=`diff -b ~/projects/math/buggy/math_${bug}/src/main/java/$pathModifiedSource ~/projects/math/fix/math_${bug}/src/main/java/$pathModifiedSource | grep '<' | wc -l`
+      added=`diff -b ~/projects/math/buggy/math_${bug}/src/main/java/$pathModifiedSource ~/projects/math/fix/math_${bug}/src/main/java/$pathModifiedSource | grep '>' | wc -l`
+    else
+      deleted=`diff -b ~/projects/math/buggy/math_${bug}/src/java/$pathModifiedSource ~/projects/math/fix/math_${bug}/src/java/$pathModifiedSource | grep '<' | wc -l`
+      added=`diff -b ~/projects/math/buggy/math_${bug}/src/java/$pathModifiedSource ~/projects/math/fix/math_${bug}/src/java/$pathModifiedSource | grep '>' | wc -l`
+    fi
+    echo ""
+    echo "Deleted lines: $deleted"
+    echo "Added lines: $added"
+    difference=0
+    let "difference=added-deleted"
+    echo "Diff added/deleted: $difference"
+
+    echo ""
+    echo ""
+  done
+
+  exec 1<&6 6<&-
+
+done
+
+echo 'Done.'

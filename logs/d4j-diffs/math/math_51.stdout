@@ -1,0 +1,44 @@
+org.apache.commons.math.analysis.solvers.BaseSecantSolver
+
+172,173c172
+<                 // We had [x0..x1]. We update it to [x1, x]. Note that the
+<                 // value of x1 has switched to the other bound, thus inverting
+---
+>                 // The value of x1 has switched to the other bound, thus inverting
+177,178d175
+<                 x1 = x;
+<                 f1 = fx;
+181,182c178,179
+<                 // We had [x0..x1]. We update it to [x0, x].
+<                 if (method == Method.ILLINOIS) {
+---
+>                 switch (method) {
+>                 case ILLINOIS:
+184,185c181,182
+<                 }
+<                 if (method == Method.PEGASUS) {
+---
+>                     break;
+>                 case PEGASUS:
+186a184,192
+>                     break;
+>                 case REGULA_FALSI:
+>                     if (x == x1) {
+>                         final double delta = FastMath.max(rtol * FastMath.abs(x1),
+>                                                           atol);
+>                         // Update formula cannot make any progress: Update the
+>                         // search interval.
+>                         x0 = 0.5 * (x0 + x1 - delta);
+>                         f0 = computeObjectiveValue(x0);
+187a194,200
+>                     break;
+>                 default:
+>                     // Should never happen.
+>                     throw new MathInternalError();
+>                 }
+>             }
+>             // Update from [x0, x1] to [x0, x].
+190d202
+<             }
+
+

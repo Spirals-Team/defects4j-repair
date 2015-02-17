@@ -1,0 +1,8 @@
+org.apache.commons.lang.LocaleUtils
+
+223c223
+<         return cAvailableLocaleSet.contains(locale);
+---
+>         return availableLocaleList().contains(locale);
+
+

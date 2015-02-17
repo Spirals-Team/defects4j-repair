@@ -1,0 +1,16 @@
+org.apache.commons.math.special.Gamma
+
+37c37
+<     private static final double DEFAULT_EPSILON = 10e-9;
+---
+>     private static final double DEFAULT_EPSILON = 10e-15;
+
+
+org.apache.commons.math.special.Beta
+
+36c36
+<     private static final double DEFAULT_EPSILON = 10e-9;
+---
+>     private static final double DEFAULT_EPSILON = 10e-15;
+
+

@@ -1,0 +1,17 @@
+com.google.javascript.jscomp.Normalize
+
+120,121c120,122
+<     NodeTraversal.traverse(compiler, root,
+<         new NormalizeStatements(compiler, assertOnChange));
+---
+>     new NodeTraversal(
+>         compiler, new NormalizeStatements(compiler, assertOnChange))
+>         .traverseRoots(externs, root);
+
+
+com.google.javascript.jscomp.VarCheck
+
+220a221
+>     compiler.reportCodeChange();
+
+

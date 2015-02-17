@@ -1,0 +1,13 @@
+org.apache.commons.lang3.time.FastDateFormat
+
+495,497c495
+<                 if (tokenLen >= 4) {
+<                     rule = selectNumberRule(Calendar.YEAR, tokenLen);
+<                 } else {
+---
+>                 if (tokenLen == 2) {
+498a497,498
+>                 } else {
+>                     rule = selectNumberRule(Calendar.YEAR, tokenLen < 4 ? 4 : tokenLen);
+
+

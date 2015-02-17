@@ -1,0 +1,8 @@
+485a486
+>       // Adjust the line/column here to be start at 1.
+488,489c489,490
+<         .setLineNumber(entry.getSourceLine())
+<         .setColumnPosition(entry.getSourceColumn());
+---
+>         .setLineNumber(entry.getSourceLine() + 1)
+>         .setColumnPosition(entry.getSourceColumn() + 1);

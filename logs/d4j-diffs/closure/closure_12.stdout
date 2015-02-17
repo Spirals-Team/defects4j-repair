@@ -1,0 +1,25 @@
+com.google.javascript.jscomp.MaybeReachingVariableUse
+
+149c149,155
+<     computeMayUse(n, n, output, false);
+---
+> 
+>     // If there's an ON_EX edge, this cfgNode may or may not get executed.
+>     // We can express this concisely by just pretending this happens in
+>     // a conditional.
+>     boolean conditional = hasExceptionHandler(n);
+>     computeMayUse(n, n, output, conditional);
+> 
+152a159,168
+>   private boolean hasExceptionHandler(Node cfgNode) {
+>     List<DiGraphEdge<Node, Branch>> branchEdges = getCfg().getOutEdges(cfgNode);
+>     for (DiGraphEdge<Node, Branch> edge : branchEdges) {
+>       if (edge.getValue() == Branch.ON_EX) {
+>         return true;
+>       }
+>     }
+>     return false;
+>   }
+> 
+
+

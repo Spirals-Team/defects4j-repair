@@ -1,0 +1,4 @@
+3482c3482
+<         return (a <= b) ? b : (Float.isNaN(a + b) ? Float.NaN : b);
+---
+>         return (a <= b) ? b : (Float.isNaN(a + b) ? Float.NaN : a);

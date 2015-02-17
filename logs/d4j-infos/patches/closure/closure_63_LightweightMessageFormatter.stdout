@@ -1,0 +1,7 @@
+94a95,96
+>       // charno == sourceExpert.length() means something is missing
+>       // at the end of the line
+96c98
+<           && 0 <= charno && charno < sourceExcerpt.length()) {
+---
+>           && 0 <= charno && charno <= sourceExcerpt.length()) {

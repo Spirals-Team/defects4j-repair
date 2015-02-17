@@ -1,0 +1,14 @@
+164a165,170
+>         if (num.intValue() < 0) {
+>             // minus signs should be leading, invalid expression
+>             pos.setIndex(initialIndex);
+>             return null;
+>         }
+> 
+197a204,209
+>         if (den.intValue() < 0) {
+>             // minus signs must be leading, invalid
+>             pos.setIndex(initialIndex);
+>             return null;
+>         }
+> 

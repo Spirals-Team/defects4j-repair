@@ -1,0 +1,10 @@
+org.apache.commons.math.linear.OpenMapRealMatrix
+
+49a50,54
+>         long lRow = (long) rowDimension;
+>         long lCol = (long) columnDimension;
+>         if (lRow * lCol >= (long) Integer.MAX_VALUE) {
+>             throw new NumberIsTooLargeException(lRow * lCol, Integer.MAX_VALUE, false);
+>         }
+
+

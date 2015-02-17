@@ -1,0 +1,6 @@
+1775a1776
+>         int len = size - strLen + 1;
+1777c1778
+<         for (int i = startIndex; i < thisBuf.length - strLen; i++) {
+---
+>         for (int i = startIndex; i < len; i++) {

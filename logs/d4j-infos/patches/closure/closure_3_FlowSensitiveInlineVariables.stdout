@@ -1,0 +1,15 @@
+155c155
+<       if (c.canInline()) {
+---
+>       if (c.canInline(t.getScope())) {
+280c280
+<     private boolean canInline() {
+---
+>     private boolean canInline(final Scope scope) {
+374a375,380
+>                   case Token.NAME:
+>                     Var var = scope.getOwnSlot(input.getString());
+>                     if (var != null
+>                         && var.getParentNode().isCatch()) {
+>                       return true;
+>                     }

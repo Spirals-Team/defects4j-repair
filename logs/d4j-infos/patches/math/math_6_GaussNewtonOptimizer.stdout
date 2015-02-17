@@ -1,0 +1,10 @@
+106d105
+<         int iter = 0;
+108c107
+<             ++iter;
+---
+>             incrementIterationCount();
+160c159
+<                 converged = checker.converged(iter, previous, current);
+---
+>                 converged = checker.converged(getIterations(), previous, current);

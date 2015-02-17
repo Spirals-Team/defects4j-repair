@@ -1,0 +1,126 @@
+org.apache.commons.lang3.StringUtils
+
+1375c1375,1379
+<         for (int i = 0; i < cs.length(); i++) {
+---
+>         int csLen = cs.length();
+>         int csLast = csLen - 1;
+>         int searchLen = searchChars.length;
+>         int searchLast = searchLen - 1;
+>         for (int i = 0; i < csLen; i++) {
+1377c1381
+<             for (int j = 0; j < searchChars.length; j++) {
+---
+>             for (int j = 0; j < searchLen; j++) {
+1378a1383,1388
+>                     if (i < csLast && j < searchLast && Character.isHighSurrogate(ch)) {
+>                         // ch is a supplementary character
+>                         if (searchChars[j + 1] == cs.charAt(i + 1)) {
+>                             return i;
+>                         }
+>                     } else {
+1382a1393
+>         }
+1440c1451
+<     public static boolean containsAny(CharSequence cs, char[] searchChars) {
+---
+>     public static boolean containsAny(String cs, char[] searchChars) {
+1446,1447c1457,1458
+<         int csLastIndex = csLength - 1;
+<         int searchLastIndex = searchLength - 1;
+---
+>         int csLast = csLength - 1;
+>         int searchLast = searchLength - 1;
+1452,1454c1463,1468
+<                     if (i < csLastIndex && j < searchLastIndex && ch >= Character.MIN_HIGH_SURROGATE && ch <= Character.MAX_HIGH_SURROGATE) {
+<                         // ch is a supplementary character
+<                         if (searchChars[j + 1] == cs.charAt(i + 1)) {
+---
+>                     if (Character.isHighSurrogate(ch)) {
+>                         if (j == searchLast) {
+>                             // missing low surrogate, fine, like String.indexOf(String)
+>                             return true;
+>                         }
+>                         if (i < csLast && searchChars[j + 1] == cs.charAt(i + 1)) {
+1494c1508
+<     public static boolean containsAny(CharSequence cs, String searchChars) {
+---
+>     public static boolean containsAny(String cs, String searchChars) {
+1529c1543,1548
+<         outer : for (int i = 0; i < cs.length(); i++) {
+---
+>         int csLen = cs.length();
+>         int csLast = csLen - 1;
+>         int searchLen = searchChars.length;
+>         int searchLast = searchLen - 1;
+>         outer:
+>         for (int i = 0; i < csLen; i++) {
+1531c1550
+<             for (int j = 0; j < searchChars.length; j++) {
+---
+>             for (int j = 0; j < searchLen; j++) {
+1532a1552,1556
+>                     if (i < csLast && j < searchLast && Character.isHighSurrogate(ch)) {
+>                         if (searchChars[j + 1] == cs.charAt(i + 1)) {
+>                             continue outer;
+>                         }
+>                     } else {
+1535a1560
+>             }
+1567,1568c1592,1602
+<         for (int i = 0; i < str.length(); i++) {
+<             if (searchChars.indexOf(str.charAt(i)) < 0) {
+---
+>         int strLen = str.length();
+>         for (int i = 0; i < strLen; i++) {
+>             char ch = str.charAt(i);
+>             boolean chFound = searchChars.indexOf(ch) >= 0;
+>             if (i + 1 < strLen && Character.isHighSurrogate(ch)) {
+>                 char ch2 = str.charAt(i + 1);
+>                 if (chFound && searchChars.indexOf(ch2) < 0) {
+>                     return i;
+>                 }
+>             } else {
+>                 if (!chFound) {
+1571a1606
+>         }
+1661c1696
+<      * @param invalidChars  an array of invalid chars, may be null
+---
+>      * @param searchChars  an array of invalid chars, may be null
+1665,1666c1700,1701
+<     public static boolean containsNone(CharSequence cs, char[] invalidChars) {
+<         if (cs == null || invalidChars == null) {
+---
+>     public static boolean containsNone(CharSequence cs, char[] searchChars) {
+>         if (cs == null || searchChars == null) {
+1669,1671c1704,1708
+<         int strSize = cs.length();
+<         int validSize = invalidChars.length;
+<         for (int i = 0; i < strSize; i++) {
+---
+>         int csLen = cs.length();
+>         int csLast = csLen - 1;
+>         int searchLen = searchChars.length;
+>         int searchLast = searchLen - 1;
+>         for (int i = 0; i < csLen; i++) {
+1673,1674c1710,1714
+<             for (int j = 0; j < validSize; j++) {
+<                 if (invalidChars[j] == ch) {
+---
+>             for (int j = 0; j < searchLen; j++) {
+>                 if (searchChars[j] == ch) {
+>                     if (Character.isHighSurrogate(ch)) {
+>                         if (j == searchLast) {
+>                             // missing low surrogate, fine, like String.indexOf(String)
+1676a1717,1724
+>                         if (i < csLast && searchChars[j + 1] == cs.charAt(i + 1)) {
+>                             return false;
+>                         }
+>                     } else {
+>                         // ch is in the Basic Multilingual Plane
+>                         return false;
+>                     }
+>                 }
+
+

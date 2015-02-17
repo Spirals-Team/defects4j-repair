@@ -1,0 +1,115 @@
+org.apache.commons.math.distribution.PoissonDistributionImpl
+
+22c22
+< import org.apache.commons.math.MathRuntimeException;
+---
+> import org.apache.commons.math.exception.NotStrictlyPositiveException;
+80c80
+<         this(p, new NormalDistributionImpl());
+---
+>         this(p, DEFAULT_EPSILON, DEFAULT_MAX_ITERATIONS);
+93c93,97
+<         setMean(p);
+---
+>         if (p <= 0) {
+>             throw new NotStrictlyPositiveException(LocalizedFormats.MEAN, p);
+>         }
+>         mean = p;
+>         normal = new NormalDistributionImpl(p, FastMath.sqrt(p));
+106,107c110
+<         setMean(p);
+<         this.epsilon = epsilon;
+---
+>         this(p, epsilon, DEFAULT_MAX_ITERATIONS);
+118,137c121
+<         setMean(p);
+<         this.maxIterations = maxIterations;
+<     }
+< 
+< 
+<     /**
+<      * Create a new Poisson distribution with the given the mean. The mean value
+<      * must be positive; otherwise an <code>IllegalArgument</code> is thrown.
+<      *
+<      * @param p the Poisson mean
+<      * @param z a normal distribution used to compute normal approximations.
+<      * @throws IllegalArgumentException if p &le; 0
+<      * @since 1.2
+<      * @deprecated as of 2.1 (to avoid possibly inconsistent state, the
+<      * "NormalDistribution" will be instantiated internally)
+<      */
+<     @Deprecated
+<     public PoissonDistributionImpl(double p, NormalDistribution z) {
+<         super();
+<         setNormalAndMeanInternal(z, p);
+---
+>         this(p, DEFAULT_EPSILON, maxIterations);
+150,181d133
+<      * Set the Poisson mean for the distribution. The mean value must be
+<      * positive; otherwise an <code>IllegalArgument</code> is thrown.
+<      *
+<      * @param p the Poisson mean value
+<      * @throws IllegalArgumentException if p &le; 0
+<      * @deprecated as of 2.1 (class will become immutable in 3.0)
+<      */
+<     @Deprecated
+<     public void setMean(double p) {
+<         setNormalAndMeanInternal(normal, p);
+<     }
+<     /**
+<      * Set the Poisson mean for the distribution. The mean value must be
+<      * positive; otherwise an <code>IllegalArgument</code> is thrown.
+<      *
+<      * @param z the new distribution
+<      * @param p the Poisson mean value
+<      * @throws IllegalArgumentException if p &le; 0
+<      */
+<     private void setNormalAndMeanInternal(NormalDistribution z,
+<                                           double p) {
+<         if (p <= 0) {
+<             throw MathRuntimeException.createIllegalArgumentException(
+<                     LocalizedFormats.NOT_POSITIVE_POISSON_MEAN, p);
+<         }
+<         mean = p;
+<         normal = z;
+<         normal.setMean(p);
+<         normal.setStandardDeviation(FastMath.sqrt(p));
+<     }
+< 
+<     /**
+289,302d240
+< 
+<     /**
+<      * Modify the normal distribution used to compute normal approximations. The
+<      * caller is responsible for insuring the normal distribution has the proper
+<      * parameter settings.
+<      *
+<      * @param value the new distribution
+<      * @since 1.2
+<      * @deprecated as of 2.1 (class will become immutable in 3.0)
+<      */
+<     @Deprecated
+<     public void setNormal(NormalDistribution value) {
+<         setNormalAndMeanInternal(value, mean);
+<     }
+
+
+org.apache.commons.math.distribution.PoissonDistribution
+
+43,54d42
+<      * Set the mean for the distribution.
+<      * The parameter value must be positive; otherwise an
+<      * <code>IllegalArgument</code> is thrown.
+<      *
+<      * @param p the mean
+<      * @throws IllegalArgumentException if p &le; 0
+<      * @deprecated as of v2.1
+<      */
+<     @Deprecated
+<     void setMean(double p);
+< 
+<     /**
+62d49
+< 
+
+

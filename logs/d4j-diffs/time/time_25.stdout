@@ -1,0 +1,42 @@
+org.joda.time.DateTimeZone
+
+869,870c869,874
+<      * NOTE: The behaviour of this method changed in v1.5, with the emphasis
+<      * on returning a consistent result later along the time-line (shown above).
+---
+>      * During a DST overlap (where the local time is ambiguous) this method will return
+>      * the earlier instant. The combination of these two rules is to always favour
+>      * daylight (summer) time over standard (winter) time.
+>      * <p>
+>      * NOTE: Prior to v2.0, the DST overlap behaviour was not defined and varied by hemisphere.
+>      * Prior to v1.5, the DST gap behaviour was also not defined.
+872,873c876
+<      * @param instantLocal  the millisecond instant, relative to this time zone, to
+<      * get the offset for
+---
+>      * @param instantLocal  the millisecond instant, relative to this time zone, to get the offset for
+878c881
+<         int offsetLocal = getOffset(instantLocal);
+---
+>         final int offsetLocal = getOffset(instantLocal);
+880c883,884
+<         int offsetAdjusted = getOffset(instantLocal - offsetLocal);
+---
+>         final long instantAdjusted = instantLocal - offsetLocal;
+>         final int offsetAdjusted = getOffset(instantAdjusted);
+889c893
+<                 long nextLocal = nextTransition(instantLocal - offsetLocal);
+---
+>                 long nextLocal = nextTransition(instantAdjusted);
+894a899,907
+>         } else if (offsetLocal > 0) {
+>             long prev = previousTransition(instantAdjusted);
+>             if (prev < instantAdjusted) {
+>                 int offsetPrev = getOffset(prev);
+>                 int diff = offsetPrev - offsetLocal;
+>                 if (instantAdjusted - prev <= diff) {
+>                     return offsetPrev;
+>                 }
+>             }
+
+

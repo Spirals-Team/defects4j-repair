@@ -1,0 +1,29 @@
+35d34
+< import org.joda.time.format.DateTimeFormat;
+95a95,96
+>     /** Maximum offset. */
+>     private static final int MAX_MILLIS = (86400 * 1000) - 1;
+256a258,260
+>         if (hoursOffset < -23 || hoursOffset > 23) {
+>             throw new IllegalArgumentException("Hours out of range: " + hoursOffset);
+>         }
+262c266
+<             int hoursInMinutes = FieldUtils.safeMultiply(hoursOffset, 60);
+---
+>             int hoursInMinutes = hoursOffset * 60;
+264c268
+<                 minutesOffset = FieldUtils.safeAdd(hoursInMinutes, -minutesOffset);
+---
+>                 minutesOffset = hoursInMinutes - minutesOffset;
+266c270
+<                 minutesOffset = FieldUtils.safeAdd(hoursInMinutes, minutesOffset);
+---
+>                 minutesOffset = hoursInMinutes + minutesOffset;
+278c282
+<      * @param millisOffset  the offset in millis from UTC
+---
+>      * @param millisOffset  the offset in millis from UTC, from -23:59:59.999 to +23:59:59.999
+281a286,288
+>         if (millisOffset < -MAX_MILLIS || millisOffset > MAX_MILLIS) {
+>             throw new IllegalArgumentException("Millis out of range: " + millisOffset);
+>         }

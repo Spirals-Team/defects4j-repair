@@ -1,0 +1,44 @@
+153,164d152
+<     // If the parent is null, this mean whatever node it was there is now
+<     // useless and it has been removed by other logics in this pass. That node
+<     // while no longer exists in the AST, is still in the CFG because we
+<     // never update the graph as nodes are removed.
+<     if (n.getParent() == null) {
+<       List<DiGraphEdge<Node,Branch>> outEdges = gNode.getOutEdges();
+<       if (outEdges.size() == 1) {
+<         return tryRemoveUnconditionalBranching(
+<           outEdges.get(0).getDestination().getValue());
+<       }
+<     }
+< 
+166,173d153
+<       case Token.BLOCK:
+<         if (n.hasChildren()) {
+<           Node first = n.getFirstChild();
+<           return tryRemoveUnconditionalBranching(first);
+<         } else {
+<           return tryRemoveUnconditionalBranching(
+<             ControlFlowAnalysis.computeFollowNode(n));
+<         }
+186d165
+< 
+188a168
+> 
+190,191c170
+<           Node fallThrough = tryRemoveUnconditionalBranching(
+<             ControlFlowAnalysis.computeFollowNode(n));
+---
+>           Node fallThrough = computeFollowing(n);
+201a181,192
+>   private Node computeFollowing(Node n) {
+>     Node next = ControlFlowAnalysis.computeFollowNode(n);
+>     while (next != null && next.getType() == Token.BLOCK) {
+>       if (next.hasChildren()) {
+>         next = next.getFirstChild();
+>       } else {
+>         next = computeFollowing(next);
+>       }
+>     }
+>     return next;
+>   }
+> 

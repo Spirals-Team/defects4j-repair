@@ -1,0 +1,6 @@
+1412,1413c1412,1413
+<                 // not allowing L with an exponent
+<                 return foundDigit && !hasExp;
+---
+>                 // not allowing L with an exponent or decimal point
+>                 return foundDigit && !hasExp && !hasDecPoint;

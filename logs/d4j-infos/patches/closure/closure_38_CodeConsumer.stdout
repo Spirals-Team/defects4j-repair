@@ -1,0 +1,9 @@
+244c244,245
+<     if (x < 0 && prev == '-') {
+---
+>     boolean negativeZero = isNegativeZero(x);
+>     if ((x < 0 || negativeZero) && prev == '-') {
+248c249
+<     if ((long) x == x && !isNegativeZero(x)) {
+---
+>     if ((long) x == x && !negativeZero) {

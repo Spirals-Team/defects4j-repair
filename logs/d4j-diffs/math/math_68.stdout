@@ -1,0 +1,29 @@
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer
+
+165a166
+>         setConvergenceChecker(null);
+246a248
+>         VectorialPointValuePair current = new VectorialPointValuePair(point, objective);
+251a254
+>             VectorialPointValuePair previous = current;
+303c306
+<                 return new VectorialPointValuePair(point, objective);
+---
+>                 return current;
+344a348
+>                 current = new VectorialPointValuePair(point, objective);
+412a417,423
+>                 if (checker != null) {
+>                     // we use the vectorial convergence checker
+>                     if (checker.converged(getIterations(), previous, current)) {
+>                         return current;                        
+>                     }
+>                 } else {
+>                     // we use the Levenberg-Marquardt specific convergence parameters
+417c428,429
+<                     return new VectorialPointValuePair(point, objective);
+---
+>                         return current;
+>                     }
+
+

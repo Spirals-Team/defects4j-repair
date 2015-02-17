@@ -1,0 +1,18 @@
+1430c1430,1432
+<         String code = toSource(root, sourceMap);
+---
+>         // if LanguageMode is ECMASCRIPT5_STRICT, only print 'use strict'
+>         // for the first input file
+>         String code = toSource(root, sourceMap, inputSeqNum == 0);
+1459c1461
+<     return toSource(n, null);
+---
+>     return toSource(n, null, true);
+1465c1467
+<   private String toSource(Node n, SourceMap sourceMap) {
+---
+>   private String toSource(Node n, SourceMap sourceMap, boolean firstOutput) {
+1471c1473
+<     builder.setTagAsStrict(
+---
+>     builder.setTagAsStrict(firstOutput &&

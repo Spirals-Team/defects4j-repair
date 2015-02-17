@@ -1,0 +1,22 @@
+org.apache.commons.math.analysis.solvers.BrentSolver
+
+34a35,39
+>     /** Error message for non-bracketing interval. */
+>     private static final String NON_BRACKETING_MESSAGE =
+>         "function values at endpoints do not have different signs.  " +
+>         "Endpoints: [{0}, {1}], Values: [{2}, {3}]";
+> 
+130a136,140
+>         if (yMin * yMax > 0) {
+>             throw MathRuntimeException.createIllegalArgumentException(
+>                   NON_BRACKETING_MESSAGE, min, max, yMin, yMax);
+>         }
+> 
+179,181c189
+<                         "function values at endpoints do not have different signs.  " +
+<                         "Endpoints: [{0}, {1}], Values: [{2}, {3}]",
+<                         min, max, yMin, yMax);
+---
+>                         NON_BRACKETING_MESSAGE, min, max, yMin, yMax);
+
+

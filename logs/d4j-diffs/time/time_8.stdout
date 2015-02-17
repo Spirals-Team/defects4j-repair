@@ -1,0 +1,16 @@
+org.joda.time.DateTimeZone
+
+279c279
+<         if (minutesOffset < 0 || minutesOffset > 59) {
+---
+>         if (minutesOffset < -59 || minutesOffset > 59) {
+281a282,284
+>         if (hoursOffset > 0 && minutesOffset < 0) {
+>             throw new IllegalArgumentException("Positive hours must not have negative minutes: " + minutesOffset);
+>         }
+286c289
+<                 minutesOffset = hoursInMinutes - minutesOffset;
+---
+>                 minutesOffset = hoursInMinutes - Math.abs(minutesOffset);
+
+

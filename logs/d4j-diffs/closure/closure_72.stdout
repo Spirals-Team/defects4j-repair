@@ -1,0 +1,25 @@
+com.google.javascript.jscomp.RenameLabels
+
+114,117d113
+<     // NameGenerator is used to create safe label names.
+<     final NameGenerator nameGenerator =
+<         new NameGenerator(new HashSet<String>(), "", null);
+< 
+155c151
+<           names.add(nameGenerator.generateNextName());
+---
+>           names.add(nameSupplier.get());
+219c215
+<       if (li.referenced) {
+---
+>       if (li.referenced || !removeUnused) {
+
+
+com.google.javascript.jscomp.FunctionToBlockMutator
+
+150a151,153
+>     // Make label names unique to this instance.
+>     new RenameLabels(compiler, new LabelNameSupplier(idSupplier), false)
+>         .process(null, fnNode);
+
+

@@ -1,0 +1,16 @@
+91a92
+>            jsDoc.isInterface() ||
+125,126c126,128
+<         if (lhs.getType() == Token.GETPROP) {
+<           if (lhs.getLastChild().getString().equals("prototype")) {
+---
+>         if (NodeUtil.isGet(lhs)) {
+>           if (lhs.getType() == Token.GETPROP &&
+>               lhs.getLastChild().getString().equals("prototype")) {
+129,130c131,133
+<           String leftName = lhs.getQualifiedName();
+<           if (leftName != null && leftName.contains(".prototype.")) {
+---
+>           Node llhs = lhs.getFirstChild();
+>           if (llhs.getType() == Token.GETPROP &&
+>               llhs.getLastChild().getString().equals("prototype")) {

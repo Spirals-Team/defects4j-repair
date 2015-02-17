@@ -1,0 +1,17 @@
+org.apache.commons.lang3.math.NumberUtils
+
+491c491
+<         if (!Character.isDigit(lastChar)) {
+---
+>         if (!Character.isDigit(lastChar) && lastChar != '.') {
+1387a1388,1395
+>             if (chars[i] == '.') {
+>                 if (hasDecPoint || hasExp) {
+>                     // two decimal points or dec in exponent
+>                     return false;
+>                 }
+>                 // single trailing decimal point after non-exponent is ok
+>                 return foundDigit;
+>             }
+
+

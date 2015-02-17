@@ -1,0 +1,15 @@
+170c170
+<             if (nextCfgNode == fallThrough) {
+---
+>             if (nextCfgNode == fallThrough && !inFinally(n.getParent(), n)) {
+176a177,186
+>     private boolean inFinally(Node parent, Node child) {
+>       if (parent == null || parent.isFunction()) {
+>         return false;
+>       } else if (NodeUtil.isTryFinallyNode(parent, child)) {
+>         return true;
+>       } else {
+>         return inFinally(parent.getParent(), parent);
+>       }
+>     }
+> 

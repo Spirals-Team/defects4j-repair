@@ -1,0 +1,11 @@
+266a267,274
+>         if (m instanceof DiagonalMatrix) {
+>             final int dim = m.getRowDimension();
+>             final RealMatrix sqrtM = new DiagonalMatrix(dim);
+>             for (int i = 0; i < dim; i++) {
+>                 sqrtM.setEntry(i, i, FastMath.sqrt(m.getEntry(i, i)));
+>             }
+>             return sqrtM;
+>         } else {
+269a278
+>     }

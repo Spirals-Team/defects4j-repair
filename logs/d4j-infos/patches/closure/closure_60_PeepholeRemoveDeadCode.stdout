@@ -1,0 +1,54 @@
+137c137
+<     Node result = trySimpilifyUnusedResult(subtree.getFirstChild());
+---
+>     Node result = trySimplifyUnusedResult(subtree.getFirstChild());
+158,159c158,159
+<   private Node trySimpilifyUnusedResult(Node n) {
+<     return trySimpilifyUnusedResult(n, true);
+---
+>   private Node trySimplifyUnusedResult(Node n) {
+>     return trySimplifyUnusedResult(n, true);
+169c169
+<   private Node trySimpilifyUnusedResult(Node n, boolean removeUnused) {
+---
+>   private Node trySimplifyUnusedResult(Node n, boolean removeUnused) {
+175,176c175,176
+<         Node trueNode = trySimpilifyUnusedResult(n.getFirstChild().getNext());
+<         Node falseNode = trySimpilifyUnusedResult(n.getLastChild());
+---
+>         Node trueNode = trySimplifyUnusedResult(n.getFirstChild().getNext());
+>         Node falseNode = trySimplifyUnusedResult(n.getLastChild());
+190c190
+<           result = trySimpilifyUnusedResult(n.getFirstChild());
+---
+>           result = trySimplifyUnusedResult(n.getFirstChild());
+201c201
+<         Node conditionalResultNode = trySimpilifyUnusedResult(
+---
+>         Node conditionalResultNode = trySimplifyUnusedResult(
+207c207
+<           result = trySimpilifyUnusedResult(n.getFirstChild());
+---
+>           result = trySimplifyUnusedResult(n.getFirstChild());
+220,221c220,221
+<         Node left = trySimpilifyUnusedResult(n.getFirstChild());
+<         Node right = trySimpilifyUnusedResult(n.getLastChild());
+---
+>         Node left = trySimplifyUnusedResult(n.getFirstChild());
+>         Node right = trySimplifyUnusedResult(n.getLastChild());
+240c240
+<             c = trySimpilifyUnusedResult(c);
+---
+>             c = trySimplifyUnusedResult(c);
+446c446
+<     left = trySimpilifyUnusedResult(left);
+---
+>     left = trySimplifyUnusedResult(left);
+783c783
+<       init = trySimpilifyUnusedResult(init, false);
+---
+>       init = trySimplifyUnusedResult(init, false);
+787c787
+<       increment = trySimpilifyUnusedResult(increment, false);
+---
+>       increment = trySimplifyUnusedResult(increment, false);

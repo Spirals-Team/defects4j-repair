@@ -1,0 +1,8 @@
+124c124,126
+<       for (Node c = node.getFirstChild(); c != null; c = c.getNext()) {
+---
+>       Node c = node.getFirstChild();
+>       while(c != null) {
+>         Node next = c.getNext();
+125a128
+>         c = next;

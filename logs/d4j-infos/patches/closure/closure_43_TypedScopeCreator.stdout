@@ -1,0 +1,56 @@
+410a411,422
+>      * Object literals with a @lends annotation aren't analyzed until we
+>      * reach the root of the statement they're defined in.
+>      *
+>      * This ensures that if there are any @lends annotations on the object
+>      * literals, the type on the @lends annotation resolves correctly.
+>      *
+>      * For more information, see
+>      * http://code.google.com/p/closure-compiler/issues/detail?id=314
+>      */
+>     private List<Node> lentObjectLiterals = null;
+> 
+>     /**
+533a546,554
+> 
+>       // Analyze any @lends object literals in this statement.
+>       if (n.getParent() != null && NodeUtil.isStatement(n) &&
+>           lentObjectLiterals != null) {
+>         for (Node objLit : lentObjectLiterals) {
+>           defineObjectLiteral(objLit);
+>         }
+>         lentObjectLiterals.clear();
+>       }
+567c588,597
+<           defineObjectLiteral(t, n);
+---
+>           JSDocInfo info = n.getJSDocInfo();
+>           if (info != null &&
+>               info.getLendsName() != null) {
+>             if (lentObjectLiterals == null) {
+>               lentObjectLiterals = Lists.newArrayList();
+>             }
+>             lentObjectLiterals.add(n);
+>           } else {
+>             defineObjectLiteral(n);
+>           }
+575c605
+<     private void defineObjectLiteral(NodeTraversal t, Node objectLit) {
+---
+>     private void defineObjectLiteral(Node objectLit) {
+619c649
+<           t, objectLit, ObjectType.cast(objectLit.getJSType()), !createdEnumType);
+---
+>           objectLit, ObjectType.cast(objectLit.getJSType()), !createdEnumType);
+631c661
+<         NodeTraversal t, Node objLit, ObjectType objLitType,
+---
+>         Node objLit, ObjectType objLitType,
+639c669
+<             getDeclaredType(t.getSourceName(), info, keyNode, value);
+---
+>             getDeclaredType(keyNode.getSourceFileName(), info, keyNode, value);
+656c686
+<           boolean isExtern = t.getInput() != null && t.getInput().isExtern();
+---
+>           boolean isExtern = keyNode.isFromExterns();

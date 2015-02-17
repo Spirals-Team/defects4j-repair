@@ -1,0 +1,13 @@
+114,118d113
+<             // check diagonal element
+<             if (lTData[i][i] < absolutePositivityThreshold) {
+<                 throw new NotPositiveDefiniteMatrixException();
+<             }
+< 
+136a132,137
+> 
+>             // check diagonal element
+>             if (ltI[i] < absolutePositivityThreshold) {
+>                 throw new NotPositiveDefiniteMatrixException();
+>             }
+> 

@@ -1,0 +1,10 @@
+284a285
+>         Context rhsContext = getContextForNoInOperator(context);
+287c288
+<         addExpr(first.getNext(), 1, Context.OTHER);
+---
+>         addExpr(first.getNext(), 1, rhsContext);
+289c290
+<         addExpr(last, 1, Context.OTHER);
+---
+>         addExpr(last, 1, rhsContext);

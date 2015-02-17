@@ -1,0 +1,7 @@
+311a312,313
+>     /** 2^53 - double numbers this large must be even. */
+>     private static final double TWO_POWER_53 = 2 * TWO_POWER_52;
+1540c1542
+<             if (y >= TWO_POWER_52 || y <= -TWO_POWER_52) {
+---
+>             if (y >= TWO_POWER_53 || y <= -TWO_POWER_53) {

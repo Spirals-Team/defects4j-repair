@@ -1,0 +1,7 @@
+322a323,328
+>                 if (c2 == 0) {
+>                     // In some ill-conditioned cases (cf. MATH-844), the guesser
+>                     // procedure cannot produce sensible results.
+>                     throw new MathIllegalStateException(LocalizedFormats.ZERO_DENOMINATOR);
+>                 }
+> 

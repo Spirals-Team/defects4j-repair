@@ -1,0 +1,14 @@
+2541a2542
+>             String best = null;
+2544,2545c2545,2546
+<                     bucket.setZone(DateTimeZone.forID(id));
+<                     return position + id.length();
+---
+>                 	if (best == null || id.length() > best.length()) {
+>                 		best = id;
+2547a2549,2553
+>             }
+>             if (best != null) {
+>                 bucket.setZone(DateTimeZone.forID(best));
+>                 return position + best.length();
+>             }

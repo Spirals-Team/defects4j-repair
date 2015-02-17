@@ -1,0 +1,12 @@
+147,149c147,148
+<     static Set<Object> getRegistry() {
+<         WeakHashMap<Object, Object> m = REGISTRY.get();
+<         return m == null ? Collections.<Object> emptySet() : m.keySet();
+---
+>     static Map<Object, Object> getRegistry() {
+>         return REGISTRY.get();
+164c163,164
+<         return getRegistry().contains(value);
+---
+>         Map<Object, Object> m = getRegistry();
+>         return m != null && m.containsKey(value);
