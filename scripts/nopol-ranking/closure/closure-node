@@ -2,8 +2,9 @@
 
 export PATH="~/defects4j/framework/bin:$PATH"
 
-cp -r ~/projects/chart/chart_${1}/ /tmp/
-cd /tmp/chart_${1}/
+cp -r ~/projects/closure/closure_${1}/ /tmp/
+
+cd /tmp/closure_${1}/
 defects4j compile
 
 lscpu | grep 'Architecture'
@@ -17,12 +18,12 @@ echo ""
 
 cp ~/nopol/nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar .
 
-time java -cp nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar fr.inria.lille.repair.Main ranking source/ build/:build-tests/:lib/servlet.jar:nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar
+time java -cp nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar fr.inria.lille.repair.Main ranking src/ build/classes/:build/test/:build/lib/rhino.jar:lib/protobuf-java.jar:lib/json.jar:nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar
 
 cd /tmp/
-rm -rf chart_${1}/
+rm -rf closure_${1}/
 
-cd ~/defects4j-nopol/logs/nopol-ranking/chart/
+cd ~/defects4j-nopol/logs/nopol-ranking/closure/
 
 #Cut log
 line=`grep -m 1 -n "^\/\*" stdout/chart_${1}.stdout | cut -f 1 -d :`

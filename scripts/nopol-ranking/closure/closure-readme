@@ -1,23 +1,23 @@
 #!/bin/bash
 
-cd ~/defects4j-nopol/logs/nopol-ranking/chart/
+cd ~/defects4j-nopol/logs/nopol-ranking/closure/
 
-echo '# Chart - Nopol ranking' > README.md
+echo '# Closure - Nopol ranking' > README.md
 echo "" >> README.md
 
 for bug in `seq 1 26`
 do
-  echo "Chart ${bug} nopol ranking readme"
+  echo "Closure ${bug} nopol ranking readme"
 
   echo "## Bug $bug" >> README.md
   echo "" >> README.md
-  modifiedSources=`grep -e '->' ~/defects4j-nopol/logs/d4j-infos/patches/chart/chart_$bug.stdout`
+  modifiedSources=`grep -e '->' ~/defects4j-nopol/logs/d4j-infos/patches/closure/closure_$bug.stdout`
 
-  nbModifiedSources=`grep -e '->' ~/defects4j-nopol/logs/d4j-infos/patches/chart/chart_$bug.stdout | wc -l`
+  nbModifiedSources=`grep -e '->' ~/defects4j-nopol/logs/d4j-infos/patches/closure/closure_$bug.stdout | wc -l`
   echo "- Nb. modified sources: $nbModifiedSources" >> README.md
   echo "" >> README.md
 
-  statementStart=`grep -m 1 -n "org" stdout/chart_${bug}.stdout | cut -f 1 -d :`
+  statementStart=`grep -m 1 -n "org" stdout/closure_${bug}.stdout | cut -f 1 -d :`
 
   if [[ ! $statementStart ]]; then
     statementStart=-1
@@ -25,7 +25,7 @@ do
 
   for index in `seq 1 $nbModifiedSources`
   do
-    modifiedSource=`grep -e '->' ~/defects4j-nopol/logs/d4j-infos/patches/chart/chart_$bug.stdout | sed -n ${index}p`
+    modifiedSource=`grep -e '->' ~/defects4j-nopol/logs/d4j-infos/patches/closure/closure_$bug.stdout | sed -n ${index}p`
 
     sourceName=`echo $modifiedSource | cut -f 2 -d '>' | cut -f 1 -d : | cut -f 1 -d . | tr / .`
 
@@ -36,10 +36,10 @@ do
 
     className=`echo $sourceName | tr . ' ' | awk '{print $NF}'`
     echo '```' >> README.md
-    cat ~/defects4j-nopol/logs/d4j-infos/patches/chart/chart_${bug}_${className}.stdout >> README.md
+    cat ~/defects4j-nopol/logs/d4j-infos/patches/closure/closure_${bug}_${className}.stdout >> README.md
     echo '```' >> README.md
-    deleted=`cat ~/defects4j-nopol/logs/d4j-infos/patches/chart/chart_${bug}_${className}.stdout | grep '<' | wc -l`
-    added=`cat ~/defects4j-nopol/logs/d4j-infos/patches/chart/chart_${bug}_${className}.stdout | grep '>' | wc -l`
+    deleted=`cat ~/defects4j-nopol/logs/d4j-infos/patches/closure/closure_${bug}_${className}.stdout | grep '<' | wc -l`
+    added=`cat ~/defects4j-nopol/logs/d4j-infos/patches/closure/closure_${bug}_${className}.stdout | grep '>' | wc -l`
     echo "" >> README.md
     echo "- Deleted lines: $deleted<br />" >> README.md
     echo "- Added lines: $added<br />" >> README.md
@@ -57,9 +57,9 @@ do
       unset nopolLine
       unset nopolLineNumber
 
-      nopolLine=`grep -m 1 $sourceName:$line stdout/chart_$bug.stdout`
+      nopolLine=`grep -m 1 $sourceName:$line stdout/closure_$bug.stdout`
 
-      nopolLineNumber=`grep -m 1 -n "$nopolLine" stdout/chart_$bug.stdout | cut -f 1 -d :`
+      nopolLineNumber=`grep -m 1 -n "$nopolLine" stdout/closure_$bug.stdout | cut -f 1 -d :`
 
       if [[ $nopolLineNumber ]]; then
         let "rank=($nopolLineNumber-$statementStart)+1"
