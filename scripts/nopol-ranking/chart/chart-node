@@ -18,10 +18,15 @@ echo ""
 cp ~/nopol/nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar .
 
 if [[ $1 -lt 5 ]]; then
-  time java -cp nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar fr.inria.lille.repair.Main ranking source/ build/:build-tests/:lib/servlet.jar:lib/iText-2.1.4.jar:lib/junit.jar:nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar
+  time java -cp nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar fr.inria.lille.repair.Main ranking source/ build/:build-tests/:lib/servlet.jar:lib/iText-2.1.4.jar:lib/junit.jar:nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar;
 else
-  time java -cp nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar fr.inria.lille.repair.Main ranking source/ build/:build-tests/:lib/servlet.jar:lib/itext-2.1.4.jar:lib/junit.jar:nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar
+  if [[ $1 -lt 20 ]]; then
+    time java -cp nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar fr.inria.lille.repair.Main ranking source/ build/:build-tests/:lib/servlet.jar:lib/itext-2.0.6.jar:lib/junit.jar:nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar;
+  else
+    time java -cp nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar fr.inria.lille.repair.Main ranking source/ build/:build-tests/:lib/servlet.jar:lib/itext-2.0.2.jar:lib/junit.jar:nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar;
+  fi
 fi
+
 cd /tmp/
 rm -rf chart_${1}/
 
