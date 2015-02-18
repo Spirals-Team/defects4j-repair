@@ -137,11 +137,8 @@
 - Added lines: 8<br />
 - Diff added/deleted: 7
 
-| Line | Nopol log | Nopol rank |
-|------|-----------|------|
-| 546 | org.jfree.data.xy.XYSeries:546 -> 0.5 (ep: 6, ef: 2, np: 4073, nf: 0) | 8 |
 
-- Nb. undetected lines: 1/2 ( 543 )
+- Nb. undetected lines: 2/2 ( 543 546 )
 
 ## Bug 6
 
@@ -183,13 +180,8 @@
 - Added lines: 10<br />
 - Diff added/deleted: -1
 
-| Line | Nopol log | Nopol rank |
-|------|-----------|------|
-| 105 | org.jfree.chart.util.ShapeList:105 -> 0.09470274476207569 (ep: 442, ef: 4, np: 3343, nf: 0) | 54 |
-| 113 | org.jfree.chart.util.ShapeList:113 -> 0.09470274476207569 (ep: 442, ef: 4, np: 3343, nf: 0) | 56 |
-| 114 | org.jfree.chart.util.ShapeList:114 -> 0.09470274476207569 (ep: 442, ef: 4, np: 3343, nf: 0) | 57 |
 
-- Nb. undetected lines: 7/10 ( 99 106 107 108 112 116 117 )
+- Nb. undetected lines: 10/10 ( 99 105 106 107 108 112 113 114 116 117 )
 
 ## Bug 7
 
@@ -212,12 +204,8 @@
 - Added lines: 2<br />
 - Diff added/deleted: 0
 
-| Line | Nopol log | Nopol rank |
-|------|-----------|------|
-| 300 | org.jfree.data.time.TimePeriodValues:300 -> 0.2773500981126146 (ep: 24, ef: 2, np: 3615, nf: 0) | 39 |
-| 302 | org.jfree.data.time.TimePeriodValues:302 -> 0.2773500981126146 (ep: 24, ef: 2, np: 3615, nf: 0) | 40 |
 
-- Nb. undetected lines: 0/2
+- Nb. undetected lines: 2/2 ( 300 302 )
 
 ## Bug 8
 
@@ -274,11 +262,8 @@
 - Added lines: 6<br />
 - Diff added/deleted: -3
 
-| Line | Nopol log | Nopol rank |
-|------|-----------|------|
-| 944 | org.jfree.data.time.TimeSeries:944 -> 0.7071067811865475 (ep: 2, ef: 2, np: 3637, nf: 0) | 13 |
 
-- Nb. undetected lines: 7/8 ( 677 973 974 975 979 980 981 )
+- Nb. undetected lines: 8/8 ( 677 944 973 974 975 979 980 981 )
 
 ## Bug 10
 
@@ -306,11 +291,8 @@
 - Added lines: 9<br />
 - Diff added/deleted: 8
 
-| Line | Nopol log | Nopol rank |
-|------|-----------|------|
-| 58 | org.jfree.chart.imagemap.StandardToolTipTagFragmentGenerator:58 -> 1.0 (ep: 0, ef: 2, np: 3623, nf: 0) | 2 |
 
-- Nb. undetected lines: 1/2 ( 50 )
+- Nb. undetected lines: 2/2 ( 50 58 )
 
 ###  org.jfree.chart.imagemap.OverLIBToolTipTagFragmentGenerator
 
@@ -420,11 +402,8 @@
 - Added lines: 1<br />
 - Diff added/deleted: 0
 
-| Line | Nopol log | Nopol rank |
-|------|-----------|------|
-| 275 | org.jfree.chart.util.ShapeUtilities:275 -> 0.25 (ep: 30, ef: 2, np: 3589, nf: 0) | 5 |
 
-- Nb. undetected lines: 0/1
+- Nb. undetected lines: 1/1 ( 275 )
 
 ## Bug 12
 
@@ -443,11 +422,8 @@
 - Added lines: 1<br />
 - Diff added/deleted: 0
 
-| Line | Nopol log | Nopol rank |
-|------|-----------|------|
-| 145 | org.jfree.chart.plot.MultiplePiePlot:145 -> 0.5 (ep: 6, ef: 2, np: 3605, nf: 0) | 14 |
 
-- Nb. undetected lines: 0/1
+- Nb. undetected lines: 1/1 ( 145 )
 
 ## Bug 13
 
@@ -735,20 +711,8 @@
 - Added lines: 79<br />
 - Diff added/deleted: -45
 
-| Line | Nopol log | Nopol rank |
-|------|-----------|------|
-| 172 | org.jfree.chart.block.BorderArrangement:172 -> 0.13736056394868904 (ep: 104, ef: 2, np: 3491, nf: 0) | 92 |
-| 298 | org.jfree.chart.block.BorderArrangement:298 -> 1.0 (ep: 0, ef: 2, np: 3595, nf: 0) | 8 |
-| 312 | org.jfree.chart.block.BorderArrangement:312 -> 1.0 (ep: 0, ef: 2, np: 3595, nf: 0) | 11 |
-| 323 | org.jfree.chart.block.BorderArrangement:323 -> 1.0 (ep: 0, ef: 2, np: 3595, nf: 0) | 18 |
-| 337 | org.jfree.chart.block.BorderArrangement:337 -> 1.0 (ep: 0, ef: 2, np: 3595, nf: 0) | 25 |
-| 483 | org.jfree.chart.block.BorderArrangement:483 -> 1.0 (ep: 0, ef: 2, np: 3595, nf: 0) | 39 |
-| 493 | org.jfree.chart.block.BorderArrangement:493 -> 1.0 (ep: 0, ef: 2, np: 3595, nf: 0) | 44 |
-| 519 | org.jfree.chart.block.BorderArrangement:519 -> 1.0 (ep: 0, ef: 2, np: 3595, nf: 0) | 55 |
-| 524 | org.jfree.chart.block.BorderArrangement:524 -> 1.0 (ep: 0, ef: 2, np: 3595, nf: 0) | 57 |
-| 529 | org.jfree.chart.block.BorderArrangement:529 -> 1.0 (ep: 0, ef: 2, np: 3595, nf: 0) | 59 |
 
-- Nb. undetected lines: 114/124 ( 166 167 168 169 173 174 175 190 191 192 197 198 199 204 205 206 211 212 213 222 223 224 232 233 234 237 238 239 242 243 244 247 248 249 253 254 255 256 257 299 300 301 313 314 315 324 325 326 327 338 339 340 366 367 368 375 376 377 384 385 386 393 394 395 405 406 407 418 419 420 423 424 425 428 429 430 433 434 435 439 440 441 442 443 463 464 465 466 467 473 474 475 476 477 484 485 486 487 494 495 496 497 509 510 511 514 515 516 520 521 525 526 530 531 )
+- Nb. undetected lines: 124/124 ( 166 167 168 169 172 173 174 175 190 191 192 197 198 199 204 205 206 211 212 213 222 223 224 232 233 234 237 238 239 242 243 244 247 248 249 253 254 255 256 257 298 299 300 301 312 313 314 315 323 324 325 326 327 337 338 339 340 366 367 368 375 376 377 384 385 386 393 394 395 405 406 407 418 419 420 423 424 425 428 429 430 433 434 435 439 440 441 442 443 463 464 465 466 467 473 474 475 476 477 483 484 485 486 487 493 494 495 496 497 509 510 511 514 515 516 519 520 521 524 525 526 529 530 531 )
 
 ## Bug 14
 
@@ -823,11 +787,8 @@
 - Added lines: 5<br />
 - Diff added/deleted: 5
 
-| Line | Nopol log | Nopol rank |
-|------|-----------|------|
-| 2050 | org.jfree.chart.plot.PiePlot:2050 -> 0.5773502691896258 (ep: 4, ef: 2, np: 3573, nf: 0) | 28 |
 
-- Nb. undetected lines: 2/3 ( 1377 2052 )
+- Nb. undetected lines: 3/3 ( 1377 2050 2052 )
 
 ## Bug 16
 
@@ -852,13 +813,8 @@
 - Added lines: 3<br />
 - Diff added/deleted: 0
 
-| Line | Nopol log | Nopol rank |
-|------|-----------|------|
-| 207 | org.jfree.data.category.DefaultIntervalCategoryDataset:207 -> 0.7559289460184544 (ep: 12, ef: 16, np: 3547, nf: 0) | 1 |
-| 208 | org.jfree.data.category.DefaultIntervalCategoryDataset:208 -> 0.7559289460184544 (ep: 12, ef: 16, np: 3547, nf: 0) | 2 |
-| 338 | org.jfree.data.category.DefaultIntervalCategoryDataset:338 -> 0.35355339059327373 (ep: 0, ef: 2, np: 3559, nf: 14) | 24 |
 
-- Nb. undetected lines: 0/3
+- Nb. undetected lines: 3/3 ( 207 208 338 )
 
 ## Bug 17
 
@@ -878,11 +834,8 @@
 - Added lines: 2<br />
 - Diff added/deleted: 1
 
-| Line | Nopol log | Nopol rank |
-|------|-----------|------|
-| 857 | org.jfree.data.time.TimeSeries:857 -> 0.5773502691896258 (ep: 4, ef: 2, np: 3493, nf: 0) | 2 |
 
-- Nb. undetected lines: 0/1
+- Nb. undetected lines: 1/1 ( 857 )
 
 ## Bug 18
 
@@ -919,12 +872,8 @@
 - Added lines: 15<br />
 - Diff added/deleted: 12
 
-| Line | Nopol log | Nopol rank |
-|------|-----------|------|
-| 452 | org.jfree.data.DefaultKeyedValues2D:452 -> 0.7071067811865475 (ep: 0, ef: 4, np: 3487, nf: 4) | 11 |
-| 454 | org.jfree.data.DefaultKeyedValues2D:454 -> 0.7071067811865475 (ep: 0, ef: 4, np: 3487, nf: 4) | 13 |
 
-- Nb. undetected lines: 3/5 ( 442 445 449 )
+- Nb. undetected lines: 5/5 ( 442 445 449 452 454 )
 
 ###  org.jfree.data.DefaultKeyedValues
 
@@ -957,14 +906,8 @@
 - Added lines: 7<br />
 - Diff added/deleted: -3
 
-| Line | Nopol log | Nopol rank |
-|------|-----------|------|
-| 320 | org.jfree.data.DefaultKeyedValues:320 -> 1.0 (ep: 0, ef: 8, np: 3487, nf: 0) | 3 |
-| 323 | org.jfree.data.DefaultKeyedValues:323 -> 1.0 (ep: 0, ef: 8, np: 3487, nf: 0) | 4 |
-| 336 | org.jfree.data.DefaultKeyedValues:336 -> 1.0 (ep: 0, ef: 8, np: 3487, nf: 0) | 6 |
-| 337 | org.jfree.data.DefaultKeyedValues:337 -> 1.0 (ep: 0, ef: 8, np: 3487, nf: 0) | 7 |
 
-- Nb. undetected lines: 6/10 ( 318 319 326 327 332 338 )
+- Nb. undetected lines: 10/10 ( 318 319 320 323 326 327 332 336 337 338 )
 
 ## Bug 19
 
@@ -1027,11 +970,8 @@
 - Added lines: 2<br />
 - Diff added/deleted: 0
 
-| Line | Nopol log | Nopol rank |
-|------|-----------|------|
-| 95 | org.jfree.chart.plot.ValueMarker:95 -> 0.10259783520851541 (ep: 188, ef: 2, np: 3121, nf: 0) | 5 |
 
-- Nb. undetected lines: 1/2 ( 91 )
+- Nb. undetected lines: 2/2 ( 91 95 )
 
 ## Bug 21
 
@@ -1141,14 +1081,8 @@
 - Added lines: 63<br />
 - Diff added/deleted: 39
 
-| Line | Nopol log | Nopol rank |
-|------|-----------|------|
-| 149 | org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset:149 -> 0.30151134457776363 (ep: 20, ef: 2, np: 3281, nf: 0) | 21 |
-| 151 | org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset:151 -> 0.7071067811865475 (ep: 2, ef: 2, np: 3299, nf: 0) | 5 |
-| 153 | org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset:153 -> 0.30151134457776363 (ep: 20, ef: 2, np: 3281, nf: 0) | 22 |
-| 155 | org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset:155 -> 0.7071067811865475 (ep: 2, ef: 2, np: 3299, nf: 0) | 6 |
 
-- Nb. undetected lines: 15/19 ( 123 124 127 128 137 138 140 141 150 152 154 157 188 192 737 )
+- Nb. undetected lines: 19/19 ( 123 124 127 128 137 138 140 141 149 150 151 152 153 154 155 157 188 192 737 )
 
 ## Bug 22
 
@@ -1362,16 +1296,8 @@
 - Added lines: 125<br />
 - Diff added/deleted: 69
 
-| Line | Nopol log | Nopol rank |
-|------|-----------|------|
-| 211 | org.jfree.data.KeyedObjects2D:211 -> 0.3651483716701107 (ep: 6, ef: 4, np: 3283, nf: 8) | 49 |
-| 213 | org.jfree.data.KeyedObjects2D:213 -> 0.3651483716701107 (ep: 6, ef: 4, np: 3283, nf: 8) | 51 |
-| 215 | org.jfree.data.KeyedObjects2D:215 -> 0.3651483716701107 (ep: 6, ef: 4, np: 3283, nf: 8) | 53 |
-| 217 | org.jfree.data.KeyedObjects2D:217 -> 0.3651483716701107 (ep: 6, ef: 4, np: 3283, nf: 8) | 54 |
-| 291 | org.jfree.data.KeyedObjects2D:291 -> 0.4082482904638631 (ep: 0, ef: 2, np: 3289, nf: 10) | 26 |
-| 313 | org.jfree.data.KeyedObjects2D:313 -> 0.5773502691896258 (ep: 0, ef: 4, np: 3289, nf: 8) | 4 |
 
-- Nb. undetected lines: 28/34 ( 204 205 207 210 218 225 226 228 229 238 239 241 242 244 264 266 267 271 272 276 278 286 288 295 297 305 307 309 )
+- Nb. undetected lines: 34/34 ( 204 205 207 210 211 213 215 217 218 225 226 228 229 238 239 241 242 244 264 266 267 271 272 276 278 286 288 291 295 297 305 307 309 313 )
 
 ## Bug 23
 
@@ -1486,11 +1412,8 @@
 - Added lines: 3<br />
 - Diff added/deleted: 1
 
-| Line | Nopol log | Nopol rank |
-|------|-----------|------|
-| 125 | org.jfree.chart.renderer.GrayPaintScale:125 -> 1.0 (ep: 0, ef: 2, np: 3251, nf: 0) | 3 |
 
-- Nb. undetected lines: 1/2 ( 118 )
+- Nb. undetected lines: 2/2 ( 118 125 )
 
 ## Bug 25
 
@@ -1529,16 +1452,8 @@
 - Added lines: 14<br />
 - Diff added/deleted: 12
 
-| Line | Nopol log | Nopol rank |
-|------|-----------|------|
-| 258 | org.jfree.chart.renderer.category.StatisticalBarRenderer:258 -> 0.7071067811865475 (ep: 0, ef: 4, np: 3235, nf: 4) | 37 |
-| 315 | org.jfree.chart.renderer.category.StatisticalBarRenderer:315 -> 0.7071067811865475 (ep: 0, ef: 4, np: 3235, nf: 4) | 57 |
-| 343 | org.jfree.chart.renderer.category.StatisticalBarRenderer:343 -> 0.7071067811865475 (ep: 0, ef: 4, np: 3235, nf: 4) | 70 |
-| 402 | org.jfree.chart.renderer.category.StatisticalBarRenderer:402 -> 0.5773502691896258 (ep: 2, ef: 4, np: 3233, nf: 4) | 143 |
-| 459 | org.jfree.chart.renderer.category.StatisticalBarRenderer:459 -> 0.5773502691896258 (ep: 2, ef: 4, np: 3233, nf: 4) | 163 |
-| 486 | org.jfree.chart.renderer.category.StatisticalBarRenderer:486 -> 0.5773502691896258 (ep: 2, ef: 4, np: 3233, nf: 4) | 176 |
 
-- Nb. undetected lines: 0/6
+- Nb. undetected lines: 6/6 ( 258 315 343 402 459 486 )
 
 ## Bug 26
 
@@ -1562,9 +1477,6 @@
 - Added lines: 4<br />
 - Diff added/deleted: 2
 
-| Line | Nopol log | Nopol rank |
-|------|-----------|------|
-| 1191 | org.jfree.chart.axis.Axis:1191 -> 0.917463421851129 (ep: 6, ef: 44, np: 3141, nf: 0) | 138 |
 
-- Nb. undetected lines: 2/3 ( 1192 1197 )
+- Nb. undetected lines: 3/3 ( 1191 1192 1197 )
 

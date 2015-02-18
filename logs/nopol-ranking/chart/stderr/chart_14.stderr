@@ -1,4 +1,28 @@
+java.lang.IllegalArgumentException: File does not exist in: 'lib/iText-2.1.4.jar'
+	at xxl.java.library.FileLibrary.fail(FileLibrary.java:129)
+	at xxl.java.library.FileLibrary.openFrom(FileLibrary.java:29)
+	at xxl.java.library.FileLibrary.urlFrom(FileLibrary.java:100)
+	at xxl.java.library.JavaLibrary.classpathFrom(JavaLibrary.java:84)
+	at fr.inria.lille.repair.Main.main(Main.java:179)
 
-real	1m4.889s
-user	1m7.696s
-sys	0m4.080s
+Usage: java fr.inria.lille.repair.Main
+                <repair|ranking> <source> <classpath> [<tests>]
+
+  <repair|ranking>
+        The nopol mode. The repair mode is used to generate patch. The ranking
+        mode is used to display suspicious statements (default: repair)
+
+  <source>
+        The source folder of the project.
+
+  <classpath>
+        The classpath of the project.
+
+  [<tests>]
+        Test classes
+
+
+real	0m0.142s
+user	0m0.156s
+sys	0m0.008s
+tail: +: invalid number of lines
