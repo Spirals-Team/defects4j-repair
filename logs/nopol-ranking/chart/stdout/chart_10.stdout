@@ -1,7 +1,18 @@
-Running ant (compile) ... OK
-Running ant (compile.tests) ... OK
-Architecture:          x86_64
-Thread(s) per core:    1
+/************************/
+/******** Tests *********/
+/************************/
+Executed tests:   3625
+Successful tests: 3623
+Failed tests:     2
 
-MemTotal:       16456132 kB
+/************************/
+/* Suspicious statement */
+/************************/
+org.jfree.chart.imagemap.StandardToolTipTagFragmentGenerator:47 -> 1.0 (ep: 0, ef: 2, np: 3623, nf: 0)
+org.jfree.chart.imagemap.StandardToolTipTagFragmentGenerator:58 -> 1.0 (ep: 0, ef: 2, np: 3623, nf: 0)
+
+
+real	1m20.835s
+user	1m18.201s
+sys	0m4.564s
 
