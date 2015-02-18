@@ -18,7 +18,7 @@ echo ""
 
 cp ~/nopol/nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar .
 
-time java -cp nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar fr.inria.lille.repair.Main ranking src/ build/classes/:build/test/:build/lib/rhino.jar:lib/protobuf-java.jar:lib/json.jar:nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar
+time java -cp nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar fr.inria.lille.repair.Main ranking src/ build/classes/:build/test/:build/lib/rhino.jar:lib/protobuf-java.jar:lib/junit.jar:lib/jsr305.jar:lib/json.jar:lib/jarjar.jar:lib/guava.jar:lib/caja-r4314.jar:lib/args4j.jar:lib/ant.jar:lib/ant-launcher.jar:nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar
 
 cd /tmp/
 rm -rf closure_${1}/
