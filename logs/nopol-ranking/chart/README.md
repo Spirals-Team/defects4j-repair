@@ -4,6 +4,8 @@
 
 - Nb. modified sources: 1
 
+- Nb. nopol ranking entries: 463
+
 ###  org.jfree.chart.renderer.category.AbstractCategoryItemRenderer
 
 ```
@@ -26,6 +28,8 @@
 ## Bug 2
 
 - Nb. modified sources: 1
+
+- Nb. nopol ranking entries: 165
 
 ###  org.jfree.data.general.DatasetUtilities
 
@@ -73,6 +77,8 @@
 
 - Nb. modified sources: 1
 
+- Nb. nopol ranking entries: 129
+
 ###  org.jfree.data.time.TimeSeries
 
 ```
@@ -93,6 +99,8 @@
 ## Bug 4
 
 - Nb. modified sources: 1
+
+- Nb. nopol ranking entries: 1882
 
 ###  org.jfree.chart.plot.XYPlot
 
@@ -116,6 +124,8 @@
 ## Bug 5
 
 - Nb. modified sources: 1
+
+- Nb. nopol ranking entries: 50
 
 ###  org.jfree.data.xy.XYSeries
 
@@ -146,6 +156,8 @@
 ## Bug 6
 
 - Nb. modified sources: 1
+
+- Nb. nopol ranking entries: 133
 
 ###  org.jfree.chart.util.ShapeList
 
@@ -195,6 +207,8 @@
 
 - Nb. modified sources: 1
 
+- Nb. nopol ranking entries: 121
+
 ###  org.jfree.data.time.TimePeriodValues
 
 ```
@@ -223,6 +237,8 @@
 
 - Nb. modified sources: 1
 
+- Nb. nopol ranking entries: 121
+
 ###  org.jfree.data.time.Week
 
 ```
@@ -242,6 +258,8 @@
 ## Bug 9
 
 - Nb. modified sources: 1
+
+- Nb. nopol ranking entries: 181
 
 ###  org.jfree.data.time.TimeSeries
 
@@ -283,6 +301,8 @@
 ## Bug 10
 
 - Nb. modified sources: 3
+
+- Nb. nopol ranking entries: 1
 
 ###  org.jfree.chart.imagemap.StandardToolTipTagFragmentGenerator
 
@@ -378,6 +398,8 @@
 
 - Nb. modified sources: 2
 
+- Nb. nopol ranking entries: 18
+
 ###  org.jfree.chart.util.SerialUtilities
 
 ```
@@ -430,6 +452,8 @@
 
 - Nb. modified sources: 1
 
+- Nb. nopol ranking entries: 338
+
 ###  org.jfree.chart.plot.MultiplePiePlot
 
 ```
@@ -452,6 +476,8 @@
 ## Bug 13
 
 - Nb. modified sources: 1
+
+- Nb. nopol ranking entries: 228
 
 ###  org.jfree.chart.block.BorderArrangement
 
@@ -754,6 +780,8 @@
 
 - Nb. modified sources: 2
 
+- Nb. nopol ranking entries: 360
+
 ###  org.jfree.chart.plot.CategoryPlot
 
 ```
@@ -806,6 +834,8 @@
 
 - Nb. modified sources: 1
 
+- Nb. nopol ranking entries: 877
+
 ###  org.jfree.chart.plot.PiePlot
 
 ```
@@ -832,6 +862,8 @@
 ## Bug 16
 
 - Nb. modified sources: 1
+
+- Nb. nopol ranking entries: 44
 
 ###  org.jfree.data.category.DefaultIntervalCategoryDataset
 
@@ -864,6 +896,8 @@
 
 - Nb. modified sources: 1
 
+- Nb. nopol ranking entries: 92
+
 ###  org.jfree.data.time.TimeSeries
 
 ```
@@ -887,6 +921,8 @@
 ## Bug 18
 
 - Nb. modified sources: 2
+
+- Nb. nopol ranking entries: 94
 
 ###  org.jfree.data.DefaultKeyedValues2D
 
@@ -970,6 +1006,8 @@
 
 - Nb. modified sources: 1
 
+- Nb. nopol ranking entries: 511
+
 ###  org.jfree.chart.plot.CategoryPlot
 
 ```
@@ -1010,6 +1048,8 @@
 
 - Nb. modified sources: 1
 
+- Nb. nopol ranking entries: 34
+
 ###  org.jfree.chart.plot.ValueMarker
 
 ```
@@ -1036,6 +1076,8 @@
 ## Bug 21
 
 - Nb. modified sources: 1
+
+- Nb. nopol ranking entries: 129
 
 ###  org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset
 
@@ -1153,6 +1195,8 @@
 ## Bug 22
 
 - Nb. modified sources: 1
+
+- Nb. nopol ranking entries: 96
 
 ###  org.jfree.data.KeyedObjects2D
 
@@ -1377,6 +1421,8 @@
 
 - Nb. modified sources: 1
 
+- Nb. nopol ranking entries: 217
+
 ###  org.jfree.chart.renderer.category.MinMaxCategoryRenderer
 
 ```
@@ -1468,6 +1514,8 @@
 
 - Nb. modified sources: 1
 
+- Nb. nopol ranking entries: 10
+
 ###  org.jfree.chart.renderer.GrayPaintScale
 
 ```
@@ -1495,6 +1543,8 @@
 ## Bug 25
 
 - Nb. modified sources: 1
+
+- Nb. nopol ranking entries: 3006
 
 ###  org.jfree.chart.renderer.category.StatisticalBarRenderer
 
@@ -1543,6 +1593,8 @@
 ## Bug 26
 
 - Nb. modified sources: 1
+
+- Nb. nopol ranking entries: 5120
 
 ###  org.jfree.chart.axis.Axis
 
