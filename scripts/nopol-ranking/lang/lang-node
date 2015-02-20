@@ -12,8 +12,10 @@ if [[ $1 -lt 21 ]]; then
   time java -cp nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar fr.inria.lille.repair.Main ranking src/main/java/ target/classes/:target/tests/:nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar
 elif [[ $1 -lt 36 ]]; then
   time java -cp nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar fr.inria.lille.repair.Main ranking src/main/java/ target/classes/:target/test-classes/:nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar
-else
+elif [[ $1 -lt 42 ]]; then
   time java -cp nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar fr.inria.lille.repair.Main ranking src/java/ target/classes/:target/test-classes/:nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar
+else
+  time java -cp nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar fr.inria.lille.repair.Main ranking src/java/ target/classes/:target/tests/:nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar
 fi
 
 cd /tmp/
