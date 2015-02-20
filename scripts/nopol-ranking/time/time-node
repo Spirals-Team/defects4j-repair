@@ -10,15 +10,6 @@ cp ~/nopol/nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar .
 
 time java -cp nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar fr.inria.lille.repair.Main ranking src/main/java/ target/classes/:target/tests-classes/:nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar
 
-lscpu | grep 'Architecture'
-lscpu | grep 'Processeur'
-lscpu | grep 'Thread'
-lscpu | grep 'Vitesse'
-lscpu | grep 'Cache'
-echo ""
-cat /proc/meminfo | grep 'MemTotal'
-echo ""
-
 cd /tmp/
 rm -rf time_${1}/
 
