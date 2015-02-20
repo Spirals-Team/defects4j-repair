@@ -235,25 +235,7 @@
 
 ## Bug 8
 
-- Nb. modified sources: 1
-
-- Nb. nopol ranking entries: 329
-
-###  org.jfree.data.time.Week
-
-```
-175c175
-<         this(time, RegularTimePeriod.DEFAULT_TIME_ZONE, Locale.getDefault());
----
->         this(time, zone, Locale.getDefault());
-```
-
-- Deleted lines: 1<br />
-- Added lines: 1<br />
-- Diff added/deleted: 0
-
-
-- Nb. undetected lines: 1/1 ( 175 )
+Ignored because of grid5000 bug.
 
 ## Bug 9
 
