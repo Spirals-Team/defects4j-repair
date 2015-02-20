@@ -237,7 +237,7 @@
 
 - Nb. modified sources: 1
 
-- Nb. nopol ranking entries: 121
+- Nb. nopol ranking entries: 329
 
 ###  org.jfree.data.time.Week
 
