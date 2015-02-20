@@ -26,10 +26,10 @@ rm -rf closure_${1}/
 cd ~/defects4j-nopol/logs/nopol-ranking/closure/
 
 #Cut log
-line=`grep -m 1 -n "^\/\*" stdout/chart_${1}.stdout | cut -f 1 -d :`
-tail -n +$line stdout/chart_${1}.stdout > chart_${1}_tmp.stdout
-mv chart_${1}_tmp.stdout stdout/chart_${1}.stdout
+line=`grep -m 1 -n "^\/\*" stdout/closure_${1}.stdout | cut -f 1 -d :`
+tail -n +$line stdout/closure_${1}.stdout > closure_${1}_tmp.stdout
+mv closure_${1}_tmp.stdout stdout/closure_${1}.stdout
 
 #Add time at the log end
-cat stderr/chart_${1}.stderr | tail -4 >> stdout/chart_${1}.stdout
-echo "" >> stdout/chart_${1}.stdout
+cat stderr/closure_${1}.stderr | tail -4 >> stdout/closure_${1}.stdout
+echo "" >> stdout/closure_${1}.stdout
