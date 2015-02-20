@@ -16,25 +16,5 @@ else
   time java -cp nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar fr.inria.lille.repair.Main ranking src/java/ target/classes/:target/test-classes/:nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar
 fi
 
-lscpu | grep 'Architecture'
-lscpu | grep 'Processeur'
-lscpu | grep 'Thread'
-lscpu | grep 'Vitesse'
-lscpu | grep 'Cache'
-echo ""
-cat /proc/meminfo | grep 'MemTotal'
-echo ""
-
 cd /tmp/
 rm -rf lang_${1}/
-
-cd ~/defects4j-nopol/logs/nopol-ranking/lang/
-
-#Cut log
-line=`grep -m 1 -n "^\/\*" stdout/lang_${1}.stdout | cut -f 1 -d :`
-tail -n +$line stdout/lang_${1}.stdout > lang_${1}_tmp.stdout
-mv lang_${1}_tmp.stdout stdout/lang_${1}.stdout
-
-#Add time at the log end
-cat stderr/lang_${1}.stderr | tail -4 >> stdout/lang_${1}.stdout
-echo "" >> stdout/lang_${1}.stdout

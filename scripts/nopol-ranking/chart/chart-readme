@@ -11,101 +11,106 @@ do
 
   echo "## Bug $bug" >> README.md
   echo "" >> README.md
-  modifiedSources=`grep -e '->' ~/defects4j-nopol/logs/d4j-infos/patches/chart/chart_$bug.stdout`
 
-  nbModifiedSources=`grep -e '->' ~/defects4j-nopol/logs/d4j-infos/patches/chart/chart_$bug.stdout | wc -l`
-  echo "- Nb. modified sources: $nbModifiedSources" >> README.md
-  echo "" >> README.md
+  if [[ $bug -eq 8 ]]; then
+    echo "Ignored because of grid5000 bug." >> README.md
+    echo "" >> README.md
+  else
+    modifiedSources=`grep -e '->' ~/defects4j-nopol/logs/d4j-infos/patches/chart/chart_$bug.stdout`
 
-  statementStart=`grep -m 1 -n "org" stdout/chart_${bug}.stdout | cut -f 1 -d :`
-  lastStatement=`grep -n "org" stdout/chart_${bug}.stdout | tail -1 | cut -f 1 -d :`
-  
-  if [[ statementStart ]]; then
-    if [[ lastStatement ]]; then
-      let "nbElements=$lastStatement-$statementStart"
-    else
-      nbElements=-1
-    fi
-  fi
-
-  echo "- Nb. nopol ranking entries: $nbElements" >> README.md
-  echo "" >> README.md
-
-  if [[ ! $statementStart ]]; then
-    statementStart=-1
-  fi
-
-  for index in `seq 1 $nbModifiedSources`
-  do
-    modifiedSource=`grep -e '->' ~/defects4j-nopol/logs/d4j-infos/patches/chart/chart_$bug.stdout | sed -n ${index}p`
-
-    sourceName=`echo $modifiedSource | cut -f 2 -d '>' | cut -f 1 -d : | cut -f 1 -d . | tr / .`
-
-    modifiedLines=`echo $modifiedSource | cut -f 2 -d :`
-
-    echo "### $sourceName" >> README.md
+    nbModifiedSources=`grep -e '->' ~/defects4j-nopol/logs/d4j-infos/patches/chart/chart_$bug.stdout | wc -l`
+    echo "- Nb. modified sources: $nbModifiedSources" >> README.md
     echo "" >> README.md
 
-    className=`echo $sourceName | tr . ' ' | awk '{print $NF}'`
-    echo '```' >> README.md
-    cat ~/defects4j-nopol/logs/d4j-infos/patches/chart/chart_${bug}_${className}.stdout >> README.md
-    echo '```' >> README.md
-    deleted=`cat ~/defects4j-nopol/logs/d4j-infos/patches/chart/chart_${bug}_${className}.stdout | grep '<' | wc -l`
-    added=`cat ~/defects4j-nopol/logs/d4j-infos/patches/chart/chart_${bug}_${className}.stdout | grep '>' | wc -l`
-    echo "" >> README.md
-    echo "- Deleted lines: $deleted<br />" >> README.md
-    echo "- Added lines: $added<br />" >> README.md
-    difference=0
-    let "difference=added-deleted"
-    echo "- Diff added/deleted: $difference" >> README.md
-    echo "" >> README.md
+    statementStart=`grep -m 1 -n "org" stdout/chart_${bug}.stdout | cut -f 1 -d :`
+    lastStatement=`grep -n "org" stdout/chart_${bug}.stdout | tail -1 | cut -f 1 -d :`
 
-    undetectedLines=0
-    undetectedLinesNumber=" "
-    headerTab=1
-    for line in $modifiedLines
-    do
-      unset rank
-      unset nopolLine
-      unset nopolLineNumber
-
-      nopolLine=`grep -m 1 $sourceName:$line stdout/chart_$bug.stdout`
-
-      nopolLineNumber=`grep -m 1 -n "$nopolLine" stdout/chart_$bug.stdout | cut -f 1 -d :`
-
-      if [[ $nopolLineNumber ]]; then
-        let "rank=($nopolLineNumber-$statementStart)+1"
-      fi
-
-      if [[ $nopolLine ]]; then
-        if [[ $headerTab ]]; then
-          echo "| Line | Nopol log | Nopol rank |" >> README.md
-          echo '|------|-----------|------|' >> README.md
-
-          unset headerTab
-        fi
-      fi
-
-      if [[ $nopolLine ]]; then
-        echo "| $line | $nopolLine | $rank |" >> README.md
+    if [[ statementStart ]]; then
+      if [[ lastStatement ]]; then
+        let "nbElements=$lastStatement-$statementStart"
       else
-        let "undetectedLines++"
-        undetectedLinesNumber="$undetectedLinesNumber$line "
+        nbElements=-1
       fi
-
-    done
-
-    echo "" >> README.md
-
-    if [[ $undetectedLines == 0 ]]; then
-      echo "- Nb. undetected lines: $undetectedLines/$(echo $modifiedLines | wc -w)" >> README.md
-    else
-      echo "- Nb. undetected lines: $undetectedLines/$(echo $modifiedLines | wc -w) ($undetectedLinesNumber)" >> README.md
     fi
 
+    echo "- Nb. nopol ranking entries: $nbElements" >> README.md
     echo "" >> README.md
-  done
 
+    if [[ ! $statementStart ]]; then
+      statementStart=-1
+    fi
+
+    for index in `seq 1 $nbModifiedSources`
+    do
+      modifiedSource=`grep -e '->' ~/defects4j-nopol/logs/d4j-infos/patches/chart/chart_$bug.stdout | sed -n ${index}p`
+
+      sourceName=`echo $modifiedSource | cut -f 2 -d '>' | cut -f 1 -d : | cut -f 1 -d . | tr / .`
+
+      modifiedLines=`echo $modifiedSource | cut -f 2 -d :`
+
+      echo "### $sourceName" >> README.md
+      echo "" >> README.md
+
+      className=`echo $sourceName | tr . ' ' | awk '{print $NF}'`
+      echo '```' >> README.md
+      cat ~/defects4j-nopol/logs/d4j-infos/patches/chart/chart_${bug}_${className}.stdout >> README.md
+      echo '```' >> README.md
+      deleted=`cat ~/defects4j-nopol/logs/d4j-infos/patches/chart/chart_${bug}_${className}.stdout | grep '<' | wc -l`
+      added=`cat ~/defects4j-nopol/logs/d4j-infos/patches/chart/chart_${bug}_${className}.stdout | grep '>' | wc -l`
+      echo "" >> README.md
+      echo "- Deleted lines: $deleted<br />" >> README.md
+      echo "- Added lines: $added<br />" >> README.md
+      difference=0
+      let "difference=added-deleted"
+      echo "- Diff added/deleted: $difference" >> README.md
+      echo "" >> README.md
+
+      undetectedLines=0
+      undetectedLinesNumber=" "
+      headerTab=1
+      for line in $modifiedLines
+      do
+        unset rank
+        unset nopolLine
+        unset nopolLineNumber
+
+        nopolLine=`grep -m 1 $sourceName:$line stdout/chart_$bug.stdout`
+
+        nopolLineNumber=`grep -m 1 -n "$nopolLine" stdout/chart_$bug.stdout | cut -f 1 -d :`
+
+        if [[ $nopolLineNumber ]]; then
+          let "rank=($nopolLineNumber-$statementStart)+1"
+        fi
+
+        if [[ $nopolLine ]]; then
+          if [[ $headerTab ]]; then
+            echo "| Line | Nopol log | Nopol rank |" >> README.md
+            echo '|------|-----------|------|' >> README.md
+
+            unset headerTab
+          fi
+        fi
+
+        if [[ $nopolLine ]]; then
+          echo "| $line | $nopolLine | $rank |" >> README.md
+        else
+          let "undetectedLines++"
+          undetectedLinesNumber="$undetectedLinesNumber$line "
+        fi
+
+      done
+
+      echo "" >> README.md
+
+      if [[ $undetectedLines == 0 ]]; then
+        echo "- Nb. undetected lines: $undetectedLines/$(echo $modifiedLines | wc -w)" >> README.md
+      else
+        echo "- Nb. undetected lines: $undetectedLines/$(echo $modifiedLines | wc -w) ($undetectedLinesNumber)" >> README.md
+      fi
+
+      echo "" >> README.md
+    done
+  done
 done
 
 echo 'Done.'

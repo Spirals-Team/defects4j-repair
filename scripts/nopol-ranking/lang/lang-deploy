@@ -12,6 +12,12 @@ do
   sleep 5
 done
 
+for bug in `seq 1 50`
+do
+  echo "Cleaning nopol ranking for lang_${bug} ..."
+  ~/defects4j-nopol/scripts/nopol-ranking/lang/lang-node-post $bug
+done
+
 for bug in `seq 51 65`
 do
   echo "Launching nopol ranking node for lang_${bug} ..."
@@ -22,6 +28,12 @@ while [ $(oarstat -u | grep rsommerard | wc -l) -gt 0 ]
 do
   echo "Lang nopol ranking node running: $(oarstat -u | grep rsommerard | wc -l)"
   sleep 5
+done
+
+for bug in `seq 51 65`
+do
+  echo "Cleaning nopol ranking for lang_${bug} ..."
+  ~/defects4j-nopol/scripts/nopol-ranking/lang/lang-node-post $bug
 done
 
 echo 'Done.'

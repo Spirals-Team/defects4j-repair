@@ -1,6 +1,13 @@
 #!/bin/bash
 
-for bug in `seq 1 26`
+#Zap chart 8 because of bug.
+for bug in `seq 1 7`
+do
+  echo "Launching nopol ranking node for chart_${bug} ..."
+  oarsub -l walltime=00:10:00 -O ~/defects4j-nopol/logs/nopol-ranking/chart/stdout/chart_${bug}.stdout -E ~/defects4j-nopol/logs/nopol-ranking/chart/stderr/chart_${bug}.stderr "~/defects4j-nopol/scripts/nopol-ranking/chart/chart-node ${bug}"
+done
+
+for bug in `seq 9 26`
 do
   echo "Launching nopol ranking node for chart_${bug} ..."
   oarsub -l walltime=00:10:00 -O ~/defects4j-nopol/logs/nopol-ranking/chart/stdout/chart_${bug}.stdout -E ~/defects4j-nopol/logs/nopol-ranking/chart/stderr/chart_${bug}.stderr "~/defects4j-nopol/scripts/nopol-ranking/chart/chart-node ${bug}"
