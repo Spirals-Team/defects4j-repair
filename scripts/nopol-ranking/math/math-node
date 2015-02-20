@@ -1,0 +1,34 @@
+#!/bin/bash
+
+export PATH="~/defects4j/framework/bin:$PATH"
+
+cp -r ~/projects/math/math_${1}/ /tmp/
+cd /tmp/math_${1}/
+defects4j compile
+
+cp ~/nopol/nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar .
+
+time java -cp nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar fr.inria.lille.repair.Main ranking src/main/java/ target/classes/:target/tests-classes/:nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar
+
+lscpu | grep 'Architecture'
+lscpu | grep 'Processeur'
+lscpu | grep 'Thread'
+lscpu | grep 'Vitesse'
+lscpu | grep 'Cache'
+echo ""
+cat /proc/meminfo | grep 'MemTotal'
+echo ""
+
+cd /tmp/
+rm -rf math_${1}/
+
+cd ~/defects4j-nopol/logs/nopol-ranking/math/
+
+#Cut log
+line=`grep -m 1 -n "^\/\*" stdout/math_${1}.stdout | cut -f 1 -d :`
+tail -n +$line stdout/math_${1}.stdout > math_${1}_tmp.stdout
+mv math_${1}_tmp.stdout stdout/math_${1}.stdout
+
+#Add time at the log end
+cat stderr/math_${1}.stderr | tail -4 >> stdout/math_${1}.stdout
+echo "" >> stdout/math_${1}.stdout

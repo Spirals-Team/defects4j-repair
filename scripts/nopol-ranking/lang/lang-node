@@ -8,7 +8,7 @@ defects4j compile
 
 cp ~/nopol/nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar .
 
-time java -cp nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar fr.inria.lille.repair.Main ranking source/ build/:build-tests/:nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar
+time java -cp nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar fr.inria.lille.repair.Main ranking src/main/java/ target/classes/:target/tests/:nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar
 
 lscpu | grep 'Architecture'
 lscpu | grep 'Processeur'
