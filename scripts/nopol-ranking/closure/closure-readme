@@ -18,6 +18,18 @@ do
   echo "" >> README.md
 
   statementStart=`grep -m 1 -n "org" stdout/closure_${bug}.stdout | cut -f 1 -d :`
+  lastStatement=`grep -n "org" stdout/closure_${bug}.stdout | tail -1 | cut -f 1 -d :`
+  
+  if [[ statementStart ]]; then
+    if [[ lastStatement ]]; then
+      let "nbElements=$lastStatement-$statementStart"
+    else
+      nbElements=-1
+    fi
+  fi
+
+  echo "- Nb. nopol ranking entries: $nbElements" >> README.md
+  echo "" >> README.md
 
   if [[ ! $statementStart ]]; then
     statementStart=-1
@@ -67,7 +79,7 @@ do
 
       if [[ $nopolLine ]]; then
         if [[ $headerTab ]]; then
-          echo '| Line | Nopol log | Nopol rank |' >> README.md
+          echo "| Line | Nopol log | Nopol rank |" >> README.md
           echo '|------|-----------|------|' >> README.md
 
           unset headerTab
