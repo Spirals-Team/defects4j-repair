@@ -4,7 +4,7 @@
 
 - Nb. modified sources: 2
 
-- Nb. nopol ranking entries: 378
+- Nb. nopol ranking entries: 139
 
 ###  org.joda.time.field.UnsupportedDurationField
 
@@ -21,8 +21,8 @@
 
 | Line | Nopol log | Nopol rank |
 |------|-----------|------|
-| 227 | org.joda.time.field.UnsupportedDurationField:227 -> 0.08119979429411502 (ep: 18, ef: 3, np: 12046, nf: 61) | 7 |
-| 228 | org.joda.time.field.UnsupportedDurationField:228 -> 0.08119979429411502 (ep: 18, ef: 3, np: 12046, nf: 61) | 8 |
+| 227 | org.joda.time.field.UnsupportedDurationField:227 -> 0.29277002188455997 (ep: 18, ef: 3, np: 12106, nf: 1) | 4 |
+| 228 | org.joda.time.field.UnsupportedDurationField:228 -> 0.29277002188455997 (ep: 18, ef: 3, np: 12106, nf: 1) | 5 |
 
 - Nb. undetected lines: 1/3 ( 229 )
 
@@ -51,8 +51,8 @@
 
 | Line | Nopol log | Nopol rank |
 |------|-----------|------|
-| 216 | org.joda.time.Partial:216 -> 0.01736833685729687 (ep: 456, ef: 3, np: 11608, nf: 61) | 266 |
-| 221 | org.joda.time.Partial:221 -> 0.0180923255062985 (ep: 420, ef: 3, np: 11644, nf: 61) | 249 |
+| 216 | org.joda.time.Partial:216 -> 0.06262242910851494 (ep: 456, ef: 3, np: 11668, nf: 1) | 29 |
+| 221 | org.joda.time.Partial:221 -> 0.06523280730534423 (ep: 420, ef: 3, np: 11704, nf: 1) | 20 |
 
 - Nb. undetected lines: 0/2
 
@@ -60,7 +60,7 @@
 
 - Nb. modified sources: 2
 
-- Nb. nopol ranking entries: 386
+- Nb. nopol ranking entries: 148
 
 ###  org.joda.time.field.UnsupportedDurationField
 
@@ -107,8 +107,8 @@
 
 | Line | Nopol log | Nopol rank |
 |------|-----------|------|
-| 218 | org.joda.time.Partial:218 -> 0.018156825980064073 (ep: 417, ef: 3, np: 11647, nf: 61) | 268 |
-| 224 | org.joda.time.Partial:224 -> 0.15191090506255 (ep: 3, ef: 3, np: 12061, nf: 61) | 1 |
+| 218 | org.joda.time.Partial:218 -> 0.05976143046671969 (ep: 417, ef: 3, np: 11707, nf: 1) | 44 |
+| 224 | org.joda.time.Partial:224 -> 0.5 (ep: 3, ef: 3, np: 12121, nf: 1) | 1 |
 
 - Nb. undetected lines: 2/4 ( 238 446 )
 
@@ -116,7 +116,7 @@
 
 - Nb. modified sources: 1
 
-- Nb. nopol ranking entries: 1085
+- Nb. nopol ranking entries: 896
 
 ###  org.joda.time.MutableDateTime
 
@@ -169,12 +169,12 @@
 
 | Line | Nopol log | Nopol rank |
 |------|-----------|------|
-| 640 | org.joda.time.MutableDateTime:640 -> 0.11396057645963795 (ep: 6, ef: 3, np: 12037, nf: 73) | 13 |
-| 661 | org.joda.time.MutableDateTime:661 -> 0.11396057645963795 (ep: 6, ef: 3, np: 12037, nf: 73) | 7 |
-| 703 | org.joda.time.MutableDateTime:703 -> 0.11396057645963795 (ep: 6, ef: 3, np: 12037, nf: 73) | 15 |
-| 724 | org.joda.time.MutableDateTime:724 -> 0.11396057645963795 (ep: 6, ef: 3, np: 12037, nf: 73) | 11 |
-| 765 | org.joda.time.MutableDateTime:765 -> 0.11396057645963795 (ep: 6, ef: 3, np: 12037, nf: 73) | 9 |
-| 786 | org.joda.time.MutableDateTime:786 -> 0.2637674806699987 (ep: 27, ef: 15, np: 12016, nf: 61) | 2 |
+| 640 | org.joda.time.MutableDateTime:640 -> 0.242535625036333 (ep: 6, ef: 3, np: 12097, nf: 13) | 13 |
+| 661 | org.joda.time.MutableDateTime:661 -> 0.242535625036333 (ep: 6, ef: 3, np: 12097, nf: 13) | 7 |
+| 703 | org.joda.time.MutableDateTime:703 -> 0.242535625036333 (ep: 6, ef: 3, np: 12097, nf: 13) | 15 |
+| 724 | org.joda.time.MutableDateTime:724 -> 0.242535625036333 (ep: 6, ef: 3, np: 12097, nf: 13) | 11 |
+| 765 | org.joda.time.MutableDateTime:765 -> 0.242535625036333 (ep: 6, ef: 3, np: 12097, nf: 13) | 9 |
+| 786 | org.joda.time.MutableDateTime:786 -> 0.5613608914238398 (ep: 27, ef: 15, np: 12076, nf: 1) | 2 |
 
 - Nb. undetected lines: 14/20 ( 638 659 680 682 701 722 763 784 815 817 846 848 879 881 )
 
@@ -182,7 +182,7 @@
 
 - Nb. modified sources: 1
 
-- Nb. nopol ranking entries: 403
+- Nb. nopol ranking entries: 156
 
 ###  org.joda.time.Partial
 
@@ -202,7 +202,7 @@
 
 | Line | Nopol log | Nopol rank |
 |------|-----------|------|
-| 463 | org.joda.time.Partial:463 -> 0.04296689244236597 (ep: 72, ef: 3, np: 11911, nf: 61) | 61 |
+| 463 | org.joda.time.Partial:463 -> 0.15491933384829668 (ep: 72, ef: 3, np: 11971, nf: 1) | 30 |
 
 - Nb. undetected lines: 1/2 ( 462 )
 
@@ -210,7 +210,7 @@
 
 - Nb. modified sources: 1
 
-- Nb. nopol ranking entries: 476
+- Nb. nopol ranking entries: 241
 
 ###  org.joda.time.Period
 
@@ -251,11 +251,11 @@
 
 | Line | Nopol log | Nopol rank |
 |------|-----------|------|
-| 1623 | org.joda.time.Period:1623 -> 0.13456839120487699 (ep: 54, ef: 9, np: 11920, nf: 61) | 20 |
-| 1627 | org.joda.time.Period:1627 -> 0.16481194697959012 (ep: 33, ef: 9, np: 11941, nf: 61) | 7 |
-| 1628 | org.joda.time.Period:1628 -> 0.17801724872907798 (ep: 27, ef: 9, np: 11947, nf: 61) | 5 |
-| 1629 | org.joda.time.Period:1629 -> 0.17801724872907798 (ep: 27, ef: 9, np: 11947, nf: 61) | 6 |
-| 1630 | org.joda.time.Period:1630 -> 0.18593295227064197 (ep: 24, ef: 9, np: 11950, nf: 61) | 2 |
+| 1623 | org.joda.time.Period:1623 -> 0.34188172937891387 (ep: 54, ef: 9, np: 11980, nf: 1) | 20 |
+| 1627 | org.joda.time.Period:1627 -> 0.41871789467931186 (ep: 33, ef: 9, np: 12001, nf: 1) | 7 |
+| 1628 | org.joda.time.Period:1628 -> 0.45226701686664544 (ep: 27, ef: 9, np: 12007, nf: 1) | 5 |
+| 1629 | org.joda.time.Period:1629 -> 0.45226701686664544 (ep: 27, ef: 9, np: 12007, nf: 1) | 6 |
+| 1630 | org.joda.time.Period:1630 -> 0.4723774929733302 (ep: 24, ef: 9, np: 12010, nf: 1) | 2 |
 
 - Nb. undetected lines: 3/8 ( 1616 1632 1633 )
 
@@ -263,7 +263,7 @@
 
 - Nb. modified sources: 1
 
-- Nb. nopol ranking entries: 950
+- Nb. nopol ranking entries: 721
 
 ###  org.joda.time.chrono.GJChronology
 
@@ -305,7 +305,7 @@
 
 | Line | Nopol log | Nopol rank |
 |------|-----------|------|
-| 195 | org.joda.time.chrono.GJChronology:195 -> 0.02369044567464714 (ep: 208, ef: 3, np: 11715, nf: 73) | 467 |
+| 195 | org.joda.time.chrono.GJChronology:195 -> 0.05163212931161357 (ep: 208, ef: 3, np: 11775, nf: 13) | 336 |
 
 - Nb. undetected lines: 2/3 ( 978 1000 )
 
@@ -313,7 +313,7 @@
 
 - Nb. modified sources: 1
 
-- Nb. nopol ranking entries: 687
+- Nb. nopol ranking entries: 474
 
 ###  org.joda.time.format.DateTimeFormatter
 
@@ -332,7 +332,7 @@
 
 | Line | Nopol log | Nopol rank |
 |------|-----------|------|
-| 707 | org.joda.time.format.DateTimeFormatter:707 -> 0.08464147390303178 (ep: 69, ef: 6, np: 11809, nf: 61) | 16 |
+| 707 | org.joda.time.format.DateTimeFormatter:707 -> 0.2618614682831909 (ep: 69, ef: 6, np: 11869, nf: 1) | 13 |
 
 - Nb. undetected lines: 1/2 ( 712 )
 
@@ -340,7 +340,7 @@
 
 - Nb. modified sources: 1
 
-- Nb. nopol ranking entries: 483
+- Nb. nopol ranking entries: 197
 
 ###  org.joda.time.DateTimeZone
 
@@ -365,7 +365,7 @@
 
 | Line | Nopol log | Nopol rank |
 |------|-----------|------|
-| 279 | org.joda.time.DateTimeZone:279 -> 0.04801382997483599 (ep: 58, ef: 3, np: 11793, nf: 61) | 39 |
+| 279 | org.joda.time.DateTimeZone:279 -> 0.19205531989934396 (ep: 58, ef: 3, np: 11853, nf: 1) | 21 |
 
 - Nb. undetected lines: 2/3 ( 281 286 )
 
@@ -373,7 +373,7 @@
 
 - Nb. modified sources: 1
 
-- Nb. nopol ranking entries: 492
+- Nb. nopol ranking entries: 198
 
 ###  org.joda.time.DateTimeZone
 
@@ -415,19 +415,18 @@
 
 | Line | Nopol log | Nopol rank |
 |------|-----------|------|
-| 35 | org.joda.time.DateTimeZone:358 -> 0.03731389463287459 (ep: 98, ef: 3, np: 11753, nf: 61) | 75 |
-| 95 | org.joda.time.DateTimeZone:955 -> 0.01047747667925836 (ep: 1278, ef: 3, np: 10573, nf: 61) | 446 |
-| 262 | org.joda.time.DateTimeZone:262 -> 0.04801382997483599 (ep: 58, ef: 3, np: 11793, nf: 61) | 40 |
-| 264 | org.joda.time.DateTimeZone:264 -> 0.08838834764831845 (ep: 15, ef: 3, np: 11836, nf: 61) | 6 |
-| 266 | org.joda.time.DateTimeZone:266 -> 0.05357142857142857 (ep: 46, ef: 3, np: 11805, nf: 61) | 30 |
+| 35 | org.joda.time.DateTimeZone:358 -> 0.14301938838683884 (ep: 107, ef: 3, np: 11804, nf: 1) | 34 |
+| 262 | org.joda.time.DateTimeZone:262 -> 0.19205531989934396 (ep: 58, ef: 3, np: 11853, nf: 1) | 22 |
+| 264 | org.joda.time.DateTimeZone:264 -> 0.3535533905932738 (ep: 15, ef: 3, np: 11896, nf: 1) | 3 |
+| 266 | org.joda.time.DateTimeZone:266 -> 0.21428571428571427 (ep: 46, ef: 3, np: 11865, nf: 1) | 18 |
 
-- Nb. undetected lines: 3/8 ( 256 278 281 )
+- Nb. undetected lines: 4/8 ( 95 256 278 281 )
 
 ## Bug 10
 
 - Nb. modified sources: 1
 
-- Nb. nopol ranking entries: 665
+- Nb. nopol ranking entries: 456
 
 ###  org.joda.time.base.BaseSingleFieldPeriod
 
@@ -447,7 +446,7 @@
 
 | Line | Nopol log | Nopol rank |
 |------|-----------|------|
-| 103 | org.joda.time.base.BaseSingleFieldPeriod:103 -> 0.12216944435630522 (ep: 30, ef: 6, np: 11770, nf: 61) | 14 |
+| 103 | org.joda.time.base.BaseSingleFieldPeriod:103 -> 0.3779644730092272 (ep: 30, ef: 6, np: 11830, nf: 1) | 12 |
 
 - Nb. undetected lines: 1/2 ( 50 )
 
@@ -455,7 +454,7 @@
 
 - Nb. modified sources: 1
 
-- Nb. nopol ranking entries: 757
+- Nb. nopol ranking entries: 495
 
 ###  org.joda.time.tz.ZoneInfoCompiler
 
@@ -483,7 +482,7 @@
 
 - Nb. modified sources: 2
 
-- Nb. nopol ranking entries: 529
+- Nb. nopol ranking entries: 318
 
 ###  org.joda.time.LocalDateTime
 
@@ -541,7 +540,7 @@
 
 - Nb. modified sources: 1
 
-- Nb. nopol ranking entries: 498
+- Nb. nopol ranking entries: 243
 
 ###  org.joda.time.format.PeriodFormatterBuilder
 
@@ -571,7 +570,7 @@
 
 - Nb. modified sources: 1
 
-- Nb. nopol ranking entries: 703
+- Nb. nopol ranking entries: 491
 
 ###  org.joda.time.chrono.BasicMonthOfYearDateTimeField
 
@@ -596,7 +595,7 @@
 
 - Nb. modified sources: 1
 
-- Nb. nopol ranking entries: 413
+- Nb. nopol ranking entries: 143
 
 ###  org.joda.time.field.FieldUtils
 
@@ -637,9 +636,9 @@
 
 | Line | Nopol log | Nopol rank |
 |------|-----------|------|
-| 137 | org.joda.time.field.FieldUtils:137 -> 0.029630442547297988 (ep: 150, ef: 3, np: 11470, nf: 64) | 123 |
-| 145 | org.joda.time.field.FieldUtils:145 -> 0.04149889683565515 (ep: 75, ef: 3, np: 11545, nf: 64) | 53 |
-| 146 | org.joda.time.field.FieldUtils:146 -> 0.04149889683565515 (ep: 75, ef: 3, np: 11545, nf: 64) | 54 |
+| 137 | org.joda.time.field.FieldUtils:137 -> 0.09078412990032037 (ep: 153, ef: 3, np: 11527, nf: 4) | 25 |
+| 145 | org.joda.time.field.FieldUtils:145 -> 0.12598815766974242 (ep: 78, ef: 3, np: 11602, nf: 4) | 22 |
+| 146 | org.joda.time.field.FieldUtils:146 -> 0.12598815766974242 (ep: 78, ef: 3, np: 11602, nf: 4) | 23 |
 
 - Nb. undetected lines: 7/10 ( 121 122 131 136 138 147 148 )
 
@@ -647,7 +646,7 @@
 
 - Nb. modified sources: 1
 
-- Nb. nopol ranking entries: 1076
+- Nb. nopol ranking entries: 879
 
 ###  org.joda.time.format.DateTimeFormatter
 
@@ -669,7 +668,7 @@
 
 - Nb. modified sources: 1
 
-- Nb. nopol ranking entries: 629
+- Nb. nopol ranking entries: 442
 
 ###  org.joda.time.DateTimeZone
 
@@ -721,11 +720,11 @@
 
 | Line | Nopol log | Nopol rank |
 |------|-----------|------|
-| 1164 | org.joda.time.DateTimeZone:1164 -> 0.12216944435630522 (ep: 6, ef: 3, np: 11581, nf: 64) | 5 |
-| 1165 | org.joda.time.DateTimeZone:1165 -> 0.12216944435630522 (ep: 6, ef: 3, np: 11581, nf: 64) | 6 |
-| 1166 | org.joda.time.DateTimeZone:1166 -> 0.12216944435630522 (ep: 6, ef: 3, np: 11581, nf: 64) | 7 |
-| 1169 | org.joda.time.DateTimeZone:1169 -> 0.12216944435630522 (ep: 6, ef: 3, np: 11581, nf: 64) | 8 |
-| 1170 | org.joda.time.DateTimeZone:1170 -> 0.12216944435630522 (ep: 6, ef: 3, np: 11581, nf: 64) | 9 |
+| 1164 | org.joda.time.DateTimeZone:1164 -> 0.3779644730092272 (ep: 6, ef: 3, np: 11641, nf: 4) | 5 |
+| 1165 | org.joda.time.DateTimeZone:1165 -> 0.3779644730092272 (ep: 6, ef: 3, np: 11641, nf: 4) | 6 |
+| 1166 | org.joda.time.DateTimeZone:1166 -> 0.3779644730092272 (ep: 6, ef: 3, np: 11641, nf: 4) | 7 |
+| 1169 | org.joda.time.DateTimeZone:1169 -> 0.3779644730092272 (ep: 6, ef: 3, np: 11641, nf: 4) | 8 |
+| 1170 | org.joda.time.DateTimeZone:1170 -> 0.3779644730092272 (ep: 6, ef: 3, np: 11641, nf: 4) | 9 |
 
 - Nb. undetected lines: 2/7 ( 1167 1171 )
 
@@ -733,7 +732,7 @@
 
 - Nb. modified sources: 1
 
-- Nb. nopol ranking entries: 462
+- Nb. nopol ranking entries: 233
 
 ###  org.joda.time.chrono.GJChronology
 
@@ -764,7 +763,7 @@
 
 | Line | Nopol log | Nopol rank |
 |------|-----------|------|
-| 363 | org.joda.time.chrono.GJChronology:363 -> 0.048545214628375105 (ep: 54, ef: 3, np: 11503, nf: 64) | 38 |
+| 363 | org.joda.time.chrono.GJChronology:363 -> 0.15018785229652767 (ep: 54, ef: 3, np: 11563, nf: 4) | 16 |
 
 - Nb. undetected lines: 1/2 ( 365 )
 
@@ -772,7 +771,7 @@
 
 - Nb. modified sources: 1
 
-- Nb. nopol ranking entries: 703
+- Nb. nopol ranking entries: 517
 
 ###  org.joda.time.DateTimeZone
 
@@ -789,7 +788,7 @@
 
 | Line | Nopol log | Nopol rank |
 |------|-----------|------|
-| 900 | org.joda.time.DateTimeZone:900 -> 0.00792462027202563 (ep: 2136, ef: 3, np: 9415, nf: 64) | 553 |
+| 900 | org.joda.time.DateTimeZone:900 -> 0.02451697264152958 (ep: 2136, ef: 3, np: 9475, nf: 4) | 297 |
 
 - Nb. undetected lines: 0/1
 
@@ -797,7 +796,7 @@
 
 - Nb. modified sources: 1
 
-- Nb. nopol ranking entries: 1140
+- Nb. nopol ranking entries: 946
 
 ###  org.joda.time.format.DateTimeFormatterBuilder
 
@@ -829,7 +828,7 @@
 
 - Nb. modified sources: 1
 
-- Nb. nopol ranking entries: 716
+- Nb. nopol ranking entries: 479
 
 ###  org.joda.time.tz.DefaultNameProvider
 
@@ -892,7 +891,7 @@
 
 - Nb. modified sources: 3
 
-- Nb. nopol ranking entries: 973
+- Nb. nopol ranking entries: 784
 
 ###  org.joda.time.Period
 
@@ -909,7 +908,7 @@
 
 | Line | Nopol log | Nopol rank |
 |------|-----------|------|
-| 382 | org.joda.time.Period:382 -> 0.0632139541241014 (ep: 93, ef: 6, np: 11351, nf: 85) | 249 |
+| 382 | org.joda.time.Period:382 -> 0.10830607221477646 (ep: 93, ef: 6, np: 11411, nf: 25) | 208 |
 
 - Nb. undetected lines: 0/1
 
@@ -964,7 +963,7 @@
 
 - Nb. modified sources: 1
 
-- Nb. nopol ranking entries: 927
+- Nb. nopol ranking entries: 735
 
 ###  org.joda.time.DateTimeZone
 
@@ -1021,7 +1020,7 @@
 
 - Nb. modified sources: 1
 
-- Nb. nopol ranking entries: 1257
+- Nb. nopol ranking entries: 1087
 
 ###  org.joda.time.format.DateTimeParserBucket
 
@@ -1045,7 +1044,7 @@
 
 - Nb. modified sources: 1
 
-- Nb. nopol ranking entries: 1033
+- Nb. nopol ranking entries: 848
 
 ###  org.joda.time.DateTimeZone
 
@@ -1096,9 +1095,9 @@
 
 | Line | Nopol log | Nopol rank |
 |------|-----------|------|
-| 878 | org.joda.time.DateTimeZone:878 -> 0.020001185290545384 (ep: 2145, ef: 9, np: 9236, nf: 85) | 739 |
-| 880 | org.joda.time.DateTimeZone:880 -> 0.020001185290545384 (ep: 2145, ef: 9, np: 9236, nf: 85) | 740 |
-| 889 | org.joda.time.DateTimeZone:889 -> 0.037250557986495625 (ep: 66, ef: 3, np: 11315, nf: 91) | 423 |
+| 878 | org.joda.time.DateTimeZone:878 -> 0.0332567803013923 (ep: 2145, ef: 9, np: 9296, nf: 25) | 606 |
+| 880 | org.joda.time.DateTimeZone:880 -> 0.0332567803013923 (ep: 2145, ef: 9, np: 9296, nf: 25) | 607 |
+| 889 | org.joda.time.DateTimeZone:889 -> 0.06193801042615005 (ep: 66, ef: 3, np: 11375, nf: 31) | 389 |
 
 - Nb. undetected lines: 5/8 ( 869 870 872 873 894 )
 
@@ -1106,7 +1105,7 @@
 
 - Nb. modified sources: 2
 
-- Nb. nopol ranking entries: 1699
+- Nb. nopol ranking entries: 1529
 
 ###  org.joda.time.field.LenientDateTimeField
 
@@ -1168,7 +1167,7 @@
 
 - Nb. modified sources: 1
 
-- Nb. nopol ranking entries: 1429
+- Nb. nopol ranking entries: 1430
 
 ###  org.joda.time.format.PeriodFormatterBuilder
 
@@ -1185,7 +1184,7 @@
 
 | Line | Nopol log | Nopol rank |
 |------|-----------|------|
-| 800 | org.joda.time.format.PeriodFormatterBuilder:800 -> 0.06619436724610317 (ep: 23, ef: 3, np: 11185, nf: 81) | 624 |
+| 800 | org.joda.time.format.PeriodFormatterBuilder:800 -> 0.0657793514480272 (ep: 23, ef: 3, np: 11185, nf: 81) | 624 |
 
 - Nb. undetected lines: 1/2 ( 804 )
 
