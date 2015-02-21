@@ -1,10 +1,10 @@
-# Lang - Nopol ranking
+# Math - Nopol ranking
 
 ## Bug 1
 
 - Nb. modified sources: 2
 
-- Nb. nopol ranking entries: 38065
+- Nb. nopol ranking entries: 144
 
 ###  org.apache.commons.math3.fraction.BigFraction
 
@@ -21,8 +21,11 @@
 - Added lines: 5<br />
 - Diff added/deleted: 4
 
+| Line | Nopol log | Nopol rank |
+|------|-----------|------|
+| 303 | org.apache.commons.math3.fraction.BigFraction:303 -> 0.0472455591261534 (ep: 6, ef: 1, np: 5214, nf: 1) | 60 |
 
-- Nb. undetected lines: 1/1 ( 303 )
+- Nb. undetected lines: 0/1
 
 ###  org.apache.commons.math3.fraction.Fraction
 
@@ -49,14 +52,18 @@
 - Added lines: 10<br />
 - Diff added/deleted: 8
 
+| Line | Nopol log | Nopol rank |
+|------|-----------|------|
+| 207 | org.apache.commons.math3.fraction.Fraction:207 -> 0.01733438113203841 (ep: 51, ef: 1, np: 5169, nf: 1) | 109 |
+| 208 | org.apache.commons.math3.fraction.Fraction:208 -> 0.01733438113203841 (ep: 51, ef: 1, np: 5169, nf: 1) | 110 |
 
-- Nb. undetected lines: 4/4 ( 85 99 207 208 )
+- Nb. undetected lines: 2/4 ( 85 99 )
 
 ## Bug 2
 
 - Nb. modified sources: 1
 
-- Nb. nopol ranking entries: 37209
+- Nb. nopol ranking entries: 146
 
 ###  org.apache.commons.math3.distribution.HypergeometricDistribution
 
@@ -71,14 +78,17 @@
 - Added lines: 1<br />
 - Diff added/deleted: 0
 
+| Line | Nopol log | Nopol rank |
+|------|-----------|------|
+| 268 | org.apache.commons.math3.distribution.HypergeometricDistribution:268 -> 0.028903665650804 (ep: 18, ef: 1, np: 5176, nf: 0) | 3 |
 
-- Nb. undetected lines: 1/1 ( 268 )
+- Nb. undetected lines: 0/1
 
 ## Bug 3
 
 - Nb. modified sources: 1
 
-- Nb. nopol ranking entries: 31510
+- Nb. nopol ranking entries: 20
 
 ###  org.apache.commons.math3.util.MathArrays
 
@@ -102,7 +112,7 @@
 
 - Nb. modified sources: 2
 
-- Nb. nopol ranking entries: 39550
+- Nb. nopol ranking entries: 280
 
 ###  org.apache.commons.math3.geometry.euclidean.twod.SubLine
 
@@ -117,8 +127,11 @@
 - Added lines: 3<br />
 - Diff added/deleted: 3
 
+| Line | Nopol log | Nopol rank |
+|------|-----------|------|
+| 117 | org.apache.commons.math3.geometry.euclidean.twod.SubLine:117 -> 0.0472455591261534 (ep: 6, ef: 1, np: 5006, nf: 1) | 7 |
 
-- Nb. undetected lines: 1/1 ( 117 )
+- Nb. undetected lines: 0/1
 
 ###  org.apache.commons.math3.geometry.euclidean.threed.SubLine
 
@@ -133,14 +146,17 @@
 - Added lines: 3<br />
 - Diff added/deleted: 3
 
+| Line | Nopol log | Nopol rank |
+|------|-----------|------|
+| 113 | org.apache.commons.math3.geometry.euclidean.threed.SubLine:113 -> 0.0472455591261534 (ep: 6, ef: 1, np: 5006, nf: 1) | 3 |
 
-- Nb. undetected lines: 1/1 ( 113 )
+- Nb. undetected lines: 0/1
 
 ## Bug 5
 
 - Nb. modified sources: 1
 
-- Nb. nopol ranking entries: 20368
+- Nb. nopol ranking entries: 16
 
 ###  org.apache.commons.math3.complex.Complex
 
@@ -155,14 +171,17 @@
 - Added lines: 1<br />
 - Diff added/deleted: 0
 
+| Line | Nopol log | Nopol rank |
+|------|-----------|------|
+| 305 | org.apache.commons.math3.complex.Complex:305 -> 0.1259881576697424 (ep: 0, ef: 1, np: 4948, nf: 0) | 1 |
 
-- Nb. undetected lines: 1/1 ( 305 )
+- Nb. undetected lines: 0/1
 
 ## Bug 6
 
 - Nb. modified sources: 7
 
-- Nb. nopol ranking entries: 20698
+- Nb. nopol ranking entries: 2747
 
 ###  org.apache.commons.math3.optim.nonlinear.vector.jacobian.LevenbergMarquardtOptimizer
 
@@ -184,8 +203,12 @@
 - Added lines: 3<br />
 - Diff added/deleted: 0
 
+| Line | Nopol log | Nopol rank |
+|------|-----------|------|
+| 322 | org.apache.commons.math3.optim.nonlinear.vector.jacobian.LevenbergMarquardtOptimizer:322 -> 0.013386988815041648 (ep: 61, ef: 1, np: 4853, nf: 27) | 2384 |
+| 325 | org.apache.commons.math3.optim.nonlinear.vector.jacobian.LevenbergMarquardtOptimizer:325 -> 0.013386988815041648 (ep: 61, ef: 1, np: 4853, nf: 27) | 2386 |
 
-- Nb. undetected lines: 3/3 ( 322 325 489 )
+- Nb. undetected lines: 1/3 ( 489 )
 
 ###  org.apache.commons.math3.optim.BaseOptimizer
 
@@ -200,8 +223,11 @@
 - Added lines: 1<br />
 - Diff added/deleted: 0
 
+| Line | Nopol log | Nopol rank |
+|------|-----------|------|
+| 51 | org.apache.commons.math3.optim.BaseOptimizer:51 -> 0.19377278632539327 (ep: 204, ef: 28, np: 4710, nf: 0) | 669 |
 
-- Nb. undetected lines: 1/1 ( 51 )
+- Nb. undetected lines: 0/1
 
 ###  org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizer
 
@@ -215,8 +241,11 @@
 - Added lines: 2<br />
 - Diff added/deleted: 2
 
+| Line | Nopol log | Nopol rank |
+|------|-----------|------|
+| 387 | org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizer:387 -> 0.3975231959999626 (ep: 4, ef: 32, np: 4910, nf: -4) | 44 |
 
-- Nb. undetected lines: 1/1 ( 387 )
+- Nb. undetected lines: 0/1
 
 ###  org.apache.commons.math3.optim.nonlinear.vector.jacobian.GaussNewtonOptimizer
 
@@ -237,8 +266,13 @@
 - Added lines: 2<br />
 - Diff added/deleted: -1
 
+| Line | Nopol log | Nopol rank |
+|------|-----------|------|
+| 106 | org.apache.commons.math3.optim.nonlinear.vector.jacobian.GaussNewtonOptimizer:106 -> 0.019245008972987525 (ep: 29, ef: 1, np: 4885, nf: 27) | 2267 |
+| 108 | org.apache.commons.math3.optim.nonlinear.vector.jacobian.GaussNewtonOptimizer:108 -> 0.019245008972987525 (ep: 29, ef: 1, np: 4885, nf: 27) | 2269 |
+| 160 | org.apache.commons.math3.optim.nonlinear.vector.jacobian.GaussNewtonOptimizer:160 -> 0.020672455764868078 (ep: 25, ef: 1, np: 4889, nf: 27) | 2102 |
 
-- Nb. undetected lines: 3/3 ( 106 108 160 )
+- Nb. undetected lines: 0/3
 
 ###  org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizer
 
@@ -258,8 +292,12 @@
 - Added lines: 4<br />
 - Diff added/deleted: 2
 
+| Line | Nopol log | Nopol rank |
+|------|-----------|------|
+| 158 | org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizer:158 -> 0.16228816518671588 (ep: 19, ef: 8, np: 4895, nf: 20) | 878 |
+| 174 | org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizer:174 -> 0.16228816518671588 (ep: 19, ef: 8, np: 4895, nf: 20) | 887 |
 
-- Nb. undetected lines: 2/2 ( 158 174 )
+- Nb. undetected lines: 0/2
 
 ###  org.apache.commons.math3.optim.nonlinear.scalar.gradient.NonLinearConjugateGradientOptimizer
 
@@ -284,8 +322,14 @@
 - Added lines: 3<br />
 - Diff added/deleted: -1
 
+| Line | Nopol log | Nopol rank |
+|------|-----------|------|
+| 214 | org.apache.commons.math3.optim.nonlinear.scalar.gradient.NonLinearConjugateGradientOptimizer:214 -> 0.029235267310234306 (ep: 12, ef: 1, np: 4902, nf: 27) | 1738 |
+| 217 | org.apache.commons.math3.optim.nonlinear.scalar.gradient.NonLinearConjugateGradientOptimizer:217 -> 0.029235267310234306 (ep: 12, ef: 1, np: 4902, nf: 27) | 1740 |
+| 223 | org.apache.commons.math3.optim.nonlinear.scalar.gradient.NonLinearConjugateGradientOptimizer:223 -> 0.029235267310234306 (ep: 12, ef: 1, np: 4902, nf: 27) | 1745 |
+| 277 | org.apache.commons.math3.optim.nonlinear.scalar.gradient.NonLinearConjugateGradientOptimizer:277 -> 0.029235267310234306 (ep: 12, ef: 1, np: 4902, nf: 27) | 1773 |
 
-- Nb. undetected lines: 4/4 ( 214 217 223 277 )
+- Nb. undetected lines: 0/4
 
 ###  org.apache.commons.math3.optim.nonlinear.scalar.noderiv.PowellOptimizer
 
@@ -306,14 +350,18 @@
 - Added lines: 2<br />
 - Diff added/deleted: -1
 
+| Line | Nopol log | Nopol rank |
+|------|-----------|------|
+| 191 | org.apache.commons.math3.optim.nonlinear.scalar.noderiv.PowellOptimizer:191 -> 0.05270462766947299 (ep: 3, ef: 1, np: 4911, nf: 27) | 1543 |
+| 193 | org.apache.commons.math3.optim.nonlinear.scalar.noderiv.PowellOptimizer:193 -> 0.05270462766947299 (ep: 3, ef: 1, np: 4911, nf: 27) | 1544 |
 
-- Nb. undetected lines: 3/3 ( 191 193 227 )
+- Nb. undetected lines: 1/3 ( 227 )
 
 ## Bug 7
 
 - Nb. modified sources: 1
 
-- Nb. nopol ranking entries: 20309
+- Nb. nopol ranking entries: 956
 
 ###  org.apache.commons.math3.ode.AbstractIntegrator
 
@@ -354,14 +402,20 @@
 - Added lines: 12<br />
 - Diff added/deleted: 2
 
+| Line | Nopol log | Nopol rank |
+|------|-----------|------|
+| 344 | org.apache.commons.math3.ode.AbstractIntegrator:344 -> 0.029695693545824933 (ep: 17, ef: 1, np: 4915, nf: 0) | 30 |
+| 345 | org.apache.commons.math3.ode.AbstractIntegrator:345 -> 0.029695693545824933 (ep: 17, ef: 1, np: 4915, nf: 0) | 31 |
+| 361 | org.apache.commons.math3.ode.AbstractIntegrator:361 -> 0.0314970394174356 (ep: 15, ef: 1, np: 4917, nf: 0) | 10 |
+| 367 | org.apache.commons.math3.ode.AbstractIntegrator:367 -> 0.033671751485073696 (ep: 13, ef: 1, np: 4919, nf: 0) | 8 |
 
-- Nb. undetected lines: 10/10 ( 341 344 345 355 356 357 361 367 368 369 )
+- Nb. undetected lines: 6/10 ( 341 355 356 357 368 369 )
 
 ## Bug 8
 
 - Nb. modified sources: 1
 
-- Nb. nopol ranking entries: 12235
+- Nb. nopol ranking entries: 364
 
 ###  org.apache.commons.math3.distribution.DiscreteDistribution
 
@@ -386,14 +440,18 @@
 - Added lines: 4<br />
 - Diff added/deleted: 0
 
+| Line | Nopol log | Nopol rank |
+|------|-----------|------|
+| 19 | org.apache.commons.math3.distribution.DiscreteDistribution:190 -> 0.12803687993289598 (ep: 0, ef: 1, np: 4849, nf: 0) | 15 |
+| 187 | org.apache.commons.math3.distribution.DiscreteDistribution:187 -> 0.12803687993289598 (ep: 0, ef: 1, np: 4849, nf: 0) | 13 |
 
-- Nb. undetected lines: 5/5 ( 19 21 181 186 187 )
+- Nb. undetected lines: 3/5 ( 21 181 186 )
 
 ## Bug 9
 
 - Nb. modified sources: 1
 
-- Nb. nopol ranking entries: 12185
+- Nb. nopol ranking entries: 90
 
 ###  org.apache.commons.math3.geometry.euclidean.threed.Line
 
@@ -410,14 +468,17 @@
 - Added lines: 3<br />
 - Diff added/deleted: 2
 
+| Line | Nopol log | Nopol rank |
+|------|-----------|------|
+| 87 | org.apache.commons.math3.geometry.euclidean.threed.Line:87 -> 0.12909944487358055 (ep: 0, ef: 1, np: 4825, nf: 0) | 1 |
 
-- Nb. undetected lines: 1/1 ( 87 )
+- Nb. undetected lines: 0/1
 
 ## Bug 10
 
 - Nb. modified sources: 1
 
-- Nb. nopol ranking entries: 15051
+- Nb. nopol ranking entries: 208
 
 ###  org.apache.commons.math3.analysis.differentiation.DSCompiler
 
@@ -439,7 +500,7 @@
 
 - Nb. modified sources: 1
 
-- Nb. nopol ranking entries: 13866
+- Nb. nopol ranking entries: 432
 
 ###  org.apache.commons.math3.distribution.MultivariateNormalDistribution
 
@@ -454,14 +515,17 @@
 - Added lines: 1<br />
 - Diff added/deleted: 0
 
+| Line | Nopol log | Nopol rank |
+|------|-----------|------|
+| 183 | org.apache.commons.math3.distribution.MultivariateNormalDistribution:183 -> 0.07453559924999299 (ep: 2, ef: 1, np: 4557, nf: 0) | 3 |
 
-- Nb. undetected lines: 1/1 ( 183 )
+- Nb. undetected lines: 0/1
 
 ## Bug 12
 
 - Nb. modified sources: 1
 
-- Nb. nopol ranking entries: 25043
+- Nb. nopol ranking entries: 834
 
 ###  org.apache.commons.math3.random.BitsStreamGenerator
 
@@ -502,7 +566,7 @@
 
 - Nb. modified sources: 2
 
-- Nb. nopol ranking entries: 24718
+- Nb. nopol ranking entries: 86
 
 ###  org.apache.commons.math3.optimization.Weight
 
@@ -525,8 +589,12 @@
 - Added lines: 2<br />
 - Diff added/deleted: -4
 
+| Line | Nopol log | Nopol rank |
+|------|-----------|------|
+| 44 | org.apache.commons.math3.optimization.Weight:44 -> 0.013684513787599334 (ep: 88, ef: 1, np: 4445, nf: 0) | 62 |
+| 45 | org.apache.commons.math3.optimization.Weight:45 -> 0.013684513787599334 (ep: 88, ef: 1, np: 4445, nf: 0) | 63 |
 
-- Nb. undetected lines: 6/6 ( 21 44 45 46 47 48 )
+- Nb. undetected lines: 4/6 ( 21 46 47 48 )
 
 ###  org.apache.commons.math3.optimization.general.AbstractLeastSquaresOptimizer
 
@@ -555,7 +623,7 @@
 
 - Nb. modified sources: 2
 
-- Nb. nopol ranking entries: 19675
+- Nb. nopol ranking entries: 1196
 
 ###  org.apache.commons.math3.optim.nonlinear.vector.Weight
 
@@ -577,8 +645,11 @@
 - Added lines: 2<br />
 - Diff added/deleted: -3
 
+| Line | Nopol log | Nopol rank |
+|------|-----------|------|
+| 43 | org.apache.commons.math3.optim.nonlinear.vector.Weight:43 -> 0.01334876749845192 (ep: 91, ef: 1, np: 4441, nf: 0) | 660 |
 
-- Nb. undetected lines: 5/5 ( 21 43 44 45 46 )
+- Nb. undetected lines: 4/5 ( 21 44 45 46 )
 
 ###  org.apache.commons.math3.optim.nonlinear.vector.jacobian.AbstractLeastSquaresOptimizer
 
@@ -607,7 +678,7 @@
 
 - Nb. modified sources: 1
 
-- Nb. nopol ranking entries: 31217
+- Nb. nopol ranking entries: 350
 
 ###  org.apache.commons.math3.util.FastMath
 
@@ -625,14 +696,17 @@
 - Added lines: 4<br />
 - Diff added/deleted: 2
 
+| Line | Nopol log | Nopol rank |
+|------|-----------|------|
+| 1540 | org.apache.commons.math3.util.FastMath:1540 -> 0.015007505629691604 (ep: 73, ef: 1, np: 4189, nf: 0) | 8 |
 
-- Nb. undetected lines: 2/2 ( 311 1540 )
+- Nb. undetected lines: 1/2 ( 311 )
 
 ## Bug 16
 
 - Nb. modified sources: 1
 
-- Nb. nopol ranking entries: 31686
+- Nb. nopol ranking entries: 263
 
 ###  org.apache.commons.math3.util.FastMath
 
@@ -696,14 +770,21 @@
 - Added lines: 35<br />
 - Diff added/deleted: 20
 
+| Line | Nopol log | Nopol rank |
+|------|-----------|------|
+| 80 | org.apache.commons.math3.util.FastMath:807 -> 0.009569925722831258 (ep: 714, ef: 2, np: 3545, nf: 0) | 241 |
+| 392 | org.apache.commons.math3.util.FastMath:392 -> 0.04675245822121844 (ep: 28, ef: 2, np: 4231, nf: 0) | 2 |
+| 393 | org.apache.commons.math3.util.FastMath:393 -> 0.038604571824109146 (ep: 10, ef: 1, np: 4249, nf: 1) | 5 |
+| 396 | org.apache.commons.math3.util.FastMath:396 -> 0.0237758517182737 (ep: 28, ef: 1, np: 4231, nf: 1) | 218 |
+| 397 | org.apache.commons.math3.util.FastMath:397 -> 0.038604571824109146 (ep: 10, ef: 1, np: 4249, nf: 1) | 6 |
 
-- Nb. undetected lines: 12/12 ( 80 392 393 395 396 397 400 452 453 455 456 457 )
+- Nb. undetected lines: 7/12 ( 395 400 452 453 455 456 457 )
 
 ## Bug 17
 
 - Nb. modified sources: 1
 
-- Nb. nopol ranking entries: 30415
+- Nb. nopol ranking entries: 417
 
 ###  org.apache.commons.math3.dfp.Dfp
 
@@ -740,7 +821,7 @@
 
 - Nb. modified sources: 1
 
-- Nb. nopol ranking entries: 30888
+- Nb. nopol ranking entries: 934
 
 ###  org.apache.commons.math3.optimization.direct.CMAESOptimizer
 
@@ -779,7 +860,7 @@
 
 - Nb. modified sources: 1
 
-- Nb. nopol ranking entries: 30237
+- Nb. nopol ranking entries: 345
 
 ###  org.apache.commons.math3.optimization.direct.CMAESOptimizer
 
@@ -810,14 +891,18 @@
 - Added lines: 16<br />
 - Diff added/deleted: 14
 
+| Line | Nopol log | Nopol rank |
+|------|-----------|------|
+| 28 | org.apache.commons.math3.optimization.direct.CMAESOptimizer:288 -> 0.025819888974716113 (ep: 24, ef: 1, np: 4140, nf: 0) | 231 |
+| 537 | org.apache.commons.math3.optimization.direct.CMAESOptimizer:537 -> 0.05773502691896257 (ep: 4, ef: 1, np: 4160, nf: 0) | 32 |
 
-- Nb. undetected lines: 3/3 ( 27 28 537 )
+- Nb. undetected lines: 1/3 ( 27 )
 
 ## Bug 20
 
 - Nb. modified sources: 1
 
-- Nb. nopol ranking entries: 30560
+- Nb. nopol ranking entries: 881
 
 ###  org.apache.commons.math3.optimization.direct.CMAESOptimizer
 
@@ -850,7 +935,7 @@
 
 - Nb. modified sources: 1
 
-- Nb. nopol ranking entries: 32190
+- Nb. nopol ranking entries: 206
 
 ###  org.apache.commons.math3.linear.RectangularCholeskyDecomposition
 
@@ -921,14 +1006,35 @@
 - Added lines: 23<br />
 - Diff added/deleted: 4
 
+| Line | Nopol log | Nopol rank |
+|------|-----------|------|
+| 65 | org.apache.commons.math3.linear.RectangularCholeskyDecomposition:65 -> 0.1270001270001905 (ep: 6, ef: 3, np: 4117, nf: 0) | 2 |
+| 66 | org.apache.commons.math3.linear.RectangularCholeskyDecomposition:66 -> 0.1270001270001905 (ep: 6, ef: 3, np: 4117, nf: 0) | 3 |
+| 67 | org.apache.commons.math3.linear.RectangularCholeskyDecomposition:67 -> 0.1270001270001905 (ep: 6, ef: 3, np: 4117, nf: 0) | 4 |
+| 69 | org.apache.commons.math3.linear.RectangularCholeskyDecomposition:69 -> 0.1270001270001905 (ep: 6, ef: 3, np: 4117, nf: 0) | 5 |
+| 79 | org.apache.commons.math3.linear.RectangularCholeskyDecomposition:79 -> 0.1270001270001905 (ep: 6, ef: 3, np: 4117, nf: 0) | 12 |
+| 82 | org.apache.commons.math3.linear.RectangularCholeskyDecomposition:82 -> 0.1270001270001905 (ep: 6, ef: 3, np: 4117, nf: 0) | 15 |
+| 83 | org.apache.commons.math3.linear.RectangularCholeskyDecomposition:83 -> 0.1270001270001905 (ep: 6, ef: 3, np: 4117, nf: 0) | 16 |
+| 84 | org.apache.commons.math3.linear.RectangularCholeskyDecomposition:84 -> 0.1270001270001905 (ep: 6, ef: 3, np: 4117, nf: 0) | 17 |
+| 90 | org.apache.commons.math3.linear.RectangularCholeskyDecomposition:90 -> 0.1270001270001905 (ep: 6, ef: 3, np: 4117, nf: 0) | 19 |
+| 91 | org.apache.commons.math3.linear.RectangularCholeskyDecomposition:91 -> 0.1270001270001905 (ep: 6, ef: 3, np: 4117, nf: 0) | 20 |
+| 92 | org.apache.commons.math3.linear.RectangularCholeskyDecomposition:92 -> 0.1270001270001905 (ep: 6, ef: 3, np: 4117, nf: 0) | 21 |
+| 93 | org.apache.commons.math3.linear.RectangularCholeskyDecomposition:93 -> 0.1270001270001905 (ep: 6, ef: 3, np: 4117, nf: 0) | 22 |
+| 121 | org.apache.commons.math3.linear.RectangularCholeskyDecomposition:121 -> 0.1270001270001905 (ep: 6, ef: 3, np: 4117, nf: 0) | 25 |
+| 123 | org.apache.commons.math3.linear.RectangularCholeskyDecomposition:123 -> 0.1270001270001905 (ep: 6, ef: 3, np: 4117, nf: 0) | 27 |
+| 125 | org.apache.commons.math3.linear.RectangularCholeskyDecomposition:125 -> 0.1270001270001905 (ep: 6, ef: 3, np: 4117, nf: 0) | 29 |
+| 126 | org.apache.commons.math3.linear.RectangularCholeskyDecomposition:126 -> 0.1270001270001905 (ep: 6, ef: 3, np: 4117, nf: 0) | 30 |
+| 128 | org.apache.commons.math3.linear.RectangularCholeskyDecomposition:128 -> 0.1270001270001905 (ep: 6, ef: 3, np: 4117, nf: 0) | 32 |
+| 130 | org.apache.commons.math3.linear.RectangularCholeskyDecomposition:130 -> 0.1270001270001905 (ep: 6, ef: 3, np: 4117, nf: 0) | 34 |
+| 131 | org.apache.commons.math3.linear.RectangularCholeskyDecomposition:131 -> 0.1270001270001905 (ep: 6, ef: 3, np: 4117, nf: 0) | 35 |
 
-- Nb. undetected lines: 19/19 ( 65 66 67 69 79 82 83 84 90 91 92 93 121 123 125 126 128 130 131 )
+- Nb. undetected lines: 0/19
 
 ## Bug 22
 
 - Nb. modified sources: 2
 
-- Nb. nopol ranking entries: 30743
+- Nb. nopol ranking entries: 290
 
 ###  org.apache.commons.math3.distribution.FDistribution
 
@@ -943,8 +1049,11 @@
 - Added lines: 1<br />
 - Diff added/deleted: 0
 
+| Line | Nopol log | Nopol rank |
+|------|-----------|------|
+| 275 | org.apache.commons.math3.distribution.FDistribution:275 -> 0.12803687993289598 (ep: 0, ef: 1, np: 4116, nf: 1) | 2 |
 
-- Nb. undetected lines: 1/1 ( 275 )
+- Nb. undetected lines: 0/1
 
 ###  org.apache.commons.math3.distribution.UniformRealDistribution
 
@@ -959,14 +1068,17 @@
 - Added lines: 1<br />
 - Diff added/deleted: 0
 
+| Line | Nopol log | Nopol rank |
+|------|-----------|------|
+| 184 | org.apache.commons.math3.distribution.UniformRealDistribution:184 -> 0.12803687993289598 (ep: 0, ef: 1, np: 4116, nf: 1) | 1 |
 
-- Nb. undetected lines: 1/1 ( 184 )
+- Nb. undetected lines: 0/1
 
 ## Bug 23
 
 - Nb. modified sources: 1
 
-- Nb. nopol ranking entries: 30231
+- Nb. nopol ranking entries: 280
 
 ###  org.apache.commons.math3.optimization.univariate.BrentOptimizer
 
@@ -1006,14 +1118,19 @@
 - Added lines: 16<br />
 - Diff added/deleted: 11
 
+| Line | Nopol log | Nopol rank |
+|------|-----------|------|
+| 232 | org.apache.commons.math3.optimization.univariate.BrentOptimizer:232 -> 0.03227486121839514 (ep: 15, ef: 1, np: 4080, nf: 0) | 76 |
+| 273 | org.apache.commons.math3.optimization.univariate.BrentOptimizer:273 -> 0.03892494720807615 (ep: 10, ef: 1, np: 4085, nf: 0) | 28 |
+| 301 | org.apache.commons.math3.optimization.univariate.BrentOptimizer:301 -> 0.03450327796711771 (ep: 13, ef: 1, np: 4082, nf: 0) | 35 |
 
-- Nb. undetected lines: 6/6 ( 149 232 236 273 301 303 )
+- Nb. undetected lines: 3/6 ( 149 236 303 )
 
 ## Bug 24
 
 - Nb. modified sources: 1
 
-- Nb. nopol ranking entries: 30807
+- Nb. nopol ranking entries: 287
 
 ###  org.apache.commons.math3.optimization.univariate.BrentOptimizer
 
@@ -1060,14 +1177,17 @@
 - Added lines: 29<br />
 - Diff added/deleted: 26
 
+| Line | Nopol log | Nopol rank |
+|------|-----------|------|
+| 267 | org.apache.commons.math3.optimization.univariate.BrentOptimizer:267 -> 0.040824829046386304 (ep: 9, ef: 1, np: 4085, nf: 0) | 30 |
 
-- Nb. undetected lines: 3/3 ( 230 267 271 )
+- Nb. undetected lines: 2/3 ( 230 271 )
 
 ## Bug 25
 
 - Nb. modified sources: 2
 
-- Nb. nopol ranking entries: 30703
+- Nb. nopol ranking entries: 158
 
 ###  org.apache.commons.math3.exception.util.LocalizedFormats
 
@@ -1108,7 +1228,7 @@
 
 - Nb. modified sources: 1
 
-- Nb. nopol ranking entries: 29563
+- Nb. nopol ranking entries: 73
 
 ###  org.apache.commons.math3.fraction.Fraction
 
@@ -1127,14 +1247,18 @@
 - Added lines: 4<br />
 - Diff added/deleted: 2
 
+| Line | Nopol log | Nopol rank |
+|------|-----------|------|
+| 181 | org.apache.commons.math3.fraction.Fraction:181 -> 0.017251638983558856 (ep: 55, ef: 1, np: 3926, nf: 0) | 45 |
+| 209 | org.apache.commons.math3.fraction.Fraction:209 -> 0.017902871850985824 (ep: 51, ef: 1, np: 3930, nf: 0) | 35 |
 
-- Nb. undetected lines: 2/2 ( 181 209 )
+- Nb. undetected lines: 0/2
 
 ## Bug 27
 
 - Nb. modified sources: 1
 
-- Nb. nopol ranking entries: 30271
+- Nb. nopol ranking entries: 31
 
 ###  org.apache.commons.math3.fraction.Fraction
 
@@ -1149,14 +1273,17 @@
 - Added lines: 1<br />
 - Diff added/deleted: 0
 
+| Line | Nopol log | Nopol rank |
+|------|-----------|------|
+| 597 | org.apache.commons.math3.fraction.Fraction:597 -> 0.09128709291752768 (ep: 1, ef: 1, np: 3980, nf: 0) | 1 |
 
-- Nb. undetected lines: 1/1 ( 597 )
+- Nb. undetected lines: 0/1
 
 ## Bug 28
 
 - Nb. modified sources: 1
 
-- Nb. nopol ranking entries: 30362
+- Nb. nopol ranking entries: 352
 
 ###  org.apache.commons.math3.optimization.linear.SimplexSolver
 
@@ -1186,14 +1313,18 @@
 - Added lines: 10<br />
 - Diff added/deleted: 6
 
+| Line | Nopol log | Nopol rank |
+|------|-----------|------|
+| 127 | org.apache.commons.math3.optimization.linear.SimplexSolver:127 -> 0.05270462766947299 (ep: 5, ef: 1, np: 3975, nf: 0) | 19 |
+| 137 | org.apache.commons.math3.optimization.linear.SimplexSolver:137 -> 0.06454972243679027 (ep: 6, ef: 2, np: 3974, nf: -1) | 9 |
 
-- Nb. undetected lines: 6/6 ( 118 127 133 137 146 148 )
+- Nb. undetected lines: 4/6 ( 118 133 146 148 )
 
 ## Bug 29
 
 - Nb. modified sources: 1
 
-- Nb. nopol ranking entries: 28543
+- Nb. nopol ranking entries: 247
 
 ###  org.apache.commons.math3.linear.OpenMapRealVector
 
@@ -1238,14 +1369,20 @@
 - Added lines: 27<br />
 - Diff added/deleted: 21
 
+| Line | Nopol log | Nopol rank |
+|------|-----------|------|
+| 344 | org.apache.commons.math3.linear.OpenMapRealVector:344 -> 0.08980265101338746 (ep: 1, ef: 1, np: 3757, nf: 2) | 20 |
+| 345 | org.apache.commons.math3.linear.OpenMapRealVector:345 -> 0.08980265101338746 (ep: 1, ef: 1, np: 3757, nf: 2) | 21 |
+| 346 | org.apache.commons.math3.linear.OpenMapRealVector:346 -> 0.08980265101338746 (ep: 1, ef: 1, np: 3757, nf: 2) | 22 |
+| 347 | org.apache.commons.math3.linear.OpenMapRealVector:347 -> 0.08980265101338746 (ep: 1, ef: 1, np: 3757, nf: 2) | 23 |
 
-- Nb. undetected lines: 5/5 ( 344 345 346 347 361 )
+- Nb. undetected lines: 1/5 ( 361 )
 
 ## Bug 30
 
 - Nb. modified sources: 1
 
-- Nb. nopol ranking entries: 29760
+- Nb. nopol ranking entries: 106
 
 ###  org.apache.commons.math3.stat.inference.MannWhitneyUTest
 
@@ -1266,14 +1403,19 @@
 - Added lines: 3<br />
 - Diff added/deleted: 0
 
+| Line | Nopol log | Nopol rank |
+|------|-----------|------|
+| 173 | org.apache.commons.math3.stat.inference.MannWhitneyUTest:173 -> 0.09128709291752768 (ep: 1, ef: 1, np: 3715, nf: 0) | 16 |
+| 176 | org.apache.commons.math3.stat.inference.MannWhitneyUTest:176 -> 0.09128709291752768 (ep: 1, ef: 1, np: 3715, nf: 0) | 17 |
+| 177 | org.apache.commons.math3.stat.inference.MannWhitneyUTest:177 -> 0.09128709291752768 (ep: 1, ef: 1, np: 3715, nf: 0) | 18 |
 
-- Nb. undetected lines: 3/3 ( 173 176 177 )
+- Nb. undetected lines: 0/3
 
 ## Bug 31
 
 - Nb. modified sources: 1
 
-- Nb. nopol ranking entries: 27744
+- Nb. nopol ranking entries: 384
 
 ###  org.apache.commons.math3.util.ContinuedFraction
 
@@ -1392,14 +1534,41 @@
 - Added lines: 40<br />
 - Diff added/deleted: -18
 
+| Line | Nopol log | Nopol rank |
+|------|-----------|------|
+| 124 | org.apache.commons.math3.util.ContinuedFraction:124 -> 0.014248325141028624 (ep: 321, ef: 2, np: 3279, nf: 0) | 134 |
+| 125 | org.apache.commons.math3.util.ContinuedFraction:125 -> 0.014248325141028624 (ep: 321, ef: 2, np: 3279, nf: 0) | 135 |
+| 126 | org.apache.commons.math3.util.ContinuedFraction:126 -> 0.014248325141028624 (ep: 321, ef: 2, np: 3279, nf: 0) | 136 |
+| 127 | org.apache.commons.math3.util.ContinuedFraction:127 -> 0.014248325141028624 (ep: 321, ef: 2, np: 3279, nf: 0) | 137 |
+| 128 | org.apache.commons.math3.util.ContinuedFraction:128 -> 0.014248325141028624 (ep: 321, ef: 2, np: 3279, nf: 0) | 138 |
+| 129 | org.apache.commons.math3.util.ContinuedFraction:129 -> 0.014248325141028624 (ep: 321, ef: 2, np: 3279, nf: 0) | 139 |
+| 130 | org.apache.commons.math3.util.ContinuedFraction:130 -> 0.014248325141028624 (ep: 321, ef: 2, np: 3279, nf: 0) | 140 |
+| 131 | org.apache.commons.math3.util.ContinuedFraction:131 -> 0.014248325141028624 (ep: 321, ef: 2, np: 3279, nf: 0) | 141 |
+| 132 | org.apache.commons.math3.util.ContinuedFraction:132 -> 0.014248325141028624 (ep: 321, ef: 2, np: 3279, nf: 0) | 142 |
+| 133 | org.apache.commons.math3.util.ContinuedFraction:133 -> 0.014248325141028624 (ep: 321, ef: 2, np: 3279, nf: 0) | 143 |
+| 134 | org.apache.commons.math3.util.ContinuedFraction:134 -> 0.014248325141028624 (ep: 321, ef: 2, np: 3279, nf: 0) | 144 |
+| 135 | org.apache.commons.math3.util.ContinuedFraction:135 -> 0.014248325141028624 (ep: 321, ef: 2, np: 3279, nf: 0) | 145 |
+| 136 | org.apache.commons.math3.util.ContinuedFraction:136 -> 0.014248325141028624 (ep: 321, ef: 2, np: 3279, nf: 0) | 146 |
+| 137 | org.apache.commons.math3.util.ContinuedFraction:137 -> 0.014248325141028624 (ep: 321, ef: 2, np: 3279, nf: 0) | 147 |
+| 138 | org.apache.commons.math3.util.ContinuedFraction:138 -> 0.014248325141028624 (ep: 321, ef: 2, np: 3279, nf: 0) | 148 |
+| 170 | org.apache.commons.math3.util.ContinuedFraction:170 -> 0.014248325141028624 (ep: 321, ef: 2, np: 3279, nf: 0) | 149 |
+| 176 | org.apache.commons.math3.util.ContinuedFraction:176 -> 0.014248325141028624 (ep: 321, ef: 2, np: 3279, nf: 0) | 150 |
+| 178 | org.apache.commons.math3.util.ContinuedFraction:178 -> 0.014248325141028624 (ep: 321, ef: 2, np: 3279, nf: 0) | 151 |
+| 182 | org.apache.commons.math3.util.ContinuedFraction:182 -> 0.014248325141028624 (ep: 321, ef: 2, np: 3279, nf: 0) | 152 |
+| 185 | org.apache.commons.math3.util.ContinuedFraction:185 -> 0.014248325141028624 (ep: 321, ef: 2, np: 3279, nf: 0) | 153 |
+| 186 | org.apache.commons.math3.util.ContinuedFraction:186 -> 0.014248325141028624 (ep: 321, ef: 2, np: 3279, nf: 0) | 154 |
+| 187 | org.apache.commons.math3.util.ContinuedFraction:187 -> 0.014248325141028624 (ep: 321, ef: 2, np: 3279, nf: 0) | 155 |
+| 188 | org.apache.commons.math3.util.ContinuedFraction:188 -> 0.014248325141028624 (ep: 321, ef: 2, np: 3279, nf: 0) | 156 |
+| 189 | org.apache.commons.math3.util.ContinuedFraction:189 -> 0.014248325141028624 (ep: 321, ef: 2, np: 3279, nf: 0) | 157 |
+| 197 | org.apache.commons.math3.util.ContinuedFraction:197 -> 0.014248325141028624 (ep: 321, ef: 2, np: 3279, nf: 0) | 160 |
 
-- Nb. undetected lines: 59/59 ( 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 170 171 175 176 177 178 182 184 185 186 187 188 189 197 198 )
+- Nb. undetected lines: 34/59 ( 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 171 175 177 184 198 )
 
 ## Bug 32
 
 - Nb. modified sources: 1
 
-- Nb. nopol ranking entries: 27579
+- Nb. nopol ranking entries: 1347
 
 ###  org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet
 
@@ -1416,14 +1585,17 @@
 - Added lines: 3<br />
 - Diff added/deleted: 1
 
+| Line | Nopol log | Nopol rank |
+|------|-----------|------|
+| 135 | org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet:135 -> 0.12909944487358055 (ep: 0, ef: 1, np: 3592, nf: 0) | 1 |
 
-- Nb. undetected lines: 1/1 ( 135 )
+- Nb. undetected lines: 0/1
 
 ## Bug 33
 
 - Nb. modified sources: 1
 
-- Nb. nopol ranking entries: 27388
+- Nb. nopol ranking entries: 334
 
 ###  org.apache.commons.math3.optimization.linear.SimplexTableau
 
@@ -1438,14 +1610,17 @@
 - Added lines: 2<br />
 - Diff added/deleted: 1
 
+| Line | Nopol log | Nopol rank |
+|------|-----------|------|
+| 338 | org.apache.commons.math3.optimization.linear.SimplexTableau:338 -> 0.03042903097250923 (ep: 17, ef: 1, np: 3557, nf: 0) | 25 |
 
-- Nb. undetected lines: 1/1 ( 338 )
+- Nb. undetected lines: 0/1
 
 ## Bug 34
 
 - Nb. modified sources: 1
 
-- Nb. nopol ranking entries: 27405
+- Nb. nopol ranking entries: 35
 
 ###  org.apache.commons.math3.genetics.ListPopulation
 
@@ -1465,14 +1640,17 @@
 - Added lines: 3<br />
 - Diff added/deleted: 0
 
+| Line | Nopol log | Nopol rank |
+|------|-----------|------|
+| 208 | org.apache.commons.math3.genetics.ListPopulation:208 -> 0.09128709291752768 (ep: 1, ef: 1, np: 3557, nf: 0) | 1 |
 
-- Nb. undetected lines: 2/2 ( 203 208 )
+- Nb. undetected lines: 1/2 ( 203 )
 
 ## Bug 35
 
 - Nb. modified sources: 1
 
-- Nb. nopol ranking entries: 27242
+- Nb. nopol ranking entries: 20
 
 ###  org.apache.commons.math3.genetics.ElitisticListPopulation
 
@@ -1495,14 +1673,18 @@
 - Added lines: 4<br />
 - Diff added/deleted: 2
 
+| Line | Nopol log | Nopol rank |
+|------|-----------|------|
+| 50 | org.apache.commons.math3.genetics.ElitisticListPopulation:50 -> 0.1126872339638022 (ep: 3, ef: 2, np: 3543, nf: 2) | 3 |
+| 63 | org.apache.commons.math3.genetics.ElitisticListPopulation:63 -> 0.07968190728895957 (ep: 8, ef: 2, np: 3538, nf: 2) | 18 |
 
-- Nb. undetected lines: 4/4 ( 44 50 59 63 )
+- Nb. undetected lines: 2/4 ( 44 59 )
 
 ## Bug 36
 
 - Nb. modified sources: 1
 
-- Nb. nopol ranking entries: 10329
+- Nb. nopol ranking entries: 16
 
 ###  org.apache.commons.math.fraction.BigFraction
 
@@ -1539,14 +1721,18 @@
 - Added lines: 20<br />
 - Diff added/deleted: 18
 
+| Line | Nopol log | Nopol rank |
+|------|-----------|------|
+| 685 | org.apache.commons.math.fraction.BigFraction:685 -> 0.02511009804759127 (ep: 25, ef: 1, np: 3513, nf: 1) | 17 |
+| 729 | org.apache.commons.math.fraction.BigFraction:729 -> 0.09053574604251853 (ep: 1, ef: 1, np: 3537, nf: 1) | 1 |
 
-- Nb. undetected lines: 2/2 ( 685 729 )
+- Nb. undetected lines: 0/2
 
 ## Bug 37
 
 - Nb. modified sources: 1
 
-- Nb. nopol ranking entries: 12272
+- Nb. nopol ranking entries: 233
 
 ###  org.apache.commons.math.complex.Complex
 
@@ -1581,14 +1767,18 @@
 - Added lines: 14<br />
 - Diff added/deleted: 9
 
+| Line | Nopol log | Nopol rank |
+|------|-----------|------|
+| 1018 | org.apache.commons.math.complex.Complex:1018 -> 0.1259881576697424 (ep: 2, ef: 2, np: 3576, nf: 2) | 14 |
+| 1063 | org.apache.commons.math.complex.Complex:1063 -> 0.1259881576697424 (ep: 2, ef: 2, np: 3576, nf: 2) | 13 |
 
-- Nb. undetected lines: 4/4 ( 1018 1020 1063 1066 )
+- Nb. undetected lines: 2/4 ( 1020 1066 )
 
 ## Bug 38
 
 - Nb. modified sources: 1
 
-- Nb. nopol ranking entries: 25140
+- Nb. nopol ranking entries: 261
 
 ###  org.apache.commons.math.optimization.direct.BOBYQAOptimizer
 
@@ -1630,14 +1820,19 @@
 - Added lines: 10<br />
 - Diff added/deleted: 2
 
+| Line | Nopol log | Nopol rank |
+|------|-----------|------|
+| 1662 | org.apache.commons.math.optimization.direct.BOBYQAOptimizer:1662 -> 0.15075567228888181 (ep: 0, ef: 1, np: 3259, nf: 0) | 7 |
+| 1663 | org.apache.commons.math.optimization.direct.BOBYQAOptimizer:1663 -> 0.15075567228888181 (ep: 0, ef: 1, np: 3259, nf: 0) | 8 |
+| 1750 | org.apache.commons.math.optimization.direct.BOBYQAOptimizer:1750 -> 0.15075567228888181 (ep: 0, ef: 1, np: 3259, nf: 0) | 16 |
 
-- Nb. undetected lines: 8/8 ( 1660 1662 1663 1750 2465 2467 2471 2478 )
+- Nb. undetected lines: 5/8 ( 1660 2465 2467 2471 2478 )
 
 ## Bug 39
 
 - Nb. modified sources: 1
 
-- Nb. nopol ranking entries: 28850
+- Nb. nopol ranking entries: 480
 
 ###  org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator
 
@@ -1658,14 +1853,17 @@
 - Added lines: 9<br />
 - Diff added/deleted: 8
 
+| Line | Nopol log | Nopol rank |
+|------|-----------|------|
+| 249 | org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator:249 -> 0.01962671679947149 (ep: 58, ef: 1, np: 3200, nf: 0) | 63 |
 
-- Nb. undetected lines: 1/1 ( 249 )
+- Nb. undetected lines: 0/1
 
 ## Bug 40
 
 - Nb. modified sources: 1
 
-- Nb. nopol ranking entries: 24794
+- Nb. nopol ranking entries: 203
 
 ###  org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver
 
@@ -1690,8 +1888,11 @@
 - Added lines: 8<br />
 - Diff added/deleted: 4
 
+| Line | Nopol log | Nopol rank |
+|------|-----------|------|
+| 235 | org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:235 -> 0.03742405942825599 (ep: 16, ef: 1, np: 3182, nf: 0) | 40 |
 
-- Nb. undetected lines: 2/2 ( 235 238 )
+- Nb. undetected lines: 1/2 ( 238 )
 
 ## Bug 41
 
@@ -1722,7 +1923,7 @@
 
 - Nb. modified sources: 1
 
-- Nb. nopol ranking entries: 28490
+- Nb. nopol ranking entries: 304
 
 ###  org.apache.commons.math.optimization.linear.SimplexTableau
 
@@ -1742,8 +1943,11 @@
 - Added lines: 6<br />
 - Diff added/deleted: 5
 
+| Line | Nopol log | Nopol rank |
+|------|-----------|------|
+| 410 | org.apache.commons.math.optimization.linear.SimplexTableau:410 -> 0.03539961627023943 (ep: 18, ef: 1, np: 3154, nf: 0) | 41 |
 
-- Nb. undetected lines: 1/1 ( 410 )
+- Nb. undetected lines: 0/1
 
 ## Bug 43
 
@@ -2293,7 +2497,7 @@
 
 - Nb. modified sources: 1
 
-- Nb. nopol ranking entries: 1235
+- Nb. nopol ranking entries: 1115
 
 ###  org.apache.commons.math.dfp.Dfp
 
@@ -2318,7 +2522,7 @@
 
 | Line | Nopol log | Nopol rank |
 |------|-----------|------|
-| 2318 | org.apache.commons.math.dfp.Dfp:2318 -> 0.15811388300841897 (ep: 19, ef: 1, np: 2400, nf: 0) | 209 |
+| 2318 | org.apache.commons.math.dfp.Dfp:2318 -> 0.15811388300841897 (ep: 19, ef: 1, np: 2400, nf: 0) | 214 |
 
 - Nb. undetected lines: 1/2 ( 271 )
 
@@ -3272,7 +3476,7 @@
 
 | Line | Nopol log | Nopol rank |
 |------|-----------|------|
-| 72 | org.apache.commons.math.analysis.solvers.BisectionSolver:72 -> 1.0 (ep: 0, ef: 1, np: 2182, nf: 1) | 1 |
+| 72 | org.apache.commons.math.analysis.solvers.BisectionSolver:72 -> 1.0 (ep: 0, ef: 1, np: 2183, nf: 0) | 1 |
 
 - Nb. undetected lines: 0/1
 
@@ -3585,13 +3789,13 @@
 
 | Line | Nopol log | Nopol rank |
 |------|-----------|------|
-| 166 | org.apache.commons.math.linear.SingularValueDecompositionImpl:166 -> 0.21320071635561041 (ep: 16, ef: 3, np: 2117, nf: -1) | 60 |
-| 169 | org.apache.commons.math.linear.SingularValueDecompositionImpl:169 -> 0.125 (ep: 7, ef: 1, np: 2126, nf: 1) | 350 |
-| 171 | org.apache.commons.math.linear.SingularValueDecompositionImpl:171 -> 0.125 (ep: 7, ef: 1, np: 2126, nf: 1) | 352 |
-| 172 | org.apache.commons.math.linear.SingularValueDecompositionImpl:172 -> 0.125 (ep: 7, ef: 1, np: 2126, nf: 1) | 353 |
-| 178 | org.apache.commons.math.linear.SingularValueDecompositionImpl:178 -> 0.21320071635561041 (ep: 9, ef: 2, np: 2124, nf: 0) | 61 |
-| 179 | org.apache.commons.math.linear.SingularValueDecompositionImpl:179 -> 0.21320071635561041 (ep: 9, ef: 2, np: 2124, nf: 0) | 62 |
-| 181 | org.apache.commons.math.linear.SingularValueDecompositionImpl:181 -> 0.21320071635561041 (ep: 9, ef: 2, np: 2124, nf: 0) | 64 |
+| 166 | org.apache.commons.math.linear.SingularValueDecompositionImpl:166 -> 0.21320071635561041 (ep: 16, ef: 3, np: 2116, nf: 0) | 60 |
+| 169 | org.apache.commons.math.linear.SingularValueDecompositionImpl:169 -> 0.125 (ep: 7, ef: 1, np: 2125, nf: 2) | 350 |
+| 171 | org.apache.commons.math.linear.SingularValueDecompositionImpl:171 -> 0.125 (ep: 7, ef: 1, np: 2125, nf: 2) | 352 |
+| 172 | org.apache.commons.math.linear.SingularValueDecompositionImpl:172 -> 0.125 (ep: 7, ef: 1, np: 2125, nf: 2) | 353 |
+| 178 | org.apache.commons.math.linear.SingularValueDecompositionImpl:178 -> 0.21320071635561041 (ep: 9, ef: 2, np: 2123, nf: 1) | 61 |
+| 179 | org.apache.commons.math.linear.SingularValueDecompositionImpl:179 -> 0.21320071635561041 (ep: 9, ef: 2, np: 2123, nf: 1) | 62 |
+| 181 | org.apache.commons.math.linear.SingularValueDecompositionImpl:181 -> 0.21320071635561041 (ep: 9, ef: 2, np: 2123, nf: 1) | 64 |
 
 - Nb. undetected lines: 14/21 ( 162 176 177 182 250 254 256 258 259 263 264 265 266 268 )
 
@@ -3852,7 +4056,7 @@
 
 | Line | Nopol log | Nopol rank |
 |------|-----------|------|
-| 1135 | org.apache.commons.math.linear.EigenDecompositionImpl:1135 -> 0.3779644730092272 (ep: 0, ef: 1, np: 2100, nf: 1) | 29 |
+| 1135 | org.apache.commons.math.linear.EigenDecompositionImpl:1135 -> 0.3779644730092272 (ep: 0, ef: 1, np: 2101, nf: 0) | 29 |
 
 - Nb. undetected lines: 0/1
 
@@ -4703,7 +4907,7 @@
 
 - Nb. modified sources: 1
 
-- Nb. nopol ranking entries: 112925
+- Nb. nopol ranking entries: 324
 
 ###  org.apache.commons.math.estimation.AbstractEstimator
 

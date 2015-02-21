@@ -2,12 +2,12 @@
 
 cd ~/defects4j-nopol/logs/nopol-ranking/math/
 
-echo '# Lang - Nopol ranking' > README.md
+echo '# Math - Nopol ranking' > README.md
 echo "" >> README.md
 
 for bug in `seq 1 106`
 do
-  echo "Lang ${bug} nopol ranking readme"
+  echo "Math ${bug} nopol ranking readme"
 
   echo "## Bug $bug" >> README.md
   echo "" >> README.md
