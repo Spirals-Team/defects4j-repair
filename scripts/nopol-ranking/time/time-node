@@ -8,7 +8,11 @@ defects4j compile
 
 cp ~/nopol/nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar .
 
-time java -cp nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar fr.inria.lille.repair.Main ranking src/main/java/ target/classes/:target/test-classes/:nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar
+if [[ $1 -lt 12 ]]; then
+  time java -cp nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar fr.inria.lille.repair.Main ranking src/main/java/ target/classes/:target/test-classes/:nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar
+else
+  time java -cp nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar fr.inria.lille.repair.Main ranking src/main/java/ build/classes/:build/tests/:nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar
+fi
 
 cd /tmp/
 rm -rf time_${1}/
