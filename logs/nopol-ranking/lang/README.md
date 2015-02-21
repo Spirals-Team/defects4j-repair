@@ -933,7 +933,7 @@
 
 - Nb. modified sources: 1
 
-- Nb. nopol ranking entries: 172
+- Nb. nopol ranking entries: 173
 
 ###  org.apache.commons.lang3.math.NumberUtils
 
