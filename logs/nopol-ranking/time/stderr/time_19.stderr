@@ -1,0 +1,15 @@
+spoon.compiler.ModelBuildingException: The import org.joda.convert cannot be resolved at /tmp/time_19/src/main/java/org/joda/time/Months.java:18
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.report(JDTBasedSpoonCompiler.java:527)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.reportProblems(JDTBasedSpoonCompiler.java:543)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.build(JDTBasedSpoonCompiler.java:499)
+	at fr.inria.lille.commons.spoon.util.SpoonModelLibrary.modelFor(SpoonModelLibrary.java:50)
+	at fr.inria.lille.commons.spoon.SpoonedFile.<init>(SpoonedFile.java:48)
+	at fr.inria.lille.commons.spoon.SpoonedProject.<init>(SpoonedProject.java:17)
+	at fr.inria.lille.repair.ranking.Ranking.<init>(Ranking.java:44)
+	at fr.inria.lille.repair.ranking.Ranking.<init>(Ranking.java:36)
+	at fr.inria.lille.repair.Main.<init>(Main.java:204)
+	at fr.inria.lille.repair.Main.main(Main.java:180)
+
+real	1m42.846s
+user	1m47.979s
+sys	0m9.605s
