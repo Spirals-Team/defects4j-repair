@@ -7,18 +7,9 @@ cp -r ~/projects/closure/closure_${1}/ /tmp/
 cd /tmp/closure_${1}/
 defects4j compile
 
-lscpu | grep 'Architecture'
-lscpu | grep 'Processeur'
-lscpu | grep 'Thread'
-lscpu | grep 'Vitesse'
-lscpu | grep 'Cache'
-echo ""
-cat /proc/meminfo | grep 'MemTotal'
-echo ""
-
 cp ~/nopol/nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar .
 
-time java -cp nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar fr.inria.lille.repair.Main ranking src/ build/classes/:build/test/:build/lib/rhino.jar:lib/protobuf-java.jar:lib/junit.jar:lib/jsr305.jar:lib/json.jar:lib/jarjar.jar:lib/guava.jar:lib/caja-r4314.jar:lib/args4j.jar:lib/ant.jar:lib/ant-launcher.jar:nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar
+time java -cp nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar fr.inria.lille.repair.Main ranking src/ build/classes/:build/test/:nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar
 
 cd /tmp/
 rm -rf closure_${1}/
