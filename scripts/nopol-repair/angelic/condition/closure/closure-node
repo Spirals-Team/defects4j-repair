@@ -1,0 +1,16 @@
+#!/bin/bash
+
+export PATH="~/defects4j/framework/bin:$PATH"
+
+cp -r ~/projects/closure/closure_${1}/ /tmp/
+
+cd /tmp/closure_${1}/
+defects4j compile
+
+cp ~/nopol/nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar .
+cp -r ~/nopol/z3-x64-debian-7.7/ .
+
+time java -cp nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar fr.inria.lille.repair.Main repair condition angelic src/ build/classes/:build/test/:nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar z3 z3-x64-debian-7.7/bin/z3
+
+cd /tmp/
+rm -rf closure_${1}/
