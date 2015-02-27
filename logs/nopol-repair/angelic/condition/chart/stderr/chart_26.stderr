@@ -1938,4 +1938,180 @@ java.lang.NullPointerException
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
 	at java.lang.Thread.run(Thread.java:745)
-## OAR [2015-02-25 21:44:19] Job 1493288 KILLED
+java.lang.RuntimeException: java.util.concurrent.TimeoutException
+	at xxl.java.junit.TestSuiteExecution.executionResult(TestSuiteExecution.java:66)
+	at xxl.java.junit.TestSuiteExecution.runTestCase(TestSuiteExecution.java:40)
+	at xxl.java.junit.TestSuiteExecution.runTestCases(TestSuiteExecution.java:50)
+	at fr.inria.lille.repair.nopol.synth.ConstraintModelBuilder.buildFor(ConstraintModelBuilder.java:62)
+	at fr.inria.lille.repair.nopol.synth.DefaultSynthesizer.buildPatch(DefaultSynthesizer.java:61)
+	at fr.inria.lille.repair.nopol.NoPol.solveWithMultipleBuild(NoPol.java:103)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:80)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:72)
+	at fr.inria.lille.repair.nopol.NoPolLauncher.launch(NoPolLauncher.java:50)
+	at fr.inria.lille.repair.Main.<init>(Main.java:199)
+	at fr.inria.lille.repair.Main.main(Main.java:180)
+Caused by: java.util.concurrent.TimeoutException
+	at java.util.concurrent.FutureTask.get(FutureTask.java:201)
+	at xxl.java.junit.TestSuiteExecution.executionResult(TestSuiteExecution.java:59)
+	... 10 more
+java.lang.RuntimeException: java.util.concurrent.TimeoutException
+	at xxl.java.junit.TestSuiteExecution.executionResult(TestSuiteExecution.java:66)
+	at xxl.java.junit.TestSuiteExecution.runTestCase(TestSuiteExecution.java:40)
+	at xxl.java.junit.TestSuiteExecution.runTestCases(TestSuiteExecution.java:50)
+	at fr.inria.lille.repair.nopol.synth.ConstraintModelBuilder.buildFor(ConstraintModelBuilder.java:62)
+	at fr.inria.lille.repair.nopol.synth.DefaultSynthesizer.buildPatch(DefaultSynthesizer.java:61)
+	at fr.inria.lille.repair.nopol.NoPol.solveWithMultipleBuild(NoPol.java:103)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:80)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:72)
+	at fr.inria.lille.repair.nopol.NoPolLauncher.launch(NoPolLauncher.java:50)
+	at fr.inria.lille.repair.Main.<init>(Main.java:199)
+	at fr.inria.lille.repair.Main.main(Main.java:180)
+Caused by: java.util.concurrent.TimeoutException
+	at java.util.concurrent.FutureTask.get(FutureTask.java:201)
+	at xxl.java.junit.TestSuiteExecution.executionResult(TestSuiteExecution.java:59)
+	... 10 more
+java.lang.RuntimeException: java.util.concurrent.TimeoutException
+	at xxl.java.junit.TestSuiteExecution.executionResult(TestSuiteExecution.java:66)
+	at xxl.java.junit.TestSuiteExecution.runTestCase(TestSuiteExecution.java:40)
+	at xxl.java.junit.TestSuiteExecution.runTestCases(TestSuiteExecution.java:50)
+	at fr.inria.lille.repair.nopol.synth.ConstraintModelBuilder.buildFor(ConstraintModelBuilder.java:62)
+	at fr.inria.lille.repair.nopol.synth.DefaultSynthesizer.buildPatch(DefaultSynthesizer.java:61)
+	at fr.inria.lille.repair.nopol.NoPol.solveWithMultipleBuild(NoPol.java:103)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:80)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:72)
+	at fr.inria.lille.repair.nopol.NoPolLauncher.launch(NoPolLauncher.java:50)
+	at fr.inria.lille.repair.Main.<init>(Main.java:199)
+	at fr.inria.lille.repair.Main.main(Main.java:180)
+Caused by: java.util.concurrent.TimeoutException
+	at java.util.concurrent.FutureTask.get(FutureTask.java:201)
+	at xxl.java.junit.TestSuiteExecution.executionResult(TestSuiteExecution.java:59)
+	... 10 more
+java.lang.RuntimeException: java.util.concurrent.TimeoutException
+	at xxl.java.junit.TestSuiteExecution.executionResult(TestSuiteExecution.java:66)
+	at xxl.java.junit.TestSuiteExecution.runTestCase(TestSuiteExecution.java:40)
+	at xxl.java.junit.TestSuiteExecution.runTestCases(TestSuiteExecution.java:50)
+	at fr.inria.lille.repair.nopol.synth.ConstraintModelBuilder.buildFor(ConstraintModelBuilder.java:62)
+	at fr.inria.lille.repair.nopol.synth.DefaultSynthesizer.buildPatch(DefaultSynthesizer.java:61)
+	at fr.inria.lille.repair.nopol.NoPol.solveWithMultipleBuild(NoPol.java:103)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:80)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:72)
+	at fr.inria.lille.repair.nopol.NoPolLauncher.launch(NoPolLauncher.java:50)
+	at fr.inria.lille.repair.Main.<init>(Main.java:199)
+	at fr.inria.lille.repair.Main.main(Main.java:180)
+Caused by: java.util.concurrent.TimeoutException
+	at java.util.concurrent.FutureTask.get(FutureTask.java:201)
+	at xxl.java.junit.TestSuiteExecution.executionResult(TestSuiteExecution.java:59)
+	... 10 more
+java.lang.RuntimeException: java.util.concurrent.TimeoutException
+	at xxl.java.junit.TestSuiteExecution.executionResult(TestSuiteExecution.java:66)
+	at xxl.java.junit.TestSuiteExecution.runTestCase(TestSuiteExecution.java:40)
+	at xxl.java.junit.TestSuiteExecution.runTestCases(TestSuiteExecution.java:50)
+	at fr.inria.lille.repair.nopol.synth.ConstraintModelBuilder.buildFor(ConstraintModelBuilder.java:62)
+	at fr.inria.lille.repair.nopol.synth.DefaultSynthesizer.buildPatch(DefaultSynthesizer.java:61)
+	at fr.inria.lille.repair.nopol.NoPol.solveWithMultipleBuild(NoPol.java:103)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:80)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:72)
+	at fr.inria.lille.repair.nopol.NoPolLauncher.launch(NoPolLauncher.java:50)
+	at fr.inria.lille.repair.Main.<init>(Main.java:199)
+	at fr.inria.lille.repair.Main.main(Main.java:180)
+Caused by: java.util.concurrent.TimeoutException
+	at java.util.concurrent.FutureTask.get(FutureTask.java:201)
+	at xxl.java.junit.TestSuiteExecution.executionResult(TestSuiteExecution.java:59)
+	... 10 more
+java.lang.RuntimeException: java.util.concurrent.TimeoutException
+	at xxl.java.junit.TestSuiteExecution.executionResult(TestSuiteExecution.java:66)
+	at xxl.java.junit.TestSuiteExecution.runTestCase(TestSuiteExecution.java:40)
+	at xxl.java.junit.TestSuiteExecution.runTestCases(TestSuiteExecution.java:50)
+	at fr.inria.lille.repair.nopol.synth.ConstraintModelBuilder.buildFor(ConstraintModelBuilder.java:62)
+	at fr.inria.lille.repair.nopol.synth.DefaultSynthesizer.buildPatch(DefaultSynthesizer.java:61)
+	at fr.inria.lille.repair.nopol.NoPol.solveWithMultipleBuild(NoPol.java:103)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:80)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:72)
+	at fr.inria.lille.repair.nopol.NoPolLauncher.launch(NoPolLauncher.java:50)
+	at fr.inria.lille.repair.Main.<init>(Main.java:199)
+	at fr.inria.lille.repair.Main.main(Main.java:180)
+Caused by: java.util.concurrent.TimeoutException
+	at java.util.concurrent.FutureTask.get(FutureTask.java:201)
+	at xxl.java.junit.TestSuiteExecution.executionResult(TestSuiteExecution.java:59)
+	... 10 more
+java.lang.RuntimeException: java.util.concurrent.TimeoutException
+	at xxl.java.junit.TestSuiteExecution.executionResult(TestSuiteExecution.java:66)
+	at xxl.java.junit.TestSuiteExecution.runTestCase(TestSuiteExecution.java:40)
+	at xxl.java.junit.TestSuiteExecution.runTestCases(TestSuiteExecution.java:50)
+	at fr.inria.lille.repair.nopol.synth.ConstraintModelBuilder.buildFor(ConstraintModelBuilder.java:62)
+	at fr.inria.lille.repair.nopol.synth.DefaultSynthesizer.buildPatch(DefaultSynthesizer.java:61)
+	at fr.inria.lille.repair.nopol.NoPol.solveWithMultipleBuild(NoPol.java:103)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:80)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:72)
+	at fr.inria.lille.repair.nopol.NoPolLauncher.launch(NoPolLauncher.java:50)
+	at fr.inria.lille.repair.Main.<init>(Main.java:199)
+	at fr.inria.lille.repair.Main.main(Main.java:180)
+Caused by: java.util.concurrent.TimeoutException
+	at java.util.concurrent.FutureTask.get(FutureTask.java:201)
+	at xxl.java.junit.TestSuiteExecution.executionResult(TestSuiteExecution.java:59)
+	... 10 more
+java.lang.RuntimeException: java.util.concurrent.TimeoutException
+	at xxl.java.junit.TestSuiteExecution.executionResult(TestSuiteExecution.java:66)
+	at xxl.java.junit.TestSuiteExecution.runTestCase(TestSuiteExecution.java:40)
+	at xxl.java.junit.TestSuiteExecution.runTestCases(TestSuiteExecution.java:50)
+	at fr.inria.lille.repair.nopol.synth.ConstraintModelBuilder.buildFor(ConstraintModelBuilder.java:62)
+	at fr.inria.lille.repair.nopol.synth.DefaultSynthesizer.buildPatch(DefaultSynthesizer.java:61)
+	at fr.inria.lille.repair.nopol.NoPol.solveWithMultipleBuild(NoPol.java:103)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:80)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:72)
+	at fr.inria.lille.repair.nopol.NoPolLauncher.launch(NoPolLauncher.java:50)
+	at fr.inria.lille.repair.Main.<init>(Main.java:199)
+	at fr.inria.lille.repair.Main.main(Main.java:180)
+Caused by: java.util.concurrent.TimeoutException
+	at java.util.concurrent.FutureTask.get(FutureTask.java:201)
+	at xxl.java.junit.TestSuiteExecution.executionResult(TestSuiteExecution.java:59)
+	... 10 more
+java.lang.RuntimeException: java.util.concurrent.TimeoutException
+	at xxl.java.junit.TestSuiteExecution.executionResult(TestSuiteExecution.java:66)
+	at xxl.java.junit.TestSuiteExecution.runTestCase(TestSuiteExecution.java:40)
+	at xxl.java.junit.TestSuiteExecution.runTestCases(TestSuiteExecution.java:50)
+	at fr.inria.lille.repair.nopol.synth.ConstraintModelBuilder.buildFor(ConstraintModelBuilder.java:62)
+	at fr.inria.lille.repair.nopol.synth.DefaultSynthesizer.buildPatch(DefaultSynthesizer.java:61)
+	at fr.inria.lille.repair.nopol.NoPol.solveWithMultipleBuild(NoPol.java:103)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:80)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:72)
+	at fr.inria.lille.repair.nopol.NoPolLauncher.launch(NoPolLauncher.java:50)
+	at fr.inria.lille.repair.Main.<init>(Main.java:199)
+	at fr.inria.lille.repair.Main.main(Main.java:180)
+Caused by: java.util.concurrent.TimeoutException
+	at java.util.concurrent.FutureTask.get(FutureTask.java:201)
+	at xxl.java.junit.TestSuiteExecution.executionResult(TestSuiteExecution.java:59)
+	... 10 more
+java.lang.RuntimeException: java.util.concurrent.TimeoutException
+	at xxl.java.junit.TestSuiteExecution.executionResult(TestSuiteExecution.java:66)
+	at xxl.java.junit.TestSuiteExecution.runTestCase(TestSuiteExecution.java:40)
+	at xxl.java.junit.TestSuiteExecution.runTestCases(TestSuiteExecution.java:50)
+	at fr.inria.lille.repair.nopol.synth.ConstraintModelBuilder.buildFor(ConstraintModelBuilder.java:62)
+	at fr.inria.lille.repair.nopol.synth.DefaultSynthesizer.buildPatch(DefaultSynthesizer.java:61)
+	at fr.inria.lille.repair.nopol.NoPol.solveWithMultipleBuild(NoPol.java:103)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:80)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:72)
+	at fr.inria.lille.repair.nopol.NoPolLauncher.launch(NoPolLauncher.java:50)
+	at fr.inria.lille.repair.Main.<init>(Main.java:199)
+	at fr.inria.lille.repair.Main.main(Main.java:180)
+Caused by: java.util.concurrent.TimeoutException
+	at java.util.concurrent.FutureTask.get(FutureTask.java:201)
+	at xxl.java.junit.TestSuiteExecution.executionResult(TestSuiteExecution.java:59)
+	... 10 more
+java.lang.RuntimeException: java.util.concurrent.TimeoutException
+	at xxl.java.junit.TestSuiteExecution.executionResult(TestSuiteExecution.java:66)
+	at xxl.java.junit.TestSuiteExecution.runTestCase(TestSuiteExecution.java:40)
+	at xxl.java.junit.TestSuiteExecution.runTestCases(TestSuiteExecution.java:50)
+	at fr.inria.lille.repair.nopol.synth.ConstraintModelBuilder.buildFor(ConstraintModelBuilder.java:62)
+	at fr.inria.lille.repair.nopol.synth.DefaultSynthesizer.buildPatch(DefaultSynthesizer.java:61)
+	at fr.inria.lille.repair.nopol.NoPol.solveWithMultipleBuild(NoPol.java:103)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:80)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:72)
+	at fr.inria.lille.repair.nopol.NoPolLauncher.launch(NoPolLauncher.java:50)
+	at fr.inria.lille.repair.Main.<init>(Main.java:199)
+	at fr.inria.lille.repair.Main.main(Main.java:180)
+Caused by: java.util.concurrent.TimeoutException
+	at java.util.concurrent.FutureTask.get(FutureTask.java:201)
+	at xxl.java.junit.TestSuiteExecution.executionResult(TestSuiteExecution.java:59)
+	... 10 more
+## OAR [2015-02-27 09:56:45] Job 426623 KILLED
