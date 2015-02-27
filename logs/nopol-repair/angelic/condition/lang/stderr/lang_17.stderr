@@ -32,4 +32,23 @@ xxl.java.compiler.DynamicCompilationException: Aborting: dynamic compilation fai
 	at fr.inria.lille.repair.nopol.NoPolLauncher.launch(NoPolLauncher.java:50)
 	at fr.inria.lille.repair.Main.<init>(Main.java:199)
 	at fr.inria.lille.repair.Main.main(Main.java:180)
-## OAR [2015-02-26 11:13:28] Job 1493454 KILLED
+java.lang.RuntimeException: java.util.concurrent.TimeoutException
+	at xxl.java.junit.TestSuiteExecution.executionResult(TestSuiteExecution.java:66)
+	at xxl.java.junit.TestSuiteExecution.runTestCase(TestSuiteExecution.java:40)
+	at xxl.java.junit.TestSuiteExecution.runTestCases(TestSuiteExecution.java:50)
+	at fr.inria.lille.repair.nopol.synth.ConstraintModelBuilder.buildFor(ConstraintModelBuilder.java:64)
+	at fr.inria.lille.repair.nopol.synth.DefaultSynthesizer.buildPatch(DefaultSynthesizer.java:61)
+	at fr.inria.lille.repair.nopol.NoPol.solveWithMultipleBuild(NoPol.java:103)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:80)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:72)
+	at fr.inria.lille.repair.nopol.NoPolLauncher.launch(NoPolLauncher.java:50)
+	at fr.inria.lille.repair.Main.<init>(Main.java:199)
+	at fr.inria.lille.repair.Main.main(Main.java:180)
+Caused by: java.util.concurrent.TimeoutException
+	at java.util.concurrent.FutureTask.get(FutureTask.java:201)
+	at xxl.java.junit.TestSuiteExecution.executionResult(TestSuiteExecution.java:59)
+	... 10 more
+
+real	60m38.032s
+user	61m19.778s
+sys	0m6.964s
