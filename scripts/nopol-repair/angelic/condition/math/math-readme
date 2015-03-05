@@ -1,0 +1,28 @@
+#!/bin/bash
+
+cd ~/defects4j-nopol/logs/nopol-repair/angelic/condition/math/
+
+echo '# Math - Nopol angelic condition repair' > README.md
+echo "" >> README.md
+
+for bug in `seq 1 106`
+do
+  echo "Math ${bug} nopol angelic condition repair readme"
+
+  echo "## Bug $bug" >> README.md
+  echo "" >> README.md
+
+  isKilled=`grep KILLED stderr/math_${bug}.stderr`
+
+  if [[ $isKilled ]]; then
+    echo "Time out after 6 hours." >> README.md
+    echo "" >> README.md
+  else
+    echo '```' >> README.md
+    cat stdout/math_${bug}.stdout >> README.md
+    echo '```' >> README.md
+    echo "" >> README.md
+  fi
+done
+
+echo 'Done.'

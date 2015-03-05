@@ -1,0 +1,31 @@
+#!/bin/bash
+
+cd ~/defects4j-nopol/logs/nopol-repair/angelic/condition/chart/
+
+echo '# Chart - Nopol angelic condition repair' > README.md
+echo "" >> README.md
+
+for bug in `seq 1 26`
+do
+  echo "Chart ${bug} nopol angelic condition repair readme"
+
+  echo "## Bug $bug" >> README.md
+  echo "" >> README.md
+
+  isKilled=`grep KILLED stderr/chart_${bug}.stderr`
+
+  if [[ $bug -eq 8 ]]; then
+    echo "Ignored because of grid5000 bug." >> README.md
+    echo "" >> README.md
+  elif [[ $isKilled ]]; then
+    echo "Time out after 6 hours." >> README.md
+    echo "" >> README.md
+  else
+    echo '```' >> README.md
+    cat stdout/chart_${bug}.stdout >> README.md
+    echo '```' >> README.md
+    echo "" >> README.md
+  fi
+done
+
+echo 'Done.'
