@@ -1,23 +1,23 @@
 #!/bin/bash
 
-cd ~/defects4j-nopol/logs/nopol-repair/angelic/condition/lang/
+cd ~/defects4j-nopol/logs/nopol-repair/angelic/precondition/math/
 
-echo '# Lang - Nopol angelic condition repair' > README.md
+echo '# Math - Nopol angelic precondition repair' > README.md
 echo "" >> README.md
 echo '| #Bug | Nb Statements Analyzed | Nb Angelic Value Found | Exec. time | Patch Found |' >> README_tmp.md
 echo '|------|---------------|--------------|------------|------------|' >> README_tmp.md
 
 nbPatchFound=0
 
-for bug in `seq 1 65`
+for bug in `seq 1 106`
 do
-  information=`grep "^----INFORMATION----" stdout/lang_${bug}.stdout`
+  information=`grep "^----INFORMATION----" stdout/math_${bug}.stdout`
 
   if [[ $information ]]; then
-    statement=`grep "^Nb Statements Analyzed" stdout/lang_${bug}.stdout | cut -f 2 -d :`
-    angelic=`grep "^Nb Statements with Angelic Value Found" stdout/lang_${bug}.stdout | cut -f 2 -d :`
-    execTime=`grep "^Nopol Execution time" stdout/lang_${bug}.stdout | cut -f 2 -d :`
-    patchFound=`grep "^----PATCH FOUND----" stdout/lang_${bug}.stdout`
+    statement=`grep "^Nb Statements Analyzed" stdout/math_${bug}.stdout | cut -f 2 -d :`
+    angelic=`grep "^Nb Statements with Angelic Value Found" stdout/math_${bug}.stdout | cut -f 2 -d :`
+    execTime=`grep "^Nopol Execution time" stdout/math_${bug}.stdout | cut -f 2 -d :`
+    patchFound=`grep "^----PATCH FOUND----" stdout/math_${bug}.stdout`
 
     if [[ $patchFound ]]; then
       patch="YES"
@@ -33,7 +33,7 @@ do
 done
 
 echo "" >> README.md
-echo "- Nb patch found: $nbPatchFound/65" >> README.md
+echo "- Nb patch found: $nbPatchFound/106" >> README.md
 echo "" >> README.md
 
 cat README_tmp.md >> README.md
@@ -43,16 +43,16 @@ if [[ $nbPatchFound -gt 0 ]]; then
   echo "## Patches" >> README.md
   echo "" >> README.md
 
-  for bug in `seq 1 65`
+  for bug in `seq 1 106`
   do
-    patchFound=`grep "^----PATCH FOUND----" stdout/lang_${bug}.stdout`
+    patchFound=`grep "^----PATCH FOUND----" stdout/math_${bug}.stdout`
 
     if [[ $patchFound ]]; then
       echo "### Bug $bug" >> README.md
       echo "" >> README.md
 
       echo '```' >> README.md
-      cat stdout/lang_${bug}.stdout >> README.md
+      cat stdout/math_${bug}.stdout >> README.md
       echo '```' >> README.md
     fi
   done

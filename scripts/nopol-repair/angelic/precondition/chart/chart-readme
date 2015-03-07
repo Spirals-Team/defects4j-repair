@@ -1,8 +1,8 @@
 #!/bin/bash
 
-cd ~/defects4j-nopol/logs/nopol-repair/angelic/condition/chart/
+cd ~/defects4j-nopol/logs/nopol-repair/angelic/precondition/chart/
 
-echo '# Chart - Nopol angelic condition repair' > README.md
+echo '# Chart - Nopol angelic precondition repair' > README.md
 echo "" >> README.md
 echo '| #Bug | Nb Statements Analyzed | Nb Angelic Value Found | Exec. time | Patch Found |' >> README_tmp.md
 echo '|------|---------------|--------------|------------|------------|' >> README_tmp.md
@@ -61,7 +61,7 @@ if [[ $nbPatchFound -gt 0 ]]; then
 fi
 #for bug in `seq 1 26`
 #do
-#  echo "Chart ${bug} nopol angelic condition repair readme"
+#  echo "Chart ${bug} nopol angelic precondition repair readme"
 #
 #  echo "## Patches" >> README.md
 #  echo "## Bug $bug" >> README.md

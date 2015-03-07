@@ -1,444 +1,72 @@
 # Lang - Nopol angelic condition repair
 
-## Bug 1
 
-Time out after 6 hours.
-
-## Bug 2
-
-Time out after 6 hours.
-
-## Bug 3
-
-Time out after 6 hours.
-
-## Bug 4
-
-Time out after 6 hours.
-
-## Bug 5
-
-Time out after 6 hours.
-
-## Bug 6
-
-Time out after 6 hours.
-
-## Bug 7
-
-Time out after 6 hours.
-
-## Bug 8
-
-Time out after 6 hours.
-
-## Bug 9
-
-Time out after 6 hours.
-
-## Bug 10
-
-Time out after 6 hours.
-
-## Bug 11
-
-Time out after 6 hours.
-
-## Bug 12
-
-Time out after 6 hours.
-
-## Bug 13
-
-Time out after 6 hours.
-
-## Bug 14
-
-Time out after 6 hours.
-
-## Bug 15
-
-Time out after 6 hours.
-
-## Bug 16
-
-```
-----INFORMATION----
-Nb Statements Analyzed : 93
-Nb Statements with Angelic Value Found : 0
-Nopol Execution time : 68055ms
-```
-
-## Bug 17
-
-```
-----INFORMATION----
-Nb Statements Analyzed : 56
-Nb Statements with Angelic Value Found : 0
-Nopol Execution time : 3651477ms
-```
-
-## Bug 18
-
-Time out after 6 hours.
-
-## Bug 19
-
-```
-----INFORMATION----
-Nb Statements Analyzed : 55
-Nb Statements with Angelic Value Found : 0
-Nopol Execution time : 7249809ms
-```
-
-## Bug 20
-
-```
-----INFORMATION----
-Nb Statements Analyzed : 62
-Nb Statements with Angelic Value Found : 0
-Nopol Execution time : 69986ms
-```
-
-## Bug 21
-
-```
-----INFORMATION----
-Nb Statements Analyzed : 31
-Nb Statements with Angelic Value Found : 0
-Nopol Execution time : 55341ms
-```
-
-## Bug 22
-
-Time out after 6 hours.
-
-## Bug 23
-
-Time out after 6 hours.
-
-## Bug 24
-
-```
-----INFORMATION----
-Nb Statements Analyzed : 173
-Nb Statements with Angelic Value Found : 0
-Nopol Execution time : 3686652ms
-```
-
-## Bug 25
-
-```
-----INFORMATION----
-Nb Statements Analyzed : 30
-Nb Statements with Angelic Value Found : 0
-Nopol Execution time : 45512ms
-```
-
-## Bug 26
-
-Time out after 6 hours.
-
-## Bug 27
-
-```
-----INFORMATION----
-Nb Statements Analyzed : 85
-Nb Statements with Angelic Value Found : 0
-Nopol Execution time : 63941ms
-```
-
-## Bug 28
-
-```
-----INFORMATION----
-Nb Statements Analyzed : 34
-Nb Statements with Angelic Value Found : 0
-Nopol Execution time : 9990155ms
-```
-
-## Bug 29
-
-```
-----INFORMATION----
-Nb Statements Analyzed : 11
-Nb Statements with Angelic Value Found : 0
-Nopol Execution time : 42936ms
-```
-
-## Bug 30
-
-```
-----INFORMATION----
-Nb Statements Analyzed : 55
-Nb Statements with Angelic Value Found : 0
-Nopol Execution time : 93226ms
-```
-
-## Bug 31
-
-```
-----INFORMATION----
-Nb Statements Analyzed : 9
-Nb Statements with Angelic Value Found : 0
-Nopol Execution time : 48219ms
-```
-
-## Bug 32
-
-```
-----INFORMATION----
-Nb Statements Analyzed : 57
-Nb Statements with Angelic Value Found : 0
-Nopol Execution time : 3674575ms
-```
-
-## Bug 33
-
-```
-----INFORMATION----
-Nb Statements Analyzed : 9
-Nb Statements with Angelic Value Found : 0
-Nopol Execution time : 51545ms
-```
-
-## Bug 34
-
-Time out after 6 hours.
-
-## Bug 35
-
-```
-----INFORMATION----
-Nb Statements Analyzed : 6
-Nb Statements with Angelic Value Found : 0
-Nopol Execution time : 43160ms
-```
-
-## Bug 36
-
-```
-----INFORMATION----
-Nb Statements Analyzed : 148
-Nb Statements with Angelic Value Found : 0
-Nopol Execution time : 3669088ms
-```
-
-## Bug 37
-
-```
-----INFORMATION----
-Nb Statements Analyzed : 6
-Nb Statements with Angelic Value Found : 0
-Nopol Execution time : 60431ms
-```
-
-## Bug 38
-
-Time out after 6 hours.
-
-## Bug 39
-
-Time out after 6 hours.
-
-## Bug 40
-
-```
-----INFORMATION----
-Nb Statements Analyzed : 4
-Nb Statements with Angelic Value Found : 0
-Nopol Execution time : 49743ms
-```
-
-## Bug 41
-
-```
-----INFORMATION----
-Nb Statements Analyzed : 14
-Nb Statements with Angelic Value Found : 0
-Nopol Execution time : 50396ms
-```
-
-## Bug 42
-
-```
-----INFORMATION----
-Nb Statements Analyzed : 70
-Nb Statements with Angelic Value Found : 0
-Nopol Execution time : 92432ms
-```
-
-## Bug 43
-
-Time out after 6 hours.
-
-## Bug 44
-
-Time out after 6 hours.
-
-## Bug 45
-
-```
-----INFORMATION----
-Nb Statements Analyzed : 24
-Nb Statements with Angelic Value Found : 0
-Nopol Execution time : 70724ms
-```
-
-## Bug 46
-
-```
-----INFORMATION----
-Nb Statements Analyzed : 21
-Nb Statements with Angelic Value Found : 1
-Nopol Execution time : 99855ms
-```
-
-## Bug 47
-
-```
-----INFORMATION----
-Nb Statements Analyzed : 17
-Nb Statements with Angelic Value Found : 0
-Nopol Execution time : 64381ms
-```
-
-## Bug 48
-
-Time out after 6 hours.
-
-## Bug 49
-
-Time out after 6 hours.
-
-## Bug 50
-
-Time out after 6 hours.
-
-## Bug 51
-
-```
-----INFORMATION----
-Nb Statements Analyzed : 19
-Nb Statements with Angelic Value Found : 2
-Nopol Execution time : 132325ms
-```
-
-## Bug 52
-
-```
-----INFORMATION----
-Nb Statements Analyzed : 28
-Nb Statements with Angelic Value Found : 0
-Nopol Execution time : 70553ms
-```
-
-## Bug 53
-
-Time out after 6 hours.
-
-## Bug 54
-
-```
-----INFORMATION----
-Nb Statements Analyzed : 14
-Nb Statements with Angelic Value Found : 0
-Nopol Execution time : 62011ms
-```
-
-## Bug 55
-
-```
-----INFORMATION----
-Nb Statements Analyzed : 22
-Nb Statements with Angelic Value Found : 1
-Nopol Execution time : 104406ms
-```
-
-## Bug 56
-
-```
-----INFORMATION----
-Nb Statements Analyzed : 67
-Nb Statements with Angelic Value Found : 0
-Nopol Execution time : 73439ms
-```
-
-## Bug 57
-
-```
-----INFORMATION----
-Nb Statements Analyzed : 1
-Nb Statements with Angelic Value Found : 0
-Nopol Execution time : 51216ms
-```
-
-## Bug 58
-
-```
-----INFORMATION----
-Nb Statements Analyzed : 37
-Nb Statements with Angelic Value Found : 5
-Nopol Execution time : 254922ms
-```
-
-## Bug 59
-
-```
-----INFORMATION----
-Nb Statements Analyzed : 12
-Nb Statements with Angelic Value Found : 1
-Nopol Execution time : 90398ms
-```
-
-## Bug 60
-
-```
-----INFORMATION----
-Nb Statements Analyzed : 45
-Nb Statements with Angelic Value Found : 4
-Nopol Execution time : 219255ms
-```
-
-## Bug 61
-
-```
-----INFORMATION----
-Nb Statements Analyzed : 46
-Nb Statements with Angelic Value Found : 0
-Nopol Execution time : 7272037ms
-```
-
-## Bug 62
-
-```
-----INFORMATION----
-Nb Statements Analyzed : 63
-Nb Statements with Angelic Value Found : 0
-Nopol Execution time : 75920ms
-```
-
-## Bug 63
-
-```
-
-```
-
-## Bug 64
-
-```
-----INFORMATION----
-Nb Statements Analyzed : 42
-Nb Statements with Angelic Value Found : 0
-Nopol Execution time : 61981ms
-```
-
-## Bug 65
-
-```
-----INFORMATION----
-Nb Statements Analyzed : 23
-Nb Statements with Angelic Value Found : 0
-Nopol Execution time : 63442ms
-```
-
+- Nb patch found: 0/65
+
+| #Bug | Nb Statements Analyzed | Nb Angelic Value Found | Exec. time | Patch Found |
+|------|---------------|--------------|------------|------------|
+| 1 |  90 |  0 |  97349ms | NO |
+| 2 |  93 |  0 |  92448ms | NO |
+| 3 |  107 |  0 |  99444ms | NO |
+| 4 |  96 |  0 |  98201ms | NO |
+| 5 |  35 |  0 |  88565ms | NO |
+| 6 |  118 |  0 |  3937509ms | NO |
+| 7 |  120 |  0 |  114527ms | NO |
+| 8 | NONE | NONE | > 6h | NO |
+| 9 | NONE | NONE | > 6h | NO |
+| 10 | NONE | NONE | > 6h | NO |
+| 11 |  39 |  0 |  3676162ms | NO |
+| 12 |  48 |  0 |  76679ms | NO |
+| 13 |  61 |  0 |  77568ms | NO |
+| 14 |  30 |  0 |  64254ms | NO |
+| 15 |  270 |  0 |  7367561ms | NO |
+| 16 |  93 |  0 |  68055ms | NO |
+| 17 |  56 |  0 |  3651477ms | NO |
+| 18 | NONE | NONE | > 6h | NO |
+| 19 |  55 |  0 |  7249809ms | NO |
+| 20 |  62 |  0 |  69986ms | NO |
+| 21 |  31 |  0 |  55341ms | NO |
+| 22 | NONE | NONE | > 6h | NO |
+| 23 | NONE | NONE | > 6h | NO |
+| 24 |  173 |  0 |  3686652ms | NO |
+| 25 |  30 |  0 |  45512ms | NO |
+| 26 | NONE | NONE | > 6h | NO |
+| 27 |  85 |  0 |  63941ms | NO |
+| 28 |  34 |  0 |  9990155ms | NO |
+| 29 |  11 |  0 |  42936ms | NO |
+| 30 |  55 |  0 |  93226ms | NO |
+| 31 |  9 |  0 |  48219ms | NO |
+| 32 |  57 |  0 |  3674575ms | NO |
+| 33 |  9 |  0 |  51545ms | NO |
+| 34 | NONE | NONE | > 6h | NO |
+| 35 |  6 |  0 |  43160ms | NO |
+| 36 |  148 |  0 |  3669088ms | NO |
+| 37 |  6 |  0 |  60431ms | NO |
+| 38 | NONE | NONE | > 6h | NO |
+| 39 | NONE | NONE | > 6h | NO |
+| 40 |  4 |  0 |  49743ms | NO |
+| 41 |  14 |  0 |  50396ms | NO |
+| 42 |  70 |  0 |  92432ms | NO |
+| 43 | NONE | NONE | > 6h | NO |
+| 44 | NONE | NONE | > 6h | NO |
+| 45 |  24 |  0 |  70724ms | NO |
+| 46 |  21 |  1 |  99855ms | NO |
+| 47 |  17 |  0 |  64381ms | NO |
+| 48 | NONE | NONE | > 6h | NO |
+| 49 | NONE | NONE | > 6h | NO |
+| 50 | NONE | NONE | > 6h | NO |
+| 51 |  19 |  2 |  132325ms | NO |
+| 52 |  28 |  0 |  70553ms | NO |
+| 53 | NONE | NONE | > 6h | NO |
+| 54 |  14 |  0 |  62011ms | NO |
+| 55 |  22 |  1 |  104406ms | NO |
+| 56 |  67 |  0 |  73439ms | NO |
+| 57 |  1 |  0 |  51216ms | NO |
+| 58 |  37 |  5 |  254922ms | NO |
+| 59 |  12 |  1 |  90398ms | NO |
+| 60 |  45 |  4 |  219255ms | NO |
+| 61 |  46 |  0 |  7272037ms | NO |
+| 62 |  63 |  0 |  75920ms | NO |
+| 63 | NONE | NONE | > 6h | NO |
+| 64 |  42 |  0 |  61981ms | NO |
+| 65 |  23 |  0 |  63442ms | NO |

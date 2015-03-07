@@ -4,25 +4,58 @@ cd ~/defects4j-nopol/logs/nopol-repair/angelic/condition/math/
 
 echo '# Math - Nopol angelic condition repair' > README.md
 echo "" >> README.md
+echo '| #Bug | Nb Statements Analyzed | Nb Angelic Value Found | Exec. time | Patch Found |' >> README_tmp.md
+echo '|------|---------------|--------------|------------|------------|' >> README_tmp.md
+
+nbPatchFound=0
 
 for bug in `seq 1 106`
 do
-  echo "Math ${bug} nopol angelic condition repair readme"
+  information=`grep "^----INFORMATION----" stdout/math_${bug}.stdout`
 
-  echo "## Bug $bug" >> README.md
-  echo "" >> README.md
+  if [[ $information ]]; then
+    statement=`grep "^Nb Statements Analyzed" stdout/math_${bug}.stdout | cut -f 2 -d :`
+    angelic=`grep "^Nb Statements with Angelic Value Found" stdout/math_${bug}.stdout | cut -f 2 -d :`
+    execTime=`grep "^Nopol Execution time" stdout/math_${bug}.stdout | cut -f 2 -d :`
+    patchFound=`grep "^----PATCH FOUND----" stdout/math_${bug}.stdout`
 
-  isKilled=`grep KILLED stderr/math_${bug}.stderr`
+    if [[ $patchFound ]]; then
+      patch="YES"
+      let "nbPatchFound++"
+    else
+      patch="NO"
+    fi
 
-  if [[ $isKilled ]]; then
-    echo "Time out after 6 hours." >> README.md
-    echo "" >> README.md
+    echo "| $bug | $statement | $angelic | $execTime | $patch |" >> README_tmp.md
   else
-    echo '```' >> README.md
-    cat stdout/math_${bug}.stdout >> README.md
-    echo '```' >> README.md
-    echo "" >> README.md
+    echo "| $bug | NONE | NONE | > 6h | NO |" >> README_tmp.md
   fi
 done
+
+echo "" >> README.md
+echo "- Nb patch found: $nbPatchFound/106" >> README.md
+echo "" >> README.md
+
+cat README_tmp.md >> README.md
+rm README_tmp.md
+
+if [[ $nbPatchFound -gt 0 ]]; then
+  echo "## Patches" >> README.md
+  echo "" >> README.md
+
+  for bug in `seq 1 106`
+  do
+    patchFound=`grep "^----PATCH FOUND----" stdout/math_${bug}.stdout`
+
+    if [[ $patchFound ]]; then
+      echo "### Bug $bug" >> README.md
+      echo "" >> README.md
+
+      echo '```' >> README.md
+      cat stdout/math_${bug}.stdout >> README.md
+      echo '```' >> README.md
+    fi
+  done
+fi
 
 echo 'Done.'
