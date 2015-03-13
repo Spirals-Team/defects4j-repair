@@ -1,5 +1,9 @@
 # Defects4j-Nopol
 
+## Infos
+
+Nb. of tested bugs: 223 (25 + 65 + 106 + 27)
+
 ## Reset depots
 
 ```
