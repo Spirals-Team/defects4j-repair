@@ -10,11 +10,12 @@ Nb. of tested bugs: 223 (25 + 65 + 106 + 27)
 export HTTP_PROXY="http://proxy:3128/"
 export HTTPS_PROXY="https://proxy:3128/"
 
-rm -rf defects4j/ defects4j-nopol/ nopol/
+rm -rf defects4j/ defects4j-nopol/ nopol/ astor/
 
 git clone https://github.com/rsommerard/nopol.git
 git clone https://github.com/rsommerard/defects4j.git
 git clone https://github.com/rsommerard/defects4j-nopol.git
+git clone https://github.com/rsommerard/astor.git
 ```
 
 ## Init projects
