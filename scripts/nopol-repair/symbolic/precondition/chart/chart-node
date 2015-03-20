@@ -1,0 +1,21 @@
+#!/bin/bash
+
+export PATH="~/defects4j/framework/bin:$PATH"
+
+cp -r ~/projects/chart/chart_${1}/ /tmp/
+cd /tmp/chart_${1}/
+defects4j compile
+
+cp ~/nopol/nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar .
+cp -r ~/nopol/z3-x64-debian-7.7/ .
+
+if [[ $1 -lt 5 ]]; then
+  time java -cp nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar fr.inria.lille.repair.Main repair precondition symbolic source/ build/:build-tests/:lib/servlet.jar:nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar z3 z3-x64-debian-7.7/bin/z3
+elif [[ $1 -lt 20 ]]; then
+  time java -cp nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar fr.inria.lille.repair.Main repair precondition symbolic source/ build/:build-tests/:lib/servlet.jar:nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar z3 z3-x64-debian-7.7/bin/z3
+else
+  time java -cp nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar fr.inria.lille.repair.Main repair precondition symbolic source/ build/:build-tests/:lib/servlet.jar:nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar z3 z3-x64-debian-7.7/bin/z3
+fi
+
+cd /tmp/
+rm -rf chart_${1}/
