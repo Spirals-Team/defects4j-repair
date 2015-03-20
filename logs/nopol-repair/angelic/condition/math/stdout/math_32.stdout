@@ -1,6 +1,0 @@
-----INFORMATION----
-Nb Statements Analyzed : 260
-Nb Statements with Angelic Value Found : 1
-Nopol Execution time : 1241254ms
-----PATCH FOUND----
-org.apache.commons.math3.geometry.partitioning.AbstractRegion:214: PRECONDITION ((!(((boundary.size())-(plusList.size()))<(minusList.size())))&&((1)<=(plusList.size())))||((minusList.size())==((boundary.size())+(-1)))

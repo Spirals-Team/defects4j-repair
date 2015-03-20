@@ -1,6 +1,0 @@
-----INFORMATION----
-Nb Statements Analyzed : 11
-Nb Statements with Angelic Value Found : 1
-Nopol Execution time : 67467ms
-----PATCH FOUND----
-org.jfree.data.Range:335: PRECONDITION (((1)+(1))<((org.jfree.data.Range.this.upper)-(org.jfree.data.Range.this.lower)))||(!(((1)+(1))<=(org.jfree.data.Range.this.lower)))
