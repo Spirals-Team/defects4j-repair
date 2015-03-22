@@ -1,0 +1,117 @@
+Exception in thread "Thread-3" java.lang.NullPointerException
+	at org.joda.time.tz.ZoneInfoCompiler.verbose(ZoneInfoCompiler.java:78)
+	at org.joda.time.tz.DateTimeZoneBuilder$PrecalculatedZone.create(DateTimeZoneBuilder.java:1460)
+	at org.joda.time.tz.DateTimeZoneBuilder.toDateTimeZone(DateTimeZoneBuilder.java:396)
+	at org.joda.time.tz.TestCompiler$1.run(TestCompiler.java:94)
+	at java.lang.Thread.run(Thread.java:745)
+Exception in thread "Thread-4" java.lang.NullPointerException
+	at org.joda.time.tz.ZoneInfoCompiler.verbose(ZoneInfoCompiler.java:78)
+	at org.joda.time.tz.DateTimeZoneBuilder$PrecalculatedZone.create(DateTimeZoneBuilder.java:1460)
+	at org.joda.time.tz.DateTimeZoneBuilder.toDateTimeZone(DateTimeZoneBuilder.java:396)
+	at org.joda.time.tz.TestCompiler$1.run(TestCompiler.java:94)
+	at java.lang.Thread.run(Thread.java:745)
+Exception in thread "Thread-5" java.lang.NullPointerException
+	at org.joda.time.tz.ZoneInfoCompiler.verbose(ZoneInfoCompiler.java:78)
+	at org.joda.time.tz.DateTimeZoneBuilder$PrecalculatedZone.create(DateTimeZoneBuilder.java:1460)
+	at org.joda.time.tz.DateTimeZoneBuilder.toDateTimeZone(DateTimeZoneBuilder.java:396)
+	at org.joda.time.tz.TestCompiler$1.run(TestCompiler.java:94)
+	at java.lang.Thread.run(Thread.java:745)
+Exception in thread "Thread-7" java.lang.NullPointerException
+	at org.joda.time.tz.ZoneInfoCompiler.verbose(ZoneInfoCompiler.java:78)
+	at org.joda.time.tz.DateTimeZoneBuilder$PrecalculatedZone.create(DateTimeZoneBuilder.java:1180)
+	at org.joda.time.tz.DateTimeZoneBuilder.toDateTimeZone(DateTimeZoneBuilder.java:296)
+	at org.joda.time.tz.TestCompiler$1.run(TestCompiler.java:94)
+	at java.lang.Thread.run(Thread.java:745)
+Exception in thread "Thread-16" java.lang.NullPointerException
+	at org.joda.time.tz.ZoneInfoCompiler.verbose(ZoneInfoCompiler.java:78)
+	at org.joda.time.tz.DateTimeZoneBuilder$PrecalculatedZone.create(DateTimeZoneBuilder.java:1180)
+	at org.joda.time.tz.DateTimeZoneBuilder.toDateTimeZone(DateTimeZoneBuilder.java:296)
+	at org.joda.time.tz.TestCompiler$1.run(TestCompiler.java:94)
+	at java.lang.Thread.run(Thread.java:745)
+Exception in thread "Thread-25" java.lang.NullPointerException
+	at org.joda.time.tz.ZoneInfoCompiler.verbose(ZoneInfoCompiler.java:78)
+	at org.joda.time.tz.DateTimeZoneBuilder$PrecalculatedZone.create(DateTimeZoneBuilder.java:1203)
+	at org.joda.time.tz.DateTimeZoneBuilder.toDateTimeZone(DateTimeZoneBuilder.java:296)
+	at org.joda.time.tz.TestCompiler$1.run(TestCompiler.java:94)
+	at java.lang.Thread.run(Thread.java:745)
+java.lang.RuntimeException: java.util.concurrent.TimeoutException
+	at xxl.java.junit.TestSuiteExecution.executionResult(TestSuiteExecution.java:66)
+	at xxl.java.junit.TestSuiteExecution.runTestCase(TestSuiteExecution.java:40)
+	at xxl.java.junit.TestSuiteExecution.runTestCases(TestSuiteExecution.java:50)
+	at fr.inria.lille.repair.nopol.synth.ConstraintModelBuilder.buildFor(ConstraintModelBuilder.java:62)
+	at fr.inria.lille.repair.nopol.synth.DefaultSynthesizer.buildPatch(DefaultSynthesizer.java:65)
+	at fr.inria.lille.repair.nopol.NoPol.solveWithMultipleBuild(NoPol.java:106)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:83)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:75)
+	at fr.inria.lille.repair.nopol.NoPolLauncher.launch(NoPolLauncher.java:51)
+	at fr.inria.lille.repair.Main.<init>(Main.java:199)
+	at fr.inria.lille.repair.Main.main(Main.java:180)
+Caused by: java.util.concurrent.TimeoutException
+	at java.util.concurrent.FutureTask.get(FutureTask.java:201)
+	at xxl.java.junit.TestSuiteExecution.executionResult(TestSuiteExecution.java:59)
+	... 10 more
+java.lang.RuntimeException: java.util.concurrent.TimeoutException
+	at xxl.java.junit.TestSuiteExecution.executionResult(TestSuiteExecution.java:66)
+	at xxl.java.junit.TestSuiteExecution.runTestCase(TestSuiteExecution.java:40)
+	at xxl.java.junit.TestSuiteExecution.runTestCases(TestSuiteExecution.java:50)
+	at fr.inria.lille.repair.nopol.synth.ConstraintModelBuilder.buildFor(ConstraintModelBuilder.java:62)
+	at fr.inria.lille.repair.nopol.synth.DefaultSynthesizer.buildPatch(DefaultSynthesizer.java:65)
+	at fr.inria.lille.repair.nopol.NoPol.solveWithMultipleBuild(NoPol.java:106)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:83)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:75)
+	at fr.inria.lille.repair.nopol.NoPolLauncher.launch(NoPolLauncher.java:51)
+	at fr.inria.lille.repair.Main.<init>(Main.java:199)
+	at fr.inria.lille.repair.Main.main(Main.java:180)
+Caused by: java.util.concurrent.TimeoutException
+	at java.util.concurrent.FutureTask.get(FutureTask.java:201)
+	at xxl.java.junit.TestSuiteExecution.executionResult(TestSuiteExecution.java:59)
+	... 10 more
+java.lang.RuntimeException: java.util.concurrent.TimeoutException
+	at xxl.java.junit.TestSuiteExecution.executionResult(TestSuiteExecution.java:66)
+	at xxl.java.junit.TestSuiteExecution.runTestCase(TestSuiteExecution.java:40)
+	at xxl.java.junit.TestSuiteExecution.runTestCases(TestSuiteExecution.java:50)
+	at fr.inria.lille.repair.nopol.synth.ConstraintModelBuilder.buildFor(ConstraintModelBuilder.java:62)
+	at fr.inria.lille.repair.nopol.synth.DefaultSynthesizer.buildPatch(DefaultSynthesizer.java:65)
+	at fr.inria.lille.repair.nopol.NoPol.solveWithMultipleBuild(NoPol.java:106)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:83)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:75)
+	at fr.inria.lille.repair.nopol.NoPolLauncher.launch(NoPolLauncher.java:51)
+	at fr.inria.lille.repair.Main.<init>(Main.java:199)
+	at fr.inria.lille.repair.Main.main(Main.java:180)
+Caused by: java.util.concurrent.TimeoutException
+	at java.util.concurrent.FutureTask.get(FutureTask.java:201)
+	at xxl.java.junit.TestSuiteExecution.executionResult(TestSuiteExecution.java:59)
+	... 10 more
+java.lang.RuntimeException: java.util.concurrent.TimeoutException
+	at xxl.java.junit.TestSuiteExecution.executionResult(TestSuiteExecution.java:66)
+	at xxl.java.junit.TestSuiteExecution.runTestCase(TestSuiteExecution.java:40)
+	at xxl.java.junit.TestSuiteExecution.runTestCases(TestSuiteExecution.java:50)
+	at fr.inria.lille.repair.nopol.synth.ConstraintModelBuilder.buildFor(ConstraintModelBuilder.java:62)
+	at fr.inria.lille.repair.nopol.synth.DefaultSynthesizer.buildPatch(DefaultSynthesizer.java:65)
+	at fr.inria.lille.repair.nopol.NoPol.solveWithMultipleBuild(NoPol.java:106)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:83)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:75)
+	at fr.inria.lille.repair.nopol.NoPolLauncher.launch(NoPolLauncher.java:51)
+	at fr.inria.lille.repair.Main.<init>(Main.java:199)
+	at fr.inria.lille.repair.Main.main(Main.java:180)
+Caused by: java.util.concurrent.TimeoutException
+	at java.util.concurrent.FutureTask.get(FutureTask.java:201)
+	at xxl.java.junit.TestSuiteExecution.executionResult(TestSuiteExecution.java:59)
+	... 10 more
+java.lang.RuntimeException: java.util.concurrent.TimeoutException
+	at xxl.java.junit.TestSuiteExecution.executionResult(TestSuiteExecution.java:66)
+	at xxl.java.junit.TestSuiteExecution.runTestCase(TestSuiteExecution.java:40)
+	at xxl.java.junit.TestSuiteExecution.runTestCases(TestSuiteExecution.java:50)
+	at fr.inria.lille.repair.nopol.synth.ConstraintModelBuilder.buildFor(ConstraintModelBuilder.java:62)
+	at fr.inria.lille.repair.nopol.synth.DefaultSynthesizer.buildPatch(DefaultSynthesizer.java:65)
+	at fr.inria.lille.repair.nopol.NoPol.solveWithMultipleBuild(NoPol.java:106)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:83)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:75)
+	at fr.inria.lille.repair.nopol.NoPolLauncher.launch(NoPolLauncher.java:51)
+	at fr.inria.lille.repair.Main.<init>(Main.java:199)
+	at fr.inria.lille.repair.Main.main(Main.java:180)
+Caused by: java.util.concurrent.TimeoutException
+	at java.util.concurrent.FutureTask.get(FutureTask.java:201)
+	at xxl.java.junit.TestSuiteExecution.executionResult(TestSuiteExecution.java:59)
+	... 10 more
+## OAR [2015-03-21 17:53:28] Job 754035 KILLED
