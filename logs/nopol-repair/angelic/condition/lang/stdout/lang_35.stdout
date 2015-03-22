@@ -1,0 +1,160 @@
+Running ant (compile) ... OK
+Buildfile: /home/rsommerard/defects4j/framework/projects/Lang/Lang.build.xml
+
+test-offline:
+
+get-deps:
+
+compile:
+    [mkdir] Created dir: /tmp/lang_35/target/classes
+    [javac] /tmp/lang_35/maven-build.xml:75: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 80 source files to /tmp/lang_35/target/classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.5
+    [javac] Note: /tmp/lang_35/src/main/java/org/apache/commons/lang3/ArrayUtils.java uses unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+    [javac] 1 warning
+    [mkdir] Created dir: /tmp/lang_35/target/classes/META-INF
+     [copy] Copying 2 files to /tmp/lang_35/target/classes/META-INF
+
+BUILD SUCCESSFUL
+Total time: 7 seconds
+Running ant (compile.tests) ... OK
+Buildfile: /home/rsommerard/defects4j/framework/projects/Lang/Lang.build.xml
+
+test-offline:
+
+get-deps:
+
+compile:
+    [javac] /tmp/lang_35/maven-build.xml:75: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+compile-tests:
+    [mkdir] Created dir: /tmp/lang_35/target/test-classes
+    [javac] /tmp/lang_35/maven-build.xml:108: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 98 source files to /tmp/lang_35/target/test-classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.5
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/SystemUtilsTest.java:27: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac] import junit.framework.Assert;
+    [javac]                       ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/builder/ReflectionToStringBuilderExcludeTest.java:24: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac] import junit.framework.Assert;
+    [javac]                       ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/exception/ExceptionUtilsTest.java:30: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac] import junit.framework.Assert;
+    [javac]                       ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/reflect/TypeUtilsTest.java:19: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac] import static junit.framework.Assert.*;
+    [javac]                              ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/time/StopWatchTest.java:19: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac] import junit.framework.Assert;
+    [javac]                       ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/SystemUtilsTest.java:194: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertNotNull(dir);
+    [javac]         ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/SystemUtilsTest.java:195: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertTrue(dir.exists());
+    [javac]         ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/SystemUtilsTest.java:203: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertNotNull(dir);
+    [javac]         ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/SystemUtilsTest.java:204: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertTrue(dir.exists());
+    [javac]         ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/SystemUtilsTest.java:212: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertNotNull(dir);
+    [javac]         ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/SystemUtilsTest.java:213: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertTrue(dir.exists());
+    [javac]         ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/SystemUtilsTest.java:221: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertNotNull(dir);
+    [javac]         ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/SystemUtilsTest.java:222: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertTrue(dir.exists());
+    [javac]         ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/builder/ReflectionToStringBuilderExcludeTest.java:114: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertTrue(toString.indexOf(NOT_SECRET_FIELD) > ArrayUtils.INDEX_NOT_FOUND);
+    [javac]         ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/builder/ReflectionToStringBuilderExcludeTest.java:115: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertTrue(toString.indexOf(NOT_SECRET_VALUE) > ArrayUtils.INDEX_NOT_FOUND);
+    [javac]         ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/builder/ReflectionToStringBuilderExcludeTest.java:119: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertEquals(ArrayUtils.INDEX_NOT_FOUND, toString.indexOf(SECRET_VALUE));
+    [javac]         ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/builder/ReflectionToStringBuilderExcludeTest.java:124: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]         Assert.assertTrue(toString.indexOf(SECRET_VALUE) > 0);
+    [javac]         ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/exception/ExceptionUtilsTest.java:127: warning: [deprecation] getCause(Throwable) in ExceptionUtils has been deprecated
+    [javac]         assertSame(null, ExceptionUtils.getCause(null));
+    [javac]                                        ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/exception/ExceptionUtilsTest.java:128: warning: [deprecation] getCause(Throwable) in ExceptionUtils has been deprecated
+    [javac]         assertSame(null, ExceptionUtils.getCause(withoutCause));
+    [javac]                                        ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/exception/ExceptionUtilsTest.java:129: warning: [deprecation] getCause(Throwable) in ExceptionUtils has been deprecated
+    [javac]         assertSame(withoutCause, ExceptionUtils.getCause(nested));
+    [javac]                                                ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/exception/ExceptionUtilsTest.java:130: warning: [deprecation] getCause(Throwable) in ExceptionUtils has been deprecated
+    [javac]         assertSame(nested, ExceptionUtils.getCause(withCause));
+    [javac]                                          ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/exception/ExceptionUtilsTest.java:131: warning: [deprecation] getCause(Throwable) in ExceptionUtils has been deprecated
+    [javac]         assertSame(null, ExceptionUtils.getCause(jdkNoCause));
+    [javac]                                        ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/exception/ExceptionUtilsTest.java:132: warning: [deprecation] getCause(Throwable) in ExceptionUtils has been deprecated
+    [javac]         assertSame(cyclicCause.getCause(), ExceptionUtils.getCause(cyclicCause));
+    [javac]                                                          ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/exception/ExceptionUtilsTest.java:133: warning: [deprecation] getCause(Throwable) in ExceptionUtils has been deprecated
+    [javac]         assertSame(((ExceptionWithCause) cyclicCause.getCause()).getCause(), ExceptionUtils.getCause(cyclicCause.getCause()));
+    [javac]                                                                                            ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/exception/ExceptionUtilsTest.java:134: warning: [deprecation] getCause(Throwable) in ExceptionUtils has been deprecated
+    [javac]         assertSame(cyclicCause.getCause(), ExceptionUtils.getCause(((ExceptionWithCause) cyclicCause.getCause()).getCause()));
+    [javac]                                                          ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/exception/ExceptionUtilsTest.java:138: warning: [deprecation] getCause(Throwable,String[]) in ExceptionUtils has been deprecated
+    [javac]         assertSame(null, ExceptionUtils.getCause(null, null));
+    [javac]                                        ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/exception/ExceptionUtilsTest.java:139: warning: [deprecation] getCause(Throwable,String[]) in ExceptionUtils has been deprecated
+    [javac]         assertSame(null, ExceptionUtils.getCause(null, new String[0]));
+    [javac]                                        ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/exception/ExceptionUtilsTest.java:142: warning: [deprecation] getCause(Throwable,String[]) in ExceptionUtils has been deprecated
+    [javac]         assertSame(nested, ExceptionUtils.getCause(withCause, null));  // default names
+    [javac]                                          ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/exception/ExceptionUtilsTest.java:143: warning: [deprecation] getCause(Throwable,String[]) in ExceptionUtils has been deprecated
+    [javac]         assertSame(null, ExceptionUtils.getCause(withCause, new String[0]));
+    [javac]                                        ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/exception/ExceptionUtilsTest.java:144: warning: [deprecation] getCause(Throwable,String[]) in ExceptionUtils has been deprecated
+    [javac]         assertSame(null, ExceptionUtils.getCause(withCause, new String[] {null}));
+    [javac]                                        ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/exception/ExceptionUtilsTest.java:145: warning: [deprecation] getCause(Throwable,String[]) in ExceptionUtils has been deprecated
+    [javac]         assertSame(nested, ExceptionUtils.getCause(withCause, new String[] {"getCause"}));
+    [javac]                                          ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/exception/ExceptionUtilsTest.java:148: warning: [deprecation] getCause(Throwable,String[]) in ExceptionUtils has been deprecated
+    [javac]         assertSame(null, ExceptionUtils.getCause(withoutCause, null));
+    [javac]                                        ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/exception/ExceptionUtilsTest.java:149: warning: [deprecation] getCause(Throwable,String[]) in ExceptionUtils has been deprecated
+    [javac]         assertSame(null, ExceptionUtils.getCause(withoutCause, new String[0]));
+    [javac]                                        ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/exception/ExceptionUtilsTest.java:150: warning: [deprecation] getCause(Throwable,String[]) in ExceptionUtils has been deprecated
+    [javac]         assertSame(null, ExceptionUtils.getCause(withoutCause, new String[] {null}));
+    [javac]                                        ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/exception/ExceptionUtilsTest.java:151: warning: [deprecation] getCause(Throwable,String[]) in ExceptionUtils has been deprecated
+    [javac]         assertSame(null, ExceptionUtils.getCause(withoutCause, new String[] {"getCause"}));
+    [javac]                                        ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/exception/ExceptionUtilsTest.java:152: warning: [deprecation] getCause(Throwable,String[]) in ExceptionUtils has been deprecated
+    [javac]         assertSame(null, ExceptionUtils.getCause(withoutCause, new String[] {"getTargetException"}));
+    [javac]                                        ^
+    [javac] /tmp/lang_35/src/test/java/org/apache/commons/lang3/time/StopWatchTest.java:208: warning: [deprecation] Assert in junit.framework has been deprecated
+    [javac]             Assert.assertTrue(watch.getStartTime() >= beforeStopWatch);
+    [javac]             ^
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+    [javac] 38 warnings
+
+compile.tests:
+
+BUILD SUCCESSFUL
+Total time: 7 seconds
+19:43:46.819 [main] DEBUG f.i.l.commons.spoon.SpoonedProject - [Building Spoon model from src/main/java]
+2015-03-20 19:43:47,048 DEBUG spoon.support.StandardEnvironment - building sources: [src/main/java/org/apache/commons/lang3/ArrayUtils.java, src/main/java/org/apache/commons/lang3/SerializationException.java, src/main/java/org/apache/commons/lang3/BooleanUtils.java, src/main/java/org/apache/commons/lang3/BitField.java, src/main/java/org/apache/commons/lang3/LocaleUtils.java, src/main/java/org/apache/commons/lang3/SerializationUtils.java, src/main/java/org/apache/commons/lang3/ObjectUtils.java, src/main/java/org/apache/commons/lang3/CharSet.java, src/main/java/org/apache/commons/lang3/CharEncoding.java, src/main/java/org/apache/commons/lang3/Validate.java, src/main/java/org/apache/commons/lang3/StringEscapeUtils.java, src/main/java/org/apache/commons/lang3/CharSetUtils.java, src/main/java/org/apache/commons/lang3/ClassUtils.java, src/main/java/org/apache/commons/lang3/CharRange.java, src/main/java/org/apache/commons/lang3/RandomStringUtils.java, src/main/java/org/apache/commons/lang3/StringUtils.java, src/main/java/org/apache/commons/lang3/CharUtils.java, src/main/java/org/apache/commons/lang3/SystemUtils.java, src/main/java/org/apache/commons/lang3/EnumUtils.java, src/main/java/org/apache/commons/lang3/Range.java, src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java, src/main/java/org/apache/commons/lang3/reflect/MethodUtils.java, src/main/java/org/apache/commons/lang3/reflect/ConstructorUtils.java, src/main/java/org/apache/commons/lang3/reflect/MemberUtils.java, src/main/java/org/apache/commons/lang3/reflect/FieldUtils.java, src/main/java/org/apache/commons/lang3/time/StopWatch.java, src/main/java/org/apache/commons/lang3/time/DateFormatUtils.java, src/main/java/org/apache/commons/lang3/time/DurationFormatUtils.java, src/main/java/org/apache/commons/lang3/time/DateUtils.java, src/main/java/org/apache/commons/lang3/time/FastDateFormat.java, src/main/java/org/apache/commons/lang3/mutable/MutableShort.java, src/main/java/org/apache/commons/lang3/mutable/MutableObject.java, src/main/java/org/apache/commons/lang3/mutable/MutableDouble.java, src/main/java/org/apache/commons/lang3/mutable/MutableBoolean.java, src/main/java/org/apache/commons/lang3/mutable/MutableFloat.java, src/main/java/org/apache/commons/lang3/mutable/Mutable.java, src/main/java/org/apache/commons/lang3/mutable/MutableLong.java, src/main/java/org/apache/commons/lang3/mutable/MutableInt.java, src/main/java/org/apache/commons/lang3/mutable/MutableByte.java, src/main/java/org/apache/commons/lang3/text/StrTokenizer.java, src/main/java/org/apache/commons/lang3/text/FormatFactory.java, src/main/java/org/apache/commons/lang3/text/StrBuilder.java, src/main/java/org/apache/commons/lang3/text/StrMatcher.java, src/main/java/org/apache/commons/lang3/text/WordUtils.java, src/main/java/org/apache/commons/lang3/text/ExtendedMessageFormat.java, src/main/java/org/apache/commons/lang3/text/CompositeFormat.java, src/main/java/org/apache/commons/lang3/text/StrLookup.java, src/main/java/org/apache/commons/lang3/text/StrSubstitutor.java, src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java, src/main/java/org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java, src/main/java/org/apache/commons/lang3/text/translate/LookupTranslator.java, src/main/java/org/apache/commons/lang3/text/translate/UnicodeUnescaper.java, src/main/java/org/apache/commons/lang3/text/translate/CodePointTranslator.java, src/main/java/org/apache/commons/lang3/text/translate/NumericEntityEscaper.java, src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java, src/main/java/org/apache/commons/lang3/text/translate/UnicodeEscaper.java, src/main/java/org/apache/commons/lang3/text/translate/AggregateTranslator.java, src/main/java/org/apache/commons/lang3/exception/ExceptionContext.java, src/main/java/org/apache/commons/lang3/exception/ContextedException.java, src/main/java/org/apache/commons/lang3/exception/ContextedRuntimeException.java, src/main/java/org/apache/commons/lang3/exception/DefaultExceptionContext.java, src/main/java/org/apache/commons/lang3/exception/ExceptionUtils.java, src/main/java/org/apache/commons/lang3/math/NumberUtils.java, src/main/java/org/apache/commons/lang3/math/Fraction.java, src/main/java/org/apache/commons/lang3/math/IEEE754rUtils.java, src/main/java/org/apache/commons/lang3/builder/ToStringStyle.java, src/main/java/org/apache/commons/lang3/builder/ToStringBuilder.java, src/main/java/org/apache/commons/lang3/builder/HashCodeBuilder.java, src/main/java/org/apache/commons/lang3/builder/IDKey.java, src/main/java/org/apache/commons/lang3/builder/EqualsBuilder.java, src/main/java/org/apache/commons/lang3/builder/StandardToStringStyle.java, src/main/java/org/apache/commons/lang3/builder/CompareToBuilder.java, src/main/java/org/apache/commons/lang3/builder/ReflectionToStringBuilder.java, src/main/java/org/apache/commons/lang3/concurrent/ConcurrentUtils.java, src/main/java/org/apache/commons/lang3/concurrent/LazyInitializer.java, src/main/java/org/apache/commons/lang3/concurrent/MultiBackgroundInitializer.java, src/main/java/org/apache/commons/lang3/concurrent/TimedSemaphore.java, src/main/java/org/apache/commons/lang3/concurrent/BackgroundInitializer.java, src/main/java/org/apache/commons/lang3/concurrent/CallableBackgroundInitializer.java, src/main/java/org/apache/commons/lang3/concurrent/ConcurrentException.java]
+2015-03-20 19:43:47,148 DEBUG spoon.support.StandardEnvironment - build args: [-1.7, -preserveAllLocals, -enableJavadoc, -noExit, -cp, /tmp/lang_35/target/classes/:/tmp/lang_35/target/test-classes/:/tmp/lang_35/nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar:, src/main/java/org/apache/commons/lang3/ArrayUtils.java, src/main/java/org/apache/commons/lang3/SerializationException.java, src/main/java/org/apache/commons/lang3/BooleanUtils.java, src/main/java/org/apache/commons/lang3/BitField.java, src/main/java/org/apache/commons/lang3/LocaleUtils.java, src/main/java/org/apache/commons/lang3/SerializationUtils.java, src/main/java/org/apache/commons/lang3/ObjectUtils.java, src/main/java/org/apache/commons/lang3/CharSet.java, src/main/java/org/apache/commons/lang3/CharEncoding.java, src/main/java/org/apache/commons/lang3/Validate.java, src/main/java/org/apache/commons/lang3/StringEscapeUtils.java, src/main/java/org/apache/commons/lang3/CharSetUtils.java, src/main/java/org/apache/commons/lang3/ClassUtils.java, src/main/java/org/apache/commons/lang3/CharRange.java, src/main/java/org/apache/commons/lang3/RandomStringUtils.java, src/main/java/org/apache/commons/lang3/StringUtils.java, src/main/java/org/apache/commons/lang3/CharUtils.java, src/main/java/org/apache/commons/lang3/SystemUtils.java, src/main/java/org/apache/commons/lang3/EnumUtils.java, src/main/java/org/apache/commons/lang3/Range.java, src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java, src/main/java/org/apache/commons/lang3/reflect/MethodUtils.java, src/main/java/org/apache/commons/lang3/reflect/ConstructorUtils.java, src/main/java/org/apache/commons/lang3/reflect/MemberUtils.java, src/main/java/org/apache/commons/lang3/reflect/FieldUtils.java, src/main/java/org/apache/commons/lang3/time/StopWatch.java, src/main/java/org/apache/commons/lang3/time/DateFormatUtils.java, src/main/java/org/apache/commons/lang3/time/DurationFormatUtils.java, src/main/java/org/apache/commons/lang3/time/DateUtils.java, src/main/java/org/apache/commons/lang3/time/FastDateFormat.java, src/main/java/org/apache/commons/lang3/mutable/MutableShort.java, src/main/java/org/apache/commons/lang3/mutable/MutableObject.java, src/main/java/org/apache/commons/lang3/mutable/MutableDouble.java, src/main/java/org/apache/commons/lang3/mutable/MutableBoolean.java, src/main/java/org/apache/commons/lang3/mutable/MutableFloat.java, src/main/java/org/apache/commons/lang3/mutable/Mutable.java, src/main/java/org/apache/commons/lang3/mutable/MutableLong.java, src/main/java/org/apache/commons/lang3/mutable/MutableInt.java, src/main/java/org/apache/commons/lang3/mutable/MutableByte.java, src/main/java/org/apache/commons/lang3/text/StrTokenizer.java, src/main/java/org/apache/commons/lang3/text/FormatFactory.java, src/main/java/org/apache/commons/lang3/text/StrBuilder.java, src/main/java/org/apache/commons/lang3/text/StrMatcher.java, src/main/java/org/apache/commons/lang3/text/WordUtils.java, src/main/java/org/apache/commons/lang3/text/ExtendedMessageFormat.java, src/main/java/org/apache/commons/lang3/text/CompositeFormat.java, src/main/java/org/apache/commons/lang3/text/StrLookup.java, src/main/java/org/apache/commons/lang3/text/StrSubstitutor.java, src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java, src/main/java/org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java, src/main/java/org/apache/commons/lang3/text/translate/LookupTranslator.java, src/main/java/org/apache/commons/lang3/text/translate/UnicodeUnescaper.java, src/main/java/org/apache/commons/lang3/text/translate/CodePointTranslator.java, src/main/java/org/apache/commons/lang3/text/translate/NumericEntityEscaper.java, src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java, src/main/java/org/apache/commons/lang3/text/translate/UnicodeEscaper.java, src/main/java/org/apache/commons/lang3/text/translate/AggregateTranslator.java, src/main/java/org/apache/commons/lang3/exception/ExceptionContext.java, src/main/java/org/apache/commons/lang3/exception/ContextedException.java, src/main/java/org/apache/commons/lang3/exception/ContextedRuntimeException.java, src/main/java/org/apache/commons/lang3/exception/DefaultExceptionContext.java, src/main/java/org/apache/commons/lang3/exception/ExceptionUtils.java, src/main/java/org/apache/commons/lang3/math/NumberUtils.java, src/main/java/org/apache/commons/lang3/math/Fraction.java, src/main/java/org/apache/commons/lang3/math/IEEE754rUtils.java, src/main/java/org/apache/commons/lang3/builder/ToStringStyle.java, src/main/java/org/apache/commons/lang3/builder/ToStringBuilder.java, src/main/java/org/apache/commons/lang3/builder/HashCodeBuilder.java, src/main/java/org/apache/commons/lang3/builder/IDKey.java, src/main/java/org/apache/commons/lang3/builder/EqualsBuilder.java, src/main/java/org/apache/commons/lang3/builder/StandardToStringStyle.java, src/main/java/org/apache/commons/lang3/builder/CompareToBuilder.java, src/main/java/org/apache/commons/lang3/builder/ReflectionToStringBuilder.java, src/main/java/org/apache/commons/lang3/concurrent/ConcurrentUtils.java, src/main/java/org/apache/commons/lang3/concurrent/LazyInitializer.java, src/main/java/org/apache/commons/lang3/concurrent/MultiBackgroundInitializer.java, src/main/java/org/apache/commons/lang3/concurrent/TimedSemaphore.java, src/main/java/org/apache/commons/lang3/concurrent/BackgroundInitializer.java, src/main/java/org/apache/commons/lang3/concurrent/CallableBackgroundInitializer.java, src/main/java/org/apache/commons/lang3/concurrent/ConcurrentException.java]
+2015-03-20 19:43:52,834 DEBUG spoon.support.StandardEnvironment - built in 5784 ms
+2015-03-20 19:44:00,353 DEBUG spoon.support.StandardEnvironment - building templates: []
+2015-03-20 19:44:00,353 DEBUG spoon.support.StandardEnvironment - built in 0 ms

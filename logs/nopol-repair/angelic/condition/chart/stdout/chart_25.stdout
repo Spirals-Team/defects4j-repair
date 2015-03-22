@@ -1,0 +1,8 @@
+----INFORMATION----
+Nb Statements Analyzed : 8
+Nb Statements with Angelic Value Found : 1
+Nb inputs in SMT : 6
+Nb variables in SMT : 15
+Nopol Execution time : 103863ms
+----PATCH FOUND----
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset:110: CONDITIONAL ((org.jfree.data.statistics.DefaultStatisticalCategoryDataset.this.maximumRangeValue)<(org.jfree.data.statistics.DefaultStatisticalCategoryDataset.this.maximumRangeValueIncStdDev))&&(!((org.jfree.data.statistics.DefaultStatisticalCategoryDataset.this.maximumRangeValue)<=(1)))
