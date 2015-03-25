@@ -1,0 +1,18 @@
+java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at xxl.java.junit.TestSuiteExecution.executionResult(TestSuiteExecution.java:63)
+	at xxl.java.junit.TestSuiteExecution.runTestCase(TestSuiteExecution.java:40)
+	at xxl.java.junit.TestSuiteExecution.runTestCases(TestSuiteExecution.java:50)
+Exception in thread "main" java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at java.lang.Throwable.printStackTrace(Throwable.java:658)
+	at java.lang.Throwable.printStackTrace(Throwable.java:643)
+	at java.lang.Throwable.printStackTrace(Throwable.java:634)
+	at fr.inria.lille.repair.nopol.NoPol.solveWithMultipleBuild(NoPol.java:118)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:83)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:75)
+	at fr.inria.lille.repair.nopol.NoPolLauncher.launch(NoPolLauncher.java:51)
+	at fr.inria.lille.repair.Main.<init>(Main.java:199)
+	at fr.inria.lille.repair.Main.main(Main.java:180)
+
+real	9m37.418s
+user	13m26.770s
+sys	0m4.928s
