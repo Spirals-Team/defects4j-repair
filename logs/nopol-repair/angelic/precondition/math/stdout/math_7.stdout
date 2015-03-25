@@ -1,0 +1,8 @@
+----INFORMATION----
+Nb Statements Analyzed : 1
+Nb Statements with Angelic Value Found : 1
+Nb inputs in SMT : 159
+Nb variables in SMT : 38
+Nopol Execution time : 2522787ms
+----PATCH FOUND----
+org.apache.commons.math3.ode.AbstractIntegrator:349: PRECONDITION (org.apache.commons.math3.ode.AbstractIntegrator.this.stepHandlers.size())==(1)
