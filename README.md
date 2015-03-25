@@ -18,6 +18,18 @@ git clone https://github.com/rsommerard/defects4j-nopol.git
 git clone https://github.com/rsommerard/astor.git
 ```
 
+## Check available ressources
+
+```
+disco grenoble lille luxembourg lyon nancy nantes reims rennes sophia toulouse
+```
+
+## Delete reservations
+
+```
+for i in $(oarstat -u | grep rsommerard | cut -f 1 -d ' '); do echo $i; oardel $i; done
+```
+
 ## Init projects
 
 Chart:
