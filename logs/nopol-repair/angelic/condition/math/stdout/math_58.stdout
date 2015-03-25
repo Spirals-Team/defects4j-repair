@@ -1,0 +1,8 @@
+----INFORMATION----
+Nb Statements Analyzed : 110
+Nb Statements with Angelic Value Found : 1
+Nb inputs in SMT : 925
+Nb variables in SMT : 43
+Nopol Execution time : 2287719ms
+----PATCH FOUND----
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:613: CONDITIONAL ((gNorm)<=(org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer.this.orthoTolerance))||(fp > 0)
