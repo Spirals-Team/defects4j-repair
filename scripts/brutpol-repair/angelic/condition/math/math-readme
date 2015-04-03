@@ -1,0 +1,85 @@
+#!/bin/bash
+
+cd ~/defects4j-nopol/logs/brutpol-repair/angelic/condition/math/
+
+echo '# Math - Brutpol angelic condition repair' > README.md
+echo "" >> README.md
+echo '| #Bug | Nb Statements Analyzed | Nb Angelic Value Found | Exec. time | Patch Found |' >> README_tmp.md
+echo '|------|---------------|--------------|------------|------------|' >> README_tmp.md
+
+nbPatchFound=0
+
+for bug in `seq 1 106`
+do
+  information=`grep "^----INFORMATION----" stdout/math_${bug}.stdout`
+
+  if [[ $information ]]; then
+    statement=`grep "^Nb Statements Analyzed" stdout/math_${bug}.stdout | cut -f 2 -d :`
+    angelic=`grep "^Nb Statements with Angelic Value Found" stdout/math_${bug}.stdout | cut -f 2 -d :`
+    execTime=`grep "^Nopol Execution time" stdout/math_${bug}.stdout | cut -f 2 -d :`
+    patchFound=`grep "^----PATCH FOUND----" stdout/math_${bug}.stdout`
+
+    if [[ $patchFound ]]; then
+      patch="YES"
+      let "nbPatchFound++"
+    else
+      patch="NO"
+    fi
+
+    echo "| $bug | $statement | $angelic | $execTime | $patch |" >> README_tmp.md
+  else
+    echo "| $bug | NONE | NONE | > 6h | NO |" >> README_tmp.md
+  fi
+done
+
+echo "" >> README.md
+echo "- Nb patch found: $nbPatchFound/106" >> README.md
+echo "" >> README.md
+
+cat README_tmp.md >> README.md
+rm README_tmp.md
+
+if [[ $nbPatchFound -gt 0 ]]; then
+  echo "## Patches" >> README.md
+  echo "" >> README.md
+
+  for bug in `seq 1 106`
+  do
+    patchFound=`grep "^----PATCH FOUND----" stdout/math_${bug}.stdout`
+
+    if [[ $patchFound ]]; then
+      nopolRepair=`grep "^org" stdout/math_${bug}.stdout | cut -f 1-2 -d :`
+
+      nopolLine=`grep -m 1 $nopolRepair ~/defects4j-nopol/logs/nopol-ranking/math/stdout/math_$bug.stdout`
+      nopolLineNumber=`grep -m 1 -n "$nopolLine" ~/defects4j-nopol/logs/nopol-ranking/math/stdout/math_$bug.stdout | cut -f 1 -d :`
+
+      statementStart=`grep -m 1 -n "org" ~/defects4j-nopol/logs/nopol-ranking/math/stdout/math_${bug}.stdout | cut -f 1 -d :`
+      if [[ ! $statementStart ]]; then
+        statementStart=-1
+      fi
+
+      if [[ $nopolLineNumber ]]; then
+        let "rank=($nopolLineNumber-$statementStart)+1"
+      fi
+
+      echo "### Bug $bug" >> README.md
+      echo "" >> README.md
+      echo "- Ranking nopol: $rank" >> README.md
+      echo "" >> README.md
+      echo "- Brutpol patch:" >> README.md
+      echo "" >> README.md
+      echo '```' >> README.md
+      cat stdout/math_${bug}.stdout >> README.md
+      echo '```' >> README.md
+      echo "" >> README.md
+      echo "- IRL patch:" >> README.md
+      echo "" >> README.md
+      echo '```' >> README.md
+      cat ~/defects4j-nopol/logs/d4j-diffs/math/math_${bug}.stdout >> README.md
+      echo '```' >> README.md
+      echo "" >> README.md
+    fi
+  done
+fi
+
+echo 'Done.'

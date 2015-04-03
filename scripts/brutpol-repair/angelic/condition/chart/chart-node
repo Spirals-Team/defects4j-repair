@@ -1,0 +1,14 @@
+#!/bin/bash
+
+export PATH="~/defects4j/framework/bin:$PATH"
+
+cp -r ~/projects/chart/chart_${1}/ /tmp/
+cd /tmp/chart_${1}/
+defects4j compile
+
+cp ~/nopol/nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar .
+
+time java -cp nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar fr.inria.lille.repair.Main --synthesis brutpol --mode repair --type condition --oracle angelic --source source/ --classpath build/:build-tests/:lib/servlet.jar:nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar
+
+cd /tmp/
+rm -rf chart_${1}/

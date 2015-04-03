@@ -10,13 +10,13 @@ cp ~/nopol/nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar .
 cp -r ~/nopol/z3-x64-debian-7.7/ .
 
 if [[ $1 -lt 21 ]]; then
-  time java -cp nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar fr.inria.lille.repair.Main repair condition angelic src/main/java/ target/classes/:target/tests/:nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar z3 z3-x64-debian-7.7/bin/z3
+  time java -cp nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar fr.inria.lille.repair.Main --mode repair --type condition --oracle angelic --source src/main/java/ --classpath target/classes/:target/tests/:nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar --solver z3 --solver-path z3-x64-debian-7.7/bin/z3
 elif [[ $1 -lt 36 ]]; then
-  time java -cp nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar fr.inria.lille.repair.Main repair condition angelic src/main/java/ target/classes/:target/test-classes/:nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar z3 z3-x64-debian-7.7/bin/z3
+  time java -cp nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar fr.inria.lille.repair.Main --mode repair --type condition --oracle angelic --source src/main/java/ --classpath target/classes/:target/test-classes/:nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar --solver z3 --solver-path z3-x64-debian-7.7/bin/z3
 elif [[ $1 -lt 42 ]]; then
-  time java -cp nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar fr.inria.lille.repair.Main repair condition angelic src/java/ target/classes/:target/test-classes/:nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar z3 z3-x64-debian-7.7/bin/z3
+  time java -cp nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar fr.inria.lille.repair.Main --mode repair --type condition --oracle angelic --source src/java/ --classpath target/classes/:target/test-classes/:nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar --solver z3 --solver-path z3-x64-debian-7.7/bin/z3
 else
-  time java -cp nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar fr.inria.lille.repair.Main repair condition angelic src/java/ target/classes/:target/tests/:nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar z3 z3-x64-debian-7.7/bin/z3
+  time java -cp nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar fr.inria.lille.repair.Main --mode repair --type condition --oracle angelic --source src/java/ --classpath target/classes/:target/tests/:nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar --solver z3 --solver-path z3-x64-debian-7.7/bin/z3
 fi
 
 cd /tmp/

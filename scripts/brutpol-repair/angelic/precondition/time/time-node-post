@@ -1,0 +1,18 @@
+#!/bin/bash
+
+cd ~/defects4j-nopol/logs/brutpol-repair/angelic/precondition/time/
+
+for bug in `seq 1 27`
+do
+  #Cut log
+  line=`grep -m 1 -n "^----INFORMATION----" stdout/time_${bug}.stdout | cut -f 1 -d :`
+
+  if [[ $line ]]; then
+    tail -n +$line stdout/time_${bug}.stdout > time_${bug}_tmp.stdout
+    mv time_${bug}_tmp.stdout stdout/time_${bug}.stdout
+  else
+    echo "" > stdout/time_${bug}.stdout
+  fi
+done
+
+echo "Done."

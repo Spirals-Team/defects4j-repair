@@ -1,0 +1,18 @@
+#!/bin/bash
+
+cd ~/defects4j-nopol/logs/brutpol-repair/angelic/precondition/math/
+
+for bug in `seq 1 106`
+do
+  #Cut log
+  line=`grep -m 1 -n "^----INFORMATION----" stdout/math_${bug}.stdout | cut -f 1 -d :`
+
+  if [[ $line ]]; then
+    tail -n +$line stdout/math_${bug}.stdout > math_${bug}_tmp.stdout
+    mv math_${bug}_tmp.stdout stdout/math_${bug}.stdout
+  else
+    echo "" > stdout/math_${bug}.stdout
+  fi
+done
+
+echo "Done."

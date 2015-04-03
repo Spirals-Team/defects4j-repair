@@ -1,0 +1,21 @@
+#!/bin/bash
+
+export PATH="~/defects4j/framework/bin:$PATH"
+
+cp -r ~/projects/math/math_${1}/ /tmp/
+cd /tmp/math_${1}/
+defects4j compile
+
+cp ~/nopol/nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar .
+
+mkdir lib/
+cp ~/defects4j/framework/projects/Math/lib/commons-discovery-0.5.jar lib/
+
+if [[ $1 -lt 85 ]]; then
+  time java -cp nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar fr.inria.lille.repair.Main --synthesis brutpol --mode repair --type condition --oracle angelic --source src/main/java/ --classpath target/classes/:target/test-classes/:lib/commons-discovery-0.5.jar:nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar
+else
+  time java -cp nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar fr.inria.lille.repair.Main --synthesis brutpol --mode repair --type condition --oracle angelic --source src/java/ --classpath target/classes/:target/test-classes/:lib/commons-discovery-0.5.jar:nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar
+fi
+
+cd /tmp/
+rm -rf math_${1}/

@@ -1,0 +1,21 @@
+#!/bin/bash
+
+export PATH="~/defects4j/framework/bin:$PATH"
+
+cp -r ~/projects/time/time_${1}/ /tmp/
+cd /tmp/time_${1}/
+defects4j compile
+
+cp ~/nopol/nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar .
+
+mkdir lib/
+cp ~/defects4j/framework/projects/Time/lib/joda-convert-1.2.jar lib/
+
+if [[ $1 -lt 12 ]]; then
+  time java -cp nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar fr.inria.lille.repair.Main --synthesis brutpol --mode repair --type condition --oracle angelic --source src/main/java/ --classpath target/classes/:target/test-classes/:lib/joda-convert-1.2.jar:nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar
+else
+  time java -cp nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar fr.inria.lille.repair.Main --synthesis brutpol --mode repair --type condition --oracle angelic --source src/main/java/ --classpath build/classes/:build/tests/:lib/joda-convert-1.2.jar:nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar
+fi
+
+cd /tmp/
+rm -rf time_${1}/

@@ -1,0 +1,30 @@
+#!/bin/bash
+
+cd ~/defects4j-nopol/logs/brutpol-repair/angelic/precondition/chart/
+
+for bug in `seq 1 7`
+do
+  #Cut log
+  line=`grep -m 1 -n "^----INFORMATION----" stdout/chart_${bug}.stdout | cut -f 1 -d :`
+
+  if [[ $line ]]; then
+    tail -n +$line stdout/chart_${bug}.stdout > chart_${bug}_tmp.stdout
+    mv chart_${bug}_tmp.stdout stdout/chart_${bug}.stdout
+  else
+    echo "" > stdout/chart_${bug}.stdout
+  fi
+done
+
+for bug in `seq 9 26`
+do
+  #Cut log
+  line=`grep -m 1 -n "^----INFORMATION----" stdout/chart_${bug}.stdout | cut -f 1 -d :`
+  if [[ $line ]]; then
+    tail -n +$line stdout/chart_${bug}.stdout > chart_${bug}_tmp.stdout
+    mv chart_${bug}_tmp.stdout stdout/chart_${bug}.stdout
+  else
+    echo "" > stdout/chart_${bug}.stdout
+  fi
+done
+
+echo "Done."

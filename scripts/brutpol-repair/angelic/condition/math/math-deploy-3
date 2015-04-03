@@ -1,0 +1,15 @@
+#!/bin/bash
+
+for bug in `seq 101 106`
+do
+  echo "Launching nopol repair node for math_${bug} ..."
+  oarsub -l walltime=06:00:00 -O ~/defects4j-nopol/logs/brutpol-repair/angelic/condition/math/stdout/math_${bug}.stdout -E ~/defects4j-nopol/logs/brutpol-repair/angelic/condition/math/stderr/math_${bug}.stderr "~/defects4j-nopol/scripts/brutpol-repair/angelic/condition/math/math-node ${bug}"
+done
+
+while [ $(oarstat -u | grep rsommerard | wc -l) -gt 0 ]
+do
+  echo "Math nopol repair node running: $(oarstat -u | grep rsommerard | wc -l)"
+  sleep 5
+done
+
+echo 'Done.'
