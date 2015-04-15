@@ -1,0 +1,24 @@
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+	at java.util.Arrays.copyOf(Arrays.java:2367)
+	at java.lang.AbstractStringBuilder.expandCapacity(AbstractStringBuilder.java:130)
+	at java.lang.AbstractStringBuilder.ensureCapacityInternal(AbstractStringBuilder.java:114)
+	at java.lang.AbstractStringBuilder.append(AbstractStringBuilder.java:415)
+	at java.lang.StringBuilder.append(StringBuilder.java:132)
+	at fr.inria.lille.spirals.repair.expression.MethodInvocationImpl.toString(MethodInvocationImpl.java:62)
+	at fr.inria.lille.spirals.repair.expression.BinaryExpressionImpl.toString(BinaryExpressionImpl.java:107)
+	at fr.inria.lille.spirals.repair.expression.BinaryExpressionImpl.toString(BinaryExpressionImpl.java:107)
+	at fr.inria.lille.spirals.repair.commons.Candidates.add(Candidates.java:30)
+	at fr.inria.lille.spirals.repair.commons.Candidates.addAll(Candidates.java:69)
+	at fr.inria.lille.spirals.repair.synthesizer.collect.DataCombiner.combine(DataCombiner.java:37)
+	at fr.inria.lille.spirals.repair.synthesizer.SynthesizerImpl.combineValues(SynthesizerImpl.java:378)
+	at fr.inria.lille.spirals.repair.synthesizer.SynthesizerImpl.run(SynthesizerImpl.java:107)
+	at fr.inria.lille.repair.nopol.synth.brutpol.BrutSynthesizer.buildPatch(BrutSynthesizer.java:100)
+	at fr.inria.lille.repair.nopol.NoPol.solveWithMultipleBuild(NoPol.java:135)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:81)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:72)
+	at fr.inria.lille.repair.nopol.NoPolLauncher.launch(NoPolLauncher.java:51)
+	at fr.inria.lille.repair.Main.main(Main.java:53)
+
+real	154m17.544s
+user	570m13.478s
+sys	1m40.686s
