@@ -1,0 +1,8 @@
+----INFORMATION----
+Nb Statements Analyzed : 3
+Nb Statements with Angelic Value Found : 1
+Nb inputs in SMT : 0
+Nb variables in SMT : 0
+Nopol Execution time : 24759ms
+----PATCH FOUND----
+org.apache.commons.math.ode.nonstiff.AdaptiveStepsizeIntegrator:150: CONDITIONAL this.stepSize <= initialStepSize
