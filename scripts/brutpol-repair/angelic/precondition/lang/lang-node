@@ -18,5 +18,14 @@ else
   time java -cp nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar fr.inria.lille.repair.Main --synthesis brutpol --mode repair --type precondition --oracle angelic --source src/java/ --classpath target/classes/:target/tests/:nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar
 fi
 
+cd ~/defects4j-nopol/logs/brutpol-repair/angelic/precondition/lang/
+line=`grep -m 1 -n "^----INFORMATION----" stdout/lang_${1}.stdout | cut -f 1 -d :`
+if [[ $line ]]; then
+  tail -n +$line stdout/lang_${1}.stdout > lang_${1}_tmp.stdout
+  mv lang_${1}_tmp.stdout stdout/lang_${1}.stdout
+else
+  echo "" > stdout/lang_${1}.stdout
+fi
+
 cd /tmp/
 rm -rf lang_${1}/

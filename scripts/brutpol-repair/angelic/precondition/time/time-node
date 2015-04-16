@@ -17,5 +17,14 @@ else
   time java -cp nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar fr.inria.lille.repair.Main --synthesis brutpol --mode repair --type precondition --oracle angelic --source src/main/java/ --classpath build/classes/:build/tests/:lib/joda-convert-1.2.jar:nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar
 fi
 
+cd ~/defects4j-nopol/logs/brutpol-repair/angelic/precondition/time/
+line=`grep -m 1 -n "^----INFORMATION----" stdout/time_${1}.stdout | cut -f 1 -d :`
+if [[ $line ]]; then
+  tail -n +$line stdout/time_${1}.stdout > time_${1}_tmp.stdout
+  mv time_${1}_tmp.stdout stdout/time_${1}.stdout
+else
+  echo "" > stdout/time_${1}.stdout
+fi
+
 cd /tmp/
 rm -rf time_${1}/

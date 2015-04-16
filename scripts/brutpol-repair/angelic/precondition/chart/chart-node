@@ -10,5 +10,14 @@ cp ~/nopol/nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar .
 
 time java -cp nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar fr.inria.lille.repair.Main --synthesis brutpol --mode repair --type precondition --oracle angelic --source source/ --classpath build/:build-tests/:lib/servlet.jar:nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar
 
+cd ~/defects4j-nopol/logs/brutpol-repair/angelic/precondition/chart/
+line=`grep -m 1 -n "^----INFORMATION----" stdout/chart_${1}.stdout | cut -f 1 -d :`
+if [[ $line ]]; then
+  tail -n +$line stdout/chart_${1}.stdout > chart_${1}_tmp.stdout
+  mv chart_${1}_tmp.stdout stdout/chart_${1}.stdout
+else
+  echo "" > stdout/chart_${1}.stdout
+fi
+
 cd /tmp/
 rm -rf chart_${1}/
