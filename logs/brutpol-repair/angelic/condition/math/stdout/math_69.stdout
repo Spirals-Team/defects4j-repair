@@ -1,8 +1,0 @@
-----INFORMATION----
-Nb Statements Analyzed : 107
-Nb Statements with Angelic Value Found : 1
-Nb inputs in SMT : 0
-Nb variables in SMT : 0
-Nopol Execution time : 157555ms
-----PATCH FOUND----
-org.apache.commons.math.distribution.TDistributionImpl:128: CONDITIONAL (this.density(x) / this.solverAbsoluteAccuracy) < (this.solverAbsoluteAccuracy / x)
