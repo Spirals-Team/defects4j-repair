@@ -1,0 +1,59 @@
+/************************/
+/******** Tests *********/
+/************************/
+Executed tests:   2525
+Successful tests: 2524
+Failed tests:     1
+
+org.apache.commons.math.complex.ComplexTest#testAddNaN
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at org.apache.commons.math.complex.ComplexTest.testAddNaN(ComplexTest.java:116)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at com.gzoltar.core.instr.testing.junit.JUnitRunner.run(JUnitRunner.java:43)
+	at com.gzoltar.core.instr.Runner.main(Runner.java:46)
+
+
+/************************/
+/* Suspicious statement */
+/************************/
+org.apache.commons.math.complex.Complex:152 -> 0.22360679774997896 (ep: 19, ef: 1, np: 2505, nf: 0)
+org.apache.commons.math.complex.Complex:153 -> 0.22360679774997896 (ep: 19, ef: 1, np: 2505, nf: 0)
+org.apache.commons.math.complex.Complex:319 -> 0.20412414523193154 (ep: 23, ef: 1, np: 2501, nf: 0)
+org.apache.commons.math.complex.Complex:997 -> 0.11952286093343936 (ep: 69, ef: 1, np: 2455, nf: 0)
+org.apache.commons.math.complex.Complex:308 -> 0.09853292781642932 (ep: 102, ef: 1, np: 2422, nf: 0)
+org.apache.commons.math.complex.Complex:299 -> 0.09805806756909202 (ep: 103, ef: 1, np: 2421, nf: 0)
+org.apache.commons.math.complex.Complex:90 -> 0.07808688094430304 (ep: 163, ef: 1, np: 2361, nf: 0)
+org.apache.commons.math.complex.Complex:91 -> 0.07808688094430304 (ep: 163, ef: 1, np: 2361, nf: 0)
+org.apache.commons.math.complex.Complex:92 -> 0.07808688094430304 (ep: 163, ef: 1, np: 2361, nf: 0)
+org.apache.commons.math.complex.Complex:94 -> 0.07808688094430304 (ep: 163, ef: 1, np: 2361, nf: 0)
+org.apache.commons.math.complex.Complex:95 -> 0.07808688094430304 (ep: 163, ef: 1, np: 2361, nf: 0)
+org.apache.commons.math.complex.Complex:97 -> 0.07808688094430304 (ep: 163, ef: 1, np: 2361, nf: 0)
+org.apache.commons.math.util.MathUtils:2334 -> 0.04559607525875532 (ep: 480, ef: 1, np: 2044, nf: 0)
+org.apache.commons.math.util.MathUtils:2331 -> 0.045360921162651446 (ep: 485, ef: 1, np: 2039, nf: 0)
+
+
+real	2m31.575s
+user	3m2.023s
+sys	0m2.456s
+

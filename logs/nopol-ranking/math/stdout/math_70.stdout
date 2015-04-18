@@ -1,0 +1,72 @@
+/************************/
+/******** Tests *********/
+/************************/
+Executed tests:   2184
+Successful tests: 2183
+Failed tests:     1
+
+org.apache.commons.math.analysis.solvers.BisectionSolverTest#testMath369
+java.lang.NullPointerException
+	at org.apache.commons.math.analysis.solvers.BisectionSolver.solve(Unknown Source)
+	at org.apache.commons.math.analysis.solvers.BisectionSolver.solve(Unknown Source)
+	at org.apache.commons.math.analysis.solvers.BisectionSolver.solve(Unknown Source)
+	at org.apache.commons.math.analysis.solvers.BisectionSolverTest.testMath369(BisectionSolverTest.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at com.gzoltar.core.instr.testing.junit.JUnitRunner.run(JUnitRunner.java:43)
+	at com.gzoltar.core.instr.Runner.main(Runner.java:46)
+
+
+/************************/
+/* Suspicious statement */
+/************************/
+org.apache.commons.math.analysis.solvers.BisectionSolver:72 -> 1.0 (ep: 0, ef: 1, np: 2183, nf: 0)
+org.apache.commons.math.analysis.solvers.BisectionSolver:66 -> 0.7071067811865475 (ep: 1, ef: 1, np: 2182, nf: 0)
+org.apache.commons.math.analysis.solvers.BisectionSolver:79 -> 0.5 (ep: 3, ef: 1, np: 2180, nf: 0)
+org.apache.commons.math.analysis.solvers.BisectionSolver:80 -> 0.5 (ep: 3, ef: 1, np: 2180, nf: 0)
+org.apache.commons.math.analysis.solvers.BisectionSolver:85 -> 0.5 (ep: 3, ef: 1, np: 2180, nf: 0)
+org.apache.commons.math.analysis.solvers.BisectionSolver:86 -> 0.5 (ep: 3, ef: 1, np: 2180, nf: 0)
+org.apache.commons.math.analysis.solvers.BisectionSolver:87 -> 0.5 (ep: 3, ef: 1, np: 2180, nf: 0)
+org.apache.commons.math.analysis.solvers.BisectionSolver:88 -> 0.5 (ep: 3, ef: 1, np: 2180, nf: 0)
+org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils:223 -> 0.3779644730092272 (ep: 6, ef: 1, np: 2177, nf: 0)
+org.apache.commons.math.analysis.solvers.BisectionSolver:52 -> 0.2886751345948129 (ep: 11, ef: 1, np: 2172, nf: 0)
+org.apache.commons.math.analysis.solvers.BisectionSolver:53 -> 0.2886751345948129 (ep: 11, ef: 1, np: 2172, nf: 0)
+org.apache.commons.math.analysis.SinFunction:31 -> 0.16666666666666666 (ep: 35, ef: 1, np: 2148, nf: 0)
+org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl:165 -> 0.08481889296799709 (ep: 138, ef: 1, np: 2045, nf: 0)
+org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl:166 -> 0.08481889296799709 (ep: 138, ef: 1, np: 2045, nf: 0)
+org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl:167 -> 0.08481889296799709 (ep: 138, ef: 1, np: 2045, nf: 0)
+org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl:208 -> 0.08032193289024989 (ep: 154, ef: 1, np: 2029, nf: 0)
+org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl:213 -> 0.08032193289024989 (ep: 154, ef: 1, np: 2029, nf: 0)
+org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl:93 -> 0.07808688094430304 (ep: 163, ef: 1, np: 2020, nf: 0)
+org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl:41 -> 0.07808688094430304 (ep: 170, ef: 1, np: 2013, nf: 0)
+org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl:94 -> 0.07808688094430304 (ep: 163, ef: 1, np: 2020, nf: 0)
+org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl:95 -> 0.07808688094430304 (ep: 163, ef: 1, np: 2020, nf: 0)
+org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl:96 -> 0.07808688094430304 (ep: 163, ef: 1, np: 2020, nf: 0)
+org.apache.commons.math.ConvergingAlgorithmImpl:61 -> 0.07273929674533079 (ep: 188, ef: 1, np: 1995, nf: 0)
+org.apache.commons.math.ConvergingAlgorithmImpl:62 -> 0.07273929674533079 (ep: 188, ef: 1, np: 1995, nf: 0)
+org.apache.commons.math.ConvergingAlgorithmImpl:63 -> 0.07273929674533079 (ep: 188, ef: 1, np: 1995, nf: 0)
+org.apache.commons.math.ConvergingAlgorithmImpl:64 -> 0.07273929674533079 (ep: 188, ef: 1, np: 1995, nf: 0)
+org.apache.commons.math.ConvergingAlgorithmImpl:65 -> 0.07273929674533079 (ep: 188, ef: 1, np: 1995, nf: 0)
+org.apache.commons.math.ConvergingAlgorithmImpl:66 -> 0.07273929674533079 (ep: 188, ef: 1, np: 1995, nf: 0)
+org.apache.commons.math.ConvergingAlgorithmImpl:67 -> 0.07273929674533079 (ep: 188, ef: 1, np: 1995, nf: 0)
+org.apache.commons.math.ConvergingAlgorithmImpl:68 -> 0.07273929674533079 (ep: 188, ef: 1, np: 1995, nf: 0)
+org.apache.commons.math.ConvergingAlgorithmImpl:69 -> 0.07273929674533079 (ep: 188, ef: 1, np: 1995, nf: 0)
+
+
+real	0m24.859s
+user	0m53.651s
+sys	0m2.016s
+
