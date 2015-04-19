@@ -1,0 +1,34 @@
+java.lang.NullPointerException
+	at fr.inria.lille.repair.nopol.synth.SynthesizerFactory.getFor(SynthesizerFactory.java:69)
+	at fr.inria.lille.repair.nopol.NoPol.solveWithMultipleBuild(NoPol.java:123)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:81)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:72)
+	at fr.inria.lille.repair.nopol.NoPolLauncher.launch(NoPolLauncher.java:51)
+	at fr.inria.lille.repair.Main.main(Main.java:53)
+java.lang.NullPointerException
+	at fr.inria.lille.repair.nopol.synth.SynthesizerFactory.getFor(SynthesizerFactory.java:69)
+	at fr.inria.lille.repair.nopol.NoPol.solveWithMultipleBuild(NoPol.java:123)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:81)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:72)
+	at fr.inria.lille.repair.nopol.NoPolLauncher.launch(NoPolLauncher.java:51)
+	at fr.inria.lille.repair.Main.main(Main.java:53)
+Exception in thread "main" java.lang.NoClassDefFoundError: com/sun/jdi/IncompatibleThreadStateException
+	at fr.inria.lille.repair.nopol.synth.brutpol.BrutSynthesizer.buildPatch(BrutSynthesizer.java:91)
+	at fr.inria.lille.repair.nopol.NoPol.solveWithMultipleBuild(NoPol.java:135)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:81)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:72)
+	at fr.inria.lille.repair.nopol.NoPolLauncher.launch(NoPolLauncher.java:51)
+	at fr.inria.lille.repair.Main.main(Main.java:53)
+Caused by: java.lang.ClassNotFoundException: com.sun.jdi.IncompatibleThreadStateException
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 6 more
+
+real	4m19.557s
+user	5m37.493s
+sys	0m7.928s
