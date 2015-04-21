@@ -1,0 +1,65 @@
+/************************/
+/******** Tests *********/
+/************************/
+Executed tests:   1692
+Successful tests: 1690
+Failed tests:     2
+
+org.apache.commons.math.stat.FrequencyTest#testAddNonComparable
+java.lang.IllegalArgumentException: Value not comparable to existing values.
+	at org.apache.commons.math.stat.Frequency.addValue(Unknown Source)
+	at org.apache.commons.math.stat.FrequencyTest.testAddNonComparable(FrequencyTest.java:195)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at com.gzoltar.core.instr.testing.junit.JUnitRunner.run(JUnitRunner.java:43)
+	at com.gzoltar.core.instr.Runner.main(Runner.java:46)
+
+junit.framework.TestSuite$1#warning
+junit.framework.AssertionFailedError: Class org.apache.commons.math.ode.nonstiff.StepInterpolatorAbstractTest has no public constructor TestCase(String name) or TestCase()
+	at junit.framework.Assert.fail(Assert.java:57)
+	at junit.framework.TestCase.fail(TestCase.java:227)
+	at junit.framework.TestSuite$1.runTest(TestSuite.java:100)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at com.gzoltar.core.instr.testing.junit.JUnitRunner.run(JUnitRunner.java:43)
+	at com.gzoltar.core.instr.Runner.main(Runner.java:46)
+
+
+/************************/
+/* Suspicious statement */
+/************************/
+org.apache.commons.math.stat.Frequency:118 -> 0.5 (ep: 1, ef: 1, np: 1689, nf: 1)
+org.apache.commons.math.stat.Frequency:120 -> 0.5 (ep: 1, ef: 1, np: 1689, nf: 1)
+org.apache.commons.math.stat.Frequency:107 -> 0.1336306209562122 (ep: 27, ef: 1, np: 1663, nf: 1)
+org.apache.commons.math.stat.Frequency:108 -> 0.1336306209562122 (ep: 27, ef: 1, np: 1663, nf: 1)
+org.apache.commons.math.stat.Frequency:112 -> 0.1336306209562122 (ep: 27, ef: 1, np: 1663, nf: 1)
+org.apache.commons.math.stat.Frequency:57 -> 0.13130643285972254 (ep: 28, ef: 1, np: 1662, nf: 1)
+org.apache.commons.math.stat.Frequency:58 -> 0.13130643285972254 (ep: 28, ef: 1, np: 1662, nf: 1)
+org.apache.commons.math.stat.Frequency:59 -> 0.13130643285972254 (ep: 28, ef: 1, np: 1662, nf: 1)
+
+
+real	0m34.731s
+user	0m58.680s
+sys	0m1.700s
+

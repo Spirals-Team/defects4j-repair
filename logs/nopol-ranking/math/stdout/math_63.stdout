@@ -1,0 +1,52 @@
+/************************/
+/******** Tests *********/
+/************************/
+Executed tests:   2282
+Successful tests: 2281
+Failed tests:     1
+
+org.apache.commons.math.util.MathUtilsTest#testArrayEquals
+junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:55)
+	at junit.framework.Assert.assertTrue(Assert.java:22)
+	at junit.framework.Assert.assertFalse(Assert.java:39)
+	at junit.framework.Assert.assertFalse(Assert.java:47)
+	at junit.framework.TestCase.assertFalse(TestCase.java:219)
+	at org.apache.commons.math.util.MathUtilsTest.testArrayEquals(MathUtilsTest.java:456)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at com.gzoltar.core.instr.testing.junit.JUnitRunner.run(JUnitRunner.java:43)
+	at com.gzoltar.core.instr.Runner.main(Runner.java:46)
+
+
+/************************/
+/* Suspicious statement */
+/************************/
+org.apache.commons.math.util.MathUtils:423 -> 1.0 (ep: 0, ef: 1, np: 2281, nf: 0)
+org.apache.commons.math.util.MathUtils:529 -> 1.0 (ep: 0, ef: 1, np: 2281, nf: 0)
+org.apache.commons.math.util.MathUtils:530 -> 1.0 (ep: 0, ef: 1, np: 2281, nf: 0)
+org.apache.commons.math.util.MathUtils:532 -> 1.0 (ep: 0, ef: 1, np: 2281, nf: 0)
+org.apache.commons.math.util.MathUtils:533 -> 1.0 (ep: 0, ef: 1, np: 2281, nf: 0)
+org.apache.commons.math.util.MathUtils:535 -> 1.0 (ep: 0, ef: 2, np: 2281, nf: -1)
+org.apache.commons.math.util.MathUtils:536 -> 1.0 (ep: 0, ef: 1, np: 2281, nf: 0)
+org.apache.commons.math.util.MathUtils:535 -> 1.0 (ep: 0, ef: 2, np: 2281, nf: -1)
+org.apache.commons.math.util.MathUtils:540 -> 1.0 (ep: 0, ef: 1, np: 2281, nf: 0)
+
+
+real	0m21.354s
+user	0m40.339s
+sys	0m1.052s
+

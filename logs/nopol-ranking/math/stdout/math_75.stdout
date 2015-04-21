@@ -1,0 +1,95 @@
+/************************/
+/******** Tests *********/
+/************************/
+Executed tests:   2135
+Successful tests: 2134
+Failed tests:     1
+
+org.apache.commons.math.stat.FrequencyTest#testPcts
+junit.framework.AssertionFailedError: three (Object) pct expected:<0.5> but was:<1.0>
+	at junit.framework.Assert.fail(Assert.java:57)
+	at junit.framework.Assert.failNotEquals(Assert.java:329)
+	at junit.framework.Assert.assertEquals(Assert.java:120)
+	at junit.framework.TestCase.assertEquals(TestCase.java:279)
+	at org.apache.commons.math.stat.FrequencyTest.testPcts(FrequencyTest.java:148)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at com.gzoltar.core.instr.testing.junit.JUnitRunner.run(JUnitRunner.java:43)
+	at com.gzoltar.core.instr.Runner.main(Runner.java:46)
+
+
+/************************/
+/* Suspicious statement */
+/************************/
+org.apache.commons.math.stat.Frequency:303 -> 1.0 (ep: 0, ef: 1, np: 2134, nf: 0)
+org.apache.commons.math.stat.Frequency:342 -> 1.0 (ep: 0, ef: 1, np: 2134, nf: 0)
+org.apache.commons.math.stat.Frequency:331 -> 0.7071067811865475 (ep: 1, ef: 1, np: 2133, nf: 0)
+org.apache.commons.math.stat.Frequency:386 -> 0.5773502691896258 (ep: 2, ef: 1, np: 2132, nf: 0)
+org.apache.commons.math.stat.Frequency:444 -> 0.5773502691896258 (ep: 2, ef: 1, np: 2132, nf: 0)
+org.apache.commons.math.stat.Frequency:320 -> 0.5 (ep: 3, ef: 1, np: 2131, nf: 0)
+org.apache.commons.math.stat.Frequency:408 -> 0.5 (ep: 3, ef: 1, np: 2131, nf: 0)
+org.apache.commons.math.stat.Frequency:316 -> 0.4472135954999579 (ep: 4, ef: 1, np: 2130, nf: 0)
+org.apache.commons.math.stat.Frequency:317 -> 0.4472135954999579 (ep: 4, ef: 1, np: 2130, nf: 0)
+org.apache.commons.math.stat.Frequency:385 -> 0.4472135954999579 (ep: 4, ef: 1, np: 2130, nf: 0)
+org.apache.commons.math.stat.Frequency:388 -> 0.4472135954999579 (ep: 4, ef: 1, np: 2130, nf: 0)
+org.apache.commons.math.stat.Frequency:389 -> 0.4472135954999579 (ep: 4, ef: 1, np: 2130, nf: 0)
+org.apache.commons.math.stat.Frequency:390 -> 0.4472135954999579 (ep: 4, ef: 1, np: 2130, nf: 0)
+org.apache.commons.math.stat.Frequency:392 -> 0.4472135954999579 (ep: 4, ef: 1, np: 2130, nf: 0)
+org.apache.commons.math.stat.Frequency:395 -> 0.4472135954999579 (ep: 4, ef: 1, np: 2130, nf: 0)
+org.apache.commons.math.stat.Frequency:396 -> 0.4472135954999579 (ep: 4, ef: 1, np: 2130, nf: 0)
+org.apache.commons.math.stat.Frequency:397 -> 0.4472135954999579 (ep: 4, ef: 1, np: 2130, nf: 0)
+org.apache.commons.math.stat.Frequency:401 -> 0.4472135954999579 (ep: 4, ef: 1, np: 2130, nf: 0)
+org.apache.commons.math.stat.Frequency:403 -> 0.4472135954999579 (ep: 4, ef: 1, np: 2130, nf: 0)
+org.apache.commons.math.stat.Frequency:407 -> 0.4472135954999579 (ep: 4, ef: 1, np: 2130, nf: 0)
+org.apache.commons.math.stat.Frequency:495 -> 0.4472135954999579 (ep: 4, ef: 1, np: 2130, nf: 0)
+org.apache.commons.math.stat.Frequency$NaturalComparator:541 -> 0.4472135954999579 (ep: 4, ef: 1, np: 2130, nf: 0)
+org.apache.commons.math.stat.Frequency$NaturalComparator:561 -> 0.4472135954999579 (ep: 4, ef: 1, np: 2130, nf: 0)
+org.apache.commons.math.stat.Frequency:382 -> 0.4082482904638631 (ep: 5, ef: 1, np: 2129, nf: 0)
+org.apache.commons.math.stat.Frequency:491 -> 0.4082482904638631 (ep: 5, ef: 1, np: 2129, nf: 0)
+org.apache.commons.math.stat.Frequency:492 -> 0.4082482904638631 (ep: 5, ef: 1, np: 2129, nf: 0)
+org.apache.commons.math.stat.Frequency:218 -> 0.35355339059327373 (ep: 7, ef: 1, np: 2127, nf: 0)
+org.apache.commons.math.stat.Frequency:215 -> 0.3333333333333333 (ep: 8, ef: 1, np: 2126, nf: 0)
+org.apache.commons.math.stat.Frequency:216 -> 0.3333333333333333 (ep: 8, ef: 1, np: 2126, nf: 0)
+org.apache.commons.math.stat.Frequency:217 -> 0.3333333333333333 (ep: 8, ef: 1, np: 2126, nf: 0)
+org.apache.commons.math.stat.Frequency:220 -> 0.3333333333333333 (ep: 8, ef: 1, np: 2126, nf: 0)
+org.apache.commons.math.stat.Frequency:159 -> 0.2672612419124244 (ep: 13, ef: 1, np: 2121, nf: 0)
+org.apache.commons.math.stat.Frequency:158 -> 0.2581988897471611 (ep: 14, ef: 1, np: 2120, nf: 0)
+org.apache.commons.math.stat.Frequency:177 -> 0.2581988897471611 (ep: 14, ef: 1, np: 2120, nf: 0)
+org.apache.commons.math.stat.Frequency:178 -> 0.2581988897471611 (ep: 14, ef: 1, np: 2120, nf: 0)
+org.apache.commons.math.stat.Frequency:251 -> 0.18257418583505536 (ep: 29, ef: 1, np: 2105, nf: 0)
+org.apache.commons.math.stat.Frequency:142 -> 0.18257418583505536 (ep: 29, ef: 1, np: 2105, nf: 0)
+org.apache.commons.math.stat.Frequency:244 -> 0.1796053020267749 (ep: 30, ef: 1, np: 2104, nf: 0)
+org.apache.commons.math.stat.Frequency:247 -> 0.1796053020267749 (ep: 30, ef: 1, np: 2104, nf: 0)
+org.apache.commons.math.stat.Frequency:249 -> 0.1796053020267749 (ep: 30, ef: 1, np: 2104, nf: 0)
+org.apache.commons.math.stat.Frequency:250 -> 0.1796053020267749 (ep: 30, ef: 1, np: 2104, nf: 0)
+org.apache.commons.math.stat.Frequency:255 -> 0.1796053020267749 (ep: 30, ef: 1, np: 2104, nf: 0)
+org.apache.commons.math.stat.Frequency:256 -> 0.1796053020267749 (ep: 30, ef: 1, np: 2104, nf: 0)
+org.apache.commons.math.stat.Frequency:133 -> 0.17677669529663687 (ep: 31, ef: 1, np: 2103, nf: 0)
+org.apache.commons.math.stat.Frequency:134 -> 0.17677669529663687 (ep: 31, ef: 1, np: 2103, nf: 0)
+org.apache.commons.math.stat.Frequency:138 -> 0.17677669529663687 (ep: 31, ef: 1, np: 2103, nf: 0)
+org.apache.commons.math.stat.Frequency:139 -> 0.17677669529663687 (ep: 31, ef: 1, np: 2103, nf: 0)
+org.apache.commons.math.stat.Frequency:140 -> 0.17677669529663687 (ep: 31, ef: 1, np: 2103, nf: 0)
+org.apache.commons.math.stat.Frequency:149 -> 0.17677669529663687 (ep: 31, ef: 1, np: 2103, nf: 0)
+org.apache.commons.math.stat.Frequency:150 -> 0.17677669529663687 (ep: 31, ef: 1, np: 2103, nf: 0)
+org.apache.commons.math.stat.Frequency:59 -> 0.17407765595569785 (ep: 32, ef: 1, np: 2102, nf: 0)
+org.apache.commons.math.stat.Frequency:60 -> 0.17407765595569785 (ep: 32, ef: 1, np: 2102, nf: 0)
+org.apache.commons.math.stat.Frequency:61 -> 0.17407765595569785 (ep: 32, ef: 1, np: 2102, nf: 0)
+
+
+real	0m17.938s
+user	0m35.098s
+sys	0m0.972s
+

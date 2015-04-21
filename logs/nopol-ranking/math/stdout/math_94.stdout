@@ -1,0 +1,83 @@
+/************************/
+/******** Tests *********/
+/************************/
+Executed tests:   1501
+Successful tests: 1499
+Failed tests:     2
+
+junit.framework.TestSuite$1#warning
+junit.framework.AssertionFailedError: Class org.apache.commons.math.ode.nonstiff.StepInterpolatorAbstractTest has no public constructor TestCase(String name) or TestCase()
+	at junit.framework.Assert.fail(Assert.java:57)
+	at junit.framework.TestCase.fail(TestCase.java:227)
+	at junit.framework.TestSuite$1.runTest(TestSuite.java:100)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at com.gzoltar.core.instr.testing.junit.JUnitRunner.run(JUnitRunner.java:43)
+	at com.gzoltar.core.instr.Runner.main(Runner.java:46)
+
+org.apache.commons.math.util.MathUtilsTest#testGcd
+junit.framework.AssertionFailedError: expected:<98304> but was:<3440640>
+	at junit.framework.Assert.fail(Assert.java:57)
+	at junit.framework.Assert.failNotEquals(Assert.java:329)
+	at junit.framework.Assert.assertEquals(Assert.java:78)
+	at junit.framework.Assert.assertEquals(Assert.java:234)
+	at junit.framework.Assert.assertEquals(Assert.java:241)
+	at junit.framework.TestCase.assertEquals(TestCase.java:409)
+	at org.apache.commons.math.util.MathUtilsTest.testGcd(MathUtilsTest.java:295)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at com.gzoltar.core.instr.testing.junit.JUnitRunner.run(JUnitRunner.java:43)
+	at com.gzoltar.core.instr.Runner.main(Runner.java:46)
+
+
+/************************/
+/* Suspicious statement */
+/************************/
+org.apache.commons.math.util.MathUtils:413 -> 0.23570226039551587 (ep: 8, ef: 1, np: 1491, nf: 1)
+org.apache.commons.math.util.MathUtils:430 -> 0.1543033499620919 (ep: 20, ef: 1, np: 1479, nf: 1)
+org.apache.commons.math.util.MathUtils:431 -> 0.1543033499620919 (ep: 20, ef: 1, np: 1479, nf: 1)
+org.apache.commons.math.util.MathUtils:432 -> 0.1543033499620919 (ep: 20, ef: 1, np: 1479, nf: 1)
+org.apache.commons.math.util.MathUtils:450 -> 0.12909944487358055 (ep: 29, ef: 1, np: 1470, nf: 1)
+org.apache.commons.math.util.MathUtils:446 -> 0.12126781251816648 (ep: 33, ef: 1, np: 1466, nf: 1)
+org.apache.commons.math.util.MathUtils:421 -> 0.11952286093343936 (ep: 34, ef: 1, np: 1465, nf: 1)
+org.apache.commons.math.util.MathUtils:452 -> 0.11470786693528087 (ep: 37, ef: 1, np: 1462, nf: 1)
+org.apache.commons.math.util.MathUtils:420 -> 0.11322770341445956 (ep: 38, ef: 1, np: 1461, nf: 1)
+org.apache.commons.math.util.MathUtils:423 -> 0.11322770341445956 (ep: 38, ef: 1, np: 1461, nf: 1)
+org.apache.commons.math.util.MathUtils:424 -> 0.11322770341445956 (ep: 38, ef: 1, np: 1461, nf: 1)
+org.apache.commons.math.util.MathUtils:427 -> 0.11322770341445956 (ep: 38, ef: 1, np: 1461, nf: 1)
+org.apache.commons.math.util.MathUtils:428 -> 0.11322770341445956 (ep: 38, ef: 1, np: 1461, nf: 1)
+org.apache.commons.math.util.MathUtils:434 -> 0.11322770341445956 (ep: 38, ef: 1, np: 1461, nf: 1)
+org.apache.commons.math.util.MathUtils:439 -> 0.11322770341445956 (ep: 38, ef: 1, np: 1461, nf: 1)
+org.apache.commons.math.util.MathUtils:445 -> 0.11322770341445956 (ep: 38, ef: 1, np: 1461, nf: 1)
+org.apache.commons.math.util.MathUtils:449 -> 0.11322770341445956 (ep: 38, ef: 1, np: 1461, nf: 1)
+org.apache.commons.math.util.MathUtils:455 -> 0.11322770341445956 (ep: 38, ef: 1, np: 1461, nf: 1)
+org.apache.commons.math.util.MathUtils:458 -> 0.11322770341445956 (ep: 38, ef: 1, np: 1461, nf: 1)
+org.apache.commons.math.util.MathUtils:459 -> 0.11322770341445956 (ep: 38, ef: 1, np: 1461, nf: 1)
+org.apache.commons.math.util.MathUtils:412 -> 0.11180339887498948 (ep: 39, ef: 1, np: 1460, nf: 1)
+
+
+real	0m36.779s
+user	0m56.868s
+sys	0m1.652s
+
