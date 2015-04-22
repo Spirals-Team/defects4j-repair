@@ -1,0 +1,43 @@
+java.lang.NullPointerException
+	at fr.inria.lille.repair.nopol.sps.gzoltar.GZoltarSuspiciousProgramStatements.<init>(GZoltarSuspiciousProgramStatements.java:71)
+	at fr.inria.lille.repair.nopol.sps.gzoltar.GZoltarSuspiciousProgramStatements.create(GZoltarSuspiciousProgramStatements.java:64)
+	at fr.inria.lille.repair.ranking.Ranking.<init>(Ranking.java:44)
+	at fr.inria.lille.repair.ranking.Ranking.<init>(Ranking.java:26)
+	at fr.inria.lille.repair.Main.main(Main.java:63)
+
+Usage: java -jar nopol.jar
+                          [(-m|--mode) <repair|ranking>] [(-e|--type) <loop|condition|precondition|arithmetic>] [(-o|--oracle) <angelic|symbolic>] [(-y|--synthesis) <smt|brutpol>] [(-l|--solver) <z3|cvc4>] [(-p|--solver-path) <solverPath>] (-s|--source) <source> (-c|--classpath) <classpath> [(-t|--test) test1:test2:...:testN ]
+
+  [(-m|--mode) <repair|ranking>]
+        Define the mode of execution. (default: repair)
+
+  [(-e|--type) <loop|condition|precondition|arithmetic>]
+        The type of statement to analyze (only used with repair mode). (default:
+        condition)
+
+  [(-o|--oracle) <angelic|symbolic>]
+        Define the oracle (only used with repair mode). (default: angelic)
+
+  [(-y|--synthesis) <smt|brutpol>]
+        Define the patch synthesis. (default: smt)
+
+  [(-l|--solver) <z3|cvc4>]
+        Define the solver (only used with smt synthesis). (default: z3)
+
+  [(-p|--solver-path) <solverPath>]
+        Define the solver binary path (only used with smt synthesis).
+
+  (-s|--source) <source>
+        Define the path to the source code of the project.
+
+  (-c|--classpath) <classpath>
+        Define the classpath of the project.
+
+  [(-t|--test) test1:test2:...:testN ]
+        Define the tests of the project.
+
+
+real	0m2.823s
+user	0m4.132s
+sys	0m0.464s
+tail: +: invalid number of lines
