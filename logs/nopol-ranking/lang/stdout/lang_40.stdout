@@ -1,0 +1,46 @@
+/************************/
+/******** Tests *********/
+/************************/
+Executed tests:   1643
+Successful tests: 1642
+Failed tests:     1
+
+org.apache.commons.lang.StringUtilsEqualsIndexOfTest#testContainsIgnoreCase_LocaleIndependence
+junit.framework.AssertionFailedError: en: 0 ß SS
+	at junit.framework.Assert.fail(Assert.java:57)
+	at junit.framework.Assert.assertTrue(Assert.java:22)
+	at junit.framework.Assert.assertFalse(Assert.java:39)
+	at junit.framework.TestCase.assertFalse(TestCase.java:210)
+	at org.apache.commons.lang.StringUtilsEqualsIndexOfTest.testContainsIgnoreCase_LocaleIndependence(StringUtilsEqualsIndexOfTest.java:341)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at com.gzoltar.core.instr.testing.junit.JUnitRunner.run(JUnitRunner.java:43)
+	at com.gzoltar.core.instr.Runner.main(Runner.java:46)
+
+
+/************************/
+/* Suspicious statement */
+/************************/
+org.apache.commons.lang.StringUtils:1045 -> 0.7071067811865475 (ep: 1, ef: 1, np: 1641, nf: 0)
+org.apache.commons.lang.StringUtils:1048 -> 0.7071067811865475 (ep: 1, ef: 1, np: 1641, nf: 0)
+org.apache.commons.lang.StringUtils:1018 -> 0.5773502691896258 (ep: 2, ef: 1, np: 1640, nf: 0)
+org.apache.commons.lang.StringUtils:1015 -> 0.5 (ep: 3, ef: 1, np: 1639, nf: 0)
+
+
+real	0m11.179s
+user	0m10.997s
+sys	0m0.624s
+
