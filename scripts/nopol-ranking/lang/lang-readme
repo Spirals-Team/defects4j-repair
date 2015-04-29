@@ -4,7 +4,6 @@ cd ~/defects4j-nopol/logs/nopol-ranking/lang/
 
 echo '# Lang - Nopol ranking' > README.md
 echo "" >> README.md
-
 for bug in `seq 1 65`
 do
   echo "Lang ${bug} nopol ranking readme"
@@ -17,7 +16,8 @@ do
   echo "- Nb. modified sources: $nbModifiedSources" >> README.md
   echo "" >> README.md
 
-  statementStart=`grep -m 1 -n "org" stdout/lang_${bug}.stdout | cut -f 1 -d :`
+  statementStart=`grep -m 1 -n "Suspicious statement" ./stdout/lang_${bug}.stdout | cut -f 1 -d :`
+  let "statementStart=statementStart+2"
   lastStatement=`grep -n "org" stdout/lang_${bug}.stdout | tail -1 | cut -f 1 -d :`
 
   if [[ statementStart ]]; then
