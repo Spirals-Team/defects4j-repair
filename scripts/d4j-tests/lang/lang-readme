@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ~/defects4j-nopol/logs/d4j-tests/lang/
+cd ~/defects4j-repair/logs/d4j-tests/lang/
 
 echo '# Lang - Defects4j tests' > README.md
 echo '| #Bug | Nb. tests run | Nb. failures | Nb. errors | Exec. time |' >> README.md
@@ -13,9 +13,9 @@ do
   failures=`cut -f 2 -d ":" lang_${bug}_grep.stdout`
 
   rm lang_${bug}_grep.stdout
-  
+
   testsTime=`grep 'Total time:' stdout/lang_${bug}.stdout | tail -1 | cut -f 2 -d ':'`
-  
+
   echo "| ${bug} | unknown | ${failures} | none | ${testsTime} |" >> README.md
 
 done

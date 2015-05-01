@@ -3,7 +3,7 @@
 for bug in `seq 1 50`
 do
   echo "Launching tests node for closure_${bug} ..."
-  oarsub -l walltime=00:10:00 -O ~/defects4j-nopol/logs/d4j-tests/closure/stdout/closure_${bug}.stdout -E ~/defects4j-nopol/logs/d4j-tests/closure/stderr/closure_${bug}.stderr "~/defects4j-nopol/scripts/d4j-tests/closure/closure-node ${bug}"
+  oarsub -l walltime=00:10:00 -O ~/defects4j-repair/logs/d4j-tests/closure/stdout/closure_${bug}.stdout -E ~/defects4j-repair/logs/d4j-tests/closure/stderr/closure_${bug}.stderr "~/defects4j-repair/scripts/d4j-tests/closure/closure-node ${bug}"
 done
 
 while [ $(oarstat -u | grep rsommerard | wc -l) -gt 0 ]
@@ -15,7 +15,7 @@ done
 for bug in `seq 51 100`
 do
   echo "Launching tests node for closure_${bug} ..."
-  oarsub -l walltime=00:10:00 -O ~/defects4j-nopol/logs/d4j-tests/closure/stdout/closure_${bug}.stdout -E ~/defects4j-nopol/logs/d4j-tests/closure/stderr/closure_${bug}.stderr "~/defects4j-nopol/scripts/d4j-tests/closure/closure-node ${bug}"
+  oarsub -l walltime=00:10:00 -O ~/defects4j-repair/logs/d4j-tests/closure/stdout/closure_${bug}.stdout -E ~/defects4j-repair/logs/d4j-tests/closure/stderr/closure_${bug}.stderr "~/defects4j-repair/scripts/d4j-tests/closure/closure-node ${bug}"
 done
 
 while [ $(oarstat -u | grep rsommerard | wc -l) -gt 0 ]
@@ -27,7 +27,7 @@ done
 for bug in `seq 101 133`
 do
   echo "Launching tests node for closure_${bug} ..."
-  oarsub -l walltime=00:10:00 -O ~/defects4j-nopol/logs/d4j-tests/closure/stdout/closure_${bug}.stdout -E ~/defects4j-nopol/logs/d4j-tests/closure/stderr/closure_${bug}.stderr "~/defects4j-nopol/scripts/d4j-tests/closure/closure-node ${bug}"
+  oarsub -l walltime=00:10:00 -O ~/defects4j-repair/logs/d4j-tests/closure/stdout/closure_${bug}.stdout -E ~/defects4j-repair/logs/d4j-tests/closure/stderr/closure_${bug}.stderr "~/defects4j-repair/scripts/d4j-tests/closure/closure-node ${bug}"
 done
 
 while [ $(oarstat -u | grep rsommerard | wc -l) -gt 0 ]
@@ -37,5 +37,3 @@ do
 done
 
 echo "Done."
-
-

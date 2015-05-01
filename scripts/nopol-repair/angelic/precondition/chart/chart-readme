@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ~/defects4j-nopol/logs/nopol-repair/angelic/precondition/chart/
+cd ~/defects4j-repair/logs/nopol-repair/angelic/precondition/chart/
 
 echo '# Chart - Nopol angelic precondition repair' > README.md
 echo "" >> README.md
@@ -52,10 +52,10 @@ if [[ $nbPatchFound -gt 0 ]]; then
     if [[ $patchFound ]]; then
       nopolRepair=`grep "^org" stdout/chart_${bug}.stdout | cut -f 1-2 -d :`
 
-      nopolLine=`grep -m 1 $nopolRepair ~/defects4j-nopol/logs/nopol-ranking/chart/stdout/chart_$bug.stdout`
-      nopolLineNumber=`grep -m 1 -n "$nopolLine" ~/defects4j-nopol/logs/nopol-ranking/chart/stdout/chart_$bug.stdout | cut -f 1 -d :`
+      nopolLine=`grep -m 1 $nopolRepair ~/defects4j-repair/logs/nopol-ranking/chart/stdout/chart_$bug.stdout`
+      nopolLineNumber=`grep -m 1 -n "$nopolLine" ~/defects4j-repair/logs/nopol-ranking/chart/stdout/chart_$bug.stdout | cut -f 1 -d :`
 
-      statementStart=`grep -m 1 -n "org" ~/defects4j-nopol/logs/nopol-ranking/chart/stdout/chart_${bug}.stdout | cut -f 1 -d :`
+      statementStart=`grep -m 1 -n "org" ~/defects4j-repair/logs/nopol-ranking/chart/stdout/chart_${bug}.stdout | cut -f 1 -d :`
       if [[ ! $statementStart ]]; then
         statementStart=-1
       fi
@@ -77,7 +77,7 @@ if [[ $nbPatchFound -gt 0 ]]; then
       echo "- IRL patch:" >> README.md
       echo "" >> README.md
       echo '```' >> README.md
-      cat ~/defects4j-nopol/logs/d4j-diffs/chart/chart_${bug}.stdout >> README.md
+      cat ~/defects4j-repair/logs/d4j-diffs/chart/chart_${bug}.stdout >> README.md
       echo '```' >> README.md
       echo "" >> README.md
     fi

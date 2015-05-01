@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ~/defects4j-nopol/logs/nopol-ranking/chart/
+cd ~/defects4j-repair/logs/nopol-ranking/chart/
 
 echo '# Chart - Nopol ranking' > README.md
 echo "" >> README.md
@@ -16,9 +16,9 @@ do
     echo "Ignored because of grid5000 bug." >> README.md
     echo "" >> README.md
   else
-    modifiedSources=`grep -e '->' ~/defects4j-nopol/logs/d4j-infos/patches/chart/chart_$bug.stdout`
+    modifiedSources=`grep -e '->' ~/defects4j-repair/logs/d4j-infos/patches/chart/chart_$bug.stdout`
 
-    nbModifiedSources=`grep -e '->' ~/defects4j-nopol/logs/d4j-infos/patches/chart/chart_$bug.stdout | wc -l`
+    nbModifiedSources=`grep -e '->' ~/defects4j-repair/logs/d4j-infos/patches/chart/chart_$bug.stdout | wc -l`
     echo "- Nb. modified sources: $nbModifiedSources" >> README.md
     echo "" >> README.md
 
@@ -43,7 +43,7 @@ do
 
     for index in `seq 1 $nbModifiedSources`
     do
-      modifiedSource=`grep -e '->' ~/defects4j-nopol/logs/d4j-infos/patches/chart/chart_$bug.stdout | sed -n ${index}p`
+      modifiedSource=`grep -e '->' ~/defects4j-repair/logs/d4j-infos/patches/chart/chart_$bug.stdout | sed -n ${index}p`
 
       sourceName=`echo $modifiedSource | cut -f 2 -d '>' | cut -f 1 -d : | cut -f 1 -d . | tr / .`
 
@@ -54,10 +54,10 @@ do
 
       className=`echo $sourceName | tr . ' ' | awk '{print $NF}'`
       echo '```' >> README.md
-      cat ~/defects4j-nopol/logs/d4j-infos/patches/chart/chart_${bug}_${className}.stdout >> README.md
+      cat ~/defects4j-repair/logs/d4j-infos/patches/chart/chart_${bug}_${className}.stdout >> README.md
       echo '```' >> README.md
-      deleted=`cat ~/defects4j-nopol/logs/d4j-infos/patches/chart/chart_${bug}_${className}.stdout | grep '<' | wc -l`
-      added=`cat ~/defects4j-nopol/logs/d4j-infos/patches/chart/chart_${bug}_${className}.stdout | grep '>' | wc -l`
+      deleted=`cat ~/defects4j-repair/logs/d4j-infos/patches/chart/chart_${bug}_${className}.stdout | grep '<' | wc -l`
+      added=`cat ~/defects4j-repair/logs/d4j-infos/patches/chart/chart_${bug}_${className}.stdout | grep '>' | wc -l`
       echo "" >> README.md
       echo "- Deleted lines: $deleted<br />" >> README.md
       echo "- Added lines: $added<br />" >> README.md

@@ -7,11 +7,11 @@ do
 
   exec 6<&1
 
-  exec 1> ~/defects4j-nopol/logs/d4j-diffs/lang/lang_${bug}.stdout
+  exec 1> ~/defects4j-repair/logs/d4j-diffs/lang/lang_${bug}.stdout
 
-  line=`grep -m 1 -n "List of modified sources:" ~/defects4j-nopol/logs/d4j-infos/projects/lang/lang_${bug}.stdout | cut -f 1 -d :`
+  line=`grep -m 1 -n "List of modified sources:" ~/defects4j-repair/logs/d4j-infos/projects/lang/lang_${bug}.stdout | cut -f 1 -d :`
   let "line++"
-  modifiedSources=`tail -n +$line ~/defects4j-nopol/logs/d4j-infos/projects/lang/lang_${bug}.stdout | tac | tail -n +2 | cut -f 3 -d ' '`
+  modifiedSources=`tail -n +$line ~/defects4j-repair/logs/d4j-infos/projects/lang/lang_${bug}.stdout | tac | tail -n +2 | cut -f 3 -d ' '`
 
   # < delete in buggy
   # > add in fix

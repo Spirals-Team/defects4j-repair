@@ -9,7 +9,7 @@ do
 
   exec 6<&1
 
-  exec 1> ~/defects4j-nopol/logs/d4j-infos/projects/math/math_${bug}.stdout
+  exec 1> ~/defects4j-repair/logs/d4j-infos/projects/math/math_${bug}.stdout
 
   defects4j info -p Math -v ${bug}
 

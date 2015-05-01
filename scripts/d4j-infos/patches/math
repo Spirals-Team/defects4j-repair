@@ -7,11 +7,11 @@ do
 
   exec 6<&1
 
-  exec 1> ~/defects4j-nopol/logs/d4j-infos/patches/math/math_${bug}.stdout
+  exec 1> ~/defects4j-repair/logs/d4j-infos/patches/math/math_${bug}.stdout
 
-  line=`grep -m 1 -n "List of modified sources:" ~/defects4j-nopol/logs/d4j-infos/projects/math/math_${bug}.stdout | cut -f 1 -d :`
+  line=`grep -m 1 -n "List of modified sources:" ~/defects4j-repair/logs/d4j-infos/projects/math/math_${bug}.stdout | cut -f 1 -d :`
   let "line++"
-  modifiedSources=`tail -n +$line ~/defects4j-nopol/logs/d4j-infos/projects/math/math_${bug}.stdout | tac | tail -n +2 | cut -f 3 -d ' '`
+  modifiedSources=`tail -n +$line ~/defects4j-repair/logs/d4j-infos/projects/math/math_${bug}.stdout | tac | tail -n +2 | cut -f 3 -d ' '`
 
   # < delete in buggy
   # > add in fix
@@ -24,11 +24,11 @@ do
     pathModifiedSource="$pathModifiedSource.java"
     linePrint="-> $pathModifiedSource"
     if [[ $bug -lt 85 ]]; then
-      diff -b ~/projects/math/buggy/math_${bug}/src/main/java/$pathModifiedSource ~/projects/math/fix/math_${bug}/src/main/java/$pathModifiedSource > ~/defects4j-nopol/logs/d4j-infos/patches/math/math_${bug}_$className.stdout
+      diff -b ~/projects/math/buggy/math_${bug}/src/main/java/$pathModifiedSource ~/projects/math/fix/math_${bug}/src/main/java/$pathModifiedSource > ~/defects4j-repair/logs/d4j-infos/patches/math/math_${bug}_$className.stdout
     else
-      diff -b ~/projects/math/buggy/math_${bug}/src/java/$pathModifiedSource ~/projects/math/fix/math_${bug}/src/java/$pathModifiedSource > ~/defects4j-nopol/logs/d4j-infos/patches/math/math_${bug}_$className.stdout
+      diff -b ~/projects/math/buggy/math_${bug}/src/java/$pathModifiedSource ~/projects/math/fix/math_${bug}/src/java/$pathModifiedSource > ~/defects4j-repair/logs/d4j-infos/patches/math/math_${bug}_$className.stdout
     fi
-    modifiedLinesBrut=`grep '^\d' ~/defects4j-nopol/logs/d4j-infos/patches/math/math_${bug}_$className.stdout | cut -f 1 -d c | cut -f 1 -d a | cut -f 1 -d d`
+    modifiedLinesBrut=`grep '^\d' ~/defects4j-repair/logs/d4j-infos/patches/math/math_${bug}_$className.stdout | cut -f 1 -d c | cut -f 1 -d a | cut -f 1 -d d`
 
     modifiedLines=""
 

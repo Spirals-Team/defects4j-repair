@@ -19,7 +19,7 @@ fi
 cd /tmp/
 rm -rf time_${1}/
 
-cd ~/defects4j-nopol/logs/nopol-ranking/time/
+cd ~/defects4j-repair/logs/nopol-ranking/time/
 
 #Cut log
 line=`grep -m 1 -n "^\/\*" stdout/time_${1}.stdout | cut -f 1 -d :`
