@@ -45,3 +45,29 @@ Caused by: java.util.concurrent.TimeoutException
 real	124m10.211s
 user	138m45.840s
 sys	27m7.858s
+spoon.compiler.ModelBuildingException: Syntax error on token "enum", Identifier expected at /tmp/lang_43/src/java/org/apache/commons/lang/enum/Enum.java:17
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.report(JDTBasedSpoonCompiler.java:535)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.reportProblems(JDTBasedSpoonCompiler.java:551)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.build(JDTBasedSpoonCompiler.java:507)
+	at fr.inria.lille.commons.spoon.util.SpoonModelLibrary.modelFor(SpoonModelLibrary.java:50)
+	at fr.inria.lille.commons.spoon.SpoonedFile.<init>(SpoonedFile.java:48)
+	at fr.inria.lille.commons.spoon.SpoonedProject.<init>(SpoonedProject.java:17)
+	at fr.inria.lille.repair.nopol.NoPol.<init>(NoPol.java:66)
+	at fr.inria.lille.repair.nopol.NoPolLauncher.launch(NoPolLauncher.java:46)
+	at fr.inria.lille.repair.Main.main(Main.java:54)
+java.lang.RuntimeException: java.util.concurrent.TimeoutException
+	at xxl.java.junit.TestSuiteExecution.executionResult(TestSuiteExecution.java:87)
+	at xxl.java.junit.TestSuiteExecution.runTestCase(TestSuiteExecution.java:41)
+	at xxl.java.junit.TestSuiteExecution.runTestCases(TestSuiteExecution.java:71)
+	at fr.inria.lille.repair.nopol.synth.ConstraintModelBuilder.buildFor(ConstraintModelBuilder.java:68)
+	at fr.inria.lille.repair.nopol.synth.DefaultSynthesizer.buildPatch(DefaultSynthesizer.java:67)
+	at fr.inria.lille.repair.nopol.NoPol.solveWithMultipleBuild(NoPol.java:140)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:82)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:73)
+	at fr.inria.lille.repair.nopol.NoPolLauncher.launch(NoPolLauncher.java:51)
+	at fr.inria.lille.repair.Main.main(Main.java:54)
+Caused by: java.util.concurrent.TimeoutException
+	at java.util.concurrent.FutureTask.get(FutureTask.java:201)
+	at xxl.java.junit.TestSuiteExecution.executionResult(TestSuiteExecution.java:80)
+	... 9 more
+## OAR [2015-05-03 17:01:15] Job 1497587 KILLED
