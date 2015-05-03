@@ -1,8 +1,0 @@
-----INFORMATION----
-Nb Statements Analyzed : 70
-Nb Statements with Angelic Value Found : 1
-Nb inputs in SMT : 118
-Nb variables in SMT : 23
-Nopol Execution time : 4584380ms
-----PATCH FOUND----
-org.apache.commons.math.util.MathUtils:1627: PRECONDITION (!((((org.apache.commons.math.util.MathUtils.FACTORIALS.length)+(org.apache.commons.math.util.MathUtils.FACTORIALS.length))<(dp))||((dp)<=((org.apache.commons.math.util.MathUtils.TWO_PI)-((org.apache.commons.math.util.MathUtils.FACTORIALS.length)+(org.apache.commons.math.util.MathUtils.FACTORIALS.length))))))&&(p2!=null)

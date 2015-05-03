@@ -1,8 +1,0 @@
-----INFORMATION----
-Nb Statements Analyzed : 48
-Nb Statements with Angelic Value Found : 1
-Nb inputs in SMT : 15
-Nb variables in SMT : 57
-Nopol Execution time : 157137ms
-----PATCH FOUND----
-org.apache.commons.math.linear.EigenDecompositionImpl:1540: PRECONDITION (org.apache.commons.math.linear.EigenDecompositionImpl.this.lowerSpectra)<(org.apache.commons.math.linear.EigenDecompositionImpl.this.splitTolerance)

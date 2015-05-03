@@ -1,8 +1,0 @@
-----INFORMATION----
-Nb Statements Analyzed : 215
-Nb Statements with Angelic Value Found : 1
-Nb inputs in SMT : 120
-Nb variables in SMT : 30
-Nopol Execution time : 124816ms
-----PATCH FOUND----
-org.apache.commons.math.optimization.linear.SimplexTableau:160: CONDITIONAL ((org.apache.commons.math.optimization.linear.SimplexTableau.this.numSlackVariables)!=(1))&&(!(org.apache.commons.math.optimization.linear.SimplexTableau.this.restrictToNonNegative))
