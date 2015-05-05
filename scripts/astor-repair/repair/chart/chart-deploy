@@ -1,0 +1,22 @@
+#!/bin/bash
+
+#Zap chart 8 because of bug.
+for bug in `seq 1 7`
+do
+  echo "Launching astor repair node for chart_${bug} ..."
+  oarsub -l walltime=02:00:00 -O ~/defects4j-repair/logs/astor-repair/repair/chart/stdout/chart_${bug}.stdout -E ~/defects4j-repair/logs/astor-repair/repair/chart/stderr/chart_${bug}.stderr "~/defects4j-repair/scripts/astor-repair/repair/chart/chart-node ${bug}"
+done
+
+for bug in `seq 9 26`
+do
+  echo "Launching astor repair node for chart_${bug} ..."
+  oarsub -l walltime=02:00:00 -O ~/defects4j-repair/logs/astor-repair/repair/chart/stdout/chart_${bug}.stdout -E ~/defects4j-repair/logs/astor-repair/repair/chart/stderr/chart_${bug}.stderr "~/defects4j-repair/scripts/astor-repair/repair/chart/chart-node ${bug}"
+done
+
+while [ $(oarstat -u | grep rsommerard | wc -l) -gt 0 ]
+do
+  echo "Chart astor repair node running: $(oarstat -u | grep rsommerard | wc -l)"
+  sleep 5
+done
+
+echo "Done."

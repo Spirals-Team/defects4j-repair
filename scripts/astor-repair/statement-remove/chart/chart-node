@@ -1,0 +1,41 @@
+#!/bin/bash
+
+export PATH="~/defects4j/framework/bin:$PATH"
+
+cp -r ~/projects/chart/chart_${1}/ /tmp/
+cd /tmp/chart_${1}/
+defects4j compile
+
+cp ~/astor/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar .
+
+cp -r ~/defects4j/framework/projects/lib/ .
+
+find source/ -type f -name "package-info.java" -delete
+
+failingTest=`grep -m 1 'org.jfree.*Test' ~/defects4j-repair/logs/d4j-infos/projects/chart/chart_${1}.stdout | cut -f 2 -d '-' | cut -f 1 -d ':'`
+
+time java -cp astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing $failingTest -package org.jfree -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -maxgen 1000000 -population 2 -srcjavafolder source/ -srctestfolder tests/ -binjavafolder build/ -bintestfolder build-tests/
+
+cd ~/defects4j-repair/logs/astor-repair/statement-remove/chart/
+line=`grep -m 1 -n "Found Solution" stdout/chart_${1}.stdout | cut -f 1 -d :`
+if [[ $line ]]; then
+  tail -n +$line stdout/chart_${1}.stdout > chart_${1}_tmp.stdout
+  mv chart_${1}_tmp.stdout stdout/chart_${1}.stdout
+else
+  line=`grep -m 1 -n "No more time for operating" stdout/chart_${1}.stdout | cut -f 1 -d :`
+
+  if [[ $line ]]; then
+    let "line--"
+    tail -n +$line stdout/chart_${1}.stdout > chart_${1}_tmp.stdout
+    mv chart_${1}_tmp.stdout stdout/chart_${1}.stdout
+  fi
+fi
+
+cd /tmp/chart_${1}/
+if [[ $line ]]; then
+  mkdir ~/defects4j-repair/solutions/astor-repair/statement-remove/chart/chart_${1}
+  cp -r outputMutation/ ~/defects4j-repair/solutions/astor-repair/statement-remove/chart/chart_${1}/
+fi
+
+cd /tmp/
+rm -rf chart_${1}/

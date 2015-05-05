@@ -1,0 +1,45 @@
+#!/bin/bash
+
+cd ~/defects4j-repair/logs/astor-repair/repair/chart/
+
+for bug in `seq 1 7`
+do
+  #Cut log if a solution was found
+  line=`grep -m 1 -n "Found Solution" stdout/chart_${bug}.stdout | cut -f 1 -d :`
+
+  if [[ $line ]]; then
+    tail -n +$line stdout/chart_${bug}.stdout > chart_${bug}_tmp.stdout
+    mv chart_${bug}_tmp.stdout stdout/chart_${bug}.stdout
+  else
+    #Cut log if a solution was not found
+    line=`grep -m 1 -n "No more time for operating" stdout/chart_${bug}.stdout | cut -f 1 -d :`
+
+    if [[ $line ]]; then
+      let "line--"
+      tail -n +$line stdout/chart_${bug}.stdout > chart_${bug}_tmp.stdout
+      mv chart_${bug}_tmp.stdout stdout/chart_${bug}.stdout
+    fi
+  fi
+done
+
+for bug in `seq 9 26`
+do
+  #Cut log if a solution was found
+  line=`grep -m 1 -n "Found Solution" stdout/chart_${bug}.stdout | cut -f 1 -d :`
+
+  if [[ $line ]]; then
+    tail -n +$line stdout/chart_${bug}.stdout > chart_${bug}_tmp.stdout
+    mv chart_${bug}_tmp.stdout stdout/chart_${bug}.stdout
+  else
+    #Cut log if a solution was not found
+    line=`grep -m 1 -n "No more time for operating" stdout/chart_${bug}.stdout | cut -f 1 -d :`
+
+    if [[ $line ]]; then
+      let "line--"
+      tail -n +$line stdout/chart_${bug}.stdout > chart_${bug}_tmp.stdout
+      mv chart_${bug}_tmp.stdout stdout/chart_${bug}.stdout
+    fi
+  fi
+done
+
+echo "Done."

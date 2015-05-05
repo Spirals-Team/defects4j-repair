@@ -1,0 +1,25 @@
+#!/bin/bash
+
+cd ~/defects4j-repair/logs/astor-repair/repair/math/
+
+for bug in `seq 1 106`
+do
+  #Cut log if a solution was found
+  line=`grep -m 1 -n "Found Solution" stdout/math_${bug}.stdout | cut -f 1 -d :`
+
+  if [[ $line ]]; then
+    tail -n +$line stdout/math_${bug}.stdout > math_${bug}_tmp.stdout
+    mv math_${bug}_tmp.stdout stdout/math_${bug}.stdout
+  else
+    #Cut log if a solution was not found
+    line=`grep -m 1 -n "No more time for operating" stdout/math_${bug}.stdout | cut -f 1 -d :`
+
+    if [[ $line ]]; then
+      let "line--"
+      tail -n +$line stdout/math_${bug}.stdout > math_${bug}_tmp.stdout
+      mv math_${bug}_tmp.stdout stdout/math_${bug}.stdout
+    fi
+  fi
+done
+
+echo "Done."

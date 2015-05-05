@@ -1,0 +1,53 @@
+#!/bin/bash
+
+export PATH="~/defects4j/framework/bin:$PATH"
+
+cp -r ~/projects/lang/lang_${1}/ /tmp/
+cd /tmp/lang_${1}/
+defects4j compile
+
+cp ~/astor/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar .
+
+cp -r ~/defects4j/framework/projects/lib/ .
+cp ~/defects4j/framework/projects/Lang/lib/asm.jar lib/
+cp ~/defects4j/framework/projects/Lang/lib/cglib.jar lib/
+cp ~/defects4j/framework/projects/Lang/lib/commons-io.jar lib/
+cp ~/defects4j/framework/projects/Lang/lib/easymock.jar lib/
+
+find src/ -type f -name "package-info.java" -delete
+
+failingTest=`grep -m 1 'org.apache.commons.*Test' ~/defects4j-repair/logs/d4j-infos/projects/lang/lang_${1}.stdout | cut -f 2 -d '-' | cut -f 1 -d ':'`
+
+if [[ $1 -lt 21 ]]; then
+  time java -cp astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing $failingTest -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -maxgen 1000000 -population 2 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/tests/
+elif [[ $1 -lt 36 ]]; then
+  time java -cp astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing $failingTest -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -maxgen 1000000 -population 2 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/
+elif [[ $1 -lt 42 ]]; then
+  time java -cp astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing $failingTest -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -maxgen 1000000 -population 2 -srcjavafolder src/java/ -srctestfolder src/test/ -binjavafolder target/classes/ -bintestfolder target/test-classes/
+else
+  time java -cp astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing $failingTest -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -maxgen 1000000 -population 2 -srcjavafolder src/java/ -srctestfolder src/test/ -binjavafolder target/classes/ -bintestfolder target/tests/
+fi
+
+cd ~/defects4j-repair/logs/astor-repair/statement-remove/lang/
+line=`grep -m 1 -n "Found Solution" stdout/lang_${1}.stdout | cut -f 1 -d :`
+if [[ $line ]]; then
+  tail -n +$line stdout/lang_${1}.stdout > lang_${1}_tmp.stdout
+  mv lang_${1}_tmp.stdout stdout/lang_${1}.stdout
+else
+  line=`grep -m 1 -n "No more time for operating" stdout/lang_${1}.stdout | cut -f 1 -d :`
+
+  if [[ $line ]]; then
+    let "line--"
+    tail -n +$line stdout/lang_${1}.stdout > lang_${1}_tmp.stdout
+    mv lang_${1}_tmp.stdout stdout/lang_${1}.stdout
+  fi
+fi
+
+cd /tmp/lang_${1}/
+if [[ $line ]]; then
+  mkdir ~/defects4j-repair/solutions/astor-repair/statement-remove/lang/lang_${1}
+  cp -r outputMutation/ ~/defects4j-repair/solutions/astor-repair/statement-remove/lang/lang_${1}/
+fi
+
+cd /tmp/
+rm -rf lang_${1}/

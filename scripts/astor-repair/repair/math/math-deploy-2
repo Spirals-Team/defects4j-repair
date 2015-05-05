@@ -1,0 +1,15 @@
+#!/bin/bash
+
+for bug in `seq 51 100`
+do
+  echo "Launching astor repair node for math_${bug} ..."
+  oarsub -l walltime=02:00:00 -O ~/defects4j-repair/logs/astor-repair/repair/math/stdout/math_${bug}.stdout -E ~/defects4j-repair/logs/astor-repair/repair/math/stderr/math_${bug}.stderr "~/defects4j-repair/scripts/astor-repair/repair/math/math-node ${bug}"
+done
+
+while [ $(oarstat -u | grep rsommerard | wc -l) -gt 0 ]
+do
+  echo "Math astor repair node running: $(oarstat -u | grep rsommerard | wc -l)"
+  sleep 5
+done
+
+echo 'Done.'

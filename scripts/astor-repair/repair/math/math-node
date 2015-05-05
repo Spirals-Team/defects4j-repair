@@ -1,0 +1,46 @@
+#!/bin/bash
+
+export PATH="~/defects4j/framework/bin:$PATH"
+
+cp -r ~/projects/math/math_${1}/ /tmp/
+cd /tmp/math_${1}/
+defects4j compile
+
+cp ~/astor/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar .
+
+cp -r ~/defects4j/framework/projects/lib/ .
+cp ~/defects4j/framework/projects/Math/lib/commons-discovery-0.5.jar lib/
+
+find src/ -type f -name "package-info.java" -delete
+
+failingTest=`grep -m 1 'org.apache.commons.*Test' ~/defects4j-repair/logs/d4j-infos/projects/math/math_${1}.stdout | cut -f 2 -d '-' | cut -f 1 -d ':'`
+
+if [[ $1 -lt 85 ]]; then
+  time java -cp astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar fr.inria.main.evolution.MainjGenProg -location . -dependencies lib/ -failing $failingTest -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -maxgen 1000000 -population 2 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/
+else
+  time java -cp astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar fr.inria.main.evolution.MainjGenProg -location . -dependencies lib/ -failing $failingTest -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -maxgen 1000000 -population 2 -srcjavafolder src/java/ -srctestfolder src/test/ -binjavafolder target/classes/ -bintestfolder target/test-classes/
+fi
+
+cd ~/defects4j-repair/logs/astor-repair/repair/math/
+line=`grep -m 1 -n "Found Solution" stdout/math_${1}.stdout | cut -f 1 -d :`
+if [[ $line ]]; then
+  tail -n +$line stdout/math_${1}.stdout > math_${1}_tmp.stdout
+  mv math_${1}_tmp.stdout stdout/math_${1}.stdout
+else
+  line=`grep -m 1 -n "No more time for operating" stdout/math_${1}.stdout | cut -f 1 -d :`
+
+  if [[ $line ]]; then
+    let "line--"
+    tail -n +$line stdout/math_${1}.stdout > math_${1}_tmp.stdout
+    mv math_${1}_tmp.stdout stdout/math_${1}.stdout
+  fi
+fi
+
+cd /tmp/math_${1}/
+if [[ $line ]]; then
+  mkdir ~/defects4j-repair/solutions/astor-repair/repair/math/math_${1}
+  cp -r outputMutation/ ~/defects4j-repair/solutions/astor-repair/repair/math/math_${1}/
+fi
+
+cd /tmp/
+rm -rf math_${1}/

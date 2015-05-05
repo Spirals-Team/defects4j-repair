@@ -1,0 +1,25 @@
+#!/bin/bash
+
+cd ~/defects4j-repair/logs/astor-repair/statement-remove/lang/
+
+for bug in `seq 1 65`
+do
+  #Cut log if a solution was found
+  line=`grep -m 1 -n "Found Solution" stdout/lang_${bug}.stdout | cut -f 1 -d :`
+
+  if [[ $line ]]; then
+    tail -n +$line stdout/lang_${bug}.stdout > lang_${bug}_tmp.stdout
+    mv lang_${bug}_tmp.stdout stdout/lang_${bug}.stdout
+  else
+    #Cut log if a solution was not found
+    line=`grep -m 1 -n "No more time for operating" stdout/lang_${bug}.stdout | cut -f 1 -d :`
+
+    if [[ $line ]]; then
+      let "line--"
+      tail -n +$line stdout/lang_${bug}.stdout > lang_${bug}_tmp.stdout
+      mv lang_${bug}_tmp.stdout stdout/lang_${bug}.stdout
+    fi
+  fi
+done
+
+echo "Done."
