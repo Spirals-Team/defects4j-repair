@@ -1,0 +1,8 @@
+----INFORMATION----
+Nb Statements Analyzed : 8
+Nb Statements with Angelic Value Found : 1
+Nb inputs in SMT : 4
+Nb variables in SMT : 27
+Nopol Execution time : 107376ms
+----PATCH FOUND----
+org.jfree.data.time.TimeSeries:935: CONDITIONAL ((org.jfree.data.time.TimeSeries.DEFAULT_RANGE_DESCRIPTION.length())==(startIndex))||((!((startIndex)!=(1)))&&(start!=null))
