@@ -1,20 +1,21 @@
-# Defects4j-Nopol
+# Defects4j-Repair
 
 ## Infos
 
 Nb. of tested bugs: 223 (25 + 65 + 106 + 27)
 
-## Reset depots
+## Reset script
 
 ```
 export HTTP_PROXY="http://proxy:3128/"
 export HTTPS_PROXY="https://proxy:3128/"
 
-rm -rf defects4j/ defects4j-nopol/ nopol/
+rm -rf defects4j/ defects4j-repair/ nopol/ astor/
 
 git clone https://github.com/rsommerard/nopol.git
+git clone https://github.com/rsommerard/astor.git
 git clone https://github.com/rsommerard/defects4j.git
-git clone https://github.com/rsommerard/defects4j-nopol.git
+git clone https://github.com/Spirals-Team/defects4j-repair.git
 ```
 
 ## Check available ressources
@@ -26,7 +27,7 @@ disco grenoble lille luxembourg lyon nancy nantes reims rennes sophia toulouse
 ## Delete reservations
 
 ```
-for i in $(oarstat -u | grep rsommerard | cut -f 1 -d ' '); do echo $i; oardel $i; done
+for i in $(oarstat -u | grep <name> | cut -f 1 -d ' '); do echo $i; oardel $i; done
 ```
 
 ## Init projects
