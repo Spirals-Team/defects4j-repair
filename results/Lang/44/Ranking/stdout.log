@@ -1,0 +1,71 @@
+export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";cp -r /home/tdurieux/projects/lang/lang_44 /tmp/lang_44_Ranking;cd /tmp/lang_44_Ranking;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Lang/lib/* lib/;find . -type f -name "package-info.java" -delete;
+cd /tmp/lang_44_Ranking;cp -r /home/tdurieux/nopol/z3-x64-debian-7.7/bin/ lib/z3;time java -cp /home/tdurieux/nopol/nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar fr.inria.lille.repair.Main --mode ranking --type condition --oracle angelic --synthesis smt --solver z3 --solver-path lib/z3/z3 --complianceLevel 3 --source src/java/ --classpath target/classes/:target/tests/:lib/asm.jar:lib/cglib.jar:lib/commons-io.jar:lib/easymock.jar:/home/tdurieux/nopol/nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar;echo "
+
+Node: `hostname`
+";echo "
+Date: `date`
+";rm -rf /tmp/lang_44_Ranking;
+
+/************************/
+Executed tests:   1879
+Successful tests: 1878
+Failed tests:     1
+
+org.apache.commons.lang.NumberUtilsTest#testLang457
+java.lang.StringIndexOutOfBoundsException: String index out of range: 0
+	at java.lang.String.charAt(String.java:658)
+	at org.apache.commons.lang.NumberUtils.createNumber(NumberUtils.java:193)
+	at org.apache.commons.lang.NumberUtilsTest.testLang457(NumberUtilsTest.java:528)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at com.gzoltar.core.instr.testing.junit.JUnitRunner.run(JUnitRunner.java:47)
+	at com.gzoltar.core.instr.Runner.main(Runner.java:46)
+
+
+/************************/
+/* Suspicious statement */
+/************************/
+org.apache.commons.lang.NumberUtils:139 -> 0.5773502691896258 (ep: 2, ef: 1, np: 1876, nf: 0)
+org.apache.commons.lang.NumberUtils:142 -> 0.5773502691896258 (ep: 2, ef: 1, np: 1876, nf: 0)
+org.apache.commons.lang.NumberUtils:145 -> 0.5773502691896258 (ep: 2, ef: 1, np: 1876, nf: 0)
+org.apache.commons.lang.NumberUtils:152 -> 0.5773502691896258 (ep: 2, ef: 1, np: 1876, nf: 0)
+org.apache.commons.lang.NumberUtils:155 -> 0.5773502691896258 (ep: 2, ef: 1, np: 1876, nf: 0)
+org.apache.commons.lang.NumberUtils:159 -> 0.5773502691896258 (ep: 2, ef: 1, np: 1876, nf: 0)
+org.apache.commons.lang.NumberUtils:160 -> 0.5773502691896258 (ep: 2, ef: 1, np: 1876, nf: 0)
+org.apache.commons.lang.NumberUtils:162 -> 0.5773502691896258 (ep: 2, ef: 1, np: 1876, nf: 0)
+org.apache.commons.lang.NumberUtils:174 -> 0.5773502691896258 (ep: 2, ef: 1, np: 1876, nf: 0)
+org.apache.commons.lang.NumberUtils:177 -> 0.5773502691896258 (ep: 2, ef: 1, np: 1876, nf: 0)
+org.apache.commons.lang.NumberUtils:179 -> 0.5773502691896258 (ep: 2, ef: 1, np: 1876, nf: 0)
+org.apache.commons.lang.NumberUtils:181 -> 0.5773502691896258 (ep: 2, ef: 1, np: 1876, nf: 0)
+org.apache.commons.lang.NumberUtils:182 -> 0.5773502691896258 (ep: 2, ef: 1, np: 1876, nf: 0)
+org.apache.commons.lang.NumberUtils:185 -> 0.5773502691896258 (ep: 2, ef: 1, np: 1876, nf: 0)
+org.apache.commons.lang.NumberUtils:188 -> 0.5773502691896258 (ep: 2, ef: 1, np: 1876, nf: 0)
+org.apache.commons.lang.NumberUtils:189 -> 0.5773502691896258 (ep: 2, ef: 1, np: 1876, nf: 0)
+org.apache.commons.lang.NumberUtils:190 -> 0.5773502691896258 (ep: 2, ef: 1, np: 1876, nf: 0)
+org.apache.commons.lang.NumberUtils:193 -> 0.5773502691896258 (ep: 2, ef: 1, np: 1876, nf: 0)
+org.apache.commons.lang.NumberUtils:297 -> 0.5773502691896258 (ep: 2, ef: 1, np: 1876, nf: 0)
+org.apache.commons.lang.NumberUtils:300 -> 0.5773502691896258 (ep: 2, ef: 1, np: 1876, nf: 0)
+org.apache.commons.lang.NumberUtils:301 -> 0.5773502691896258 (ep: 2, ef: 1, np: 1876, nf: 0)
+org.apache.commons.lang.NumberUtils:302 -> 0.5773502691896258 (ep: 2, ef: 1, np: 1876, nf: 0)
+
+
+
+Node: graphene-81.nancy.grid5000.fr
+
+
+Date: Mon May 11 07:59:31 CEST 2015
+
+

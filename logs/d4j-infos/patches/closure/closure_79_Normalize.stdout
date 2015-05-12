@@ -1,7 +1,0 @@
-120,121c120,122
-<     NodeTraversal.traverse(compiler, root,
-<         new NormalizeStatements(compiler, assertOnChange));
----
->     new NodeTraversal(
->         compiler, new NormalizeStatements(compiler, assertOnChange))
->         .traverseRoots(externs, root);

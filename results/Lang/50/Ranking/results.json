@@ -1,0 +1,2896 @@
+{
+    "date": "2015-05-11T07:59:24.112182", 
+    "executedTest": 1814, 
+    "failedTest": 2, 
+    "failedTestDetails": [
+        {
+            "class": "org.apache.commons.lang.time.FastDateFormatTest", 
+            "method": "test_changeDefault_Locale_DateInstance"
+        }, 
+        {
+            "class": "org.apache.commons.lang.time.FastDateFormatTest", 
+            "method": "test_changeDefault_Locale_DateTimeInstance"
+        }
+    ], 
+    "modifiedLines": [
+        {
+            "class": "a.org.apache.commons.lang.time.FastDateFormat", 
+            "line": 285
+        }, 
+        {
+            "class": "a.org.apache.commons.lang.time.FastDateFormat", 
+            "line": 286
+        }, 
+        {
+            "class": "a.org.apache.commons.lang.time.FastDateFormat", 
+            "line": 289
+        }, 
+        {
+            "class": "a.org.apache.commons.lang.time.FastDateFormat", 
+            "line": 463
+        }, 
+        {
+            "class": "a.org.apache.commons.lang.time.FastDateFormat", 
+            "line": 464
+        }, 
+        {
+            "class": "a.org.apache.commons.lang.time.FastDateFormat", 
+            "line": 466
+        }
+    ], 
+    "nbsuspicious": 150, 
+    "node": "griffon-10.nancy.grid5000.fr\n", 
+    "successfulTest": 1812, 
+    "suspicious": {
+        "org.apache.commons.lang.time.FastDateFormat$CharacterLiteral:1089": {
+            "class": "org.apache.commons.lang.time.FastDateFormat$CharacterLiteral", 
+            "ef": 2, 
+            "ep": 17, 
+            "line": 1089, 
+            "metrics": {
+                "ample": 0.9906181015452539, 
+                "gzoltar": 0.3244428422615251, 
+                "ochiai": 0.3244428422615251, 
+                "tarantula": 0.9907053034445051
+            }, 
+            "nf": 0, 
+            "np": 1795, 
+            "rank": {
+                "ample": 30, 
+                "ochiai": 72, 
+                "tarantula": 85
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat$PaddedNumberField:1285": {
+            "class": "org.apache.commons.lang.time.FastDateFormat$PaddedNumberField", 
+            "ef": 2, 
+            "ep": 15, 
+            "line": 1285, 
+            "metrics": {
+                "ample": 0.9917218543046358, 
+                "gzoltar": 0.34299717028501764, 
+                "ochiai": 0.34299717028501764, 
+                "tarantula": 0.9917898193760263
+            }, 
+            "nf": 0, 
+            "np": 1797, 
+            "rank": {
+                "ample": 21, 
+                "ochiai": 67, 
+                "tarantula": 76
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat$Pair:1717": {
+            "class": "org.apache.commons.lang.time.FastDateFormat$Pair", 
+            "ef": 1, 
+            "ep": 0, 
+            "line": 1717, 
+            "metrics": {
+                "ample": 0.5, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 1.0
+            }, 
+            "nf": 1, 
+            "np": 1812, 
+            "rank": {
+                "ample": 119, 
+                "ochiai": 10, 
+                "tarantula": 26
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat$Pair:1721": {
+            "class": "org.apache.commons.lang.time.FastDateFormat$Pair", 
+            "ef": 1, 
+            "ep": 0, 
+            "line": 1721, 
+            "metrics": {
+                "ample": 0.5, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 1.0
+            }, 
+            "nf": 1, 
+            "np": 1812, 
+            "rank": {
+                "ample": 106, 
+                "ochiai": 11, 
+                "tarantula": 13
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat$Pair:1725": {
+            "class": "org.apache.commons.lang.time.FastDateFormat$Pair", 
+            "ef": 1, 
+            "ep": 0, 
+            "line": 1725, 
+            "metrics": {
+                "ample": 0.5, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 1.0
+            }, 
+            "nf": 1, 
+            "np": 1812, 
+            "rank": {
+                "ample": 105, 
+                "ochiai": 12, 
+                "tarantula": 12
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat$Pair:1727": {
+            "class": "org.apache.commons.lang.time.FastDateFormat$Pair", 
+            "ef": 1, 
+            "ep": 0, 
+            "line": 1727, 
+            "metrics": {
+                "ample": 0.5, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 1.0
+            }, 
+            "nf": 1, 
+            "np": 1812, 
+            "rank": {
+                "ample": 104, 
+                "ochiai": 13, 
+                "tarantula": 11
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat$Pair:1738": {
+            "class": "org.apache.commons.lang.time.FastDateFormat$Pair", 
+            "ef": 2, 
+            "ep": 1, 
+            "line": 1738, 
+            "metrics": {
+                "ample": 0.9994481236203091, 
+                "gzoltar": 0.8164965809277261, 
+                "ochiai": 0.8164965809277261, 
+                "tarantula": 0.9994484280198566
+            }, 
+            "nf": 0, 
+            "np": 1811, 
+            "rank": {
+                "ample": 2, 
+                "ochiai": 2, 
+                "tarantula": 30
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat$StringLiteral:1120": {
+            "class": "org.apache.commons.lang.time.FastDateFormat$StringLiteral", 
+            "ef": 2, 
+            "ep": 2, 
+            "line": 1120, 
+            "metrics": {
+                "ample": 0.9988962472406181, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 0.9988974641675855
+            }, 
+            "nf": 0, 
+            "np": 1810, 
+            "rank": {
+                "ample": 3, 
+                "ochiai": 7, 
+                "tarantula": 34
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat$TextField:1154": {
+            "class": "org.apache.commons.lang.time.FastDateFormat$TextField", 
+            "ef": 2, 
+            "ep": 3, 
+            "line": 1154, 
+            "metrics": {
+                "ample": 0.9983443708609272, 
+                "gzoltar": 0.6324555320336759, 
+                "ochiai": 0.6324555320336759, 
+                "tarantula": 0.9983471074380166
+            }, 
+            "nf": 0, 
+            "np": 1809, 
+            "rank": {
+                "ample": 16, 
+                "ochiai": 36, 
+                "tarantula": 63
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat$TextField:1155": {
+            "class": "org.apache.commons.lang.time.FastDateFormat$TextField", 
+            "ef": 2, 
+            "ep": 3, 
+            "line": 1155, 
+            "metrics": {
+                "ample": 0.9983443708609272, 
+                "gzoltar": 0.6324555320336759, 
+                "ochiai": 0.6324555320336759, 
+                "tarantula": 0.9983471074380166
+            }, 
+            "nf": 0, 
+            "np": 1809, 
+            "rank": {
+                "ample": 10, 
+                "ochiai": 37, 
+                "tarantula": 57
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat$TextField:1156": {
+            "class": "org.apache.commons.lang.time.FastDateFormat$TextField", 
+            "ef": 2, 
+            "ep": 3, 
+            "line": 1156, 
+            "metrics": {
+                "ample": 0.9983443708609272, 
+                "gzoltar": 0.6324555320336759, 
+                "ochiai": 0.6324555320336759, 
+                "tarantula": 0.9983471074380166
+            }, 
+            "nf": 0, 
+            "np": 1809, 
+            "rank": {
+                "ample": 15, 
+                "ochiai": 38, 
+                "tarantula": 62
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat$TextField:1157": {
+            "class": "org.apache.commons.lang.time.FastDateFormat$TextField", 
+            "ef": 2, 
+            "ep": 3, 
+            "line": 1157, 
+            "metrics": {
+                "ample": 0.9983443708609272, 
+                "gzoltar": 0.6324555320336759, 
+                "ochiai": 0.6324555320336759, 
+                "tarantula": 0.9983471074380166
+            }, 
+            "nf": 0, 
+            "np": 1809, 
+            "rank": {
+                "ample": 8, 
+                "ochiai": 39, 
+                "tarantula": 55
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat$TextField:1158": {
+            "class": "org.apache.commons.lang.time.FastDateFormat$TextField", 
+            "ef": 2, 
+            "ep": 3, 
+            "line": 1158, 
+            "metrics": {
+                "ample": 0.9983443708609272, 
+                "gzoltar": 0.6324555320336759, 
+                "ochiai": 0.6324555320336759, 
+                "tarantula": 0.9983471074380166
+            }, 
+            "nf": 0, 
+            "np": 1809, 
+            "rank": {
+                "ample": 9, 
+                "ochiai": 40, 
+                "tarantula": 56
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat$TextField:1160": {
+            "class": "org.apache.commons.lang.time.FastDateFormat$TextField", 
+            "ef": 2, 
+            "ep": 3, 
+            "line": 1160, 
+            "metrics": {
+                "ample": 0.9983443708609272, 
+                "gzoltar": 0.6324555320336759, 
+                "ochiai": 0.6324555320336759, 
+                "tarantula": 0.9983471074380166
+            }, 
+            "nf": 0, 
+            "np": 1809, 
+            "rank": {
+                "ample": 14, 
+                "ochiai": 41, 
+                "tarantula": 61
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat$TextField:1161": {
+            "class": "org.apache.commons.lang.time.FastDateFormat$TextField", 
+            "ef": 2, 
+            "ep": 3, 
+            "line": 1161, 
+            "metrics": {
+                "ample": 0.9983443708609272, 
+                "gzoltar": 0.6324555320336759, 
+                "ochiai": 0.6324555320336759, 
+                "tarantula": 0.9983471074380166
+            }, 
+            "nf": 0, 
+            "np": 1809, 
+            "rank": {
+                "ample": 13, 
+                "ochiai": 42, 
+                "tarantula": 60
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat$TimeZoneNameRule:1557": {
+            "class": "org.apache.commons.lang.time.FastDateFormat$TimeZoneNameRule", 
+            "ef": 1, 
+            "ep": 0, 
+            "line": 1557, 
+            "metrics": {
+                "ample": 0.5, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 1.0
+            }, 
+            "nf": 1, 
+            "np": 1812, 
+            "rank": {
+                "ample": 97, 
+                "ochiai": 14, 
+                "tarantula": 4
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat$TimeZoneNameRule:1559": {
+            "class": "org.apache.commons.lang.time.FastDateFormat$TimeZoneNameRule", 
+            "ef": 1, 
+            "ep": 0, 
+            "line": 1559, 
+            "metrics": {
+                "ample": 0.5, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 1.0
+            }, 
+            "nf": 1, 
+            "np": 1812, 
+            "rank": {
+                "ample": 96, 
+                "ochiai": 15, 
+                "tarantula": 3
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat$TimeZoneNameRule:1560": {
+            "class": "org.apache.commons.lang.time.FastDateFormat$TimeZoneNameRule", 
+            "ef": 1, 
+            "ep": 0, 
+            "line": 1560, 
+            "metrics": {
+                "ample": 0.5, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 1.0
+            }, 
+            "nf": 1, 
+            "np": 1812, 
+            "rank": {
+                "ample": 121, 
+                "ochiai": 16, 
+                "tarantula": 29
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat$TwelveHourField:1455": {
+            "class": "org.apache.commons.lang.time.FastDateFormat$TwelveHourField", 
+            "ef": 1, 
+            "ep": 1, 
+            "line": 1455, 
+            "metrics": {
+                "ample": 0.49944812362030905, 
+                "gzoltar": 0.5, 
+                "ochiai": 0.5, 
+                "tarantula": 0.9988974641675855
+            }, 
+            "nf": 1, 
+            "np": 1811, 
+            "rank": {
+                "ample": 136, 
+                "ochiai": 64, 
+                "tarantula": 50
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat$TwoDigitNumberField:1340": {
+            "class": "org.apache.commons.lang.time.FastDateFormat$TwoDigitNumberField", 
+            "ef": 1, 
+            "ep": 17, 
+            "line": 1340, 
+            "metrics": {
+                "ample": 0.49061810154525387, 
+                "gzoltar": 0.16666666666666666, 
+                "ochiai": 0.16666666666666666, 
+                "tarantula": 0.9815817984832069
+            }, 
+            "nf": 1, 
+            "np": 1795, 
+            "rank": {
+                "ample": 149, 
+                "ochiai": 150, 
+                "tarantula": 149
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat$UnpaddedNumberField:1193": {
+            "class": "org.apache.commons.lang.time.FastDateFormat$UnpaddedNumberField", 
+            "ef": 2, 
+            "ep": 3, 
+            "line": 1193, 
+            "metrics": {
+                "ample": 0.9983443708609272, 
+                "gzoltar": 0.6324555320336759, 
+                "ochiai": 0.6324555320336759, 
+                "tarantula": 0.9983471074380166
+            }, 
+            "nf": 0, 
+            "np": 1809, 
+            "rank": {
+                "ample": 11, 
+                "ochiai": 45, 
+                "tarantula": 58
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:1001": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 18, 
+            "line": 1001, 
+            "metrics": {
+                "ample": 0.9900662251655629, 
+                "gzoltar": 0.31622776601683794, 
+                "ochiai": 0.31622776601683794, 
+                "tarantula": 0.9901639344262295
+            }, 
+            "nf": 0, 
+            "np": 1794, 
+            "rank": {
+                "ample": 90, 
+                "ochiai": 136, 
+                "tarantula": 145
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:1002": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 18, 
+            "line": 1002, 
+            "metrics": {
+                "ample": 0.9900662251655629, 
+                "gzoltar": 0.31622776601683794, 
+                "ochiai": 0.31622776601683794, 
+                "tarantula": 0.9901639344262295
+            }, 
+            "nf": 0, 
+            "np": 1794, 
+            "rank": {
+                "ample": 89, 
+                "ochiai": 137, 
+                "tarantula": 144
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:1003": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 18, 
+            "line": 1003, 
+            "metrics": {
+                "ample": 0.9900662251655629, 
+                "gzoltar": 0.31622776601683794, 
+                "ochiai": 0.31622776601683794, 
+                "tarantula": 0.9901639344262295
+            }, 
+            "nf": 0, 
+            "np": 1794, 
+            "rank": {
+                "ample": 88, 
+                "ochiai": 138, 
+                "tarantula": 143
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:1004": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 18, 
+            "line": 1004, 
+            "metrics": {
+                "ample": 0.9900662251655629, 
+                "gzoltar": 0.31622776601683794, 
+                "ochiai": 0.31622776601683794, 
+                "tarantula": 0.9901639344262295
+            }, 
+            "nf": 0, 
+            "np": 1794, 
+            "rank": {
+                "ample": 71, 
+                "ochiai": 139, 
+                "tarantula": 126
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:1005": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 18, 
+            "line": 1005, 
+            "metrics": {
+                "ample": 0.9900662251655629, 
+                "gzoltar": 0.31622776601683794, 
+                "ochiai": 0.31622776601683794, 
+                "tarantula": 0.9901639344262295
+            }, 
+            "nf": 0, 
+            "np": 1794, 
+            "rank": {
+                "ample": 93, 
+                "ochiai": 140, 
+                "tarantula": 148
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:1006": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 18, 
+            "line": 1006, 
+            "metrics": {
+                "ample": 0.9900662251655629, 
+                "gzoltar": 0.31622776601683794, 
+                "ochiai": 0.31622776601683794, 
+                "tarantula": 0.9901639344262295
+            }, 
+            "nf": 0, 
+            "np": 1794, 
+            "rank": {
+                "ample": 92, 
+                "ochiai": 141, 
+                "tarantula": 147
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:1007": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 18, 
+            "line": 1007, 
+            "metrics": {
+                "ample": 0.9900662251655629, 
+                "gzoltar": 0.31622776601683794, 
+                "ochiai": 0.31622776601683794, 
+                "tarantula": 0.9901639344262295
+            }, 
+            "nf": 0, 
+            "np": 1794, 
+            "rank": {
+                "ample": 91, 
+                "ochiai": 142, 
+                "tarantula": 146
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:212": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 18, 
+            "line": 212, 
+            "metrics": {
+                "ample": 0.9900662251655629, 
+                "gzoltar": 0.31622776601683794, 
+                "ochiai": 0.31622776601683794, 
+                "tarantula": 0.9901639344262295
+            }, 
+            "nf": 0, 
+            "np": 1794, 
+            "rank": {
+                "ample": 59, 
+                "ochiai": 88, 
+                "tarantula": 114
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:213": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 18, 
+            "line": 213, 
+            "metrics": {
+                "ample": 0.9900662251655629, 
+                "gzoltar": 0.31622776601683794, 
+                "ochiai": 0.31622776601683794, 
+                "tarantula": 0.9901639344262295
+            }, 
+            "nf": 0, 
+            "np": 1794, 
+            "rank": {
+                "ample": 68, 
+                "ochiai": 89, 
+                "tarantula": 123
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:214": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 18, 
+            "line": 214, 
+            "metrics": {
+                "ample": 0.9900662251655629, 
+                "gzoltar": 0.31622776601683794, 
+                "ochiai": 0.31622776601683794, 
+                "tarantula": 0.9901639344262295
+            }, 
+            "nf": 0, 
+            "np": 1794, 
+            "rank": {
+                "ample": 70, 
+                "ochiai": 90, 
+                "tarantula": 125
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:215": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 17, 
+            "line": 215, 
+            "metrics": {
+                "ample": 0.9906181015452539, 
+                "gzoltar": 0.3244428422615251, 
+                "ochiai": 0.3244428422615251, 
+                "tarantula": 0.9907053034445051
+            }, 
+            "nf": 0, 
+            "np": 1795, 
+            "rank": {
+                "ample": 38, 
+                "ochiai": 73, 
+                "tarantula": 93
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:216": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 17, 
+            "line": 216, 
+            "metrics": {
+                "ample": 0.9906181015452539, 
+                "gzoltar": 0.3244428422615251, 
+                "ochiai": 0.3244428422615251, 
+                "tarantula": 0.9907053034445051
+            }, 
+            "nf": 0, 
+            "np": 1795, 
+            "rank": {
+                "ample": 36, 
+                "ochiai": 74, 
+                "tarantula": 91
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:217": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 17, 
+            "line": 217, 
+            "metrics": {
+                "ample": 0.9906181015452539, 
+                "gzoltar": 0.3244428422615251, 
+                "ochiai": 0.3244428422615251, 
+                "tarantula": 0.9907053034445051
+            }, 
+            "nf": 0, 
+            "np": 1795, 
+            "rank": {
+                "ample": 37, 
+                "ochiai": 75, 
+                "tarantula": 92
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:219": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 18, 
+            "line": 219, 
+            "metrics": {
+                "ample": 0.9900662251655629, 
+                "gzoltar": 0.31622776601683794, 
+                "ochiai": 0.31622776601683794, 
+                "tarantula": 0.9901639344262295
+            }, 
+            "nf": 0, 
+            "np": 1794, 
+            "rank": {
+                "ample": 69, 
+                "ochiai": 91, 
+                "tarantula": 124
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:234": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 1, 
+            "ep": 0, 
+            "line": 234, 
+            "metrics": {
+                "ample": 0.5, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 1.0
+            }, 
+            "nf": 1, 
+            "np": 1812, 
+            "rank": {
+                "ample": 95, 
+                "ochiai": 8, 
+                "tarantula": 2
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:249": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 1, 
+            "ep": 1, 
+            "line": 249, 
+            "metrics": {
+                "ample": 0.49944812362030905, 
+                "gzoltar": 0.5, 
+                "ochiai": 0.5, 
+                "tarantula": 0.9988974641675855
+            }, 
+            "nf": 1, 
+            "np": 1811, 
+            "rank": {
+                "ample": 137, 
+                "ochiai": 46, 
+                "tarantula": 51
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:280": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 1, 
+            "ep": 1, 
+            "line": 280, 
+            "metrics": {
+                "ample": 0.49944812362030905, 
+                "gzoltar": 0.5, 
+                "ochiai": 0.5, 
+                "tarantula": 0.9988974641675855
+            }, 
+            "nf": 1, 
+            "np": 1811, 
+            "rank": {
+                "ample": 130, 
+                "ochiai": 47, 
+                "tarantula": 42
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:281": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 1, 
+            "ep": 1, 
+            "line": 281, 
+            "metrics": {
+                "ample": 0.49944812362030905, 
+                "gzoltar": 0.5, 
+                "ochiai": 0.5, 
+                "tarantula": 0.9988974641675855
+            }, 
+            "nf": 1, 
+            "np": 1811, 
+            "rank": {
+                "ample": 129, 
+                "ochiai": 48, 
+                "tarantula": 41
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:284": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 1, 
+            "ep": 1, 
+            "line": 284, 
+            "metrics": {
+                "ample": 0.49944812362030905, 
+                "gzoltar": 0.5, 
+                "ochiai": 0.5, 
+                "tarantula": 0.9988974641675855
+            }, 
+            "nf": 1, 
+            "np": 1811, 
+            "rank": {
+                "ample": 128, 
+                "ochiai": 49, 
+                "tarantula": 40
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:285": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 1, 
+            "ep": 1, 
+            "line": 285, 
+            "metrics": {
+                "ample": 0.49944812362030905, 
+                "gzoltar": 0.5, 
+                "ochiai": 0.5, 
+                "tarantula": 0.9988974641675855
+            }, 
+            "nf": 1, 
+            "np": 1811, 
+            "rank": {
+                "ample": 127, 
+                "ochiai": 50, 
+                "tarantula": 39
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:288": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 1, 
+            "ep": 1, 
+            "line": 288, 
+            "metrics": {
+                "ample": 0.49944812362030905, 
+                "gzoltar": 0.5, 
+                "ochiai": 0.5, 
+                "tarantula": 0.9988974641675855
+            }, 
+            "nf": 1, 
+            "np": 1811, 
+            "rank": {
+                "ample": 126, 
+                "ochiai": 51, 
+                "tarantula": 37
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:289": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 1, 
+            "ep": 1, 
+            "line": 289, 
+            "metrics": {
+                "ample": 0.49944812362030905, 
+                "gzoltar": 0.5, 
+                "ochiai": 0.5, 
+                "tarantula": 0.9988974641675855
+            }, 
+            "nf": 1, 
+            "np": 1811, 
+            "rank": {
+                "ample": 125, 
+                "ochiai": 52, 
+                "tarantula": 36
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:290": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 1, 
+            "ep": 1, 
+            "line": 290, 
+            "metrics": {
+                "ample": 0.49944812362030905, 
+                "gzoltar": 0.5, 
+                "ochiai": 0.5, 
+                "tarantula": 0.9988974641675855
+            }, 
+            "nf": 1, 
+            "np": 1811, 
+            "rank": {
+                "ample": 131, 
+                "ochiai": 53, 
+                "tarantula": 43
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:291": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 1, 
+            "ep": 0, 
+            "line": 291, 
+            "metrics": {
+                "ample": 0.5, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 1.0
+            }, 
+            "nf": 1, 
+            "np": 1812, 
+            "rank": {
+                "ample": 102, 
+                "ochiai": 9, 
+                "tarantula": 9
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:295": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 1, 
+            "ep": 1, 
+            "line": 295, 
+            "metrics": {
+                "ample": 0.49944812362030905, 
+                "gzoltar": 0.5, 
+                "ochiai": 0.5, 
+                "tarantula": 0.9988974641675855
+            }, 
+            "nf": 1, 
+            "np": 1811, 
+            "rank": {
+                "ample": 133, 
+                "ochiai": 54, 
+                "tarantula": 45
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:296": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 1, 
+            "ep": 1, 
+            "line": 296, 
+            "metrics": {
+                "ample": 0.49944812362030905, 
+                "gzoltar": 0.5, 
+                "ochiai": 0.5, 
+                "tarantula": 0.9988974641675855
+            }, 
+            "nf": 1, 
+            "np": 1811, 
+            "rank": {
+                "ample": 122, 
+                "ochiai": 55, 
+                "tarantula": 31
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:297": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 1, 
+            "ep": 1, 
+            "line": 297, 
+            "metrics": {
+                "ample": 0.49944812362030905, 
+                "gzoltar": 0.5, 
+                "ochiai": 0.5, 
+                "tarantula": 0.9988974641675855
+            }, 
+            "nf": 1, 
+            "np": 1811, 
+            "rank": {
+                "ample": 132, 
+                "ochiai": 56, 
+                "tarantula": 44
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:298": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 1, 
+            "ep": 1, 
+            "line": 298, 
+            "metrics": {
+                "ample": 0.49944812362030905, 
+                "gzoltar": 0.5, 
+                "ochiai": 0.5, 
+                "tarantula": 0.9988974641675855
+            }, 
+            "nf": 1, 
+            "np": 1811, 
+            "rank": {
+                "ample": 140, 
+                "ochiai": 57, 
+                "tarantula": 54
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:302": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 1, 
+            "ep": 1, 
+            "line": 302, 
+            "metrics": {
+                "ample": 0.49944812362030905, 
+                "gzoltar": 0.5, 
+                "ochiai": 0.5, 
+                "tarantula": 0.9988974641675855
+            }, 
+            "nf": 1, 
+            "np": 1811, 
+            "rank": {
+                "ample": 139, 
+                "ochiai": 58, 
+                "tarantula": 53
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:304": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 1, 
+            "ep": 1, 
+            "line": 304, 
+            "metrics": {
+                "ample": 0.49944812362030905, 
+                "gzoltar": 0.5, 
+                "ochiai": 0.5, 
+                "tarantula": 0.9988974641675855
+            }, 
+            "nf": 1, 
+            "np": 1811, 
+            "rank": {
+                "ample": 138, 
+                "ochiai": 59, 
+                "tarantula": 52
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:407": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 1, 
+            "ep": 0, 
+            "line": 407, 
+            "metrics": {
+                "ample": 0.5, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 1.0
+            }, 
+            "nf": 1, 
+            "np": 1812, 
+            "rank": {
+                "ample": 116, 
+                "ochiai": 17, 
+                "tarantula": 23
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:424": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 1, 
+            "ep": 0, 
+            "line": 424, 
+            "metrics": {
+                "ample": 0.5, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 1.0
+            }, 
+            "nf": 1, 
+            "np": 1812, 
+            "rank": {
+                "ample": 120, 
+                "ochiai": 18, 
+                "tarantula": 28
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:460": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 1, 
+            "ep": 0, 
+            "line": 460, 
+            "metrics": {
+                "ample": 0.5, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 1.0
+            }, 
+            "nf": 1, 
+            "np": 1812, 
+            "rank": {
+                "ample": 101, 
+                "ochiai": 19, 
+                "tarantula": 8
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:461": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 1, 
+            "ep": 0, 
+            "line": 461, 
+            "metrics": {
+                "ample": 0.5, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 1.0
+            }, 
+            "nf": 1, 
+            "np": 1812, 
+            "rank": {
+                "ample": 100, 
+                "ochiai": 20, 
+                "tarantula": 7
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:464": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 1, 
+            "ep": 0, 
+            "line": 464, 
+            "metrics": {
+                "ample": 0.5, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 1.0
+            }, 
+            "nf": 1, 
+            "np": 1812, 
+            "rank": {
+                "ample": 94, 
+                "ochiai": 21, 
+                "tarantula": 1
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:465": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 1, 
+            "ep": 0, 
+            "line": 465, 
+            "metrics": {
+                "ample": 0.5, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 1.0
+            }, 
+            "nf": 1, 
+            "np": 1812, 
+            "rank": {
+                "ample": 103, 
+                "ochiai": 22, 
+                "tarantula": 10
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:468": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 1, 
+            "ep": 0, 
+            "line": 468, 
+            "metrics": {
+                "ample": 0.5, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 1.0
+            }, 
+            "nf": 1, 
+            "np": 1812, 
+            "rank": {
+                "ample": 99, 
+                "ochiai": 23, 
+                "tarantula": 6
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:469": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 1, 
+            "ep": 0, 
+            "line": 469, 
+            "metrics": {
+                "ample": 0.5, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 1.0
+            }, 
+            "nf": 1, 
+            "np": 1812, 
+            "rank": {
+                "ample": 98, 
+                "ochiai": 24, 
+                "tarantula": 5
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:470": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 1, 
+            "ep": 0, 
+            "line": 470, 
+            "metrics": {
+                "ample": 0.5, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 1.0
+            }, 
+            "nf": 1, 
+            "np": 1812, 
+            "rank": {
+                "ample": 109, 
+                "ochiai": 25, 
+                "tarantula": 16
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:471": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 1, 
+            "ep": 0, 
+            "line": 471, 
+            "metrics": {
+                "ample": 0.5, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 1.0
+            }, 
+            "nf": 1, 
+            "np": 1812, 
+            "rank": {
+                "ample": 110, 
+                "ochiai": 26, 
+                "tarantula": 17
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:475": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 1, 
+            "ep": 0, 
+            "line": 475, 
+            "metrics": {
+                "ample": 0.5, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 1.0
+            }, 
+            "nf": 1, 
+            "np": 1812, 
+            "rank": {
+                "ample": 108, 
+                "ochiai": 27, 
+                "tarantula": 15
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:477": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 1, 
+            "ep": 0, 
+            "line": 477, 
+            "metrics": {
+                "ample": 0.5, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 1.0
+            }, 
+            "nf": 1, 
+            "np": 1812, 
+            "rank": {
+                "ample": 107, 
+                "ochiai": 28, 
+                "tarantula": 14
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:478": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 1, 
+            "ep": 0, 
+            "line": 478, 
+            "metrics": {
+                "ample": 0.5, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 1.0
+            }, 
+            "nf": 1, 
+            "np": 1812, 
+            "rank": {
+                "ample": 111, 
+                "ochiai": 29, 
+                "tarantula": 18
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:479": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 1, 
+            "ep": 0, 
+            "line": 479, 
+            "metrics": {
+                "ample": 0.5, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 1.0
+            }, 
+            "nf": 1, 
+            "np": 1812, 
+            "rank": {
+                "ample": 112, 
+                "ochiai": 30, 
+                "tarantula": 19
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:483": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 1, 
+            "ep": 0, 
+            "line": 483, 
+            "metrics": {
+                "ample": 0.5, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 1.0
+            }, 
+            "nf": 1, 
+            "np": 1812, 
+            "rank": {
+                "ample": 117, 
+                "ochiai": 31, 
+                "tarantula": 24
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:485": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 1, 
+            "ep": 0, 
+            "line": 485, 
+            "metrics": {
+                "ample": 0.5, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 1.0
+            }, 
+            "nf": 1, 
+            "np": 1812, 
+            "rank": {
+                "ample": 118, 
+                "ochiai": 32, 
+                "tarantula": 25
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:561": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 18, 
+            "line": 561, 
+            "metrics": {
+                "ample": 0.9900662251655629, 
+                "gzoltar": 0.31622776601683794, 
+                "ochiai": 0.31622776601683794, 
+                "tarantula": 0.9901639344262295
+            }, 
+            "nf": 0, 
+            "np": 1794, 
+            "rank": {
+                "ample": 78, 
+                "ochiai": 92, 
+                "tarantula": 133
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:562": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 18, 
+            "line": 562, 
+            "metrics": {
+                "ample": 0.9900662251655629, 
+                "gzoltar": 0.31622776601683794, 
+                "ochiai": 0.31622776601683794, 
+                "tarantula": 0.9901639344262295
+            }, 
+            "nf": 0, 
+            "np": 1794, 
+            "rank": {
+                "ample": 79, 
+                "ochiai": 93, 
+                "tarantula": 134
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:564": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 18, 
+            "line": 564, 
+            "metrics": {
+                "ample": 0.9900662251655629, 
+                "gzoltar": 0.31622776601683794, 
+                "ochiai": 0.31622776601683794, 
+                "tarantula": 0.9901639344262295
+            }, 
+            "nf": 0, 
+            "np": 1794, 
+            "rank": {
+                "ample": 74, 
+                "ochiai": 94, 
+                "tarantula": 129
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:565": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 18, 
+            "line": 565, 
+            "metrics": {
+                "ample": 0.9900662251655629, 
+                "gzoltar": 0.31622776601683794, 
+                "ochiai": 0.31622776601683794, 
+                "tarantula": 0.9901639344262295
+            }, 
+            "nf": 0, 
+            "np": 1794, 
+            "rank": {
+                "ample": 75, 
+                "ochiai": 95, 
+                "tarantula": 130
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:566": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 18, 
+            "line": 566, 
+            "metrics": {
+                "ample": 0.9900662251655629, 
+                "gzoltar": 0.31622776601683794, 
+                "ochiai": 0.31622776601683794, 
+                "tarantula": 0.9901639344262295
+            }, 
+            "nf": 0, 
+            "np": 1794, 
+            "rank": {
+                "ample": 76, 
+                "ochiai": 96, 
+                "tarantula": 131
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:569": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 18, 
+            "line": 569, 
+            "metrics": {
+                "ample": 0.9900662251655629, 
+                "gzoltar": 0.31622776601683794, 
+                "ochiai": 0.31622776601683794, 
+                "tarantula": 0.9901639344262295
+            }, 
+            "nf": 0, 
+            "np": 1794, 
+            "rank": {
+                "ample": 73, 
+                "ochiai": 97, 
+                "tarantula": 128
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:570": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 18, 
+            "line": 570, 
+            "metrics": {
+                "ample": 0.9900662251655629, 
+                "gzoltar": 0.31622776601683794, 
+                "ochiai": 0.31622776601683794, 
+                "tarantula": 0.9901639344262295
+            }, 
+            "nf": 0, 
+            "np": 1794, 
+            "rank": {
+                "ample": 86, 
+                "ochiai": 98, 
+                "tarantula": 141
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:581": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 18, 
+            "line": 581, 
+            "metrics": {
+                "ample": 0.9900662251655629, 
+                "gzoltar": 0.31622776601683794, 
+                "ochiai": 0.31622776601683794, 
+                "tarantula": 0.9901639344262295
+            }, 
+            "nf": 0, 
+            "np": 1794, 
+            "rank": {
+                "ample": 61, 
+                "ochiai": 99, 
+                "tarantula": 116
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:582": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 18, 
+            "line": 582, 
+            "metrics": {
+                "ample": 0.9900662251655629, 
+                "gzoltar": 0.31622776601683794, 
+                "ochiai": 0.31622776601683794, 
+                "tarantula": 0.9901639344262295
+            }, 
+            "nf": 0, 
+            "np": 1794, 
+            "rank": {
+                "ample": 60, 
+                "ochiai": 100, 
+                "tarantula": 115
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:584": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 18, 
+            "line": 584, 
+            "metrics": {
+                "ample": 0.9900662251655629, 
+                "gzoltar": 0.31622776601683794, 
+                "ochiai": 0.31622776601683794, 
+                "tarantula": 0.9901639344262295
+            }, 
+            "nf": 0, 
+            "np": 1794, 
+            "rank": {
+                "ample": 64, 
+                "ochiai": 101, 
+                "tarantula": 119
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:585": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 18, 
+            "line": 585, 
+            "metrics": {
+                "ample": 0.9900662251655629, 
+                "gzoltar": 0.31622776601683794, 
+                "ochiai": 0.31622776601683794, 
+                "tarantula": 0.9901639344262295
+            }, 
+            "nf": 0, 
+            "np": 1794, 
+            "rank": {
+                "ample": 65, 
+                "ochiai": 102, 
+                "tarantula": 120
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:586": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 18, 
+            "line": 586, 
+            "metrics": {
+                "ample": 0.9900662251655629, 
+                "gzoltar": 0.31622776601683794, 
+                "ochiai": 0.31622776601683794, 
+                "tarantula": 0.9901639344262295
+            }, 
+            "nf": 0, 
+            "np": 1794, 
+            "rank": {
+                "ample": 62, 
+                "ochiai": 103, 
+                "tarantula": 117
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:587": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 18, 
+            "line": 587, 
+            "metrics": {
+                "ample": 0.9900662251655629, 
+                "gzoltar": 0.31622776601683794, 
+                "ochiai": 0.31622776601683794, 
+                "tarantula": 0.9901639344262295
+            }, 
+            "nf": 0, 
+            "np": 1794, 
+            "rank": {
+                "ample": 63, 
+                "ochiai": 104, 
+                "tarantula": 118
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:588": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 18, 
+            "line": 588, 
+            "metrics": {
+                "ample": 0.9900662251655629, 
+                "gzoltar": 0.31622776601683794, 
+                "ochiai": 0.31622776601683794, 
+                "tarantula": 0.9901639344262295
+            }, 
+            "nf": 0, 
+            "np": 1794, 
+            "rank": {
+                "ample": 66, 
+                "ochiai": 105, 
+                "tarantula": 121
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:589": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 18, 
+            "line": 589, 
+            "metrics": {
+                "ample": 0.9900662251655629, 
+                "gzoltar": 0.31622776601683794, 
+                "ochiai": 0.31622776601683794, 
+                "tarantula": 0.9901639344262295
+            }, 
+            "nf": 0, 
+            "np": 1794, 
+            "rank": {
+                "ample": 67, 
+                "ochiai": 106, 
+                "tarantula": 122
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:591": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 18, 
+            "line": 591, 
+            "metrics": {
+                "ample": 0.9900662251655629, 
+                "gzoltar": 0.31622776601683794, 
+                "ochiai": 0.31622776601683794, 
+                "tarantula": 0.9901639344262295
+            }, 
+            "nf": 0, 
+            "np": 1794, 
+            "rank": {
+                "ample": 55, 
+                "ochiai": 107, 
+                "tarantula": 110
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:592": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 18, 
+            "line": 592, 
+            "metrics": {
+                "ample": 0.9900662251655629, 
+                "gzoltar": 0.31622776601683794, 
+                "ochiai": 0.31622776601683794, 
+                "tarantula": 0.9901639344262295
+            }, 
+            "nf": 0, 
+            "np": 1794, 
+            "rank": {
+                "ample": 77, 
+                "ochiai": 108, 
+                "tarantula": 132
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:594": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 18, 
+            "line": 594, 
+            "metrics": {
+                "ample": 0.9900662251655629, 
+                "gzoltar": 0.31622776601683794, 
+                "ochiai": 0.31622776601683794, 
+                "tarantula": 0.9901639344262295
+            }, 
+            "nf": 0, 
+            "np": 1794, 
+            "rank": {
+                "ample": 53, 
+                "ochiai": 109, 
+                "tarantula": 108
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:595": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 18, 
+            "line": 595, 
+            "metrics": {
+                "ample": 0.9900662251655629, 
+                "gzoltar": 0.31622776601683794, 
+                "ochiai": 0.31622776601683794, 
+                "tarantula": 0.9901639344262295
+            }, 
+            "nf": 0, 
+            "np": 1794, 
+            "rank": {
+                "ample": 52, 
+                "ochiai": 110, 
+                "tarantula": 107
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:596": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 18, 
+            "line": 596, 
+            "metrics": {
+                "ample": 0.9900662251655629, 
+                "gzoltar": 0.31622776601683794, 
+                "ochiai": 0.31622776601683794, 
+                "tarantula": 0.9901639344262295
+            }, 
+            "nf": 0, 
+            "np": 1794, 
+            "rank": {
+                "ample": 58, 
+                "ochiai": 111, 
+                "tarantula": 113
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:597": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 18, 
+            "line": 597, 
+            "metrics": {
+                "ample": 0.9900662251655629, 
+                "gzoltar": 0.31622776601683794, 
+                "ochiai": 0.31622776601683794, 
+                "tarantula": 0.9901639344262295
+            }, 
+            "nf": 0, 
+            "np": 1794, 
+            "rank": {
+                "ample": 54, 
+                "ochiai": 112, 
+                "tarantula": 109
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:599": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 18, 
+            "line": 599, 
+            "metrics": {
+                "ample": 0.9900662251655629, 
+                "gzoltar": 0.31622776601683794, 
+                "ochiai": 0.31622776601683794, 
+                "tarantula": 0.9901639344262295
+            }, 
+            "nf": 0, 
+            "np": 1794, 
+            "rank": {
+                "ample": 80, 
+                "ochiai": 113, 
+                "tarantula": 135
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:600": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 18, 
+            "line": 600, 
+            "metrics": {
+                "ample": 0.9900662251655629, 
+                "gzoltar": 0.31622776601683794, 
+                "ochiai": 0.31622776601683794, 
+                "tarantula": 0.9901639344262295
+            }, 
+            "nf": 0, 
+            "np": 1794, 
+            "rank": {
+                "ample": 48, 
+                "ochiai": 114, 
+                "tarantula": 103
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:605": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 18, 
+            "line": 605, 
+            "metrics": {
+                "ample": 0.9900662251655629, 
+                "gzoltar": 0.31622776601683794, 
+                "ochiai": 0.31622776601683794, 
+                "tarantula": 0.9901639344262295
+            }, 
+            "nf": 0, 
+            "np": 1794, 
+            "rank": {
+                "ample": 49, 
+                "ochiai": 115, 
+                "tarantula": 104
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:607": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 18, 
+            "line": 607, 
+            "metrics": {
+                "ample": 0.9900662251655629, 
+                "gzoltar": 0.31622776601683794, 
+                "ochiai": 0.31622776601683794, 
+                "tarantula": 0.9901639344262295
+            }, 
+            "nf": 0, 
+            "np": 1794, 
+            "rank": {
+                "ample": 50, 
+                "ochiai": 116, 
+                "tarantula": 105
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:612": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 16, 
+            "line": 612, 
+            "metrics": {
+                "ample": 0.9911699779249448, 
+                "gzoltar": 0.3333333333333333, 
+                "ochiai": 0.3333333333333333, 
+                "tarantula": 0.9912472647702406
+            }, 
+            "nf": 0, 
+            "np": 1796, 
+            "rank": {
+                "ample": 24, 
+                "ochiai": 70, 
+                "tarantula": 79
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:613": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 15, 
+            "line": 613, 
+            "metrics": {
+                "ample": 0.9917218543046358, 
+                "gzoltar": 0.34299717028501764, 
+                "ochiai": 0.34299717028501764, 
+                "tarantula": 0.9917898193760263
+            }, 
+            "nf": 0, 
+            "np": 1797, 
+            "rank": {
+                "ample": 20, 
+                "ochiai": 68, 
+                "tarantula": 75
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:619": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 16, 
+            "line": 619, 
+            "metrics": {
+                "ample": 0.9911699779249448, 
+                "gzoltar": 0.3333333333333333, 
+                "ochiai": 0.3333333333333333, 
+                "tarantula": 0.9912472647702406
+            }, 
+            "nf": 0, 
+            "np": 1796, 
+            "rank": {
+                "ample": 23, 
+                "ochiai": 71, 
+                "tarantula": 78
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:620": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 0, 
+            "line": 620, 
+            "metrics": {
+                "ample": 1.0, 
+                "gzoltar": 1.0, 
+                "ochiai": 1.0, 
+                "tarantula": 1.0
+            }, 
+            "nf": 0, 
+            "np": 1812, 
+            "rank": {
+                "ample": 1, 
+                "ochiai": 1, 
+                "tarantula": 27
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:630": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 11, 
+            "line": 630, 
+            "metrics": {
+                "ample": 0.9939293598233996, 
+                "gzoltar": 0.3922322702763681, 
+                "ochiai": 0.3922322702763681, 
+                "tarantula": 0.9939659901261657
+            }, 
+            "nf": 0, 
+            "np": 1801, 
+            "rank": {
+                "ample": 18, 
+                "ochiai": 65, 
+                "tarantula": 67
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:631": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 11, 
+            "line": 631, 
+            "metrics": {
+                "ample": 0.9939293598233996, 
+                "gzoltar": 0.3922322702763681, 
+                "ochiai": 0.3922322702763681, 
+                "tarantula": 0.9939659901261657
+            }, 
+            "nf": 0, 
+            "np": 1801, 
+            "rank": {
+                "ample": 19, 
+                "ochiai": 66, 
+                "tarantula": 68
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:633": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 1, 
+            "ep": 1, 
+            "line": 633, 
+            "metrics": {
+                "ample": 0.49944812362030905, 
+                "gzoltar": 0.5, 
+                "ochiai": 0.5, 
+                "tarantula": 0.9988974641675855
+            }, 
+            "nf": 1, 
+            "np": 1811, 
+            "rank": {
+                "ample": 124, 
+                "ochiai": 60, 
+                "tarantula": 33
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:634": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 1, 
+            "ep": 1, 
+            "line": 634, 
+            "metrics": {
+                "ample": 0.49944812362030905, 
+                "gzoltar": 0.5, 
+                "ochiai": 0.5, 
+                "tarantula": 0.9988974641675855
+            }, 
+            "nf": 1, 
+            "np": 1811, 
+            "rank": {
+                "ample": 123, 
+                "ochiai": 61, 
+                "tarantula": 32
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:636": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 1, 
+            "ep": 7, 
+            "line": 636, 
+            "metrics": {
+                "ample": 0.49613686534216334, 
+                "gzoltar": 0.25, 
+                "ochiai": 0.25, 
+                "tarantula": 0.9923329682365828
+            }, 
+            "nf": 1, 
+            "np": 1805, 
+            "rank": {
+                "ample": 145, 
+                "ochiai": 145, 
+                "tarantula": 71
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:637": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 1, 
+            "ep": 7, 
+            "line": 637, 
+            "metrics": {
+                "ample": 0.49613686534216334, 
+                "gzoltar": 0.25, 
+                "ochiai": 0.25, 
+                "tarantula": 0.9923329682365828
+            }, 
+            "nf": 1, 
+            "np": 1805, 
+            "rank": {
+                "ample": 146, 
+                "ochiai": 146, 
+                "tarantula": 72
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:639": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 1, 
+            "ep": 7, 
+            "line": 639, 
+            "metrics": {
+                "ample": 0.49613686534216334, 
+                "gzoltar": 0.25, 
+                "ochiai": 0.25, 
+                "tarantula": 0.9923329682365828
+            }, 
+            "nf": 1, 
+            "np": 1805, 
+            "rank": {
+                "ample": 147, 
+                "ochiai": 147, 
+                "tarantula": 73
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:640": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 1, 
+            "ep": 7, 
+            "line": 640, 
+            "metrics": {
+                "ample": 0.49613686534216334, 
+                "gzoltar": 0.25, 
+                "ochiai": 0.25, 
+                "tarantula": 0.9923329682365828
+            }, 
+            "nf": 1, 
+            "np": 1805, 
+            "rank": {
+                "ample": 148, 
+                "ochiai": 148, 
+                "tarantula": 74
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:642": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 1, 
+            "ep": 6, 
+            "line": 642, 
+            "metrics": {
+                "ample": 0.4966887417218543, 
+                "gzoltar": 0.2672612419124244, 
+                "ochiai": 0.2672612419124244, 
+                "tarantula": 0.9934210526315789
+            }, 
+            "nf": 1, 
+            "np": 1806, 
+            "rank": {
+                "ample": 144, 
+                "ochiai": 143, 
+                "tarantula": 70
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:643": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 1, 
+            "ep": 6, 
+            "line": 643, 
+            "metrics": {
+                "ample": 0.4966887417218543, 
+                "gzoltar": 0.2672612419124244, 
+                "ochiai": 0.2672612419124244, 
+                "tarantula": 0.9934210526315789
+            }, 
+            "nf": 1, 
+            "np": 1806, 
+            "rank": {
+                "ample": 143, 
+                "ochiai": 144, 
+                "tarantula": 69
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:648": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 2, 
+            "line": 648, 
+            "metrics": {
+                "ample": 0.9988962472406181, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 0.9988974641675855
+            }, 
+            "nf": 0, 
+            "np": 1810, 
+            "rank": {
+                "ample": 7, 
+                "ochiai": 3, 
+                "tarantula": 49
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:649": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 2, 
+            "line": 649, 
+            "metrics": {
+                "ample": 0.9988962472406181, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 0.9988974641675855
+            }, 
+            "nf": 0, 
+            "np": 1810, 
+            "rank": {
+                "ample": 6, 
+                "ochiai": 4, 
+                "tarantula": 48
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:663": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 1, 
+            "ep": 1, 
+            "line": 663, 
+            "metrics": {
+                "ample": 0.49944812362030905, 
+                "gzoltar": 0.5, 
+                "ochiai": 0.5, 
+                "tarantula": 0.9988974641675855
+            }, 
+            "nf": 1, 
+            "np": 1811, 
+            "rank": {
+                "ample": 134, 
+                "ochiai": 62, 
+                "tarantula": 46
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:664": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 1, 
+            "ep": 1, 
+            "line": 664, 
+            "metrics": {
+                "ample": 0.49944812362030905, 
+                "gzoltar": 0.5, 
+                "ochiai": 0.5, 
+                "tarantula": 0.9988974641675855
+            }, 
+            "nf": 1, 
+            "np": 1811, 
+            "rank": {
+                "ample": 135, 
+                "ochiai": 63, 
+                "tarantula": 47
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:672": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 1, 
+            "ep": 0, 
+            "line": 672, 
+            "metrics": {
+                "ample": 0.5, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 1.0
+            }, 
+            "nf": 1, 
+            "np": 1812, 
+            "rank": {
+                "ample": 113, 
+                "ochiai": 33, 
+                "tarantula": 20
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:675": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 1, 
+            "ep": 0, 
+            "line": 675, 
+            "metrics": {
+                "ample": 0.5, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 1.0
+            }, 
+            "nf": 1, 
+            "np": 1812, 
+            "rank": {
+                "ample": 114, 
+                "ochiai": 34, 
+                "tarantula": 21
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:677": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 1, 
+            "ep": 0, 
+            "line": 677, 
+            "metrics": {
+                "ample": 0.5, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 1.0
+            }, 
+            "nf": 1, 
+            "np": 1812, 
+            "rank": {
+                "ample": 115, 
+                "ochiai": 35, 
+                "tarantula": 22
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:686": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 17, 
+            "line": 686, 
+            "metrics": {
+                "ample": 0.9906181015452539, 
+                "gzoltar": 0.3244428422615251, 
+                "ochiai": 0.3244428422615251, 
+                "tarantula": 0.9907053034445051
+            }, 
+            "nf": 0, 
+            "np": 1795, 
+            "rank": {
+                "ample": 32, 
+                "ochiai": 76, 
+                "tarantula": 87
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:687": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 17, 
+            "line": 687, 
+            "metrics": {
+                "ample": 0.9906181015452539, 
+                "gzoltar": 0.3244428422615251, 
+                "ochiai": 0.3244428422615251, 
+                "tarantula": 0.9907053034445051
+            }, 
+            "nf": 0, 
+            "np": 1795, 
+            "rank": {
+                "ample": 31, 
+                "ochiai": 77, 
+                "tarantula": 86
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:688": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 17, 
+            "line": 688, 
+            "metrics": {
+                "ample": 0.9906181015452539, 
+                "gzoltar": 0.3244428422615251, 
+                "ochiai": 0.3244428422615251, 
+                "tarantula": 0.9907053034445051
+            }, 
+            "nf": 0, 
+            "np": 1795, 
+            "rank": {
+                "ample": 29, 
+                "ochiai": 78, 
+                "tarantula": 84
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:690": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 2, 
+            "line": 690, 
+            "metrics": {
+                "ample": 0.9988962472406181, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 0.9988974641675855
+            }, 
+            "nf": 0, 
+            "np": 1810, 
+            "rank": {
+                "ample": 5, 
+                "ochiai": 5, 
+                "tarantula": 38
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:692": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 2, 
+            "line": 692, 
+            "metrics": {
+                "ample": 0.9988962472406181, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 0.9988974641675855
+            }, 
+            "nf": 0, 
+            "np": 1810, 
+            "rank": {
+                "ample": 4, 
+                "ochiai": 6, 
+                "tarantula": 35
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:697": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 18, 
+            "line": 697, 
+            "metrics": {
+                "ample": 0.9900662251655629, 
+                "gzoltar": 0.31622776601683794, 
+                "ochiai": 0.31622776601683794, 
+                "tarantula": 0.9901639344262295
+            }, 
+            "nf": 0, 
+            "np": 1794, 
+            "rank": {
+                "ample": 51, 
+                "ochiai": 117, 
+                "tarantula": 106
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:700": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 18, 
+            "line": 700, 
+            "metrics": {
+                "ample": 0.9900662251655629, 
+                "gzoltar": 0.31622776601683794, 
+                "ochiai": 0.31622776601683794, 
+                "tarantula": 0.9901639344262295
+            }, 
+            "nf": 0, 
+            "np": 1794, 
+            "rank": {
+                "ample": 87, 
+                "ochiai": 118, 
+                "tarantula": 142
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:711": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 18, 
+            "line": 711, 
+            "metrics": {
+                "ample": 0.9900662251655629, 
+                "gzoltar": 0.31622776601683794, 
+                "ochiai": 0.31622776601683794, 
+                "tarantula": 0.9901639344262295
+            }, 
+            "nf": 0, 
+            "np": 1794, 
+            "rank": {
+                "ample": 82, 
+                "ochiai": 119, 
+                "tarantula": 137
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:713": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 18, 
+            "line": 713, 
+            "metrics": {
+                "ample": 0.9900662251655629, 
+                "gzoltar": 0.31622776601683794, 
+                "ochiai": 0.31622776601683794, 
+                "tarantula": 0.9901639344262295
+            }, 
+            "nf": 0, 
+            "np": 1794, 
+            "rank": {
+                "ample": 81, 
+                "ochiai": 120, 
+                "tarantula": 136
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:714": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 18, 
+            "line": 714, 
+            "metrics": {
+                "ample": 0.9900662251655629, 
+                "gzoltar": 0.31622776601683794, 
+                "ochiai": 0.31622776601683794, 
+                "tarantula": 0.9901639344262295
+            }, 
+            "nf": 0, 
+            "np": 1794, 
+            "rank": {
+                "ample": 85, 
+                "ochiai": 121, 
+                "tarantula": 140
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:716": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 18, 
+            "line": 716, 
+            "metrics": {
+                "ample": 0.9900662251655629, 
+                "gzoltar": 0.31622776601683794, 
+                "ochiai": 0.31622776601683794, 
+                "tarantula": 0.9901639344262295
+            }, 
+            "nf": 0, 
+            "np": 1794, 
+            "rank": {
+                "ample": 84, 
+                "ochiai": 122, 
+                "tarantula": 139
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:717": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 18, 
+            "line": 717, 
+            "metrics": {
+                "ample": 0.9900662251655629, 
+                "gzoltar": 0.31622776601683794, 
+                "ochiai": 0.31622776601683794, 
+                "tarantula": 0.9901639344262295
+            }, 
+            "nf": 0, 
+            "np": 1794, 
+            "rank": {
+                "ample": 83, 
+                "ochiai": 123, 
+                "tarantula": 138
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:720": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 18, 
+            "line": 720, 
+            "metrics": {
+                "ample": 0.9900662251655629, 
+                "gzoltar": 0.31622776601683794, 
+                "ochiai": 0.31622776601683794, 
+                "tarantula": 0.9901639344262295
+            }, 
+            "nf": 0, 
+            "np": 1794, 
+            "rank": {
+                "ample": 44, 
+                "ochiai": 124, 
+                "tarantula": 99
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:722": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 18, 
+            "line": 722, 
+            "metrics": {
+                "ample": 0.9900662251655629, 
+                "gzoltar": 0.31622776601683794, 
+                "ochiai": 0.31622776601683794, 
+                "tarantula": 0.9901639344262295
+            }, 
+            "nf": 0, 
+            "np": 1794, 
+            "rank": {
+                "ample": 42, 
+                "ochiai": 125, 
+                "tarantula": 97
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:723": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 18, 
+            "line": 723, 
+            "metrics": {
+                "ample": 0.9900662251655629, 
+                "gzoltar": 0.31622776601683794, 
+                "ochiai": 0.31622776601683794, 
+                "tarantula": 0.9901639344262295
+            }, 
+            "nf": 0, 
+            "np": 1794, 
+            "rank": {
+                "ample": 43, 
+                "ochiai": 126, 
+                "tarantula": 98
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:724": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 18, 
+            "line": 724, 
+            "metrics": {
+                "ample": 0.9900662251655629, 
+                "gzoltar": 0.31622776601683794, 
+                "ochiai": 0.31622776601683794, 
+                "tarantula": 0.9901639344262295
+            }, 
+            "nf": 0, 
+            "np": 1794, 
+            "rank": {
+                "ample": 46, 
+                "ochiai": 127, 
+                "tarantula": 101
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:725": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 18, 
+            "line": 725, 
+            "metrics": {
+                "ample": 0.9900662251655629, 
+                "gzoltar": 0.31622776601683794, 
+                "ochiai": 0.31622776601683794, 
+                "tarantula": 0.9901639344262295
+            }, 
+            "nf": 0, 
+            "np": 1794, 
+            "rank": {
+                "ample": 47, 
+                "ochiai": 128, 
+                "tarantula": 102
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:726": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 18, 
+            "line": 726, 
+            "metrics": {
+                "ample": 0.9900662251655629, 
+                "gzoltar": 0.31622776601683794, 
+                "ochiai": 0.31622776601683794, 
+                "tarantula": 0.9901639344262295
+            }, 
+            "nf": 0, 
+            "np": 1794, 
+            "rank": {
+                "ample": 45, 
+                "ochiai": 129, 
+                "tarantula": 100
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:730": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 18, 
+            "line": 730, 
+            "metrics": {
+                "ample": 0.9900662251655629, 
+                "gzoltar": 0.31622776601683794, 
+                "ochiai": 0.31622776601683794, 
+                "tarantula": 0.9901639344262295
+            }, 
+            "nf": 0, 
+            "np": 1794, 
+            "rank": {
+                "ample": 41, 
+                "ochiai": 130, 
+                "tarantula": 96
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:733": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 17, 
+            "line": 733, 
+            "metrics": {
+                "ample": 0.9906181015452539, 
+                "gzoltar": 0.3244428422615251, 
+                "ochiai": 0.3244428422615251, 
+                "tarantula": 0.9907053034445051
+            }, 
+            "nf": 0, 
+            "np": 1795, 
+            "rank": {
+                "ample": 27, 
+                "ochiai": 79, 
+                "tarantula": 82
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:735": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 17, 
+            "line": 735, 
+            "metrics": {
+                "ample": 0.9906181015452539, 
+                "gzoltar": 0.3244428422615251, 
+                "ochiai": 0.3244428422615251, 
+                "tarantula": 0.9907053034445051
+            }, 
+            "nf": 0, 
+            "np": 1795, 
+            "rank": {
+                "ample": 25, 
+                "ochiai": 80, 
+                "tarantula": 80
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:737": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 17, 
+            "line": 737, 
+            "metrics": {
+                "ample": 0.9906181015452539, 
+                "gzoltar": 0.3244428422615251, 
+                "ochiai": 0.3244428422615251, 
+                "tarantula": 0.9907053034445051
+            }, 
+            "nf": 0, 
+            "np": 1795, 
+            "rank": {
+                "ample": 26, 
+                "ochiai": 81, 
+                "tarantula": 81
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:738": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 17, 
+            "line": 738, 
+            "metrics": {
+                "ample": 0.9906181015452539, 
+                "gzoltar": 0.3244428422615251, 
+                "ochiai": 0.3244428422615251, 
+                "tarantula": 0.9907053034445051
+            }, 
+            "nf": 0, 
+            "np": 1795, 
+            "rank": {
+                "ample": 28, 
+                "ochiai": 82, 
+                "tarantula": 83
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:740": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 17, 
+            "line": 740, 
+            "metrics": {
+                "ample": 0.9906181015452539, 
+                "gzoltar": 0.3244428422615251, 
+                "ochiai": 0.3244428422615251, 
+                "tarantula": 0.9907053034445051
+            }, 
+            "nf": 0, 
+            "np": 1795, 
+            "rank": {
+                "ample": 40, 
+                "ochiai": 83, 
+                "tarantula": 95
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:741": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 1, 
+            "ep": 4, 
+            "line": 741, 
+            "metrics": {
+                "ample": 0.4977924944812362, 
+                "gzoltar": 0.31622776601683794, 
+                "ochiai": 0.31622776601683794, 
+                "tarantula": 0.9956043956043956
+            }, 
+            "nf": 1, 
+            "np": 1808, 
+            "rank": {
+                "ample": 142, 
+                "ochiai": 131, 
+                "tarantula": 66
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:746": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 1, 
+            "ep": 4, 
+            "line": 746, 
+            "metrics": {
+                "ample": 0.4977924944812362, 
+                "gzoltar": 0.31622776601683794, 
+                "ochiai": 0.31622776601683794, 
+                "tarantula": 0.9956043956043956
+            }, 
+            "nf": 1, 
+            "np": 1808, 
+            "rank": {
+                "ample": 141, 
+                "ochiai": 132, 
+                "tarantula": 65
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:748": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 17, 
+            "line": 748, 
+            "metrics": {
+                "ample": 0.9906181015452539, 
+                "gzoltar": 0.3244428422615251, 
+                "ochiai": 0.3244428422615251, 
+                "tarantula": 0.9907053034445051
+            }, 
+            "nf": 0, 
+            "np": 1795, 
+            "rank": {
+                "ample": 39, 
+                "ochiai": 84, 
+                "tarantula": 94
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:750": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 17, 
+            "line": 750, 
+            "metrics": {
+                "ample": 0.9906181015452539, 
+                "gzoltar": 0.3244428422615251, 
+                "ochiai": 0.3244428422615251, 
+                "tarantula": 0.9907053034445051
+            }, 
+            "nf": 0, 
+            "np": 1795, 
+            "rank": {
+                "ample": 35, 
+                "ochiai": 85, 
+                "tarantula": 90
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:751": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 17, 
+            "line": 751, 
+            "metrics": {
+                "ample": 0.9906181015452539, 
+                "gzoltar": 0.3244428422615251, 
+                "ochiai": 0.3244428422615251, 
+                "tarantula": 0.9907053034445051
+            }, 
+            "nf": 0, 
+            "np": 1795, 
+            "rank": {
+                "ample": 34, 
+                "ochiai": 86, 
+                "tarantula": 89
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:753": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 17, 
+            "line": 753, 
+            "metrics": {
+                "ample": 0.9906181015452539, 
+                "gzoltar": 0.3244428422615251, 
+                "ochiai": 0.3244428422615251, 
+                "tarantula": 0.9907053034445051
+            }, 
+            "nf": 0, 
+            "np": 1795, 
+            "rank": {
+                "ample": 33, 
+                "ochiai": 87, 
+                "tarantula": 88
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:758": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 18, 
+            "line": 758, 
+            "metrics": {
+                "ample": 0.9900662251655629, 
+                "gzoltar": 0.31622776601683794, 
+                "ochiai": 0.31622776601683794, 
+                "tarantula": 0.9901639344262295
+            }, 
+            "nf": 0, 
+            "np": 1794, 
+            "rank": {
+                "ample": 57, 
+                "ochiai": 133, 
+                "tarantula": 112
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:759": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 18, 
+            "line": 759, 
+            "metrics": {
+                "ample": 0.9900662251655629, 
+                "gzoltar": 0.31622776601683794, 
+                "ochiai": 0.31622776601683794, 
+                "tarantula": 0.9901639344262295
+            }, 
+            "nf": 0, 
+            "np": 1794, 
+            "rank": {
+                "ample": 56, 
+                "ochiai": 134, 
+                "tarantula": 111
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:770": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 18, 
+            "line": 770, 
+            "metrics": {
+                "ample": 0.9900662251655629, 
+                "gzoltar": 0.31622776601683794, 
+                "ochiai": 0.31622776601683794, 
+                "tarantula": 0.9901639344262295
+            }, 
+            "nf": 0, 
+            "np": 1794, 
+            "rank": {
+                "ample": 72, 
+                "ochiai": 135, 
+                "tarantula": 127
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:772": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 3, 
+            "line": 772, 
+            "metrics": {
+                "ample": 0.9983443708609272, 
+                "gzoltar": 0.6324555320336759, 
+                "ochiai": 0.6324555320336759, 
+                "tarantula": 0.9983471074380166
+            }, 
+            "nf": 0, 
+            "np": 1809, 
+            "rank": {
+                "ample": 12, 
+                "ochiai": 44, 
+                "tarantula": 59
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:774": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 1, 
+            "ep": 17, 
+            "line": 774, 
+            "metrics": {
+                "ample": 0.49061810154525387, 
+                "gzoltar": 0.16666666666666666, 
+                "ochiai": 0.16666666666666666, 
+                "tarantula": 0.9815817984832069
+            }, 
+            "nf": 1, 
+            "np": 1795, 
+            "rank": {
+                "ample": 150, 
+                "ochiai": 149, 
+                "tarantula": 150
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:776": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 15, 
+            "line": 776, 
+            "metrics": {
+                "ample": 0.9917218543046358, 
+                "gzoltar": 0.34299717028501764, 
+                "ochiai": 0.34299717028501764, 
+                "tarantula": 0.9917898193760263
+            }, 
+            "nf": 0, 
+            "np": 1797, 
+            "rank": {
+                "ample": 22, 
+                "ochiai": 69, 
+                "tarantula": 77
+            }
+        }, 
+        "org.apache.commons.lang.time.FastDateFormat:954": {
+            "class": "org.apache.commons.lang.time.FastDateFormat", 
+            "ef": 2, 
+            "ep": 3, 
+            "line": 954, 
+            "metrics": {
+                "ample": 0.9983443708609272, 
+                "gzoltar": 0.6324555320336759, 
+                "ochiai": 0.6324555320336759, 
+                "tarantula": 0.9983471074380166
+            }, 
+            "nf": 0, 
+            "np": 1809, 
+            "rank": {
+                "ample": 17, 
+                "ochiai": 43, 
+                "tarantula": 64
+            }
+        }
+    }
+}

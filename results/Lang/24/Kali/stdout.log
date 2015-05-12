@@ -1,0 +1,29 @@
+export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";cp -r /home/tdurieux/projects/lang/lang_24 /tmp/lang_24_Kali;cd /tmp/lang_24_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Lang/lib/* lib/;find . -type f -name "package-info.java" -delete;
+/home/tdurieux/results/Lang/24/Kali/result
+cd /tmp/lang_24_Kali;time java -cp /home/tdurieux/astor/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.lang3.math.NumberUtilsTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;rm -rf /tmp/lang_24_Kali;
+ NOT Found solution
+Number solutions:0
+All variants:
+Time Evolution(ms): 86454
+
+----stats: 
+
+spaces: [0]: []
+time val1 [75]: [227, 228, 226, 222, 223, 222, 224, 224, 224, 222, 224, 223, 222, 223, 224, 223, 223, 222, 221, 223, 223, 224, 554, 223, 222, 222, 223, 223, 222, 225, 60001, 226, 221, 223, 226, 223, 224, 224, 224, 222, 223, 223, 224, 223, 225, 224, 224, 223, 224, 223, 223, 225, 223, 221, 224, 224, 222, 226, 223, 223, 221, 223, 225, 226, 221, 224, 224, 222, 225, 225, 224, 223, 224, 223, 224]
+time val2 [0]: []
+#gen: 124
+#patches: 0
+#RightCompilation: 74
+#WrongCompilation: 49
+#FailingTestCaseExecution: 75
+#RegressionTestExecution: 0
+#TestcasesExecutedval1: 3774
+#TestcasesExecutedval2: 0
+#FailingTestCase: 51
+#RegressionTestCases: 0
+#OfAppliedOp: 123
+#NotAppliedOp: 0
+#InmutatedGen: 0
+#unfinishValidation: 0
+Time Total(ms): 111330
+

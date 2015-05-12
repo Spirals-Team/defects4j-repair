@@ -1,0 +1,82 @@
+export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";cp -r /home/tdurieux/projects/chart/chart_24 /tmp/chart_24_Ranking;cd /tmp/chart_24_Ranking;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Chart/lib/* lib/;find . -type f -name "package-info.java" -delete;
+cd /tmp/chart_24_Ranking;cp -r /home/tdurieux/nopol/z3-x64-debian-7.7/bin/ lib/z3;time java -cp /home/tdurieux/nopol/nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar fr.inria.lille.repair.Main --mode ranking --type condition --oracle angelic --synthesis smt --solver z3 --solver-path lib/z3/z3 --complianceLevel 4 --source source/ --classpath build/:build-tests/:lib/cobertura-lib/servlet-api-2.5-6.1.14.jar:lib/servlet.jar:/home/tdurieux/nopol/nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar;echo "
+
+Node: `hostname`
+";echo "
+Date: `date`
+";rm -rf /tmp/chart_24_Ranking;
+
+/************************/
+Executed tests:   3253
+Successful tests: 3251
+Failed tests:     2
+
+org.jfree.chart.renderer.junit.GrayPaintScaleTests#testGetPaint
+java.lang.IllegalArgumentException: Color parameter outside of expected range: Red Green Blue
+	at java.awt.Color.testColorValueRange(Color.java:310)
+	at java.awt.Color.<init>(Color.java:395)
+	at java.awt.Color.<init>(Color.java:369)
+	at org.jfree.chart.renderer.GrayPaintScale.getPaint(GrayPaintScale.java:127)
+	at org.jfree.chart.renderer.junit.GrayPaintScaleTests.testGetPaint(GrayPaintScaleTests.java:107)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at com.gzoltar.core.instr.testing.junit.JUnitRunner.run(JUnitRunner.java:47)
+	at com.gzoltar.core.instr.Runner.main(Runner.java:46)
+
+org.jfree.chart.renderer.junit.GrayPaintScaleTests#testGetPaint
+java.lang.IllegalArgumentException: Color parameter outside of expected range: Red Green Blue
+	at java.awt.Color.testColorValueRange(Color.java:310)
+	at java.awt.Color.<init>(Color.java:395)
+	at java.awt.Color.<init>(Color.java:369)
+	at org.jfree.chart.renderer.GrayPaintScale.getPaint(GrayPaintScale.java:127)
+	at org.jfree.chart.renderer.junit.GrayPaintScaleTests.testGetPaint(GrayPaintScaleTests.java:107)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at com.gzoltar.core.instr.testing.junit.JUnitRunner.run(JUnitRunner.java:47)
+	at com.gzoltar.core.instr.Runner.main(Runner.java:46)
+
+
+/************************/
+/* Suspicious statement */
+/************************/
+org.jfree.chart.renderer.GrayPaintScale:123 -> 1.0 (ep: 0, ef: 2, np: 3251, nf: 0)
+org.jfree.chart.renderer.GrayPaintScale:124 -> 1.0 (ep: 0, ef: 2, np: 3251, nf: 0)
+org.jfree.chart.renderer.GrayPaintScale:125 -> 1.0 (ep: 0, ef: 2, np: 3251, nf: 0)
+org.jfree.chart.renderer.GrayPaintScale:127 -> 1.0 (ep: 0, ef: 2, np: 3251, nf: 0)
+
+
+
+Node: griffon-15.nancy.grid5000.fr
+
+
+Date: Mon May 11 08:02:57 CEST 2015
+
+

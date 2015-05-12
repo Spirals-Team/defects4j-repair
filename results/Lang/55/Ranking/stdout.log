@@ -1,0 +1,67 @@
+export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";cp -r /home/tdurieux/projects/lang/lang_55 /tmp/lang_55_Ranking;cd /tmp/lang_55_Ranking;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Lang/lib/* lib/;find . -type f -name "package-info.java" -delete;
+cd /tmp/lang_55_Ranking;cp -r /home/tdurieux/nopol/z3-x64-debian-7.7/bin/ lib/z3;time java -cp /home/tdurieux/nopol/nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar fr.inria.lille.repair.Main --mode ranking --type condition --oracle angelic --synthesis smt --solver z3 --solver-path lib/z3/z3 --complianceLevel 3 --source src/java/ --classpath target/classes/:target/tests/:lib/asm.jar:lib/cglib.jar:lib/commons-io.jar:lib/easymock.jar:/home/tdurieux/nopol/nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar;echo "
+
+Node: `hostname`
+";echo "
+Date: `date`
+";rm -rf /tmp/lang_55_Ranking;
+
+/************************/
+Executed tests:   1710
+Successful tests: 1709
+Failed tests:     1
+
+org.apache.commons.lang.time.StopWatchTest#testLang315
+junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:55)
+	at junit.framework.Assert.assertTrue(Assert.java:22)
+	at junit.framework.Assert.assertTrue(Assert.java:31)
+	at junit.framework.TestCase.assertTrue(TestCase.java:201)
+	at org.apache.commons.lang.time.StopWatchTest.testLang315(StopWatchTest.java:120)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at com.gzoltar.core.instr.testing.junit.JUnitRunner.run(JUnitRunner.java:47)
+	at com.gzoltar.core.instr.Runner.main(Runner.java:46)
+
+
+/************************/
+/* Suspicious statement */
+/************************/
+org.apache.commons.lang.time.StopWatch:179 -> 0.7071067811865475 (ep: 1, ef: 1, np: 1708, nf: 0)
+org.apache.commons.lang.time.StopWatch:180 -> 0.7071067811865475 (ep: 1, ef: 1, np: 1708, nf: 0)
+org.apache.commons.lang.time.StopWatch:181 -> 0.7071067811865475 (ep: 1, ef: 1, np: 1708, nf: 0)
+org.apache.commons.lang.time.StopWatch:176 -> 0.5773502691896258 (ep: 2, ef: 1, np: 1707, nf: 0)
+org.apache.commons.lang.time.StopWatch:210 -> 0.5 (ep: 3, ef: 1, np: 1706, nf: 0)
+org.apache.commons.lang.time.StopWatch:115 -> 0.4472135954999579 (ep: 4, ef: 1, np: 1705, nf: 0)
+org.apache.commons.lang.time.StopWatch:118 -> 0.4472135954999579 (ep: 4, ef: 1, np: 1705, nf: 0)
+org.apache.commons.lang.time.StopWatch:119 -> 0.4472135954999579 (ep: 4, ef: 1, np: 1705, nf: 0)
+org.apache.commons.lang.time.StopWatch:120 -> 0.4472135954999579 (ep: 4, ef: 1, np: 1705, nf: 0)
+org.apache.commons.lang.time.StopWatch:209 -> 0.4472135954999579 (ep: 4, ef: 1, np: 1705, nf: 0)
+org.apache.commons.lang.time.StopWatch:96 -> 0.4082482904638631 (ep: 5, ef: 1, np: 1704, nf: 0)
+org.apache.commons.lang.time.StopWatch:99 -> 0.4082482904638631 (ep: 5, ef: 1, np: 1704, nf: 0)
+org.apache.commons.lang.time.StopWatch:102 -> 0.4082482904638631 (ep: 5, ef: 1, np: 1704, nf: 0)
+org.apache.commons.lang.time.StopWatch:103 -> 0.4082482904638631 (ep: 5, ef: 1, np: 1704, nf: 0)
+org.apache.commons.lang.time.StopWatch:104 -> 0.4082482904638631 (ep: 5, ef: 1, np: 1704, nf: 0)
+org.apache.commons.lang.time.StopWatch:105 -> 0.4082482904638631 (ep: 5, ef: 1, np: 1704, nf: 0)
+
+
+
+Node: griffon-15.nancy.grid5000.fr
+
+
+Date: Mon May 11 07:58:46 CEST 2015
+
+

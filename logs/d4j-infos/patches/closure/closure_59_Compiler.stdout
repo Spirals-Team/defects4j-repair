@@ -1,5 +1,0 @@
-255c255,256
-<     if (options.checkGlobalThisLevel.isOn()) {
----
->     if (options.checkGlobalThisLevel.isOn() &&
->         !options.disables(DiagnosticGroups.GLOBAL_THIS)) {

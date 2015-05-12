@@ -1,0 +1,116 @@
+export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";cp -r /home/tdurieux/projects/lang/lang_42 /tmp/lang_42_Ranking;cd /tmp/lang_42_Ranking;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Lang/lib/* lib/;find . -type f -name "package-info.java" -delete;
+cd /tmp/lang_42_Ranking;cp -r /home/tdurieux/nopol/z3-x64-debian-7.7/bin/ lib/z3;time java -cp /home/tdurieux/nopol/nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar fr.inria.lille.repair.Main --mode ranking --type condition --oracle angelic --synthesis smt --solver z3 --solver-path lib/z3/z3 --complianceLevel 3 --source src/java/ --classpath target/classes/:target/tests/:lib/asm.jar:lib/cglib.jar:lib/commons-io.jar:lib/easymock.jar:/home/tdurieux/nopol/nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar;echo "
+
+Node: `hostname`
+";echo "
+Date: `date`
+";rm -rf /tmp/lang_42_Ranking;
+
+/************************/
+Executed tests:   1903
+Successful tests: 1902
+Failed tests:     1
+
+org.apache.commons.lang.StringEscapeUtilsTest#testEscapeHtmlHighUnicode
+junit.framework.ComparisonFailure: High unicode was not escaped correctly expected:<&#[119650];> but was:<&#[55348;&#57186];>
+	at junit.framework.Assert.assertEquals(Assert.java:100)
+	at junit.framework.TestCase.assertEquals(TestCase.java:261)
+	at org.apache.commons.lang.StringEscapeUtilsTest.testEscapeHtmlHighUnicode(StringEscapeUtilsTest.java:430)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at com.gzoltar.core.instr.testing.junit.JUnitRunner.run(JUnitRunner.java:47)
+	at com.gzoltar.core.instr.Runner.main(Runner.java:46)
+
+
+/************************/
+/* Suspicious statement */
+/************************/
+org.apache.commons.lang.StringEscapeUtils:455 -> 0.5773502691896258 (ep: 2, ef: 1, np: 1900, nf: 0)
+org.apache.commons.lang.StringEscapeUtils:459 -> 0.5773502691896258 (ep: 2, ef: 1, np: 1900, nf: 0)
+org.apache.commons.lang.StringEscapeUtils:460 -> 0.5773502691896258 (ep: 2, ef: 1, np: 1900, nf: 0)
+org.apache.commons.lang.StringEscapeUtils:461 -> 0.5773502691896258 (ep: 2, ef: 1, np: 1900, nf: 0)
+org.apache.commons.lang.StringEscapeUtils:498 -> 0.5773502691896258 (ep: 2, ef: 1, np: 1900, nf: 0)
+org.apache.commons.lang.StringEscapeUtils:501 -> 0.5773502691896258 (ep: 2, ef: 1, np: 1900, nf: 0)
+org.apache.commons.lang.StringEscapeUtils:504 -> 0.5773502691896258 (ep: 2, ef: 1, np: 1900, nf: 0)
+org.apache.commons.lang.StringEscapeUtils:505 -> 0.5773502691896258 (ep: 2, ef: 1, np: 1900, nf: 0)
+org.apache.commons.lang.Entities:832 -> 0.5773502691896258 (ep: 2, ef: 1, np: 1900, nf: 0)
+org.apache.commons.lang.Entities:833 -> 0.5773502691896258 (ep: 2, ef: 1, np: 1900, nf: 0)
+org.apache.commons.lang.Entities:834 -> 0.5773502691896258 (ep: 2, ef: 1, np: 1900, nf: 0)
+org.apache.commons.lang.Entities$LookupEntityMap:536 -> 0.5773502691896258 (ep: 2, ef: 1, np: 1900, nf: 0)
+org.apache.commons.lang.Entities:831 -> 0.4472135954999579 (ep: 4, ef: 1, np: 1898, nf: 0)
+org.apache.commons.lang.Entities:961 -> 0.4472135954999579 (ep: 4, ef: 1, np: 1898, nf: 0)
+org.apache.commons.lang.Entities:951 -> 0.4082482904638631 (ep: 5, ef: 1, np: 1897, nf: 0)
+org.apache.commons.lang.Entities:952 -> 0.4082482904638631 (ep: 5, ef: 1, np: 1897, nf: 0)
+org.apache.commons.lang.Entities:954 -> 0.4082482904638631 (ep: 5, ef: 1, np: 1897, nf: 0)
+org.apache.commons.lang.Entities:964 -> 0.4082482904638631 (ep: 5, ef: 1, np: 1897, nf: 0)
+org.apache.commons.lang.Entities:969 -> 0.4082482904638631 (ep: 5, ef: 1, np: 1897, nf: 0)
+org.apache.commons.lang.Entities:970 -> 0.4082482904638631 (ep: 5, ef: 1, np: 1897, nf: 0)
+org.apache.commons.lang.Entities:826 -> 0.3779644730092272 (ep: 6, ef: 1, np: 1896, nf: 0)
+org.apache.commons.lang.Entities:827 -> 0.3779644730092272 (ep: 6, ef: 1, np: 1896, nf: 0)
+org.apache.commons.lang.Entities:828 -> 0.3779644730092272 (ep: 6, ef: 1, np: 1896, nf: 0)
+org.apache.commons.lang.Entities:829 -> 0.3779644730092272 (ep: 6, ef: 1, np: 1896, nf: 0)
+org.apache.commons.lang.Entities:830 -> 0.3779644730092272 (ep: 6, ef: 1, np: 1896, nf: 0)
+org.apache.commons.lang.Entities:844 -> 0.3779644730092272 (ep: 6, ef: 1, np: 1896, nf: 0)
+org.apache.commons.lang.IntHashMap:245 -> 0.3779644730092272 (ep: 6, ef: 1, np: 1896, nf: 0)
+org.apache.commons.lang.StringEscapeUtils:525 -> 0.3779644730092272 (ep: 6, ef: 1, np: 1896, nf: 0)
+org.apache.commons.lang.StringEscapeUtils:529 -> 0.3779644730092272 (ep: 6, ef: 1, np: 1896, nf: 0)
+org.apache.commons.lang.StringEscapeUtils:530 -> 0.3779644730092272 (ep: 6, ef: 1, np: 1896, nf: 0)
+org.apache.commons.lang.StringEscapeUtils:531 -> 0.3779644730092272 (ep: 6, ef: 1, np: 1896, nf: 0)
+org.apache.commons.lang.StringEscapeUtils:557 -> 0.3779644730092272 (ep: 6, ef: 1, np: 1896, nf: 0)
+org.apache.commons.lang.StringEscapeUtils:560 -> 0.3779644730092272 (ep: 6, ef: 1, np: 1896, nf: 0)
+org.apache.commons.lang.StringEscapeUtils:563 -> 0.3779644730092272 (ep: 6, ef: 1, np: 1896, nf: 0)
+org.apache.commons.lang.StringEscapeUtils:564 -> 0.3779644730092272 (ep: 6, ef: 1, np: 1896, nf: 0)
+org.apache.commons.lang.Entities$LookupEntityMap:533 -> 0.3333333333333333 (ep: 8, ef: 1, np: 1894, nf: 0)
+org.apache.commons.lang.Entities:981 -> 0.3333333333333333 (ep: 8, ef: 1, np: 1894, nf: 0)
+org.apache.commons.lang.Entities$PrimitiveEntityMap:457 -> 0.31622776601683794 (ep: 9, ef: 1, np: 1893, nf: 0)
+org.apache.commons.lang.IntHashMap:237 -> 0.31622776601683794 (ep: 9, ef: 1, np: 1893, nf: 0)
+org.apache.commons.lang.IntHashMap:238 -> 0.31622776601683794 (ep: 9, ef: 1, np: 1893, nf: 0)
+org.apache.commons.lang.IntHashMap:239 -> 0.31622776601683794 (ep: 9, ef: 1, np: 1893, nf: 0)
+org.apache.commons.lang.IntHashMap:240 -> 0.31622776601683794 (ep: 9, ef: 1, np: 1893, nf: 0)
+org.apache.commons.lang.IntHashMap:241 -> 0.31622776601683794 (ep: 9, ef: 1, np: 1893, nf: 0)
+org.apache.commons.lang.Entities:905 -> 0.30151134457776363 (ep: 10, ef: 1, np: 1892, nf: 0)
+org.apache.commons.lang.Entities:906 -> 0.30151134457776363 (ep: 10, ef: 1, np: 1892, nf: 0)
+org.apache.commons.lang.Entities:910 -> 0.30151134457776363 (ep: 10, ef: 1, np: 1892, nf: 0)
+org.apache.commons.lang.Entities:912 -> 0.30151134457776363 (ep: 10, ef: 1, np: 1892, nf: 0)
+org.apache.commons.lang.Entities:928 -> 0.2886751345948129 (ep: 11, ef: 1, np: 1891, nf: 0)
+org.apache.commons.lang.Entities:929 -> 0.2886751345948129 (ep: 11, ef: 1, np: 1891, nf: 0)
+org.apache.commons.lang.Entities:930 -> 0.2886751345948129 (ep: 11, ef: 1, np: 1891, nf: 0)
+org.apache.commons.lang.Entities:931 -> 0.2886751345948129 (ep: 11, ef: 1, np: 1891, nf: 0)
+org.apache.commons.lang.Entities:932 -> 0.2886751345948129 (ep: 11, ef: 1, np: 1891, nf: 0)
+org.apache.commons.lang.Entities:933 -> 0.2886751345948129 (ep: 11, ef: 1, np: 1891, nf: 0)
+org.apache.commons.lang.Entities:934 -> 0.2886751345948129 (ep: 11, ef: 1, np: 1891, nf: 0)
+org.apache.commons.lang.Entities:935 -> 0.2886751345948129 (ep: 11, ef: 1, np: 1891, nf: 0)
+org.apache.commons.lang.Entities:939 -> 0.2886751345948129 (ep: 11, ef: 1, np: 1891, nf: 0)
+org.apache.commons.lang.Entities:940 -> 0.2886751345948129 (ep: 11, ef: 1, np: 1891, nf: 0)
+org.apache.commons.lang.Entities:945 -> 0.2886751345948129 (ep: 11, ef: 1, np: 1891, nf: 0)
+org.apache.commons.lang.Entities:946 -> 0.2886751345948129 (ep: 11, ef: 1, np: 1891, nf: 0)
+org.apache.commons.lang.Entities:947 -> 0.2886751345948129 (ep: 11, ef: 1, np: 1891, nf: 0)
+org.apache.commons.lang.Entities:948 -> 0.2886751345948129 (ep: 11, ef: 1, np: 1891, nf: 0)
+org.apache.commons.lang.Entities:949 -> 0.2886751345948129 (ep: 11, ef: 1, np: 1891, nf: 0)
+org.apache.commons.lang.Entities:976 -> 0.2886751345948129 (ep: 11, ef: 1, np: 1891, nf: 0)
+org.apache.commons.lang.Entities:983 -> 0.2886751345948129 (ep: 11, ef: 1, np: 1891, nf: 0)
+org.apache.commons.lang.Entities:984 -> 0.2886751345948129 (ep: 11, ef: 1, np: 1891, nf: 0)
+org.apache.commons.lang.Entities:988 -> 0.2886751345948129 (ep: 11, ef: 1, np: 1891, nf: 0)
+org.apache.commons.lang.Entities:766 -> 0.2672612419124244 (ep: 13, ef: 1, np: 1889, nf: 0)
+
+
+
+Node: graphite-4.nancy.grid5000.fr
+
+
+Date: Mon May 11 07:59:46 CEST 2015
+
+

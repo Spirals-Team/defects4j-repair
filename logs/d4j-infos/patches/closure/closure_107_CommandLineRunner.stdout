@@ -1,7 +1,0 @@
-859c859,860
-<       // so we might as well inline it.
----
->       // so we might as well inline it. But shut off the i18n warnings,
->       // because the user didn't really ask for i18n.
-860a862
->       options.setWarningLevel(JsMessageVisitor.MSG_CONVENTIONS, CheckLevel.OFF);

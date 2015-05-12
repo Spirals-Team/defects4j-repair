@@ -1,0 +1,926 @@
+{
+    "date": "2015-05-11T08:00:16.327063", 
+    "executedTest": 1670, 
+    "failedTest": 1, 
+    "failedTestDetails": [
+        {
+            "class": "org.apache.commons.lang3.builder.HashCodeBuilderTest", 
+            "method": "testReflectionObjectCycle"
+        }
+    ], 
+    "modifiedLines": [
+        {
+            "class": "a.org.apache.commons.lang3.builder.HashCodeBuilder", 
+            "line": 104
+        }, 
+        {
+            "class": "a.org.apache.commons.lang3.builder.HashCodeBuilder", 
+            "line": 132
+        }, 
+        {
+            "class": "a.org.apache.commons.lang3.builder.HashCodeBuilder", 
+            "line": 147
+        }, 
+        {
+            "class": "a.org.apache.commons.lang3.builder.HashCodeBuilder", 
+            "line": 148
+        }, 
+        {
+            "class": "a.org.apache.commons.lang3.builder.HashCodeBuilder", 
+            "line": 518
+        }, 
+        {
+            "class": "a.org.apache.commons.lang3.builder.HashCodeBuilder", 
+            "line": 519
+        }, 
+        {
+            "class": "a.org.apache.commons.lang3.builder.HashCodeBuilder", 
+            "line": 520
+        }, 
+        {
+            "class": "a.org.apache.commons.lang3.builder.HashCodeBuilder", 
+            "line": 521
+        }, 
+        {
+            "class": "a.org.apache.commons.lang3.builder.HashCodeBuilder", 
+            "line": 522
+        }, 
+        {
+            "class": "a.org.apache.commons.lang3.builder.HashCodeBuilder", 
+            "line": 539
+        }, 
+        {
+            "class": "a.org.apache.commons.lang3.builder.HashCodeBuilder", 
+            "line": 540
+        }, 
+        {
+            "class": "a.org.apache.commons.lang3.builder.HashCodeBuilder", 
+            "line": 541
+        }, 
+        {
+            "class": "a.org.apache.commons.lang3.builder.HashCodeBuilder", 
+            "line": 542
+        }, 
+        {
+            "class": "a.org.apache.commons.lang3.builder.HashCodeBuilder", 
+            "line": 543
+        }, 
+        {
+            "class": "a.org.apache.commons.lang3.builder.HashCodeBuilder", 
+            "line": 544
+        }, 
+        {
+            "class": "a.org.apache.commons.lang3.builder.HashCodeBuilder", 
+            "line": 545
+        }, 
+        {
+            "class": "a.org.apache.commons.lang3.builder.HashCodeBuilder", 
+            "line": 546
+        }, 
+        {
+            "class": "a.org.apache.commons.lang3.builder.HashCodeBuilder", 
+            "line": 547
+        }
+    ], 
+    "nbsuspicious": 44, 
+    "node": "graphene-83.nancy.grid5000.fr\n", 
+    "successfulTest": 1669, 
+    "suspicious": {
+        "org.apache.commons.lang3.ArrayUtils:1627": {
+            "class": "org.apache.commons.lang3.ArrayUtils", 
+            "ef": 1, 
+            "ep": 23, 
+            "line": 1627, 
+            "metrics": {
+                "ample": 0.9862192929898143, 
+                "gzoltar": 0.20412414523193154, 
+                "ochiai": 0.20412414523193154, 
+                "tarantula": 0.9864066193853429
+            }, 
+            "nf": 0, 
+            "np": 1646, 
+            "rank": {
+                "ample": 42, 
+                "ochiai": 42, 
+                "tarantula": 42
+            }
+        }, 
+        "org.apache.commons.lang3.ArrayUtils:1645": {
+            "class": "org.apache.commons.lang3.ArrayUtils", 
+            "ef": 1, 
+            "ep": 24, 
+            "line": 1645, 
+            "metrics": {
+                "ample": 0.9856201318154584, 
+                "gzoltar": 0.2, 
+                "ochiai": 0.2, 
+                "tarantula": 0.9858239810986413
+            }, 
+            "nf": 0, 
+            "np": 1645, 
+            "rank": {
+                "ample": 43, 
+                "ochiai": 43, 
+                "tarantula": 43
+            }
+        }, 
+        "org.apache.commons.lang3.ArrayUtils:1646": {
+            "class": "org.apache.commons.lang3.ArrayUtils", 
+            "ef": 1, 
+            "ep": 18, 
+            "line": 1646, 
+            "metrics": {
+                "ample": 0.9892150988615938, 
+                "gzoltar": 0.22941573387056174, 
+                "ochiai": 0.22941573387056174, 
+                "tarantula": 0.989330171902786
+            }, 
+            "nf": 0, 
+            "np": 1651, 
+            "rank": {
+                "ample": 37, 
+                "ochiai": 37, 
+                "tarantula": 37
+            }
+        }, 
+        "org.apache.commons.lang3.ArrayUtils:1730": {
+            "class": "org.apache.commons.lang3.ArrayUtils", 
+            "ef": 1, 
+            "ep": 21, 
+            "line": 1730, 
+            "metrics": {
+                "ample": 0.987417615338526, 
+                "gzoltar": 0.21320071635561041, 
+                "ochiai": 0.21320071635561041, 
+                "tarantula": 0.9875739644970415
+            }, 
+            "nf": 0, 
+            "np": 1648, 
+            "rank": {
+                "ample": 39, 
+                "ochiai": 41, 
+                "tarantula": 39
+            }
+        }, 
+        "org.apache.commons.lang3.builder.HashCodeBuilder$1:104": {
+            "class": "org.apache.commons.lang3.builder.HashCodeBuilder$1", 
+            "ef": 1, 
+            "ep": 0, 
+            "line": 104, 
+            "metrics": {
+                "ample": 1.0, 
+                "gzoltar": 1.0, 
+                "ochiai": 1.0, 
+                "tarantula": 1.0
+            }, 
+            "nf": 0, 
+            "np": 1669, 
+            "rank": {
+                "ample": 3, 
+                "ochiai": 2, 
+                "tarantula": 3
+            }
+        }, 
+        "org.apache.commons.lang3.builder.HashCodeBuilder$1:109": {
+            "class": "org.apache.commons.lang3.builder.HashCodeBuilder$1", 
+            "ef": 1, 
+            "ep": 0, 
+            "line": 109, 
+            "metrics": {
+                "ample": 1.0, 
+                "gzoltar": 1.0, 
+                "ochiai": 1.0, 
+                "tarantula": 1.0
+            }, 
+            "nf": 0, 
+            "np": 1669, 
+            "rank": {
+                "ample": 2, 
+                "ochiai": 1, 
+                "tarantula": 2
+            }
+        }, 
+        "org.apache.commons.lang3.builder.HashCodeBuilder:139": {
+            "class": "org.apache.commons.lang3.builder.HashCodeBuilder", 
+            "ef": 1, 
+            "ep": 7, 
+            "line": 139, 
+            "metrics": {
+                "ample": 0.9958058717795086, 
+                "gzoltar": 0.35355339059327373, 
+                "ochiai": 0.35355339059327373, 
+                "tarantula": 0.9958233890214797
+            }, 
+            "nf": 0, 
+            "np": 1662, 
+            "rank": {
+                "ample": 29, 
+                "ochiai": 10, 
+                "tarantula": 29
+            }
+        }, 
+        "org.apache.commons.lang3.builder.HashCodeBuilder:154": {
+            "class": "org.apache.commons.lang3.builder.HashCodeBuilder", 
+            "ef": 1, 
+            "ep": 7, 
+            "line": 154, 
+            "metrics": {
+                "ample": 0.9958058717795086, 
+                "gzoltar": 0.35355339059327373, 
+                "ochiai": 0.35355339059327373, 
+                "tarantula": 0.9958233890214797
+            }, 
+            "nf": 0, 
+            "np": 1662, 
+            "rank": {
+                "ample": 11, 
+                "ochiai": 11, 
+                "tarantula": 11
+            }
+        }, 
+        "org.apache.commons.lang3.builder.HashCodeBuilder:175": {
+            "class": "org.apache.commons.lang3.builder.HashCodeBuilder", 
+            "ef": 1, 
+            "ep": 7, 
+            "line": 175, 
+            "metrics": {
+                "ample": 0.9958058717795086, 
+                "gzoltar": 0.35355339059327373, 
+                "ochiai": 0.35355339059327373, 
+                "tarantula": 0.9958233890214797
+            }, 
+            "nf": 0, 
+            "np": 1662, 
+            "rank": {
+                "ample": 8, 
+                "ochiai": 12, 
+                "tarantula": 8
+            }
+        }, 
+        "org.apache.commons.lang3.builder.HashCodeBuilder:176": {
+            "class": "org.apache.commons.lang3.builder.HashCodeBuilder", 
+            "ef": 1, 
+            "ep": 0, 
+            "line": 176, 
+            "metrics": {
+                "ample": 1.0, 
+                "gzoltar": 1.0, 
+                "ochiai": 1.0, 
+                "tarantula": 1.0
+            }, 
+            "nf": 0, 
+            "np": 1669, 
+            "rank": {
+                "ample": 1, 
+                "ochiai": 3, 
+                "tarantula": 1
+            }
+        }, 
+        "org.apache.commons.lang3.builder.HashCodeBuilder:179": {
+            "class": "org.apache.commons.lang3.builder.HashCodeBuilder", 
+            "ef": 1, 
+            "ep": 7, 
+            "line": 179, 
+            "metrics": {
+                "ample": 0.9958058717795086, 
+                "gzoltar": 0.35355339059327373, 
+                "ochiai": 0.35355339059327373, 
+                "tarantula": 0.9958233890214797
+            }, 
+            "nf": 0, 
+            "np": 1662, 
+            "rank": {
+                "ample": 10, 
+                "ochiai": 13, 
+                "tarantula": 10
+            }
+        }, 
+        "org.apache.commons.lang3.builder.HashCodeBuilder:180": {
+            "class": "org.apache.commons.lang3.builder.HashCodeBuilder", 
+            "ef": 1, 
+            "ep": 7, 
+            "line": 180, 
+            "metrics": {
+                "ample": 0.9958058717795086, 
+                "gzoltar": 0.35355339059327373, 
+                "ochiai": 0.35355339059327373, 
+                "tarantula": 0.9958233890214797
+            }, 
+            "nf": 0, 
+            "np": 1662, 
+            "rank": {
+                "ample": 17, 
+                "ochiai": 14, 
+                "tarantula": 17
+            }
+        }, 
+        "org.apache.commons.lang3.builder.HashCodeBuilder:181": {
+            "class": "org.apache.commons.lang3.builder.HashCodeBuilder", 
+            "ef": 1, 
+            "ep": 7, 
+            "line": 181, 
+            "metrics": {
+                "ample": 0.9958058717795086, 
+                "gzoltar": 0.35355339059327373, 
+                "ochiai": 0.35355339059327373, 
+                "tarantula": 0.9958233890214797
+            }, 
+            "nf": 0, 
+            "np": 1662, 
+            "rank": {
+                "ample": 16, 
+                "ochiai": 15, 
+                "tarantula": 16
+            }
+        }, 
+        "org.apache.commons.lang3.builder.HashCodeBuilder:182": {
+            "class": "org.apache.commons.lang3.builder.HashCodeBuilder", 
+            "ef": 1, 
+            "ep": 7, 
+            "line": 182, 
+            "metrics": {
+                "ample": 0.9958058717795086, 
+                "gzoltar": 0.35355339059327373, 
+                "ochiai": 0.35355339059327373, 
+                "tarantula": 0.9958233890214797
+            }, 
+            "nf": 0, 
+            "np": 1662, 
+            "rank": {
+                "ample": 19, 
+                "ochiai": 16, 
+                "tarantula": 19
+            }
+        }, 
+        "org.apache.commons.lang3.builder.HashCodeBuilder:183": {
+            "class": "org.apache.commons.lang3.builder.HashCodeBuilder", 
+            "ef": 1, 
+            "ep": 7, 
+            "line": 183, 
+            "metrics": {
+                "ample": 0.9958058717795086, 
+                "gzoltar": 0.35355339059327373, 
+                "ochiai": 0.35355339059327373, 
+                "tarantula": 0.9958233890214797
+            }, 
+            "nf": 0, 
+            "np": 1662, 
+            "rank": {
+                "ample": 18, 
+                "ochiai": 17, 
+                "tarantula": 18
+            }
+        }, 
+        "org.apache.commons.lang3.builder.HashCodeBuilder:188": {
+            "class": "org.apache.commons.lang3.builder.HashCodeBuilder", 
+            "ef": 1, 
+            "ep": 7, 
+            "line": 188, 
+            "metrics": {
+                "ample": 0.9958058717795086, 
+                "gzoltar": 0.35355339059327373, 
+                "ochiai": 0.35355339059327373, 
+                "tarantula": 0.9958233890214797
+            }, 
+            "nf": 0, 
+            "np": 1662, 
+            "rank": {
+                "ample": 14, 
+                "ochiai": 18, 
+                "tarantula": 14
+            }
+        }, 
+        "org.apache.commons.lang3.builder.HashCodeBuilder:189": {
+            "class": "org.apache.commons.lang3.builder.HashCodeBuilder", 
+            "ef": 1, 
+            "ep": 7, 
+            "line": 189, 
+            "metrics": {
+                "ample": 0.9958058717795086, 
+                "gzoltar": 0.35355339059327373, 
+                "ochiai": 0.35355339059327373, 
+                "tarantula": 0.9958233890214797
+            }, 
+            "nf": 0, 
+            "np": 1662, 
+            "rank": {
+                "ample": 13, 
+                "ochiai": 19, 
+                "tarantula": 13
+            }
+        }, 
+        "org.apache.commons.lang3.builder.HashCodeBuilder:194": {
+            "class": "org.apache.commons.lang3.builder.HashCodeBuilder", 
+            "ef": 1, 
+            "ep": 7, 
+            "line": 194, 
+            "metrics": {
+                "ample": 0.9958058717795086, 
+                "gzoltar": 0.35355339059327373, 
+                "ochiai": 0.35355339059327373, 
+                "tarantula": 0.9958233890214797
+            }, 
+            "nf": 0, 
+            "np": 1662, 
+            "rank": {
+                "ample": 24, 
+                "ochiai": 20, 
+                "tarantula": 24
+            }
+        }, 
+        "org.apache.commons.lang3.builder.HashCodeBuilder:198": {
+            "class": "org.apache.commons.lang3.builder.HashCodeBuilder", 
+            "ef": 1, 
+            "ep": 7, 
+            "line": 198, 
+            "metrics": {
+                "ample": 0.9958058717795086, 
+                "gzoltar": 0.35355339059327373, 
+                "ochiai": 0.35355339059327373, 
+                "tarantula": 0.9958233890214797
+            }, 
+            "nf": 0, 
+            "np": 1662, 
+            "rank": {
+                "ample": 25, 
+                "ochiai": 21, 
+                "tarantula": 25
+            }
+        }, 
+        "org.apache.commons.lang3.builder.HashCodeBuilder:199": {
+            "class": "org.apache.commons.lang3.builder.HashCodeBuilder", 
+            "ef": 1, 
+            "ep": 7, 
+            "line": 199, 
+            "metrics": {
+                "ample": 0.9958058717795086, 
+                "gzoltar": 0.35355339059327373, 
+                "ochiai": 0.35355339059327373, 
+                "tarantula": 0.9958233890214797
+            }, 
+            "nf": 0, 
+            "np": 1662, 
+            "rank": {
+                "ample": 26, 
+                "ochiai": 22, 
+                "tarantula": 26
+            }
+        }, 
+        "org.apache.commons.lang3.builder.HashCodeBuilder:200": {
+            "class": "org.apache.commons.lang3.builder.HashCodeBuilder", 
+            "ef": 1, 
+            "ep": 7, 
+            "line": 200, 
+            "metrics": {
+                "ample": 0.9958058717795086, 
+                "gzoltar": 0.35355339059327373, 
+                "ochiai": 0.35355339059327373, 
+                "tarantula": 0.9958233890214797
+            }, 
+            "nf": 0, 
+            "np": 1662, 
+            "rank": {
+                "ample": 21, 
+                "ochiai": 23, 
+                "tarantula": 21
+            }
+        }, 
+        "org.apache.commons.lang3.builder.HashCodeBuilder:358": {
+            "class": "org.apache.commons.lang3.builder.HashCodeBuilder", 
+            "ef": 1, 
+            "ep": 12, 
+            "line": 358, 
+            "metrics": {
+                "ample": 0.9928100659077291, 
+                "gzoltar": 0.2773500981126146, 
+                "ochiai": 0.2773500981126146, 
+                "tarantula": 0.9928613920285545
+            }, 
+            "nf": 0, 
+            "np": 1657, 
+            "rank": {
+                "ample": 35, 
+                "ochiai": 36, 
+                "tarantula": 35
+            }
+        }, 
+        "org.apache.commons.lang3.builder.HashCodeBuilder:361": {
+            "class": "org.apache.commons.lang3.builder.HashCodeBuilder", 
+            "ef": 1, 
+            "ep": 11, 
+            "line": 361, 
+            "metrics": {
+                "ample": 0.9934092270820851, 
+                "gzoltar": 0.2886751345948129, 
+                "ochiai": 0.2886751345948129, 
+                "tarantula": 0.993452380952381
+            }, 
+            "nf": 0, 
+            "np": 1658, 
+            "rank": {
+                "ample": 34, 
+                "ochiai": 34, 
+                "tarantula": 34
+            }
+        }, 
+        "org.apache.commons.lang3.builder.HashCodeBuilder:362": {
+            "class": "org.apache.commons.lang3.builder.HashCodeBuilder", 
+            "ef": 1, 
+            "ep": 7, 
+            "line": 362, 
+            "metrics": {
+                "ample": 0.9958058717795086, 
+                "gzoltar": 0.35355339059327373, 
+                "ochiai": 0.35355339059327373, 
+                "tarantula": 0.9958233890214797
+            }, 
+            "nf": 0, 
+            "np": 1662, 
+            "rank": {
+                "ample": 6, 
+                "ochiai": 24, 
+                "tarantula": 6
+            }
+        }, 
+        "org.apache.commons.lang3.builder.HashCodeBuilder:363": {
+            "class": "org.apache.commons.lang3.builder.HashCodeBuilder", 
+            "ef": 1, 
+            "ep": 7, 
+            "line": 363, 
+            "metrics": {
+                "ample": 0.9958058717795086, 
+                "gzoltar": 0.35355339059327373, 
+                "ochiai": 0.35355339059327373, 
+                "tarantula": 0.9958233890214797
+            }, 
+            "nf": 0, 
+            "np": 1662, 
+            "rank": {
+                "ample": 5, 
+                "ochiai": 25, 
+                "tarantula": 5
+            }
+        }, 
+        "org.apache.commons.lang3.builder.HashCodeBuilder:364": {
+            "class": "org.apache.commons.lang3.builder.HashCodeBuilder", 
+            "ef": 1, 
+            "ep": 7, 
+            "line": 364, 
+            "metrics": {
+                "ample": 0.9958058717795086, 
+                "gzoltar": 0.35355339059327373, 
+                "ochiai": 0.35355339059327373, 
+                "tarantula": 0.9958233890214797
+            }, 
+            "nf": 0, 
+            "np": 1662, 
+            "rank": {
+                "ample": 12, 
+                "ochiai": 26, 
+                "tarantula": 12
+            }
+        }, 
+        "org.apache.commons.lang3.builder.HashCodeBuilder:365": {
+            "class": "org.apache.commons.lang3.builder.HashCodeBuilder", 
+            "ef": 1, 
+            "ep": 7, 
+            "line": 365, 
+            "metrics": {
+                "ample": 0.9958058717795086, 
+                "gzoltar": 0.35355339059327373, 
+                "ochiai": 0.35355339059327373, 
+                "tarantula": 0.9958233890214797
+            }, 
+            "nf": 0, 
+            "np": 1662, 
+            "rank": {
+                "ample": 7, 
+                "ochiai": 27, 
+                "tarantula": 7
+            }
+        }, 
+        "org.apache.commons.lang3.builder.HashCodeBuilder:366": {
+            "class": "org.apache.commons.lang3.builder.HashCodeBuilder", 
+            "ef": 1, 
+            "ep": 7, 
+            "line": 366, 
+            "metrics": {
+                "ample": 0.9958058717795086, 
+                "gzoltar": 0.35355339059327373, 
+                "ochiai": 0.35355339059327373, 
+                "tarantula": 0.9958233890214797
+            }, 
+            "nf": 0, 
+            "np": 1662, 
+            "rank": {
+                "ample": 9, 
+                "ochiai": 28, 
+                "tarantula": 9
+            }
+        }, 
+        "org.apache.commons.lang3.builder.HashCodeBuilder:368": {
+            "class": "org.apache.commons.lang3.builder.HashCodeBuilder", 
+            "ef": 1, 
+            "ep": 7, 
+            "line": 368, 
+            "metrics": {
+                "ample": 0.9958058717795086, 
+                "gzoltar": 0.35355339059327373, 
+                "ochiai": 0.35355339059327373, 
+                "tarantula": 0.9958233890214797
+            }, 
+            "nf": 0, 
+            "np": 1662, 
+            "rank": {
+                "ample": 20, 
+                "ochiai": 29, 
+                "tarantula": 20
+            }
+        }, 
+        "org.apache.commons.lang3.builder.HashCodeBuilder:402": {
+            "class": "org.apache.commons.lang3.builder.HashCodeBuilder", 
+            "ef": 1, 
+            "ep": 3, 
+            "line": 402, 
+            "metrics": {
+                "ample": 0.9982025164769323, 
+                "gzoltar": 0.5, 
+                "ochiai": 0.5, 
+                "tarantula": 0.9982057416267943
+            }, 
+            "nf": 0, 
+            "np": 1666, 
+            "rank": {
+                "ample": 4, 
+                "ochiai": 4, 
+                "tarantula": 4
+            }
+        }, 
+        "org.apache.commons.lang3.builder.HashCodeBuilder:524": {
+            "class": "org.apache.commons.lang3.builder.HashCodeBuilder", 
+            "ef": 1, 
+            "ep": 7, 
+            "line": 524, 
+            "metrics": {
+                "ample": 0.9958058717795086, 
+                "gzoltar": 0.35355339059327373, 
+                "ochiai": 0.35355339059327373, 
+                "tarantula": 0.9958233890214797
+            }, 
+            "nf": 0, 
+            "np": 1662, 
+            "rank": {
+                "ample": 33, 
+                "ochiai": 30, 
+                "tarantula": 33
+            }
+        }, 
+        "org.apache.commons.lang3.builder.HashCodeBuilder:525": {
+            "class": "org.apache.commons.lang3.builder.HashCodeBuilder", 
+            "ef": 1, 
+            "ep": 7, 
+            "line": 525, 
+            "metrics": {
+                "ample": 0.9958058717795086, 
+                "gzoltar": 0.35355339059327373, 
+                "ochiai": 0.35355339059327373, 
+                "tarantula": 0.9958233890214797
+            }, 
+            "nf": 0, 
+            "np": 1662, 
+            "rank": {
+                "ample": 32, 
+                "ochiai": 31, 
+                "tarantula": 32
+            }
+        }, 
+        "org.apache.commons.lang3.builder.HashCodeBuilder:540": {
+            "class": "org.apache.commons.lang3.builder.HashCodeBuilder", 
+            "ef": 1, 
+            "ep": 7, 
+            "line": 540, 
+            "metrics": {
+                "ample": 0.9958058717795086, 
+                "gzoltar": 0.35355339059327373, 
+                "ochiai": 0.35355339059327373, 
+                "tarantula": 0.9958233890214797
+            }, 
+            "nf": 0, 
+            "np": 1662, 
+            "rank": {
+                "ample": 31, 
+                "ochiai": 32, 
+                "tarantula": 31
+            }
+        }, 
+        "org.apache.commons.lang3.builder.HashCodeBuilder:541": {
+            "class": "org.apache.commons.lang3.builder.HashCodeBuilder", 
+            "ef": 1, 
+            "ep": 7, 
+            "line": 541, 
+            "metrics": {
+                "ample": 0.9958058717795086, 
+                "gzoltar": 0.35355339059327373, 
+                "ochiai": 0.35355339059327373, 
+                "tarantula": 0.9958233890214797
+            }, 
+            "nf": 0, 
+            "np": 1662, 
+            "rank": {
+                "ample": 30, 
+                "ochiai": 33, 
+                "tarantula": 30
+            }
+        }, 
+        "org.apache.commons.lang3.builder.HashCodeBuilder:857": {
+            "class": "org.apache.commons.lang3.builder.HashCodeBuilder", 
+            "ef": 1, 
+            "ep": 21, 
+            "line": 857, 
+            "metrics": {
+                "ample": 0.987417615338526, 
+                "gzoltar": 0.21320071635561041, 
+                "ochiai": 0.21320071635561041, 
+                "tarantula": 0.9875739644970415
+            }, 
+            "nf": 0, 
+            "np": 1648, 
+            "rank": {
+                "ample": 38, 
+                "ochiai": 38, 
+                "tarantula": 38
+            }
+        }, 
+        "org.apache.commons.lang3.builder.HashCodeBuilder:861": {
+            "class": "org.apache.commons.lang3.builder.HashCodeBuilder", 
+            "ef": 1, 
+            "ep": 21, 
+            "line": 861, 
+            "metrics": {
+                "ample": 0.987417615338526, 
+                "gzoltar": 0.21320071635561041, 
+                "ochiai": 0.21320071635561041, 
+                "tarantula": 0.9875739644970415
+            }, 
+            "nf": 0, 
+            "np": 1648, 
+            "rank": {
+                "ample": 41, 
+                "ochiai": 39, 
+                "tarantula": 41
+            }
+        }, 
+        "org.apache.commons.lang3.builder.HashCodeBuilder:885": {
+            "class": "org.apache.commons.lang3.builder.HashCodeBuilder", 
+            "ef": 1, 
+            "ep": 12, 
+            "line": 885, 
+            "metrics": {
+                "ample": 0.9928100659077291, 
+                "gzoltar": 0.2773500981126146, 
+                "ochiai": 0.2773500981126146, 
+                "tarantula": 0.9928613920285545
+            }, 
+            "nf": 0, 
+            "np": 1657, 
+            "rank": {
+                "ample": 36, 
+                "ochiai": 35, 
+                "tarantula": 36
+            }
+        }, 
+        "org.apache.commons.lang3.builder.HashCodeBuilder:888": {
+            "class": "org.apache.commons.lang3.builder.HashCodeBuilder", 
+            "ef": 1, 
+            "ep": 21, 
+            "line": 888, 
+            "metrics": {
+                "ample": 0.987417615338526, 
+                "gzoltar": 0.21320071635561041, 
+                "ochiai": 0.21320071635561041, 
+                "tarantula": 0.9875739644970415
+            }, 
+            "nf": 0, 
+            "np": 1648, 
+            "rank": {
+                "ample": 40, 
+                "ochiai": 40, 
+                "tarantula": 40
+            }
+        }, 
+        "org.apache.commons.lang3.builder.HashCodeBuilder:968": {
+            "class": "org.apache.commons.lang3.builder.HashCodeBuilder", 
+            "ef": 1, 
+            "ep": 37, 
+            "line": 968, 
+            "metrics": {
+                "ample": 0.9778310365488316, 
+                "gzoltar": 0.16222142113076254, 
+                "ochiai": 0.16222142113076254, 
+                "tarantula": 0.9783118405627198
+            }, 
+            "nf": 0, 
+            "np": 1632, 
+            "rank": {
+                "ample": 44, 
+                "ochiai": 44, 
+                "tarantula": 44
+            }
+        }, 
+        "org.apache.commons.lang3.builder.IDKey:55": {
+            "class": "org.apache.commons.lang3.builder.IDKey", 
+            "ef": 1, 
+            "ep": 7, 
+            "line": 55, 
+            "metrics": {
+                "ample": 0.9958058717795086, 
+                "gzoltar": 0.35355339059327373, 
+                "ochiai": 0.35355339059327373, 
+                "tarantula": 0.9958233890214797
+            }, 
+            "nf": 0, 
+            "np": 1662, 
+            "rank": {
+                "ample": 15, 
+                "ochiai": 5, 
+                "tarantula": 15
+            }
+        }, 
+        "org.apache.commons.lang3.builder.IDKey:65": {
+            "class": "org.apache.commons.lang3.builder.IDKey", 
+            "ef": 1, 
+            "ep": 7, 
+            "line": 65, 
+            "metrics": {
+                "ample": 0.9958058717795086, 
+                "gzoltar": 0.35355339059327373, 
+                "ochiai": 0.35355339059327373, 
+                "tarantula": 0.9958233890214797
+            }, 
+            "nf": 0, 
+            "np": 1662, 
+            "rank": {
+                "ample": 23, 
+                "ochiai": 6, 
+                "tarantula": 23
+            }
+        }, 
+        "org.apache.commons.lang3.builder.IDKey:68": {
+            "class": "org.apache.commons.lang3.builder.IDKey", 
+            "ef": 1, 
+            "ep": 7, 
+            "line": 68, 
+            "metrics": {
+                "ample": 0.9958058717795086, 
+                "gzoltar": 0.35355339059327373, 
+                "ochiai": 0.35355339059327373, 
+                "tarantula": 0.9958233890214797
+            }, 
+            "nf": 0, 
+            "np": 1662, 
+            "rank": {
+                "ample": 28, 
+                "ochiai": 7, 
+                "tarantula": 28
+            }
+        }, 
+        "org.apache.commons.lang3.builder.IDKey:69": {
+            "class": "org.apache.commons.lang3.builder.IDKey", 
+            "ef": 1, 
+            "ep": 7, 
+            "line": 69, 
+            "metrics": {
+                "ample": 0.9958058717795086, 
+                "gzoltar": 0.35355339059327373, 
+                "ochiai": 0.35355339059327373, 
+                "tarantula": 0.9958233890214797
+            }, 
+            "nf": 0, 
+            "np": 1662, 
+            "rank": {
+                "ample": 27, 
+                "ochiai": 8, 
+                "tarantula": 27
+            }
+        }, 
+        "org.apache.commons.lang3.builder.IDKey:73": {
+            "class": "org.apache.commons.lang3.builder.IDKey", 
+            "ef": 1, 
+            "ep": 7, 
+            "line": 73, 
+            "metrics": {
+                "ample": 0.9958058717795086, 
+                "gzoltar": 0.35355339059327373, 
+                "ochiai": 0.35355339059327373, 
+                "tarantula": 0.9958233890214797
+            }, 
+            "nf": 0, 
+            "np": 1662, 
+            "rank": {
+                "ample": 22, 
+                "ochiai": 9, 
+                "tarantula": 22
+            }
+        }
+    }
+}

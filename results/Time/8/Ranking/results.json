@@ -1,0 +1,3223 @@
+{
+    "date": "2015-05-11T07:52:54.520745", 
+    "executedTest": 11915, 
+    "failedTest": 4, 
+    "failedTestDetails": [
+        {
+            "class": "org.joda.time.TestDateTimeZone", 
+            "method": "testForOffsetHoursMinutes_int_int"
+        }, 
+        {
+            "class": "org.joda.time.TestDateTimeZone", 
+            "method": "testForOffsetHoursMinutes_int_int"
+        }, 
+        {
+            "class": "junit.framework.TestSuite$1", 
+            "method": "warning"
+        }, 
+        {
+            "class": "org.joda.time.TestDateTimeZone", 
+            "method": "testForOffsetHoursMinutes_int_int"
+        }
+    ], 
+    "modifiedLines": [
+        {
+            "class": "a.org.joda.time.DateTimeZone", 
+            "line": 279
+        }, 
+        {
+            "class": "a.org.joda.time.DateTimeZone", 
+            "line": 282
+        }, 
+        {
+            "class": "a.org.joda.time.DateTimeZone", 
+            "line": 283
+        }, 
+        {
+            "class": "a.org.joda.time.DateTimeZone", 
+            "line": 284
+        }, 
+        {
+            "class": "a.org.joda.time.DateTimeZone", 
+            "line": 289
+        }
+    ], 
+    "nbsuspicious": 167, 
+    "node": "griffon-11.nancy.grid5000.fr\n", 
+    "successfulTest": 11911, 
+    "suspicious": {
+        "org.joda.time.DateTimeUtils:282": {
+            "class": "org.joda.time.DateTimeUtils", 
+            "ef": 3, 
+            "ep": 8793, 
+            "line": 282, 
+            "metrics": {
+                "ample": 0.011774829989085744, 
+                "gzoltar": 0.01599368906915874, 
+                "ochiai": 0.01599368906915874, 
+                "tarantula": 0.5039559974613921
+            }, 
+            "nf": 1, 
+            "np": 3118, 
+            "rank": {
+                "ample": 160, 
+                "ochiai": 157, 
+                "tarantula": 157
+            }
+        }, 
+        "org.joda.time.DateTimeUtils:285": {
+            "class": "org.joda.time.DateTimeUtils", 
+            "ef": 3, 
+            "ep": 7632, 
+            "line": 285, 
+            "metrics": {
+                "ample": 0.10924775417681132, 
+                "gzoltar": 0.01716669686736365, 
+                "ochiai": 0.01716669686736365, 
+                "tarantula": 0.5392764974872096
+            }, 
+            "nf": 1, 
+            "np": 4279, 
+            "rank": {
+                "ample": 156, 
+                "ochiai": 156, 
+                "tarantula": 156
+            }
+        }, 
+        "org.joda.time.DateTimeZone$1:631": {
+            "class": "org.joda.time.DateTimeZone$1", 
+            "ef": 3, 
+            "ep": 31, 
+            "line": 631, 
+            "metrics": {
+                "ample": 0.7473973637813786, 
+                "gzoltar": 0.25724787771376323, 
+                "ochiai": 0.25724787771376323, 
+                "tarantula": 0.9965418188917087
+            }, 
+            "nf": 1, 
+            "np": 11880, 
+            "rank": {
+                "ample": 13, 
+                "ochiai": 9, 
+                "tarantula": 13
+            }
+        }, 
+        "org.joda.time.DateTimeZone$1:634": {
+            "class": "org.joda.time.DateTimeZone$1", 
+            "ef": 3, 
+            "ep": 31, 
+            "line": 634, 
+            "metrics": {
+                "ample": 0.7473973637813786, 
+                "gzoltar": 0.25724787771376323, 
+                "ochiai": 0.25724787771376323, 
+                "tarantula": 0.9965418188917087
+            }, 
+            "nf": 1, 
+            "np": 11880, 
+            "rank": {
+                "ample": 14, 
+                "ochiai": 10, 
+                "tarantula": 14
+            }
+        }, 
+        "org.joda.time.DateTimeZone:134": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 9813, 
+            "line": 134, 
+            "metrics": {
+                "ample": 0.07386029720426501, 
+                "gzoltar": 0.015139934078851877, 
+                "ochiai": 0.015139934078851877, 
+                "tarantula": 0.4765353070614123
+            }, 
+            "nf": 1, 
+            "np": 2098, 
+            "rank": {
+                "ample": 158, 
+                "ochiai": 165, 
+                "tarantula": 166
+            }
+        }, 
+        "org.joda.time.DateTimeZone:135": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 9813, 
+            "line": 135, 
+            "metrics": {
+                "ample": 0.07386029720426501, 
+                "gzoltar": 0.015139934078851877, 
+                "ochiai": 0.015139934078851877, 
+                "tarantula": 0.4765353070614123
+            }, 
+            "nf": 1, 
+            "np": 2098, 
+            "rank": {
+                "ample": 159, 
+                "ochiai": 166, 
+                "tarantula": 167
+            }
+        }, 
+        "org.joda.time.DateTimeZone:162": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 9813, 
+            "line": 162, 
+            "metrics": {
+                "ample": 0.07386029720426501, 
+                "gzoltar": 0.015139934078851877, 
+                "ochiai": 0.015139934078851877, 
+                "tarantula": 0.4765353070614123
+            }, 
+            "nf": 1, 
+            "np": 2098, 
+            "rank": {
+                "ample": 157, 
+                "ochiai": 167, 
+                "tarantula": 165
+            }
+        }, 
+        "org.joda.time.DateTimeZone:175": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 8934, 
+            "line": 175, 
+            "metrics": {
+                "ample": 6.296700528918286e-05, 
+                "gzoltar": 0.01586702039938442, 
+                "ochiai": 0.01586702039938442, 
+                "tarantula": 0.49997901187927635
+            }, 
+            "nf": 1, 
+            "np": 2977, 
+            "rank": {
+                "ample": 167, 
+                "ochiai": 158, 
+                "tarantula": 164
+            }
+        }, 
+        "org.joda.time.DateTimeZone:176": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 8934, 
+            "line": 176, 
+            "metrics": {
+                "ample": 6.296700528918286e-05, 
+                "gzoltar": 0.01586702039938442, 
+                "ochiai": 0.01586702039938442, 
+                "tarantula": 0.49997901187927635
+            }, 
+            "nf": 1, 
+            "np": 2977, 
+            "rank": {
+                "ample": 161, 
+                "ochiai": 159, 
+                "tarantula": 158
+            }
+        }, 
+        "org.joda.time.DateTimeZone:179": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 8934, 
+            "line": 179, 
+            "metrics": {
+                "ample": 6.296700528918286e-05, 
+                "gzoltar": 0.01586702039938442, 
+                "ochiai": 0.01586702039938442, 
+                "tarantula": 0.49997901187927635
+            }, 
+            "nf": 1, 
+            "np": 2977, 
+            "rank": {
+                "ample": 166, 
+                "ochiai": 160, 
+                "tarantula": 163
+            }
+        }, 
+        "org.joda.time.DateTimeZone:182": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 8934, 
+            "line": 182, 
+            "metrics": {
+                "ample": 6.296700528918286e-05, 
+                "gzoltar": 0.01586702039938442, 
+                "ochiai": 0.01586702039938442, 
+                "tarantula": 0.49997901187927635
+            }, 
+            "nf": 1, 
+            "np": 2977, 
+            "rank": {
+                "ample": 163, 
+                "ochiai": 161, 
+                "tarantula": 160
+            }
+        }, 
+        "org.joda.time.DateTimeZone:183": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 8934, 
+            "line": 183, 
+            "metrics": {
+                "ample": 6.296700528918286e-05, 
+                "gzoltar": 0.01586702039938442, 
+                "ochiai": 0.01586702039938442, 
+                "tarantula": 0.49997901187927635
+            }, 
+            "nf": 1, 
+            "np": 2977, 
+            "rank": {
+                "ample": 162, 
+                "ochiai": 162, 
+                "tarantula": 159
+            }
+        }, 
+        "org.joda.time.DateTimeZone:184": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 8934, 
+            "line": 184, 
+            "metrics": {
+                "ample": 6.296700528918286e-05, 
+                "gzoltar": 0.01586702039938442, 
+                "ochiai": 0.01586702039938442, 
+                "tarantula": 0.49997901187927635
+            }, 
+            "nf": 1, 
+            "np": 2977, 
+            "rank": {
+                "ample": 165, 
+                "ochiai": 163, 
+                "tarantula": 162
+            }
+        }, 
+        "org.joda.time.DateTimeZone:185": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 8934, 
+            "line": 185, 
+            "metrics": {
+                "ample": 6.296700528918286e-05, 
+                "gzoltar": 0.01586702039938442, 
+                "ochiai": 0.01586702039938442, 
+                "tarantula": 0.49997901187927635
+            }, 
+            "nf": 1, 
+            "np": 2977, 
+            "rank": {
+                "ample": 164, 
+                "ochiai": 164, 
+                "tarantula": 161
+            }
+        }, 
+        "org.joda.time.DateTimeZone:205": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 480, 
+            "line": 205, 
+            "metrics": {
+                "ample": 0.7097011166148938, 
+                "gzoltar": 0.0682523632789935, 
+                "ochiai": 0.0682523632789935, 
+                "tarantula": 0.9490080471675564
+            }, 
+            "nf": 1, 
+            "np": 11431, 
+            "rank": {
+                "ample": 106, 
+                "ochiai": 108, 
+                "tarantula": 109
+            }
+        }, 
+        "org.joda.time.DateTimeZone:208": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 480, 
+            "line": 208, 
+            "metrics": {
+                "ample": 0.7097011166148938, 
+                "gzoltar": 0.0682523632789935, 
+                "ochiai": 0.0682523632789935, 
+                "tarantula": 0.9490080471675564
+            }, 
+            "nf": 1, 
+            "np": 11431, 
+            "rank": {
+                "ample": 105, 
+                "ochiai": 109, 
+                "tarantula": 108
+            }
+        }, 
+        "org.joda.time.DateTimeZone:211": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 462, 
+            "line": 211, 
+            "metrics": {
+                "ample": 0.7112123247418353, 
+                "gzoltar": 0.06956083436402524, 
+                "ochiai": 0.06956083436402524, 
+                "tarantula": 0.9508262153747904
+            }, 
+            "nf": 1, 
+            "np": 11449, 
+            "rank": {
+                "ample": 101, 
+                "ochiai": 104, 
+                "tarantula": 104
+            }
+        }, 
+        "org.joda.time.DateTimeZone:212": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 462, 
+            "line": 212, 
+            "metrics": {
+                "ample": 0.7112123247418353, 
+                "gzoltar": 0.06956083436402524, 
+                "ochiai": 0.06956083436402524, 
+                "tarantula": 0.9508262153747904
+            }, 
+            "nf": 1, 
+            "np": 11449, 
+            "rank": {
+                "ample": 102, 
+                "ochiai": 105, 
+                "tarantula": 105
+            }
+        }, 
+        "org.joda.time.DateTimeZone:215": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 26, 
+            "line": 215, 
+            "metrics": {
+                "ample": 0.7478171438166401, 
+                "gzoltar": 0.2785430072655778, 
+                "ochiai": 0.2785430072655778, 
+                "tarantula": 0.9970979713703715
+            }, 
+            "nf": 1, 
+            "np": 11885, 
+            "rank": {
+                "ample": 8, 
+                "ochiai": 8, 
+                "tarantula": 8
+            }
+        }, 
+        "org.joda.time.DateTimeZone:216": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 25, 
+            "line": 216, 
+            "metrics": {
+                "ample": 0.7479010998236924, 
+                "gzoltar": 0.2834733547569204, 
+                "ochiai": 0.2834733547569204, 
+                "tarantula": 0.9972092763653615
+            }, 
+            "nf": 1, 
+            "np": 11886, 
+            "rank": {
+                "ample": 5, 
+                "ochiai": 4, 
+                "tarantula": 5
+            }
+        }, 
+        "org.joda.time.DateTimeZone:217": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 25, 
+            "line": 217, 
+            "metrics": {
+                "ample": 0.7479010998236924, 
+                "gzoltar": 0.2834733547569204, 
+                "ochiai": 0.2834733547569204, 
+                "tarantula": 0.9972092763653615
+            }, 
+            "nf": 1, 
+            "np": 11886, 
+            "rank": {
+                "ample": 4, 
+                "ochiai": 5, 
+                "tarantula": 4
+            }
+        }, 
+        "org.joda.time.DateTimeZone:218": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 3, 
+            "line": 218, 
+            "metrics": {
+                "ample": 0.749748131978843, 
+                "gzoltar": 0.6123724356957946, 
+                "ochiai": 0.6123724356957946, 
+                "tarantula": 0.9996642887117079
+            }, 
+            "nf": 1, 
+            "np": 11908, 
+            "rank": {
+                "ample": 2, 
+                "ochiai": 3, 
+                "tarantula": 2
+            }
+        }, 
+        "org.joda.time.DateTimeZone:220": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 25, 
+            "line": 220, 
+            "metrics": {
+                "ample": 0.7479010998236924, 
+                "gzoltar": 0.2834733547569204, 
+                "ochiai": 0.2834733547569204, 
+                "tarantula": 0.9972092763653615
+            }, 
+            "nf": 1, 
+            "np": 11886, 
+            "rank": {
+                "ample": 6, 
+                "ochiai": 6, 
+                "tarantula": 6
+            }
+        }, 
+        "org.joda.time.DateTimeZone:221": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 25, 
+            "line": 221, 
+            "metrics": {
+                "ample": 0.7479010998236924, 
+                "gzoltar": 0.2834733547569204, 
+                "ochiai": 0.2834733547569204, 
+                "tarantula": 0.9972092763653615
+            }, 
+            "nf": 1, 
+            "np": 11886, 
+            "rank": {
+                "ample": 7, 
+                "ochiai": 7, 
+                "tarantula": 7
+            }
+        }, 
+        "org.joda.time.DateTimeZone:273": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 58, 
+            "line": 273, 
+            "metrics": {
+                "ample": 0.7451305515909663, 
+                "gzoltar": 0.19205531989934396, 
+                "ochiai": 0.19205531989934396, 
+                "tarantula": 0.9935492840261365
+            }, 
+            "nf": 1, 
+            "np": 11853, 
+            "rank": {
+                "ample": 23, 
+                "ochiai": 19, 
+                "tarantula": 26
+            }
+        }, 
+        "org.joda.time.DateTimeZone:274": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 3, 
+            "line": 274, 
+            "metrics": {
+                "ample": 0.749748131978843, 
+                "gzoltar": 0.6123724356957946, 
+                "ochiai": 0.6123724356957946, 
+                "tarantula": 0.9996642887117079
+            }, 
+            "nf": 1, 
+            "np": 11908, 
+            "rank": {
+                "ample": 3, 
+                "ochiai": 2, 
+                "tarantula": 3
+            }
+        }, 
+        "org.joda.time.DateTimeZone:276": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 58, 
+            "line": 276, 
+            "metrics": {
+                "ample": 0.7451305515909663, 
+                "gzoltar": 0.19205531989934396, 
+                "ochiai": 0.19205531989934396, 
+                "tarantula": 0.9935492840261365
+            }, 
+            "nf": 1, 
+            "np": 11853, 
+            "rank": {
+                "ample": 22, 
+                "ochiai": 20, 
+                "tarantula": 25
+            }
+        }, 
+        "org.joda.time.DateTimeZone:279": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 58, 
+            "line": 279, 
+            "metrics": {
+                "ample": 0.7451305515909663, 
+                "gzoltar": 0.19205531989934396, 
+                "ochiai": 0.19205531989934396, 
+                "tarantula": 0.9935492840261365
+            }, 
+            "nf": 1, 
+            "np": 11853, 
+            "rank": {
+                "ample": 24, 
+                "ochiai": 21, 
+                "tarantula": 27
+            }
+        }, 
+        "org.joda.time.DateTimeZone:280": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 0, 
+            "line": 280, 
+            "metrics": {
+                "ample": 0.75, 
+                "gzoltar": 0.8660254037844387, 
+                "ochiai": 0.8660254037844387, 
+                "tarantula": 1.0
+            }, 
+            "nf": 1, 
+            "np": 11911, 
+            "rank": {
+                "ample": 1, 
+                "ochiai": 1, 
+                "tarantula": 1
+            }
+        }, 
+        "org.joda.time.DateTimeZone:282": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 58, 
+            "line": 282, 
+            "metrics": {
+                "ample": 0.7451305515909663, 
+                "gzoltar": 0.19205531989934396, 
+                "ochiai": 0.19205531989934396, 
+                "tarantula": 0.9935492840261365
+            }, 
+            "nf": 1, 
+            "np": 11853, 
+            "rank": {
+                "ample": 25, 
+                "ochiai": 22, 
+                "tarantula": 28
+            }
+        }, 
+        "org.joda.time.DateTimeZone:284": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 58, 
+            "line": 284, 
+            "metrics": {
+                "ample": 0.7451305515909663, 
+                "gzoltar": 0.19205531989934396, 
+                "ochiai": 0.19205531989934396, 
+                "tarantula": 0.9935492840261365
+            }, 
+            "nf": 1, 
+            "np": 11853, 
+            "rank": {
+                "ample": 26, 
+                "ochiai": 23, 
+                "tarantula": 29
+            }
+        }, 
+        "org.joda.time.DateTimeZone:285": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 58, 
+            "line": 285, 
+            "metrics": {
+                "ample": 0.7451305515909663, 
+                "gzoltar": 0.19205531989934396, 
+                "ochiai": 0.19205531989934396, 
+                "tarantula": 0.9935492840261365
+            }, 
+            "nf": 1, 
+            "np": 11853, 
+            "rank": {
+                "ample": 27, 
+                "ochiai": 24, 
+                "tarantula": 30
+            }
+        }, 
+        "org.joda.time.DateTimeZone:288": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 46, 
+            "line": 288, 
+            "metrics": {
+                "ample": 0.746138023675594, 
+                "gzoltar": 0.21428571428571427, 
+                "ochiai": 0.21428571428571427, 
+                "tarantula": 0.9948770777069355
+            }, 
+            "nf": 1, 
+            "np": 11865, 
+            "rank": {
+                "ample": 18, 
+                "ochiai": 18, 
+                "tarantula": 21
+            }
+        }, 
+        "org.joda.time.DateTimeZone:290": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 58, 
+            "line": 290, 
+            "metrics": {
+                "ample": 0.7451305515909663, 
+                "gzoltar": 0.19205531989934396, 
+                "ochiai": 0.19205531989934396, 
+                "tarantula": 0.9935492840261365
+            }, 
+            "nf": 1, 
+            "np": 11853, 
+            "rank": {
+                "ample": 19, 
+                "ochiai": 25, 
+                "tarantula": 22
+            }
+        }, 
+        "org.joda.time.DateTimeZone:293": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 58, 
+            "line": 293, 
+            "metrics": {
+                "ample": 0.7451305515909663, 
+                "gzoltar": 0.19205531989934396, 
+                "ochiai": 0.19205531989934396, 
+                "tarantula": 0.9935492840261365
+            }, 
+            "nf": 1, 
+            "np": 11853, 
+            "rank": {
+                "ample": 20, 
+                "ochiai": 26, 
+                "tarantula": 23
+            }
+        }, 
+        "org.joda.time.DateTimeZone:294": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 58, 
+            "line": 294, 
+            "metrics": {
+                "ample": 0.7451305515909663, 
+                "gzoltar": 0.19205531989934396, 
+                "ochiai": 0.19205531989934396, 
+                "tarantula": 0.9935492840261365
+            }, 
+            "nf": 1, 
+            "np": 11853, 
+            "rank": {
+                "ample": 21, 
+                "ochiai": 27, 
+                "tarantula": 24
+            }
+        }, 
+        "org.joda.time.DateTimeZone:304": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 88, 
+            "line": 304, 
+            "metrics": {
+                "ample": 0.7426118713793972, 
+                "gzoltar": 0.15724272550828775, 
+                "ochiai": 0.15724272550828775, 
+                "tarantula": 0.9902452542607731
+            }, 
+            "nf": 1, 
+            "np": 11823, 
+            "rank": {
+                "ample": 30, 
+                "ochiai": 30, 
+                "tarantula": 33
+            }
+        }, 
+        "org.joda.time.DateTimeZone:307": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 88, 
+            "line": 307, 
+            "metrics": {
+                "ample": 0.7426118713793972, 
+                "gzoltar": 0.15724272550828775, 
+                "ochiai": 0.15724272550828775, 
+                "tarantula": 0.9902452542607731
+            }, 
+            "nf": 1, 
+            "np": 11823, 
+            "rank": {
+                "ample": 29, 
+                "ochiai": 31, 
+                "tarantula": 32
+            }
+        }, 
+        "org.joda.time.DateTimeZone:308": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 88, 
+            "line": 308, 
+            "metrics": {
+                "ample": 0.7426118713793972, 
+                "gzoltar": 0.15724272550828775, 
+                "ochiai": 0.15724272550828775, 
+                "tarantula": 0.9902452542607731
+            }, 
+            "nf": 1, 
+            "np": 11823, 
+            "rank": {
+                "ample": 31, 
+                "ochiai": 32, 
+                "tarantula": 34
+            }
+        }, 
+        "org.joda.time.DateTimeZone:374": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 113, 
+            "line": 374, 
+            "metrics": {
+                "ample": 0.7405129712030896, 
+                "gzoltar": 0.1392715036327889, 
+                "ochiai": 0.1392715036327889, 
+                "tarantula": 0.9875086361752107
+            }, 
+            "nf": 1, 
+            "np": 11798, 
+            "rank": {
+                "ample": 40, 
+                "ochiai": 40, 
+                "tarantula": 43
+            }
+        }, 
+        "org.joda.time.DateTimeZone:377": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 113, 
+            "line": 377, 
+            "metrics": {
+                "ample": 0.7405129712030896, 
+                "gzoltar": 0.1392715036327889, 
+                "ochiai": 0.1392715036327889, 
+                "tarantula": 0.9875086361752107
+            }, 
+            "nf": 1, 
+            "np": 11798, 
+            "rank": {
+                "ample": 39, 
+                "ochiai": 41, 
+                "tarantula": 42
+            }
+        }, 
+        "org.joda.time.DateTimeZone:381": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 113, 
+            "line": 381, 
+            "metrics": {
+                "ample": 0.7405129712030896, 
+                "gzoltar": 0.1392715036327889, 
+                "ochiai": 0.1392715036327889, 
+                "tarantula": 0.9875086361752107
+            }, 
+            "nf": 1, 
+            "np": 11798, 
+            "rank": {
+                "ample": 38, 
+                "ochiai": 42, 
+                "tarantula": 41
+            }
+        }, 
+        "org.joda.time.DateTimeZone:382": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 113, 
+            "line": 382, 
+            "metrics": {
+                "ample": 0.7405129712030896, 
+                "gzoltar": 0.1392715036327889, 
+                "ochiai": 0.1392715036327889, 
+                "tarantula": 0.9875086361752107
+            }, 
+            "nf": 1, 
+            "np": 11798, 
+            "rank": {
+                "ample": 37, 
+                "ochiai": 43, 
+                "tarantula": 40
+            }
+        }, 
+        "org.joda.time.DateTimeZone:383": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 107, 
+            "line": 383, 
+            "metrics": {
+                "ample": 0.7410167072454034, 
+                "gzoltar": 0.14301938838683884, 
+                "ochiai": 0.14301938838683884, 
+                "tarantula": 0.9881640441359475
+            }, 
+            "nf": 1, 
+            "np": 11804, 
+            "rank": {
+                "ample": 33, 
+                "ochiai": 36, 
+                "tarantula": 36
+            }
+        }, 
+        "org.joda.time.DateTimeZone:384": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 107, 
+            "line": 384, 
+            "metrics": {
+                "ample": 0.7410167072454034, 
+                "gzoltar": 0.14301938838683884, 
+                "ochiai": 0.14301938838683884, 
+                "tarantula": 0.9881640441359475
+            }, 
+            "nf": 1, 
+            "np": 11804, 
+            "rank": {
+                "ample": 35, 
+                "ochiai": 37, 
+                "tarantula": 38
+            }
+        }, 
+        "org.joda.time.DateTimeZone:385": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 107, 
+            "line": 385, 
+            "metrics": {
+                "ample": 0.7410167072454034, 
+                "gzoltar": 0.14301938838683884, 
+                "ochiai": 0.14301938838683884, 
+                "tarantula": 0.9881640441359475
+            }, 
+            "nf": 1, 
+            "np": 11804, 
+            "rank": {
+                "ample": 34, 
+                "ochiai": 38, 
+                "tarantula": 37
+            }
+        }, 
+        "org.joda.time.DateTimeZone:388": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 1, 
+            "ep": 11, 
+            "line": 388, 
+            "metrics": {
+                "ample": 0.24907648392242465, 
+                "gzoltar": 0.14433756729740646, 
+                "ochiai": 0.14433756729740646, 
+                "tarantula": 0.9963195315767461
+            }, 
+            "nf": 3, 
+            "np": 11900, 
+            "rank": {
+                "ample": 153, 
+                "ochiai": 33, 
+                "tarantula": 15
+            }
+        }, 
+        "org.joda.time.DateTimeZone:389": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 1, 
+            "ep": 11, 
+            "line": 389, 
+            "metrics": {
+                "ample": 0.24907648392242465, 
+                "gzoltar": 0.14433756729740646, 
+                "ochiai": 0.14433756729740646, 
+                "tarantula": 0.9963195315767461
+            }, 
+            "nf": 3, 
+            "np": 11900, 
+            "rank": {
+                "ample": 155, 
+                "ochiai": 34, 
+                "tarantula": 17
+            }
+        }, 
+        "org.joda.time.DateTimeZone:390": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 1, 
+            "ep": 11, 
+            "line": 390, 
+            "metrics": {
+                "ample": 0.24907648392242465, 
+                "gzoltar": 0.14433756729740646, 
+                "ochiai": 0.14433756729740646, 
+                "tarantula": 0.9963195315767461
+            }, 
+            "nf": 3, 
+            "np": 11900, 
+            "rank": {
+                "ample": 154, 
+                "ochiai": 35, 
+                "tarantula": 16
+            }
+        }, 
+        "org.joda.time.DateTimeZone:629": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 31, 
+            "line": 629, 
+            "metrics": {
+                "ample": 0.7473973637813786, 
+                "gzoltar": 0.25724787771376323, 
+                "ochiai": 0.25724787771376323, 
+                "tarantula": 0.9965418188917087
+            }, 
+            "nf": 1, 
+            "np": 11880, 
+            "rank": {
+                "ample": 10, 
+                "ochiai": 11, 
+                "tarantula": 10
+            }
+        }, 
+        "org.joda.time.DateTimeZone:643": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 31, 
+            "line": 643, 
+            "metrics": {
+                "ample": 0.7473973637813786, 
+                "gzoltar": 0.25724787771376323, 
+                "ochiai": 0.25724787771376323, 
+                "tarantula": 0.9965418188917087
+            }, 
+            "nf": 1, 
+            "np": 11880, 
+            "rank": {
+                "ample": 11, 
+                "ochiai": 12, 
+                "tarantula": 11
+            }
+        }, 
+        "org.joda.time.DateTimeZone:656": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 122, 
+            "line": 656, 
+            "metrics": {
+                "ample": 0.7397573671396188, 
+                "gzoltar": 0.13416407864998736, 
+                "ochiai": 0.13416407864998736, 
+                "tarantula": 0.9865271527566881
+            }, 
+            "nf": 1, 
+            "np": 11789, 
+            "rank": {
+                "ample": 44, 
+                "ochiai": 45, 
+                "tarantula": 47
+            }
+        }, 
+        "org.joda.time.DateTimeZone:657": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 122, 
+            "line": 657, 
+            "metrics": {
+                "ample": 0.7397573671396188, 
+                "gzoltar": 0.13416407864998736, 
+                "ochiai": 0.13416407864998736, 
+                "tarantula": 0.9865271527566881
+            }, 
+            "nf": 1, 
+            "np": 11789, 
+            "rank": {
+                "ample": 43, 
+                "ochiai": 46, 
+                "tarantula": 46
+            }
+        }, 
+        "org.joda.time.DateTimeZone:658": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 116, 
+            "line": 658, 
+            "metrics": {
+                "ample": 0.7402611031819326, 
+                "gzoltar": 0.1375047745542317, 
+                "ochiai": 0.1375047745542317, 
+                "tarantula": 0.9871812581153133
+            }, 
+            "nf": 1, 
+            "np": 11795, 
+            "rank": {
+                "ample": 41, 
+                "ochiai": 44, 
+                "tarantula": 44
+            }
+        }, 
+        "org.joda.time.DateTimeZone:660": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 36, 
+            "line": 660, 
+            "metrics": {
+                "ample": 0.746977583746117, 
+                "gzoltar": 0.24019223070763068, 
+                "ochiai": 0.24019223070763068, 
+                "tarantula": 0.9959862864788025
+            }, 
+            "nf": 1, 
+            "np": 11875, 
+            "rank": {
+                "ample": 16, 
+                "ochiai": 16, 
+                "tarantula": 19
+            }
+        }, 
+        "org.joda.time.DateTimeZone:661": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 36, 
+            "line": 661, 
+            "metrics": {
+                "ample": 0.746977583746117, 
+                "gzoltar": 0.24019223070763068, 
+                "ochiai": 0.24019223070763068, 
+                "tarantula": 0.9959862864788025
+            }, 
+            "nf": 1, 
+            "np": 11875, 
+            "rank": {
+                "ample": 17, 
+                "ochiai": 17, 
+                "tarantula": 20
+            }
+        }, 
+        "org.joda.time.DateTimeZone:664": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 122, 
+            "line": 664, 
+            "metrics": {
+                "ample": 0.7397573671396188, 
+                "gzoltar": 0.13416407864998736, 
+                "ochiai": 0.13416407864998736, 
+                "tarantula": 0.9865271527566881
+            }, 
+            "nf": 1, 
+            "np": 11789, 
+            "rank": {
+                "ample": 46, 
+                "ochiai": 47, 
+                "tarantula": 49
+            }
+        }, 
+        "org.joda.time.DateTimeZone:665": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 122, 
+            "line": 665, 
+            "metrics": {
+                "ample": 0.7397573671396188, 
+                "gzoltar": 0.13416407864998736, 
+                "ochiai": 0.13416407864998736, 
+                "tarantula": 0.9865271527566881
+            }, 
+            "nf": 1, 
+            "np": 11789, 
+            "rank": {
+                "ample": 47, 
+                "ochiai": 48, 
+                "tarantula": 50
+            }
+        }, 
+        "org.joda.time.DateTimeZone:666": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 122, 
+            "line": 666, 
+            "metrics": {
+                "ample": 0.7397573671396188, 
+                "gzoltar": 0.13416407864998736, 
+                "ochiai": 0.13416407864998736, 
+                "tarantula": 0.9865271527566881
+            }, 
+            "nf": 1, 
+            "np": 11789, 
+            "rank": {
+                "ample": 48, 
+                "ochiai": 49, 
+                "tarantula": 51
+            }
+        }, 
+        "org.joda.time.DateTimeZone:668": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 122, 
+            "line": 668, 
+            "metrics": {
+                "ample": 0.7397573671396188, 
+                "gzoltar": 0.13416407864998736, 
+                "ochiai": 0.13416407864998736, 
+                "tarantula": 0.9865271527566881
+            }, 
+            "nf": 1, 
+            "np": 11789, 
+            "rank": {
+                "ample": 45, 
+                "ochiai": 50, 
+                "tarantula": 48
+            }
+        }, 
+        "org.joda.time.DateTimeZone:669": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 122, 
+            "line": 669, 
+            "metrics": {
+                "ample": 0.7397573671396188, 
+                "gzoltar": 0.13416407864998736, 
+                "ochiai": 0.13416407864998736, 
+                "tarantula": 0.9865271527566881
+            }, 
+            "nf": 1, 
+            "np": 11789, 
+            "rank": {
+                "ample": 42, 
+                "ochiai": 51, 
+                "tarantula": 45
+            }
+        }, 
+        "org.joda.time.DateTimeZone:670": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 122, 
+            "line": 670, 
+            "metrics": {
+                "ample": 0.7397573671396188, 
+                "gzoltar": 0.13416407864998736, 
+                "ochiai": 0.13416407864998736, 
+                "tarantula": 0.9865271527566881
+            }, 
+            "nf": 1, 
+            "np": 11789, 
+            "rank": {
+                "ample": 52, 
+                "ochiai": 52, 
+                "tarantula": 55
+            }
+        }, 
+        "org.joda.time.DateTimeZone:671": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 122, 
+            "line": 671, 
+            "metrics": {
+                "ample": 0.7397573671396188, 
+                "gzoltar": 0.13416407864998736, 
+                "ochiai": 0.13416407864998736, 
+                "tarantula": 0.9865271527566881
+            }, 
+            "nf": 1, 
+            "np": 11789, 
+            "rank": {
+                "ample": 51, 
+                "ochiai": 53, 
+                "tarantula": 54
+            }
+        }, 
+        "org.joda.time.DateTimeZone:672": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 122, 
+            "line": 672, 
+            "metrics": {
+                "ample": 0.7397573671396188, 
+                "gzoltar": 0.13416407864998736, 
+                "ochiai": 0.13416407864998736, 
+                "tarantula": 0.9865271527566881
+            }, 
+            "nf": 1, 
+            "np": 11789, 
+            "rank": {
+                "ample": 50, 
+                "ochiai": 54, 
+                "tarantula": 53
+            }
+        }, 
+        "org.joda.time.DateTimeZone:673": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 122, 
+            "line": 673, 
+            "metrics": {
+                "ample": 0.7397573671396188, 
+                "gzoltar": 0.13416407864998736, 
+                "ochiai": 0.13416407864998736, 
+                "tarantula": 0.9865271527566881
+            }, 
+            "nf": 1, 
+            "np": 11789, 
+            "rank": {
+                "ample": 49, 
+                "ochiai": 55, 
+                "tarantula": 52
+            }
+        }, 
+        "org.joda.time.DateTimeZone:695": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 31, 
+            "line": 695, 
+            "metrics": {
+                "ample": 0.7473973637813786, 
+                "gzoltar": 0.25724787771376323, 
+                "ochiai": 0.25724787771376323, 
+                "tarantula": 0.9965418188917087
+            }, 
+            "nf": 1, 
+            "np": 11880, 
+            "rank": {
+                "ample": 9, 
+                "ochiai": 13, 
+                "tarantula": 9
+            }
+        }, 
+        "org.joda.time.DateTimeZone:700": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 31, 
+            "line": 700, 
+            "metrics": {
+                "ample": 0.7473973637813786, 
+                "gzoltar": 0.25724787771376323, 
+                "ochiai": 0.25724787771376323, 
+                "tarantula": 0.9965418188917087
+            }, 
+            "nf": 1, 
+            "np": 11880, 
+            "rank": {
+                "ample": 12, 
+                "ochiai": 14, 
+                "tarantula": 12
+            }
+        }, 
+        "org.joda.time.field.FieldUtils:119": {
+            "class": "org.joda.time.field.FieldUtils", 
+            "ef": 3, 
+            "ep": 166, 
+            "line": 119, 
+            "metrics": {
+                "ample": 0.7360633028293174, 
+                "gzoltar": 0.11538461538461539, 
+                "ochiai": 0.11538461538461539, 
+                "tarantula": 0.9817567381927081
+            }, 
+            "nf": 1, 
+            "np": 11745, 
+            "rank": {
+                "ample": 53, 
+                "ochiai": 56, 
+                "tarantula": 56
+            }
+        }, 
+        "org.joda.time.field.FieldUtils:120": {
+            "class": "org.joda.time.field.FieldUtils", 
+            "ef": 3, 
+            "ep": 166, 
+            "line": 120, 
+            "metrics": {
+                "ample": 0.7360633028293174, 
+                "gzoltar": 0.11538461538461539, 
+                "ochiai": 0.11538461538461539, 
+                "tarantula": 0.9817567381927081
+            }, 
+            "nf": 1, 
+            "np": 11745, 
+            "rank": {
+                "ample": 55, 
+                "ochiai": 57, 
+                "tarantula": 58
+            }
+        }, 
+        "org.joda.time.field.FieldUtils:123": {
+            "class": "org.joda.time.field.FieldUtils", 
+            "ef": 3, 
+            "ep": 166, 
+            "line": 123, 
+            "metrics": {
+                "ample": 0.7360633028293174, 
+                "gzoltar": 0.11538461538461539, 
+                "ochiai": 0.11538461538461539, 
+                "tarantula": 0.9817567381927081
+            }, 
+            "nf": 1, 
+            "np": 11745, 
+            "rank": {
+                "ample": 54, 
+                "ochiai": 58, 
+                "tarantula": 57
+            }
+        }, 
+        "org.joda.time.format.DateTimeFormatter:257": {
+            "class": "org.joda.time.format.DateTimeFormatter", 
+            "ef": 3, 
+            "ep": 634, 
+            "line": 257, 
+            "metrics": {
+                "ample": 0.6967718915288389, 
+                "gzoltar": 0.05943216388127455, 
+                "ochiai": 0.05943216388127455, 
+                "tarantula": 0.933732263712143
+            }, 
+            "nf": 1, 
+            "np": 11277, 
+            "rank": {
+                "ample": 118, 
+                "ochiai": 121, 
+                "tarantula": 121
+            }
+        }, 
+        "org.joda.time.format.DateTimeFormatter:260": {
+            "class": "org.joda.time.format.DateTimeFormatter", 
+            "ef": 3, 
+            "ep": 547, 
+            "line": 260, 
+            "metrics": {
+                "ample": 0.7040760641423894, 
+                "gzoltar": 0.06396021490668312, 
+                "ochiai": 0.06396021490668312, 
+                "tarantula": 0.942301099654545
+            }, 
+            "nf": 1, 
+            "np": 11364, 
+            "rank": {
+                "ample": 112, 
+                "ochiai": 115, 
+                "tarantula": 115
+            }
+        }, 
+        "org.joda.time.format.DateTimeFormatter:740": {
+            "class": "org.joda.time.format.DateTimeFormatter", 
+            "ef": 3, 
+            "ep": 607, 
+            "line": 740, 
+            "metrics": {
+                "ample": 0.6990387037192511, 
+                "gzoltar": 0.060733224763418706, 
+                "ochiai": 0.060733224763418706, 
+                "tarantula": 0.9363748329446294
+            }, 
+            "nf": 1, 
+            "np": 11304, 
+            "rank": {
+                "ample": 116, 
+                "ochiai": 116, 
+                "tarantula": 119
+            }
+        }, 
+        "org.joda.time.format.DateTimeFormatter:742": {
+            "class": "org.joda.time.format.DateTimeFormatter", 
+            "ef": 3, 
+            "ep": 607, 
+            "line": 742, 
+            "metrics": {
+                "ample": 0.6990387037192511, 
+                "gzoltar": 0.060733224763418706, 
+                "ochiai": 0.060733224763418706, 
+                "tarantula": 0.9363748329446294
+            }, 
+            "nf": 1, 
+            "np": 11304, 
+            "rank": {
+                "ample": 117, 
+                "ochiai": 117, 
+                "tarantula": 120
+            }
+        }, 
+        "org.joda.time.format.DateTimeFormatter:743": {
+            "class": "org.joda.time.format.DateTimeFormatter", 
+            "ef": 3, 
+            "ep": 607, 
+            "line": 743, 
+            "metrics": {
+                "ample": 0.6990387037192511, 
+                "gzoltar": 0.060733224763418706, 
+                "ochiai": 0.060733224763418706, 
+                "tarantula": 0.9363748329446294
+            }, 
+            "nf": 1, 
+            "np": 11304, 
+            "rank": {
+                "ample": 113, 
+                "ochiai": 118, 
+                "tarantula": 116
+            }
+        }, 
+        "org.joda.time.format.DateTimeFormatter:744": {
+            "class": "org.joda.time.format.DateTimeFormatter", 
+            "ef": 3, 
+            "ep": 607, 
+            "line": 744, 
+            "metrics": {
+                "ample": 0.6990387037192511, 
+                "gzoltar": 0.060733224763418706, 
+                "ochiai": 0.060733224763418706, 
+                "tarantula": 0.9363748329446294
+            }, 
+            "nf": 1, 
+            "np": 11304, 
+            "rank": {
+                "ample": 114, 
+                "ochiai": 119, 
+                "tarantula": 117
+            }
+        }, 
+        "org.joda.time.format.DateTimeFormatter:745": {
+            "class": "org.joda.time.format.DateTimeFormatter", 
+            "ef": 3, 
+            "ep": 607, 
+            "line": 745, 
+            "metrics": {
+                "ample": 0.6990387037192511, 
+                "gzoltar": 0.060733224763418706, 
+                "ochiai": 0.060733224763418706, 
+                "tarantula": 0.9363748329446294
+            }, 
+            "nf": 1, 
+            "np": 11304, 
+            "rank": {
+                "ample": 115, 
+                "ochiai": 120, 
+                "tarantula": 118
+            }
+        }, 
+        "org.joda.time.format.DateTimeFormatter:746": {
+            "class": "org.joda.time.format.DateTimeFormatter", 
+            "ef": 3, 
+            "ep": 493, 
+            "line": 746, 
+            "metrics": {
+                "ample": 0.7086096885232138, 
+                "gzoltar": 0.06735198826004059, 
+                "ochiai": 0.06735198826004059, 
+                "tarantula": 0.947699244132078
+            }, 
+            "nf": 1, 
+            "np": 11418, 
+            "rank": {
+                "ample": 110, 
+                "ochiai": 113, 
+                "tarantula": 113
+            }
+        }, 
+        "org.joda.time.format.DateTimeFormatter:747": {
+            "class": "org.joda.time.format.DateTimeFormatter", 
+            "ef": 3, 
+            "ep": 403, 
+            "line": 747, 
+            "metrics": {
+                "ample": 0.7161657291579212, 
+                "gzoltar": 0.07444375004781977, 
+                "ochiai": 0.07444375004781977, 
+                "tarantula": 0.9568349176596599
+            }, 
+            "nf": 1, 
+            "np": 11508, 
+            "rank": {
+                "ample": 100, 
+                "ochiai": 103, 
+                "tarantula": 103
+            }
+        }, 
+        "org.joda.time.format.DateTimeFormatter:925": {
+            "class": "org.joda.time.format.DateTimeFormatter", 
+            "ef": 3, 
+            "ep": 1033, 
+            "line": 925, 
+            "metrics": {
+                "ample": 0.6632734447149693, 
+                "gzoltar": 0.04660273245009, 
+                "ochiai": 0.04660273245009, 
+                "tarantula": 0.8963501818637902
+            }, 
+            "nf": 1, 
+            "np": 10878, 
+            "rank": {
+                "ample": 136, 
+                "ochiai": 138, 
+                "tarantula": 139
+            }
+        }, 
+        "org.joda.time.format.DateTimeFormatter:926": {
+            "class": "org.joda.time.format.DateTimeFormatter", 
+            "ef": 3, 
+            "ep": 1033, 
+            "line": 926, 
+            "metrics": {
+                "ample": 0.6632734447149693, 
+                "gzoltar": 0.04660273245009, 
+                "ochiai": 0.04660273245009, 
+                "tarantula": 0.8963501818637902
+            }, 
+            "nf": 1, 
+            "np": 10878, 
+            "rank": {
+                "ample": 135, 
+                "ochiai": 139, 
+                "tarantula": 138
+            }
+        }, 
+        "org.joda.time.format.DateTimeFormatter:929": {
+            "class": "org.joda.time.format.DateTimeFormatter", 
+            "ef": 3, 
+            "ep": 1027, 
+            "line": 929, 
+            "metrics": {
+                "ample": 0.6637771807572832, 
+                "gzoltar": 0.04673827146373168, 
+                "ochiai": 0.04673827146373168, 
+                "tarantula": 0.8968901382997415
+            }, 
+            "nf": 1, 
+            "np": 10884, 
+            "rank": {
+                "ample": 134, 
+                "ochiai": 137, 
+                "tarantula": 137
+            }
+        }, 
+        "org.joda.time.format.DateTimeFormatter:940": {
+            "class": "org.joda.time.format.DateTimeFormatter", 
+            "ef": 3, 
+            "ep": 2152, 
+            "line": 940, 
+            "metrics": {
+                "ample": 0.5693266728234405, 
+                "gzoltar": 0.03231228135991228, 
+                "ochiai": 0.03231228135991228, 
+                "tarantula": 0.8058681581380663
+            }, 
+            "nf": 1, 
+            "np": 9759, 
+            "rank": {
+                "ample": 149, 
+                "ochiai": 152, 
+                "tarantula": 152
+            }
+        }, 
+        "org.joda.time.format.DateTimeFormatter:941": {
+            "class": "org.joda.time.format.DateTimeFormatter", 
+            "ef": 3, 
+            "ep": 2152, 
+            "line": 941, 
+            "metrics": {
+                "ample": 0.5693266728234405, 
+                "gzoltar": 0.03231228135991228, 
+                "ochiai": 0.03231228135991228, 
+                "tarantula": 0.8058681581380663
+            }, 
+            "nf": 1, 
+            "np": 9759, 
+            "rank": {
+                "ample": 150, 
+                "ochiai": 153, 
+                "tarantula": 153
+            }
+        }, 
+        "org.joda.time.format.DateTimeFormatter:942": {
+            "class": "org.joda.time.format.DateTimeFormatter", 
+            "ef": 3, 
+            "ep": 544, 
+            "line": 942, 
+            "metrics": {
+                "ample": 0.7043279321635463, 
+                "gzoltar": 0.06413536872135192, 
+                "ochiai": 0.06413536872135192, 
+                "tarantula": 0.9425993827323327
+            }, 
+            "nf": 1, 
+            "np": 11367, 
+            "rank": {
+                "ample": 111, 
+                "ochiai": 114, 
+                "tarantula": 114
+            }
+        }, 
+        "org.joda.time.format.DateTimeFormatter:944": {
+            "class": "org.joda.time.format.DateTimeFormatter", 
+            "ef": 3, 
+            "ep": 2152, 
+            "line": 944, 
+            "metrics": {
+                "ample": 0.5693266728234405, 
+                "gzoltar": 0.03231228135991228, 
+                "ochiai": 0.03231228135991228, 
+                "tarantula": 0.8058681581380663
+            }, 
+            "nf": 1, 
+            "np": 9759, 
+            "rank": {
+                "ample": 151, 
+                "ochiai": 154, 
+                "tarantula": 154
+            }
+        }, 
+        "org.joda.time.format.DateTimeFormatter:947": {
+            "class": "org.joda.time.format.DateTimeFormatter", 
+            "ef": 3, 
+            "ep": 2152, 
+            "line": 947, 
+            "metrics": {
+                "ample": 0.5693266728234405, 
+                "gzoltar": 0.03231228135991228, 
+                "ochiai": 0.03231228135991228, 
+                "tarantula": 0.8058681581380663
+            }, 
+            "nf": 1, 
+            "np": 9759, 
+            "rank": {
+                "ample": 152, 
+                "ochiai": 155, 
+                "tarantula": 155
+            }
+        }, 
+        "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset:2278": {
+            "class": "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset", 
+            "ef": 3, 
+            "ep": 475, 
+            "line": 2278, 
+            "metrics": {
+                "ample": 0.7101208966501553, 
+                "gzoltar": 0.06860840306195223, 
+                "ochiai": 0.06860840306195223, 
+                "tarantula": 0.9495123960353945
+            }, 
+            "nf": 1, 
+            "np": 11436, 
+            "rank": {
+                "ample": 103, 
+                "ochiai": 106, 
+                "tarantula": 106
+            }
+        }, 
+        "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset:2281": {
+            "class": "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset", 
+            "ef": 3, 
+            "ep": 475, 
+            "line": 2281, 
+            "metrics": {
+                "ample": 0.7101208966501553, 
+                "gzoltar": 0.06860840306195223, 
+                "ochiai": 0.06860840306195223, 
+                "tarantula": 0.9495123960353945
+            }, 
+            "nf": 1, 
+            "np": 11436, 
+            "rank": {
+                "ample": 104, 
+                "ochiai": 107, 
+                "tarantula": 107
+            }
+        }, 
+        "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset:2301": {
+            "class": "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset", 
+            "ef": 3, 
+            "ep": 364, 
+            "line": 2301, 
+            "metrics": {
+                "ample": 0.7194400134329612, 
+                "gzoltar": 0.07829936264578208, 
+                "ochiai": 0.07829936264578208, 
+                "tarantula": 0.9608486380381296
+            }, 
+            "nf": 1, 
+            "np": 11547, 
+            "rank": {
+                "ample": 99, 
+                "ochiai": 102, 
+                "tarantula": 102
+            }
+        }, 
+        "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset:2306": {
+            "class": "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset", 
+            "ef": 3, 
+            "ep": 238, 
+            "line": 2306, 
+            "metrics": {
+                "ample": 0.7300184703215515, 
+                "gzoltar": 0.09662349396012462, 
+                "ochiai": 0.09662349396012462, 
+                "tarantula": 0.9740493389668803
+            }, 
+            "nf": 1, 
+            "np": 11673, 
+            "rank": {
+                "ample": 93, 
+                "ochiai": 96, 
+                "tarantula": 96
+            }
+        }, 
+        "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset:2307": {
+            "class": "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset", 
+            "ef": 3, 
+            "ep": 238, 
+            "line": 2307, 
+            "metrics": {
+                "ample": 0.7300184703215515, 
+                "gzoltar": 0.09662349396012462, 
+                "ochiai": 0.09662349396012462, 
+                "tarantula": 0.9740493389668803
+            }, 
+            "nf": 1, 
+            "np": 11673, 
+            "rank": {
+                "ample": 94, 
+                "ochiai": 97, 
+                "tarantula": 97
+            }
+        }, 
+        "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset:2308": {
+            "class": "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset", 
+            "ef": 3, 
+            "ep": 60, 
+            "line": 2308, 
+            "metrics": {
+                "ample": 0.7449626395768617, 
+                "gzoltar": 0.1889822365046136, 
+                "ochiai": 0.1889822365046136, 
+                "tarantula": 0.9933283295805188
+            }, 
+            "nf": 1, 
+            "np": 11851, 
+            "rank": {
+                "ample": 28, 
+                "ochiai": 28, 
+                "tarantula": 31
+            }
+        }, 
+        "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset:2309": {
+            "class": "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset", 
+            "ef": 3, 
+            "ep": 199, 
+            "line": 2309, 
+            "metrics": {
+                "ample": 0.7332927545965914, 
+                "gzoltar": 0.10553963170954378, 
+                "ochiai": 0.10553963170954378, 
+                "tarantula": 0.9782090941443784
+            }, 
+            "nf": 1, 
+            "np": 11712, 
+            "rank": {
+                "ample": 57, 
+                "ochiai": 60, 
+                "tarantula": 60
+            }
+        }, 
+        "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset:2310": {
+            "class": "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset", 
+            "ef": 3, 
+            "ep": 184, 
+            "line": 2310, 
+            "metrics": {
+                "ample": 0.7345520947023759, 
+                "gzoltar": 0.10969086361906959, 
+                "ochiai": 0.10969086361906959, 
+                "tarantula": 0.9798184759658888
+            }, 
+            "nf": 1, 
+            "np": 11727, 
+            "rank": {
+                "ample": 56, 
+                "ochiai": 59, 
+                "tarantula": 59
+            }
+        }, 
+        "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset:2315": {
+            "class": "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset", 
+            "ef": 3, 
+            "ep": 223, 
+            "line": 2315, 
+            "metrics": {
+                "ample": 0.7312778104273361, 
+                "gzoltar": 0.0997785157856609, 
+                "ochiai": 0.0997785157856609, 
+                "tarantula": 0.9756450511945393
+            }, 
+            "nf": 1, 
+            "np": 11688, 
+            "rank": {
+                "ample": 87, 
+                "ochiai": 65, 
+                "tarantula": 90
+            }
+        }, 
+        "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset:2316": {
+            "class": "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset", 
+            "ef": 3, 
+            "ep": 223, 
+            "line": 2316, 
+            "metrics": {
+                "ample": 0.7312778104273361, 
+                "gzoltar": 0.0997785157856609, 
+                "ochiai": 0.0997785157856609, 
+                "tarantula": 0.9756450511945393
+            }, 
+            "nf": 1, 
+            "np": 11688, 
+            "rank": {
+                "ample": 86, 
+                "ochiai": 66, 
+                "tarantula": 89
+            }
+        }, 
+        "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset:2330": {
+            "class": "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset", 
+            "ef": 3, 
+            "ep": 223, 
+            "line": 2330, 
+            "metrics": {
+                "ample": 0.7312778104273361, 
+                "gzoltar": 0.0997785157856609, 
+                "ochiai": 0.0997785157856609, 
+                "tarantula": 0.9756450511945393
+            }, 
+            "nf": 1, 
+            "np": 11688, 
+            "rank": {
+                "ample": 64, 
+                "ochiai": 67, 
+                "tarantula": 67
+            }
+        }, 
+        "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset:2337": {
+            "class": "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset", 
+            "ef": 3, 
+            "ep": 223, 
+            "line": 2337, 
+            "metrics": {
+                "ample": 0.7312778104273361, 
+                "gzoltar": 0.0997785157856609, 
+                "ochiai": 0.0997785157856609, 
+                "tarantula": 0.9756450511945393
+            }, 
+            "nf": 1, 
+            "np": 11688, 
+            "rank": {
+                "ample": 63, 
+                "ochiai": 68, 
+                "tarantula": 66
+            }
+        }, 
+        "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset:2338": {
+            "class": "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset", 
+            "ef": 3, 
+            "ep": 223, 
+            "line": 2338, 
+            "metrics": {
+                "ample": 0.7312778104273361, 
+                "gzoltar": 0.0997785157856609, 
+                "ochiai": 0.0997785157856609, 
+                "tarantula": 0.9756450511945393
+            }, 
+            "nf": 1, 
+            "np": 11688, 
+            "rank": {
+                "ample": 62, 
+                "ochiai": 69, 
+                "tarantula": 65
+            }
+        }, 
+        "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset:2341": {
+            "class": "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset", 
+            "ef": 3, 
+            "ep": 223, 
+            "line": 2341, 
+            "metrics": {
+                "ample": 0.7312778104273361, 
+                "gzoltar": 0.0997785157856609, 
+                "ochiai": 0.0997785157856609, 
+                "tarantula": 0.9756450511945393
+            }, 
+            "nf": 1, 
+            "np": 11688, 
+            "rank": {
+                "ample": 70, 
+                "ochiai": 70, 
+                "tarantula": 73
+            }
+        }, 
+        "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset:2342": {
+            "class": "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset", 
+            "ef": 3, 
+            "ep": 223, 
+            "line": 2342, 
+            "metrics": {
+                "ample": 0.7312778104273361, 
+                "gzoltar": 0.0997785157856609, 
+                "ochiai": 0.0997785157856609, 
+                "tarantula": 0.9756450511945393
+            }, 
+            "nf": 1, 
+            "np": 11688, 
+            "rank": {
+                "ample": 71, 
+                "ochiai": 71, 
+                "tarantula": 74
+            }
+        }, 
+        "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset:2343": {
+            "class": "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset", 
+            "ef": 3, 
+            "ep": 223, 
+            "line": 2343, 
+            "metrics": {
+                "ample": 0.7312778104273361, 
+                "gzoltar": 0.0997785157856609, 
+                "ochiai": 0.0997785157856609, 
+                "tarantula": 0.9756450511945393
+            }, 
+            "nf": 1, 
+            "np": 11688, 
+            "rank": {
+                "ample": 72, 
+                "ochiai": 72, 
+                "tarantula": 75
+            }
+        }, 
+        "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset:2349": {
+            "class": "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset", 
+            "ef": 3, 
+            "ep": 223, 
+            "line": 2349, 
+            "metrics": {
+                "ample": 0.7312778104273361, 
+                "gzoltar": 0.0997785157856609, 
+                "ochiai": 0.0997785157856609, 
+                "tarantula": 0.9756450511945393
+            }, 
+            "nf": 1, 
+            "np": 11688, 
+            "rank": {
+                "ample": 69, 
+                "ochiai": 73, 
+                "tarantula": 72
+            }
+        }, 
+        "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset:2354": {
+            "class": "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset", 
+            "ef": 3, 
+            "ep": 223, 
+            "line": 2354, 
+            "metrics": {
+                "ample": 0.7312778104273361, 
+                "gzoltar": 0.0997785157856609, 
+                "ochiai": 0.0997785157856609, 
+                "tarantula": 0.9756450511945393
+            }, 
+            "nf": 1, 
+            "np": 11688, 
+            "rank": {
+                "ample": 89, 
+                "ochiai": 74, 
+                "tarantula": 92
+            }
+        }, 
+        "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset:2355": {
+            "class": "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset", 
+            "ef": 3, 
+            "ep": 223, 
+            "line": 2355, 
+            "metrics": {
+                "ample": 0.7312778104273361, 
+                "gzoltar": 0.0997785157856609, 
+                "ochiai": 0.0997785157856609, 
+                "tarantula": 0.9756450511945393
+            }, 
+            "nf": 1, 
+            "np": 11688, 
+            "rank": {
+                "ample": 88, 
+                "ochiai": 75, 
+                "tarantula": 91
+            }
+        }, 
+        "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset:2356": {
+            "class": "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset", 
+            "ef": 3, 
+            "ep": 220, 
+            "line": 2356, 
+            "metrics": {
+                "ample": 0.731529678448493, 
+                "gzoltar": 0.10044742952736375, 
+                "ochiai": 0.10044742952736375, 
+                "tarantula": 0.975964821238358
+            }, 
+            "nf": 1, 
+            "np": 11691, 
+            "rank": {
+                "ample": 60, 
+                "ochiai": 62, 
+                "tarantula": 63
+            }
+        }, 
+        "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset:2357": {
+            "class": "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset", 
+            "ef": 3, 
+            "ep": 220, 
+            "line": 2357, 
+            "metrics": {
+                "ample": 0.731529678448493, 
+                "gzoltar": 0.10044742952736375, 
+                "ochiai": 0.10044742952736375, 
+                "tarantula": 0.975964821238358
+            }, 
+            "nf": 1, 
+            "np": 11691, 
+            "rank": {
+                "ample": 59, 
+                "ochiai": 63, 
+                "tarantula": 62
+            }
+        }, 
+        "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset:2358": {
+            "class": "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset", 
+            "ef": 3, 
+            "ep": 220, 
+            "line": 2358, 
+            "metrics": {
+                "ample": 0.731529678448493, 
+                "gzoltar": 0.10044742952736375, 
+                "ochiai": 0.10044742952736375, 
+                "tarantula": 0.975964821238358
+            }, 
+            "nf": 1, 
+            "np": 11691, 
+            "rank": {
+                "ample": 61, 
+                "ochiai": 64, 
+                "tarantula": 64
+            }
+        }, 
+        "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset:2367": {
+            "class": "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset", 
+            "ef": 3, 
+            "ep": 223, 
+            "line": 2367, 
+            "metrics": {
+                "ample": 0.7312778104273361, 
+                "gzoltar": 0.0997785157856609, 
+                "ochiai": 0.0997785157856609, 
+                "tarantula": 0.9756450511945393
+            }, 
+            "nf": 1, 
+            "np": 11688, 
+            "rank": {
+                "ample": 91, 
+                "ochiai": 76, 
+                "tarantula": 94
+            }
+        }, 
+        "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset:2368": {
+            "class": "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset", 
+            "ef": 3, 
+            "ep": 223, 
+            "line": 2368, 
+            "metrics": {
+                "ample": 0.7312778104273361, 
+                "gzoltar": 0.0997785157856609, 
+                "ochiai": 0.0997785157856609, 
+                "tarantula": 0.9756450511945393
+            }, 
+            "nf": 1, 
+            "np": 11688, 
+            "rank": {
+                "ample": 92, 
+                "ochiai": 77, 
+                "tarantula": 95
+            }
+        }, 
+        "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset:2370": {
+            "class": "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset", 
+            "ef": 3, 
+            "ep": 223, 
+            "line": 2370, 
+            "metrics": {
+                "ample": 0.7312778104273361, 
+                "gzoltar": 0.0997785157856609, 
+                "ochiai": 0.0997785157856609, 
+                "tarantula": 0.9756450511945393
+            }, 
+            "nf": 1, 
+            "np": 11688, 
+            "rank": {
+                "ample": 75, 
+                "ochiai": 78, 
+                "tarantula": 78
+            }
+        }, 
+        "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset:2375": {
+            "class": "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset", 
+            "ef": 3, 
+            "ep": 223, 
+            "line": 2375, 
+            "metrics": {
+                "ample": 0.7312778104273361, 
+                "gzoltar": 0.0997785157856609, 
+                "ochiai": 0.0997785157856609, 
+                "tarantula": 0.9756450511945393
+            }, 
+            "nf": 1, 
+            "np": 11688, 
+            "rank": {
+                "ample": 76, 
+                "ochiai": 79, 
+                "tarantula": 79
+            }
+        }, 
+        "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset:2376": {
+            "class": "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset", 
+            "ef": 3, 
+            "ep": 223, 
+            "line": 2376, 
+            "metrics": {
+                "ample": 0.7312778104273361, 
+                "gzoltar": 0.0997785157856609, 
+                "ochiai": 0.0997785157856609, 
+                "tarantula": 0.9756450511945393
+            }, 
+            "nf": 1, 
+            "np": 11688, 
+            "rank": {
+                "ample": 77, 
+                "ochiai": 80, 
+                "tarantula": 80
+            }
+        }, 
+        "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset:2379": {
+            "class": "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset", 
+            "ef": 3, 
+            "ep": 223, 
+            "line": 2379, 
+            "metrics": {
+                "ample": 0.7312778104273361, 
+                "gzoltar": 0.0997785157856609, 
+                "ochiai": 0.0997785157856609, 
+                "tarantula": 0.9756450511945393
+            }, 
+            "nf": 1, 
+            "np": 11688, 
+            "rank": {
+                "ample": 78, 
+                "ochiai": 81, 
+                "tarantula": 81
+            }
+        }, 
+        "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset:2380": {
+            "class": "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset", 
+            "ef": 3, 
+            "ep": 223, 
+            "line": 2380, 
+            "metrics": {
+                "ample": 0.7312778104273361, 
+                "gzoltar": 0.0997785157856609, 
+                "ochiai": 0.0997785157856609, 
+                "tarantula": 0.9756450511945393
+            }, 
+            "nf": 1, 
+            "np": 11688, 
+            "rank": {
+                "ample": 82, 
+                "ochiai": 82, 
+                "tarantula": 85
+            }
+        }, 
+        "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset:2381": {
+            "class": "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset", 
+            "ef": 3, 
+            "ep": 223, 
+            "line": 2381, 
+            "metrics": {
+                "ample": 0.7312778104273361, 
+                "gzoltar": 0.0997785157856609, 
+                "ochiai": 0.0997785157856609, 
+                "tarantula": 0.9756450511945393
+            }, 
+            "nf": 1, 
+            "np": 11688, 
+            "rank": {
+                "ample": 83, 
+                "ochiai": 83, 
+                "tarantula": 86
+            }
+        }, 
+        "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset:2385": {
+            "class": "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset", 
+            "ef": 3, 
+            "ep": 223, 
+            "line": 2385, 
+            "metrics": {
+                "ample": 0.7312778104273361, 
+                "gzoltar": 0.0997785157856609, 
+                "ochiai": 0.0997785157856609, 
+                "tarantula": 0.9756450511945393
+            }, 
+            "nf": 1, 
+            "np": 11688, 
+            "rank": {
+                "ample": 81, 
+                "ochiai": 84, 
+                "tarantula": 84
+            }
+        }, 
+        "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset:2386": {
+            "class": "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset", 
+            "ef": 3, 
+            "ep": 211, 
+            "line": 2386, 
+            "metrics": {
+                "ample": 0.7322852825119637, 
+                "gzoltar": 0.10253788905369948, 
+                "ochiai": 0.10253788905369948, 
+                "tarantula": 0.9769253902725756
+            }, 
+            "nf": 1, 
+            "np": 11700, 
+            "rank": {
+                "ample": 58, 
+                "ochiai": 61, 
+                "tarantula": 61
+            }
+        }, 
+        "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset:2444": {
+            "class": "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset", 
+            "ef": 3, 
+            "ep": 223, 
+            "line": 2444, 
+            "metrics": {
+                "ample": 0.7312778104273361, 
+                "gzoltar": 0.0997785157856609, 
+                "ochiai": 0.0997785157856609, 
+                "tarantula": 0.9756450511945393
+            }, 
+            "nf": 1, 
+            "np": 11688, 
+            "rank": {
+                "ample": 85, 
+                "ochiai": 85, 
+                "tarantula": 88
+            }
+        }, 
+        "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset:2445": {
+            "class": "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset", 
+            "ef": 3, 
+            "ep": 223, 
+            "line": 2445, 
+            "metrics": {
+                "ample": 0.7312778104273361, 
+                "gzoltar": 0.0997785157856609, 
+                "ochiai": 0.0997785157856609, 
+                "tarantula": 0.9756450511945393
+            }, 
+            "nf": 1, 
+            "np": 11688, 
+            "rank": {
+                "ample": 90, 
+                "ochiai": 86, 
+                "tarantula": 93
+            }
+        }, 
+        "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset:2453": {
+            "class": "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset", 
+            "ef": 3, 
+            "ep": 223, 
+            "line": 2453, 
+            "metrics": {
+                "ample": 0.7312778104273361, 
+                "gzoltar": 0.0997785157856609, 
+                "ochiai": 0.0997785157856609, 
+                "tarantula": 0.9756450511945393
+            }, 
+            "nf": 1, 
+            "np": 11688, 
+            "rank": {
+                "ample": 84, 
+                "ochiai": 87, 
+                "tarantula": 87
+            }
+        }, 
+        "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset:2454": {
+            "class": "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset", 
+            "ef": 3, 
+            "ep": 223, 
+            "line": 2454, 
+            "metrics": {
+                "ample": 0.7312778104273361, 
+                "gzoltar": 0.0997785157856609, 
+                "ochiai": 0.0997785157856609, 
+                "tarantula": 0.9756450511945393
+            }, 
+            "nf": 1, 
+            "np": 11688, 
+            "rank": {
+                "ample": 65, 
+                "ochiai": 88, 
+                "tarantula": 68
+            }
+        }, 
+        "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset:2455": {
+            "class": "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset", 
+            "ef": 3, 
+            "ep": 223, 
+            "line": 2455, 
+            "metrics": {
+                "ample": 0.7312778104273361, 
+                "gzoltar": 0.0997785157856609, 
+                "ochiai": 0.0997785157856609, 
+                "tarantula": 0.9756450511945393
+            }, 
+            "nf": 1, 
+            "np": 11688, 
+            "rank": {
+                "ample": 66, 
+                "ochiai": 89, 
+                "tarantula": 69
+            }
+        }, 
+        "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset:2456": {
+            "class": "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset", 
+            "ef": 3, 
+            "ep": 223, 
+            "line": 2456, 
+            "metrics": {
+                "ample": 0.7312778104273361, 
+                "gzoltar": 0.0997785157856609, 
+                "ochiai": 0.0997785157856609, 
+                "tarantula": 0.9756450511945393
+            }, 
+            "nf": 1, 
+            "np": 11688, 
+            "rank": {
+                "ample": 67, 
+                "ochiai": 90, 
+                "tarantula": 70
+            }
+        }, 
+        "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset:2457": {
+            "class": "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset", 
+            "ef": 3, 
+            "ep": 223, 
+            "line": 2457, 
+            "metrics": {
+                "ample": 0.7312778104273361, 
+                "gzoltar": 0.0997785157856609, 
+                "ochiai": 0.0997785157856609, 
+                "tarantula": 0.9756450511945393
+            }, 
+            "nf": 1, 
+            "np": 11688, 
+            "rank": {
+                "ample": 68, 
+                "ochiai": 91, 
+                "tarantula": 71
+            }
+        }, 
+        "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset:2460": {
+            "class": "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset", 
+            "ef": 3, 
+            "ep": 223, 
+            "line": 2460, 
+            "metrics": {
+                "ample": 0.7312778104273361, 
+                "gzoltar": 0.0997785157856609, 
+                "ochiai": 0.0997785157856609, 
+                "tarantula": 0.9756450511945393
+            }, 
+            "nf": 1, 
+            "np": 11688, 
+            "rank": {
+                "ample": 79, 
+                "ochiai": 92, 
+                "tarantula": 82
+            }
+        }, 
+        "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset:2462": {
+            "class": "org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset", 
+            "ef": 3, 
+            "ep": 223, 
+            "line": 2462, 
+            "metrics": {
+                "ample": 0.7312778104273361, 
+                "gzoltar": 0.0997785157856609, 
+                "ochiai": 0.0997785157856609, 
+                "tarantula": 0.9756450511945393
+            }, 
+            "nf": 1, 
+            "np": 11688, 
+            "rank": {
+                "ample": 80, 
+                "ochiai": 93, 
+                "tarantula": 83
+            }
+        }, 
+        "org.joda.time.format.DateTimeParserBucket:195": {
+            "class": "org.joda.time.format.DateTimeParserBucket", 
+            "ef": 3, 
+            "ep": 334, 
+            "line": 195, 
+            "metrics": {
+                "ample": 0.7219586936445302, 
+                "gzoltar": 0.0817102066054265, 
+                "ochiai": 0.0817102066054265, 
+                "tarantula": 0.9639591032938574
+            }, 
+            "nf": 1, 
+            "np": 11577, 
+            "rank": {
+                "ample": 97, 
+                "ochiai": 98, 
+                "tarantula": 100
+            }
+        }, 
+        "org.joda.time.format.DateTimeParserBucket:196": {
+            "class": "org.joda.time.format.DateTimeParserBucket", 
+            "ef": 3, 
+            "ep": 334, 
+            "line": 196, 
+            "metrics": {
+                "ample": 0.7219586936445302, 
+                "gzoltar": 0.0817102066054265, 
+                "ochiai": 0.0817102066054265, 
+                "tarantula": 0.9639591032938574
+            }, 
+            "nf": 1, 
+            "np": 11577, 
+            "rank": {
+                "ample": 96, 
+                "ochiai": 99, 
+                "tarantula": 99
+            }
+        }, 
+        "org.joda.time.format.DateTimeParserBucket:197": {
+            "class": "org.joda.time.format.DateTimeParserBucket", 
+            "ef": 3, 
+            "ep": 334, 
+            "line": 197, 
+            "metrics": {
+                "ample": 0.7219586936445302, 
+                "gzoltar": 0.0817102066054265, 
+                "ochiai": 0.0817102066054265, 
+                "tarantula": 0.9639591032938574
+            }, 
+            "nf": 1, 
+            "np": 11577, 
+            "rank": {
+                "ample": 95, 
+                "ochiai": 100, 
+                "tarantula": 98
+            }
+        }, 
+        "org.joda.time.format.DateTimeParserBucket:345": {
+            "class": "org.joda.time.format.DateTimeParserBucket", 
+            "ef": 3, 
+            "ep": 904, 
+            "line": 345, 
+            "metrics": {
+                "ample": 0.6741037696247166, 
+                "gzoltar": 0.04980668251281895, 
+                "ochiai": 0.04980668251281895, 
+                "tarantula": 0.9081043990952756
+            }, 
+            "nf": 1, 
+            "np": 11007, 
+            "rank": {
+                "ample": 121, 
+                "ochiai": 124, 
+                "tarantula": 124
+            }
+        }, 
+        "org.joda.time.format.DateTimeParserBucket:346": {
+            "class": "org.joda.time.format.DateTimeParserBucket", 
+            "ef": 3, 
+            "ep": 904, 
+            "line": 346, 
+            "metrics": {
+                "ample": 0.6741037696247166, 
+                "gzoltar": 0.04980668251281895, 
+                "ochiai": 0.04980668251281895, 
+                "tarantula": 0.9081043990952756
+            }, 
+            "nf": 1, 
+            "np": 11007, 
+            "rank": {
+                "ample": 124, 
+                "ochiai": 125, 
+                "tarantula": 127
+            }
+        }, 
+        "org.joda.time.format.DateTimeParserBucket:347": {
+            "class": "org.joda.time.format.DateTimeParserBucket", 
+            "ef": 3, 
+            "ep": 904, 
+            "line": 347, 
+            "metrics": {
+                "ample": 0.6741037696247166, 
+                "gzoltar": 0.04980668251281895, 
+                "ochiai": 0.04980668251281895, 
+                "tarantula": 0.9081043990952756
+            }, 
+            "nf": 1, 
+            "np": 11007, 
+            "rank": {
+                "ample": 133, 
+                "ochiai": 126, 
+                "tarantula": 136
+            }
+        }, 
+        "org.joda.time.format.DateTimeParserBucket:351": {
+            "class": "org.joda.time.format.DateTimeParserBucket", 
+            "ef": 3, 
+            "ep": 904, 
+            "line": 351, 
+            "metrics": {
+                "ample": 0.6741037696247166, 
+                "gzoltar": 0.04980668251281895, 
+                "ochiai": 0.04980668251281895, 
+                "tarantula": 0.9081043990952756
+            }, 
+            "nf": 1, 
+            "np": 11007, 
+            "rank": {
+                "ample": 122, 
+                "ochiai": 127, 
+                "tarantula": 125
+            }
+        }, 
+        "org.joda.time.format.DateTimeParserBucket:352": {
+            "class": "org.joda.time.format.DateTimeParserBucket", 
+            "ef": 3, 
+            "ep": 904, 
+            "line": 352, 
+            "metrics": {
+                "ample": 0.6741037696247166, 
+                "gzoltar": 0.04980668251281895, 
+                "ochiai": 0.04980668251281895, 
+                "tarantula": 0.9081043990952756
+            }, 
+            "nf": 1, 
+            "np": 11007, 
+            "rank": {
+                "ample": 127, 
+                "ochiai": 128, 
+                "tarantula": 130
+            }
+        }, 
+        "org.joda.time.format.DateTimeParserBucket:363": {
+            "class": "org.joda.time.format.DateTimeParserBucket", 
+            "ef": 3, 
+            "ep": 904, 
+            "line": 363, 
+            "metrics": {
+                "ample": 0.6741037696247166, 
+                "gzoltar": 0.04980668251281895, 
+                "ochiai": 0.04980668251281895, 
+                "tarantula": 0.9081043990952756
+            }, 
+            "nf": 1, 
+            "np": 11007, 
+            "rank": {
+                "ample": 125, 
+                "ochiai": 129, 
+                "tarantula": 128
+            }
+        }, 
+        "org.joda.time.format.DateTimeParserBucket:365": {
+            "class": "org.joda.time.format.DateTimeParserBucket", 
+            "ef": 3, 
+            "ep": 904, 
+            "line": 365, 
+            "metrics": {
+                "ample": 0.6741037696247166, 
+                "gzoltar": 0.04980668251281895, 
+                "ochiai": 0.04980668251281895, 
+                "tarantula": 0.9081043990952756
+            }, 
+            "nf": 1, 
+            "np": 11007, 
+            "rank": {
+                "ample": 126, 
+                "ochiai": 130, 
+                "tarantula": 129
+            }
+        }, 
+        "org.joda.time.format.DateTimeParserBucket:368": {
+            "class": "org.joda.time.format.DateTimeParserBucket", 
+            "ef": 3, 
+            "ep": 904, 
+            "line": 368, 
+            "metrics": {
+                "ample": 0.6741037696247166, 
+                "gzoltar": 0.04980668251281895, 
+                "ochiai": 0.04980668251281895, 
+                "tarantula": 0.9081043990952756
+            }, 
+            "nf": 1, 
+            "np": 11007, 
+            "rank": {
+                "ample": 130, 
+                "ochiai": 131, 
+                "tarantula": 133
+            }
+        }, 
+        "org.joda.time.format.DateTimeParserBucket:369": {
+            "class": "org.joda.time.format.DateTimeParserBucket", 
+            "ef": 3, 
+            "ep": 862, 
+            "line": 369, 
+            "metrics": {
+                "ample": 0.6776299219209134, 
+                "gzoltar": 0.05100153006885345, 
+                "ochiai": 0.05100153006885345, 
+                "tarantula": 0.9119981623746203
+            }, 
+            "nf": 1, 
+            "np": 11049, 
+            "rank": {
+                "ample": 119, 
+                "ochiai": 122, 
+                "tarantula": 122
+            }
+        }, 
+        "org.joda.time.format.DateTimeParserBucket:378": {
+            "class": "org.joda.time.format.DateTimeParserBucket", 
+            "ef": 3, 
+            "ep": 904, 
+            "line": 378, 
+            "metrics": {
+                "ample": 0.6741037696247166, 
+                "gzoltar": 0.04980668251281895, 
+                "ochiai": 0.04980668251281895, 
+                "tarantula": 0.9081043990952756
+            }, 
+            "nf": 1, 
+            "np": 11007, 
+            "rank": {
+                "ample": 123, 
+                "ochiai": 132, 
+                "tarantula": 126
+            }
+        }, 
+        "org.joda.time.format.DateTimeParserBucket:380": {
+            "class": "org.joda.time.format.DateTimeParserBucket", 
+            "ef": 3, 
+            "ep": 904, 
+            "line": 380, 
+            "metrics": {
+                "ample": 0.6741037696247166, 
+                "gzoltar": 0.04980668251281895, 
+                "ochiai": 0.04980668251281895, 
+                "tarantula": 0.9081043990952756
+            }, 
+            "nf": 1, 
+            "np": 11007, 
+            "rank": {
+                "ample": 131, 
+                "ochiai": 133, 
+                "tarantula": 134
+            }
+        }, 
+        "org.joda.time.format.DateTimeParserBucket:381": {
+            "class": "org.joda.time.format.DateTimeParserBucket", 
+            "ef": 3, 
+            "ep": 334, 
+            "line": 381, 
+            "metrics": {
+                "ample": 0.7219586936445302, 
+                "gzoltar": 0.0817102066054265, 
+                "ochiai": 0.0817102066054265, 
+                "tarantula": 0.9639591032938574
+            }, 
+            "nf": 1, 
+            "np": 11577, 
+            "rank": {
+                "ample": 98, 
+                "ochiai": 101, 
+                "tarantula": 101
+            }
+        }, 
+        "org.joda.time.format.DateTimeParserBucket:394": {
+            "class": "org.joda.time.format.DateTimeParserBucket", 
+            "ef": 3, 
+            "ep": 898, 
+            "line": 394, 
+            "metrics": {
+                "ample": 0.6746075056670304, 
+                "gzoltar": 0.049972245348957715, 
+                "ochiai": 0.049972245348957715, 
+                "tarantula": 0.9086586141131595
+            }, 
+            "nf": 1, 
+            "np": 11013, 
+            "rank": {
+                "ample": 120, 
+                "ochiai": 123, 
+                "tarantula": 123
+            }
+        }, 
+        "org.joda.time.format.DateTimeParserBucket:416": {
+            "class": "org.joda.time.format.DateTimeParserBucket", 
+            "ef": 3, 
+            "ep": 904, 
+            "line": 416, 
+            "metrics": {
+                "ample": 0.6741037696247166, 
+                "gzoltar": 0.04980668251281895, 
+                "ochiai": 0.04980668251281895, 
+                "tarantula": 0.9081043990952756
+            }, 
+            "nf": 1, 
+            "np": 11007, 
+            "rank": {
+                "ample": 128, 
+                "ochiai": 134, 
+                "tarantula": 131
+            }
+        }, 
+        "org.joda.time.format.DateTimeParserBucket:419": {
+            "class": "org.joda.time.format.DateTimeParserBucket", 
+            "ef": 3, 
+            "ep": 904, 
+            "line": 419, 
+            "metrics": {
+                "ample": 0.6741037696247166, 
+                "gzoltar": 0.04980668251281895, 
+                "ochiai": 0.04980668251281895, 
+                "tarantula": 0.9081043990952756
+            }, 
+            "nf": 1, 
+            "np": 11007, 
+            "rank": {
+                "ample": 129, 
+                "ochiai": 135, 
+                "tarantula": 132
+            }
+        }, 
+        "org.joda.time.format.DateTimeParserBucket:427": {
+            "class": "org.joda.time.format.DateTimeParserBucket", 
+            "ef": 3, 
+            "ep": 904, 
+            "line": 427, 
+            "metrics": {
+                "ample": 0.6741037696247166, 
+                "gzoltar": 0.04980668251281895, 
+                "ochiai": 0.04980668251281895, 
+                "tarantula": 0.9081043990952756
+            }, 
+            "nf": 1, 
+            "np": 11007, 
+            "rank": {
+                "ample": 132, 
+                "ochiai": 136, 
+                "tarantula": 135
+            }
+        }, 
+        "org.joda.time.format.FormatUtils:352": {
+            "class": "org.joda.time.format.FormatUtils", 
+            "ef": 3, 
+            "ep": 223, 
+            "line": 352, 
+            "metrics": {
+                "ample": 0.7312778104273361, 
+                "gzoltar": 0.0997785157856609, 
+                "ochiai": 0.0997785157856609, 
+                "tarantula": 0.9756450511945393
+            }, 
+            "nf": 1, 
+            "np": 11688, 
+            "rank": {
+                "ample": 74, 
+                "ochiai": 94, 
+                "tarantula": 77
+            }
+        }, 
+        "org.joda.time.format.FormatUtils:353": {
+            "class": "org.joda.time.format.FormatUtils", 
+            "ef": 3, 
+            "ep": 223, 
+            "line": 353, 
+            "metrics": {
+                "ample": 0.7312778104273361, 
+                "gzoltar": 0.0997785157856609, 
+                "ochiai": 0.0997785157856609, 
+                "tarantula": 0.9756450511945393
+            }, 
+            "nf": 1, 
+            "np": 11688, 
+            "rank": {
+                "ample": 73, 
+                "ochiai": 95, 
+                "tarantula": 76
+            }
+        }, 
+        "org.joda.time.format.FormatUtils:50": {
+            "class": "org.joda.time.format.FormatUtils", 
+            "ef": 3, 
+            "ep": 1754, 
+            "line": 50, 
+            "metrics": {
+                "ample": 0.6027411636302578, 
+                "gzoltar": 0.035785358989985236, 
+                "ochiai": 0.035785358989985236, 
+                "tarantula": 0.835879201852675
+            }, 
+            "nf": 1, 
+            "np": 10157, 
+            "rank": {
+                "ample": 146, 
+                "ochiai": 149, 
+                "tarantula": 149
+            }
+        }, 
+        "org.joda.time.format.FormatUtils:62": {
+            "class": "org.joda.time.format.FormatUtils", 
+            "ef": 3, 
+            "ep": 1754, 
+            "line": 62, 
+            "metrics": {
+                "ample": 0.6027411636302578, 
+                "gzoltar": 0.035785358989985236, 
+                "ochiai": 0.035785358989985236, 
+                "tarantula": 0.835879201852675
+            }, 
+            "nf": 1, 
+            "np": 10157, 
+            "rank": {
+                "ample": 147, 
+                "ochiai": 150, 
+                "tarantula": 150
+            }
+        }, 
+        "org.joda.time.format.FormatUtils:63": {
+            "class": "org.joda.time.format.FormatUtils", 
+            "ef": 3, 
+            "ep": 1475, 
+            "line": 63, 
+            "metrics": {
+                "ample": 0.6261648895978508, 
+                "gzoltar": 0.039017015128703154, 
+                "ochiai": 0.039017015128703154, 
+                "tarantula": 0.8582854946797013
+            }, 
+            "nf": 1, 
+            "np": 10436, 
+            "rank": {
+                "ample": 144, 
+                "ochiai": 146, 
+                "tarantula": 147
+            }
+        }, 
+        "org.joda.time.format.FormatUtils:64": {
+            "class": "org.joda.time.format.FormatUtils", 
+            "ef": 3, 
+            "ep": 1472, 
+            "line": 64, 
+            "metrics": {
+                "ample": 0.6264167576190076, 
+                "gzoltar": 0.03905667329424716, 
+                "ochiai": 0.03905667329424716, 
+                "tarantula": 0.8585329521155186
+            }, 
+            "nf": 1, 
+            "np": 10439, 
+            "rank": {
+                "ample": 142, 
+                "ochiai": 145, 
+                "tarantula": 145
+            }
+        }, 
+        "org.joda.time.format.FormatUtils:66": {
+            "class": "org.joda.time.format.FormatUtils", 
+            "ef": 3, 
+            "ep": 1475, 
+            "line": 66, 
+            "metrics": {
+                "ample": 0.6261648895978508, 
+                "gzoltar": 0.039017015128703154, 
+                "ochiai": 0.039017015128703154, 
+                "tarantula": 0.8582854946797013
+            }, 
+            "nf": 1, 
+            "np": 10436, 
+            "rank": {
+                "ample": 143, 
+                "ochiai": 147, 
+                "tarantula": 146
+            }
+        }, 
+        "org.joda.time.format.FormatUtils:67": {
+            "class": "org.joda.time.format.FormatUtils", 
+            "ef": 3, 
+            "ep": 1608, 
+            "line": 67, 
+            "metrics": {
+                "ample": 0.6149987406598942, 
+                "gzoltar": 0.037371754637596795, 
+                "ochiai": 0.037371754637596795, 
+                "tarantula": 0.847456421202419
+            }, 
+            "nf": 1, 
+            "np": 10303, 
+            "rank": {
+                "ample": 145, 
+                "ochiai": 148, 
+                "tarantula": 148
+            }
+        }, 
+        "org.joda.time.format.FormatUtils:68": {
+            "class": "org.joda.time.format.FormatUtils", 
+            "ef": 3, 
+            "ep": 1245, 
+            "line": 68, 
+            "metrics": {
+                "ample": 0.6454747712198807, 
+                "gzoltar": 0.04246038878042234, 
+                "ochiai": 0.04246038878042234, 
+                "tarantula": 0.8776803478004568
+            }, 
+            "nf": 1, 
+            "np": 10666, 
+            "rank": {
+                "ample": 137, 
+                "ochiai": 140, 
+                "tarantula": 140
+            }
+        }, 
+        "org.joda.time.format.FormatUtils:74": {
+            "class": "org.joda.time.format.FormatUtils", 
+            "ef": 3, 
+            "ep": 1245, 
+            "line": 74, 
+            "metrics": {
+                "ample": 0.6454747712198807, 
+                "gzoltar": 0.04246038878042234, 
+                "ochiai": 0.04246038878042234, 
+                "tarantula": 0.8776803478004568
+            }, 
+            "nf": 1, 
+            "np": 10666, 
+            "rank": {
+                "ample": 139, 
+                "ochiai": 141, 
+                "tarantula": 142
+            }
+        }, 
+        "org.joda.time.format.FormatUtils:75": {
+            "class": "org.joda.time.format.FormatUtils", 
+            "ef": 3, 
+            "ep": 1245, 
+            "line": 75, 
+            "metrics": {
+                "ample": 0.6454747712198807, 
+                "gzoltar": 0.04246038878042234, 
+                "ochiai": 0.04246038878042234, 
+                "tarantula": 0.8776803478004568
+            }, 
+            "nf": 1, 
+            "np": 10666, 
+            "rank": {
+                "ample": 140, 
+                "ochiai": 142, 
+                "tarantula": 143
+            }
+        }, 
+        "org.joda.time.format.FormatUtils:77": {
+            "class": "org.joda.time.format.FormatUtils", 
+            "ef": 3, 
+            "ep": 1245, 
+            "line": 77, 
+            "metrics": {
+                "ample": 0.6454747712198807, 
+                "gzoltar": 0.04246038878042234, 
+                "ochiai": 0.04246038878042234, 
+                "tarantula": 0.8776803478004568
+            }, 
+            "nf": 1, 
+            "np": 10666, 
+            "rank": {
+                "ample": 138, 
+                "ochiai": 143, 
+                "tarantula": 141
+            }
+        }, 
+        "org.joda.time.format.FormatUtils:78": {
+            "class": "org.joda.time.format.FormatUtils", 
+            "ef": 3, 
+            "ep": 1245, 
+            "line": 78, 
+            "metrics": {
+                "ample": 0.6454747712198807, 
+                "gzoltar": 0.04246038878042234, 
+                "ochiai": 0.04246038878042234, 
+                "tarantula": 0.8776803478004568
+            }, 
+            "nf": 1, 
+            "np": 10666, 
+            "rank": {
+                "ample": 141, 
+                "ochiai": 144, 
+                "tarantula": 144
+            }
+        }, 
+        "org.joda.time.format.FormatUtils:92": {
+            "class": "org.joda.time.format.FormatUtils", 
+            "ef": 3, 
+            "ep": 1754, 
+            "line": 92, 
+            "metrics": {
+                "ample": 0.6027411636302578, 
+                "gzoltar": 0.035785358989985236, 
+                "ochiai": 0.035785358989985236, 
+                "tarantula": 0.835879201852675
+            }, 
+            "nf": 1, 
+            "np": 10157, 
+            "rank": {
+                "ample": 148, 
+                "ochiai": 151, 
+                "tarantula": 151
+            }
+        }, 
+        "org.joda.time.tz.FixedDateTimeZone:88": {
+            "class": "org.joda.time.tz.FixedDateTimeZone", 
+            "ef": 3, 
+            "ep": 109, 
+            "line": 88, 
+            "metrics": {
+                "ample": 0.7408487952312988, 
+                "gzoltar": 0.1417366773784602, 
+                "ochiai": 0.1417366773784602, 
+                "tarantula": 0.9879454781719151
+            }, 
+            "nf": 1, 
+            "np": 11802, 
+            "rank": {
+                "ample": 36, 
+                "ochiai": 39, 
+                "tarantula": 39
+            }
+        }, 
+        "org.joda.time.tz.FixedDateTimeZone:89": {
+            "class": "org.joda.time.tz.FixedDateTimeZone", 
+            "ef": 3, 
+            "ep": 88, 
+            "line": 89, 
+            "metrics": {
+                "ample": 0.7426118713793972, 
+                "gzoltar": 0.15724272550828775, 
+                "ochiai": 0.15724272550828775, 
+                "tarantula": 0.9902452542607731
+            }, 
+            "nf": 1, 
+            "np": 11823, 
+            "rank": {
+                "ample": 32, 
+                "ochiai": 29, 
+                "tarantula": 35
+            }
+        }, 
+        "org.joda.time.tz.ZoneInfoProvider:136": {
+            "class": "org.joda.time.tz.ZoneInfoProvider", 
+            "ef": 3, 
+            "ep": 489, 
+            "line": 136, 
+            "metrics": {
+                "ample": 0.708945512551423, 
+                "gzoltar": 0.06762522260005742, 
+                "ochiai": 0.06762522260005742, 
+                "tarantula": 0.9481015680967921
+            }, 
+            "nf": 1, 
+            "np": 11422, 
+            "rank": {
+                "ample": 109, 
+                "ochiai": 110, 
+                "tarantula": 112
+            }
+        }, 
+        "org.joda.time.tz.ZoneInfoProvider:140": {
+            "class": "org.joda.time.tz.ZoneInfoProvider", 
+            "ef": 3, 
+            "ep": 489, 
+            "line": 140, 
+            "metrics": {
+                "ample": 0.708945512551423, 
+                "gzoltar": 0.06762522260005742, 
+                "ochiai": 0.06762522260005742, 
+                "tarantula": 0.9481015680967921
+            }, 
+            "nf": 1, 
+            "np": 11422, 
+            "rank": {
+                "ample": 107, 
+                "ochiai": 111, 
+                "tarantula": 110
+            }
+        }, 
+        "org.joda.time.tz.ZoneInfoProvider:141": {
+            "class": "org.joda.time.tz.ZoneInfoProvider", 
+            "ef": 3, 
+            "ep": 489, 
+            "line": 141, 
+            "metrics": {
+                "ample": 0.708945512551423, 
+                "gzoltar": 0.06762522260005742, 
+                "ochiai": 0.06762522260005742, 
+                "tarantula": 0.9481015680967921
+            }, 
+            "nf": 1, 
+            "np": 11422, 
+            "rank": {
+                "ample": 108, 
+                "ochiai": 112, 
+                "tarantula": 111
+            }
+        }, 
+        "org.joda.time.tz.ZoneInfoProvider:142": {
+            "class": "org.joda.time.tz.ZoneInfoProvider", 
+            "ef": 3, 
+            "ep": 35, 
+            "line": 142, 
+            "metrics": {
+                "ample": 0.7470615397531694, 
+                "gzoltar": 0.24333213169614382, 
+                "ochiai": 0.24333213169614382, 
+                "tarantula": 0.9960973434059042
+            }, 
+            "nf": 1, 
+            "np": 11876, 
+            "rank": {
+                "ample": 15, 
+                "ochiai": 15, 
+                "tarantula": 18
+            }
+        }
+    }
+}

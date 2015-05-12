@@ -1,0 +1,2010 @@
+{
+    "date": "2015-05-11T07:56:49.650985", 
+    "executedTest": 2954, 
+    "failedTest": 1, 
+    "failedTestDetails": [
+        {
+            "class": "org.apache.commons.math.linear.SparseRealVectorTest", 
+            "method": "testConcurrentModification"
+        }
+    ], 
+    "modifiedLines": [
+        {
+            "class": "a.org.apache.commons.math.linear.OpenMapRealVector", 
+            "line": 345
+        }, 
+        {
+            "class": "a.org.apache.commons.math.linear.OpenMapRealVector", 
+            "line": 358
+        }, 
+        {
+            "class": "a.org.apache.commons.math.linear.OpenMapRealVector", 
+            "line": 370
+        }, 
+        {
+            "class": "a.org.apache.commons.math.linear.OpenMapRealVector", 
+            "line": 383
+        }
+    ], 
+    "nbsuspicious": 104, 
+    "node": "griffon-9.nancy.grid5000.fr\n", 
+    "successfulTest": 2953, 
+    "suspicious": {
+        "org.apache.commons.math.MathRuntimeException$6:381": {
+            "class": "org.apache.commons.math.MathRuntimeException$6", 
+            "ef": 1, 
+            "ep": 0, 
+            "line": 381, 
+            "metrics": {
+                "ample": 1.0, 
+                "gzoltar": 1.0, 
+                "ochiai": 1.0, 
+                "tarantula": 1.0
+            }, 
+            "nf": 0, 
+            "np": 2953, 
+            "rank": {
+                "ample": 2, 
+                "ochiai": 4, 
+                "tarantula": 2
+            }
+        }, 
+        "org.apache.commons.math.MathRuntimeException$6:387": {
+            "class": "org.apache.commons.math.MathRuntimeException$6", 
+            "ef": 1, 
+            "ep": 0, 
+            "line": 387, 
+            "metrics": {
+                "ample": 1.0, 
+                "gzoltar": 1.0, 
+                "ochiai": 1.0, 
+                "tarantula": 1.0
+            }, 
+            "nf": 0, 
+            "np": 2953, 
+            "rank": {
+                "ample": 3, 
+                "ochiai": 5, 
+                "tarantula": 3
+            }
+        }, 
+        "org.apache.commons.math.MathRuntimeException:132": {
+            "class": "org.apache.commons.math.MathRuntimeException", 
+            "ef": 1, 
+            "ep": 0, 
+            "line": 132, 
+            "metrics": {
+                "ample": 1.0, 
+                "gzoltar": 1.0, 
+                "ochiai": 1.0, 
+                "tarantula": 1.0
+            }, 
+            "nf": 0, 
+            "np": 2953, 
+            "rank": {
+                "ample": 1, 
+                "ochiai": 1, 
+                "tarantula": 1
+            }
+        }, 
+        "org.apache.commons.math.MathRuntimeException:373": {
+            "class": "org.apache.commons.math.MathRuntimeException", 
+            "ef": 1, 
+            "ep": 2, 
+            "line": 373, 
+            "metrics": {
+                "ample": 0.9993227226549272, 
+                "gzoltar": 0.5773502691896258, 
+                "ochiai": 0.5773502691896258, 
+                "tarantula": 0.9993231810490695
+            }, 
+            "nf": 0, 
+            "np": 2951, 
+            "rank": {
+                "ample": 15, 
+                "ochiai": 15, 
+                "tarantula": 15
+            }
+        }, 
+        "org.apache.commons.math.MathRuntimeException:40": {
+            "class": "org.apache.commons.math.MathRuntimeException", 
+            "ef": 1, 
+            "ep": 0, 
+            "line": 40, 
+            "metrics": {
+                "ample": 1.0, 
+                "gzoltar": 1.0, 
+                "ochiai": 1.0, 
+                "tarantula": 1.0
+            }, 
+            "nf": 0, 
+            "np": 2953, 
+            "rank": {
+                "ample": 4, 
+                "ochiai": 2, 
+                "tarantula": 4
+            }
+        }, 
+        "org.apache.commons.math.exception.util.LocalizedFormats:367": {
+            "class": "org.apache.commons.math.exception.util.LocalizedFormats", 
+            "ef": 1, 
+            "ep": 12, 
+            "line": 367, 
+            "metrics": {
+                "ample": 0.9959363359295632, 
+                "gzoltar": 0.2773500981126146, 
+                "ochiai": 0.2773500981126146, 
+                "tarantula": 0.9959527824620574
+            }, 
+            "nf": 0, 
+            "np": 2941, 
+            "rank": {
+                "ample": 35, 
+                "ochiai": 36, 
+                "tarantula": 35
+            }
+        }, 
+        "org.apache.commons.math.exception.util.LocalizedFormats:380": {
+            "class": "org.apache.commons.math.exception.util.LocalizedFormats", 
+            "ef": 1, 
+            "ep": 12, 
+            "line": 380, 
+            "metrics": {
+                "ample": 0.9959363359295632, 
+                "gzoltar": 0.2773500981126146, 
+                "ochiai": 0.2773500981126146, 
+                "tarantula": 0.9959527824620574
+            }, 
+            "nf": 0, 
+            "np": 2941, 
+            "rank": {
+                "ample": 36, 
+                "ochiai": 37, 
+                "tarantula": 36
+            }
+        }, 
+        "org.apache.commons.math.linear.AbstractRealVector:63": {
+            "class": "org.apache.commons.math.linear.AbstractRealVector", 
+            "ef": 1, 
+            "ep": 6, 
+            "line": 63, 
+            "metrics": {
+                "ample": 0.9979681679647816, 
+                "gzoltar": 0.3779644730092272, 
+                "ochiai": 0.3779644730092272, 
+                "tarantula": 0.9979722879351133
+            }, 
+            "nf": 0, 
+            "np": 2947, 
+            "rank": {
+                "ample": 25, 
+                "ochiai": 23, 
+                "tarantula": 25
+            }
+        }, 
+        "org.apache.commons.math.linear.AbstractRealVector:64": {
+            "class": "org.apache.commons.math.linear.AbstractRealVector", 
+            "ef": 1, 
+            "ep": 6, 
+            "line": 64, 
+            "metrics": {
+                "ample": 0.9979681679647816, 
+                "gzoltar": 0.3779644730092272, 
+                "ochiai": 0.3779644730092272, 
+                "tarantula": 0.9979722879351133
+            }, 
+            "nf": 0, 
+            "np": 2947, 
+            "rank": {
+                "ample": 24, 
+                "ochiai": 24, 
+                "tarantula": 24
+            }
+        }, 
+        "org.apache.commons.math.linear.AbstractRealVector:67": {
+            "class": "org.apache.commons.math.linear.AbstractRealVector", 
+            "ef": 1, 
+            "ep": 3, 
+            "line": 67, 
+            "metrics": {
+                "ample": 0.9989840839823908, 
+                "gzoltar": 0.5, 
+                "ochiai": 0.5, 
+                "tarantula": 0.9989851150202976
+            }, 
+            "nf": 0, 
+            "np": 2950, 
+            "rank": {
+                "ample": 17, 
+                "ochiai": 16, 
+                "tarantula": 17
+            }
+        }, 
+        "org.apache.commons.math.linear.AbstractRealVector:76": {
+            "class": "org.apache.commons.math.linear.AbstractRealVector", 
+            "ef": 1, 
+            "ep": 9, 
+            "line": 76, 
+            "metrics": {
+                "ample": 0.9969522519471724, 
+                "gzoltar": 0.31622776601683794, 
+                "ochiai": 0.31622776601683794, 
+                "tarantula": 0.9969615124915597
+            }, 
+            "nf": 0, 
+            "np": 2944, 
+            "rank": {
+                "ample": 33, 
+                "ochiai": 28, 
+                "tarantula": 33
+            }
+        }, 
+        "org.apache.commons.math.linear.AbstractRealVector:81": {
+            "class": "org.apache.commons.math.linear.AbstractRealVector", 
+            "ef": 1, 
+            "ep": 9, 
+            "line": 81, 
+            "metrics": {
+                "ample": 0.9969522519471724, 
+                "gzoltar": 0.31622776601683794, 
+                "ochiai": 0.31622776601683794, 
+                "tarantula": 0.9969615124915597
+            }, 
+            "nf": 0, 
+            "np": 2944, 
+            "rank": {
+                "ample": 32, 
+                "ochiai": 29, 
+                "tarantula": 32
+            }
+        }, 
+        "org.apache.commons.math.linear.OpenMapRealVector:208": {
+            "class": "org.apache.commons.math.linear.OpenMapRealVector", 
+            "ef": 1, 
+            "ep": 6, 
+            "line": 208, 
+            "metrics": {
+                "ample": 0.9979681679647816, 
+                "gzoltar": 0.3779644730092272, 
+                "ochiai": 0.3779644730092272, 
+                "tarantula": 0.9979722879351133
+            }, 
+            "nf": 0, 
+            "np": 2947, 
+            "rank": {
+                "ample": 19, 
+                "ochiai": 25, 
+                "tarantula": 19
+            }
+        }, 
+        "org.apache.commons.math.linear.OpenMapRealVector:220": {
+            "class": "org.apache.commons.math.linear.OpenMapRealVector", 
+            "ef": 1, 
+            "ep": 12, 
+            "line": 220, 
+            "metrics": {
+                "ample": 0.9959363359295632, 
+                "gzoltar": 0.2773500981126146, 
+                "ochiai": 0.2773500981126146, 
+                "tarantula": 0.9959527824620574
+            }, 
+            "nf": 0, 
+            "np": 2941, 
+            "rank": {
+                "ample": 37, 
+                "ochiai": 34, 
+                "tarantula": 37
+            }
+        }, 
+        "org.apache.commons.math.linear.OpenMapRealVector:33": {
+            "class": "org.apache.commons.math.linear.OpenMapRealVector", 
+            "ef": 1, 
+            "ep": 0, 
+            "line": 33, 
+            "metrics": {
+                "ample": 1.0, 
+                "gzoltar": 1.0, 
+                "ochiai": 1.0, 
+                "tarantula": 1.0
+            }, 
+            "nf": 0, 
+            "np": 2953, 
+            "rank": {
+                "ample": 5, 
+                "ochiai": 3, 
+                "tarantula": 5
+            }
+        }, 
+        "org.apache.commons.math.linear.OpenMapRealVector:368": {
+            "class": "org.apache.commons.math.linear.OpenMapRealVector", 
+            "ef": 1, 
+            "ep": 1, 
+            "line": 368, 
+            "metrics": {
+                "ample": 0.9996613613274636, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 0.9996614759647935
+            }, 
+            "nf": 0, 
+            "np": 2952, 
+            "rank": {
+                "ample": 7, 
+                "ochiai": 6, 
+                "tarantula": 7
+            }
+        }, 
+        "org.apache.commons.math.linear.OpenMapRealVector:369": {
+            "class": "org.apache.commons.math.linear.OpenMapRealVector", 
+            "ef": 1, 
+            "ep": 1, 
+            "line": 369, 
+            "metrics": {
+                "ample": 0.9996613613274636, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 0.9996614759647935
+            }, 
+            "nf": 0, 
+            "np": 2952, 
+            "rank": {
+                "ample": 12, 
+                "ochiai": 7, 
+                "tarantula": 12
+            }
+        }, 
+        "org.apache.commons.math.linear.OpenMapRealVector:370": {
+            "class": "org.apache.commons.math.linear.OpenMapRealVector", 
+            "ef": 1, 
+            "ep": 1, 
+            "line": 370, 
+            "metrics": {
+                "ample": 0.9996613613274636, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 0.9996614759647935
+            }, 
+            "nf": 0, 
+            "np": 2952, 
+            "rank": {
+                "ample": 10, 
+                "ochiai": 8, 
+                "tarantula": 10
+            }
+        }, 
+        "org.apache.commons.math.linear.OpenMapRealVector:371": {
+            "class": "org.apache.commons.math.linear.OpenMapRealVector", 
+            "ef": 1, 
+            "ep": 1, 
+            "line": 371, 
+            "metrics": {
+                "ample": 0.9996613613274636, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 0.9996614759647935
+            }, 
+            "nf": 0, 
+            "np": 2952, 
+            "rank": {
+                "ample": 11, 
+                "ochiai": 9, 
+                "tarantula": 11
+            }
+        }, 
+        "org.apache.commons.math.linear.OpenMapRealVector:372": {
+            "class": "org.apache.commons.math.linear.OpenMapRealVector", 
+            "ef": 1, 
+            "ep": 1, 
+            "line": 372, 
+            "metrics": {
+                "ample": 0.9996613613274636, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 0.9996614759647935
+            }, 
+            "nf": 0, 
+            "np": 2952, 
+            "rank": {
+                "ample": 8, 
+                "ochiai": 10, 
+                "tarantula": 8
+            }
+        }, 
+        "org.apache.commons.math.linear.OpenMapRealVector:373": {
+            "class": "org.apache.commons.math.linear.OpenMapRealVector", 
+            "ef": 1, 
+            "ep": 1, 
+            "line": 373, 
+            "metrics": {
+                "ample": 0.9996613613274636, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 0.9996614759647935
+            }, 
+            "nf": 0, 
+            "np": 2952, 
+            "rank": {
+                "ample": 9, 
+                "ochiai": 11, 
+                "tarantula": 9
+            }
+        }, 
+        "org.apache.commons.math.linear.OpenMapRealVector:422": {
+            "class": "org.apache.commons.math.linear.OpenMapRealVector", 
+            "ef": 1, 
+            "ep": 12, 
+            "line": 422, 
+            "metrics": {
+                "ample": 0.9959363359295632, 
+                "gzoltar": 0.2773500981126146, 
+                "ochiai": 0.2773500981126146, 
+                "tarantula": 0.9959527824620574
+            }, 
+            "nf": 0, 
+            "np": 2941, 
+            "rank": {
+                "ample": 34, 
+                "ochiai": 35, 
+                "tarantula": 34
+            }
+        }, 
+        "org.apache.commons.math.linear.OpenMapRealVector:479": {
+            "class": "org.apache.commons.math.linear.OpenMapRealVector", 
+            "ef": 1, 
+            "ep": 8, 
+            "line": 479, 
+            "metrics": {
+                "ample": 0.9972908906197088, 
+                "gzoltar": 0.3333333333333333, 
+                "ochiai": 0.3333333333333333, 
+                "tarantula": 0.9972982100641676
+            }, 
+            "nf": 0, 
+            "np": 2945, 
+            "rank": {
+                "ample": 26, 
+                "ochiai": 26, 
+                "tarantula": 26
+            }
+        }, 
+        "org.apache.commons.math.linear.OpenMapRealVector:480": {
+            "class": "org.apache.commons.math.linear.OpenMapRealVector", 
+            "ef": 1, 
+            "ep": 8, 
+            "line": 480, 
+            "metrics": {
+                "ample": 0.9972908906197088, 
+                "gzoltar": 0.3333333333333333, 
+                "ochiai": 0.3333333333333333, 
+                "tarantula": 0.9972982100641676
+            }, 
+            "nf": 0, 
+            "np": 2945, 
+            "rank": {
+                "ample": 27, 
+                "ochiai": 27, 
+                "tarantula": 27
+            }
+        }, 
+        "org.apache.commons.math.linear.OpenMapRealVector:663": {
+            "class": "org.apache.commons.math.linear.OpenMapRealVector", 
+            "ef": 1, 
+            "ep": 6, 
+            "line": 663, 
+            "metrics": {
+                "ample": 0.9979681679647816, 
+                "gzoltar": 0.3779644730092272, 
+                "ochiai": 0.3779644730092272, 
+                "tarantula": 0.9979722879351133
+            }, 
+            "nf": 0, 
+            "np": 2947, 
+            "rank": {
+                "ample": 22, 
+                "ochiai": 19, 
+                "tarantula": 22
+            }
+        }, 
+        "org.apache.commons.math.linear.OpenMapRealVector:664": {
+            "class": "org.apache.commons.math.linear.OpenMapRealVector", 
+            "ef": 1, 
+            "ep": 6, 
+            "line": 664, 
+            "metrics": {
+                "ample": 0.9979681679647816, 
+                "gzoltar": 0.3779644730092272, 
+                "ochiai": 0.3779644730092272, 
+                "tarantula": 0.9979722879351133
+            }, 
+            "nf": 0, 
+            "np": 2947, 
+            "rank": {
+                "ample": 20, 
+                "ochiai": 20, 
+                "tarantula": 20
+            }
+        }, 
+        "org.apache.commons.math.linear.OpenMapRealVector:665": {
+            "class": "org.apache.commons.math.linear.OpenMapRealVector", 
+            "ef": 1, 
+            "ep": 6, 
+            "line": 665, 
+            "metrics": {
+                "ample": 0.9979681679647816, 
+                "gzoltar": 0.3779644730092272, 
+                "ochiai": 0.3779644730092272, 
+                "tarantula": 0.9979722879351133
+            }, 
+            "nf": 0, 
+            "np": 2947, 
+            "rank": {
+                "ample": 21, 
+                "ochiai": 21, 
+                "tarantula": 21
+            }
+        }, 
+        "org.apache.commons.math.linear.OpenMapRealVector:666": {
+            "class": "org.apache.commons.math.linear.OpenMapRealVector", 
+            "ef": 1, 
+            "ep": 2, 
+            "line": 666, 
+            "metrics": {
+                "ample": 0.9993227226549272, 
+                "gzoltar": 0.5773502691896258, 
+                "ochiai": 0.5773502691896258, 
+                "tarantula": 0.9993231810490695
+            }, 
+            "nf": 0, 
+            "np": 2951, 
+            "rank": {
+                "ample": 13, 
+                "ochiai": 13, 
+                "tarantula": 13
+            }
+        }, 
+        "org.apache.commons.math.linear.OpenMapRealVector:667": {
+            "class": "org.apache.commons.math.linear.OpenMapRealVector", 
+            "ef": 1, 
+            "ep": 2, 
+            "line": 667, 
+            "metrics": {
+                "ample": 0.9993227226549272, 
+                "gzoltar": 0.5773502691896258, 
+                "ochiai": 0.5773502691896258, 
+                "tarantula": 0.9993231810490695
+            }, 
+            "nf": 0, 
+            "np": 2951, 
+            "rank": {
+                "ample": 14, 
+                "ochiai": 14, 
+                "tarantula": 14
+            }
+        }, 
+        "org.apache.commons.math.linear.OpenMapRealVector:669": {
+            "class": "org.apache.commons.math.linear.OpenMapRealVector", 
+            "ef": 1, 
+            "ep": 6, 
+            "line": 669, 
+            "metrics": {
+                "ample": 0.9979681679647816, 
+                "gzoltar": 0.3779644730092272, 
+                "ochiai": 0.3779644730092272, 
+                "tarantula": 0.9979722879351133
+            }, 
+            "nf": 0, 
+            "np": 2947, 
+            "rank": {
+                "ample": 23, 
+                "ochiai": 22, 
+                "tarantula": 23
+            }
+        }, 
+        "org.apache.commons.math.util.FastMath:3410": {
+            "class": "org.apache.commons.math.util.FastMath", 
+            "ef": 1, 
+            "ep": 1127, 
+            "line": 3410, 
+            "metrics": {
+                "ample": 0.618354216051473, 
+                "gzoltar": 0.029774566708770683, 
+                "ochiai": 0.029774566708770683, 
+                "tarantula": 0.7237745098039216
+            }, 
+            "nf": 0, 
+            "np": 1826, 
+            "rank": {
+                "ample": 104, 
+                "ochiai": 107, 
+                "tarantula": 104
+            }
+        }, 
+        "org.apache.commons.math.util.FastMath:3724": {
+            "class": "org.apache.commons.math.util.FastMath", 
+            "ef": 1, 
+            "ep": 361, 
+            "line": 3724, 
+            "metrics": {
+                "ample": 0.8777514392143583, 
+                "gzoltar": 0.052558833122763673, 
+                "ochiai": 0.052558833122763673, 
+                "tarantula": 0.8910681955340977
+            }, 
+            "nf": 0, 
+            "np": 2592, 
+            "rank": {
+                "ample": 103, 
+                "ochiai": 105, 
+                "tarantula": 103
+            }
+        }, 
+        "org.apache.commons.math.util.FastMath:3728": {
+            "class": "org.apache.commons.math.util.FastMath", 
+            "ef": 1, 
+            "ep": 361, 
+            "line": 3728, 
+            "metrics": {
+                "ample": 0.8777514392143583, 
+                "gzoltar": 0.052558833122763673, 
+                "ochiai": 0.052558833122763673, 
+                "tarantula": 0.8910681955340977
+            }, 
+            "nf": 0, 
+            "np": 2592, 
+            "rank": {
+                "ample": 102, 
+                "ochiai": 106, 
+                "tarantula": 102
+            }
+        }, 
+        "org.apache.commons.math.util.FastMath:3732": {
+            "class": "org.apache.commons.math.util.FastMath", 
+            "ef": 1, 
+            "ep": 359, 
+            "line": 3732, 
+            "metrics": {
+                "ample": 0.8784287165594311, 
+                "gzoltar": 0.05270462766947299, 
+                "ochiai": 0.05270462766947299, 
+                "tarantula": 0.8916062801932367
+            }, 
+            "nf": 0, 
+            "np": 2594, 
+            "rank": {
+                "ample": 101, 
+                "ochiai": 102, 
+                "tarantula": 101
+            }
+        }, 
+        "org.apache.commons.math.util.FastMath:3733": {
+            "class": "org.apache.commons.math.util.FastMath", 
+            "ef": 1, 
+            "ep": 359, 
+            "line": 3733, 
+            "metrics": {
+                "ample": 0.8784287165594311, 
+                "gzoltar": 0.05270462766947299, 
+                "ochiai": 0.05270462766947299, 
+                "tarantula": 0.8916062801932367
+            }, 
+            "nf": 0, 
+            "np": 2594, 
+            "rank": {
+                "ample": 100, 
+                "ochiai": 103, 
+                "tarantula": 100
+            }
+        }, 
+        "org.apache.commons.math.util.FastMath:3737": {
+            "class": "org.apache.commons.math.util.FastMath", 
+            "ef": 1, 
+            "ep": 359, 
+            "line": 3737, 
+            "metrics": {
+                "ample": 0.8784287165594311, 
+                "gzoltar": 0.05270462766947299, 
+                "ochiai": 0.05270462766947299, 
+                "tarantula": 0.8916062801932367
+            }, 
+            "nf": 0, 
+            "np": 2594, 
+            "rank": {
+                "ample": 99, 
+                "ochiai": 104, 
+                "tarantula": 99
+            }
+        }, 
+        "org.apache.commons.math.util.FastMath:3741": {
+            "class": "org.apache.commons.math.util.FastMath", 
+            "ef": 1, 
+            "ep": 313, 
+            "line": 3741, 
+            "metrics": {
+                "ample": 0.8940060954961057, 
+                "gzoltar": 0.05643326479831003, 
+                "ochiai": 0.05643326479831003, 
+                "tarantula": 0.904164115125536
+            }, 
+            "nf": 0, 
+            "np": 2640, 
+            "rank": {
+                "ample": 98, 
+                "ochiai": 101, 
+                "tarantula": 98
+            }
+        }, 
+        "org.apache.commons.math.util.FastMath:3751": {
+            "class": "org.apache.commons.math.util.FastMath", 
+            "ef": 1, 
+            "ep": 180, 
+            "line": 3751, 
+            "metrics": {
+                "ample": 0.9390450389434474, 
+                "gzoltar": 0.07432941462471664, 
+                "ochiai": 0.07432941462471664, 
+                "tarantula": 0.94254707947654
+            }, 
+            "nf": 0, 
+            "np": 2773, 
+            "rank": {
+                "ample": 97, 
+                "ochiai": 98, 
+                "tarantula": 97
+            }
+        }, 
+        "org.apache.commons.math.util.FastMath:3755": {
+            "class": "org.apache.commons.math.util.FastMath", 
+            "ef": 1, 
+            "ep": 180, 
+            "line": 3755, 
+            "metrics": {
+                "ample": 0.9390450389434474, 
+                "gzoltar": 0.07432941462471664, 
+                "ochiai": 0.07432941462471664, 
+                "tarantula": 0.94254707947654
+            }, 
+            "nf": 0, 
+            "np": 2773, 
+            "rank": {
+                "ample": 96, 
+                "ochiai": 99, 
+                "tarantula": 96
+            }
+        }, 
+        "org.apache.commons.math.util.FastMath:3756": {
+            "class": "org.apache.commons.math.util.FastMath", 
+            "ef": 1, 
+            "ep": 180, 
+            "line": 3756, 
+            "metrics": {
+                "ample": 0.9390450389434474, 
+                "gzoltar": 0.07432941462471664, 
+                "ochiai": 0.07432941462471664, 
+                "tarantula": 0.94254707947654
+            }, 
+            "nf": 0, 
+            "np": 2773, 
+            "rank": {
+                "ample": 95, 
+                "ochiai": 100, 
+                "tarantula": 95
+            }
+        }, 
+        "org.apache.commons.math.util.FastMath:3757": {
+            "class": "org.apache.commons.math.util.FastMath", 
+            "ef": 1, 
+            "ep": 166, 
+            "line": 3757, 
+            "metrics": {
+                "ample": 0.943785980358957, 
+                "gzoltar": 0.07738232325341368, 
+                "ochiai": 0.07738232325341368, 
+                "tarantula": 0.9467778134017313
+            }, 
+            "nf": 0, 
+            "np": 2787, 
+            "rank": {
+                "ample": 94, 
+                "ochiai": 97, 
+                "tarantula": 94
+            }
+        }, 
+        "org.apache.commons.math.util.OpenIntToDoubleHashMap$Iterator:518": {
+            "class": "org.apache.commons.math.util.OpenIntToDoubleHashMap$Iterator", 
+            "ef": 1, 
+            "ep": 16, 
+            "line": 518, 
+            "metrics": {
+                "ample": 0.9945817812394175, 
+                "gzoltar": 0.24253562503633297, 
+                "ochiai": 0.24253562503633297, 
+                "tarantula": 0.9946109801279892
+            }, 
+            "nf": 0, 
+            "np": 2937, 
+            "rank": {
+                "ample": 52, 
+                "ochiai": 50, 
+                "tarantula": 52
+            }
+        }, 
+        "org.apache.commons.math.util.OpenIntToDoubleHashMap$Iterator:529": {
+            "class": "org.apache.commons.math.util.OpenIntToDoubleHashMap$Iterator", 
+            "ef": 1, 
+            "ep": 15, 
+            "line": 529, 
+            "metrics": {
+                "ample": 0.9949204199119539, 
+                "gzoltar": 0.25, 
+                "ochiai": 0.25, 
+                "tarantula": 0.9949460916442048
+            }, 
+            "nf": 0, 
+            "np": 2938, 
+            "rank": {
+                "ample": 48, 
+                "ochiai": 46, 
+                "tarantula": 48
+            }
+        }, 
+        "org.apache.commons.math.util.OpenIntToDoubleHashMap$Iterator:532": {
+            "class": "org.apache.commons.math.util.OpenIntToDoubleHashMap$Iterator", 
+            "ef": 1, 
+            "ep": 15, 
+            "line": 532, 
+            "metrics": {
+                "ample": 0.9949204199119539, 
+                "gzoltar": 0.25, 
+                "ochiai": 0.25, 
+                "tarantula": 0.9949460916442048
+            }, 
+            "nf": 0, 
+            "np": 2938, 
+            "rank": {
+                "ample": 47, 
+                "ochiai": 47, 
+                "tarantula": 47
+            }
+        }, 
+        "org.apache.commons.math.util.OpenIntToDoubleHashMap$Iterator:535": {
+            "class": "org.apache.commons.math.util.OpenIntToDoubleHashMap$Iterator", 
+            "ef": 1, 
+            "ep": 15, 
+            "line": 535, 
+            "metrics": {
+                "ample": 0.9949204199119539, 
+                "gzoltar": 0.25, 
+                "ochiai": 0.25, 
+                "tarantula": 0.9949460916442048
+            }, 
+            "nf": 0, 
+            "np": 2938, 
+            "rank": {
+                "ample": 46, 
+                "ochiai": 48, 
+                "tarantula": 46
+            }
+        }, 
+        "org.apache.commons.math.util.OpenIntToDoubleHashMap$Iterator:546": {
+            "class": "org.apache.commons.math.util.OpenIntToDoubleHashMap$Iterator", 
+            "ef": 1, 
+            "ep": 16, 
+            "line": 546, 
+            "metrics": {
+                "ample": 0.9945817812394175, 
+                "gzoltar": 0.24253562503633297, 
+                "ochiai": 0.24253562503633297, 
+                "tarantula": 0.9946109801279892
+            }, 
+            "nf": 0, 
+            "np": 2937, 
+            "rank": {
+                "ample": 50, 
+                "ochiai": 51, 
+                "tarantula": 50
+            }
+        }, 
+        "org.apache.commons.math.util.OpenIntToDoubleHashMap$Iterator:549": {
+            "class": "org.apache.commons.math.util.OpenIntToDoubleHashMap$Iterator", 
+            "ef": 1, 
+            "ep": 16, 
+            "line": 549, 
+            "metrics": {
+                "ample": 0.9945817812394175, 
+                "gzoltar": 0.24253562503633297, 
+                "ochiai": 0.24253562503633297, 
+                "tarantula": 0.9946109801279892
+            }, 
+            "nf": 0, 
+            "np": 2937, 
+            "rank": {
+                "ample": 51, 
+                "ochiai": 52, 
+                "tarantula": 51
+            }
+        }, 
+        "org.apache.commons.math.util.OpenIntToDoubleHashMap$Iterator:552": {
+            "class": "org.apache.commons.math.util.OpenIntToDoubleHashMap$Iterator", 
+            "ef": 1, 
+            "ep": 16, 
+            "line": 552, 
+            "metrics": {
+                "ample": 0.9945817812394175, 
+                "gzoltar": 0.24253562503633297, 
+                "ochiai": 0.24253562503633297, 
+                "tarantula": 0.9946109801279892
+            }, 
+            "nf": 0, 
+            "np": 2937, 
+            "rank": {
+                "ample": 49, 
+                "ochiai": 53, 
+                "tarantula": 49
+            }
+        }, 
+        "org.apache.commons.math.util.OpenIntToDoubleHashMap$Iterator:563": {
+            "class": "org.apache.commons.math.util.OpenIntToDoubleHashMap$Iterator", 
+            "ef": 1, 
+            "ep": 17, 
+            "line": 563, 
+            "metrics": {
+                "ample": 0.9942431425668812, 
+                "gzoltar": 0.23570226039551587, 
+                "ochiai": 0.23570226039551587, 
+                "tarantula": 0.9942760942760943
+            }, 
+            "nf": 0, 
+            "np": 2936, 
+            "rank": {
+                "ample": 55, 
+                "ochiai": 55, 
+                "tarantula": 55
+            }
+        }, 
+        "org.apache.commons.math.util.OpenIntToDoubleHashMap$Iterator:564": {
+            "class": "org.apache.commons.math.util.OpenIntToDoubleHashMap$Iterator", 
+            "ef": 1, 
+            "ep": 1, 
+            "line": 564, 
+            "metrics": {
+                "ample": 0.9996613613274636, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 0.9996614759647935
+            }, 
+            "nf": 0, 
+            "np": 2952, 
+            "rank": {
+                "ample": 6, 
+                "ochiai": 12, 
+                "tarantula": 6
+            }
+        }, 
+        "org.apache.commons.math.util.OpenIntToDoubleHashMap$Iterator:568": {
+            "class": "org.apache.commons.math.util.OpenIntToDoubleHashMap$Iterator", 
+            "ef": 1, 
+            "ep": 17, 
+            "line": 568, 
+            "metrics": {
+                "ample": 0.9942431425668812, 
+                "gzoltar": 0.23570226039551587, 
+                "ochiai": 0.23570226039551587, 
+                "tarantula": 0.9942760942760943
+            }, 
+            "nf": 0, 
+            "np": 2936, 
+            "rank": {
+                "ample": 56, 
+                "ochiai": 56, 
+                "tarantula": 56
+            }
+        }, 
+        "org.apache.commons.math.util.OpenIntToDoubleHashMap$Iterator:572": {
+            "class": "org.apache.commons.math.util.OpenIntToDoubleHashMap$Iterator", 
+            "ef": 1, 
+            "ep": 17, 
+            "line": 572, 
+            "metrics": {
+                "ample": 0.9942431425668812, 
+                "gzoltar": 0.23570226039551587, 
+                "ochiai": 0.23570226039551587, 
+                "tarantula": 0.9942760942760943
+            }, 
+            "nf": 0, 
+            "np": 2936, 
+            "rank": {
+                "ample": 54, 
+                "ochiai": 57, 
+                "tarantula": 54
+            }
+        }, 
+        "org.apache.commons.math.util.OpenIntToDoubleHashMap$Iterator:580": {
+            "class": "org.apache.commons.math.util.OpenIntToDoubleHashMap$Iterator", 
+            "ef": 1, 
+            "ep": 17, 
+            "line": 580, 
+            "metrics": {
+                "ample": 0.9942431425668812, 
+                "gzoltar": 0.23570226039551587, 
+                "ochiai": 0.23570226039551587, 
+                "tarantula": 0.9942760942760943
+            }, 
+            "nf": 0, 
+            "np": 2936, 
+            "rank": {
+                "ample": 58, 
+                "ochiai": 58, 
+                "tarantula": 58
+            }
+        }, 
+        "org.apache.commons.math.util.OpenIntToDoubleHashMap$Iterator:582": {
+            "class": "org.apache.commons.math.util.OpenIntToDoubleHashMap$Iterator", 
+            "ef": 1, 
+            "ep": 17, 
+            "line": 582, 
+            "metrics": {
+                "ample": 0.9942431425668812, 
+                "gzoltar": 0.23570226039551587, 
+                "ochiai": 0.23570226039551587, 
+                "tarantula": 0.9942760942760943
+            }, 
+            "nf": 0, 
+            "np": 2936, 
+            "rank": {
+                "ample": 57, 
+                "ochiai": 59, 
+                "tarantula": 57
+            }
+        }, 
+        "org.apache.commons.math.util.OpenIntToDoubleHashMap:153": {
+            "class": "org.apache.commons.math.util.OpenIntToDoubleHashMap", 
+            "ef": 1, 
+            "ep": 56, 
+            "line": 153, 
+            "metrics": {
+                "ample": 0.9810362343379614, 
+                "gzoltar": 0.13245323570650439, 
+                "ochiai": 0.13245323570650439, 
+                "tarantula": 0.9813891658358259
+            }, 
+            "nf": 0, 
+            "np": 2897, 
+            "rank": {
+                "ample": 93, 
+                "ochiai": 94, 
+                "tarantula": 93
+            }
+        }, 
+        "org.apache.commons.math.util.OpenIntToDoubleHashMap:156": {
+            "class": "org.apache.commons.math.util.OpenIntToDoubleHashMap", 
+            "ef": 1, 
+            "ep": 55, 
+            "line": 156, 
+            "metrics": {
+                "ample": 0.9813748730104978, 
+                "gzoltar": 0.1336306209562122, 
+                "ochiai": 0.1336306209562122, 
+                "tarantula": 0.9817154255319149
+            }, 
+            "nf": 0, 
+            "np": 2898, 
+            "rank": {
+                "ample": 89, 
+                "ochiai": 91, 
+                "tarantula": 89
+            }
+        }, 
+        "org.apache.commons.math.util.OpenIntToDoubleHashMap:157": {
+            "class": "org.apache.commons.math.util.OpenIntToDoubleHashMap", 
+            "ef": 1, 
+            "ep": 55, 
+            "line": 157, 
+            "metrics": {
+                "ample": 0.9813748730104978, 
+                "gzoltar": 0.1336306209562122, 
+                "ochiai": 0.1336306209562122, 
+                "tarantula": 0.9817154255319149
+            }, 
+            "nf": 0, 
+            "np": 2898, 
+            "rank": {
+                "ample": 90, 
+                "ochiai": 92, 
+                "tarantula": 90
+            }
+        }, 
+        "org.apache.commons.math.util.OpenIntToDoubleHashMap:158": {
+            "class": "org.apache.commons.math.util.OpenIntToDoubleHashMap", 
+            "ef": 1, 
+            "ep": 55, 
+            "line": 158, 
+            "metrics": {
+                "ample": 0.9813748730104978, 
+                "gzoltar": 0.1336306209562122, 
+                "ochiai": 0.1336306209562122, 
+                "tarantula": 0.9817154255319149
+            }, 
+            "nf": 0, 
+            "np": 2898, 
+            "rank": {
+                "ample": 88, 
+                "ochiai": 93, 
+                "tarantula": 88
+            }
+        }, 
+        "org.apache.commons.math.util.OpenIntToDoubleHashMap:159": {
+            "class": "org.apache.commons.math.util.OpenIntToDoubleHashMap", 
+            "ef": 1, 
+            "ep": 54, 
+            "line": 159, 
+            "metrics": {
+                "ample": 0.9817135116830342, 
+                "gzoltar": 0.13483997249264842, 
+                "ochiai": 0.13483997249264842, 
+                "tarantula": 0.9820419022281344
+            }, 
+            "nf": 0, 
+            "np": 2899, 
+            "rank": {
+                "ample": 86, 
+                "ochiai": 72, 
+                "tarantula": 86
+            }
+        }, 
+        "org.apache.commons.math.util.OpenIntToDoubleHashMap:180": {
+            "class": "org.apache.commons.math.util.OpenIntToDoubleHashMap", 
+            "ef": 1, 
+            "ep": 48, 
+            "line": 180, 
+            "metrics": {
+                "ample": 0.9837453437182526, 
+                "gzoltar": 0.14285714285714285, 
+                "ochiai": 0.14285714285714285, 
+                "tarantula": 0.984005331556148
+            }, 
+            "nf": 0, 
+            "np": 2905, 
+            "rank": {
+                "ample": 67, 
+                "ochiai": 68, 
+                "tarantula": 67
+            }
+        }, 
+        "org.apache.commons.math.util.OpenIntToDoubleHashMap:181": {
+            "class": "org.apache.commons.math.util.OpenIntToDoubleHashMap", 
+            "ef": 1, 
+            "ep": 48, 
+            "line": 181, 
+            "metrics": {
+                "ample": 0.9837453437182526, 
+                "gzoltar": 0.14285714285714285, 
+                "ochiai": 0.14285714285714285, 
+                "tarantula": 0.984005331556148
+            }, 
+            "nf": 0, 
+            "np": 2905, 
+            "rank": {
+                "ample": 65, 
+                "ochiai": 69, 
+                "tarantula": 65
+            }
+        }, 
+        "org.apache.commons.math.util.OpenIntToDoubleHashMap:182": {
+            "class": "org.apache.commons.math.util.OpenIntToDoubleHashMap", 
+            "ef": 1, 
+            "ep": 48, 
+            "line": 182, 
+            "metrics": {
+                "ample": 0.9837453437182526, 
+                "gzoltar": 0.14285714285714285, 
+                "ochiai": 0.14285714285714285, 
+                "tarantula": 0.984005331556148
+            }, 
+            "nf": 0, 
+            "np": 2905, 
+            "rank": {
+                "ample": 66, 
+                "ochiai": 70, 
+                "tarantula": 66
+            }
+        }, 
+        "org.apache.commons.math.util.OpenIntToDoubleHashMap:186": {
+            "class": "org.apache.commons.math.util.OpenIntToDoubleHashMap", 
+            "ef": 1, 
+            "ep": 32, 
+            "line": 186, 
+            "metrics": {
+                "ample": 0.9891635624788351, 
+                "gzoltar": 0.17407765595569785, 
+                "ochiai": 0.17407765595569785, 
+                "tarantula": 0.9892797319932999
+            }, 
+            "nf": 0, 
+            "np": 2921, 
+            "rank": {
+                "ample": 64, 
+                "ochiai": 67, 
+                "tarantula": 64
+            }
+        }, 
+        "org.apache.commons.math.util.OpenIntToDoubleHashMap:187": {
+            "class": "org.apache.commons.math.util.OpenIntToDoubleHashMap", 
+            "ef": 1, 
+            "ep": 21, 
+            "line": 187, 
+            "metrics": {
+                "ample": 0.9928885878767355, 
+                "gzoltar": 0.21320071635561041, 
+                "ochiai": 0.21320071635561041, 
+                "tarantula": 0.9929388029589777
+            }, 
+            "nf": 0, 
+            "np": 2932, 
+            "rank": {
+                "ample": 60, 
+                "ochiai": 63, 
+                "tarantula": 60
+            }
+        }, 
+        "org.apache.commons.math.util.OpenIntToDoubleHashMap:210": {
+            "class": "org.apache.commons.math.util.OpenIntToDoubleHashMap", 
+            "ef": 1, 
+            "ep": 9, 
+            "line": 210, 
+            "metrics": {
+                "ample": 0.9969522519471724, 
+                "gzoltar": 0.31622776601683794, 
+                "ochiai": 0.31622776601683794, 
+                "tarantula": 0.9969615124915597
+            }, 
+            "nf": 0, 
+            "np": 2944, 
+            "rank": {
+                "ample": 29, 
+                "ochiai": 30, 
+                "tarantula": 29
+            }
+        }, 
+        "org.apache.commons.math.util.OpenIntToDoubleHashMap:211": {
+            "class": "org.apache.commons.math.util.OpenIntToDoubleHashMap", 
+            "ef": 1, 
+            "ep": 9, 
+            "line": 211, 
+            "metrics": {
+                "ample": 0.9969522519471724, 
+                "gzoltar": 0.31622776601683794, 
+                "ochiai": 0.31622776601683794, 
+                "tarantula": 0.9969615124915597
+            }, 
+            "nf": 0, 
+            "np": 2944, 
+            "rank": {
+                "ample": 28, 
+                "ochiai": 31, 
+                "tarantula": 28
+            }
+        }, 
+        "org.apache.commons.math.util.OpenIntToDoubleHashMap:212": {
+            "class": "org.apache.commons.math.util.OpenIntToDoubleHashMap", 
+            "ef": 1, 
+            "ep": 9, 
+            "line": 212, 
+            "metrics": {
+                "ample": 0.9969522519471724, 
+                "gzoltar": 0.31622776601683794, 
+                "ochiai": 0.31622776601683794, 
+                "tarantula": 0.9969615124915597
+            }, 
+            "nf": 0, 
+            "np": 2944, 
+            "rank": {
+                "ample": 31, 
+                "ochiai": 32, 
+                "tarantula": 31
+            }
+        }, 
+        "org.apache.commons.math.util.OpenIntToDoubleHashMap:213": {
+            "class": "org.apache.commons.math.util.OpenIntToDoubleHashMap", 
+            "ef": 1, 
+            "ep": 9, 
+            "line": 213, 
+            "metrics": {
+                "ample": 0.9969522519471724, 
+                "gzoltar": 0.31622776601683794, 
+                "ochiai": 0.31622776601683794, 
+                "tarantula": 0.9969615124915597
+            }, 
+            "nf": 0, 
+            "np": 2944, 
+            "rank": {
+                "ample": 30, 
+                "ochiai": 33, 
+                "tarantula": 30
+            }
+        }, 
+        "org.apache.commons.math.util.OpenIntToDoubleHashMap:216": {
+            "class": "org.apache.commons.math.util.OpenIntToDoubleHashMap", 
+            "ef": 1, 
+            "ep": 4, 
+            "line": 216, 
+            "metrics": {
+                "ample": 0.9986454453098544, 
+                "gzoltar": 0.4472135954999579, 
+                "ochiai": 0.4472135954999579, 
+                "tarantula": 0.998647277646263
+            }, 
+            "nf": 0, 
+            "np": 2949, 
+            "rank": {
+                "ample": 18, 
+                "ochiai": 18, 
+                "tarantula": 18
+            }
+        }, 
+        "org.apache.commons.math.util.OpenIntToDoubleHashMap:217": {
+            "class": "org.apache.commons.math.util.OpenIntToDoubleHashMap", 
+            "ef": 1, 
+            "ep": 3, 
+            "line": 217, 
+            "metrics": {
+                "ample": 0.9989840839823908, 
+                "gzoltar": 0.5, 
+                "ochiai": 0.5, 
+                "tarantula": 0.9989851150202976
+            }, 
+            "nf": 0, 
+            "np": 2950, 
+            "rank": {
+                "ample": 16, 
+                "ochiai": 17, 
+                "tarantula": 16
+            }
+        }, 
+        "org.apache.commons.math.util.OpenIntToDoubleHashMap:241": {
+            "class": "org.apache.commons.math.util.OpenIntToDoubleHashMap", 
+            "ef": 1, 
+            "ep": 17, 
+            "line": 241, 
+            "metrics": {
+                "ample": 0.9942431425668812, 
+                "gzoltar": 0.23570226039551587, 
+                "ochiai": 0.23570226039551587, 
+                "tarantula": 0.9942760942760943
+            }, 
+            "nf": 0, 
+            "np": 2936, 
+            "rank": {
+                "ample": 59, 
+                "ochiai": 60, 
+                "tarantula": 59
+            }
+        }, 
+        "org.apache.commons.math.util.OpenIntToDoubleHashMap:259": {
+            "class": "org.apache.commons.math.util.OpenIntToDoubleHashMap", 
+            "ef": 1, 
+            "ep": 54, 
+            "line": 259, 
+            "metrics": {
+                "ample": 0.9817135116830342, 
+                "gzoltar": 0.13483997249264842, 
+                "ochiai": 0.13483997249264842, 
+                "tarantula": 0.9820419022281344
+            }, 
+            "nf": 0, 
+            "np": 2899, 
+            "rank": {
+                "ample": 87, 
+                "ochiai": 73, 
+                "tarantula": 87
+            }
+        }, 
+        "org.apache.commons.math.util.OpenIntToDoubleHashMap:272": {
+            "class": "org.apache.commons.math.util.OpenIntToDoubleHashMap", 
+            "ef": 1, 
+            "ep": 54, 
+            "line": 272, 
+            "metrics": {
+                "ample": 0.9817135116830342, 
+                "gzoltar": 0.13483997249264842, 
+                "ochiai": 0.13483997249264842, 
+                "tarantula": 0.9820419022281344
+            }, 
+            "nf": 0, 
+            "np": 2899, 
+            "rank": {
+                "ample": 77, 
+                "ochiai": 74, 
+                "tarantula": 77
+            }
+        }, 
+        "org.apache.commons.math.util.OpenIntToDoubleHashMap:273": {
+            "class": "org.apache.commons.math.util.OpenIntToDoubleHashMap", 
+            "ef": 1, 
+            "ep": 54, 
+            "line": 273, 
+            "metrics": {
+                "ample": 0.9817135116830342, 
+                "gzoltar": 0.13483997249264842, 
+                "ochiai": 0.13483997249264842, 
+                "tarantula": 0.9820419022281344
+            }, 
+            "nf": 0, 
+            "np": 2899, 
+            "rank": {
+                "ample": 76, 
+                "ochiai": 75, 
+                "tarantula": 76
+            }
+        }, 
+        "org.apache.commons.math.util.OpenIntToDoubleHashMap:274": {
+            "class": "org.apache.commons.math.util.OpenIntToDoubleHashMap", 
+            "ef": 1, 
+            "ep": 54, 
+            "line": 274, 
+            "metrics": {
+                "ample": 0.9817135116830342, 
+                "gzoltar": 0.13483997249264842, 
+                "ochiai": 0.13483997249264842, 
+                "tarantula": 0.9820419022281344
+            }, 
+            "nf": 0, 
+            "np": 2899, 
+            "rank": {
+                "ample": 79, 
+                "ochiai": 76, 
+                "tarantula": 79
+            }
+        }, 
+        "org.apache.commons.math.util.OpenIntToDoubleHashMap:275": {
+            "class": "org.apache.commons.math.util.OpenIntToDoubleHashMap", 
+            "ef": 1, 
+            "ep": 54, 
+            "line": 275, 
+            "metrics": {
+                "ample": 0.9817135116830342, 
+                "gzoltar": 0.13483997249264842, 
+                "ochiai": 0.13483997249264842, 
+                "tarantula": 0.9820419022281344
+            }, 
+            "nf": 0, 
+            "np": 2899, 
+            "rank": {
+                "ample": 78, 
+                "ochiai": 77, 
+                "tarantula": 78
+            }
+        }, 
+        "org.apache.commons.math.util.OpenIntToDoubleHashMap:354": {
+            "class": "org.apache.commons.math.util.OpenIntToDoubleHashMap", 
+            "ef": 1, 
+            "ep": 29, 
+            "line": 354, 
+            "metrics": {
+                "ample": 0.9901794784964443, 
+                "gzoltar": 0.18257418583505536, 
+                "ochiai": 0.18257418583505536, 
+                "tarantula": 0.9902749832327298
+            }, 
+            "nf": 0, 
+            "np": 2924, 
+            "rank": {
+                "ample": 61, 
+                "ochiai": 64, 
+                "tarantula": 61
+            }
+        }, 
+        "org.apache.commons.math.util.OpenIntToDoubleHashMap:355": {
+            "class": "org.apache.commons.math.util.OpenIntToDoubleHashMap", 
+            "ef": 1, 
+            "ep": 29, 
+            "line": 355, 
+            "metrics": {
+                "ample": 0.9901794784964443, 
+                "gzoltar": 0.18257418583505536, 
+                "ochiai": 0.18257418583505536, 
+                "tarantula": 0.9902749832327298
+            }, 
+            "nf": 0, 
+            "np": 2924, 
+            "rank": {
+                "ample": 62, 
+                "ochiai": 65, 
+                "tarantula": 62
+            }
+        }, 
+        "org.apache.commons.math.util.OpenIntToDoubleHashMap:356": {
+            "class": "org.apache.commons.math.util.OpenIntToDoubleHashMap", 
+            "ef": 1, 
+            "ep": 29, 
+            "line": 356, 
+            "metrics": {
+                "ample": 0.9901794784964443, 
+                "gzoltar": 0.18257418583505536, 
+                "ochiai": 0.18257418583505536, 
+                "tarantula": 0.9902749832327298
+            }, 
+            "nf": 0, 
+            "np": 2924, 
+            "rank": {
+                "ample": 63, 
+                "ochiai": 66, 
+                "tarantula": 63
+            }
+        }, 
+        "org.apache.commons.math.util.OpenIntToDoubleHashMap:357": {
+            "class": "org.apache.commons.math.util.OpenIntToDoubleHashMap", 
+            "ef": 1, 
+            "ep": 14, 
+            "line": 357, 
+            "metrics": {
+                "ample": 0.9952590585844904, 
+                "gzoltar": 0.2581988897471611, 
+                "ochiai": 0.2581988897471611, 
+                "tarantula": 0.9952814290529153
+            }, 
+            "nf": 0, 
+            "np": 2939, 
+            "rank": {
+                "ample": 38, 
+                "ochiai": 38, 
+                "tarantula": 38
+            }
+        }, 
+        "org.apache.commons.math.util.OpenIntToDoubleHashMap:385": {
+            "class": "org.apache.commons.math.util.OpenIntToDoubleHashMap", 
+            "ef": 1, 
+            "ep": 52, 
+            "line": 385, 
+            "metrics": {
+                "ample": 0.9823907890281071, 
+                "gzoltar": 0.13736056394868904, 
+                "ochiai": 0.13736056394868904, 
+                "tarantula": 0.9826955074875208
+            }, 
+            "nf": 0, 
+            "np": 2901, 
+            "rank": {
+                "ample": 68, 
+                "ochiai": 71, 
+                "tarantula": 68
+            }
+        }, 
+        "org.apache.commons.math.util.OpenIntToDoubleHashMap:394": {
+            "class": "org.apache.commons.math.util.OpenIntToDoubleHashMap", 
+            "ef": 1, 
+            "ep": 14, 
+            "line": 394, 
+            "metrics": {
+                "ample": 0.9952590585844904, 
+                "gzoltar": 0.2581988897471611, 
+                "ochiai": 0.2581988897471611, 
+                "tarantula": 0.9952814290529153
+            }, 
+            "nf": 0, 
+            "np": 2939, 
+            "rank": {
+                "ample": 41, 
+                "ochiai": 39, 
+                "tarantula": 41
+            }
+        }, 
+        "org.apache.commons.math.util.OpenIntToDoubleHashMap:395": {
+            "class": "org.apache.commons.math.util.OpenIntToDoubleHashMap", 
+            "ef": 1, 
+            "ep": 14, 
+            "line": 395, 
+            "metrics": {
+                "ample": 0.9952590585844904, 
+                "gzoltar": 0.2581988897471611, 
+                "ochiai": 0.2581988897471611, 
+                "tarantula": 0.9952814290529153
+            }, 
+            "nf": 0, 
+            "np": 2939, 
+            "rank": {
+                "ample": 42, 
+                "ochiai": 40, 
+                "tarantula": 42
+            }
+        }, 
+        "org.apache.commons.math.util.OpenIntToDoubleHashMap:396": {
+            "class": "org.apache.commons.math.util.OpenIntToDoubleHashMap", 
+            "ef": 1, 
+            "ep": 14, 
+            "line": 396, 
+            "metrics": {
+                "ample": 0.9952590585844904, 
+                "gzoltar": 0.2581988897471611, 
+                "ochiai": 0.2581988897471611, 
+                "tarantula": 0.9952814290529153
+            }, 
+            "nf": 0, 
+            "np": 2939, 
+            "rank": {
+                "ample": 43, 
+                "ochiai": 41, 
+                "tarantula": 43
+            }
+        }, 
+        "org.apache.commons.math.util.OpenIntToDoubleHashMap:397": {
+            "class": "org.apache.commons.math.util.OpenIntToDoubleHashMap", 
+            "ef": 1, 
+            "ep": 14, 
+            "line": 397, 
+            "metrics": {
+                "ample": 0.9952590585844904, 
+                "gzoltar": 0.2581988897471611, 
+                "ochiai": 0.2581988897471611, 
+                "tarantula": 0.9952814290529153
+            }, 
+            "nf": 0, 
+            "np": 2939, 
+            "rank": {
+                "ample": 44, 
+                "ochiai": 42, 
+                "tarantula": 44
+            }
+        }, 
+        "org.apache.commons.math.util.OpenIntToDoubleHashMap:398": {
+            "class": "org.apache.commons.math.util.OpenIntToDoubleHashMap", 
+            "ef": 1, 
+            "ep": 14, 
+            "line": 398, 
+            "metrics": {
+                "ample": 0.9952590585844904, 
+                "gzoltar": 0.2581988897471611, 
+                "ochiai": 0.2581988897471611, 
+                "tarantula": 0.9952814290529153
+            }, 
+            "nf": 0, 
+            "np": 2939, 
+            "rank": {
+                "ample": 39, 
+                "ochiai": 43, 
+                "tarantula": 39
+            }
+        }, 
+        "org.apache.commons.math.util.OpenIntToDoubleHashMap:399": {
+            "class": "org.apache.commons.math.util.OpenIntToDoubleHashMap", 
+            "ef": 1, 
+            "ep": 14, 
+            "line": 399, 
+            "metrics": {
+                "ample": 0.9952590585844904, 
+                "gzoltar": 0.2581988897471611, 
+                "ochiai": 0.2581988897471611, 
+                "tarantula": 0.9952814290529153
+            }, 
+            "nf": 0, 
+            "np": 2939, 
+            "rank": {
+                "ample": 40, 
+                "ochiai": 44, 
+                "tarantula": 40
+            }
+        }, 
+        "org.apache.commons.math.util.OpenIntToDoubleHashMap:40": {
+            "class": "org.apache.commons.math.util.OpenIntToDoubleHashMap", 
+            "ef": 1, 
+            "ep": 17, 
+            "line": 40, 
+            "metrics": {
+                "ample": 0.9942431425668812, 
+                "gzoltar": 0.23570226039551587, 
+                "ochiai": 0.23570226039551587, 
+                "tarantula": 0.9942760942760943
+            }, 
+            "nf": 0, 
+            "np": 2936, 
+            "rank": {
+                "ample": 53, 
+                "ochiai": 62, 
+                "tarantula": 53
+            }
+        }, 
+        "org.apache.commons.math.util.OpenIntToDoubleHashMap:400": {
+            "class": "org.apache.commons.math.util.OpenIntToDoubleHashMap", 
+            "ef": 1, 
+            "ep": 14, 
+            "line": 400, 
+            "metrics": {
+                "ample": 0.9952590585844904, 
+                "gzoltar": 0.2581988897471611, 
+                "ochiai": 0.2581988897471611, 
+                "tarantula": 0.9952814290529153
+            }, 
+            "nf": 0, 
+            "np": 2939, 
+            "rank": {
+                "ample": 45, 
+                "ochiai": 45, 
+                "tarantula": 45
+            }
+        }, 
+        "org.apache.commons.math.util.OpenIntToDoubleHashMap:410": {
+            "class": "org.apache.commons.math.util.OpenIntToDoubleHashMap", 
+            "ef": 1, 
+            "ep": 54, 
+            "line": 410, 
+            "metrics": {
+                "ample": 0.9817135116830342, 
+                "gzoltar": 0.13483997249264842, 
+                "ochiai": 0.13483997249264842, 
+                "tarantula": 0.9820419022281344
+            }, 
+            "nf": 0, 
+            "np": 2899, 
+            "rank": {
+                "ample": 85, 
+                "ochiai": 78, 
+                "tarantula": 85
+            }
+        }, 
+        "org.apache.commons.math.util.OpenIntToDoubleHashMap:411": {
+            "class": "org.apache.commons.math.util.OpenIntToDoubleHashMap", 
+            "ef": 1, 
+            "ep": 54, 
+            "line": 411, 
+            "metrics": {
+                "ample": 0.9817135116830342, 
+                "gzoltar": 0.13483997249264842, 
+                "ochiai": 0.13483997249264842, 
+                "tarantula": 0.9820419022281344
+            }, 
+            "nf": 0, 
+            "np": 2899, 
+            "rank": {
+                "ample": 84, 
+                "ochiai": 79, 
+                "tarantula": 84
+            }
+        }, 
+        "org.apache.commons.math.util.OpenIntToDoubleHashMap:412": {
+            "class": "org.apache.commons.math.util.OpenIntToDoubleHashMap", 
+            "ef": 1, 
+            "ep": 54, 
+            "line": 412, 
+            "metrics": {
+                "ample": 0.9817135116830342, 
+                "gzoltar": 0.13483997249264842, 
+                "ochiai": 0.13483997249264842, 
+                "tarantula": 0.9820419022281344
+            }, 
+            "nf": 0, 
+            "np": 2899, 
+            "rank": {
+                "ample": 83, 
+                "ochiai": 80, 
+                "tarantula": 83
+            }
+        }, 
+        "org.apache.commons.math.util.OpenIntToDoubleHashMap:413": {
+            "class": "org.apache.commons.math.util.OpenIntToDoubleHashMap", 
+            "ef": 1, 
+            "ep": 54, 
+            "line": 413, 
+            "metrics": {
+                "ample": 0.9817135116830342, 
+                "gzoltar": 0.13483997249264842, 
+                "ochiai": 0.13483997249264842, 
+                "tarantula": 0.9820419022281344
+            }, 
+            "nf": 0, 
+            "np": 2899, 
+            "rank": {
+                "ample": 82, 
+                "ochiai": 81, 
+                "tarantula": 82
+            }
+        }, 
+        "org.apache.commons.math.util.OpenIntToDoubleHashMap:418": {
+            "class": "org.apache.commons.math.util.OpenIntToDoubleHashMap", 
+            "ef": 1, 
+            "ep": 54, 
+            "line": 418, 
+            "metrics": {
+                "ample": 0.9817135116830342, 
+                "gzoltar": 0.13483997249264842, 
+                "ochiai": 0.13483997249264842, 
+                "tarantula": 0.9820419022281344
+            }, 
+            "nf": 0, 
+            "np": 2899, 
+            "rank": {
+                "ample": 81, 
+                "ochiai": 82, 
+                "tarantula": 81
+            }
+        }, 
+        "org.apache.commons.math.util.OpenIntToDoubleHashMap:419": {
+            "class": "org.apache.commons.math.util.OpenIntToDoubleHashMap", 
+            "ef": 1, 
+            "ep": 54, 
+            "line": 419, 
+            "metrics": {
+                "ample": 0.9817135116830342, 
+                "gzoltar": 0.13483997249264842, 
+                "ochiai": 0.13483997249264842, 
+                "tarantula": 0.9820419022281344
+            }, 
+            "nf": 0, 
+            "np": 2899, 
+            "rank": {
+                "ample": 80, 
+                "ochiai": 83, 
+                "tarantula": 80
+            }
+        }, 
+        "org.apache.commons.math.util.OpenIntToDoubleHashMap:420": {
+            "class": "org.apache.commons.math.util.OpenIntToDoubleHashMap", 
+            "ef": 1, 
+            "ep": 54, 
+            "line": 420, 
+            "metrics": {
+                "ample": 0.9817135116830342, 
+                "gzoltar": 0.13483997249264842, 
+                "ochiai": 0.13483997249264842, 
+                "tarantula": 0.9820419022281344
+            }, 
+            "nf": 0, 
+            "np": 2899, 
+            "rank": {
+                "ample": 70, 
+                "ochiai": 84, 
+                "tarantula": 70
+            }
+        }, 
+        "org.apache.commons.math.util.OpenIntToDoubleHashMap:421": {
+            "class": "org.apache.commons.math.util.OpenIntToDoubleHashMap", 
+            "ef": 1, 
+            "ep": 54, 
+            "line": 421, 
+            "metrics": {
+                "ample": 0.9817135116830342, 
+                "gzoltar": 0.13483997249264842, 
+                "ochiai": 0.13483997249264842, 
+                "tarantula": 0.9820419022281344
+            }, 
+            "nf": 0, 
+            "np": 2899, 
+            "rank": {
+                "ample": 71, 
+                "ochiai": 85, 
+                "tarantula": 71
+            }
+        }, 
+        "org.apache.commons.math.util.OpenIntToDoubleHashMap:422": {
+            "class": "org.apache.commons.math.util.OpenIntToDoubleHashMap", 
+            "ef": 1, 
+            "ep": 54, 
+            "line": 422, 
+            "metrics": {
+                "ample": 0.9817135116830342, 
+                "gzoltar": 0.13483997249264842, 
+                "ochiai": 0.13483997249264842, 
+                "tarantula": 0.9820419022281344
+            }, 
+            "nf": 0, 
+            "np": 2899, 
+            "rank": {
+                "ample": 69, 
+                "ochiai": 86, 
+                "tarantula": 69
+            }
+        }, 
+        "org.apache.commons.math.util.OpenIntToDoubleHashMap:423": {
+            "class": "org.apache.commons.math.util.OpenIntToDoubleHashMap", 
+            "ef": 1, 
+            "ep": 54, 
+            "line": 423, 
+            "metrics": {
+                "ample": 0.9817135116830342, 
+                "gzoltar": 0.13483997249264842, 
+                "ochiai": 0.13483997249264842, 
+                "tarantula": 0.9820419022281344
+            }, 
+            "nf": 0, 
+            "np": 2899, 
+            "rank": {
+                "ample": 74, 
+                "ochiai": 87, 
+                "tarantula": 74
+            }
+        }, 
+        "org.apache.commons.math.util.OpenIntToDoubleHashMap:426": {
+            "class": "org.apache.commons.math.util.OpenIntToDoubleHashMap", 
+            "ef": 1, 
+            "ep": 54, 
+            "line": 426, 
+            "metrics": {
+                "ample": 0.9817135116830342, 
+                "gzoltar": 0.13483997249264842, 
+                "ochiai": 0.13483997249264842, 
+                "tarantula": 0.9820419022281344
+            }, 
+            "nf": 0, 
+            "np": 2899, 
+            "rank": {
+                "ample": 72, 
+                "ochiai": 88, 
+                "tarantula": 72
+            }
+        }, 
+        "org.apache.commons.math.util.OpenIntToDoubleHashMap:428": {
+            "class": "org.apache.commons.math.util.OpenIntToDoubleHashMap", 
+            "ef": 1, 
+            "ep": 54, 
+            "line": 428, 
+            "metrics": {
+                "ample": 0.9817135116830342, 
+                "gzoltar": 0.13483997249264842, 
+                "ochiai": 0.13483997249264842, 
+                "tarantula": 0.9820419022281344
+            }, 
+            "nf": 0, 
+            "np": 2899, 
+            "rank": {
+                "ample": 73, 
+                "ochiai": 89, 
+                "tarantula": 73
+            }
+        }, 
+        "org.apache.commons.math.util.OpenIntToDoubleHashMap:469": {
+            "class": "org.apache.commons.math.util.OpenIntToDoubleHashMap", 
+            "ef": 1, 
+            "ep": 54, 
+            "line": 469, 
+            "metrics": {
+                "ample": 0.9817135116830342, 
+                "gzoltar": 0.13483997249264842, 
+                "ochiai": 0.13483997249264842, 
+                "tarantula": 0.9820419022281344
+            }, 
+            "nf": 0, 
+            "np": 2899, 
+            "rank": {
+                "ample": 75, 
+                "ochiai": 90, 
+                "tarantula": 75
+            }
+        }, 
+        "org.apache.commons.math.util.OpenIntToDoubleHashMap:478": {
+            "class": "org.apache.commons.math.util.OpenIntToDoubleHashMap", 
+            "ef": 1, 
+            "ep": 56, 
+            "line": 478, 
+            "metrics": {
+                "ample": 0.9810362343379614, 
+                "gzoltar": 0.13245323570650439, 
+                "ochiai": 0.13245323570650439, 
+                "tarantula": 0.9813891658358259
+            }, 
+            "nf": 0, 
+            "np": 2897, 
+            "rank": {
+                "ample": 92, 
+                "ochiai": 95, 
+                "tarantula": 92
+            }
+        }, 
+        "org.apache.commons.math.util.OpenIntToDoubleHashMap:479": {
+            "class": "org.apache.commons.math.util.OpenIntToDoubleHashMap", 
+            "ef": 1, 
+            "ep": 56, 
+            "line": 479, 
+            "metrics": {
+                "ample": 0.9810362343379614, 
+                "gzoltar": 0.13245323570650439, 
+                "ochiai": 0.13245323570650439, 
+                "tarantula": 0.9813891658358259
+            }, 
+            "nf": 0, 
+            "np": 2897, 
+            "rank": {
+                "ample": 91, 
+                "ochiai": 96, 
+                "tarantula": 91
+            }
+        }
+    }
+}

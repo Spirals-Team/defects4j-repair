@@ -1,0 +1,1962 @@
+{
+    "date": "2015-05-11T07:53:14.562717", 
+    "executedTest": 2054, 
+    "failedTest": 2, 
+    "failedTestDetails": [
+        {
+            "class": "org.apache.commons.math.optimization.direct.MultiDirectionalTest", 
+            "method": "testMinimizeMaximize"
+        }, 
+        {
+            "class": "org.apache.commons.math.optimization.direct.MultiDirectionalTest", 
+            "method": "testMath283"
+        }
+    ], 
+    "modifiedLines": [
+        {
+            "class": "a.org.apache.commons.math.optimization.direct.MultiDirectional", 
+            "line": 64
+        }, 
+        {
+            "class": "a.org.apache.commons.math.optimization.direct.MultiDirectional", 
+            "line": 96
+        }, 
+        {
+            "class": "a.org.apache.commons.math.optimization.direct.MultiDirectional", 
+            "line": 97
+        }, 
+        {
+            "class": "a.org.apache.commons.math.optimization.direct.MultiDirectional", 
+            "line": 98
+        }, 
+        {
+            "class": "a.org.apache.commons.math.optimization.direct.MultiDirectional", 
+            "line": 99
+        }, 
+        {
+            "class": "a.org.apache.commons.math.optimization.direct.MultiDirectional", 
+            "line": 100
+        }, 
+        {
+            "class": "a.org.apache.commons.math.optimization.direct.MultiDirectional", 
+            "line": 101
+        }, 
+        {
+            "class": "a.org.apache.commons.math.optimization.direct.MultiDirectional", 
+            "line": 102
+        }, 
+        {
+            "class": "a.org.apache.commons.math.optimization.direct.MultiDirectional", 
+            "line": 103
+        }, 
+        {
+            "class": "a.org.apache.commons.math.optimization.direct.MultiDirectional", 
+            "line": 104
+        }
+    ], 
+    "nbsuspicious": 100, 
+    "node": "graphene-139.nancy.grid5000.fr\n", 
+    "successfulTest": 2052, 
+    "suspicious": {
+        "org.apache.commons.math.MathException:166": {
+            "class": "org.apache.commons.math.MathException", 
+            "ef": 1, 
+            "ep": 32, 
+            "line": 166, 
+            "metrics": {
+                "ample": 0.4844054580896686, 
+                "gzoltar": 0.12309149097933272, 
+                "ochiai": 0.12309149097933272, 
+                "tarantula": 0.9697542533081286
+            }, 
+            "nf": 1, 
+            "np": 2020, 
+            "rank": {
+                "ample": 97, 
+                "ochiai": 97, 
+                "tarantula": 97
+            }
+        }, 
+        "org.apache.commons.math.MathException:172": {
+            "class": "org.apache.commons.math.MathException", 
+            "ef": 1, 
+            "ep": 13, 
+            "line": 172, 
+            "metrics": {
+                "ample": 0.49366471734892786, 
+                "gzoltar": 0.1889822365046136, 
+                "ochiai": 0.1889822365046136, 
+                "tarantula": 0.987487969201155
+            }, 
+            "nf": 1, 
+            "np": 2039, 
+            "rank": {
+                "ample": 90, 
+                "ochiai": 90, 
+                "tarantula": 89
+            }
+        }, 
+        "org.apache.commons.math.MathException:60": {
+            "class": "org.apache.commons.math.MathException", 
+            "ef": 1, 
+            "ep": 104, 
+            "line": 60, 
+            "metrics": {
+                "ample": 0.449317738791423, 
+                "gzoltar": 0.06900655593423542, 
+                "ochiai": 0.06900655593423542, 
+                "tarantula": 0.9079646017699116
+            }, 
+            "nf": 1, 
+            "np": 1948, 
+            "rank": {
+                "ample": 99, 
+                "ochiai": 98, 
+                "tarantula": 99
+            }
+        }, 
+        "org.apache.commons.math.MathException:73": {
+            "class": "org.apache.commons.math.MathException", 
+            "ef": 1, 
+            "ep": 104, 
+            "line": 73, 
+            "metrics": {
+                "ample": 0.449317738791423, 
+                "gzoltar": 0.06900655593423542, 
+                "ochiai": 0.06900655593423542, 
+                "tarantula": 0.9079646017699116
+            }, 
+            "nf": 1, 
+            "np": 1948, 
+            "rank": {
+                "ample": 98, 
+                "ochiai": 99, 
+                "tarantula": 98
+            }
+        }, 
+        "org.apache.commons.math.MathException:85": {
+            "class": "org.apache.commons.math.MathException", 
+            "ef": 1, 
+            "ep": 107, 
+            "line": 85, 
+            "metrics": {
+                "ample": 0.44785575048732945, 
+                "gzoltar": 0.06804138174397717, 
+                "ochiai": 0.06804138174397717, 
+                "tarantula": 0.9055604589585171
+            }, 
+            "nf": 1, 
+            "np": 1945, 
+            "rank": {
+                "ample": 100, 
+                "ochiai": 100, 
+                "tarantula": 100
+            }
+        }, 
+        "org.apache.commons.math.optimization.RealPointValuePair:70": {
+            "class": "org.apache.commons.math.optimization.RealPointValuePair", 
+            "ef": 1, 
+            "ep": 19, 
+            "line": 70, 
+            "metrics": {
+                "ample": 0.49074074074074076, 
+                "gzoltar": 0.15811388300841897, 
+                "ochiai": 0.15811388300841897, 
+                "tarantula": 0.9818181818181817
+            }, 
+            "nf": 1, 
+            "np": 2033, 
+            "rank": {
+                "ample": 91, 
+                "ochiai": 91, 
+                "tarantula": 91
+            }
+        }, 
+        "org.apache.commons.math.optimization.RealPointValuePair:79": {
+            "class": "org.apache.commons.math.optimization.RealPointValuePair", 
+            "ef": 2, 
+            "ep": 15, 
+            "line": 79, 
+            "metrics": {
+                "ample": 0.9926900584795322, 
+                "gzoltar": 0.34299717028501764, 
+                "ochiai": 0.34299717028501764, 
+                "tarantula": 0.9927431059506532
+            }, 
+            "nf": 0, 
+            "np": 2037, 
+            "rank": {
+                "ample": 72, 
+                "ochiai": 79, 
+                "tarantula": 79
+            }
+        }, 
+        "org.apache.commons.math.optimization.RealPointValuePair:86": {
+            "class": "org.apache.commons.math.optimization.RealPointValuePair", 
+            "ef": 2, 
+            "ep": 36, 
+            "line": 86, 
+            "metrics": {
+                "ample": 0.9824561403508771, 
+                "gzoltar": 0.22941573387056174, 
+                "ochiai": 0.22941573387056174, 
+                "tarantula": 0.9827586206896551
+            }, 
+            "nf": 0, 
+            "np": 2016, 
+            "rank": {
+                "ample": 73, 
+                "ochiai": 80, 
+                "tarantula": 90
+            }
+        }, 
+        "org.apache.commons.math.optimization.SimpleScalarValueChecker:74": {
+            "class": "org.apache.commons.math.optimization.SimpleScalarValueChecker", 
+            "ef": 1, 
+            "ep": 23, 
+            "line": 74, 
+            "metrics": {
+                "ample": 0.48879142300194933, 
+                "gzoltar": 0.14433756729740646, 
+                "ochiai": 0.14433756729740646, 
+                "tarantula": 0.9780743565300286
+            }, 
+            "nf": 1, 
+            "np": 2029, 
+            "rank": {
+                "ample": 93, 
+                "ochiai": 92, 
+                "tarantula": 93
+            }
+        }, 
+        "org.apache.commons.math.optimization.SimpleScalarValueChecker:75": {
+            "class": "org.apache.commons.math.optimization.SimpleScalarValueChecker", 
+            "ef": 1, 
+            "ep": 23, 
+            "line": 75, 
+            "metrics": {
+                "ample": 0.48879142300194933, 
+                "gzoltar": 0.14433756729740646, 
+                "ochiai": 0.14433756729740646, 
+                "tarantula": 0.9780743565300286
+            }, 
+            "nf": 1, 
+            "np": 2029, 
+            "rank": {
+                "ample": 94, 
+                "ochiai": 93, 
+                "tarantula": 94
+            }
+        }, 
+        "org.apache.commons.math.optimization.SimpleScalarValueChecker:76": {
+            "class": "org.apache.commons.math.optimization.SimpleScalarValueChecker", 
+            "ef": 1, 
+            "ep": 23, 
+            "line": 76, 
+            "metrics": {
+                "ample": 0.48879142300194933, 
+                "gzoltar": 0.14433756729740646, 
+                "ochiai": 0.14433756729740646, 
+                "tarantula": 0.9780743565300286
+            }, 
+            "nf": 1, 
+            "np": 2029, 
+            "rank": {
+                "ample": 95, 
+                "ochiai": 94, 
+                "tarantula": 95
+            }
+        }, 
+        "org.apache.commons.math.optimization.SimpleScalarValueChecker:77": {
+            "class": "org.apache.commons.math.optimization.SimpleScalarValueChecker", 
+            "ef": 1, 
+            "ep": 23, 
+            "line": 77, 
+            "metrics": {
+                "ample": 0.48879142300194933, 
+                "gzoltar": 0.14433756729740646, 
+                "ochiai": 0.14433756729740646, 
+                "tarantula": 0.9780743565300286
+            }, 
+            "nf": 1, 
+            "np": 2029, 
+            "rank": {
+                "ample": 96, 
+                "ochiai": 95, 
+                "tarantula": 96
+            }
+        }, 
+        "org.apache.commons.math.optimization.SimpleScalarValueChecker:78": {
+            "class": "org.apache.commons.math.optimization.SimpleScalarValueChecker", 
+            "ef": 1, 
+            "ep": 23, 
+            "line": 78, 
+            "metrics": {
+                "ample": 0.48879142300194933, 
+                "gzoltar": 0.14433756729740646, 
+                "ochiai": 0.14433756729740646, 
+                "tarantula": 0.9780743565300286
+            }, 
+            "nf": 1, 
+            "np": 2029, 
+            "rank": {
+                "ample": 92, 
+                "ochiai": 96, 
+                "tarantula": 92
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.DirectSearchOptimizer$1:275": {
+            "class": "org.apache.commons.math.optimization.direct.DirectSearchOptimizer$1", 
+            "ef": 2, 
+            "ep": 11, 
+            "line": 275, 
+            "metrics": {
+                "ample": 0.9946393762183235, 
+                "gzoltar": 0.3922322702763681, 
+                "ochiai": 0.3922322702763681, 
+                "tarantula": 0.9946679592825982
+            }, 
+            "nf": 0, 
+            "np": 2041, 
+            "rank": {
+                "ample": 33, 
+                "ochiai": 47, 
+                "tarantula": 40
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.DirectSearchOptimizer$1:278": {
+            "class": "org.apache.commons.math.optimization.direct.DirectSearchOptimizer$1", 
+            "ef": 2, 
+            "ep": 11, 
+            "line": 278, 
+            "metrics": {
+                "ample": 0.9946393762183235, 
+                "gzoltar": 0.3922322702763681, 
+                "ochiai": 0.3922322702763681, 
+                "tarantula": 0.9946679592825982
+            }, 
+            "nf": 0, 
+            "np": 2041, 
+            "rank": {
+                "ample": 32, 
+                "ochiai": 44, 
+                "tarantula": 39
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.DirectSearchOptimizer$1:279": {
+            "class": "org.apache.commons.math.optimization.direct.DirectSearchOptimizer$1", 
+            "ef": 2, 
+            "ep": 11, 
+            "line": 279, 
+            "metrics": {
+                "ample": 0.9946393762183235, 
+                "gzoltar": 0.3922322702763681, 
+                "ochiai": 0.3922322702763681, 
+                "tarantula": 0.9946679592825982
+            }, 
+            "nf": 0, 
+            "np": 2041, 
+            "rank": {
+                "ample": 31, 
+                "ochiai": 45, 
+                "tarantula": 38
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.DirectSearchOptimizer$1:280": {
+            "class": "org.apache.commons.math.optimization.direct.DirectSearchOptimizer$1", 
+            "ef": 2, 
+            "ep": 11, 
+            "line": 280, 
+            "metrics": {
+                "ample": 0.9946393762183235, 
+                "gzoltar": 0.3922322702763681, 
+                "ochiai": 0.3922322702763681, 
+                "tarantula": 0.9946679592825982
+            }, 
+            "nf": 0, 
+            "np": 2041, 
+            "rank": {
+                "ample": 34, 
+                "ochiai": 46, 
+                "tarantula": 41
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.DirectSearchOptimizer:142": {
+            "class": "org.apache.commons.math.optimization.direct.DirectSearchOptimizer", 
+            "ef": 2, 
+            "ep": 10, 
+            "line": 142, 
+            "metrics": {
+                "ample": 0.9951267056530214, 
+                "gzoltar": 0.4082482904638631, 
+                "ochiai": 0.4082482904638631, 
+                "tarantula": 0.9951503394762368
+            }, 
+            "nf": 0, 
+            "np": 2042, 
+            "rank": {
+                "ample": 25, 
+                "ochiai": 21, 
+                "tarantula": 32
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.DirectSearchOptimizer:143": {
+            "class": "org.apache.commons.math.optimization.direct.DirectSearchOptimizer", 
+            "ef": 2, 
+            "ep": 10, 
+            "line": 143, 
+            "metrics": {
+                "ample": 0.9951267056530214, 
+                "gzoltar": 0.4082482904638631, 
+                "ochiai": 0.4082482904638631, 
+                "tarantula": 0.9951503394762368
+            }, 
+            "nf": 0, 
+            "np": 2042, 
+            "rank": {
+                "ample": 26, 
+                "ochiai": 22, 
+                "tarantula": 33
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.DirectSearchOptimizer:144": {
+            "class": "org.apache.commons.math.optimization.direct.DirectSearchOptimizer", 
+            "ef": 2, 
+            "ep": 10, 
+            "line": 144, 
+            "metrics": {
+                "ample": 0.9951267056530214, 
+                "gzoltar": 0.4082482904638631, 
+                "ochiai": 0.4082482904638631, 
+                "tarantula": 0.9951503394762368
+            }, 
+            "nf": 0, 
+            "np": 2042, 
+            "rank": {
+                "ample": 21, 
+                "ochiai": 23, 
+                "tarantula": 28
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.DirectSearchOptimizer:145": {
+            "class": "org.apache.commons.math.optimization.direct.DirectSearchOptimizer", 
+            "ef": 2, 
+            "ep": 10, 
+            "line": 145, 
+            "metrics": {
+                "ample": 0.9951267056530214, 
+                "gzoltar": 0.4082482904638631, 
+                "ochiai": 0.4082482904638631, 
+                "tarantula": 0.9951503394762368
+            }, 
+            "nf": 0, 
+            "np": 2042, 
+            "rank": {
+                "ample": 22, 
+                "ochiai": 24, 
+                "tarantula": 29
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.DirectSearchOptimizer:146": {
+            "class": "org.apache.commons.math.optimization.direct.DirectSearchOptimizer", 
+            "ef": 2, 
+            "ep": 10, 
+            "line": 146, 
+            "metrics": {
+                "ample": 0.9951267056530214, 
+                "gzoltar": 0.4082482904638631, 
+                "ochiai": 0.4082482904638631, 
+                "tarantula": 0.9951503394762368
+            }, 
+            "nf": 0, 
+            "np": 2042, 
+            "rank": {
+                "ample": 23, 
+                "ochiai": 25, 
+                "tarantula": 30
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.DirectSearchOptimizer:147": {
+            "class": "org.apache.commons.math.optimization.direct.DirectSearchOptimizer", 
+            "ef": 2, 
+            "ep": 10, 
+            "line": 147, 
+            "metrics": {
+                "ample": 0.9951267056530214, 
+                "gzoltar": 0.4082482904638631, 
+                "ochiai": 0.4082482904638631, 
+                "tarantula": 0.9951503394762368
+            }, 
+            "nf": 0, 
+            "np": 2042, 
+            "rank": {
+                "ample": 24, 
+                "ochiai": 26, 
+                "tarantula": 31
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.DirectSearchOptimizer:152": {
+            "class": "org.apache.commons.math.optimization.direct.DirectSearchOptimizer", 
+            "ef": 2, 
+            "ep": 10, 
+            "line": 152, 
+            "metrics": {
+                "ample": 0.9951267056530214, 
+                "gzoltar": 0.4082482904638631, 
+                "ochiai": 0.4082482904638631, 
+                "tarantula": 0.9951503394762368
+            }, 
+            "nf": 0, 
+            "np": 2042, 
+            "rank": {
+                "ample": 27, 
+                "ochiai": 27, 
+                "tarantula": 34
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.DirectSearchOptimizer:155": {
+            "class": "org.apache.commons.math.optimization.direct.DirectSearchOptimizer", 
+            "ef": 2, 
+            "ep": 10, 
+            "line": 155, 
+            "metrics": {
+                "ample": 0.9951267056530214, 
+                "gzoltar": 0.4082482904638631, 
+                "ochiai": 0.4082482904638631, 
+                "tarantula": 0.9951503394762368
+            }, 
+            "nf": 0, 
+            "np": 2042, 
+            "rank": {
+                "ample": 28, 
+                "ochiai": 28, 
+                "tarantula": 35
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.DirectSearchOptimizer:220": {
+            "class": "org.apache.commons.math.optimization.direct.DirectSearchOptimizer", 
+            "ef": 2, 
+            "ep": 13, 
+            "line": 220, 
+            "metrics": {
+                "ample": 0.9936647173489279, 
+                "gzoltar": 0.3651483716701107, 
+                "ochiai": 0.3651483716701107, 
+                "tarantula": 0.9937046004842616
+            }, 
+            "nf": 0, 
+            "np": 2039, 
+            "rank": {
+                "ample": 71, 
+                "ochiai": 48, 
+                "tarantula": 78
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.DirectSearchOptimizer:221": {
+            "class": "org.apache.commons.math.optimization.direct.DirectSearchOptimizer", 
+            "ef": 2, 
+            "ep": 13, 
+            "line": 221, 
+            "metrics": {
+                "ample": 0.9936647173489279, 
+                "gzoltar": 0.3651483716701107, 
+                "ochiai": 0.3651483716701107, 
+                "tarantula": 0.9937046004842616
+            }, 
+            "nf": 0, 
+            "np": 2039, 
+            "rank": {
+                "ample": 70, 
+                "ochiai": 49, 
+                "tarantula": 77
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.DirectSearchOptimizer:230": {
+            "class": "org.apache.commons.math.optimization.direct.DirectSearchOptimizer", 
+            "ef": 2, 
+            "ep": 13, 
+            "line": 230, 
+            "metrics": {
+                "ample": 0.9936647173489279, 
+                "gzoltar": 0.3651483716701107, 
+                "ochiai": 0.3651483716701107, 
+                "tarantula": 0.9937046004842616
+            }, 
+            "nf": 0, 
+            "np": 2039, 
+            "rank": {
+                "ample": 67, 
+                "ochiai": 50, 
+                "tarantula": 74
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.DirectSearchOptimizer:231": {
+            "class": "org.apache.commons.math.optimization.direct.DirectSearchOptimizer", 
+            "ef": 2, 
+            "ep": 13, 
+            "line": 231, 
+            "metrics": {
+                "ample": 0.9936647173489279, 
+                "gzoltar": 0.3651483716701107, 
+                "ochiai": 0.3651483716701107, 
+                "tarantula": 0.9937046004842616
+            }, 
+            "nf": 0, 
+            "np": 2039, 
+            "rank": {
+                "ample": 68, 
+                "ochiai": 51, 
+                "tarantula": 75
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.DirectSearchOptimizer:245": {
+            "class": "org.apache.commons.math.optimization.direct.DirectSearchOptimizer", 
+            "ef": 1, 
+            "ep": 9, 
+            "line": 245, 
+            "metrics": {
+                "ample": 0.4956140350877193, 
+                "gzoltar": 0.22360679774997896, 
+                "ochiai": 0.22360679774997896, 
+                "tarantula": 0.9913043478260869
+            }, 
+            "nf": 1, 
+            "np": 2043, 
+            "rank": {
+                "ample": 84, 
+                "ochiai": 84, 
+                "tarantula": 83
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.DirectSearchOptimizer:250": {
+            "class": "org.apache.commons.math.optimization.direct.DirectSearchOptimizer", 
+            "ef": 2, 
+            "ep": 13, 
+            "line": 250, 
+            "metrics": {
+                "ample": 0.9936647173489279, 
+                "gzoltar": 0.3651483716701107, 
+                "ochiai": 0.3651483716701107, 
+                "tarantula": 0.9937046004842616
+            }, 
+            "nf": 0, 
+            "np": 2039, 
+            "rank": {
+                "ample": 61, 
+                "ochiai": 52, 
+                "tarantula": 68
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.DirectSearchOptimizer:251": {
+            "class": "org.apache.commons.math.optimization.direct.DirectSearchOptimizer", 
+            "ef": 2, 
+            "ep": 13, 
+            "line": 251, 
+            "metrics": {
+                "ample": 0.9936647173489279, 
+                "gzoltar": 0.3651483716701107, 
+                "ochiai": 0.3651483716701107, 
+                "tarantula": 0.9937046004842616
+            }, 
+            "nf": 0, 
+            "np": 2039, 
+            "rank": {
+                "ample": 62, 
+                "ochiai": 53, 
+                "tarantula": 69
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.DirectSearchOptimizer:265": {
+            "class": "org.apache.commons.math.optimization.direct.DirectSearchOptimizer", 
+            "ef": 2, 
+            "ep": 13, 
+            "line": 265, 
+            "metrics": {
+                "ample": 0.9936647173489279, 
+                "gzoltar": 0.3651483716701107, 
+                "ochiai": 0.3651483716701107, 
+                "tarantula": 0.9937046004842616
+            }, 
+            "nf": 0, 
+            "np": 2039, 
+            "rank": {
+                "ample": 54, 
+                "ochiai": 54, 
+                "tarantula": 61
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.DirectSearchOptimizer:268": {
+            "class": "org.apache.commons.math.optimization.direct.DirectSearchOptimizer", 
+            "ef": 1, 
+            "ep": 9, 
+            "line": 268, 
+            "metrics": {
+                "ample": 0.4956140350877193, 
+                "gzoltar": 0.22360679774997896, 
+                "ochiai": 0.22360679774997896, 
+                "tarantula": 0.9913043478260869
+            }, 
+            "nf": 1, 
+            "np": 2043, 
+            "rank": {
+                "ample": 83, 
+                "ochiai": 81, 
+                "tarantula": 82
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.DirectSearchOptimizer:269": {
+            "class": "org.apache.commons.math.optimization.direct.DirectSearchOptimizer", 
+            "ef": 1, 
+            "ep": 9, 
+            "line": 269, 
+            "metrics": {
+                "ample": 0.4956140350877193, 
+                "gzoltar": 0.22360679774997896, 
+                "ochiai": 0.22360679774997896, 
+                "tarantula": 0.9913043478260869
+            }, 
+            "nf": 1, 
+            "np": 2043, 
+            "rank": {
+                "ample": 82, 
+                "ochiai": 82, 
+                "tarantula": 81
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.DirectSearchOptimizer:270": {
+            "class": "org.apache.commons.math.optimization.direct.DirectSearchOptimizer", 
+            "ef": 1, 
+            "ep": 9, 
+            "line": 270, 
+            "metrics": {
+                "ample": 0.4956140350877193, 
+                "gzoltar": 0.22360679774997896, 
+                "ochiai": 0.22360679774997896, 
+                "tarantula": 0.9913043478260869
+            }, 
+            "nf": 1, 
+            "np": 2043, 
+            "rank": {
+                "ample": 81, 
+                "ochiai": 83, 
+                "tarantula": 80
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.DirectSearchOptimizer:273": {
+            "class": "org.apache.commons.math.optimization.direct.DirectSearchOptimizer", 
+            "ef": 2, 
+            "ep": 13, 
+            "line": 273, 
+            "metrics": {
+                "ample": 0.9936647173489279, 
+                "gzoltar": 0.3651483716701107, 
+                "ochiai": 0.3651483716701107, 
+                "tarantula": 0.9937046004842616
+            }, 
+            "nf": 0, 
+            "np": 2039, 
+            "rank": {
+                "ample": 50, 
+                "ochiai": 55, 
+                "tarantula": 57
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.DirectSearchOptimizer:274": {
+            "class": "org.apache.commons.math.optimization.direct.DirectSearchOptimizer", 
+            "ef": 2, 
+            "ep": 13, 
+            "line": 274, 
+            "metrics": {
+                "ample": 0.9936647173489279, 
+                "gzoltar": 0.3651483716701107, 
+                "ochiai": 0.3651483716701107, 
+                "tarantula": 0.9937046004842616
+            }, 
+            "nf": 0, 
+            "np": 2039, 
+            "rank": {
+                "ample": 52, 
+                "ochiai": 56, 
+                "tarantula": 59
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.DirectSearchOptimizer:286": {
+            "class": "org.apache.commons.math.optimization.direct.DirectSearchOptimizer", 
+            "ef": 2, 
+            "ep": 13, 
+            "line": 286, 
+            "metrics": {
+                "ample": 0.9936647173489279, 
+                "gzoltar": 0.3651483716701107, 
+                "ochiai": 0.3651483716701107, 
+                "tarantula": 0.9937046004842616
+            }, 
+            "nf": 0, 
+            "np": 2039, 
+            "rank": {
+                "ample": 44, 
+                "ochiai": 57, 
+                "tarantula": 51
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.DirectSearchOptimizer:287": {
+            "class": "org.apache.commons.math.optimization.direct.DirectSearchOptimizer", 
+            "ef": 2, 
+            "ep": 13, 
+            "line": 287, 
+            "metrics": {
+                "ample": 0.9936647173489279, 
+                "gzoltar": 0.3651483716701107, 
+                "ochiai": 0.3651483716701107, 
+                "tarantula": 0.9937046004842616
+            }, 
+            "nf": 0, 
+            "np": 2039, 
+            "rank": {
+                "ample": 43, 
+                "ochiai": 58, 
+                "tarantula": 50
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.DirectSearchOptimizer:288": {
+            "class": "org.apache.commons.math.optimization.direct.DirectSearchOptimizer", 
+            "ef": 2, 
+            "ep": 13, 
+            "line": 288, 
+            "metrics": {
+                "ample": 0.9936647173489279, 
+                "gzoltar": 0.3651483716701107, 
+                "ochiai": 0.3651483716701107, 
+                "tarantula": 0.9937046004842616
+            }, 
+            "nf": 0, 
+            "np": 2039, 
+            "rank": {
+                "ample": 42, 
+                "ochiai": 59, 
+                "tarantula": 49
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.DirectSearchOptimizer:289": {
+            "class": "org.apache.commons.math.optimization.direct.DirectSearchOptimizer", 
+            "ef": 2, 
+            "ep": 13, 
+            "line": 289, 
+            "metrics": {
+                "ample": 0.9936647173489279, 
+                "gzoltar": 0.3651483716701107, 
+                "ochiai": 0.3651483716701107, 
+                "tarantula": 0.9937046004842616
+            }, 
+            "nf": 0, 
+            "np": 2039, 
+            "rank": {
+                "ample": 41, 
+                "ochiai": 60, 
+                "tarantula": 48
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.DirectSearchOptimizer:291": {
+            "class": "org.apache.commons.math.optimization.direct.DirectSearchOptimizer", 
+            "ef": 2, 
+            "ep": 11, 
+            "line": 291, 
+            "metrics": {
+                "ample": 0.9946393762183235, 
+                "gzoltar": 0.3922322702763681, 
+                "ochiai": 0.3922322702763681, 
+                "tarantula": 0.9946679592825982
+            }, 
+            "nf": 0, 
+            "np": 2041, 
+            "rank": {
+                "ample": 30, 
+                "ochiai": 36, 
+                "tarantula": 37
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.DirectSearchOptimizer:294": {
+            "class": "org.apache.commons.math.optimization.direct.DirectSearchOptimizer", 
+            "ef": 2, 
+            "ep": 11, 
+            "line": 294, 
+            "metrics": {
+                "ample": 0.9946393762183235, 
+                "gzoltar": 0.3922322702763681, 
+                "ochiai": 0.3922322702763681, 
+                "tarantula": 0.9946679592825982
+            }, 
+            "nf": 0, 
+            "np": 2041, 
+            "rank": {
+                "ample": 29, 
+                "ochiai": 37, 
+                "tarantula": 36
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.DirectSearchOptimizer:295": {
+            "class": "org.apache.commons.math.optimization.direct.DirectSearchOptimizer", 
+            "ef": 1, 
+            "ep": 11, 
+            "line": 295, 
+            "metrics": {
+                "ample": 0.4946393762183236, 
+                "gzoltar": 0.20412414523193154, 
+                "ochiai": 0.20412414523193154, 
+                "tarantula": 0.9893924783027964
+            }, 
+            "nf": 1, 
+            "np": 2041, 
+            "rank": {
+                "ample": 86, 
+                "ochiai": 86, 
+                "tarantula": 85
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.DirectSearchOptimizer:296": {
+            "class": "org.apache.commons.math.optimization.direct.DirectSearchOptimizer", 
+            "ef": 1, 
+            "ep": 11, 
+            "line": 296, 
+            "metrics": {
+                "ample": 0.4946393762183236, 
+                "gzoltar": 0.20412414523193154, 
+                "ochiai": 0.20412414523193154, 
+                "tarantula": 0.9893924783027964
+            }, 
+            "nf": 1, 
+            "np": 2041, 
+            "rank": {
+                "ample": 87, 
+                "ochiai": 87, 
+                "tarantula": 86
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.DirectSearchOptimizer:297": {
+            "class": "org.apache.commons.math.optimization.direct.DirectSearchOptimizer", 
+            "ef": 1, 
+            "ep": 11, 
+            "line": 297, 
+            "metrics": {
+                "ample": 0.4946393762183236, 
+                "gzoltar": 0.20412414523193154, 
+                "ochiai": 0.20412414523193154, 
+                "tarantula": 0.9893924783027964
+            }, 
+            "nf": 1, 
+            "np": 2041, 
+            "rank": {
+                "ample": 88, 
+                "ochiai": 88, 
+                "tarantula": 87
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.DirectSearchOptimizer:299": {
+            "class": "org.apache.commons.math.optimization.direct.DirectSearchOptimizer", 
+            "ef": 1, 
+            "ep": 11, 
+            "line": 299, 
+            "metrics": {
+                "ample": 0.4946393762183236, 
+                "gzoltar": 0.20412414523193154, 
+                "ochiai": 0.20412414523193154, 
+                "tarantula": 0.9893924783027964
+            }, 
+            "nf": 1, 
+            "np": 2041, 
+            "rank": {
+                "ample": 89, 
+                "ochiai": 89, 
+                "tarantula": 88
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.DirectSearchOptimizer:301": {
+            "class": "org.apache.commons.math.optimization.direct.DirectSearchOptimizer", 
+            "ef": 1, 
+            "ep": 9, 
+            "line": 301, 
+            "metrics": {
+                "ample": 0.4956140350877193, 
+                "gzoltar": 0.22360679774997896, 
+                "ochiai": 0.22360679774997896, 
+                "tarantula": 0.9913043478260869
+            }, 
+            "nf": 1, 
+            "np": 2043, 
+            "rank": {
+                "ample": 85, 
+                "ochiai": 85, 
+                "tarantula": 84
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.DirectSearchOptimizer:306": {
+            "class": "org.apache.commons.math.optimization.direct.DirectSearchOptimizer", 
+            "ef": 2, 
+            "ep": 11, 
+            "line": 306, 
+            "metrics": {
+                "ample": 0.9946393762183235, 
+                "gzoltar": 0.3922322702763681, 
+                "ochiai": 0.3922322702763681, 
+                "tarantula": 0.9946679592825982
+            }, 
+            "nf": 0, 
+            "np": 2041, 
+            "rank": {
+                "ample": 39, 
+                "ochiai": 38, 
+                "tarantula": 46
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.DirectSearchOptimizer:307": {
+            "class": "org.apache.commons.math.optimization.direct.DirectSearchOptimizer", 
+            "ef": 2, 
+            "ep": 11, 
+            "line": 307, 
+            "metrics": {
+                "ample": 0.9946393762183235, 
+                "gzoltar": 0.3922322702763681, 
+                "ochiai": 0.3922322702763681, 
+                "tarantula": 0.9946679592825982
+            }, 
+            "nf": 0, 
+            "np": 2041, 
+            "rank": {
+                "ample": 36, 
+                "ochiai": 39, 
+                "tarantula": 43
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.DirectSearchOptimizer:319": {
+            "class": "org.apache.commons.math.optimization.direct.DirectSearchOptimizer", 
+            "ef": 2, 
+            "ep": 11, 
+            "line": 319, 
+            "metrics": {
+                "ample": 0.9946393762183235, 
+                "gzoltar": 0.3922322702763681, 
+                "ochiai": 0.3922322702763681, 
+                "tarantula": 0.9946679592825982
+            }, 
+            "nf": 0, 
+            "np": 2041, 
+            "rank": {
+                "ample": 35, 
+                "ochiai": 40, 
+                "tarantula": 42
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.DirectSearchOptimizer:320": {
+            "class": "org.apache.commons.math.optimization.direct.DirectSearchOptimizer", 
+            "ef": 1, 
+            "ep": 2, 
+            "line": 320, 
+            "metrics": {
+                "ample": 0.49902534113060426, 
+                "gzoltar": 0.4082482904638631, 
+                "ochiai": 0.4082482904638631, 
+                "tarantula": 0.9980544747081711
+            }, 
+            "nf": 1, 
+            "np": 2050, 
+            "rank": {
+                "ample": 74, 
+                "ochiai": 29, 
+                "tarantula": 21
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.DirectSearchOptimizer:322": {
+            "class": "org.apache.commons.math.optimization.direct.DirectSearchOptimizer", 
+            "ef": 2, 
+            "ep": 11, 
+            "line": 322, 
+            "metrics": {
+                "ample": 0.9946393762183235, 
+                "gzoltar": 0.3922322702763681, 
+                "ochiai": 0.3922322702763681, 
+                "tarantula": 0.9946679592825982
+            }, 
+            "nf": 0, 
+            "np": 2041, 
+            "rank": {
+                "ample": 40, 
+                "ochiai": 41, 
+                "tarantula": 47
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.DirectSearchOptimizer:345": {
+            "class": "org.apache.commons.math.optimization.direct.DirectSearchOptimizer", 
+            "ef": 2, 
+            "ep": 13, 
+            "line": 345, 
+            "metrics": {
+                "ample": 0.9936647173489279, 
+                "gzoltar": 0.3651483716701107, 
+                "ochiai": 0.3651483716701107, 
+                "tarantula": 0.9937046004842616
+            }, 
+            "nf": 0, 
+            "np": 2039, 
+            "rank": {
+                "ample": 53, 
+                "ochiai": 61, 
+                "tarantula": 60
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.DirectSearchOptimizer:349": {
+            "class": "org.apache.commons.math.optimization.direct.DirectSearchOptimizer", 
+            "ef": 2, 
+            "ep": 13, 
+            "line": 349, 
+            "metrics": {
+                "ample": 0.9936647173489279, 
+                "gzoltar": 0.3651483716701107, 
+                "ochiai": 0.3651483716701107, 
+                "tarantula": 0.9937046004842616
+            }, 
+            "nf": 0, 
+            "np": 2039, 
+            "rank": {
+                "ample": 55, 
+                "ochiai": 62, 
+                "tarantula": 62
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.DirectSearchOptimizer:360": {
+            "class": "org.apache.commons.math.optimization.direct.DirectSearchOptimizer", 
+            "ef": 2, 
+            "ep": 13, 
+            "line": 360, 
+            "metrics": {
+                "ample": 0.9936647173489279, 
+                "gzoltar": 0.3651483716701107, 
+                "ochiai": 0.3651483716701107, 
+                "tarantula": 0.9937046004842616
+            }, 
+            "nf": 0, 
+            "np": 2039, 
+            "rank": {
+                "ample": 65, 
+                "ochiai": 63, 
+                "tarantula": 72
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.DirectSearchOptimizer:361": {
+            "class": "org.apache.commons.math.optimization.direct.DirectSearchOptimizer", 
+            "ef": 2, 
+            "ep": 13, 
+            "line": 361, 
+            "metrics": {
+                "ample": 0.9936647173489279, 
+                "gzoltar": 0.3651483716701107, 
+                "ochiai": 0.3651483716701107, 
+                "tarantula": 0.9937046004842616
+            }, 
+            "nf": 0, 
+            "np": 2039, 
+            "rank": {
+                "ample": 66, 
+                "ochiai": 64, 
+                "tarantula": 73
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.DirectSearchOptimizer:368": {
+            "class": "org.apache.commons.math.optimization.direct.DirectSearchOptimizer", 
+            "ef": 2, 
+            "ep": 13, 
+            "line": 368, 
+            "metrics": {
+                "ample": 0.9936647173489279, 
+                "gzoltar": 0.3651483716701107, 
+                "ochiai": 0.3651483716701107, 
+                "tarantula": 0.9937046004842616
+            }, 
+            "nf": 0, 
+            "np": 2039, 
+            "rank": {
+                "ample": 63, 
+                "ochiai": 65, 
+                "tarantula": 70
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.DirectSearchOptimizer:369": {
+            "class": "org.apache.commons.math.optimization.direct.DirectSearchOptimizer", 
+            "ef": 2, 
+            "ep": 13, 
+            "line": 369, 
+            "metrics": {
+                "ample": 0.9936647173489279, 
+                "gzoltar": 0.3651483716701107, 
+                "ochiai": 0.3651483716701107, 
+                "tarantula": 0.9937046004842616
+            }, 
+            "nf": 0, 
+            "np": 2039, 
+            "rank": {
+                "ample": 64, 
+                "ochiai": 66, 
+                "tarantula": 71
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.DirectSearchOptimizer:372": {
+            "class": "org.apache.commons.math.optimization.direct.DirectSearchOptimizer", 
+            "ef": 2, 
+            "ep": 13, 
+            "line": 372, 
+            "metrics": {
+                "ample": 0.9936647173489279, 
+                "gzoltar": 0.3651483716701107, 
+                "ochiai": 0.3651483716701107, 
+                "tarantula": 0.9937046004842616
+            }, 
+            "nf": 0, 
+            "np": 2039, 
+            "rank": {
+                "ample": 46, 
+                "ochiai": 67, 
+                "tarantula": 53
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.DirectSearchOptimizer:373": {
+            "class": "org.apache.commons.math.optimization.direct.DirectSearchOptimizer", 
+            "ef": 2, 
+            "ep": 13, 
+            "line": 373, 
+            "metrics": {
+                "ample": 0.9936647173489279, 
+                "gzoltar": 0.3651483716701107, 
+                "ochiai": 0.3651483716701107, 
+                "tarantula": 0.9937046004842616
+            }, 
+            "nf": 0, 
+            "np": 2039, 
+            "rank": {
+                "ample": 45, 
+                "ochiai": 68, 
+                "tarantula": 52
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.DirectSearchOptimizer:374": {
+            "class": "org.apache.commons.math.optimization.direct.DirectSearchOptimizer", 
+            "ef": 2, 
+            "ep": 13, 
+            "line": 374, 
+            "metrics": {
+                "ample": 0.9936647173489279, 
+                "gzoltar": 0.3651483716701107, 
+                "ochiai": 0.3651483716701107, 
+                "tarantula": 0.9937046004842616
+            }, 
+            "nf": 0, 
+            "np": 2039, 
+            "rank": {
+                "ample": 49, 
+                "ochiai": 69, 
+                "tarantula": 56
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.DirectSearchOptimizer:375": {
+            "class": "org.apache.commons.math.optimization.direct.DirectSearchOptimizer", 
+            "ef": 2, 
+            "ep": 13, 
+            "line": 375, 
+            "metrics": {
+                "ample": 0.9936647173489279, 
+                "gzoltar": 0.3651483716701107, 
+                "ochiai": 0.3651483716701107, 
+                "tarantula": 0.9937046004842616
+            }, 
+            "nf": 0, 
+            "np": 2039, 
+            "rank": {
+                "ample": 48, 
+                "ochiai": 70, 
+                "tarantula": 55
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.DirectSearchOptimizer:376": {
+            "class": "org.apache.commons.math.optimization.direct.DirectSearchOptimizer", 
+            "ef": 2, 
+            "ep": 13, 
+            "line": 376, 
+            "metrics": {
+                "ample": 0.9936647173489279, 
+                "gzoltar": 0.3651483716701107, 
+                "ochiai": 0.3651483716701107, 
+                "tarantula": 0.9937046004842616
+            }, 
+            "nf": 0, 
+            "np": 2039, 
+            "rank": {
+                "ample": 47, 
+                "ochiai": 71, 
+                "tarantula": 54
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.DirectSearchOptimizer:378": {
+            "class": "org.apache.commons.math.optimization.direct.DirectSearchOptimizer", 
+            "ef": 2, 
+            "ep": 13, 
+            "line": 378, 
+            "metrics": {
+                "ample": 0.9936647173489279, 
+                "gzoltar": 0.3651483716701107, 
+                "ochiai": 0.3651483716701107, 
+                "tarantula": 0.9937046004842616
+            }, 
+            "nf": 0, 
+            "np": 2039, 
+            "rank": {
+                "ample": 51, 
+                "ochiai": 72, 
+                "tarantula": 58
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.DirectSearchOptimizer:381": {
+            "class": "org.apache.commons.math.optimization.direct.DirectSearchOptimizer", 
+            "ef": 2, 
+            "ep": 13, 
+            "line": 381, 
+            "metrics": {
+                "ample": 0.9936647173489279, 
+                "gzoltar": 0.3651483716701107, 
+                "ochiai": 0.3651483716701107, 
+                "tarantula": 0.9937046004842616
+            }, 
+            "nf": 0, 
+            "np": 2039, 
+            "rank": {
+                "ample": 69, 
+                "ochiai": 73, 
+                "tarantula": 76
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.DirectSearchOptimizer:392": {
+            "class": "org.apache.commons.math.optimization.direct.DirectSearchOptimizer", 
+            "ef": 2, 
+            "ep": 13, 
+            "line": 392, 
+            "metrics": {
+                "ample": 0.9936647173489279, 
+                "gzoltar": 0.3651483716701107, 
+                "ochiai": 0.3651483716701107, 
+                "tarantula": 0.9937046004842616
+            }, 
+            "nf": 0, 
+            "np": 2039, 
+            "rank": {
+                "ample": 57, 
+                "ochiai": 74, 
+                "tarantula": 64
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.DirectSearchOptimizer:393": {
+            "class": "org.apache.commons.math.optimization.direct.DirectSearchOptimizer", 
+            "ef": 2, 
+            "ep": 13, 
+            "line": 393, 
+            "metrics": {
+                "ample": 0.9936647173489279, 
+                "gzoltar": 0.3651483716701107, 
+                "ochiai": 0.3651483716701107, 
+                "tarantula": 0.9937046004842616
+            }, 
+            "nf": 0, 
+            "np": 2039, 
+            "rank": {
+                "ample": 56, 
+                "ochiai": 75, 
+                "tarantula": 63
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.DirectSearchOptimizer:394": {
+            "class": "org.apache.commons.math.optimization.direct.DirectSearchOptimizer", 
+            "ef": 2, 
+            "ep": 13, 
+            "line": 394, 
+            "metrics": {
+                "ample": 0.9936647173489279, 
+                "gzoltar": 0.3651483716701107, 
+                "ochiai": 0.3651483716701107, 
+                "tarantula": 0.9937046004842616
+            }, 
+            "nf": 0, 
+            "np": 2039, 
+            "rank": {
+                "ample": 59, 
+                "ochiai": 76, 
+                "tarantula": 66
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.DirectSearchOptimizer:395": {
+            "class": "org.apache.commons.math.optimization.direct.DirectSearchOptimizer", 
+            "ef": 2, 
+            "ep": 13, 
+            "line": 395, 
+            "metrics": {
+                "ample": 0.9936647173489279, 
+                "gzoltar": 0.3651483716701107, 
+                "ochiai": 0.3651483716701107, 
+                "tarantula": 0.9937046004842616
+            }, 
+            "nf": 0, 
+            "np": 2039, 
+            "rank": {
+                "ample": 58, 
+                "ochiai": 77, 
+                "tarantula": 65
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.DirectSearchOptimizer:396": {
+            "class": "org.apache.commons.math.optimization.direct.DirectSearchOptimizer", 
+            "ef": 2, 
+            "ep": 13, 
+            "line": 396, 
+            "metrics": {
+                "ample": 0.9936647173489279, 
+                "gzoltar": 0.3651483716701107, 
+                "ochiai": 0.3651483716701107, 
+                "tarantula": 0.9937046004842616
+            }, 
+            "nf": 0, 
+            "np": 2039, 
+            "rank": {
+                "ample": 60, 
+                "ochiai": 78, 
+                "tarantula": 67
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.DirectSearchOptimizer:401": {
+            "class": "org.apache.commons.math.optimization.direct.DirectSearchOptimizer", 
+            "ef": 2, 
+            "ep": 11, 
+            "line": 401, 
+            "metrics": {
+                "ample": 0.9946393762183235, 
+                "gzoltar": 0.3922322702763681, 
+                "ochiai": 0.3922322702763681, 
+                "tarantula": 0.9946679592825982
+            }, 
+            "nf": 0, 
+            "np": 2041, 
+            "rank": {
+                "ample": 37, 
+                "ochiai": 42, 
+                "tarantula": 44
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.DirectSearchOptimizer:403": {
+            "class": "org.apache.commons.math.optimization.direct.DirectSearchOptimizer", 
+            "ef": 2, 
+            "ep": 11, 
+            "line": 403, 
+            "metrics": {
+                "ample": 0.9946393762183235, 
+                "gzoltar": 0.3922322702763681, 
+                "ochiai": 0.3922322702763681, 
+                "tarantula": 0.9946679592825982
+            }, 
+            "nf": 0, 
+            "np": 2041, 
+            "rank": {
+                "ample": 38, 
+                "ochiai": 43, 
+                "tarantula": 45
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.MultiDirectional:113": {
+            "class": "org.apache.commons.math.optimization.direct.MultiDirectional", 
+            "ef": 2, 
+            "ep": 2, 
+            "line": 113, 
+            "metrics": {
+                "ample": 0.9990253411306043, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 0.9990262901655307
+            }, 
+            "nf": 0, 
+            "np": 2050, 
+            "rank": {
+                "ample": 11, 
+                "ochiai": 9, 
+                "tarantula": 11
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.MultiDirectional:114": {
+            "class": "org.apache.commons.math.optimization.direct.MultiDirectional", 
+            "ef": 2, 
+            "ep": 2, 
+            "line": 114, 
+            "metrics": {
+                "ample": 0.9990253411306043, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 0.9990262901655307
+            }, 
+            "nf": 0, 
+            "np": 2050, 
+            "rank": {
+                "ample": 10, 
+                "ochiai": 10, 
+                "tarantula": 10
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.MultiDirectional:117": {
+            "class": "org.apache.commons.math.optimization.direct.MultiDirectional", 
+            "ef": 2, 
+            "ep": 2, 
+            "line": 117, 
+            "metrics": {
+                "ample": 0.9990253411306043, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 0.9990262901655307
+            }, 
+            "nf": 0, 
+            "np": 2050, 
+            "rank": {
+                "ample": 9, 
+                "ochiai": 11, 
+                "tarantula": 9
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.MultiDirectional:118": {
+            "class": "org.apache.commons.math.optimization.direct.MultiDirectional", 
+            "ef": 2, 
+            "ep": 2, 
+            "line": 118, 
+            "metrics": {
+                "ample": 0.9990253411306043, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 0.9990262901655307
+            }, 
+            "nf": 0, 
+            "np": 2050, 
+            "rank": {
+                "ample": 8, 
+                "ochiai": 12, 
+                "tarantula": 8
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.MultiDirectional:119": {
+            "class": "org.apache.commons.math.optimization.direct.MultiDirectional", 
+            "ef": 2, 
+            "ep": 2, 
+            "line": 119, 
+            "metrics": {
+                "ample": 0.9990253411306043, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 0.9990262901655307
+            }, 
+            "nf": 0, 
+            "np": 2050, 
+            "rank": {
+                "ample": 13, 
+                "ochiai": 13, 
+                "tarantula": 13
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.MultiDirectional:120": {
+            "class": "org.apache.commons.math.optimization.direct.MultiDirectional", 
+            "ef": 2, 
+            "ep": 2, 
+            "line": 120, 
+            "metrics": {
+                "ample": 0.9990253411306043, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 0.9990262901655307
+            }, 
+            "nf": 0, 
+            "np": 2050, 
+            "rank": {
+                "ample": 17, 
+                "ochiai": 14, 
+                "tarantula": 17
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.MultiDirectional:121": {
+            "class": "org.apache.commons.math.optimization.direct.MultiDirectional", 
+            "ef": 2, 
+            "ep": 2, 
+            "line": 121, 
+            "metrics": {
+                "ample": 0.9990253411306043, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 0.9990262901655307
+            }, 
+            "nf": 0, 
+            "np": 2050, 
+            "rank": {
+                "ample": 18, 
+                "ochiai": 15, 
+                "tarantula": 18
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.MultiDirectional:122": {
+            "class": "org.apache.commons.math.optimization.direct.MultiDirectional", 
+            "ef": 2, 
+            "ep": 2, 
+            "line": 122, 
+            "metrics": {
+                "ample": 0.9990253411306043, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 0.9990262901655307
+            }, 
+            "nf": 0, 
+            "np": 2050, 
+            "rank": {
+                "ample": 15, 
+                "ochiai": 16, 
+                "tarantula": 15
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.MultiDirectional:123": {
+            "class": "org.apache.commons.math.optimization.direct.MultiDirectional", 
+            "ef": 2, 
+            "ep": 2, 
+            "line": 123, 
+            "metrics": {
+                "ample": 0.9990253411306043, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 0.9990262901655307
+            }, 
+            "nf": 0, 
+            "np": 2050, 
+            "rank": {
+                "ample": 16, 
+                "ochiai": 17, 
+                "tarantula": 16
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.MultiDirectional:125": {
+            "class": "org.apache.commons.math.optimization.direct.MultiDirectional", 
+            "ef": 2, 
+            "ep": 2, 
+            "line": 125, 
+            "metrics": {
+                "ample": 0.9990253411306043, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 0.9990262901655307
+            }, 
+            "nf": 0, 
+            "np": 2050, 
+            "rank": {
+                "ample": 19, 
+                "ochiai": 18, 
+                "tarantula": 19
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.MultiDirectional:129": {
+            "class": "org.apache.commons.math.optimization.direct.MultiDirectional", 
+            "ef": 2, 
+            "ep": 2, 
+            "line": 129, 
+            "metrics": {
+                "ample": 0.9990253411306043, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 0.9990262901655307
+            }, 
+            "nf": 0, 
+            "np": 2050, 
+            "rank": {
+                "ample": 20, 
+                "ochiai": 19, 
+                "tarantula": 20
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.MultiDirectional:130": {
+            "class": "org.apache.commons.math.optimization.direct.MultiDirectional", 
+            "ef": 2, 
+            "ep": 2, 
+            "line": 130, 
+            "metrics": {
+                "ample": 0.9990253411306043, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 0.9990262901655307
+            }, 
+            "nf": 0, 
+            "np": 2050, 
+            "rank": {
+                "ample": 14, 
+                "ochiai": 20, 
+                "tarantula": 14
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.MultiDirectional:66": {
+            "class": "org.apache.commons.math.optimization.direct.MultiDirectional", 
+            "ef": 2, 
+            "ep": 2, 
+            "line": 66, 
+            "metrics": {
+                "ample": 0.9990253411306043, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 0.9990262901655307
+            }, 
+            "nf": 0, 
+            "np": 2050, 
+            "rank": {
+                "ample": 5, 
+                "ochiai": 1, 
+                "tarantula": 5
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.MultiDirectional:69": {
+            "class": "org.apache.commons.math.optimization.direct.MultiDirectional", 
+            "ef": 2, 
+            "ep": 2, 
+            "line": 69, 
+            "metrics": {
+                "ample": 0.9990253411306043, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 0.9990262901655307
+            }, 
+            "nf": 0, 
+            "np": 2050, 
+            "rank": {
+                "ample": 4, 
+                "ochiai": 2, 
+                "tarantula": 4
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.MultiDirectional:70": {
+            "class": "org.apache.commons.math.optimization.direct.MultiDirectional", 
+            "ef": 2, 
+            "ep": 2, 
+            "line": 70, 
+            "metrics": {
+                "ample": 0.9990253411306043, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 0.9990262901655307
+            }, 
+            "nf": 0, 
+            "np": 2050, 
+            "rank": {
+                "ample": 1, 
+                "ochiai": 3, 
+                "tarantula": 1
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.MultiDirectional:73": {
+            "class": "org.apache.commons.math.optimization.direct.MultiDirectional", 
+            "ef": 2, 
+            "ep": 2, 
+            "line": 73, 
+            "metrics": {
+                "ample": 0.9990253411306043, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 0.9990262901655307
+            }, 
+            "nf": 0, 
+            "np": 2050, 
+            "rank": {
+                "ample": 2, 
+                "ochiai": 4, 
+                "tarantula": 2
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.MultiDirectional:74": {
+            "class": "org.apache.commons.math.optimization.direct.MultiDirectional", 
+            "ef": 2, 
+            "ep": 2, 
+            "line": 74, 
+            "metrics": {
+                "ample": 0.9990253411306043, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 0.9990262901655307
+            }, 
+            "nf": 0, 
+            "np": 2050, 
+            "rank": {
+                "ample": 3, 
+                "ochiai": 5, 
+                "tarantula": 3
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.MultiDirectional:77": {
+            "class": "org.apache.commons.math.optimization.direct.MultiDirectional", 
+            "ef": 1, 
+            "ep": 2, 
+            "line": 77, 
+            "metrics": {
+                "ample": 0.49902534113060426, 
+                "gzoltar": 0.4082482904638631, 
+                "ochiai": 0.4082482904638631, 
+                "tarantula": 0.9980544747081711
+            }, 
+            "nf": 1, 
+            "np": 2050, 
+            "rank": {
+                "ample": 75, 
+                "ochiai": 30, 
+                "tarantula": 22
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.MultiDirectional:78": {
+            "class": "org.apache.commons.math.optimization.direct.MultiDirectional", 
+            "ef": 1, 
+            "ep": 2, 
+            "line": 78, 
+            "metrics": {
+                "ample": 0.49902534113060426, 
+                "gzoltar": 0.4082482904638631, 
+                "ochiai": 0.4082482904638631, 
+                "tarantula": 0.9980544747081711
+            }, 
+            "nf": 1, 
+            "np": 2050, 
+            "rank": {
+                "ample": 77, 
+                "ochiai": 31, 
+                "tarantula": 24
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.MultiDirectional:79": {
+            "class": "org.apache.commons.math.optimization.direct.MultiDirectional", 
+            "ef": 1, 
+            "ep": 2, 
+            "line": 79, 
+            "metrics": {
+                "ample": 0.49902534113060426, 
+                "gzoltar": 0.4082482904638631, 
+                "ochiai": 0.4082482904638631, 
+                "tarantula": 0.9980544747081711
+            }, 
+            "nf": 1, 
+            "np": 2050, 
+            "rank": {
+                "ample": 76, 
+                "ochiai": 32, 
+                "tarantula": 23
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.MultiDirectional:81": {
+            "class": "org.apache.commons.math.optimization.direct.MultiDirectional", 
+            "ef": 1, 
+            "ep": 2, 
+            "line": 81, 
+            "metrics": {
+                "ample": 0.49902534113060426, 
+                "gzoltar": 0.4082482904638631, 
+                "ochiai": 0.4082482904638631, 
+                "tarantula": 0.9980544747081711
+            }, 
+            "nf": 1, 
+            "np": 2050, 
+            "rank": {
+                "ample": 79, 
+                "ochiai": 33, 
+                "tarantula": 26
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.MultiDirectional:84": {
+            "class": "org.apache.commons.math.optimization.direct.MultiDirectional", 
+            "ef": 1, 
+            "ep": 2, 
+            "line": 84, 
+            "metrics": {
+                "ample": 0.49902534113060426, 
+                "gzoltar": 0.4082482904638631, 
+                "ochiai": 0.4082482904638631, 
+                "tarantula": 0.9980544747081711
+            }, 
+            "nf": 1, 
+            "np": 2050, 
+            "rank": {
+                "ample": 80, 
+                "ochiai": 34, 
+                "tarantula": 27
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.MultiDirectional:89": {
+            "class": "org.apache.commons.math.optimization.direct.MultiDirectional", 
+            "ef": 2, 
+            "ep": 2, 
+            "line": 89, 
+            "metrics": {
+                "ample": 0.9990253411306043, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 0.9990262901655307
+            }, 
+            "nf": 0, 
+            "np": 2050, 
+            "rank": {
+                "ample": 12, 
+                "ochiai": 6, 
+                "tarantula": 12
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.MultiDirectional:90": {
+            "class": "org.apache.commons.math.optimization.direct.MultiDirectional", 
+            "ef": 2, 
+            "ep": 2, 
+            "line": 90, 
+            "metrics": {
+                "ample": 0.9990253411306043, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 0.9990262901655307
+            }, 
+            "nf": 0, 
+            "np": 2050, 
+            "rank": {
+                "ample": 6, 
+                "ochiai": 7, 
+                "tarantula": 6
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.MultiDirectional:92": {
+            "class": "org.apache.commons.math.optimization.direct.MultiDirectional", 
+            "ef": 1, 
+            "ep": 2, 
+            "line": 92, 
+            "metrics": {
+                "ample": 0.49902534113060426, 
+                "gzoltar": 0.4082482904638631, 
+                "ochiai": 0.4082482904638631, 
+                "tarantula": 0.9980544747081711
+            }, 
+            "nf": 1, 
+            "np": 2050, 
+            "rank": {
+                "ample": 78, 
+                "ochiai": 35, 
+                "tarantula": 25
+            }
+        }, 
+        "org.apache.commons.math.optimization.direct.MultiDirectional:95": {
+            "class": "org.apache.commons.math.optimization.direct.MultiDirectional", 
+            "ef": 2, 
+            "ep": 2, 
+            "line": 95, 
+            "metrics": {
+                "ample": 0.9990253411306043, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 0.9990262901655307
+            }, 
+            "nf": 0, 
+            "np": 2050, 
+            "rank": {
+                "ample": 7, 
+                "ochiai": 8, 
+                "tarantula": 7
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";cp -r /home/tdurieux/projects/math/math_17 /tmp/math_17_Kali;cd /tmp/math_17_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
+/home/tdurieux/results/Math/17/Kali/result
+cd /tmp/math_17_Kali;time java -cp /home/tdurieux/astor/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.math3.dfp.DfpTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;rm -rf /tmp/math_17_Kali;
+ NOT Found solution
+Number solutions:0
+All variants:
+Time Evolution(ms): 834075
+
+----stats: 
+
+spaces: [0]: []
+time val1 [180]: [747, 741, 743, 744, 741, 743, 743, 743, 745, 743, 730, 744, 742, 742, 743, 748, 748, 743, 742, 742, 741, 745, 743, 741, 741, 742, 742, 752, 742, 744, 741, 744, 742, 743, 750, 743, 747, 743, 745, 745, 740, 741, 739, 739, 740, 749, 748, 740, 743, 733, 741, 742, 743, 738, 743, 739, 742, 743, 740, 745, 743, 740, 740, 741, 741, 742, 740, 740, 740, 743, 741, 740, 740, 744, 740, 739, 741, 744, 744, 738, 418, 745, 739, 742, 735, 745, 739, 724, 284, 283, 396, 60001, 306, 320, 1284, 1294, 1294, 282, 289, 291, 2951, 754, 742, 742, 740, 741, 1851, 1848, 60002, 60001, 745, 743, 744, 744, 749, 3016, 2589, 2603, 2602, 2616, 743, 743, 742, 744, 60001, 747, 746, 60001, 751, 2873, 745, 2902, 60001, 22914, 22920, 22904, 726, 740, 741, 730, 742, 741, 60001, 60001, 748, 741, 736, 425, 739, 732, 742, 60001, 60001, 727, 739, 736, 737, 744, 738, 741, 737, 416, 415, 742, 743, 742, 741, 751, 422, 426, 733, 418, 424, 742, 745, 743, 743, 749, 740, 206]
+time val2 [0]: []
+#gen: 230
+#patches: 0
+#RightCompilation: 179
+#WrongCompilation: 50
+#FailingTestCaseExecution: 180
+#RegressionTestExecution: 0
+#TestcasesExecutedval1: 4420
+#TestcasesExecutedval2: 0
+#FailingTestCase: 26
+#RegressionTestCases: 0
+#OfAppliedOp: 229
+#NotAppliedOp: 0
+#InmutatedGen: 0
+#unfinishValidation: 0
+Time Total(ms): 1508738
+

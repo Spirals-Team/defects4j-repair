@@ -1,0 +1,77 @@
+{
+    "date": "2015-05-11T08:01:24.745716", 
+    "executedTest": 2073, 
+    "failedTest": 1, 
+    "failedTestDetails": [
+        {
+            "class": "org.apache.commons.lang3.StringUtilsEqualsIndexOfTest", 
+            "method": "testEquals"
+        }
+    ], 
+    "modifiedLines": [
+        {
+            "class": "a.org.apache.commons.lang3.StringUtils", 
+            "line": 782
+        }, 
+        {
+            "class": "a.org.apache.commons.lang3.StringUtils", 
+            "line": 783
+        }, 
+        {
+            "class": "a.org.apache.commons.lang3.StringUtils", 
+            "line": 784
+        }, 
+        {
+            "class": "a.org.apache.commons.lang3.StringUtils", 
+            "line": 785
+        }, 
+        {
+            "class": "a.org.apache.commons.lang3.StringUtils", 
+            "line": 786
+        }, 
+        {
+            "class": "a.org.apache.commons.lang3.StringUtils", 
+            "line": 787
+        }, 
+        {
+            "class": "a.org.apache.commons.lang3.StringUtils", 
+            "line": 788
+        }, 
+        {
+            "class": "a.org.apache.commons.lang3.StringUtils", 
+            "line": 789
+        }, 
+        {
+            "class": "a.org.apache.commons.lang3.StringUtils", 
+            "line": 790
+        }, 
+        {
+            "class": "a.org.apache.commons.lang3.StringUtils", 
+            "line": 791
+        }
+    ], 
+    "nbsuspicious": 1, 
+    "node": "griffon-10.nancy.grid5000.fr\n", 
+    "successfulTest": 2072, 
+    "suspicious": {
+        "org.apache.commons.lang3.StringUtils:782": {
+            "class": "org.apache.commons.lang3.StringUtils", 
+            "ef": 1, 
+            "ep": 16, 
+            "line": 782, 
+            "metrics": {
+                "ample": 0.9922779922779923, 
+                "gzoltar": 0.24253562503633297, 
+                "ochiai": 0.24253562503633297, 
+                "tarantula": 0.9923371647509579
+            }, 
+            "nf": 0, 
+            "np": 2056, 
+            "rank": {
+                "ample": 1, 
+                "ochiai": 1, 
+                "tarantula": 1
+            }
+        }
+    }
+}

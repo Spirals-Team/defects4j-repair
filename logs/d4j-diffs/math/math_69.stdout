@@ -1,8 +1,0 @@
-org.apache.commons.math.stat.correlation.PearsonsCorrelation
-
-171c171
-<                     out[i][j] = 2 * (1 - tDistribution.cumulativeProbability(t));
----
->                     out[i][j] = 2 * tDistribution.cumulativeProbability(-t);
-
-

@@ -1,0 +1,92 @@
+export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";cp -r /home/tdurieux/projects/lang/lang_13 /tmp/lang_13_Ranking;cd /tmp/lang_13_Ranking;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Lang/lib/* lib/;find . -type f -name "package-info.java" -delete;
+cd /tmp/lang_13_Ranking;cp -r /home/tdurieux/nopol/z3-x64-debian-7.7/bin/ lib/z3;time java -cp /home/tdurieux/nopol/nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar fr.inria.lille.repair.Main --mode ranking --type condition --oracle angelic --synthesis smt --solver z3 --solver-path lib/z3/z3 --complianceLevel 5 --source src/main/java/ --classpath target/classes/:target/tests/:lib/asm.jar:lib/cglib.jar:lib/commons-io.jar:lib/easymock.jar:/home/tdurieux/nopol/nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar;echo "
+
+Node: `hostname`
+";echo "
+Date: `date`
+";rm -rf /tmp/lang_13_Ranking;
+
+/************************/
+Executed tests:   2135
+Successful tests: 2134
+Failed tests:     1
+
+org.apache.commons.lang3.SerializationUtilsTest#testPrimitiveTypeClassSerialization
+org.apache.commons.lang3.SerializationException: ClassNotFoundException while reading cloned object data
+	at org.apache.commons.lang3.SerializationUtils.clone(SerializationUtils.java:99)
+	at org.apache.commons.lang3.SerializationUtilsTest.testPrimitiveTypeClassSerialization(SerializationUtilsTest.java:373)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at com.gzoltar.core.instr.testing.junit.JUnitRunner.run(JUnitRunner.java:47)
+	at com.gzoltar.core.instr.Runner.main(Runner.java:46)
+Caused by: java.lang.ClassNotFoundException: byte
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:274)
+	at org.apache.commons.lang3.SerializationUtils$ClassLoaderAwareObjectInputStream.resolveClass(SerializationUtils.java:268)
+	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1612)
+	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1517)
+	at java.io.ObjectInputStream.readClass(ObjectInputStream.java:1483)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1333)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:370)
+	at org.apache.commons.lang3.SerializationUtils.clone(SerializationUtils.java:95)
+	... 18 more
+
+
+/************************/
+/* Suspicious statement */
+/************************/
+org.apache.commons.lang3.SerializationUtils$ClassLoaderAwareObjectInputStream:267 -> 1.0 (ep: 0, ef: 1, np: 2134, nf: 0)
+org.apache.commons.lang3.SerializationUtils$ClassLoaderAwareObjectInputStream:268 -> 1.0 (ep: 0, ef: 1, np: 2134, nf: 0)
+org.apache.commons.lang3.SerializationUtils:99 -> 1.0 (ep: 0, ef: 1, np: 2134, nf: 0)
+org.apache.commons.lang3.SerializationUtils:103 -> 1.0 (ep: 0, ef: 1, np: 2134, nf: 0)
+org.apache.commons.lang3.SerializationUtils:104 -> 1.0 (ep: 0, ef: 1, np: 2134, nf: 0)
+org.apache.commons.lang3.SerializationUtils:105 -> 1.0 (ep: 0, ef: 1, np: 2134, nf: 0)
+org.apache.commons.lang3.SerializationUtils:109 -> 1.0 (ep: 0, ef: 1, np: 2134, nf: 0)
+org.apache.commons.lang3.SerializationUtils:83 -> 0.4082482904638631 (ep: 5, ef: 1, np: 2129, nf: 0)
+org.apache.commons.lang3.SerializationUtils:85 -> 0.4082482904638631 (ep: 5, ef: 1, np: 2129, nf: 0)
+org.apache.commons.lang3.SerializationUtils:88 -> 0.4082482904638631 (ep: 5, ef: 1, np: 2129, nf: 0)
+org.apache.commons.lang3.SerializationUtils:95 -> 0.4082482904638631 (ep: 5, ef: 1, np: 2129, nf: 0)
+org.apache.commons.lang3.SerializationUtils$ClassLoaderAwareObjectInputStream:264 -> 0.4082482904638631 (ep: 5, ef: 1, np: 2129, nf: 0)
+org.apache.commons.lang3.SerializationUtils$ClassLoaderAwareObjectInputStream:266 -> 0.4082482904638631 (ep: 5, ef: 1, np: 2129, nf: 0)
+org.apache.commons.lang3.SerializationUtils:82 -> 0.3779644730092272 (ep: 6, ef: 1, np: 2128, nf: 0)
+org.apache.commons.lang3.SerializationUtils:79 -> 0.35355339059327373 (ep: 7, ef: 1, np: 2127, nf: 0)
+org.apache.commons.lang3.SerializationUtils:164 -> 0.2581988897471611 (ep: 14, ef: 1, np: 2120, nf: 0)
+org.apache.commons.lang3.SerializationUtils:144 -> 0.24253562503633297 (ep: 16, ef: 1, np: 2118, nf: 0)
+org.apache.commons.lang3.SerializationUtils:145 -> 0.24253562503633297 (ep: 16, ef: 1, np: 2118, nf: 0)
+org.apache.commons.lang3.SerializationUtils:149 -> 0.24253562503633297 (ep: 16, ef: 1, np: 2118, nf: 0)
+org.apache.commons.lang3.SerializationUtils:151 -> 0.24253562503633297 (ep: 16, ef: 1, np: 2118, nf: 0)
+org.apache.commons.lang3.SerializationUtils:162 -> 0.24253562503633297 (ep: 16, ef: 1, np: 2118, nf: 0)
+org.apache.commons.lang3.SerializationUtils:163 -> 0.24253562503633297 (ep: 16, ef: 1, np: 2118, nf: 0)
+org.apache.commons.lang3.SerializationUtils:138 -> 0.22360679774997896 (ep: 19, ef: 1, np: 2115, nf: 0)
+org.apache.commons.lang3.SerializationUtils:134 -> 0.2182178902359924 (ep: 20, ef: 1, np: 2114, nf: 0)
+org.apache.commons.lang3.SerializationUtils:137 -> 0.2182178902359924 (ep: 20, ef: 1, np: 2114, nf: 0)
+org.apache.commons.lang3.SerializationUtils:131 -> 0.20851441405707477 (ep: 22, ef: 1, np: 2112, nf: 0)
+
+
+
+Node: griffon-65.nancy.grid5000.fr
+
+
+Date: Mon May 11 08:01:34 CEST 2015
+
+

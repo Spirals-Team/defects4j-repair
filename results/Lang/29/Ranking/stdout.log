@@ -1,0 +1,62 @@
+export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";cp -r /home/tdurieux/projects/lang/lang_29 /tmp/lang_29_Ranking;cd /tmp/lang_29_Ranking;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Lang/lib/* lib/;find . -type f -name "package-info.java" -delete;
+cd /tmp/lang_29_Ranking;cp -r /home/tdurieux/nopol/z3-x64-debian-7.7/bin/ lib/z3;time java -cp /home/tdurieux/nopol/nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar fr.inria.lille.repair.Main --mode ranking --type condition --oracle angelic --synthesis smt --solver z3 --solver-path lib/z3/z3 --complianceLevel 5 --source src/main/java/ --classpath target/classes/:target/test-classes/:lib/asm.jar:lib/cglib.jar:lib/commons-io.jar:lib/easymock.jar:/home/tdurieux/nopol/nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar;echo "
+
+Node: `hostname`
+";echo "
+Date: `date`
+";rm -rf /tmp/lang_29_Ranking;
+
+/************************/
+Executed tests:   1760
+Successful tests: 1759
+Failed tests:     1
+
+org.apache.commons.lang3.SystemUtilsTest#testJavaVersionAsInt
+junit.framework.AssertionFailedError: expected:<0> but was:<0.0>
+	at junit.framework.Assert.fail(Assert.java:57)
+	at junit.framework.Assert.failNotEquals(Assert.java:329)
+	at junit.framework.Assert.assertEquals(Assert.java:78)
+	at junit.framework.Assert.assertEquals(Assert.java:86)
+	at junit.framework.TestCase.assertEquals(TestCase.java:253)
+	at org.apache.commons.lang3.SystemUtilsTest.testJavaVersionAsInt(SystemUtilsTest.java:210)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at com.gzoltar.core.instr.testing.junit.JUnitRunner.run(JUnitRunner.java:47)
+	at com.gzoltar.core.instr.Runner.main(Runner.java:46)
+
+
+/************************/
+/* Suspicious statement */
+/************************/
+org.apache.commons.lang3.SystemUtils:1673 -> 1.0 (ep: 0, ef: 1, np: 1759, nf: 0)
+org.apache.commons.lang3.SystemUtils:1792 -> 0.7071067811865475 (ep: 1, ef: 1, np: 1758, nf: 0)
+org.apache.commons.lang3.SystemUtils:1795 -> 0.7071067811865475 (ep: 1, ef: 1, np: 1758, nf: 0)
+org.apache.commons.lang3.SystemUtils:1796 -> 0.7071067811865475 (ep: 1, ef: 1, np: 1758, nf: 0)
+org.apache.commons.lang3.SystemUtils:1797 -> 0.7071067811865475 (ep: 1, ef: 1, np: 1758, nf: 0)
+org.apache.commons.lang3.SystemUtils:1800 -> 0.7071067811865475 (ep: 1, ef: 1, np: 1758, nf: 0)
+org.apache.commons.lang3.SystemUtils:1803 -> 0.7071067811865475 (ep: 1, ef: 1, np: 1758, nf: 0)
+org.apache.commons.lang3.SystemUtils:1806 -> 0.7071067811865475 (ep: 1, ef: 1, np: 1758, nf: 0)
+org.apache.commons.lang3.SystemUtils:1717 -> 0.7071067811865475 (ep: 1, ef: 1, np: 1758, nf: 0)
+org.apache.commons.lang3.SystemUtils:1716 -> 0.5773502691896258 (ep: 2, ef: 1, np: 1757, nf: 0)
+
+
+
+Node: graphene-88.nancy.grid5000.fr
+
+
+Date: Mon May 11 08:00:23 CEST 2015
+
+

@@ -1,0 +1,90 @@
+export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";cp -r /home/tdurieux/projects/lang/lang_12 /tmp/lang_12_Ranking;cd /tmp/lang_12_Ranking;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Lang/lib/* lib/;find . -type f -name "package-info.java" -delete;
+cd /tmp/lang_12_Ranking;cp -r /home/tdurieux/nopol/z3-x64-debian-7.7/bin/ lib/z3;time java -cp /home/tdurieux/nopol/nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar fr.inria.lille.repair.Main --mode ranking --type condition --oracle angelic --synthesis smt --solver z3 --solver-path lib/z3/z3 --complianceLevel 6 --source src/main/java/ --classpath target/classes/:target/tests/:lib/asm.jar:lib/cglib.jar:lib/commons-io.jar:lib/easymock.jar:/home/tdurieux/nopol/nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar;echo "
+
+Node: `hostname`
+";echo "
+Date: `date`
+";rm -rf /tmp/lang_12_Ranking;
+
+/************************/
+Executed tests:   2137
+Successful tests: 2135
+Failed tests:     2
+
+org.apache.commons.lang3.RandomStringUtilsTest#testExceptions
+java.lang.ArrayIndexOutOfBoundsException: 1444473382
+	at org.apache.commons.lang3.RandomStringUtils.random(RandomStringUtils.java:248)
+	at org.apache.commons.lang3.RandomStringUtils.random(RandomStringUtils.java:321)
+	at org.apache.commons.lang3.RandomStringUtilsTest.testExceptions(RandomStringUtilsTest.java:148)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at com.gzoltar.core.instr.testing.junit.JUnitRunner.run(JUnitRunner.java:47)
+	at com.gzoltar.core.instr.Runner.main(Runner.java:46)
+
+org.apache.commons.lang3.RandomStringUtilsTest#testLANG805
+java.lang.ArrayIndexOutOfBoundsException: 2038678390
+	at org.apache.commons.lang3.RandomStringUtils.random(RandomStringUtils.java:248)
+	at org.apache.commons.lang3.RandomStringUtilsTest.testLANG805(RandomStringUtilsTest.java:130)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at com.gzoltar.core.instr.testing.junit.JUnitRunner.run(JUnitRunner.java:47)
+	at com.gzoltar.core.instr.Runner.main(Runner.java:46)
+
+
+/************************/
+/* Suspicious statement */
+/************************/
+org.apache.commons.lang3.RandomStringUtils:228 -> 0.7071067811865475 (ep: 0, ef: 1, np: 2135, nf: 1)
+org.apache.commons.lang3.RandomStringUtils:235 -> 0.7071067811865475 (ep: 2, ef: 2, np: 2133, nf: 0)
+org.apache.commons.lang3.RandomStringUtils:236 -> 0.7071067811865475 (ep: 2, ef: 2, np: 2133, nf: 0)
+org.apache.commons.lang3.RandomStringUtils:248 -> 0.7071067811865475 (ep: 2, ef: 2, np: 2133, nf: 0)
+org.apache.commons.lang3.RandomStringUtils:232 -> 0.5345224838248488 (ep: 5, ef: 2, np: 2130, nf: 0)
+org.apache.commons.lang3.RandomStringUtils:233 -> 0.5345224838248488 (ep: 5, ef: 2, np: 2130, nf: 0)
+org.apache.commons.lang3.RandomStringUtils:234 -> 0.5345224838248488 (ep: 5, ef: 2, np: 2130, nf: 0)
+org.apache.commons.lang3.RandomStringUtils:225 -> 0.47140452079103173 (ep: 7, ef: 2, np: 2128, nf: 0)
+org.apache.commons.lang3.RandomStringUtils:227 -> 0.47140452079103173 (ep: 7, ef: 2, np: 2128, nf: 0)
+org.apache.commons.lang3.RandomStringUtils:231 -> 0.47140452079103173 (ep: 7, ef: 2, np: 2128, nf: 0)
+org.apache.commons.lang3.RandomStringUtils:240 -> 0.47140452079103173 (ep: 7, ef: 2, np: 2128, nf: 0)
+org.apache.commons.lang3.RandomStringUtils:241 -> 0.47140452079103173 (ep: 7, ef: 2, np: 2128, nf: 0)
+org.apache.commons.lang3.RandomStringUtils:243 -> 0.47140452079103173 (ep: 7, ef: 2, np: 2128, nf: 0)
+org.apache.commons.lang3.RandomStringUtils:245 -> 0.47140452079103173 (ep: 7, ef: 2, np: 2128, nf: 0)
+org.apache.commons.lang3.RandomStringUtils:69 -> 0.4082482904638631 (ep: 2, ef: 1, np: 2133, nf: 1)
+org.apache.commons.lang3.RandomStringUtils:318 -> 0.4082482904638631 (ep: 2, ef: 1, np: 2133, nf: 1)
+org.apache.commons.lang3.RandomStringUtils:321 -> 0.4082482904638631 (ep: 2, ef: 1, np: 2133, nf: 1)
+org.apache.commons.lang3.RandomStringUtils:143 -> 0.2886751345948129 (ep: 5, ef: 1, np: 2130, nf: 1)
+org.apache.commons.lang3.RandomStringUtils:163 -> 0.2672612419124244 (ep: 6, ef: 1, np: 2129, nf: 1)
+
+
+
+Node: griffon-63.nancy.grid5000.fr
+
+
+Date: Mon May 11 08:01:37 CEST 2015
+
+

@@ -1,0 +1,49 @@
+export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";cp -r /home/tdurieux/projects/math/math_49 /tmp/math_49_Genprog;cd /tmp/math_49_Genprog;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
+/home/tdurieux/results/Math/49/Genprog/result
+cd /tmp/math_49_Genprog;time java -cp /home/tdurieux/astor/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar fr.inria.main.evolution.MainjGenProg -mode statement -location . -dependencies lib/ -failing org.apache.commons.math.linear.SparseRealVectorTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
+
+Node: `hostname`
+";echo "
+Date: `date`
+";rm -rf /tmp/math_49_Genprog;
+
+ProgramVariant 282
+ 
+ operation: 
+location= org.apache.commons.math.util.OpenIntToDoubleHashMap
+ line= 399
+ original statement= ++(count)
+ fix (remove original statement) "++(count)"
+ generation= 141
+ 
+ ----
+Time Evolution(ms): 73650
+
+----stats: 
+
+spaces: [105]: [91, 171, 343, 171, 171, 171, 171, 343, 6, 171, 171, 171, 171, 171, 171, 171, 171, 343, 91, 171, 13, 171, 171, 36, 171, 171, 343, 343, 343, 75, 171, 26, 91, 75, 171, 171, 343, 171, 171, 13, 226, 343, 171, 226, 343, 26, 75, 171, 343, 171, 343, 226, 343, 91, 171, 171, 171, 171, 343, 343, 63, 3, 171, 171, 34, 171, 171, 63, 5, 63, 171, 75, 171, 171, 23, 343, 171, 343, 5, 171, 171, 171, 343, 171, 343, 36, 343, 171, 3, 171, 171, 171, 171, 36, 171, 63, 343, 171, 171, 343, 343, 171, 91, 226, 343]
+time val1 [43]: [332, 319, 338, 331, 322, 319, 321, 301, 321, 319, 305, 319, 318, 320, 294, 319, 302, 295, 319, 316, 320, 321, 321, 322, 298, 320, 320, 300, 318, 319, 294, 324, 319, 322, 329, 318, 318, 320, 320, 299, 318, 320, 310]
+time val2 [1]: [43868]
+#gen: 141
+#patches: 1
+#RightCompilation: 42
+#WrongCompilation: 99
+#FailingTestCaseExecution: 43
+#RegressionTestExecution: 1
+#TestcasesExecutedval1: 387
+#TestcasesExecutedval2: 2824
+#FailingTestCase: 9
+#RegressionTestCases: 2824
+#OfAppliedOp: 141
+#NotAppliedOp: 0
+#InmutatedGen: 1
+#unfinishValidation: 0
+Time Total(ms): 251776
+
+
+Node: graphene-102.nancy.grid5000.fr
+
+
+Date: Tue May 12 03:17:45 CEST 2015
+
+

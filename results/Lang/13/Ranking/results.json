@@ -1,0 +1,592 @@
+{
+    "date": "2015-05-11T08:01:34.213575", 
+    "executedTest": 2135, 
+    "failedTest": 1, 
+    "failedTestDetails": [
+        {
+            "class": "org.apache.commons.lang3.SerializationUtilsTest", 
+            "method": "testPrimitiveTypeClassSerialization"
+        }
+    ], 
+    "modifiedLines": [
+        {
+            "class": "a.org.apache.commons.lang3.SerializationUtils", 
+            "line": 239
+        }, 
+        {
+            "class": "a.org.apache.commons.lang3.SerializationUtils", 
+            "line": 240
+        }, 
+        {
+            "class": "a.org.apache.commons.lang3.SerializationUtils", 
+            "line": 254
+        }, 
+        {
+            "class": "a.org.apache.commons.lang3.SerializationUtils", 
+            "line": 255
+        }, 
+        {
+            "class": "a.org.apache.commons.lang3.SerializationUtils", 
+            "line": 256
+        }, 
+        {
+            "class": "a.org.apache.commons.lang3.SerializationUtils", 
+            "line": 257
+        }, 
+        {
+            "class": "a.org.apache.commons.lang3.SerializationUtils", 
+            "line": 258
+        }, 
+        {
+            "class": "a.org.apache.commons.lang3.SerializationUtils", 
+            "line": 259
+        }, 
+        {
+            "class": "a.org.apache.commons.lang3.SerializationUtils", 
+            "line": 260
+        }, 
+        {
+            "class": "a.org.apache.commons.lang3.SerializationUtils", 
+            "line": 261
+        }, 
+        {
+            "class": "a.org.apache.commons.lang3.SerializationUtils", 
+            "line": 262
+        }, 
+        {
+            "class": "a.org.apache.commons.lang3.SerializationUtils", 
+            "line": 279
+        }, 
+        {
+            "class": "a.org.apache.commons.lang3.SerializationUtils", 
+            "line": 280
+        }, 
+        {
+            "class": "a.org.apache.commons.lang3.SerializationUtils", 
+            "line": 281
+        }, 
+        {
+            "class": "a.org.apache.commons.lang3.SerializationUtils", 
+            "line": 282
+        }, 
+        {
+            "class": "a.org.apache.commons.lang3.SerializationUtils", 
+            "line": 283
+        }, 
+        {
+            "class": "a.org.apache.commons.lang3.SerializationUtils", 
+            "line": 284
+        }, 
+        {
+            "class": "a.org.apache.commons.lang3.SerializationUtils", 
+            "line": 285
+        }, 
+        {
+            "class": "a.org.apache.commons.lang3.SerializationUtils", 
+            "line": 286
+        }, 
+        {
+            "class": "a.org.apache.commons.lang3.SerializationUtils", 
+            "line": 287
+        }
+    ], 
+    "nbsuspicious": 26, 
+    "node": "griffon-65.nancy.grid5000.fr\n", 
+    "successfulTest": 2134, 
+    "suspicious": {
+        "org.apache.commons.lang3.SerializationUtils$ClassLoaderAwareObjectInputStream:264": {
+            "class": "org.apache.commons.lang3.SerializationUtils$ClassLoaderAwareObjectInputStream", 
+            "ef": 1, 
+            "ep": 5, 
+            "line": 264, 
+            "metrics": {
+                "ample": 0.9976569821930646, 
+                "gzoltar": 0.4082482904638631, 
+                "ochiai": 0.4082482904638631, 
+                "tarantula": 0.9976624590930342
+            }, 
+            "nf": 0, 
+            "np": 2129, 
+            "rank": {
+                "ample": 10, 
+                "ochiai": 12, 
+                "tarantula": 10
+            }
+        }, 
+        "org.apache.commons.lang3.SerializationUtils$ClassLoaderAwareObjectInputStream:266": {
+            "class": "org.apache.commons.lang3.SerializationUtils$ClassLoaderAwareObjectInputStream", 
+            "ef": 1, 
+            "ep": 5, 
+            "line": 266, 
+            "metrics": {
+                "ample": 0.9976569821930646, 
+                "gzoltar": 0.4082482904638631, 
+                "ochiai": 0.4082482904638631, 
+                "tarantula": 0.9976624590930342
+            }, 
+            "nf": 0, 
+            "np": 2129, 
+            "rank": {
+                "ample": 9, 
+                "ochiai": 13, 
+                "tarantula": 9
+            }
+        }, 
+        "org.apache.commons.lang3.SerializationUtils$ClassLoaderAwareObjectInputStream:267": {
+            "class": "org.apache.commons.lang3.SerializationUtils$ClassLoaderAwareObjectInputStream", 
+            "ef": 1, 
+            "ep": 0, 
+            "line": 267, 
+            "metrics": {
+                "ample": 1.0, 
+                "gzoltar": 1.0, 
+                "ochiai": 1.0, 
+                "tarantula": 1.0
+            }, 
+            "nf": 0, 
+            "np": 2134, 
+            "rank": {
+                "ample": 6, 
+                "ochiai": 1, 
+                "tarantula": 6
+            }
+        }, 
+        "org.apache.commons.lang3.SerializationUtils$ClassLoaderAwareObjectInputStream:268": {
+            "class": "org.apache.commons.lang3.SerializationUtils$ClassLoaderAwareObjectInputStream", 
+            "ef": 1, 
+            "ep": 0, 
+            "line": 268, 
+            "metrics": {
+                "ample": 1.0, 
+                "gzoltar": 1.0, 
+                "ochiai": 1.0, 
+                "tarantula": 1.0
+            }, 
+            "nf": 0, 
+            "np": 2134, 
+            "rank": {
+                "ample": 5, 
+                "ochiai": 2, 
+                "tarantula": 5
+            }
+        }, 
+        "org.apache.commons.lang3.SerializationUtils:103": {
+            "class": "org.apache.commons.lang3.SerializationUtils", 
+            "ef": 1, 
+            "ep": 0, 
+            "line": 103, 
+            "metrics": {
+                "ample": 1.0, 
+                "gzoltar": 1.0, 
+                "ochiai": 1.0, 
+                "tarantula": 1.0
+            }, 
+            "nf": 0, 
+            "np": 2134, 
+            "rank": {
+                "ample": 1, 
+                "ochiai": 4, 
+                "tarantula": 1
+            }
+        }, 
+        "org.apache.commons.lang3.SerializationUtils:104": {
+            "class": "org.apache.commons.lang3.SerializationUtils", 
+            "ef": 1, 
+            "ep": 0, 
+            "line": 104, 
+            "metrics": {
+                "ample": 1.0, 
+                "gzoltar": 1.0, 
+                "ochiai": 1.0, 
+                "tarantula": 1.0
+            }, 
+            "nf": 0, 
+            "np": 2134, 
+            "rank": {
+                "ample": 4, 
+                "ochiai": 5, 
+                "tarantula": 4
+            }
+        }, 
+        "org.apache.commons.lang3.SerializationUtils:105": {
+            "class": "org.apache.commons.lang3.SerializationUtils", 
+            "ef": 1, 
+            "ep": 0, 
+            "line": 105, 
+            "metrics": {
+                "ample": 1.0, 
+                "gzoltar": 1.0, 
+                "ochiai": 1.0, 
+                "tarantula": 1.0
+            }, 
+            "nf": 0, 
+            "np": 2134, 
+            "rank": {
+                "ample": 3, 
+                "ochiai": 6, 
+                "tarantula": 3
+            }
+        }, 
+        "org.apache.commons.lang3.SerializationUtils:109": {
+            "class": "org.apache.commons.lang3.SerializationUtils", 
+            "ef": 1, 
+            "ep": 0, 
+            "line": 109, 
+            "metrics": {
+                "ample": 1.0, 
+                "gzoltar": 1.0, 
+                "ochiai": 1.0, 
+                "tarantula": 1.0
+            }, 
+            "nf": 0, 
+            "np": 2134, 
+            "rank": {
+                "ample": 7, 
+                "ochiai": 7, 
+                "tarantula": 7
+            }
+        }, 
+        "org.apache.commons.lang3.SerializationUtils:131": {
+            "class": "org.apache.commons.lang3.SerializationUtils", 
+            "ef": 1, 
+            "ep": 22, 
+            "line": 131, 
+            "metrics": {
+                "ample": 0.9896907216494846, 
+                "gzoltar": 0.20851441405707477, 
+                "ochiai": 0.20851441405707477, 
+                "tarantula": 0.9897959183673469
+            }, 
+            "nf": 0, 
+            "np": 2112, 
+            "rank": {
+                "ample": 26, 
+                "ochiai": 26, 
+                "tarantula": 26
+            }
+        }, 
+        "org.apache.commons.lang3.SerializationUtils:134": {
+            "class": "org.apache.commons.lang3.SerializationUtils", 
+            "ef": 1, 
+            "ep": 20, 
+            "line": 134, 
+            "metrics": {
+                "ample": 0.9906279287722587, 
+                "gzoltar": 0.2182178902359924, 
+                "ochiai": 0.2182178902359924, 
+                "tarantula": 0.990714948932219
+            }, 
+            "nf": 0, 
+            "np": 2114, 
+            "rank": {
+                "ample": 24, 
+                "ochiai": 24, 
+                "tarantula": 24
+            }
+        }, 
+        "org.apache.commons.lang3.SerializationUtils:137": {
+            "class": "org.apache.commons.lang3.SerializationUtils", 
+            "ef": 1, 
+            "ep": 20, 
+            "line": 137, 
+            "metrics": {
+                "ample": 0.9906279287722587, 
+                "gzoltar": 0.2182178902359924, 
+                "ochiai": 0.2182178902359924, 
+                "tarantula": 0.990714948932219
+            }, 
+            "nf": 0, 
+            "np": 2114, 
+            "rank": {
+                "ample": 25, 
+                "ochiai": 25, 
+                "tarantula": 25
+            }
+        }, 
+        "org.apache.commons.lang3.SerializationUtils:138": {
+            "class": "org.apache.commons.lang3.SerializationUtils", 
+            "ef": 1, 
+            "ep": 19, 
+            "line": 138, 
+            "metrics": {
+                "ample": 0.9910965323336457, 
+                "gzoltar": 0.22360679774997896, 
+                "ochiai": 0.22360679774997896, 
+                "tarantula": 0.9911751045053414
+            }, 
+            "nf": 0, 
+            "np": 2115, 
+            "rank": {
+                "ample": 23, 
+                "ochiai": 23, 
+                "tarantula": 23
+            }
+        }, 
+        "org.apache.commons.lang3.SerializationUtils:144": {
+            "class": "org.apache.commons.lang3.SerializationUtils", 
+            "ef": 1, 
+            "ep": 16, 
+            "line": 144, 
+            "metrics": {
+                "ample": 0.9925023430178069, 
+                "gzoltar": 0.24253562503633297, 
+                "ochiai": 0.24253562503633297, 
+                "tarantula": 0.9925581395348838
+            }, 
+            "nf": 0, 
+            "np": 2118, 
+            "rank": {
+                "ample": 20, 
+                "ochiai": 17, 
+                "tarantula": 20
+            }
+        }, 
+        "org.apache.commons.lang3.SerializationUtils:145": {
+            "class": "org.apache.commons.lang3.SerializationUtils", 
+            "ef": 1, 
+            "ep": 16, 
+            "line": 145, 
+            "metrics": {
+                "ample": 0.9925023430178069, 
+                "gzoltar": 0.24253562503633297, 
+                "ochiai": 0.24253562503633297, 
+                "tarantula": 0.9925581395348838
+            }, 
+            "nf": 0, 
+            "np": 2118, 
+            "rank": {
+                "ample": 21, 
+                "ochiai": 18, 
+                "tarantula": 21
+            }
+        }, 
+        "org.apache.commons.lang3.SerializationUtils:149": {
+            "class": "org.apache.commons.lang3.SerializationUtils", 
+            "ef": 1, 
+            "ep": 16, 
+            "line": 149, 
+            "metrics": {
+                "ample": 0.9925023430178069, 
+                "gzoltar": 0.24253562503633297, 
+                "ochiai": 0.24253562503633297, 
+                "tarantula": 0.9925581395348838
+            }, 
+            "nf": 0, 
+            "np": 2118, 
+            "rank": {
+                "ample": 17, 
+                "ochiai": 19, 
+                "tarantula": 17
+            }
+        }, 
+        "org.apache.commons.lang3.SerializationUtils:151": {
+            "class": "org.apache.commons.lang3.SerializationUtils", 
+            "ef": 1, 
+            "ep": 16, 
+            "line": 151, 
+            "metrics": {
+                "ample": 0.9925023430178069, 
+                "gzoltar": 0.24253562503633297, 
+                "ochiai": 0.24253562503633297, 
+                "tarantula": 0.9925581395348838
+            }, 
+            "nf": 0, 
+            "np": 2118, 
+            "rank": {
+                "ample": 22, 
+                "ochiai": 20, 
+                "tarantula": 22
+            }
+        }, 
+        "org.apache.commons.lang3.SerializationUtils:162": {
+            "class": "org.apache.commons.lang3.SerializationUtils", 
+            "ef": 1, 
+            "ep": 16, 
+            "line": 162, 
+            "metrics": {
+                "ample": 0.9925023430178069, 
+                "gzoltar": 0.24253562503633297, 
+                "ochiai": 0.24253562503633297, 
+                "tarantula": 0.9925581395348838
+            }, 
+            "nf": 0, 
+            "np": 2118, 
+            "rank": {
+                "ample": 18, 
+                "ochiai": 21, 
+                "tarantula": 18
+            }
+        }, 
+        "org.apache.commons.lang3.SerializationUtils:163": {
+            "class": "org.apache.commons.lang3.SerializationUtils", 
+            "ef": 1, 
+            "ep": 16, 
+            "line": 163, 
+            "metrics": {
+                "ample": 0.9925023430178069, 
+                "gzoltar": 0.24253562503633297, 
+                "ochiai": 0.24253562503633297, 
+                "tarantula": 0.9925581395348838
+            }, 
+            "nf": 0, 
+            "np": 2118, 
+            "rank": {
+                "ample": 19, 
+                "ochiai": 22, 
+                "tarantula": 19
+            }
+        }, 
+        "org.apache.commons.lang3.SerializationUtils:164": {
+            "class": "org.apache.commons.lang3.SerializationUtils", 
+            "ef": 1, 
+            "ep": 14, 
+            "line": 164, 
+            "metrics": {
+                "ample": 0.993439550140581, 
+                "gzoltar": 0.2581988897471611, 
+                "ochiai": 0.2581988897471611, 
+                "tarantula": 0.9934823091247672
+            }, 
+            "nf": 0, 
+            "np": 2120, 
+            "rank": {
+                "ample": 16, 
+                "ochiai": 16, 
+                "tarantula": 16
+            }
+        }, 
+        "org.apache.commons.lang3.SerializationUtils:79": {
+            "class": "org.apache.commons.lang3.SerializationUtils", 
+            "ef": 1, 
+            "ep": 7, 
+            "line": 79, 
+            "metrics": {
+                "ample": 0.9967197750702905, 
+                "gzoltar": 0.35355339059327373, 
+                "ochiai": 0.35355339059327373, 
+                "tarantula": 0.9967304997664642
+            }, 
+            "nf": 0, 
+            "np": 2127, 
+            "rank": {
+                "ample": 15, 
+                "ochiai": 15, 
+                "tarantula": 15
+            }
+        }, 
+        "org.apache.commons.lang3.SerializationUtils:82": {
+            "class": "org.apache.commons.lang3.SerializationUtils", 
+            "ef": 1, 
+            "ep": 6, 
+            "line": 82, 
+            "metrics": {
+                "ample": 0.9971883786316776, 
+                "gzoltar": 0.3779644730092272, 
+                "ochiai": 0.3779644730092272, 
+                "tarantula": 0.997196261682243
+            }, 
+            "nf": 0, 
+            "np": 2128, 
+            "rank": {
+                "ample": 14, 
+                "ochiai": 14, 
+                "tarantula": 14
+            }
+        }, 
+        "org.apache.commons.lang3.SerializationUtils:83": {
+            "class": "org.apache.commons.lang3.SerializationUtils", 
+            "ef": 1, 
+            "ep": 5, 
+            "line": 83, 
+            "metrics": {
+                "ample": 0.9976569821930646, 
+                "gzoltar": 0.4082482904638631, 
+                "ochiai": 0.4082482904638631, 
+                "tarantula": 0.9976624590930342
+            }, 
+            "nf": 0, 
+            "np": 2129, 
+            "rank": {
+                "ample": 12, 
+                "ochiai": 8, 
+                "tarantula": 12
+            }
+        }, 
+        "org.apache.commons.lang3.SerializationUtils:85": {
+            "class": "org.apache.commons.lang3.SerializationUtils", 
+            "ef": 1, 
+            "ep": 5, 
+            "line": 85, 
+            "metrics": {
+                "ample": 0.9976569821930646, 
+                "gzoltar": 0.4082482904638631, 
+                "ochiai": 0.4082482904638631, 
+                "tarantula": 0.9976624590930342
+            }, 
+            "nf": 0, 
+            "np": 2129, 
+            "rank": {
+                "ample": 11, 
+                "ochiai": 9, 
+                "tarantula": 11
+            }
+        }, 
+        "org.apache.commons.lang3.SerializationUtils:88": {
+            "class": "org.apache.commons.lang3.SerializationUtils", 
+            "ef": 1, 
+            "ep": 5, 
+            "line": 88, 
+            "metrics": {
+                "ample": 0.9976569821930646, 
+                "gzoltar": 0.4082482904638631, 
+                "ochiai": 0.4082482904638631, 
+                "tarantula": 0.9976624590930342
+            }, 
+            "nf": 0, 
+            "np": 2129, 
+            "rank": {
+                "ample": 13, 
+                "ochiai": 10, 
+                "tarantula": 13
+            }
+        }, 
+        "org.apache.commons.lang3.SerializationUtils:95": {
+            "class": "org.apache.commons.lang3.SerializationUtils", 
+            "ef": 1, 
+            "ep": 5, 
+            "line": 95, 
+            "metrics": {
+                "ample": 0.9976569821930646, 
+                "gzoltar": 0.4082482904638631, 
+                "ochiai": 0.4082482904638631, 
+                "tarantula": 0.9976624590930342
+            }, 
+            "nf": 0, 
+            "np": 2129, 
+            "rank": {
+                "ample": 8, 
+                "ochiai": 11, 
+                "tarantula": 8
+            }
+        }, 
+        "org.apache.commons.lang3.SerializationUtils:99": {
+            "class": "org.apache.commons.lang3.SerializationUtils", 
+            "ef": 1, 
+            "ep": 0, 
+            "line": 99, 
+            "metrics": {
+                "ample": 1.0, 
+                "gzoltar": 1.0, 
+                "ochiai": 1.0, 
+                "tarantula": 1.0
+            }, 
+            "nf": 0, 
+            "np": 2134, 
+            "rank": {
+                "ample": 2, 
+                "ochiai": 3, 
+                "tarantula": 2
+            }
+        }
+    }
+}

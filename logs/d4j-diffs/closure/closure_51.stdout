@@ -1,8 +1,0 @@
-com.google.javascript.jscomp.CodeConsumer
-
-241c241
-<     if ((long) x == x) {
----
->     if ((long) x == x && !isNegativeZero(x)) {
-
-

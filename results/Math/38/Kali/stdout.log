@@ -1,0 +1,29 @@
+export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";cp -r /home/tdurieux/projects/math/math_38 /tmp/math_38_Kali;cd /tmp/math_38_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
+/home/tdurieux/results/Math/38/Kali/result
+cd /tmp/math_38_Kali;time java -cp /home/tdurieux/astor/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.math.optimization.direct.BOBYQAOptimizerTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;rm -rf /tmp/math_38_Kali;
+ NOT Found solution
+Number solutions:0
+All variants:
+Time Evolution(ms): 295797
+
+----stats: 
+
+spaces: [0]: []
+time val1 [119]: [2827, 2712, 2701, 2663, 2657, 2706, 2711, 2720, 2652, 2684, 2714, 2712, 2721, 2826, 2557, 2697, 2729, 2637, 2676, 2718, 2701, 575, 504, 2699, 2725, 2998, 2987, 3031, 2619, 2729, 2712, 2890, 2700, 1907, 1872, 2711, 887, 2716, 1808, 2780, 2713, 1146, 248, 2725, 263, 282, 263, 2705, 2745, 2732, 276, 2698, 693, 699, 2708, 2718, 2734, 2700, 2707, 2735, 2712, 2702, 2733, 2720, 317, 311, 509, 2725, 512, 576, 577, 2719, 2714, 911, 558, 563, 2725, 591, 580, 3309, 2722, 2718, 229, 2717, 324, 2704, 2713, 247, 273, 245, 247, 264, 284, 265, 246, 246, 262, 286, 346, 283, 287, 272, 228, 227, 242, 2737, 2708, 2725, 2725, 265, 60001, 2722, 2835, 2716, 281, 2720, 264, 1148, 228]
+time val2 [0]: []
+#gen: 180
+#patches: 0
+#RightCompilation: 118
+#WrongCompilation: 61
+#FailingTestCaseExecution: 119
+#RegressionTestExecution: 0
+#TestcasesExecutedval1: 2242
+#TestcasesExecutedval2: 0
+#FailingTestCase: 19
+#RegressionTestCases: 0
+#OfAppliedOp: 179
+#NotAppliedOp: 0
+#InmutatedGen: 0
+#unfinishValidation: 0
+Time Total(ms): 583426
+

@@ -1,0 +1,20 @@
+Exception in thread "main" java.lang.NullPointerException
+	at spoon.support.compiler.jdt.JDTTreeBuilder.visit(JDTTreeBuilder.java:2199)
+	at org.eclipse.jdt.internal.compiler.ast.MethodDeclaration.traverse(MethodDeclaration.java:317)
+	at spoon.support.compiler.jdt.JDTTreeBuilder.visit(JDTTreeBuilder.java:2881)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.traverse(TypeDeclaration.java:1338)
+	at org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration.traverse(CompilationUnitDeclaration.java:745)
+	at org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration.traverse(CompilationUnitDeclaration.java:706)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.buildSources(JDTBasedSpoonCompiler.java:231)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.build(JDTBasedSpoonCompiler.java:507)
+	at fr.inria.astor.core.manipulation.MutationSupporter.buildModel(MutationSupporter.java:86)
+	at fr.inria.astor.core.loop.evolutionary.JGenProg.initModel(JGenProg.java:109)
+	at fr.inria.astor.core.loop.evolutionary.JGenProg.initPopulation(JGenProg.java:57)
+	at fr.inria.main.evolution.MainjGenProg.statementMode(MainjGenProg.java:112)
+	at fr.inria.main.evolution.MainjGenProg.statementMode(MainjGenProg.java:50)
+	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:126)
+	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:171)
+
+real	9m12.970s
+user	10m16.847s
+sys	0m2.528s

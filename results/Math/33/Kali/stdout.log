@@ -1,0 +1,29 @@
+export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";cp -r /home/tdurieux/projects/math/math_33 /tmp/math_33_Kali;cd /tmp/math_33_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
+/home/tdurieux/results/Math/33/Kali/result
+cd /tmp/math_33_Kali;time java -cp /home/tdurieux/astor/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.math3.optimization.linear.SimplexSolverTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;rm -rf /tmp/math_33_Kali;
+ NOT Found solution
+Number solutions:0
+All variants:
+Time Evolution(ms): 174236
+
+----stats: 
+
+spaces: [0]: []
+time val1 [128]: [473, 467, 486, 463, 468, 467, 464, 465, 472, 469, 475, 471, 464, 465, 465, 464, 469, 465, 447, 442, 447, 463, 465, 467, 463, 469, 60001, 471, 458, 483, 465, 469, 472, 307, 467, 454, 444, 464, 464, 472, 463, 466, 467, 306, 463, 464, 368, 301, 302, 465, 300, 304, 306, 308, 455, 470, 306, 463, 468, 463, 464, 358, 358, 364, 463, 457, 468, 464, 468, 342, 301, 300, 307, 249, 250, 475, 465, 467, 457, 306, 308, 467, 347, 464, 307, 305, 465, 465, 458, 456, 465, 456, 455, 467, 457, 464, 472, 474, 477, 345, 305, 463, 472, 470, 379, 287, 286, 461, 287, 285, 287, 306, 464, 465, 377, 374, 463, 346, 345, 467, 471, 466, 342, 344, 463, 464, 466, 466]
+time val2 [0]: []
+#gen: 227
+#patches: 0
+#RightCompilation: 127
+#WrongCompilation: 99
+#FailingTestCaseExecution: 128
+#RegressionTestExecution: 0
+#TestcasesExecutedval1: 3048
+#TestcasesExecutedval2: 0
+#FailingTestCase: 24
+#RegressionTestCases: 0
+#OfAppliedOp: 226
+#NotAppliedOp: 0
+#InmutatedGen: 0
+#unfinishValidation: 0
+Time Total(ms): 806405
+

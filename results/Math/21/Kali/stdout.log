@@ -1,0 +1,29 @@
+export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";cp -r /home/tdurieux/projects/math/math_21 /tmp/math_21_Kali;cd /tmp/math_21_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
+/home/tdurieux/results/Math/21/Kali/result
+cd /tmp/math_21_Kali;time java -cp /home/tdurieux/astor/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.math3.linear.RectangularCholeskyDecompositionTest:org.apache.commons.math3.linear.RectangularCholeskyDecompositionTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;rm -rf /tmp/math_21_Kali;
+ NOT Found solution
+Number solutions:0
+All variants:
+Time Evolution(ms): 32517
+
+----stats: 
+
+spaces: [0]: []
+time val1 [70]: [225, 233, 233, 231, 231, 232, 232, 231, 231, 231, 230, 231, 231, 229, 231, 229, 232, 230, 231, 232, 231, 230, 231, 231, 228, 229, 228, 229, 229, 230, 233, 230, 230, 218, 231, 231, 235, 232, 236, 233, 234, 230, 230, 233, 235, 231, 235, 233, 235, 231, 229, 228, 220, 233, 234, 231, 228, 234, 236, 231, 230, 229, 228, 229, 210, 232, 230, 234, 228, 232]
+time val2 [0]: []
+#gen: 118
+#patches: 0
+#RightCompilation: 69
+#WrongCompilation: 48
+#FailingTestCaseExecution: 70
+#RegressionTestExecution: 0
+#TestcasesExecutedval1: 420
+#TestcasesExecutedval2: 0
+#FailingTestCase: 6
+#RegressionTestCases: 0
+#OfAppliedOp: 117
+#NotAppliedOp: 0
+#InmutatedGen: 0
+#unfinishValidation: 0
+Time Total(ms): 699016
+

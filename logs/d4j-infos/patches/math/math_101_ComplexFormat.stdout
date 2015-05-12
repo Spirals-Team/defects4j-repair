@@ -1,6 +1,0 @@
-377c377,379
-<         if (source.substring(startIndex, endIndex).compareTo(
----
->         if ((startIndex >= source.length()) ||
->             (endIndex > source.length()) ||
->             source.substring(startIndex, endIndex).compareTo(

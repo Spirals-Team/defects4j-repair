@@ -1,0 +1,597 @@
+{
+    "date": "2015-05-11T07:58:00.245976", 
+    "executedTest": 1666, 
+    "failedTest": 3, 
+    "failedTestDetails": [
+        {
+            "class": "org.apache.commons.lang.enums.ValuedEnumTest", 
+            "method": "testCompareTo_otherEnumType"
+        }, 
+        {
+            "class": "org.apache.commons.lang.enums.ValuedEnumTest", 
+            "method": "testCompareTo_classloader_equal"
+        }, 
+        {
+            "class": "org.apache.commons.lang.enums.ValuedEnumTest", 
+            "method": "testCompareTo_classloader_different"
+        }
+    ], 
+    "modifiedLines": [
+        {
+            "class": "a.org.apache.commons.lang.enums.ValuedEnum", 
+            "line": 183
+        }, 
+        {
+            "class": "a.org.apache.commons.lang.enums.ValuedEnum", 
+            "line": 184
+        }, 
+        {
+            "class": "a.org.apache.commons.lang.enums.ValuedEnum", 
+            "line": 185
+        }, 
+        {
+            "class": "a.org.apache.commons.lang.enums.ValuedEnum", 
+            "line": 186
+        }, 
+        {
+            "class": "a.org.apache.commons.lang.enums.ValuedEnum", 
+            "line": 187
+        }, 
+        {
+            "class": "a.org.apache.commons.lang.enums.ValuedEnum", 
+            "line": 188
+        }, 
+        {
+            "class": "a.org.apache.commons.lang.enums.ValuedEnum", 
+            "line": 189
+        }, 
+        {
+            "class": "a.org.apache.commons.lang.enums.ValuedEnum", 
+            "line": 190
+        }, 
+        {
+            "class": "a.org.apache.commons.lang.enums.ValuedEnum", 
+            "line": 191
+        }, 
+        {
+            "class": "a.org.apache.commons.lang.enums.ValuedEnum", 
+            "line": 192
+        }, 
+        {
+            "class": "a.org.apache.commons.lang.enums.ValuedEnum", 
+            "line": 202
+        }, 
+        {
+            "class": "a.org.apache.commons.lang.enums.ValuedEnum", 
+            "line": 203
+        }, 
+        {
+            "class": "a.org.apache.commons.lang.enums.ValuedEnum", 
+            "line": 204
+        }, 
+        {
+            "class": "a.org.apache.commons.lang.enums.ValuedEnum", 
+            "line": 205
+        }, 
+        {
+            "class": "a.org.apache.commons.lang.enums.ValuedEnum", 
+            "line": 206
+        }, 
+        {
+            "class": "a.org.apache.commons.lang.enums.ValuedEnum", 
+            "line": 207
+        }, 
+        {
+            "class": "a.org.apache.commons.lang.enums.ValuedEnum", 
+            "line": 208
+        }, 
+        {
+            "class": "a.org.apache.commons.lang.enums.ValuedEnum", 
+            "line": 209
+        }, 
+        {
+            "class": "a.org.apache.commons.lang.enums.ValuedEnum", 
+            "line": 210
+        }, 
+        {
+            "class": "a.org.apache.commons.lang.enums.ValuedEnum", 
+            "line": 211
+        }, 
+        {
+            "class": "a.org.apache.commons.lang.enums.ValuedEnum", 
+            "line": 212
+        }, 
+        {
+            "class": "a.org.apache.commons.lang.enums.ValuedEnum", 
+            "line": 213
+        }, 
+        {
+            "class": "a.org.apache.commons.lang.enums.ValuedEnum", 
+            "line": 214
+        }, 
+        {
+            "class": "a.org.apache.commons.lang.enums.ValuedEnum", 
+            "line": 215
+        }
+    ], 
+    "nbsuspicious": 25, 
+    "node": "griffon-1.nancy.grid5000.fr\n", 
+    "successfulTest": 1663, 
+    "suspicious": {
+        "org.apache.commons.lang.StringUtils:185": {
+            "class": "org.apache.commons.lang.StringUtils", 
+            "ef": 1, 
+            "ep": 103, 
+            "line": 185, 
+            "metrics": {
+                "ample": 0.271397073561836, 
+                "gzoltar": 0.05661385170722978, 
+                "ochiai": 0.05661385170722978, 
+                "tarantula": 0.8433062880324543
+            }, 
+            "nf": 2, 
+            "np": 1560, 
+            "rank": {
+                "ample": 25, 
+                "ochiai": 25, 
+                "tarantula": 25
+            }
+        }, 
+        "org.apache.commons.lang.enums.Enum:327": {
+            "class": "org.apache.commons.lang.enums.Enum", 
+            "ef": 1, 
+            "ep": 17, 
+            "line": 327, 
+            "metrics": {
+                "ample": 0.32311084385648425, 
+                "gzoltar": 0.13608276348795434, 
+                "ochiai": 0.13608276348795434, 
+                "tarantula": 0.9702450408401401
+            }, 
+            "nf": 2, 
+            "np": 1646, 
+            "rank": {
+                "ample": 22, 
+                "ochiai": 22, 
+                "tarantula": 22
+            }
+        }, 
+        "org.apache.commons.lang.enums.Enum:331": {
+            "class": "org.apache.commons.lang.enums.Enum", 
+            "ef": 1, 
+            "ep": 17, 
+            "line": 331, 
+            "metrics": {
+                "ample": 0.32311084385648425, 
+                "gzoltar": 0.13608276348795434, 
+                "ochiai": 0.13608276348795434, 
+                "tarantula": 0.9702450408401401
+            }, 
+            "nf": 2, 
+            "np": 1646, 
+            "rank": {
+                "ample": 24, 
+                "ochiai": 23, 
+                "tarantula": 24
+            }
+        }, 
+        "org.apache.commons.lang.enums.Enum:332": {
+            "class": "org.apache.commons.lang.enums.Enum", 
+            "ef": 1, 
+            "ep": 17, 
+            "line": 332, 
+            "metrics": {
+                "ample": 0.32311084385648425, 
+                "gzoltar": 0.13608276348795434, 
+                "ochiai": 0.13608276348795434, 
+                "tarantula": 0.9702450408401401
+            }, 
+            "nf": 2, 
+            "np": 1646, 
+            "rank": {
+                "ample": 23, 
+                "ochiai": 24, 
+                "tarantula": 23
+            }
+        }, 
+        "org.apache.commons.lang.enums.Enum:335": {
+            "class": "org.apache.commons.lang.enums.Enum", 
+            "ef": 1, 
+            "ep": 16, 
+            "line": 335, 
+            "metrics": {
+                "ample": 0.32371216676688713, 
+                "gzoltar": 0.14002800840280097, 
+                "ochiai": 0.14002800840280097, 
+                "tarantula": 0.9719462302746932
+            }, 
+            "nf": 2, 
+            "np": 1647, 
+            "rank": {
+                "ample": 20, 
+                "ochiai": 16, 
+                "tarantula": 20
+            }
+        }, 
+        "org.apache.commons.lang.enums.Enum:336": {
+            "class": "org.apache.commons.lang.enums.Enum", 
+            "ef": 1, 
+            "ep": 16, 
+            "line": 336, 
+            "metrics": {
+                "ample": 0.32371216676688713, 
+                "gzoltar": 0.14002800840280097, 
+                "ochiai": 0.14002800840280097, 
+                "tarantula": 0.9719462302746932
+            }, 
+            "nf": 2, 
+            "np": 1647, 
+            "rank": {
+                "ample": 19, 
+                "ochiai": 17, 
+                "tarantula": 19
+            }
+        }, 
+        "org.apache.commons.lang.enums.Enum:337": {
+            "class": "org.apache.commons.lang.enums.Enum", 
+            "ef": 1, 
+            "ep": 16, 
+            "line": 337, 
+            "metrics": {
+                "ample": 0.32371216676688713, 
+                "gzoltar": 0.14002800840280097, 
+                "ochiai": 0.14002800840280097, 
+                "tarantula": 0.9719462302746932
+            }, 
+            "nf": 2, 
+            "np": 1647, 
+            "rank": {
+                "ample": 18, 
+                "ochiai": 18, 
+                "tarantula": 18
+            }
+        }, 
+        "org.apache.commons.lang.enums.Enum:338": {
+            "class": "org.apache.commons.lang.enums.Enum", 
+            "ef": 1, 
+            "ep": 16, 
+            "line": 338, 
+            "metrics": {
+                "ample": 0.32371216676688713, 
+                "gzoltar": 0.14002800840280097, 
+                "ochiai": 0.14002800840280097, 
+                "tarantula": 0.9719462302746932
+            }, 
+            "nf": 2, 
+            "np": 1647, 
+            "rank": {
+                "ample": 21, 
+                "ochiai": 19, 
+                "tarantula": 21
+            }
+        }, 
+        "org.apache.commons.lang.enums.Enum:339": {
+            "class": "org.apache.commons.lang.enums.Enum", 
+            "ef": 1, 
+            "ep": 12, 
+            "line": 339, 
+            "metrics": {
+                "ample": 0.3261174584084987, 
+                "gzoltar": 0.16012815380508713, 
+                "ochiai": 0.16012815380508713, 
+                "tarantula": 0.9788110653325487
+            }, 
+            "nf": 2, 
+            "np": 1651, 
+            "rank": {
+                "ample": 15, 
+                "ochiai": 2, 
+                "tarantula": 15
+            }
+        }, 
+        "org.apache.commons.lang.enums.Enum:340": {
+            "class": "org.apache.commons.lang.enums.Enum", 
+            "ef": 1, 
+            "ep": 12, 
+            "line": 340, 
+            "metrics": {
+                "ample": 0.3261174584084987, 
+                "gzoltar": 0.16012815380508713, 
+                "ochiai": 0.16012815380508713, 
+                "tarantula": 0.9788110653325487
+            }, 
+            "nf": 2, 
+            "np": 1651, 
+            "rank": {
+                "ample": 4, 
+                "ochiai": 3, 
+                "tarantula": 4
+            }
+        }, 
+        "org.apache.commons.lang.enums.Enum:344": {
+            "class": "org.apache.commons.lang.enums.Enum", 
+            "ef": 1, 
+            "ep": 16, 
+            "line": 344, 
+            "metrics": {
+                "ample": 0.32371216676688713, 
+                "gzoltar": 0.14002800840280097, 
+                "ochiai": 0.14002800840280097, 
+                "tarantula": 0.9719462302746932
+            }, 
+            "nf": 2, 
+            "np": 1647, 
+            "rank": {
+                "ample": 17, 
+                "ochiai": 20, 
+                "tarantula": 17
+            }
+        }, 
+        "org.apache.commons.lang.enums.Enum:349": {
+            "class": "org.apache.commons.lang.enums.Enum", 
+            "ef": 1, 
+            "ep": 12, 
+            "line": 349, 
+            "metrics": {
+                "ample": 0.3261174584084987, 
+                "gzoltar": 0.16012815380508713, 
+                "ochiai": 0.16012815380508713, 
+                "tarantula": 0.9788110653325487
+            }, 
+            "nf": 2, 
+            "np": 1651, 
+            "rank": {
+                "ample": 5, 
+                "ochiai": 4, 
+                "tarantula": 5
+            }
+        }, 
+        "org.apache.commons.lang.enums.Enum:350": {
+            "class": "org.apache.commons.lang.enums.Enum", 
+            "ef": 1, 
+            "ep": 12, 
+            "line": 350, 
+            "metrics": {
+                "ample": 0.3261174584084987, 
+                "gzoltar": 0.16012815380508713, 
+                "ochiai": 0.16012815380508713, 
+                "tarantula": 0.9788110653325487
+            }, 
+            "nf": 2, 
+            "np": 1651, 
+            "rank": {
+                "ample": 3, 
+                "ochiai": 5, 
+                "tarantula": 3
+            }
+        }, 
+        "org.apache.commons.lang.enums.Enum:351": {
+            "class": "org.apache.commons.lang.enums.Enum", 
+            "ef": 1, 
+            "ep": 12, 
+            "line": 351, 
+            "metrics": {
+                "ample": 0.3261174584084987, 
+                "gzoltar": 0.16012815380508713, 
+                "ochiai": 0.16012815380508713, 
+                "tarantula": 0.9788110653325487
+            }, 
+            "nf": 2, 
+            "np": 1651, 
+            "rank": {
+                "ample": 2, 
+                "ochiai": 6, 
+                "tarantula": 2
+            }
+        }, 
+        "org.apache.commons.lang.enums.Enum:352": {
+            "class": "org.apache.commons.lang.enums.Enum", 
+            "ef": 1, 
+            "ep": 12, 
+            "line": 352, 
+            "metrics": {
+                "ample": 0.3261174584084987, 
+                "gzoltar": 0.16012815380508713, 
+                "ochiai": 0.16012815380508713, 
+                "tarantula": 0.9788110653325487
+            }, 
+            "nf": 2, 
+            "np": 1651, 
+            "rank": {
+                "ample": 10, 
+                "ochiai": 7, 
+                "tarantula": 10
+            }
+        }, 
+        "org.apache.commons.lang.enums.Enum:354": {
+            "class": "org.apache.commons.lang.enums.Enum", 
+            "ef": 1, 
+            "ep": 12, 
+            "line": 354, 
+            "metrics": {
+                "ample": 0.3261174584084987, 
+                "gzoltar": 0.16012815380508713, 
+                "ochiai": 0.16012815380508713, 
+                "tarantula": 0.9788110653325487
+            }, 
+            "nf": 2, 
+            "np": 1651, 
+            "rank": {
+                "ample": 11, 
+                "ochiai": 8, 
+                "tarantula": 11
+            }
+        }, 
+        "org.apache.commons.lang.enums.Enum:357": {
+            "class": "org.apache.commons.lang.enums.Enum", 
+            "ef": 1, 
+            "ep": 12, 
+            "line": 357, 
+            "metrics": {
+                "ample": 0.3261174584084987, 
+                "gzoltar": 0.16012815380508713, 
+                "ochiai": 0.16012815380508713, 
+                "tarantula": 0.9788110653325487
+            }, 
+            "nf": 2, 
+            "np": 1651, 
+            "rank": {
+                "ample": 12, 
+                "ochiai": 9, 
+                "tarantula": 12
+            }
+        }, 
+        "org.apache.commons.lang.enums.Enum:358": {
+            "class": "org.apache.commons.lang.enums.Enum", 
+            "ef": 1, 
+            "ep": 12, 
+            "line": 358, 
+            "metrics": {
+                "ample": 0.3261174584084987, 
+                "gzoltar": 0.16012815380508713, 
+                "ochiai": 0.16012815380508713, 
+                "tarantula": 0.9788110653325487
+            }, 
+            "nf": 2, 
+            "np": 1651, 
+            "rank": {
+                "ample": 14, 
+                "ochiai": 10, 
+                "tarantula": 14
+            }
+        }, 
+        "org.apache.commons.lang.enums.Enum:359": {
+            "class": "org.apache.commons.lang.enums.Enum", 
+            "ef": 1, 
+            "ep": 12, 
+            "line": 359, 
+            "metrics": {
+                "ample": 0.3261174584084987, 
+                "gzoltar": 0.16012815380508713, 
+                "ochiai": 0.16012815380508713, 
+                "tarantula": 0.9788110653325487
+            }, 
+            "nf": 2, 
+            "np": 1651, 
+            "rank": {
+                "ample": 13, 
+                "ochiai": 11, 
+                "tarantula": 13
+            }
+        }, 
+        "org.apache.commons.lang.enums.Enum:484": {
+            "class": "org.apache.commons.lang.enums.Enum", 
+            "ef": 1, 
+            "ep": 12, 
+            "line": 484, 
+            "metrics": {
+                "ample": 0.3261174584084987, 
+                "gzoltar": 0.16012815380508713, 
+                "ochiai": 0.16012815380508713, 
+                "tarantula": 0.9788110653325487
+            }, 
+            "nf": 2, 
+            "np": 1651, 
+            "rank": {
+                "ample": 7, 
+                "ochiai": 12, 
+                "tarantula": 7
+            }
+        }, 
+        "org.apache.commons.lang.enums.Enum:485": {
+            "class": "org.apache.commons.lang.enums.Enum", 
+            "ef": 1, 
+            "ep": 12, 
+            "line": 485, 
+            "metrics": {
+                "ample": 0.3261174584084987, 
+                "gzoltar": 0.16012815380508713, 
+                "ochiai": 0.16012815380508713, 
+                "tarantula": 0.9788110653325487
+            }, 
+            "nf": 2, 
+            "np": 1651, 
+            "rank": {
+                "ample": 6, 
+                "ochiai": 13, 
+                "tarantula": 6
+            }
+        }, 
+        "org.apache.commons.lang.enums.Enum:486": {
+            "class": "org.apache.commons.lang.enums.Enum", 
+            "ef": 1, 
+            "ep": 12, 
+            "line": 486, 
+            "metrics": {
+                "ample": 0.3261174584084987, 
+                "gzoltar": 0.16012815380508713, 
+                "ochiai": 0.16012815380508713, 
+                "tarantula": 0.9788110653325487
+            }, 
+            "nf": 2, 
+            "np": 1651, 
+            "rank": {
+                "ample": 8, 
+                "ochiai": 14, 
+                "tarantula": 8
+            }
+        }, 
+        "org.apache.commons.lang.enums.Enum:495": {
+            "class": "org.apache.commons.lang.enums.Enum", 
+            "ef": 1, 
+            "ep": 12, 
+            "line": 495, 
+            "metrics": {
+                "ample": 0.3261174584084987, 
+                "gzoltar": 0.16012815380508713, 
+                "ochiai": 0.16012815380508713, 
+                "tarantula": 0.9788110653325487
+            }, 
+            "nf": 2, 
+            "np": 1651, 
+            "rank": {
+                "ample": 9, 
+                "ochiai": 15, 
+                "tarantula": 9
+            }
+        }, 
+        "org.apache.commons.lang.enums.Enum:519": {
+            "class": "org.apache.commons.lang.enums.Enum", 
+            "ef": 1, 
+            "ep": 16, 
+            "line": 519, 
+            "metrics": {
+                "ample": 0.32371216676688713, 
+                "gzoltar": 0.14002800840280097, 
+                "ochiai": 0.14002800840280097, 
+                "tarantula": 0.9719462302746932
+            }, 
+            "nf": 2, 
+            "np": 1647, 
+            "rank": {
+                "ample": 16, 
+                "ochiai": 21, 
+                "tarantula": 16
+            }
+        }, 
+        "org.apache.commons.lang.enums.ValuedEnum:183": {
+            "class": "org.apache.commons.lang.enums.ValuedEnum", 
+            "ef": 1, 
+            "ep": 4, 
+            "line": 183, 
+            "metrics": {
+                "ample": 0.33092804169172174, 
+                "gzoltar": 0.2581988897471611, 
+                "ochiai": 0.2581988897471611, 
+                "tarantula": 0.9928358208955224
+            }, 
+            "nf": 2, 
+            "np": 1659, 
+            "rank": {
+                "ample": 1, 
+                "ochiai": 1, 
+                "tarantula": 1
+            }
+        }
+    }
+}

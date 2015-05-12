@@ -1,0 +1,23 @@
+export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";cp -r /home/tdurieux/projects/time/time_5 /tmp/time_5_NopolC;cd /tmp/time_5_NopolC;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Time/lib/* lib/;find . -type f -name "package-info.java" -delete;
+cd /tmp/time_5_NopolC;cp -r /home/tdurieux/nopol/z3-x64-debian-7.7/bin/ lib/z3;time java -cp /home/tdurieux/nopol/nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar fr.inria.lille.repair.Main --mode repair --type condition --oracle angelic --synthesis smt --solver z3 --solver-path lib/z3/z3 --complianceLevel 5 --source src/main/java/ --classpath target/classes/:target/test-classes/:lib/joda-convert-1.2.jar:/home/tdurieux/nopol/nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar;echo "
+
+Node: `hostname`
+";echo "
+Date: `date`
+";rm -rf /tmp/time_5_NopolC;
+
+Nb Statements Analyzed : 199
+Nb Statements with Angelic Value Found : 1
+Nb inputs in SMT : 31
+Nb variables in SMT : 50
+Nb run failing test  : [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
+Nb run passing test : [79, 52, 79, 79, 25, 25, 25, 25, 79, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 79, 7, 1251, 79, 79, 79, 25, 25, 16, 25, 25, 79, 79, 79, 79, 79, 7, 7, 7, 7, 7, 16, 25]
+Nopol Execution time : 131321ms
+
+
+Node: chinqchint-20.lille.grid5000.fr
+
+
+Date: Mon May 11 20:01:25 CEST 2015
+
+

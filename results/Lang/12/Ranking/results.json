@@ -1,0 +1,431 @@
+{
+    "date": "2015-05-11T08:01:37.354631", 
+    "executedTest": 2137, 
+    "failedTest": 2, 
+    "failedTestDetails": [
+        {
+            "class": "org.apache.commons.lang3.RandomStringUtilsTest", 
+            "method": "testExceptions"
+        }, 
+        {
+            "class": "org.apache.commons.lang3.RandomStringUtilsTest", 
+            "method": "testLANG805"
+        }
+    ], 
+    "modifiedLines": [
+        {
+            "class": "a.org.apache.commons.lang3.RandomStringUtils", 
+            "line": 230
+        }, 
+        {
+            "class": "a.org.apache.commons.lang3.RandomStringUtils", 
+            "line": 231
+        }, 
+        {
+            "class": "a.org.apache.commons.lang3.RandomStringUtils", 
+            "line": 232
+        }, 
+        {
+            "class": "a.org.apache.commons.lang3.RandomStringUtils", 
+            "line": 235
+        }, 
+        {
+            "class": "a.org.apache.commons.lang3.RandomStringUtils", 
+            "line": 236
+        }, 
+        {
+            "class": "a.org.apache.commons.lang3.RandomStringUtils", 
+            "line": 237
+        }, 
+        {
+            "class": "a.org.apache.commons.lang3.RandomStringUtils", 
+            "line": 238
+        }, 
+        {
+            "class": "a.org.apache.commons.lang3.RandomStringUtils", 
+            "line": 239
+        }, 
+        {
+            "class": "a.org.apache.commons.lang3.RandomStringUtils", 
+            "line": 240
+        }, 
+        {
+            "class": "a.org.apache.commons.lang3.RandomStringUtils", 
+            "line": 241
+        }, 
+        {
+            "class": "a.org.apache.commons.lang3.RandomStringUtils", 
+            "line": 242
+        }, 
+        {
+            "class": "a.org.apache.commons.lang3.RandomStringUtils", 
+            "line": 243
+        }
+    ], 
+    "nbsuspicious": 19, 
+    "node": "griffon-63.nancy.grid5000.fr\n", 
+    "successfulTest": 2135, 
+    "suspicious": {
+        "org.apache.commons.lang3.RandomStringUtils:143": {
+            "class": "org.apache.commons.lang3.RandomStringUtils", 
+            "ef": 1, 
+            "ep": 5, 
+            "line": 143, 
+            "metrics": {
+                "ample": 0.49765807962529274, 
+                "gzoltar": 0.2886751345948129, 
+                "ochiai": 0.2886751345948129, 
+                "tarantula": 0.9953379953379954
+            }, 
+            "nf": 1, 
+            "np": 2130, 
+            "rank": {
+                "ample": 18, 
+                "ochiai": 18, 
+                "tarantula": 18
+            }
+        }, 
+        "org.apache.commons.lang3.RandomStringUtils:163": {
+            "class": "org.apache.commons.lang3.RandomStringUtils", 
+            "ef": 1, 
+            "ep": 6, 
+            "line": 163, 
+            "metrics": {
+                "ample": 0.4971896955503513, 
+                "gzoltar": 0.2672612419124244, 
+                "ochiai": 0.2672612419124244, 
+                "tarantula": 0.9944108057755008
+            }, 
+            "nf": 1, 
+            "np": 2129, 
+            "rank": {
+                "ample": 19, 
+                "ochiai": 19, 
+                "tarantula": 19
+            }
+        }, 
+        "org.apache.commons.lang3.RandomStringUtils:225": {
+            "class": "org.apache.commons.lang3.RandomStringUtils", 
+            "ef": 2, 
+            "ep": 7, 
+            "line": 225, 
+            "metrics": {
+                "ample": 0.9967213114754099, 
+                "gzoltar": 0.47140452079103173, 
+                "ochiai": 0.47140452079103173, 
+                "tarantula": 0.9967320261437909
+            }, 
+            "nf": 0, 
+            "np": 2128, 
+            "rank": {
+                "ample": 8, 
+                "ochiai": 8, 
+                "tarantula": 12
+            }
+        }, 
+        "org.apache.commons.lang3.RandomStringUtils:227": {
+            "class": "org.apache.commons.lang3.RandomStringUtils", 
+            "ef": 2, 
+            "ep": 7, 
+            "line": 227, 
+            "metrics": {
+                "ample": 0.9967213114754099, 
+                "gzoltar": 0.47140452079103173, 
+                "ochiai": 0.47140452079103173, 
+                "tarantula": 0.9967320261437909
+            }, 
+            "nf": 0, 
+            "np": 2128, 
+            "rank": {
+                "ample": 9, 
+                "ochiai": 9, 
+                "tarantula": 13
+            }
+        }, 
+        "org.apache.commons.lang3.RandomStringUtils:228": {
+            "class": "org.apache.commons.lang3.RandomStringUtils", 
+            "ef": 1, 
+            "ep": 0, 
+            "line": 228, 
+            "metrics": {
+                "ample": 0.5, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 1.0
+            }, 
+            "nf": 1, 
+            "np": 2135, 
+            "rank": {
+                "ample": 14, 
+                "ochiai": 1, 
+                "tarantula": 1
+            }
+        }, 
+        "org.apache.commons.lang3.RandomStringUtils:231": {
+            "class": "org.apache.commons.lang3.RandomStringUtils", 
+            "ef": 2, 
+            "ep": 7, 
+            "line": 231, 
+            "metrics": {
+                "ample": 0.9967213114754099, 
+                "gzoltar": 0.47140452079103173, 
+                "ochiai": 0.47140452079103173, 
+                "tarantula": 0.9967320261437909
+            }, 
+            "nf": 0, 
+            "np": 2128, 
+            "rank": {
+                "ample": 12, 
+                "ochiai": 10, 
+                "tarantula": 16
+            }
+        }, 
+        "org.apache.commons.lang3.RandomStringUtils:232": {
+            "class": "org.apache.commons.lang3.RandomStringUtils", 
+            "ef": 2, 
+            "ep": 5, 
+            "line": 232, 
+            "metrics": {
+                "ample": 0.9976580796252927, 
+                "gzoltar": 0.5345224838248488, 
+                "ochiai": 0.5345224838248488, 
+                "tarantula": 0.9976635514018691
+            }, 
+            "nf": 0, 
+            "np": 2130, 
+            "rank": {
+                "ample": 6, 
+                "ochiai": 5, 
+                "tarantula": 10
+            }
+        }, 
+        "org.apache.commons.lang3.RandomStringUtils:233": {
+            "class": "org.apache.commons.lang3.RandomStringUtils", 
+            "ef": 2, 
+            "ep": 5, 
+            "line": 233, 
+            "metrics": {
+                "ample": 0.9976580796252927, 
+                "gzoltar": 0.5345224838248488, 
+                "ochiai": 0.5345224838248488, 
+                "tarantula": 0.9976635514018691
+            }, 
+            "nf": 0, 
+            "np": 2130, 
+            "rank": {
+                "ample": 5, 
+                "ochiai": 6, 
+                "tarantula": 9
+            }
+        }, 
+        "org.apache.commons.lang3.RandomStringUtils:234": {
+            "class": "org.apache.commons.lang3.RandomStringUtils", 
+            "ef": 2, 
+            "ep": 5, 
+            "line": 234, 
+            "metrics": {
+                "ample": 0.9976580796252927, 
+                "gzoltar": 0.5345224838248488, 
+                "ochiai": 0.5345224838248488, 
+                "tarantula": 0.9976635514018691
+            }, 
+            "nf": 0, 
+            "np": 2130, 
+            "rank": {
+                "ample": 4, 
+                "ochiai": 7, 
+                "tarantula": 8
+            }
+        }, 
+        "org.apache.commons.lang3.RandomStringUtils:235": {
+            "class": "org.apache.commons.lang3.RandomStringUtils", 
+            "ef": 2, 
+            "ep": 2, 
+            "line": 235, 
+            "metrics": {
+                "ample": 0.9990632318501171, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 0.9990641085634067
+            }, 
+            "nf": 0, 
+            "np": 2133, 
+            "rank": {
+                "ample": 3, 
+                "ochiai": 2, 
+                "tarantula": 4
+            }
+        }, 
+        "org.apache.commons.lang3.RandomStringUtils:236": {
+            "class": "org.apache.commons.lang3.RandomStringUtils", 
+            "ef": 2, 
+            "ep": 2, 
+            "line": 236, 
+            "metrics": {
+                "ample": 0.9990632318501171, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 0.9990641085634067
+            }, 
+            "nf": 0, 
+            "np": 2133, 
+            "rank": {
+                "ample": 2, 
+                "ochiai": 3, 
+                "tarantula": 3
+            }
+        }, 
+        "org.apache.commons.lang3.RandomStringUtils:240": {
+            "class": "org.apache.commons.lang3.RandomStringUtils", 
+            "ef": 2, 
+            "ep": 7, 
+            "line": 240, 
+            "metrics": {
+                "ample": 0.9967213114754099, 
+                "gzoltar": 0.47140452079103173, 
+                "ochiai": 0.47140452079103173, 
+                "tarantula": 0.9967320261437909
+            }, 
+            "nf": 0, 
+            "np": 2128, 
+            "rank": {
+                "ample": 10, 
+                "ochiai": 11, 
+                "tarantula": 14
+            }
+        }, 
+        "org.apache.commons.lang3.RandomStringUtils:241": {
+            "class": "org.apache.commons.lang3.RandomStringUtils", 
+            "ef": 2, 
+            "ep": 7, 
+            "line": 241, 
+            "metrics": {
+                "ample": 0.9967213114754099, 
+                "gzoltar": 0.47140452079103173, 
+                "ochiai": 0.47140452079103173, 
+                "tarantula": 0.9967320261437909
+            }, 
+            "nf": 0, 
+            "np": 2128, 
+            "rank": {
+                "ample": 7, 
+                "ochiai": 12, 
+                "tarantula": 11
+            }
+        }, 
+        "org.apache.commons.lang3.RandomStringUtils:243": {
+            "class": "org.apache.commons.lang3.RandomStringUtils", 
+            "ef": 2, 
+            "ep": 7, 
+            "line": 243, 
+            "metrics": {
+                "ample": 0.9967213114754099, 
+                "gzoltar": 0.47140452079103173, 
+                "ochiai": 0.47140452079103173, 
+                "tarantula": 0.9967320261437909
+            }, 
+            "nf": 0, 
+            "np": 2128, 
+            "rank": {
+                "ample": 11, 
+                "ochiai": 13, 
+                "tarantula": 15
+            }
+        }, 
+        "org.apache.commons.lang3.RandomStringUtils:245": {
+            "class": "org.apache.commons.lang3.RandomStringUtils", 
+            "ef": 2, 
+            "ep": 7, 
+            "line": 245, 
+            "metrics": {
+                "ample": 0.9967213114754099, 
+                "gzoltar": 0.47140452079103173, 
+                "ochiai": 0.47140452079103173, 
+                "tarantula": 0.9967320261437909
+            }, 
+            "nf": 0, 
+            "np": 2128, 
+            "rank": {
+                "ample": 13, 
+                "ochiai": 14, 
+                "tarantula": 17
+            }
+        }, 
+        "org.apache.commons.lang3.RandomStringUtils:248": {
+            "class": "org.apache.commons.lang3.RandomStringUtils", 
+            "ef": 2, 
+            "ep": 2, 
+            "line": 248, 
+            "metrics": {
+                "ample": 0.9990632318501171, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 0.9990641085634067
+            }, 
+            "nf": 0, 
+            "np": 2133, 
+            "rank": {
+                "ample": 1, 
+                "ochiai": 4, 
+                "tarantula": 2
+            }
+        }, 
+        "org.apache.commons.lang3.RandomStringUtils:318": {
+            "class": "org.apache.commons.lang3.RandomStringUtils", 
+            "ef": 1, 
+            "ep": 2, 
+            "line": 318, 
+            "metrics": {
+                "ample": 0.4990632318501171, 
+                "gzoltar": 0.4082482904638631, 
+                "ochiai": 0.4082482904638631, 
+                "tarantula": 0.9981299672744274
+            }, 
+            "nf": 1, 
+            "np": 2133, 
+            "rank": {
+                "ample": 17, 
+                "ochiai": 16, 
+                "tarantula": 7
+            }
+        }, 
+        "org.apache.commons.lang3.RandomStringUtils:321": {
+            "class": "org.apache.commons.lang3.RandomStringUtils", 
+            "ef": 1, 
+            "ep": 2, 
+            "line": 321, 
+            "metrics": {
+                "ample": 0.4990632318501171, 
+                "gzoltar": 0.4082482904638631, 
+                "ochiai": 0.4082482904638631, 
+                "tarantula": 0.9981299672744274
+            }, 
+            "nf": 1, 
+            "np": 2133, 
+            "rank": {
+                "ample": 15, 
+                "ochiai": 17, 
+                "tarantula": 5
+            }
+        }, 
+        "org.apache.commons.lang3.RandomStringUtils:69": {
+            "class": "org.apache.commons.lang3.RandomStringUtils", 
+            "ef": 1, 
+            "ep": 2, 
+            "line": 69, 
+            "metrics": {
+                "ample": 0.4990632318501171, 
+                "gzoltar": 0.4082482904638631, 
+                "ochiai": 0.4082482904638631, 
+                "tarantula": 0.9981299672744274
+            }, 
+            "nf": 1, 
+            "np": 2133, 
+            "rank": {
+                "ample": 16, 
+                "ochiai": 15, 
+                "tarantula": 6
+            }
+        }
+    }
+}

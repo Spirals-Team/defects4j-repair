@@ -1,0 +1,60 @@
+{
+    "date": "2015-05-11T08:00:47.162241", 
+    "executedTest": 1827, 
+    "failedTest": 1, 
+    "failedTestDetails": [
+        {
+            "class": "org.apache.commons.lang3.time.DateUtilsTest", 
+            "method": "testIsSameLocalTime_Cal"
+        }
+    ], 
+    "modifiedLines": [
+        {
+            "class": "a.org.apache.commons.lang3.time.DateUtils", 
+            "line": 265
+        }
+    ], 
+    "nbsuspicious": 2, 
+    "node": "griffon-1.nancy.grid5000.fr\n", 
+    "successfulTest": 1826, 
+    "suspicious": {
+        "org.apache.commons.lang3.time.DateUtils:259": {
+            "class": "org.apache.commons.lang3.time.DateUtils", 
+            "ef": 1, 
+            "ep": 0, 
+            "line": 259, 
+            "metrics": {
+                "ample": 1.0, 
+                "gzoltar": 1.0, 
+                "ochiai": 1.0, 
+                "tarantula": 1.0
+            }, 
+            "nf": 0, 
+            "np": 1826, 
+            "rank": {
+                "ample": 2, 
+                "ochiai": 1, 
+                "tarantula": 2
+            }
+        }, 
+        "org.apache.commons.lang3.time.DateUtils:262": {
+            "class": "org.apache.commons.lang3.time.DateUtils", 
+            "ef": 1, 
+            "ep": 0, 
+            "line": 262, 
+            "metrics": {
+                "ample": 1.0, 
+                "gzoltar": 1.0, 
+                "ochiai": 1.0, 
+                "tarantula": 1.0
+            }, 
+            "nf": 0, 
+            "np": 1826, 
+            "rank": {
+                "ample": 1, 
+                "ochiai": 2, 
+                "tarantula": 1
+            }
+        }
+    }
+}

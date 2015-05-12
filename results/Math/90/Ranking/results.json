@@ -1,0 +1,114 @@
+{
+    "date": "2015-05-11T07:53:06.253285", 
+    "executedTest": 1692, 
+    "failedTest": 2, 
+    "failedTestDetails": [
+        {
+            "class": "org.apache.commons.math.stat.FrequencyTest", 
+            "method": "testAddNonComparable"
+        }, 
+        {
+            "class": "junit.framework.TestSuite$1", 
+            "method": "warning"
+        }
+    ], 
+    "modifiedLines": [
+        {
+            "class": "a.org.apache.commons.math.stat.Frequency", 
+            "line": 108
+        }, 
+        {
+            "class": "a.org.apache.commons.math.stat.Frequency", 
+            "line": 110
+        }, 
+        {
+            "class": "a.org.apache.commons.math.stat.Frequency", 
+            "line": 111
+        }, 
+        {
+            "class": "a.org.apache.commons.math.stat.Frequency", 
+            "line": 123
+        }
+    ], 
+    "nbsuspicious": 4, 
+    "node": "graphene-30.nancy.grid5000.fr\n", 
+    "successfulTest": 1690, 
+    "suspicious": {
+        "org.apache.commons.math.stat.Frequency:107": {
+            "class": "org.apache.commons.math.stat.Frequency", 
+            "ef": 1, 
+            "ep": 27, 
+            "line": 107, 
+            "metrics": {
+                "ample": 0.4840236686390533, 
+                "gzoltar": 0.1336306209562122, 
+                "ochiai": 0.1336306209562122, 
+                "tarantula": 0.9690366972477064
+            }, 
+            "nf": 1, 
+            "np": 1663, 
+            "rank": {
+                "ample": 2, 
+                "ochiai": 2, 
+                "tarantula": 2
+            }
+        }, 
+        "org.apache.commons.math.stat.Frequency:108": {
+            "class": "org.apache.commons.math.stat.Frequency", 
+            "ef": 1, 
+            "ep": 27, 
+            "line": 108, 
+            "metrics": {
+                "ample": 0.4840236686390533, 
+                "gzoltar": 0.1336306209562122, 
+                "ochiai": 0.1336306209562122, 
+                "tarantula": 0.9690366972477064
+            }, 
+            "nf": 1, 
+            "np": 1663, 
+            "rank": {
+                "ample": 4, 
+                "ochiai": 3, 
+                "tarantula": 4
+            }
+        }, 
+        "org.apache.commons.math.stat.Frequency:112": {
+            "class": "org.apache.commons.math.stat.Frequency", 
+            "ef": 1, 
+            "ep": 27, 
+            "line": 112, 
+            "metrics": {
+                "ample": 0.4840236686390533, 
+                "gzoltar": 0.1336306209562122, 
+                "ochiai": 0.1336306209562122, 
+                "tarantula": 0.9690366972477064
+            }, 
+            "nf": 1, 
+            "np": 1663, 
+            "rank": {
+                "ample": 3, 
+                "ochiai": 4, 
+                "tarantula": 3
+            }
+        }, 
+        "org.apache.commons.math.stat.Frequency:120": {
+            "class": "org.apache.commons.math.stat.Frequency", 
+            "ef": 1, 
+            "ep": 1, 
+            "line": 120, 
+            "metrics": {
+                "ample": 0.49940828402366866, 
+                "gzoltar": 0.5, 
+                "ochiai": 0.5, 
+                "tarantula": 0.9988179669030733
+            }, 
+            "nf": 1, 
+            "np": 1689, 
+            "rank": {
+                "ample": 1, 
+                "ochiai": 1, 
+                "tarantula": 1
+            }
+        }
+    }
+}

@@ -1,0 +1,88 @@
+export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";cp -r /home/tdurieux/projects/math/math_91 /tmp/math_91_Ranking;cd /tmp/math_91_Ranking;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
+cd /tmp/math_91_Ranking;cp -r /home/tdurieux/nopol/z3-x64-debian-7.7/bin/ lib/z3;time java -cp /home/tdurieux/nopol/nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar fr.inria.lille.repair.Main --mode ranking --type condition --oracle angelic --synthesis smt --solver z3 --solver-path lib/z3/z3 --complianceLevel 6 --source src/java/ --classpath target/classes/:target/test-classes/:lib/commons-discovery-0.5.jar:/home/tdurieux/nopol/nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar;rm -rf /tmp/math_91_Ranking;
+
+/************************/
+Executed tests:   1672
+Successful tests: 1670
+Failed tests:     2
+
+org.apache.commons.math.fraction.FractionTest#testCompareTo
+junit.framework.AssertionFailedError: expected:<-1> but was:<0>
+	at junit.framework.Assert.fail(Assert.java:57)
+	at junit.framework.Assert.failNotEquals(Assert.java:329)
+	at junit.framework.Assert.assertEquals(Assert.java:78)
+	at junit.framework.Assert.assertEquals(Assert.java:234)
+	at junit.framework.Assert.assertEquals(Assert.java:241)
+	at junit.framework.TestCase.assertEquals(TestCase.java:409)
+	at org.apache.commons.math.fraction.FractionTest.testCompareTo(FractionTest.java:178)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at com.gzoltar.core.instr.testing.junit.JUnitRunner.run(JUnitRunner.java:47)
+	at com.gzoltar.core.instr.Runner.main(Runner.java:46)
+
+junit.framework.TestSuite$1#warning
+junit.framework.AssertionFailedError: Class org.apache.commons.math.ode.nonstiff.StepInterpolatorAbstractTest has no public constructor TestCase(String name) or TestCase()
+	at junit.framework.Assert.fail(Assert.java:57)
+	at junit.framework.TestCase.fail(TestCase.java:227)
+	at junit.framework.TestSuite$1.runTest(TestSuite.java:100)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at com.gzoltar.core.instr.testing.junit.JUnitRunner.run(JUnitRunner.java:47)
+	at com.gzoltar.core.instr.Runner.main(Runner.java:46)
+
+
+/************************/
+/* Suspicious statement */
+/************************/
+org.apache.commons.math.fraction.Fraction:259 -> 0.7071067811865475 (ep: 0, ef: 1, np: 1670, nf: 1)
+org.apache.commons.math.fraction.Fraction:261 -> 0.7071067811865475 (ep: 0, ef: 1, np: 1670, nf: 1)
+org.apache.commons.math.fraction.Fraction:262 -> 0.7071067811865475 (ep: 0, ef: 1, np: 1670, nf: 1)
+org.apache.commons.math.fraction.Fraction:263 -> 0.7071067811865475 (ep: 0, ef: 1, np: 1670, nf: 1)
+org.apache.commons.math.fraction.Fraction:265 -> 0.7071067811865475 (ep: 0, ef: 1, np: 1670, nf: 1)
+org.apache.commons.math.fraction.Fraction:266 -> 0.7071067811865475 (ep: 0, ef: 1, np: 1670, nf: 1)
+org.apache.commons.math.fraction.Fraction:267 -> 0.7071067811865475 (ep: 0, ef: 1, np: 1670, nf: 1)
+org.apache.commons.math.fraction.Fraction:268 -> 0.7071067811865475 (ep: 0, ef: 1, np: 1670, nf: 1)
+org.apache.commons.math.fraction.Fraction:272 -> 0.7071067811865475 (ep: 0, ef: 1, np: 1670, nf: 1)
+org.apache.commons.math.fraction.Fraction:281 -> 0.13608276348795434 (ep: 26, ef: 1, np: 1644, nf: 1)
+org.apache.commons.math.util.MathUtils:608 -> 0.11180339887498948 (ep: 39, ef: 1, np: 1631, nf: 1)
+org.apache.commons.math.util.MathUtils:604 -> 0.1091089451179962 (ep: 41, ef: 1, np: 1629, nf: 1)
+org.apache.commons.math.util.MathUtils:577 -> 0.10783277320343841 (ep: 42, ef: 1, np: 1628, nf: 1)
+org.apache.commons.math.util.MathUtils:610 -> 0.10425720702853739 (ep: 45, ef: 1, np: 1625, nf: 1)
+org.apache.commons.math.util.MathUtils:576 -> 0.10314212462587934 (ep: 46, ef: 1, np: 1624, nf: 1)
+org.apache.commons.math.util.MathUtils:579 -> 0.10314212462587934 (ep: 46, ef: 1, np: 1624, nf: 1)
+org.apache.commons.math.util.MathUtils:580 -> 0.10314212462587934 (ep: 46, ef: 1, np: 1624, nf: 1)
+org.apache.commons.math.util.MathUtils:583 -> 0.10314212462587934 (ep: 46, ef: 1, np: 1624, nf: 1)
+org.apache.commons.math.util.MathUtils:584 -> 0.10314212462587934 (ep: 46, ef: 1, np: 1624, nf: 1)
+org.apache.commons.math.util.MathUtils:590 -> 0.10314212462587934 (ep: 46, ef: 1, np: 1624, nf: 1)
+org.apache.commons.math.util.MathUtils:597 -> 0.10314212462587934 (ep: 46, ef: 1, np: 1624, nf: 1)
+org.apache.commons.math.util.MathUtils:603 -> 0.10314212462587934 (ep: 46, ef: 1, np: 1624, nf: 1)
+org.apache.commons.math.util.MathUtils:607 -> 0.10314212462587934 (ep: 46, ef: 1, np: 1624, nf: 1)
+org.apache.commons.math.util.MathUtils:613 -> 0.10314212462587934 (ep: 46, ef: 1, np: 1624, nf: 1)
+org.apache.commons.math.util.MathUtils:616 -> 0.10314212462587934 (ep: 46, ef: 1, np: 1624, nf: 1)
+org.apache.commons.math.util.MathUtils:617 -> 0.10314212462587934 (ep: 46, ef: 1, np: 1624, nf: 1)
+org.apache.commons.math.util.MathUtils:561 -> 0.10206207261596577 (ep: 47, ef: 1, np: 1623, nf: 1)
+org.apache.commons.math.util.MathUtils:562 -> 0.10206207261596577 (ep: 47, ef: 1, np: 1623, nf: 1)
+org.apache.commons.math.util.MathUtils:563 -> 0.10206207261596577 (ep: 47, ef: 1, np: 1623, nf: 1)
+
+

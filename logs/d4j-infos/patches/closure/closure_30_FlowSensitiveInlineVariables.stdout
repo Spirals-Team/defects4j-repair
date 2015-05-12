@@ -1,7 +1,0 @@
-157c157
-<     (new NodeTraversal(compiler, this)).traverse(root);
----
->     (new NodeTraversal(compiler, this)).traverseRoots(externs, root);
-207a208,209
->             // TODO(nicksantos): We need to add some notion of @const outer
->             // scope vars. We can inline those just fine.

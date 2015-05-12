@@ -1,0 +1,1860 @@
+{
+    "date": "2015-05-11T07:52:59.637954", 
+    "executedTest": 12128, 
+    "failedTest": 4, 
+    "failedTestDetails": [
+        {
+            "class": "org.joda.time.TestPartial_Basics", 
+            "method": "testWith_baseAndArgHaveNoRange"
+        }, 
+        {
+            "class": "org.joda.time.TestPartial_Basics", 
+            "method": "testWith_baseAndArgHaveNoRange"
+        }, 
+        {
+            "class": "org.joda.time.TestPartial_Basics", 
+            "method": "testWith_baseAndArgHaveNoRange"
+        }, 
+        {
+            "class": "junit.framework.TestSuite$1", 
+            "method": "warning"
+        }
+    ], 
+    "modifiedLines": [
+        {
+            "class": "a.org.joda.time.Partial", 
+            "line": 218
+        }, 
+        {
+            "class": "a.org.joda.time.Partial", 
+            "line": 224
+        }, 
+        {
+            "class": "a.org.joda.time.Partial", 
+            "line": 225
+        }, 
+        {
+            "class": "a.org.joda.time.Partial", 
+            "line": 239
+        }, 
+        {
+            "class": "a.org.joda.time.Partial", 
+            "line": 240
+        }, 
+        {
+            "class": "a.org.joda.time.Partial", 
+            "line": 449
+        }, 
+        {
+            "class": "a.org.joda.time.Partial", 
+            "line": 450
+        }, 
+        {
+            "class": "a.org.joda.time.Partial", 
+            "line": 451
+        }, 
+        {
+            "class": "a.org.joda.time.field.UnsupportedDurationField", 
+            "line": 227
+        }, 
+        {
+            "class": "a.org.joda.time.field.UnsupportedDurationField", 
+            "line": 228
+        }, 
+        {
+            "class": "a.org.joda.time.field.UnsupportedDurationField", 
+            "line": 229
+        }
+    ], 
+    "nbsuspicious": 94, 
+    "node": "graphene-75.nancy.grid5000.fr\n", 
+    "successfulTest": 12124, 
+    "suspicious": {
+        "org.joda.time.DateTimeFieldType$StandardDateTimeFieldType:452": {
+            "class": "org.joda.time.DateTimeFieldType$StandardDateTimeFieldType", 
+            "ef": 3, 
+            "ep": 960, 
+            "line": 452, 
+            "metrics": {
+                "ample": 0.6708182118112834, 
+                "gzoltar": 0.048336824452283184, 
+                "ochiai": 0.048336824452283184, 
+                "tarantula": 0.9045061175768427
+            }, 
+            "nf": 1, 
+            "np": 11164, 
+            "rank": {
+                "ample": 33, 
+                "ochiai": 33, 
+                "tarantula": 33
+            }
+        }, 
+        "org.joda.time.DateTimeFieldType$StandardDateTimeFieldType:457": {
+            "class": "org.joda.time.DateTimeFieldType$StandardDateTimeFieldType", 
+            "ef": 3, 
+            "ep": 156, 
+            "line": 457, 
+            "metrics": {
+                "ample": 0.7371329594193335, 
+                "gzoltar": 0.11895773785772162, 
+                "ochiai": 0.11895773785772162, 
+                "tarantula": 0.983133311709374
+            }, 
+            "nf": 1, 
+            "np": 11968, 
+            "rank": {
+                "ample": 20, 
+                "ochiai": 20, 
+                "tarantula": 20
+            }
+        }, 
+        "org.joda.time.DateTimeFieldType$StandardDateTimeFieldType:480": {
+            "class": "org.joda.time.DateTimeFieldType$StandardDateTimeFieldType", 
+            "ef": 3, 
+            "ep": 3711, 
+            "line": 480, 
+            "metrics": {
+                "ample": 0.4439129000329924, 
+                "gzoltar": 0.024613326308873328, 
+                "ochiai": 0.024613326308873328, 
+                "tarantula": 0.7101686972820994
+            }, 
+            "nf": 1, 
+            "np": 8413, 
+            "rank": {
+                "ample": 57, 
+                "ochiai": 57, 
+                "tarantula": 57
+            }
+        }, 
+        "org.joda.time.DateTimeFieldType$StandardDateTimeFieldType:482": {
+            "class": "org.joda.time.DateTimeFieldType$StandardDateTimeFieldType", 
+            "ef": 3, 
+            "ep": 3711, 
+            "line": 482, 
+            "metrics": {
+                "ample": 0.4439129000329924, 
+                "gzoltar": 0.024613326308873328, 
+                "ochiai": 0.024613326308873328, 
+                "tarantula": 0.7101686972820994
+            }, 
+            "nf": 1, 
+            "np": 8413, 
+            "rank": {
+                "ample": 58, 
+                "ochiai": 58, 
+                "tarantula": 58
+            }
+        }, 
+        "org.joda.time.DateTimeFieldType$StandardDateTimeFieldType:492": {
+            "class": "org.joda.time.DateTimeFieldType$StandardDateTimeFieldType", 
+            "ef": 3, 
+            "ep": 2523, 
+            "line": 492, 
+            "metrics": {
+                "ample": 0.5419003629165292, 
+                "gzoltar": 0.029845206349475212, 
+                "ochiai": 0.029845206349475212, 
+                "tarantula": 0.7827995867768596
+            }, 
+            "nf": 1, 
+            "np": 9601, 
+            "rank": {
+                "ample": 55, 
+                "ochiai": 55, 
+                "tarantula": 55
+            }
+        }, 
+        "org.joda.time.DateTimeFieldType:327": {
+            "class": "org.joda.time.DateTimeFieldType", 
+            "ef": 3, 
+            "ep": 4703, 
+            "line": 327, 
+            "metrics": {
+                "ample": 0.3620917189046519, 
+                "gzoltar": 0.02186579628492456, 
+                "ochiai": 0.02186579628492456, 
+                "tarantula": 0.6591040881414904
+            }, 
+            "nf": 1, 
+            "np": 7421, 
+            "rank": {
+                "ample": 61, 
+                "ochiai": 61, 
+                "tarantula": 61
+            }
+        }, 
+        "org.joda.time.DateTimeFieldType:363": {
+            "class": "org.joda.time.DateTimeFieldType", 
+            "ef": 3, 
+            "ep": 114, 
+            "line": 363, 
+            "metrics": {
+                "ample": 0.7405971626525899, 
+                "gzoltar": 0.13867504905630726, 
+                "ochiai": 0.13867504905630726, 
+                "tarantula": 0.9876181166503747
+            }, 
+            "nf": 1, 
+            "np": 12010, 
+            "rank": {
+                "ample": 19, 
+                "ochiai": 19, 
+                "tarantula": 19
+            }
+        }, 
+        "org.joda.time.DateTimeFieldType:378": {
+            "class": "org.joda.time.DateTimeFieldType", 
+            "ef": 3, 
+            "ep": 876, 
+            "line": 378, 
+            "metrics": {
+                "ample": 0.6777466182777961, 
+                "gzoltar": 0.05059374430161636, 
+                "ochiai": 0.05059374430161636, 
+                "tarantula": 0.9121275955461933
+            }, 
+            "nf": 1, 
+            "np": 11248, 
+            "rank": {
+                "ample": 32, 
+                "ochiai": 32, 
+                "tarantula": 32
+            }
+        }, 
+        "org.joda.time.DateTimeUtils:100": {
+            "class": "org.joda.time.DateTimeUtils", 
+            "ef": 3, 
+            "ep": 8604, 
+            "line": 100, 
+            "metrics": {
+                "ample": 0.040333223358627546, 
+                "gzoltar": 0.016168337181727395, 
+                "ochiai": 0.016168337181727395, 
+                "tarantula": 0.5138159010001695
+            }, 
+            "nf": 1, 
+            "np": 3520, 
+            "rank": {
+                "ample": 82, 
+                "ochiai": 78, 
+                "tarantula": 79
+            }
+        }, 
+        "org.joda.time.DateTimeUtils:101": {
+            "class": "org.joda.time.DateTimeUtils", 
+            "ef": 3, 
+            "ep": 8604, 
+            "line": 101, 
+            "metrics": {
+                "ample": 0.040333223358627546, 
+                "gzoltar": 0.016168337181727395, 
+                "ochiai": 0.016168337181727395, 
+                "tarantula": 0.5138159010001695
+            }, 
+            "nf": 1, 
+            "np": 3520, 
+            "rank": {
+                "ample": 81, 
+                "ochiai": 79, 
+                "tarantula": 78
+            }
+        }, 
+        "org.joda.time.DateTimeUtils:102": {
+            "class": "org.joda.time.DateTimeUtils", 
+            "ef": 3, 
+            "ep": 8604, 
+            "line": 102, 
+            "metrics": {
+                "ample": 0.040333223358627546, 
+                "gzoltar": 0.016168337181727395, 
+                "ochiai": 0.016168337181727395, 
+                "tarantula": 0.5138159010001695
+            }, 
+            "nf": 1, 
+            "np": 3520, 
+            "rank": {
+                "ample": 83, 
+                "ochiai": 80, 
+                "tarantula": 80
+            }
+        }, 
+        "org.joda.time.DateTimeUtils:114": {
+            "class": "org.joda.time.DateTimeUtils", 
+            "ef": 3, 
+            "ep": 8595, 
+            "line": 114, 
+            "metrics": {
+                "ample": 0.04107555262289675, 
+                "gzoltar": 0.016176797112810372, 
+                "ochiai": 0.016176797112810372, 
+                "tarantula": 0.5140773405698779
+            }, 
+            "nf": 1, 
+            "np": 3529, 
+            "rank": {
+                "ample": 79, 
+                "ochiai": 75, 
+                "tarantula": 76
+            }
+        }, 
+        "org.joda.time.DateTimeUtils:115": {
+            "class": "org.joda.time.DateTimeUtils", 
+            "ef": 3, 
+            "ep": 8595, 
+            "line": 115, 
+            "metrics": {
+                "ample": 0.04107555262289675, 
+                "gzoltar": 0.016176797112810372, 
+                "ochiai": 0.016176797112810372, 
+                "tarantula": 0.5140773405698779
+            }, 
+            "nf": 1, 
+            "np": 3529, 
+            "rank": {
+                "ample": 80, 
+                "ochiai": 76, 
+                "tarantula": 77
+            }
+        }, 
+        "org.joda.time.DateTimeUtils:116": {
+            "class": "org.joda.time.DateTimeUtils", 
+            "ef": 3, 
+            "ep": 8595, 
+            "line": 116, 
+            "metrics": {
+                "ample": 0.04107555262289675, 
+                "gzoltar": 0.016176797112810372, 
+                "ochiai": 0.016176797112810372, 
+                "tarantula": 0.5140773405698779
+            }, 
+            "nf": 1, 
+            "np": 3529, 
+            "rank": {
+                "ample": 78, 
+                "ochiai": 77, 
+                "tarantula": 75
+            }
+        }, 
+        "org.joda.time.DateTimeUtils:161": {
+            "class": "org.joda.time.DateTimeUtils", 
+            "ef": 3, 
+            "ep": 8604, 
+            "line": 161, 
+            "metrics": {
+                "ample": 0.040333223358627546, 
+                "gzoltar": 0.016168337181727395, 
+                "ochiai": 0.016168337181727395, 
+                "tarantula": 0.5138159010001695
+            }, 
+            "nf": 1, 
+            "np": 3520, 
+            "rank": {
+                "ample": 86, 
+                "ochiai": 81, 
+                "tarantula": 83
+            }
+        }, 
+        "org.joda.time.DateTimeUtils:162": {
+            "class": "org.joda.time.DateTimeUtils", 
+            "ef": 3, 
+            "ep": 8604, 
+            "line": 162, 
+            "metrics": {
+                "ample": 0.040333223358627546, 
+                "gzoltar": 0.016168337181727395, 
+                "ochiai": 0.016168337181727395, 
+                "tarantula": 0.5138159010001695
+            }, 
+            "nf": 1, 
+            "np": 3520, 
+            "rank": {
+                "ample": 85, 
+                "ochiai": 82, 
+                "tarantula": 82
+            }
+        }, 
+        "org.joda.time.DateTimeUtils:165": {
+            "class": "org.joda.time.DateTimeUtils", 
+            "ef": 3, 
+            "ep": 8604, 
+            "line": 165, 
+            "metrics": {
+                "ample": 0.040333223358627546, 
+                "gzoltar": 0.016168337181727395, 
+                "ochiai": 0.016168337181727395, 
+                "tarantula": 0.5138159010001695
+            }, 
+            "nf": 1, 
+            "np": 3520, 
+            "rank": {
+                "ample": 84, 
+                "ochiai": 83, 
+                "tarantula": 81
+            }
+        }, 
+        "org.joda.time.DateTimeUtils:284": {
+            "class": "org.joda.time.DateTimeUtils", 
+            "ef": 3, 
+            "ep": 9020, 
+            "line": 284, 
+            "metrics": {
+                "ample": 0.006021115143516997, 
+                "gzoltar": 0.015791223501214202, 
+                "ochiai": 0.015791223501214202, 
+                "tarantula": 0.5020151272566665
+            }, 
+            "nf": 1, 
+            "np": 3104, 
+            "rank": {
+                "ample": 87, 
+                "ochiai": 84, 
+                "tarantula": 84
+            }
+        }, 
+        "org.joda.time.DateTimeUtils:285": {
+            "class": "org.joda.time.DateTimeUtils", 
+            "ef": 3, 
+            "ep": 3433, 
+            "line": 285, 
+            "metrics": {
+                "ample": 0.46684262619597494, 
+                "gzoltar": 0.025589669772560265, 
+                "ochiai": 0.025589669772560265, 
+                "tarantula": 0.7259300654638352
+            }, 
+            "nf": 1, 
+            "np": 8691, 
+            "rank": {
+                "ample": 56, 
+                "ochiai": 56, 
+                "tarantula": 56
+            }
+        }, 
+        "org.joda.time.DateTimeUtils:287": {
+            "class": "org.joda.time.DateTimeUtils", 
+            "ef": 3, 
+            "ep": 7859, 
+            "line": 287, 
+            "metrics": {
+                "ample": 0.10178159023424616, 
+                "gzoltar": 0.016917054144742476, 
+                "ochiai": 0.016917054144742476, 
+                "tarantula": 0.5363968853232658
+            }, 
+            "nf": 1, 
+            "np": 4265, 
+            "rank": {
+                "ample": 74, 
+                "ochiai": 74, 
+                "tarantula": 74
+            }
+        }, 
+        "org.joda.time.DateTimeZone:134": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 9984, 
+            "line": 134, 
+            "metrics": {
+                "ample": 0.0734905971626526, 
+                "gzoltar": 0.015009759516560167, 
+                "ochiai": 0.015009759516560167, 
+                "tarantula": 0.4766472715835823
+            }, 
+            "nf": 1, 
+            "np": 2140, 
+            "rank": {
+                "ample": 75, 
+                "ochiai": 92, 
+                "tarantula": 92
+            }
+        }, 
+        "org.joda.time.DateTimeZone:135": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 9984, 
+            "line": 135, 
+            "metrics": {
+                "ample": 0.0734905971626526, 
+                "gzoltar": 0.015009759516560167, 
+                "ochiai": 0.015009759516560167, 
+                "tarantula": 0.4766472715835823
+            }, 
+            "nf": 1, 
+            "np": 2140, 
+            "rank": {
+                "ample": 77, 
+                "ochiai": 93, 
+                "tarantula": 94
+            }
+        }, 
+        "org.joda.time.DateTimeZone:162": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 9984, 
+            "line": 162, 
+            "metrics": {
+                "ample": 0.0734905971626526, 
+                "gzoltar": 0.015009759516560167, 
+                "ochiai": 0.015009759516560167, 
+                "tarantula": 0.4766472715835823
+            }, 
+            "nf": 1, 
+            "np": 2140, 
+            "rank": {
+                "ample": 76, 
+                "ochiai": 94, 
+                "tarantula": 93
+            }
+        }, 
+        "org.joda.time.DateTimeZone:175": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 9105, 
+            "line": 175, 
+            "metrics": {
+                "ample": 0.0009897723523589752, 
+                "gzoltar": 0.015717365336548286, 
+                "ochiai": 0.015717365336548286, 
+                "tarantula": 0.4996702934388394
+            }, 
+            "nf": 1, 
+            "np": 3019, 
+            "rank": {
+                "ample": 89, 
+                "ochiai": 85, 
+                "tarantula": 86
+            }
+        }, 
+        "org.joda.time.DateTimeZone:176": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 9105, 
+            "line": 176, 
+            "metrics": {
+                "ample": 0.0009897723523589752, 
+                "gzoltar": 0.015717365336548286, 
+                "ochiai": 0.015717365336548286, 
+                "tarantula": 0.4996702934388394
+            }, 
+            "nf": 1, 
+            "np": 3019, 
+            "rank": {
+                "ample": 90, 
+                "ochiai": 86, 
+                "tarantula": 87
+            }
+        }, 
+        "org.joda.time.DateTimeZone:179": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 9105, 
+            "line": 179, 
+            "metrics": {
+                "ample": 0.0009897723523589752, 
+                "gzoltar": 0.015717365336548286, 
+                "ochiai": 0.015717365336548286, 
+                "tarantula": 0.4996702934388394
+            }, 
+            "nf": 1, 
+            "np": 3019, 
+            "rank": {
+                "ample": 88, 
+                "ochiai": 87, 
+                "tarantula": 85
+            }
+        }, 
+        "org.joda.time.DateTimeZone:182": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 9105, 
+            "line": 182, 
+            "metrics": {
+                "ample": 0.0009897723523589752, 
+                "gzoltar": 0.015717365336548286, 
+                "ochiai": 0.015717365336548286, 
+                "tarantula": 0.4996702934388394
+            }, 
+            "nf": 1, 
+            "np": 3019, 
+            "rank": {
+                "ample": 92, 
+                "ochiai": 88, 
+                "tarantula": 89
+            }
+        }, 
+        "org.joda.time.DateTimeZone:183": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 9105, 
+            "line": 183, 
+            "metrics": {
+                "ample": 0.0009897723523589752, 
+                "gzoltar": 0.015717365336548286, 
+                "ochiai": 0.015717365336548286, 
+                "tarantula": 0.4996702934388394
+            }, 
+            "nf": 1, 
+            "np": 3019, 
+            "rank": {
+                "ample": 91, 
+                "ochiai": 89, 
+                "tarantula": 88
+            }
+        }, 
+        "org.joda.time.DateTimeZone:184": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 9105, 
+            "line": 184, 
+            "metrics": {
+                "ample": 0.0009897723523589752, 
+                "gzoltar": 0.015717365336548286, 
+                "ochiai": 0.015717365336548286, 
+                "tarantula": 0.4996702934388394
+            }, 
+            "nf": 1, 
+            "np": 3019, 
+            "rank": {
+                "ample": 94, 
+                "ochiai": 90, 
+                "tarantula": 91
+            }
+        }, 
+        "org.joda.time.DateTimeZone:185": {
+            "class": "org.joda.time.DateTimeZone", 
+            "ef": 3, 
+            "ep": 9105, 
+            "line": 185, 
+            "metrics": {
+                "ample": 0.0009897723523589752, 
+                "gzoltar": 0.015717365336548286, 
+                "ochiai": 0.015717365336548286, 
+                "tarantula": 0.4996702934388394
+            }, 
+            "nf": 1, 
+            "np": 3019, 
+            "rank": {
+                "ample": 93, 
+                "ochiai": 91, 
+                "tarantula": 90
+            }
+        }, 
+        "org.joda.time.DurationFieldType$StandardDurationFieldType:282": {
+            "class": "org.joda.time.DurationFieldType$StandardDurationFieldType", 
+            "ef": 3, 
+            "ep": 2349, 
+            "line": 282, 
+            "metrics": {
+                "ample": 0.5562520620257341, 
+                "gzoltar": 0.030929478706587094, 
+                "ochiai": 0.030929478706587094, 
+                "tarantula": 0.7947037231253278
+            }, 
+            "nf": 1, 
+            "np": 9775, 
+            "rank": {
+                "ample": 53, 
+                "ochiai": 53, 
+                "tarantula": 53
+            }
+        }, 
+        "org.joda.time.DurationFieldType$StandardDurationFieldType:284": {
+            "class": "org.joda.time.DurationFieldType$StandardDurationFieldType", 
+            "ef": 3, 
+            "ep": 2349, 
+            "line": 284, 
+            "metrics": {
+                "ample": 0.5562520620257341, 
+                "gzoltar": 0.030929478706587094, 
+                "ochiai": 0.030929478706587094, 
+                "tarantula": 0.7947037231253278
+            }, 
+            "nf": 1, 
+            "np": 9775, 
+            "rank": {
+                "ample": 54, 
+                "ochiai": 54, 
+                "tarantula": 54
+            }
+        }, 
+        "org.joda.time.DurationFieldType$StandardDurationFieldType:286": {
+            "class": "org.joda.time.DurationFieldType$StandardDurationFieldType", 
+            "ef": 3, 
+            "ep": 24, 
+            "line": 286, 
+            "metrics": {
+                "ample": 0.748020455295282, 
+                "gzoltar": 0.28867513459481287, 
+                "ochiai": 0.28867513459481287, 
+                "tarantula": 0.9973675551168147
+            }, 
+            "nf": 1, 
+            "np": 12100, 
+            "rank": {
+                "ample": 3, 
+                "ochiai": 3, 
+                "tarantula": 3
+            }
+        }, 
+        "org.joda.time.DurationFieldType$StandardDurationFieldType:292": {
+            "class": "org.joda.time.DurationFieldType$StandardDurationFieldType", 
+            "ef": 3, 
+            "ep": 654, 
+            "line": 292, 
+            "metrics": {
+                "ample": 0.6960574067964368, 
+                "gzoltar": 0.058520573598065284, 
+                "ochiai": 0.058520573598065284, 
+                "tarantula": 0.9329024315173899
+            }, 
+            "nf": 1, 
+            "np": 11470, 
+            "rank": {
+                "ample": 31, 
+                "ochiai": 31, 
+                "tarantula": 31
+            }
+        }, 
+        "org.joda.time.Partial:309": {
+            "class": "org.joda.time.Partial", 
+            "ef": 3, 
+            "ep": 480, 
+            "line": 309, 
+            "metrics": {
+                "ample": 0.7104091059056417, 
+                "gzoltar": 0.0682523632789935, 
+                "ochiai": 0.0682523632789935, 
+                "tarantula": 0.9498589783766844
+            }, 
+            "nf": 1, 
+            "np": 11644, 
+            "rank": {
+                "ample": 27, 
+                "ochiai": 27, 
+                "tarantula": 27
+            }
+        }, 
+        "org.joda.time.Partial:321": {
+            "class": "org.joda.time.Partial", 
+            "ef": 3, 
+            "ep": 477, 
+            "line": 321, 
+            "metrics": {
+                "ample": 0.7106565489937314, 
+                "gzoltar": 0.06846531968814576, 
+                "ochiai": 0.06846531968814576, 
+                "tarantula": 0.9501567398119122
+            }, 
+            "nf": 1, 
+            "np": 11647, 
+            "rank": {
+                "ample": 26, 
+                "ochiai": 26, 
+                "tarantula": 26
+            }
+        }, 
+        "org.joda.time.Partial:333": {
+            "class": "org.joda.time.Partial", 
+            "ef": 3, 
+            "ep": 465, 
+            "line": 333, 
+            "metrics": {
+                "ample": 0.7116463213460904, 
+                "gzoltar": 0.06933752452815363, 
+                "ochiai": 0.06933752452815363, 
+                "tarantula": 0.9513496547394853
+            }, 
+            "nf": 1, 
+            "np": 11659, 
+            "rank": {
+                "ample": 25, 
+                "ochiai": 25, 
+                "tarantula": 25
+            }
+        }, 
+        "org.joda.time.Partial:344": {
+            "class": "org.joda.time.Partial", 
+            "ef": 3, 
+            "ep": 432, 
+            "line": 344, 
+            "metrics": {
+                "ample": 0.7143681953150776, 
+                "gzoltar": 0.07191949522280762, 
+                "ochiai": 0.07191949522280762, 
+                "tarantula": 0.9546456692913386
+            }, 
+            "nf": 1, 
+            "np": 11692, 
+            "rank": {
+                "ample": 24, 
+                "ochiai": 24, 
+                "tarantula": 24
+            }
+        }, 
+        "org.joda.time.Partial:427": {
+            "class": "org.joda.time.Partial", 
+            "ef": 3, 
+            "ep": 90, 
+            "line": 427, 
+            "metrics": {
+                "ample": 0.7425767073573079, 
+                "gzoltar": 0.1555427542095638, 
+                "ochiai": 0.1555427542095638, 
+                "tarantula": 0.9901992812806273
+            }, 
+            "nf": 1, 
+            "np": 12034, 
+            "rank": {
+                "ample": 18, 
+                "ochiai": 18, 
+                "tarantula": 18
+            }
+        }, 
+        "org.joda.time.Partial:430": {
+            "class": "org.joda.time.Partial", 
+            "ef": 3, 
+            "ep": 87, 
+            "line": 430, 
+            "metrics": {
+                "ample": 0.7428241504453975, 
+                "gzoltar": 0.15811388300841897, 
+                "ochiai": 0.15811388300841897, 
+                "tarantula": 0.9905228758169934
+            }, 
+            "nf": 1, 
+            "np": 12037, 
+            "rank": {
+                "ample": 16, 
+                "ochiai": 16, 
+                "tarantula": 16
+            }
+        }, 
+        "org.joda.time.Partial:431": {
+            "class": "org.joda.time.Partial", 
+            "ef": 3, 
+            "ep": 87, 
+            "line": 431, 
+            "metrics": {
+                "ample": 0.7428241504453975, 
+                "gzoltar": 0.15811388300841897, 
+                "ochiai": 0.15811388300841897, 
+                "tarantula": 0.9905228758169934
+            }, 
+            "nf": 1, 
+            "np": 12037, 
+            "rank": {
+                "ample": 17, 
+                "ochiai": 17, 
+                "tarantula": 17
+            }
+        }, 
+        "org.joda.time.Partial:432": {
+            "class": "org.joda.time.Partial", 
+            "ef": 3, 
+            "ep": 81, 
+            "line": 432, 
+            "metrics": {
+                "ample": 0.7433190366215771, 
+                "gzoltar": 0.1636634176769943, 
+                "ochiai": 0.1636634176769943, 
+                "tarantula": 0.9911706998037934
+            }, 
+            "nf": 1, 
+            "np": 12043, 
+            "rank": {
+                "ample": 14, 
+                "ochiai": 4, 
+                "tarantula": 14
+            }
+        }, 
+        "org.joda.time.Partial:433": {
+            "class": "org.joda.time.Partial", 
+            "ef": 3, 
+            "ep": 81, 
+            "line": 433, 
+            "metrics": {
+                "ample": 0.7433190366215771, 
+                "gzoltar": 0.1636634176769943, 
+                "ochiai": 0.1636634176769943, 
+                "tarantula": 0.9911706998037934
+            }, 
+            "nf": 1, 
+            "np": 12043, 
+            "rank": {
+                "ample": 15, 
+                "ochiai": 5, 
+                "tarantula": 15
+            }
+        }, 
+        "org.joda.time.Partial:436": {
+            "class": "org.joda.time.Partial", 
+            "ef": 3, 
+            "ep": 81, 
+            "line": 436, 
+            "metrics": {
+                "ample": 0.7433190366215771, 
+                "gzoltar": 0.1636634176769943, 
+                "ochiai": 0.1636634176769943, 
+                "tarantula": 0.9911706998037934
+            }, 
+            "nf": 1, 
+            "np": 12043, 
+            "rank": {
+                "ample": 12, 
+                "ochiai": 6, 
+                "tarantula": 12
+            }
+        }, 
+        "org.joda.time.Partial:437": {
+            "class": "org.joda.time.Partial", 
+            "ef": 3, 
+            "ep": 81, 
+            "line": 437, 
+            "metrics": {
+                "ample": 0.7433190366215771, 
+                "gzoltar": 0.1636634176769943, 
+                "ochiai": 0.1636634176769943, 
+                "tarantula": 0.9911706998037934
+            }, 
+            "nf": 1, 
+            "np": 12043, 
+            "rank": {
+                "ample": 13, 
+                "ochiai": 7, 
+                "tarantula": 13
+            }
+        }, 
+        "org.joda.time.Partial:438": {
+            "class": "org.joda.time.Partial", 
+            "ef": 3, 
+            "ep": 81, 
+            "line": 438, 
+            "metrics": {
+                "ample": 0.7433190366215771, 
+                "gzoltar": 0.1636634176769943, 
+                "ochiai": 0.1636634176769943, 
+                "tarantula": 0.9911706998037934
+            }, 
+            "nf": 1, 
+            "np": 12043, 
+            "rank": {
+                "ample": 11, 
+                "ochiai": 8, 
+                "tarantula": 11
+            }
+        }, 
+        "org.joda.time.Partial:456": {
+            "class": "org.joda.time.Partial", 
+            "ef": 3, 
+            "ep": 81, 
+            "line": 456, 
+            "metrics": {
+                "ample": 0.7433190366215771, 
+                "gzoltar": 0.1636634176769943, 
+                "ochiai": 0.1636634176769943, 
+                "tarantula": 0.9911706998037934
+            }, 
+            "nf": 1, 
+            "np": 12043, 
+            "rank": {
+                "ample": 9, 
+                "ochiai": 9, 
+                "tarantula": 9
+            }
+        }, 
+        "org.joda.time.Partial:457": {
+            "class": "org.joda.time.Partial", 
+            "ef": 3, 
+            "ep": 81, 
+            "line": 457, 
+            "metrics": {
+                "ample": 0.7433190366215771, 
+                "gzoltar": 0.1636634176769943, 
+                "ochiai": 0.1636634176769943, 
+                "tarantula": 0.9911706998037934
+            }, 
+            "nf": 1, 
+            "np": 12043, 
+            "rank": {
+                "ample": 10, 
+                "ochiai": 10, 
+                "tarantula": 10
+            }
+        }, 
+        "org.joda.time.Partial:458": {
+            "class": "org.joda.time.Partial", 
+            "ef": 3, 
+            "ep": 81, 
+            "line": 458, 
+            "metrics": {
+                "ample": 0.7433190366215771, 
+                "gzoltar": 0.1636634176769943, 
+                "ochiai": 0.1636634176769943, 
+                "tarantula": 0.9911706998037934
+            }, 
+            "nf": 1, 
+            "np": 12043, 
+            "rank": {
+                "ample": 7, 
+                "ochiai": 11, 
+                "tarantula": 7
+            }
+        }, 
+        "org.joda.time.Partial:459": {
+            "class": "org.joda.time.Partial", 
+            "ef": 3, 
+            "ep": 81, 
+            "line": 459, 
+            "metrics": {
+                "ample": 0.7433190366215771, 
+                "gzoltar": 0.1636634176769943, 
+                "ochiai": 0.1636634176769943, 
+                "tarantula": 0.9911706998037934
+            }, 
+            "nf": 1, 
+            "np": 12043, 
+            "rank": {
+                "ample": 8, 
+                "ochiai": 12, 
+                "tarantula": 8
+            }
+        }, 
+        "org.joda.time.Partial:460": {
+            "class": "org.joda.time.Partial", 
+            "ef": 3, 
+            "ep": 81, 
+            "line": 460, 
+            "metrics": {
+                "ample": 0.7433190366215771, 
+                "gzoltar": 0.1636634176769943, 
+                "ochiai": 0.1636634176769943, 
+                "tarantula": 0.9911706998037934
+            }, 
+            "nf": 1, 
+            "np": 12043, 
+            "rank": {
+                "ample": 5, 
+                "ochiai": 13, 
+                "tarantula": 5
+            }
+        }, 
+        "org.joda.time.Partial:461": {
+            "class": "org.joda.time.Partial", 
+            "ef": 3, 
+            "ep": 81, 
+            "line": 461, 
+            "metrics": {
+                "ample": 0.7433190366215771, 
+                "gzoltar": 0.1636634176769943, 
+                "ochiai": 0.1636634176769943, 
+                "tarantula": 0.9911706998037934
+            }, 
+            "nf": 1, 
+            "np": 12043, 
+            "rank": {
+                "ample": 4, 
+                "ochiai": 14, 
+                "tarantula": 4
+            }
+        }, 
+        "org.joda.time.Partial:464": {
+            "class": "org.joda.time.Partial", 
+            "ef": 3, 
+            "ep": 81, 
+            "line": 464, 
+            "metrics": {
+                "ample": 0.7433190366215771, 
+                "gzoltar": 0.1636634176769943, 
+                "ochiai": 0.1636634176769943, 
+                "tarantula": 0.9911706998037934
+            }, 
+            "nf": 1, 
+            "np": 12043, 
+            "rank": {
+                "ample": 6, 
+                "ochiai": 15, 
+                "tarantula": 6
+            }
+        }, 
+        "org.joda.time.base.AbstractPartial:105": {
+            "class": "org.joda.time.base.AbstractPartial", 
+            "ef": 3, 
+            "ep": 1729, 
+            "line": 105, 
+            "metrics": {
+                "ample": 0.6073903002309469, 
+                "gzoltar": 0.036042699849915955, 
+                "ochiai": 0.036042699849915955, 
+                "tarantula": 0.8402328589909444
+            }, 
+            "nf": 1, 
+            "np": 10395, 
+            "rank": {
+                "ample": 52, 
+                "ochiai": 52, 
+                "tarantula": 52
+            }
+        }, 
+        "org.joda.time.base.AbstractPartial:170": {
+            "class": "org.joda.time.base.AbstractPartial", 
+            "ef": 3, 
+            "ep": 627, 
+            "line": 170, 
+            "metrics": {
+                "ample": 0.6982843945892445, 
+                "gzoltar": 0.05976143046671969, 
+                "ochiai": 0.05976143046671969, 
+                "tarantula": 0.9354938271604939
+            }, 
+            "nf": 1, 
+            "np": 11497, 
+            "rank": {
+                "ample": 30, 
+                "ochiai": 29, 
+                "tarantula": 30
+            }
+        }, 
+        "org.joda.time.base.AbstractPartial:171": {
+            "class": "org.joda.time.base.AbstractPartial", 
+            "ef": 3, 
+            "ep": 627, 
+            "line": 171, 
+            "metrics": {
+                "ample": 0.6982843945892445, 
+                "gzoltar": 0.05976143046671969, 
+                "ochiai": 0.05976143046671969, 
+                "tarantula": 0.9354938271604939
+            }, 
+            "nf": 1, 
+            "np": 11497, 
+            "rank": {
+                "ample": 29, 
+                "ochiai": 30, 
+                "tarantula": 29
+            }
+        }, 
+        "org.joda.time.base.AbstractPartial:175": {
+            "class": "org.joda.time.base.AbstractPartial", 
+            "ef": 3, 
+            "ep": 219, 
+            "line": 175, 
+            "metrics": {
+                "ample": 0.731936654569449, 
+                "gzoltar": 0.10067340828210365, 
+                "ochiai": 0.10067340828210365, 
+                "tarantula": 0.9764819587628866
+            }, 
+            "nf": 1, 
+            "np": 11905, 
+            "rank": {
+                "ample": 21, 
+                "ochiai": 21, 
+                "tarantula": 21
+            }
+        }, 
+        "org.joda.time.chrono.AssembledChronology:107": {
+            "class": "org.joda.time.chrono.AssembledChronology", 
+            "ef": 3, 
+            "ep": 7559, 
+            "line": 107, 
+            "metrics": {
+                "ample": 0.1265258990432201, 
+                "gzoltar": 0.01724935747340095, 
+                "ochiai": 0.01724935747340095, 
+                "tarantula": 0.546060533269277
+            }, 
+            "nf": 1, 
+            "np": 4565, 
+            "rank": {
+                "ample": 72, 
+                "ochiai": 72, 
+                "tarantula": 72
+            }
+        }, 
+        "org.joda.time.chrono.AssembledChronology:108": {
+            "class": "org.joda.time.chrono.AssembledChronology", 
+            "ef": 3, 
+            "ep": 7559, 
+            "line": 108, 
+            "metrics": {
+                "ample": 0.1265258990432201, 
+                "gzoltar": 0.01724935747340095, 
+                "ochiai": 0.01724935747340095, 
+                "tarantula": 0.546060533269277
+            }, 
+            "nf": 1, 
+            "np": 4565, 
+            "rank": {
+                "ample": 73, 
+                "ochiai": 73, 
+                "tarantula": 73
+            }
+        }, 
+        "org.joda.time.chrono.AssembledChronology:264": {
+            "class": "org.joda.time.chrono.AssembledChronology", 
+            "ef": 3, 
+            "ep": 1627, 
+            "line": 264, 
+            "metrics": {
+                "ample": 0.615803365225998, 
+                "gzoltar": 0.03715330534635525, 
+                "ochiai": 0.03715330534635525, 
+                "tarantula": 0.8482276119402985
+            }, 
+            "nf": 1, 
+            "np": 10497, 
+            "rank": {
+                "ample": 51, 
+                "ochiai": 50, 
+                "tarantula": 51
+            }
+        }, 
+        "org.joda.time.chrono.AssembledChronology:268": {
+            "class": "org.joda.time.chrono.AssembledChronology", 
+            "ef": 3, 
+            "ep": 4894, 
+            "line": 268, 
+            "metrics": {
+                "ample": 0.34633784229627185, 
+                "gzoltar": 0.021435134209010706, 
+                "ochiai": 0.021435134209010706, 
+                "tarantula": 0.6501036676914278
+            }, 
+            "nf": 1, 
+            "np": 7230, 
+            "rank": {
+                "ample": 63, 
+                "ochiai": 63, 
+                "tarantula": 63
+            }
+        }, 
+        "org.joda.time.chrono.AssembledChronology:288": {
+            "class": "org.joda.time.chrono.AssembledChronology", 
+            "ef": 3, 
+            "ep": 286, 
+            "line": 288, 
+            "metrics": {
+                "ample": 0.7264104256021116, 
+                "gzoltar": 0.08823529411764706, 
+                "ochiai": 0.08823529411764706, 
+                "tarantula": 0.9695063439599105
+            }, 
+            "nf": 1, 
+            "np": 11838, 
+            "rank": {
+                "ample": 23, 
+                "ochiai": 23, 
+                "tarantula": 23
+            }
+        }, 
+        "org.joda.time.chrono.AssembledChronology:315": {
+            "class": "org.joda.time.chrono.AssembledChronology", 
+            "ef": 3, 
+            "ep": 6784, 
+            "line": 315, 
+            "metrics": {
+                "ample": 0.19044869679973608, 
+                "gzoltar": 0.01820758451264685, 
+                "ochiai": 0.01820758451264685, 
+                "tarantula": 0.5727152484726333
+            }, 
+            "nf": 1, 
+            "np": 5340, 
+            "rank": {
+                "ample": 67, 
+                "ochiai": 67, 
+                "tarantula": 67
+            }
+        }, 
+        "org.joda.time.chrono.BaseChronology:183": {
+            "class": "org.joda.time.chrono.BaseChronology", 
+            "ef": 3, 
+            "ep": 1561, 
+            "line": 183, 
+            "metrics": {
+                "ample": 0.6212471131639723, 
+                "gzoltar": 0.03792913030681302, 
+                "ochiai": 0.03792913030681302, 
+                "tarantula": 0.8534822601839684
+            }, 
+            "nf": 1, 
+            "np": 10563, 
+            "rank": {
+                "ample": 42, 
+                "ochiai": 42, 
+                "tarantula": 42
+            }
+        }, 
+        "org.joda.time.chrono.BaseChronology:184": {
+            "class": "org.joda.time.chrono.BaseChronology", 
+            "ef": 3, 
+            "ep": 1561, 
+            "line": 184, 
+            "metrics": {
+                "ample": 0.6212471131639723, 
+                "gzoltar": 0.03792913030681302, 
+                "ochiai": 0.03792913030681302, 
+                "tarantula": 0.8534822601839684
+            }, 
+            "nf": 1, 
+            "np": 10563, 
+            "rank": {
+                "ample": 46, 
+                "ochiai": 43, 
+                "tarantula": 46
+            }
+        }, 
+        "org.joda.time.chrono.BaseChronology:185": {
+            "class": "org.joda.time.chrono.BaseChronology", 
+            "ef": 3, 
+            "ep": 1561, 
+            "line": 185, 
+            "metrics": {
+                "ample": 0.6212471131639723, 
+                "gzoltar": 0.03792913030681302, 
+                "ochiai": 0.03792913030681302, 
+                "tarantula": 0.8534822601839684
+            }, 
+            "nf": 1, 
+            "np": 10563, 
+            "rank": {
+                "ample": 45, 
+                "ochiai": 44, 
+                "tarantula": 45
+            }
+        }, 
+        "org.joda.time.chrono.BaseChronology:186": {
+            "class": "org.joda.time.chrono.BaseChronology", 
+            "ef": 3, 
+            "ep": 1561, 
+            "line": 186, 
+            "metrics": {
+                "ample": 0.6212471131639723, 
+                "gzoltar": 0.03792913030681302, 
+                "ochiai": 0.03792913030681302, 
+                "tarantula": 0.8534822601839684
+            }, 
+            "nf": 1, 
+            "np": 10563, 
+            "rank": {
+                "ample": 44, 
+                "ochiai": 45, 
+                "tarantula": 44
+            }
+        }, 
+        "org.joda.time.chrono.BaseChronology:187": {
+            "class": "org.joda.time.chrono.BaseChronology", 
+            "ef": 3, 
+            "ep": 1561, 
+            "line": 187, 
+            "metrics": {
+                "ample": 0.6212471131639723, 
+                "gzoltar": 0.03792913030681302, 
+                "ochiai": 0.03792913030681302, 
+                "tarantula": 0.8534822601839684
+            }, 
+            "nf": 1, 
+            "np": 10563, 
+            "rank": {
+                "ample": 43, 
+                "ochiai": 46, 
+                "tarantula": 43
+            }
+        }, 
+        "org.joda.time.chrono.BaseChronology:192": {
+            "class": "org.joda.time.chrono.BaseChronology", 
+            "ef": 3, 
+            "ep": 1555, 
+            "line": 192, 
+            "metrics": {
+                "ample": 0.6217419993401517, 
+                "gzoltar": 0.038002094395360494, 
+                "ochiai": 0.038002094395360494, 
+                "tarantula": 0.8539631855747558
+            }, 
+            "nf": 1, 
+            "np": 10569, 
+            "rank": {
+                "ample": 41, 
+                "ochiai": 41, 
+                "tarantula": 41
+            }
+        }, 
+        "org.joda.time.chrono.BaseChronology:199": {
+            "class": "org.joda.time.chrono.BaseChronology", 
+            "ef": 3, 
+            "ep": 1552, 
+            "line": 199, 
+            "metrics": {
+                "ample": 0.6219894424282415, 
+                "gzoltar": 0.038038734700573035, 
+                "ochiai": 0.038038734700573035, 
+                "tarantula": 0.8542038515735086
+            }, 
+            "nf": 1, 
+            "np": 10572, 
+            "rank": {
+                "ample": 36, 
+                "ochiai": 36, 
+                "tarantula": 36
+            }
+        }, 
+        "org.joda.time.chrono.BaseChronology:200": {
+            "class": "org.joda.time.chrono.BaseChronology", 
+            "ef": 3, 
+            "ep": 1552, 
+            "line": 200, 
+            "metrics": {
+                "ample": 0.6219894424282415, 
+                "gzoltar": 0.038038734700573035, 
+                "ochiai": 0.038038734700573035, 
+                "tarantula": 0.8542038515735086
+            }, 
+            "nf": 1, 
+            "np": 10572, 
+            "rank": {
+                "ample": 37, 
+                "ochiai": 37, 
+                "tarantula": 37
+            }
+        }, 
+        "org.joda.time.chrono.BaseChronology:201": {
+            "class": "org.joda.time.chrono.BaseChronology", 
+            "ef": 3, 
+            "ep": 1552, 
+            "line": 201, 
+            "metrics": {
+                "ample": 0.6219894424282415, 
+                "gzoltar": 0.038038734700573035, 
+                "ochiai": 0.038038734700573035, 
+                "tarantula": 0.8542038515735086
+            }, 
+            "nf": 1, 
+            "np": 10572, 
+            "rank": {
+                "ample": 38, 
+                "ochiai": 38, 
+                "tarantula": 38
+            }
+        }, 
+        "org.joda.time.chrono.BaseChronology:202": {
+            "class": "org.joda.time.chrono.BaseChronology", 
+            "ef": 3, 
+            "ep": 1552, 
+            "line": 202, 
+            "metrics": {
+                "ample": 0.6219894424282415, 
+                "gzoltar": 0.038038734700573035, 
+                "ochiai": 0.038038734700573035, 
+                "tarantula": 0.8542038515735086
+            }, 
+            "nf": 1, 
+            "np": 10572, 
+            "rank": {
+                "ample": 39, 
+                "ochiai": 39, 
+                "tarantula": 39
+            }
+        }, 
+        "org.joda.time.chrono.BaseChronology:207": {
+            "class": "org.joda.time.chrono.BaseChronology", 
+            "ef": 3, 
+            "ep": 1552, 
+            "line": 207, 
+            "metrics": {
+                "ample": 0.6219894424282415, 
+                "gzoltar": 0.038038734700573035, 
+                "ochiai": 0.038038734700573035, 
+                "tarantula": 0.8542038515735086
+            }, 
+            "nf": 1, 
+            "np": 10572, 
+            "rank": {
+                "ample": 40, 
+                "ochiai": 40, 
+                "tarantula": 40
+            }
+        }, 
+        "org.joda.time.chrono.BaseChronology:213": {
+            "class": "org.joda.time.chrono.BaseChronology", 
+            "ef": 3, 
+            "ep": 1549, 
+            "line": 213, 
+            "metrics": {
+                "ample": 0.6222368855163313, 
+                "gzoltar": 0.03807548119251072, 
+                "ochiai": 0.03807548119251072, 
+                "tarantula": 0.8544446532606653
+            }, 
+            "nf": 1, 
+            "np": 10575, 
+            "rank": {
+                "ample": 35, 
+                "ochiai": 35, 
+                "tarantula": 35
+            }
+        }, 
+        "org.joda.time.chrono.BasicYearDateTimeField:116": {
+            "class": "org.joda.time.chrono.BasicYearDateTimeField", 
+            "ef": 3, 
+            "ep": 544, 
+            "line": 116, 
+            "metrics": {
+                "ample": 0.705130320026394, 
+                "gzoltar": 0.06413536872135192, 
+                "ochiai": 0.06413536872135192, 
+                "tarantula": 0.9435508975822352
+            }, 
+            "nf": 1, 
+            "np": 11580, 
+            "rank": {
+                "ample": 28, 
+                "ochiai": 28, 
+                "tarantula": 28
+            }
+        }, 
+        "org.joda.time.chrono.BasicYearDateTimeField:120": {
+            "class": "org.joda.time.chrono.BasicYearDateTimeField", 
+            "ef": 3, 
+            "ep": 986, 
+            "line": 120, 
+            "metrics": {
+                "ample": 0.668673705047839, 
+                "gzoltar": 0.047697225056167004, 
+                "ochiai": 0.047697225056167004, 
+                "tarantula": 0.9021728346066078
+            }, 
+            "nf": 1, 
+            "np": 11138, 
+            "rank": {
+                "ample": 34, 
+                "ochiai": 34, 
+                "tarantula": 34
+            }
+        }, 
+        "org.joda.time.chrono.GregorianChronology:221": {
+            "class": "org.joda.time.chrono.GregorianChronology", 
+            "ef": 3, 
+            "ep": 4402, 
+            "line": 221, 
+            "metrics": {
+                "ample": 0.3869185087429891, 
+                "gzoltar": 0.022600513288597208, 
+                "ochiai": 0.022600513288597208, 
+                "tarantula": 0.6738051130048166
+            }, 
+            "nf": 1, 
+            "np": 7722, 
+            "rank": {
+                "ample": 59, 
+                "ochiai": 59, 
+                "tarantula": 59
+            }
+        }, 
+        "org.joda.time.chrono.GregorianChronology:225": {
+            "class": "org.joda.time.chrono.GregorianChronology", 
+            "ef": 3, 
+            "ep": 4406, 
+            "line": 225, 
+            "metrics": {
+                "ample": 0.38658858462553614, 
+                "gzoltar": 0.02259025897169521, 
+                "ochiai": 0.02259025897169521, 
+                "tarantula": 0.6736054522557227
+            }, 
+            "nf": 1, 
+            "np": 7718, 
+            "rank": {
+                "ample": 60, 
+                "ochiai": 60, 
+                "tarantula": 60
+            }
+        }, 
+        "org.joda.time.chrono.ISOChronology:100": {
+            "class": "org.joda.time.chrono.ISOChronology", 
+            "ef": 3, 
+            "ep": 6794, 
+            "line": 100, 
+            "metrics": {
+                "ample": 0.18962388650610362, 
+                "gzoltar": 0.01819418574380547, 
+                "ochiai": 0.01819418574380547, 
+                "tarantula": 0.5723547554604395
+            }, 
+            "nf": 1, 
+            "np": 5330, 
+            "rank": {
+                "ample": 70, 
+                "ochiai": 70, 
+                "tarantula": 70
+            }
+        }, 
+        "org.joda.time.chrono.ISOChronology:101": {
+            "class": "org.joda.time.chrono.ISOChronology", 
+            "ef": 3, 
+            "ep": 6794, 
+            "line": 101, 
+            "metrics": {
+                "ample": 0.18962388650610362, 
+                "gzoltar": 0.01819418574380547, 
+                "ochiai": 0.01819418574380547, 
+                "tarantula": 0.5723547554604395
+            }, 
+            "nf": 1, 
+            "np": 5330, 
+            "rank": {
+                "ample": 71, 
+                "ochiai": 71, 
+                "tarantula": 71
+            }
+        }, 
+        "org.joda.time.chrono.ISOChronology:102": {
+            "class": "org.joda.time.chrono.ISOChronology", 
+            "ef": 3, 
+            "ep": 6619, 
+            "line": 102, 
+            "metrics": {
+                "ample": 0.20405806664467174, 
+                "gzoltar": 0.018433027493257863, 
+                "ochiai": 0.018433027493257863, 
+                "tarantula": 0.5787296334012221
+            }, 
+            "nf": 1, 
+            "np": 5505, 
+            "rank": {
+                "ample": 65, 
+                "ochiai": 65, 
+                "tarantula": 65
+            }
+        }, 
+        "org.joda.time.chrono.ISOChronology:133": {
+            "class": "org.joda.time.chrono.ISOChronology", 
+            "ef": 3, 
+            "ep": 4718, 
+            "line": 133, 
+            "metrics": {
+                "ample": 0.3608545034642032, 
+                "gzoltar": 0.021831031628428577, 
+                "ochiai": 0.021831031628428577, 
+                "tarantula": 0.658388241256969
+            }, 
+            "nf": 1, 
+            "np": 7406, 
+            "rank": {
+                "ample": 62, 
+                "ochiai": 62, 
+                "tarantula": 62
+            }
+        }, 
+        "org.joda.time.chrono.ISOChronology:86": {
+            "class": "org.joda.time.chrono.ISOChronology", 
+            "ef": 3, 
+            "ep": 5620, 
+            "line": 86, 
+            "metrics": {
+                "ample": 0.28645661497855496, 
+                "gzoltar": 0.020003556503984724, 
+                "ochiai": 0.020003556503984724, 
+                "tarantula": 0.6180248759600354
+            }, 
+            "nf": 1, 
+            "np": 6504, 
+            "rank": {
+                "ample": 64, 
+                "ochiai": 64, 
+                "tarantula": 64
+            }
+        }, 
+        "org.joda.time.chrono.ISOChronology:96": {
+            "class": "org.joda.time.chrono.ISOChronology", 
+            "ef": 3, 
+            "ep": 6794, 
+            "line": 96, 
+            "metrics": {
+                "ample": 0.18962388650610362, 
+                "gzoltar": 0.01819418574380547, 
+                "ochiai": 0.01819418574380547, 
+                "tarantula": 0.5723547554604395
+            }, 
+            "nf": 1, 
+            "np": 5330, 
+            "rank": {
+                "ample": 69, 
+                "ochiai": 68, 
+                "tarantula": 69
+            }
+        }, 
+        "org.joda.time.chrono.ISOChronology:99": {
+            "class": "org.joda.time.chrono.ISOChronology", 
+            "ef": 3, 
+            "ep": 6794, 
+            "line": 99, 
+            "metrics": {
+                "ample": 0.18962388650610362, 
+                "gzoltar": 0.01819418574380547, 
+                "ochiai": 0.01819418574380547, 
+                "tarantula": 0.5723547554604395
+            }, 
+            "nf": 1, 
+            "np": 5330, 
+            "rank": {
+                "ample": 68, 
+                "ochiai": 69, 
+                "tarantula": 68
+            }
+        }, 
+        "org.joda.time.chrono.ZonedChronology:85": {
+            "class": "org.joda.time.chrono.ZonedChronology", 
+            "ef": 3, 
+            "ep": 6780, 
+            "line": 85, 
+            "metrics": {
+                "ample": 0.190778620917189, 
+                "gzoltar": 0.018212952314801398, 
+                "ochiai": 0.018212952314801398, 
+                "tarantula": 0.5728595728595729
+            }, 
+            "nf": 1, 
+            "np": 5344, 
+            "rank": {
+                "ample": 66, 
+                "ochiai": 66, 
+                "tarantula": 66
+            }
+        }, 
+        "org.joda.time.field.BaseDateTimeField:758": {
+            "class": "org.joda.time.field.BaseDateTimeField", 
+            "ef": 3, 
+            "ep": 1627, 
+            "line": 758, 
+            "metrics": {
+                "ample": 0.615803365225998, 
+                "gzoltar": 0.03715330534635525, 
+                "ochiai": 0.03715330534635525, 
+                "tarantula": 0.8482276119402985
+            }, 
+            "nf": 1, 
+            "np": 10497, 
+            "rank": {
+                "ample": 50, 
+                "ochiai": 51, 
+                "tarantula": 50
+            }
+        }, 
+        "org.joda.time.field.BaseDateTimeField:772": {
+            "class": "org.joda.time.field.BaseDateTimeField", 
+            "ef": 3, 
+            "ep": 1615, 
+            "line": 772, 
+            "metrics": {
+                "ample": 0.616793137578357, 
+                "gzoltar": 0.03729082576227213, 
+                "ochiai": 0.03729082576227213, 
+                "tarantula": 0.8491781845349271
+            }, 
+            "nf": 1, 
+            "np": 10509, 
+            "rank": {
+                "ample": 49, 
+                "ochiai": 49, 
+                "tarantula": 49
+            }
+        }, 
+        "org.joda.time.field.BaseDateTimeField:804": {
+            "class": "org.joda.time.field.BaseDateTimeField", 
+            "ef": 3, 
+            "ep": 1612, 
+            "line": 804, 
+            "metrics": {
+                "ample": 0.6170405806664467, 
+                "gzoltar": 0.03732544513450796, 
+                "ochiai": 0.03732544513450796, 
+                "tarantula": 0.849416160672583
+            }, 
+            "nf": 1, 
+            "np": 10512, 
+            "rank": {
+                "ample": 48, 
+                "ochiai": 48, 
+                "tarantula": 48
+            }
+        }, 
+        "org.joda.time.field.BaseDateTimeField:818": {
+            "class": "org.joda.time.field.BaseDateTimeField", 
+            "ef": 3, 
+            "ep": 1597, 
+            "line": 818, 
+            "metrics": {
+                "ample": 0.6182777961068955, 
+                "gzoltar": 0.0375, 
+                "ochiai": 0.0375, 
+                "tarantula": 0.8506080449017774
+            }, 
+            "nf": 1, 
+            "np": 10527, 
+            "rank": {
+                "ample": 47, 
+                "ochiai": 47, 
+                "tarantula": 47
+            }
+        }, 
+        "org.joda.time.field.UnsupportedDurationField:227": {
+            "class": "org.joda.time.field.UnsupportedDurationField", 
+            "ef": 3, 
+            "ep": 15, 
+            "line": 227, 
+            "metrics": {
+                "ample": 0.7487627845595513, 
+                "gzoltar": 0.3535533905932738, 
+                "ochiai": 0.3535533905932738, 
+                "tarantula": 0.9983530961791831
+            }, 
+            "nf": 1, 
+            "np": 12109, 
+            "rank": {
+                "ample": 2, 
+                "ochiai": 1, 
+                "tarantula": 2
+            }
+        }, 
+        "org.joda.time.field.UnsupportedDurationField:32": {
+            "class": "org.joda.time.field.UnsupportedDurationField", 
+            "ef": 3, 
+            "ep": 15, 
+            "line": 32, 
+            "metrics": {
+                "ample": 0.7487627845595513, 
+                "gzoltar": 0.3535533905932738, 
+                "ochiai": 0.3535533905932738, 
+                "tarantula": 0.9983530961791831
+            }, 
+            "nf": 1, 
+            "np": 12109, 
+            "rank": {
+                "ample": 1, 
+                "ochiai": 2, 
+                "tarantula": 1
+            }
+        }, 
+        "org.joda.time.field.UnsupportedDurationField:92": {
+            "class": "org.joda.time.field.UnsupportedDurationField", 
+            "ef": 3, 
+            "ep": 247, 
+            "line": 92, 
+            "metrics": {
+                "ample": 0.7296271857472781, 
+                "gzoltar": 0.09486832980505139, 
+                "ochiai": 0.09486832980505139, 
+                "tarantula": 0.9735546038543897
+            }, 
+            "nf": 1, 
+            "np": 11877, 
+            "rank": {
+                "ample": 22, 
+                "ochiai": 22, 
+                "tarantula": 22
+            }
+        }
+    }
+}

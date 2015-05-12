@@ -1,0 +1,602 @@
+{
+    "date": "2015-05-11T08:10:58.479873", 
+    "executedTest": 4534, 
+    "failedTest": 1, 
+    "failedTestDetails": [
+        {
+            "class": "org.apache.commons.math3.optimization.fitting.PolynomialFitterTest", 
+            "method": "testLargeSample"
+        }
+    ], 
+    "modifiedLines": [
+        {
+            "class": "a.org.apache.commons.math3.optimization.Weight", 
+            "line": 21
+        }, 
+        {
+            "class": "a.org.apache.commons.math3.optimization.Weight", 
+            "line": 44
+        }, 
+        {
+            "class": "a.org.apache.commons.math3.optimization.general.AbstractLeastSquaresOptimizer", 
+            "line": 562
+        }, 
+        {
+            "class": "a.org.apache.commons.math3.optimization.general.AbstractLeastSquaresOptimizer", 
+            "line": 563
+        }, 
+        {
+            "class": "a.org.apache.commons.math3.optimization.general.AbstractLeastSquaresOptimizer", 
+            "line": 564
+        }, 
+        {
+            "class": "a.org.apache.commons.math3.optimization.general.AbstractLeastSquaresOptimizer", 
+            "line": 565
+        }, 
+        {
+            "class": "a.org.apache.commons.math3.optimization.general.AbstractLeastSquaresOptimizer", 
+            "line": 566
+        }, 
+        {
+            "class": "a.org.apache.commons.math3.optimization.general.AbstractLeastSquaresOptimizer", 
+            "line": 567
+        }, 
+        {
+            "class": "a.org.apache.commons.math3.optimization.general.AbstractLeastSquaresOptimizer", 
+            "line": 568
+        }, 
+        {
+            "class": "a.org.apache.commons.math3.optimization.general.AbstractLeastSquaresOptimizer", 
+            "line": 569
+        }, 
+        {
+            "class": "a.org.apache.commons.math3.optimization.general.AbstractLeastSquaresOptimizer", 
+            "line": 570
+        }, 
+        {
+            "class": "a.org.apache.commons.math3.optimization.general.AbstractLeastSquaresOptimizer", 
+            "line": 571
+        }, 
+        {
+            "class": "a.org.apache.commons.math3.optimization.general.AbstractLeastSquaresOptimizer", 
+            "line": 572
+        }
+    ], 
+    "nbsuspicious": 28, 
+    "node": "griffon-31.nancy.grid5000.fr\n", 
+    "successfulTest": 4533, 
+    "suspicious": {
+        "org.apache.commons.math3.analysis.FunctionUtils:727": {
+            "class": "org.apache.commons.math3.analysis.FunctionUtils", 
+            "ef": 1, 
+            "ep": 88, 
+            "line": 727, 
+            "metrics": {
+                "ample": 0.9805868078535186, 
+                "gzoltar": 0.105999788000636, 
+                "ochiai": 0.105999788000636, 
+                "tarantula": 0.9809565029214456
+            }, 
+            "nf": 0, 
+            "np": 4445, 
+            "rank": {
+                "ample": 26, 
+                "ochiai": 26, 
+                "tarantula": 26
+            }
+        }, 
+        "org.apache.commons.math3.analysis.polynomials.PolynomialFunction:130": {
+            "class": "org.apache.commons.math3.analysis.polynomials.PolynomialFunction", 
+            "ef": 1, 
+            "ep": 59, 
+            "line": 130, 
+            "metrics": {
+                "ample": 0.9869843370836091, 
+                "gzoltar": 0.12909944487358055, 
+                "ochiai": 0.12909944487358055, 
+                "tarantula": 0.9871515679442509
+            }, 
+            "nf": 0, 
+            "np": 4474, 
+            "rank": {
+                "ample": 23, 
+                "ochiai": 20, 
+                "tarantula": 23
+            }
+        }, 
+        "org.apache.commons.math3.analysis.polynomials.PolynomialFunction:131": {
+            "class": "org.apache.commons.math3.analysis.polynomials.PolynomialFunction", 
+            "ef": 1, 
+            "ep": 59, 
+            "line": 131, 
+            "metrics": {
+                "ample": 0.9869843370836091, 
+                "gzoltar": 0.12909944487358055, 
+                "ochiai": 0.12909944487358055, 
+                "tarantula": 0.9871515679442509
+            }, 
+            "nf": 0, 
+            "np": 4474, 
+            "rank": {
+                "ample": 24, 
+                "ochiai": 21, 
+                "tarantula": 24
+            }
+        }, 
+        "org.apache.commons.math3.analysis.polynomials.PolynomialFunction:132": {
+            "class": "org.apache.commons.math3.analysis.polynomials.PolynomialFunction", 
+            "ef": 1, 
+            "ep": 59, 
+            "line": 132, 
+            "metrics": {
+                "ample": 0.9869843370836091, 
+                "gzoltar": 0.12909944487358055, 
+                "ochiai": 0.12909944487358055, 
+                "tarantula": 0.9871515679442509
+            }, 
+            "nf": 0, 
+            "np": 4474, 
+            "rank": {
+                "ample": 22, 
+                "ochiai": 22, 
+                "tarantula": 22
+            }
+        }, 
+        "org.apache.commons.math3.analysis.polynomials.PolynomialFunction:135": {
+            "class": "org.apache.commons.math3.analysis.polynomials.PolynomialFunction", 
+            "ef": 1, 
+            "ep": 59, 
+            "line": 135, 
+            "metrics": {
+                "ample": 0.9869843370836091, 
+                "gzoltar": 0.12909944487358055, 
+                "ochiai": 0.12909944487358055, 
+                "tarantula": 0.9871515679442509
+            }, 
+            "nf": 0, 
+            "np": 4474, 
+            "rank": {
+                "ample": 20, 
+                "ochiai": 23, 
+                "tarantula": 20
+            }
+        }, 
+        "org.apache.commons.math3.analysis.polynomials.PolynomialFunction:136": {
+            "class": "org.apache.commons.math3.analysis.polynomials.PolynomialFunction", 
+            "ef": 1, 
+            "ep": 59, 
+            "line": 136, 
+            "metrics": {
+                "ample": 0.9869843370836091, 
+                "gzoltar": 0.12909944487358055, 
+                "ochiai": 0.12909944487358055, 
+                "tarantula": 0.9871515679442509
+            }, 
+            "nf": 0, 
+            "np": 4474, 
+            "rank": {
+                "ample": 25, 
+                "ochiai": 24, 
+                "tarantula": 25
+            }
+        }, 
+        "org.apache.commons.math3.analysis.polynomials.PolynomialFunction:139": {
+            "class": "org.apache.commons.math3.analysis.polynomials.PolynomialFunction", 
+            "ef": 1, 
+            "ep": 59, 
+            "line": 139, 
+            "metrics": {
+                "ample": 0.9869843370836091, 
+                "gzoltar": 0.12909944487358055, 
+                "ochiai": 0.12909944487358055, 
+                "tarantula": 0.9871515679442509
+            }, 
+            "nf": 0, 
+            "np": 4474, 
+            "rank": {
+                "ample": 21, 
+                "ochiai": 25, 
+                "tarantula": 21
+            }
+        }, 
+        "org.apache.commons.math3.analysis.polynomials.PolynomialFunction:94": {
+            "class": "org.apache.commons.math3.analysis.polynomials.PolynomialFunction", 
+            "ef": 1, 
+            "ep": 53, 
+            "line": 94, 
+            "metrics": {
+                "ample": 0.9883079638208692, 
+                "gzoltar": 0.13608276348795434, 
+                "ochiai": 0.13608276348795434, 
+                "tarantula": 0.9884430876580899
+            }, 
+            "nf": 0, 
+            "np": 4480, 
+            "rank": {
+                "ample": 19, 
+                "ochiai": 19, 
+                "tarantula": 19
+            }
+        }, 
+        "org.apache.commons.math3.optimization.fitting.CurveFitter:109": {
+            "class": "org.apache.commons.math3.optimization.fitting.CurveFitter", 
+            "ef": 1, 
+            "ep": 24, 
+            "line": 109, 
+            "metrics": {
+                "ample": 0.9947054930509597, 
+                "gzoltar": 0.2, 
+                "ochiai": 0.2, 
+                "tarantula": 0.9947333772218564
+            }, 
+            "nf": 0, 
+            "np": 4509, 
+            "rank": {
+                "ample": 18, 
+                "ochiai": 17, 
+                "tarantula": 18
+            }
+        }, 
+        "org.apache.commons.math3.optimization.fitting.CurveFitter:110": {
+            "class": "org.apache.commons.math3.optimization.fitting.CurveFitter", 
+            "ef": 1, 
+            "ep": 24, 
+            "line": 110, 
+            "metrics": {
+                "ample": 0.9947054930509597, 
+                "gzoltar": 0.2, 
+                "ochiai": 0.2, 
+                "tarantula": 0.9947333772218564
+            }, 
+            "nf": 0, 
+            "np": 4509, 
+            "rank": {
+                "ample": 16, 
+                "ochiai": 18, 
+                "tarantula": 16
+            }
+        }, 
+        "org.apache.commons.math3.optimization.fitting.CurveFitter:153": {
+            "class": "org.apache.commons.math3.optimization.fitting.CurveFitter", 
+            "ef": 1, 
+            "ep": 20, 
+            "line": 153, 
+            "metrics": {
+                "ample": 0.9955879108757997, 
+                "gzoltar": 0.2182178902359924, 
+                "ochiai": 0.2182178902359924, 
+                "tarantula": 0.9956072918954535
+            }, 
+            "nf": 0, 
+            "np": 4513, 
+            "rank": {
+                "ample": 2, 
+                "ochiai": 2, 
+                "tarantula": 2
+            }
+        }, 
+        "org.apache.commons.math3.optimization.fitting.CurveFitter:176": {
+            "class": "org.apache.commons.math3.optimization.fitting.CurveFitter", 
+            "ef": 1, 
+            "ep": 23, 
+            "line": 176, 
+            "metrics": {
+                "ample": 0.9949260975071696, 
+                "gzoltar": 0.20412414523193154, 
+                "ochiai": 0.20412414523193154, 
+                "tarantula": 0.9949517120280948
+            }, 
+            "nf": 0, 
+            "np": 4510, 
+            "rank": {
+                "ample": 7, 
+                "ochiai": 4, 
+                "tarantula": 7
+            }
+        }, 
+        "org.apache.commons.math3.optimization.fitting.CurveFitter:177": {
+            "class": "org.apache.commons.math3.optimization.fitting.CurveFitter", 
+            "ef": 1, 
+            "ep": 23, 
+            "line": 177, 
+            "metrics": {
+                "ample": 0.9949260975071696, 
+                "gzoltar": 0.20412414523193154, 
+                "ochiai": 0.20412414523193154, 
+                "tarantula": 0.9949517120280948
+            }, 
+            "nf": 0, 
+            "np": 4510, 
+            "rank": {
+                "ample": 6, 
+                "ochiai": 5, 
+                "tarantula": 6
+            }
+        }, 
+        "org.apache.commons.math3.optimization.fitting.CurveFitter:178": {
+            "class": "org.apache.commons.math3.optimization.fitting.CurveFitter", 
+            "ef": 1, 
+            "ep": 23, 
+            "line": 178, 
+            "metrics": {
+                "ample": 0.9949260975071696, 
+                "gzoltar": 0.20412414523193154, 
+                "ochiai": 0.20412414523193154, 
+                "tarantula": 0.9949517120280948
+            }, 
+            "nf": 0, 
+            "np": 4510, 
+            "rank": {
+                "ample": 5, 
+                "ochiai": 6, 
+                "tarantula": 5
+            }
+        }, 
+        "org.apache.commons.math3.optimization.fitting.CurveFitter:179": {
+            "class": "org.apache.commons.math3.optimization.fitting.CurveFitter", 
+            "ef": 1, 
+            "ep": 23, 
+            "line": 179, 
+            "metrics": {
+                "ample": 0.9949260975071696, 
+                "gzoltar": 0.20412414523193154, 
+                "ochiai": 0.20412414523193154, 
+                "tarantula": 0.9949517120280948
+            }, 
+            "nf": 0, 
+            "np": 4510, 
+            "rank": {
+                "ample": 4, 
+                "ochiai": 7, 
+                "tarantula": 4
+            }
+        }, 
+        "org.apache.commons.math3.optimization.fitting.CurveFitter:180": {
+            "class": "org.apache.commons.math3.optimization.fitting.CurveFitter", 
+            "ef": 1, 
+            "ep": 23, 
+            "line": 180, 
+            "metrics": {
+                "ample": 0.9949260975071696, 
+                "gzoltar": 0.20412414523193154, 
+                "ochiai": 0.20412414523193154, 
+                "tarantula": 0.9949517120280948
+            }, 
+            "nf": 0, 
+            "np": 4510, 
+            "rank": {
+                "ample": 3, 
+                "ochiai": 8, 
+                "tarantula": 3
+            }
+        }, 
+        "org.apache.commons.math3.optimization.fitting.CurveFitter:181": {
+            "class": "org.apache.commons.math3.optimization.fitting.CurveFitter", 
+            "ef": 1, 
+            "ep": 23, 
+            "line": 181, 
+            "metrics": {
+                "ample": 0.9949260975071696, 
+                "gzoltar": 0.20412414523193154, 
+                "ochiai": 0.20412414523193154, 
+                "tarantula": 0.9949517120280948
+            }, 
+            "nf": 0, 
+            "np": 4510, 
+            "rank": {
+                "ample": 14, 
+                "ochiai": 9, 
+                "tarantula": 14
+            }
+        }, 
+        "org.apache.commons.math3.optimization.fitting.CurveFitter:182": {
+            "class": "org.apache.commons.math3.optimization.fitting.CurveFitter", 
+            "ef": 1, 
+            "ep": 23, 
+            "line": 182, 
+            "metrics": {
+                "ample": 0.9949260975071696, 
+                "gzoltar": 0.20412414523193154, 
+                "ochiai": 0.20412414523193154, 
+                "tarantula": 0.9949517120280948
+            }, 
+            "nf": 0, 
+            "np": 4510, 
+            "rank": {
+                "ample": 11, 
+                "ochiai": 10, 
+                "tarantula": 11
+            }
+        }, 
+        "org.apache.commons.math3.optimization.fitting.CurveFitter:183": {
+            "class": "org.apache.commons.math3.optimization.fitting.CurveFitter", 
+            "ef": 1, 
+            "ep": 23, 
+            "line": 183, 
+            "metrics": {
+                "ample": 0.9949260975071696, 
+                "gzoltar": 0.20412414523193154, 
+                "ochiai": 0.20412414523193154, 
+                "tarantula": 0.9949517120280948
+            }, 
+            "nf": 0, 
+            "np": 4510, 
+            "rank": {
+                "ample": 12, 
+                "ochiai": 11, 
+                "tarantula": 12
+            }
+        }, 
+        "org.apache.commons.math3.optimization.fitting.CurveFitter:187": {
+            "class": "org.apache.commons.math3.optimization.fitting.CurveFitter", 
+            "ef": 1, 
+            "ep": 23, 
+            "line": 187, 
+            "metrics": {
+                "ample": 0.9949260975071696, 
+                "gzoltar": 0.20412414523193154, 
+                "ochiai": 0.20412414523193154, 
+                "tarantula": 0.9949517120280948
+            }, 
+            "nf": 0, 
+            "np": 4510, 
+            "rank": {
+                "ample": 10, 
+                "ochiai": 12, 
+                "tarantula": 10
+            }
+        }, 
+        "org.apache.commons.math3.optimization.fitting.CurveFitter:189": {
+            "class": "org.apache.commons.math3.optimization.fitting.CurveFitter", 
+            "ef": 1, 
+            "ep": 23, 
+            "line": 189, 
+            "metrics": {
+                "ample": 0.9949260975071696, 
+                "gzoltar": 0.20412414523193154, 
+                "ochiai": 0.20412414523193154, 
+                "tarantula": 0.9949517120280948
+            }, 
+            "nf": 0, 
+            "np": 4510, 
+            "rank": {
+                "ample": 15, 
+                "ochiai": 13, 
+                "tarantula": 15
+            }
+        }, 
+        "org.apache.commons.math3.optimization.fitting.PolynomialFitter:110": {
+            "class": "org.apache.commons.math3.optimization.fitting.PolynomialFitter", 
+            "ef": 1, 
+            "ep": 5, 
+            "line": 110, 
+            "metrics": {
+                "ample": 0.9988969777189499, 
+                "gzoltar": 0.4082482904638631, 
+                "ochiai": 0.4082482904638631, 
+                "tarantula": 0.9988981930365801
+            }, 
+            "nf": 0, 
+            "np": 4528, 
+            "rank": {
+                "ample": 1, 
+                "ochiai": 1, 
+                "tarantula": 1
+            }
+        }, 
+        "org.apache.commons.math3.optimization.fitting.WeightedObservedPoint:59": {
+            "class": "org.apache.commons.math3.optimization.fitting.WeightedObservedPoint", 
+            "ef": 1, 
+            "ep": 23, 
+            "line": 59, 
+            "metrics": {
+                "ample": 0.9949260975071696, 
+                "gzoltar": 0.20412414523193154, 
+                "ochiai": 0.20412414523193154, 
+                "tarantula": 0.9949517120280948
+            }, 
+            "nf": 0, 
+            "np": 4510, 
+            "rank": {
+                "ample": 9, 
+                "ochiai": 3, 
+                "tarantula": 9
+            }
+        }, 
+        "org.apache.commons.math3.optimization.fitting.WeightedObservedPoint:73": {
+            "class": "org.apache.commons.math3.optimization.fitting.WeightedObservedPoint", 
+            "ef": 1, 
+            "ep": 24, 
+            "line": 73, 
+            "metrics": {
+                "ample": 0.9947054930509597, 
+                "gzoltar": 0.2, 
+                "ochiai": 0.2, 
+                "tarantula": 0.9947333772218564
+            }, 
+            "nf": 0, 
+            "np": 4509, 
+            "rank": {
+                "ample": 17, 
+                "ochiai": 16, 
+                "tarantula": 17
+            }
+        }, 
+        "org.apache.commons.math3.optimization.general.AbstractLeastSquaresOptimizer:423": {
+            "class": "org.apache.commons.math3.optimization.general.AbstractLeastSquaresOptimizer", 
+            "ef": 1, 
+            "ep": 23, 
+            "line": 423, 
+            "metrics": {
+                "ample": 0.9949260975071696, 
+                "gzoltar": 0.20412414523193154, 
+                "ochiai": 0.20412414523193154, 
+                "tarantula": 0.9949517120280948
+            }, 
+            "nf": 0, 
+            "np": 4510, 
+            "rank": {
+                "ample": 13, 
+                "ochiai": 14, 
+                "tarantula": 13
+            }
+        }, 
+        "org.apache.commons.math3.optimization.general.AbstractLeastSquaresOptimizer:62": {
+            "class": "org.apache.commons.math3.optimization.general.AbstractLeastSquaresOptimizer", 
+            "ef": 1, 
+            "ep": 23, 
+            "line": 62, 
+            "metrics": {
+                "ample": 0.9949260975071696, 
+                "gzoltar": 0.20412414523193154, 
+                "ochiai": 0.20412414523193154, 
+                "tarantula": 0.9949517120280948
+            }, 
+            "nf": 0, 
+            "np": 4510, 
+            "rank": {
+                "ample": 8, 
+                "ochiai": 15, 
+                "tarantula": 8
+            }
+        }, 
+        "org.apache.commons.math3.util.MathUtils:264": {
+            "class": "org.apache.commons.math3.util.MathUtils", 
+            "ef": 1, 
+            "ep": 1027, 
+            "line": 264, 
+            "metrics": {
+                "ample": 0.7734392234723142, 
+                "gzoltar": 0.031189143077590267, 
+                "ochiai": 0.031189143077590267, 
+                "tarantula": 0.8152877697841727
+            }, 
+            "nf": 0, 
+            "np": 3506, 
+            "rank": {
+                "ample": 28, 
+                "ochiai": 28, 
+                "tarantula": 28
+            }
+        }, 
+        "org.apache.commons.math3.util.MathUtils:267": {
+            "class": "org.apache.commons.math3.util.MathUtils", 
+            "ef": 1, 
+            "ep": 1024, 
+            "line": 267, 
+            "metrics": {
+                "ample": 0.7741010368409442, 
+                "gzoltar": 0.031234752377721213, 
+                "ochiai": 0.031234752377721213, 
+                "tarantula": 0.8157279107432068
+            }, 
+            "nf": 0, 
+            "np": 3509, 
+            "rank": {
+                "ample": 27, 
+                "ochiai": 27, 
+                "tarantula": 27
+            }
+        }
+    }
+}

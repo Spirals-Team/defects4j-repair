@@ -1,0 +1,2900 @@
+{
+    "date": "2015-05-11T07:57:45.237760", 
+    "executedTest": 3199, 
+    "failedTest": 1, 
+    "failedTestDetails": [
+        {
+            "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolverTest", 
+            "method": "testIssue716"
+        }
+    ], 
+    "modifiedLines": [
+        {
+            "class": "a.org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "line": 235
+        }, 
+        {
+            "class": "a.org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "line": 236
+        }, 
+        {
+            "class": "a.org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "line": 237
+        }, 
+        {
+            "class": "a.org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "line": 238
+        }, 
+        {
+            "class": "a.org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "line": 241
+        }, 
+        {
+            "class": "a.org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "line": 242
+        }, 
+        {
+            "class": "a.org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "line": 243
+        }, 
+        {
+            "class": "a.org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "line": 244
+        }
+    ], 
+    "nbsuspicious": 150, 
+    "node": "graphene-27.nancy.grid5000.fr\n", 
+    "successfulTest": 3198, 
+    "suspicious": {
+        "org.apache.commons.math.analysis.solvers.BaseAbstractUnivariateRealSolver:110": {
+            "class": "org.apache.commons.math.analysis.solvers.BaseAbstractUnivariateRealSolver", 
+            "ef": 1, 
+            "ep": 186, 
+            "line": 110, 
+            "metrics": {
+                "ample": 0.9418386491557224, 
+                "gzoltar": 0.07312724241271307, 
+                "ochiai": 0.07312724241271307, 
+                "tarantula": 0.9450354609929077
+            }, 
+            "nf": 0, 
+            "np": 3012, 
+            "rank": {
+                "ample": 101, 
+                "ochiai": 101, 
+                "tarantula": 101
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BaseAbstractUnivariateRealSolver:116": {
+            "class": "org.apache.commons.math.analysis.solvers.BaseAbstractUnivariateRealSolver", 
+            "ef": 1, 
+            "ep": 186, 
+            "line": 116, 
+            "metrics": {
+                "ample": 0.9418386491557224, 
+                "gzoltar": 0.07312724241271307, 
+                "ochiai": 0.07312724241271307, 
+                "tarantula": 0.9450354609929077
+            }, 
+            "nf": 0, 
+            "np": 3012, 
+            "rank": {
+                "ample": 102, 
+                "ochiai": 102, 
+                "tarantula": 102
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BaseAbstractUnivariateRealSolver:122": {
+            "class": "org.apache.commons.math.analysis.solvers.BaseAbstractUnivariateRealSolver", 
+            "ef": 1, 
+            "ep": 142, 
+            "line": 122, 
+            "metrics": {
+                "ample": 0.9555972482801751, 
+                "gzoltar": 0.08362420100070908, 
+                "ochiai": 0.08362420100070908, 
+                "tarantula": 0.9574850299401197
+            }, 
+            "nf": 0, 
+            "np": 3056, 
+            "rank": {
+                "ample": 96, 
+                "ochiai": 95, 
+                "tarantula": 96
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BaseAbstractUnivariateRealSolver:128": {
+            "class": "org.apache.commons.math.analysis.solvers.BaseAbstractUnivariateRealSolver", 
+            "ef": 1, 
+            "ep": 173, 
+            "line": 128, 
+            "metrics": {
+                "ample": 0.9459036898061288, 
+                "gzoltar": 0.07580980435789034, 
+                "ochiai": 0.07580980435789034, 
+                "tarantula": 0.9486799169385939
+            }, 
+            "nf": 0, 
+            "np": 3025, 
+            "rank": {
+                "ample": 100, 
+                "ochiai": 100, 
+                "tarantula": 100
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BaseAbstractUnivariateRealSolver:134": {
+            "class": "org.apache.commons.math.analysis.solvers.BaseAbstractUnivariateRealSolver", 
+            "ef": 1, 
+            "ep": 167, 
+            "line": 134, 
+            "metrics": {
+                "ample": 0.9477798624140088, 
+                "gzoltar": 0.07715167498104596, 
+                "ochiai": 0.07715167498104596, 
+                "tarantula": 0.9503714710252601
+            }, 
+            "nf": 0, 
+            "np": 3031, 
+            "rank": {
+                "ample": 98, 
+                "ochiai": 98, 
+                "tarantula": 98
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BaseAbstractUnivariateRealSolver:140": {
+            "class": "org.apache.commons.math.analysis.solvers.BaseAbstractUnivariateRealSolver", 
+            "ef": 1, 
+            "ep": 172, 
+            "line": 140, 
+            "metrics": {
+                "ample": 0.9462163852407754, 
+                "gzoltar": 0.07602859212697055, 
+                "ochiai": 0.07602859212697055, 
+                "tarantula": 0.9489614243323442
+            }, 
+            "nf": 0, 
+            "np": 3026, 
+            "rank": {
+                "ample": 99, 
+                "ochiai": 99, 
+                "tarantula": 99
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BaseAbstractUnivariateRealSolver:153": {
+            "class": "org.apache.commons.math.analysis.solvers.BaseAbstractUnivariateRealSolver", 
+            "ef": 1, 
+            "ep": 187, 
+            "line": 153, 
+            "metrics": {
+                "ample": 0.9415259537210756, 
+                "gzoltar": 0.07293249574894728, 
+                "ochiai": 0.07293249574894728, 
+                "tarantula": 0.9447562776957164
+            }, 
+            "nf": 0, 
+            "np": 3011, 
+            "rank": {
+                "ample": 107, 
+                "ochiai": 103, 
+                "tarantula": 107
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BaseAbstractUnivariateRealSolver:154": {
+            "class": "org.apache.commons.math.analysis.solvers.BaseAbstractUnivariateRealSolver", 
+            "ef": 1, 
+            "ep": 187, 
+            "line": 154, 
+            "metrics": {
+                "ample": 0.9415259537210756, 
+                "gzoltar": 0.07293249574894728, 
+                "ochiai": 0.07293249574894728, 
+                "tarantula": 0.9447562776957164
+            }, 
+            "nf": 0, 
+            "np": 3011, 
+            "rank": {
+                "ample": 106, 
+                "ochiai": 104, 
+                "tarantula": 106
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BaseAbstractUnivariateRealSolver:173": {
+            "class": "org.apache.commons.math.analysis.solvers.BaseAbstractUnivariateRealSolver", 
+            "ef": 1, 
+            "ep": 188, 
+            "line": 173, 
+            "metrics": {
+                "ample": 0.941213258286429, 
+                "gzoltar": 0.07273929674533079, 
+                "ochiai": 0.07273929674533079, 
+                "tarantula": 0.9444772593030124
+            }, 
+            "nf": 0, 
+            "np": 3010, 
+            "rank": {
+                "ample": 113, 
+                "ochiai": 108, 
+                "tarantula": 113
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BaseAbstractUnivariateRealSolver:176": {
+            "class": "org.apache.commons.math.analysis.solvers.BaseAbstractUnivariateRealSolver", 
+            "ef": 1, 
+            "ep": 188, 
+            "line": 176, 
+            "metrics": {
+                "ample": 0.941213258286429, 
+                "gzoltar": 0.07273929674533079, 
+                "ochiai": 0.07273929674533079, 
+                "tarantula": 0.9444772593030124
+            }, 
+            "nf": 0, 
+            "np": 3010, 
+            "rank": {
+                "ample": 115, 
+                "ochiai": 109, 
+                "tarantula": 115
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BaseAbstractUnivariateRealSolver:177": {
+            "class": "org.apache.commons.math.analysis.solvers.BaseAbstractUnivariateRealSolver", 
+            "ef": 1, 
+            "ep": 188, 
+            "line": 177, 
+            "metrics": {
+                "ample": 0.941213258286429, 
+                "gzoltar": 0.07273929674533079, 
+                "ochiai": 0.07273929674533079, 
+                "tarantula": 0.9444772593030124
+            }, 
+            "nf": 0, 
+            "np": 3010, 
+            "rank": {
+                "ample": 114, 
+                "ochiai": 110, 
+                "tarantula": 114
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BaseAbstractUnivariateRealSolver:178": {
+            "class": "org.apache.commons.math.analysis.solvers.BaseAbstractUnivariateRealSolver", 
+            "ef": 1, 
+            "ep": 188, 
+            "line": 178, 
+            "metrics": {
+                "ample": 0.941213258286429, 
+                "gzoltar": 0.07273929674533079, 
+                "ochiai": 0.07273929674533079, 
+                "tarantula": 0.9444772593030124
+            }, 
+            "nf": 0, 
+            "np": 3010, 
+            "rank": {
+                "ample": 117, 
+                "ochiai": 111, 
+                "tarantula": 117
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BaseAbstractUnivariateRealSolver:179": {
+            "class": "org.apache.commons.math.analysis.solvers.BaseAbstractUnivariateRealSolver", 
+            "ef": 1, 
+            "ep": 188, 
+            "line": 179, 
+            "metrics": {
+                "ample": 0.941213258286429, 
+                "gzoltar": 0.07273929674533079, 
+                "ochiai": 0.07273929674533079, 
+                "tarantula": 0.9444772593030124
+            }, 
+            "nf": 0, 
+            "np": 3010, 
+            "rank": {
+                "ample": 116, 
+                "ochiai": 112, 
+                "tarantula": 116
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BaseAbstractUnivariateRealSolver:180": {
+            "class": "org.apache.commons.math.analysis.solvers.BaseAbstractUnivariateRealSolver", 
+            "ef": 1, 
+            "ep": 188, 
+            "line": 180, 
+            "metrics": {
+                "ample": 0.941213258286429, 
+                "gzoltar": 0.07273929674533079, 
+                "ochiai": 0.07273929674533079, 
+                "tarantula": 0.9444772593030124
+            }, 
+            "nf": 0, 
+            "np": 3010, 
+            "rank": {
+                "ample": 109, 
+                "ochiai": 113, 
+                "tarantula": 109
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BaseAbstractUnivariateRealSolver:181": {
+            "class": "org.apache.commons.math.analysis.solvers.BaseAbstractUnivariateRealSolver", 
+            "ef": 1, 
+            "ep": 188, 
+            "line": 181, 
+            "metrics": {
+                "ample": 0.941213258286429, 
+                "gzoltar": 0.07273929674533079, 
+                "ochiai": 0.07273929674533079, 
+                "tarantula": 0.9444772593030124
+            }, 
+            "nf": 0, 
+            "np": 3010, 
+            "rank": {
+                "ample": 110, 
+                "ochiai": 114, 
+                "tarantula": 110
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BaseAbstractUnivariateRealSolver:182": {
+            "class": "org.apache.commons.math.analysis.solvers.BaseAbstractUnivariateRealSolver", 
+            "ef": 1, 
+            "ep": 188, 
+            "line": 182, 
+            "metrics": {
+                "ample": 0.941213258286429, 
+                "gzoltar": 0.07273929674533079, 
+                "ochiai": 0.07273929674533079, 
+                "tarantula": 0.9444772593030124
+            }, 
+            "nf": 0, 
+            "np": 3010, 
+            "rank": {
+                "ample": 108, 
+                "ochiai": 115, 
+                "tarantula": 108
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BaseAbstractUnivariateRealSolver:187": {
+            "class": "org.apache.commons.math.analysis.solvers.BaseAbstractUnivariateRealSolver", 
+            "ef": 1, 
+            "ep": 188, 
+            "line": 187, 
+            "metrics": {
+                "ample": 0.941213258286429, 
+                "gzoltar": 0.07273929674533079, 
+                "ochiai": 0.07273929674533079, 
+                "tarantula": 0.9444772593030124
+            }, 
+            "nf": 0, 
+            "np": 3010, 
+            "rank": {
+                "ample": 111, 
+                "ochiai": 116, 
+                "tarantula": 111
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BaseAbstractUnivariateRealSolver:190": {
+            "class": "org.apache.commons.math.analysis.solvers.BaseAbstractUnivariateRealSolver", 
+            "ef": 1, 
+            "ep": 188, 
+            "line": 190, 
+            "metrics": {
+                "ample": 0.941213258286429, 
+                "gzoltar": 0.07273929674533079, 
+                "ochiai": 0.07273929674533079, 
+                "tarantula": 0.9444772593030124
+            }, 
+            "nf": 0, 
+            "np": 3010, 
+            "rank": {
+                "ample": 112, 
+                "ochiai": 117, 
+                "tarantula": 112
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BaseAbstractUnivariateRealSolver:268": {
+            "class": "org.apache.commons.math.analysis.solvers.BaseAbstractUnivariateRealSolver", 
+            "ef": 1, 
+            "ep": 140, 
+            "line": 268, 
+            "metrics": {
+                "ample": 0.9562226391494684, 
+                "gzoltar": 0.0842151921066519, 
+                "ochiai": 0.0842151921066519, 
+                "tarantula": 0.9580587177950868
+            }, 
+            "nf": 0, 
+            "np": 3058, 
+            "rank": {
+                "ample": 93, 
+                "ochiai": 93, 
+                "tarantula": 93
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BaseAbstractUnivariateRealSolver:269": {
+            "class": "org.apache.commons.math.analysis.solvers.BaseAbstractUnivariateRealSolver", 
+            "ef": 1, 
+            "ep": 139, 
+            "line": 269, 
+            "metrics": {
+                "ample": 0.9565353345841151, 
+                "gzoltar": 0.08451542547285165, 
+                "ochiai": 0.08451542547285165, 
+                "tarantula": 0.9583458195984417
+            }, 
+            "nf": 0, 
+            "np": 3059, 
+            "rank": {
+                "ample": 92, 
+                "ochiai": 92, 
+                "tarantula": 92
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BaseAbstractUnivariateRealSolver:294": {
+            "class": "org.apache.commons.math.analysis.solvers.BaseAbstractUnivariateRealSolver", 
+            "ef": 1, 
+            "ep": 187, 
+            "line": 294, 
+            "metrics": {
+                "ample": 0.9415259537210756, 
+                "gzoltar": 0.07293249574894728, 
+                "ochiai": 0.07293249574894728, 
+                "tarantula": 0.9447562776957164
+            }, 
+            "nf": 0, 
+            "np": 3011, 
+            "rank": {
+                "ample": 105, 
+                "ochiai": 105, 
+                "tarantula": 105
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BaseAbstractUnivariateRealSolver:296": {
+            "class": "org.apache.commons.math.analysis.solvers.BaseAbstractUnivariateRealSolver", 
+            "ef": 1, 
+            "ep": 2, 
+            "line": 296, 
+            "metrics": {
+                "ample": 0.9993746091307066, 
+                "gzoltar": 0.5773502691896258, 
+                "ochiai": 0.5773502691896258, 
+                "tarantula": 0.999375
+            }, 
+            "nf": 0, 
+            "np": 3196, 
+            "rank": {
+                "ample": 4, 
+                "ochiai": 4, 
+                "tarantula": 4
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BaseAbstractUnivariateRealSolver:297": {
+            "class": "org.apache.commons.math.analysis.solvers.BaseAbstractUnivariateRealSolver", 
+            "ef": 1, 
+            "ep": 187, 
+            "line": 297, 
+            "metrics": {
+                "ample": 0.9415259537210756, 
+                "gzoltar": 0.07293249574894728, 
+                "ochiai": 0.07293249574894728, 
+                "tarantula": 0.9447562776957164
+            }, 
+            "nf": 0, 
+            "np": 3011, 
+            "rank": {
+                "ample": 104, 
+                "ochiai": 106, 
+                "tarantula": 104
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BaseAbstractUnivariateRealSolver:298": {
+            "class": "org.apache.commons.math.analysis.solvers.BaseAbstractUnivariateRealSolver", 
+            "ef": 1, 
+            "ep": 187, 
+            "line": 298, 
+            "metrics": {
+                "ample": 0.9415259537210756, 
+                "gzoltar": 0.07293249574894728, 
+                "ochiai": 0.07293249574894728, 
+                "tarantula": 0.9447562776957164
+            }, 
+            "nf": 0, 
+            "np": 3011, 
+            "rank": {
+                "ample": 103, 
+                "ochiai": 107, 
+                "tarantula": 103
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:146": {
+            "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "ef": 1, 
+            "ep": 26, 
+            "line": 146, 
+            "metrics": {
+                "ample": 0.991869918699187, 
+                "gzoltar": 0.19245008972987526, 
+                "ochiai": 0.19245008972987526, 
+                "tarantula": 0.9919354838709679
+            }, 
+            "nf": 0, 
+            "np": 3172, 
+            "rank": {
+                "ample": 84, 
+                "ochiai": 80, 
+                "tarantula": 84
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:147": {
+            "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "ef": 1, 
+            "ep": 26, 
+            "line": 147, 
+            "metrics": {
+                "ample": 0.991869918699187, 
+                "gzoltar": 0.19245008972987526, 
+                "ochiai": 0.19245008972987526, 
+                "tarantula": 0.9919354838709679
+            }, 
+            "nf": 0, 
+            "np": 3172, 
+            "rank": {
+                "ample": 83, 
+                "ochiai": 81, 
+                "tarantula": 83
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:148": {
+            "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "ef": 1, 
+            "ep": 26, 
+            "line": 148, 
+            "metrics": {
+                "ample": 0.991869918699187, 
+                "gzoltar": 0.19245008972987526, 
+                "ochiai": 0.19245008972987526, 
+                "tarantula": 0.9919354838709679
+            }, 
+            "nf": 0, 
+            "np": 3172, 
+            "rank": {
+                "ample": 82, 
+                "ochiai": 82, 
+                "tarantula": 82
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:149": {
+            "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "ef": 1, 
+            "ep": 26, 
+            "line": 149, 
+            "metrics": {
+                "ample": 0.991869918699187, 
+                "gzoltar": 0.19245008972987526, 
+                "ochiai": 0.19245008972987526, 
+                "tarantula": 0.9919354838709679
+            }, 
+            "nf": 0, 
+            "np": 3172, 
+            "rank": {
+                "ample": 81, 
+                "ochiai": 83, 
+                "tarantula": 81
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:150": {
+            "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "ef": 1, 
+            "ep": 26, 
+            "line": 150, 
+            "metrics": {
+                "ample": 0.991869918699187, 
+                "gzoltar": 0.19245008972987526, 
+                "ochiai": 0.19245008972987526, 
+                "tarantula": 0.9919354838709679
+            }, 
+            "nf": 0, 
+            "np": 3172, 
+            "rank": {
+                "ample": 87, 
+                "ochiai": 84, 
+                "tarantula": 87
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:151": {
+            "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "ef": 1, 
+            "ep": 26, 
+            "line": 151, 
+            "metrics": {
+                "ample": 0.991869918699187, 
+                "gzoltar": 0.19245008972987526, 
+                "ochiai": 0.19245008972987526, 
+                "tarantula": 0.9919354838709679
+            }, 
+            "nf": 0, 
+            "np": 3172, 
+            "rank": {
+                "ample": 88, 
+                "ochiai": 85, 
+                "tarantula": 88
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:154": {
+            "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "ef": 1, 
+            "ep": 26, 
+            "line": 154, 
+            "metrics": {
+                "ample": 0.991869918699187, 
+                "gzoltar": 0.19245008972987526, 
+                "ochiai": 0.19245008972987526, 
+                "tarantula": 0.9919354838709679
+            }, 
+            "nf": 0, 
+            "np": 3172, 
+            "rank": {
+                "ample": 85, 
+                "ochiai": 86, 
+                "tarantula": 85
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:155": {
+            "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "ef": 1, 
+            "ep": 26, 
+            "line": 155, 
+            "metrics": {
+                "ample": 0.991869918699187, 
+                "gzoltar": 0.19245008972987526, 
+                "ochiai": 0.19245008972987526, 
+                "tarantula": 0.9919354838709679
+            }, 
+            "nf": 0, 
+            "np": 3172, 
+            "rank": {
+                "ample": 86, 
+                "ochiai": 87, 
+                "tarantula": 86
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:161": {
+            "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "ef": 1, 
+            "ep": 26, 
+            "line": 161, 
+            "metrics": {
+                "ample": 0.991869918699187, 
+                "gzoltar": 0.19245008972987526, 
+                "ochiai": 0.19245008972987526, 
+                "tarantula": 0.9919354838709679
+            }, 
+            "nf": 0, 
+            "np": 3172, 
+            "rank": {
+                "ample": 80, 
+                "ochiai": 88, 
+                "tarantula": 80
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:162": {
+            "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "ef": 1, 
+            "ep": 26, 
+            "line": 162, 
+            "metrics": {
+                "ample": 0.991869918699187, 
+                "gzoltar": 0.19245008972987526, 
+                "ochiai": 0.19245008972987526, 
+                "tarantula": 0.9919354838709679
+            }, 
+            "nf": 0, 
+            "np": 3172, 
+            "rank": {
+                "ample": 89, 
+                "ochiai": 89, 
+                "tarantula": 89
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:169": {
+            "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "ef": 1, 
+            "ep": 26, 
+            "line": 169, 
+            "metrics": {
+                "ample": 0.991869918699187, 
+                "gzoltar": 0.19245008972987526, 
+                "ochiai": 0.19245008972987526, 
+                "tarantula": 0.9919354838709679
+            }, 
+            "nf": 0, 
+            "np": 3172, 
+            "rank": {
+                "ample": 90, 
+                "ochiai": 90, 
+                "tarantula": 90
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:172": {
+            "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "ef": 1, 
+            "ep": 19, 
+            "line": 172, 
+            "metrics": {
+                "ample": 0.9940587867417136, 
+                "gzoltar": 0.22360679774997896, 
+                "ochiai": 0.22360679774997896, 
+                "tarantula": 0.9940938762822507
+            }, 
+            "nf": 0, 
+            "np": 3179, 
+            "rank": {
+                "ample": 47, 
+                "ochiai": 47, 
+                "tarantula": 47
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:173": {
+            "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "ef": 1, 
+            "ep": 19, 
+            "line": 173, 
+            "metrics": {
+                "ample": 0.9940587867417136, 
+                "gzoltar": 0.22360679774997896, 
+                "ochiai": 0.22360679774997896, 
+                "tarantula": 0.9940938762822507
+            }, 
+            "nf": 0, 
+            "np": 3179, 
+            "rank": {
+                "ample": 48, 
+                "ochiai": 48, 
+                "tarantula": 48
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:195": {
+            "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "ef": 1, 
+            "ep": 24, 
+            "line": 195, 
+            "metrics": {
+                "ample": 0.9924953095684803, 
+                "gzoltar": 0.2, 
+                "ochiai": 0.2, 
+                "tarantula": 0.9925512104283054
+            }, 
+            "nf": 0, 
+            "np": 3174, 
+            "rank": {
+                "ample": 69, 
+                "ochiai": 49, 
+                "tarantula": 69
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:198": {
+            "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "ef": 1, 
+            "ep": 24, 
+            "line": 198, 
+            "metrics": {
+                "ample": 0.9924953095684803, 
+                "gzoltar": 0.2, 
+                "ochiai": 0.2, 
+                "tarantula": 0.9925512104283054
+            }, 
+            "nf": 0, 
+            "np": 3174, 
+            "rank": {
+                "ample": 67, 
+                "ochiai": 50, 
+                "tarantula": 67
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:199": {
+            "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "ef": 1, 
+            "ep": 24, 
+            "line": 199, 
+            "metrics": {
+                "ample": 0.9924953095684803, 
+                "gzoltar": 0.2, 
+                "ochiai": 0.2, 
+                "tarantula": 0.9925512104283054
+            }, 
+            "nf": 0, 
+            "np": 3174, 
+            "rank": {
+                "ample": 68, 
+                "ochiai": 51, 
+                "tarantula": 68
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:200": {
+            "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "ef": 1, 
+            "ep": 24, 
+            "line": 200, 
+            "metrics": {
+                "ample": 0.9924953095684803, 
+                "gzoltar": 0.2, 
+                "ochiai": 0.2, 
+                "tarantula": 0.9925512104283054
+            }, 
+            "nf": 0, 
+            "np": 3174, 
+            "rank": {
+                "ample": 56, 
+                "ochiai": 52, 
+                "tarantula": 56
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:201": {
+            "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "ef": 1, 
+            "ep": 24, 
+            "line": 201, 
+            "metrics": {
+                "ample": 0.9924953095684803, 
+                "gzoltar": 0.2, 
+                "ochiai": 0.2, 
+                "tarantula": 0.9925512104283054
+            }, 
+            "nf": 0, 
+            "np": 3174, 
+            "rank": {
+                "ample": 57, 
+                "ochiai": 53, 
+                "tarantula": 57
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:202": {
+            "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "ef": 1, 
+            "ep": 24, 
+            "line": 202, 
+            "metrics": {
+                "ample": 0.9924953095684803, 
+                "gzoltar": 0.2, 
+                "ochiai": 0.2, 
+                "tarantula": 0.9925512104283054
+            }, 
+            "nf": 0, 
+            "np": 3174, 
+            "rank": {
+                "ample": 58, 
+                "ochiai": 54, 
+                "tarantula": 58
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:203": {
+            "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "ef": 1, 
+            "ep": 24, 
+            "line": 203, 
+            "metrics": {
+                "ample": 0.9924953095684803, 
+                "gzoltar": 0.2, 
+                "ochiai": 0.2, 
+                "tarantula": 0.9925512104283054
+            }, 
+            "nf": 0, 
+            "np": 3174, 
+            "rank": {
+                "ample": 59, 
+                "ochiai": 55, 
+                "tarantula": 59
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:204": {
+            "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "ef": 1, 
+            "ep": 24, 
+            "line": 204, 
+            "metrics": {
+                "ample": 0.9924953095684803, 
+                "gzoltar": 0.2, 
+                "ochiai": 0.2, 
+                "tarantula": 0.9925512104283054
+            }, 
+            "nf": 0, 
+            "np": 3174, 
+            "rank": {
+                "ample": 54, 
+                "ochiai": 56, 
+                "tarantula": 54
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:205": {
+            "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "ef": 1, 
+            "ep": 24, 
+            "line": 205, 
+            "metrics": {
+                "ample": 0.9924953095684803, 
+                "gzoltar": 0.2, 
+                "ochiai": 0.2, 
+                "tarantula": 0.9925512104283054
+            }, 
+            "nf": 0, 
+            "np": 3174, 
+            "rank": {
+                "ample": 55, 
+                "ochiai": 57, 
+                "tarantula": 55
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:211": {
+            "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "ef": 1, 
+            "ep": 24, 
+            "line": 211, 
+            "metrics": {
+                "ample": 0.9924953095684803, 
+                "gzoltar": 0.2, 
+                "ochiai": 0.2, 
+                "tarantula": 0.9925512104283054
+            }, 
+            "nf": 0, 
+            "np": 3174, 
+            "rank": {
+                "ample": 52, 
+                "ochiai": 58, 
+                "tarantula": 52
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:213": {
+            "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "ef": 1, 
+            "ep": 24, 
+            "line": 213, 
+            "metrics": {
+                "ample": 0.9924953095684803, 
+                "gzoltar": 0.2, 
+                "ochiai": 0.2, 
+                "tarantula": 0.9925512104283054
+            }, 
+            "nf": 0, 
+            "np": 3174, 
+            "rank": {
+                "ample": 51, 
+                "ochiai": 59, 
+                "tarantula": 51
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:233": {
+            "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "ef": 1, 
+            "ep": 24, 
+            "line": 233, 
+            "metrics": {
+                "ample": 0.9924953095684803, 
+                "gzoltar": 0.2, 
+                "ochiai": 0.2, 
+                "tarantula": 0.9925512104283054
+            }, 
+            "nf": 0, 
+            "np": 3174, 
+            "rank": {
+                "ample": 49, 
+                "ochiai": 60, 
+                "tarantula": 49
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:235": {
+            "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "ef": 1, 
+            "ep": 16, 
+            "line": 235, 
+            "metrics": {
+                "ample": 0.9949968730456535, 
+                "gzoltar": 0.24253562503633297, 
+                "ochiai": 0.24253562503633297, 
+                "tarantula": 0.9950217797137524
+            }, 
+            "nf": 0, 
+            "np": 3182, 
+            "rank": {
+                "ample": 24, 
+                "ochiai": 25, 
+                "tarantula": 24
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:236": {
+            "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "ef": 1, 
+            "ep": 24, 
+            "line": 236, 
+            "metrics": {
+                "ample": 0.9924953095684803, 
+                "gzoltar": 0.2, 
+                "ochiai": 0.2, 
+                "tarantula": 0.9925512104283054
+            }, 
+            "nf": 0, 
+            "np": 3174, 
+            "rank": {
+                "ample": 50, 
+                "ochiai": 61, 
+                "tarantula": 50
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:241": {
+            "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "ef": 1, 
+            "ep": 24, 
+            "line": 241, 
+            "metrics": {
+                "ample": 0.9924953095684803, 
+                "gzoltar": 0.2, 
+                "ochiai": 0.2, 
+                "tarantula": 0.9925512104283054
+            }, 
+            "nf": 0, 
+            "np": 3174, 
+            "rank": {
+                "ample": 73, 
+                "ochiai": 62, 
+                "tarantula": 73
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:246": {
+            "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "ef": 1, 
+            "ep": 24, 
+            "line": 246, 
+            "metrics": {
+                "ample": 0.9924953095684803, 
+                "gzoltar": 0.2, 
+                "ochiai": 0.2, 
+                "tarantula": 0.9925512104283054
+            }, 
+            "nf": 0, 
+            "np": 3174, 
+            "rank": {
+                "ample": 74, 
+                "ochiai": 63, 
+                "tarantula": 74
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:247": {
+            "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "ef": 1, 
+            "ep": 24, 
+            "line": 247, 
+            "metrics": {
+                "ample": 0.9924953095684803, 
+                "gzoltar": 0.2, 
+                "ochiai": 0.2, 
+                "tarantula": 0.9925512104283054
+            }, 
+            "nf": 0, 
+            "np": 3174, 
+            "rank": {
+                "ample": 75, 
+                "ochiai": 64, 
+                "tarantula": 75
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:251": {
+            "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "ef": 1, 
+            "ep": 24, 
+            "line": 251, 
+            "metrics": {
+                "ample": 0.9924953095684803, 
+                "gzoltar": 0.2, 
+                "ochiai": 0.2, 
+                "tarantula": 0.9925512104283054
+            }, 
+            "nf": 0, 
+            "np": 3174, 
+            "rank": {
+                "ample": 72, 
+                "ochiai": 65, 
+                "tarantula": 72
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:252": {
+            "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "ef": 1, 
+            "ep": 24, 
+            "line": 252, 
+            "metrics": {
+                "ample": 0.9924953095684803, 
+                "gzoltar": 0.2, 
+                "ochiai": 0.2, 
+                "tarantula": 0.9925512104283054
+            }, 
+            "nf": 0, 
+            "np": 3174, 
+            "rank": {
+                "ample": 71, 
+                "ochiai": 66, 
+                "tarantula": 71
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:254": {
+            "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "ef": 1, 
+            "ep": 24, 
+            "line": 254, 
+            "metrics": {
+                "ample": 0.9924953095684803, 
+                "gzoltar": 0.2, 
+                "ochiai": 0.2, 
+                "tarantula": 0.9925512104283054
+            }, 
+            "nf": 0, 
+            "np": 3174, 
+            "rank": {
+                "ample": 70, 
+                "ochiai": 67, 
+                "tarantula": 70
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:260": {
+            "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "ef": 1, 
+            "ep": 18, 
+            "line": 260, 
+            "metrics": {
+                "ample": 0.9943714821763602, 
+                "gzoltar": 0.22941573387056174, 
+                "ochiai": 0.22941573387056174, 
+                "tarantula": 0.9944029850746269
+            }, 
+            "nf": 0, 
+            "np": 3180, 
+            "rank": {
+                "ample": 40, 
+                "ochiai": 31, 
+                "tarantula": 40
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:265": {
+            "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "ef": 1, 
+            "ep": 13, 
+            "line": 265, 
+            "metrics": {
+                "ample": 0.9959349593495935, 
+                "gzoltar": 0.2672612419124244, 
+                "ochiai": 0.2672612419124244, 
+                "tarantula": 0.9959514170040485
+            }, 
+            "nf": 0, 
+            "np": 3185, 
+            "rank": {
+                "ample": 23, 
+                "ochiai": 23, 
+                "tarantula": 23
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:269": {
+            "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "ef": 1, 
+            "ep": 18, 
+            "line": 269, 
+            "metrics": {
+                "ample": 0.9943714821763602, 
+                "gzoltar": 0.22941573387056174, 
+                "ochiai": 0.22941573387056174, 
+                "tarantula": 0.9944029850746269
+            }, 
+            "nf": 0, 
+            "np": 3180, 
+            "rank": {
+                "ample": 42, 
+                "ochiai": 32, 
+                "tarantula": 42
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:273": {
+            "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "ef": 1, 
+            "ep": 24, 
+            "line": 273, 
+            "metrics": {
+                "ample": 0.9924953095684803, 
+                "gzoltar": 0.2, 
+                "ochiai": 0.2, 
+                "tarantula": 0.9925512104283054
+            }, 
+            "nf": 0, 
+            "np": 3174, 
+            "rank": {
+                "ample": 62, 
+                "ochiai": 68, 
+                "tarantula": 62
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:275": {
+            "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "ef": 1, 
+            "ep": 24, 
+            "line": 275, 
+            "metrics": {
+                "ample": 0.9924953095684803, 
+                "gzoltar": 0.2, 
+                "ochiai": 0.2, 
+                "tarantula": 0.9925512104283054
+            }, 
+            "nf": 0, 
+            "np": 3174, 
+            "rank": {
+                "ample": 60, 
+                "ochiai": 69, 
+                "tarantula": 60
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:283": {
+            "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "ef": 1, 
+            "ep": 24, 
+            "line": 283, 
+            "metrics": {
+                "ample": 0.9924953095684803, 
+                "gzoltar": 0.2, 
+                "ochiai": 0.2, 
+                "tarantula": 0.9925512104283054
+            }, 
+            "nf": 0, 
+            "np": 3174, 
+            "rank": {
+                "ample": 66, 
+                "ochiai": 70, 
+                "tarantula": 66
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:284": {
+            "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "ef": 1, 
+            "ep": 24, 
+            "line": 284, 
+            "metrics": {
+                "ample": 0.9924953095684803, 
+                "gzoltar": 0.2, 
+                "ochiai": 0.2, 
+                "tarantula": 0.9925512104283054
+            }, 
+            "nf": 0, 
+            "np": 3174, 
+            "rank": {
+                "ample": 53, 
+                "ochiai": 71, 
+                "tarantula": 53
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:290": {
+            "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "ef": 1, 
+            "ep": 18, 
+            "line": 290, 
+            "metrics": {
+                "ample": 0.9943714821763602, 
+                "gzoltar": 0.22941573387056174, 
+                "ochiai": 0.22941573387056174, 
+                "tarantula": 0.9944029850746269
+            }, 
+            "nf": 0, 
+            "np": 3180, 
+            "rank": {
+                "ample": 32, 
+                "ochiai": 33, 
+                "tarantula": 32
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:294": {
+            "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "ef": 1, 
+            "ep": 17, 
+            "line": 294, 
+            "metrics": {
+                "ample": 0.9946841776110069, 
+                "gzoltar": 0.23570226039551587, 
+                "ochiai": 0.23570226039551587, 
+                "tarantula": 0.9947122861586315
+            }, 
+            "nf": 0, 
+            "np": 3181, 
+            "rank": {
+                "ample": 29, 
+                "ochiai": 27, 
+                "tarantula": 29
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:295": {
+            "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "ef": 1, 
+            "ep": 17, 
+            "line": 295, 
+            "metrics": {
+                "ample": 0.9946841776110069, 
+                "gzoltar": 0.23570226039551587, 
+                "ochiai": 0.23570226039551587, 
+                "tarantula": 0.9947122861586315
+            }, 
+            "nf": 0, 
+            "np": 3181, 
+            "rank": {
+                "ample": 28, 
+                "ochiai": 28, 
+                "tarantula": 28
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:296": {
+            "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "ef": 1, 
+            "ep": 17, 
+            "line": 296, 
+            "metrics": {
+                "ample": 0.9946841776110069, 
+                "gzoltar": 0.23570226039551587, 
+                "ochiai": 0.23570226039551587, 
+                "tarantula": 0.9947122861586315
+            }, 
+            "nf": 0, 
+            "np": 3181, 
+            "rank": {
+                "ample": 27, 
+                "ochiai": 29, 
+                "tarantula": 27
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:297": {
+            "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "ef": 1, 
+            "ep": 17, 
+            "line": 297, 
+            "metrics": {
+                "ample": 0.9946841776110069, 
+                "gzoltar": 0.23570226039551587, 
+                "ochiai": 0.23570226039551587, 
+                "tarantula": 0.9947122861586315
+            }, 
+            "nf": 0, 
+            "np": 3181, 
+            "rank": {
+                "ample": 26, 
+                "ochiai": 30, 
+                "tarantula": 26
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:299": {
+            "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "ef": 1, 
+            "ep": 18, 
+            "line": 299, 
+            "metrics": {
+                "ample": 0.9943714821763602, 
+                "gzoltar": 0.22941573387056174, 
+                "ochiai": 0.22941573387056174, 
+                "tarantula": 0.9944029850746269
+            }, 
+            "nf": 0, 
+            "np": 3180, 
+            "rank": {
+                "ample": 31, 
+                "ochiai": 34, 
+                "tarantula": 31
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:316": {
+            "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "ef": 1, 
+            "ep": 18, 
+            "line": 316, 
+            "metrics": {
+                "ample": 0.9943714821763602, 
+                "gzoltar": 0.22941573387056174, 
+                "ochiai": 0.22941573387056174, 
+                "tarantula": 0.9944029850746269
+            }, 
+            "nf": 0, 
+            "np": 3180, 
+            "rank": {
+                "ample": 43, 
+                "ochiai": 35, 
+                "tarantula": 43
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:317": {
+            "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "ef": 1, 
+            "ep": 18, 
+            "line": 317, 
+            "metrics": {
+                "ample": 0.9943714821763602, 
+                "gzoltar": 0.22941573387056174, 
+                "ochiai": 0.22941573387056174, 
+                "tarantula": 0.9944029850746269
+            }, 
+            "nf": 0, 
+            "np": 3180, 
+            "rank": {
+                "ample": 44, 
+                "ochiai": 36, 
+                "tarantula": 44
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:318": {
+            "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "ef": 1, 
+            "ep": 18, 
+            "line": 318, 
+            "metrics": {
+                "ample": 0.9943714821763602, 
+                "gzoltar": 0.22941573387056174, 
+                "ochiai": 0.22941573387056174, 
+                "tarantula": 0.9944029850746269
+            }, 
+            "nf": 0, 
+            "np": 3180, 
+            "rank": {
+                "ample": 45, 
+                "ochiai": 37, 
+                "tarantula": 45
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:319": {
+            "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "ef": 1, 
+            "ep": 18, 
+            "line": 319, 
+            "metrics": {
+                "ample": 0.9943714821763602, 
+                "gzoltar": 0.22941573387056174, 
+                "ochiai": 0.22941573387056174, 
+                "tarantula": 0.9944029850746269
+            }, 
+            "nf": 0, 
+            "np": 3180, 
+            "rank": {
+                "ample": 46, 
+                "ochiai": 38, 
+                "tarantula": 46
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:320": {
+            "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "ef": 1, 
+            "ep": 18, 
+            "line": 320, 
+            "metrics": {
+                "ample": 0.9943714821763602, 
+                "gzoltar": 0.22941573387056174, 
+                "ochiai": 0.22941573387056174, 
+                "tarantula": 0.9944029850746269
+            }, 
+            "nf": 0, 
+            "np": 3180, 
+            "rank": {
+                "ample": 39, 
+                "ochiai": 39, 
+                "tarantula": 39
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:323": {
+            "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "ef": 1, 
+            "ep": 18, 
+            "line": 323, 
+            "metrics": {
+                "ample": 0.9943714821763602, 
+                "gzoltar": 0.22941573387056174, 
+                "ochiai": 0.22941573387056174, 
+                "tarantula": 0.9944029850746269
+            }, 
+            "nf": 0, 
+            "np": 3180, 
+            "rank": {
+                "ample": 38, 
+                "ochiai": 40, 
+                "tarantula": 38
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:325": {
+            "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "ef": 1, 
+            "ep": 18, 
+            "line": 325, 
+            "metrics": {
+                "ample": 0.9943714821763602, 
+                "gzoltar": 0.22941573387056174, 
+                "ochiai": 0.22941573387056174, 
+                "tarantula": 0.9944029850746269
+            }, 
+            "nf": 0, 
+            "np": 3180, 
+            "rank": {
+                "ample": 37, 
+                "ochiai": 41, 
+                "tarantula": 37
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:326": {
+            "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "ef": 1, 
+            "ep": 18, 
+            "line": 326, 
+            "metrics": {
+                "ample": 0.9943714821763602, 
+                "gzoltar": 0.22941573387056174, 
+                "ochiai": 0.22941573387056174, 
+                "tarantula": 0.9944029850746269
+            }, 
+            "nf": 0, 
+            "np": 3180, 
+            "rank": {
+                "ample": 36, 
+                "ochiai": 42, 
+                "tarantula": 36
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:327": {
+            "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "ef": 1, 
+            "ep": 18, 
+            "line": 327, 
+            "metrics": {
+                "ample": 0.9943714821763602, 
+                "gzoltar": 0.22941573387056174, 
+                "ochiai": 0.22941573387056174, 
+                "tarantula": 0.9944029850746269
+            }, 
+            "nf": 0, 
+            "np": 3180, 
+            "rank": {
+                "ample": 35, 
+                "ochiai": 43, 
+                "tarantula": 35
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:328": {
+            "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "ef": 1, 
+            "ep": 18, 
+            "line": 328, 
+            "metrics": {
+                "ample": 0.9943714821763602, 
+                "gzoltar": 0.22941573387056174, 
+                "ochiai": 0.22941573387056174, 
+                "tarantula": 0.9944029850746269
+            }, 
+            "nf": 0, 
+            "np": 3180, 
+            "rank": {
+                "ample": 34, 
+                "ochiai": 44, 
+                "tarantula": 34
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:329": {
+            "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "ef": 1, 
+            "ep": 18, 
+            "line": 329, 
+            "metrics": {
+                "ample": 0.9943714821763602, 
+                "gzoltar": 0.22941573387056174, 
+                "ochiai": 0.22941573387056174, 
+                "tarantula": 0.9944029850746269
+            }, 
+            "nf": 0, 
+            "np": 3180, 
+            "rank": {
+                "ample": 33, 
+                "ochiai": 45, 
+                "tarantula": 33
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:343": {
+            "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "ef": 1, 
+            "ep": 18, 
+            "line": 343, 
+            "metrics": {
+                "ample": 0.9943714821763602, 
+                "gzoltar": 0.22941573387056174, 
+                "ochiai": 0.22941573387056174, 
+                "tarantula": 0.9944029850746269
+            }, 
+            "nf": 0, 
+            "np": 3180, 
+            "rank": {
+                "ample": 41, 
+                "ochiai": 46, 
+                "tarantula": 41
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:365": {
+            "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "ef": 1, 
+            "ep": 24, 
+            "line": 365, 
+            "metrics": {
+                "ample": 0.9924953095684803, 
+                "gzoltar": 0.2, 
+                "ochiai": 0.2, 
+                "tarantula": 0.9925512104283054
+            }, 
+            "nf": 0, 
+            "np": 3174, 
+            "rank": {
+                "ample": 78, 
+                "ochiai": 72, 
+                "tarantula": 78
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:366": {
+            "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "ef": 1, 
+            "ep": 24, 
+            "line": 366, 
+            "metrics": {
+                "ample": 0.9924953095684803, 
+                "gzoltar": 0.2, 
+                "ochiai": 0.2, 
+                "tarantula": 0.9925512104283054
+            }, 
+            "nf": 0, 
+            "np": 3174, 
+            "rank": {
+                "ample": 77, 
+                "ochiai": 73, 
+                "tarantula": 77
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:367": {
+            "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "ef": 1, 
+            "ep": 24, 
+            "line": 367, 
+            "metrics": {
+                "ample": 0.9924953095684803, 
+                "gzoltar": 0.2, 
+                "ochiai": 0.2, 
+                "tarantula": 0.9925512104283054
+            }, 
+            "nf": 0, 
+            "np": 3174, 
+            "rank": {
+                "ample": 76, 
+                "ochiai": 74, 
+                "tarantula": 76
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:368": {
+            "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "ef": 1, 
+            "ep": 24, 
+            "line": 368, 
+            "metrics": {
+                "ample": 0.9924953095684803, 
+                "gzoltar": 0.2, 
+                "ochiai": 0.2, 
+                "tarantula": 0.9925512104283054
+            }, 
+            "nf": 0, 
+            "np": 3174, 
+            "rank": {
+                "ample": 79, 
+                "ochiai": 75, 
+                "tarantula": 79
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:373": {
+            "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "ef": 1, 
+            "ep": 24, 
+            "line": 373, 
+            "metrics": {
+                "ample": 0.9924953095684803, 
+                "gzoltar": 0.2, 
+                "ochiai": 0.2, 
+                "tarantula": 0.9925512104283054
+            }, 
+            "nf": 0, 
+            "np": 3174, 
+            "rank": {
+                "ample": 65, 
+                "ochiai": 76, 
+                "tarantula": 65
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:374": {
+            "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "ef": 1, 
+            "ep": 24, 
+            "line": 374, 
+            "metrics": {
+                "ample": 0.9924953095684803, 
+                "gzoltar": 0.2, 
+                "ochiai": 0.2, 
+                "tarantula": 0.9925512104283054
+            }, 
+            "nf": 0, 
+            "np": 3174, 
+            "rank": {
+                "ample": 63, 
+                "ochiai": 77, 
+                "tarantula": 63
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:375": {
+            "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "ef": 1, 
+            "ep": 24, 
+            "line": 375, 
+            "metrics": {
+                "ample": 0.9924953095684803, 
+                "gzoltar": 0.2, 
+                "ochiai": 0.2, 
+                "tarantula": 0.9925512104283054
+            }, 
+            "nf": 0, 
+            "np": 3174, 
+            "rank": {
+                "ample": 64, 
+                "ochiai": 78, 
+                "tarantula": 64
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:378": {
+            "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "ef": 1, 
+            "ep": 24, 
+            "line": 378, 
+            "metrics": {
+                "ample": 0.9924953095684803, 
+                "gzoltar": 0.2, 
+                "ochiai": 0.2, 
+                "tarantula": 0.9925512104283054
+            }, 
+            "nf": 0, 
+            "np": 3174, 
+            "rank": {
+                "ample": 61, 
+                "ochiai": 79, 
+                "tarantula": 61
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:393": {
+            "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "ef": 1, 
+            "ep": 1, 
+            "line": 393, 
+            "metrics": {
+                "ample": 0.9996873045653534, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 0.999687402313223
+            }, 
+            "nf": 0, 
+            "np": 3197, 
+            "rank": {
+                "ample": 3, 
+                "ochiai": 1, 
+                "tarantula": 3
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:394": {
+            "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+            "ef": 1, 
+            "ep": 1, 
+            "line": 394, 
+            "metrics": {
+                "ample": 0.9996873045653534, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 0.999687402313223
+            }, 
+            "nf": 0, 
+            "np": 3197, 
+            "rank": {
+                "ample": 2, 
+                "ochiai": 2, 
+                "tarantula": 2
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils:336": {
+            "class": "org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils", 
+            "ef": 1, 
+            "ep": 204, 
+            "line": 336, 
+            "metrics": {
+                "ample": 0.9362101313320825, 
+                "gzoltar": 0.06984302957695782, 
+                "ochiai": 0.06984302957695782, 
+                "tarantula": 0.9400352733686067
+            }, 
+            "nf": 0, 
+            "np": 2994, 
+            "rank": {
+                "ample": 120, 
+                "ochiai": 120, 
+                "tarantula": 120
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils:340": {
+            "class": "org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils", 
+            "ef": 1, 
+            "ep": 199, 
+            "line": 340, 
+            "metrics": {
+                "ample": 0.9377736085053159, 
+                "gzoltar": 0.07071067811865475, 
+                "ochiai": 0.07071067811865475, 
+                "tarantula": 0.9414188990285547
+            }, 
+            "nf": 0, 
+            "np": 2999, 
+            "rank": {
+                "ample": 118, 
+                "ochiai": 118, 
+                "tarantula": 118
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils:354": {
+            "class": "org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils", 
+            "ef": 1, 
+            "ep": 144, 
+            "line": 354, 
+            "metrics": {
+                "ample": 0.9549718574108818, 
+                "gzoltar": 0.08304547985373997, 
+                "ochiai": 0.08304547985373997, 
+                "tarantula": 0.9569120287253142
+            }, 
+            "nf": 0, 
+            "np": 3054, 
+            "rank": {
+                "ample": 97, 
+                "ochiai": 97, 
+                "tarantula": 97
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils:355": {
+            "class": "org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils", 
+            "ef": 1, 
+            "ep": 142, 
+            "line": 355, 
+            "metrics": {
+                "ample": 0.9555972482801751, 
+                "gzoltar": 0.08362420100070908, 
+                "ochiai": 0.08362420100070908, 
+                "tarantula": 0.9574850299401197
+            }, 
+            "nf": 0, 
+            "np": 3056, 
+            "rank": {
+                "ample": 95, 
+                "ochiai": 96, 
+                "tarantula": 95
+            }
+        }, 
+        "org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils:356": {
+            "class": "org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils", 
+            "ef": 1, 
+            "ep": 141, 
+            "line": 356, 
+            "metrics": {
+                "ample": 0.9559099437148217, 
+                "gzoltar": 0.08391813582966891, 
+                "ochiai": 0.08391813582966891, 
+                "tarantula": 0.9577717879604671
+            }, 
+            "nf": 0, 
+            "np": 3057, 
+            "rank": {
+                "ample": 94, 
+                "ochiai": 94, 
+                "tarantula": 94
+            }
+        }, 
+        "org.apache.commons.math.exception.MathIllegalStateException:74": {
+            "class": "org.apache.commons.math.exception.MathIllegalStateException", 
+            "ef": 1, 
+            "ep": 43, 
+            "line": 74, 
+            "metrics": {
+                "ample": 0.9865540963101939, 
+                "gzoltar": 0.15075567228888181, 
+                "ochiai": 0.15075567228888181, 
+                "tarantula": 0.9867324899722308
+            }, 
+            "nf": 0, 
+            "np": 3155, 
+            "rank": {
+                "ample": 91, 
+                "ochiai": 91, 
+                "tarantula": 91
+            }
+        }, 
+        "org.apache.commons.math.exception.MathIllegalStateException:80": {
+            "class": "org.apache.commons.math.exception.MathIllegalStateException", 
+            "ef": 1, 
+            "ep": 1, 
+            "line": 80, 
+            "metrics": {
+                "ample": 0.9996873045653534, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 0.999687402313223
+            }, 
+            "nf": 0, 
+            "np": 3197, 
+            "rank": {
+                "ample": 1, 
+                "ochiai": 3, 
+                "tarantula": 1
+            }
+        }, 
+        "org.apache.commons.math.exception.MathIllegalStateException:86": {
+            "class": "org.apache.commons.math.exception.MathIllegalStateException", 
+            "ef": 1, 
+            "ep": 3, 
+            "line": 86, 
+            "metrics": {
+                "ample": 0.99906191369606, 
+                "gzoltar": 0.5, 
+                "ochiai": 0.5, 
+                "tarantula": 0.999062792877226
+            }, 
+            "nf": 0, 
+            "np": 3195, 
+            "rank": {
+                "ample": 6, 
+                "ochiai": 7, 
+                "tarantula": 6
+            }
+        }, 
+        "org.apache.commons.math.exception.MaxCountExceededException:62": {
+            "class": "org.apache.commons.math.exception.MaxCountExceededException", 
+            "ef": 1, 
+            "ep": 11, 
+            "line": 62, 
+            "metrics": {
+                "ample": 0.9965603502188868, 
+                "gzoltar": 0.2886751345948129, 
+                "ochiai": 0.2886751345948129, 
+                "tarantula": 0.9965721408538486
+            }, 
+            "nf": 0, 
+            "np": 3187, 
+            "rank": {
+                "ample": 22, 
+                "ochiai": 22, 
+                "tarantula": 22
+            }
+        }, 
+        "org.apache.commons.math.exception.util.ArgUtils:42": {
+            "class": "org.apache.commons.math.exception.util.ArgUtils", 
+            "ef": 1, 
+            "ep": 659, 
+            "line": 42, 
+            "metrics": {
+                "ample": 0.793933708567855, 
+                "gzoltar": 0.03892494720807615, 
+                "ochiai": 0.03892494720807615, 
+                "tarantula": 0.8291418200674099
+            }, 
+            "nf": 0, 
+            "np": 2539, 
+            "rank": {
+                "ample": 144, 
+                "ochiai": 144, 
+                "tarantula": 144
+            }
+        }, 
+        "org.apache.commons.math.exception.util.ArgUtils:43": {
+            "class": "org.apache.commons.math.exception.util.ArgUtils", 
+            "ef": 1, 
+            "ep": 659, 
+            "line": 43, 
+            "metrics": {
+                "ample": 0.793933708567855, 
+                "gzoltar": 0.03892494720807615, 
+                "ochiai": 0.03892494720807615, 
+                "tarantula": 0.8291418200674099
+            }, 
+            "nf": 0, 
+            "np": 2539, 
+            "rank": {
+                "ample": 145, 
+                "ochiai": 145, 
+                "tarantula": 145
+            }
+        }, 
+        "org.apache.commons.math.exception.util.ArgUtils:44": {
+            "class": "org.apache.commons.math.exception.util.ArgUtils", 
+            "ef": 1, 
+            "ep": 659, 
+            "line": 44, 
+            "metrics": {
+                "ample": 0.793933708567855, 
+                "gzoltar": 0.03892494720807615, 
+                "ochiai": 0.03892494720807615, 
+                "tarantula": 0.8291418200674099
+            }, 
+            "nf": 0, 
+            "np": 2539, 
+            "rank": {
+                "ample": 146, 
+                "ochiai": 146, 
+                "tarantula": 146
+            }
+        }, 
+        "org.apache.commons.math.exception.util.ArgUtils:45": {
+            "class": "org.apache.commons.math.exception.util.ArgUtils", 
+            "ef": 1, 
+            "ep": 562, 
+            "line": 45, 
+            "metrics": {
+                "ample": 0.8242651657285803, 
+                "gzoltar": 0.04214497519610896, 
+                "ochiai": 0.04214497519610896, 
+                "tarantula": 0.8505319148936171
+            }, 
+            "nf": 0, 
+            "np": 2636, 
+            "rank": {
+                "ample": 137, 
+                "ochiai": 137, 
+                "tarantula": 137
+            }
+        }, 
+        "org.apache.commons.math.exception.util.ArgUtils:46": {
+            "class": "org.apache.commons.math.exception.util.ArgUtils", 
+            "ef": 1, 
+            "ep": 496, 
+            "line": 46, 
+            "metrics": {
+                "ample": 0.8449030644152595, 
+                "gzoltar": 0.04485613040162566, 
+                "ochiai": 0.04485613040162566, 
+                "tarantula": 0.8657282079047104
+            }, 
+            "nf": 0, 
+            "np": 2702, 
+            "rank": {
+                "ample": 130, 
+                "ochiai": 130, 
+                "tarantula": 130
+            }
+        }, 
+        "org.apache.commons.math.exception.util.ArgUtils:50": {
+            "class": "org.apache.commons.math.exception.util.ArgUtils", 
+            "ef": 1, 
+            "ep": 562, 
+            "line": 50, 
+            "metrics": {
+                "ample": 0.8242651657285803, 
+                "gzoltar": 0.04214497519610896, 
+                "ochiai": 0.04214497519610896, 
+                "tarantula": 0.8505319148936171
+            }, 
+            "nf": 0, 
+            "np": 2636, 
+            "rank": {
+                "ample": 138, 
+                "ochiai": 138, 
+                "tarantula": 138
+            }
+        }, 
+        "org.apache.commons.math.exception.util.ArgUtils:54": {
+            "class": "org.apache.commons.math.exception.util.ArgUtils", 
+            "ef": 1, 
+            "ep": 659, 
+            "line": 54, 
+            "metrics": {
+                "ample": 0.793933708567855, 
+                "gzoltar": 0.03892494720807615, 
+                "ochiai": 0.03892494720807615, 
+                "tarantula": 0.8291418200674099
+            }, 
+            "nf": 0, 
+            "np": 2539, 
+            "rank": {
+                "ample": 147, 
+                "ochiai": 147, 
+                "tarantula": 147
+            }
+        }, 
+        "org.apache.commons.math.exception.util.ExceptionContext:128": {
+            "class": "org.apache.commons.math.exception.util.ExceptionContext", 
+            "ef": 1, 
+            "ep": 4, 
+            "line": 128, 
+            "metrics": {
+                "ample": 0.9987492182614134, 
+                "gzoltar": 0.4472135954999579, 
+                "ochiai": 0.4472135954999579, 
+                "tarantula": 0.9987507807620236
+            }, 
+            "nf": 0, 
+            "np": 3194, 
+            "rank": {
+                "ample": 8, 
+                "ochiai": 8, 
+                "tarantula": 8
+            }
+        }, 
+        "org.apache.commons.math.exception.util.ExceptionContext:137": {
+            "class": "org.apache.commons.math.exception.util.ExceptionContext", 
+            "ef": 1, 
+            "ep": 3, 
+            "line": 137, 
+            "metrics": {
+                "ample": 0.99906191369606, 
+                "gzoltar": 0.5, 
+                "ochiai": 0.5, 
+                "tarantula": 0.999062792877226
+            }, 
+            "nf": 0, 
+            "np": 3195, 
+            "rank": {
+                "ample": 7, 
+                "ochiai": 6, 
+                "tarantula": 7
+            }
+        }, 
+        "org.apache.commons.math.exception.util.ExceptionContext:147": {
+            "class": "org.apache.commons.math.exception.util.ExceptionContext", 
+            "ef": 1, 
+            "ep": 7, 
+            "line": 147, 
+            "metrics": {
+                "ample": 0.9978111319574734, 
+                "gzoltar": 0.35355339059327373, 
+                "ochiai": 0.35355339059327373, 
+                "tarantula": 0.9978159126365055
+            }, 
+            "nf": 0, 
+            "np": 3191, 
+            "rank": {
+                "ample": 9, 
+                "ochiai": 9, 
+                "tarantula": 9
+            }
+        }, 
+        "org.apache.commons.math.exception.util.ExceptionContext:171": {
+            "class": "org.apache.commons.math.exception.util.ExceptionContext", 
+            "ef": 1, 
+            "ep": 8, 
+            "line": 171, 
+            "metrics": {
+                "ample": 0.9974984365228268, 
+                "gzoltar": 0.3333333333333333, 
+                "ochiai": 0.3333333333333333, 
+                "tarantula": 0.9975046787273861
+            }, 
+            "nf": 0, 
+            "np": 3190, 
+            "rank": {
+                "ample": 13, 
+                "ochiai": 10, 
+                "tarantula": 13
+            }
+        }, 
+        "org.apache.commons.math.exception.util.ExceptionContext:172": {
+            "class": "org.apache.commons.math.exception.util.ExceptionContext", 
+            "ef": 1, 
+            "ep": 8, 
+            "line": 172, 
+            "metrics": {
+                "ample": 0.9974984365228268, 
+                "gzoltar": 0.3333333333333333, 
+                "ochiai": 0.3333333333333333, 
+                "tarantula": 0.9975046787273861
+            }, 
+            "nf": 0, 
+            "np": 3190, 
+            "rank": {
+                "ample": 11, 
+                "ochiai": 11, 
+                "tarantula": 11
+            }
+        }, 
+        "org.apache.commons.math.exception.util.ExceptionContext:173": {
+            "class": "org.apache.commons.math.exception.util.ExceptionContext", 
+            "ef": 1, 
+            "ep": 8, 
+            "line": 173, 
+            "metrics": {
+                "ample": 0.9974984365228268, 
+                "gzoltar": 0.3333333333333333, 
+                "ochiai": 0.3333333333333333, 
+                "tarantula": 0.9975046787273861
+            }, 
+            "nf": 0, 
+            "np": 3190, 
+            "rank": {
+                "ample": 12, 
+                "ochiai": 12, 
+                "tarantula": 12
+            }
+        }, 
+        "org.apache.commons.math.exception.util.ExceptionContext:174": {
+            "class": "org.apache.commons.math.exception.util.ExceptionContext", 
+            "ef": 1, 
+            "ep": 8, 
+            "line": 174, 
+            "metrics": {
+                "ample": 0.9974984365228268, 
+                "gzoltar": 0.3333333333333333, 
+                "ochiai": 0.3333333333333333, 
+                "tarantula": 0.9975046787273861
+            }, 
+            "nf": 0, 
+            "np": 3190, 
+            "rank": {
+                "ample": 16, 
+                "ochiai": 13, 
+                "tarantula": 16
+            }
+        }, 
+        "org.apache.commons.math.exception.util.ExceptionContext:175": {
+            "class": "org.apache.commons.math.exception.util.ExceptionContext", 
+            "ef": 1, 
+            "ep": 8, 
+            "line": 175, 
+            "metrics": {
+                "ample": 0.9974984365228268, 
+                "gzoltar": 0.3333333333333333, 
+                "ochiai": 0.3333333333333333, 
+                "tarantula": 0.9975046787273861
+            }, 
+            "nf": 0, 
+            "np": 3190, 
+            "rank": {
+                "ample": 17, 
+                "ochiai": 14, 
+                "tarantula": 17
+            }
+        }, 
+        "org.apache.commons.math.exception.util.ExceptionContext:176": {
+            "class": "org.apache.commons.math.exception.util.ExceptionContext", 
+            "ef": 1, 
+            "ep": 8, 
+            "line": 176, 
+            "metrics": {
+                "ample": 0.9974984365228268, 
+                "gzoltar": 0.3333333333333333, 
+                "ochiai": 0.3333333333333333, 
+                "tarantula": 0.9975046787273861
+            }, 
+            "nf": 0, 
+            "np": 3190, 
+            "rank": {
+                "ample": 14, 
+                "ochiai": 15, 
+                "tarantula": 14
+            }
+        }, 
+        "org.apache.commons.math.exception.util.ExceptionContext:177": {
+            "class": "org.apache.commons.math.exception.util.ExceptionContext", 
+            "ef": 1, 
+            "ep": 8, 
+            "line": 177, 
+            "metrics": {
+                "ample": 0.9974984365228268, 
+                "gzoltar": 0.3333333333333333, 
+                "ochiai": 0.3333333333333333, 
+                "tarantula": 0.9975046787273861
+            }, 
+            "nf": 0, 
+            "np": 3190, 
+            "rank": {
+                "ample": 15, 
+                "ochiai": 16, 
+                "tarantula": 15
+            }
+        }, 
+        "org.apache.commons.math.exception.util.ExceptionContext:179": {
+            "class": "org.apache.commons.math.exception.util.ExceptionContext", 
+            "ef": 1, 
+            "ep": 8, 
+            "line": 179, 
+            "metrics": {
+                "ample": 0.9974984365228268, 
+                "gzoltar": 0.3333333333333333, 
+                "ochiai": 0.3333333333333333, 
+                "tarantula": 0.9975046787273861
+            }, 
+            "nf": 0, 
+            "np": 3190, 
+            "rank": {
+                "ample": 10, 
+                "ochiai": 17, 
+                "tarantula": 10
+            }
+        }, 
+        "org.apache.commons.math.exception.util.ExceptionContext:180": {
+            "class": "org.apache.commons.math.exception.util.ExceptionContext", 
+            "ef": 1, 
+            "ep": 8, 
+            "line": 180, 
+            "metrics": {
+                "ample": 0.9974984365228268, 
+                "gzoltar": 0.3333333333333333, 
+                "ochiai": 0.3333333333333333, 
+                "tarantula": 0.9975046787273861
+            }, 
+            "nf": 0, 
+            "np": 3190, 
+            "rank": {
+                "ample": 19, 
+                "ochiai": 18, 
+                "tarantula": 19
+            }
+        }, 
+        "org.apache.commons.math.exception.util.ExceptionContext:182": {
+            "class": "org.apache.commons.math.exception.util.ExceptionContext", 
+            "ef": 1, 
+            "ep": 2, 
+            "line": 182, 
+            "metrics": {
+                "ample": 0.9993746091307066, 
+                "gzoltar": 0.5773502691896258, 
+                "ochiai": 0.5773502691896258, 
+                "tarantula": 0.999375
+            }, 
+            "nf": 0, 
+            "np": 3196, 
+            "rank": {
+                "ample": 5, 
+                "ochiai": 5, 
+                "tarantula": 5
+            }
+        }, 
+        "org.apache.commons.math.exception.util.ExceptionContext:186": {
+            "class": "org.apache.commons.math.exception.util.ExceptionContext", 
+            "ef": 1, 
+            "ep": 8, 
+            "line": 186, 
+            "metrics": {
+                "ample": 0.9974984365228268, 
+                "gzoltar": 0.3333333333333333, 
+                "ochiai": 0.3333333333333333, 
+                "tarantula": 0.9975046787273861
+            }, 
+            "nf": 0, 
+            "np": 3190, 
+            "rank": {
+                "ample": 18, 
+                "ochiai": 19, 
+                "tarantula": 18
+            }
+        }, 
+        "org.apache.commons.math.exception.util.ExceptionContext:87": {
+            "class": "org.apache.commons.math.exception.util.ExceptionContext", 
+            "ef": 1, 
+            "ep": 658, 
+            "line": 87, 
+            "metrics": {
+                "ample": 0.7942464040025016, 
+                "gzoltar": 0.03895446935658099, 
+                "ochiai": 0.03895446935658099, 
+                "tarantula": 0.829356846473029
+            }, 
+            "nf": 0, 
+            "np": 2540, 
+            "rank": {
+                "ample": 143, 
+                "ochiai": 141, 
+                "tarantula": 143
+            }
+        }, 
+        "org.apache.commons.math.exception.util.ExceptionContext:88": {
+            "class": "org.apache.commons.math.exception.util.ExceptionContext", 
+            "ef": 1, 
+            "ep": 658, 
+            "line": 88, 
+            "metrics": {
+                "ample": 0.7942464040025016, 
+                "gzoltar": 0.03895446935658099, 
+                "ochiai": 0.03895446935658099, 
+                "tarantula": 0.829356846473029
+            }, 
+            "nf": 0, 
+            "np": 2540, 
+            "rank": {
+                "ample": 142, 
+                "ochiai": 142, 
+                "tarantula": 142
+            }
+        }, 
+        "org.apache.commons.math.exception.util.ExceptionContext:89": {
+            "class": "org.apache.commons.math.exception.util.ExceptionContext", 
+            "ef": 1, 
+            "ep": 658, 
+            "line": 89, 
+            "metrics": {
+                "ample": 0.7942464040025016, 
+                "gzoltar": 0.03895446935658099, 
+                "ochiai": 0.03895446935658099, 
+                "tarantula": 0.829356846473029
+            }, 
+            "nf": 0, 
+            "np": 2540, 
+            "rank": {
+                "ample": 141, 
+                "ochiai": 143, 
+                "tarantula": 141
+            }
+        }, 
+        "org.apache.commons.math.exception.util.LocalizedFormats:373": {
+            "class": "org.apache.commons.math.exception.util.LocalizedFormats", 
+            "ef": 1, 
+            "ep": 9, 
+            "line": 373, 
+            "metrics": {
+                "ample": 0.9971857410881801, 
+                "gzoltar": 0.31622776601683794, 
+                "ochiai": 0.31622776601683794, 
+                "tarantula": 0.9971936389148738
+            }, 
+            "nf": 0, 
+            "np": 3189, 
+            "rank": {
+                "ample": 20, 
+                "ochiai": 20, 
+                "tarantula": 20
+            }
+        }, 
+        "org.apache.commons.math.exception.util.LocalizedFormats:386": {
+            "class": "org.apache.commons.math.exception.util.LocalizedFormats", 
+            "ef": 1, 
+            "ep": 9, 
+            "line": 386, 
+            "metrics": {
+                "ample": 0.9971857410881801, 
+                "gzoltar": 0.31622776601683794, 
+                "ochiai": 0.31622776601683794, 
+                "tarantula": 0.9971936389148738
+            }, 
+            "nf": 0, 
+            "np": 3189, 
+            "rank": {
+                "ample": 21, 
+                "ochiai": 21, 
+                "tarantula": 21
+            }
+        }, 
+        "org.apache.commons.math.util.FastMath:3005": {
+            "class": "org.apache.commons.math.util.FastMath", 
+            "ef": 1, 
+            "ep": 432, 
+            "line": 3005, 
+            "metrics": {
+                "ample": 0.8649155722326454, 
+                "gzoltar": 0.04805693313322127, 
+                "ochiai": 0.04805693313322127, 
+                "tarantula": 0.88099173553719
+            }, 
+            "nf": 0, 
+            "np": 2766, 
+            "rank": {
+                "ample": 128, 
+                "ochiai": 128, 
+                "tarantula": 128
+            }
+        }, 
+        "org.apache.commons.math.util.FastMath:3023": {
+            "class": "org.apache.commons.math.util.FastMath", 
+            "ef": 1, 
+            "ep": 1236, 
+            "line": 3023, 
+            "metrics": {
+                "ample": 0.6135084427767354, 
+                "gzoltar": 0.028432506701809173, 
+                "ochiai": 0.028432506701809173, 
+                "tarantula": 0.7212449255751014
+            }, 
+            "nf": 0, 
+            "np": 1962, 
+            "rank": {
+                "ample": 150, 
+                "ochiai": 150, 
+                "tarantula": 150
+            }
+        }, 
+        "org.apache.commons.math.util.FastMath:3538": {
+            "class": "org.apache.commons.math.util.FastMath", 
+            "ef": 1, 
+            "ep": 593, 
+            "line": 3538, 
+            "metrics": {
+                "ample": 0.8145716072545341, 
+                "gzoltar": 0.041030496993110906, 
+                "ochiai": 0.041030496993110906, 
+                "tarantula": 0.8435768926404643
+            }, 
+            "nf": 0, 
+            "np": 2605, 
+            "rank": {
+                "ample": 140, 
+                "ochiai": 140, 
+                "tarantula": 140
+            }
+        }, 
+        "org.apache.commons.math.util.FastMath:3539": {
+            "class": "org.apache.commons.math.util.FastMath", 
+            "ef": 1, 
+            "ep": 422, 
+            "line": 3539, 
+            "metrics": {
+                "ample": 0.868042526579112, 
+                "gzoltar": 0.048621663832631515, 
+                "ochiai": 0.048621663832631515, 
+                "tarantula": 0.8834254143646408
+            }, 
+            "nf": 0, 
+            "np": 2776, 
+            "rank": {
+                "ample": 121, 
+                "ochiai": 121, 
+                "tarantula": 121
+            }
+        }, 
+        "org.apache.commons.math.util.FastMath:3541": {
+            "class": "org.apache.commons.math.util.FastMath", 
+            "ef": 1, 
+            "ep": 565, 
+            "line": 3541, 
+            "metrics": {
+                "ample": 0.8233270794246403, 
+                "gzoltar": 0.04203313517091986, 
+                "ochiai": 0.04203313517091986, 
+                "tarantula": 0.8498538400212596
+            }, 
+            "nf": 0, 
+            "np": 2633, 
+            "rank": {
+                "ample": 139, 
+                "ochiai": 139, 
+                "tarantula": 139
+            }
+        }, 
+        "org.apache.commons.math.util.FastMath:3542": {
+            "class": "org.apache.commons.math.util.FastMath", 
+            "ef": 1, 
+            "ep": 496, 
+            "line": 3542, 
+            "metrics": {
+                "ample": 0.8449030644152595, 
+                "gzoltar": 0.04485613040162566, 
+                "ochiai": 0.04485613040162566, 
+                "tarantula": 0.8657282079047104
+            }, 
+            "nf": 0, 
+            "np": 2702, 
+            "rank": {
+                "ample": 129, 
+                "ochiai": 129, 
+                "tarantula": 129
+            }
+        }, 
+        "org.apache.commons.math.util.Incrementor$1:65": {
+            "class": "org.apache.commons.math.util.Incrementor$1", 
+            "ef": 1, 
+            "ep": 16, 
+            "line": 65, 
+            "metrics": {
+                "ample": 0.9949968730456535, 
+                "gzoltar": 0.24253562503633297, 
+                "ochiai": 0.24253562503633297, 
+                "tarantula": 0.9950217797137524
+            }, 
+            "nf": 0, 
+            "np": 3182, 
+            "rank": {
+                "ample": 25, 
+                "ochiai": 24, 
+                "tarantula": 25
+            }
+        }, 
+        "org.apache.commons.math.util.Incrementor:150": {
+            "class": "org.apache.commons.math.util.Incrementor", 
+            "ef": 1, 
+            "ep": 522, 
+            "line": 150, 
+            "metrics": {
+                "ample": 0.8367729831144466, 
+                "gzoltar": 0.04372694694466261, 
+                "ochiai": 0.04372694694466261, 
+                "tarantula": 0.8596774193548388
+            }, 
+            "nf": 0, 
+            "np": 2676, 
+            "rank": {
+                "ample": 132, 
+                "ochiai": 132, 
+                "tarantula": 132
+            }
+        }, 
+        "org.apache.commons.math.util.Incrementor:151": {
+            "class": "org.apache.commons.math.util.Incrementor", 
+            "ef": 1, 
+            "ep": 17, 
+            "line": 151, 
+            "metrics": {
+                "ample": 0.9946841776110069, 
+                "gzoltar": 0.23570226039551587, 
+                "ochiai": 0.23570226039551587, 
+                "tarantula": 0.9947122861586315
+            }, 
+            "nf": 0, 
+            "np": 3181, 
+            "rank": {
+                "ample": 30, 
+                "ochiai": 26, 
+                "tarantula": 30
+            }
+        }, 
+        "org.apache.commons.math.util.Incrementor:153": {
+            "class": "org.apache.commons.math.util.Incrementor", 
+            "ef": 1, 
+            "ep": 521, 
+            "line": 153, 
+            "metrics": {
+                "ample": 0.8370856785490932, 
+                "gzoltar": 0.04376881095324085, 
+                "ochiai": 0.04376881095324085, 
+                "tarantula": 0.8599085775746168
+            }, 
+            "nf": 0, 
+            "np": 2677, 
+            "rank": {
+                "ample": 131, 
+                "ochiai": 131, 
+                "tarantula": 131
+            }
+        }, 
+        "org.apache.commons.math.util.Incrementor:159": {
+            "class": "org.apache.commons.math.util.Incrementor", 
+            "ef": 1, 
+            "ep": 541, 
+            "line": 159, 
+            "metrics": {
+                "ample": 0.8308317698561601, 
+                "gzoltar": 0.04295367795875577, 
+                "ochiai": 0.04295367795875577, 
+                "tarantula": 0.8553089061246322
+            }, 
+            "nf": 0, 
+            "np": 2657, 
+            "rank": {
+                "ample": 134, 
+                "ochiai": 133, 
+                "tarantula": 134
+            }
+        }, 
+        "org.apache.commons.math.util.Incrementor:160": {
+            "class": "org.apache.commons.math.util.Incrementor", 
+            "ef": 1, 
+            "ep": 541, 
+            "line": 160, 
+            "metrics": {
+                "ample": 0.8308317698561601, 
+                "gzoltar": 0.04295367795875577, 
+                "ochiai": 0.04295367795875577, 
+                "tarantula": 0.8553089061246322
+            }, 
+            "nf": 0, 
+            "np": 2657, 
+            "rank": {
+                "ample": 133, 
+                "ochiai": 134, 
+                "tarantula": 133
+            }
+        }, 
+        "org.apache.commons.math.util.Incrementor:91": {
+            "class": "org.apache.commons.math.util.Incrementor", 
+            "ef": 1, 
+            "ep": 558, 
+            "line": 91, 
+            "metrics": {
+                "ample": 0.8255159474671669, 
+                "gzoltar": 0.042295493443781355, 
+                "ochiai": 0.042295493443781355, 
+                "tarantula": 0.8514376996805112
+            }, 
+            "nf": 0, 
+            "np": 2640, 
+            "rank": {
+                "ample": 135, 
+                "ochiai": 135, 
+                "tarantula": 135
+            }
+        }, 
+        "org.apache.commons.math.util.Incrementor:92": {
+            "class": "org.apache.commons.math.util.Incrementor", 
+            "ef": 1, 
+            "ep": 558, 
+            "line": 92, 
+            "metrics": {
+                "ample": 0.8255159474671669, 
+                "gzoltar": 0.042295493443781355, 
+                "ochiai": 0.042295493443781355, 
+                "tarantula": 0.8514376996805112
+            }, 
+            "nf": 0, 
+            "np": 2640, 
+            "rank": {
+                "ample": 136, 
+                "ochiai": 136, 
+                "tarantula": 136
+            }
+        }, 
+        "org.apache.commons.math.util.MathUtils:257": {
+            "class": "org.apache.commons.math.util.MathUtils", 
+            "ef": 1, 
+            "ep": 688, 
+            "line": 257, 
+            "metrics": {
+                "ample": 0.7848655409631019, 
+                "gzoltar": 0.03809696588797296, 
+                "ochiai": 0.03809696588797296, 
+                "tarantula": 0.8229541945445188
+            }, 
+            "nf": 0, 
+            "np": 2510, 
+            "rank": {
+                "ample": 149, 
+                "ochiai": 149, 
+                "tarantula": 149
+            }
+        }, 
+        "org.apache.commons.math.util.MathUtils:260": {
+            "class": "org.apache.commons.math.util.MathUtils", 
+            "ef": 1, 
+            "ep": 683, 
+            "line": 260, 
+            "metrics": {
+                "ample": 0.7864290181363351, 
+                "gzoltar": 0.038235955645093626, 
+                "ochiai": 0.038235955645093626, 
+                "tarantula": 0.8240144292708065
+            }, 
+            "nf": 0, 
+            "np": 2515, 
+            "rank": {
+                "ample": 148, 
+                "ochiai": 148, 
+                "tarantula": 148
+            }
+        }, 
+        "org.apache.commons.math.util.Precision:277": {
+            "class": "org.apache.commons.math.util.Precision", 
+            "ef": 1, 
+            "ep": 429, 
+            "line": 277, 
+            "metrics": {
+                "ample": 0.8658536585365854, 
+                "gzoltar": 0.04822428221704121, 
+                "ochiai": 0.04822428221704121, 
+                "tarantula": 0.8817204301075268
+            }, 
+            "nf": 0, 
+            "np": 2769, 
+            "rank": {
+                "ample": 124, 
+                "ochiai": 122, 
+                "tarantula": 124
+            }
+        }, 
+        "org.apache.commons.math.util.Precision:278": {
+            "class": "org.apache.commons.math.util.Precision", 
+            "ef": 1, 
+            "ep": 429, 
+            "line": 278, 
+            "metrics": {
+                "ample": 0.8658536585365854, 
+                "gzoltar": 0.04822428221704121, 
+                "ochiai": 0.04822428221704121, 
+                "tarantula": 0.8817204301075268
+            }, 
+            "nf": 0, 
+            "np": 2769, 
+            "rank": {
+                "ample": 123, 
+                "ochiai": 123, 
+                "tarantula": 123
+            }
+        }, 
+        "org.apache.commons.math.util.Precision:281": {
+            "class": "org.apache.commons.math.util.Precision", 
+            "ef": 1, 
+            "ep": 429, 
+            "line": 281, 
+            "metrics": {
+                "ample": 0.8658536585365854, 
+                "gzoltar": 0.04822428221704121, 
+                "ochiai": 0.04822428221704121, 
+                "tarantula": 0.8817204301075268
+            }, 
+            "nf": 0, 
+            "np": 2769, 
+            "rank": {
+                "ample": 127, 
+                "ochiai": 124, 
+                "tarantula": 127
+            }
+        }, 
+        "org.apache.commons.math.util.Precision:282": {
+            "class": "org.apache.commons.math.util.Precision", 
+            "ef": 1, 
+            "ep": 203, 
+            "line": 282, 
+            "metrics": {
+                "ample": 0.9365228267667292, 
+                "gzoltar": 0.07001400420140048, 
+                "ochiai": 0.07001400420140048, 
+                "tarantula": 0.9403116730373419
+            }, 
+            "nf": 0, 
+            "np": 2995, 
+            "rank": {
+                "ample": 119, 
+                "ochiai": 119, 
+                "tarantula": 119
+            }
+        }, 
+        "org.apache.commons.math.util.Precision:284": {
+            "class": "org.apache.commons.math.util.Precision", 
+            "ef": 1, 
+            "ep": 429, 
+            "line": 284, 
+            "metrics": {
+                "ample": 0.8658536585365854, 
+                "gzoltar": 0.04822428221704121, 
+                "ochiai": 0.04822428221704121, 
+                "tarantula": 0.8817204301075268
+            }, 
+            "nf": 0, 
+            "np": 2769, 
+            "rank": {
+                "ample": 126, 
+                "ochiai": 125, 
+                "tarantula": 126
+            }
+        }, 
+        "org.apache.commons.math.util.Precision:288": {
+            "class": "org.apache.commons.math.util.Precision", 
+            "ef": 1, 
+            "ep": 429, 
+            "line": 288, 
+            "metrics": {
+                "ample": 0.8658536585365854, 
+                "gzoltar": 0.04822428221704121, 
+                "ochiai": 0.04822428221704121, 
+                "tarantula": 0.8817204301075268
+            }, 
+            "nf": 0, 
+            "np": 2769, 
+            "rank": {
+                "ample": 125, 
+                "ochiai": 126, 
+                "tarantula": 125
+            }
+        }, 
+        "org.apache.commons.math.util.Precision:290": {
+            "class": "org.apache.commons.math.util.Precision", 
+            "ef": 1, 
+            "ep": 429, 
+            "line": 290, 
+            "metrics": {
+                "ample": 0.8658536585365854, 
+                "gzoltar": 0.04822428221704121, 
+                "ochiai": 0.04822428221704121, 
+                "tarantula": 0.8817204301075268
+            }, 
+            "nf": 0, 
+            "np": 2769, 
+            "rank": {
+                "ample": 122, 
+                "ochiai": 127, 
+                "tarantula": 122
+            }
+        }
+    }
+}

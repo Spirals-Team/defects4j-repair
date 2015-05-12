@@ -1,0 +1,103 @@
+export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";cp -r /home/tdurieux/projects/lang/lang_20 /tmp/lang_20_Ranking;cd /tmp/lang_20_Ranking;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Lang/lib/* lib/;find . -type f -name "package-info.java" -delete;
+cd /tmp/lang_20_Ranking;cp -r /home/tdurieux/nopol/z3-x64-debian-7.7/bin/ lib/z3;time java -cp /home/tdurieux/nopol/nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar fr.inria.lille.repair.Main --mode ranking --type condition --oracle angelic --synthesis smt --solver z3 --solver-path lib/z3/z3 --complianceLevel 5 --source src/main/java/ --classpath target/classes/:target/tests/:lib/asm.jar:lib/cglib.jar:lib/commons-io.jar:lib/easymock.jar:/home/tdurieux/nopol/nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar;echo "
+
+Node: `hostname`
+";echo "
+Date: `date`
+";rm -rf /tmp/lang_20_Ranking;
+
+/************************/
+Executed tests:   1876
+Successful tests: 1874
+Failed tests:     2
+
+org.apache.commons.lang3.StringUtilsTest#testJoin_ArrayChar
+java.lang.NullPointerException
+	at org.apache.commons.lang3.StringUtils.join(StringUtils.java:3298)
+	at org.apache.commons.lang3.StringUtilsTest.testJoin_ArrayChar(StringUtilsTest.java:209)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at com.gzoltar.core.instr.testing.junit.JUnitRunner.run(JUnitRunner.java:47)
+	at com.gzoltar.core.instr.Runner.main(Runner.java:46)
+
+org.apache.commons.lang3.StringUtilsTest#testJoin_Objectarray
+java.lang.NullPointerException
+	at org.apache.commons.lang3.StringUtils.join(StringUtils.java:3384)
+	at org.apache.commons.lang3.StringUtils.join(StringUtils.java:3339)
+	at org.apache.commons.lang3.StringUtils.join(StringUtils.java:3230)
+	at org.apache.commons.lang3.StringUtilsTest.testJoin_Objectarray(StringUtilsTest.java:193)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at com.gzoltar.core.instr.testing.junit.JUnitRunner.run(JUnitRunner.java:47)
+	at com.gzoltar.core.instr.Runner.main(Runner.java:46)
+
+
+/************************/
+/* Suspicious statement */
+/************************/
+org.apache.commons.lang3.StringUtils:3257 -> 0.7071067811865475 (ep: 0, ef: 1, np: 1874, nf: 1)
+org.apache.commons.lang3.StringUtils:3256 -> 0.5 (ep: 1, ef: 1, np: 1873, nf: 1)
+org.apache.commons.lang3.StringUtils:3260 -> 0.5 (ep: 1, ef: 1, np: 1873, nf: 1)
+org.apache.commons.lang3.StringUtils:3290 -> 0.5 (ep: 1, ef: 1, np: 1873, nf: 1)
+org.apache.commons.lang3.StringUtils:3293 -> 0.5 (ep: 1, ef: 1, np: 1873, nf: 1)
+org.apache.commons.lang3.StringUtils:3294 -> 0.5 (ep: 1, ef: 1, np: 1873, nf: 1)
+org.apache.commons.lang3.StringUtils:3295 -> 0.5 (ep: 1, ef: 1, np: 1873, nf: 1)
+org.apache.commons.lang3.StringUtils:3298 -> 0.5 (ep: 1, ef: 1, np: 1873, nf: 1)
+org.apache.commons.lang3.StringUtils:3299 -> 0.5 (ep: 1, ef: 1, np: 1873, nf: 1)
+org.apache.commons.lang3.StringUtils:3301 -> 0.5 (ep: 1, ef: 1, np: 1873, nf: 1)
+org.apache.commons.lang3.StringUtils:3302 -> 0.5 (ep: 1, ef: 1, np: 1873, nf: 1)
+org.apache.commons.lang3.StringUtils:3303 -> 0.5 (ep: 1, ef: 1, np: 1873, nf: 1)
+org.apache.commons.lang3.StringUtils:3305 -> 0.5 (ep: 1, ef: 1, np: 1873, nf: 1)
+org.apache.commons.lang3.StringUtils:3306 -> 0.5 (ep: 1, ef: 1, np: 1873, nf: 1)
+org.apache.commons.lang3.StringUtils:3309 -> 0.5 (ep: 1, ef: 1, np: 1873, nf: 1)
+org.apache.commons.lang3.StringUtils:3337 -> 0.4082482904638631 (ep: 2, ef: 1, np: 1872, nf: 1)
+org.apache.commons.lang3.StringUtils:3381 -> 0.4082482904638631 (ep: 2, ef: 1, np: 1872, nf: 1)
+org.apache.commons.lang3.StringUtils:3230 -> 0.4082482904638631 (ep: 2, ef: 1, np: 1872, nf: 1)
+org.apache.commons.lang3.StringUtils:3336 -> 0.35355339059327373 (ep: 3, ef: 1, np: 1871, nf: 1)
+org.apache.commons.lang3.StringUtils:3339 -> 0.35355339059327373 (ep: 3, ef: 1, np: 1871, nf: 1)
+org.apache.commons.lang3.StringUtils:3370 -> 0.35355339059327373 (ep: 3, ef: 1, np: 1871, nf: 1)
+org.apache.commons.lang3.StringUtils:3373 -> 0.35355339059327373 (ep: 3, ef: 1, np: 1871, nf: 1)
+org.apache.commons.lang3.StringUtils:3374 -> 0.35355339059327373 (ep: 3, ef: 1, np: 1871, nf: 1)
+org.apache.commons.lang3.StringUtils:3379 -> 0.35355339059327373 (ep: 3, ef: 1, np: 1871, nf: 1)
+org.apache.commons.lang3.StringUtils:3380 -> 0.35355339059327373 (ep: 3, ef: 1, np: 1871, nf: 1)
+org.apache.commons.lang3.StringUtils:3384 -> 0.35355339059327373 (ep: 3, ef: 1, np: 1871, nf: 1)
+org.apache.commons.lang3.StringUtils:3387 -> 0.35355339059327373 (ep: 3, ef: 1, np: 1871, nf: 1)
+org.apache.commons.lang3.StringUtils:3389 -> 0.35355339059327373 (ep: 3, ef: 1, np: 1871, nf: 1)
+org.apache.commons.lang3.StringUtils:3390 -> 0.35355339059327373 (ep: 3, ef: 1, np: 1871, nf: 1)
+org.apache.commons.lang3.StringUtils:3393 -> 0.35355339059327373 (ep: 3, ef: 1, np: 1871, nf: 1)
+org.apache.commons.lang3.StringUtils:3397 -> 0.35355339059327373 (ep: 3, ef: 1, np: 1871, nf: 1)
+
+
+
+Node: griffon-58.nancy.grid5000.fr
+
+
+Date: Mon May 11 08:00:56 CEST 2015
+
+

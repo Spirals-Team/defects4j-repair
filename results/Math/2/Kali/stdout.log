@@ -1,0 +1,81 @@
+export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";cp -r /home/tdurieux/projects/math/math_2 /tmp/math_2_Kali;cd /tmp/math_2_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
+/home/tdurieux/results/Math/2/Kali/result
+cd /tmp/math_2_Kali;time java -cp /home/tdurieux/astor/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.math3.distribution.HypergeometricDistributionTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;rm -rf /tmp/math_2_Kali;
+
+ProgramVariant 22
+ 
+ operation: 
+location= org.apache.commons.math3.distribution.AbstractIntegerDistribution
+ line= 137
+ original statement= if (tmp < upper) {
+	upper = ((int)(java.lang.Math.ceil(tmp))) - 1;
+} 
+ fix (remove original statement) "if (tmp < upper) {
+	upper = ((int)(java.lang.Math.ceil(tmp))) - 1;
+} "
+ generation= 21
+ 
+ ----ProgramVariant 23
+ 
+ operation: 
+location= org.apache.commons.math3.distribution.AbstractIntegerDistribution
+ line= 138
+ original statement= upper = ((int)(java.lang.Math.ceil(tmp))) - 1
+ fix (remove original statement) "upper = ((int)(java.lang.Math.ceil(tmp))) - 1"
+ generation= 22
+ 
+ ----ProgramVariant 27
+ 
+ operation: 
+location= org.apache.commons.math3.distribution.AbstractIntegerDistribution
+ line= 129
+ original statement= if (chebyshevApplies) {
+	double k = org.apache.commons.math3.util.FastMath.sqrt(((1.0 - p) / p));
+	double tmp = mu - (k * sigma);
+	if (tmp > lower) {
+		lower = ((int)(java.lang.Math.ceil(tmp))) - 1;
+	} 
+	k = 1.0 / k;
+	tmp = mu + (k * sigma);
+	if (tmp < upper) {
+		upper = ((int)(java.lang.Math.ceil(tmp))) - 1;
+	} 
+} 
+ fix (remove original statement) "if (chebyshevApplies) {
+	double k = org.apache.commons.math3.util.FastMath.sqrt(((1.0 - p) / p));
+	double tmp = mu - (k * sigma);
+	if (tmp > lower) {
+		lower = ((int)(java.lang.Math.ceil(tmp))) - 1;
+	} 
+	k = 1.0 / k;
+	tmp = mu + (k * sigma);
+	if (tmp < upper) {
+		upper = ((int)(java.lang.Math.ceil(tmp))) - 1;
+	} 
+} "
+ generation= 26
+ 
+ ----
+Time Evolution(ms): 364173
+
+----stats: 
+
+spaces: [0]: []
+time val1 [16]: [267, 305, 303, 283, 288, 281, 269, 305, 306, 306, 269, 276, 275, 275, 277, 280]
+time val2 [3]: [119436, 118923, 119121]
+#gen: 37
+#patches: 3
+#RightCompilation: 15
+#WrongCompilation: 21
+#FailingTestCaseExecution: 16
+#RegressionTestExecution: 3
+#TestcasesExecutedval1: 256
+#TestcasesExecutedval2: 15504
+#FailingTestCase: 16
+#RegressionTestCases: 5168
+#OfAppliedOp: 36
+#NotAppliedOp: 0
+#InmutatedGen: 0
+#unfinishValidation: 0
+Time Total(ms): 708689
+

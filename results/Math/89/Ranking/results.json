@@ -1,0 +1,61 @@
+{
+    "date": "2015-05-11T07:53:05.219013", 
+    "executedTest": 1692, 
+    "failedTest": 2, 
+    "failedTestDetails": [
+        {
+            "class": "org.apache.commons.math.stat.FrequencyTest", 
+            "method": "testAddNonComparable"
+        }, 
+        {
+            "class": "junit.framework.TestSuite$1", 
+            "method": "warning"
+        }
+    ], 
+    "modifiedLines": [
+        {
+            "class": "a.org.apache.commons.math.stat.Frequency", 
+            "line": 110
+        }, 
+        {
+            "class": "a.org.apache.commons.math.stat.Frequency", 
+            "line": 111
+        }, 
+        {
+            "class": "a.org.apache.commons.math.stat.Frequency", 
+            "line": 112
+        }, 
+        {
+            "class": "a.org.apache.commons.math.stat.Frequency", 
+            "line": 113
+        }, 
+        {
+            "class": "a.org.apache.commons.math.stat.Frequency", 
+            "line": 114
+        }
+    ], 
+    "nbsuspicious": 1, 
+    "node": "graphene-29.nancy.grid5000.fr\n", 
+    "successfulTest": 1690, 
+    "suspicious": {
+        "org.apache.commons.math.stat.Frequency:110": {
+            "class": "org.apache.commons.math.stat.Frequency", 
+            "ef": 1, 
+            "ep": 1, 
+            "line": 110, 
+            "metrics": {
+                "ample": 0.49940828402366866, 
+                "gzoltar": 0.5, 
+                "ochiai": 0.5, 
+                "tarantula": 0.9988179669030733
+            }, 
+            "nf": 1, 
+            "np": 1689, 
+            "rank": {
+                "ample": 1, 
+                "ochiai": 1, 
+                "tarantula": 1
+            }
+        }
+    }
+}

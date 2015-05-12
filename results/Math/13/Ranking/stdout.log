@@ -1,0 +1,74 @@
+export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";cp -r /home/tdurieux/projects/math/math_13 /tmp/math_13_Ranking;cd /tmp/math_13_Ranking;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
+cd /tmp/math_13_Ranking;cp -r /home/tdurieux/nopol/z3-x64-debian-7.7/bin/ lib/z3;time java -cp /home/tdurieux/nopol/nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar fr.inria.lille.repair.Main --mode ranking --type condition --oracle angelic --synthesis smt --solver z3 --solver-path lib/z3/z3 --complianceLevel 5 --source src/main/java/ --classpath target/classes/:target/test-classes/:lib/commons-discovery-0.5.jar:/home/tdurieux/nopol/nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar;rm -rf /tmp/math_13_Ranking;
+
+/************************/
+Executed tests:   4534
+Successful tests: 4533
+Failed tests:     1
+
+org.apache.commons.math3.optimization.fitting.PolynomialFitterTest#testLargeSample
+java.lang.OutOfMemoryError: Java heap space
+	at org.apache.commons.math3.linear.Array2DRowRealMatrix.<init>(Array2DRowRealMatrix.java:62)
+	at org.apache.commons.math3.optimization.Weight.<init>(Weight.java:45)
+	at org.apache.commons.math3.optimization.general.AbstractLeastSquaresOptimizer.optimize(AbstractLeastSquaresOptimizer.java:423)
+	at org.apache.commons.math3.optimization.general.AbstractLeastSquaresOptimizer.optimize(AbstractLeastSquaresOptimizer.java:62)
+	at org.apache.commons.math3.optimization.fitting.CurveFitter.fit(CurveFitter.java:189)
+	at org.apache.commons.math3.optimization.fitting.CurveFitter.fit(CurveFitter.java:153)
+	at org.apache.commons.math3.optimization.fitting.PolynomialFitter.fit(PolynomialFitter.java:110)
+	at org.apache.commons.math3.optimization.fitting.PolynomialFitterTest.testLargeSample(PolynomialFitterTest.java:241)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at com.gzoltar.core.instr.testing.junit.JUnitRunner.run(JUnitRunner.java:47)
+	at com.gzoltar.core.instr.Runner.main(Runner.java:46)
+
+
+/************************/
+/* Suspicious statement */
+/************************/
+org.apache.commons.math3.optimization.fitting.PolynomialFitter:110 -> 0.4082482904638631 (ep: 5, ef: 1, np: 4528, nf: 0)
+org.apache.commons.math3.optimization.fitting.CurveFitter:153 -> 0.2182178902359924 (ep: 20, ef: 1, np: 4513, nf: 0)
+org.apache.commons.math3.optimization.fitting.WeightedObservedPoint:59 -> 0.20412414523193154 (ep: 23, ef: 1, np: 4510, nf: 0)
+org.apache.commons.math3.optimization.fitting.CurveFitter:176 -> 0.20412414523193154 (ep: 23, ef: 1, np: 4510, nf: 0)
+org.apache.commons.math3.optimization.fitting.CurveFitter:177 -> 0.20412414523193154 (ep: 23, ef: 1, np: 4510, nf: 0)
+org.apache.commons.math3.optimization.fitting.CurveFitter:178 -> 0.20412414523193154 (ep: 23, ef: 1, np: 4510, nf: 0)
+org.apache.commons.math3.optimization.fitting.CurveFitter:179 -> 0.20412414523193154 (ep: 23, ef: 1, np: 4510, nf: 0)
+org.apache.commons.math3.optimization.fitting.CurveFitter:180 -> 0.20412414523193154 (ep: 23, ef: 1, np: 4510, nf: 0)
+org.apache.commons.math3.optimization.fitting.CurveFitter:181 -> 0.20412414523193154 (ep: 23, ef: 1, np: 4510, nf: 0)
+org.apache.commons.math3.optimization.fitting.CurveFitter:182 -> 0.20412414523193154 (ep: 23, ef: 1, np: 4510, nf: 0)
+org.apache.commons.math3.optimization.fitting.CurveFitter:183 -> 0.20412414523193154 (ep: 23, ef: 1, np: 4510, nf: 0)
+org.apache.commons.math3.optimization.fitting.CurveFitter:187 -> 0.20412414523193154 (ep: 23, ef: 1, np: 4510, nf: 0)
+org.apache.commons.math3.optimization.fitting.CurveFitter:189 -> 0.20412414523193154 (ep: 23, ef: 1, np: 4510, nf: 0)
+org.apache.commons.math3.optimization.general.AbstractLeastSquaresOptimizer:423 -> 0.20412414523193154 (ep: 23, ef: 1, np: 4510, nf: 0)
+org.apache.commons.math3.optimization.general.AbstractLeastSquaresOptimizer:62 -> 0.20412414523193154 (ep: 23, ef: 1, np: 4510, nf: 0)
+org.apache.commons.math3.optimization.fitting.WeightedObservedPoint:73 -> 0.2 (ep: 24, ef: 1, np: 4509, nf: 0)
+org.apache.commons.math3.optimization.fitting.CurveFitter:109 -> 0.2 (ep: 24, ef: 1, np: 4509, nf: 0)
+org.apache.commons.math3.optimization.fitting.CurveFitter:110 -> 0.2 (ep: 24, ef: 1, np: 4509, nf: 0)
+org.apache.commons.math3.analysis.polynomials.PolynomialFunction:94 -> 0.13608276348795434 (ep: 53, ef: 1, np: 4480, nf: 0)
+org.apache.commons.math3.analysis.polynomials.PolynomialFunction:130 -> 0.12909944487358055 (ep: 59, ef: 1, np: 4474, nf: 0)
+org.apache.commons.math3.analysis.polynomials.PolynomialFunction:131 -> 0.12909944487358055 (ep: 59, ef: 1, np: 4474, nf: 0)
+org.apache.commons.math3.analysis.polynomials.PolynomialFunction:132 -> 0.12909944487358055 (ep: 59, ef: 1, np: 4474, nf: 0)
+org.apache.commons.math3.analysis.polynomials.PolynomialFunction:135 -> 0.12909944487358055 (ep: 59, ef: 1, np: 4474, nf: 0)
+org.apache.commons.math3.analysis.polynomials.PolynomialFunction:136 -> 0.12909944487358055 (ep: 59, ef: 1, np: 4474, nf: 0)
+org.apache.commons.math3.analysis.polynomials.PolynomialFunction:139 -> 0.12909944487358055 (ep: 59, ef: 1, np: 4474, nf: 0)
+org.apache.commons.math3.analysis.FunctionUtils:727 -> 0.105999788000636 (ep: 88, ef: 1, np: 4445, nf: 0)
+org.apache.commons.math3.util.MathUtils:267 -> 0.031234752377721213 (ep: 1024, ef: 1, np: 3509, nf: 0)
+org.apache.commons.math3.util.MathUtils:264 -> 0.031189143077590267 (ep: 1027, ef: 1, np: 3506, nf: 0)
+
+

@@ -1,9 +1,0 @@
-1191,1192c1191,1193
-<             EntityCollection entities = plotState.getOwner()
-<                     .getEntityCollection();
----
->             ChartRenderingInfo owner = plotState.getOwner();
->             if (owner != null) {
->                 EntityCollection entities = owner.getEntityCollection();
-1197a1199
->         }

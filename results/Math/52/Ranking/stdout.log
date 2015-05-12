@@ -1,0 +1,82 @@
+export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";cp -r /home/tdurieux/projects/math/math_52 /tmp/math_52_Ranking;cd /tmp/math_52_Ranking;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
+cd /tmp/math_52_Ranking;cp -r /home/tdurieux/nopol/z3-x64-debian-7.7/bin/ lib/z3;time java -cp /home/tdurieux/nopol/nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar fr.inria.lille.repair.Main --mode ranking --type condition --oracle angelic --synthesis smt --solver z3 --solver-path lib/z3/z3 --complianceLevel 5 --source src/main/java/ --classpath target/classes/:target/test-classes/:lib/commons-discovery-0.5.jar:/home/tdurieux/nopol/nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar;rm -rf /tmp/math_52_Ranking;
+
+/************************/
+Executed tests:   2918
+Successful tests: 2917
+Failed tests:     1
+
+org.apache.commons.math.geometry.euclidean.threed.RotationTest#testIssue639
+java.lang.AssertionError: expected:<0.6228370359608201> but was:<NaN>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:494)
+	at org.junit.Assert.assertEquals(Assert.java:592)
+	at org.apache.commons.math.geometry.euclidean.threed.RotationTest.testIssue639(RotationTest.java:488)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at com.gzoltar.core.instr.testing.junit.JUnitRunner.run(JUnitRunner.java:47)
+	at com.gzoltar.core.instr.Runner.main(Runner.java:46)
+
+
+/************************/
+/* Suspicious statement */
+/************************/
+org.apache.commons.math.geometry.euclidean.threed.Rotation:523 -> 0.7071067811865475 (ep: 1, ef: 1, np: 2916, nf: 0)
+org.apache.commons.math.geometry.euclidean.threed.Vector3D:485 -> 0.2 (ep: 24, ef: 1, np: 2893, nf: 0)
+org.apache.commons.math.geometry.euclidean.threed.Vector3D:428 -> 0.18569533817705186 (ep: 28, ef: 1, np: 2889, nf: 0)
+org.apache.commons.math.geometry.euclidean.threed.Vector3D:429 -> 0.18569533817705186 (ep: 28, ef: 1, np: 2889, nf: 0)
+org.apache.commons.math.util.MathUtils:2448 -> 0.18257418583505536 (ep: 29, ef: 1, np: 2888, nf: 0)
+org.apache.commons.math.util.MathUtils:2449 -> 0.18257418583505536 (ep: 29, ef: 1, np: 2888, nf: 0)
+org.apache.commons.math.util.MathUtils:2450 -> 0.18257418583505536 (ep: 29, ef: 1, np: 2888, nf: 0)
+org.apache.commons.math.util.MathUtils:2451 -> 0.18257418583505536 (ep: 29, ef: 1, np: 2888, nf: 0)
+org.apache.commons.math.util.MathUtils:2452 -> 0.18257418583505536 (ep: 29, ef: 1, np: 2888, nf: 0)
+org.apache.commons.math.util.MathUtils:2453 -> 0.18257418583505536 (ep: 29, ef: 1, np: 2888, nf: 0)
+org.apache.commons.math.util.MathUtils:2456 -> 0.18257418583505536 (ep: 29, ef: 1, np: 2888, nf: 0)
+org.apache.commons.math.util.MathUtils:2457 -> 0.18257418583505536 (ep: 29, ef: 1, np: 2888, nf: 0)
+org.apache.commons.math.util.MathUtils:2460 -> 0.18257418583505536 (ep: 29, ef: 1, np: 2888, nf: 0)
+org.apache.commons.math.util.MathUtils:2461 -> 0.18257418583505536 (ep: 29, ef: 1, np: 2888, nf: 0)
+org.apache.commons.math.util.MathUtils:2462 -> 0.18257418583505536 (ep: 29, ef: 1, np: 2888, nf: 0)
+org.apache.commons.math.util.MathUtils:2463 -> 0.18257418583505536 (ep: 29, ef: 1, np: 2888, nf: 0)
+org.apache.commons.math.util.MathUtils:2464 -> 0.18257418583505536 (ep: 29, ef: 1, np: 2888, nf: 0)
+org.apache.commons.math.util.MathUtils:2465 -> 0.18257418583505536 (ep: 29, ef: 1, np: 2888, nf: 0)
+org.apache.commons.math.util.MathUtils:2468 -> 0.18257418583505536 (ep: 29, ef: 1, np: 2888, nf: 0)
+org.apache.commons.math.util.MathUtils:2469 -> 0.18257418583505536 (ep: 29, ef: 1, np: 2888, nf: 0)
+org.apache.commons.math.util.MathUtils:2472 -> 0.18257418583505536 (ep: 29, ef: 1, np: 2888, nf: 0)
+org.apache.commons.math.util.MathUtils:2473 -> 0.18257418583505536 (ep: 29, ef: 1, np: 2888, nf: 0)
+org.apache.commons.math.util.MathUtils:2474 -> 0.18257418583505536 (ep: 29, ef: 1, np: 2888, nf: 0)
+org.apache.commons.math.util.MathUtils:2475 -> 0.18257418583505536 (ep: 29, ef: 1, np: 2888, nf: 0)
+org.apache.commons.math.util.MathUtils:2476 -> 0.18257418583505536 (ep: 29, ef: 1, np: 2888, nf: 0)
+org.apache.commons.math.util.MathUtils:2477 -> 0.18257418583505536 (ep: 29, ef: 1, np: 2888, nf: 0)
+org.apache.commons.math.util.MathUtils:2480 -> 0.18257418583505536 (ep: 29, ef: 1, np: 2888, nf: 0)
+org.apache.commons.math.util.MathUtils:2481 -> 0.18257418583505536 (ep: 29, ef: 1, np: 2888, nf: 0)
+org.apache.commons.math.util.MathUtils:2484 -> 0.18257418583505536 (ep: 29, ef: 1, np: 2888, nf: 0)
+org.apache.commons.math.util.MathUtils:2485 -> 0.18257418583505536 (ep: 29, ef: 1, np: 2888, nf: 0)
+org.apache.commons.math.util.MathUtils:2486 -> 0.18257418583505536 (ep: 29, ef: 1, np: 2888, nf: 0)
+org.apache.commons.math.util.MathUtils:2489 -> 0.18257418583505536 (ep: 29, ef: 1, np: 2888, nf: 0)
+org.apache.commons.math.util.MathUtils:2490 -> 0.18257418583505536 (ep: 29, ef: 1, np: 2888, nf: 0)
+org.apache.commons.math.util.MathUtils:2491 -> 0.18257418583505536 (ep: 29, ef: 1, np: 2888, nf: 0)
+org.apache.commons.math.util.MathUtils:2495 -> 0.18257418583505536 (ep: 29, ef: 1, np: 2888, nf: 0)
+org.apache.commons.math.geometry.euclidean.threed.Vector3D:181 -> 0.14002800840280097 (ep: 50, ef: 1, np: 2867, nf: 0)
+org.apache.commons.math.geometry.euclidean.threed.Vector3D:189 -> 0.14002800840280097 (ep: 50, ef: 1, np: 2867, nf: 0)
+org.apache.commons.math.geometry.euclidean.threed.Vector3D:197 -> 0.14002800840280097 (ep: 50, ef: 1, np: 2867, nf: 0)
+org.apache.commons.math.util.FastMath:302 -> 0.03388370737858486 (ep: 870, ef: 1, np: 2047, nf: 0)
+
+

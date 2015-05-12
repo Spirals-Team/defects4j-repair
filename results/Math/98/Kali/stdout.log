@@ -1,0 +1,29 @@
+export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";cp -r /home/tdurieux/projects/math/math_98 /tmp/math_98_Kali;cd /tmp/math_98_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
+/home/tdurieux/results/Math/98/Kali/result
+cd /tmp/math_98_Kali;time java -cp /home/tdurieux/astor/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.math.linear.BigMatrixImplTest:org.apache.commons.math.linear.RealMatrixImplTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 6 -maxgen 1000000 -population 1 -srcjavafolder src/java/ -srctestfolder src/test/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;rm -rf /tmp/math_98_Kali;
+ NOT Found solution
+Number solutions:0
+All variants:
+Time Evolution(ms): 6651
+
+----stats: 
+
+spaces: [0]: []
+time val1 [11]: [245, 243, 241, 240, 241, 241, 242, 244, 242, 243, 243]
+time val2 [0]: []
+#gen: 20
+#patches: 0
+#RightCompilation: 10
+#WrongCompilation: 9
+#FailingTestCaseExecution: 11
+#RegressionTestExecution: 0
+#TestcasesExecutedval1: 627
+#TestcasesExecutedval2: 0
+#FailingTestCase: 57
+#RegressionTestCases: 0
+#OfAppliedOp: 19
+#NotAppliedOp: 0
+#InmutatedGen: 0
+#unfinishValidation: 0
+Time Total(ms): 26649
+

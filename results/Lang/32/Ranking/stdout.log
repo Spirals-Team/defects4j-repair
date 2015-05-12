@@ -1,0 +1,96 @@
+export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";cp -r /home/tdurieux/projects/lang/lang_32 /tmp/lang_32_Ranking;cd /tmp/lang_32_Ranking;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Lang/lib/* lib/;find . -type f -name "package-info.java" -delete;
+cd /tmp/lang_32_Ranking;cp -r /home/tdurieux/nopol/z3-x64-debian-7.7/bin/ lib/z3;time java -cp /home/tdurieux/nopol/nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar fr.inria.lille.repair.Main --mode ranking --type condition --oracle angelic --synthesis smt --solver z3 --solver-path lib/z3/z3 --complianceLevel 5 --source src/main/java/ --classpath target/classes/:target/test-classes/:lib/asm.jar:lib/cglib.jar:lib/commons-io.jar:lib/easymock.jar:/home/tdurieux/nopol/nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar;echo "
+
+Node: `hostname`
+";echo "
+Date: `date`
+";rm -rf /tmp/lang_32_Ranking;
+
+/************************/
+Executed tests:   1670
+Successful tests: 1669
+Failed tests:     1
+
+org.apache.commons.lang3.builder.HashCodeBuilderTest#testReflectionObjectCycle
+junit.framework.AssertionFailedError: Expected: <null> but was: []
+	at junit.framework.Assert.fail(Assert.java:57)
+	at junit.framework.Assert.assertTrue(Assert.java:22)
+	at junit.framework.Assert.assertNull(Assert.java:277)
+	at junit.framework.Assert.assertNull(Assert.java:268)
+	at junit.framework.TestCase.assertNull(TestCase.java:438)
+	at org.apache.commons.lang3.builder.HashCodeBuilderTest.testReflectionObjectCycle(HashCodeBuilderTest.java:524)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at com.gzoltar.core.instr.testing.junit.JUnitRunner.run(JUnitRunner.java:47)
+	at com.gzoltar.core.instr.Runner.main(Runner.java:46)
+
+
+/************************/
+/* Suspicious statement */
+/************************/
+org.apache.commons.lang3.builder.HashCodeBuilder$1:109 -> 1.0 (ep: 0, ef: 1, np: 1669, nf: 0)
+org.apache.commons.lang3.builder.HashCodeBuilder$1:104 -> 1.0 (ep: 0, ef: 1, np: 1669, nf: 0)
+org.apache.commons.lang3.builder.HashCodeBuilder:176 -> 1.0 (ep: 0, ef: 1, np: 1669, nf: 0)
+org.apache.commons.lang3.builder.HashCodeBuilder:402 -> 0.5 (ep: 3, ef: 1, np: 1666, nf: 0)
+org.apache.commons.lang3.builder.IDKey:55 -> 0.35355339059327373 (ep: 7, ef: 1, np: 1662, nf: 0)
+org.apache.commons.lang3.builder.IDKey:65 -> 0.35355339059327373 (ep: 7, ef: 1, np: 1662, nf: 0)
+org.apache.commons.lang3.builder.IDKey:68 -> 0.35355339059327373 (ep: 7, ef: 1, np: 1662, nf: 0)
+org.apache.commons.lang3.builder.IDKey:69 -> 0.35355339059327373 (ep: 7, ef: 1, np: 1662, nf: 0)
+org.apache.commons.lang3.builder.IDKey:73 -> 0.35355339059327373 (ep: 7, ef: 1, np: 1662, nf: 0)
+org.apache.commons.lang3.builder.HashCodeBuilder:139 -> 0.35355339059327373 (ep: 7, ef: 1, np: 1662, nf: 0)
+org.apache.commons.lang3.builder.HashCodeBuilder:154 -> 0.35355339059327373 (ep: 7, ef: 1, np: 1662, nf: 0)
+org.apache.commons.lang3.builder.HashCodeBuilder:175 -> 0.35355339059327373 (ep: 7, ef: 1, np: 1662, nf: 0)
+org.apache.commons.lang3.builder.HashCodeBuilder:179 -> 0.35355339059327373 (ep: 7, ef: 1, np: 1662, nf: 0)
+org.apache.commons.lang3.builder.HashCodeBuilder:180 -> 0.35355339059327373 (ep: 7, ef: 1, np: 1662, nf: 0)
+org.apache.commons.lang3.builder.HashCodeBuilder:181 -> 0.35355339059327373 (ep: 7, ef: 1, np: 1662, nf: 0)
+org.apache.commons.lang3.builder.HashCodeBuilder:182 -> 0.35355339059327373 (ep: 7, ef: 1, np: 1662, nf: 0)
+org.apache.commons.lang3.builder.HashCodeBuilder:183 -> 0.35355339059327373 (ep: 7, ef: 1, np: 1662, nf: 0)
+org.apache.commons.lang3.builder.HashCodeBuilder:188 -> 0.35355339059327373 (ep: 7, ef: 1, np: 1662, nf: 0)
+org.apache.commons.lang3.builder.HashCodeBuilder:189 -> 0.35355339059327373 (ep: 7, ef: 1, np: 1662, nf: 0)
+org.apache.commons.lang3.builder.HashCodeBuilder:194 -> 0.35355339059327373 (ep: 7, ef: 1, np: 1662, nf: 0)
+org.apache.commons.lang3.builder.HashCodeBuilder:198 -> 0.35355339059327373 (ep: 7, ef: 1, np: 1662, nf: 0)
+org.apache.commons.lang3.builder.HashCodeBuilder:199 -> 0.35355339059327373 (ep: 7, ef: 1, np: 1662, nf: 0)
+org.apache.commons.lang3.builder.HashCodeBuilder:200 -> 0.35355339059327373 (ep: 7, ef: 1, np: 1662, nf: 0)
+org.apache.commons.lang3.builder.HashCodeBuilder:362 -> 0.35355339059327373 (ep: 7, ef: 1, np: 1662, nf: 0)
+org.apache.commons.lang3.builder.HashCodeBuilder:363 -> 0.35355339059327373 (ep: 7, ef: 1, np: 1662, nf: 0)
+org.apache.commons.lang3.builder.HashCodeBuilder:364 -> 0.35355339059327373 (ep: 7, ef: 1, np: 1662, nf: 0)
+org.apache.commons.lang3.builder.HashCodeBuilder:365 -> 0.35355339059327373 (ep: 7, ef: 1, np: 1662, nf: 0)
+org.apache.commons.lang3.builder.HashCodeBuilder:366 -> 0.35355339059327373 (ep: 7, ef: 1, np: 1662, nf: 0)
+org.apache.commons.lang3.builder.HashCodeBuilder:368 -> 0.35355339059327373 (ep: 7, ef: 1, np: 1662, nf: 0)
+org.apache.commons.lang3.builder.HashCodeBuilder:524 -> 0.35355339059327373 (ep: 7, ef: 1, np: 1662, nf: 0)
+org.apache.commons.lang3.builder.HashCodeBuilder:525 -> 0.35355339059327373 (ep: 7, ef: 1, np: 1662, nf: 0)
+org.apache.commons.lang3.builder.HashCodeBuilder:540 -> 0.35355339059327373 (ep: 7, ef: 1, np: 1662, nf: 0)
+org.apache.commons.lang3.builder.HashCodeBuilder:541 -> 0.35355339059327373 (ep: 7, ef: 1, np: 1662, nf: 0)
+org.apache.commons.lang3.builder.HashCodeBuilder:361 -> 0.2886751345948129 (ep: 11, ef: 1, np: 1658, nf: 0)
+org.apache.commons.lang3.builder.HashCodeBuilder:885 -> 0.2773500981126146 (ep: 12, ef: 1, np: 1657, nf: 0)
+org.apache.commons.lang3.builder.HashCodeBuilder:358 -> 0.2773500981126146 (ep: 12, ef: 1, np: 1657, nf: 0)
+org.apache.commons.lang3.ArrayUtils:1646 -> 0.22941573387056174 (ep: 18, ef: 1, np: 1651, nf: 0)
+org.apache.commons.lang3.builder.HashCodeBuilder:857 -> 0.21320071635561041 (ep: 21, ef: 1, np: 1648, nf: 0)
+org.apache.commons.lang3.builder.HashCodeBuilder:861 -> 0.21320071635561041 (ep: 21, ef: 1, np: 1648, nf: 0)
+org.apache.commons.lang3.builder.HashCodeBuilder:888 -> 0.21320071635561041 (ep: 21, ef: 1, np: 1648, nf: 0)
+org.apache.commons.lang3.ArrayUtils:1730 -> 0.21320071635561041 (ep: 21, ef: 1, np: 1648, nf: 0)
+org.apache.commons.lang3.ArrayUtils:1627 -> 0.20412414523193154 (ep: 23, ef: 1, np: 1646, nf: 0)
+org.apache.commons.lang3.ArrayUtils:1645 -> 0.2 (ep: 24, ef: 1, np: 1645, nf: 0)
+org.apache.commons.lang3.builder.HashCodeBuilder:968 -> 0.16222142113076254 (ep: 37, ef: 1, np: 1632, nf: 0)
+
+
+
+Node: graphene-83.nancy.grid5000.fr
+
+
+Date: Mon May 11 08:00:16 CEST 2015
+
+

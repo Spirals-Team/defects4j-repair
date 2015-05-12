@@ -1,0 +1,2043 @@
+{
+    "date": "2015-05-11T08:05:06.140712", 
+    "executedTest": 4398, 
+    "failedTest": 4, 
+    "failedTestDetails": [
+        {
+            "class": "org.jfree.data.general.junit.DatasetUtilitiesTests", 
+            "method": "testBug2849731_2"
+        }, 
+        {
+            "class": "org.jfree.data.general.junit.DatasetUtilitiesTests", 
+            "method": "testBug2849731_3"
+        }, 
+        {
+            "class": "org.jfree.data.general.junit.DatasetUtilitiesTests", 
+            "method": "testBug2849731_2"
+        }, 
+        {
+            "class": "org.jfree.data.general.junit.DatasetUtilitiesTests", 
+            "method": "testBug2849731_3"
+        }
+    ], 
+    "modifiedLines": [
+        {
+            "class": "org.jfree.data.general.DatasetUtilities", 
+            "line": 755
+        }, 
+        {
+            "class": "org.jfree.data.general.DatasetUtilities", 
+            "line": 758
+        }, 
+        {
+            "class": "org.jfree.data.general.DatasetUtilities", 
+            "line": 759
+        }, 
+        {
+            "class": "org.jfree.data.general.DatasetUtilities", 
+            "line": 760
+        }, 
+        {
+            "class": "org.jfree.data.general.DatasetUtilities", 
+            "line": 761
+        }, 
+        {
+            "class": "org.jfree.data.general.DatasetUtilities", 
+            "line": 764
+        }, 
+        {
+            "class": "org.jfree.data.general.DatasetUtilities", 
+            "line": 767
+        }, 
+        {
+            "class": "org.jfree.data.general.DatasetUtilities", 
+            "line": 1249
+        }, 
+        {
+            "class": "org.jfree.data.general.DatasetUtilities", 
+            "line": 1252
+        }, 
+        {
+            "class": "org.jfree.data.general.DatasetUtilities", 
+            "line": 1253
+        }, 
+        {
+            "class": "org.jfree.data.general.DatasetUtilities", 
+            "line": 1254
+        }, 
+        {
+            "class": "org.jfree.data.general.DatasetUtilities", 
+            "line": 1255
+        }, 
+        {
+            "class": "org.jfree.data.general.DatasetUtilities", 
+            "line": 1258
+        }, 
+        {
+            "class": "org.jfree.data.general.DatasetUtilities", 
+            "line": 1261
+        }
+    ], 
+    "nbsuspicious": 103, 
+    "node": "graphene-83.nancy.grid5000.fr\n", 
+    "successfulTest": 4394, 
+    "suspicious": {
+        "org.jfree.data.ComparableObjectItem:95": {
+            "class": "org.jfree.data.ComparableObjectItem", 
+            "ef": 4, 
+            "ep": 36, 
+            "line": 95, 
+            "metrics": {
+                "ample": 0.9918070095584889, 
+                "gzoltar": 0.31622776601683794, 
+                "ochiai": 0.31622776601683794, 
+                "tarantula": 0.9918735891647855
+            }, 
+            "nf": 0, 
+            "np": 4358, 
+            "rank": {
+                "ample": 13, 
+                "ochiai": 48, 
+                "tarantula": 60
+            }
+        }, 
+        "org.jfree.data.ComparableObjectSeries:131": {
+            "class": "org.jfree.data.ComparableObjectSeries", 
+            "ef": 4, 
+            "ep": 160, 
+            "line": 131, 
+            "metrics": {
+                "ample": 0.9635867091488394, 
+                "gzoltar": 0.15617376188860607, 
+                "ochiai": 0.15617376188860607, 
+                "tarantula": 0.9648660518225735
+            }, 
+            "nf": 0, 
+            "np": 4234, 
+            "rank": {
+                "ample": 25, 
+                "ochiai": 90, 
+                "tarantula": 90
+            }
+        }, 
+        "org.jfree.data.ComparableObjectSeries:216": {
+            "class": "org.jfree.data.ComparableObjectSeries", 
+            "ef": 4, 
+            "ep": 158, 
+            "line": 216, 
+            "metrics": {
+                "ample": 0.9640418752844788, 
+                "gzoltar": 0.15713484026367722, 
+                "ochiai": 0.15713484026367722, 
+                "tarantula": 0.9652899824253075
+            }, 
+            "nf": 0, 
+            "np": 4236, 
+            "rank": {
+                "ample": 22, 
+                "ochiai": 84, 
+                "tarantula": 87
+            }
+        }, 
+        "org.jfree.data.ComparableObjectSeries:220": {
+            "class": "org.jfree.data.ComparableObjectSeries", 
+            "ef": 4, 
+            "ep": 158, 
+            "line": 220, 
+            "metrics": {
+                "ample": 0.9640418752844788, 
+                "gzoltar": 0.15713484026367722, 
+                "ochiai": 0.15713484026367722, 
+                "tarantula": 0.9652899824253075
+            }, 
+            "nf": 0, 
+            "np": 4236, 
+            "rank": {
+                "ample": 21, 
+                "ochiai": 85, 
+                "tarantula": 86
+            }
+        }, 
+        "org.jfree.data.ComparableObjectSeries:221": {
+            "class": "org.jfree.data.ComparableObjectSeries", 
+            "ef": 4, 
+            "ep": 110, 
+            "line": 221, 
+            "metrics": {
+                "ample": 0.9749658625398271, 
+                "gzoltar": 0.1873171623163388, 
+                "ochiai": 0.1873171623163388, 
+                "tarantula": 0.9755772646536411
+            }, 
+            "nf": 0, 
+            "np": 4284, 
+            "rank": {
+                "ample": 15, 
+                "ochiai": 69, 
+                "tarantula": 80
+            }
+        }, 
+        "org.jfree.data.ComparableObjectSeries:222": {
+            "class": "org.jfree.data.ComparableObjectSeries", 
+            "ef": 4, 
+            "ep": 110, 
+            "line": 222, 
+            "metrics": {
+                "ample": 0.9749658625398271, 
+                "gzoltar": 0.1873171623163388, 
+                "ochiai": 0.1873171623163388, 
+                "tarantula": 0.9755772646536411
+            }, 
+            "nf": 0, 
+            "np": 4284, 
+            "rank": {
+                "ample": 17, 
+                "ochiai": 70, 
+                "tarantula": 82
+            }
+        }, 
+        "org.jfree.data.ComparableObjectSeries:223": {
+            "class": "org.jfree.data.ComparableObjectSeries", 
+            "ef": 4, 
+            "ep": 110, 
+            "line": 223, 
+            "metrics": {
+                "ample": 0.9749658625398271, 
+                "gzoltar": 0.1873171623163388, 
+                "ochiai": 0.1873171623163388, 
+                "tarantula": 0.9755772646536411
+            }, 
+            "nf": 0, 
+            "np": 4284, 
+            "rank": {
+                "ample": 16, 
+                "ochiai": 71, 
+                "tarantula": 81
+            }
+        }, 
+        "org.jfree.data.ComparableObjectSeries:244": {
+            "class": "org.jfree.data.ComparableObjectSeries", 
+            "ef": 4, 
+            "ep": 110, 
+            "line": 244, 
+            "metrics": {
+                "ample": 0.9749658625398271, 
+                "gzoltar": 0.1873171623163388, 
+                "ochiai": 0.1873171623163388, 
+                "tarantula": 0.9755772646536411
+            }, 
+            "nf": 0, 
+            "np": 4284, 
+            "rank": {
+                "ample": 18, 
+                "ochiai": 72, 
+                "tarantula": 83
+            }
+        }, 
+        "org.jfree.data.ComparableObjectSeries:256": {
+            "class": "org.jfree.data.ComparableObjectSeries", 
+            "ef": 4, 
+            "ep": 158, 
+            "line": 256, 
+            "metrics": {
+                "ample": 0.9640418752844788, 
+                "gzoltar": 0.15713484026367722, 
+                "ochiai": 0.15713484026367722, 
+                "tarantula": 0.9652899824253075
+            }, 
+            "nf": 0, 
+            "np": 4236, 
+            "rank": {
+                "ample": 19, 
+                "ochiai": 86, 
+                "tarantula": 84
+            }
+        }, 
+        "org.jfree.data.ComparableObjectSeries:259": {
+            "class": "org.jfree.data.ComparableObjectSeries", 
+            "ef": 4, 
+            "ep": 158, 
+            "line": 259, 
+            "metrics": {
+                "ample": 0.9640418752844788, 
+                "gzoltar": 0.15713484026367722, 
+                "ochiai": 0.15713484026367722, 
+                "tarantula": 0.9652899824253075
+            }, 
+            "nf": 0, 
+            "np": 4236, 
+            "rank": {
+                "ample": 20, 
+                "ochiai": 87, 
+                "tarantula": 85
+            }
+        }, 
+        "org.jfree.data.ComparableObjectSeries:260": {
+            "class": "org.jfree.data.ComparableObjectSeries", 
+            "ef": 4, 
+            "ep": 158, 
+            "line": 260, 
+            "metrics": {
+                "ample": 0.9640418752844788, 
+                "gzoltar": 0.15713484026367722, 
+                "ochiai": 0.15713484026367722, 
+                "tarantula": 0.9652899824253075
+            }, 
+            "nf": 0, 
+            "np": 4236, 
+            "rank": {
+                "ample": 23, 
+                "ochiai": 88, 
+                "tarantula": 88
+            }
+        }, 
+        "org.jfree.data.ComparableObjectSeries:262": {
+            "class": "org.jfree.data.ComparableObjectSeries", 
+            "ef": 4, 
+            "ep": 158, 
+            "line": 262, 
+            "metrics": {
+                "ample": 0.9640418752844788, 
+                "gzoltar": 0.15713484026367722, 
+                "ochiai": 0.15713484026367722, 
+                "tarantula": 0.9652899824253075
+            }, 
+            "nf": 0, 
+            "np": 4236, 
+            "rank": {
+                "ample": 24, 
+                "ochiai": 89, 
+                "tarantula": 89
+            }
+        }, 
+        "org.jfree.data.ComparableObjectSeries:333": {
+            "class": "org.jfree.data.ComparableObjectSeries", 
+            "ef": 4, 
+            "ep": 68, 
+            "line": 333, 
+            "metrics": {
+                "ample": 0.9845243513882567, 
+                "gzoltar": 0.23570226039551587, 
+                "ochiai": 0.23570226039551587, 
+                "tarantula": 0.9847601972209771
+            }, 
+            "nf": 0, 
+            "np": 4326, 
+            "rank": {
+                "ample": 14, 
+                "ochiai": 59, 
+                "tarantula": 79
+            }
+        }, 
+        "org.jfree.data.general.AbstractDataset:176": {
+            "class": "org.jfree.data.general.AbstractDataset", 
+            "ef": 4, 
+            "ep": 1046, 
+            "line": 176, 
+            "metrics": {
+                "ample": 0.7619481110605371, 
+                "gzoltar": 0.06172133998483677, 
+                "ochiai": 0.06172133998483677, 
+                "tarantula": 0.8077205882352941
+            }, 
+            "nf": 0, 
+            "np": 3348, 
+            "rank": {
+                "ample": 37, 
+                "ochiai": 99, 
+                "tarantula": 102
+            }
+        }, 
+        "org.jfree.data.general.AbstractDataset:177": {
+            "class": "org.jfree.data.general.AbstractDataset", 
+            "ef": 4, 
+            "ep": 1046, 
+            "line": 177, 
+            "metrics": {
+                "ample": 0.7619481110605371, 
+                "gzoltar": 0.06172133998483677, 
+                "ochiai": 0.06172133998483677, 
+                "tarantula": 0.8077205882352941
+            }, 
+            "nf": 0, 
+            "np": 3348, 
+            "rank": {
+                "ample": 38, 
+                "ochiai": 100, 
+                "tarantula": 103
+            }
+        }, 
+        "org.jfree.data.general.AbstractDataset:189": {
+            "class": "org.jfree.data.general.AbstractDataset", 
+            "ef": 4, 
+            "ep": 1046, 
+            "line": 189, 
+            "metrics": {
+                "ample": 0.7619481110605371, 
+                "gzoltar": 0.06172133998483677, 
+                "ochiai": 0.06172133998483677, 
+                "tarantula": 0.8077205882352941
+            }, 
+            "nf": 0, 
+            "np": 3348, 
+            "rank": {
+                "ample": 36, 
+                "ochiai": 101, 
+                "tarantula": 101
+            }
+        }, 
+        "org.jfree.data.general.AbstractDataset:190": {
+            "class": "org.jfree.data.general.AbstractDataset", 
+            "ef": 4, 
+            "ep": 1046, 
+            "line": 190, 
+            "metrics": {
+                "ample": 0.7619481110605371, 
+                "gzoltar": 0.06172133998483677, 
+                "ochiai": 0.06172133998483677, 
+                "tarantula": 0.8077205882352941
+            }, 
+            "nf": 0, 
+            "np": 3348, 
+            "rank": {
+                "ample": 35, 
+                "ochiai": 102, 
+                "tarantula": 100
+            }
+        }, 
+        "org.jfree.data.general.AbstractDataset:196": {
+            "class": "org.jfree.data.general.AbstractDataset", 
+            "ef": 4, 
+            "ep": 1046, 
+            "line": 196, 
+            "metrics": {
+                "ample": 0.7619481110605371, 
+                "gzoltar": 0.06172133998483677, 
+                "ochiai": 0.06172133998483677, 
+                "tarantula": 0.8077205882352941
+            }, 
+            "nf": 0, 
+            "np": 3348, 
+            "rank": {
+                "ample": 34, 
+                "ochiai": 103, 
+                "tarantula": 99
+            }
+        }, 
+        "org.jfree.data.general.DatasetUtilities:1213": {
+            "class": "org.jfree.data.general.DatasetUtilities", 
+            "ef": 2, 
+            "ep": 8, 
+            "line": 1213, 
+            "metrics": {
+                "ample": 0.498179335457442, 
+                "gzoltar": 0.31622776601683794, 
+                "ochiai": 0.31622776601683794, 
+                "tarantula": 0.9963718820861678
+            }, 
+            "nf": 2, 
+            "np": 4386, 
+            "rank": {
+                "ample": 73, 
+                "ochiai": 47, 
+                "tarantula": 45
+            }
+        }, 
+        "org.jfree.data.general.DatasetUtilities:1231": {
+            "class": "org.jfree.data.general.DatasetUtilities", 
+            "ef": 2, 
+            "ep": 32, 
+            "line": 1231, 
+            "metrics": {
+                "ample": 0.49271734182976784, 
+                "gzoltar": 0.17149858514250882, 
+                "ochiai": 0.17149858514250882, 
+                "tarantula": 0.9856437864513236
+            }, 
+            "nf": 2, 
+            "np": 4362, 
+            "rank": {
+                "ample": 100, 
+                "ochiai": 79, 
+                "tarantula": 75
+            }
+        }, 
+        "org.jfree.data.general.DatasetUtilities:1232": {
+            "class": "org.jfree.data.general.DatasetUtilities", 
+            "ef": 2, 
+            "ep": 32, 
+            "line": 1232, 
+            "metrics": {
+                "ample": 0.49271734182976784, 
+                "gzoltar": 0.17149858514250882, 
+                "ochiai": 0.17149858514250882, 
+                "tarantula": 0.9856437864513236
+            }, 
+            "nf": 2, 
+            "np": 4362, 
+            "rank": {
+                "ample": 101, 
+                "ochiai": 80, 
+                "tarantula": 76
+            }
+        }, 
+        "org.jfree.data.general.DatasetUtilities:1233": {
+            "class": "org.jfree.data.general.DatasetUtilities", 
+            "ef": 2, 
+            "ep": 32, 
+            "line": 1233, 
+            "metrics": {
+                "ample": 0.49271734182976784, 
+                "gzoltar": 0.17149858514250882, 
+                "ochiai": 0.17149858514250882, 
+                "tarantula": 0.9856437864513236
+            }, 
+            "nf": 2, 
+            "np": 4362, 
+            "rank": {
+                "ample": 102, 
+                "ochiai": 81, 
+                "tarantula": 77
+            }
+        }, 
+        "org.jfree.data.general.DatasetUtilities:1236": {
+            "class": "org.jfree.data.general.DatasetUtilities", 
+            "ef": 2, 
+            "ep": 32, 
+            "line": 1236, 
+            "metrics": {
+                "ample": 0.49271734182976784, 
+                "gzoltar": 0.17149858514250882, 
+                "ochiai": 0.17149858514250882, 
+                "tarantula": 0.9856437864513236
+            }, 
+            "nf": 2, 
+            "np": 4362, 
+            "rank": {
+                "ample": 103, 
+                "ochiai": 82, 
+                "tarantula": 78
+            }
+        }, 
+        "org.jfree.data.general.DatasetUtilities:1238": {
+            "class": "org.jfree.data.general.DatasetUtilities", 
+            "ef": 2, 
+            "ep": 14, 
+            "line": 1238, 
+            "metrics": {
+                "ample": 0.49681383705052345, 
+                "gzoltar": 0.25, 
+                "ochiai": 0.25, 
+                "tarantula": 0.9936680235187697
+            }, 
+            "nf": 2, 
+            "np": 4380, 
+            "rank": {
+                "ample": 82, 
+                "ochiai": 49, 
+                "tarantula": 54
+            }
+        }, 
+        "org.jfree.data.general.DatasetUtilities:1239": {
+            "class": "org.jfree.data.general.DatasetUtilities", 
+            "ef": 2, 
+            "ep": 14, 
+            "line": 1239, 
+            "metrics": {
+                "ample": 0.49681383705052345, 
+                "gzoltar": 0.25, 
+                "ochiai": 0.25, 
+                "tarantula": 0.9936680235187697
+            }, 
+            "nf": 2, 
+            "np": 4380, 
+            "rank": {
+                "ample": 83, 
+                "ochiai": 50, 
+                "tarantula": 55
+            }
+        }, 
+        "org.jfree.data.general.DatasetUtilities:1240": {
+            "class": "org.jfree.data.general.DatasetUtilities", 
+            "ef": 2, 
+            "ep": 14, 
+            "line": 1240, 
+            "metrics": {
+                "ample": 0.49681383705052345, 
+                "gzoltar": 0.25, 
+                "ochiai": 0.25, 
+                "tarantula": 0.9936680235187697
+            }, 
+            "nf": 2, 
+            "np": 4380, 
+            "rank": {
+                "ample": 79, 
+                "ochiai": 51, 
+                "tarantula": 51
+            }
+        }, 
+        "org.jfree.data.general.DatasetUtilities:1241": {
+            "class": "org.jfree.data.general.DatasetUtilities", 
+            "ef": 2, 
+            "ep": 14, 
+            "line": 1241, 
+            "metrics": {
+                "ample": 0.49681383705052345, 
+                "gzoltar": 0.25, 
+                "ochiai": 0.25, 
+                "tarantula": 0.9936680235187697
+            }, 
+            "nf": 2, 
+            "np": 4380, 
+            "rank": {
+                "ample": 78, 
+                "ochiai": 52, 
+                "tarantula": 50
+            }
+        }, 
+        "org.jfree.data.general.DatasetUtilities:1242": {
+            "class": "org.jfree.data.general.DatasetUtilities", 
+            "ef": 2, 
+            "ep": 14, 
+            "line": 1242, 
+            "metrics": {
+                "ample": 0.49681383705052345, 
+                "gzoltar": 0.25, 
+                "ochiai": 0.25, 
+                "tarantula": 0.9936680235187697
+            }, 
+            "nf": 2, 
+            "np": 4380, 
+            "rank": {
+                "ample": 81, 
+                "ochiai": 53, 
+                "tarantula": 53
+            }
+        }, 
+        "org.jfree.data.general.DatasetUtilities:1243": {
+            "class": "org.jfree.data.general.DatasetUtilities", 
+            "ef": 2, 
+            "ep": 14, 
+            "line": 1243, 
+            "metrics": {
+                "ample": 0.49681383705052345, 
+                "gzoltar": 0.25, 
+                "ochiai": 0.25, 
+                "tarantula": 0.9936680235187697
+            }, 
+            "nf": 2, 
+            "np": 4380, 
+            "rank": {
+                "ample": 80, 
+                "ochiai": 54, 
+                "tarantula": 52
+            }
+        }, 
+        "org.jfree.data.general.DatasetUtilities:1244": {
+            "class": "org.jfree.data.general.DatasetUtilities", 
+            "ef": 2, 
+            "ep": 14, 
+            "line": 1244, 
+            "metrics": {
+                "ample": 0.49681383705052345, 
+                "gzoltar": 0.25, 
+                "ochiai": 0.25, 
+                "tarantula": 0.9936680235187697
+            }, 
+            "nf": 2, 
+            "np": 4380, 
+            "rank": {
+                "ample": 76, 
+                "ochiai": 55, 
+                "tarantula": 48
+            }
+        }, 
+        "org.jfree.data.general.DatasetUtilities:1247": {
+            "class": "org.jfree.data.general.DatasetUtilities", 
+            "ef": 2, 
+            "ep": 14, 
+            "line": 1247, 
+            "metrics": {
+                "ample": 0.49681383705052345, 
+                "gzoltar": 0.25, 
+                "ochiai": 0.25, 
+                "tarantula": 0.9936680235187697
+            }, 
+            "nf": 2, 
+            "np": 4380, 
+            "rank": {
+                "ample": 77, 
+                "ochiai": 56, 
+                "tarantula": 49
+            }
+        }, 
+        "org.jfree.data.general.DatasetUtilities:1252": {
+            "class": "org.jfree.data.general.DatasetUtilities", 
+            "ef": 2, 
+            "ep": 14, 
+            "line": 1252, 
+            "metrics": {
+                "ample": 0.49681383705052345, 
+                "gzoltar": 0.25, 
+                "ochiai": 0.25, 
+                "tarantula": 0.9936680235187697
+            }, 
+            "nf": 2, 
+            "np": 4380, 
+            "rank": {
+                "ample": 75, 
+                "ochiai": 57, 
+                "tarantula": 47
+            }
+        }, 
+        "org.jfree.data.general.DatasetUtilities:1283": {
+            "class": "org.jfree.data.general.DatasetUtilities", 
+            "ef": 2, 
+            "ep": 32, 
+            "line": 1283, 
+            "metrics": {
+                "ample": 0.49271734182976784, 
+                "gzoltar": 0.17149858514250882, 
+                "ochiai": 0.17149858514250882, 
+                "tarantula": 0.9856437864513236
+            }, 
+            "nf": 2, 
+            "np": 4362, 
+            "rank": {
+                "ample": 99, 
+                "ochiai": 83, 
+                "tarantula": 74
+            }
+        }, 
+        "org.jfree.data.general.DatasetUtilities:1284": {
+            "class": "org.jfree.data.general.DatasetUtilities", 
+            "ef": 2, 
+            "ep": 14, 
+            "line": 1284, 
+            "metrics": {
+                "ample": 0.49681383705052345, 
+                "gzoltar": 0.25, 
+                "ochiai": 0.25, 
+                "tarantula": 0.9936680235187697
+            }, 
+            "nf": 2, 
+            "np": 4380, 
+            "rank": {
+                "ample": 74, 
+                "ochiai": 58, 
+                "tarantula": 46
+            }
+        }, 
+        "org.jfree.data.general.DatasetUtilities:726": {
+            "class": "org.jfree.data.general.DatasetUtilities", 
+            "ef": 2, 
+            "ep": 4, 
+            "line": 726, 
+            "metrics": {
+                "ample": 0.499089667728721, 
+                "gzoltar": 0.4082482904638631, 
+                "ochiai": 0.4082482904638631, 
+                "tarantula": 0.9981826442526125
+            }, 
+            "nf": 2, 
+            "np": 4390, 
+            "rank": {
+                "ample": 72, 
+                "ochiai": 27, 
+                "tarantula": 38
+            }
+        }, 
+        "org.jfree.data.general.DatasetUtilities:742": {
+            "class": "org.jfree.data.general.DatasetUtilities", 
+            "ef": 2, 
+            "ep": 30, 
+            "line": 742, 
+            "metrics": {
+                "ample": 0.49317250796540735, 
+                "gzoltar": 0.17677669529663687, 
+                "ochiai": 0.17677669529663687, 
+                "tarantula": 0.9865289627301301
+            }, 
+            "nf": 2, 
+            "np": 4364, 
+            "rank": {
+                "ample": 96, 
+                "ochiai": 73, 
+                "tarantula": 71
+            }
+        }, 
+        "org.jfree.data.general.DatasetUtilities:745": {
+            "class": "org.jfree.data.general.DatasetUtilities", 
+            "ef": 2, 
+            "ep": 30, 
+            "line": 745, 
+            "metrics": {
+                "ample": 0.49317250796540735, 
+                "gzoltar": 0.17677669529663687, 
+                "ochiai": 0.17677669529663687, 
+                "tarantula": 0.9865289627301301
+            }, 
+            "nf": 2, 
+            "np": 4364, 
+            "rank": {
+                "ample": 93, 
+                "ochiai": 74, 
+                "tarantula": 68
+            }
+        }, 
+        "org.jfree.data.general.DatasetUtilities:746": {
+            "class": "org.jfree.data.general.DatasetUtilities", 
+            "ef": 2, 
+            "ep": 30, 
+            "line": 746, 
+            "metrics": {
+                "ample": 0.49317250796540735, 
+                "gzoltar": 0.17677669529663687, 
+                "ochiai": 0.17677669529663687, 
+                "tarantula": 0.9865289627301301
+            }, 
+            "nf": 2, 
+            "np": 4364, 
+            "rank": {
+                "ample": 94, 
+                "ochiai": 75, 
+                "tarantula": 69
+            }
+        }, 
+        "org.jfree.data.general.DatasetUtilities:747": {
+            "class": "org.jfree.data.general.DatasetUtilities", 
+            "ef": 2, 
+            "ep": 30, 
+            "line": 747, 
+            "metrics": {
+                "ample": 0.49317250796540735, 
+                "gzoltar": 0.17677669529663687, 
+                "ochiai": 0.17677669529663687, 
+                "tarantula": 0.9865289627301301
+            }, 
+            "nf": 2, 
+            "np": 4364, 
+            "rank": {
+                "ample": 95, 
+                "ochiai": 76, 
+                "tarantula": 70
+            }
+        }, 
+        "org.jfree.data.general.DatasetUtilities:750": {
+            "class": "org.jfree.data.general.DatasetUtilities", 
+            "ef": 2, 
+            "ep": 30, 
+            "line": 750, 
+            "metrics": {
+                "ample": 0.49317250796540735, 
+                "gzoltar": 0.17677669529663687, 
+                "ochiai": 0.17677669529663687, 
+                "tarantula": 0.9865289627301301
+            }, 
+            "nf": 2, 
+            "np": 4364, 
+            "rank": {
+                "ample": 98, 
+                "ochiai": 77, 
+                "tarantula": 73
+            }
+        }, 
+        "org.jfree.data.general.DatasetUtilities:751": {
+            "class": "org.jfree.data.general.DatasetUtilities", 
+            "ef": 2, 
+            "ep": 18, 
+            "line": 751, 
+            "metrics": {
+                "ample": 0.49590350477924444, 
+                "gzoltar": 0.22360679774997896, 
+                "ochiai": 0.22360679774997896, 
+                "tarantula": 0.9918735891647855
+            }, 
+            "nf": 2, 
+            "np": 4376, 
+            "rank": {
+                "ample": 92, 
+                "ochiai": 60, 
+                "tarantula": 67
+            }
+        }, 
+        "org.jfree.data.general.DatasetUtilities:752": {
+            "class": "org.jfree.data.general.DatasetUtilities", 
+            "ef": 2, 
+            "ep": 18, 
+            "line": 752, 
+            "metrics": {
+                "ample": 0.49590350477924444, 
+                "gzoltar": 0.22360679774997896, 
+                "ochiai": 0.22360679774997896, 
+                "tarantula": 0.9918735891647855
+            }, 
+            "nf": 2, 
+            "np": 4376, 
+            "rank": {
+                "ample": 91, 
+                "ochiai": 61, 
+                "tarantula": 66
+            }
+        }, 
+        "org.jfree.data.general.DatasetUtilities:753": {
+            "class": "org.jfree.data.general.DatasetUtilities", 
+            "ef": 2, 
+            "ep": 18, 
+            "line": 753, 
+            "metrics": {
+                "ample": 0.49590350477924444, 
+                "gzoltar": 0.22360679774997896, 
+                "ochiai": 0.22360679774997896, 
+                "tarantula": 0.9918735891647855
+            }, 
+            "nf": 2, 
+            "np": 4376, 
+            "rank": {
+                "ample": 90, 
+                "ochiai": 62, 
+                "tarantula": 65
+            }
+        }, 
+        "org.jfree.data.general.DatasetUtilities:754": {
+            "class": "org.jfree.data.general.DatasetUtilities", 
+            "ef": 2, 
+            "ep": 18, 
+            "line": 754, 
+            "metrics": {
+                "ample": 0.49590350477924444, 
+                "gzoltar": 0.22360679774997896, 
+                "ochiai": 0.22360679774997896, 
+                "tarantula": 0.9918735891647855
+            }, 
+            "nf": 2, 
+            "np": 4376, 
+            "rank": {
+                "ample": 89, 
+                "ochiai": 63, 
+                "tarantula": 64
+            }
+        }, 
+        "org.jfree.data.general.DatasetUtilities:755": {
+            "class": "org.jfree.data.general.DatasetUtilities", 
+            "ef": 2, 
+            "ep": 18, 
+            "line": 755, 
+            "metrics": {
+                "ample": 0.49590350477924444, 
+                "gzoltar": 0.22360679774997896, 
+                "ochiai": 0.22360679774997896, 
+                "tarantula": 0.9918735891647855
+            }, 
+            "nf": 2, 
+            "np": 4376, 
+            "rank": {
+                "ample": 88, 
+                "ochiai": 64, 
+                "tarantula": 63
+            }
+        }, 
+        "org.jfree.data.general.DatasetUtilities:756": {
+            "class": "org.jfree.data.general.DatasetUtilities", 
+            "ef": 2, 
+            "ep": 18, 
+            "line": 756, 
+            "metrics": {
+                "ample": 0.49590350477924444, 
+                "gzoltar": 0.22360679774997896, 
+                "ochiai": 0.22360679774997896, 
+                "tarantula": 0.9918735891647855
+            }, 
+            "nf": 2, 
+            "np": 4376, 
+            "rank": {
+                "ample": 87, 
+                "ochiai": 65, 
+                "tarantula": 62
+            }
+        }, 
+        "org.jfree.data.general.DatasetUtilities:757": {
+            "class": "org.jfree.data.general.DatasetUtilities", 
+            "ef": 2, 
+            "ep": 18, 
+            "line": 757, 
+            "metrics": {
+                "ample": 0.49590350477924444, 
+                "gzoltar": 0.22360679774997896, 
+                "ochiai": 0.22360679774997896, 
+                "tarantula": 0.9918735891647855
+            }, 
+            "nf": 2, 
+            "np": 4376, 
+            "rank": {
+                "ample": 86, 
+                "ochiai": 66, 
+                "tarantula": 61
+            }
+        }, 
+        "org.jfree.data.general.DatasetUtilities:760": {
+            "class": "org.jfree.data.general.DatasetUtilities", 
+            "ef": 2, 
+            "ep": 18, 
+            "line": 760, 
+            "metrics": {
+                "ample": 0.49590350477924444, 
+                "gzoltar": 0.22360679774997896, 
+                "ochiai": 0.22360679774997896, 
+                "tarantula": 0.9918735891647855
+            }, 
+            "nf": 2, 
+            "np": 4376, 
+            "rank": {
+                "ample": 85, 
+                "ochiai": 67, 
+                "tarantula": 59
+            }
+        }, 
+        "org.jfree.data.general.DatasetUtilities:765": {
+            "class": "org.jfree.data.general.DatasetUtilities", 
+            "ef": 2, 
+            "ep": 18, 
+            "line": 765, 
+            "metrics": {
+                "ample": 0.49590350477924444, 
+                "gzoltar": 0.22360679774997896, 
+                "ochiai": 0.22360679774997896, 
+                "tarantula": 0.9918735891647855
+            }, 
+            "nf": 2, 
+            "np": 4376, 
+            "rank": {
+                "ample": 84, 
+                "ochiai": 68, 
+                "tarantula": 58
+            }
+        }, 
+        "org.jfree.data.general.DatasetUtilities:779": {
+            "class": "org.jfree.data.general.DatasetUtilities", 
+            "ef": 2, 
+            "ep": 30, 
+            "line": 779, 
+            "metrics": {
+                "ample": 0.49317250796540735, 
+                "gzoltar": 0.17677669529663687, 
+                "ochiai": 0.17677669529663687, 
+                "tarantula": 0.9865289627301301
+            }, 
+            "nf": 2, 
+            "np": 4364, 
+            "rank": {
+                "ample": 97, 
+                "ochiai": 78, 
+                "tarantula": 72
+            }
+        }, 
+        "org.jfree.data.general.DatasetUtilities:780": {
+            "class": "org.jfree.data.general.DatasetUtilities", 
+            "ef": 2, 
+            "ep": 4, 
+            "line": 780, 
+            "metrics": {
+                "ample": 0.499089667728721, 
+                "gzoltar": 0.4082482904638631, 
+                "ochiai": 0.4082482904638631, 
+                "tarantula": 0.9981826442526125
+            }, 
+            "nf": 2, 
+            "np": 4390, 
+            "rank": {
+                "ample": 64, 
+                "ochiai": 30, 
+                "tarantula": 30
+            }
+        }, 
+        "org.jfree.data.general.Series:297": {
+            "class": "org.jfree.data.general.Series", 
+            "ef": 4, 
+            "ep": 384, 
+            "line": 297, 
+            "metrics": {
+                "ample": 0.9126081019572144, 
+                "gzoltar": 0.10153461651336192, 
+                "ochiai": 0.10153461651336192, 
+                "tarantula": 0.9196316450397656
+            }, 
+            "nf": 0, 
+            "np": 4010, 
+            "rank": {
+                "ample": 26, 
+                "ochiai": 91, 
+                "tarantula": 91
+            }
+        }, 
+        "org.jfree.data.general.Series:298": {
+            "class": "org.jfree.data.general.Series", 
+            "ef": 4, 
+            "ep": 384, 
+            "line": 298, 
+            "metrics": {
+                "ample": 0.9126081019572144, 
+                "gzoltar": 0.10153461651336192, 
+                "ochiai": 0.10153461651336192, 
+                "tarantula": 0.9196316450397656
+            }, 
+            "nf": 0, 
+            "np": 4010, 
+            "rank": {
+                "ample": 27, 
+                "ochiai": 92, 
+                "tarantula": 92
+            }
+        }, 
+        "org.jfree.data.general.Series:315": {
+            "class": "org.jfree.data.general.Series", 
+            "ef": 4, 
+            "ep": 622, 
+            "line": 315, 
+            "metrics": {
+                "ample": 0.8584433318161129, 
+                "gzoltar": 0.07993607669774315, 
+                "ochiai": 0.07993607669774315, 
+                "tarantula": 0.8759968102073366
+            }, 
+            "nf": 0, 
+            "np": 3772, 
+            "rank": {
+                "ample": 33, 
+                "ochiai": 93, 
+                "tarantula": 98
+            }
+        }, 
+        "org.jfree.data.general.Series:316": {
+            "class": "org.jfree.data.general.Series", 
+            "ef": 4, 
+            "ep": 622, 
+            "line": 316, 
+            "metrics": {
+                "ample": 0.8584433318161129, 
+                "gzoltar": 0.07993607669774315, 
+                "ochiai": 0.07993607669774315, 
+                "tarantula": 0.8759968102073366
+            }, 
+            "nf": 0, 
+            "np": 3772, 
+            "rank": {
+                "ample": 32, 
+                "ochiai": 94, 
+                "tarantula": 97
+            }
+        }, 
+        "org.jfree.data.general.Series:318": {
+            "class": "org.jfree.data.general.Series", 
+            "ef": 4, 
+            "ep": 622, 
+            "line": 318, 
+            "metrics": {
+                "ample": 0.8584433318161129, 
+                "gzoltar": 0.07993607669774315, 
+                "ochiai": 0.07993607669774315, 
+                "tarantula": 0.8759968102073366
+            }, 
+            "nf": 0, 
+            "np": 3772, 
+            "rank": {
+                "ample": 31, 
+                "ochiai": 95, 
+                "tarantula": 96
+            }
+        }, 
+        "org.jfree.data.general.Series:328": {
+            "class": "org.jfree.data.general.Series", 
+            "ef": 4, 
+            "ep": 622, 
+            "line": 328, 
+            "metrics": {
+                "ample": 0.8584433318161129, 
+                "gzoltar": 0.07993607669774315, 
+                "ochiai": 0.07993607669774315, 
+                "tarantula": 0.8759968102073366
+            }, 
+            "nf": 0, 
+            "np": 3772, 
+            "rank": {
+                "ample": 29, 
+                "ochiai": 96, 
+                "tarantula": 94
+            }
+        }, 
+        "org.jfree.data.general.Series:329": {
+            "class": "org.jfree.data.general.Series", 
+            "ef": 4, 
+            "ep": 622, 
+            "line": 329, 
+            "metrics": {
+                "ample": 0.8584433318161129, 
+                "gzoltar": 0.07993607669774315, 
+                "ochiai": 0.07993607669774315, 
+                "tarantula": 0.8759968102073366
+            }, 
+            "nf": 0, 
+            "np": 3772, 
+            "rank": {
+                "ample": 28, 
+                "ochiai": 97, 
+                "tarantula": 93
+            }
+        }, 
+        "org.jfree.data.general.Series:336": {
+            "class": "org.jfree.data.general.Series", 
+            "ef": 4, 
+            "ep": 622, 
+            "line": 336, 
+            "metrics": {
+                "ample": 0.8584433318161129, 
+                "gzoltar": 0.07993607669774315, 
+                "ochiai": 0.07993607669774315, 
+                "tarantula": 0.8759968102073366
+            }, 
+            "nf": 0, 
+            "np": 3772, 
+            "rank": {
+                "ample": 30, 
+                "ochiai": 98, 
+                "tarantula": 95
+            }
+        }, 
+        "org.jfree.data.xy.XYInterval:101": {
+            "class": "org.jfree.data.xy.XYInterval", 
+            "ef": 2, 
+            "ep": 4, 
+            "line": 101, 
+            "metrics": {
+                "ample": 0.499089667728721, 
+                "gzoltar": 0.4082482904638631, 
+                "ochiai": 0.4082482904638631, 
+                "tarantula": 0.9981826442526125
+            }, 
+            "nf": 2, 
+            "np": 4390, 
+            "rank": {
+                "ample": 57, 
+                "ochiai": 29, 
+                "tarantula": 23
+            }
+        }, 
+        "org.jfree.data.xy.XYInterval:119": {
+            "class": "org.jfree.data.xy.XYInterval", 
+            "ef": 2, 
+            "ep": 4, 
+            "line": 119, 
+            "metrics": {
+                "ample": 0.499089667728721, 
+                "gzoltar": 0.4082482904638631, 
+                "ochiai": 0.4082482904638631, 
+                "tarantula": 0.9981826442526125
+            }, 
+            "nf": 2, 
+            "np": 4390, 
+            "rank": {
+                "ample": 60, 
+                "ochiai": 37, 
+                "tarantula": 26
+            }
+        }, 
+        "org.jfree.data.xy.XYInterval:128": {
+            "class": "org.jfree.data.xy.XYInterval", 
+            "ef": 2, 
+            "ep": 4, 
+            "line": 128, 
+            "metrics": {
+                "ample": 0.499089667728721, 
+                "gzoltar": 0.4082482904638631, 
+                "ochiai": 0.4082482904638631, 
+                "tarantula": 0.9981826442526125
+            }, 
+            "nf": 2, 
+            "np": 4390, 
+            "rank": {
+                "ample": 65, 
+                "ochiai": 38, 
+                "tarantula": 31
+            }
+        }, 
+        "org.jfree.data.xy.XYInterval:92": {
+            "class": "org.jfree.data.xy.XYInterval", 
+            "ef": 2, 
+            "ep": 4, 
+            "line": 92, 
+            "metrics": {
+                "ample": 0.499089667728721, 
+                "gzoltar": 0.4082482904638631, 
+                "ochiai": 0.4082482904638631, 
+                "tarantula": 0.9981826442526125
+            }, 
+            "nf": 2, 
+            "np": 4390, 
+            "rank": {
+                "ample": 55, 
+                "ochiai": 28, 
+                "tarantula": 21
+            }
+        }, 
+        "org.jfree.data.xy.XYIntervalDataItem:112": {
+            "class": "org.jfree.data.xy.XYIntervalDataItem", 
+            "ef": 2, 
+            "ep": 4, 
+            "line": 112, 
+            "metrics": {
+                "ample": 0.499089667728721, 
+                "gzoltar": 0.4082482904638631, 
+                "ochiai": 0.4082482904638631, 
+                "tarantula": 0.9981826442526125
+            }, 
+            "nf": 2, 
+            "np": 4390, 
+            "rank": {
+                "ample": 66, 
+                "ochiai": 34, 
+                "tarantula": 32
+            }
+        }, 
+        "org.jfree.data.xy.XYIntervalDataItem:113": {
+            "class": "org.jfree.data.xy.XYIntervalDataItem", 
+            "ef": 2, 
+            "ep": 4, 
+            "line": 113, 
+            "metrics": {
+                "ample": 0.499089667728721, 
+                "gzoltar": 0.4082482904638631, 
+                "ochiai": 0.4082482904638631, 
+                "tarantula": 0.9981826442526125
+            }, 
+            "nf": 2, 
+            "np": 4390, 
+            "rank": {
+                "ample": 67, 
+                "ochiai": 35, 
+                "tarantula": 33
+            }
+        }, 
+        "org.jfree.data.xy.XYIntervalDataItem:114": {
+            "class": "org.jfree.data.xy.XYIntervalDataItem", 
+            "ef": 2, 
+            "ep": 4, 
+            "line": 114, 
+            "metrics": {
+                "ample": 0.499089667728721, 
+                "gzoltar": 0.4082482904638631, 
+                "ochiai": 0.4082482904638631, 
+                "tarantula": 0.9981826442526125
+            }, 
+            "nf": 2, 
+            "np": 4390, 
+            "rank": {
+                "ample": 68, 
+                "ochiai": 36, 
+                "tarantula": 34
+            }
+        }, 
+        "org.jfree.data.xy.XYIntervalDataItem:127": {
+            "class": "org.jfree.data.xy.XYIntervalDataItem", 
+            "ef": 2, 
+            "ep": 4, 
+            "line": 127, 
+            "metrics": {
+                "ample": 0.499089667728721, 
+                "gzoltar": 0.4082482904638631, 
+                "ochiai": 0.4082482904638631, 
+                "tarantula": 0.9981826442526125
+            }, 
+            "nf": 2, 
+            "np": 4390, 
+            "rank": {
+                "ample": 63, 
+                "ochiai": 39, 
+                "tarantula": 29
+            }
+        }, 
+        "org.jfree.data.xy.XYIntervalDataItem:128": {
+            "class": "org.jfree.data.xy.XYIntervalDataItem", 
+            "ef": 2, 
+            "ep": 4, 
+            "line": 128, 
+            "metrics": {
+                "ample": 0.499089667728721, 
+                "gzoltar": 0.4082482904638631, 
+                "ochiai": 0.4082482904638631, 
+                "tarantula": 0.9981826442526125
+            }, 
+            "nf": 2, 
+            "np": 4390, 
+            "rank": {
+                "ample": 62, 
+                "ochiai": 40, 
+                "tarantula": 28
+            }
+        }, 
+        "org.jfree.data.xy.XYIntervalDataItem:129": {
+            "class": "org.jfree.data.xy.XYIntervalDataItem", 
+            "ef": 2, 
+            "ep": 4, 
+            "line": 129, 
+            "metrics": {
+                "ample": 0.499089667728721, 
+                "gzoltar": 0.4082482904638631, 
+                "ochiai": 0.4082482904638631, 
+                "tarantula": 0.9981826442526125
+            }, 
+            "nf": 2, 
+            "np": 4390, 
+            "rank": {
+                "ample": 61, 
+                "ochiai": 41, 
+                "tarantula": 27
+            }
+        }, 
+        "org.jfree.data.xy.XYIntervalDataItem:142": {
+            "class": "org.jfree.data.xy.XYIntervalDataItem", 
+            "ef": 2, 
+            "ep": 4, 
+            "line": 142, 
+            "metrics": {
+                "ample": 0.499089667728721, 
+                "gzoltar": 0.4082482904638631, 
+                "ochiai": 0.4082482904638631, 
+                "tarantula": 0.9981826442526125
+            }, 
+            "nf": 2, 
+            "np": 4390, 
+            "rank": {
+                "ample": 56, 
+                "ochiai": 42, 
+                "tarantula": 22
+            }
+        }, 
+        "org.jfree.data.xy.XYIntervalDataItem:143": {
+            "class": "org.jfree.data.xy.XYIntervalDataItem", 
+            "ef": 2, 
+            "ep": 4, 
+            "line": 143, 
+            "metrics": {
+                "ample": 0.499089667728721, 
+                "gzoltar": 0.4082482904638631, 
+                "ochiai": 0.4082482904638631, 
+                "tarantula": 0.9981826442526125
+            }, 
+            "nf": 2, 
+            "np": 4390, 
+            "rank": {
+                "ample": 58, 
+                "ochiai": 43, 
+                "tarantula": 24
+            }
+        }, 
+        "org.jfree.data.xy.XYIntervalDataItem:144": {
+            "class": "org.jfree.data.xy.XYIntervalDataItem", 
+            "ef": 2, 
+            "ep": 4, 
+            "line": 144, 
+            "metrics": {
+                "ample": 0.499089667728721, 
+                "gzoltar": 0.4082482904638631, 
+                "ochiai": 0.4082482904638631, 
+                "tarantula": 0.9981826442526125
+            }, 
+            "nf": 2, 
+            "np": 4390, 
+            "rank": {
+                "ample": 59, 
+                "ochiai": 44, 
+                "tarantula": 25
+            }
+        }, 
+        "org.jfree.data.xy.XYIntervalDataItem:97": {
+            "class": "org.jfree.data.xy.XYIntervalDataItem", 
+            "ef": 2, 
+            "ep": 4, 
+            "line": 97, 
+            "metrics": {
+                "ample": 0.499089667728721, 
+                "gzoltar": 0.4082482904638631, 
+                "ochiai": 0.4082482904638631, 
+                "tarantula": 0.9981826442526125
+            }, 
+            "nf": 2, 
+            "np": 4390, 
+            "rank": {
+                "ample": 69, 
+                "ochiai": 31, 
+                "tarantula": 35
+            }
+        }, 
+        "org.jfree.data.xy.XYIntervalDataItem:98": {
+            "class": "org.jfree.data.xy.XYIntervalDataItem", 
+            "ef": 2, 
+            "ep": 4, 
+            "line": 98, 
+            "metrics": {
+                "ample": 0.499089667728721, 
+                "gzoltar": 0.4082482904638631, 
+                "ochiai": 0.4082482904638631, 
+                "tarantula": 0.9981826442526125
+            }, 
+            "nf": 2, 
+            "np": 4390, 
+            "rank": {
+                "ample": 70, 
+                "ochiai": 32, 
+                "tarantula": 36
+            }
+        }, 
+        "org.jfree.data.xy.XYIntervalDataItem:99": {
+            "class": "org.jfree.data.xy.XYIntervalDataItem", 
+            "ef": 2, 
+            "ep": 4, 
+            "line": 99, 
+            "metrics": {
+                "ample": 0.499089667728721, 
+                "gzoltar": 0.4082482904638631, 
+                "ochiai": 0.4082482904638631, 
+                "tarantula": 0.9981826442526125
+            }, 
+            "nf": 2, 
+            "np": 4390, 
+            "rank": {
+                "ample": 71, 
+                "ochiai": 33, 
+                "tarantula": 37
+            }
+        }, 
+        "org.jfree.data.xy.XYIntervalSeries:120": {
+            "class": "org.jfree.data.xy.XYIntervalSeries", 
+            "ef": 2, 
+            "ep": 2, 
+            "line": 120, 
+            "metrics": {
+                "ample": 0.4995448338643605, 
+                "gzoltar": 0.5, 
+                "ochiai": 0.5, 
+                "tarantula": 0.9990904956798544
+            }, 
+            "nf": 2, 
+            "np": 4392, 
+            "rank": {
+                "ample": 51, 
+                "ochiai": 18, 
+                "tarantula": 16
+            }
+        }, 
+        "org.jfree.data.xy.XYIntervalSeries:121": {
+            "class": "org.jfree.data.xy.XYIntervalSeries", 
+            "ef": 2, 
+            "ep": 2, 
+            "line": 121, 
+            "metrics": {
+                "ample": 0.4995448338643605, 
+                "gzoltar": 0.5, 
+                "ochiai": 0.5, 
+                "tarantula": 0.9990904956798544
+            }, 
+            "nf": 2, 
+            "np": 4392, 
+            "rank": {
+                "ample": 50, 
+                "ochiai": 19, 
+                "tarantula": 15
+            }
+        }, 
+        "org.jfree.data.xy.XYIntervalSeries:135": {
+            "class": "org.jfree.data.xy.XYIntervalSeries", 
+            "ef": 2, 
+            "ep": 2, 
+            "line": 135, 
+            "metrics": {
+                "ample": 0.4995448338643605, 
+                "gzoltar": 0.5, 
+                "ochiai": 0.5, 
+                "tarantula": 0.9990904956798544
+            }, 
+            "nf": 2, 
+            "np": 4392, 
+            "rank": {
+                "ample": 49, 
+                "ochiai": 20, 
+                "tarantula": 14
+            }
+        }, 
+        "org.jfree.data.xy.XYIntervalSeries:136": {
+            "class": "org.jfree.data.xy.XYIntervalSeries", 
+            "ef": 2, 
+            "ep": 2, 
+            "line": 136, 
+            "metrics": {
+                "ample": 0.4995448338643605, 
+                "gzoltar": 0.5, 
+                "ochiai": 0.5, 
+                "tarantula": 0.9990904956798544
+            }, 
+            "nf": 2, 
+            "np": 4392, 
+            "rank": {
+                "ample": 54, 
+                "ochiai": 21, 
+                "tarantula": 19
+            }
+        }, 
+        "org.jfree.data.xy.XYIntervalSeries:162": {
+            "class": "org.jfree.data.xy.XYIntervalSeries", 
+            "ef": 2, 
+            "ep": 2, 
+            "line": 162, 
+            "metrics": {
+                "ample": 0.4995448338643605, 
+                "gzoltar": 0.5, 
+                "ochiai": 0.5, 
+                "tarantula": 0.9990904956798544
+            }, 
+            "nf": 2, 
+            "np": 4392, 
+            "rank": {
+                "ample": 48, 
+                "ochiai": 23, 
+                "tarantula": 13
+            }
+        }, 
+        "org.jfree.data.xy.XYIntervalSeries:163": {
+            "class": "org.jfree.data.xy.XYIntervalSeries", 
+            "ef": 2, 
+            "ep": 2, 
+            "line": 163, 
+            "metrics": {
+                "ample": 0.4995448338643605, 
+                "gzoltar": 0.5, 
+                "ochiai": 0.5, 
+                "tarantula": 0.9990904956798544
+            }, 
+            "nf": 2, 
+            "np": 4392, 
+            "rank": {
+                "ample": 47, 
+                "ochiai": 24, 
+                "tarantula": 12
+            }
+        }, 
+        "org.jfree.data.xy.XYIntervalSeries:177": {
+            "class": "org.jfree.data.xy.XYIntervalSeries", 
+            "ef": 2, 
+            "ep": 2, 
+            "line": 177, 
+            "metrics": {
+                "ample": 0.4995448338643605, 
+                "gzoltar": 0.5, 
+                "ochiai": 0.5, 
+                "tarantula": 0.9990904956798544
+            }, 
+            "nf": 2, 
+            "np": 4392, 
+            "rank": {
+                "ample": 53, 
+                "ochiai": 25, 
+                "tarantula": 18
+            }
+        }, 
+        "org.jfree.data.xy.XYIntervalSeries:178": {
+            "class": "org.jfree.data.xy.XYIntervalSeries", 
+            "ef": 2, 
+            "ep": 2, 
+            "line": 178, 
+            "metrics": {
+                "ample": 0.4995448338643605, 
+                "gzoltar": 0.5, 
+                "ochiai": 0.5, 
+                "tarantula": 0.9990904956798544
+            }, 
+            "nf": 2, 
+            "np": 4392, 
+            "rank": {
+                "ample": 52, 
+                "ochiai": 26, 
+                "tarantula": 17
+            }
+        }, 
+        "org.jfree.data.xy.XYIntervalSeries:189": {
+            "class": "org.jfree.data.xy.XYIntervalSeries", 
+            "ef": 4, 
+            "ep": 12, 
+            "line": 189, 
+            "metrics": {
+                "ample": 0.997269003186163, 
+                "gzoltar": 0.5, 
+                "ochiai": 0.5, 
+                "tarantula": 0.9972764412165228
+            }, 
+            "nf": 0, 
+            "np": 4382, 
+            "rank": {
+                "ample": 10, 
+                "ochiai": 22, 
+                "tarantula": 44
+            }
+        }, 
+        "org.jfree.data.xy.XYIntervalSeries:94": {
+            "class": "org.jfree.data.xy.XYIntervalSeries", 
+            "ef": 4, 
+            "ep": 30, 
+            "line": 94, 
+            "metrics": {
+                "ample": 0.9931725079654073, 
+                "gzoltar": 0.34299717028501764, 
+                "ochiai": 0.34299717028501764, 
+                "tarantula": 0.9932188065099459
+            }, 
+            "nf": 0, 
+            "np": 4364, 
+            "rank": {
+                "ample": 11, 
+                "ochiai": 45, 
+                "tarantula": 56
+            }
+        }, 
+        "org.jfree.data.xy.XYIntervalSeries:95": {
+            "class": "org.jfree.data.xy.XYIntervalSeries", 
+            "ef": 4, 
+            "ep": 30, 
+            "line": 95, 
+            "metrics": {
+                "ample": 0.9931725079654073, 
+                "gzoltar": 0.34299717028501764, 
+                "ochiai": 0.34299717028501764, 
+                "tarantula": 0.9932188065099459
+            }, 
+            "nf": 0, 
+            "np": 4364, 
+            "rank": {
+                "ample": 12, 
+                "ochiai": 46, 
+                "tarantula": 57
+            }
+        }, 
+        "org.jfree.data.xy.XYIntervalSeriesCollection:113": {
+            "class": "org.jfree.data.xy.XYIntervalSeriesCollection", 
+            "ef": 4, 
+            "ep": 2, 
+            "line": 113, 
+            "metrics": {
+                "ample": 0.9995448338643604, 
+                "gzoltar": 0.8164965809277261, 
+                "ochiai": 0.8164965809277261, 
+                "tarantula": 0.9995450409463148
+            }, 
+            "nf": 0, 
+            "np": 4392, 
+            "rank": {
+                "ample": 3, 
+                "ochiai": 3, 
+                "tarantula": 11
+            }
+        }, 
+        "org.jfree.data.xy.XYIntervalSeriesCollection:116": {
+            "class": "org.jfree.data.xy.XYIntervalSeriesCollection", 
+            "ef": 4, 
+            "ep": 0, 
+            "line": 116, 
+            "metrics": {
+                "ample": 1.0, 
+                "gzoltar": 1.0, 
+                "ochiai": 1.0, 
+                "tarantula": 1.0
+            }, 
+            "nf": 0, 
+            "np": 4394, 
+            "rank": {
+                "ample": 1, 
+                "ochiai": 1, 
+                "tarantula": 3
+            }
+        }, 
+        "org.jfree.data.xy.XYIntervalSeriesCollection:147": {
+            "class": "org.jfree.data.xy.XYIntervalSeriesCollection", 
+            "ef": 4, 
+            "ep": 0, 
+            "line": 147, 
+            "metrics": {
+                "ample": 1.0, 
+                "gzoltar": 1.0, 
+                "ochiai": 1.0, 
+                "tarantula": 1.0
+            }, 
+            "nf": 0, 
+            "np": 4394, 
+            "rank": {
+                "ample": 2, 
+                "ochiai": 2, 
+                "tarantula": 8
+            }
+        }, 
+        "org.jfree.data.xy.XYIntervalSeriesCollection:173": {
+            "class": "org.jfree.data.xy.XYIntervalSeriesCollection", 
+            "ef": 2, 
+            "ep": 0, 
+            "line": 173, 
+            "metrics": {
+                "ample": 0.5, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 1.0
+            }, 
+            "nf": 2, 
+            "np": 4394, 
+            "rank": {
+                "ample": 45, 
+                "ochiai": 4, 
+                "tarantula": 9
+            }
+        }, 
+        "org.jfree.data.xy.XYIntervalSeriesCollection:174": {
+            "class": "org.jfree.data.xy.XYIntervalSeriesCollection", 
+            "ef": 2, 
+            "ep": 0, 
+            "line": 174, 
+            "metrics": {
+                "ample": 0.5, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 1.0
+            }, 
+            "nf": 2, 
+            "np": 4394, 
+            "rank": {
+                "ample": 46, 
+                "ochiai": 5, 
+                "tarantula": 10
+            }
+        }, 
+        "org.jfree.data.xy.XYIntervalSeriesCollection:187": {
+            "class": "org.jfree.data.xy.XYIntervalSeriesCollection", 
+            "ef": 2, 
+            "ep": 0, 
+            "line": 187, 
+            "metrics": {
+                "ample": 0.5, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 1.0
+            }, 
+            "nf": 2, 
+            "np": 4394, 
+            "rank": {
+                "ample": 41, 
+                "ochiai": 6, 
+                "tarantula": 4
+            }
+        }, 
+        "org.jfree.data.xy.XYIntervalSeriesCollection:188": {
+            "class": "org.jfree.data.xy.XYIntervalSeriesCollection", 
+            "ef": 2, 
+            "ep": 0, 
+            "line": 188, 
+            "metrics": {
+                "ample": 0.5, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 1.0
+            }, 
+            "nf": 2, 
+            "np": 4394, 
+            "rank": {
+                "ample": 42, 
+                "ochiai": 7, 
+                "tarantula": 5
+            }
+        }, 
+        "org.jfree.data.xy.XYIntervalSeriesCollection:215": {
+            "class": "org.jfree.data.xy.XYIntervalSeriesCollection", 
+            "ef": 2, 
+            "ep": 0, 
+            "line": 215, 
+            "metrics": {
+                "ample": 0.5, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 1.0
+            }, 
+            "nf": 2, 
+            "np": 4394, 
+            "rank": {
+                "ample": 40, 
+                "ochiai": 8, 
+                "tarantula": 2
+            }
+        }, 
+        "org.jfree.data.xy.XYIntervalSeriesCollection:216": {
+            "class": "org.jfree.data.xy.XYIntervalSeriesCollection", 
+            "ef": 2, 
+            "ep": 0, 
+            "line": 216, 
+            "metrics": {
+                "ample": 0.5, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 1.0
+            }, 
+            "nf": 2, 
+            "np": 4394, 
+            "rank": {
+                "ample": 39, 
+                "ochiai": 9, 
+                "tarantula": 1
+            }
+        }, 
+        "org.jfree.data.xy.XYIntervalSeriesCollection:229": {
+            "class": "org.jfree.data.xy.XYIntervalSeriesCollection", 
+            "ef": 2, 
+            "ep": 0, 
+            "line": 229, 
+            "metrics": {
+                "ample": 0.5, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 1.0
+            }, 
+            "nf": 2, 
+            "np": 4394, 
+            "rank": {
+                "ample": 43, 
+                "ochiai": 10, 
+                "tarantula": 6
+            }
+        }, 
+        "org.jfree.data.xy.XYIntervalSeriesCollection:230": {
+            "class": "org.jfree.data.xy.XYIntervalSeriesCollection", 
+            "ef": 2, 
+            "ep": 0, 
+            "line": 230, 
+            "metrics": {
+                "ample": 0.5, 
+                "gzoltar": 0.7071067811865475, 
+                "ochiai": 0.7071067811865475, 
+                "tarantula": 1.0
+            }, 
+            "nf": 2, 
+            "np": 4394, 
+            "rank": {
+                "ample": 44, 
+                "ochiai": 11, 
+                "tarantula": 7
+            }
+        }, 
+        "org.jfree.data.xy.XYIntervalSeriesCollection:84": {
+            "class": "org.jfree.data.xy.XYIntervalSeriesCollection", 
+            "ef": 4, 
+            "ep": 10, 
+            "line": 84, 
+            "metrics": {
+                "ample": 0.9977241693218024, 
+                "gzoltar": 0.5345224838248488, 
+                "ochiai": 0.5345224838248488, 
+                "tarantula": 0.9977293369663941
+            }, 
+            "nf": 0, 
+            "np": 4384, 
+            "rank": {
+                "ample": 6, 
+                "ochiai": 13, 
+                "tarantula": 40
+            }
+        }, 
+        "org.jfree.data.xy.XYIntervalSeriesCollection:87": {
+            "class": "org.jfree.data.xy.XYIntervalSeriesCollection", 
+            "ef": 4, 
+            "ep": 10, 
+            "line": 87, 
+            "metrics": {
+                "ample": 0.9977241693218024, 
+                "gzoltar": 0.5345224838248488, 
+                "ochiai": 0.5345224838248488, 
+                "tarantula": 0.9977293369663941
+            }, 
+            "nf": 0, 
+            "np": 4384, 
+            "rank": {
+                "ample": 8, 
+                "ochiai": 14, 
+                "tarantula": 42
+            }
+        }, 
+        "org.jfree.data.xy.XYIntervalSeriesCollection:88": {
+            "class": "org.jfree.data.xy.XYIntervalSeriesCollection", 
+            "ef": 4, 
+            "ep": 10, 
+            "line": 88, 
+            "metrics": {
+                "ample": 0.9977241693218024, 
+                "gzoltar": 0.5345224838248488, 
+                "ochiai": 0.5345224838248488, 
+                "tarantula": 0.9977293369663941
+            }, 
+            "nf": 0, 
+            "np": 4384, 
+            "rank": {
+                "ample": 7, 
+                "ochiai": 15, 
+                "tarantula": 41
+            }
+        }, 
+        "org.jfree.data.xy.XYIntervalSeriesCollection:89": {
+            "class": "org.jfree.data.xy.XYIntervalSeriesCollection", 
+            "ef": 4, 
+            "ep": 10, 
+            "line": 89, 
+            "metrics": {
+                "ample": 0.9977241693218024, 
+                "gzoltar": 0.5345224838248488, 
+                "ochiai": 0.5345224838248488, 
+                "tarantula": 0.9977293369663941
+            }, 
+            "nf": 0, 
+            "np": 4384, 
+            "rank": {
+                "ample": 5, 
+                "ochiai": 16, 
+                "tarantula": 39
+            }
+        }, 
+        "org.jfree.data.xy.XYIntervalSeriesCollection:91": {
+            "class": "org.jfree.data.xy.XYIntervalSeriesCollection", 
+            "ef": 4, 
+            "ep": 10, 
+            "line": 91, 
+            "metrics": {
+                "ample": 0.9977241693218024, 
+                "gzoltar": 0.5345224838248488, 
+                "ochiai": 0.5345224838248488, 
+                "tarantula": 0.9977293369663941
+            }, 
+            "nf": 0, 
+            "np": 4384, 
+            "rank": {
+                "ample": 9, 
+                "ochiai": 17, 
+                "tarantula": 43
+            }
+        }, 
+        "org.jfree.data.xy.XYIntervalSeriesCollection:99": {
+            "class": "org.jfree.data.xy.XYIntervalSeriesCollection", 
+            "ef": 4, 
+            "ep": 6, 
+            "line": 99, 
+            "metrics": {
+                "ample": 0.9986345015930814, 
+                "gzoltar": 0.6324555320336759, 
+                "ochiai": 0.6324555320336759, 
+                "tarantula": 0.9986363636363637
+            }, 
+            "nf": 0, 
+            "np": 4388, 
+            "rank": {
+                "ample": 4, 
+                "ochiai": 12, 
+                "tarantula": 20
+            }
+        }
+    }
+}

@@ -1,0 +1,115 @@
+export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";cp -r /home/tdurieux/projects/lang/lang_16 /tmp/lang_16_Ranking;cd /tmp/lang_16_Ranking;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Lang/lib/* lib/;find . -type f -name "package-info.java" -delete;
+cd /tmp/lang_16_Ranking;cp -r /home/tdurieux/nopol/z3-x64-debian-7.7/bin/ lib/z3;time java -cp /home/tdurieux/nopol/nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar fr.inria.lille.repair.Main --mode ranking --type condition --oracle angelic --synthesis smt --solver z3 --solver-path lib/z3/z3 --complianceLevel 5 --source src/main/java/ --classpath target/classes/:target/tests/:lib/asm.jar:lib/cglib.jar:lib/commons-io.jar:lib/easymock.jar:/home/tdurieux/nopol/nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar;echo "
+
+Node: `hostname`
+";echo "
+Date: `date`
+";rm -rf /tmp/lang_16_Ranking;
+
+/************************/
+Executed tests:   2046
+Successful tests: 2045
+Failed tests:     1
+
+org.apache.commons.lang3.math.NumberUtilsTest#testCreateNumber
+java.lang.NumberFormatException: 0Xfade is not a valid number.
+	at org.apache.commons.lang3.math.NumberUtils.createNumber(NumberUtils.java:545)
+	at org.apache.commons.lang3.math.NumberUtilsTest.testCreateNumber(NumberUtilsTest.java:197)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at com.gzoltar.core.instr.testing.junit.JUnitRunner.run(JUnitRunner.java:47)
+	at com.gzoltar.core.instr.Runner.main(Runner.java:46)
+
+
+/************************/
+/* Suspicious statement */
+/************************/
+org.apache.commons.lang3.math.NumberUtils:459 -> 0.7071067811865475 (ep: 1, ef: 1, np: 2044, nf: 0)
+org.apache.commons.lang3.math.NumberUtils:470 -> 0.7071067811865475 (ep: 1, ef: 1, np: 2044, nf: 0)
+org.apache.commons.lang3.math.NumberUtils:476 -> 0.7071067811865475 (ep: 1, ef: 1, np: 2044, nf: 0)
+org.apache.commons.lang3.math.NumberUtils:478 -> 0.7071067811865475 (ep: 1, ef: 1, np: 2044, nf: 0)
+org.apache.commons.lang3.math.NumberUtils:481 -> 0.7071067811865475 (ep: 1, ef: 1, np: 2044, nf: 0)
+org.apache.commons.lang3.math.NumberUtils:484 -> 0.7071067811865475 (ep: 1, ef: 1, np: 2044, nf: 0)
+org.apache.commons.lang3.math.NumberUtils:517 -> 0.7071067811865475 (ep: 1, ef: 1, np: 2044, nf: 0)
+org.apache.commons.lang3.math.NumberUtils:518 -> 0.7071067811865475 (ep: 1, ef: 1, np: 2044, nf: 0)
+org.apache.commons.lang3.math.NumberUtils:521 -> 0.7071067811865475 (ep: 1, ef: 1, np: 2044, nf: 0)
+org.apache.commons.lang3.math.NumberUtils:531 -> 0.7071067811865475 (ep: 1, ef: 1, np: 2044, nf: 0)
+org.apache.commons.lang3.math.NumberUtils:532 -> 0.7071067811865475 (ep: 1, ef: 1, np: 2044, nf: 0)
+org.apache.commons.lang3.math.NumberUtils:533 -> 0.7071067811865475 (ep: 1, ef: 1, np: 2044, nf: 0)
+org.apache.commons.lang3.math.NumberUtils:545 -> 0.7071067811865475 (ep: 1, ef: 1, np: 2044, nf: 0)
+org.apache.commons.lang3.math.NumberUtils:551 -> 0.7071067811865475 (ep: 1, ef: 1, np: 2044, nf: 0)
+org.apache.commons.lang3.math.NumberUtils:554 -> 0.7071067811865475 (ep: 1, ef: 1, np: 2044, nf: 0)
+org.apache.commons.lang3.math.NumberUtils:556 -> 0.7071067811865475 (ep: 1, ef: 1, np: 2044, nf: 0)
+org.apache.commons.lang3.math.NumberUtils:559 -> 0.7071067811865475 (ep: 1, ef: 1, np: 2044, nf: 0)
+org.apache.commons.lang3.math.NumberUtils:560 -> 0.7071067811865475 (ep: 1, ef: 1, np: 2044, nf: 0)
+org.apache.commons.lang3.math.NumberUtils:564 -> 0.7071067811865475 (ep: 1, ef: 1, np: 2044, nf: 0)
+org.apache.commons.lang3.math.NumberUtils:572 -> 0.7071067811865475 (ep: 1, ef: 1, np: 2044, nf: 0)
+org.apache.commons.lang3.math.NumberUtils:574 -> 0.7071067811865475 (ep: 1, ef: 1, np: 2044, nf: 0)
+org.apache.commons.lang3.math.NumberUtils:575 -> 0.7071067811865475 (ep: 1, ef: 1, np: 2044, nf: 0)
+org.apache.commons.lang3.math.NumberUtils:576 -> 0.7071067811865475 (ep: 1, ef: 1, np: 2044, nf: 0)
+org.apache.commons.lang3.math.NumberUtils:445 -> 0.5773502691896258 (ep: 2, ef: 1, np: 2043, nf: 0)
+org.apache.commons.lang3.math.NumberUtils:448 -> 0.5773502691896258 (ep: 2, ef: 1, np: 2043, nf: 0)
+org.apache.commons.lang3.math.NumberUtils:451 -> 0.5773502691896258 (ep: 2, ef: 1, np: 2043, nf: 0)
+org.apache.commons.lang3.math.NumberUtils:458 -> 0.5773502691896258 (ep: 2, ef: 1, np: 2043, nf: 0)
+org.apache.commons.lang3.math.NumberUtils:461 -> 0.5773502691896258 (ep: 2, ef: 1, np: 2043, nf: 0)
+org.apache.commons.lang3.math.NumberUtils:465 -> 0.5773502691896258 (ep: 2, ef: 1, np: 2043, nf: 0)
+org.apache.commons.lang3.math.NumberUtils:466 -> 0.5773502691896258 (ep: 2, ef: 1, np: 2043, nf: 0)
+org.apache.commons.lang3.math.NumberUtils:468 -> 0.5773502691896258 (ep: 2, ef: 1, np: 2043, nf: 0)
+org.apache.commons.lang3.math.NumberUtils:480 -> 0.5773502691896258 (ep: 2, ef: 1, np: 2043, nf: 0)
+org.apache.commons.lang3.math.NumberUtils:486 -> 0.5773502691896258 (ep: 2, ef: 1, np: 2043, nf: 0)
+org.apache.commons.lang3.math.NumberUtils:488 -> 0.5773502691896258 (ep: 2, ef: 1, np: 2043, nf: 0)
+org.apache.commons.lang3.math.NumberUtils:490 -> 0.5773502691896258 (ep: 2, ef: 1, np: 2043, nf: 0)
+org.apache.commons.lang3.math.NumberUtils:491 -> 0.5773502691896258 (ep: 2, ef: 1, np: 2043, nf: 0)
+org.apache.commons.lang3.math.NumberUtils:494 -> 0.5773502691896258 (ep: 2, ef: 1, np: 2043, nf: 0)
+org.apache.commons.lang3.math.NumberUtils:497 -> 0.5773502691896258 (ep: 2, ef: 1, np: 2043, nf: 0)
+org.apache.commons.lang3.math.NumberUtils:498 -> 0.5773502691896258 (ep: 2, ef: 1, np: 2043, nf: 0)
+org.apache.commons.lang3.math.NumberUtils:499 -> 0.5773502691896258 (ep: 2, ef: 1, np: 2043, nf: 0)
+org.apache.commons.lang3.math.NumberUtils:502 -> 0.5773502691896258 (ep: 2, ef: 1, np: 2043, nf: 0)
+org.apache.commons.lang3.math.NumberUtils:506 -> 0.5773502691896258 (ep: 2, ef: 1, np: 2043, nf: 0)
+org.apache.commons.lang3.math.NumberUtils:605 -> 0.5773502691896258 (ep: 2, ef: 1, np: 2043, nf: 0)
+org.apache.commons.lang3.math.NumberUtils:608 -> 0.5773502691896258 (ep: 2, ef: 1, np: 2043, nf: 0)
+org.apache.commons.lang3.math.NumberUtils:609 -> 0.5773502691896258 (ep: 2, ef: 1, np: 2043, nf: 0)
+org.apache.commons.lang3.math.NumberUtils:610 -> 0.5773502691896258 (ep: 2, ef: 1, np: 2043, nf: 0)
+org.apache.commons.lang3.math.NumberUtils:627 -> 0.5773502691896258 (ep: 2, ef: 1, np: 2043, nf: 0)
+org.apache.commons.lang3.math.NumberUtils:630 -> 0.5773502691896258 (ep: 2, ef: 1, np: 2043, nf: 0)
+org.apache.commons.lang3.math.NumberUtils:643 -> 0.5773502691896258 (ep: 2, ef: 1, np: 2043, nf: 0)
+org.apache.commons.lang3.math.NumberUtils:646 -> 0.5773502691896258 (ep: 2, ef: 1, np: 2043, nf: 0)
+org.apache.commons.lang3.math.NumberUtils:660 -> 0.5773502691896258 (ep: 2, ef: 1, np: 2043, nf: 0)
+org.apache.commons.lang3.math.NumberUtils:664 -> 0.5773502691896258 (ep: 2, ef: 1, np: 2043, nf: 0)
+org.apache.commons.lang3.math.NumberUtils:677 -> 0.5 (ep: 3, ef: 1, np: 2042, nf: 0)
+org.apache.commons.lang3.math.NumberUtils:680 -> 0.5 (ep: 3, ef: 1, np: 2042, nf: 0)
+org.apache.commons.lang3.math.NumberUtils:1287 -> 0.5 (ep: 3, ef: 1, np: 2042, nf: 0)
+org.apache.commons.lang3.math.NumberUtils:1290 -> 0.5 (ep: 3, ef: 1, np: 2042, nf: 0)
+org.apache.commons.lang3.math.NumberUtils:1291 -> 0.5 (ep: 3, ef: 1, np: 2042, nf: 0)
+org.apache.commons.lang3.math.NumberUtils:1295 -> 0.5 (ep: 3, ef: 1, np: 2042, nf: 0)
+org.apache.commons.lang3.StringUtils:228 -> 0.23570226039551587 (ep: 17, ef: 1, np: 2028, nf: 0)
+org.apache.commons.lang3.StringUtils:226 -> 0.21320071635561041 (ep: 21, ef: 1, np: 2024, nf: 0)
+org.apache.commons.lang3.StringUtils:227 -> 0.21320071635561041 (ep: 21, ef: 1, np: 2024, nf: 0)
+org.apache.commons.lang3.StringUtils:223 -> 0.20412414523193154 (ep: 23, ef: 1, np: 2022, nf: 0)
+org.apache.commons.lang3.StringUtils:183 -> 0.086710996952412 (ep: 132, ef: 1, np: 1913, nf: 0)
+
+
+
+Node: graphene-85.nancy.grid5000.fr
+
+
+Date: Mon May 11 08:01:12 CEST 2015
+
+

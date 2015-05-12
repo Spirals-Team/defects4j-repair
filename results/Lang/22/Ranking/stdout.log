@@ -1,0 +1,130 @@
+export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";cp -r /home/tdurieux/projects/lang/lang_22 /tmp/lang_22_Ranking;cd /tmp/lang_22_Ranking;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Lang/lib/* lib/;find . -type f -name "package-info.java" -delete;
+cd /tmp/lang_22_Ranking;cp -r /home/tdurieux/nopol/z3-x64-debian-7.7/bin/ lib/z3;time java -cp /home/tdurieux/nopol/nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar fr.inria.lille.repair.Main --mode ranking --type condition --oracle angelic --synthesis smt --solver z3 --solver-path lib/z3/z3 --complianceLevel 5 --source src/main/java/ --classpath target/classes/:target/test-classes/:lib/asm.jar:lib/cglib.jar:lib/commons-io.jar:lib/easymock.jar:/home/tdurieux/nopol/nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar;echo "
+
+Node: `hostname`
+";echo "
+Date: `date`
+";rm -rf /tmp/lang_22_Ranking;
+
+/************************/
+Executed tests:   1825
+Successful tests: 1823
+Failed tests:     2
+
+org.apache.commons.lang3.math.FractionTest#testReducedFactory_int_int
+junit.framework.AssertionFailedError: expected:<-1073741824> but was:<-2147483648>
+	at junit.framework.Assert.fail(Assert.java:57)
+	at junit.framework.Assert.failNotEquals(Assert.java:329)
+	at junit.framework.Assert.assertEquals(Assert.java:78)
+	at junit.framework.Assert.assertEquals(Assert.java:234)
+	at junit.framework.Assert.assertEquals(Assert.java:241)
+	at junit.framework.TestCase.assertEquals(TestCase.java:409)
+	at org.apache.commons.lang3.math.FractionTest.testReducedFactory_int_int(FractionTest.java:336)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at com.gzoltar.core.instr.testing.junit.JUnitRunner.run(JUnitRunner.java:47)
+	at com.gzoltar.core.instr.Runner.main(Runner.java:46)
+
+org.apache.commons.lang3.math.FractionTest#testReduce
+junit.framework.AssertionFailedError: expected:<-1073741824> but was:<-2147483648>
+	at junit.framework.Assert.fail(Assert.java:57)
+	at junit.framework.Assert.failNotEquals(Assert.java:329)
+	at junit.framework.Assert.assertEquals(Assert.java:78)
+	at junit.framework.Assert.assertEquals(Assert.java:234)
+	at junit.framework.Assert.assertEquals(Assert.java:241)
+	at junit.framework.TestCase.assertEquals(TestCase.java:409)
+	at org.apache.commons.lang3.math.FractionTest.testReduce(FractionTest.java:654)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at com.gzoltar.core.instr.testing.junit.JUnitRunner.run(JUnitRunner.java:47)
+	at com.gzoltar.core.instr.Runner.main(Runner.java:46)
+
+
+/************************/
+/* Suspicious statement */
+/************************/
+org.apache.commons.lang3.math.Fraction:216 -> 0.7071067811865475 (ep: 0, ef: 1, np: 1823, nf: 1)
+org.apache.commons.lang3.math.Fraction:223 -> 0.7071067811865475 (ep: 0, ef: 1, np: 1823, nf: 1)
+org.apache.commons.lang3.math.Fraction:226 -> 0.7071067811865475 (ep: 0, ef: 1, np: 1823, nf: 1)
+org.apache.commons.lang3.math.Fraction:228 -> 0.7071067811865475 (ep: 0, ef: 1, np: 1823, nf: 1)
+org.apache.commons.lang3.math.Fraction:230 -> 0.7071067811865475 (ep: 0, ef: 1, np: 1823, nf: 1)
+org.apache.commons.lang3.math.Fraction:231 -> 0.7071067811865475 (ep: 0, ef: 1, np: 1823, nf: 1)
+org.apache.commons.lang3.math.Fraction:475 -> 0.7071067811865475 (ep: 0, ef: 1, np: 1823, nf: 1)
+org.apache.commons.lang3.math.Fraction:476 -> 0.7071067811865475 (ep: 0, ef: 1, np: 1823, nf: 1)
+org.apache.commons.lang3.math.Fraction:478 -> 0.7071067811865475 (ep: 0, ef: 1, np: 1823, nf: 1)
+org.apache.commons.lang3.math.Fraction:479 -> 0.7071067811865475 (ep: 0, ef: 1, np: 1823, nf: 1)
+org.apache.commons.lang3.math.Fraction:480 -> 0.7071067811865475 (ep: 0, ef: 1, np: 1823, nf: 1)
+org.apache.commons.lang3.math.Fraction:482 -> 0.7071067811865475 (ep: 0, ef: 1, np: 1823, nf: 1)
+org.apache.commons.lang3.math.Fraction:590 -> 0.47140452079103173 (ep: 7, ef: 2, np: 1816, nf: 0)
+org.apache.commons.lang3.math.Fraction:591 -> 0.47140452079103173 (ep: 7, ef: 2, np: 1816, nf: 0)
+org.apache.commons.lang3.math.Fraction:593 -> 0.47140452079103173 (ep: 7, ef: 2, np: 1816, nf: 0)
+org.apache.commons.lang3.math.Fraction:594 -> 0.47140452079103173 (ep: 7, ef: 2, np: 1816, nf: 0)
+org.apache.commons.lang3.math.Fraction:597 -> 0.47140452079103173 (ep: 7, ef: 2, np: 1816, nf: 0)
+org.apache.commons.lang3.math.Fraction:602 -> 0.47140452079103173 (ep: 7, ef: 2, np: 1816, nf: 0)
+org.apache.commons.lang3.math.Fraction:608 -> 0.47140452079103173 (ep: 7, ef: 2, np: 1816, nf: 0)
+org.apache.commons.lang3.math.Fraction:612 -> 0.47140452079103173 (ep: 7, ef: 2, np: 1816, nf: 0)
+org.apache.commons.lang3.math.Fraction:613 -> 0.47140452079103173 (ep: 7, ef: 2, np: 1816, nf: 0)
+org.apache.commons.lang3.math.Fraction:615 -> 0.47140452079103173 (ep: 7, ef: 2, np: 1816, nf: 0)
+org.apache.commons.lang3.math.Fraction:618 -> 0.47140452079103173 (ep: 7, ef: 2, np: 1816, nf: 0)
+org.apache.commons.lang3.math.Fraction:621 -> 0.47140452079103173 (ep: 7, ef: 2, np: 1816, nf: 0)
+org.apache.commons.lang3.math.Fraction:622 -> 0.47140452079103173 (ep: 7, ef: 2, np: 1816, nf: 0)
+org.apache.commons.lang3.math.Fraction:583 -> 0.4472135954999579 (ep: 8, ef: 2, np: 1815, nf: 0)
+org.apache.commons.lang3.math.Fraction:584 -> 0.4472135954999579 (ep: 8, ef: 2, np: 1815, nf: 0)
+org.apache.commons.lang3.math.Fraction:219 -> 0.4082482904638631 (ep: 2, ef: 1, np: 1821, nf: 1)
+org.apache.commons.lang3.math.Fraction:843 -> 0.4082482904638631 (ep: 2, ef: 1, np: 1821, nf: 1)
+org.apache.commons.lang3.math.Fraction:846 -> 0.4082482904638631 (ep: 2, ef: 1, np: 1821, nf: 1)
+org.apache.commons.lang3.math.Fraction:849 -> 0.4082482904638631 (ep: 2, ef: 1, np: 1821, nf: 1)
+org.apache.commons.lang3.math.Fraction:850 -> 0.4082482904638631 (ep: 2, ef: 1, np: 1821, nf: 1)
+org.apache.commons.lang3.math.Fraction:595 -> 0.31622776601683794 (ep: 4, ef: 1, np: 1819, nf: 1)
+org.apache.commons.lang3.math.Fraction:151 -> 0.31622776601683794 (ep: 4, ef: 1, np: 1819, nf: 1)
+org.apache.commons.lang3.math.Fraction:155 -> 0.31622776601683794 (ep: 4, ef: 1, np: 1819, nf: 1)
+org.apache.commons.lang3.math.Fraction:156 -> 0.31622776601683794 (ep: 4, ef: 1, np: 1819, nf: 1)
+org.apache.commons.lang3.math.Fraction:373 -> 0.30151134457776363 (ep: 20, ef: 2, np: 1803, nf: 0)
+org.apache.commons.lang3.math.Fraction:382 -> 0.30151134457776363 (ep: 20, ef: 2, np: 1803, nf: 0)
+org.apache.commons.lang3.math.Fraction:215 -> 0.2672612419124244 (ep: 6, ef: 1, np: 1817, nf: 1)
+org.apache.commons.lang3.math.Fraction:218 -> 0.2672612419124244 (ep: 6, ef: 1, np: 1817, nf: 1)
+org.apache.commons.lang3.math.Fraction:222 -> 0.2672612419124244 (ep: 6, ef: 1, np: 1817, nf: 1)
+org.apache.commons.lang3.math.Fraction:225 -> 0.2672612419124244 (ep: 6, ef: 1, np: 1817, nf: 1)
+org.apache.commons.lang3.math.Fraction:234 -> 0.2672612419124244 (ep: 6, ef: 1, np: 1817, nf: 1)
+org.apache.commons.lang3.math.Fraction:235 -> 0.2672612419124244 (ep: 6, ef: 1, np: 1817, nf: 1)
+org.apache.commons.lang3.math.Fraction:236 -> 0.2672612419124244 (ep: 6, ef: 1, np: 1817, nf: 1)
+org.apache.commons.lang3.math.Fraction:237 -> 0.2672612419124244 (ep: 6, ef: 1, np: 1817, nf: 1)
+org.apache.commons.lang3.math.Fraction:609 -> 0.2672612419124244 (ep: 6, ef: 1, np: 1817, nf: 1)
+org.apache.commons.lang3.math.Fraction:147 -> 0.17677669529663687 (ep: 15, ef: 1, np: 1808, nf: 1)
+org.apache.commons.lang3.math.Fraction:150 -> 0.17677669529663687 (ep: 15, ef: 1, np: 1808, nf: 1)
+org.apache.commons.lang3.math.Fraction:158 -> 0.17677669529663687 (ep: 15, ef: 1, np: 1808, nf: 1)
+
+
+
+Node: griffon-15.nancy.grid5000.fr
+
+
+Date: Mon May 11 08:00:47 CEST 2015
+
+

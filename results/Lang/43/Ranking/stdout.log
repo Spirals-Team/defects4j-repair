@@ -1,0 +1,78 @@
+export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";cp -r /home/tdurieux/projects/lang/lang_43 /tmp/lang_43_Ranking;cd /tmp/lang_43_Ranking;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Lang/lib/* lib/;find . -type f -name "package-info.java" -delete;
+cd /tmp/lang_43_Ranking;cp -r /home/tdurieux/nopol/z3-x64-debian-7.7/bin/ lib/z3;time java -cp /home/tdurieux/nopol/nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar fr.inria.lille.repair.Main --mode ranking --type condition --oracle angelic --synthesis smt --solver z3 --solver-path lib/z3/z3 --complianceLevel 3 --source src/java/ --classpath target/classes/:target/tests/:lib/asm.jar:lib/cglib.jar:lib/commons-io.jar:lib/easymock.jar:/home/tdurieux/nopol/nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar;echo "
+
+Node: `hostname`
+";echo "
+Date: `date`
+";rm -rf /tmp/lang_43_Ranking;
+
+/************************/
+Executed tests:   1902
+Successful tests: 1901
+Failed tests:     1
+
+org.apache.commons.lang.text.ExtendedMessageFormatTest#testEscapedQuote_LANG_477
+java.lang.OutOfMemoryError: Java heap space
+	at java.util.Arrays.copyOf(Arrays.java:2367)
+	at java.lang.AbstractStringBuilder.expandCapacity(AbstractStringBuilder.java:130)
+	at java.lang.AbstractStringBuilder.ensureCapacityInternal(AbstractStringBuilder.java:114)
+	at java.lang.AbstractStringBuilder.append(AbstractStringBuilder.java:587)
+	at java.lang.StringBuffer.append(StringBuffer.java:332)
+	at org.apache.commons.lang.text.ExtendedMessageFormat.appendQuotedString(ExtendedMessageFormat.java:422)
+	at org.apache.commons.lang.text.ExtendedMessageFormat.applyPattern(ExtendedMessageFormat.java:158)
+	at org.apache.commons.lang.text.ExtendedMessageFormat.<init>(ExtendedMessageFormat.java:127)
+	at org.apache.commons.lang.text.ExtendedMessageFormat.<init>(ExtendedMessageFormat.java:112)
+	at org.apache.commons.lang.text.ExtendedMessageFormatTest.testEscapedQuote_LANG_477(ExtendedMessageFormatTest.java:100)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at com.gzoltar.core.instr.testing.junit.JUnitRunner.run(JUnitRunner.java:47)
+	at com.gzoltar.core.instr.Runner.main(Runner.java:46)
+
+
+/************************/
+/* Suspicious statement */
+/************************/
+org.apache.commons.lang.text.ExtendedMessageFormat:158 -> 1.0 (ep: 0, ef: 1, np: 1901, nf: 0)
+org.apache.commons.lang.text.ExtendedMessageFormat:159 -> 1.0 (ep: 0, ef: 1, np: 1901, nf: 0)
+org.apache.commons.lang.text.ExtendedMessageFormat:419 -> 1.0 (ep: 0, ef: 1, np: 1901, nf: 0)
+org.apache.commons.lang.text.ExtendedMessageFormat:420 -> 1.0 (ep: 0, ef: 1, np: 1901, nf: 0)
+org.apache.commons.lang.text.ExtendedMessageFormat:421 -> 1.0 (ep: 0, ef: 1, np: 1901, nf: 0)
+org.apache.commons.lang.text.ExtendedMessageFormat:422 -> 1.0 (ep: 0, ef: 1, np: 1901, nf: 0)
+org.apache.commons.lang.text.ExtendedMessageFormat:148 -> 0.5 (ep: 3, ef: 1, np: 1898, nf: 0)
+org.apache.commons.lang.text.ExtendedMessageFormat:149 -> 0.5 (ep: 3, ef: 1, np: 1898, nf: 0)
+org.apache.commons.lang.text.ExtendedMessageFormat:150 -> 0.5 (ep: 3, ef: 1, np: 1898, nf: 0)
+org.apache.commons.lang.text.ExtendedMessageFormat:152 -> 0.5 (ep: 3, ef: 1, np: 1898, nf: 0)
+org.apache.commons.lang.text.ExtendedMessageFormat:153 -> 0.5 (ep: 3, ef: 1, np: 1898, nf: 0)
+org.apache.commons.lang.text.ExtendedMessageFormat:154 -> 0.5 (ep: 3, ef: 1, np: 1898, nf: 0)
+org.apache.commons.lang.text.ExtendedMessageFormat:155 -> 0.5 (ep: 3, ef: 1, np: 1898, nf: 0)
+org.apache.commons.lang.text.ExtendedMessageFormat:156 -> 0.5 (ep: 3, ef: 1, np: 1898, nf: 0)
+org.apache.commons.lang.text.ExtendedMessageFormat:187 -> 0.5 (ep: 3, ef: 1, np: 1898, nf: 0)
+org.apache.commons.lang.text.ExtendedMessageFormat:188 -> 0.5 (ep: 3, ef: 1, np: 1898, nf: 0)
+org.apache.commons.lang.text.ExtendedMessageFormat:403 -> 0.5 (ep: 3, ef: 1, np: 1898, nf: 0)
+org.apache.commons.lang.text.ExtendedMessageFormat:404 -> 0.5 (ep: 3, ef: 1, np: 1898, nf: 0)
+org.apache.commons.lang.text.ExtendedMessageFormat:143 -> 0.3779644730092272 (ep: 6, ef: 1, np: 1895, nf: 0)
+org.apache.commons.lang.text.ExtendedMessageFormat:144 -> 0.3779644730092272 (ep: 6, ef: 1, np: 1895, nf: 0)
+org.apache.commons.lang.text.ExtendedMessageFormat:145 -> 0.3779644730092272 (ep: 6, ef: 1, np: 1895, nf: 0)
+org.apache.commons.lang.text.ExtendedMessageFormat:146 -> 0.3779644730092272 (ep: 6, ef: 1, np: 1895, nf: 0)
+
+
+
+Node: griffon-56.nancy.grid5000.fr
+
+
+Date: Mon May 11 08:00:55 CEST 2015
+
+

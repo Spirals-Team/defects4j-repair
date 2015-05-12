@@ -1,0 +1,81 @@
+{
+    "date": "2015-05-11T07:58:40.741954", 
+    "executedTest": 1690, 
+    "failedTest": 11, 
+    "failedTestDetails": [
+        {
+            "class": "org.apache.commons.lang.LocaleUtilsTest", 
+            "method": "testAvailableLocaleSet"
+        }, 
+        {
+            "class": "org.apache.commons.lang.LocaleUtilsTest", 
+            "method": "testIsAvailableLocale"
+        }, 
+        {
+            "class": "org.apache.commons.lang.LocaleUtilsTest", 
+            "method": "testAvailableLocaleList"
+        }, 
+        {
+            "class": "org.apache.commons.lang.LocaleUtilsTest", 
+            "method": "testCountriesByLanguage"
+        }, 
+        {
+            "class": "org.apache.commons.lang.LocaleUtilsTest", 
+            "method": "testLocaleLookupList_LocaleLocale"
+        }, 
+        {
+            "class": "org.apache.commons.lang.LocaleUtilsTest", 
+            "method": "testLanguagesByCountry"
+        }, 
+        {
+            "class": "org.apache.commons.lang.LocaleUtilsTest", 
+            "method": "testToLocale_1Part"
+        }, 
+        {
+            "class": "org.apache.commons.lang.LocaleUtilsTest", 
+            "method": "testToLocale_2Part"
+        }, 
+        {
+            "class": "org.apache.commons.lang.LocaleUtilsTest", 
+            "method": "testToLocale_3Part"
+        }, 
+        {
+            "class": "org.apache.commons.lang.LocaleUtilsTest", 
+            "method": "testLocaleLookupList_Locale"
+        }, 
+        {
+            "class": "org.apache.commons.lang.LocaleUtilsTest", 
+            "method": "testConstructor"
+        }
+    ], 
+    "modifiedLines": [
+        {
+            "class": "a.org.apache.commons.lang.LocaleUtils", 
+            "line": 223
+        }
+    ], 
+    "nbsuspicious": 1, 
+    "node": "griffon-10.nancy.grid5000.fr\n", 
+    "successfulTest": 1679, 
+    "suspicious": {
+        "org.apache.commons.lang.LocaleUtils:223": {
+            "class": "org.apache.commons.lang.LocaleUtils", 
+            "ef": 11, 
+            "ep": 0, 
+            "line": 223, 
+            "metrics": {
+                "ample": 1.0, 
+                "gzoltar": 1.0, 
+                "ochiai": 1.0, 
+                "tarantula": 1.0
+            }, 
+            "nf": 0, 
+            "np": 1679, 
+            "rank": {
+                "ample": 1, 
+                "ochiai": 1, 
+                "tarantula": 1
+            }
+        }
+    }
+}

@@ -1,0 +1,139 @@
+export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";cp -r /home/tdurieux/projects/chart/chart_12 /tmp/chart_12_Ranking;cd /tmp/chart_12_Ranking;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Chart/lib/* lib/;find . -type f -name "package-info.java" -delete;
+cd /tmp/chart_12_Ranking;cp -r /home/tdurieux/nopol/z3-x64-debian-7.7/bin/ lib/z3;time java -cp /home/tdurieux/nopol/nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar fr.inria.lille.repair.Main --mode ranking --type condition --oracle angelic --synthesis smt --solver z3 --solver-path lib/z3/z3 --complianceLevel 4 --source source/ --classpath build/:build-tests/:lib/cobertura-lib/servlet-api-2.5-6.1.14.jar:lib/servlet.jar:/home/tdurieux/nopol/nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar;echo "
+
+Node: `hostname`
+";echo "
+Date: `date`
+";rm -rf /tmp/chart_12_Ranking;
+
+/************************/
+Executed tests:   3613
+Successful tests: 3611
+Failed tests:     2
+
+org.jfree.chart.plot.junit.MultiplePiePlotTests#testConstructor
+junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:55)
+	at junit.framework.Assert.assertTrue(Assert.java:22)
+	at junit.framework.Assert.assertTrue(Assert.java:31)
+	at junit.framework.TestCase.assertTrue(TestCase.java:201)
+	at org.jfree.chart.plot.junit.MultiplePiePlotTests.testConstructor(MultiplePiePlotTests.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at com.gzoltar.core.instr.testing.junit.JUnitRunner.run(JUnitRunner.java:47)
+	at com.gzoltar.core.instr.Runner.main(Runner.java:46)
+
+org.jfree.chart.plot.junit.MultiplePiePlotTests#testConstructor
+junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:55)
+	at junit.framework.Assert.assertTrue(Assert.java:22)
+	at junit.framework.Assert.assertTrue(Assert.java:31)
+	at junit.framework.TestCase.assertTrue(TestCase.java:201)
+	at org.jfree.chart.plot.junit.MultiplePiePlotTests.testConstructor(MultiplePiePlotTests.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at com.gzoltar.core.instr.testing.junit.JUnitRunner.run(JUnitRunner.java:47)
+	at com.gzoltar.core.instr.Runner.main(Runner.java:46)
+
+
+/************************/
+/* Suspicious statement */
+/************************/
+org.jfree.chart.plot.MultiplePiePlot:166 -> 1.0 (ep: 0, ef: 2, np: 3611, nf: 0)
+org.jfree.data.general.AbstractDataset:160 -> 0.5773502691896258 (ep: 4, ef: 2, np: 3607, nf: 0)
+org.jfree.data.general.AbstractDataset:161 -> 0.5773502691896258 (ep: 4, ef: 2, np: 3607, nf: 0)
+org.jfree.chart.JFreeChart:664 -> 0.5 (ep: 6, ef: 2, np: 3605, nf: 0)
+org.jfree.chart.JFreeChart:665 -> 0.5 (ep: 6, ef: 2, np: 3605, nf: 0)
+org.jfree.chart.JFreeChart:795 -> 0.5 (ep: 6, ef: 2, np: 3605, nf: 0)
+org.jfree.chart.JFreeChart:796 -> 0.5 (ep: 6, ef: 2, np: 3605, nf: 0)
+org.jfree.chart.JFreeChart:797 -> 0.5 (ep: 6, ef: 2, np: 3605, nf: 0)
+org.jfree.chart.title.LegendTitle:542 -> 0.5 (ep: 6, ef: 2, np: 3605, nf: 0)
+org.jfree.chart.JFreeChart:571 -> 0.4472135954999579 (ep: 8, ef: 2, np: 3603, nf: 0)
+org.jfree.chart.JFreeChart:574 -> 0.4472135954999579 (ep: 8, ef: 2, np: 3603, nf: 0)
+org.jfree.chart.JFreeChart:575 -> 0.4472135954999579 (ep: 8, ef: 2, np: 3603, nf: 0)
+org.jfree.chart.JFreeChart:576 -> 0.4472135954999579 (ep: 8, ef: 2, np: 3603, nf: 0)
+org.jfree.chart.JFreeChart:578 -> 0.4472135954999579 (ep: 8, ef: 2, np: 3603, nf: 0)
+org.jfree.chart.JFreeChart:579 -> 0.4472135954999579 (ep: 8, ef: 2, np: 3603, nf: 0)
+org.jfree.chart.JFreeChart:959 -> 0.4472135954999579 (ep: 8, ef: 2, np: 3603, nf: 0)
+org.jfree.chart.JFreeChart:960 -> 0.4472135954999579 (ep: 8, ef: 2, np: 3603, nf: 0)
+org.jfree.chart.JFreeChart:961 -> 0.4472135954999579 (ep: 8, ef: 2, np: 3603, nf: 0)
+org.jfree.chart.JFreeChart:962 -> 0.4472135954999579 (ep: 8, ef: 2, np: 3603, nf: 0)
+org.jfree.chart.JFreeChart:972 -> 0.4472135954999579 (ep: 8, ef: 2, np: 3603, nf: 0)
+org.jfree.chart.JFreeChart:628 -> 0.4082482904638631 (ep: 10, ef: 2, np: 3601, nf: 0)
+org.jfree.chart.JFreeChart:641 -> 0.4082482904638631 (ep: 10, ef: 2, np: 3601, nf: 0)
+org.jfree.chart.JFreeChart:642 -> 0.4082482904638631 (ep: 10, ef: 2, np: 3601, nf: 0)
+org.jfree.chart.JFreeChart:643 -> 0.4082482904638631 (ep: 10, ef: 2, np: 3601, nf: 0)
+org.jfree.chart.JFreeChart:644 -> 0.4082482904638631 (ep: 10, ef: 2, np: 3601, nf: 0)
+org.jfree.chart.JFreeChart:645 -> 0.4082482904638631 (ep: 10, ef: 2, np: 3601, nf: 0)
+org.jfree.chart.JFreeChart:646 -> 0.4082482904638631 (ep: 10, ef: 2, np: 3601, nf: 0)
+org.jfree.chart.JFreeChart:647 -> 0.4082482904638631 (ep: 10, ef: 2, np: 3601, nf: 0)
+org.jfree.chart.JFreeChart:1486 -> 0.3779644730092272 (ep: 12, ef: 2, np: 3599, nf: 0)
+org.jfree.chart.JFreeChart:1487 -> 0.3779644730092272 (ep: 12, ef: 2, np: 3599, nf: 0)
+org.jfree.chart.JFreeChart:1488 -> 0.3779644730092272 (ep: 12, ef: 2, np: 3599, nf: 0)
+org.jfree.chart.title.LegendTitle:541 -> 0.25 (ep: 30, ef: 2, np: 3581, nf: 0)
+org.jfree.chart.JFreeChart:1497 -> 0.11180339887498948 (ep: 158, ef: 2, np: 3453, nf: 0)
+org.jfree.chart.JFreeChart:1498 -> 0.11180339887498948 (ep: 158, ef: 2, np: 3453, nf: 0)
+org.jfree.chart.JFreeChart:1499 -> 0.11180339887498948 (ep: 158, ef: 2, np: 3453, nf: 0)
+org.jfree.chart.JFreeChart:1506 -> 0.11180339887498948 (ep: 158, ef: 2, np: 3453, nf: 0)
+org.jfree.chart.title.Title:216 -> 0.08362420100070908 (ep: 284, ef: 2, np: 3327, nf: 0)
+org.jfree.chart.title.Title:219 -> 0.08362420100070908 (ep: 284, ef: 2, np: 3327, nf: 0)
+org.jfree.chart.title.Title:220 -> 0.08362420100070908 (ep: 284, ef: 2, np: 3327, nf: 0)
+org.jfree.chart.title.Title:221 -> 0.08362420100070908 (ep: 284, ef: 2, np: 3327, nf: 0)
+org.jfree.chart.title.Title:223 -> 0.08362420100070908 (ep: 284, ef: 2, np: 3327, nf: 0)
+org.jfree.chart.block.AbstractBlock:209 -> 0.08333333333333333 (ep: 286, ef: 2, np: 3325, nf: 0)
+org.jfree.chart.block.AbstractBlock:212 -> 0.08333333333333333 (ep: 286, ef: 2, np: 3325, nf: 0)
+org.jfree.chart.block.AbstractBlock:213 -> 0.08333333333333333 (ep: 286, ef: 2, np: 3325, nf: 0)
+org.jfree.chart.block.AbstractBlock:251 -> 0.08333333333333333 (ep: 286, ef: 2, np: 3325, nf: 0)
+org.jfree.chart.block.AbstractBlock:254 -> 0.08333333333333333 (ep: 286, ef: 2, np: 3325, nf: 0)
+org.jfree.chart.block.AbstractBlock:255 -> 0.08333333333333333 (ep: 286, ef: 2, np: 3325, nf: 0)
+org.jfree.chart.title.LegendTitle:229 -> 0.08333333333333333 (ep: 286, ef: 2, np: 3325, nf: 0)
+org.jfree.chart.title.LegendTitle:230 -> 0.08333333333333333 (ep: 286, ef: 2, np: 3325, nf: 0)
+org.jfree.chart.title.LegendTitle:231 -> 0.08333333333333333 (ep: 286, ef: 2, np: 3325, nf: 0)
+org.jfree.chart.title.Title:357 -> 0.08219949365267865 (ep: 294, ef: 2, np: 3317, nf: 0)
+org.jfree.chart.title.Title:358 -> 0.08219949365267865 (ep: 294, ef: 2, np: 3317, nf: 0)
+org.jfree.chart.title.Title:359 -> 0.08219949365267865 (ep: 294, ef: 2, np: 3317, nf: 0)
+org.jfree.chart.title.Title:366 -> 0.08219949365267865 (ep: 294, ef: 2, np: 3317, nf: 0)
+org.jfree.chart.title.Title:337 -> 0.07881104062391006 (ep: 320, ef: 2, np: 3291, nf: 0)
+org.jfree.chart.title.Title:338 -> 0.07881104062391006 (ep: 320, ef: 2, np: 3291, nf: 0)
+org.jfree.chart.plot.Plot:868 -> 0.07372097807744857 (ep: 366, ef: 2, np: 3245, nf: 0)
+org.jfree.chart.plot.Plot:869 -> 0.07372097807744857 (ep: 366, ef: 2, np: 3245, nf: 0)
+org.jfree.chart.block.AbstractBlock:277 -> 0.07198157507486945 (ep: 384, ef: 2, np: 3227, nf: 0)
+org.jfree.chart.block.AbstractBlock:280 -> 0.07198157507486945 (ep: 384, ef: 2, np: 3227, nf: 0)
+org.jfree.chart.block.AbstractBlock:281 -> 0.07198157507486945 (ep: 384, ef: 2, np: 3227, nf: 0)
+
+
+
+Node: griffon-58.nancy.grid5000.fr
+
+
+Date: Mon May 11 08:03:49 CEST 2015
+
+

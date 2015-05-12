@@ -1,0 +1,50 @@
+export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";cp -r /home/tdurieux/projects/math/math_8 /tmp/math_8_Kali;cd /tmp/math_8_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
+/home/tdurieux/results/Math/8/Kali/result
+cd /tmp/math_8_Kali;time java -cp /home/tdurieux/astor/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.math3.distribution.DiscreteRealDistributionTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;rm -rf /tmp/math_8_Kali;
+
+ProgramVariant 4
+ 
+ operation: 
+location= org.apache.commons.math3.distribution.DiscreteDistribution
+ line= 189
+ original statement= for (int i = 0 ; i < sampleSize ; i++) {
+	out[i] = sample();
+}
+ fix (remove original statement) "for (int i = 0 ; i < sampleSize ; i++) {
+	out[i] = sample();
+}"
+ generation= 3
+ 
+ ----ProgramVariant 5
+ 
+ operation: 
+location= org.apache.commons.math3.distribution.DiscreteDistribution
+ line= 190
+ original statement= out[i] = sample()
+ fix (remove original statement) "out[i] = sample()"
+ generation= 4
+ 
+ ----
+Time Evolution(ms): 404726
+
+----stats: 
+
+spaces: [0]: []
+time val1 [18]: [309, 312, 315, 310, 298, 290, 289, 290, 312, 311, 215, 311, 226, 227, 325, 300, 299, 302]
+time val2 [2]: [197434, 197915]
+#gen: 25
+#patches: 2
+#RightCompilation: 17
+#WrongCompilation: 7
+#FailingTestCaseExecution: 18
+#RegressionTestExecution: 2
+#TestcasesExecutedval1: 234
+#TestcasesExecutedval2: 9650
+#FailingTestCase: 13
+#RegressionTestCases: 4825
+#OfAppliedOp: 24
+#NotAppliedOp: 0
+#InmutatedGen: 0
+#unfinishValidation: 0
+Time Total(ms): 1393326
+

@@ -1,0 +1,161 @@
+export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";cp -r /home/tdurieux/projects/chart/chart_7 /tmp/chart_7_Ranking;cd /tmp/chart_7_Ranking;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Chart/lib/* lib/;find . -type f -name "package-info.java" -delete;
+cd /tmp/chart_7_Ranking;cp -r /home/tdurieux/nopol/z3-x64-debian-7.7/bin/ lib/z3;time java -cp /home/tdurieux/nopol/nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar fr.inria.lille.repair.Main --mode ranking --type condition --oracle angelic --synthesis smt --solver z3 --solver-path lib/z3/z3 --complianceLevel 4 --source source/ --classpath build/:build-tests/:lib/cobertura-lib/servlet-api-2.5-6.1.14.jar:lib/servlet.jar:/home/tdurieux/nopol/nopol-0.0.3-SNAPSHOT-jar-with-dependencies.jar;echo "
+
+Node: `hostname`
+";echo "
+Date: `date`
+";rm -rf /tmp/chart_7_Ranking;
+
+/************************/
+Executed tests:   3641
+Successful tests: 3639
+Failed tests:     2
+
+org.jfree.data.time.junit.TimePeriodValuesTests#testGetMaxMiddleIndex
+junit.framework.AssertionFailedError: expected:<1> but was:<3>
+	at junit.framework.Assert.fail(Assert.java:57)
+	at junit.framework.Assert.failNotEquals(Assert.java:329)
+	at junit.framework.Assert.assertEquals(Assert.java:78)
+	at junit.framework.Assert.assertEquals(Assert.java:234)
+	at junit.framework.Assert.assertEquals(Assert.java:241)
+	at junit.framework.TestCase.assertEquals(TestCase.java:409)
+	at org.jfree.data.time.junit.TimePeriodValuesTests.testGetMaxMiddleIndex(TimePeriodValuesTests.java:377)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at com.gzoltar.core.instr.testing.junit.JUnitRunner.run(JUnitRunner.java:47)
+	at com.gzoltar.core.instr.Runner.main(Runner.java:46)
+
+org.jfree.data.time.junit.TimePeriodValuesTests#testGetMaxMiddleIndex
+junit.framework.AssertionFailedError: expected:<1> but was:<3>
+	at junit.framework.Assert.fail(Assert.java:57)
+	at junit.framework.Assert.failNotEquals(Assert.java:329)
+	at junit.framework.Assert.assertEquals(Assert.java:78)
+	at junit.framework.Assert.assertEquals(Assert.java:234)
+	at junit.framework.Assert.assertEquals(Assert.java:241)
+	at junit.framework.TestCase.assertEquals(TestCase.java:409)
+	at org.jfree.data.time.junit.TimePeriodValuesTests.testGetMaxMiddleIndex(TimePeriodValuesTests.java:377)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at com.gzoltar.core.instr.testing.junit.JUnitRunner.run(JUnitRunner.java:47)
+	at com.gzoltar.core.instr.Runner.main(Runner.java:46)
+
+
+/************************/
+/* Suspicious statement */
+/************************/
+org.jfree.data.time.TimePeriodValues:552 -> 0.7071067811865475 (ep: 2, ef: 2, np: 3637, nf: 0)
+org.jfree.data.time.TimePeriodValues:267 -> 0.4472135954999579 (ep: 8, ef: 2, np: 3631, nf: 0)
+org.jfree.data.time.TimePeriodValues:292 -> 0.4472135954999579 (ep: 8, ef: 2, np: 3631, nf: 0)
+org.jfree.data.time.TimePeriodValues:317 -> 0.4472135954999579 (ep: 8, ef: 2, np: 3631, nf: 0)
+org.jfree.data.time.TimePeriodValues:363 -> 0.31622776601683794 (ep: 18, ef: 2, np: 3621, nf: 0)
+org.jfree.data.time.TimePeriodValues:364 -> 0.31622776601683794 (ep: 18, ef: 2, np: 3621, nf: 0)
+org.jfree.data.time.TimePeriodValues:365 -> 0.31622776601683794 (ep: 18, ef: 2, np: 3621, nf: 0)
+org.jfree.data.time.TimePeriodValues:375 -> 0.31622776601683794 (ep: 18, ef: 2, np: 3621, nf: 0)
+org.jfree.data.time.TimePeriodValues:376 -> 0.31622776601683794 (ep: 18, ef: 2, np: 3621, nf: 0)
+org.jfree.data.time.TimePeriodValues:377 -> 0.31622776601683794 (ep: 18, ef: 2, np: 3621, nf: 0)
+org.jfree.data.time.TimePeriodValues:205 -> 0.2773500981126146 (ep: 24, ef: 2, np: 3615, nf: 0)
+org.jfree.data.time.TimePeriodValues:243 -> 0.2773500981126146 (ep: 24, ef: 2, np: 3615, nf: 0)
+org.jfree.data.time.TimePeriodValues:246 -> 0.2773500981126146 (ep: 24, ef: 2, np: 3615, nf: 0)
+org.jfree.data.time.TimePeriodValues:247 -> 0.2773500981126146 (ep: 24, ef: 2, np: 3615, nf: 0)
+org.jfree.data.time.TimePeriodValues:248 -> 0.2773500981126146 (ep: 24, ef: 2, np: 3615, nf: 0)
+org.jfree.data.time.TimePeriodValues:249 -> 0.2773500981126146 (ep: 24, ef: 2, np: 3615, nf: 0)
+org.jfree.data.time.TimePeriodValues:259 -> 0.2773500981126146 (ep: 24, ef: 2, np: 3615, nf: 0)
+org.jfree.data.time.TimePeriodValues:260 -> 0.2773500981126146 (ep: 24, ef: 2, np: 3615, nf: 0)
+org.jfree.data.time.TimePeriodValues:261 -> 0.2773500981126146 (ep: 24, ef: 2, np: 3615, nf: 0)
+org.jfree.data.time.TimePeriodValues:263 -> 0.2773500981126146 (ep: 24, ef: 2, np: 3615, nf: 0)
+org.jfree.data.time.TimePeriodValues:264 -> 0.2773500981126146 (ep: 24, ef: 2, np: 3615, nf: 0)
+org.jfree.data.time.TimePeriodValues:266 -> 0.2773500981126146 (ep: 24, ef: 2, np: 3615, nf: 0)
+org.jfree.data.time.TimePeriodValues:269 -> 0.2773500981126146 (ep: 24, ef: 2, np: 3615, nf: 0)
+org.jfree.data.time.TimePeriodValues:271 -> 0.2773500981126146 (ep: 24, ef: 2, np: 3615, nf: 0)
+org.jfree.data.time.TimePeriodValues:274 -> 0.2773500981126146 (ep: 24, ef: 2, np: 3615, nf: 0)
+org.jfree.data.time.TimePeriodValues:275 -> 0.2773500981126146 (ep: 24, ef: 2, np: 3615, nf: 0)
+org.jfree.data.time.TimePeriodValues:277 -> 0.2773500981126146 (ep: 24, ef: 2, np: 3615, nf: 0)
+org.jfree.data.time.TimePeriodValues:278 -> 0.2773500981126146 (ep: 24, ef: 2, np: 3615, nf: 0)
+org.jfree.data.time.TimePeriodValues:280 -> 0.2773500981126146 (ep: 24, ef: 2, np: 3615, nf: 0)
+org.jfree.data.time.TimePeriodValues:282 -> 0.2773500981126146 (ep: 24, ef: 2, np: 3615, nf: 0)
+org.jfree.data.time.TimePeriodValues:285 -> 0.2773500981126146 (ep: 24, ef: 2, np: 3615, nf: 0)
+org.jfree.data.time.TimePeriodValues:286 -> 0.2773500981126146 (ep: 24, ef: 2, np: 3615, nf: 0)
+org.jfree.data.time.TimePeriodValues:288 -> 0.2773500981126146 (ep: 24, ef: 2, np: 3615, nf: 0)
+org.jfree.data.time.TimePeriodValues:290 -> 0.2773500981126146 (ep: 24, ef: 2, np: 3615, nf: 0)
+org.jfree.data.time.TimePeriodValues:291 -> 0.2773500981126146 (ep: 24, ef: 2, np: 3615, nf: 0)
+org.jfree.data.time.TimePeriodValues:294 -> 0.2773500981126146 (ep: 24, ef: 2, np: 3615, nf: 0)
+org.jfree.data.time.TimePeriodValues:296 -> 0.2773500981126146 (ep: 24, ef: 2, np: 3615, nf: 0)
+org.jfree.data.time.TimePeriodValues:299 -> 0.2773500981126146 (ep: 24, ef: 2, np: 3615, nf: 0)
+org.jfree.data.time.TimePeriodValues:300 -> 0.2773500981126146 (ep: 24, ef: 2, np: 3615, nf: 0)
+org.jfree.data.time.TimePeriodValues:302 -> 0.2773500981126146 (ep: 24, ef: 2, np: 3615, nf: 0)
+org.jfree.data.time.TimePeriodValues:304 -> 0.2773500981126146 (ep: 24, ef: 2, np: 3615, nf: 0)
+org.jfree.data.time.TimePeriodValues:305 -> 0.2773500981126146 (ep: 24, ef: 2, np: 3615, nf: 0)
+org.jfree.data.time.TimePeriodValues:306 -> 0.2773500981126146 (ep: 24, ef: 2, np: 3615, nf: 0)
+org.jfree.data.time.TimePeriodValues:308 -> 0.2773500981126146 (ep: 24, ef: 2, np: 3615, nf: 0)
+org.jfree.data.time.TimePeriodValues:310 -> 0.2773500981126146 (ep: 24, ef: 2, np: 3615, nf: 0)
+org.jfree.data.time.TimePeriodValues:313 -> 0.2773500981126146 (ep: 24, ef: 2, np: 3615, nf: 0)
+org.jfree.data.time.TimePeriodValues:314 -> 0.2773500981126146 (ep: 24, ef: 2, np: 3615, nf: 0)
+org.jfree.data.time.TimePeriodValues:316 -> 0.2773500981126146 (ep: 24, ef: 2, np: 3615, nf: 0)
+org.jfree.data.time.TimePeriodValues:319 -> 0.2773500981126146 (ep: 24, ef: 2, np: 3615, nf: 0)
+org.jfree.data.time.TimePeriodValues:321 -> 0.2773500981126146 (ep: 24, ef: 2, np: 3615, nf: 0)
+org.jfree.data.time.TimePeriodValues:324 -> 0.2773500981126146 (ep: 24, ef: 2, np: 3615, nf: 0)
+org.jfree.data.time.TimePeriodValues:325 -> 0.2773500981126146 (ep: 24, ef: 2, np: 3615, nf: 0)
+org.jfree.data.time.TimePeriodValues:327 -> 0.2773500981126146 (ep: 24, ef: 2, np: 3615, nf: 0)
+org.jfree.data.time.TimePeriodValues:328 -> 0.2773500981126146 (ep: 24, ef: 2, np: 3615, nf: 0)
+org.jfree.data.time.TimePeriodValues:330 -> 0.2773500981126146 (ep: 24, ef: 2, np: 3615, nf: 0)
+org.jfree.data.time.TimePeriodValues:332 -> 0.2773500981126146 (ep: 24, ef: 2, np: 3615, nf: 0)
+org.jfree.data.time.TimePeriodValues:335 -> 0.2773500981126146 (ep: 24, ef: 2, np: 3615, nf: 0)
+org.jfree.data.time.TimePeriodValue:97 -> 0.2773500981126146 (ep: 24, ef: 2, np: 3615, nf: 0)
+org.jfree.data.time.Year:150 -> 0.2581988897471611 (ep: 28, ef: 2, np: 3611, nf: 0)
+org.jfree.data.time.Year:164 -> 0.2581988897471611 (ep: 28, ef: 2, np: 3611, nf: 0)
+org.jfree.data.time.RegularTimePeriod:182 -> 0.22360679774997896 (ep: 38, ef: 2, np: 3601, nf: 0)
+org.jfree.data.time.RegularTimePeriod:194 -> 0.22360679774997896 (ep: 38, ef: 2, np: 3601, nf: 0)
+org.jfree.data.time.SimpleTimePeriod:120 -> 0.21320071635561041 (ep: 42, ef: 2, np: 3597, nf: 0)
+org.jfree.data.time.SimpleTimePeriod:100 -> 0.20851441405707477 (ep: 44, ef: 2, np: 3595, nf: 0)
+org.jfree.data.time.Year:176 -> 0.10783277320343841 (ep: 170, ef: 2, np: 3469, nf: 0)
+org.jfree.data.time.Year:177 -> 0.10783277320343841 (ep: 170, ef: 2, np: 3469, nf: 0)
+org.jfree.data.time.Year:178 -> 0.10783277320343841 (ep: 170, ef: 2, np: 3469, nf: 0)
+org.jfree.data.time.Year:233 -> 0.10783277320343841 (ep: 170, ef: 2, np: 3469, nf: 0)
+org.jfree.data.time.Year:234 -> 0.10783277320343841 (ep: 170, ef: 2, np: 3469, nf: 0)
+org.jfree.data.time.Year:237 -> 0.10783277320343841 (ep: 170, ef: 2, np: 3469, nf: 0)
+org.jfree.data.time.Year:252 -> 0.10783277320343841 (ep: 170, ef: 2, np: 3469, nf: 0)
+org.jfree.data.time.Year:253 -> 0.10783277320343841 (ep: 170, ef: 2, np: 3469, nf: 0)
+org.jfree.data.time.Year:256 -> 0.10783277320343841 (ep: 170, ef: 2, np: 3469, nf: 0)
+org.jfree.data.general.Series:313 -> 0.06178020632152154 (ep: 522, ef: 2, np: 3117, nf: 0)
+org.jfree.data.general.Series:314 -> 0.06178020632152154 (ep: 522, ef: 2, np: 3117, nf: 0)
+org.jfree.data.general.Series:316 -> 0.06178020632152154 (ep: 522, ef: 2, np: 3117, nf: 0)
+org.jfree.data.general.Series:326 -> 0.06178020632152154 (ep: 522, ef: 2, np: 3117, nf: 0)
+org.jfree.data.general.Series:327 -> 0.06178020632152154 (ep: 522, ef: 2, np: 3117, nf: 0)
+org.jfree.data.general.Series:334 -> 0.06178020632152154 (ep: 522, ef: 2, np: 3117, nf: 0)
+
+
+
+Node: griffon-10.nancy.grid5000.fr
+
+
+Date: Mon May 11 08:04:07 CEST 2015
+
+

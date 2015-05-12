@@ -1,0 +1,49 @@
+export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";cp -r /home/tdurieux/projects/math/math_73 /tmp/math_73_Genprog;cd /tmp/math_73_Genprog;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
+/home/tdurieux/results/Math/73/Genprog/result
+cd /tmp/math_73_Genprog;time java -cp /home/tdurieux/astor/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar fr.inria.main.evolution.MainjGenProg -mode statement -location . -dependencies lib/ -failing org.apache.commons.math.analysis.solvers.BrentSolverTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
+
+Node: `hostname`
+";echo "
+Date: `date`
+";rm -rf /tmp/math_73_Genprog;
+
+ProgramVariant 156
+ 
+ operation: 
+location= org.apache.commons.math.analysis.solvers.BrentSolver
+ line= 132
+ original statement= return solve(f, min, yMin, max, yMax, initial, yInitial)
+ fixed statement= "return solve(f, min, max)"
+ generation= 78
+ 
+ ----
+Time Evolution(ms): 16688
+
+----stats: 
+
+spaces: [59]: [95, 95, 17, 95, 95, 17, 95, 13, 95, 33, 95, 2, 17, 95, 95, 95, 95, 38, 95, 2, 95, 95, 95, 95, 11, 17, 95, 95, 38, 95, 33, 95, 5, 13, 95, 95, 95, 95, 95, 13, 95, 95, 95, 17, 38, 95, 13, 17, 95, 17, 95, 17, 13, 13, 17, 17, 2, 95, 11]
+time val1 [35]: [177, 167, 172, 168, 170, 168, 167, 183, 189, 168, 173, 173, 169, 168, 170, 167, 184, 168, 167, 168, 178, 168, 167, 167, 167, 172, 182, 170, 166, 169, 169, 167, 166, 167, 166]
+time val2 [1]: [7173]
+#gen: 78
+#patches: 1
+#RightCompilation: 34
+#WrongCompilation: 44
+#FailingTestCaseExecution: 35
+#RegressionTestExecution: 1
+#TestcasesExecutedval1: 210
+#TestcasesExecutedval2: 2032
+#FailingTestCase: 6
+#RegressionTestCases: 2032
+#OfAppliedOp: 78
+#NotAppliedOp: 0
+#InmutatedGen: 2
+#unfinishValidation: 0
+Time Total(ms): 43821
+
+
+Node: graphene-100.nancy.grid5000.fr
+
+
+Date: Tue May 12 01:45:28 CEST 2015
+
+
