@@ -44,22 +44,53 @@ class Ranking(Nopol):
                     "gzoltar": float(i[2]),
                     "ochiai": (ef)/sqrt((ef+ep)*(ef+nf)),
                     "tarantula": (ef/float(ef+nf))/float((ef/float(ef+nf))+(ep/float(ep+np))),
-                    "ample": abs((ef/float(ef+nf)) - (ep/float(ep+np)))
+                    "ample": abs((ef/float(ef+nf)) - (ep/float(ep+np))),
+                    "jaccard": ef / float(ef + ep + nf),
+                    "naish1": np if ef == 0 else -1,
+                    "naish2": ef - (ep / float(ep + np + 1)),
+                    "gp13": ef * (1 + 1 / float(2* ep + ef))
                 }
             }
         rank = 0
         suspiciousStatementsAmple = collections.OrderedDict(sorted(suspiciousStatements.items(), key=lambda t: t[1]['metrics']['ample'], reverse=True))
         for i in suspiciousStatementsAmple:
             rank += 1
-            suspiciousStatementsAmple[i]['rank']['ample'] = rank
+            suspiciousStatements[i]['rank']['ample'] = rank
+        rank = 0
+        suspiciousStatementsJaccard = collections.OrderedDict(sorted(suspiciousStatements.items(), key=lambda t: t[1]['metrics']['jaccard'], reverse=True))
+        for i in suspiciousStatementsJaccard:
+            rank += 1
+            suspiciousStatementsJaccard[i]['rank']['jaccard'] = rank
+
+        rank = 0
+        suspiciousStatementsNaish1 = collections.OrderedDict(sorted(suspiciousStatements.items(), key=lambda t: t[1]['metrics']['naish1'], reverse=True))
+        for i in suspiciousStatementsNaish1:
+            rank += 1
+            suspiciousStatementsNaish1[i]['rank']['naish1'] = rank
+
+        rank = 0
+        suspiciousStatementsNaish2 = collections.OrderedDict(sorted(suspiciousStatements.items(), key=lambda t: t[1]['metrics']['naish2'], reverse=True))
+        for i in suspiciousStatementsNaish2:
+            rank += 1
+            suspiciousStatementsNaish2[i]['rank']['naish2'] = rank
+
+        rank = 0
+        suspiciousStatementsGP13 = collections.OrderedDict(sorted(suspiciousStatements.items(), key=lambda t: t[1]['metrics']['gp13'], reverse=True))
+        for i in suspiciousStatementsGP13:
+            rank += 1
+            suspiciousStatementsGP13[i]['rank']['gp13'] = rank
+
         rank = 0
         suspiciousStatementsTarantula = collections.OrderedDict(sorted(suspiciousStatements.items(), key=lambda t: t[1]['metrics']['tarantula'], reverse=True))
         for i in suspiciousStatementsTarantula:
             rank += 1
             suspiciousStatementsTarantula[i]['rank']['tarantula'] = rank
+
         executedTest = None
         successfulTest = None
         failedTest = None
+        date = datetime.datetime.now().isoformat()
+        node = self.getHostname()
         failedTestDetails = []
         m = re.search('Executed tests:   ([0-9]+)', log)
         if m:
@@ -73,6 +104,13 @@ class Ranking(Nopol):
         m = re.search('Executed tests:   ([0-9]+)', log)
         if m:
             executedTest = int(m.group(1))
+
+        m = re.search('Node: ([a-zA-Z0-9\-\.]+)', log)
+        if m:
+            node = m.group(1)
+        m = re.search('Date: ([^`]+)$', log)
+        if m:
+            date = m.group(1)
 
         patches = []
         humanPatchpath = os.path.join(conf.defects4jRoot, "framework/projects", project.name, "patches",  "%d.src.patch" % id)
@@ -168,10 +206,10 @@ class Ranking(Nopol):
         for patchedFile in patches:
             for hunk in patchedFile['hunks']:
                 for change in hunk['changes']:
-                    if change['original'] is not None and change['original'] != '':
-                        if (change['original'][0] == '*' or 
-                            change['original'] == '/**' or 
-                            change['original'] == '**/'):
+                    if change['target'] is not None and change['target'] != '':
+                        if (change['target'][0] == '*' or 
+                            change['target'] == '/**' or 
+                            change['target'] == '**/'):
                             continue
                         key = "%s:%d" % (patchedFile['source_file'], change['line'])
                         modifiedLines.append({
@@ -196,8 +234,8 @@ class Ranking(Nopol):
             'nbsuspicious': len(suspiciousStatements),
             'suspicious': suspiciousStatements,
             'modifiedLines': modifiedLines,
-            'node': self.getHostname(),
-            'date': datetime.datetime.now().isoformat()
+            'node': node,
+            'date': date
         }
         path = os.path.join(project.logPath, str(id), self.name, "results.json")
         if not os.path.exists(os.path.dirname(path)):
