@@ -46,6 +46,13 @@ BugId             | NopolPC | NopolC | Genprog | Kali | Total
 Total             | 26 (11%) | 19 (8%) | 16 (7%) | 9 (4%) | 70
 Fixed bugs: 41/224 (18%)
 
+Nb bugs ends with an execution error: 29
+
+Nb bugs ends with an empty log: 0
+
+Nb bugs ends with the Grid5000 timeout: 209
+
+Total execution time: 17 days, 7:48:55.248000
 # Complete data
 
 BugId             | NopolPC | NopolC | Genprog | Kali | Total
@@ -58,7 +65,7 @@ BugId             | NopolPC | NopolC | Genprog | Kali | Total
 [L6](#lang-6)     | No      | No     | TIMEOUT | No   | 0
 [L7](#lang-7)     | TIMEOUT | TIMEOUT | TIMEOUT | No   | 0
 [L8](#lang-8)     | TIMEOUT | TIMEOUT | TIMEOUT | No   | 0
-[L9](#lang-9)     | TIMEOUT | No     | TIMEOUT | No   | 0
+[L9](#lang-9)     | TIMEOUT | TIMEOUT | TIMEOUT | No   | 0
 [L10](#lang-10)   | TIMEOUT | TIMEOUT | TIMEOUT | No   | 0
 [L11](#lang-11)   | TIMEOUT | TIMEOUT | TIMEOUT | No   | 0
 [L12](#lang-12)   | No      | No     | TIMEOUT | No   | 0
@@ -122,7 +129,7 @@ BugId             | NopolPC | NopolC | Genprog | Kali | Total
 [C5](#chart-5)    | No      | Yes    | TIMEOUT | No   | 1
 [C6](#chart-6)    | TIMEOUT | No     | TIMEOUT | No   | 0
 [C7](#chart-7)    | No      | No     | TIMEOUT | No   | 0
-[C8](#chart-8)    | ERROR   | ERROR  | No      | ERROR | 0
+[C8](#chart-8)    | ERROR   | ERROR  | ERROR   | ERROR | 0
 [C9](#chart-9)    | Yes     | Yes    | TIMEOUT | No   | 2
 [C10](#chart-10)  | No      | No     | TIMEOUT | No   | 0
 [C11](#chart-11)  | No      | No     | TIMEOUT | No   | 0
@@ -146,7 +153,7 @@ BugId             | NopolPC | NopolC | Genprog | Kali | Total
 [M3](#math-3)     | No      | No     | No      | No   | 0
 [M4](#math-4)     | TIMEOUT | TIMEOUT | No      | No   | 0
 [M5](#math-5)     | No      | No     | No      | No   | 0
-[M6](#math-6)     | TIMEOUT | TIMEOUT | No      | ERROR | 0
+[M6](#math-6)     | TIMEOUT | TIMEOUT | ERROR   | ERROR | 0
 [M7](#math-7)     | TIMEOUT | TIMEOUT | No      | No   | 0
 [M8](#math-8)     | No      | TIMEOUT | Yes     | Yes  | 2
 [M9](#math-9)     | No      | No     | No      | No   | 0
@@ -160,7 +167,7 @@ BugId             | NopolPC | NopolC | Genprog | Kali | Total
 [M17](#math-17)   | TIMEOUT | TIMEOUT | No      | No   | 0
 [M18](#math-18)   | TIMEOUT | TIMEOUT | No      | No   | 0
 [M19](#math-19)   | TIMEOUT | TIMEOUT | No      | No   | 0
-[M20](#math-20)   | TIMEOUT | TIMEOUT | No      | ERROR | 0
+[M20](#math-20)   | TIMEOUT | TIMEOUT | ERROR   | ERROR | 0
 [M21](#math-21)   | No      | No     | No      | No   | 0
 [M22](#math-22)   | No      | TIMEOUT | No      | No   | 0
 [M23](#math-23)   | No      | TIMEOUT | No      | No   | 0
@@ -175,7 +182,7 @@ BugId             | NopolPC | NopolC | Genprog | Kali | Total
 [M32](#math-32)   | Yes     | TIMEOUT | No      | No   | 1
 [M33](#math-33)   | Yes     | Yes    | No      | No   | 2
 [M34](#math-34)   | No      | No     | No      | No   | 0
-[M35](#math-35)   | ERROR   | ERROR  | No      | ERROR | 0
+[M35](#math-35)   | ERROR   | ERROR  | ERROR   | ERROR | 0
 [M36](#math-36)   | No      | No     | No      | No   | 0
 [M37](#math-37)   | ERROR   | TIMEOUT | No      | No   | 0
 [M38](#math-38)   | TIMEOUT | TIMEOUT | No      | No   | 0
@@ -188,10 +195,10 @@ BugId             | NopolPC | NopolC | Genprog | Kali | Total
 [M45](#math-45)   | No      | No     | No      | No   | 0
 [M46](#math-46)   | No      | No     | No      | No   | 0
 [M47](#math-47)   | No      | TIMEOUT | No      | No   | 0
-[M48](#math-48)   | TIMEOUT | No     | No      | No   | 0
+[M48](#math-48)   | TIMEOUT | TIMEOUT | No      | No   | 0
 [M49](#math-49)   | Yes     | No     | Yes     | Yes  | 3
 [M50](#math-50)   | Yes     | Yes    | Yes     | Yes  | 4
-[M51](#math-51)   | TIMEOUT | No     | No      | ERROR | 0
+[M51](#math-51)   | TIMEOUT | TIMEOUT | ERROR   | ERROR | 0
 [M52](#math-52)   | No      | No     | No      | No   | 0
 [M53](#math-53)   | No      | No     | No      | No   | 0
 [M54](#math-54)   | TIMEOUT | TIMEOUT | No      | EMPTY | 0
@@ -200,7 +207,7 @@ BugId             | NopolPC | NopolC | Genprog | Kali | Total
 [M57](#math-57)   | TIMEOUT | Yes    | No      | No   | 1
 [M58](#math-58)   | TIMEOUT | Yes    | No      | No   | 1
 [M59](#math-59)   | TIMEOUT | TIMEOUT | No      | No   | 0
-[M60](#math-60)   | TIMEOUT | No     | No      | No   | 0
+[M60](#math-60)   | TIMEOUT | ERROR  | No      | No   | 0
 [M61](#math-61)   | No      | No     | No      | No   | 0
 [M62](#math-62)   | No      | No     | No      | No   | 0
 [M63](#math-63)   | No      | No     | No      | No   | 0
@@ -209,7 +216,7 @@ BugId             | NopolPC | NopolC | Genprog | Kali | Total
 [M66](#math-66)   | No      | No     | No      | No   | 0
 [M67](#math-67)   | No      | No     | No      | No   | 0
 [M68](#math-68)   | TIMEOUT | No     | No      | No   | 0
-[M69](#math-69)   | Yes     | No     | No      | No   | 1
+[M69](#math-69)   | Yes     | TIMEOUT | No      | No   | 1
 [M70](#math-70)   | No      | No     | Yes     | No   | 1
 [M71](#math-71)   | TIMEOUT | TIMEOUT | No      | ERROR | 0
 [M72](#math-72)   | No      | No     | No      | No   | 0
@@ -235,15 +242,15 @@ BugId             | NopolPC | NopolC | Genprog | Kali | Total
 [M92](#math-92)   | No      | No     | No      | No   | 0
 [M93](#math-93)   | No      | No     | No      | No   | 0
 [M94](#math-94)   | TIMEOUT | TIMEOUT | No      | No   | 0
-[M95](#math-95)   | ERROR   | No     | Yes     | No   | 1
+[M95](#math-95)   | ERROR   | TIMEOUT | Yes     | No   | 1
 [M96](#math-96)   | No      | No     | No      | No   | 0
 [M97](#math-97)   | Yes     | Yes    | No      | No   | 2
 [M98](#math-98)   | No      | No     | No      | No   | 0
 [M99](#math-99)   | Yes     | Yes    | No      | No   | 2
 [M100](#math-100) | No      | No     | No      | No   | 0
 [M101](#math-101) | No      | No     | No      | No   | 0
-[M102](#math-102) | TIMEOUT | No     | No      | No   | 0
-[M103](#math-103) | No      | No     | No      | No   | 0
+[M102](#math-102) | TIMEOUT | TIMEOUT | No      | No   | 0
+[M103](#math-103) | No      | TIMEOUT | No      | No   | 0
 [M104](#math-104) | TIMEOUT | Yes    | No      | No   | 1
 [M105](#math-105) | Yes     | No     | No      | No   | 1
 [M106](#math-106) | No      | TIMEOUT | No      | No   | 0
@@ -258,7 +265,7 @@ BugId             | NopolPC | NopolC | Genprog | Kali | Total
 [T9](#time-9)     | No      | No     | No      | No   | 0
 [T10](#time-10)   | TIMEOUT | TIMEOUT | No      | No   | 0
 [T11](#time-11)   | TIMEOUT | TIMEOUT | No      | No   | 0
-[T12](#time-12)   | TIMEOUT | TIMEOUT | No      | No   | 0
+[T12](#time-12)   | TIMEOUT | TIMEOUT | ERROR   | No   | 0
 [T13](#time-13)   | No      | TIMEOUT | No      | No   | 0
 [T14](#time-14)   | TIMEOUT | No     | No      | No   | 0
 [T15](#time-15)   | No      | No     | No      | No   | 0
@@ -270,13 +277,20 @@ BugId             | NopolPC | NopolC | Genprog | Kali | Total
 [T21](#time-21)   | TIMEOUT | TIMEOUT | No      | No   | 0
 [T22](#time-22)   | ERROR   | ERROR  | No      | No   | 0
 [T23](#time-23)   | TIMEOUT | TIMEOUT | No      | No   | 0
-[T24](#time-24)   | TIMEOUT | TIMEOUT | No      | ERROR | 0
+[T24](#time-24)   | TIMEOUT | TIMEOUT | ERROR   | ERROR | 0
 [T25](#time-25)   | TIMEOUT | TIMEOUT | No      | No   | 0
 [T26](#time-26)   | TIMEOUT | TIMEOUT | No      | No   | 0
-[T27](#time-27)   | TIMEOUT | TIMEOUT | No      | ERROR | 0
+[T27](#time-27)   | TIMEOUT | TIMEOUT | ERROR   | ERROR | 0
 Total             | 26 (11%) | 19 (8%) | 16 (7%) | 9 (4%) | 70
 Fixed bugs: 41/224 (18%)
 
+Nb bugs ends with an execution error: 29
+
+Nb bugs ends with an empty log: 0
+
+Nb bugs ends with the Grid5000 timeout: 209
+
+Total execution time: 17 days, 7:48:55.248000
 
 
 
@@ -2533,7 +2547,6 @@ Execution time: 0:00:55.402000
 
 Grid5000 node: chimint-19.lille.grid5000.fr
 
-
 # Lang 45
 
 
@@ -2726,7 +2739,6 @@ Nb analyzed Statement: 1
 Execution time: 0:00:40.201000
 
 Grid5000 node: chinqchint-3.lille.grid5000.fr
-
 
 # Lang 47
 
@@ -2935,7 +2947,6 @@ Execution time: 0:00:51.122000
 
 Grid5000 node: chimint-15.lille.grid5000.fr
 
-
 # Lang 52
 
 
@@ -3084,7 +3095,6 @@ Execution time: 0:01:22.345000
 
 Grid5000 node: chinqchint-3.lille.grid5000.fr
 
-
 # Lang 56
 
 
@@ -3215,7 +3225,6 @@ Execution time: 0:00:38.547000
 
 Grid5000 node: chinqchint-16.lille.grid5000.fr
 
-
 ## NopolC 
 
 org.apache.commons.lang.math.NumberUtils:452 (Suspicious rank: 21 (Ochiai), 11 (Ample), 11 (Tarantula))
@@ -3230,7 +3239,6 @@ Nb analyzed Statement: 20
 Execution time: 0:01:10.317000
 
 Grid5000 node: chinqchint-11.lille.grid5000.fr
-
 
 # Lang 59
 
@@ -3858,7 +3866,6 @@ Execution time: 0:00:58.314000
 
 Grid5000 node: chimint-15.lille.grid5000.fr
 
-
 # Chart 6
 
 
@@ -4051,7 +4058,6 @@ Execution time: 0:00:50.565000
 
 Grid5000 node: chinqchint-20.lille.grid5000.fr
 
-
 ## NopolC 
 
 org.jfree.data.time.TimeSeries:935 (Suspicious rank: 8 (Ochiai), 9 (Ample), 9 (Tarantula))
@@ -4066,7 +4072,6 @@ Nb analyzed Statement: 8
 Execution time: 0:00:49.728000
 
 Grid5000 node: chinqchint-12.lille.grid5000.fr
-
 
 # Chart 10
 
@@ -5288,7 +5293,6 @@ Execution time: 0:00:55.554000
 
 Grid5000 node: chinqchint-32.lille.grid5000.fr
 
-
 # Chart 14
 
 
@@ -5525,7 +5529,6 @@ Execution time: 0:00:55.833000
 
 Grid5000 node: chimint-7.lille.grid5000.fr
 
-
 ## NopolC 
 
 org.jfree.data.time.TimeSeries:879 (Suspicious rank: 4 (Ochiai), 3 (Ample), 3 (Tarantula))
@@ -5540,7 +5543,6 @@ Nb analyzed Statement: 4
 Execution time: 0:00:57.130000
 
 Grid5000 node: chimint-15.lille.grid5000.fr
-
 
 # Chart 18
 
@@ -5990,7 +5992,6 @@ Nb analyzed Statement: 9
 Execution time: 0:00:59.628000
 
 Grid5000 node: chimint-3.lille.grid5000.fr
-
 
 # Chart 22
 
@@ -6621,7 +6622,6 @@ Execution time: 0:00:56.509000
 
 Grid5000 node: chimint-14.lille.grid5000.fr
 
-
 ## NopolC 
 
 org.jfree.data.statistics.DefaultStatisticalCategoryDataset:110 (Suspicious rank: 8 (Ochiai), 12 (Ample), 70 (Tarantula))
@@ -6636,7 +6636,6 @@ Nb analyzed Statement: 8
 Execution time: 0:01:01.422000
 
 Grid5000 node: chimint-15.lille.grid5000.fr
-
 
 # Chart 26
 
@@ -6849,7 +6848,6 @@ remove
 Execution time: 0:11:48.689000
 
 Grid5000 node : graphene-74.nancy.grid5000.fr
-
 
 # Math 3
 
@@ -7289,7 +7287,6 @@ remove
 Execution time: 0:23:13.326000
 
 Grid5000 node : griffon-39.nancy.grid5000.fr
-
 
 # Math 9
 
@@ -8642,7 +8639,6 @@ Execution time: 0:16:53.994000
 
 Grid5000 node: chimint-14.lille.grid5000.fr
 
-
 # Math 33
 
 
@@ -8686,7 +8682,6 @@ Execution time: 0:12:40.949000
 
 Grid5000 node: chinqchint-24.lille.grid5000.fr
 
-
 ## NopolC 
 
 org.apache.commons.math3.optimization.linear.SimplexTableau:338 (Suspicious rank: 22 (Ochiai), 17 (Ample), 17 (Tarantula))
@@ -8701,7 +8696,6 @@ Nb analyzed Statement: 22
 Execution time: 0:15:43.998000
 
 Grid5000 node: chimint-15.lille.grid5000.fr
-
 
 # Math 34
 
@@ -9063,7 +9057,6 @@ Execution time: 0:08:20.974000
 
 Grid5000 node: chinqchint-43.lille.grid5000.fr
 
-
 ## Genprog 
 
 org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:269 (Suspicious rank: 32 (Ochiai), 42 (Ample), 42 (Tarantula))
@@ -9118,7 +9111,6 @@ Execution time: 0:54:07.396000
 
 Grid5000 node: chimint-10.lille.grid5000.fr
 
-
 ## NopolC 
 
 org.apache.commons.math.stat.descriptive.moment.Variance:322 (Suspicious rank: 12 (Ochiai), 15 (Ample), 15 (Tarantula))
@@ -9133,7 +9125,6 @@ Nb analyzed Statement: 6
 Execution time: 0:45:32.957000
 
 Grid5000 node: chinqchint-15.lille.grid5000.fr
-
 
 # Math 42
 
@@ -9182,7 +9173,6 @@ Nb analyzed Statement: 24
 Execution time: 0:47:09.826000
 
 Grid5000 node: chinqchint-20.lille.grid5000.fr
-
 
 # Math 43
 
@@ -9532,7 +9522,6 @@ Execution time: 0:06:26.350000
 
 Grid5000 node: chimint-5.lille.grid5000.fr
 
-
 ## Genprog 
 
 org.apache.commons.math.util.OpenIntToDoubleHashMap:399 (Suspicious rank: 44 (Ochiai), 40 (Ample), 40 (Tarantula))
@@ -9554,7 +9543,6 @@ remove
 Execution time: 0:04:57.796000
 
 Grid5000 node : griffon-8.nancy.grid5000.fr
-
 
 # Math 50
 
@@ -9606,7 +9594,6 @@ Execution time: 0:18:41.312000
 
 Grid5000 node: chimint-19.lille.grid5000.fr
 
-
 ## NopolC 
 
 org.apache.commons.math.analysis.solvers.BaseSecantSolver:186 (Suspicious rank: 6 (Ochiai), 6 (Ample), 6 (Tarantula))
@@ -9621,7 +9608,6 @@ Nb analyzed Statement: 6
 Execution time: 0:09:12.688000
 
 Grid5000 node: chimint-15.lille.grid5000.fr
-
 
 ## Genprog 
 
@@ -9644,7 +9630,6 @@ remove
 Execution time: 0:04:49.932000
 
 Grid5000 node : graphene-74.nancy.grid5000.fr
-
 
 # Math 51
 
@@ -10105,7 +10090,6 @@ Execution time: 0:24:10.930000
 
 Grid5000 node: chinqchint-11.lille.grid5000.fr
 
-
 # Math 58
 
 
@@ -10150,7 +10134,6 @@ Nb analyzed Statement: 92
 Execution time: 0:09:46.654000
 
 Grid5000 node: chimint-1.lille.grid5000.fr
-
 
 # Math 59
 
@@ -10788,7 +10771,6 @@ Execution time: 0:05:40.881000
 
 Grid5000 node : graphene-2.nancy.grid5000.fr
 
-
 # Math 65
 
 
@@ -11158,7 +11140,6 @@ Execution time: 0:00:44.238000
 
 Grid5000 node: chinqchint-23.lille.grid5000.fr
 
-
 # Math 70
 
 
@@ -11410,7 +11391,6 @@ Nb analyzed Statement: 16
 Execution time: 0:00:40.261000
 
 Grid5000 node: chinqchint-24.lille.grid5000.fr
-
 
 ## Genprog 
 
@@ -11829,7 +11809,6 @@ Execution time: 0:00:54.086000
 
 Grid5000 node: chinqchint-14.lille.grid5000.fr
 
-
 ## Genprog 
 
 org.apache.commons.math.ode.events.EventState:283 (Suspicious rank: 56 (Ochiai), 50 (Ample), 50 (Tarantula))
@@ -11851,7 +11830,6 @@ remove
 Execution time: 0:01:16.086000
 
 Grid5000 node : graphene-74.nancy.grid5000.fr
-
 
 # Math 79
 
@@ -11899,7 +11877,6 @@ Execution time: 0:35:17.086000
 
 Grid5000 node: chinqchint-2.lille.grid5000.fr
 
-
 # Math 80
 
 
@@ -11943,7 +11920,6 @@ Execution time: 0:00:50.133000
 
 Grid5000 node: chinqchint-11.lille.grid5000.fr
 
-
 ## Genprog 
 
 org.apache.commons.math.linear.EigenDecompositionImpl:1139 (Suspicious rank: 18 (Ochiai), 3 (Ample), 3 (Tarantula))
@@ -11985,7 +11961,6 @@ remove
 Execution time: 0:23:24.050000
 
 Grid5000 node : griffon-56.nancy.grid5000.fr
-
 
 # Math 81
 
@@ -12056,7 +12031,6 @@ Execution time: 0:00:51.503000
 
 Grid5000 node: chinqchint-2.lille.grid5000.fr
 
-
 ## NopolC 
 
 org.apache.commons.math.linear.EigenDecompositionImpl:1534 (Suspicious rank: 8 (Ochiai), 12 (Ample), 12 (Tarantula))
@@ -12071,7 +12045,6 @@ Nb analyzed Statement: 8
 Execution time: 0:00:44.994000
 
 Grid5000 node: chinqchint-27.lille.grid5000.fr
-
 
 ## Genprog 
 
@@ -12119,7 +12092,6 @@ remove
 Execution time: 0:21:58.785000
 
 Grid5000 node : griffon-11.nancy.grid5000.fr
-
 
 # Math 82
 
@@ -12169,7 +12141,6 @@ Execution time: 0:19:01.288000
 
 Grid5000 node: chimint-12.lille.grid5000.fr
 
-
 ## Genprog 
 
 org.apache.commons.math.optimization.linear.SimplexSolver:63 (Suspicious rank: 47 (Ochiai), 32 (Ample), 32 (Tarantula))
@@ -12191,7 +12162,6 @@ remove
 Execution time: 0:02:24.165000
 
 Grid5000 node : griffon-5.nancy.grid5000.fr
-
 
 # Math 83
 
@@ -12336,7 +12306,6 @@ Execution time: 0:00:42.239000
 
 Grid5000 node: chinqchint-43.lille.grid5000.fr
 
-
 ## Genprog 
 
 org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils:199 (Suspicious rank: 1 (Ochiai), 2 (Ample), 2 (Tarantula))
@@ -12363,7 +12332,6 @@ remove
 Execution time: 0:05:53.615000
 
 Grid5000 node : griffon-23.nancy.grid5000.fr
-
 
 # Math 86
 
@@ -12461,7 +12429,6 @@ Execution time: 0:07:55.383000
 
 Grid5000 node: chinqchint-2.lille.grid5000.fr
 
-
 ## NopolC 
 
 org.apache.commons.math.optimization.linear.SimplexTableau:160 (Suspicious rank: 127 (Ochiai), 120 (Ample), 120 (Tarantula))
@@ -12476,7 +12443,6 @@ Nb analyzed Statement: 127
 Execution time: 0:00:58.674000
 
 Grid5000 node: chinqchint-24.lille.grid5000.fr
-
 
 # Math 88
 
@@ -12566,7 +12532,6 @@ Nb analyzed Statement: 1
 Execution time: 0:00:39.755000
 
 Grid5000 node: chimint-16.lille.grid5000.fr
-
 
 # Math 89
 
@@ -13414,7 +13379,6 @@ Execution time: 0:00:34.149000
 
 Grid5000 node: chinqchint-14.lille.grid5000.fr
 
-
 ## NopolC 
 
 org.apache.commons.math.analysis.BrentSolver:135 (Suspicious rank: 90 (Ochiai), 95 (Ample), 87 (Tarantula))
@@ -13429,7 +13393,6 @@ Nb analyzed Statement: 90
 Execution time: 0:01:04.637000
 
 Grid5000 node: chinqchint-16.lille.grid5000.fr
-
 
 # Math 98
 
@@ -13625,7 +13588,6 @@ Execution time: 0:00:36.213000
 
 Grid5000 node: chimint-1.lille.grid5000.fr
 
-
 ## NopolC 
 
 org.apache.commons.math.analysis.BrentSolver:135 (Suspicious rank: 90 (Ochiai), 95 (Ample), 87 (Tarantula))
@@ -13640,7 +13602,6 @@ Nb analyzed Statement: 90
 Execution time: 0:01:05.160000
 
 Grid5000 node: chinqchint-14.lille.grid5000.fr
-
 
 # Math 100
 
@@ -14045,7 +14006,6 @@ Execution time: 0:01:21.715000
 
 Grid5000 node: chimint-14.lille.grid5000.fr
 
-
 # Math 105
 
 
@@ -14114,7 +14074,6 @@ Nb analyzed Statement: 69
 Execution time: 0:00:26.426000
 
 Grid5000 node: chinqchint-14.lille.grid5000.fr
-
 
 # Math 106
 

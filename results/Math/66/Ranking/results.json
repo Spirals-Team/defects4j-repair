@@ -1,5 +1,5 @@
 {
-    "date": "2015-05-11T07:53:46.319894", 
+    "date": "2015-05-13T17:45:43.132424", 
     "executedTest": 2261, 
     "failedTest": 4, 
     "failedTestDetails": [
@@ -27,15 +27,11 @@
         }, 
         {
             "class": "a.org.apache.commons.math.optimization.univariate.BrentOptimizer", 
-            "line": 45
+            "line": 54
         }, 
         {
             "class": "a.org.apache.commons.math.optimization.univariate.BrentOptimizer", 
-            "line": 46
-        }, 
-        {
-            "class": "a.org.apache.commons.math.optimization.univariate.BrentOptimizer", 
-            "line": 47
+            "line": 55
         }, 
         {
             "class": "a.org.apache.commons.math.optimization.univariate.BrentOptimizer", 
@@ -51,43 +47,95 @@
         }, 
         {
             "class": "a.org.apache.commons.math.optimization.univariate.BrentOptimizer", 
-            "line": 86
+            "line": 60
         }, 
         {
             "class": "a.org.apache.commons.math.optimization.univariate.BrentOptimizer", 
-            "line": 108
+            "line": 61
         }, 
         {
             "class": "a.org.apache.commons.math.optimization.univariate.BrentOptimizer", 
-            "line": 110
+            "line": 62
         }, 
         {
             "class": "a.org.apache.commons.math.optimization.univariate.BrentOptimizer", 
-            "line": 111
+            "line": 63
         }, 
         {
             "class": "a.org.apache.commons.math.optimization.univariate.BrentOptimizer", 
-            "line": 117
+            "line": 64
         }, 
         {
             "class": "a.org.apache.commons.math.optimization.univariate.BrentOptimizer", 
-            "line": 190
+            "line": 66
         }, 
         {
             "class": "a.org.apache.commons.math.optimization.univariate.BrentOptimizer", 
-            "line": 191
+            "line": 67
         }, 
         {
             "class": "a.org.apache.commons.math.optimization.univariate.BrentOptimizer", 
-            "line": 228
+            "line": 68
         }, 
         {
             "class": "a.org.apache.commons.math.optimization.univariate.BrentOptimizer", 
-            "line": 231
+            "line": 69
+        }, 
+        {
+            "class": "a.org.apache.commons.math.optimization.univariate.BrentOptimizer", 
+            "line": 70
+        }, 
+        {
+            "class": "a.org.apache.commons.math.optimization.univariate.BrentOptimizer", 
+            "line": 97
+        }, 
+        {
+            "class": "a.org.apache.commons.math.optimization.univariate.BrentOptimizer", 
+            "line": 98
+        }, 
+        {
+            "class": "a.org.apache.commons.math.optimization.univariate.BrentOptimizer", 
+            "line": 121
+        }, 
+        {
+            "class": "a.org.apache.commons.math.optimization.univariate.BrentOptimizer", 
+            "line": 122
+        }, 
+        {
+            "class": "a.org.apache.commons.math.optimization.univariate.BrentOptimizer", 
+            "line": 128
+        }, 
+        {
+            "class": "a.org.apache.commons.math.optimization.univariate.BrentOptimizer", 
+            "line": 129
+        }, 
+        {
+            "class": "a.org.apache.commons.math.optimization.univariate.BrentOptimizer", 
+            "line": 139
+        }, 
+        {
+            "class": "a.org.apache.commons.math.optimization.univariate.BrentOptimizer", 
+            "line": 203
+        }, 
+        {
+            "class": "a.org.apache.commons.math.optimization.univariate.BrentOptimizer", 
+            "line": 204
+        }, 
+        {
+            "class": "a.org.apache.commons.math.optimization.univariate.BrentOptimizer", 
+            "line": 241
+        }, 
+        {
+            "class": "a.org.apache.commons.math.optimization.univariate.BrentOptimizer", 
+            "line": 244
+        }, 
+        {
+            "class": "a.org.apache.commons.math.optimization.univariate.BrentOptimizer", 
+            "line": 246
         }
     ], 
     "nbsuspicious": 246, 
-    "node": "griffon-2.nancy.grid5000.fr\n", 
+    "node": "spirals-Latitude-E6510\n", 
     "successfulTest": 2257, 
     "suspicious": {
         "org.apache.commons.math.ConvergingAlgorithmImpl:102": {
@@ -97,7 +145,11 @@
             "line": 102, 
             "metrics": {
                 "ample": 0.4552503322995126, 
+                "gp13": 2.0098039215686274, 
                 "gzoltar": 0.09853292781642932, 
+                "jaccard": 0.01904761904761905, 
+                "naish1": -1, 
+                "naish2": 1.9552701505757308, 
                 "ochiai": 0.09853292781642932, 
                 "tarantula": 0.9178527856852379
             }, 
@@ -105,6 +157,10 @@
             "np": 2156, 
             "rank": {
                 "ample": 140, 
+                "gp13": 140, 
+                "jaccard": 221, 
+                "naish1": 174, 
+                "naish2": 140, 
                 "ochiai": 195, 
                 "tarantula": 224
             }
@@ -116,7 +172,11 @@
             "line": 103, 
             "metrics": {
                 "ample": 0.4552503322995126, 
+                "gp13": 2.0098039215686274, 
                 "gzoltar": 0.09853292781642932, 
+                "jaccard": 0.01904761904761905, 
+                "naish1": -1, 
+                "naish2": 1.9552701505757308, 
                 "ochiai": 0.09853292781642932, 
                 "tarantula": 0.9178527856852379
             }, 
@@ -124,6 +184,10 @@
             "np": 2156, 
             "rank": {
                 "ample": 139, 
+                "gp13": 139, 
+                "jaccard": 220, 
+                "naish1": 11, 
+                "naish2": 139, 
                 "ochiai": 196, 
                 "tarantula": 223
             }
@@ -135,7 +199,11 @@
             "line": 117, 
             "metrics": {
                 "ample": 0.4906956136464333, 
+                "gp13": 2.0454545454545454, 
                 "gzoltar": 0.20851441405707477, 
+                "jaccard": 0.08, 
+                "naish1": -1, 
+                "naish2": 1.9906997342781223, 
                 "ochiai": 0.20851441405707477, 
                 "tarantula": 0.9817311874728143
             }, 
@@ -143,6 +211,10 @@
             "np": 2236, 
             "rank": {
                 "ample": 136, 
+                "gp13": 136, 
+                "jaccard": 166, 
+                "naish1": 224, 
+                "naish2": 136, 
                 "ochiai": 166, 
                 "tarantula": 166
             }
@@ -154,7 +226,11 @@
             "line": 118, 
             "metrics": {
                 "ample": 0.4906956136464333, 
+                "gp13": 2.0454545454545454, 
                 "gzoltar": 0.20851441405707477, 
+                "jaccard": 0.08, 
+                "naish1": -1, 
+                "naish2": 1.9906997342781223, 
                 "ochiai": 0.20851441405707477, 
                 "tarantula": 0.9817311874728143
             }, 
@@ -162,6 +238,10 @@
             "np": 2236, 
             "rank": {
                 "ample": 137, 
+                "gp13": 137, 
+                "jaccard": 167, 
+                "naish1": 225, 
+                "naish2": 137, 
                 "ochiai": 167, 
                 "tarantula": 167
             }
@@ -173,7 +253,11 @@
             "line": 122, 
             "metrics": {
                 "ample": 0.9858218874612317, 
+                "gp13": 4.0588235294117645, 
                 "gzoltar": 0.3333333333333333, 
+                "jaccard": 0.1111111111111111, 
+                "naish1": -1, 
+                "naish2": 3.9858281665190436, 
                 "ochiai": 0.3333333333333333, 
                 "tarantula": 0.9860200961118392
             }, 
@@ -181,6 +265,10 @@
             "np": 2225, 
             "rank": {
                 "ample": 90, 
+                "gp13": 90, 
+                "jaccard": 163, 
+                "naish1": 2, 
+                "naish2": 90, 
                 "ochiai": 160, 
                 "tarantula": 164
             }
@@ -192,7 +280,11 @@
             "line": 82, 
             "metrics": {
                 "ample": 0.7464554718653079, 
+                "gp13": 3.1578947368421053, 
                 "gzoltar": 0.45226701686664544, 
+                "jaccard": 0.25, 
+                "naish1": -1, 
+                "naish2": 2.996457041629761, 
                 "ochiai": 0.45226701686664544, 
                 "tarantula": 0.9952961928560928
             }, 
@@ -200,6 +292,10 @@
             "np": 2249, 
             "rank": {
                 "ample": 100, 
+                "gp13": 100, 
+                "jaccard": 144, 
+                "naish1": 111, 
+                "naish2": 100, 
                 "ochiai": 159, 
                 "tarantula": 159
             }
@@ -211,7 +307,11 @@
             "line": 87, 
             "metrics": {
                 "ample": 0.43619849357554275, 
+                "gp13": 2.0068965517241377, 
                 "gzoltar": 0.0827605888602368, 
+                "jaccard": 0.013513513513513514, 
+                "naish1": -1, 
+                "naish2": 1.9362267493356953, 
                 "ochiai": 0.0827605888602368, 
                 "tarantula": 0.8868369351669941
             }, 
@@ -219,6 +319,10 @@
             "np": 2113, 
             "rank": {
                 "ample": 142, 
+                "gp13": 142, 
+                "jaccard": 226, 
+                "naish1": 106, 
+                "naish2": 142, 
                 "ochiai": 219, 
                 "tarantula": 226
             }
@@ -230,7 +334,11 @@
             "line": 88, 
             "metrics": {
                 "ample": 0.43619849357554275, 
+                "gp13": 2.0068965517241377, 
                 "gzoltar": 0.0827605888602368, 
+                "jaccard": 0.013513513513513514, 
+                "naish1": -1, 
+                "naish2": 1.9362267493356953, 
                 "ochiai": 0.0827605888602368, 
                 "tarantula": 0.8868369351669941
             }, 
@@ -238,6 +346,10 @@
             "np": 2113, 
             "rank": {
                 "ample": 141, 
+                "gp13": 141, 
+                "jaccard": 225, 
+                "naish1": 20, 
+                "naish2": 141, 
                 "ochiai": 220, 
                 "tarantula": 225
             }
@@ -249,7 +361,11 @@
             "line": 92, 
             "metrics": {
                 "ample": 0.9831634913602126, 
+                "gp13": 4.05, 
                 "gzoltar": 0.3086066999241838, 
+                "jaccard": 0.09523809523809523, 
+                "naish1": -1, 
+                "naish2": 3.983170947741364, 
                 "ochiai": 0.3086066999241838, 
                 "tarantula": 0.983442265795207
             }, 
@@ -257,6 +373,10 @@
             "np": 2219, 
             "rank": {
                 "ample": 91, 
+                "gp13": 91, 
+                "jaccard": 165, 
+                "naish1": 77, 
+                "naish2": 91, 
                 "ochiai": 161, 
                 "tarantula": 165
             }
@@ -268,7 +388,11 @@
             "line": 444, 
             "metrics": {
                 "ample": 0.2451262738147984, 
+                "gp13": 1.0434782608695652, 
                 "gzoltar": 0.14433756729740646, 
+                "jaccard": 0.06666666666666667, 
+                "naish1": -1, 
+                "naish2": 0.9951284322409212, 
                 "ochiai": 0.14433756729740646, 
                 "tarantula": 0.9808778791829639
             }, 
@@ -276,6 +400,10 @@
             "np": 2246, 
             "rank": {
                 "ample": 173, 
+                "gp13": 173, 
+                "jaccard": 168, 
+                "naish1": 58, 
+                "naish2": 173, 
                 "ochiai": 169, 
                 "tarantula": 168
             }
@@ -287,7 +415,11 @@
             "line": 32, 
             "metrics": {
                 "ample": 0.4937970757642889, 
+                "gp13": 2.066666666666667, 
                 "gzoltar": 0.25, 
+                "jaccard": 0.1111111111111111, 
+                "naish1": -1, 
+                "naish2": 1.9937998228520815, 
                 "ochiai": 0.25, 
                 "tarantula": 0.987746170678337
             }, 
@@ -295,6 +427,10 @@
             "np": 2243, 
             "rank": {
                 "ample": 135, 
+                "gp13": 135, 
+                "jaccard": 164, 
+                "naish1": 145, 
+                "naish2": 135, 
                 "ochiai": 162, 
                 "tarantula": 163
             }
@@ -306,7 +442,11 @@
             "line": 37, 
             "metrics": {
                 "ample": 0.4844926894107222, 
+                "gp13": 2.0277777777777777, 
                 "gzoltar": 0.1643989873053573, 
+                "jaccard": 0.05128205128205128, 
+                "naish1": -1, 
+                "naish2": 1.9844995571302038, 
                 "ochiai": 0.1643989873053573, 
                 "tarantula": 0.969918349806618
             }, 
@@ -314,6 +454,10 @@
             "np": 2222, 
             "rank": {
                 "ample": 138, 
+                "gp13": 138, 
+                "jaccard": 184, 
+                "naish1": 243, 
+                "naish2": 138, 
                 "ochiai": 168, 
                 "tarantula": 187
             }
@@ -325,7 +469,11 @@
             "line": 106, 
             "metrics": {
                 "ample": 0.22784669915817457, 
+                "gp13": 1.00990099009901, 
                 "gzoltar": 0.07001400420140048, 
+                "jaccard": 0.018518518518518517, 
+                "naish1": -1, 
+                "naish2": 0.9778565101860053, 
                 "ochiai": 0.07001400420140048, 
                 "tarantula": 0.9185999185999186
             }, 
@@ -333,6 +481,10 @@
             "np": 2207, 
             "rank": {
                 "ample": 224, 
+                "gp13": 224, 
+                "jaccard": 222, 
+                "naish1": 1, 
+                "naish2": 224, 
                 "ochiai": 224, 
                 "tarantula": 220
             }
@@ -344,7 +496,11 @@
             "line": 107, 
             "metrics": {
                 "ample": 0.22784669915817457, 
+                "gp13": 1.00990099009901, 
                 "gzoltar": 0.07001400420140048, 
+                "jaccard": 0.018518518518518517, 
+                "naish1": -1, 
+                "naish2": 0.9778565101860053, 
                 "ochiai": 0.07001400420140048, 
                 "tarantula": 0.9185999185999186
             }, 
@@ -352,6 +508,10 @@
             "np": 2207, 
             "rank": {
                 "ample": 225, 
+                "gp13": 225, 
+                "jaccard": 223, 
+                "naish1": 52, 
+                "naish2": 225, 
                 "ochiai": 225, 
                 "tarantula": 221
             }
@@ -363,7 +523,11 @@
             "line": 116, 
             "metrics": {
                 "ample": 0.22784669915817457, 
+                "gp13": 1.00990099009901, 
                 "gzoltar": 0.07001400420140048, 
+                "jaccard": 0.018518518518518517, 
+                "naish1": -1, 
+                "naish2": 0.9778565101860053, 
                 "ochiai": 0.07001400420140048, 
                 "tarantula": 0.9185999185999186
             }, 
@@ -371,6 +535,10 @@
             "np": 2207, 
             "rank": {
                 "ample": 226, 
+                "gp13": 226, 
+                "jaccard": 224, 
+                "naish1": 227, 
+                "naish2": 226, 
                 "ochiai": 226, 
                 "tarantula": 222
             }
@@ -382,7 +550,11 @@
             "line": 102, 
             "metrics": {
                 "ample": 0.25, 
+                "gp13": 2.0, 
                 "gzoltar": 0.5, 
+                "jaccard": 0.25, 
+                "naish1": -1, 
+                "naish2": 1.0, 
                 "ochiai": 0.5, 
                 "tarantula": 1.0
             }, 
@@ -390,6 +562,10 @@
             "np": 2257, 
             "rank": {
                 "ample": 145, 
+                "gp13": 145, 
+                "jaccard": 134, 
+                "naish1": 14, 
+                "naish2": 145, 
                 "ochiai": 132, 
                 "tarantula": 3
             }
@@ -401,7 +577,11 @@
             "line": 122, 
             "metrics": {
                 "ample": 0.25, 
+                "gp13": 2.0, 
                 "gzoltar": 0.5, 
+                "jaccard": 0.25, 
+                "naish1": -1, 
+                "naish2": 1.0, 
                 "ochiai": 0.5, 
                 "tarantula": 1.0
             }, 
@@ -409,6 +589,10 @@
             "np": 2257, 
             "rank": {
                 "ample": 156, 
+                "gp13": 156, 
+                "jaccard": 146, 
+                "naish1": 142, 
+                "naish2": 156, 
                 "ochiai": 153, 
                 "tarantula": 39
             }
@@ -420,7 +604,11 @@
             "line": 127, 
             "metrics": {
                 "ample": 0.25, 
+                "gp13": 2.0, 
                 "gzoltar": 0.5, 
+                "jaccard": 0.25, 
+                "naish1": -1, 
+                "naish2": 1.0, 
                 "ochiai": 0.5, 
                 "tarantula": 1.0
             }, 
@@ -428,6 +616,10 @@
             "np": 2257, 
             "rank": {
                 "ample": 155, 
+                "gp13": 155, 
+                "jaccard": 145, 
+                "naish1": 140, 
+                "naish2": 155, 
                 "ochiai": 133, 
                 "tarantula": 38
             }
@@ -439,7 +631,11 @@
             "line": 147, 
             "metrics": {
                 "ample": 0.25, 
+                "gp13": 2.0, 
                 "gzoltar": 0.5, 
+                "jaccard": 0.25, 
+                "naish1": -1, 
+                "naish2": 1.0, 
                 "ochiai": 0.5, 
                 "tarantula": 1.0
             }, 
@@ -447,6 +643,10 @@
             "np": 2257, 
             "rank": {
                 "ample": 151, 
+                "gp13": 151, 
+                "jaccard": 140, 
+                "naish1": 57, 
+                "naish2": 151, 
                 "ochiai": 134, 
                 "tarantula": 10
             }
@@ -458,7 +658,11 @@
             "line": 148, 
             "metrics": {
                 "ample": 0.25, 
+                "gp13": 2.0, 
                 "gzoltar": 0.5, 
+                "jaccard": 0.25, 
+                "naish1": -1, 
+                "naish2": 1.0, 
                 "ochiai": 0.5, 
                 "tarantula": 1.0
             }, 
@@ -466,6 +670,10 @@
             "np": 2257, 
             "rank": {
                 "ample": 154, 
+                "gp13": 154, 
+                "jaccard": 143, 
+                "naish1": 80, 
+                "naish2": 154, 
                 "ochiai": 135, 
                 "tarantula": 19
             }
@@ -477,7 +685,11 @@
             "line": 152, 
             "metrics": {
                 "ample": 0.5, 
+                "gp13": 3.0, 
                 "gzoltar": 0.7071067811865475, 
+                "jaccard": 0.5, 
+                "naish1": -1, 
+                "naish2": 2.0, 
                 "ochiai": 0.7071067811865475, 
                 "tarantula": 1.0
             }, 
@@ -485,6 +697,10 @@
             "np": 2257, 
             "rank": {
                 "ample": 130, 
+                "gp13": 130, 
+                "jaccard": 32, 
+                "naish1": 169, 
+                "naish2": 130, 
                 "ochiai": 4, 
                 "tarantula": 46
             }
@@ -496,7 +712,11 @@
             "line": 153, 
             "metrics": {
                 "ample": 0.5, 
+                "gp13": 3.0, 
                 "gzoltar": 0.7071067811865475, 
+                "jaccard": 0.5, 
+                "naish1": -1, 
+                "naish2": 2.0, 
                 "ochiai": 0.7071067811865475, 
                 "tarantula": 1.0
             }, 
@@ -504,6 +724,10 @@
             "np": 2257, 
             "rank": {
                 "ample": 129, 
+                "gp13": 129, 
+                "jaccard": 31, 
+                "naish1": 168, 
+                "naish2": 129, 
                 "ochiai": 5, 
                 "tarantula": 45
             }
@@ -515,7 +739,11 @@
             "line": 157, 
             "metrics": {
                 "ample": 0.5, 
+                "gp13": 3.0, 
                 "gzoltar": 0.7071067811865475, 
+                "jaccard": 0.5, 
+                "naish1": -1, 
+                "naish2": 2.0, 
                 "ochiai": 0.7071067811865475, 
                 "tarantula": 1.0
             }, 
@@ -523,6 +751,10 @@
             "np": 2257, 
             "rank": {
                 "ample": 131, 
+                "gp13": 131, 
+                "jaccard": 33, 
+                "naish1": 171, 
+                "naish2": 131, 
                 "ochiai": 6, 
                 "tarantula": 47
             }
@@ -534,7 +766,11 @@
             "line": 158, 
             "metrics": {
                 "ample": 0.5, 
+                "gp13": 3.0, 
                 "gzoltar": 0.7071067811865475, 
+                "jaccard": 0.5, 
+                "naish1": -1, 
+                "naish2": 2.0, 
                 "ochiai": 0.7071067811865475, 
                 "tarantula": 1.0
             }, 
@@ -542,6 +778,10 @@
             "np": 2257, 
             "rank": {
                 "ample": 125, 
+                "gp13": 125, 
+                "jaccard": 27, 
+                "naish1": 164, 
+                "naish2": 125, 
                 "ochiai": 7, 
                 "tarantula": 41
             }
@@ -553,7 +793,11 @@
             "line": 162, 
             "metrics": {
                 "ample": 0.25, 
+                "gp13": 2.0, 
                 "gzoltar": 0.5, 
+                "jaccard": 0.25, 
+                "naish1": -1, 
+                "naish2": 1.0, 
                 "ochiai": 0.5, 
                 "tarantula": 1.0
             }, 
@@ -561,6 +805,10 @@
             "np": 2257, 
             "rank": {
                 "ample": 146, 
+                "gp13": 146, 
+                "jaccard": 135, 
+                "naish1": 16, 
+                "naish2": 146, 
                 "ochiai": 136, 
                 "tarantula": 4
             }
@@ -572,7 +820,11 @@
             "line": 163, 
             "metrics": {
                 "ample": 0.25, 
+                "gp13": 2.0, 
                 "gzoltar": 0.5, 
+                "jaccard": 0.25, 
+                "naish1": -1, 
+                "naish2": 1.0, 
                 "ochiai": 0.5, 
                 "tarantula": 1.0
             }, 
@@ -580,6 +832,10 @@
             "np": 2257, 
             "rank": {
                 "ample": 147, 
+                "gp13": 147, 
+                "jaccard": 136, 
+                "naish1": 17, 
+                "naish2": 147, 
                 "ochiai": 137, 
                 "tarantula": 5
             }
@@ -591,7 +847,11 @@
             "line": 193, 
             "metrics": {
                 "ample": 0.5, 
+                "gp13": 3.0, 
                 "gzoltar": 0.7071067811865475, 
+                "jaccard": 0.5, 
+                "naish1": -1, 
+                "naish2": 2.0, 
                 "ochiai": 0.7071067811865475, 
                 "tarantula": 1.0
             }, 
@@ -599,6 +859,10 @@
             "np": 2257, 
             "rank": {
                 "ample": 132, 
+                "gp13": 132, 
+                "jaccard": 34, 
+                "naish1": 182, 
+                "naish2": 132, 
                 "ochiai": 8, 
                 "tarantula": 50
             }
@@ -610,7 +874,11 @@
             "line": 194, 
             "metrics": {
                 "ample": 0.25, 
+                "gp13": 2.0, 
                 "gzoltar": 0.5, 
+                "jaccard": 0.25, 
+                "naish1": -1, 
+                "naish2": 1.0, 
                 "ochiai": 0.5, 
                 "tarantula": 1.0
             }, 
@@ -618,6 +886,10 @@
             "np": 2257, 
             "rank": {
                 "ample": 159, 
+                "gp13": 159, 
+                "jaccard": 149, 
+                "naish1": 181, 
+                "naish2": 159, 
                 "ochiai": 138, 
                 "tarantula": 49
             }
@@ -629,7 +901,11 @@
             "line": 196, 
             "metrics": {
                 "ample": 0.25, 
+                "gp13": 2.0, 
                 "gzoltar": 0.5, 
+                "jaccard": 0.25, 
+                "naish1": -1, 
+                "naish2": 1.0, 
                 "ochiai": 0.5, 
                 "tarantula": 1.0
             }, 
@@ -637,6 +913,10 @@
             "np": 2257, 
             "rank": {
                 "ample": 158, 
+                "gp13": 158, 
+                "jaccard": 148, 
+                "naish1": 179, 
+                "naish2": 158, 
                 "ochiai": 154, 
                 "tarantula": 48
             }
@@ -648,7 +928,11 @@
             "line": 219, 
             "metrics": {
                 "ample": 0.5, 
+                "gp13": 3.0, 
                 "gzoltar": 0.7071067811865475, 
+                "jaccard": 0.5, 
+                "naish1": -1, 
+                "naish2": 2.0, 
                 "ochiai": 0.7071067811865475, 
                 "tarantula": 1.0
             }, 
@@ -656,6 +940,10 @@
             "np": 2257, 
             "rank": {
                 "ample": 133, 
+                "gp13": 133, 
+                "jaccard": 35, 
+                "naish1": 183, 
+                "naish2": 133, 
                 "ochiai": 9, 
                 "tarantula": 51
             }
@@ -667,7 +955,11 @@
             "line": 220, 
             "metrics": {
                 "ample": 0.25, 
+                "gp13": 2.0, 
                 "gzoltar": 0.5, 
+                "jaccard": 0.25, 
+                "naish1": -1, 
+                "naish2": 1.0, 
                 "ochiai": 0.5, 
                 "tarantula": 1.0
             }, 
@@ -675,6 +967,10 @@
             "np": 2257, 
             "rank": {
                 "ample": 164, 
+                "gp13": 164, 
+                "jaccard": 154, 
+                "naish1": 219, 
+                "naish2": 164, 
                 "ochiai": 139, 
                 "tarantula": 57
             }
@@ -686,7 +982,11 @@
             "line": 222, 
             "metrics": {
                 "ample": 0.25, 
+                "gp13": 2.0, 
                 "gzoltar": 0.5, 
+                "jaccard": 0.25, 
+                "naish1": -1, 
+                "naish2": 1.0, 
                 "ochiai": 0.5, 
                 "tarantula": 1.0
             }, 
@@ -694,6 +994,10 @@
             "np": 2257, 
             "rank": {
                 "ample": 165, 
+                "gp13": 165, 
+                "jaccard": 155, 
+                "naish1": 221, 
+                "naish2": 165, 
                 "ochiai": 155, 
                 "tarantula": 58
             }
@@ -705,7 +1009,11 @@
             "line": 231, 
             "metrics": {
                 "ample": 0.5, 
+                "gp13": 3.0, 
                 "gzoltar": 0.7071067811865475, 
+                "jaccard": 0.5, 
+                "naish1": -1, 
+                "naish2": 2.0, 
                 "ochiai": 0.7071067811865475, 
                 "tarantula": 1.0
             }, 
@@ -713,6 +1021,10 @@
             "np": 2257, 
             "rank": {
                 "ample": 116, 
+                "gp13": 116, 
+                "jaccard": 18, 
+                "naish1": 107, 
+                "naish2": 116, 
                 "ochiai": 10, 
                 "tarantula": 29
             }
@@ -724,7 +1036,11 @@
             "line": 232, 
             "metrics": {
                 "ample": 0.5, 
+                "gp13": 3.0, 
                 "gzoltar": 0.7071067811865475, 
+                "jaccard": 0.5, 
+                "naish1": -1, 
+                "naish2": 2.0, 
                 "ochiai": 0.7071067811865475, 
                 "tarantula": 1.0
             }, 
@@ -732,6 +1048,10 @@
             "np": 2257, 
             "rank": {
                 "ample": 114, 
+                "gp13": 114, 
+                "jaccard": 16, 
+                "naish1": 104, 
+                "naish2": 114, 
                 "ochiai": 11, 
                 "tarantula": 27
             }
@@ -743,7 +1063,11 @@
             "line": 233, 
             "metrics": {
                 "ample": 0.5, 
+                "gp13": 3.0, 
                 "gzoltar": 0.7071067811865475, 
+                "jaccard": 0.5, 
+                "naish1": -1, 
+                "naish2": 2.0, 
                 "ochiai": 0.7071067811865475, 
                 "tarantula": 1.0
             }, 
@@ -751,6 +1075,10 @@
             "np": 2257, 
             "rank": {
                 "ample": 115, 
+                "gp13": 115, 
+                "jaccard": 17, 
+                "naish1": 105, 
+                "naish2": 115, 
                 "ochiai": 12, 
                 "tarantula": 28
             }
@@ -762,7 +1090,11 @@
             "line": 234, 
             "metrics": {
                 "ample": 0.5, 
+                "gp13": 3.0, 
                 "gzoltar": 0.7071067811865475, 
+                "jaccard": 0.5, 
+                "naish1": -1, 
+                "naish2": 2.0, 
                 "ochiai": 0.7071067811865475, 
                 "tarantula": 1.0
             }, 
@@ -770,6 +1102,10 @@
             "np": 2257, 
             "rank": {
                 "ample": 118, 
+                "gp13": 118, 
+                "jaccard": 20, 
+                "naish1": 110, 
+                "naish2": 118, 
                 "ochiai": 13, 
                 "tarantula": 31
             }
@@ -781,7 +1117,11 @@
             "line": 237, 
             "metrics": {
                 "ample": 0.5, 
+                "gp13": 3.0, 
                 "gzoltar": 0.7071067811865475, 
+                "jaccard": 0.5, 
+                "naish1": -1, 
+                "naish2": 2.0, 
                 "ochiai": 0.7071067811865475, 
                 "tarantula": 1.0
             }, 
@@ -789,6 +1129,10 @@
             "np": 2257, 
             "rank": {
                 "ample": 117, 
+                "gp13": 117, 
+                "jaccard": 19, 
+                "naish1": 109, 
+                "naish2": 117, 
                 "ochiai": 14, 
                 "tarantula": 30
             }
@@ -800,7 +1144,11 @@
             "line": 240, 
             "metrics": {
                 "ample": 0.5, 
+                "gp13": 3.0, 
                 "gzoltar": 0.7071067811865475, 
+                "jaccard": 0.5, 
+                "naish1": -1, 
+                "naish2": 2.0, 
                 "ochiai": 0.7071067811865475, 
                 "tarantula": 1.0
             }, 
@@ -808,6 +1156,10 @@
             "np": 2257, 
             "rank": {
                 "ample": 124, 
+                "gp13": 124, 
+                "jaccard": 26, 
+                "naish1": 139, 
+                "naish2": 124, 
                 "ochiai": 15, 
                 "tarantula": 37
             }
@@ -819,7 +1171,11 @@
             "line": 241, 
             "metrics": {
                 "ample": 0.5, 
+                "gp13": 3.0, 
                 "gzoltar": 0.7071067811865475, 
+                "jaccard": 0.5, 
+                "naish1": -1, 
+                "naish2": 2.0, 
                 "ochiai": 0.7071067811865475, 
                 "tarantula": 1.0
             }, 
@@ -827,6 +1183,10 @@
             "np": 2257, 
             "rank": {
                 "ample": 123, 
+                "gp13": 123, 
+                "jaccard": 25, 
+                "naish1": 138, 
+                "naish2": 123, 
                 "ochiai": 16, 
                 "tarantula": 36
             }
@@ -838,7 +1198,11 @@
             "line": 242, 
             "metrics": {
                 "ample": 0.5, 
+                "gp13": 3.0, 
                 "gzoltar": 0.7071067811865475, 
+                "jaccard": 0.5, 
+                "naish1": -1, 
+                "naish2": 2.0, 
                 "ochiai": 0.7071067811865475, 
                 "tarantula": 1.0
             }, 
@@ -846,6 +1210,10 @@
             "np": 2257, 
             "rank": {
                 "ample": 122, 
+                "gp13": 122, 
+                "jaccard": 24, 
+                "naish1": 137, 
+                "naish2": 122, 
                 "ochiai": 17, 
                 "tarantula": 35
             }
@@ -857,7 +1225,11 @@
             "line": 243, 
             "metrics": {
                 "ample": 0.5, 
+                "gp13": 3.0, 
                 "gzoltar": 0.7071067811865475, 
+                "jaccard": 0.5, 
+                "naish1": -1, 
+                "naish2": 2.0, 
                 "ochiai": 0.7071067811865475, 
                 "tarantula": 1.0
             }, 
@@ -865,6 +1237,10 @@
             "np": 2257, 
             "rank": {
                 "ample": 121, 
+                "gp13": 121, 
+                "jaccard": 23, 
+                "naish1": 136, 
+                "naish2": 121, 
                 "ochiai": 18, 
                 "tarantula": 34
             }
@@ -876,7 +1252,11 @@
             "line": 244, 
             "metrics": {
                 "ample": 0.5, 
+                "gp13": 3.0, 
                 "gzoltar": 0.7071067811865475, 
+                "jaccard": 0.5, 
+                "naish1": -1, 
+                "naish2": 2.0, 
                 "ochiai": 0.7071067811865475, 
                 "tarantula": 1.0
             }, 
@@ -884,6 +1264,10 @@
             "np": 2257, 
             "rank": {
                 "ample": 120, 
+                "gp13": 120, 
+                "jaccard": 22, 
+                "naish1": 135, 
+                "naish2": 120, 
                 "ochiai": 19, 
                 "tarantula": 33
             }
@@ -895,7 +1279,11 @@
             "line": 247, 
             "metrics": {
                 "ample": 0.5, 
+                "gp13": 3.0, 
                 "gzoltar": 0.7071067811865475, 
+                "jaccard": 0.5, 
+                "naish1": -1, 
+                "naish2": 2.0, 
                 "ochiai": 0.7071067811865475, 
                 "tarantula": 1.0
             }, 
@@ -903,6 +1291,10 @@
             "np": 2257, 
             "rank": {
                 "ample": 119, 
+                "gp13": 119, 
+                "jaccard": 21, 
+                "naish1": 133, 
+                "naish2": 119, 
                 "ochiai": 20, 
                 "tarantula": 32
             }
@@ -914,7 +1306,11 @@
             "line": 254, 
             "metrics": {
                 "ample": 0.5, 
+                "gp13": 3.0, 
                 "gzoltar": 0.7071067811865475, 
+                "jaccard": 0.5, 
+                "naish1": -1, 
+                "naish2": 2.0, 
                 "ochiai": 0.7071067811865475, 
                 "tarantula": 1.0
             }, 
@@ -922,6 +1318,10 @@
             "np": 2257, 
             "rank": {
                 "ample": 126, 
+                "gp13": 126, 
+                "jaccard": 28, 
+                "naish1": 165, 
+                "naish2": 126, 
                 "ochiai": 21, 
                 "tarantula": 42
             }
@@ -933,7 +1333,11 @@
             "line": 256, 
             "metrics": {
                 "ample": 0.5, 
+                "gp13": 3.0, 
                 "gzoltar": 0.7071067811865475, 
+                "jaccard": 0.5, 
+                "naish1": -1, 
+                "naish2": 2.0, 
                 "ochiai": 0.7071067811865475, 
                 "tarantula": 1.0
             }, 
@@ -941,6 +1345,10 @@
             "np": 2257, 
             "rank": {
                 "ample": 127, 
+                "gp13": 127, 
+                "jaccard": 29, 
+                "naish1": 166, 
+                "naish2": 127, 
                 "ochiai": 22, 
                 "tarantula": 43
             }
@@ -952,7 +1360,11 @@
             "line": 257, 
             "metrics": {
                 "ample": 0.5, 
+                "gp13": 3.0, 
                 "gzoltar": 0.7071067811865475, 
+                "jaccard": 0.5, 
+                "naish1": -1, 
+                "naish2": 2.0, 
                 "ochiai": 0.7071067811865475, 
                 "tarantula": 1.0
             }, 
@@ -960,6 +1372,10 @@
             "np": 2257, 
             "rank": {
                 "ample": 128, 
+                "gp13": 128, 
+                "jaccard": 30, 
+                "naish1": 167, 
+                "naish2": 128, 
                 "ochiai": 23, 
                 "tarantula": 44
             }
@@ -971,7 +1387,11 @@
             "line": 262, 
             "metrics": {
                 "ample": 0.5, 
+                "gp13": 3.0, 
                 "gzoltar": 0.7071067811865475, 
+                "jaccard": 0.5, 
+                "naish1": -1, 
+                "naish2": 2.0, 
                 "ochiai": 0.7071067811865475, 
                 "tarantula": 1.0
             }, 
@@ -979,6 +1399,10 @@
             "np": 2257, 
             "rank": {
                 "ample": 104, 
+                "gp13": 104, 
+                "jaccard": 6, 
+                "naish1": 71, 
+                "naish2": 104, 
                 "ochiai": 24, 
                 "tarantula": 16
             }
@@ -990,7 +1414,11 @@
             "line": 263, 
             "metrics": {
                 "ample": 0.5, 
+                "gp13": 3.0, 
                 "gzoltar": 0.7071067811865475, 
+                "jaccard": 0.5, 
+                "naish1": -1, 
+                "naish2": 2.0, 
                 "ochiai": 0.7071067811865475, 
                 "tarantula": 1.0
             }, 
@@ -998,6 +1426,10 @@
             "np": 2257, 
             "rank": {
                 "ample": 103, 
+                "gp13": 103, 
+                "jaccard": 5, 
+                "naish1": 70, 
+                "naish2": 103, 
                 "ochiai": 25, 
                 "tarantula": 15
             }
@@ -1009,7 +1441,11 @@
             "line": 264, 
             "metrics": {
                 "ample": 0.5, 
+                "gp13": 3.0, 
                 "gzoltar": 0.7071067811865475, 
+                "jaccard": 0.5, 
+                "naish1": -1, 
+                "naish2": 2.0, 
                 "ochiai": 0.7071067811865475, 
                 "tarantula": 1.0
             }, 
@@ -1017,6 +1453,10 @@
             "np": 2257, 
             "rank": {
                 "ample": 102, 
+                "gp13": 102, 
+                "jaccard": 4, 
+                "naish1": 68, 
+                "naish2": 102, 
                 "ochiai": 26, 
                 "tarantula": 13
             }
@@ -1028,7 +1468,11 @@
             "line": 272, 
             "metrics": {
                 "ample": 0.5, 
+                "gp13": 3.0, 
                 "gzoltar": 0.7071067811865475, 
+                "jaccard": 0.5, 
+                "naish1": -1, 
+                "naish2": 2.0, 
                 "ochiai": 0.7071067811865475, 
                 "tarantula": 1.0
             }, 
@@ -1036,6 +1480,10 @@
             "np": 2257, 
             "rank": {
                 "ample": 112, 
+                "gp13": 112, 
+                "jaccard": 14, 
+                "naish1": 102, 
+                "naish2": 112, 
                 "ochiai": 27, 
                 "tarantula": 25
             }
@@ -1047,7 +1495,11 @@
             "line": 273, 
             "metrics": {
                 "ample": 0.5, 
+                "gp13": 3.0, 
                 "gzoltar": 0.7071067811865475, 
+                "jaccard": 0.5, 
+                "naish1": -1, 
+                "naish2": 2.0, 
                 "ochiai": 0.7071067811865475, 
                 "tarantula": 1.0
             }, 
@@ -1055,6 +1507,10 @@
             "np": 2257, 
             "rank": {
                 "ample": 113, 
+                "gp13": 113, 
+                "jaccard": 15, 
+                "naish1": 103, 
+                "naish2": 113, 
                 "ochiai": 28, 
                 "tarantula": 26
             }
@@ -1066,7 +1522,11 @@
             "line": 274, 
             "metrics": {
                 "ample": 0.5, 
+                "gp13": 3.0, 
                 "gzoltar": 0.7071067811865475, 
+                "jaccard": 0.5, 
+                "naish1": -1, 
+                "naish2": 2.0, 
                 "ochiai": 0.7071067811865475, 
                 "tarantula": 1.0
             }, 
@@ -1074,6 +1534,10 @@
             "np": 2257, 
             "rank": {
                 "ample": 110, 
+                "gp13": 110, 
+                "jaccard": 12, 
+                "naish1": 100, 
+                "naish2": 110, 
                 "ochiai": 29, 
                 "tarantula": 23
             }
@@ -1085,7 +1549,11 @@
             "line": 275, 
             "metrics": {
                 "ample": 0.5, 
+                "gp13": 3.0, 
                 "gzoltar": 0.7071067811865475, 
+                "jaccard": 0.5, 
+                "naish1": -1, 
+                "naish2": 2.0, 
                 "ochiai": 0.7071067811865475, 
                 "tarantula": 1.0
             }, 
@@ -1093,6 +1561,10 @@
             "np": 2257, 
             "rank": {
                 "ample": 111, 
+                "gp13": 111, 
+                "jaccard": 13, 
+                "naish1": 101, 
+                "naish2": 111, 
                 "ochiai": 30, 
                 "tarantula": 24
             }
@@ -1104,7 +1576,11 @@
             "line": 276, 
             "metrics": {
                 "ample": 0.5, 
+                "gp13": 3.0, 
                 "gzoltar": 0.7071067811865475, 
+                "jaccard": 0.5, 
+                "naish1": -1, 
+                "naish2": 2.0, 
                 "ochiai": 0.7071067811865475, 
                 "tarantula": 1.0
             }, 
@@ -1112,6 +1588,10 @@
             "np": 2257, 
             "rank": {
                 "ample": 108, 
+                "gp13": 108, 
+                "jaccard": 10, 
+                "naish1": 98, 
+                "naish2": 108, 
                 "ochiai": 31, 
                 "tarantula": 21
             }
@@ -1123,7 +1603,11 @@
             "line": 277, 
             "metrics": {
                 "ample": 0.5, 
+                "gp13": 3.0, 
                 "gzoltar": 0.7071067811865475, 
+                "jaccard": 0.5, 
+                "naish1": -1, 
+                "naish2": 2.0, 
                 "ochiai": 0.7071067811865475, 
                 "tarantula": 1.0
             }, 
@@ -1131,6 +1615,10 @@
             "np": 2257, 
             "rank": {
                 "ample": 109, 
+                "gp13": 109, 
+                "jaccard": 11, 
+                "naish1": 99, 
+                "naish2": 109, 
                 "ochiai": 32, 
                 "tarantula": 22
             }
@@ -1142,7 +1630,11 @@
             "line": 278, 
             "metrics": {
                 "ample": 0.5, 
+                "gp13": 3.0, 
                 "gzoltar": 0.7071067811865475, 
+                "jaccard": 0.5, 
+                "naish1": -1, 
+                "naish2": 2.0, 
                 "ochiai": 0.7071067811865475, 
                 "tarantula": 1.0
             }, 
@@ -1150,6 +1642,10 @@
             "np": 2257, 
             "rank": {
                 "ample": 107, 
+                "gp13": 107, 
+                "jaccard": 9, 
+                "naish1": 97, 
+                "naish2": 107, 
                 "ochiai": 33, 
                 "tarantula": 20
             }
@@ -1161,7 +1657,11 @@
             "line": 280, 
             "metrics": {
                 "ample": 0.25, 
+                "gp13": 2.0, 
                 "gzoltar": 0.5, 
+                "jaccard": 0.25, 
+                "naish1": -1, 
+                "naish2": 1.0, 
                 "ochiai": 0.5, 
                 "tarantula": 1.0
             }, 
@@ -1169,6 +1669,10 @@
             "np": 2257, 
             "rank": {
                 "ample": 168, 
+                "gp13": 168, 
+                "jaccard": 158, 
+                "naish1": 241, 
+                "naish2": 168, 
                 "ochiai": 140, 
                 "tarantula": 61
             }
@@ -1180,7 +1684,11 @@
             "line": 281, 
             "metrics": {
                 "ample": 0.25, 
+                "gp13": 2.0, 
                 "gzoltar": 0.5, 
+                "jaccard": 0.25, 
+                "naish1": -1, 
+                "naish2": 1.0, 
                 "ochiai": 0.5, 
                 "tarantula": 1.0
             }, 
@@ -1188,6 +1696,10 @@
             "np": 2257, 
             "rank": {
                 "ample": 167, 
+                "gp13": 167, 
+                "jaccard": 157, 
+                "naish1": 239, 
+                "naish2": 167, 
                 "ochiai": 141, 
                 "tarantula": 60
             }
@@ -1199,7 +1711,11 @@
             "line": 282, 
             "metrics": {
                 "ample": 0.25, 
+                "gp13": 2.0, 
                 "gzoltar": 0.5, 
+                "jaccard": 0.25, 
+                "naish1": -1, 
+                "naish2": 1.0, 
                 "ochiai": 0.5, 
                 "tarantula": 1.0
             }, 
@@ -1207,6 +1723,10 @@
             "np": 2257, 
             "rank": {
                 "ample": 148, 
+                "gp13": 148, 
+                "jaccard": 137, 
+                "naish1": 29, 
+                "naish2": 148, 
                 "ochiai": 142, 
                 "tarantula": 6
             }
@@ -1218,7 +1738,11 @@
             "line": 283, 
             "metrics": {
                 "ample": 0.25, 
+                "gp13": 2.0, 
                 "gzoltar": 0.5, 
+                "jaccard": 0.25, 
+                "naish1": -1, 
+                "naish2": 1.0, 
                 "ochiai": 0.5, 
                 "tarantula": 1.0
             }, 
@@ -1226,6 +1750,10 @@
             "np": 2257, 
             "rank": {
                 "ample": 166, 
+                "gp13": 166, 
+                "jaccard": 156, 
+                "naish1": 234, 
+                "naish2": 166, 
                 "ochiai": 143, 
                 "tarantula": 59
             }
@@ -1237,7 +1765,11 @@
             "line": 284, 
             "metrics": {
                 "ample": 0.25, 
+                "gp13": 2.0, 
                 "gzoltar": 0.5, 
+                "jaccard": 0.25, 
+                "naish1": -1, 
+                "naish2": 1.0, 
                 "ochiai": 0.5, 
                 "tarantula": 1.0
             }, 
@@ -1245,6 +1777,10 @@
             "np": 2257, 
             "rank": {
                 "ample": 143, 
+                "gp13": 143, 
+                "jaccard": 132, 
+                "naish1": 3, 
+                "naish2": 143, 
                 "ochiai": 144, 
                 "tarantula": 1
             }
@@ -1256,7 +1792,11 @@
             "line": 285, 
             "metrics": {
                 "ample": 0.25, 
+                "gp13": 2.0, 
                 "gzoltar": 0.5, 
+                "jaccard": 0.25, 
+                "naish1": -1, 
+                "naish2": 1.0, 
                 "ochiai": 0.5, 
                 "tarantula": 1.0
             }, 
@@ -1264,6 +1804,10 @@
             "np": 2257, 
             "rank": {
                 "ample": 150, 
+                "gp13": 150, 
+                "jaccard": 139, 
+                "naish1": 34, 
+                "naish2": 150, 
                 "ochiai": 145, 
                 "tarantula": 8
             }
@@ -1275,7 +1819,11 @@
             "line": 286, 
             "metrics": {
                 "ample": 0.25, 
+                "gp13": 2.0, 
                 "gzoltar": 0.5, 
+                "jaccard": 0.25, 
+                "naish1": -1, 
+                "naish2": 1.0, 
                 "ochiai": 0.5, 
                 "tarantula": 1.0
             }, 
@@ -1283,6 +1831,10 @@
             "np": 2257, 
             "rank": {
                 "ample": 169, 
+                "gp13": 169, 
+                "jaccard": 159, 
+                "naish1": 246, 
+                "naish2": 169, 
                 "ochiai": 146, 
                 "tarantula": 62
             }
@@ -1294,7 +1846,11 @@
             "line": 287, 
             "metrics": {
                 "ample": 0.25, 
+                "gp13": 2.0, 
                 "gzoltar": 0.5, 
+                "jaccard": 0.25, 
+                "naish1": -1, 
+                "naish2": 1.0, 
                 "ochiai": 0.5, 
                 "tarantula": 1.0
             }, 
@@ -1302,6 +1858,10 @@
             "np": 2257, 
             "rank": {
                 "ample": 149, 
+                "gp13": 149, 
+                "jaccard": 138, 
+                "naish1": 32, 
+                "naish2": 149, 
                 "ochiai": 147, 
                 "tarantula": 7
             }
@@ -1313,7 +1873,11 @@
             "line": 288, 
             "metrics": {
                 "ample": 0.25, 
+                "gp13": 2.0, 
                 "gzoltar": 0.5, 
+                "jaccard": 0.25, 
+                "naish1": -1, 
+                "naish2": 1.0, 
                 "ochiai": 0.5, 
                 "tarantula": 1.0
             }, 
@@ -1321,6 +1885,10 @@
             "np": 2257, 
             "rank": {
                 "ample": 144, 
+                "gp13": 144, 
+                "jaccard": 133, 
+                "naish1": 12, 
+                "naish2": 144, 
                 "ochiai": 148, 
                 "tarantula": 2
             }
@@ -1332,7 +1900,11 @@
             "line": 294, 
             "metrics": {
                 "ample": 0.25, 
+                "gp13": 2.0, 
                 "gzoltar": 0.5, 
+                "jaccard": 0.25, 
+                "naish1": -1, 
+                "naish2": 1.0, 
                 "ochiai": 0.5, 
                 "tarantula": 1.0
             }, 
@@ -1340,6 +1912,10 @@
             "np": 2257, 
             "rank": {
                 "ample": 160, 
+                "gp13": 160, 
+                "jaccard": 150, 
+                "naish1": 192, 
+                "naish2": 160, 
                 "ochiai": 149, 
                 "tarantula": 52
             }
@@ -1351,7 +1927,11 @@
             "line": 295, 
             "metrics": {
                 "ample": 0.25, 
+                "gp13": 2.0, 
                 "gzoltar": 0.5, 
+                "jaccard": 0.25, 
+                "naish1": -1, 
+                "naish2": 1.0, 
                 "ochiai": 0.5, 
                 "tarantula": 1.0
             }, 
@@ -1359,6 +1939,10 @@
             "np": 2257, 
             "rank": {
                 "ample": 161, 
+                "gp13": 161, 
+                "jaccard": 151, 
+                "naish1": 193, 
+                "naish2": 161, 
                 "ochiai": 150, 
                 "tarantula": 53
             }
@@ -1370,7 +1954,11 @@
             "line": 296, 
             "metrics": {
                 "ample": 0.25, 
+                "gp13": 2.0, 
                 "gzoltar": 0.5, 
+                "jaccard": 0.25, 
+                "naish1": -1, 
+                "naish2": 1.0, 
                 "ochiai": 0.5, 
                 "tarantula": 1.0
             }, 
@@ -1378,6 +1966,10 @@
             "np": 2257, 
             "rank": {
                 "ample": 162, 
+                "gp13": 162, 
+                "jaccard": 152, 
+                "naish1": 194, 
+                "naish2": 162, 
                 "ochiai": 151, 
                 "tarantula": 54
             }
@@ -1389,7 +1981,11 @@
             "line": 297, 
             "metrics": {
                 "ample": 0.25, 
+                "gp13": 2.0, 
                 "gzoltar": 0.5, 
+                "jaccard": 0.25, 
+                "naish1": -1, 
+                "naish2": 1.0, 
                 "ochiai": 0.5, 
                 "tarantula": 1.0
             }, 
@@ -1397,6 +1993,10 @@
             "np": 2257, 
             "rank": {
                 "ample": 163, 
+                "gp13": 163, 
+                "jaccard": 153, 
+                "naish1": 195, 
+                "naish2": 163, 
                 "ochiai": 152, 
                 "tarantula": 55
             }
@@ -1408,7 +2008,11 @@
             "line": 301, 
             "metrics": {
                 "ample": 0.5, 
+                "gp13": 3.0, 
                 "gzoltar": 0.7071067811865475, 
+                "jaccard": 0.5, 
+                "naish1": -1, 
+                "naish2": 2.0, 
                 "ochiai": 0.7071067811865475, 
                 "tarantula": 1.0
             }, 
@@ -1416,6 +2020,10 @@
             "np": 2257, 
             "rank": {
                 "ample": 105, 
+                "gp13": 105, 
+                "jaccard": 7, 
+                "naish1": 73, 
+                "naish2": 105, 
                 "ochiai": 34, 
                 "tarantula": 17
             }
@@ -1427,7 +2035,11 @@
             "line": 308, 
             "metrics": {
                 "ample": 0.5, 
+                "gp13": 3.0, 
                 "gzoltar": 0.7071067811865475, 
+                "jaccard": 0.5, 
+                "naish1": -1, 
+                "naish2": 2.0, 
                 "ochiai": 0.7071067811865475, 
                 "tarantula": 1.0
             }, 
@@ -1435,6 +2047,10 @@
             "np": 2257, 
             "rank": {
                 "ample": 106, 
+                "gp13": 106, 
+                "jaccard": 8, 
+                "naish1": 78, 
+                "naish2": 106, 
                 "ochiai": 35, 
                 "tarantula": 18
             }
@@ -1446,7 +2062,11 @@
             "line": 105, 
             "metrics": {
                 "ample": 0.5, 
+                "gp13": 3.0, 
                 "gzoltar": 0.7071067811865475, 
+                "jaccard": 0.5, 
+                "naish1": -1, 
+                "naish2": 2.0, 
                 "ochiai": 0.7071067811865475, 
                 "tarantula": 1.0
             }, 
@@ -1454,6 +2074,10 @@
             "np": 2257, 
             "rank": {
                 "ample": 101, 
+                "gp13": 101, 
+                "jaccard": 3, 
+                "naish1": 44, 
+                "naish2": 101, 
                 "ochiai": 2, 
                 "tarantula": 9
             }
@@ -1465,7 +2089,11 @@
             "line": 113, 
             "metrics": {
                 "ample": 0.5, 
+                "gp13": 3.0, 
                 "gzoltar": 0.7071067811865475, 
+                "jaccard": 0.5, 
+                "naish1": -1, 
+                "naish2": 2.0, 
                 "ochiai": 0.7071067811865475, 
                 "tarantula": 1.0
             }, 
@@ -1473,6 +2101,10 @@
             "np": 2257, 
             "rank": {
                 "ample": 134, 
+                "gp13": 134, 
+                "jaccard": 36, 
+                "naish1": 212, 
+                "naish2": 134, 
                 "ochiai": 3, 
                 "tarantula": 56
             }
@@ -1484,7 +2116,11 @@
             "line": 126, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -1492,6 +2128,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 88, 
+                "gp13": 88, 
+                "jaccard": 126, 
+                "naish1": 237, 
+                "naish2": 88, 
                 "ochiai": 115, 
                 "tarantula": 156
             }
@@ -1503,7 +2143,11 @@
             "line": 127, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -1511,6 +2155,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 89, 
+                "gp13": 89, 
+                "jaccard": 127, 
+                "naish1": 238, 
+                "naish2": 89, 
                 "ochiai": 116, 
                 "tarantula": 157
             }
@@ -1522,7 +2170,11 @@
             "line": 128, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -1530,6 +2182,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 86, 
+                "gp13": 86, 
+                "jaccard": 124, 
+                "naish1": 235, 
+                "naish2": 86, 
                 "ochiai": 117, 
                 "tarantula": 154
             }
@@ -1541,7 +2197,11 @@
             "line": 129, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -1549,6 +2209,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 87, 
+                "gp13": 87, 
+                "jaccard": 125, 
+                "naish1": 236, 
+                "naish2": 87, 
                 "ochiai": 118, 
                 "tarantula": 155
             }
@@ -1560,7 +2224,11 @@
             "line": 130, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -1568,6 +2236,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 46, 
+                "gp13": 46, 
+                "jaccard": 84, 
+                "naish1": 132, 
+                "naish2": 46, 
                 "ochiai": 119, 
                 "tarantula": 114
             }
@@ -1579,7 +2251,11 @@
             "line": 137, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -1587,6 +2263,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 45, 
+                "gp13": 45, 
+                "jaccard": 83, 
+                "naish1": 131, 
+                "naish2": 45, 
                 "ochiai": 120, 
                 "tarantula": 113
             }
@@ -1598,7 +2278,11 @@
             "line": 138, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -1606,6 +2290,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 44, 
+                "gp13": 44, 
+                "jaccard": 82, 
+                "naish1": 130, 
+                "naish2": 44, 
                 "ochiai": 121, 
                 "tarantula": 112
             }
@@ -1617,7 +2305,11 @@
             "line": 142, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -1625,6 +2317,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 60, 
+                "gp13": 60, 
+                "jaccard": 98, 
+                "naish1": 161, 
+                "naish2": 60, 
                 "ochiai": 122, 
                 "tarantula": 128
             }
@@ -1636,7 +2332,11 @@
             "line": 143, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -1644,6 +2344,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 61, 
+                "gp13": 61, 
+                "jaccard": 99, 
+                "naish1": 162, 
+                "naish2": 61, 
                 "ochiai": 123, 
                 "tarantula": 129
             }
@@ -1655,7 +2359,11 @@
             "line": 147, 
             "metrics": {
                 "ample": 0.25, 
+                "gp13": 2.0, 
                 "gzoltar": 0.5, 
+                "jaccard": 0.25, 
+                "naish1": -1, 
+                "naish2": 1.0, 
                 "ochiai": 0.5, 
                 "tarantula": 1.0
             }, 
@@ -1663,6 +2371,10 @@
             "np": 2257, 
             "rank": {
                 "ample": 157, 
+                "gp13": 157, 
+                "jaccard": 147, 
+                "naish1": 163, 
+                "naish2": 157, 
                 "ochiai": 158, 
                 "tarantula": 40
             }
@@ -1674,7 +2386,11 @@
             "line": 152, 
             "metrics": {
                 "ample": 0.75, 
+                "gp13": 4.0, 
                 "gzoltar": 0.8660254037844387, 
+                "jaccard": 0.75, 
+                "naish1": -1, 
+                "naish2": 3.0, 
                 "ochiai": 0.8660254037844387, 
                 "tarantula": 1.0
             }, 
@@ -1682,6 +2398,10 @@
             "np": 2257, 
             "rank": {
                 "ample": 92, 
+                "gp13": 92, 
+                "jaccard": 1, 
+                "naish1": 66, 
+                "naish2": 92, 
                 "ochiai": 1, 
                 "tarantula": 11
             }
@@ -1693,7 +2413,11 @@
             "line": 193, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -1701,6 +2425,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 63, 
+                "gp13": 63, 
+                "jaccard": 101, 
+                "naish1": 180, 
+                "naish2": 63, 
                 "ochiai": 124, 
                 "tarantula": 131
             }
@@ -1712,7 +2440,11 @@
             "line": 197, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -1720,6 +2452,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 52, 
+                "gp13": 52, 
+                "jaccard": 90, 
+                "naish1": 151, 
+                "naish2": 52, 
                 "ochiai": 125, 
                 "tarantula": 120
             }
@@ -1731,7 +2467,11 @@
             "line": 97, 
             "metrics": {
                 "ample": 0.25, 
+                "gp13": 2.0, 
                 "gzoltar": 0.5, 
+                "jaccard": 0.25, 
+                "naish1": -1, 
+                "naish2": 1.0, 
                 "ochiai": 0.5, 
                 "tarantula": 1.0
             }, 
@@ -1739,6 +2479,10 @@
             "np": 2257, 
             "rank": {
                 "ample": 153, 
+                "gp13": 153, 
+                "jaccard": 142, 
+                "naish1": 69, 
+                "naish2": 153, 
                 "ochiai": 156, 
                 "tarantula": 14
             }
@@ -1750,7 +2494,11 @@
             "line": 98, 
             "metrics": {
                 "ample": 0.25, 
+                "gp13": 2.0, 
                 "gzoltar": 0.5, 
+                "jaccard": 0.25, 
+                "naish1": -1, 
+                "naish2": 1.0, 
                 "ochiai": 0.5, 
                 "tarantula": 1.0
             }, 
@@ -1758,6 +2506,10 @@
             "np": 2257, 
             "rank": {
                 "ample": 152, 
+                "gp13": 152, 
+                "jaccard": 141, 
+                "naish1": 67, 
+                "naish2": 152, 
                 "ochiai": 157, 
                 "tarantula": 12
             }
@@ -1769,7 +2521,11 @@
             "line": 102, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -1777,6 +2533,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 78, 
+                "gp13": 78, 
+                "jaccard": 116, 
+                "naish1": 220, 
+                "naish2": 78, 
                 "ochiai": 50, 
                 "tarantula": 146
             }
@@ -1788,7 +2548,11 @@
             "line": 105, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -1796,6 +2560,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 79, 
+                "gp13": 79, 
+                "jaccard": 117, 
+                "naish1": 223, 
+                "naish2": 79, 
                 "ochiai": 51, 
                 "tarantula": 147
             }
@@ -1807,7 +2575,11 @@
             "line": 109, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -1815,6 +2587,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 80, 
+                "gp13": 80, 
+                "jaccard": 118, 
+                "naish1": 226, 
+                "naish2": 80, 
                 "ochiai": 52, 
                 "tarantula": 148
             }
@@ -1826,7 +2602,11 @@
             "line": 110, 
             "metrics": {
                 "ample": 0.9977846699158175, 
+                "gp13": 4.285714285714286, 
                 "gzoltar": 0.6666666666666666, 
+                "jaccard": 0.4444444444444444, 
+                "naish1": -1, 
+                "naish2": 3.9977856510186007, 
                 "ochiai": 0.6666666666666666, 
                 "tarantula": 0.997789566755084
             }, 
@@ -1834,6 +2614,10 @@
             "np": 2252, 
             "rank": {
                 "ample": 9, 
+                "gp13": 9, 
+                "jaccard": 45, 
+                "naish1": 177, 
+                "naish2": 9, 
                 "ochiai": 37, 
                 "tarantula": 74
             }
@@ -1845,7 +2629,11 @@
             "line": 111, 
             "metrics": {
                 "ample": 0.9977846699158175, 
+                "gp13": 4.285714285714286, 
                 "gzoltar": 0.6666666666666666, 
+                "jaccard": 0.4444444444444444, 
+                "naish1": -1, 
+                "naish2": 3.9977856510186007, 
                 "ochiai": 0.6666666666666666, 
                 "tarantula": 0.997789566755084
             }, 
@@ -1853,6 +2641,10 @@
             "np": 2252, 
             "rank": {
                 "ample": 8, 
+                "gp13": 8, 
+                "jaccard": 44, 
+                "naish1": 176, 
+                "naish2": 8, 
                 "ochiai": 38, 
                 "tarantula": 73
             }
@@ -1864,7 +2656,11 @@
             "line": 117, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -1872,6 +2668,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 62, 
+                "gp13": 62, 
+                "jaccard": 100, 
+                "naish1": 173, 
+                "naish2": 62, 
                 "ochiai": 53, 
                 "tarantula": 130
             }
@@ -1883,7 +2683,11 @@
             "line": 118, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -1891,6 +2695,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 65, 
+                "gp13": 65, 
+                "jaccard": 103, 
+                "naish1": 185, 
+                "naish2": 65, 
                 "ochiai": 54, 
                 "tarantula": 133
             }
@@ -1902,7 +2710,11 @@
             "line": 119, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -1910,6 +2722,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 64, 
+                "gp13": 64, 
+                "jaccard": 102, 
+                "naish1": 184, 
+                "naish2": 64, 
                 "ochiai": 55, 
                 "tarantula": 132
             }
@@ -1921,7 +2737,11 @@
             "line": 120, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -1929,6 +2749,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 58, 
+                "gp13": 58, 
+                "jaccard": 96, 
+                "naish1": 158, 
+                "naish2": 58, 
                 "ochiai": 56, 
                 "tarantula": 126
             }
@@ -1940,7 +2764,11 @@
             "line": 121, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -1948,6 +2776,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 59, 
+                "gp13": 59, 
+                "jaccard": 97, 
+                "naish1": 159, 
+                "naish2": 59, 
                 "ochiai": 57, 
                 "tarantula": 127
             }
@@ -1959,7 +2791,11 @@
             "line": 122, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -1967,6 +2803,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 57, 
+                "gp13": 57, 
+                "jaccard": 95, 
+                "naish1": 156, 
+                "naish2": 57, 
                 "ochiai": 58, 
                 "tarantula": 125
             }
@@ -1978,7 +2818,11 @@
             "line": 125, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -1986,6 +2830,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 56, 
+                "gp13": 56, 
+                "jaccard": 94, 
+                "naish1": 155, 
+                "naish2": 56, 
                 "ochiai": 59, 
                 "tarantula": 124
             }
@@ -1997,7 +2845,11 @@
             "line": 126, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -2005,6 +2857,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 55, 
+                "gp13": 55, 
+                "jaccard": 93, 
+                "naish1": 154, 
+                "naish2": 55, 
                 "ochiai": 60, 
                 "tarantula": 123
             }
@@ -2016,7 +2872,11 @@
             "line": 128, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -2024,6 +2884,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 53, 
+                "gp13": 53, 
+                "jaccard": 91, 
+                "naish1": 152, 
+                "naish2": 53, 
                 "ochiai": 61, 
                 "tarantula": 121
             }
@@ -2035,7 +2899,11 @@
             "line": 129, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -2043,6 +2911,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 54, 
+                "gp13": 54, 
+                "jaccard": 92, 
+                "naish1": 153, 
+                "naish2": 54, 
                 "ochiai": 62, 
                 "tarantula": 122
             }
@@ -2054,7 +2926,11 @@
             "line": 130, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -2062,6 +2938,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 42, 
+                "gp13": 42, 
+                "jaccard": 80, 
+                "naish1": 125, 
+                "naish2": 42, 
                 "ochiai": 63, 
                 "tarantula": 110
             }
@@ -2073,7 +2953,11 @@
             "line": 131, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -2081,6 +2965,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 41, 
+                "gp13": 41, 
+                "jaccard": 79, 
+                "naish1": 124, 
+                "naish2": 41, 
                 "ochiai": 64, 
                 "tarantula": 109
             }
@@ -2092,7 +2980,11 @@
             "line": 132, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -2100,6 +2992,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 43, 
+                "gp13": 43, 
+                "jaccard": 81, 
+                "naish1": 126, 
+                "naish2": 43, 
                 "ochiai": 65, 
                 "tarantula": 111
             }
@@ -2111,7 +3007,11 @@
             "line": 135, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -2119,6 +3019,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 38, 
+                "gp13": 38, 
+                "jaccard": 76, 
+                "naish1": 120, 
+                "naish2": 38, 
                 "ochiai": 66, 
                 "tarantula": 106
             }
@@ -2130,7 +3034,11 @@
             "line": 136, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -2138,6 +3046,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 40, 
+                "gp13": 40, 
+                "jaccard": 78, 
+                "naish1": 123, 
+                "naish2": 40, 
                 "ochiai": 67, 
                 "tarantula": 108
             }
@@ -2149,7 +3061,11 @@
             "line": 137, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -2157,6 +3073,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 39, 
+                "gp13": 39, 
+                "jaccard": 77, 
+                "naish1": 122, 
+                "naish2": 39, 
                 "ochiai": 68, 
                 "tarantula": 107
             }
@@ -2168,7 +3088,11 @@
             "line": 138, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -2176,6 +3100,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 22, 
+                "gp13": 22, 
+                "jaccard": 60, 
+                "naish1": 50, 
+                "naish2": 22, 
                 "ochiai": 69, 
                 "tarantula": 90
             }
@@ -2187,7 +3115,11 @@
             "line": 139, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -2195,6 +3127,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 20, 
+                "gp13": 20, 
+                "jaccard": 58, 
+                "naish1": 46, 
+                "naish2": 20, 
                 "ochiai": 70, 
                 "tarantula": 88
             }
@@ -2206,7 +3142,11 @@
             "line": 140, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -2214,6 +3154,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 30, 
+                "gp13": 30, 
+                "jaccard": 68, 
+                "naish1": 85, 
+                "naish2": 30, 
                 "ochiai": 71, 
                 "tarantula": 98
             }
@@ -2225,7 +3169,11 @@
             "line": 142, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -2233,6 +3181,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 31, 
+                "gp13": 31, 
+                "jaccard": 69, 
+                "naish1": 86, 
+                "naish2": 31, 
                 "ochiai": 72, 
                 "tarantula": 99
             }
@@ -2244,7 +3196,11 @@
             "line": 143, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -2252,6 +3208,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 32, 
+                "gp13": 32, 
+                "jaccard": 70, 
+                "naish1": 87, 
+                "naish2": 32, 
                 "ochiai": 73, 
                 "tarantula": 100
             }
@@ -2263,7 +3223,11 @@
             "line": 144, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -2271,6 +3235,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 27, 
+                "gp13": 27, 
+                "jaccard": 65, 
+                "naish1": 82, 
+                "naish2": 27, 
                 "ochiai": 74, 
                 "tarantula": 95
             }
@@ -2282,7 +3250,11 @@
             "line": 145, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -2290,6 +3262,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 28, 
+                "gp13": 28, 
+                "jaccard": 66, 
+                "naish1": 83, 
+                "naish2": 28, 
                 "ochiai": 75, 
                 "tarantula": 96
             }
@@ -2301,7 +3277,11 @@
             "line": 146, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -2309,6 +3289,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 29, 
+                "gp13": 29, 
+                "jaccard": 67, 
+                "naish1": 84, 
+                "naish2": 29, 
                 "ochiai": 76, 
                 "tarantula": 97
             }
@@ -2320,7 +3304,11 @@
             "line": 148, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -2328,6 +3316,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 33, 
+                "gp13": 33, 
+                "jaccard": 71, 
+                "naish1": 88, 
+                "naish2": 33, 
                 "ochiai": 77, 
                 "tarantula": 101
             }
@@ -2339,7 +3331,11 @@
             "line": 149, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -2347,6 +3343,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 34, 
+                "gp13": 34, 
+                "jaccard": 72, 
+                "naish1": 89, 
+                "naish2": 34, 
                 "ochiai": 78, 
                 "tarantula": 102
             }
@@ -2358,7 +3358,11 @@
             "line": 151, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -2366,6 +3370,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 23, 
+                "gp13": 23, 
+                "jaccard": 61, 
+                "naish1": 59, 
+                "naish2": 23, 
                 "ochiai": 79, 
                 "tarantula": 91
             }
@@ -2377,7 +3385,11 @@
             "line": 154, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -2385,6 +3397,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 26, 
+                "gp13": 26, 
+                "jaccard": 64, 
+                "naish1": 64, 
+                "naish2": 26, 
                 "ochiai": 80, 
                 "tarantula": 94
             }
@@ -2396,7 +3412,11 @@
             "line": 155, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -2404,6 +3424,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 25, 
+                "gp13": 25, 
+                "jaccard": 63, 
+                "naish1": 63, 
+                "naish2": 25, 
                 "ochiai": 81, 
                 "tarantula": 93
             }
@@ -2415,7 +3439,11 @@
             "line": 157, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -2423,6 +3451,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 24, 
+                "gp13": 24, 
+                "jaccard": 62, 
+                "naish1": 61, 
+                "naish2": 24, 
                 "ochiai": 82, 
                 "tarantula": 92
             }
@@ -2434,7 +3466,11 @@
             "line": 161, 
             "metrics": {
                 "ample": 0.9977846699158175, 
+                "gp13": 4.285714285714286, 
                 "gzoltar": 0.6666666666666666, 
+                "jaccard": 0.4444444444444444, 
+                "naish1": -1, 
+                "naish2": 3.9977856510186007, 
                 "ochiai": 0.6666666666666666, 
                 "tarantula": 0.997789566755084
             }, 
@@ -2442,6 +3478,10 @@
             "np": 2252, 
             "rank": {
                 "ample": 3, 
+                "gp13": 3, 
+                "jaccard": 39, 
+                "naish1": 31, 
+                "naish2": 3, 
                 "ochiai": 39, 
                 "tarantula": 68
             }
@@ -2453,7 +3493,11 @@
             "line": 162, 
             "metrics": {
                 "ample": 0.9977846699158175, 
+                "gp13": 4.285714285714286, 
                 "gzoltar": 0.6666666666666666, 
+                "jaccard": 0.4444444444444444, 
+                "naish1": -1, 
+                "naish2": 3.9977856510186007, 
                 "ochiai": 0.6666666666666666, 
                 "tarantula": 0.997789566755084
             }, 
@@ -2461,6 +3505,10 @@
             "np": 2252, 
             "rank": {
                 "ample": 2, 
+                "gp13": 2, 
+                "jaccard": 38, 
+                "naish1": 28, 
+                "naish2": 2, 
                 "ochiai": 40, 
                 "tarantula": 67
             }
@@ -2472,7 +3520,11 @@
             "line": 165, 
             "metrics": {
                 "ample": 0.9977846699158175, 
+                "gp13": 4.285714285714286, 
                 "gzoltar": 0.6666666666666666, 
+                "jaccard": 0.4444444444444444, 
+                "naish1": -1, 
+                "naish2": 3.9977856510186007, 
                 "ochiai": 0.6666666666666666, 
                 "tarantula": 0.997789566755084
             }, 
@@ -2480,6 +3532,10 @@
             "np": 2252, 
             "rank": {
                 "ample": 4, 
+                "gp13": 4, 
+                "jaccard": 40, 
+                "naish1": 35, 
+                "naish2": 4, 
                 "ochiai": 41, 
                 "tarantula": 69
             }
@@ -2491,7 +3547,11 @@
             "line": 167, 
             "metrics": {
                 "ample": 0.748227735932654, 
+                "gp13": 3.2727272727272725, 
                 "gzoltar": 0.5669467095138409, 
+                "jaccard": 0.375, 
+                "naish1": -1, 
+                "naish2": 2.9982285208148802, 
                 "ochiai": 0.5669467095138409, 
                 "tarantula": 0.9976425519375277
             }, 
@@ -2499,6 +3559,10 @@
             "np": 2253, 
             "rank": {
                 "ample": 96, 
+                "gp13": 96, 
+                "jaccard": 128, 
+                "naish1": 33, 
+                "naish2": 96, 
                 "ochiai": 128, 
                 "tarantula": 77
             }
@@ -2510,7 +3574,11 @@
             "line": 168, 
             "metrics": {
                 "ample": 0.749113867966327, 
+                "gp13": 3.4285714285714284, 
                 "gzoltar": 0.6708203932499369, 
+                "jaccard": 0.5, 
+                "naish1": -1, 
+                "naish2": 2.99911426040744, 
                 "ochiai": 0.6708203932499369, 
                 "tarantula": 0.9988198849387815
             }, 
@@ -2518,6 +3586,10 @@
             "np": 2255, 
             "rank": {
                 "ample": 93, 
+                "gp13": 93, 
+                "jaccard": 2, 
+                "naish1": 37, 
+                "naish2": 93, 
                 "ochiai": 36, 
                 "tarantula": 63
             }
@@ -2529,7 +3601,11 @@
             "line": 170, 
             "metrics": {
                 "ample": 0.7486708019494904, 
+                "gp13": 3.3333333333333335, 
                 "gzoltar": 0.6123724356957946, 
+                "jaccard": 0.42857142857142855, 
+                "naish1": -1, 
+                "naish2": 2.99867139061116, 
                 "ochiai": 0.6123724356957946, 
                 "tarantula": 0.9982308712958867
             }, 
@@ -2537,6 +3613,10 @@
             "np": 2254, 
             "rank": {
                 "ample": 94, 
+                "gp13": 94, 
+                "jaccard": 48, 
+                "naish1": 6, 
+                "naish2": 94, 
                 "ochiai": 127, 
                 "tarantula": 64
             }
@@ -2548,7 +3628,11 @@
             "line": 175, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -2556,6 +3640,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 12, 
+                "gp13": 12, 
+                "jaccard": 50, 
+                "naish1": 7, 
+                "naish2": 12, 
                 "ochiai": 83, 
                 "tarantula": 80
             }
@@ -2567,7 +3655,11 @@
             "line": 176, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -2575,6 +3667,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 13, 
+                "gp13": 13, 
+                "jaccard": 51, 
+                "naish1": 8, 
+                "naish2": 13, 
                 "ochiai": 84, 
                 "tarantula": 81
             }
@@ -2586,7 +3682,11 @@
             "line": 178, 
             "metrics": {
                 "ample": 0.9977846699158175, 
+                "gp13": 4.285714285714286, 
                 "gzoltar": 0.6666666666666666, 
+                "jaccard": 0.4444444444444444, 
+                "naish1": -1, 
+                "naish2": 3.9977856510186007, 
                 "ochiai": 0.6666666666666666, 
                 "tarantula": 0.997789566755084
             }, 
@@ -2594,6 +3694,10 @@
             "np": 2252, 
             "rank": {
                 "ample": 1, 
+                "gp13": 1, 
+                "jaccard": 37, 
+                "naish1": 9, 
+                "naish2": 1, 
                 "ochiai": 42, 
                 "tarantula": 66
             }
@@ -2605,7 +3709,11 @@
             "line": 180, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -2613,6 +3721,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 75, 
+                "gp13": 75, 
+                "jaccard": 113, 
+                "naish1": 214, 
+                "naish2": 75, 
                 "ochiai": 85, 
                 "tarantula": 143
             }
@@ -2624,7 +3736,11 @@
             "line": 184, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -2632,6 +3748,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 76, 
+                "gp13": 76, 
+                "jaccard": 114, 
+                "naish1": 215, 
+                "naish2": 76, 
                 "ochiai": 86, 
                 "tarantula": 144
             }
@@ -2643,7 +3763,11 @@
             "line": 185, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -2651,6 +3775,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 77, 
+                "gp13": 77, 
+                "jaccard": 115, 
+                "naish1": 216, 
+                "naish2": 77, 
                 "ochiai": 87, 
                 "tarantula": 145
             }
@@ -2662,7 +3790,11 @@
             "line": 187, 
             "metrics": {
                 "ample": 0.9977846699158175, 
+                "gp13": 4.285714285714286, 
                 "gzoltar": 0.6666666666666666, 
+                "jaccard": 0.4444444444444444, 
+                "naish1": -1, 
+                "naish2": 3.9977856510186007, 
                 "ochiai": 0.6666666666666666, 
                 "tarantula": 0.997789566755084
             }, 
@@ -2670,6 +3802,10 @@
             "np": 2252, 
             "rank": {
                 "ample": 10, 
+                "gp13": 10, 
+                "jaccard": 46, 
+                "naish1": 218, 
+                "naish2": 10, 
                 "ochiai": 43, 
                 "tarantula": 75
             }
@@ -2681,7 +3817,11 @@
             "line": 189, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -2689,6 +3829,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 74, 
+                "gp13": 74, 
+                "jaccard": 112, 
+                "naish1": 211, 
+                "naish2": 74, 
                 "ochiai": 88, 
                 "tarantula": 142
             }
@@ -2700,7 +3844,11 @@
             "line": 193, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -2708,6 +3856,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 21, 
+                "gp13": 21, 
+                "jaccard": 59, 
+                "naish1": 49, 
+                "naish2": 21, 
                 "ochiai": 89, 
                 "tarantula": 89
             }
@@ -2719,7 +3871,11 @@
             "line": 194, 
             "metrics": {
                 "ample": 0.7477846699158175, 
+                "gp13": 3.230769230769231, 
                 "gzoltar": 0.5303300858899106, 
+                "jaccard": 0.3333333333333333, 
+                "naish1": -1, 
+                "naish2": 2.9977856510186007, 
                 "ochiai": 0.5303300858899106, 
                 "tarantula": 0.9970549256368724
             }, 
@@ -2727,6 +3883,10 @@
             "np": 2252, 
             "rank": {
                 "ample": 99, 
+                "gp13": 99, 
+                "jaccard": 131, 
+                "naish1": 48, 
+                "naish2": 99, 
                 "ochiai": 131, 
                 "tarantula": 158
             }
@@ -2738,7 +3898,11 @@
             "line": 195, 
             "metrics": {
                 "ample": 0.748227735932654, 
+                "gp13": 3.2727272727272725, 
                 "gzoltar": 0.5669467095138409, 
+                "jaccard": 0.375, 
+                "naish1": -1, 
+                "naish2": 2.9982285208148802, 
                 "ochiai": 0.5669467095138409, 
                 "tarantula": 0.9976425519375277
             }, 
@@ -2746,6 +3910,10 @@
             "np": 2253, 
             "rank": {
                 "ample": 98, 
+                "gp13": 98, 
+                "jaccard": 130, 
+                "naish1": 47, 
+                "naish2": 98, 
                 "ochiai": 129, 
                 "tarantula": 79
             }
@@ -2757,7 +3925,11 @@
             "line": 197, 
             "metrics": {
                 "ample": 0.748227735932654, 
+                "gp13": 3.2727272727272725, 
                 "gzoltar": 0.5669467095138409, 
+                "jaccard": 0.375, 
+                "naish1": -1, 
+                "naish2": 2.9982285208148802, 
                 "ochiai": 0.5669467095138409, 
                 "tarantula": 0.9976425519375277
             }, 
@@ -2765,6 +3937,10 @@
             "np": 2253, 
             "rank": {
                 "ample": 97, 
+                "gp13": 97, 
+                "jaccard": 129, 
+                "naish1": 45, 
+                "naish2": 97, 
                 "ochiai": 130, 
                 "tarantula": 78
             }
@@ -2776,7 +3952,11 @@
             "line": 200, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -2784,6 +3964,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 16, 
+                "gp13": 16, 
+                "jaccard": 54, 
+                "naish1": 38, 
+                "naish2": 16, 
                 "ochiai": 90, 
                 "tarantula": 84
             }
@@ -2795,7 +3979,11 @@
             "line": 203, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -2803,6 +3991,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 15, 
+                "gp13": 15, 
+                "jaccard": 53, 
+                "naish1": 36, 
+                "naish2": 15, 
                 "ochiai": 91, 
                 "tarantula": 83
             }
@@ -2814,7 +4006,11 @@
             "line": 204, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -2822,6 +4018,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 17, 
+                "gp13": 17, 
+                "jaccard": 55, 
+                "naish1": 40, 
+                "naish2": 17, 
                 "ochiai": 92, 
                 "tarantula": 85
             }
@@ -2833,7 +4033,11 @@
             "line": 209, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -2841,6 +4045,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 14, 
+                "gp13": 14, 
+                "jaccard": 52, 
+                "naish1": 30, 
+                "naish2": 14, 
                 "ochiai": 93, 
                 "tarantula": 82
             }
@@ -2852,7 +4060,11 @@
             "line": 210, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -2860,6 +4072,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 69, 
+                "gp13": 69, 
+                "jaccard": 107, 
+                "naish1": 189, 
+                "naish2": 69, 
                 "ochiai": 94, 
                 "tarantula": 137
             }
@@ -2871,7 +4087,11 @@
             "line": 211, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -2879,6 +4099,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 70, 
+                "gp13": 70, 
+                "jaccard": 108, 
+                "naish1": 190, 
+                "naish2": 70, 
                 "ochiai": 95, 
                 "tarantula": 138
             }
@@ -2890,7 +4114,11 @@
             "line": 213, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -2898,6 +4126,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 71, 
+                "gp13": 71, 
+                "jaccard": 109, 
+                "naish1": 191, 
+                "naish2": 71, 
                 "ochiai": 96, 
                 "tarantula": 139
             }
@@ -2909,7 +4141,11 @@
             "line": 215, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -2917,6 +4153,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 66, 
+                "gp13": 66, 
+                "jaccard": 104, 
+                "naish1": 186, 
+                "naish2": 66, 
                 "ochiai": 97, 
                 "tarantula": 134
             }
@@ -2928,7 +4168,11 @@
             "line": 216, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -2936,6 +4180,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 67, 
+                "gp13": 67, 
+                "jaccard": 105, 
+                "naish1": 187, 
+                "naish2": 67, 
                 "ochiai": 98, 
                 "tarantula": 135
             }
@@ -2947,7 +4195,11 @@
             "line": 217, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -2955,6 +4207,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 68, 
+                "gp13": 68, 
+                "jaccard": 106, 
+                "naish1": 188, 
+                "naish2": 68, 
                 "ochiai": 99, 
                 "tarantula": 136
             }
@@ -2966,7 +4222,11 @@
             "line": 218, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -2974,6 +4234,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 72, 
+                "gp13": 72, 
+                "jaccard": 110, 
+                "naish1": 196, 
+                "naish2": 72, 
                 "ochiai": 100, 
                 "tarantula": 140
             }
@@ -2985,7 +4249,11 @@
             "line": 219, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -2993,6 +4261,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 73, 
+                "gp13": 73, 
+                "jaccard": 111, 
+                "naish1": 197, 
+                "naish2": 73, 
                 "ochiai": 101, 
                 "tarantula": 141
             }
@@ -3004,7 +4276,11 @@
             "line": 220, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -3012,6 +4288,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 81, 
+                "gp13": 81, 
+                "jaccard": 119, 
+                "naish1": 228, 
+                "naish2": 81, 
                 "ochiai": 102, 
                 "tarantula": 149
             }
@@ -3023,7 +4303,11 @@
             "line": 222, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -3031,6 +4315,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 82, 
+                "gp13": 82, 
+                "jaccard": 120, 
+                "naish1": 230, 
+                "naish2": 82, 
                 "ochiai": 103, 
                 "tarantula": 150
             }
@@ -3042,7 +4330,11 @@
             "line": 223, 
             "metrics": {
                 "ample": 0.9977846699158175, 
+                "gp13": 4.285714285714286, 
                 "gzoltar": 0.6666666666666666, 
+                "jaccard": 0.4444444444444444, 
+                "naish1": -1, 
+                "naish2": 3.9977856510186007, 
                 "ochiai": 0.6666666666666666, 
                 "tarantula": 0.997789566755084
             }, 
@@ -3050,6 +4342,10 @@
             "np": 2252, 
             "rank": {
                 "ample": 11, 
+                "gp13": 11, 
+                "jaccard": 47, 
+                "naish1": 229, 
+                "naish2": 11, 
                 "ochiai": 44, 
                 "tarantula": 76
             }
@@ -3061,7 +4357,11 @@
             "line": 225, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -3069,6 +4369,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 83, 
+                "gp13": 83, 
+                "jaccard": 121, 
+                "naish1": 231, 
+                "naish2": 83, 
                 "ochiai": 104, 
                 "tarantula": 151
             }
@@ -3080,7 +4384,11 @@
             "line": 227, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -3088,6 +4396,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 84, 
+                "gp13": 84, 
+                "jaccard": 122, 
+                "naish1": 232, 
+                "naish2": 84, 
                 "ochiai": 105, 
                 "tarantula": 152
             }
@@ -3099,7 +4411,11 @@
             "line": 229, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -3107,6 +4423,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 85, 
+                "gp13": 85, 
+                "jaccard": 123, 
+                "naish1": 233, 
+                "naish2": 85, 
                 "ochiai": 106, 
                 "tarantula": 153
             }
@@ -3118,7 +4438,11 @@
             "line": 230, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -3126,6 +4450,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 36, 
+                "gp13": 36, 
+                "jaccard": 74, 
+                "naish1": 116, 
+                "naish2": 36, 
                 "ochiai": 107, 
                 "tarantula": 104
             }
@@ -3137,7 +4465,11 @@
             "line": 231, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -3145,6 +4477,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 37, 
+                "gp13": 37, 
+                "jaccard": 75, 
+                "naish1": 117, 
+                "naish2": 37, 
                 "ochiai": 108, 
                 "tarantula": 105
             }
@@ -3156,7 +4492,11 @@
             "line": 232, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -3164,6 +4504,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 35, 
+                "gp13": 35, 
+                "jaccard": 73, 
+                "naish1": 114, 
+                "naish2": 35, 
                 "ochiai": 109, 
                 "tarantula": 103
             }
@@ -3175,7 +4519,11 @@
             "line": 233, 
             "metrics": {
                 "ample": 0.9977846699158175, 
+                "gp13": 4.285714285714286, 
                 "gzoltar": 0.6666666666666666, 
+                "jaccard": 0.4444444444444444, 
+                "naish1": -1, 
+                "naish2": 3.9977856510186007, 
                 "ochiai": 0.6666666666666666, 
                 "tarantula": 0.997789566755084
             }, 
@@ -3183,6 +4531,10 @@
             "np": 2252, 
             "rank": {
                 "ample": 5, 
+                "gp13": 5, 
+                "jaccard": 41, 
+                "naish1": 115, 
+                "naish2": 5, 
                 "ochiai": 45, 
                 "tarantula": 70
             }
@@ -3194,7 +4546,11 @@
             "line": 236, 
             "metrics": {
                 "ample": 0.9977846699158175, 
+                "gp13": 4.285714285714286, 
                 "gzoltar": 0.6666666666666666, 
+                "jaccard": 0.4444444444444444, 
+                "naish1": -1, 
+                "naish2": 3.9977856510186007, 
                 "ochiai": 0.6666666666666666, 
                 "tarantula": 0.997789566755084
             }, 
@@ -3202,6 +4558,10 @@
             "np": 2252, 
             "rank": {
                 "ample": 6, 
+                "gp13": 6, 
+                "jaccard": 42, 
+                "naish1": 118, 
+                "naish2": 6, 
                 "ochiai": 46, 
                 "tarantula": 71
             }
@@ -3213,7 +4573,11 @@
             "line": 237, 
             "metrics": {
                 "ample": 0.9977846699158175, 
+                "gp13": 4.285714285714286, 
                 "gzoltar": 0.6666666666666666, 
+                "jaccard": 0.4444444444444444, 
+                "naish1": -1, 
+                "naish2": 3.9977856510186007, 
                 "ochiai": 0.6666666666666666, 
                 "tarantula": 0.997789566755084
             }, 
@@ -3221,6 +4585,10 @@
             "np": 2252, 
             "rank": {
                 "ample": 7, 
+                "gp13": 7, 
+                "jaccard": 43, 
+                "naish1": 119, 
+                "naish2": 7, 
                 "ochiai": 47, 
                 "tarantula": 72
             }
@@ -3232,7 +4600,11 @@
             "line": 240, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -3240,6 +4612,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 51, 
+                "gp13": 51, 
+                "jaccard": 89, 
+                "naish1": 150, 
+                "naish2": 51, 
                 "ochiai": 110, 
                 "tarantula": 119
             }
@@ -3251,7 +4627,11 @@
             "line": 241, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -3259,6 +4639,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 50, 
+                "gp13": 50, 
+                "jaccard": 88, 
+                "naish1": 149, 
+                "naish2": 50, 
                 "ochiai": 111, 
                 "tarantula": 118
             }
@@ -3270,7 +4654,11 @@
             "line": 242, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -3278,6 +4666,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 49, 
+                "gp13": 49, 
+                "jaccard": 87, 
+                "naish1": 148, 
+                "naish2": 49, 
                 "ochiai": 112, 
                 "tarantula": 117
             }
@@ -3289,7 +4681,11 @@
             "line": 244, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -3297,6 +4693,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 48, 
+                "gp13": 48, 
+                "jaccard": 86, 
+                "naish1": 147, 
+                "naish2": 48, 
                 "ochiai": 113, 
                 "tarantula": 116
             }
@@ -3308,7 +4708,11 @@
             "line": 245, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -3316,6 +4720,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 47, 
+                "gp13": 47, 
+                "jaccard": 85, 
+                "naish1": 146, 
+                "naish2": 47, 
                 "ochiai": 114, 
                 "tarantula": 115
             }
@@ -3327,7 +4735,11 @@
             "line": 61, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -3335,6 +4747,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 19, 
+                "gp13": 19, 
+                "jaccard": 57, 
+                "naish1": 43, 
+                "naish2": 19, 
                 "ochiai": 48, 
                 "tarantula": 87
             }
@@ -3346,7 +4762,11 @@
             "line": 62, 
             "metrics": {
                 "ample": 0.997341603898981, 
+                "gp13": 4.25, 
                 "gzoltar": 0.6324555320336759, 
+                "jaccard": 0.4, 
+                "naish1": -1, 
+                "naish2": 3.997342781222321, 
                 "ochiai": 0.6324555320336759, 
                 "tarantula": 0.9973486522315509
             }, 
@@ -3354,6 +4774,10 @@
             "np": 2251, 
             "rank": {
                 "ample": 18, 
+                "gp13": 18, 
+                "jaccard": 56, 
+                "naish1": 41, 
+                "naish2": 18, 
                 "ochiai": 49, 
                 "tarantula": 86
             }
@@ -3365,7 +4789,11 @@
             "line": 70, 
             "metrics": {
                 "ample": 0.7486708019494904, 
+                "gp13": 3.3333333333333335, 
                 "gzoltar": 0.6123724356957946, 
+                "jaccard": 0.42857142857142855, 
+                "naish1": -1, 
+                "naish2": 2.99867139061116, 
                 "ochiai": 0.6123724356957946, 
                 "tarantula": 0.9982308712958867
             }, 
@@ -3373,6 +4801,10 @@
             "np": 2254, 
             "rank": {
                 "ample": 95, 
+                "gp13": 95, 
+                "jaccard": 49, 
+                "naish1": 209, 
+                "naish2": 95, 
                 "ochiai": 126, 
                 "tarantula": 65
             }
@@ -3384,7 +4816,11 @@
             "line": 103, 
             "metrics": {
                 "ample": 0.17157731501993798, 
+                "gp13": 1.0028169014084507, 
                 "gzoltar": 0.03747658444979307, 
+                "jaccard": 0.0055248618784530384, 
+                "naish1": -1, 
+                "naish2": 0.9216120460584588, 
                 "ochiai": 0.03747658444979307, 
                 "tarantula": 0.7612141652613829
             }, 
@@ -3392,6 +4828,10 @@
             "np": 2080, 
             "rank": {
                 "ample": 241, 
+                "gp13": 241, 
+                "jaccard": 241, 
+                "naish1": 10, 
+                "naish2": 241, 
                 "ochiai": 241, 
                 "tarantula": 241
             }
@@ -3403,7 +4843,11 @@
             "line": 80, 
             "metrics": {
                 "ample": 0.17024811696942843, 
+                "gp13": 1.002770083102493, 
                 "gzoltar": 0.03716470731235832, 
+                "jaccard": 0.005434782608695652, 
+                "naish1": -1, 
+                "naish2": 0.9202834366696191, 
                 "ochiai": 0.03716470731235832, 
                 "tarantula": 0.7581457843466577
             }, 
@@ -3411,6 +4855,10 @@
             "np": 2077, 
             "rank": {
                 "ample": 245, 
+                "gp13": 245, 
+                "jaccard": 245, 
+                "naish1": 81, 
+                "naish2": 245, 
                 "ochiai": 242, 
                 "tarantula": 245
             }
@@ -3422,7 +4870,11 @@
             "line": 84, 
             "metrics": {
                 "ample": 0.17024811696942843, 
+                "gp13": 1.002770083102493, 
                 "gzoltar": 0.03716470731235832, 
+                "jaccard": 0.005434782608695652, 
+                "naish1": -1, 
+                "naish2": 0.9202834366696191, 
                 "ochiai": 0.03716470731235832, 
                 "tarantula": 0.7581457843466577
             }, 
@@ -3430,6 +4882,10 @@
             "np": 2077, 
             "rank": {
                 "ample": 244, 
+                "gp13": 244, 
+                "jaccard": 244, 
+                "naish1": 79, 
+                "naish2": 244, 
                 "ochiai": 243, 
                 "tarantula": 244
             }
@@ -3441,7 +4897,11 @@
             "line": 89, 
             "metrics": {
                 "ample": 0.17024811696942843, 
+                "gp13": 1.002770083102493, 
                 "gzoltar": 0.03716470731235832, 
+                "jaccard": 0.005434782608695652, 
+                "naish1": -1, 
+                "naish2": 0.9202834366696191, 
                 "ochiai": 0.03716470731235832, 
                 "tarantula": 0.7581457843466577
             }, 
@@ -3449,6 +4909,10 @@
             "np": 2077, 
             "rank": {
                 "ample": 243, 
+                "gp13": 243, 
+                "jaccard": 243, 
+                "naish1": 65, 
+                "naish2": 243, 
                 "ochiai": 244, 
                 "tarantula": 243
             }
@@ -3460,7 +4924,11 @@
             "line": 94, 
             "metrics": {
                 "ample": 0.17024811696942843, 
+                "gp13": 1.002770083102493, 
                 "gzoltar": 0.03716470731235832, 
+                "jaccard": 0.005434782608695652, 
+                "naish1": -1, 
+                "naish2": 0.9202834366696191, 
                 "ochiai": 0.03716470731235832, 
                 "tarantula": 0.7581457843466577
             }, 
@@ -3468,6 +4936,10 @@
             "np": 2077, 
             "rank": {
                 "ample": 246, 
+                "gp13": 246, 
+                "jaccard": 246, 
+                "naish1": 134, 
+                "naish2": 246, 
                 "ochiai": 245, 
                 "tarantula": 246
             }
@@ -3479,7 +4951,11 @@
             "line": 99, 
             "metrics": {
                 "ample": 0.17024811696942843, 
+                "gp13": 1.002770083102493, 
                 "gzoltar": 0.03716470731235832, 
+                "jaccard": 0.005434782608695652, 
+                "naish1": -1, 
+                "naish2": 0.9202834366696191, 
                 "ochiai": 0.03716470731235832, 
                 "tarantula": 0.7581457843466577
             }, 
@@ -3487,6 +4963,10 @@
             "np": 2077, 
             "rank": {
                 "ample": 242, 
+                "gp13": 242, 
+                "jaccard": 242, 
+                "naish1": 53, 
+                "naish2": 242, 
                 "ochiai": 246, 
                 "tarantula": 242
             }
@@ -3498,7 +4978,11 @@
             "line": 144, 
             "metrics": {
                 "ample": 0.2402525476295968, 
+                "gp13": 1.0222222222222221, 
                 "gzoltar": 0.10425720702853739, 
+                "jaccard": 0.038461538461538464, 
+                "naish1": -1, 
+                "naish2": 0.9902568644818424, 
                 "ochiai": 0.10425720702853739, 
                 "tarantula": 0.9624733475479744
             }, 
@@ -3506,6 +4990,10 @@
             "np": 2235, 
             "rank": {
                 "ample": 197, 
+                "gp13": 197, 
+                "jaccard": 193, 
+                "naish1": 206, 
+                "naish2": 197, 
                 "ochiai": 192, 
                 "tarantula": 193
             }
@@ -3517,7 +5005,11 @@
             "line": 151, 
             "metrics": {
                 "ample": 0.24202481169694284, 
+                "gp13": 1.027027027027027, 
                 "gzoltar": 0.11470786693528087, 
+                "jaccard": 0.045454545454545456, 
+                "naish1": -1, 
+                "naish2": 0.9920283436669619, 
                 "ochiai": 0.11470786693528087, 
                 "tarantula": 0.9690854443967368
             }, 
@@ -3525,6 +5017,10 @@
             "np": 2239, 
             "rank": {
                 "ample": 192, 
+                "gp13": 192, 
+                "jaccard": 188, 
+                "naish1": 55, 
+                "naish2": 192, 
                 "ochiai": 188, 
                 "tarantula": 188
             }
@@ -3536,7 +5032,11 @@
             "line": 153, 
             "metrics": {
                 "ample": 0.2402525476295968, 
+                "gp13": 1.0222222222222221, 
                 "gzoltar": 0.10425720702853739, 
+                "jaccard": 0.038461538461538464, 
+                "naish1": -1, 
+                "naish2": 0.9902568644818424, 
                 "ochiai": 0.10425720702853739, 
                 "tarantula": 0.9624733475479744
             }, 
@@ -3544,6 +5044,10 @@
             "np": 2235, 
             "rank": {
                 "ample": 196, 
+                "gp13": 196, 
+                "jaccard": 192, 
+                "naish1": 42, 
+                "naish2": 196, 
                 "ochiai": 193, 
                 "tarantula": 192
             }
@@ -3555,7 +5059,11 @@
             "line": 179, 
             "metrics": {
                 "ample": 0.23936641559592378, 
+                "gp13": 1.0204081632653061, 
                 "gzoltar": 0.1, 
+                "jaccard": 0.03571428571428571, 
+                "naish1": -1, 
+                "naish2": 0.9893711248892826, 
                 "ochiai": 0.1, 
                 "tarantula": 0.9592010199745007
             }, 
@@ -3563,6 +5071,10 @@
             "np": 2233, 
             "rank": {
                 "ample": 198, 
+                "gp13": 198, 
+                "jaccard": 194, 
+                "naish1": 90, 
+                "naish2": 198, 
                 "ochiai": 194, 
                 "tarantula": 194
             }
@@ -3574,7 +5086,11 @@
             "line": 380, 
             "metrics": {
                 "ample": 0.24822773593265396, 
+                "gp13": 1.1111111111111112, 
                 "gzoltar": 0.22360679774997896, 
+                "jaccard": 0.125, 
+                "naish1": -1, 
+                "naish2": 0.9982285208148804, 
                 "ochiai": 0.22360679774997896, 
                 "tarantula": 0.9929608446986361
             }, 
@@ -3582,6 +5098,10 @@
             "np": 2253, 
             "rank": {
                 "ample": 172, 
+                "gp13": 172, 
+                "jaccard": 162, 
+                "naish1": 178, 
+                "naish2": 172, 
                 "ochiai": 163, 
                 "tarantula": 162
             }
@@ -3593,7 +5113,11 @@
             "line": 381, 
             "metrics": {
                 "ample": 0.24822773593265396, 
+                "gp13": 1.1111111111111112, 
                 "gzoltar": 0.22360679774997896, 
+                "jaccard": 0.125, 
+                "naish1": -1, 
+                "naish2": 0.9982285208148804, 
                 "ochiai": 0.22360679774997896, 
                 "tarantula": 0.9929608446986361
             }, 
@@ -3601,6 +5125,10 @@
             "np": 2253, 
             "rank": {
                 "ample": 170, 
+                "gp13": 170, 
+                "jaccard": 160, 
+                "naish1": 5, 
+                "naish2": 170, 
                 "ochiai": 164, 
                 "tarantula": 160
             }
@@ -3612,7 +5140,11 @@
             "line": 399, 
             "metrics": {
                 "ample": 0.24822773593265396, 
+                "gp13": 1.1111111111111112, 
                 "gzoltar": 0.22360679774997896, 
+                "jaccard": 0.125, 
+                "naish1": -1, 
+                "naish2": 0.9982285208148804, 
                 "ochiai": 0.22360679774997896, 
                 "tarantula": 0.9929608446986361
             }, 
@@ -3620,6 +5152,10 @@
             "np": 2253, 
             "rank": {
                 "ample": 171, 
+                "gp13": 171, 
+                "jaccard": 161, 
+                "naish1": 19, 
+                "naish2": 171, 
                 "ochiai": 165, 
                 "tarantula": 161
             }
@@ -3631,7 +5167,11 @@
             "line": 432, 
             "metrics": {
                 "ample": 0.24113867966326982, 
+                "gp13": 1.024390243902439, 
                 "gzoltar": 0.1091089451179962, 
+                "jaccard": 0.041666666666666664, 
+                "naish1": -1, 
+                "naish2": 0.9911426040744021, 
                 "ochiai": 0.1091089451179962, 
                 "tarantula": 0.965768078733419
             }, 
@@ -3639,6 +5179,10 @@
             "np": 2237, 
             "rank": {
                 "ample": 195, 
+                "gp13": 195, 
+                "jaccard": 191, 
+                "naish1": 222, 
+                "naish2": 195, 
                 "ochiai": 191, 
                 "tarantula": 191
             }
@@ -3650,7 +5194,11 @@
             "line": 155, 
             "metrics": {
                 "ample": 0.21721311475409835, 
+                "gp13": 1.0067114093959733, 
                 "gzoltar": 0.05773502691896257, 
+                "jaccard": 0.01282051282051282, 
+                "naish1": -1, 
+                "naish2": 0.9672276350752879, 
                 "ochiai": 0.05773502691896257, 
                 "tarantula": 0.8840579710144928
             }, 
@@ -3658,6 +5206,10 @@
             "np": 2183, 
             "rank": {
                 "ample": 234, 
+                "gp13": 234, 
+                "jaccard": 234, 
+                "naish1": 200, 
+                "naish2": 234, 
                 "ochiai": 234, 
                 "tarantula": 234
             }
@@ -3669,7 +5221,11 @@
             "line": 156, 
             "metrics": {
                 "ample": 0.21765618077093488, 
+                "gp13": 1.0068027210884354, 
                 "gzoltar": 0.05812381937190964, 
+                "jaccard": 0.012987012987012988, 
+                "naish1": -1, 
+                "naish2": 0.9676705048715678, 
                 "ochiai": 0.05812381937190964, 
                 "tarantula": 0.8854452726559434
             }, 
@@ -3677,6 +5233,10 @@
             "np": 2184, 
             "rank": {
                 "ample": 233, 
+                "gp13": 233, 
+                "jaccard": 233, 
+                "naish1": 202, 
+                "naish2": 233, 
                 "ochiai": 227, 
                 "tarantula": 233
             }
@@ -3688,7 +5248,11 @@
             "line": 157, 
             "metrics": {
                 "ample": 0.21765618077093488, 
+                "gp13": 1.0068027210884354, 
                 "gzoltar": 0.05812381937190964, 
+                "jaccard": 0.012987012987012988, 
+                "naish1": -1, 
+                "naish2": 0.9676705048715678, 
                 "ochiai": 0.05812381937190964, 
                 "tarantula": 0.8854452726559434
             }, 
@@ -3696,6 +5260,10 @@
             "np": 2184, 
             "rank": {
                 "ample": 232, 
+                "gp13": 232, 
+                "jaccard": 232, 
+                "naish1": 201, 
+                "naish2": 232, 
                 "ochiai": 228, 
                 "tarantula": 232
             }
@@ -3707,7 +5275,11 @@
             "line": 160, 
             "metrics": {
                 "ample": 0.21765618077093488, 
+                "gp13": 1.0068027210884354, 
                 "gzoltar": 0.05812381937190964, 
+                "jaccard": 0.012987012987012988, 
+                "naish1": -1, 
+                "naish2": 0.9676705048715678, 
                 "ochiai": 0.05812381937190964, 
                 "tarantula": 0.8854452726559434
             }, 
@@ -3715,6 +5287,10 @@
             "np": 2184, 
             "rank": {
                 "ample": 229, 
+                "gp13": 229, 
+                "jaccard": 229, 
+                "naish1": 94, 
+                "naish2": 229, 
                 "ochiai": 229, 
                 "tarantula": 229
             }
@@ -3726,7 +5302,11 @@
             "line": 163, 
             "metrics": {
                 "ample": 0.21765618077093488, 
+                "gp13": 1.0068027210884354, 
                 "gzoltar": 0.05812381937190964, 
+                "jaccard": 0.012987012987012988, 
+                "naish1": -1, 
+                "naish2": 0.9676705048715678, 
                 "ochiai": 0.05812381937190964, 
                 "tarantula": 0.8854452726559434
             }, 
@@ -3734,6 +5314,10 @@
             "np": 2184, 
             "rank": {
                 "ample": 230, 
+                "gp13": 230, 
+                "jaccard": 230, 
+                "naish1": 95, 
+                "naish2": 230, 
                 "ochiai": 230, 
                 "tarantula": 230
             }
@@ -3745,7 +5329,11 @@
             "line": 164, 
             "metrics": {
                 "ample": 0.21765618077093488, 
+                "gp13": 1.0068027210884354, 
                 "gzoltar": 0.05812381937190964, 
+                "jaccard": 0.012987012987012988, 
+                "naish1": -1, 
+                "naish2": 0.9676705048715678, 
                 "ochiai": 0.05812381937190964, 
                 "tarantula": 0.8854452726559434
             }, 
@@ -3753,6 +5341,10 @@
             "np": 2184, 
             "rank": {
                 "ample": 227, 
+                "gp13": 227, 
+                "jaccard": 227, 
+                "naish1": 91, 
+                "naish2": 227, 
                 "ochiai": 231, 
                 "tarantula": 227
             }
@@ -3764,7 +5356,11 @@
             "line": 165, 
             "metrics": {
                 "ample": 0.21765618077093488, 
+                "gp13": 1.0068027210884354, 
                 "gzoltar": 0.05812381937190964, 
+                "jaccard": 0.012987012987012988, 
+                "naish1": -1, 
+                "naish2": 0.9676705048715678, 
                 "ochiai": 0.05812381937190964, 
                 "tarantula": 0.8854452726559434
             }, 
@@ -3772,6 +5368,10 @@
             "np": 2184, 
             "rank": {
                 "ample": 228, 
+                "gp13": 228, 
+                "jaccard": 228, 
+                "naish1": 92, 
+                "naish2": 228, 
                 "ochiai": 232, 
                 "tarantula": 228
             }
@@ -3783,7 +5383,11 @@
             "line": 167, 
             "metrics": {
                 "ample": 0.21765618077093488, 
+                "gp13": 1.0068027210884354, 
                 "gzoltar": 0.05812381937190964, 
+                "jaccard": 0.012987012987012988, 
+                "naish1": -1, 
+                "naish2": 0.9676705048715678, 
                 "ochiai": 0.05812381937190964, 
                 "tarantula": 0.8854452726559434
             }, 
@@ -3791,6 +5395,10 @@
             "np": 2184, 
             "rank": {
                 "ample": 231, 
+                "gp13": 231, 
+                "jaccard": 231, 
+                "naish1": 175, 
+                "naish2": 231, 
                 "ochiai": 233, 
                 "tarantula": 231
             }
@@ -3802,7 +5410,11 @@
             "line": 163, 
             "metrics": {
                 "ample": 0.24335400974745236, 
+                "gp13": 1.032258064516129, 
                 "gzoltar": 0.125, 
+                "jaccard": 0.05263157894736842, 
+                "naish1": -1, 
+                "naish2": 0.9933569530558016, 
                 "ochiai": 0.125, 
                 "tarantula": 0.974104445403539
             }, 
@@ -3810,6 +5422,10 @@
             "np": 2242, 
             "rank": {
                 "ample": 188, 
+                "gp13": 188, 
+                "jaccard": 183, 
+                "naish1": 60, 
+                "naish2": 188, 
                 "ochiai": 184, 
                 "tarantula": 183
             }
@@ -3821,7 +5437,11 @@
             "line": 199, 
             "metrics": {
                 "ample": 0.24291094373061586, 
+                "gp13": 1.0303030303030303, 
                 "gzoltar": 0.12126781251816648, 
+                "jaccard": 0.05, 
+                "naish1": -1, 
+                "naish2": 0.9929140832595217, 
                 "ochiai": 0.12126781251816648, 
                 "tarantula": 0.972425678586816
             }, 
@@ -3829,6 +5449,10 @@
             "np": 2241, 
             "rank": {
                 "ample": 189, 
+                "gp13": 189, 
+                "jaccard": 185, 
+                "naish1": 15, 
+                "naish2": 189, 
                 "ochiai": 185, 
                 "tarantula": 184
             }
@@ -3840,7 +5464,11 @@
             "line": 201, 
             "metrics": {
                 "ample": 0.24291094373061586, 
+                "gp13": 1.0303030303030303, 
                 "gzoltar": 0.12126781251816648, 
+                "jaccard": 0.05, 
+                "naish1": -1, 
+                "naish2": 0.9929140832595217, 
                 "ochiai": 0.12126781251816648, 
                 "tarantula": 0.972425678586816
             }, 
@@ -3848,6 +5476,10 @@
             "np": 2241, 
             "rank": {
                 "ample": 190, 
+                "gp13": 190, 
+                "jaccard": 186, 
+                "naish1": 54, 
+                "naish2": 190, 
                 "ochiai": 186, 
                 "tarantula": 185
             }
@@ -3859,7 +5491,11 @@
             "line": 205, 
             "metrics": {
                 "ample": 0.24291094373061586, 
+                "gp13": 1.0303030303030303, 
                 "gzoltar": 0.12126781251816648, 
+                "jaccard": 0.05, 
+                "naish1": -1, 
+                "naish2": 0.9929140832595217, 
                 "ochiai": 0.12126781251816648, 
                 "tarantula": 0.972425678586816
             }, 
@@ -3867,6 +5503,10 @@
             "np": 2241, 
             "rank": {
                 "ample": 191, 
+                "gp13": 191, 
+                "jaccard": 187, 
+                "naish1": 56, 
+                "naish2": 191, 
                 "ochiai": 187, 
                 "tarantula": 186
             }
@@ -3878,7 +5518,11 @@
             "line": 208, 
             "metrics": {
                 "ample": 0.24335400974745236, 
+                "gp13": 1.032258064516129, 
                 "gzoltar": 0.125, 
+                "jaccard": 0.05263157894736842, 
+                "naish1": -1, 
+                "naish2": 0.9933569530558016, 
                 "ochiai": 0.125, 
                 "tarantula": 0.974104445403539
             }, 
@@ -3886,6 +5530,10 @@
             "np": 2242, 
             "rank": {
                 "ample": 187, 
+                "gp13": 187, 
+                "jaccard": 182, 
+                "naish1": 51, 
+                "naish2": 187, 
                 "ochiai": 183, 
                 "tarantula": 182
             }
@@ -3897,7 +5545,11 @@
             "line": 211, 
             "metrics": {
                 "ample": 0.24379707576428888, 
+                "gp13": 1.0344827586206897, 
                 "gzoltar": 0.12909944487358055, 
+                "jaccard": 0.05555555555555555, 
+                "naish1": -1, 
+                "naish2": 0.9937998228520815, 
                 "ochiai": 0.12909944487358055, 
                 "tarantula": 0.975789018590575
             }, 
@@ -3905,6 +5557,10 @@
             "np": 2243, 
             "rank": {
                 "ample": 183, 
+                "gp13": 183, 
+                "jaccard": 178, 
+                "naish1": 27, 
+                "naish2": 183, 
                 "ochiai": 173, 
                 "tarantula": 178
             }
@@ -3916,7 +5572,11 @@
             "line": 212, 
             "metrics": {
                 "ample": 0.24379707576428888, 
+                "gp13": 1.0344827586206897, 
                 "gzoltar": 0.12909944487358055, 
+                "jaccard": 0.05555555555555555, 
+                "naish1": -1, 
+                "naish2": 0.9937998228520815, 
                 "ochiai": 0.12909944487358055, 
                 "tarantula": 0.975789018590575
             }, 
@@ -3924,6 +5584,10 @@
             "np": 2243, 
             "rank": {
                 "ample": 181, 
+                "gp13": 181, 
+                "jaccard": 176, 
+                "naish1": 25, 
+                "naish2": 181, 
                 "ochiai": 174, 
                 "tarantula": 176
             }
@@ -3935,7 +5599,11 @@
             "line": 213, 
             "metrics": {
                 "ample": 0.24379707576428888, 
+                "gp13": 1.0344827586206897, 
                 "gzoltar": 0.12909944487358055, 
+                "jaccard": 0.05555555555555555, 
+                "naish1": -1, 
+                "naish2": 0.9937998228520815, 
                 "ochiai": 0.12909944487358055, 
                 "tarantula": 0.975789018590575
             }, 
@@ -3943,6 +5611,10 @@
             "np": 2243, 
             "rank": {
                 "ample": 182, 
+                "gp13": 182, 
+                "jaccard": 177, 
+                "naish1": 26, 
+                "naish2": 182, 
                 "ochiai": 175, 
                 "tarantula": 177
             }
@@ -3954,7 +5626,11 @@
             "line": 214, 
             "metrics": {
                 "ample": 0.24379707576428888, 
+                "gp13": 1.0344827586206897, 
                 "gzoltar": 0.12909944487358055, 
+                "jaccard": 0.05555555555555555, 
+                "naish1": -1, 
+                "naish2": 0.9937998228520815, 
                 "ochiai": 0.12909944487358055, 
                 "tarantula": 0.975789018590575
             }, 
@@ -3962,6 +5638,10 @@
             "np": 2243, 
             "rank": {
                 "ample": 179, 
+                "gp13": 179, 
+                "jaccard": 174, 
+                "naish1": 23, 
+                "naish2": 179, 
                 "ochiai": 176, 
                 "tarantula": 174
             }
@@ -3973,7 +5653,11 @@
             "line": 215, 
             "metrics": {
                 "ample": 0.24379707576428888, 
+                "gp13": 1.0344827586206897, 
                 "gzoltar": 0.12909944487358055, 
+                "jaccard": 0.05555555555555555, 
+                "naish1": -1, 
+                "naish2": 0.9937998228520815, 
                 "ochiai": 0.12909944487358055, 
                 "tarantula": 0.975789018590575
             }, 
@@ -3981,6 +5665,10 @@
             "np": 2243, 
             "rank": {
                 "ample": 180, 
+                "gp13": 180, 
+                "jaccard": 175, 
+                "naish1": 24, 
+                "naish2": 180, 
                 "ochiai": 177, 
                 "tarantula": 175
             }
@@ -3992,7 +5680,11 @@
             "line": 216, 
             "metrics": {
                 "ample": 0.24379707576428888, 
+                "gp13": 1.0344827586206897, 
                 "gzoltar": 0.12909944487358055, 
+                "jaccard": 0.05555555555555555, 
+                "naish1": -1, 
+                "naish2": 0.9937998228520815, 
                 "ochiai": 0.12909944487358055, 
                 "tarantula": 0.975789018590575
             }, 
@@ -4000,6 +5692,10 @@
             "np": 2243, 
             "rank": {
                 "ample": 177, 
+                "gp13": 177, 
+                "jaccard": 172, 
+                "naish1": 21, 
+                "naish2": 177, 
                 "ochiai": 178, 
                 "tarantula": 172
             }
@@ -4011,7 +5707,11 @@
             "line": 217, 
             "metrics": {
                 "ample": 0.24379707576428888, 
+                "gp13": 1.0344827586206897, 
                 "gzoltar": 0.12909944487358055, 
+                "jaccard": 0.05555555555555555, 
+                "naish1": -1, 
+                "naish2": 0.9937998228520815, 
                 "ochiai": 0.12909944487358055, 
                 "tarantula": 0.975789018590575
             }, 
@@ -4019,6 +5719,10 @@
             "np": 2243, 
             "rank": {
                 "ample": 178, 
+                "gp13": 178, 
+                "jaccard": 173, 
+                "naish1": 22, 
+                "naish2": 178, 
                 "ochiai": 179, 
                 "tarantula": 173
             }
@@ -4030,7 +5734,11 @@
             "line": 218, 
             "metrics": {
                 "ample": 0.24379707576428888, 
+                "gp13": 1.0344827586206897, 
                 "gzoltar": 0.12909944487358055, 
+                "jaccard": 0.05555555555555555, 
+                "naish1": -1, 
+                "naish2": 0.9937998228520815, 
                 "ochiai": 0.12909944487358055, 
                 "tarantula": 0.975789018590575
             }, 
@@ -4038,6 +5746,10 @@
             "np": 2243, 
             "rank": {
                 "ample": 184, 
+                "gp13": 184, 
+                "jaccard": 179, 
+                "naish1": 203, 
+                "naish2": 184, 
                 "ochiai": 180, 
                 "tarantula": 179
             }
@@ -4049,7 +5761,11 @@
             "line": 220, 
             "metrics": {
                 "ample": 0.24379707576428888, 
+                "gp13": 1.0344827586206897, 
                 "gzoltar": 0.12909944487358055, 
+                "jaccard": 0.05555555555555555, 
+                "naish1": -1, 
+                "naish2": 0.9937998228520815, 
                 "ochiai": 0.12909944487358055, 
                 "tarantula": 0.975789018590575
             }, 
@@ -4057,6 +5773,10 @@
             "np": 2243, 
             "rank": {
                 "ample": 185, 
+                "gp13": 185, 
+                "jaccard": 180, 
+                "naish1": 213, 
+                "naish2": 185, 
                 "ochiai": 181, 
                 "tarantula": 180
             }
@@ -4068,7 +5788,11 @@
             "line": 223, 
             "metrics": {
                 "ample": 0.24379707576428888, 
+                "gp13": 1.0344827586206897, 
                 "gzoltar": 0.12909944487358055, 
+                "jaccard": 0.05555555555555555, 
+                "naish1": -1, 
+                "naish2": 0.9937998228520815, 
                 "ochiai": 0.12909944487358055, 
                 "tarantula": 0.975789018590575
             }, 
@@ -4076,6 +5800,10 @@
             "np": 2243, 
             "rank": {
                 "ample": 186, 
+                "gp13": 186, 
+                "jaccard": 181, 
+                "naish1": 240, 
+                "naish2": 186, 
                 "ochiai": 182, 
                 "tarantula": 181
             }
@@ -4087,7 +5815,11 @@
             "line": 226, 
             "metrics": {
                 "ample": 0.24424014178112538, 
+                "gp13": 1.037037037037037, 
                 "gzoltar": 0.1336306209562122, 
+                "jaccard": 0.058823529411764705, 
+                "naish1": -1, 
+                "naish2": 0.9942426926483614, 
                 "ochiai": 0.1336306209562122, 
                 "tarantula": 0.9774794283239499
             }, 
@@ -4095,6 +5827,10 @@
             "np": 2244, 
             "rank": {
                 "ample": 174, 
+                "gp13": 174, 
+                "jaccard": 169, 
+                "naish1": 93, 
+                "naish2": 174, 
                 "ochiai": 170, 
                 "tarantula": 169
             }
@@ -4106,7 +5842,11 @@
             "line": 227, 
             "metrics": {
                 "ample": 0.24424014178112538, 
+                "gp13": 1.037037037037037, 
                 "gzoltar": 0.1336306209562122, 
+                "jaccard": 0.058823529411764705, 
+                "naish1": -1, 
+                "naish2": 0.9942426926483614, 
                 "ochiai": 0.1336306209562122, 
                 "tarantula": 0.9774794283239499
             }, 
@@ -4114,6 +5854,10 @@
             "np": 2244, 
             "rank": {
                 "ample": 175, 
+                "gp13": 175, 
+                "jaccard": 170, 
+                "naish1": 242, 
+                "naish2": 175, 
                 "ochiai": 171, 
                 "tarantula": 170
             }
@@ -4125,7 +5869,11 @@
             "line": 228, 
             "metrics": {
                 "ample": 0.24424014178112538, 
+                "gp13": 1.037037037037037, 
                 "gzoltar": 0.1336306209562122, 
+                "jaccard": 0.058823529411764705, 
+                "naish1": -1, 
+                "naish2": 0.9942426926483614, 
                 "ochiai": 0.1336306209562122, 
                 "tarantula": 0.9774794283239499
             }, 
@@ -4133,6 +5881,10 @@
             "np": 2244, 
             "rank": {
                 "ample": 176, 
+                "gp13": 176, 
+                "jaccard": 171, 
+                "naish1": 244, 
+                "naish2": 176, 
                 "ochiai": 172, 
                 "tarantula": 171
             }
@@ -4144,7 +5896,11 @@
             "line": 250, 
             "metrics": {
                 "ample": 0.2300620292423571, 
+                "gp13": 1.010989010989011, 
                 "gzoltar": 0.07372097807744857, 
+                "jaccard": 0.02040816326530612, 
+                "naish1": -1, 
+                "naish2": 0.9800708591674048, 
                 "ochiai": 0.07372097807744857, 
                 "tarantula": 0.9261386951169471
             }, 
@@ -4152,6 +5908,10 @@
             "np": 2212, 
             "rank": {
                 "ample": 221, 
+                "gp13": 221, 
+                "jaccard": 217, 
+                "naish1": 141, 
+                "naish2": 221, 
                 "ochiai": 221, 
                 "tarantula": 217
             }
@@ -4163,7 +5923,11 @@
             "line": 254, 
             "metrics": {
                 "ample": 0.2300620292423571, 
+                "gp13": 1.010989010989011, 
                 "gzoltar": 0.07372097807744857, 
+                "jaccard": 0.02040816326530612, 
+                "naish1": -1, 
+                "naish2": 0.9800708591674048, 
                 "ochiai": 0.07372097807744857, 
                 "tarantula": 0.9261386951169471
             }, 
@@ -4171,6 +5935,10 @@
             "np": 2212, 
             "rank": {
                 "ample": 222, 
+                "gp13": 222, 
+                "jaccard": 218, 
+                "naish1": 144, 
+                "naish2": 222, 
                 "ochiai": 222, 
                 "tarantula": 218
             }
@@ -4182,7 +5950,11 @@
             "line": 255, 
             "metrics": {
                 "ample": 0.2300620292423571, 
+                "gp13": 1.010989010989011, 
                 "gzoltar": 0.07372097807744857, 
+                "jaccard": 0.02040816326530612, 
+                "naish1": -1, 
+                "naish2": 0.9800708591674048, 
                 "ochiai": 0.07372097807744857, 
                 "tarantula": 0.9261386951169471
             }, 
@@ -4190,6 +5962,10 @@
             "np": 2212, 
             "rank": {
                 "ample": 223, 
+                "gp13": 223, 
+                "jaccard": 219, 
+                "naish1": 170, 
+                "naish2": 223, 
                 "ochiai": 223, 
                 "tarantula": 219
             }
@@ -4201,7 +5977,11 @@
             "line": 121, 
             "metrics": {
                 "ample": 0.21499778466991581, 
+                "gp13": 1.0062893081761006, 
                 "gzoltar": 0.05590169943749474, 
+                "jaccard": 0.012048192771084338, 
+                "naish1": -1, 
+                "naish2": 0.9650132860938884, 
                 "ochiai": 0.05590169943749474, 
                 "tarantula": 0.8771861640108822
             }, 
@@ -4209,6 +5989,10 @@
             "np": 2178, 
             "rank": {
                 "ample": 239, 
+                "gp13": 239, 
+                "jaccard": 239, 
+                "naish1": 210, 
+                "naish2": 239, 
                 "ochiai": 235, 
                 "tarantula": 239
             }
@@ -4220,7 +6004,11 @@
             "line": 122, 
             "metrics": {
                 "ample": 0.21499778466991581, 
+                "gp13": 1.0062893081761006, 
                 "gzoltar": 0.05590169943749474, 
+                "jaccard": 0.012048192771084338, 
+                "naish1": -1, 
+                "naish2": 0.9650132860938884, 
                 "ochiai": 0.05590169943749474, 
                 "tarantula": 0.8771861640108822
             }, 
@@ -4228,6 +6016,10 @@
             "np": 2178, 
             "rank": {
                 "ample": 238, 
+                "gp13": 238, 
+                "jaccard": 238, 
+                "naish1": 208, 
+                "naish2": 238, 
                 "ochiai": 236, 
                 "tarantula": 238
             }
@@ -4239,7 +6031,11 @@
             "line": 123, 
             "metrics": {
                 "ample": 0.21499778466991581, 
+                "gp13": 1.0062893081761006, 
                 "gzoltar": 0.05590169943749474, 
+                "jaccard": 0.012048192771084338, 
+                "naish1": -1, 
+                "naish2": 0.9650132860938884, 
                 "ochiai": 0.05590169943749474, 
                 "tarantula": 0.8771861640108822
             }, 
@@ -4247,6 +6043,10 @@
             "np": 2178, 
             "rank": {
                 "ample": 235, 
+                "gp13": 235, 
+                "jaccard": 235, 
+                "naish1": 4, 
+                "naish2": 235, 
                 "ochiai": 237, 
                 "tarantula": 235
             }
@@ -4258,7 +6058,11 @@
             "line": 124, 
             "metrics": {
                 "ample": 0.21499778466991581, 
+                "gp13": 1.0062893081761006, 
                 "gzoltar": 0.05590169943749474, 
+                "jaccard": 0.012048192771084338, 
+                "naish1": -1, 
+                "naish2": 0.9650132860938884, 
                 "ochiai": 0.05590169943749474, 
                 "tarantula": 0.8771861640108822
             }, 
@@ -4266,6 +6070,10 @@
             "np": 2178, 
             "rank": {
                 "ample": 240, 
+                "gp13": 240, 
+                "jaccard": 240, 
+                "naish1": 245, 
+                "naish2": 240, 
                 "ochiai": 238, 
                 "tarantula": 240
             }
@@ -4277,7 +6085,11 @@
             "line": 125, 
             "metrics": {
                 "ample": 0.21499778466991581, 
+                "gp13": 1.0062893081761006, 
                 "gzoltar": 0.05590169943749474, 
+                "jaccard": 0.012048192771084338, 
+                "naish1": -1, 
+                "naish2": 0.9650132860938884, 
                 "ochiai": 0.05590169943749474, 
                 "tarantula": 0.8771861640108822
             }, 
@@ -4285,6 +6097,10 @@
             "np": 2178, 
             "rank": {
                 "ample": 237, 
+                "gp13": 237, 
+                "jaccard": 237, 
+                "naish1": 207, 
+                "naish2": 237, 
                 "ochiai": 239, 
                 "tarantula": 237
             }
@@ -4296,7 +6112,11 @@
             "line": 128, 
             "metrics": {
                 "ample": 0.21499778466991581, 
+                "gp13": 1.0062893081761006, 
                 "gzoltar": 0.05590169943749474, 
+                "jaccard": 0.012048192771084338, 
+                "naish1": -1, 
+                "naish2": 0.9650132860938884, 
                 "ochiai": 0.05590169943749474, 
                 "tarantula": 0.8771861640108822
             }, 
@@ -4304,6 +6124,10 @@
             "np": 2178, 
             "rank": {
                 "ample": 236, 
+                "gp13": 236, 
+                "jaccard": 236, 
+                "naish1": 204, 
+                "naish2": 236, 
                 "ochiai": 240, 
                 "tarantula": 236
             }
@@ -4315,7 +6139,11 @@
             "line": 267, 
             "metrics": {
                 "ample": 0.2349357554275587, 
+                "gp13": 1.0144927536231885, 
                 "gzoltar": 0.08451542547285165, 
+                "jaccard": 0.02631578947368421, 
+                "naish1": -1, 
+                "naish2": 0.9849424269264836, 
                 "ochiai": 0.08451542547285165, 
                 "tarantula": 0.9431675720852487
             }, 
@@ -4323,6 +6151,10 @@
             "np": 2223, 
             "rank": {
                 "ample": 220, 
+                "gp13": 220, 
+                "jaccard": 216, 
+                "naish1": 217, 
+                "naish2": 220, 
                 "ochiai": 213, 
                 "tarantula": 216
             }
@@ -4334,7 +6166,11 @@
             "line": 268, 
             "metrics": {
                 "ample": 0.2349357554275587, 
+                "gp13": 1.0144927536231885, 
                 "gzoltar": 0.08451542547285165, 
+                "jaccard": 0.02631578947368421, 
+                "naish1": -1, 
+                "naish2": 0.9849424269264836, 
                 "ochiai": 0.08451542547285165, 
                 "tarantula": 0.9431675720852487
             }, 
@@ -4342,6 +6178,10 @@
             "np": 2223, 
             "rank": {
                 "ample": 217, 
+                "gp13": 217, 
+                "jaccard": 213, 
+                "naish1": 112, 
+                "naish2": 217, 
                 "ochiai": 214, 
                 "tarantula": 213
             }
@@ -4353,7 +6193,11 @@
             "line": 269, 
             "metrics": {
                 "ample": 0.23715108551174124, 
+                "gp13": 1.0169491525423728, 
                 "gzoltar": 0.09128709291752768, 
+                "jaccard": 0.030303030303030304, 
+                "naish1": -1, 
+                "naish2": 0.9871567759078831, 
                 "ochiai": 0.09128709291752768, 
                 "tarantula": 0.9511167298777918
             }, 
@@ -4361,6 +6205,10 @@
             "np": 2228, 
             "rank": {
                 "ample": 201, 
+                "gp13": 201, 
+                "jaccard": 197, 
+                "naish1": 113, 
+                "naish2": 201, 
                 "ochiai": 197, 
                 "tarantula": 197
             }
@@ -4372,7 +6220,11 @@
             "line": 271, 
             "metrics": {
                 "ample": 0.2349357554275587, 
+                "gp13": 1.0144927536231885, 
                 "gzoltar": 0.08451542547285165, 
+                "jaccard": 0.02631578947368421, 
+                "naish1": -1, 
+                "naish2": 0.9849424269264836, 
                 "ochiai": 0.08451542547285165, 
                 "tarantula": 0.9431675720852487
             }, 
@@ -4380,6 +6232,10 @@
             "np": 2223, 
             "rank": {
                 "ample": 215, 
+                "gp13": 215, 
+                "jaccard": 211, 
+                "naish1": 74, 
+                "naish2": 215, 
                 "ochiai": 215, 
                 "tarantula": 211
             }
@@ -4391,7 +6247,11 @@
             "line": 272, 
             "metrics": {
                 "ample": 0.2349357554275587, 
+                "gp13": 1.0144927536231885, 
                 "gzoltar": 0.08451542547285165, 
+                "jaccard": 0.02631578947368421, 
+                "naish1": -1, 
+                "naish2": 0.9849424269264836, 
                 "ochiai": 0.08451542547285165, 
                 "tarantula": 0.9431675720852487
             }, 
@@ -4399,6 +6259,10 @@
             "np": 2223, 
             "rank": {
                 "ample": 216, 
+                "gp13": 216, 
+                "jaccard": 212, 
+                "naish1": 76, 
+                "naish2": 216, 
                 "ochiai": 216, 
                 "tarantula": 212
             }
@@ -4410,7 +6274,11 @@
             "line": 273, 
             "metrics": {
                 "ample": 0.23626495347806822, 
+                "gp13": 1.0158730158730158, 
                 "gzoltar": 0.08838834764831843, 
+                "jaccard": 0.02857142857142857, 
+                "naish1": -1, 
+                "naish2": 0.9862710363153233, 
                 "ochiai": 0.08838834764831843, 
                 "tarantula": 0.9479210415791685
             }, 
@@ -4418,6 +6286,10 @@
             "np": 2226, 
             "rank": {
                 "ample": 208, 
+                "gp13": 208, 
+                "jaccard": 204, 
+                "naish1": 75, 
+                "naish2": 208, 
                 "ochiai": 205, 
                 "tarantula": 204
             }
@@ -4429,7 +6301,11 @@
             "line": 275, 
             "metrics": {
                 "ample": 0.2349357554275587, 
+                "gp13": 1.0144927536231885, 
                 "gzoltar": 0.08451542547285165, 
+                "jaccard": 0.02631578947368421, 
+                "naish1": -1, 
+                "naish2": 0.9849424269264836, 
                 "ochiai": 0.08451542547285165, 
                 "tarantula": 0.9431675720852487
             }, 
@@ -4437,6 +6313,10 @@
             "np": 2223, 
             "rank": {
                 "ample": 219, 
+                "gp13": 219, 
+                "jaccard": 215, 
+                "naish1": 172, 
+                "naish2": 219, 
                 "ochiai": 217, 
                 "tarantula": 215
             }
@@ -4448,7 +6328,11 @@
             "line": 382, 
             "metrics": {
                 "ample": 0.23626495347806822, 
+                "gp13": 1.0158730158730158, 
                 "gzoltar": 0.08838834764831843, 
+                "jaccard": 0.02857142857142857, 
+                "naish1": -1, 
+                "naish2": 0.9862710363153233, 
                 "ochiai": 0.08838834764831843, 
                 "tarantula": 0.9479210415791685
             }, 
@@ -4456,6 +6340,10 @@
             "np": 2226, 
             "rank": {
                 "ample": 210, 
+                "gp13": 210, 
+                "jaccard": 206, 
+                "naish1": 128, 
+                "naish2": 210, 
                 "ochiai": 206, 
                 "tarantula": 206
             }
@@ -4467,7 +6355,11 @@
             "line": 385, 
             "metrics": {
                 "ample": 0.23626495347806822, 
+                "gp13": 1.0158730158730158, 
                 "gzoltar": 0.08838834764831843, 
+                "jaccard": 0.02857142857142857, 
+                "naish1": -1, 
+                "naish2": 0.9862710363153233, 
                 "ochiai": 0.08838834764831843, 
                 "tarantula": 0.9479210415791685
             }, 
@@ -4475,6 +6367,10 @@
             "np": 2226, 
             "rank": {
                 "ample": 211, 
+                "gp13": 211, 
+                "jaccard": 207, 
+                "naish1": 129, 
+                "naish2": 211, 
                 "ochiai": 207, 
                 "tarantula": 207
             }
@@ -4486,7 +6382,11 @@
             "line": 386, 
             "metrics": {
                 "ample": 0.23626495347806822, 
+                "gp13": 1.0158730158730158, 
                 "gzoltar": 0.08838834764831843, 
+                "jaccard": 0.02857142857142857, 
+                "naish1": -1, 
+                "naish2": 0.9862710363153233, 
                 "ochiai": 0.08838834764831843, 
                 "tarantula": 0.9479210415791685
             }, 
@@ -4494,6 +6394,10 @@
             "np": 2226, 
             "rank": {
                 "ample": 207, 
+                "gp13": 207, 
+                "jaccard": 203, 
+                "naish1": 72, 
+                "naish2": 207, 
                 "ochiai": 208, 
                 "tarantula": 203
             }
@@ -4505,7 +6409,11 @@
             "line": 389, 
             "metrics": {
                 "ample": 0.23626495347806822, 
+                "gp13": 1.0158730158730158, 
                 "gzoltar": 0.08838834764831843, 
+                "jaccard": 0.02857142857142857, 
+                "naish1": -1, 
+                "naish2": 0.9862710363153233, 
                 "ochiai": 0.08838834764831843, 
                 "tarantula": 0.9479210415791685
             }, 
@@ -4513,6 +6421,10 @@
             "np": 2226, 
             "rank": {
                 "ample": 209, 
+                "gp13": 209, 
+                "jaccard": 205, 
+                "naish1": 96, 
+                "naish2": 209, 
                 "ochiai": 209, 
                 "tarantula": 205
             }
@@ -4524,7 +6436,11 @@
             "line": 390, 
             "metrics": {
                 "ample": 0.23626495347806822, 
+                "gp13": 1.0158730158730158, 
                 "gzoltar": 0.08838834764831843, 
+                "jaccard": 0.02857142857142857, 
+                "naish1": -1, 
+                "naish2": 0.9862710363153233, 
                 "ochiai": 0.08838834764831843, 
                 "tarantula": 0.9479210415791685
             }, 
@@ -4532,6 +6448,10 @@
             "np": 2226, 
             "rank": {
                 "ample": 212, 
+                "gp13": 212, 
+                "jaccard": 208, 
+                "naish1": 160, 
+                "naish2": 212, 
                 "ochiai": 210, 
                 "tarantula": 208
             }
@@ -4543,7 +6463,11 @@
             "line": 480, 
             "metrics": {
                 "ample": 0.23715108551174124, 
+                "gp13": 1.0169491525423728, 
                 "gzoltar": 0.09128709291752768, 
+                "jaccard": 0.030303030303030304, 
+                "naish1": -1, 
+                "naish2": 0.9871567759078831, 
                 "ochiai": 0.09128709291752768, 
                 "tarantula": 0.9511167298777918
             }, 
@@ -4551,6 +6475,10 @@
             "np": 2228, 
             "rank": {
                 "ample": 204, 
+                "gp13": 204, 
+                "jaccard": 200, 
+                "naish1": 198, 
+                "naish2": 204, 
                 "ochiai": 198, 
                 "tarantula": 200
             }
@@ -4562,7 +6490,11 @@
             "line": 481, 
             "metrics": {
                 "ample": 0.23715108551174124, 
+                "gp13": 1.0169491525423728, 
                 "gzoltar": 0.09128709291752768, 
+                "jaccard": 0.030303030303030304, 
+                "naish1": -1, 
+                "naish2": 0.9871567759078831, 
                 "ochiai": 0.09128709291752768, 
                 "tarantula": 0.9511167298777918
             }, 
@@ -4570,6 +6502,10 @@
             "np": 2228, 
             "rank": {
                 "ample": 205, 
+                "gp13": 205, 
+                "jaccard": 201, 
+                "naish1": 199, 
+                "naish2": 205, 
                 "ochiai": 199, 
                 "tarantula": 201
             }
@@ -4581,7 +6517,11 @@
             "line": 482, 
             "metrics": {
                 "ample": 0.23715108551174124, 
+                "gp13": 1.0169491525423728, 
                 "gzoltar": 0.09128709291752768, 
+                "jaccard": 0.030303030303030304, 
+                "naish1": -1, 
+                "naish2": 0.9871567759078831, 
                 "ochiai": 0.09128709291752768, 
                 "tarantula": 0.9511167298777918
             }, 
@@ -4589,6 +6529,10 @@
             "np": 2228, 
             "rank": {
                 "ample": 206, 
+                "gp13": 206, 
+                "jaccard": 202, 
+                "naish1": 205, 
+                "naish2": 206, 
                 "ochiai": 200, 
                 "tarantula": 202
             }
@@ -4600,7 +6544,11 @@
             "line": 486, 
             "metrics": {
                 "ample": 0.23715108551174124, 
+                "gp13": 1.0169491525423728, 
                 "gzoltar": 0.09128709291752768, 
+                "jaccard": 0.030303030303030304, 
+                "naish1": -1, 
+                "naish2": 0.9871567759078831, 
                 "ochiai": 0.09128709291752768, 
                 "tarantula": 0.9511167298777918
             }, 
@@ -4608,6 +6556,10 @@
             "np": 2228, 
             "rank": {
                 "ample": 202, 
+                "gp13": 202, 
+                "jaccard": 198, 
+                "naish1": 127, 
+                "naish2": 202, 
                 "ochiai": 201, 
                 "tarantula": 198
             }
@@ -4619,7 +6571,11 @@
             "line": 489, 
             "metrics": {
                 "ample": 0.23715108551174124, 
+                "gp13": 1.0169491525423728, 
                 "gzoltar": 0.09128709291752768, 
+                "jaccard": 0.030303030303030304, 
+                "naish1": -1, 
+                "naish2": 0.9871567759078831, 
                 "ochiai": 0.09128709291752768, 
                 "tarantula": 0.9511167298777918
             }, 
@@ -4627,6 +6583,10 @@
             "np": 2228, 
             "rank": {
                 "ample": 200, 
+                "gp13": 200, 
+                "jaccard": 196, 
+                "naish1": 108, 
+                "naish2": 200, 
                 "ochiai": 202, 
                 "tarantula": 196
             }
@@ -4638,7 +6598,11 @@
             "line": 490, 
             "metrics": {
                 "ample": 0.23715108551174124, 
+                "gp13": 1.0169491525423728, 
                 "gzoltar": 0.09128709291752768, 
+                "jaccard": 0.030303030303030304, 
+                "naish1": -1, 
+                "naish2": 0.9871567759078831, 
                 "ochiai": 0.09128709291752768, 
                 "tarantula": 0.9511167298777918
             }, 
@@ -4646,6 +6610,10 @@
             "np": 2228, 
             "rank": {
                 "ample": 203, 
+                "gp13": 203, 
+                "jaccard": 199, 
+                "naish1": 157, 
+                "naish2": 203, 
                 "ochiai": 203, 
                 "tarantula": 199
             }
@@ -4657,7 +6625,11 @@
             "line": 491, 
             "metrics": {
                 "ample": 0.23715108551174124, 
+                "gp13": 1.0169491525423728, 
                 "gzoltar": 0.09128709291752768, 
+                "jaccard": 0.030303030303030304, 
+                "naish1": -1, 
+                "naish2": 0.9871567759078831, 
                 "ochiai": 0.09128709291752768, 
                 "tarantula": 0.9511167298777918
             }, 
@@ -4665,6 +6637,10 @@
             "np": 2228, 
             "rank": {
                 "ample": 199, 
+                "gp13": 199, 
+                "jaccard": 195, 
+                "naish1": 13, 
+                "naish2": 199, 
                 "ochiai": 204, 
                 "tarantula": 195
             }
@@ -4676,7 +6652,11 @@
             "line": 603, 
             "metrics": {
                 "ample": 0.23582188746123173, 
+                "gp13": 1.0153846153846153, 
                 "gzoltar": 0.08703882797784893, 
+                "jaccard": 0.027777777777777776, 
+                "naish1": -1, 
+                "naish2": 0.9858281665190434, 
                 "ochiai": 0.08703882797784893, 
                 "tarantula": 0.9463312368972746
             }, 
@@ -4684,6 +6664,10 @@
             "np": 2225, 
             "rank": {
                 "ample": 213, 
+                "gp13": 213, 
+                "jaccard": 209, 
+                "naish1": 39, 
+                "naish2": 213, 
                 "ochiai": 211, 
                 "tarantula": 209
             }
@@ -4695,7 +6679,11 @@
             "line": 636, 
             "metrics": {
                 "ample": 0.24113867966326982, 
+                "gp13": 1.024390243902439, 
                 "gzoltar": 0.1091089451179962, 
+                "jaccard": 0.041666666666666664, 
+                "naish1": -1, 
+                "naish2": 0.9911426040744021, 
                 "ochiai": 0.1091089451179962, 
                 "tarantula": 0.965768078733419
             }, 
@@ -4703,6 +6691,10 @@
             "np": 2237, 
             "rank": {
                 "ample": 193, 
+                "gp13": 193, 
+                "jaccard": 189, 
+                "naish1": 18, 
+                "naish2": 193, 
                 "ochiai": 189, 
                 "tarantula": 189
             }
@@ -4714,7 +6706,11 @@
             "line": 771, 
             "metrics": {
                 "ample": 0.2349357554275587, 
+                "gp13": 1.0144927536231885, 
                 "gzoltar": 0.08451542547285165, 
+                "jaccard": 0.02631578947368421, 
+                "naish1": -1, 
+                "naish2": 0.9849424269264836, 
                 "ochiai": 0.08451542547285165, 
                 "tarantula": 0.9431675720852487
             }, 
@@ -4722,6 +6718,10 @@
             "np": 2223, 
             "rank": {
                 "ample": 218, 
+                "gp13": 218, 
+                "jaccard": 214, 
+                "naish1": 121, 
+                "naish2": 218, 
                 "ochiai": 218, 
                 "tarantula": 214
             }
@@ -4733,7 +6733,11 @@
             "line": 772, 
             "metrics": {
                 "ample": 0.2353788214443952, 
+                "gp13": 1.0149253731343284, 
                 "gzoltar": 0.08574929257125441, 
+                "jaccard": 0.02702702702702703, 
+                "naish1": -1, 
+                "naish2": 0.9853852967227635, 
                 "ochiai": 0.08574929257125441, 
                 "tarantula": 0.9447467559648388
             }, 
@@ -4741,6 +6745,10 @@
             "np": 2224, 
             "rank": {
                 "ample": 214, 
+                "gp13": 214, 
+                "jaccard": 210, 
+                "naish1": 62, 
+                "naish2": 214, 
                 "ochiai": 212, 
                 "tarantula": 210
             }
@@ -4752,7 +6760,11 @@
             "line": 788, 
             "metrics": {
                 "ample": 0.24113867966326982, 
+                "gp13": 1.024390243902439, 
                 "gzoltar": 0.1091089451179962, 
+                "jaccard": 0.041666666666666664, 
+                "naish1": -1, 
+                "naish2": 0.9911426040744021, 
                 "ochiai": 0.1091089451179962, 
                 "tarantula": 0.965768078733419
             }, 
@@ -4760,6 +6772,10 @@
             "np": 2237, 
             "rank": {
                 "ample": 194, 
+                "gp13": 194, 
+                "jaccard": 190, 
+                "naish1": 143, 
+                "naish2": 194, 
                 "ochiai": 190, 
                 "tarantula": 190
             }
