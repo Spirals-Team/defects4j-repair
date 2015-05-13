@@ -98,10 +98,12 @@ class Astor(Tool):
 		m = re.search('Time Total\(ms\): ([0-9]+)', log)
 		if m:
 			timeTotal = m.group(1)
+		else:
+			return
 		m = re.search('Node: ([a-zA-Z0-9\-\.]+)', log)
 		if m:
 			node = m.group(1)
-		m = re.search('Date: (.+)', log)
+		m = re.search('Date: ([^`]+)$', log)
 		if m:
 			date = m.group(1)
 

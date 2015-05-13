@@ -69,6 +69,8 @@ class Nopol(Tool):
         m = re.search('Nb Statements Analyzed : ([0-9]+)', log)
         if m:
             nbStatement = int(m.group(1))
+        else:
+            return
         m = re.search('Nb Statements with Angelic Value Found : ([0-9]+)', log)
         if m:
             nbAngelic = int(m.group(1))
@@ -90,7 +92,7 @@ class Nopol(Tool):
         m = re.search('Node: ([a-zA-Z0-9\-\.]+)', log)
         if m:
             node = m.group(1)
-        m = re.search('Date: (.+)', log)
+        m = re.search('Date: ([^`]+)$', log)
         if m:
             date = m.group(1)
         
