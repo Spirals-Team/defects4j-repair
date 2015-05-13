@@ -21,6 +21,14 @@ resultsAllPath = os.path.join(root, "results.json")
 resultsMdPath = os.path.join(root, "results.md")
 resultsTexPath = os.path.join(root, "results.tex")
 rankingAll = {}
+
+nbError = 0
+nbEmpty = 0
+nbTimeout = 0
+fixedBugs = 0
+totalBugs = 0
+totalExecutionTime = 0
+
 for project in os.listdir(root):
 	projectPath = os.path.join(root, project) 
 	if os.path.isfile(projectPath):
@@ -58,6 +66,7 @@ for project in os.listdir(root):
 						resultsBug[tool] = {
 							"error": "EMPTY"
 						}
+						nbError += 1
 						continue
 				with open(stderrToolPath) as data_file:
 					data = data_file.read()
@@ -66,14 +75,17 @@ for project in os.listdir(root):
 						resultsBug[tool] = {
 							"error": "TIMEOUT"
 						}
+						nbTimeout += 1
 					elif len(data) == 0:
 						resultsBug[tool] = {
 							"error": "EMPTY"
 						}
+						nbEmpty += 1
 					else:
 						resultsBug[tool] = {
 							"error": "ERROR"
 						}
+						nbError += 1
 		resultsProject[int(bugId)] = resultsBug
 		resultsBugFile = open(resultsBugPath, "w")
 		resultsBugFile.write(json.dumps(resultsBug, sort_keys=True))
@@ -114,8 +126,7 @@ for tool in tools:
 		continue
 	result += "%s | " % repeat_to_length("-", len(tool)) 
 result += "%s\n" % repeat_to_length("-", 6)
-fixedBugs = 0
-totalBugs = 0
+
 for project in resultsAll:
 	smallName = project[0]
 	for bugId in resultsAll[project]:
@@ -129,6 +140,11 @@ for project in resultsAll:
 			if tool == "Ranking":
 				continue
 			if(tool in resultsAll[project][bugId]):
+				if 'executionTime' in resultsAll[project][bugId][tool]:
+					totalExecutionTime += resultsAll[project][bugId][tool]['executionTime']
+				elif 'timeTotal' in resultsAll[project][bugId][tool]:
+					if resultsAll[project][bugId][tool]['timeTotal']:
+						totalExecutionTime += int(resultsAll[project][bugId][tool]['timeTotal'])
 				if ("patch" in resultsAll[project][bugId][tool] and resultsAll[project][bugId][tool]["patch"]):
 					line += "Yes%s" % repeat_to_length(" ", len(tool) - 3)
 					texLineTable += "Fixed%s" % repeat_to_length(" ", len(tool) - 5)
@@ -177,6 +193,10 @@ for tool in tools:
 	texLineTable += " & "
 totalLine += "%d\n"  % (total)
 totalLine += "Fixed bugs: %d/%d (%d%%)\n\n" % (fixedBugs, totalBugs, float(fixedBugs)/float(totalBugs)*100)
+totalLine += "Nb bugs ends with an execution error: %d\n\n"  % (nbError)
+totalLine += "Nb bugs ends with an empty log: %d\n\n"  % (nbEmpty)
+totalLine += "Nb bugs ends with the Grid5000 timeout: %d\n\n"  % (nbTimeout)
+totalLine += "Total execution time: %s\n"  % (datetime.timedelta(milliseconds=totalExecutionTime + (nbTimeout * 3600000)))
 texLineTable += "%d (%d\\%%)\\\\\n"  % (fixedBugs, float(fixedBugs)/float(totalBugs)*100)
 texTable += texLineTable
 texTable += """\hline 
