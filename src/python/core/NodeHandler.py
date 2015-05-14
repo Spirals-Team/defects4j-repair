@@ -37,7 +37,7 @@ class NodeHandler(object):
 				nodeCmd = "python %s" % nodeCmdArgs 
 
 				# cmd += path
-				cmd += "oarsub -l nodes=1,walltime=%s, -O %s -E %s \"%s\"" % (
+				cmd += "oarsub -l nodes=1,walltime=%s -O %s -E %s \"%s\"" % (
 					task.project.maxExecution,
 					stdoutlog,
 					stderrlog,
