@@ -21,6 +21,7 @@ class Ranking(Nopol):
 
     def parseLog(self, log, project, id):
         suspiciousStatements = {}
+        smooth = 0.000001
         rank = 0
         reg = re.compile('([0-9a-zA-Z\-_\.\$]+):([0-9]+) -> ([0-9\.]+) \(ep: ([0-9]+), ef: ([0-9]+), np: ([0-9]+), nf: ([0-9]+)\)')
         m = reg.findall(log)
@@ -43,7 +44,7 @@ class Ranking(Nopol):
                 "metrics": {
                     "gzoltar": float(i[2]),
                     "ochiai": (ef)/sqrt((ef+ep)*(ef+nf)),
-                    "tarantula": (ef/float(ef+nf))/float((ef/float(ef+nf))+(ep/float(ep+np))),
+                    "tarantula": (ef/float(ef+nf + smooth))/float((ef/float(ef+nf + smooth))+(ep/float(ep+np + smooth)) + smooth),
                     "ample": abs((ef/float(ef+nf)) - (ep/float(ep+np))),
                     "jaccard": ef / float(ef + ep + nf),
                     "naish1": np if ef == 0 else -1,
@@ -129,7 +130,7 @@ class Ranking(Nopol):
             for line in data_patch:
                 is_source_filename = regexSource.match(line)
                 if is_source_filename:
-                    source_file = is_source_filename.group('filename')
+                    source_file = re.sub(r"(\$[0-9]+)?\.java$", "", re.sub(r"^a\/", "", is_source_filename.group('filename')))
                     source_timestamp = is_source_filename.group('timestamp')
                     # reset current file
                     current_file = None
@@ -139,12 +140,12 @@ class Ranking(Nopol):
                 if is_target_filename:
                     if current_file is not None:
                         continue
-                    target_file = is_target_filename.group('filename')
+                    target_file = re.sub(r"(\$[0-9]+)?\.java$", "", re.sub(r"^b\/", "", is_target_filename.group('filename')))
                     target_timestamp = is_target_filename.group('timestamp')
                     # add current file to PatchSet
                     current_file = {
-                        'source_file': source_file.replace(".java", "").replace("/", "."),
-                        'target_file': target_file.replace(".java", "").replace("/", "."),
+                        'source_file': source_file.replace("/", "."),
+                        'target_file': target_file.replace("/", "."),
                         'source_timestamp': source_timestamp,
                         'target_timestamp': target_timestamp,
                         'hunks': []
@@ -167,6 +168,7 @@ class Ranking(Nopol):
                     }
                     source_line_no = hunk['src_start']
                     target_line_no = hunk['tgt_start']
+                    diffLineSourceTarget = hunk['src_start'] - hunk['tgt_start']
                     current_file['hunks'].append(hunk)
                     current_line = None
                     for line in data_patch:
@@ -176,7 +178,7 @@ class Ranking(Nopol):
                         line_type = is_hunk_line.group('line_type')
                         value = is_hunk_line.group('value').strip()
                         if line_type[0] == '+':
-                            if current_line is None or target_line_no != current_line['line']:
+                            if current_line is None or target_line_no + diffLineSourceTarget != current_line['line']:
                                 current_line = {
                                     'target': value,
                                     'original': '',
@@ -185,7 +187,11 @@ class Ranking(Nopol):
                                 hunk['changes'].append(current_line);
                                 target_line_no += 1
                                 continue
-                            current_line['target'] = value
+                            if value != current_line['original']:
+                                current_line['target'] = value
+                                current_line['targetLine '] = target_line_no
+                            else:
+                                hunk['changes'].remove(current_line)
                             target_line_no += 1
                         elif line_type[0] == '-':
                             current_line = {
@@ -193,7 +199,7 @@ class Ranking(Nopol):
                                 'target': '',
                                 'line': source_line_no
                             }
-                            hunk['changes'].append(current_line);
+                            hunk['changes'].append(current_line)
                             source_line_no += 1
                         else:
                             target_line_no += 1
@@ -211,10 +217,10 @@ class Ranking(Nopol):
                             change['target'] == '/**' or 
                             change['target'] == '**/'):
                             continue
-                        key = "%s:%d" % (patchedFile['source_file'], change['line'])
+                        line = change['line']
                         modifiedLines.append({
                             'class': patchedFile['source_file'],
-                            'line': change['line']
+                            'line': line
                             })
 
         reg = re.compile('([0-9a-zA-Z\.\-_\$]+)#([^\n]+)')
