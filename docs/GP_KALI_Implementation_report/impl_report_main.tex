@@ -1,0 +1,142 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+\documentclass[11pt]{article} % use larger type; default would be 10pt
+
+\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+%\usepackage[T1]{fontenc} %% to get Type 1 fonts
+\usepackage[utf8]{inputenc} %% to enable non ASCII characters
+% \usepackage[margin=2cm]{geometry} %% to change the margins
+
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{graphicx}
+
+\usepackage{balance}
+\usepackage{paralist}
+\newcommand{\todo}[1]{{\color{red}TODO: #1}}
+
+\newcommand{\mycode}[1]{{\small \texttt{#1}}\xspace}
+
+\usepackage[]{hyperref}
+\usepackage{xspace}
+\def\ourif{{\sc if}\xspace}
+
+
+\usepackage{listings}
+\lstset{ 
+language=java,
+upquote=true,
+columns=fullflexible,
+%literate={*}{{\char42}}1
+%         {-}{{\char45}}1
+escapeinside={<@}{@>}
+}
+
+
+\usepackage{multirow}
+\usepackage{amsmath}
+
+
+\title{
+Appendix:\\
+Automatic Repair of Real Bugs: \\ An Experience Report on the Defects4J Dataset
+}
+
+
+\author{
+Thomas Durieux,$^\dag$ Matias Martinez,$^\dag$ Martin Monperrus,\\$^\dag$ Romain Sommerard,$^\dag$ Jifeng Xuan$^\ddag$ \\
+$^\dag$\ University of Lille \& INRIA, France \\
+$^\ddag$\ Wuhan University, China \\
+\thanks{Authors contribute equally to the paper and are in alphabetic order.} \\ 
+}
+
+\date{}
+\begin{document}
+\maketitle
+
+\section{GenProg and Kali Implementation}
+
+
+
+
+\subsubsection{GenProg Implementation}
+
+We use the evolutionary repair framework Astor \cite{AstorTechReport} to implement the approach GenProg. Astor has 8.7K lines of Java code, Nopol represents 25K lines of Java code. Astor is publicly available at GitHub.\footnote{Astor, \url{https://github.com/SpoonLabs/astor}.}
+
+The evolutionary algorithm embeded in GenProg starts defining a population of programs, all created from the buggy program. 
+
+
+The approach starts with a population of program variants, all created from the buggy program. 
+It evolves the population during $n$ generations. 
+In each generation, evolution means to 
+\begin{inparaenum}[\itshape a\upshape)]
+\item modify variants from population for generating new variants, 
+\item evaluate each variant generated c) from the evaluation result 
+\item defines the population from the next generation by selecting the best variant according to the evaluation.
+\end{inparaenum}
+
+Let us focus on the implementation details of our GenProg implementation.
+The approach works at the level of statement. 
+This means, it applies operators over statements such as replace or remove.
+
+\paragraph{Definition of population}
+A population contains a set of individuals called $Program variants$.
+A program variant represents the buggy program with a set of operators applied. 
+Internally, a program variant has a list of gens, where each gen is related to a suspicious statement retrieved by the fault localization approach.
+The approach creates an initial population of $p$ program variants. \
+In this experience, we use a $p=3$ and we consider statement with suspiciouness value greater than 0.1.
+
+\paragraph{Evolution of population}
+During the evolution of the population in a given generation, 
+the approaches creates a new variant from an existing one (called the Parent variant) and applies operators to the  gens of the new variants.
+We decide to modify only one gen for each new variant in each generation.
+This produces the new and its parent variant differ only in one statement.
+We use weighted random to select the gen to modify, where the weight assigned to each gen corresponds to the suspiciousness of the gen' statement.
+The operators the approach applies over a gen are four: 
+remove, replace, insert after and before, which are selected using not-biased random. 
+As difference from the original implementation of GenProg \cite{weimer2009automatically} we do not use crossover operator. 
+The insert operators  insert another statement (called $ingredient$)  before or after the statement related to the gen under modification.  
+The ingredient statement is randomly selected from all statements of the  gen  statement's class.
+The replace operator  replaces a statement by another of the same type, example, assignment only per assignment taken from the same class. 
+After applying the operator, the approach compiles the new variant and is discarded if it does not compile. 
+
+\paragraph{Evaluation of new variants}
+The approach evaluates the new variant using a fitness function.
+As GenProg is a test suite based repair approach, we consider the fitness function is the number of failing test cases over the new program variant. 
+That means a low fitness value is better (less failing test cases ).
+A zero value means the program variant passes all test cases and is a solution. The modifications done over the variant correspond to the bug fix. 
+For the implementation of the function, the approach first executes the failing test cases, and all cases passes, we execute the regression test, that is, the remaining test cases from the suite. 
+We set up a time out of 10 minutes for executing the whole test regression.
+
+
+\paragraph{Composition of population}
+After analyzing all variants of a population, the approach defines the population for the next generation.
+As population size in each generation is fixed, 
+we select the best variants w.r.t the fitness value between the parents variants and the new variants.
+Moreover, we reintroduce an original variant in each generation. 
+
+
+
+\paragraph{End criteria}
+Finally, the approach stops evolving the population when:
+\begin{inparaenum}[\itshape a\upshape)]
+\item A solution is found, or
+\item A max number of generation $n$ is reached (We consider 1 million), or
+\item the execution time exceeds a execution limit (We consider 1 hour). 
+\end{inparaenum}
+
+
+
+
+\subsubsection{Kali Implementation}
+
+The implementation of Kali is also built from Astor framework through the  mode of execution $statement-remove$. 
+It is a simplification of the original Kali.
+In particular, we consider one out of three Kali's operator: remove statements.
+The implementation navigates the suspicious statements retrieved by the fault localization approach.
+Then, for each of them in descending order of suspicious, the tool removes the statement, compiles the resulting program, and if it does compile, executes the test suite over this version.
+Finally, If all test cases pass means the removement of that statement is a fix w.r.t. test suite based repair approach definition. 
+
+
+\bibliography{references}
+
+\end{document}
