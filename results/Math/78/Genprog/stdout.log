@@ -1,49 +1,38 @@
 export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";cp -r /home/tdurieux/projects/math/math_78 /tmp/math_78_Genprog;cd /tmp/math_78_Genprog;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
 /home/tdurieux/results/Math/78/Genprog/result
-cd /tmp/math_78_Genprog;time java -cp /home/tdurieux/astor/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar fr.inria.main.evolution.MainjGenProg -mode statement -location . -dependencies lib/ -failing org.apache.commons.math.ode.events.EventStateTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
+cd /tmp/math_78_Genprog;time java -cp /home/tdurieux/astor/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar fr.inria.main.evolution.MainjGenProg -mode statement -location . -dependencies lib/ -failing org.apache.commons.math.ode.events.EventStateTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;rm -rf /tmp/math_78_Genprog;
 
-Node: `hostname`
-";echo "
-Date: `date`
-";rm -rf /tmp/math_78_Genprog;
-
-ProgramVariant 698
+ProgramVariant 804
  
  operation: 
 location= org.apache.commons.math.ode.events.EventState
- line= 283
- original statement= t0 = t
- fix (remove original statement) "t0 = t"
- generation= 349
+ line= 179
+ original statement= double tb = (t0) + (interpolator.isForward() ? convergence : -(convergence))
+ fixed statement= "ta = tb"
+ generation= 402
  
  ----
-Time Evolution(ms): 111379
+Time Evolution(ms): 163198
 
 ----stats: 
 
-spaces: [256]: [36, 80, 80, 80, 36, 36, 11, 80, 1, 33, 7, 80, 80, 95, 80, 80, 80, 80, 36, 95, 80, 33, 104, 8, 80, 95, 7, 80, 80, 80, 95, 80, 80, 7, 11, 80, 17, 80, 80, 80, 95, 80, 95, 80, 104, 80, 95, 36, 95, 80, 95, 80, 80, 80, 36, 36, 13, 17, 80, 13, 95, 95, 80, 1, 80, 95, 13, 36, 80, 95, 80, 36, 7, 80, 95, 80, 80, 80, 7, 12, 80, 8, 80, 80, 17, 80, 80, 80, 80, 95, 80, 80, 33, 17, 80, 80, 95, 80, 104, 80, 80, 2, 13, 36, 80, 36, 95, 36, 95, 17, 95, 80, 2, 80, 95, 36, 80, 80, 36, 80, 95, 80, 36, 36, 95, 8, 1, 80, 95, 80, 80, 36, 36, 95, 36, 33, 95, 95, 80, 80, 95, 33, 8, 95, 80, 95, 80, 18, 36, 80, 80, 104, 11, 80, 80, 80, 95, 36, 95, 8, 80, 36, 36, 95, 80, 80, 95, 80, 80, 17, 80, 80, 36, 95, 95, 80, 80, 80, 95, 95, 80, 80, 80, 80, 80, 80, 7, 80, 95, 95, 80, 36, 36, 80, 80, 80, 95, 13, 95, 36, 80, 95, 80, 80, 2, 95, 80, 33, 33, 80, 80, 80, 80, 95, 95, 80, 95, 36, 80, 80, 80, 36, 33, 95, 80, 95, 80, 8, 7, 95, 2, 80, 36, 80, 2, 80, 80, 80, 80, 36, 80, 95, 80, 80, 11, 80, 1, 13, 95, 36, 95, 95, 80, 36, 80, 80]
-time val1 [152]: [168, 161, 164, 167, 164, 166, 711, 164, 165, 168, 164, 164, 168, 167, 164, 163, 164, 163, 165, 163, 154, 159, 159, 156, 176, 164, 163, 163, 164, 175, 180, 173, 158, 160, 165, 163, 163, 157, 167, 161, 165, 162, 164, 161, 170, 160, 171, 164, 174, 165, 164, 163, 168, 164, 169, 163, 163, 158, 181, 164, 165, 163, 164, 164, 163, 160, 164, 164, 164, 164, 178, 158, 164, 163, 158, 168, 164, 157, 163, 164, 165, 164, 157, 164, 159, 175, 158, 163, 158, 157, 163, 158, 163, 163, 160, 164, 158, 163, 163, 164, 163, 164, 158, 158, 155, 163, 164, 165, 164, 156, 163, 164, 156, 162, 166, 164, 155, 156, 165, 164, 161, 163, 159, 159, 155, 164, 175, 162, 164, 163, 164, 163, 164, 164, 155, 163, 163, 163, 156, 154, 163, 157, 166, 164, 162, 158, 164, 164, 156, 183, 162, 156]
-time val2 [8]: [9132, 9076, 8977, 9487, 9184, 9041, 9249, 9253]
-#gen: 349
+spaces: [315]: [80, 12, 36, 104, 36, 13, 80, 80, 80, 95, 95, 36, 80, 80, 80, 80, 80, 36, 2, 80, 36, 95, 80, 12, 36, 80, 80, 36, 36, 80, 7, 95, 95, 80, 36, 80, 80, 95, 8, 80, 80, 80, 13, 2, 80, 95, 80, 80, 80, 80, 80, 33, 36, 80, 36, 95, 95, 80, 36, 80, 95, 95, 95, 6, 36, 80, 80, 95, 36, 11, 36, 13, 7, 80, 80, 1, 17, 11, 17, 95, 80, 95, 80, 80, 95, 80, 80, 80, 80, 13, 95, 80, 36, 80, 8, 7, 95, 80, 95, 80, 80, 17, 33, 80, 7, 80, 12, 95, 80, 80, 80, 80, 80, 95, 95, 80, 104, 80, 80, 80, 80, 80, 80, 7, 33, 80, 80, 95, 95, 18, 36, 95, 18, 80, 36, 7, 95, 18, 80, 80, 95, 80, 95, 36, 95, 95, 95, 80, 80, 11, 80, 80, 8, 80, 11, 80, 33, 80, 17, 80, 95, 80, 18, 36, 80, 80, 80, 95, 17, 95, 95, 33, 36, 80, 36, 80, 95, 17, 80, 95, 80, 80, 13, 80, 11, 80, 36, 33, 80, 17, 95, 33, 12, 12, 80, 36, 80, 80, 7, 80, 95, 80, 80, 36, 80, 95, 104, 95, 80, 33, 95, 80, 36, 80, 80, 80, 80, 80, 80, 7, 80, 95, 95, 80, 36, 8, 95, 12, 36, 8, 80, 80, 7, 36, 36, 80, 95, 95, 7, 36, 11, 95, 36, 95, 80, 80, 33, 8, 95, 36, 80, 80, 80, 17, 80, 80, 7, 80, 36, 36, 80, 80, 12, 95, 36, 95, 80, 36, 8, 80, 80, 95, 95, 80, 80, 17, 80, 95, 80, 80, 80, 80, 95, 11, 95, 95, 36, 80, 1, 17, 80, 11, 80, 33, 36, 80, 80, 36, 36, 80, 95, 80, 80, 80, 80, 11, 95, 95, 80, 104, 95, 7, 80, 11, 80]
+time val1 [172]: [190, 201, 189, 181, 188, 189, 186, 182, 182, 188, 184, 189, 190, 189, 188, 202, 189, 188, 188, 189, 187, 186, 186, 184, 181, 200, 187, 180, 177, 186, 183, 186, 187, 198, 182, 181, 197, 197, 190, 178, 187, 188, 185, 186, 186, 188, 187, 179, 187, 185, 190, 188, 187, 180, 188, 188, 184, 187, 182, 180, 179, 187, 184, 184, 187, 187, 187, 179, 188, 187, 181, 179, 185, 199, 186, 176, 186, 188, 186, 185, 181, 180, 187, 186, 185, 187, 186, 185, 185, 186, 180, 186, 187, 186, 188, 186, 184, 185, 187, 186, 181, 187, 187, 178, 187, 187, 177, 187, 174, 200, 187, 186, 186, 200, 185, 199, 186, 186, 186, 186, 178, 187, 186, 181, 199, 187, 186, 185, 207, 186, 200, 187, 186, 180, 177, 186, 181, 186, 185, 185, 186, 180, 186, 186, 181, 184, 186, 186, 177, 186, 186, 180, 187, 185, 179, 176, 198, 200, 180, 186, 186, 181, 180, 186, 180, 188, 208, 185, 187, 185, 186, 180]
+time val2 [11]: [10688, 10381, 10447, 9706, 10726, 10353, 10403, 10668, 9764, 9893, 10377]
+#gen: 402
 #patches: 1
-#RightCompilation: 151
-#WrongCompilation: 198
-#FailingTestCaseExecution: 152
-#RegressionTestExecution: 8
-#TestcasesExecutedval1: 152
-#TestcasesExecutedval2: 15984
+#RightCompilation: 171
+#WrongCompilation: 231
+#FailingTestCaseExecution: 172
+#RegressionTestExecution: 11
+#TestcasesExecutedval1: 172
+#TestcasesExecutedval2: 21978
 #FailingTestCase: 1
 #RegressionTestCases: 1998
-#OfAppliedOp: 349
+#OfAppliedOp: 402
 #NotAppliedOp: 0
-#InmutatedGen: 8
+#InmutatedGen: 3
 #unfinishValidation: 0
-Time Total(ms): 141006
-
-
-Node: graphene-103.nancy.grid5000.fr
-
-
-Date: Tue May 12 00:57:20 CEST 2015
+Time Total(ms): 197091
 
 
