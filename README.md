@@ -1,22 +1,10 @@
 # Defects4j-Repair
 
+This repository contains the raw experimental results of an experiment done at INRIA Lille on the automatic repair of the bugs of the Defects4J dataset.
+
 ## Infos
 
-Nb. of tested bugs: 223 (25 + 65 + 106 + 27)
-
-## Reset script
-
-```
-export HTTP_PROXY="http://proxy:3128/"
-export HTTPS_PROXY="https://proxy:3128/"
-
-rm -rf defects4j/ defects4j-repair/ nopol/ astor/
-
-git clone https://github.com/rsommerard/nopol.git
-git clone https://github.com/rsommerard/astor.git
-git clone https://github.com/rsommerard/defects4j.git
-git clone https://github.com/Spirals-Team/defects4j-repair.git
-```
+Nb. of tested bugs: 224 (226 + 65 + 106 + 27)
 
 ## Check available ressources
 
