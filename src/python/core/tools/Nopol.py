@@ -32,7 +32,7 @@ class Nopol(Tool):
         workdir = self.initTask(project, id)
         cmd = 'cd ' + workdir +  ';'
         cmd += 'cp -r ' + conf.z3Root + ' lib/z3;'
-        cmd += 'time java -cp ' + self.jar + ' ' + self.main
+        cmd += 'time java -cp ' + self.jar + ":%s/../lib/tools.jar" % conf.javaHome + ' ' + self.main
         cmd += ' --mode ' + mode
         cmd += ' --type ' + type
         cmd += ' --oracle ' + oracle
@@ -46,6 +46,8 @@ class Nopol(Tool):
         cmd += 'echo "\nDate: `date`\n";'
         cmd += 'rm -rf ' + workdir +  ';'
         logPath = os.path.join(project.logPath, str(id), self.name, "stdout.log.full")
+        if not os.path.exists(os.path.dirname(logPath)):
+            os.makedirs(os.path.dirname(logPath))
         log = file(logPath, 'w')
         print cmd
         subprocess.call(cmd, shell=True, stdout=log)

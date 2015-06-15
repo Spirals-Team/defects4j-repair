@@ -9,6 +9,8 @@ from core.projects.TimeProject import TimeProject
 from core.tools.Ranking import Ranking
 from core.tools.NopolPC import NopolPC
 from core.tools.NopolC import NopolC
+from core.tools.BrutpolPC import BrutpolPC
+from core.tools.BrutpolC import BrutpolC
 from core.tools.Astor import Astor
 from core.tools.Kali import Kali
 
@@ -59,6 +61,13 @@ for tool in args.tools:
         tools.append(Ranking())    
     elif tool.lower() == "nopolc":
         tools.append(NopolC())
+    elif tool.lower() == "brutpol":
+        tools.append(BrutpolPC())
+        tools.append(BrutpolC())
+    elif tool.lower() == "brutpolpc":
+        tools.append(BrutpolPC())
+    elif tool.lower() == "brutpolc":
+        tools.append(BrutpolC())
     elif tool.lower() == "genprog":
         tools.append(Astor())
     elif tool.lower() == "kali":

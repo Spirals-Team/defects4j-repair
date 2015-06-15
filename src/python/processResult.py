@@ -13,7 +13,7 @@ sys.setdefaultencoding('Cp1252')
 def repeat_to_length(string_to_expand, length):
    return (string_to_expand * ((length/len(string_to_expand))+1))[:length]
 
-tools = ["NopolPC", "NopolC", "Ranking", "Genprog", "Kali"]
+tools = ["NopolPC", "NopolC", "BrutpolC", "BrutpolPC", "Ranking", "Genprog", "Kali"]
 
 root = conf.resultsRoot
 resultsAll = {}
