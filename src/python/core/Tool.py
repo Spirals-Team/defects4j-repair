@@ -22,6 +22,8 @@ class Tool(object):
 	def initTask(self, project, id):
 		workdir = os.path.join("/tmp/", "%s_%d_%s"% (project.name.lower(), id, self.name))
 		cmd = 'export PATH="' + conf.defects4jRoot + '/framework/bin:$PATH";'
+		cmd += 'export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;'
+		cmd += 'export PATH="' + conf.javaHome + ':$PATH";'
 		cmd += 'cp -r ' + conf.projectsRoot + '/' + project.name.lower() + '/' + project.name.lower() + '_' + str(id) + ' ' + workdir +  ';'
 		cmd += 'cd ' + workdir +';'
 		cmd += 'defects4j compile;'

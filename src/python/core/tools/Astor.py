@@ -36,6 +36,8 @@ class Astor(Tool):
 
 		workdir = self.initTask(project, id)
 		cmd = 'cd ' + workdir +  ';'
+		cmd += 'export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;'
+		cmd += 'export PATH="' + conf.javaHome + ':$PATH";'
 		cmd += 'time java -cp ' + self.jar + ' ' + self.main
 		cmd += ' -mode ' + mode
 		cmd += ' -location .' 

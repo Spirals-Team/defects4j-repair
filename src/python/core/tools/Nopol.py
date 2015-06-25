@@ -31,6 +31,8 @@ class Nopol(Tool):
         classpath += ":" + self.jar
         workdir = self.initTask(project, id)
         cmd = 'cd ' + workdir +  ';'
+        cmd += 'export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;'
+        cmd += 'export PATH="' + conf.javaHome + ':$PATH";'
         cmd += 'cp -r ' + conf.z3Root + ' lib/z3;'
         cmd += 'time java -cp ' + self.jar + ":%s/../lib/tools.jar" % conf.javaHome + ' ' + self.main
         cmd += ' --mode ' + mode
