@@ -111,14 +111,21 @@ class Astor(Tool):
 
 		operations = []
 
-		operationsSplit = log.split('operation:')
+		operationsSplit = log.split('ProgramVariant ')
 		if(len(operationsSplit) > 1):
 			for op in operationsSplit:
 				generation = None
 				className = None
 				line = None
 				patch = None
-
+				type = None
+				variant = 0
+				m = re.search('^([0-9]+)$', op, flags=re.MULTILINE+re.DOTALL)
+				if m:
+					variant = m.group(1)
+				m = re.search('(REPLACE|DELETE|INSERT_BEFORE)', op)
+				if m:
+					type = m.group(1)
 				m = re.search('location= (.*)', op)
 				if m:
 					className = m.group(1)
@@ -127,11 +134,10 @@ class Astor(Tool):
 				m = re.search('line= ([0-9]+)', op)
 				if m:
 					line = m.group(1)
-				m = re.search('fixed statement= "(.*)"', op)
+				m = re.search('^fixed statement= "(.*)"', op, flags=re.MULTILINE+re.DOTALL)
 				if m:
 					patch = m.group(1)
-				m = re.search('remove original statement', op)
-				if m:
+				if type == "DELETE":
 					patch = 'remove'
 				m = re.search('generation= ([0-9]+)', op)
 				if m:
@@ -140,7 +146,9 @@ class Astor(Tool):
 				if(patch == None):
 					continue
 				operations.append({
+					'type': type,
 					'generation': int(generation),
+					'variant': int(variant),
 					'patchLocation': {
 						'className': className,
 						'line': int(line)
