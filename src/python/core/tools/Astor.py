@@ -70,7 +70,7 @@ class Astor(Tool):
 		subprocess.call(cmd, shell=True, stdout=logFile)
 		with open(logPath) as data_file:
 			log = data_file.read()
-			slittedLog = log.split('Solution details')
+			slittedLog = log.split('----SUMMARY_EXECUTION---')
 			if(len(slittedLog) > 1):
 				print slittedLog[1]
 				self.parseLog(slittedLog[1], project, id)
