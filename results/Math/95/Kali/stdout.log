@@ -1,35 +1,57 @@
-export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";cp -r /home/tdurieux/projects/math/math_95 /tmp/math_95_Kali;cd /tmp/math_95_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
-/home/tdurieux/results/Math/95/Kali/result
-cd /tmp/math_95_Kali;time java -cp /home/tdurieux/astor/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.math.distribution.FDistributionTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 6 -maxgen 1000000 -population 1 -srcjavafolder src/java/ -srctestfolder src/test/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;rm -rf /tmp/math_95_Kali;
- NOT Found solution
-Number solutions:0
-All variants:
-Time Evolution(ms): 64667
+export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/math/math_95 /tmp/math_95_Kali;cd /tmp/math_95_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
+/home/tdurieux/defects4j-repair/src/python/core/../../../results/Math/95/Kali/result
+cd /tmp/math_95_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.math.distribution.FDistributionTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 6 -maxgen 1000000 -population 1 -srcjavafolder src/java/ -srctestfolder src/test/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
+
+Node: `hostname`
+";echo "
+Date: `date`
+";rm -rf /tmp/math_95_Kali;
+
+warning: ignoring inconsistent parent for CtLiteralImpl (CtIfImpl != CtReturnImpl)(unknown file)
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtLiteralImpl (CtReturnImpl != CtReturnImpl)(unknown file)
+
+ --SOLUTIONS DESCRIPTION--
+
+ ----
+ProgramVariant 9
+ 
+operation: INSERT_BEFORE
+location= org.apache.commons.math.distribution.FDistributionImpl
+line= 144
+original statement= return (getDenominatorDegreesOfFreedom()) / ((getDenominatorDegreesOfFreedom()) - 2.0)
+fixed statement= "if (true)
+	return 0.0;
+"
+generation= 1
+ 
 
 ----stats: 
 
 spaces: [0]: []
-time val1 [12]: [200, 209, 235, 773, 198, 194, 199, 193, 205, 197, 201, 60001]
-time val2 [0]: []
-#gen: 29
-#patches: 0
-#RightCompilation: 11
+time val1 [58]: [185, 175, 175, 175, 178, 172, 168, 206, 176, 171, 198, 689, 168, 167, 691, 10866, 10857, 10862, 10870, 10855, 175, 60001, 174, 169, 183, 172, 160, 179, 174, 169, 175, 174, 160, 176, 170, 170, 166, 167, 168, 170, 167, 173, 176, 170, 166, 176, 173, 170, 170, 176, 172, 168, 169, 174, 60002, 171, 167, 60002]
+time val2 [1]: [6145]
+#gen: 0
+#patches: 1
+#RightCompilation: 57
 #WrongCompilation: 17
-#FailingTestCaseExecution: 12
-#RegressionTestExecution: 0
-#TestcasesExecutedval1: 99
-#TestcasesExecutedval2: 0
+#FailingTestCaseExecution: 58
+#RegressionTestExecution: 1
+#TestcasesExecutedval1: 495
+#TestcasesExecutedval2: 1191
 #FailingTestCase: 9
-#RegressionTestCases: 0
-#OfAppliedOp: 28
+#RegressionTestCases: 1191
+#OfAppliedOp: 0
 #NotAppliedOp: 0
 #InmutatedGen: 0
 #unfinishValidation: 0
-Time Total(ms): 86853
+#ing []
+Time Total(ms): 275159
 
 
+Node: graphene-106.nancy.grid5000.fr
 
-Node: griffon-39.nancy.grid5000.fr
 
-Date: 2015-05-08T01:22:46.308531
+Date: Thu Jul 23 00:04:50 CEST 2015
+
 

@@ -1,43 +1,45 @@
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
 java.lang.IllegalArgumentException: The validation process does not execute well the test cases
- Exception in thread "main" java.lang.ExceptionInInitializerError
-	at org.joda.time.format.TestDateTimeFormatter.<clinit>(TestDateTimeFormatter.java:53)
+ Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
+Exception in thread "main" java.lang.ExceptionInInitializerError
 	at java.lang.Class.forName0(Native Method)
 	at java.lang.Class.forName(Class.java:191)
 	at fr.inria.astor.junitexec.JUnitTestExecutor.main(JUnitTestExecutor.java:106)
-Caused by: java.lang.NullPointerException
-	at org.joda.time.chrono.GJChronology.getInstance(GJChronology.java:54)
+Caused by: java.lang.IllegalArgumentException: UTC chronology must not be null
+	at org.joda.time.chrono.ZonedChronology.getInstance(ZonedChronology.java:61)
+	at org.joda.time.chrono.GJChronology.getInstance(GJChronology.java:63)
 	at org.joda.time.chrono.GJChronology.getInstance(GJChronology.java:35)
 	at org.joda.time.chrono.BuddhistChronology.getInstance(BuddhistChronology.java:110)
-	at org.joda.time.chrono.BuddhistChronology.<clinit>(BuddhistChronology.java:74)
-	... 4 more
+	at org.joda.time.format.TestDateTimeFormatter.<clinit>(TestDateTimeFormatter.java:53)
+	... 3 more
 
 	at fr.inria.astor.core.validation.executors.JUnitExecutorProcess.getTestResult(JUnitExecutorProcess.java:130)
 	at fr.inria.astor.core.validation.executors.JUnitExecutorProcess.execute(JUnitExecutorProcess.java:78)
 	at fr.inria.astor.core.validation.executors.JUnitExecutorProcess.execute(JUnitExecutorProcess.java:34)
 	at fr.inria.astor.core.validation.validators.ProcessValidator.validate(ProcessValidator.java:58)
-	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.validateInstance(EvolutionaryEngine.java:746)
-	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.processCreatedVariant(EvolutionaryEngine.java:345)
-	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.processGenerations(EvolutionaryEngine.java:211)
-	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.startEvolution(EvolutionaryEngine.java:127)
-	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:137)
-	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:171)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.validateInstance(EvolutionaryEngine.java:747)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.processCreatedVariant(EvolutionaryEngine.java:351)
+	at fr.inria.astor.core.loop.evolutionary.JKali.startEvolution(JKali.java:64)
+	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:201)
+	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:235)
 Exception in thread "main" java.lang.AssertionError: The validation process does not execute well the test cases
- Exception in thread "main" java.lang.ExceptionInInitializerError
-	at org.joda.time.format.TestDateTimeFormatter.<clinit>(TestDateTimeFormatter.java:53)
+ Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
+Exception in thread "main" java.lang.ExceptionInInitializerError
 	at java.lang.Class.forName0(Native Method)
 	at java.lang.Class.forName(Class.java:191)
 	at fr.inria.astor.junitexec.JUnitTestExecutor.main(JUnitTestExecutor.java:106)
-Caused by: java.lang.NullPointerException
-	at org.joda.time.chrono.GJChronology.getInstance(GJChronology.java:54)
+Caused by: java.lang.IllegalArgumentException: UTC chronology must not be null
+	at org.joda.time.chrono.ZonedChronology.getInstance(ZonedChronology.java:61)
+	at org.joda.time.chrono.GJChronology.getInstance(GJChronology.java:63)
 	at org.joda.time.chrono.GJChronology.getInstance(GJChronology.java:35)
 	at org.joda.time.chrono.BuddhistChronology.getInstance(BuddhistChronology.java:110)
-	at org.joda.time.chrono.BuddhistChronology.<clinit>(BuddhistChronology.java:74)
-	... 4 more
+	at org.joda.time.format.TestDateTimeFormatter.<clinit>(TestDateTimeFormatter.java:53)
+	... 3 more
 
 	at org.junit.Assert.fail(Assert.java:88)
-	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:140)
-	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:171)
+	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:204)
+	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:235)
 
-real	2m17.124s
-user	3m12.776s
-sys	0m5.012s
+real	4m11.935s
+user	5m16.812s
+sys	0m12.049s

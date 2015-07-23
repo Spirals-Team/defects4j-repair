@@ -1,35 +1,44 @@
-export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";cp -r /home/tdurieux/projects/math/math_46 /tmp/math_46_Kali;cd /tmp/math_46_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
-/home/tdurieux/results/Math/46/Kali/result
-cd /tmp/math_46_Kali;time java -cp /home/tdurieux/astor/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.math.complex.ComplexTest:org.apache.commons.math.complex.ComplexTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;rm -rf /tmp/math_46_Kali;
+export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/math/math_46 /tmp/math_46_Kali;cd /tmp/math_46_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
+/home/tdurieux/defects4j-repair/src/python/core/../../../results/Math/46/Kali/result
+cd /tmp/math_46_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.math.complex.ComplexTest:org.apache.commons.math.complex.ComplexTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
+
+Node: `hostname`
+";echo "
+Date: `date`
+";rm -rf /tmp/math_46_Kali;
  NOT Found solution
+
 Number solutions:0
+
 All variants:
-Time Evolution(ms): 22830
+f 4.0, [Variant id: 1, #gens: 39, #ops: 0, parent:-]
 
 ----stats: 
 
 spaces: [0]: []
-time val1 [26]: [441, 436, 439, 438, 435, 432, 433, 435, 436, 438, 435, 436, 435, 437, 436, 435, 436, 434, 435, 436, 436, 435, 434, 436, 436, 436]
+time val1 [97]: [382, 377, 388, 376, 377, 382, 377, 379, 376, 375, 376, 380, 375, 376, 385, 373, 382, 381, 375, 375, 371, 377, 375, 375, 378, 377, 375, 376, 396, 397, 395, 394, 377, 396, 377, 395, 380, 375, 396, 384, 386, 378, 375, 375, 375, 375, 377, 375, 377, 376, 376, 375, 374, 377, 375, 376, 394, 375, 380, 375, 376, 377, 376, 376, 396, 376, 395, 377, 376, 374, 382, 377, 376, 376, 378, 376, 378, 375, 376, 376, 376, 378, 394, 377, 394, 377, 376, 377, 373, 375, 374, 371, 375, 374, 374, 375, 374]
 time val2 [0]: []
-#gen: 40
+#gen: 0
 #patches: 0
-#RightCompilation: 25
+#RightCompilation: 96
 #WrongCompilation: 14
-#FailingTestCaseExecution: 26
+#FailingTestCaseExecution: 97
 #RegressionTestExecution: 0
-#TestcasesExecutedval1: 6032
+#TestcasesExecutedval1: 22504
 #TestcasesExecutedval2: 0
 #FailingTestCase: 232
 #RegressionTestCases: 0
-#OfAppliedOp: 39
+#OfAppliedOp: 0
 #NotAppliedOp: 0
 #InmutatedGen: 0
 #unfinishValidation: 0
-Time Total(ms): 223948
+#ing []
+Time Total(ms): 234227
 
 
+Node: graphene-105.nancy.grid5000.fr
 
-Node: griffon-63.nancy.grid5000.fr
 
-Date: 2015-05-08T01:30:08.599468
+Date: Thu Jul 23 00:27:10 CEST 2015
+
 

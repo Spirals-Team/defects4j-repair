@@ -1,3 +1,4 @@
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
 Exception in thread "main" java.lang.NullPointerException
 	at spoon.support.compiler.jdt.JDTTreeBuilder.visit(JDTTreeBuilder.java:2199)
 	at org.eclipse.jdt.internal.compiler.ast.MethodDeclaration.traverse(MethodDeclaration.java:317)
@@ -8,12 +9,12 @@ Exception in thread "main" java.lang.NullPointerException
 	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.buildSources(JDTBasedSpoonCompiler.java:231)
 	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.build(JDTBasedSpoonCompiler.java:507)
 	at fr.inria.astor.core.manipulation.MutationSupporter.buildModel(MutationSupporter.java:86)
-	at fr.inria.astor.core.loop.evolutionary.JGenProg.initModel(JGenProg.java:109)
+	at fr.inria.astor.core.loop.evolutionary.JGenProg.initModel(JGenProg.java:112)
 	at fr.inria.astor.core.loop.evolutionary.JGenProg.initPopulation(JGenProg.java:57)
-	at fr.inria.main.evolution.MainjGenProg.statementMode(MainjGenProg.java:112)
-	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:129)
-	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:171)
+	at fr.inria.main.evolution.MainjGenProg.definePopulation(MainjGenProg.java:127)
+	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:198)
+	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:235)
 
-real	10m33.123s
-user	11m45.236s
-sys	0m3.800s
+real	9m32.344s
+user	10m27.787s
+sys	0m2.252s

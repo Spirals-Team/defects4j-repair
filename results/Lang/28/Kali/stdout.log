@@ -1,35 +1,44 @@
-export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";cp -r /home/tdurieux/projects/lang/lang_28 /tmp/lang_28_Kali;cd /tmp/lang_28_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Lang/lib/* lib/;find . -type f -name "package-info.java" -delete;
-/home/tdurieux/results/Lang/28/Kali/result
-cd /tmp/lang_28_Kali;time java -cp /home/tdurieux/astor/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;rm -rf /tmp/lang_28_Kali;
+export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/lang/lang_28 /tmp/lang_28_Kali;cd /tmp/lang_28_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Lang/lib/* lib/;find . -type f -name "package-info.java" -delete;
+/home/tdurieux/defects4j-repair/src/python/core/../../../results/Lang/28/Kali/result
+cd /tmp/lang_28_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
+
+Node: `hostname`
+";echo "
+Date: `date`
+";rm -rf /tmp/lang_28_Kali;
  NOT Found solution
+
 Number solutions:0
+
 All variants:
-Time Evolution(ms): 61733
+f 1.0, [Variant id: 1, #gens: 28, #ops: 0, parent:-]
 
 ----stats: 
 
 spaces: [0]: []
-time val1 [6]: [181, 190, 189, 191, 190, 60001]
+time val1 [62]: [162, 157, 158, 158, 158, 157, 168, 157, 160, 164, 158, 158, 156, 156, 157, 157, 60002, 160, 156, 156, 156, 159, 157, 160, 156, 58218, 162, 156, 158, 46450, 157, 50645, 162, 157, 166, 157, 158, 156, 161, 159, 156, 155, 157, 156, 156, 157, 166, 157, 161, 155, 157, 157, 158, 158, 157, 160, 157, 157, 157, 158, 158, 157]
 time val2 [0]: []
-#gen: 12
+#gen: 0
 #patches: 0
-#RightCompilation: 5
-#WrongCompilation: 6
-#FailingTestCaseExecution: 6
+#RightCompilation: 61
+#WrongCompilation: 11
+#FailingTestCaseExecution: 62
 #RegressionTestExecution: 0
-#TestcasesExecutedval1: 5
+#TestcasesExecutedval1: 61
 #TestcasesExecutedval2: 0
 #FailingTestCase: 1
 #RegressionTestCases: 0
-#OfAppliedOp: 11
+#OfAppliedOp: 0
 #NotAppliedOp: 0
 #InmutatedGen: 0
 #unfinishValidation: 0
-Time Total(ms): 84946
+#ing []
+Time Total(ms): 249852
 
 
+Node: graphene-21.nancy.grid5000.fr
 
-Node: griffon-33.nancy.grid5000.fr
 
-Date: 2015-05-08T05:37:32.617400
+Date: Thu Jul 23 00:48:40 CEST 2015
+
 

@@ -1,35 +1,44 @@
-export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";cp -r /home/tdurieux/projects/lang/lang_41 /tmp/lang_41_Kali;cd /tmp/lang_41_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Lang/lib/* lib/;find . -type f -name "package-info.java" -delete;
-/home/tdurieux/results/Lang/41/Kali/result
-cd /tmp/lang_41_Kali;time java -cp /home/tdurieux/astor/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.lang.ClassUtilsTest:org.apache.commons.lang.ClassUtilsTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -population 1 -srcjavafolder src/java/ -srctestfolder src/test/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;rm -rf /tmp/lang_41_Kali;
+export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/lang/lang_41 /tmp/lang_41_Kali;cd /tmp/lang_41_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Lang/lib/* lib/;find . -type f -name "package-info.java" -delete;
+/home/tdurieux/defects4j-repair/src/python/core/../../../results/Lang/41/Kali/result
+cd /tmp/lang_41_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.lang.ClassUtilsTest:org.apache.commons.lang.ClassUtilsTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -population 1 -srcjavafolder src/java/ -srctestfolder src/test/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
+
+Node: `hostname`
+";echo "
+Date: `date`
+";rm -rf /tmp/lang_41_Kali;
  NOT Found solution
+
 Number solutions:0
+
 All variants:
-Time Evolution(ms): 4404
+f 2.0, [Variant id: 1, #gens: 14, #ops: 0, parent:-]
 
 ----stats: 
 
 spaces: [0]: []
-time val1 [9]: [258, 250, 249, 257, 251, 249, 253, 250, 250]
+time val1 [33]: [227, 217, 217, 226, 217, 220, 217, 215, 227, 214, 220, 221, 216, 222, 222, 217, 217, 218, 219, 219, 220, 220, 219, 218, 222, 219, 218, 218, 219, 217, 218, 218, 218]
 time val2 [0]: []
-#gen: 15
+#gen: 0
 #patches: 0
-#RightCompilation: 8
+#RightCompilation: 32
 #WrongCompilation: 6
-#FailingTestCaseExecution: 9
+#FailingTestCaseExecution: 33
 #RegressionTestExecution: 0
-#TestcasesExecutedval1: 756
+#TestcasesExecutedval1: 2772
 #TestcasesExecutedval2: 0
 #FailingTestCase: 84
 #RegressionTestCases: 0
-#OfAppliedOp: 14
+#OfAppliedOp: 0
 #NotAppliedOp: 0
 #InmutatedGen: 0
 #unfinishValidation: 0
-Time Total(ms): 26495
+#ing []
+Time Total(ms): 31671
 
 
+Node: graphene-19.nancy.grid5000.fr
 
-Node: griffon-39.nancy.grid5000.fr
 
-Date: 2015-05-08T05:34:42.313986
+Date: Thu Jul 23 00:43:54 CEST 2015
+
 

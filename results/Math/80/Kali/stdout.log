@@ -1,13 +1,53 @@
-export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";cp -r /home/tdurieux/projects/math/math_80 /tmp/math_80_Kali;cd /tmp/math_80_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
-/home/tdurieux/results/Math/80/Kali/result
-cd /tmp/math_80_Kali;time java -cp /home/tdurieux/astor/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.math.linear.EigenDecompositionImplTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;rm -rf /tmp/math_80_Kali;
+export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/math/math_80 /tmp/math_80_Kali;cd /tmp/math_80_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
+/home/tdurieux/defects4j-repair/src/python/core/../../../results/Math/80/Kali/result
+cd /tmp/math_80_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.math.linear.EigenDecompositionImplTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
 
-ProgramVariant 16
+Node: `hostname`
+";echo "
+Date: `date`
+";rm -rf /tmp/math_80_Kali;
+
+warning: ignoring inconsistent parent for CtLiteralImpl (CtIfImpl != CtReturnImpl)(unknown file)
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtLiteralImpl (CtReturnImpl != CtReturnImpl)(unknown file)
+warning: ignoring inconsistent parent for CtLiteralImpl (CtIfImpl != CtReturnImpl)(unknown file)
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtLiteralImpl (CtReturnImpl != CtReturnImpl)(unknown file)
+warning: ignoring inconsistent parent for CtLiteralImpl (CtIfImpl != CtReturnImpl)(unknown file)
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtLiteralImpl (CtReturnImpl != CtReturnImpl)(unknown file)
+warning: ignoring inconsistent parent for CtLiteralImpl (CtIfImpl != CtReturnImpl)(unknown file)
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtLiteralImpl (CtReturnImpl != CtReturnImpl)(unknown file)
+warning: ignoring inconsistent parent for CtLiteralImpl (CtIfImpl != CtReturnImpl)(unknown file)
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtLiteralImpl (CtReturnImpl != CtReturnImpl)(unknown file)
+warning: ignoring inconsistent parent for CtLiteralImpl (CtIfImpl != CtReturnImpl)(unknown file)
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtLiteralImpl (CtReturnImpl != CtReturnImpl)(unknown file)
+warning: ignoring inconsistent parent for CtLiteralImpl (CtIfImpl != CtReturnImpl)(unknown file)
+
+ --SOLUTIONS DESCRIPTION--
+
+ ----
+ProgramVariant 29
  
- operation: 
+operation: INSERT_BEFORE
 location= org.apache.commons.math.linear.EigenDecompositionImpl
- line= 1136
- original statement= for (int i = 0 ; i < j ; i += 4) {
+line= 1135
+original statement= int j = (4 * n) - 1
+fixed statement= "if (true)
+	return false;
+"
+generation= 1
+ 
+ ----
+ProgramVariant 30
+ 
+operation: DELETE
+location= org.apache.commons.math.linear.EigenDecompositionImpl
+line= 1136
+original statement= for (int i = 0 ; i < j ; i += 4) {
 	for (int k = 0 ; k < 4 ; k += step) {
 		final double tmp = work[(i + k)];
 		work[(i + k)] = work[(j - k)];
@@ -15,7 +55,7 @@ location= org.apache.commons.math.linear.EigenDecompositionImpl
 	}
 	j -= 4;
 }
- fix (remove original statement) "for (int i = 0 ; i < j ; i += 4) {
+fixed statement= "for (int i = 0 ; i < j ; i += 4) {
 	for (int k = 0 ; k < 4 ; k += step) {
 		final double tmp = work[(i + k)];
 		work[(i + k)] = work[(j - k)];
@@ -23,49 +63,112 @@ location= org.apache.commons.math.linear.EigenDecompositionImpl
 	}
 	j -= 4;
 }"
- generation= 15
+generation= 1
  
- ----ProgramVariant 17
+ ----
+ProgramVariant 31
  
- operation: 
+operation: INSERT_BEFORE
 location= org.apache.commons.math.linear.EigenDecompositionImpl
- line= 1137
- original statement= for (int k = 0 ; k < 4 ; k += step) {
+line= 1136
+original statement= for (int i = 0 ; i < j ; i += 4) {
+	for (int k = 0 ; k < 4 ; k += step) {
+		final double tmp = work[(i + k)];
+		work[(i + k)] = work[(j - k)];
+		work[(j - k)] = tmp;
+	}
+	j -= 4;
+}
+fixed statement= "if (true)
+	return false;
+"
+generation= 1
+ 
+ ----
+ProgramVariant 32
+ 
+operation: DELETE
+location= org.apache.commons.math.linear.EigenDecompositionImpl
+line= 1137
+original statement= for (int k = 0 ; k < 4 ; k += step) {
 	final double tmp = work[(i + k)];
 	work[(i + k)] = work[(j - k)];
 	work[(j - k)] = tmp;
 }
- fix (remove original statement) "for (int k = 0 ; k < 4 ; k += step) {
+fixed statement= "for (int k = 0 ; k < 4 ; k += step) {
 	final double tmp = work[(i + k)];
 	work[(i + k)] = work[(j - k)];
 	work[(j - k)] = tmp;
 }"
- generation= 16
+generation= 1
  
- ----ProgramVariant 19
+ ----
+ProgramVariant 33
  
- operation: 
+operation: INSERT_BEFORE
 location= org.apache.commons.math.linear.EigenDecompositionImpl
- line= 1139
- original statement= work[(i + k)] = work[(j - k)]
- fix (remove original statement) "work[(i + k)] = work[(j - k)]"
- generation= 18
+line= 1137
+original statement= for (int k = 0 ; k < 4 ; k += step) {
+	final double tmp = work[(i + k)];
+	work[(i + k)] = work[(j - k)];
+	work[(j - k)] = tmp;
+}
+fixed statement= "if (true)
+	return false;
+"
+generation= 1
  
- ----ProgramVariant 96
+ ----
+ProgramVariant 35
  
- operation: 
+operation: INSERT_BEFORE
 location= org.apache.commons.math.linear.EigenDecompositionImpl
- line= 840
- original statement= flipIfWarranted(n, 2)
- fix (remove original statement) "flipIfWarranted(n, 2)"
- generation= 95
+line= 1138
+original statement= final double tmp = work[(i + k)]
+fixed statement= "if (true)
+	return false;
+"
+generation= 1
  
- ----ProgramVariant 176
+ ----
+ProgramVariant 36
  
- operation: 
+operation: DELETE
 location= org.apache.commons.math.linear.EigenDecompositionImpl
- line= 1133
- original statement= if ((1.5 * (work[pingPong])) < (work[((4 * (n - 1)) + (pingPong))])) {
+line= 1139
+original statement= work[(i + k)] = work[(j - k)]
+fixed statement= "work[(i + k)] = work[(j - k)]"
+generation= 1
+ 
+ ----
+ProgramVariant 37
+ 
+operation: INSERT_BEFORE
+location= org.apache.commons.math.linear.EigenDecompositionImpl
+line= 1139
+original statement= work[(i + k)] = work[(j - k)]
+fixed statement= "if (true)
+	return false;
+"
+generation= 1
+ 
+ ----
+ProgramVariant 212
+ 
+operation: DELETE
+location= org.apache.commons.math.linear.EigenDecompositionImpl
+line= 840
+original statement= flipIfWarranted(n, 2)
+fixed statement= "flipIfWarranted(n, 2)"
+generation= 1
+ 
+ ----
+ProgramVariant 400
+ 
+operation: DELETE
+location= org.apache.commons.math.linear.EigenDecompositionImpl
+line= 1133
+original statement= if ((1.5 * (work[pingPong])) < (work[((4 * (n - 1)) + (pingPong))])) {
 	int j = (4 * n) - 1;
 	for (int i = 0 ; i < j ; i += 4) {
 		for (int k = 0 ; k < 4 ; k += step) {
@@ -77,7 +180,7 @@ location= org.apache.commons.math.linear.EigenDecompositionImpl
 	}
 	return true;
 } 
- fix (remove original statement) "if ((1.5 * (work[pingPong])) < (work[((4 * (n - 1)) + (pingPong))])) {
+fixed statement= "if ((1.5 * (work[pingPong])) < (work[((4 * (n - 1)) + (pingPong))])) {
 	int j = (4 * n) - 1;
 	for (int i = 0 ; i < j ; i += 4) {
 		for (int k = 0 ; k < 4 ; k += step) {
@@ -89,35 +192,90 @@ location= org.apache.commons.math.linear.EigenDecompositionImpl
 	}
 	return true;
 } "
- generation= 175
+generation= 1
  
  ----
-Time Evolution(ms): 1366346
+ProgramVariant 401
+ 
+operation: INSERT_BEFORE
+location= org.apache.commons.math.linear.EigenDecompositionImpl
+line= 1133
+original statement= if ((1.5 * (work[pingPong])) < (work[((4 * (n - 1)) + (pingPong))])) {
+	int j = (4 * n) - 1;
+	for (int i = 0 ; i < j ; i += 4) {
+		for (int k = 0 ; k < 4 ; k += step) {
+			final double tmp = work[(i + k)];
+			work[(i + k)] = work[(j - k)];
+			work[(j - k)] = tmp;
+		}
+		j -= 4;
+	}
+	return true;
+} 
+fixed statement= "if (true)
+	return false;
+"
+generation= 1
+ 
+ ----
+ProgramVariant 403
+ 
+operation: REPLACE
+location= org.apache.commons.math.linear.EigenDecompositionImpl
+line= 1133
+original statement= if ((1.5 * (work[pingPong])) < (work[((4 * (n - 1)) + (pingPong))])) {
+	int j = (4 * n) - 1;
+	for (int i = 0 ; i < j ; i += 4) {
+		for (int k = 0 ; k < 4 ; k += step) {
+			final double tmp = work[(i + k)];
+			work[(i + k)] = work[(j - k)];
+			work[(j - k)] = tmp;
+		}
+		j -= 4;
+	}
+	return true;
+} 
+fixed statement= "if (false) {
+	int j = (4 * n) - 1;
+	for (int i = 0 ; i < j ; i += 4) {
+		for (int k = 0 ; k < 4 ; k += step) {
+			final double tmp = work[(i + k)];
+			work[(i + k)] = work[(j - k)];
+			work[(j - k)] = tmp;
+		}
+		j -= 4;
+	}
+	return true;
+} "
+generation= 1
+ 
 
 ----stats: 
 
 spaces: [0]: []
-time val1 [326]: [379, 376, 377, 375, 366, 374, 375, 380, 377, 375, 366, 382, 367, 380, 363, 364, 363, 377, 377, 377, 380, 377, 376, 377, 374, 377, 375, 377, 375, 382, 379, 374, 379, 60002, 372, 367, 378, 378, 377, 376, 378, 378, 377, 375, 378, 379, 373, 379, 380, 60001, 379, 374, 365, 378, 367, 368, 378, 378, 377, 377, 377, 379, 378, 366, 369, 369, 367, 369, 377, 349, 347, 374, 364, 337, 379, 381, 375, 373, 374, 376, 373, 346, 378, 365, 60001, 377, 376, 381, 376, 376, 377, 376, 375, 379, 365, 60001, 381, 370, 412, 400, 377, 349, 376, 377, 379, 366, 349, 345, 338, 347, 377, 368, 376, 377, 409, 367, 368, 60001, 60001, 369, 60001, 60001, 378, 365, 368, 367, 60001, 60001, 378, 380, 513, 411, 526, 390, 60002, 374, 60001, 386, 365, 407, 365, 405, 363, 382, 379, 375, 384, 380, 377, 378, 384, 379, 384, 381, 377, 382, 383, 376, 363, 357, 365, 368, 360, 351, 336, 379, 349, 378, 60001, 366, 354, 439, 440, 379, 380, 60001, 369, 402, 368, 542, 60001, 374, 60001, 369, 404, 370, 404, 368, 399, 370, 372, 369, 374, 385, 373, 388, 368, 368, 369, 368, 367, 368, 367, 370, 370, 60001, 401, 367, 367, 363, 367, 363, 367, 367, 370, 366, 409, 424, 420, 394, 370, 373, 366, 368, 370, 368, 372, 370, 367, 369, 367, 368, 370, 368, 367, 366, 366, 365, 366, 365, 367, 372, 373, 368, 366, 365, 370, 367, 367, 367, 368, 367, 367, 367, 367, 390, 366, 366, 369, 368, 367, 366, 367, 368, 368, 366, 367, 366, 366, 368, 369, 368, 366, 60001, 369, 360, 367, 369, 365, 368, 369, 366, 368, 383, 367, 382, 368, 345, 372, 349, 367, 367, 367, 360, 368, 366, 367, 368, 367, 369, 366, 347, 351, 395, 368, 368, 384, 346, 367, 368, 367, 369, 367, 401, 401, 401, 400, 403, 399, 367, 400, 368, 401, 399, 399, 368]
-time val2 [5]: [11238, 10413, 10540, 10486, 10512]
-#gen: 489
-#patches: 5
-#RightCompilation: 325
+time val1 [902]: [333, 334, 342, 346, 333, 333, 330, 330, 335, 330, 330, 348, 332, 331, 329, 329, 329, 329, 333, 330, 336, 329, 330, 344, 333, 330, 332, 319, 321, 328, 318, 319, 321, 318, 318, 337, 329, 330, 329, 329, 331, 329, 330, 330, 328, 333, 330, 331, 329, 329, 330, 329, 329, 329, 329, 330, 341, 330, 330, 329, 333, 330, 319, 331, 318, 330, 318, 60002, 322, 309, 319, 336, 311, 335, 317, 320, 331, 319, 331, 321, 328, 330, 331, 329, 328, 329, 328, 329, 330, 329, 330, 332, 327, 329, 330, 329, 335, 328, 330, 331, 331, 329, 320, 330, 329, 329, 329, 328, 334, 330, 330, 329, 327, 331, 329, 330, 331, 330, 330, 329, 333, 332, 329, 60001, 302, 331, 329, 331, 308, 331, 309, 330, 331, 330, 330, 331, 330, 323, 321, 321, 320, 329, 340, 337, 333, 331, 331, 330, 335, 329, 335, 328, 335, 335, 337, 329, 335, 332, 336, 335, 337, 320, 322, 320, 320, 330, 329, 320, 322, 321, 323, 321, 320, 320, 322, 331, 333, 292, 297, 293, 294, 294, 294, 295, 328, 292, 292, 330, 318, 293, 308, 292, 329, 300, 332, 303, 330, 292, 328, 302, 330, 303, 330, 293, 330, 293, 304, 293, 292, 292, 332, 292, 329, 301, 302, 293, 294, 303, 60001, 295, 334, 301, 330, 306, 293, 328, 333, 304, 330, 338, 330, 305, 333, 303, 329, 306, 328, 305, 330, 304, 329, 293, 328, 304, 304, 60002, 305, 328, 292, 321, 328, 321, 304, 358, 304, 344, 304, 334, 343, 328, 293, 295, 293, 293, 347, 315, 331, 294, 302, 329, 329, 294, 321, 293, 305, 304, 304, 294, 293, 304, 305, 305, 344, 293, 303, 293, 333, 296, 322, 336, 334, 324, 330, 306, 306, 358, 304, 322, 303, 321, 329, 323, 331, 305, 60002, 308, 60002, 308, 302, 356, 321, 305, 60002, 309, 60002, 330, 330, 319, 323, 330, 321, 320, 330, 321, 344, 322, 324, 321, 60002, 329, 60001, 309, 305, 331, 305, 331, 330, 341, 295, 328, 329, 444, 302, 60001, 460, 364, 305, 453, 294, 342, 295, 60002, 307, 306, 472, 330, 305, 60002, 307, 338, 304, 295, 319, 318, 316, 320, 330, 302, 303, 304, 304, 362, 304, 320, 304, 360, 303, 304, 304, 305, 304, 296, 303, 303, 328, 303, 304, 334, 303, 330, 336, 337, 294, 303, 323, 302, 329, 319, 334, 303, 336, 301, 331, 302, 329, 303, 326, 293, 333, 303, 304, 337, 294, 333, 334, 338, 303, 304, 332, 295, 336, 332, 325, 296, 353, 308, 333, 304, 304, 320, 320, 321, 320, 314, 328, 333, 320, 333, 361, 321, 322, 320, 292, 317, 304, 293, 294, 294, 292, 293, 293, 294, 332, 304, 293, 305, 330, 343, 343, 60002, 346, 330, 344, 309, 452, 353, 353, 388, 354, 375, 351, 333, 478, 335, 470, 468, 470, 60002, 472, 322, 469, 352, 471, 320, 470, 484, 479, 60002, 366, 335, 361, 60002, 363, 321, 372, 373, 372, 371, 374, 372, 373, 372, 373, 373, 337, 340, 371, 339, 374, 337, 373, 375, 371, 60002, 376, 60002, 383, 60001, 321, 373, 60001, 379, 60002, 382, 60002, 378, 60001, 375, 60002, 359, 429, 373, 428, 473, 473, 375, 473, 60002, 415, 338, 372, 414, 374, 414, 60002, 468, 372, 450, 371, 446, 373, 454, 60002, 448, 373, 455, 377, 440, 346, 372, 441, 373, 453, 377, 467, 373, 468, 373, 463, 60001, 60002, 365, 368, 361, 373, 369, 335, 372, 370, 359, 360, 361, 363, 362, 371, 362, 437, 373, 372, 372, 373, 371, 372, 372, 373, 373, 373, 373, 371, 372, 374, 372, 373, 372, 370, 373, 372, 371, 372, 373, 373, 372, 374, 371, 373, 372, 373, 372, 373, 373, 373, 373, 372, 374, 370, 373, 372, 372, 371, 419, 371, 372, 372, 373, 374, 373, 372, 372, 374, 373, 373, 371, 373, 373, 372, 373, 373, 373, 374, 374, 373, 387, 371, 371, 373, 372, 372, 376, 374, 373, 372, 372, 373, 373, 373, 372, 372, 374, 373, 373, 373, 372, 372, 373, 372, 374, 373, 374, 373, 372, 372, 371, 419, 373, 373, 373, 373, 375, 373, 372, 372, 372, 372, 371, 371, 371, 372, 374, 371, 372, 374, 373, 372, 373, 371, 373, 375, 369, 372, 373, 373, 372, 371, 373, 372, 371, 373, 373, 372, 371, 372, 370, 373, 370, 372, 372, 372, 374, 374, 371, 373, 403, 373, 373, 372, 372, 372, 372, 373, 373, 373, 372, 349, 350, 60002, 352, 374, 348, 349, 350, 351, 349, 371, 349, 349, 60001, 352, 375, 375, 374, 372, 373, 373, 373, 372, 373, 303, 371, 303, 293, 372, 304, 303, 373, 373, 304, 373, 292, 372, 301, 294, 303, 349, 293, 303, 293, 371, 373, 350, 348, 350, 372, 350, 372, 350, 349, 349, 351, 349, 372, 373, 373, 372, 374, 371, 372, 375, 373, 372, 373, 382, 382, 303, 374, 304, 373, 302, 303, 303, 303, 303, 303, 302, 373, 372, 466, 372, 370, 373, 374, 294, 303, 374, 304, 302, 293, 303, 371, 373, 374, 372, 372, 372, 371, 373, 372, 373, 372, 374, 373, 371, 175, 372, 175, 175, 176, 175, 177, 404, 175, 174, 177, 404, 176, 175, 402, 174, 402, 176, 407, 175, 175, 402, 406, 177, 175, 174, 372, 370, 403, 177, 176, 407, 405, 372, 405, 402, 405, 406, 404, 408, 405, 407, 372, 372, 404, 176, 372, 372, 203, 373, 171]
+time val2 [12]: [9407, 9608, 9508, 10058, 9445, 9448, 9551, 9567, 9595, 9297, 9494, 9523]
+#gen: 0
+#patches: 12
+#RightCompilation: 901
 #WrongCompilation: 163
-#FailingTestCaseExecution: 326
-#RegressionTestExecution: 5
-#TestcasesExecutedval1: 5544
-#TestcasesExecutedval2: 9970
+#FailingTestCaseExecution: 902
+#RegressionTestExecution: 12
+#TestcasesExecutedval1: 15660
+#TestcasesExecutedval2: 23928
 #FailingTestCase: 18
 #RegressionTestCases: 1994
-#OfAppliedOp: 488
+#OfAppliedOp: 0
 #NotAppliedOp: 0
 #InmutatedGen: 0
 #unfinishValidation: 0
-Time Total(ms): 1404050
+#ing []
+Time Total(ms): 2496600
 
 
+Node: graphene-101.nancy.grid5000.fr
 
-Node: griffon-56.nancy.grid5000.fr
 
-Date: 2015-05-08T01:45:32.402934
+Date: Thu Jul 23 00:43:02 CEST 2015
+
 

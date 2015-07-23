@@ -1,35 +1,44 @@
-export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";cp -r /home/tdurieux/projects/time/time_16 /tmp/time_16_Kali;cd /tmp/time_16_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Time/lib/* lib/;find . -type f -name "package-info.java" -delete;
-/home/tdurieux/results/Time/16/Kali/result
-cd /tmp/time_16_Kali;time java -cp /home/tdurieux/astor/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.joda.time.format.TestDateTimeFormatter:org.joda.time.format.TestDateTimeFormatter:org.joda.time.format.TestDateTimeFormatter:org.joda.time.format.TestDateTimeFormatter:org.joda.time.format.TestDateTimeFormatter:org.joda.time.format.TestDateTimeFormatter:org.joda.time.format.TestDateTimeFormatter: -package org.joda -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder build/classes/ -bintestfolder build/tests/;rm -rf /tmp/time_16_Kali;
+export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/time/time_16 /tmp/time_16_Kali;cd /tmp/time_16_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Time/lib/* lib/;find . -type f -name "package-info.java" -delete;
+/home/tdurieux/defects4j-repair/src/python/core/../../../results/Time/16/Kali/result
+cd /tmp/time_16_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.joda.time.format.TestDateTimeFormatter:org.joda.time.format.TestDateTimeFormatter:org.joda.time.format.TestDateTimeFormatter:org.joda.time.format.TestDateTimeFormatter:org.joda.time.format.TestDateTimeFormatter:org.joda.time.format.TestDateTimeFormatter:org.joda.time.format.TestDateTimeFormatter: -package org.joda -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder build/classes/ -bintestfolder build/tests/;echo "
+
+Node: `hostname`
+";echo "
+Date: `date`
+";rm -rf /tmp/time_16_Kali;
  NOT Found solution
+
 Number solutions:0
+
 All variants:
-Time Evolution(ms): 43423
+f 49.0, [Variant id: 1, #gens: 77, #ops: 0, parent:-]
 
 ----stats: 
 
 spaces: [0]: []
-time val1 [27]: [596, 597, 601, 599, 594, 598, 598, 599, 820, 597, 600, 600, 593, 594, 602, 614, 501, 598, 590, 562, 508, 496, 496, 601, 600, 596, 599]
+time val1 [156]: [564, 542, 533, 534, 542, 568, 512, 711, 517, 1077, 519, 797, 780, 892, 1118, 1040, 956, 804, 1063, 1076, 808, 547, 602, 860, 1167, 669, 563, 543, 804, 935, 1053, 1060, 663, 1151, 955, 1065, 812, 1027, 543, 838, 682, 1021, 763, 982, 1095, 604, 450, 878, 921, 444, 527, 701, 816, 447, 537, 518, 536, 467, 501, 537, 454, 452, 917, 854, 726, 896, 850, 958, 550, 1097, 711, 539, 580, 824, 814, 1082, 634, 821, 1086, 810, 545, 825, 732, 685, 963, 462, 895, 740, 818, 535, 592, 825, 1030, 793, 1179, 540, 892, 720, 704, 1082, 823, 811, 551, 676, 1073, 810, 593, 817, 811, 535, 653, 736, 873, 967, 451, 874, 640, 806, 814, 1094, 538, 863, 817, 1035, 729, 1050, 849, 812, 1096, 687, 824, 850, 812, 1100, 690, 815, 1124, 974, 826, 1101, 764, 658, 1122, 817, 839, 618, 809, 567, 855, 793, 704, 1107, 547, 541, 861, 868]
 time val2 [0]: []
-#gen: 44
+#gen: 0
 #patches: 0
-#RightCompilation: 26
-#WrongCompilation: 17
-#FailingTestCaseExecution: 27
+#RightCompilation: 155
+#WrongCompilation: 31
+#FailingTestCaseExecution: 156
 #RegressionTestExecution: 0
-#TestcasesExecutedval1: 12096
+#TestcasesExecutedval1: 69888
 #TestcasesExecutedval2: 0
 #FailingTestCase: 448
 #RegressionTestCases: 0
-#OfAppliedOp: 43
+#OfAppliedOp: 0
 #NotAppliedOp: 0
 #InmutatedGen: 0
 #unfinishValidation: 0
-Time Total(ms): 86674
+#ing []
+Time Total(ms): 241241
 
 
+Node: graphite-2.nancy.grid5000.fr
 
-Node: griffon-58.nancy.grid5000.fr
 
-Date: 2015-05-08T00:20:46.964380
+Date: Wed Jul 22 23:47:17 CEST 2015
+
 

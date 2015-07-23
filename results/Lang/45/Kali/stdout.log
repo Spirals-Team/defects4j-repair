@@ -1,35 +1,8 @@
-export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";cp -r /home/tdurieux/projects/lang/lang_45 /tmp/lang_45_Kali;cd /tmp/lang_45_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Lang/lib/* lib/;find . -type f -name "package-info.java" -delete;
-/home/tdurieux/results/Lang/45/Kali/result
-cd /tmp/lang_45_Kali;time java -cp /home/tdurieux/astor/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.lang.WordUtilsTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 3 -maxgen 1000000 -population 1 -srcjavafolder src/java/ -srctestfolder src/test/ -binjavafolder target/classes/ -bintestfolder target/tests/;rm -rf /tmp/lang_45_Kali;
- NOT Found solution
-Number solutions:0
-All variants:
-Time Evolution(ms): 5849
+export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/lang/lang_45 /tmp/lang_45_Kali;cd /tmp/lang_45_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Lang/lib/* lib/;find . -type f -name "package-info.java" -delete;
+/home/tdurieux/defects4j-repair/src/python/core/../../../results/Lang/45/Kali/result
+cd /tmp/lang_45_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.lang.WordUtilsTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 3 -maxgen 1000000 -population 1 -srcjavafolder src/java/ -srctestfolder src/test/ -binjavafolder target/classes/ -bintestfolder target/tests/;echo "
 
-----stats: 
-
-spaces: [0]: []
-time val1 [1]: [192]
-time val2 [1]: [9293]
-#gen: 24
-#patches: 0
-#RightCompilation: 0
-#WrongCompilation: 23
-#FailingTestCaseExecution: 1
-#RegressionTestExecution: 1
-#TestcasesExecutedval1: 13
-#TestcasesExecutedval2: 1796
-#FailingTestCase: 13
-#RegressionTestCases: 1796
-#OfAppliedOp: 23
-#NotAppliedOp: 0
-#InmutatedGen: 0
-#unfinishValidation: 0
-Time Total(ms): 47965
-
-
-
-Node: griffon-30.nancy.grid5000.fr
-
-Date: 2015-05-08T05:34:21.897228
-
+Node: `hostname`
+";echo "
+Date: `date`
+";rm -rf /tmp/lang_45_Kali;

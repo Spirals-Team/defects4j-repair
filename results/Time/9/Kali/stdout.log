@@ -1,35 +1,44 @@
-export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";cp -r /home/tdurieux/projects/time/time_9 /tmp/time_9_Kali;cd /tmp/time_9_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Time/lib/* lib/;find . -type f -name "package-info.java" -delete;
-/home/tdurieux/results/Time/9/Kali/result
-cd /tmp/time_9_Kali;time java -cp /home/tdurieux/astor/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.joda.time.TestDateTimeZone: -package org.joda -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;rm -rf /tmp/time_9_Kali;
+export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/time/time_9 /tmp/time_9_Kali;cd /tmp/time_9_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Time/lib/* lib/;find . -type f -name "package-info.java" -delete;
+/home/tdurieux/defects4j-repair/src/python/core/../../../results/Time/9/Kali/result
+cd /tmp/time_9_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.joda.time.TestDateTimeZone: -package org.joda -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
+
+Node: `hostname`
+";echo "
+Date: `date`
+";rm -rf /tmp/time_9_Kali;
  NOT Found solution
+
 Number solutions:0
+
 All variants:
-Time Evolution(ms): 3377
+f 1.0, [Variant id: 1, #gens: 6, #ops: 0, parent:-]
 
 ----stats: 
 
 spaces: [0]: []
-time val1 [4]: [433, 441, 440, 442]
+time val1 [12]: [534, 540, 735, 618, 845, 872, 877, 797, 727, 720, 792, 785]
 time val2 [0]: []
-#gen: 6
+#gen: 0
 #patches: 0
-#RightCompilation: 3
-#WrongCompilation: 2
-#FailingTestCaseExecution: 4
+#RightCompilation: 11
+#WrongCompilation: 3
+#FailingTestCaseExecution: 12
 #RegressionTestExecution: 0
-#TestcasesExecutedval1: 176
+#TestcasesExecutedval1: 528
 #TestcasesExecutedval2: 0
 #FailingTestCase: 44
 #RegressionTestCases: 0
-#OfAppliedOp: 5
+#OfAppliedOp: 0
 #NotAppliedOp: 0
 #InmutatedGen: 0
 #unfinishValidation: 0
-Time Total(ms): 46671
+#ing []
+Time Total(ms): 60980
 
 
+Node: graphite-3.nancy.grid5000.fr
 
-Node: griffon-35.nancy.grid5000.fr
 
-Date: 2015-05-08T00:20:12.985736
+Date: Wed Jul 22 23:48:04 CEST 2015
+
 

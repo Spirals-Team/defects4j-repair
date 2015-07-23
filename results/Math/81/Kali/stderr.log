@@ -1,4 +1,12 @@
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
+java.lang.IllegalStateException: Undo: Not valid fix position
+	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.remove(CtStatementTransformator.java:66)
+	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.revert(CtStatementTransformator.java:40)
+	at fr.inria.astor.core.loop.evolutionary.JGenProg.undoOperationToSpoonElement(JGenProg.java:329)
+	at fr.inria.astor.core.loop.evolutionary.JKali.startEvolution(JKali.java:71)
+	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:201)
+	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:235)
 
-real	21m59.354s
-user	24m27.504s
-sys	0m14.485s
+real	41m5.522s
+user	46m23.698s
+sys	0m22.249s

@@ -1,35 +1,44 @@
-export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";cp -r /home/tdurieux/projects/math/math_67 /tmp/math_67_Kali;cd /tmp/math_67_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
-/home/tdurieux/results/Math/67/Kali/result
-cd /tmp/math_67_Kali;time java -cp /home/tdurieux/astor/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.math.optimization.MultiStartUnivariateRealOptimizerTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;rm -rf /tmp/math_67_Kali;
+export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/math/math_67 /tmp/math_67_Kali;cd /tmp/math_67_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
+/home/tdurieux/defects4j-repair/src/python/core/../../../results/Math/67/Kali/result
+cd /tmp/math_67_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.math.optimization.MultiStartUnivariateRealOptimizerTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
+
+Node: `hostname`
+";echo "
+Date: `date`
+";rm -rf /tmp/math_67_Kali;
  NOT Found solution
+
 Number solutions:0
+
 All variants:
-Time Evolution(ms): 720931
+f 1.0, [Variant id: 1, #gens: 128, #ops: 0, parent:-]
 
 ----stats: 
 
 spaces: [0]: []
-time val1 [89]: [194, 195, 193, 181, 190, 194, 195, 193, 60001, 195, 194, 195, 193, 200, 193, 192, 191, 191, 216, 183, 192, 196, 189, 191, 193, 192, 193, 192, 196, 194, 192, 192, 192, 194, 191, 193, 193, 193, 192, 60001, 194, 192, 195, 191, 191, 199, 192, 193, 195, 190, 190, 198, 192, 197, 197, 190, 60001, 60001, 60001, 60001, 196, 60001, 60001, 195, 193, 194, 191, 192, 193, 60001, 195, 60001, 60001, 197, 192, 191, 194, 190, 212, 39301, 194, 192, 193, 192, 210, 193, 218, 192, 193]
+time val1 [253]: [178, 174, 170, 174, 170, 171, 176, 170, 173, 160, 165, 169, 169, 179, 184, 170, 170, 171, 170, 170, 176, 177, 60002, 177, 60001, 173, 178, 170, 170, 171, 173, 170, 172, 174, 170, 173, 171, 173, 170, 172, 171, 170, 172, 170, 171, 194, 197, 160, 161, 190, 160, 176, 169, 190, 169, 169, 186, 170, 188, 170, 170, 172, 169, 169, 169, 169, 169, 170, 173, 169, 169, 168, 171, 179, 170, 167, 177, 170, 181, 178, 179, 173, 171, 169, 173, 171, 169, 172, 171, 174, 170, 172, 175, 168, 170, 170, 170, 170, 169, 170, 188, 170, 170, 171, 169, 187, 171, 171, 60001, 201, 183, 195, 179, 196, 205, 197, 211, 207, 198, 196, 195, 201, 184, 205, 179, 182, 210, 195, 198, 178, 210, 197, 206, 211, 190, 206, 60013, 184, 206, 196, 204, 210, 187, 170, 189, 168, 170, 171, 188, 170, 187, 169, 188, 170, 187, 169, 189, 171, 170, 174, 187, 171, 188, 170, 186, 170, 189, 60001, 192, 60002, 173, 60001, 192, 60002, 191, 60002, 200, 195, 180, 196, 180, 179, 60006, 191, 172, 172, 60001, 189, 170, 171, 177, 187, 172, 188, 169, 188, 170, 186, 170, 186, 172, 186, 60002, 198, 181, 199, 60001, 200, 60001, 60001, 60002, 199, 182, 207, 180, 179, 182, 196, 180, 206, 179, 197, 179, 196, 195, 197, 33276, 170, 172, 188, 170, 187, 170, 188, 175, 187, 187, 187, 169, 169, 193, 195, 171, 172, 193, 170, 168, 171, 169, 171, 170, 170, 171]
 time val2 [0]: []
-#gen: 129
+#gen: 0
 #patches: 0
-#RightCompilation: 88
+#RightCompilation: 252
 #WrongCompilation: 40
-#FailingTestCaseExecution: 89
+#FailingTestCaseExecution: 253
 #RegressionTestExecution: 0
-#TestcasesExecutedval1: 156
+#TestcasesExecutedval1: 474
 #TestcasesExecutedval2: 0
 #FailingTestCase: 2
 #RegressionTestCases: 0
-#OfAppliedOp: 128
+#OfAppliedOp: 0
 #NotAppliedOp: 0
 #InmutatedGen: 0
 #unfinishValidation: 0
-Time Total(ms): 758670
+#ing []
+Time Total(ms): 1085834
 
 
+Node: graphene-10.nancy.grid5000.fr
 
-Node: griffon-13.nancy.grid5000.fr
 
-Date: 2015-05-08T01:36:00.424177
+Date: Thu Jul 23 00:23:23 CEST 2015
+
 

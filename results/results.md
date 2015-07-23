@@ -1,311 +1,302 @@
 # Summary
 
-BugId             | NopolPC | NopolC | Genprog | Kali | Total
------------------ | ------- | ------ | ------- | ---- | ------
-[L44](#lang-44)   | Yes     | No     | No      | No   | 1
-[L46](#lang-46)   | Yes     | No     | No      | No   | 1
-[L51](#lang-51)   | No      | Yes    | No      | No   | 1
-[L55](#lang-55)   | Yes     | No     | No      | No   | 1
-[L58](#lang-58)   | Yes     | Yes    | No      | No   | 2
-[C5](#chart-5)    | No      | Yes    | No      | No   | 1
-[C9](#chart-9)    | Yes     | Yes    | No      | No   | 2
-[C13](#chart-13)  | Yes     | No     | No      | No   | 1
-[C17](#chart-17)  | Yes     | Yes    | No      | No   | 2
-[C21](#chart-21)  | Yes     | No     | No      | No   | 1
-[C25](#chart-25)  | Yes     | Yes    | No      | No   | 2
-[M2](#math-2)     | No      | No     | Yes     | Yes  | 2
-[M8](#math-8)     | No      | No     | Yes     | Yes  | 2
-[M32](#math-32)   | Yes     | No     | No      | No   | 1
-[M33](#math-33)   | Yes     | Yes    | No      | No   | 2
-[M40](#math-40)   | No      | Yes    | Yes     | No   | 2
-[M41](#math-41)   | Yes     | Yes    | No      | No   | 2
-[M42](#math-42)   | Yes     | No     | No      | No   | 1
-[M44](#math-44)   | No      | No     | Yes     | No   | 1
-[M49](#math-49)   | Yes     | No     | Yes     | Yes  | 3
-[M50](#math-50)   | Yes     | Yes    | Yes     | Yes  | 4
-[M57](#math-57)   | No      | Yes    | No      | No   | 1
-[M58](#math-58)   | No      | Yes    | No      | No   | 1
-[M64](#math-64)   | No      | No     | Yes     | No   | 1
-[M69](#math-69)   | Yes     | No     | No      | No   | 1
-[M70](#math-70)   | No      | No     | Yes     | No   | 1
-[M73](#math-73)   | No      | Yes    | Yes     | No   | 2
-[M78](#math-78)   | Yes     | No     | Yes     | Yes  | 3
-[M79](#math-79)   | Yes     | No     | No      | No   | 1
-[M80](#math-80)   | Yes     | No     | Yes     | Yes  | 3
-[M81](#math-81)   | Yes     | Yes    | Yes     | Yes  | 4
-[M82](#math-82)   | Yes     | No     | Yes     | Yes  | 3
-[M84](#math-84)   | No      | No     | Yes     | No   | 1
-[M85](#math-85)   | No      | Yes    | Yes     | Yes  | 3
-[M87](#math-87)   | Yes     | Yes    | No      | No   | 2
-[M88](#math-88)   | Yes     | No     | No      | No   | 1
-[M95](#math-95)   | No      | No     | Yes     | No   | 1
-[M97](#math-97)   | Yes     | Yes    | No      | No   | 2
-[M99](#math-99)   | Yes     | Yes    | No      | No   | 2
-[M104](#math-104) | No      | Yes    | No      | No   | 1
-[M105](#math-105) | Yes     | No     | No      | No   | 1
-Total             | 26 (11%) | 19 (8%) | 16 (7%) | 9 (4%) | 70
+BugId             | NopolPC | NopolC | BrutpolC | BrutpolPC | Genprog | Kali | Total
+----------------- | ------- | ------ | -------- | --------- | ------- | ---- | ------
+[L44](#lang-44)   | Yes     | No     |          |           | No      | No   | 1
+[L46](#lang-46)   | Yes     | No     |          |           | No      | No   | 1
+[L51](#lang-51)   | No      | Yes    |          |           | No      | No   | 1
+[L55](#lang-55)   | Yes     | No     |          |           | No      | No   | 1
+[L58](#lang-58)   | Yes     | Yes    |          |           | No      | No   | 2
+[C5](#chart-5)    | No      | Yes    |          |           | No      | No   | 1
+[C9](#chart-9)    | Yes     | Yes    |          |           | No      | No   | 2
+[C13](#chart-13)  | Yes     | No     |          |           | No      | No   | 1
+[C17](#chart-17)  | Yes     | Yes    |          |           | No      | No   | 2
+[C21](#chart-21)  | Yes     | No     |          |           | No      | No   | 1
+[C25](#chart-25)  | Yes     | Yes    |          |           | No      | No   | 2
+[M2](#math-2)     | No      | No     |          |           | Yes     | Yes  | 2
+[M8](#math-8)     | No      | No     |          |           | Yes     | Yes  | 2
+[M32](#math-32)   | Yes     | No     |          |           | No      | No   | 1
+[M33](#math-33)   | Yes     | Yes    |          |           | No      | No   | 2
+[M40](#math-40)   | No      | Yes    |          |           | Yes     | Yes  | 3
+[M41](#math-41)   | Yes     | Yes    |          |           | No      | No   | 2
+[M42](#math-42)   | Yes     | No     |          |           | No      | No   | 1
+[M44](#math-44)   | No      | No     |          |           | Yes     | No   | 1
+[M49](#math-49)   | Yes     | No     |          |           | Yes     | Yes  | 3
+[M50](#math-50)   | Yes     | Yes    |          |           | Yes     | Yes  | 4
+[M57](#math-57)   | No      | Yes    |          |           | No      | No   | 1
+[M58](#math-58)   | No      | Yes    |          |           | No      | No   | 1
+[M64](#math-64)   | No      | No     |          |           | Yes     | No   | 1
+[M69](#math-69)   | Yes     | No     |          |           | No      | No   | 1
+[M70](#math-70)   | No      | No     |          |           | Yes     | No   | 1
+[M73](#math-73)   | No      | Yes    |          |           | Yes     | No   | 2
+[M78](#math-78)   | Yes     | No     |          |           | Yes     | Yes  | 3
+[M79](#math-79)   | Yes     | No     |          |           | No      | No   | 1
+[M80](#math-80)   | Yes     | No     |          |           | Yes     | Yes  | 3
+[M81](#math-81)   | Yes     | Yes    |          |           | Yes     | Yes  | 4
+[M82](#math-82)   | Yes     | No     |          |           | Yes     | Yes  | 3
+[M84](#math-84)   | No      | No     |          |           | Yes     | No   | 1
+[M85](#math-85)   | No      | Yes    |          |           | Yes     | Yes  | 3
+[M87](#math-87)   | Yes     | Yes    |          |           | No      | No   | 2
+[M88](#math-88)   | Yes     | No     |          |           | No      | No   | 1
+[M95](#math-95)   | No      | No     |          |           | Yes     | Yes  | 2
+[M97](#math-97)   | Yes     | Yes    |          |           | No      | No   | 2
+[M99](#math-99)   | Yes     | Yes    |          |           | No      | No   | 2
+[M104](#math-104) | No      | Yes    |          |           | No      | No   | 1
+[M105](#math-105) | Yes     | No     |          |           | No      | No   | 1
+Total             | 26 (11%) | 19 (8%) | 0        | 0         | 16 (7%) | 11 (4%) | 72
 Fixed bugs: 41/224 (18%)
 
-Nb bugs ends with an execution error: 29
+Nb bugs ends with an execution error: 27
 
 Nb bugs ends with an empty log: 0
 
-Nb bugs ends with the Grid5000 timeout: 209
+Nb bugs ends with the Grid5000 timeout: 211
 
-Total execution time: 17 days, 7:48:55.248000
+Total execution time: 17 days, 13:54:22.659000
 # Complete data
 
-BugId             | NopolPC | NopolC | Genprog | Kali | Total
------------------ | ------- | ------ | ------- | ---- | ------
-[L1](#lang-1)     | No      | No     | TIMEOUT | No   | 0
-[L2](#lang-2)     | No      | No     | TIMEOUT | No   | 0
-[L3](#lang-3)     | No      | No     | TIMEOUT | No   | 0
-[L4](#lang-4)     | No      | No     | TIMEOUT | No   | 0
-[L5](#lang-5)     | No      | No     | TIMEOUT | No   | 0
-[L6](#lang-6)     | No      | No     | TIMEOUT | No   | 0
-[L7](#lang-7)     | TIMEOUT | TIMEOUT | TIMEOUT | No   | 0
-[L8](#lang-8)     | TIMEOUT | TIMEOUT | TIMEOUT | No   | 0
-[L9](#lang-9)     | TIMEOUT | TIMEOUT | TIMEOUT | No   | 0
-[L10](#lang-10)   | TIMEOUT | TIMEOUT | TIMEOUT | No   | 0
-[L11](#lang-11)   | TIMEOUT | TIMEOUT | TIMEOUT | No   | 0
-[L12](#lang-12)   | No      | No     | TIMEOUT | No   | 0
-[L13](#lang-13)   | No      | No     | TIMEOUT | No   | 0
-[L14](#lang-14)   | No      | No     | TIMEOUT | No   | 0
-[L15](#lang-15)   | No      | No     | TIMEOUT | No   | 0
-[L16](#lang-16)   | No      | No     | TIMEOUT | No   | 0
-[L17](#lang-17)   | No      | No     | TIMEOUT | No   | 0
-[L18](#lang-18)   | TIMEOUT | TIMEOUT | TIMEOUT | No   | 0
-[L19](#lang-19)   | No      | No     | TIMEOUT | No   | 0
-[L20](#lang-20)   | No      | No     | No      | No   | 0
-[L21](#lang-21)   | No      | No     | No      | No   | 0
-[L22](#lang-22)   | TIMEOUT | TIMEOUT | No      | No   | 0
-[L23](#lang-23)   | TIMEOUT | ERROR  | No      | No   | 0
-[L24](#lang-24)   | TIMEOUT | No     | No      | No   | 0
-[L25](#lang-25)   | No      | No     | No      | No   | 0
-[L26](#lang-26)   | TIMEOUT | TIMEOUT | No      | No   | 0
-[L27](#lang-27)   | No      | No     | No      | No   | 0
-[L28](#lang-28)   | No      | No     | No      | No   | 0
-[L29](#lang-29)   | No      | No     | No      | No   | 0
-[L30](#lang-30)   | No      | No     | No      | No   | 0
-[L31](#lang-31)   | No      | No     | No      | No   | 0
-[L32](#lang-32)   | No      | No     | No      | No   | 0
-[L33](#lang-33)   | No      | No     | No      | No   | 0
-[L34](#lang-34)   | TIMEOUT | TIMEOUT | No      | No   | 0
-[L35](#lang-35)   | No      | No     | No      | No   | 0
-[L36](#lang-36)   | No      | No     | No      | No   | 0
-[L37](#lang-37)   | No      | No     | No      | No   | 0
-[L38](#lang-38)   | TIMEOUT | TIMEOUT | No      | No   | 0
-[L39](#lang-39)   | TIMEOUT | TIMEOUT | No      | No   | 0
-[L40](#lang-40)   | No      | No     | No      | No   | 0
-[L41](#lang-41)   | No      | No     | No      | No   | 0
-[L42](#lang-42)   | No      | No     | No      | No   | 0
-[L43](#lang-43)   | TIMEOUT | TIMEOUT | No      | No   | 0
-[L44](#lang-44)   | Yes     | TIMEOUT | No      | No   | 1
-[L45](#lang-45)   | No      | No     | No      | No   | 0
-[L46](#lang-46)   | Yes     | No     | No      | No   | 1
-[L47](#lang-47)   | No      | No     | No      | No   | 0
-[L48](#lang-48)   | TIMEOUT | TIMEOUT | No      | No   | 0
-[L49](#lang-49)   | TIMEOUT | TIMEOUT | No      | No   | 0
-[L50](#lang-50)   | TIMEOUT | TIMEOUT | No      | No   | 0
-[L51](#lang-51)   | No      | Yes    | No      | No   | 1
-[L52](#lang-52)   | No      | No     | No      | No   | 0
-[L53](#lang-53)   | TIMEOUT | TIMEOUT | No      | No   | 0
-[L54](#lang-54)   | No      | No     | No      | No   | 0
-[L55](#lang-55)   | Yes     | No     | No      | No   | 1
-[L56](#lang-56)   | No      | No     | No      | No   | 0
-[L57](#lang-57)   | No      | No     | No      | No   | 0
-[L58](#lang-58)   | Yes     | Yes    | No      | No   | 2
-[L59](#lang-59)   | No      | No     | No      | No   | 0
-[L60](#lang-60)   | No      | No     | No      | No   | 0
-[L61](#lang-61)   | No      | No     | No      | No   | 0
-[L62](#lang-62)   | No      | No     | No      | No   | 0
-[L63](#lang-63)   | ERROR   | No     | No      | No   | 0
-[L64](#lang-64)   | No      | No     | No      | No   | 0
-[L65](#lang-65)   | No      | No     | No      | No   | 0
-[C1](#chart-1)    | No      | No     | TIMEOUT | No   | 0
-[C2](#chart-2)    | No      | No     | TIMEOUT | No   | 0
-[C3](#chart-3)    | No      | TIMEOUT | TIMEOUT | No   | 0
-[C4](#chart-4)    | No      | TIMEOUT | TIMEOUT | No   | 0
-[C5](#chart-5)    | No      | Yes    | TIMEOUT | No   | 1
-[C6](#chart-6)    | TIMEOUT | No     | TIMEOUT | No   | 0
-[C7](#chart-7)    | No      | No     | TIMEOUT | No   | 0
-[C8](#chart-8)    | ERROR   | ERROR  | ERROR   | ERROR | 0
-[C9](#chart-9)    | Yes     | Yes    | TIMEOUT | No   | 2
-[C10](#chart-10)  | No      | No     | TIMEOUT | No   | 0
-[C11](#chart-11)  | No      | No     | TIMEOUT | No   | 0
-[C12](#chart-12)  | No      | No     | TIMEOUT | No   | 0
-[C13](#chart-13)  | Yes     | TIMEOUT | TIMEOUT | No   | 1
-[C14](#chart-14)  | No      | No     | TIMEOUT | No   | 0
-[C15](#chart-15)  | No      | No     | TIMEOUT | No   | 0
-[C16](#chart-16)  | TIMEOUT | TIMEOUT | TIMEOUT | No   | 0
-[C17](#chart-17)  | Yes     | Yes    | TIMEOUT | No   | 2
-[C18](#chart-18)  | No      | No     | TIMEOUT | No   | 0
-[C19](#chart-19)  | No      | No     | TIMEOUT | No   | 0
-[C20](#chart-20)  | No      | No     | TIMEOUT | No   | 0
-[C21](#chart-21)  | Yes     | No     | TIMEOUT | No   | 1
-[C22](#chart-22)  | No      | No     | TIMEOUT | No   | 0
-[C23](#chart-23)  | No      | No     | TIMEOUT | No   | 0
-[C24](#chart-24)  | No      | No     | TIMEOUT | No   | 0
-[C25](#chart-25)  | Yes     | Yes    | TIMEOUT | No   | 2
-[C26](#chart-26)  | TIMEOUT | TIMEOUT | TIMEOUT | No   | 0
-[M1](#math-1)     | No      | No     | No      | No   | 0
-[M2](#math-2)     | TIMEOUT | TIMEOUT | Yes     | Yes  | 2
-[M3](#math-3)     | No      | No     | No      | No   | 0
-[M4](#math-4)     | TIMEOUT | TIMEOUT | No      | No   | 0
-[M5](#math-5)     | No      | No     | No      | No   | 0
-[M6](#math-6)     | TIMEOUT | TIMEOUT | ERROR   | ERROR | 0
-[M7](#math-7)     | TIMEOUT | TIMEOUT | No      | No   | 0
-[M8](#math-8)     | No      | TIMEOUT | Yes     | Yes  | 2
-[M9](#math-9)     | No      | No     | No      | No   | 0
-[M10](#math-10)   | TIMEOUT | TIMEOUT | No      | No   | 0
-[M11](#math-11)   | No      | TIMEOUT | No      | No   | 0
-[M12](#math-12)   | TIMEOUT | TIMEOUT | No      | No   | 0
-[M13](#math-13)   | No      | No     | No      | No   | 0
-[M14](#math-14)   | No      | No     | No      | No   | 0
-[M15](#math-15)   | TIMEOUT | TIMEOUT | No      | No   | 0
-[M16](#math-16)   | TIMEOUT | TIMEOUT | No      | No   | 0
-[M17](#math-17)   | TIMEOUT | TIMEOUT | No      | No   | 0
-[M18](#math-18)   | TIMEOUT | TIMEOUT | No      | No   | 0
-[M19](#math-19)   | TIMEOUT | TIMEOUT | No      | No   | 0
-[M20](#math-20)   | TIMEOUT | TIMEOUT | ERROR   | ERROR | 0
-[M21](#math-21)   | No      | No     | No      | No   | 0
-[M22](#math-22)   | No      | TIMEOUT | No      | No   | 0
-[M23](#math-23)   | No      | TIMEOUT | No      | No   | 0
-[M24](#math-24)   | TIMEOUT | No     | No      | No   | 0
-[M25](#math-25)   | No      | No     | No      | No   | 0
-[M26](#math-26)   | No      | TIMEOUT | No      | No   | 0
-[M27](#math-27)   | TIMEOUT | TIMEOUT | No      | No   | 0
-[M28](#math-28)   | TIMEOUT | TIMEOUT | No      | No   | 0
-[M29](#math-29)   | TIMEOUT | TIMEOUT | No      | No   | 0
-[M30](#math-30)   | No      | No     | No      | No   | 0
-[M31](#math-31)   | TIMEOUT | TIMEOUT | No      | No   | 0
-[M32](#math-32)   | Yes     | TIMEOUT | No      | No   | 1
-[M33](#math-33)   | Yes     | Yes    | No      | No   | 2
-[M34](#math-34)   | No      | No     | No      | No   | 0
-[M35](#math-35)   | ERROR   | ERROR  | ERROR   | ERROR | 0
-[M36](#math-36)   | No      | No     | No      | No   | 0
-[M37](#math-37)   | ERROR   | TIMEOUT | No      | No   | 0
-[M38](#math-38)   | TIMEOUT | TIMEOUT | No      | No   | 0
-[M39](#math-39)   | TIMEOUT | TIMEOUT | No      | No   | 0
-[M40](#math-40)   | TIMEOUT | Yes    | Yes     | No   | 2
-[M41](#math-41)   | Yes     | Yes    | No      | No   | 2
-[M42](#math-42)   | Yes     | TIMEOUT | No      | No   | 1
-[M43](#math-43)   | No      | TIMEOUT | No      | No   | 0
-[M44](#math-44)   | TIMEOUT | TIMEOUT | Yes     | No   | 1
-[M45](#math-45)   | No      | No     | No      | No   | 0
-[M46](#math-46)   | No      | No     | No      | No   | 0
-[M47](#math-47)   | No      | TIMEOUT | No      | No   | 0
-[M48](#math-48)   | TIMEOUT | TIMEOUT | No      | No   | 0
-[M49](#math-49)   | Yes     | No     | Yes     | Yes  | 3
-[M50](#math-50)   | Yes     | Yes    | Yes     | Yes  | 4
-[M51](#math-51)   | TIMEOUT | TIMEOUT | ERROR   | ERROR | 0
-[M52](#math-52)   | No      | No     | No      | No   | 0
-[M53](#math-53)   | No      | No     | No      | No   | 0
-[M54](#math-54)   | TIMEOUT | TIMEOUT | No      | EMPTY | 0
-[M55](#math-55)   | No      | No     | No      | No   | 0
-[M56](#math-56)   | TIMEOUT | No     | No      | No   | 0
-[M57](#math-57)   | TIMEOUT | Yes    | No      | No   | 1
-[M58](#math-58)   | TIMEOUT | Yes    | No      | No   | 1
-[M59](#math-59)   | TIMEOUT | TIMEOUT | No      | No   | 0
-[M60](#math-60)   | TIMEOUT | ERROR  | No      | No   | 0
-[M61](#math-61)   | No      | No     | No      | No   | 0
-[M62](#math-62)   | No      | No     | No      | No   | 0
-[M63](#math-63)   | No      | No     | No      | No   | 0
-[M64](#math-64)   | TIMEOUT | TIMEOUT | Yes     | No   | 1
-[M65](#math-65)   | No      | No     | No      | No   | 0
-[M66](#math-66)   | No      | No     | No      | No   | 0
-[M67](#math-67)   | No      | No     | No      | No   | 0
-[M68](#math-68)   | TIMEOUT | No     | No      | No   | 0
-[M69](#math-69)   | Yes     | TIMEOUT | No      | No   | 1
-[M70](#math-70)   | No      | No     | Yes     | No   | 1
-[M71](#math-71)   | TIMEOUT | TIMEOUT | No      | ERROR | 0
-[M72](#math-72)   | No      | No     | No      | No   | 0
-[M73](#math-73)   | No      | Yes    | Yes     | No   | 2
-[M74](#math-74)   | TIMEOUT | TIMEOUT | No      | EMPTY | 0
-[M75](#math-75)   | No      | No     | No      | No   | 0
-[M76](#math-76)   | No      | No     | No      | No   | 0
-[M77](#math-77)   | No      | No     | No      | No   | 0
-[M78](#math-78)   | Yes     | TIMEOUT | Yes     | Yes  | 3
-[M79](#math-79)   | Yes     | No     | No      | No   | 1
-[M80](#math-80)   | Yes     | TIMEOUT | Yes     | Yes  | 3
-[M81](#math-81)   | Yes     | Yes    | Yes     | Yes  | 4
-[M82](#math-82)   | Yes     | No     | Yes     | Yes  | 3
-[M83](#math-83)   | No      | No     | No      | No   | 0
-[M84](#math-84)   | No      | No     | Yes     | No   | 1
-[M85](#math-85)   | TIMEOUT | Yes    | Yes     | Yes  | 3
-[M86](#math-86)   | TIMEOUT | No     | No      | No   | 0
-[M87](#math-87)   | Yes     | Yes    | No      | No   | 2
-[M88](#math-88)   | Yes     | TIMEOUT | No      | No   | 1
-[M89](#math-89)   | No      | No     | No      | No   | 0
-[M90](#math-90)   | No      | No     | No      | No   | 0
-[M91](#math-91)   | TIMEOUT | TIMEOUT | No      | No   | 0
-[M92](#math-92)   | No      | No     | No      | No   | 0
-[M93](#math-93)   | No      | No     | No      | No   | 0
-[M94](#math-94)   | TIMEOUT | TIMEOUT | No      | No   | 0
-[M95](#math-95)   | ERROR   | TIMEOUT | Yes     | No   | 1
-[M96](#math-96)   | No      | No     | No      | No   | 0
-[M97](#math-97)   | Yes     | Yes    | No      | No   | 2
-[M98](#math-98)   | No      | No     | No      | No   | 0
-[M99](#math-99)   | Yes     | Yes    | No      | No   | 2
-[M100](#math-100) | No      | No     | No      | No   | 0
-[M101](#math-101) | No      | No     | No      | No   | 0
-[M102](#math-102) | TIMEOUT | TIMEOUT | No      | No   | 0
-[M103](#math-103) | No      | TIMEOUT | No      | No   | 0
-[M104](#math-104) | TIMEOUT | Yes    | No      | No   | 1
-[M105](#math-105) | Yes     | No     | No      | No   | 1
-[M106](#math-106) | No      | TIMEOUT | No      | No   | 0
-[T1](#time-1)     | No      | TIMEOUT | No      | No   | 0
-[T2](#time-2)     | No      | No     | No      | No   | 0
-[T3](#time-3)     | TIMEOUT | TIMEOUT | No      | No   | 0
-[T4](#time-4)     | No      | No     | No      | No   | 0
-[T5](#time-5)     | TIMEOUT | No     | No      | No   | 0
-[T6](#time-6)     | No      | TIMEOUT | No      | No   | 0
-[T7](#time-7)     | TIMEOUT | TIMEOUT | No      | No   | 0
-[T8](#time-8)     | No      | No     | No      | No   | 0
-[T9](#time-9)     | No      | No     | No      | No   | 0
-[T10](#time-10)   | TIMEOUT | TIMEOUT | No      | No   | 0
-[T11](#time-11)   | TIMEOUT | TIMEOUT | No      | No   | 0
-[T12](#time-12)   | TIMEOUT | TIMEOUT | ERROR   | No   | 0
-[T13](#time-13)   | No      | TIMEOUT | No      | No   | 0
-[T14](#time-14)   | TIMEOUT | No     | No      | No   | 0
-[T15](#time-15)   | No      | No     | No      | No   | 0
-[T16](#time-16)   | TIMEOUT | TIMEOUT | No      | No   | 0
-[T17](#time-17)   | TIMEOUT | TIMEOUT | No      | No   | 0
-[T18](#time-18)   | TIMEOUT | TIMEOUT | No      | No   | 0
-[T19](#time-19)   | TIMEOUT | TIMEOUT | No      | No   | 0
-[T20](#time-20)   | TIMEOUT | TIMEOUT | No      | No   | 0
-[T21](#time-21)   | TIMEOUT | TIMEOUT | No      | No   | 0
-[T22](#time-22)   | ERROR   | ERROR  | No      | No   | 0
-[T23](#time-23)   | TIMEOUT | TIMEOUT | No      | No   | 0
-[T24](#time-24)   | TIMEOUT | TIMEOUT | ERROR   | ERROR | 0
-[T25](#time-25)   | TIMEOUT | TIMEOUT | No      | No   | 0
-[T26](#time-26)   | TIMEOUT | TIMEOUT | No      | No   | 0
-[T27](#time-27)   | TIMEOUT | TIMEOUT | ERROR   | ERROR | 0
-Total             | 26 (11%) | 19 (8%) | 16 (7%) | 9 (4%) | 70
+BugId             | NopolPC | NopolC | BrutpolC | BrutpolPC | Genprog | Kali | Total
+----------------- | ------- | ------ | -------- | --------- | ------- | ---- | ------
+[L1](#lang-1)     | No      | No     |          |           | TIMEOUT | No   | 0
+[L2](#lang-2)     | No      | No     |          |           | TIMEOUT | No   | 0
+[L3](#lang-3)     | No      | No     |          |           | TIMEOUT | No   | 0
+[L4](#lang-4)     | No      | No     |          |           | TIMEOUT | No   | 0
+[L5](#lang-5)     | No      | No     |          |           | TIMEOUT | No   | 0
+[L6](#lang-6)     | No      | No     |          |           | TIMEOUT | No   | 0
+[L7](#lang-7)     | TIMEOUT | TIMEOUT |          |           | TIMEOUT | No   | 0
+[L8](#lang-8)     | TIMEOUT | TIMEOUT |          |           | TIMEOUT | No   | 0
+[L9](#lang-9)     | TIMEOUT | TIMEOUT |          |           | TIMEOUT | No   | 0
+[L10](#lang-10)   | TIMEOUT | TIMEOUT |          |           | TIMEOUT | No   | 0
+[L11](#lang-11)   | TIMEOUT | TIMEOUT |          |           | TIMEOUT | No   | 0
+[L12](#lang-12)   | No      | No     |          |           | TIMEOUT | No   | 0
+[L13](#lang-13)   | No      | No     |          |           | TIMEOUT | No   | 0
+[L14](#lang-14)   | No      | No     |          |           | TIMEOUT | No   | 0
+[L15](#lang-15)   | No      | No     |          |           | TIMEOUT | No   | 0
+[L16](#lang-16)   | No      | No     |          |           | TIMEOUT | No   | 0
+[L17](#lang-17)   | No      | No     |          |           | TIMEOUT | No   | 0
+[L18](#lang-18)   | TIMEOUT | TIMEOUT |          |           | TIMEOUT | No   | 0
+[L19](#lang-19)   | No      | No     |          |           | TIMEOUT | No   | 0
+[L20](#lang-20)   | No      | No     |          |           | No      | No   | 0
+[L21](#lang-21)   | No      | No     |          |           | No      | No   | 0
+[L22](#lang-22)   | TIMEOUT | TIMEOUT |          |           | No      | No   | 0
+[L23](#lang-23)   | TIMEOUT | ERROR  |          |           | No      | No   | 0
+[L24](#lang-24)   | TIMEOUT | No     |          |           | No      | No   | 0
+[L25](#lang-25)   | No      | No     |          |           | No      | No   | 0
+[L26](#lang-26)   | TIMEOUT | TIMEOUT |          |           | No      | No   | 0
+[L27](#lang-27)   | No      | No     |          |           | No      | No   | 0
+[L28](#lang-28)   | No      | No     |          |           | No      | No   | 0
+[L29](#lang-29)   | No      | No     |          |           | No      | No   | 0
+[L30](#lang-30)   | No      | No     |          |           | No      | No   | 0
+[L31](#lang-31)   | No      | No     |          |           | No      | No   | 0
+[L32](#lang-32)   | No      | No     |          |           | No      | No   | 0
+[L33](#lang-33)   | No      | No     |          |           | No      | No   | 0
+[L34](#lang-34)   | TIMEOUT | TIMEOUT |          |           | No      | No   | 0
+[L35](#lang-35)   | No      | No     |          |           | No      | No   | 0
+[L36](#lang-36)   | No      | No     |          |           | No      | No   | 0
+[L37](#lang-37)   | No      | No     |          |           | No      | No   | 0
+[L38](#lang-38)   | TIMEOUT | TIMEOUT |          |           | No      | No   | 0
+[L39](#lang-39)   | TIMEOUT | TIMEOUT |          |           | No      | No   | 0
+[L40](#lang-40)   | No      | No     |          |           | No      | No   | 0
+[L41](#lang-41)   | No      | No     |          |           | No      | No   | 0
+[L42](#lang-42)   | No      | No     |          |           | No      | No   | 0
+[L43](#lang-43)   | TIMEOUT | TIMEOUT |          |           | No      | No   | 0
+[L44](#lang-44)   | Yes     | TIMEOUT |          |           | No      | No   | 1
+[L45](#lang-45)   | No      | No     |          |           | No      | No   | 0
+[L46](#lang-46)   | Yes     | No     |          |           | No      | No   | 1
+[L47](#lang-47)   | No      | No     |          |           | No      | No   | 0
+[L48](#lang-48)   | TIMEOUT | TIMEOUT |          |           | No      | No   | 0
+[L49](#lang-49)   | TIMEOUT | TIMEOUT |          |           | No      | No   | 0
+[L50](#lang-50)   | TIMEOUT | TIMEOUT |          |           | No      | No   | 0
+[L51](#lang-51)   | No      | Yes    |          |           | No      | No   | 1
+[L52](#lang-52)   | No      | No     |          |           | No      | No   | 0
+[L53](#lang-53)   | TIMEOUT | TIMEOUT |          |           | No      | No   | 0
+[L54](#lang-54)   | No      | No     |          |           | No      | No   | 0
+[L55](#lang-55)   | Yes     | No     |          |           | No      | No   | 1
+[L56](#lang-56)   | No      | No     |          |           | No      | No   | 0
+[L57](#lang-57)   | No      | No     |          |           | No      | No   | 0
+[L58](#lang-58)   | Yes     | Yes    |          |           | No      | No   | 2
+[L59](#lang-59)   | No      | No     |          |           | No      | No   | 0
+[L60](#lang-60)   | No      | No     |          |           | No      | No   | 0
+[L61](#lang-61)   | No      | No     |          |           | No      | No   | 0
+[L62](#lang-62)   | No      | No     |          |           | No      | No   | 0
+[L63](#lang-63)   | ERROR   | No     |          |           | No      | No   | 0
+[L64](#lang-64)   | No      | No     |          |           | No      | No   | 0
+[L65](#lang-65)   | No      | No     |          |           | No      | No   | 0
+[C1](#chart-1)    | No      | No     |          |           | TIMEOUT | No   | 0
+[C2](#chart-2)    | No      | No     |          |           | TIMEOUT | No   | 0
+[C3](#chart-3)    | No      | TIMEOUT |          |           | TIMEOUT | No   | 0
+[C4](#chart-4)    | No      | TIMEOUT |          |           | TIMEOUT | No   | 0
+[C5](#chart-5)    | No      | Yes    |          |           | TIMEOUT | No   | 1
+[C6](#chart-6)    | TIMEOUT | No     |          |           | TIMEOUT | No   | 0
+[C7](#chart-7)    | No      | No     |          |           | TIMEOUT | No   | 0
+[C8](#chart-8)    | ERROR   | ERROR  |          |           | ERROR   | ERROR | 0
+[C9](#chart-9)    | Yes     | Yes    |          |           | TIMEOUT | No   | 2
+[C10](#chart-10)  | No      | No     |          |           | TIMEOUT | No   | 0
+[C11](#chart-11)  | No      | No     |          |           | TIMEOUT | No   | 0
+[C12](#chart-12)  | No      | No     |          |           | TIMEOUT | No   | 0
+[C13](#chart-13)  | Yes     | TIMEOUT |          |           | TIMEOUT | No   | 1
+[C14](#chart-14)  | No      | No     |          |           | TIMEOUT | No   | 0
+[C15](#chart-15)  | No      | No     |          |           | TIMEOUT | No   | 0
+[C16](#chart-16)  | TIMEOUT | TIMEOUT |          |           | TIMEOUT | No   | 0
+[C17](#chart-17)  | Yes     | Yes    |          |           | TIMEOUT | No   | 2
+[C18](#chart-18)  | No      | No     |          |           | TIMEOUT | No   | 0
+[C19](#chart-19)  | No      | No     |          |           | TIMEOUT | No   | 0
+[C20](#chart-20)  | No      | No     |          |           | TIMEOUT | No   | 0
+[C21](#chart-21)  | Yes     | No     |          |           | TIMEOUT | No   | 1
+[C22](#chart-22)  | No      | No     |          |           | TIMEOUT | No   | 0
+[C23](#chart-23)  | No      | No     |          |           | TIMEOUT | No   | 0
+[C24](#chart-24)  | No      | No     |          |           | TIMEOUT | No   | 0
+[C25](#chart-25)  | Yes     | Yes    |          |           | TIMEOUT | No   | 2
+[C26](#chart-26)  | TIMEOUT | TIMEOUT |          |           | TIMEOUT | No   | 0
+[M1](#math-1)     | No      | No     |          |           | No      | No   | 0
+[M2](#math-2)     | TIMEOUT | TIMEOUT |          |           | Yes     | Yes  | 2
+[M3](#math-3)     | No      | No     |          |           | No      | No   | 0
+[M4](#math-4)     | TIMEOUT | TIMEOUT |          |           | No      | No   | 0
+[M5](#math-5)     | No      | No     |          |           | No      | No   | 0
+[M6](#math-6)     | TIMEOUT | TIMEOUT |          |           | ERROR   | ERROR | 0
+[M7](#math-7)     | TIMEOUT | TIMEOUT |          |           | No      | No   | 0
+[M8](#math-8)     | No      | TIMEOUT |          |           | Yes     | Yes  | 2
+[M9](#math-9)     | No      | No     |          |           | No      | No   | 0
+[M10](#math-10)   | TIMEOUT | TIMEOUT |          |           | No      | No   | 0
+[M11](#math-11)   | No      | TIMEOUT |          |           | No      | No   | 0
+[M12](#math-12)   | TIMEOUT | TIMEOUT |          |           | No      | No   | 0
+[M13](#math-13)   | No      | No     |          |           | No      | No   | 0
+[M14](#math-14)   | No      | No     |          |           | No      | No   | 0
+[M15](#math-15)   | TIMEOUT | TIMEOUT |          |           | No      | No   | 0
+[M16](#math-16)   | TIMEOUT | TIMEOUT |          |           | No      | No   | 0
+[M17](#math-17)   | TIMEOUT | TIMEOUT |          |           | No      | No   | 0
+[M18](#math-18)   | TIMEOUT | TIMEOUT |          |           | No      | No   | 0
+[M19](#math-19)   | TIMEOUT | TIMEOUT |          |           | No      | No   | 0
+[M20](#math-20)   | TIMEOUT | TIMEOUT |          |           | ERROR   | ERROR | 0
+[M21](#math-21)   | No      | No     |          |           | No      | No   | 0
+[M22](#math-22)   | No      | TIMEOUT |          |           | No      | No   | 0
+[M23](#math-23)   | No      | TIMEOUT |          |           | No      | No   | 0
+[M24](#math-24)   | TIMEOUT | No     |          |           | No      | No   | 0
+[M25](#math-25)   | No      | No     |          |           | No      | No   | 0
+[M26](#math-26)   | No      | TIMEOUT |          |           | No      | No   | 0
+[M27](#math-27)   | TIMEOUT | TIMEOUT |          |           | No      | No   | 0
+[M28](#math-28)   | TIMEOUT | TIMEOUT |          |           | No      | No   | 0
+[M29](#math-29)   | TIMEOUT | TIMEOUT |          |           | No      | No   | 0
+[M30](#math-30)   | No      | No     |          |           | No      | No   | 0
+[M31](#math-31)   | TIMEOUT | TIMEOUT |          |           | No      | No   | 0
+[M32](#math-32)   | Yes     | TIMEOUT |          |           | No      | No   | 1
+[M33](#math-33)   | Yes     | Yes    |          |           | No      | No   | 2
+[M34](#math-34)   | No      | No     |          |           | No      | No   | 0
+[M35](#math-35)   | ERROR   | ERROR  |          |           | ERROR   | ERROR | 0
+[M36](#math-36)   | No      | No     |          |           | No      | No   | 0
+[M37](#math-37)   | ERROR   | TIMEOUT |          |           | No      | No   | 0
+[M38](#math-38)   | TIMEOUT | TIMEOUT |          |           | No      | No   | 0
+[M39](#math-39)   | TIMEOUT | TIMEOUT |          |           | No      | No   | 0
+[M40](#math-40)   | TIMEOUT | Yes    |          |           | Yes     | Yes  | 3
+[M41](#math-41)   | Yes     | Yes    |          |           | No      | No   | 2
+[M42](#math-42)   | Yes     | TIMEOUT |          |           | No      | No   | 1
+[M43](#math-43)   | No      | TIMEOUT |          |           | No      | No   | 0
+[M44](#math-44)   | TIMEOUT | TIMEOUT |          |           | Yes     | No   | 1
+[M45](#math-45)   | No      | No     |          |           | No      | No   | 0
+[M46](#math-46)   | No      | No     |          |           | No      | No   | 0
+[M47](#math-47)   | No      | TIMEOUT |          |           | No      | No   | 0
+[M48](#math-48)   | TIMEOUT | TIMEOUT |          |           | No      | No   | 0
+[M49](#math-49)   | Yes     | No     |          |           | Yes     | Yes  | 3
+[M50](#math-50)   | Yes     | Yes    |          |           | Yes     | Yes  | 4
+[M51](#math-51)   | TIMEOUT | TIMEOUT |          |           | ERROR   | ERROR | 0
+[M52](#math-52)   | No      | No     |          |           | No      | No   | 0
+[M53](#math-53)   | No      | No     |          |           | No      | No   | 0
+[M54](#math-54)   | TIMEOUT | TIMEOUT |          |           | No      | TIMEOUT | 0
+[M55](#math-55)   | No      | No     |          |           | No      | No   | 0
+[M56](#math-56)   | TIMEOUT | No     |          |           | No      | No   | 0
+[M57](#math-57)   | TIMEOUT | Yes    |          |           | No      | No   | 1
+[M58](#math-58)   | TIMEOUT | Yes    |          |           | No      | No   | 1
+[M59](#math-59)   | TIMEOUT | TIMEOUT |          |           | No      | No   | 0
+[M60](#math-60)   | TIMEOUT | ERROR  |          |           | No      | No   | 0
+[M61](#math-61)   | No      | No     |          |           | No      | No   | 0
+[M62](#math-62)   | No      | No     |          |           | No      | No   | 0
+[M63](#math-63)   | No      | No     |          |           | No      | No   | 0
+[M64](#math-64)   | TIMEOUT | TIMEOUT |          |           | Yes     | No   | 1
+[M65](#math-65)   | No      | No     |          |           | No      | No   | 0
+[M66](#math-66)   | No      | No     |          |           | No      | No   | 0
+[M67](#math-67)   | No      | No     |          |           | No      | No   | 0
+[M68](#math-68)   | TIMEOUT | No     |          |           | No      | No   | 0
+[M69](#math-69)   | Yes     | TIMEOUT |          |           | No      | No   | 1
+[M70](#math-70)   | No      | No     |          |           | Yes     | No   | 1
+[M71](#math-71)   | TIMEOUT | TIMEOUT |          |           | No      | TIMEOUT | 0
+[M72](#math-72)   | No      | No     |          |           | No      | No   | 0
+[M73](#math-73)   | No      | Yes    |          |           | Yes     | No   | 2
+[M74](#math-74)   | TIMEOUT | TIMEOUT |          |           | No      | ERROR | 0
+[M75](#math-75)   | No      | No     |          |           | No      | No   | 0
+[M76](#math-76)   | No      | No     |          |           | No      | No   | 0
+[M77](#math-77)   | No      | No     |          |           | No      | No   | 0
+[M78](#math-78)   | Yes     | TIMEOUT |          |           | Yes     | Yes  | 3
+[M79](#math-79)   | Yes     | No     |          |           | No      | No   | 1
+[M80](#math-80)   | Yes     | TIMEOUT |          |           | Yes     | Yes  | 3
+[M81](#math-81)   | Yes     | Yes    |          |           | Yes     | Yes  | 4
+[M82](#math-82)   | Yes     | No     |          |           | Yes     | Yes  | 3
+[M83](#math-83)   | No      | No     |          |           | No      | No   | 0
+[M84](#math-84)   | No      | No     |          |           | Yes     | No   | 1
+[M85](#math-85)   | TIMEOUT | Yes    |          |           | Yes     | Yes  | 3
+[M86](#math-86)   | TIMEOUT | No     |          |           | No      | No   | 0
+[M87](#math-87)   | Yes     | Yes    |          |           | No      | No   | 2
+[M88](#math-88)   | Yes     | TIMEOUT |          |           | No      | No   | 1
+[M89](#math-89)   | No      | No     |          |           | No      | No   | 0
+[M90](#math-90)   | No      | No     |          |           | No      | No   | 0
+[M91](#math-91)   | TIMEOUT | TIMEOUT |          |           | No      | No   | 0
+[M92](#math-92)   | No      | No     |          |           | No      | No   | 0
+[M93](#math-93)   | No      | No     |          |           | No      | No   | 0
+[M94](#math-94)   | TIMEOUT | TIMEOUT |          |           | No      | No   | 0
+[M95](#math-95)   | ERROR   | TIMEOUT |          |           | Yes     | Yes  | 2
+[M96](#math-96)   | No      | No     |          |           | No      | No   | 0
+[M97](#math-97)   | Yes     | Yes    |          |           | No      | No   | 2
+[M98](#math-98)   | No      | No     |          |           | No      | No   | 0
+[M99](#math-99)   | Yes     | Yes    |          |           | No      | No   | 2
+[M100](#math-100) | No      | No     |          |           | No      | No   | 0
+[M101](#math-101) | No      | No     |          |           | No      | No   | 0
+[M102](#math-102) | TIMEOUT | TIMEOUT |          |           | No      | No   | 0
+[M103](#math-103) | No      | TIMEOUT |          |           | No      | No   | 0
+[M104](#math-104) | TIMEOUT | Yes    |          |           | No      | No   | 1
+[M105](#math-105) | Yes     | No     |          |           | No      | No   | 1
+[M106](#math-106) | No      | TIMEOUT |          |           | No      | No   | 0
+[T1](#time-1)     | No      | TIMEOUT |          |           | No      | No   | 0
+[T2](#time-2)     | No      | No     |          |           | No      | No   | 0
+[T3](#time-3)     | TIMEOUT | TIMEOUT |          |           | No      | No   | 0
+[T4](#time-4)     | No      | No     |          |           | No      | No   | 0
+[T5](#time-5)     | TIMEOUT | No     |          |           | No      | No   | 0
+[T6](#time-6)     | No      | TIMEOUT |          |           | No      | No   | 0
+[T7](#time-7)     | TIMEOUT | TIMEOUT |          |           | No      | No   | 0
+[T8](#time-8)     | No      | No     |          |           | No      | No   | 0
+[T9](#time-9)     | No      | No     |          |           | No      | No   | 0
+[T10](#time-10)   | TIMEOUT | TIMEOUT |          |           | No      | No   | 0
+[T11](#time-11)   | TIMEOUT | TIMEOUT |          |           | No      | No   | 0
+[T12](#time-12)   | TIMEOUT | TIMEOUT |          |           | ERROR   | No   | 0
+[T13](#time-13)   | No      | TIMEOUT |          |           | No      | No   | 0
+[T14](#time-14)   | TIMEOUT | No     |          |           | No      | No   | 0
+[T15](#time-15)   | No      | No     |          |           | No      | No   | 0
+[T16](#time-16)   | TIMEOUT | TIMEOUT |          |           | No      | No   | 0
+[T17](#time-17)   | TIMEOUT | TIMEOUT |          |           | No      | No   | 0
+[T18](#time-18)   | TIMEOUT | TIMEOUT |          |           | No      | No   | 0
+[T19](#time-19)   | TIMEOUT | TIMEOUT |          |           | No      | No   | 0
+[T20](#time-20)   | TIMEOUT | TIMEOUT |          |           | No      | No   | 0
+[T21](#time-21)   | TIMEOUT | TIMEOUT |          |           | No      | No   | 0
+[T22](#time-22)   | ERROR   | ERROR  |          |           | No      | No   | 0
+[T23](#time-23)   | TIMEOUT | TIMEOUT |          |           | No      | No   | 0
+[T24](#time-24)   | TIMEOUT | TIMEOUT |          |           | ERROR   | ERROR | 0
+[T25](#time-25)   | TIMEOUT | TIMEOUT |          |           | No      | No   | 0
+[T26](#time-26)   | TIMEOUT | TIMEOUT |          |           | No      | No   | 0
+[T27](#time-27)   | TIMEOUT | TIMEOUT |          |           | ERROR   | ERROR | 0
+Total             | 26 (11%) | 19 (8%) | 0        | 0         | 16 (7%) | 11 (4%) | 72
 Fixed bugs: 41/224 (18%)
 
-Nb bugs ends with an execution error: 29
+Nb bugs ends with an execution error: 27
 
 Nb bugs ends with an empty log: 0
 
-Nb bugs ends with the Grid5000 timeout: 209
+Nb bugs ends with the Grid5000 timeout: 211
 
-Total execution time: 17 days, 7:48:55.248000
+Total execution time: 17 days, 13:54:22.659000
 
 
 
 # Lang 1
 
 
-Nb Executed tests: 2291
-
-Nb Failing tests: 5
-
->	org.apache.commons.lang3.time.FastDatePrinterTest#testCalendarTimezoneRespected
->	org.apache.commons.lang3.time.FastDateFormat_PrinterTest#testCalendarTimezoneRespected
->	org.apache.commons.lang3.math.NumberUtilsTest#TestLang747
->	org.apache.commons.lang3.reflect.FieldUtilsTest#testGetAllFieldsList
->	org.apache.commons.lang3.reflect.FieldUtilsTest#testGetAllFields
 
 ## Human Patch 
 
@@ -343,15 +334,6 @@ index 70b8d64..1e6ccdc 100644
 # Lang 2
 
 
-Nb Executed tests: 2287
-
-Nb Failing tests: 5
-
->	org.apache.commons.lang3.LocaleUtilsTest#testParseAllLocales
->	org.apache.commons.lang3.time.FastDatePrinterTest#testCalendarTimezoneRespected
->	org.apache.commons.lang3.time.FastDateFormat_PrinterTest#testCalendarTimezoneRespected
->	org.apache.commons.lang3.reflect.FieldUtilsTest#testGetAllFieldsList
->	org.apache.commons.lang3.reflect.FieldUtilsTest#testGetAllFields
 
 ## Human Patch 
 
@@ -376,15 +358,6 @@ index fab00c5..8a1203a 100644
 # Lang 3
 
 
-Nb Executed tests: 2286
-
-Nb Failing tests: 5
-
->	org.apache.commons.lang3.time.FastDatePrinterTest#testCalendarTimezoneRespected
->	org.apache.commons.lang3.time.FastDateFormat_PrinterTest#testCalendarTimezoneRespected
->	org.apache.commons.lang3.math.NumberUtilsTest#testStringCreateNumberEnsureNoPrecisionLoss
->	org.apache.commons.lang3.reflect.FieldUtilsTest#testGetAllFieldsList
->	org.apache.commons.lang3.reflect.FieldUtilsTest#testGetAllFields
 
 ## Human Patch 
 
@@ -443,15 +416,6 @@ index 1e6ccdc..064f504 100644
 # Lang 4
 
 
-Nb Executed tests: 2285
-
-Nb Failing tests: 5
-
->	org.apache.commons.lang3.time.FastDatePrinterTest#testCalendarTimezoneRespected
->	org.apache.commons.lang3.time.FastDateFormat_PrinterTest#testCalendarTimezoneRespected
->	org.apache.commons.lang3.reflect.FieldUtilsTest#testGetAllFieldsList
->	org.apache.commons.lang3.reflect.FieldUtilsTest#testGetAllFields
->	org.apache.commons.lang3.text.translate.LookupTranslatorTest#testLang882
 
 ## Human Patch 
 
@@ -515,13 +479,6 @@ index 9cf45f8..d6cb077 100644
 # Lang 5
 
 
-Nb Executed tests: 2271
-
-Nb Failing tests: 3
-
->	org.apache.commons.lang3.LocaleUtilsTest#testLang865
->	org.apache.commons.lang3.time.FastDatePrinterTest#testCalendarTimezoneRespected
->	org.apache.commons.lang3.time.FastDateFormat_PrinterTest#testCalendarTimezoneRespected
 
 ## Human Patch 
 
@@ -621,13 +578,6 @@ index a7a6051..7568f2c 100644
 # Lang 6
 
 
-Nb Executed tests: 2263
-
-Nb Failing tests: 3
-
->	org.apache.commons.lang3.time.FastDatePrinterTest#testCalendarTimezoneRespected
->	org.apache.commons.lang3.StringUtilsTest#testEscapeSurrogatePairs
->	org.apache.commons.lang3.time.FastDateFormat_PrinterTest#testCalendarTimezoneRespected
 
 ## Human Patch 
 
@@ -651,13 +601,6 @@ index 0500460..4d010ea 100644
 # Lang 7
 
 
-Nb Executed tests: 2261
-
-Nb Failing tests: 3
-
->	org.apache.commons.lang3.time.FastDatePrinterTest#testCalendarTimezoneRespected
->	org.apache.commons.lang3.time.FastDateFormat_PrinterTest#testCalendarTimezoneRespected
->	org.apache.commons.lang3.math.NumberUtilsTest#testCreateNumber
 
 ## Human Patch 
 
@@ -702,12 +645,6 @@ index 064f547..cca5a3f 100644
 # Lang 8
 
 
-Nb Executed tests: 2205
-
-Nb Failing tests: 2
-
->	org.apache.commons.lang3.time.FastDatePrinterTest#testCalendarTimezoneRespected
->	org.apache.commons.lang3.time.FastDateFormat_PrinterTest#testCalendarTimezoneRespected
 
 ## Human Patch 
 
@@ -760,12 +697,6 @@ index c952309..cc1af9d 100644
 # Lang 9
 
 
-Nb Executed tests: 2200
-
-Nb Failing tests: 2
-
->	org.apache.commons.lang3.time.FastDateParserTest#testLANG_832
->	org.apache.commons.lang3.time.FastDateFormat_ParserTest#testLANG_832
 
 ## Human Patch 
 
@@ -790,12 +721,6 @@ index 38857c7..8df302f 100644
 # Lang 10
 
 
-Nb Executed tests: 2198
-
-Nb Failing tests: 2
-
->	org.apache.commons.lang3.time.FastDateParserTest#testLANG_831
->	org.apache.commons.lang3.time.FastDateFormat_ParserTest#testLANG_831
 
 ## Human Patch 
 
@@ -828,11 +753,6 @@ index 8df302f..a01159b 100644
 # Lang 11
 
 
-Nb Executed tests: 2138
-
-Nb Failing tests: 1
-
->	org.apache.commons.lang3.RandomStringUtilsTest#testLANG807
 
 ## Human Patch 
 
@@ -858,12 +778,6 @@ index 9dfee22..a799057 100644
 # Lang 12
 
 
-Nb Executed tests: 2137
-
-Nb Failing tests: 2
-
->	org.apache.commons.lang3.RandomStringUtilsTest#testExceptions
->	org.apache.commons.lang3.RandomStringUtilsTest#testLANG805
 
 ## Human Patch 
 
@@ -904,11 +818,6 @@ index a799057..f27fb6d 100644
 # Lang 13
 
 
-Nb Executed tests: 2135
-
-Nb Failing tests: 1
-
->	org.apache.commons.lang3.SerializationUtilsTest#testPrimitiveTypeClassSerialization
 
 ## Human Patch 
 
@@ -965,11 +874,6 @@ index 7c89b61..5926a9b 100644
 # Lang 14
 
 
-Nb Executed tests: 2073
-
-Nb Failing tests: 1
-
->	org.apache.commons.lang3.StringUtilsEqualsIndexOfTest#testEquals
 
 ## Human Patch 
 
@@ -1002,12 +906,6 @@ index 4733b7e..98319bf 100644
 # Lang 15
 
 
-Nb Executed tests: 2047
-
-Nb Failing tests: 2
-
->	org.apache.commons.lang3.reflect.TypeUtilsTest#testGetTypeArguments
->	org.apache.commons.lang3.reflect.TypeUtilsTest#testIsAssignable
 
 ## Human Patch 
 
@@ -1063,11 +961,6 @@ index 8db8abf..ed9dc3f 100644
 # Lang 16
 
 
-Nb Executed tests: 2046
-
-Nb Failing tests: 1
-
->	org.apache.commons.lang3.math.NumberUtilsTest#testCreateNumber
 
 ## Human Patch 
 
@@ -1091,11 +984,6 @@ index 5b7891a..e0118ee 100644
 # Lang 17
 
 
-Nb Executed tests: 1903
-
-Nb Failing tests: 1
-
->	org.apache.commons.lang3.StringEscapeUtilsTest#testLang720
 
 ## Human Patch 
 
@@ -1149,11 +1037,6 @@ index 4d010ea..3cbf1e1 100644
 # Lang 18
 
 
-Nb Executed tests: 1902
-
-Nb Failing tests: 1
-
->	org.apache.commons.lang3.time.FastDateFormatTest#testFormat
 
 ## Human Patch 
 
@@ -1182,12 +1065,6 @@ index 51da48e..8be2e61 100644
 # Lang 19
 
 
-Nb Executed tests: 1877
-
-Nb Failing tests: 2
-
->	org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest#testUnfinishedEntity
->	org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest#testOutOfBounds
 
 ## Human Patch 
 
@@ -1254,12 +1131,6 @@ index 3d4c238..ffd969f 100644
 # Lang 20
 
 
-Nb Executed tests: 1876
-
-Nb Failing tests: 2
-
->	org.apache.commons.lang3.StringUtilsTest#testJoin_ArrayChar
->	org.apache.commons.lang3.StringUtilsTest#testJoin_Objectarray
 
 ## Human Patch 
 
@@ -1311,11 +1182,6 @@ index 711852e..6b8c2e4 100644
 # Lang 21
 
 
-Nb Executed tests: 1827
-
-Nb Failing tests: 1
-
->	org.apache.commons.lang3.time.DateUtilsTest#testIsSameLocalTime_Cal
 
 ## Human Patch 
 
@@ -1339,12 +1205,6 @@ index 52a4436..9a24c00 100644
 # Lang 22
 
 
-Nb Executed tests: 1825
-
-Nb Failing tests: 2
-
->	org.apache.commons.lang3.math.FractionTest#testReducedFactory_int_int
->	org.apache.commons.lang3.math.FractionTest#testReduce
 
 ## Human Patch 
 
@@ -1377,11 +1237,6 @@ index bf15a49..15272e5 100644
 # Lang 23
 
 
-Nb Executed tests: 1825
-
-Nb Failing tests: 1
-
->	org.apache.commons.lang3.text.ExtendedMessageFormatTest#testEqualsHashcode
 
 ## Human Patch 
 
@@ -1454,11 +1309,6 @@ index 55ee7d1..e4742ad 100644
 # Lang 24
 
 
-Nb Executed tests: 1822
-
-Nb Failing tests: 1
-
->	org.apache.commons.lang3.math.NumberUtilsTest#testIsNumber
 
 ## Human Patch 
 
@@ -1484,11 +1334,6 @@ index d9b3c6d..f1f36a8 100644
 # Lang 25
 
 
-Nb Executed tests: 1821
-
-Nb Failing tests: 1
-
->	org.apache.commons.lang3.text.translate.EntityArraysTest#testISO8859_1_ESCAPE
 
 ## Human Patch 
 
@@ -1564,11 +1409,6 @@ index ef839c6..8caca58 100644
 # Lang 26
 
 
-Nb Executed tests: 1790
-
-Nb Failing tests: 1
-
->	org.apache.commons.lang3.time.FastDateFormatTest#testLang645
 
 ## Human Patch 
 
@@ -1592,11 +1432,6 @@ index 95925fc..e30da2a 100644
 # Lang 27
 
 
-Nb Executed tests: 1785
-
-Nb Failing tests: 1
-
->	org.apache.commons.lang3.math.NumberUtilsTest#testCreateNumber
 
 ## Human Patch 
 
@@ -1630,11 +1465,6 @@ index f1f36a8..fd03ab8 100644
 # Lang 28
 
 
-Nb Executed tests: 1763
-
-Nb Failing tests: 1
-
->	org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest#testSupplementaryUnescaping
 
 ## Human Patch 
 
@@ -1665,11 +1495,6 @@ index a21671a..12a0663 100644
 # Lang 29
 
 
-Nb Executed tests: 1760
-
-Nb Failing tests: 1
-
->	org.apache.commons.lang3.SystemUtilsTest#testJavaVersionAsInt
 
 ## Human Patch 
 
@@ -1693,20 +1518,6 @@ index 2116f7c..0c73f42 100644
 # Lang 30
 
 
-Nb Executed tests: 1733
-
-Nb Failing tests: 10
-
->	org.apache.commons.lang3.StringUtilsEqualsIndexOfTest#testContainsNone_CharArrayWithSupplementaryChars
->	org.apache.commons.lang3.StringUtilsEqualsIndexOfTest#testContainsNone_StringWithSupplementaryChars
->	org.apache.commons.lang3.StringUtilsEqualsIndexOfTest#testContainsAny_StringCharArrayWithBadSupplementaryChars
->	org.apache.commons.lang3.StringUtilsEqualsIndexOfTest#testIndexOfAnyBut_StringStringWithSupplementaryChars
->	org.apache.commons.lang3.StringUtilsEqualsIndexOfTest#testContainsAny_StringWithBadSupplementaryChars
->	org.apache.commons.lang3.StringUtilsEqualsIndexOfTest#testIndexOfAny_StringCharArrayWithSupplementaryChars
->	org.apache.commons.lang3.StringUtilsEqualsIndexOfTest#testIndexOfAnyBut_StringCharArrayWithSupplementaryChars
->	org.apache.commons.lang3.StringUtilsEqualsIndexOfTest#testContainsNone_StringWithBadSupplementaryChars
->	org.apache.commons.lang3.StringUtilsEqualsIndexOfTest#testIndexOfAny_StringStringWithSupplementaryChars
->	org.apache.commons.lang3.StringUtilsEqualsIndexOfTest#testContainsNone_CharArrayWithBadSupplementaryChars
 
 ## Human Patch 
 
@@ -1880,12 +1691,6 @@ index da86fdb..c107e3a 100644
 # Lang 31
 
 
-Nb Executed tests: 1721
-
-Nb Failing tests: 2
-
->	org.apache.commons.lang3.StringUtilsEqualsIndexOfTest#testContainsAnyCharArrayWithSupplementaryChars
->	org.apache.commons.lang3.StringUtilsEqualsIndexOfTest#testContainsAnyStringWithSupplementaryChars
 
 ## Human Patch 
 
@@ -1947,11 +1752,6 @@ index 4aac02d..e60c449 100644
 # Lang 32
 
 
-Nb Executed tests: 1670
-
-Nb Failing tests: 1
-
->	org.apache.commons.lang3.builder.HashCodeBuilderTest#testReflectionObjectCycle
 
 ## Human Patch 
 
@@ -2030,11 +1830,6 @@ index 9f7e890..547676c 100644
 # Lang 33
 
 
-Nb Executed tests: 1670
-
-Nb Failing tests: 1
-
->	org.apache.commons.lang3.ClassUtilsTest#testToClass_object
 
 ## Human Patch 
 
@@ -2058,37 +1853,6 @@ index 3998966..85fda04 100644
 # Lang 34
 
 
-Nb Executed tests: 1670
-
-Nb Failing tests: 27
-
->	org.apache.commons.lang3.builder.ToStringBuilderTest#testObjectCycle
->	org.apache.commons.lang3.builder.ToStringBuilderTest#testReflectionHierarchy
->	org.apache.commons.lang3.builder.ToStringBuilderTest#testSelfInstanceTwoVarsReflectionObjectCycle
->	org.apache.commons.lang3.builder.ToStringBuilderTest#testReflectionArrayCycle
->	org.apache.commons.lang3.builder.ToStringBuilderTest#testReflectionLongArrayArray
->	org.apache.commons.lang3.builder.ToStringBuilderTest#testReflectionArrayArrayCycle
->	org.apache.commons.lang3.builder.ToStringBuilderTest#testReflectionFloatArray
->	org.apache.commons.lang3.builder.ToStringBuilderTest#testReflectionDoubleArrayArray
->	org.apache.commons.lang3.builder.ToStringBuilderTest#testReflectionBooleanArray
->	org.apache.commons.lang3.builder.ToStringBuilderTest#testReflectionyteArray
->	org.apache.commons.lang3.builder.ToStringBuilderTest#testReflectionDoubleArray
->	org.apache.commons.lang3.builder.ToStringBuilderTest#testReflectionIntArrayArray
->	org.apache.commons.lang3.builder.ToStringBuilderTest#testReflectionLongArray
->	org.apache.commons.lang3.builder.ToStringBuilderTest#testReflectionhortArrayArray
->	org.apache.commons.lang3.builder.ToStringBuilderTest#testReflectionObjectArray
->	org.apache.commons.lang3.builder.ToStringBuilderTest#testReflectionObjectCycle
->	org.apache.commons.lang3.builder.ToStringBuilderTest#testReflectionBooleanArrayArray
->	org.apache.commons.lang3.builder.ToStringBuilderTest#testSimpleReflectionObjectCycle
->	org.apache.commons.lang3.builder.ToStringBuilderTest#testReflectionByteArrayArray
->	org.apache.commons.lang3.builder.ToStringBuilderTest#testReflectionArrayCycleLevel2
->	org.apache.commons.lang3.builder.ToStringBuilderTest#testReflectionArrayAndObjectCycle
->	org.apache.commons.lang3.builder.ToStringBuilderTest#testReflectionCharArrayArray
->	org.apache.commons.lang3.builder.ToStringBuilderTest#testReflectionShortArray
->	org.apache.commons.lang3.builder.ToStringBuilderTest#testSelfInstanceVarReflectionObjectCycle
->	org.apache.commons.lang3.builder.ToStringBuilderTest#testReflectionIntArray
->	org.apache.commons.lang3.builder.ToStringBuilderTest#testReflectionCharArray
->	org.apache.commons.lang3.builder.ToStringBuilderTest#testReflectionFloatArrayArray
 
 ## Human Patch 
 
@@ -2125,11 +1889,6 @@ index 26214ed..95b580b 100644
 # Lang 35
 
 
-Nb Executed tests: 1644
-
-Nb Failing tests: 1
-
->	org.apache.commons.lang3.ArrayUtilsAddTest#testLANG571
 
 ## Human Patch 
 
@@ -2181,12 +1940,6 @@ index 3a543ce..79c80bd 100644
 # Lang 36
 
 
-Nb Executed tests: 1628
-
-Nb Failing tests: 2
-
->	org.apache.commons.lang3.math.NumberUtilsTest#testCreateNumber
->	org.apache.commons.lang3.math.NumberUtilsTest#testIsNumber
 
 ## Human Patch 
 
@@ -2225,11 +1978,6 @@ index 0d30b22..d3054f3 100644
 # Lang 37
 
 
-Nb Executed tests: 1627
-
-Nb Failing tests: 1
-
->	org.apache.commons.lang3.ArrayUtilsAddTest#testJira567
 
 ## Human Patch 
 
@@ -2267,11 +2015,6 @@ index b9413e8..9011bff 100644
 # Lang 38
 
 
-Nb Executed tests: 1624
-
-Nb Failing tests: 1
-
->	org.apache.commons.lang3.time.FastDateFormatTest#testLang538
 
 ## Human Patch 
 
@@ -2294,11 +2037,6 @@ index d60af96..6b10a94 100644
 # Lang 39
 
 
-Nb Executed tests: 1618
-
-Nb Failing tests: 1
-
->	org.apache.commons.lang3.StringUtilsTest#testReplace_StringStringArrayStringArray
 
 ## Human Patch 
 
@@ -2323,11 +2061,6 @@ index f6cabee..14563aa 100644
 # Lang 40
 
 
-Nb Executed tests: 1643
-
-Nb Failing tests: 1
-
->	org.apache.commons.lang.StringUtilsEqualsIndexOfTest#testContainsIgnoreCase_LocaleIndependence
 
 ## Human Patch 
 
@@ -2358,12 +2091,6 @@ index 8351b3e..6ad364b 100644
 # Lang 41
 
 
-Nb Executed tests: 1624
-
-Nb Failing tests: 2
-
->	org.apache.commons.lang.ClassUtilsTest#test_getShortClassName_Class
->	org.apache.commons.lang.ClassUtilsTest#test_getPackageName_Class
 
 ## Human Patch 
 
@@ -2442,11 +2169,6 @@ index 478b377..ebfd25a 100644
 # Lang 42
 
 
-Nb Executed tests: 1903
-
-Nb Failing tests: 1
-
->	org.apache.commons.lang.StringEscapeUtilsTest#testEscapeHtmlHighUnicode
 
 ## Human Patch 
 
@@ -2479,11 +2201,6 @@ index 0d8f7f4..900e1a8 100644
 # Lang 43
 
 
-Nb Executed tests: 1902
-
-Nb Failing tests: 1
-
->	org.apache.commons.lang.text.ExtendedMessageFormatTest#testEscapedQuote_LANG_477
 
 ## Human Patch 
 
@@ -2506,11 +2223,6 @@ index 4af3955..404be49 100644
 # Lang 44
 
 
-Nb Executed tests: 1879
-
-Nb Failing tests: 1
-
->	org.apache.commons.lang.NumberUtilsTest#testLang457
 
 ## Human Patch 
 
@@ -2534,7 +2246,7 @@ index c5ca8cd..18a05ef 100644
 
 ## NopolPC 
 
-org.apache.commons.lang.NumberUtils:193 (Suspicious rank: 18 (Ochiai), 13 (Ample), 13 (Tarantula))
+org.apache.commons.lang.NumberUtils:193
 ```Java
 (numeric.length())!=(0)
 ```
@@ -2550,11 +2262,6 @@ Grid5000 node: chimint-19.lille.grid5000.fr
 # Lang 45
 
 
-Nb Executed tests: 1877
-
-Nb Failing tests: 1
-
->	org.apache.commons.lang.WordUtilsTest#testAbbreviate
 
 ## Human Patch 
 
@@ -2581,11 +2288,6 @@ index 91c6615..748b547 100644
 # Lang 46
 
 
-Nb Executed tests: 1829
-
-Nb Failing tests: 1
-
->	org.apache.commons.lang.StringEscapeUtilsTest#testEscapeJavaWithSlash
 
 ## Human Patch 
 
@@ -2727,7 +2429,7 @@ index d4f98ec..c30c663 100644
 
 ## NopolPC 
 
-org.apache.commons.lang.StringEscapeUtils:242 (Suspicious rank: 1 (Ochiai), 1 (Ample), 1 (Tarantula))
+org.apache.commons.lang.StringEscapeUtils:242
 ```Java
 escapeSingleQuote
 ```
@@ -2743,12 +2445,6 @@ Grid5000 node: chinqchint-3.lille.grid5000.fr
 # Lang 47
 
 
-Nb Executed tests: 1829
-
-Nb Failing tests: 2
-
->	org.apache.commons.lang.text.StrBuilderTest#testLang412Left
->	org.apache.commons.lang.text.StrBuilderTest#testLang412Right
 
 ## Human Patch 
 
@@ -2783,11 +2479,6 @@ index fd135fd..13281ce 100644
 # Lang 48
 
 
-Nb Executed tests: 1764
-
-Nb Failing tests: 1
-
->	org.apache.commons.lang.builder.EqualsBuilderTest#testBigDecimal
 
 ## Human Patch 
 
@@ -2817,11 +2508,6 @@ index 6901c8e..afd1666 100644
 # Lang 49
 
 
-Nb Executed tests: 1750
-
-Nb Failing tests: 1
-
->	org.apache.commons.lang.math.FractionTest#testReduce
 
 ## Human Patch 
 
@@ -2846,12 +2532,6 @@ index 3347689..5f8e565 100644
 # Lang 50
 
 
-Nb Executed tests: 1814
-
-Nb Failing tests: 2
-
->	org.apache.commons.lang.time.FastDateFormatTest#test_changeDefault_Locale_DateInstance
->	org.apache.commons.lang.time.FastDateFormatTest#test_changeDefault_Locale_DateTimeInstance
 
 ## Human Patch 
 
@@ -2908,11 +2588,6 @@ index d1caaa8..0be752b 100644
 # Lang 51
 
 
-Nb Executed tests: 1725
-
-Nb Failing tests: 1
-
->	org.apache.commons.lang.BooleanUtilsTest#test_toBoolean_String
 
 ## Human Patch 
 
@@ -2934,7 +2609,7 @@ index 8b5028c..3fda4ec 100644
 
 ## NopolC 
 
-org.apache.commons.lang.BooleanUtils:672 (Suspicious rank: 10 (Ochiai), 18 (Ample), 18 (Tarantula))
+org.apache.commons.lang.BooleanUtils:672
 ```Java
 str!=null
 ```
@@ -2950,11 +2625,6 @@ Grid5000 node: chimint-15.lille.grid5000.fr
 # Lang 52
 
 
-Nb Executed tests: 1725
-
-Nb Failing tests: 1
-
->	org.apache.commons.lang.StringEscapeUtilsTest#testEscapeJavaScript
 
 ## Human Patch 
 
@@ -2980,11 +2650,6 @@ index db2d7bd..4fda091 100644
 # Lang 53
 
 
-Nb Executed tests: 1718
-
-Nb Failing tests: 1
-
->	org.apache.commons.lang.time.DateUtilsTest#testRoundLang346
 
 ## Human Patch 
 
@@ -3024,11 +2689,6 @@ index e5138b5..9ca1bc5 100644
 # Lang 54
 
 
-Nb Executed tests: 1710
-
-Nb Failing tests: 1
-
->	org.apache.commons.lang.LocaleUtilsTest#testLang328
 
 ## Human Patch 
 
@@ -3053,11 +2713,6 @@ index 9607953..139d9a7 100644
 # Lang 55
 
 
-Nb Executed tests: 1710
-
-Nb Failing tests: 1
-
->	org.apache.commons.lang.time.StopWatchTest#testLang315
 
 ## Human Patch 
 
@@ -3082,7 +2737,7 @@ index 0f0786a..607e9b6 100644
 
 ## NopolPC 
 
-org.apache.commons.lang.time.StopWatch:118 (Suspicious rank: 7 (Ochiai), 8 (Ample), 8 (Tarantula))
+org.apache.commons.lang.time.StopWatch:118
 ```Java
 (org.apache.commons.lang.time.StopWatch.this.stopTime)<(org.apache.commons.lang.time.StopWatch.STATE_RUNNING)
 ```
@@ -3098,11 +2753,6 @@ Grid5000 node: chinqchint-3.lille.grid5000.fr
 # Lang 56
 
 
-Nb Executed tests: 1691
-
-Nb Failing tests: 1
-
->	org.apache.commons.lang.time.FastDateFormatTest#testLang303
 
 ## Human Patch 
 
@@ -3145,21 +2795,6 @@ index 756290f..ac96c58 100644
 # Lang 57
 
 
-Nb Executed tests: 1690
-
-Nb Failing tests: 11
-
->	org.apache.commons.lang.LocaleUtilsTest#testAvailableLocaleSet
->	org.apache.commons.lang.LocaleUtilsTest#testIsAvailableLocale
->	org.apache.commons.lang.LocaleUtilsTest#testAvailableLocaleList
->	org.apache.commons.lang.LocaleUtilsTest#testCountriesByLanguage
->	org.apache.commons.lang.LocaleUtilsTest#testLocaleLookupList_LocaleLocale
->	org.apache.commons.lang.LocaleUtilsTest#testLanguagesByCountry
->	org.apache.commons.lang.LocaleUtilsTest#testToLocale_1Part
->	org.apache.commons.lang.LocaleUtilsTest#testToLocale_2Part
->	org.apache.commons.lang.LocaleUtilsTest#testToLocale_3Part
->	org.apache.commons.lang.LocaleUtilsTest#testLocaleLookupList_Locale
->	org.apache.commons.lang.LocaleUtilsTest#testConstructor
 
 ## Human Patch 
 
@@ -3183,12 +2818,6 @@ index 139d9a7..ceb886e 100644
 # Lang 58
 
 
-Nb Executed tests: 1689
-
-Nb Failing tests: 2
-
->	org.apache.commons.lang.math.RandomUtilsTest#testNextFloat2
->	org.apache.commons.lang.math.NumberUtilsTest#testLang300
 
 ## Human Patch 
 
@@ -3212,7 +2841,7 @@ index eb74e72..c0f06a4 100644
 
 ## NopolPC 
 
-org.apache.commons.lang.math.NumberUtils:464 (Suspicious rank: 2 (Ochiai), 2 (Ample), 2 (Tarantula))
+org.apache.commons.lang.math.NumberUtils:464
 ```Java
 (-1)<(expPos)
 ```
@@ -3227,7 +2856,7 @@ Grid5000 node: chinqchint-16.lille.grid5000.fr
 
 ## NopolC 
 
-org.apache.commons.lang.math.NumberUtils:452 (Suspicious rank: 21 (Ochiai), 11 (Ample), 11 (Tarantula))
+org.apache.commons.lang.math.NumberUtils:452
 ```Java
 ((dec == null) && (exp == null))
 ```
@@ -3243,11 +2872,6 @@ Grid5000 node: chinqchint-11.lille.grid5000.fr
 # Lang 59
 
 
-Nb Executed tests: 1687
-
-Nb Failing tests: 1
-
->	org.apache.commons.lang.text.StrBuilderAppendInsertTest#testLang299
 
 ## Human Patch 
 
@@ -3271,11 +2895,6 @@ index 4c14509..886d424 100644
 # Lang 60
 
 
-Nb Executed tests: 1684
-
-Nb Failing tests: 1
-
->	org.apache.commons.lang.text.StrBuilderTest#testLang295
 
 ## Human Patch 
 
@@ -3308,12 +2927,6 @@ index 886d424..c7cbfb3 100644
 # Lang 61
 
 
-Nb Executed tests: 1683
-
-Nb Failing tests: 2
-
->	org.apache.commons.lang.text.StrBuilderTest#testIndexOfLang294
->	org.apache.commons.lang.text.StrBuilderTest#testLang294
 
 ## Human Patch 
 
@@ -3339,11 +2952,6 @@ index c7cbfb3..e202d73 100644
 # Lang 62
 
 
-Nb Executed tests: 1681
-
-Nb Failing tests: 1
-
->	org.apache.commons.lang.EntitiesTest#testNumberOverflow
 
 ## Human Patch 
 
@@ -3387,11 +2995,6 @@ index a45e004..495c981 100644
 # Lang 63
 
 
-Nb Executed tests: 1671
-
-Nb Failing tests: 1
-
->	org.apache.commons.lang.time.DurationFormatUtilsTest#testJiraLang281
 
 ## Human Patch 
 
@@ -3468,13 +3071,6 @@ index 3a9d9f6..f777d48 100644
 # Lang 64
 
 
-Nb Executed tests: 1666
-
-Nb Failing tests: 3
-
->	org.apache.commons.lang.enums.ValuedEnumTest#testCompareTo_otherEnumType
->	org.apache.commons.lang.enums.ValuedEnumTest#testCompareTo_classloader_equal
->	org.apache.commons.lang.enums.ValuedEnumTest#testCompareTo_classloader_different
 
 ## Human Patch 
 
@@ -3531,11 +3127,6 @@ index 419a0ea..bbd018c 100644
 # Lang 65
 
 
-Nb Executed tests: 1633
-
-Nb Failing tests: 1
-
->	org.apache.commons.lang.time.DateUtilsTest#testTruncateLang59
 
 ## Human Patch 
 
@@ -3613,12 +3204,6 @@ index 79c13f0..f042237 100644
 # Chart 1
 
 
-Nb Executed tests: 4402
-
-Nb Failing tests: 2
-
->	org.jfree.chart.renderer.category.junit.AbstractCategoryItemRendererTests#test2947660
->	org.jfree.chart.renderer.category.junit.AbstractCategoryItemRendererTests#test2947660
 
 ## Human Patch 
 
@@ -3642,14 +3227,6 @@ Index: org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java
 # Chart 2
 
 
-Nb Executed tests: 4398
-
-Nb Failing tests: 4
-
->	org.jfree.data.general.junit.DatasetUtilitiesTests#testBug2849731_2
->	org.jfree.data.general.junit.DatasetUtilitiesTests#testBug2849731_3
->	org.jfree.data.general.junit.DatasetUtilitiesTests#testBug2849731_2
->	org.jfree.data.general.junit.DatasetUtilitiesTests#testBug2849731_3
 
 ## Human Patch 
 
@@ -3704,12 +3281,6 @@ Index: org/jfree/data/general/DatasetUtilities.java
 # Chart 3
 
 
-Nb Executed tests: 4390
-
-Nb Failing tests: 2
-
->	org.jfree.data.time.junit.TimeSeriesTests#testCreateCopy3
->	org.jfree.data.time.junit.TimeSeriesTests#testCreateCopy3
 
 ## Human Patch 
 
@@ -3734,54 +3305,6 @@ Index: org/jfree/data/time/TimeSeries.java
 # Chart 4
 
 
-Nb Executed tests: 4374
-
-Nb Failing tests: 44
-
->	org.jfree.chart.junit.JFreeChartTests#testSerialization4
->	org.jfree.chart.junit.ScatterPlotTests#testDrawWithNullInfo
->	org.jfree.chart.junit.ScatterPlotTests#testSetSeriesToolTipGenerator
->	org.jfree.chart.junit.ScatterPlotTests#testReplaceDataset
->	org.jfree.chart.junit.TimeSeriesChartTests#testDrawWithNullInfo
->	org.jfree.chart.junit.TimeSeriesChartTests#testSetSeriesToolTipGenerator
->	org.jfree.chart.junit.TimeSeriesChartTests#testReplaceDataset
->	org.jfree.chart.junit.XYAreaChartTests#testDrawWithNullInfo
->	org.jfree.chart.junit.XYAreaChartTests#testSetSeriesToolTipGenerator
->	org.jfree.chart.junit.XYAreaChartTests#testReplaceDataset
->	org.jfree.chart.junit.XYStepAreaChartTests#testDrawWithNullInfo
->	org.jfree.chart.junit.XYStepAreaChartTests#testSetSeriesToolTipGenerator
->	org.jfree.chart.junit.XYStepAreaChartTests#testReplaceDataset
->	org.jfree.chart.junit.XYStepChartTests#testDrawWithNullInfo
->	org.jfree.chart.junit.XYStepChartTests#testSetSeriesToolTipGenerator
->	org.jfree.chart.junit.XYStepChartTests#testReplaceDataset
->	org.jfree.chart.axis.junit.LogAxisTests#testXYAutoRange1
->	org.jfree.chart.axis.junit.LogAxisTests#testXYAutoRange2
->	org.jfree.chart.junit.XYStepAreaChartTests#testDrawWithNullInfo
->	org.jfree.chart.junit.XYStepAreaChartTests#testSetSeriesToolTipGenerator
->	org.jfree.chart.junit.XYStepAreaChartTests#testReplaceDataset
->	org.jfree.chart.plot.junit.XYPlotTests#testDrawRangeGridlines
->	org.jfree.chart.junit.JFreeChartTests#testSerialization4
->	org.jfree.chart.junit.ScatterPlotTests#testDrawWithNullInfo
->	org.jfree.chart.junit.ScatterPlotTests#testSetSeriesToolTipGenerator
->	org.jfree.chart.junit.ScatterPlotTests#testReplaceDataset
->	org.jfree.chart.plot.junit.XYPlotTests#testDrawRangeGridlines
->	org.jfree.chart.junit.TimeSeriesChartTests#testDrawWithNullInfo
->	org.jfree.chart.junit.TimeSeriesChartTests#testSetSeriesToolTipGenerator
->	org.jfree.chart.junit.TimeSeriesChartTests#testReplaceDataset
->	org.jfree.chart.axis.junit.LogAxisTests#testXYAutoRange1
->	org.jfree.chart.axis.junit.LogAxisTests#testXYAutoRange2
->	org.jfree.chart.axis.junit.NumberAxisTests#testXYAutoRange1
->	org.jfree.chart.axis.junit.NumberAxisTests#testXYAutoRange2
->	org.jfree.chart.axis.junit.ValueAxisTests#testAxisMargins
->	org.jfree.chart.junit.XYAreaChartTests#testDrawWithNullInfo
->	org.jfree.chart.junit.XYAreaChartTests#testSetSeriesToolTipGenerator
->	org.jfree.chart.junit.XYAreaChartTests#testReplaceDataset
->	org.jfree.chart.axis.junit.ValueAxisTests#testAxisMargins
->	org.jfree.chart.junit.XYStepChartTests#testDrawWithNullInfo
->	org.jfree.chart.junit.XYStepChartTests#testSetSeriesToolTipGenerator
->	org.jfree.chart.junit.XYStepChartTests#testReplaceDataset
->	org.jfree.chart.axis.junit.NumberAxisTests#testXYAutoRange1
->	org.jfree.chart.axis.junit.NumberAxisTests#testXYAutoRange2
 
 ## Human Patch 
 
@@ -3817,12 +3340,6 @@ Index: org/jfree/chart/plot/XYPlot.java
 # Chart 5
 
 
-Nb Executed tests: 4081
-
-Nb Failing tests: 2
-
->	org.jfree.data.xy.junit.XYSeriesTests#testBug1955483
->	org.jfree.data.xy.junit.XYSeriesTests#testBug1955483
 
 ## Human Patch 
 
@@ -3853,7 +3370,7 @@ Index: org/jfree/data/xy/XYSeries.java
 
 ## NopolC 
 
-org.jfree.data.xy.XYSeries:561 (Suspicious rank: 3 (Ochiai), 3 (Ample), 3 (Tarantula))
+org.jfree.data.xy.XYSeries:561
 ```Java
 !(org.jfree.data.xy.XYSeries.this.allowDuplicateXValues)
 ```
@@ -3869,14 +3386,6 @@ Grid5000 node: chimint-15.lille.grid5000.fr
 # Chart 6
 
 
-Nb Executed tests: 3789
-
-Nb Failing tests: 4
-
->	org.jfree.chart.util.junit.ShapeListTests#testSerialization
->	org.jfree.chart.util.junit.ShapeListTests#testEquals
->	org.jfree.chart.util.junit.ShapeListTests#testSerialization
->	org.jfree.chart.util.junit.ShapeListTests#testEquals
 
 ## Human Patch 
 
@@ -3929,12 +3438,6 @@ Index: org/jfree/chart/util/ShapeList.java
 # Chart 7
 
 
-Nb Executed tests: 3641
-
-Nb Failing tests: 2
-
->	org.jfree.data.time.junit.TimePeriodValuesTests#testGetMaxMiddleIndex
->	org.jfree.data.time.junit.TimePeriodValuesTests#testGetMaxMiddleIndex
 
 ## Human Patch 
 
@@ -3961,10 +3464,6 @@ Index: org/jfree/data/time/TimePeriodValues.java
 # Chart 8
 
 
-Nb Executed tests: 3641
-
-Nb Failing tests: 0
-
 
 ## Human Patch 
 
@@ -3988,12 +3487,6 @@ Index: org/jfree/data/time/Week.java
 # Chart 9
 
 
-Nb Executed tests: 3641
-
-Nb Failing tests: 2
-
->	org.jfree.data.time.junit.TimeSeriesTests#testBug1864222
->	org.jfree.data.time.junit.TimeSeriesTests#testBug1864222
 
 ## Human Patch 
 
@@ -4045,7 +3538,7 @@ Index: org/jfree/data/time/TimeSeries.java
 
 ## NopolPC 
 
-org.jfree.data.time.TimeSeries:940 (Suspicious rank: 10 (Ochiai), 14 (Ample), 14 (Tarantula))
+org.jfree.data.time.TimeSeries:940
 ```Java
 (org.jfree.data.time.TimeSeries.DEFAULT_RANGE_DESCRIPTION.length())==(org.jfree.data.time.TimeSeries.this.data.size())
 ```
@@ -4060,7 +3553,7 @@ Grid5000 node: chinqchint-20.lille.grid5000.fr
 
 ## NopolC 
 
-org.jfree.data.time.TimeSeries:935 (Suspicious rank: 8 (Ochiai), 9 (Ample), 9 (Tarantula))
+org.jfree.data.time.TimeSeries:935
 ```Java
 ((org.jfree.data.time.TimeSeries.DEFAULT_RANGE_DESCRIPTION.length())==(startIndex))||((!((startIndex)!=(1)))&&(start!=null))
 ```
@@ -4076,12 +3569,6 @@ Grid5000 node: chinqchint-12.lille.grid5000.fr
 # Chart 10
 
 
-Nb Executed tests: 3625
-
-Nb Failing tests: 2
-
->	org.jfree.chart.imagemap.junit.StandardToolTipTagFragmentGeneratorTests#testGenerateURLFragment
->	org.jfree.chart.imagemap.junit.StandardToolTipTagFragmentGeneratorTests#testGenerateURLFragment
 
 ## Human Patch 
 
@@ -4248,12 +3735,6 @@ Index: org/jfree/chart/imagemap/OverLIBToolTipTagFragmentGenerator.java
 # Chart 11
 
 
-Nb Executed tests: 3621
-
-Nb Failing tests: 2
-
->	org.jfree.chart.util.junit.ShapeUtilitiesTests#testEqualGeneralPaths
->	org.jfree.chart.util.junit.ShapeUtilitiesTests#testEqualGeneralPaths
 
 ## Human Patch 
 
@@ -4307,12 +3788,6 @@ Index: org/jfree/chart/util/SerialUtilities.java
 # Chart 12
 
 
-Nb Executed tests: 3613
-
-Nb Failing tests: 2
-
->	org.jfree.chart.plot.junit.MultiplePiePlotTests#testConstructor
->	org.jfree.chart.plot.junit.MultiplePiePlotTests#testConstructor
 
 ## Human Patch 
 
@@ -4666,12 +4141,6 @@ Index: org/jfree/chart/plot/MultiplePiePlot.java
 # Chart 13
 
 
-Nb Executed tests: 3597
-
-Nb Failing tests: 2
-
->	org.jfree.chart.block.junit.BorderArrangementTests#testSizingWithWidthConstraint
->	org.jfree.chart.block.junit.BorderArrangementTests#testSizingWithWidthConstraint
 
 ## Human Patch 
 
@@ -5280,7 +4749,7 @@ Index: org/jfree/chart/block/BorderArrangement.java
 
 ## NopolPC 
 
-org.jfree.chart.block.BorderArrangement:482 (Suspicious rank: 38 (Ochiai), 4 (Ample), 4 (Tarantula))
+org.jfree.chart.block.BorderArrangement:482
 ```Java
 null!=null
 ```
@@ -5296,18 +4765,6 @@ Grid5000 node: chinqchint-32.lille.grid5000.fr
 # Chart 14
 
 
-Nb Executed tests: 3589
-
-Nb Failing tests: 8
-
->	org.jfree.chart.plot.junit.CategoryPlotTests#testRemoveRangeMarker
->	org.jfree.chart.plot.junit.CategoryPlotTests#testRemoveDomainMarker
->	org.jfree.chart.plot.junit.CategoryPlotTests#testRemoveRangeMarker
->	org.jfree.chart.plot.junit.CategoryPlotTests#testRemoveDomainMarker
->	org.jfree.chart.plot.junit.XYPlotTests#testRemoveRangeMarker
->	org.jfree.chart.plot.junit.XYPlotTests#testRemoveDomainMarker
->	org.jfree.chart.plot.junit.XYPlotTests#testRemoveRangeMarker
->	org.jfree.chart.plot.junit.XYPlotTests#testRemoveDomainMarker
 
 ## Human Patch 
 
@@ -5381,12 +4838,6 @@ Index: org/jfree/chart/plot/XYPlot.java
 # Chart 15
 
 
-Nb Executed tests: 3579
-
-Nb Failing tests: 2
-
->	org.jfree.chart.plot.junit.PiePlot3DTests#testDrawWithNullDataset
->	org.jfree.chart.plot.junit.PiePlot3DTests#testDrawWithNullDataset
 
 ## Human Patch 
 
@@ -5424,26 +4875,6 @@ Index: org/jfree/chart/plot/PiePlot.java
 # Chart 16
 
 
-Nb Executed tests: 3575
-
-Nb Failing tests: 16
-
->	org.jfree.data.category.junit.DefaultIntervalCategoryDatasetTests#testGetCategoryIndex
->	org.jfree.data.category.junit.DefaultIntervalCategoryDatasetTests#testSetCategoryKeys
->	org.jfree.data.category.junit.DefaultIntervalCategoryDatasetTests#testGetSeriesIndex
->	org.jfree.data.category.junit.DefaultIntervalCategoryDatasetTests#testGetRowCount
->	org.jfree.data.category.junit.DefaultIntervalCategoryDatasetTests#testGetRowIndex
->	org.jfree.data.category.junit.DefaultIntervalCategoryDatasetTests#testGetColumnCount
->	org.jfree.data.category.junit.DefaultIntervalCategoryDatasetTests#testGetColumnIndex
->	org.jfree.data.category.junit.DefaultIntervalCategoryDatasetTests#testCloning2
->	org.jfree.data.category.junit.DefaultIntervalCategoryDatasetTests#testGetCategoryIndex
->	org.jfree.data.category.junit.DefaultIntervalCategoryDatasetTests#testSetCategoryKeys
->	org.jfree.data.category.junit.DefaultIntervalCategoryDatasetTests#testGetSeriesIndex
->	org.jfree.data.category.junit.DefaultIntervalCategoryDatasetTests#testGetRowCount
->	org.jfree.data.category.junit.DefaultIntervalCategoryDatasetTests#testGetRowIndex
->	org.jfree.data.category.junit.DefaultIntervalCategoryDatasetTests#testGetColumnCount
->	org.jfree.data.category.junit.DefaultIntervalCategoryDatasetTests#testGetColumnIndex
->	org.jfree.data.category.junit.DefaultIntervalCategoryDatasetTests#testCloning2
 
 ## Human Patch 
 
@@ -5487,12 +4918,6 @@ Index: org/jfree/data/category/DefaultIntervalCategoryDataset.java
 # Chart 17
 
 
-Nb Executed tests: 3499
-
-Nb Failing tests: 2
-
->	org.jfree.data.time.junit.TimeSeriesTests#testBug1832432
->	org.jfree.data.time.junit.TimeSeriesTests#testBug1832432
 
 ## Human Patch 
 
@@ -5516,7 +4941,7 @@ Index: org/jfree/data/time/TimeSeries.java
 
 ## NopolPC 
 
-org.jfree.data.time.TimeSeries:880 (Suspicious rank: 1 (Ochiai), 1 (Ample), 1 (Tarantula))
+org.jfree.data.time.TimeSeries:880
 ```Java
 (1)==(start)
 ```
@@ -5531,7 +4956,7 @@ Grid5000 node: chimint-7.lille.grid5000.fr
 
 ## NopolC 
 
-org.jfree.data.time.TimeSeries:879 (Suspicious rank: 4 (Ochiai), 3 (Ample), 3 (Tarantula))
+org.jfree.data.time.TimeSeries:879
 ```Java
 (org.jfree.data.time.TimeSeries.this.range.length()==0)||(((org.jfree.data.time.TimeSeries.this.data.size())!=(start))&&(end < start))
 ```
@@ -5547,18 +4972,6 @@ Grid5000 node: chimint-15.lille.grid5000.fr
 # Chart 18
 
 
-Nb Executed tests: 3495
-
-Nb Failing tests: 8
-
->	org.jfree.data.junit.DefaultKeyedValuesTests#testRemoveValue
->	org.jfree.data.junit.DefaultKeyedValuesTests#testGetIndex2
->	org.jfree.data.junit.DefaultKeyedValues2DTests#testRemoveColumnByKey
->	org.jfree.data.junit.DefaultKeyedValues2DTests#testRemoveColumnByKey
->	org.jfree.data.junit.DefaultKeyedValuesTests#testRemoveValue
->	org.jfree.data.junit.DefaultKeyedValuesTests#testGetIndex2
->	org.jfree.data.category.junit.DefaultCategoryDatasetTests#testBug1835955
->	org.jfree.data.category.junit.DefaultCategoryDatasetTests#testBug1835955
 
 ## Human Patch 
 
@@ -5684,14 +5097,6 @@ Index: org/jfree/data/DefaultKeyedValues2D.java
 # Chart 19
 
 
-Nb Executed tests: 3459
-
-Nb Failing tests: 4
-
->	org.jfree.chart.plot.junit.CategoryPlotTests#testGetRangeAxisIndex
->	org.jfree.chart.plot.junit.CategoryPlotTests#testGetDomainAxisIndex
->	org.jfree.chart.plot.junit.CategoryPlotTests#testGetRangeAxisIndex
->	org.jfree.chart.plot.junit.CategoryPlotTests#testGetDomainAxisIndex
 
 ## Human Patch 
 
@@ -5753,12 +5158,6 @@ Index: org/jfree/chart/plot/CategoryPlot.java
 # Chart 20
 
 
-Nb Executed tests: 3311
-
-Nb Failing tests: 2
-
->	org.jfree.chart.plot.junit.ValueMarkerTests#test1808376
->	org.jfree.chart.plot.junit.ValueMarkerTests#test1808376
 
 ## Human Patch 
 
@@ -5787,12 +5186,6 @@ Index: org/jfree/chart/plot/ValueMarker.java
 # Chart 21
 
 
-Nb Executed tests: 3303
-
-Nb Failing tests: 2
-
->	org.jfree.data.statistics.junit.DefaultBoxAndWhiskerCategoryDatasetTests#testGetRangeBounds
->	org.jfree.data.statistics.junit.DefaultBoxAndWhiskerCategoryDatasetTests#testGetRangeBounds
 
 ## Human Patch 
 
@@ -5980,7 +5373,7 @@ Index: org/jfree/data/statistics/DefaultBoxAndWhiskerCategoryDataset.java
 
 ## NopolPC 
 
-org.jfree.data.Range:335 (Suspicious rank: 9 (Ochiai), 9 (Ample), 9 (Tarantula))
+org.jfree.data.Range:335
 ```Java
 ((((-1)-(1))+(org.jfree.data.Range.this.upper))<=(0))||((org.jfree.data.Range.this.lower)<(((-1)-(1))+(org.jfree.data.Range.this.upper)))
 ```
@@ -5996,22 +5389,6 @@ Grid5000 node: chimint-3.lille.grid5000.fr
 # Chart 22
 
 
-Nb Executed tests: 3301
-
-Nb Failing tests: 12
-
->	org.jfree.data.junit.KeyedObjects2DTests#testRemoveColumnByKey
->	org.jfree.data.junit.KeyedObjects2DTests#testRemoveValue
->	org.jfree.data.junit.KeyedObjects2DTests#testGetValueByKey
->	org.jfree.data.junit.KeyedObjects2DTests#testRemoveColumnByIndex
->	org.jfree.data.junit.KeyedObjects2DTests#testSetObject
->	org.jfree.data.junit.KeyedObjects2DTests#testRemoveRowByKey
->	org.jfree.data.junit.KeyedObjects2DTests#testRemoveColumnByKey
->	org.jfree.data.junit.KeyedObjects2DTests#testRemoveValue
->	org.jfree.data.junit.KeyedObjects2DTests#testGetValueByKey
->	org.jfree.data.junit.KeyedObjects2DTests#testRemoveColumnByIndex
->	org.jfree.data.junit.KeyedObjects2DTests#testSetObject
->	org.jfree.data.junit.KeyedObjects2DTests#testRemoveRowByKey
 
 ## Human Patch 
 
@@ -6258,12 +5635,6 @@ Index: org/jfree/data/KeyedObjects2D.java
 # Chart 23
 
 
-Nb Executed tests: 3259
-
-Nb Failing tests: 2
-
->	org.jfree.chart.renderer.category.junit.MinMaxCategoryRendererTests#testEquals
->	org.jfree.chart.renderer.category.junit.MinMaxCategoryRendererTests#testEquals
 
 ## Human Patch 
 
@@ -6382,12 +5753,6 @@ Index: org/jfree/chart/renderer/category/MinMaxCategoryRenderer.java
 # Chart 24
 
 
-Nb Executed tests: 3253
-
-Nb Failing tests: 2
-
->	org.jfree.chart.renderer.junit.GrayPaintScaleTests#testGetPaint
->	org.jfree.chart.renderer.junit.GrayPaintScaleTests#testGetPaint
 
 ## Human Patch 
 
@@ -6420,18 +5785,6 @@ Index: org/jfree/chart/renderer/GrayPaintScale.java
 # Chart 25
 
 
-Nb Executed tests: 3243
-
-Nb Failing tests: 8
-
->	org.jfree.chart.renderer.category.junit.StatisticalBarRendererTests#testDrawWithNullMeanVertical
->	org.jfree.chart.renderer.category.junit.StatisticalBarRendererTests#testDrawWithNullDeviationVertical
->	org.jfree.chart.renderer.category.junit.StatisticalBarRendererTests#testDrawWithNullMeanHorizontal
->	org.jfree.chart.renderer.category.junit.StatisticalBarRendererTests#testDrawWithNullDeviationHorizontal
->	org.jfree.chart.renderer.category.junit.StatisticalBarRendererTests#testDrawWithNullMeanVertical
->	org.jfree.chart.renderer.category.junit.StatisticalBarRendererTests#testDrawWithNullDeviationVertical
->	org.jfree.chart.renderer.category.junit.StatisticalBarRendererTests#testDrawWithNullMeanHorizontal
->	org.jfree.chart.renderer.category.junit.StatisticalBarRendererTests#testDrawWithNullDeviationHorizontal
 
 ## Human Patch 
 
@@ -6609,7 +5962,7 @@ Index: org/jfree/chart/renderer/category/StatisticalBarRenderer.java
 
 ## NopolPC 
 
-org.jfree.chart.renderer.category.StatisticalBarRenderer:207 (Suspicious rank: 4 (Ochiai), 1 (Ample), 47 (Tarantula))
+org.jfree.chart.renderer.category.StatisticalBarRenderer:207
 ```Java
 (org.jfree.chart.renderer.category.StatisticalBarRenderer.serialVersionUID)==(1)
 ```
@@ -6624,7 +5977,7 @@ Grid5000 node: chimint-14.lille.grid5000.fr
 
 ## NopolC 
 
-org.jfree.data.statistics.DefaultStatisticalCategoryDataset:110 (Suspicious rank: 8 (Ochiai), 12 (Ample), 70 (Tarantula))
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset:110
 ```Java
 !(((1)==(org.jfree.data.statistics.DefaultStatisticalCategoryDataset.this.maximumRangeValue))||((org.jfree.data.statistics.DefaultStatisticalCategoryDataset.this.maximumRangeValueIncStdDev)<=(org.jfree.data.statistics.DefaultStatisticalCategoryDataset.this.maximumRangeValue)))
 ```
@@ -6640,56 +5993,6 @@ Grid5000 node: chimint-15.lille.grid5000.fr
 # Chart 26
 
 
-Nb Executed tests: 3191
-
-Nb Failing tests: 46
-
->	org.jfree.data.time.junit.MonthTests#testParseMonth
->	org.jfree.chart.junit.StackedAreaChartTests#testDrawWithNullInfo
->	org.jfree.chart.junit.StackedBarChart3DTests#testDrawWithNullInfo
->	org.jfree.chart.junit.AreaChartTests#testDrawWithNullInfo
->	org.jfree.chart.junit.BarChartTests#testDrawWithNullInfo
->	org.jfree.chart.junit.BarChart3DTests#testDrawWithNullInfo
->	org.jfree.chart.junit.GanttChartTests#testDrawWithNullInfo
->	org.jfree.chart.junit.GanttChartTests#testDrawWithNullInfo2
->	org.jfree.chart.junit.LineChartTests#testDrawWithNullInfo
->	org.jfree.chart.junit.LineChart3DTests#testDrawWithNullInfo
->	org.jfree.chart.junit.StackedAreaChartTests#testDrawWithNullInfo
->	org.jfree.chart.junit.StackedBarChartTests#testDrawWithNullInfo
->	org.jfree.chart.junit.StackedBarChart3DTests#testDrawWithNullInfo
->	org.jfree.chart.junit.WaterfallChartTests#testDrawWithNullInfo
->	org.jfree.chart.junit.AreaChartTests#testDrawWithNullInfo
->	org.jfree.chart.junit.GanttChartTests#testDrawWithNullInfo
->	org.jfree.chart.junit.GanttChartTests#testDrawWithNullInfo2
->	org.jfree.chart.plot.junit.CategoryPlotTests#test1654215
->	org.jfree.chart.plot.junit.CategoryPlotTests#testSerialization3
->	org.jfree.chart.plot.junit.CategoryPlotTests#testSerialization4
->	org.jfree.chart.junit.LineChart3DTests#testDrawWithNullInfo
->	org.jfree.chart.renderer.category.junit.LayeredBarRendererTests#testDrawWithNullInfo
->	org.jfree.chart.renderer.category.junit.BoxAndWhiskerRendererTests#testDrawWithNullInfo
->	org.jfree.chart.renderer.category.junit.GroupedStackedBarRendererTests#testDrawWithNullInfo
->	org.jfree.chart.renderer.category.junit.IntervalBarRendererTests#testDrawWithNullInfo
->	org.jfree.chart.renderer.category.junit.LayeredBarRendererTests#testDrawWithNullInfo
->	org.jfree.chart.renderer.category.junit.LevelRendererTests#testDrawWithNullInfo
->	org.jfree.chart.renderer.category.junit.MinMaxCategoryRendererTests#testDrawWithNullInfo
->	org.jfree.chart.renderer.category.junit.StatisticalBarRendererTests#testDrawWithNullInfo
->	org.jfree.chart.renderer.category.junit.StatisticalLineAndShapeRendererTests#testDrawWithNullInfo
->	org.jfree.chart.plot.junit.CategoryPlotTests#test1654215
->	org.jfree.chart.plot.junit.CategoryPlotTests#testSerialization3
->	org.jfree.chart.plot.junit.CategoryPlotTests#testSerialization4
->	org.jfree.chart.junit.StackedBarChartTests#testDrawWithNullInfo
->	org.jfree.chart.renderer.category.junit.StatisticalLineAndShapeRendererTests#testDrawWithNullInfo
->	org.jfree.chart.renderer.category.junit.GroupedStackedBarRendererTests#testDrawWithNullInfo
->	org.jfree.chart.renderer.category.junit.StatisticalBarRendererTests#testDrawWithNullInfo
->	org.jfree.chart.junit.LineChartTests#testDrawWithNullInfo
->	org.jfree.chart.junit.BarChartTests#testDrawWithNullInfo
->	org.jfree.chart.renderer.category.junit.MinMaxCategoryRendererTests#testDrawWithNullInfo
->	org.jfree.chart.renderer.category.junit.IntervalBarRendererTests#testDrawWithNullInfo
->	org.jfree.chart.renderer.category.junit.BoxAndWhiskerRendererTests#testDrawWithNullInfo
->	org.jfree.chart.junit.WaterfallChartTests#testDrawWithNullInfo
->	org.jfree.data.time.junit.MonthTests#testParseMonth
->	org.jfree.chart.renderer.category.junit.LevelRendererTests#testDrawWithNullInfo
->	org.jfree.chart.junit.BarChart3DTests#testDrawWithNullInfo
 
 ## Human Patch 
 
@@ -6723,12 +6026,6 @@ Index: org/jfree/chart/axis/Axis.java
 # Math 1
 
 
-Nb Executed tests: 5222
-
-Nb Failing tests: 2
-
->	org.apache.commons.math3.fraction.FractionTest#testDigitLimitConstructor
->	org.apache.commons.math3.fraction.BigFractionTest#testDigitLimitConstructor
 
 ## Human Patch 
 
@@ -6792,11 +6089,6 @@ index 002dae9..08d3b95 100644
 # Math 2
 
 
-Nb Executed tests: 5195
-
-Nb Failing tests: 1
-
->	org.apache.commons.math3.distribution.HypergeometricDistributionTest#testMath1021
 
 ## Human Patch 
 
@@ -6819,7 +6111,7 @@ index 81e180c..2769127 100644
 
 ## Genprog 
 
-org.apache.commons.math3.distribution.AbstractIntegerDistribution:138 (Suspicious rank: 22 (Ochiai), 16 (Ample), 16 (Tarantula))
+org.apache.commons.math3.distribution.AbstractIntegerDistribution:138
 ```Java
 remove
 ```
@@ -6830,33 +6122,51 @@ Grid5000 node : graphene-102.nancy.grid5000.fr
 
 ## Kali 
 
-org.apache.commons.math3.distribution.AbstractIntegerDistribution:137 (Suspicious rank: 21 (Ochiai), 22 (Ample), 22 (Tarantula))
+org.apache.commons.math3.distribution.AbstractIntegerDistribution:137
 ```Java
 remove
 ```
 
-org.apache.commons.math3.distribution.AbstractIntegerDistribution:138 (Suspicious rank: 22 (Ochiai), 16 (Ample), 16 (Tarantula))
+org.apache.commons.math3.distribution.AbstractIntegerDistribution:137
+```Java
+if (false) {
+	upper = ((int)(java.lang.Math.ceil(tmp))) - 1;
+} 
+```
+
+org.apache.commons.math3.distribution.AbstractIntegerDistribution:138
 ```Java
 remove
 ```
 
-org.apache.commons.math3.distribution.AbstractIntegerDistribution:129 (Suspicious rank: 26 (Ochiai), 24 (Ample), 24 (Tarantula))
+org.apache.commons.math3.distribution.AbstractIntegerDistribution:129
 ```Java
 remove
 ```
 
-Execution time: 0:11:48.689000
+org.apache.commons.math3.distribution.AbstractIntegerDistribution:129
+```Java
+if (false) {
+	double k = org.apache.commons.math3.util.FastMath.sqrt(((1.0 - p) / p));
+	double tmp = mu - (k * sigma);
+	if (tmp > lower) {
+		lower = ((int)(java.lang.Math.ceil(tmp))) - 1;
+	} 
+	k = 1.0 / k;
+	tmp = mu + (k * sigma);
+	if (tmp < upper) {
+		upper = ((int)(java.lang.Math.ceil(tmp))) - 1;
+	} 
+} 
+```
 
-Grid5000 node : graphene-74.nancy.grid5000.fr
+Execution time: 0:16:24.266000
+
+Grid5000 node : graphene-106.nancy.grid5000.fr
 
 # Math 3
 
 
-Nb Executed tests: 5059
-
-Nb Failing tests: 1
-
->	org.apache.commons.math3.util.MathArraysTest#testLinearCombinationWithSingleElementArray
 
 ## Human Patch 
 
@@ -6883,12 +6193,6 @@ index 8f83d96..1aa56cc 100644
 # Math 4
 
 
-Nb Executed tests: 5014
-
-Nb Failing tests: 2
-
->	org.apache.commons.math3.geometry.euclidean.threed.SubLineTest#testIntersectionNotIntersecting
->	org.apache.commons.math3.geometry.euclidean.twod.SubLineTest#testIntersectionParallel
 
 ## Human Patch 
 
@@ -6927,11 +6231,6 @@ index ea9e96a..a9d621a 100644
 # Math 5
 
 
-Nb Executed tests: 4949
-
-Nb Failing tests: 1
-
->	org.apache.commons.math3.complex.ComplexTest#testReciprocalZero
 
 ## Human Patch 
 
@@ -6955,38 +6254,6 @@ index ac8185b..22b23f2 100644
 # Math 6
 
 
-Nb Executed tests: 4942
-
-Nb Failing tests: 28
-
->	org.apache.commons.math3.optim.nonlinear.scalar.noderiv.PowellOptimizerTest#testSumSinc
->	org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizerNelderMeadTest#testMaximize1
->	org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizerNelderMeadTest#testMaximize2
->	org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizerNelderMeadTest#testMinimize1
->	org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizerNelderMeadTest#testMinimize2
->	org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest#testConstrainedRosen
->	org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest#testElliRotated
->	org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest#testEllipse
->	org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest#testTwoAxes
->	org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest#testCigar
->	org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest#testRosen
->	org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest#testRastrigin
->	org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest#testDiagonalRosen
->	org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest#testSsDiffPow
->	org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest#testMaximize
->	org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest#testAckley
->	org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest#testCigTab
->	org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest#testDiffPow
->	org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest#testSphere
->	org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest#testTablet
->	org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest#testCigarWithBoundaries
->	org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizerMultiDirectionalTest#testMaximize1
->	org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizerMultiDirectionalTest#testMaximize2
->	org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizerMultiDirectionalTest#testMinimize1
->	org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizerMultiDirectionalTest#testMinimize2
->	org.apache.commons.math3.optim.nonlinear.scalar.gradient.NonLinearConjugateGradientOptimizerTest#testTrivial
->	org.apache.commons.math3.optim.nonlinear.vector.jacobian.LevenbergMarquardtOptimizerTest#testGetIterations
->	org.apache.commons.math3.optim.nonlinear.vector.jacobian.GaussNewtonOptimizerTest#testGetIterations
 
 ## Human Patch 
 
@@ -7152,11 +6419,6 @@ index 4016131..ca2d138 100644
 # Math 7
 
 
-Nb Executed tests: 4933
-
-Nb Failing tests: 1
-
->	org.apache.commons.math3.ode.nonstiff.DormandPrince853IntegratorTest#testEventsScheduling
 
 ## Human Patch 
 
@@ -7217,11 +6479,6 @@ index 6e0237f..00827db 100644
 # Math 8
 
 
-Nb Executed tests: 4850
-
-Nb Failing tests: 1
-
->	org.apache.commons.math3.distribution.DiscreteRealDistributionTest#testIssue942
 
 ## Human Patch 
 
@@ -7263,7 +6520,7 @@ index 879eb2a..8c08dbe 100644
 
 ## Genprog 
 
-org.apache.commons.math3.distribution.DiscreteDistribution:190 (Suspicious rank: 4 (Ochiai), 1 (Ample), 1 (Tarantula))
+org.apache.commons.math3.distribution.DiscreteDistribution:190
 ```Java
 remove
 ```
@@ -7274,28 +6531,23 @@ Grid5000 node : griffon-1.nancy.grid5000.fr
 
 ## Kali 
 
-org.apache.commons.math3.distribution.DiscreteDistribution:189 (Suspicious rank: 3 (Ochiai), 4 (Ample), 4 (Tarantula))
+org.apache.commons.math3.distribution.DiscreteDistribution:189
 ```Java
 remove
 ```
 
-org.apache.commons.math3.distribution.DiscreteDistribution:190 (Suspicious rank: 4 (Ochiai), 1 (Ample), 1 (Tarantula))
+org.apache.commons.math3.distribution.DiscreteDistribution:190
 ```Java
 remove
 ```
 
-Execution time: 0:23:13.326000
+Execution time: 0:25:22.621000
 
-Grid5000 node : griffon-39.nancy.grid5000.fr
+Grid5000 node : graphite-1.nancy.grid5000.fr
 
 # Math 9
 
 
-Nb Executed tests: 4826
-
-Nb Failing tests: 1
-
->	org.apache.commons.math3.geometry.euclidean.threed.LineTest#testRevert
 
 ## Human Patch 
 
@@ -7321,11 +6573,6 @@ index 7c9a28f..0c39411 100644
 # Math 10
 
 
-Nb Executed tests: 4582
-
-Nb Failing tests: 1
-
->	org.apache.commons.math3.analysis.differentiation.DerivativeStructureTest#testAtan2SpecialCases
 
 ## Human Patch 
 
@@ -7350,11 +6597,6 @@ index d5a3c18..9d08555 100644
 # Math 11
 
 
-Nb Executed tests: 4560
-
-Nb Failing tests: 1
-
->	org.apache.commons.math3.distribution.MultivariateNormalDistributionTest#testUnivariateDistribution
 
 ## Human Patch 
 
@@ -7378,14 +6620,6 @@ index fd18c28..1570681 100644
 # Math 12
 
 
-Nb Executed tests: 4546
-
-Nb Failing tests: 4
-
->	org.apache.commons.math3.distribution.LogNormalDistributionTest#testDistributionClone
->	org.apache.commons.math3.distribution.NormalDistributionTest#testDistributionClone
->	org.apache.commons.math3.distribution.GammaDistributionTest#testDistributionClone
->	org.apache.commons.math3.random.EmpiricalDistributionTest#testDistributionClone
 
 ## Human Patch 
 
@@ -7432,11 +6666,6 @@ index fab295b..a621d7b 100644
 # Math 13
 
 
-Nb Executed tests: 4534
-
-Nb Failing tests: 1
-
->	org.apache.commons.math3.optimization.fitting.PolynomialFitterTest#testLargeSample
 
 ## Human Patch 
 
@@ -7496,11 +6725,6 @@ index 982e559..b6c97e7 100644
 # Math 14
 
 
-Nb Executed tests: 4533
-
-Nb Failing tests: 1
-
->	org.apache.commons.math3.fitting.PolynomialFitterTest#testLargeSample
 
 ## Human Patch 
 
@@ -7559,11 +6783,6 @@ index ef52943..b7bb6f5 100644
 # Math 15
 
 
-Nb Executed tests: 4263
-
-Nb Failing tests: 1
-
->	org.apache.commons.math3.util.FastMathTest#testMath904
 
 ## Human Patch 
 
@@ -7596,12 +6815,6 @@ index 9dc84c6..fd1ce2d 100644
 # Math 16
 
 
-Nb Executed tests: 4261
-
-Nb Failing tests: 2
-
->	org.apache.commons.math3.util.FastMathTest#testMath905LargePositive
->	org.apache.commons.math3.util.FastMathTest#testMath905LargeNegative
 
 ## Human Patch 
 
@@ -7687,11 +6900,6 @@ index fd1ce2d..22ed157 100644
 # Math 17
 
 
-Nb Executed tests: 4176
-
-Nb Failing tests: 1
-
->	org.apache.commons.math3.dfp.DfpTest#testMultiply
 
 ## Human Patch 
 
@@ -7733,11 +6941,6 @@ index 3a91982..d278a31 100644
 # Math 18
 
 
-Nb Executed tests: 4171
-
-Nb Failing tests: 1
-
->	org.apache.commons.math3.optimization.direct.CMAESOptimizerTest#testFitAccuracyDependsOnBoundary
 
 ## Human Patch 
 
@@ -7799,11 +7002,6 @@ index 866c8fd..f6a4f28 100644
 # Math 19
 
 
-Nb Executed tests: 4165
-
-Nb Failing tests: 1
-
->	org.apache.commons.math3.optimization.direct.CMAESOptimizerTest#testBoundaryRangeTooLarge
 
 ## Human Patch 
 
@@ -7850,11 +7048,6 @@ index f6a4f28..b54cb37 100644
 # Math 20
 
 
-Nb Executed tests: 4164
-
-Nb Failing tests: 1
-
->	org.apache.commons.math3.optimization.direct.CMAESOptimizerTest#testMath864
 
 ## Human Patch 
 
@@ -7895,13 +7088,6 @@ index b54cb37..d01cd15 100644
 # Math 21
 
 
-Nb Executed tests: 4126
-
-Nb Failing tests: 3
-
->	org.apache.commons.math3.linear.RectangularCholeskyDecompositionTest#testMath789
->	org.apache.commons.math3.linear.RectangularCholeskyDecompositionTest#testFullRank
->	org.apache.commons.math3.random.CorrelatedRandomVectorGeneratorTest#testSampleWithZeroCovariance
 
 ## Human Patch 
 
@@ -7990,12 +7176,6 @@ index aba7b98..38584d4 100644
 # Math 22
 
 
-Nb Executed tests: 4118
-
-Nb Failing tests: 2
-
->	org.apache.commons.math3.distribution.UniformRealDistributionTest#testIsSupportUpperBoundInclusive
->	org.apache.commons.math3.distribution.FDistributionTest#testIsSupportLowerBoundInclusive
 
 ## Human Patch 
 
@@ -8032,11 +7212,6 @@ index 0d279de..5d32f6e 100644
 # Math 23
 
 
-Nb Executed tests: 4096
-
-Nb Failing tests: 1
-
->	org.apache.commons.math3.optimization.univariate.BrentOptimizerTest#testKeepInitIfBest
 
 ## Human Patch 
 
@@ -8102,11 +7277,6 @@ index 25f2f50..cff5bfd 100644
 # Math 24
 
 
-Nb Executed tests: 4095
-
-Nb Failing tests: 1
-
->	org.apache.commons.math3.optimization.univariate.BrentOptimizerTest#testMath855
 
 ## Human Patch 
 
@@ -8168,11 +7338,6 @@ index cff5bfd..ee2227c 100644
 # Math 25
 
 
-Nb Executed tests: 4061
-
-Nb Failing tests: 1
-
->	org.apache.commons.math3.optimization.fitting.HarmonicFitterTest#testMath844
 
 ## Human Patch 
 
@@ -8213,11 +7378,6 @@ index c7af9ae..ebb36d3 100644
 # Math 26
 
 
-Nb Executed tests: 3982
-
-Nb Failing tests: 1
-
->	org.apache.commons.math3.fraction.FractionTest#testIntegerOverflow
 
 ## Human Patch 
 
@@ -8250,11 +7410,6 @@ index 08d3b95..f81ff0a 100644
 # Math 27
 
 
-Nb Executed tests: 3982
-
-Nb Failing tests: 1
-
->	org.apache.commons.math3.fraction.FractionTest#testMath835
 
 ## Human Patch 
 
@@ -8278,11 +7433,6 @@ index f81ff0a..f84218e 100644
 # Math 28
 
 
-Nb Executed tests: 3981
-
-Nb Failing tests: 1
-
->	org.apache.commons.math3.optimization.linear.SimplexSolverTest#testMath828Cycle
 
 ## Human Patch 
 
@@ -8355,13 +7505,6 @@ index dec310b..c2fa14d 100644
 # Math 29
 
 
-Nb Executed tests: 3761
-
-Nb Failing tests: 3
-
->	org.apache.commons.math3.linear.SparseRealVectorTest#testEbeDivideMixedTypes
->	org.apache.commons.math3.linear.SparseRealVectorTest#testEbeMultiplyMixedTypes
->	org.apache.commons.math3.linear.SparseRealVectorTest#testEbeMultiplySameType
 
 ## Human Patch 
 
@@ -8421,11 +7564,6 @@ index 294ac57..2ca3447 100644
 # Math 30
 
 
-Nb Executed tests: 3717
-
-Nb Failing tests: 1
-
->	org.apache.commons.math3.stat.inference.MannWhitneyUTestTest#testBigDataSet
 
 ## Human Patch 
 
@@ -8455,12 +7593,6 @@ index a161737..a4acf2f 100644
 # Math 31
 
 
-Nb Executed tests: 3602
-
-Nb Failing tests: 2
-
->	org.apache.commons.math3.distribution.BinomialDistributionTest#testMath718
->	org.apache.commons.math3.distribution.FDistributionTest#testMath785
 
 ## Human Patch 
 
@@ -8597,11 +7729,6 @@ index 253f3c5..35fe916 100644
 # Math 32
 
 
-Nb Executed tests: 3593
-
-Nb Failing tests: 1
-
->	org.apache.commons.math3.geometry.euclidean.threed.PolyhedronsSetTest#testIssue780
 
 ## Human Patch 
 
@@ -8626,7 +7753,7 @@ index add24ac..6ba72be 100644
 
 ## NopolPC 
 
-org.apache.commons.math3.geometry.partitioning.AbstractRegion:214 (Suspicious rank: 221 (Ochiai), 190 (Ample), 190 (Tarantula))
+org.apache.commons.math3.geometry.partitioning.AbstractRegion:214
 ```Java
 ((!(((boundary.size())-(plusList.size()))<(minusList.size())))&&((1)<=(plusList.size())))||((minusList.size())==((boundary.size())+(-1)))
 ```
@@ -8642,11 +7769,6 @@ Grid5000 node: chimint-14.lille.grid5000.fr
 # Math 33
 
 
-Nb Executed tests: 3575
-
-Nb Failing tests: 1
-
->	org.apache.commons.math3.optimization.linear.SimplexSolverTest#testMath781
 
 ## Human Patch 
 
@@ -8669,7 +7791,7 @@ index 327b2ae..9a6993a 100644
 
 ## NopolPC 
 
-org.apache.commons.math3.optimization.linear.SimplexTableau:339 (Suspicious rank: 6 (Ochiai), 4 (Ample), 4 (Tarantula))
+org.apache.commons.math3.optimization.linear.SimplexTableau:339
 ```Java
 (org.apache.commons.math3.optimization.linear.SimplexTableau.this.constraints.size())!=(org.apache.commons.math3.optimization.linear.SimplexTableau.this.numSlackVariables)
 ```
@@ -8684,7 +7806,7 @@ Grid5000 node: chinqchint-24.lille.grid5000.fr
 
 ## NopolC 
 
-org.apache.commons.math3.optimization.linear.SimplexTableau:338 (Suspicious rank: 22 (Ochiai), 17 (Ample), 17 (Tarantula))
+org.apache.commons.math3.optimization.linear.SimplexTableau:338
 ```Java
 !(((org.apache.commons.math3.optimization.linear.SimplexTableau.this.numSlackVariables)==(org.apache.commons.math3.optimization.linear.SimplexTableau.this.constraints.size()))||((entry)<=(0)))
 ```
@@ -8700,11 +7822,6 @@ Grid5000 node: chimint-15.lille.grid5000.fr
 # Math 34
 
 
-Nb Executed tests: 3559
-
-Nb Failing tests: 1
-
->	org.apache.commons.math3.genetics.ListPopulationTest#testIterator
 
 ## Human Patch 
 
@@ -8734,14 +7851,6 @@ index 3f3919c..8fe3ffe 100644
 # Math 35
 
 
-Nb Executed tests: 3550
-
-Nb Failing tests: 4
-
->	org.apache.commons.math3.genetics.ElitisticListPopulationTest#testChromosomeListConstructorTooLow
->	org.apache.commons.math3.genetics.ElitisticListPopulationTest#testConstructorTooHigh
->	org.apache.commons.math3.genetics.ElitisticListPopulationTest#testConstructorTooLow
->	org.apache.commons.math3.genetics.ElitisticListPopulationTest#testChromosomeListConstructorTooHigh
 
 ## Human Patch 
 
@@ -8784,12 +7893,6 @@ index 829c97d..a309080 100644
 # Math 36
 
 
-Nb Executed tests: 3540
-
-Nb Failing tests: 2
-
->	org.apache.commons.math.fraction.BigFractionTest#testFloatValueForLargeNumeratorAndDenominator
->	org.apache.commons.math.fraction.BigFractionTest#testDoubleValueForLargeNumeratorAndDenominator
 
 ## Human Patch 
 
@@ -8840,14 +7943,6 @@ index a6672e4..e93d76d 100644
 # Math 37
 
 
-Nb Executed tests: 3582
-
-Nb Failing tests: 4
-
->	org.apache.commons.math.complex.ComplexTest#testTanhInf
->	org.apache.commons.math.complex.ComplexTest#testTan
->	org.apache.commons.math.complex.ComplexTest#testTanh
->	org.apache.commons.math.complex.ComplexTest#testTanInf
 
 ## Human Patch 
 
@@ -8897,11 +7992,6 @@ index ed76a29..3822a89 100644
 # Math 38
 
 
-Nb Executed tests: 3260
-
-Nb Failing tests: 1
-
->	org.apache.commons.math.optimization.direct.BOBYQAOptimizerTest#testConstrainedRosenWithMoreInterpolationPoints
 
 ## Human Patch 
 
@@ -8972,11 +8062,6 @@ index ba3fe26..e31b156 100644
 # Math 39
 
 
-Nb Executed tests: 3259
-
-Nb Failing tests: 1
-
->	org.apache.commons.math.ode.nonstiff.DormandPrince853IntegratorTest#testTooLargeFirstStep
 
 ## Human Patch 
 
@@ -9007,11 +8092,6 @@ index d2bbf67..13ced27 100644
 # Math 40
 
 
-Nb Executed tests: 3199
-
-Nb Failing tests: 1
-
->	org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolverTest#testIssue716
 
 ## Human Patch 
 
@@ -9044,7 +8124,7 @@ index 59dc461..93dd3bb 100644
 
 ## NopolC 
 
-org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:260 (Suspicious rank: 31 (Ochiai), 40 (Ample), 40 (Tarantula))
+org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:260
 ```Java
 (((xA)<=(absYA))||((signChangeIndex - start) >= (end - signChangeIndex)))&&(x!=null)
 ```
@@ -9059,7 +8139,7 @@ Grid5000 node: chinqchint-43.lille.grid5000.fr
 
 ## Genprog 
 
-org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:269 (Suspicious rank: 32 (Ochiai), 42 (Ample), 42 (Tarantula))
+org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:269
 ```Java
 signChangeIndex = 2
 ```
@@ -9068,14 +8148,24 @@ Execution time: 0:47:28.899000
 
 Grid5000 node : graphene-100.nancy.grid5000.fr
 
+## Kali 
+
+org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:260
+```Java
+if (true) {
+	++start;
+} else {
+	--end;
+}
+```
+
+Execution time: 0:58:30.658000
+
+Grid5000 node : graphene-102.nancy.grid5000.fr
+
 # Math 41
 
 
-Nb Executed tests: 3194
-
-Nb Failing tests: 1
-
->	org.apache.commons.math.stat.descriptive.moment.VarianceTest#testEvaluateArraySegmentWeighted
 
 ## Human Patch 
 
@@ -9098,7 +8188,7 @@ index 1de139f..e5518e3 100644
 
 ## NopolPC 
 
-org.apache.commons.math.stat.descriptive.moment.Variance:322 (Suspicious rank: 12 (Ochiai), 15 (Ample), 15 (Tarantula))
+org.apache.commons.math.stat.descriptive.moment.Variance:322
 ```Java
 (((-1)-(1))*((-1)-(1)))<(((-1)-(1))+(length))
 ```
@@ -9113,7 +8203,7 @@ Grid5000 node: chimint-10.lille.grid5000.fr
 
 ## NopolC 
 
-org.apache.commons.math.stat.descriptive.moment.Variance:322 (Suspicious rank: 12 (Ochiai), 15 (Ample), 15 (Tarantula))
+org.apache.commons.math.stat.descriptive.moment.Variance:322
 ```Java
 (((-1)-(1))*((-1)-(1)))<(((-1)-(1))+(length))
 ```
@@ -9129,11 +8219,6 @@ Grid5000 node: chinqchint-15.lille.grid5000.fr
 # Math 42
 
 
-Nb Executed tests: 3173
-
-Nb Failing tests: 1
-
->	org.apache.commons.math.optimization.linear.SimplexSolverTest#testMath713NegativeVariable
 
 ## Human Patch 
 
@@ -9161,7 +8246,7 @@ index d96c916..fd89432 100644
 
 ## NopolPC 
 
-org.apache.commons.math.optimization.linear.SimplexTableau:317 (Suspicious rank: 24 (Ochiai), 27 (Ample), 27 (Tarantula))
+org.apache.commons.math.optimization.linear.SimplexTableau:317
 ```Java
 !((org.apache.commons.math.optimization.linear.SimplexTableau.this.restrictToNonNegative)&&(((org.apache.commons.math.optimization.linear.SimplexTableau.this.numSlackVariables)<=(org.apache.commons.math.optimization.linear.SimplexTableau.this.epsilon))||(org.apache.commons.math.optimization.linear.SimplexTableau.this.constraints.isEmpty())))
 ```
@@ -9177,16 +8262,6 @@ Grid5000 node: chinqchint-20.lille.grid5000.fr
 # Math 43
 
 
-Nb Executed tests: 3153
-
-Nb Failing tests: 6
-
->	org.apache.commons.math.stat.descriptive.SynchronizedSummaryStatisticsTest#testOverrideMeanWithMathClass
->	org.apache.commons.math.stat.descriptive.SynchronizedSummaryStatisticsTest#testOverrideGeoMeanWithMathClass
->	org.apache.commons.math.stat.descriptive.SynchronizedSummaryStatisticsTest#testOverrideVarianceWithMathClass
->	org.apache.commons.math.stat.descriptive.SummaryStatisticsTest#testOverrideMeanWithMathClass
->	org.apache.commons.math.stat.descriptive.SummaryStatisticsTest#testOverrideGeoMeanWithMathClass
->	org.apache.commons.math.stat.descriptive.SummaryStatisticsTest#testOverrideVarianceWithMathClass
 
 ## Human Patch 
 
@@ -9218,11 +8293,6 @@ index da987cd..1203d51 100644
 # Math 44
 
 
-Nb Executed tests: 3119
-
-Nb Failing tests: 1
-
->	org.apache.commons.math.ode.events.EventStateTest#testIssue695
 
 ## Human Patch 
 
@@ -9272,7 +8342,7 @@ index 8f315e3..2d878b1 100644
 
 ## Genprog 
 
-org.apache.commons.math.ode.AbstractIntegrator:325 (Suspicious rank: 31 (Ochiai), 28 (Ample), 28 (Tarantula))
+org.apache.commons.math.ode.AbstractIntegrator:325
 ```Java
 statesInitialized = false
 ```
@@ -9284,11 +8354,6 @@ Grid5000 node : graphite-3.nancy.grid5000.fr
 # Math 45
 
 
-Nb Executed tests: 3074
-
-Nb Failing tests: 1
-
->	org.apache.commons.math.linear.OpenMapRealMatrixTest#testMath679
 
 ## Human Patch 
 
@@ -9315,12 +8380,6 @@ index f05c878..4369db7 100644
 # Math 46
 
 
-Nb Executed tests: 2997
-
-Nb Failing tests: 2
-
->	org.apache.commons.math.complex.ComplexTest#testAtanI
->	org.apache.commons.math.complex.ComplexTest#testDivideZero
 
 ## Human Patch 
 
@@ -9355,12 +8414,6 @@ index dd0b00a..137765c 100644
 # Math 47
 
 
-Nb Executed tests: 2997
-
-Nb Failing tests: 2
-
->	org.apache.commons.math.complex.ComplexTest#testAtanI
->	org.apache.commons.math.complex.ComplexTest#testDivideZero
 
 ## Human Patch 
 
@@ -9423,11 +8476,6 @@ index 137765c..ac31e4b 100644
 # Math 48
 
 
-Nb Executed tests: 2995
-
-Nb Failing tests: 1
-
->	org.apache.commons.math.analysis.solvers.RegulaFalsiSolverTest#testIssue631
 
 ## Human Patch 
 
@@ -9455,11 +8503,6 @@ index 0347525..c781a90 100644
 # Math 49
 
 
-Nb Executed tests: 2954
-
-Nb Failing tests: 1
-
->	org.apache.commons.math.linear.SparseRealVectorTest#testConcurrentModification
 
 ## Human Patch 
 
@@ -9509,7 +8552,7 @@ index 13ebfd2..5db4884 100644
 
 ## NopolPC 
 
-org.apache.commons.math.linear.OpenMapRealVector:667 (Suspicious rank: 14 (Ochiai), 14 (Ample), 14 (Tarantula))
+org.apache.commons.math.linear.OpenMapRealVector:667
 ```Java
 (org.apache.commons.math.linear.OpenMapRealVector.this.epsilon)==(org.apache.commons.math.linear.OpenMapRealVector.DEFAULT_ZERO_TOLERANCE)
 ```
@@ -9524,7 +8567,7 @@ Grid5000 node: chimint-5.lille.grid5000.fr
 
 ## Genprog 
 
-org.apache.commons.math.util.OpenIntToDoubleHashMap:399 (Suspicious rank: 44 (Ochiai), 40 (Ample), 40 (Tarantula))
+org.apache.commons.math.util.OpenIntToDoubleHashMap:399
 ```Java
 remove
 ```
@@ -9535,23 +8578,34 @@ Grid5000 node : graphene-102.nancy.grid5000.fr
 
 ## Kali 
 
-org.apache.commons.math.util.OpenIntToDoubleHashMap:399 (Suspicious rank: 44 (Ochiai), 40 (Ample), 40 (Tarantula))
+org.apache.commons.math.linear.OpenMapRealVector:664
+```Java
+if (true) {
+	entries.put(index, value);
+} else if (entries.containsKey(index)) {
+	entries.remove(index);
+} 
+```
+
+org.apache.commons.math.util.OpenIntToDoubleHashMap:399
 ```Java
 remove
 ```
 
-Execution time: 0:04:57.796000
+org.apache.commons.math.util.OpenIntToDoubleHashMap:399
+```Java
+if (true)
+	return 0.0;
 
-Grid5000 node : griffon-8.nancy.grid5000.fr
+```
+
+Execution time: 0:08:44.208000
+
+Grid5000 node : graphene-100.nancy.grid5000.fr
 
 # Math 50
 
 
-Nb Executed tests: 2952
-
-Nb Failing tests: 1
-
->	org.apache.commons.math.analysis.solvers.RegulaFalsiSolverTest#testIssue631
 
 ## Human Patch 
 
@@ -9581,7 +8635,7 @@ index c781a90..b3a23a1 100644
 
 ## NopolPC 
 
-org.apache.commons.math.analysis.solvers.BaseSecantSolver:240 (Suspicious rank: 8 (Ochiai), 8 (Ample), 8 (Tarantula))
+org.apache.commons.math.analysis.solvers.BaseSecantSolver:240
 ```Java
 (((-1)!=(x))&&((f0)<=(atol)))||((ftol)==(atol))
 ```
@@ -9596,7 +8650,7 @@ Grid5000 node: chimint-19.lille.grid5000.fr
 
 ## NopolC 
 
-org.apache.commons.math.analysis.solvers.BaseSecantSolver:186 (Suspicious rank: 6 (Ochiai), 6 (Ample), 6 (Tarantula))
+org.apache.commons.math.analysis.solvers.BaseSecantSolver:186
 ```Java
 (f0)<(-1)
 ```
@@ -9611,7 +8665,7 @@ Grid5000 node: chimint-15.lille.grid5000.fr
 
 ## Genprog 
 
-org.apache.commons.math.analysis.solvers.BaseSecantSolver:191 (Suspicious rank: 2 (Ochiai), 3 (Ample), 3 (Tarantula))
+org.apache.commons.math.analysis.solvers.BaseSecantSolver:191
 ```Java
 remove
 ```
@@ -9622,23 +8676,18 @@ Grid5000 node : graphene-103.nancy.grid5000.fr
 
 ## Kali 
 
-org.apache.commons.math.analysis.solvers.BaseSecantSolver:191 (Suspicious rank: 2 (Ochiai), 3 (Ample), 3 (Tarantula))
+org.apache.commons.math.analysis.solvers.BaseSecantSolver:191
 ```Java
 remove
 ```
 
-Execution time: 0:04:49.932000
+Execution time: 0:04:55.261000
 
-Grid5000 node : graphene-74.nancy.grid5000.fr
+Grid5000 node : graphene-102.nancy.grid5000.fr
 
 # Math 51
 
 
-Nb Executed tests: 2941
-
-Nb Failing tests: 1
-
->	org.apache.commons.math.analysis.solvers.RegulaFalsiSolverTest#testIssue631
 
 ## Human Patch 
 
@@ -9701,11 +8750,6 @@ index b3a23a1..fde7172 100644
 # Math 52
 
 
-Nb Executed tests: 2918
-
-Nb Failing tests: 1
-
->	org.apache.commons.math.geometry.euclidean.threed.RotationTest#testIssue639
 
 ## Human Patch 
 
@@ -9880,11 +8924,6 @@ index ada0a8f..bfa7f26 100644
 # Math 53
 
 
-Nb Executed tests: 2525
-
-Nb Failing tests: 1
-
->	org.apache.commons.math.complex.ComplexTest#testAddNaN
 
 ## Human Patch 
 
@@ -9909,11 +8948,6 @@ index ab58c78..e0a8e97 100644
 # Math 54
 
 
-Nb Executed tests: 2420
-
-Nb Failing tests: 1
-
->	org.apache.commons.math.dfp.DfpTest#testIssue567
 
 ## Human Patch 
 
@@ -9951,11 +8985,6 @@ index 54aabc4..04e6613 100644
 # Math 55
 
 
-Nb Executed tests: 2401
-
-Nb Failing tests: 1
-
->	org.apache.commons.math.geometry.Vector3DTest#testCrossProductCancellation
 
 ## Human Patch 
 
@@ -10016,11 +9045,6 @@ index 2d915e5..0a4adb8 100644
 # Math 56
 
 
-Nb Executed tests: 2400
-
-Nb Failing tests: 1
-
->	org.apache.commons.math.util.MultidimensionalCounterTest#testIterationConsistency
 
 ## Human Patch 
 
@@ -10050,11 +9074,6 @@ index fb0614e..56c9ffe 100644
 # Math 57
 
 
-Nb Executed tests: 2383
-
-Nb Failing tests: 1
-
->	org.apache.commons.math.stat.clustering.KMeansPlusPlusClustererTest#testSmallDistances
 
 ## Human Patch 
 
@@ -10077,7 +9096,7 @@ index e09bbc3..b73ac9d 100644
 
 ## NopolC 
 
-org.apache.commons.math.stat.clustering.EuclideanIntegerPoint:85 (Suspicious rank: 50 (Ochiai), 48 (Ample), 48 (Tarantula))
+org.apache.commons.math.stat.clustering.EuclideanIntegerPoint:85
 ```Java
 ((1)<(otherPoint.length))&&((point[i]) != (otherPoint[i]))
 ```
@@ -10093,11 +9112,6 @@ Grid5000 node: chinqchint-11.lille.grid5000.fr
 # Math 58
 
 
-Nb Executed tests: 2354
-
-Nb Failing tests: 1
-
->	org.apache.commons.math.optimization.fitting.GaussianFitterTest#testMath519
 
 ## Human Patch 
 
@@ -10122,7 +9136,7 @@ index e1b54f4..8c107de 100644
 
 ## NopolC 
 
-org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:613 (Suspicious rank: 92 (Ochiai), 86 (Ample), 86 (Tarantula))
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:613
 ```Java
 (fp > 0)||((gNorm)<=(org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer.this.orthoTolerance))
 ```
@@ -10138,11 +9152,6 @@ Grid5000 node: chimint-1.lille.grid5000.fr
 # Math 59
 
 
-Nb Executed tests: 2235
-
-Nb Failing tests: 1
-
->	org.apache.commons.math.util.FastMathTest#testMinMaxFloat
 
 ## Human Patch 
 
@@ -10166,11 +9175,6 @@ index 4f7d447..8cba4d4 100644
 # Math 60
 
 
-Nb Executed tests: 2218
-
-Nb Failing tests: 1
-
->	org.apache.commons.math.distribution.NormalDistributionTest#testExtremeValues
 
 ## Human Patch 
 
@@ -10220,11 +9224,6 @@ index 0d7ce7d..456555b 100644
 # Math 61
 
 
-Nb Executed tests: 2366
-
-Nb Failing tests: 1
-
->	org.apache.commons.math.distribution.PoissonDistributionTest#testMean
 
 ## Human Patch 
 
@@ -10395,11 +9394,6 @@ index 0a81233..64f792b 100644
 # Math 62
 
 
-Nb Executed tests: 2365
-
-Nb Failing tests: 1
-
->	org.apache.commons.math.optimization.univariate.MultiStartUnivariateRealOptimizerTest#testQuinticMin
 
 ## Human Patch 
 
@@ -10459,11 +9453,6 @@ index 952e565..aa14ce6 100644
 # Math 63
 
 
-Nb Executed tests: 2282
-
-Nb Failing tests: 1
-
->	org.apache.commons.math.util.MathUtilsTest#testArrayEquals
 
 ## Human Patch 
 
@@ -10604,12 +9593,6 @@ index ab0fe33..887dc66 100644
 # Math 64
 
 
-Nb Executed tests: 2274
-
-Nb Failing tests: 2
-
->	org.apache.commons.math.optimization.general.MinpackTest#testMinpackJennrichSampson
->	org.apache.commons.math.optimization.general.MinpackTest#testMinpackFreudensteinRoth
 
 ## Human Patch 
 
@@ -10762,7 +9745,7 @@ index b41456e..4cf4ee0 100644
 
 ## Genprog 
 
-org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:426 (Suspicious rank: 38 (Ochiai), 42 (Ample), 42 (Tarantula))
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:426
 ```Java
 current = new org.apache.commons.math.optimization.VectorialPointValuePair(point , objective)
 ```
@@ -10774,11 +9757,6 @@ Grid5000 node : graphene-2.nancy.grid5000.fr
 # Math 65
 
 
-Nb Executed tests: 2273
-
-Nb Failing tests: 1
-
->	org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizerTest#testCircleFitting
 
 ## Human Patch 
 
@@ -10857,14 +9835,6 @@ index 5a60da8..10f7762 100644
 # Math 66
 
 
-Nb Executed tests: 2261
-
-Nb Failing tests: 4
-
->	org.apache.commons.math.optimization.MultiStartUnivariateRealOptimizerTest#testQuinticMin
->	org.apache.commons.math.optimization.MultiStartUnivariateRealOptimizerTest#testSinMin
->	org.apache.commons.math.optimization.univariate.BrentOptimizerTest#testQuinticMinStatistics
->	org.apache.commons.math.optimization.univariate.BrentOptimizerTest#testSinMin
 
 ## Human Patch 
 
@@ -10982,11 +9952,6 @@ index 46c4afa..4544d6e 100644
 # Math 67
 
 
-Nb Executed tests: 2255
-
-Nb Failing tests: 1
-
->	org.apache.commons.math.optimization.MultiStartUnivariateRealOptimizerTest#testQuinticMin
 
 ## Human Patch 
 
@@ -11016,12 +9981,6 @@ index 26fd5e0..10bc9e6 100644
 # Math 68
 
 
-Nb Executed tests: 2186
-
-Nb Failing tests: 2
-
->	org.apache.commons.math.optimization.general.MinpackTest#testMinpackJennrichSampson
->	org.apache.commons.math.optimization.general.MinpackTest#testMinpackFreudensteinRoth
 
 ## Human Patch 
 
@@ -11099,12 +10058,6 @@ index 28aee43..ea0f20d 100644
 # Math 69
 
 
-Nb Executed tests: 2186
-
-Nb Failing tests: 2
-
->	org.apache.commons.math.stat.correlation.PearsonsCorrelationTest#testPValueNearZero
->	org.apache.commons.math.stat.correlation.SpearmansRankCorrelationTest#testPValueNearZero
 
 ## Human Patch 
 
@@ -11127,7 +10080,7 @@ index dc83314..83b4c41 100644
 
 ## NopolPC 
 
-org.apache.commons.math.stat.correlation.PearsonsCorrelation:189 (Suspicious rank: 14 (Ochiai), 21 (Ample), 21 (Tarantula))
+org.apache.commons.math.stat.correlation.PearsonsCorrelation:189
 ```Java
 ((1)-((-1)+(-1)))<=(nVars)
 ```
@@ -11143,11 +10096,6 @@ Grid5000 node: chinqchint-23.lille.grid5000.fr
 # Math 70
 
 
-Nb Executed tests: 2184
-
-Nb Failing tests: 1
-
->	org.apache.commons.math.analysis.solvers.BisectionSolverTest#testMath369
 
 ## Human Patch 
 
@@ -11170,7 +10118,7 @@ index 180caef..3f66927 100644
 
 ## Genprog 
 
-org.apache.commons.math.analysis.solvers.BisectionSolver:72 (Suspicious rank: 1 (Ochiai), 1 (Ample), 1 (Tarantula))
+org.apache.commons.math.analysis.solvers.BisectionSolver:72
 ```Java
 return solve(f, min, max)
 ```
@@ -11182,12 +10130,6 @@ Grid5000 node : graphene-102.nancy.grid5000.fr
 # Math 71
 
 
-Nb Executed tests: 2169
-
-Nb Failing tests: 2
-
->	org.apache.commons.math.ode.nonstiff.ClassicalRungeKuttaIntegratorTest#testMissedEndEvent
->	org.apache.commons.math.ode.nonstiff.DormandPrince853IntegratorTest#testMissedEndEvent
 
 ## Human Patch 
 
@@ -11289,11 +10231,6 @@ index b61b0b1..3227b98 100644
 # Math 72
 
 
-Nb Executed tests: 2140
-
-Nb Failing tests: 1
-
->	org.apache.commons.math.analysis.solvers.BrentSolverTest#testRootEndpoints
 
 ## Human Patch 
 
@@ -11326,11 +10263,6 @@ index 7fc090e..e0cb427 100644
 # Math 73
 
 
-Nb Executed tests: 2140
-
-Nb Failing tests: 1
-
->	org.apache.commons.math.analysis.solvers.BrentSolverTest#testBadEndpoints
 
 ## Human Patch 
 
@@ -11379,7 +10311,7 @@ index e0cb427..4e95ed5 100644
 
 ## NopolC 
 
-org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl:225 (Suspicious rank: 16 (Ochiai), 17 (Ample), 17 (Tarantula))
+org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl:225
 ```Java
 ((initial)<=(lower))||((!((1)!=(lower)))&&((org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl.this.result)<(1)))
 ```
@@ -11394,7 +10326,7 @@ Grid5000 node: chinqchint-24.lille.grid5000.fr
 
 ## Genprog 
 
-org.apache.commons.math.analysis.solvers.BrentSolver:132 (Suspicious rank: 1 (Ochiai), 1 (Ample), 1 (Tarantula))
+org.apache.commons.math.analysis.solvers.BrentSolver:132
 ```Java
 return solve(f, min, max)
 ```
@@ -11406,11 +10338,6 @@ Grid5000 node : graphene-100.nancy.grid5000.fr
 # Math 74
 
 
-Nb Executed tests: 2131
-
-Nb Failing tests: 1
-
->	org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegratorTest#polynomial
 
 ## Human Patch 
 
@@ -11458,11 +10385,6 @@ index 1bbad3e..70b2a2b 100644
 # Math 75
 
 
-Nb Executed tests: 2135
-
-Nb Failing tests: 1
-
->	org.apache.commons.math.stat.FrequencyTest#testPcts
 
 ## Human Patch 
 
@@ -11486,12 +10408,6 @@ index 68c8bf2..c45d728 100644
 # Math 76
 
 
-Nb Executed tests: 2135
-
-Nb Failing tests: 2
-
->	org.apache.commons.math.linear.SingularValueSolverTest#testMath320A
->	org.apache.commons.math.linear.SingularValueSolverTest#testMath320B
 
 ## Human Patch 
 
@@ -11586,12 +10502,6 @@ index e418c08..6003ed6 100644
 # Math 77
 
 
-Nb Executed tests: 2129
-
-Nb Failing tests: 2
-
->	org.apache.commons.math.linear.ArrayRealVectorTest#testBasicFunctions
->	org.apache.commons.math.linear.SparseRealVectorTest#testBasicFunctions
 
 ## Human Patch 
 
@@ -11731,11 +10641,6 @@ index eb5be1b..febea7a 100644
 # Math 78
 
 
-Nb Executed tests: 2106
-
-Nb Failing tests: 1
-
->	org.apache.commons.math.ode.events.EventStateTest#closeEvents
 
 ## Human Patch 
 
@@ -11796,7 +10701,7 @@ index ff09646..44f6742 100644
 
 ## NopolPC 
 
-org.apache.commons.math.analysis.solvers.BrentSolver:282 (Suspicious rank: 8 (Ochiai), 8 (Ample), 8 (Tarantula))
+org.apache.commons.math.analysis.solvers.BrentSolver:282
 ```Java
 (-1)<=(delta)
 ```
@@ -11811,18 +10716,19 @@ Grid5000 node: chinqchint-14.lille.grid5000.fr
 
 ## Genprog 
 
-org.apache.commons.math.ode.events.EventState:283 (Suspicious rank: 56 (Ochiai), 50 (Ample), 50 (Tarantula))
+org.apache.commons.math.ode.events.EventState:179
 ```Java
-remove
+ta = tb
 ```
 
-Execution time: 0:02:21.006000
+Execution time: 0:03:17.091000
 
-Grid5000 node : graphene-103.nancy.grid5000.fr
+Grid5000 node : griffon-62.nancy.grid5000.fr
+
 
 ## Kali 
 
-org.apache.commons.math.ode.events.EventState:283 (Suspicious rank: 56 (Ochiai), 50 (Ample), 50 (Tarantula))
+org.apache.commons.math.ode.events.EventState:283
 ```Java
 remove
 ```
@@ -11834,11 +10740,6 @@ Grid5000 node : graphene-74.nancy.grid5000.fr
 # Math 79
 
 
-Nb Executed tests: 2104
-
-Nb Failing tests: 1
-
->	org.apache.commons.math.stat.clustering.KMeansPlusPlusClustererTest#testPerformClusterAnalysisDegenerate
 
 ## Human Patch 
 
@@ -11864,7 +10765,7 @@ index ad77a56..46368dc 100644
 
 ## NopolPC 
 
-org.apache.commons.math.util.MathUtils:1627 (Suspicious rank: 26 (Ochiai), 24 (Ample), 24 (Tarantula))
+org.apache.commons.math.util.MathUtils:1627
 ```Java
 (p2!=null)&&(!(((dp)<=((org.apache.commons.math.util.MathUtils.TWO_PI)-((org.apache.commons.math.util.MathUtils.FACTORIALS.length)+(org.apache.commons.math.util.MathUtils.FACTORIALS.length))))||(((org.apache.commons.math.util.MathUtils.FACTORIALS.length)+(org.apache.commons.math.util.MathUtils.FACTORIALS.length))<(dp))))
 ```
@@ -11880,11 +10781,6 @@ Grid5000 node: chinqchint-2.lille.grid5000.fr
 # Math 80
 
 
-Nb Executed tests: 2102
-
-Nb Failing tests: 1
-
->	org.apache.commons.math.linear.EigenDecompositionImplTest#testMathpbx02
 
 ## Human Patch 
 
@@ -11907,7 +10803,7 @@ index 9d1b797..3fc328d 100644
 
 ## NopolPC 
 
-org.apache.commons.math.linear.EigenDecompositionImpl:1137 (Suspicious rank: 16 (Ochiai), 28 (Ample), 28 (Tarantula))
+org.apache.commons.math.linear.EigenDecompositionImpl:1137
 ```Java
 org.apache.commons.math.linear.EigenDecompositionImpl.this.cachedD!=null
 ```
@@ -11922,7 +10818,7 @@ Grid5000 node: chinqchint-11.lille.grid5000.fr
 
 ## Genprog 
 
-org.apache.commons.math.linear.EigenDecompositionImpl:1139 (Suspicious rank: 18 (Ochiai), 3 (Ample), 3 (Tarantula))
+org.apache.commons.math.linear.EigenDecompositionImpl:1139
 ```Java
 tau = (g) * (dMin)
 ```
@@ -11933,43 +10829,96 @@ Grid5000 node : griffon-1.nancy.grid5000.fr
 
 ## Kali 
 
-org.apache.commons.math.linear.EigenDecompositionImpl:1136 (Suspicious rank: 15 (Ochiai), 5 (Ample), 5 (Tarantula))
+org.apache.commons.math.linear.EigenDecompositionImpl:1135
+```Java
+if (true)
+	return false;
+
+```
+
+org.apache.commons.math.linear.EigenDecompositionImpl:1136
 ```Java
 remove
 ```
 
-org.apache.commons.math.linear.EigenDecompositionImpl:1137 (Suspicious rank: 16 (Ochiai), 28 (Ample), 28 (Tarantula))
+org.apache.commons.math.linear.EigenDecompositionImpl:1136
+```Java
+if (true)
+	return false;
+
+```
+
+org.apache.commons.math.linear.EigenDecompositionImpl:1137
 ```Java
 remove
 ```
 
-org.apache.commons.math.linear.EigenDecompositionImpl:1139 (Suspicious rank: 18 (Ochiai), 3 (Ample), 3 (Tarantula))
+org.apache.commons.math.linear.EigenDecompositionImpl:1137
+```Java
+if (true)
+	return false;
+
+```
+
+org.apache.commons.math.linear.EigenDecompositionImpl:1138
+```Java
+if (true)
+	return false;
+
+```
+
+org.apache.commons.math.linear.EigenDecompositionImpl:1139
 ```Java
 remove
 ```
 
-org.apache.commons.math.linear.EigenDecompositionImpl:840 (Suspicious rank: 110 (Ochiai), 124 (Ample), 124 (Tarantula))
+org.apache.commons.math.linear.EigenDecompositionImpl:1139
+```Java
+if (true)
+	return false;
+
+```
+
+org.apache.commons.math.linear.EigenDecompositionImpl:840
 ```Java
 remove
 ```
 
-org.apache.commons.math.linear.EigenDecompositionImpl:1133 (Suspicious rank: 195 (Ochiai), 125 (Ample), 125 (Tarantula))
+org.apache.commons.math.linear.EigenDecompositionImpl:1133
 ```Java
 remove
 ```
 
-Execution time: 0:23:24.050000
+org.apache.commons.math.linear.EigenDecompositionImpl:1133
+```Java
+if (true)
+	return false;
 
-Grid5000 node : griffon-56.nancy.grid5000.fr
+```
+
+org.apache.commons.math.linear.EigenDecompositionImpl:1133
+```Java
+if (false) {
+	int j = (4 * n) - 1;
+	for (int i = 0 ; i < j ; i += 4) {
+		for (int k = 0 ; k < 4 ; k += step) {
+			final double tmp = work[(i + k)];
+			work[(i + k)] = work[(j - k)];
+			work[(j - k)] = tmp;
+		}
+		j -= 4;
+	}
+	return true;
+} 
+```
+
+Execution time: 0:41:36.600000
+
+Grid5000 node : graphene-101.nancy.grid5000.fr
 
 # Math 81
 
 
-Nb Executed tests: 2101
-
-Nb Failing tests: 1
-
->	org.apache.commons.math.linear.EigenDecompositionImplTest#testMath308
 
 ## Human Patch 
 
@@ -12018,7 +10967,7 @@ index 3fc328d..53a40f0 100644
 
 ## NopolPC 
 
-org.apache.commons.math.linear.EigenDecompositionImpl:1540 (Suspicious rank: 10 (Ochiai), 14 (Ample), 14 (Tarantula))
+org.apache.commons.math.linear.EigenDecompositionImpl:1540
 ```Java
 (org.apache.commons.math.linear.EigenDecompositionImpl.this.eMin)!=(b2)
 ```
@@ -12033,7 +10982,7 @@ Grid5000 node: chinqchint-2.lille.grid5000.fr
 
 ## NopolC 
 
-org.apache.commons.math.linear.EigenDecompositionImpl:1534 (Suspicious rank: 8 (Ochiai), 12 (Ample), 12 (Tarantula))
+org.apache.commons.math.linear.EigenDecompositionImpl:1534
 ```Java
 (org.apache.commons.math.linear.EigenDecompositionImpl.TOLERANCE)<=(org.apache.commons.math.linear.EigenDecompositionImpl.this.lowerSpectra)
 ```
@@ -12048,7 +10997,7 @@ Grid5000 node: chinqchint-27.lille.grid5000.fr
 
 ## Genprog 
 
-org.apache.commons.math.linear.EigenDecompositionImpl:1541 (Suspicious rank: 11 (Ochiai), 15 (Ample), 15 (Tarantula))
+org.apache.commons.math.linear.EigenDecompositionImpl:1541
 ```Java
 remove
 ```
@@ -12059,48 +11008,138 @@ Grid5000 node : graphene-1.nancy.grid5000.fr
 
 ## Kali 
 
-org.apache.commons.math.linear.EigenDecompositionImpl:1540 (Suspicious rank: 10 (Ochiai), 14 (Ample), 14 (Tarantula))
+org.apache.commons.math.linear.EigenDecompositionImpl:1526
+```Java
+if (true)
+	return ;
+
+```
+
+org.apache.commons.math.linear.EigenDecompositionImpl:1527
+```Java
+if (true)
+	return ;
+
+```
+
+org.apache.commons.math.linear.EigenDecompositionImpl:1530
+```Java
+if (true)
+	return ;
+
+```
+
+org.apache.commons.math.linear.EigenDecompositionImpl:1531
+```Java
+if (true)
+	return ;
+
+```
+
+org.apache.commons.math.linear.EigenDecompositionImpl:1532
+```Java
+if (true)
+	return ;
+
+```
+
+org.apache.commons.math.linear.EigenDecompositionImpl:1533
+```Java
+if (true)
+	return ;
+
+```
+
+org.apache.commons.math.linear.EigenDecompositionImpl:1534
+```Java
+if (true)
+	return ;
+
+```
+
+org.apache.commons.math.linear.EigenDecompositionImpl:1534
+```Java
+if (true) {
+	return ;
+} 
+```
+
+org.apache.commons.math.linear.EigenDecompositionImpl:1537
+```Java
+if (true)
+	return ;
+
+```
+
+org.apache.commons.math.linear.EigenDecompositionImpl:1540
 ```Java
 remove
 ```
 
-org.apache.commons.math.linear.EigenDecompositionImpl:1541 (Suspicious rank: 11 (Ochiai), 15 (Ample), 15 (Tarantula))
+org.apache.commons.math.linear.EigenDecompositionImpl:1540
+```Java
+if (false) {
+	b2 = (work[(nn - 13)]) / (work[(nn - 15)]);
+	a2 = a2 + b2;
+	for (int i4 = nn - 17 ; i4 >= (((4 * start) + 2) + (pingPong)) ; i4 -= 4) {
+		if (b2 == 0.0) {
+			break;
+		} 
+		b1 = b2;
+		if ((work[i4]) > (work[(i4 - 2)])) {
+			return ;
+		} 
+		b2 = b2 * ((work[i4]) / (work[(i4 - 2)]));
+		a2 = a2 + b2;
+		if (((100 * (java.lang.Math.max(b2, b1))) < a2) || (cnst1 < a2)) {
+			break;
+		} 
+	}
+	a2 = cnst3 * a2;
+} 
+```
+
+org.apache.commons.math.linear.EigenDecompositionImpl:1541
 ```Java
 remove
 ```
 
-org.apache.commons.math.linear.EigenDecompositionImpl:1477 (Suspicious rank: 17 (Ochiai), 22 (Ample), 22 (Tarantula))
+org.apache.commons.math.linear.EigenDecompositionImpl:1541
+```Java
+if (true)
+	return ;
+
+```
+
+org.apache.commons.math.linear.EigenDecompositionImpl:1477
 ```Java
 remove
 ```
 
-org.apache.commons.math.linear.EigenDecompositionImpl:1481 (Suspicious rank: 19 (Ochiai), 27 (Ample), 27 (Tarantula))
+org.apache.commons.math.linear.EigenDecompositionImpl:1481
 ```Java
 remove
 ```
 
-org.apache.commons.math.linear.EigenDecompositionImpl:1517 (Suspicious rank: 40 (Ochiai), 41 (Ample), 41 (Tarantula))
+org.apache.commons.math.linear.EigenDecompositionImpl:1517
 ```Java
 remove
 ```
 
-org.apache.commons.math.linear.EigenDecompositionImpl:1518 (Suspicious rank: 41 (Ochiai), 42 (Ample), 42 (Tarantula))
+org.apache.commons.math.linear.EigenDecompositionImpl:1517
 ```Java
-remove
+if (false) {
+	s = (gam * (1 - (java.lang.Math.sqrt(a2)))) / (1 + a2);
+} 
 ```
 
-Execution time: 0:21:58.785000
+Execution time: 0:41:04.971000
 
-Grid5000 node : griffon-11.nancy.grid5000.fr
+Grid5000 node : graphene-104.nancy.grid5000.fr
 
 # Math 82
 
 
-Nb Executed tests: 2056
-
-Nb Failing tests: 1
-
->	org.apache.commons.math.optimization.linear.SimplexSolverTest#testMath288
 
 ## Human Patch 
 
@@ -12128,7 +11167,7 @@ index 60a1b3a..16d3bae 100644
 
 ## NopolPC 
 
-org.apache.commons.math.optimization.linear.SimplexSolver:63 (Suspicious rank: 47 (Ochiai), 32 (Ample), 32 (Tarantula))
+org.apache.commons.math.optimization.linear.SimplexSolver:63
 ```Java
 (0)!=(minValue)
 ```
@@ -12143,7 +11182,7 @@ Grid5000 node: chimint-12.lille.grid5000.fr
 
 ## Genprog 
 
-org.apache.commons.math.optimization.linear.SimplexSolver:63 (Suspicious rank: 47 (Ochiai), 32 (Ample), 32 (Tarantula))
+org.apache.commons.math.optimization.linear.SimplexSolver:63
 ```Java
 remove
 ```
@@ -12154,23 +11193,18 @@ Grid5000 node : graphene-103.nancy.grid5000.fr
 
 ## Kali 
 
-org.apache.commons.math.optimization.linear.SimplexSolver:63 (Suspicious rank: 47 (Ochiai), 32 (Ample), 32 (Tarantula))
+org.apache.commons.math.optimization.linear.SimplexSolver:63
 ```Java
 remove
 ```
 
-Execution time: 0:02:24.165000
+Execution time: 0:04:09.832000
 
-Grid5000 node : griffon-5.nancy.grid5000.fr
+Grid5000 node : graphene-13.nancy.grid5000.fr
 
 # Math 83
 
 
-Nb Executed tests: 2055
-
-Nb Failing tests: 1
-
->	org.apache.commons.math.optimization.linear.SimplexSolverTest#testMath286
 
 ## Human Patch 
 
@@ -12210,12 +11244,6 @@ index b387767..6cd5507 100644
 # Math 84
 
 
-Nb Executed tests: 2054
-
-Nb Failing tests: 2
-
->	org.apache.commons.math.optimization.direct.MultiDirectionalTest#testMinimizeMaximize
->	org.apache.commons.math.optimization.direct.MultiDirectionalTest#testMath283
 
 ## Human Patch 
 
@@ -12254,7 +11282,7 @@ index 929560c..955d0d8 100644
 
 ## Genprog 
 
-org.apache.commons.math.optimization.direct.MultiDirectional:90 (Suspicious rank: 7 (Ochiai), 6 (Ample), 6 (Tarantula))
+org.apache.commons.math.optimization.direct.MultiDirectional:90
 ```Java
 return 
 ```
@@ -12266,11 +11294,6 @@ Grid5000 node : griffon-1.nancy.grid5000.fr
 # Math 85
 
 
-Nb Executed tests: 1983
-
-Nb Failing tests: 1
-
->	org.apache.commons.math.distribution.NormalDistributionTest#testMath280
 
 ## Human Patch 
 
@@ -12293,7 +11316,7 @@ index e6398f6..5b76415 100644
 
 ## NopolC 
 
-org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils:198 (Suspicious rank: 46 (Ochiai), 38 (Ample), 38 (Tarantula))
+org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils:198
 ```Java
 (fa)==(maximumIterations)
 ```
@@ -12308,7 +11331,7 @@ Grid5000 node: chinqchint-43.lille.grid5000.fr
 
 ## Genprog 
 
-org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils:199 (Suspicious rank: 1 (Ochiai), 2 (Ample), 2 (Tarantula))
+org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils:199
 ```Java
 remove
 ```
@@ -12319,29 +11342,30 @@ Grid5000 node : graphene-104.nancy.grid5000.fr
 
 ## Kali 
 
-org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils:199 (Suspicious rank: 1 (Ochiai), 2 (Ample), 2 (Tarantula))
+org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils:199
 ```Java
 remove
 ```
 
-org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils:198 (Suspicious rank: 46 (Ochiai), 38 (Ample), 38 (Tarantula))
+org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils:198
 ```Java
 remove
 ```
 
-Execution time: 0:05:53.615000
+org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils:198
+```Java
+if (false) {
+	throw new org.apache.commons.math.ConvergenceException(("number of iterations={0}, maximum iterations={1}, " + ("initial={2}, lower bound={3}, upper bound={4}, final a value={5}, " + "final b value={6}, f(a)={7}, f(b)={8}")) , numIterations , maximumIterations , initial , lowerBound , upperBound , a , b , fa , fb);
+} 
+```
 
-Grid5000 node : griffon-23.nancy.grid5000.fr
+Execution time: 0:18:26.137000
+
+Grid5000 node : graphite-2.nancy.grid5000.fr
 
 # Math 86
 
 
-Nb Executed tests: 1894
-
-Nb Failing tests: 2
-
->	org.apache.commons.math.linear.CholeskyDecompositionImplTest#testMath274
->	org.apache.commons.math.linear.CholeskyDecompositionImplTest#testNotPositiveDefinite
 
 ## Human Patch 
 
@@ -12381,11 +11405,6 @@ index 67e372f..39faa9a 100644
 # Math 87
 
 
-Nb Executed tests: 1893
-
-Nb Failing tests: 1
-
->	org.apache.commons.math.optimization.linear.SimplexSolverTest#testSingleVariableAndConstraint
 
 ## Human Patch 
 
@@ -12416,7 +11435,7 @@ index b0d114e..a6d7419 100644
 
 ## NopolPC 
 
-org.apache.commons.math.optimization.linear.SimplexTableau:161 (Suspicious rank: 25 (Ochiai), 73 (Ample), 73 (Tarantula))
+org.apache.commons.math.optimization.linear.SimplexTableau:161
 ```Java
 (org.apache.commons.math.optimization.linear.SimplexTableau.this.numSlackVariables)!=(1)
 ```
@@ -12431,7 +11450,7 @@ Grid5000 node: chinqchint-2.lille.grid5000.fr
 
 ## NopolC 
 
-org.apache.commons.math.optimization.linear.SimplexTableau:160 (Suspicious rank: 127 (Ochiai), 120 (Ample), 120 (Tarantula))
+org.apache.commons.math.optimization.linear.SimplexTableau:160
 ```Java
 ((1)!=(org.apache.commons.math.optimization.linear.SimplexTableau.this.numSlackVariables))&&(!(restrictToNonNegative))
 ```
@@ -12447,11 +11466,6 @@ Grid5000 node: chinqchint-24.lille.grid5000.fr
 # Math 88
 
 
-Nb Executed tests: 1880
-
-Nb Failing tests: 1
-
->	org.apache.commons.math.optimization.linear.SimplexSolverTest#testMath272
 
 ## Human Patch 
 
@@ -12520,7 +11534,7 @@ index a6d7419..ba57722 100644
 
 ## NopolPC 
 
-org.apache.commons.math.optimization.linear.SimplexTableau:352 (Suspicious rank: 1 (Ochiai), 1 (Ample), 1 (Tarantula))
+org.apache.commons.math.optimization.linear.SimplexTableau:352
 ```Java
 (org.apache.commons.math.optimization.linear.SimplexTableau.this.numSlackVariables)<(org.apache.commons.math.optimization.linear.SimplexTableau.this.constraints.size())
 ```
@@ -12536,12 +11550,6 @@ Grid5000 node: chimint-16.lille.grid5000.fr
 # Math 89
 
 
-Nb Executed tests: 1692
-
-Nb Failing tests: 2
-
->	org.apache.commons.math.stat.FrequencyTest#testAddNonComparable
->	junit.framework.TestSuite$1#warning
 
 ## Human Patch 
 
@@ -12577,12 +11585,6 @@ index 70d622d..237c2f6 100644
 # Math 90
 
 
-Nb Executed tests: 1692
-
-Nb Failing tests: 2
-
->	org.apache.commons.math.stat.FrequencyTest#testAddNonComparable
->	junit.framework.TestSuite$1#warning
 
 ## Human Patch 
 
@@ -12625,12 +11627,6 @@ index 237c2f6..a5b8d7b 100644
 # Math 91
 
 
-Nb Executed tests: 1672
-
-Nb Failing tests: 2
-
->	org.apache.commons.math.fraction.FractionTest#testCompareTo
->	junit.framework.TestSuite$1#warning
 
 ## Human Patch 
 
@@ -12669,72 +11665,6 @@ index d6d2f18..fa396fb 100644
 # Math 92
 
 
-Nb Executed tests: 1508
-
-Nb Failing tests: 62
-
->	org.apache.commons.math.fraction.FractionTest#testFloatValue
->	org.apache.commons.math.fraction.FractionTest#testAbs
->	org.apache.commons.math.fraction.FractionTest#testAdd
->	org.apache.commons.math.fraction.FractionTest#testSubtract
->	org.apache.commons.math.fraction.FractionTest#testReciprocal
->	org.apache.commons.math.fraction.FractionTest#testEpsilonLimitConstructor
->	org.apache.commons.math.fraction.FractionTest#testGetReducedFraction
->	org.apache.commons.math.fraction.FractionTest#testConstructorDouble
->	org.apache.commons.math.fraction.FractionTest#testCompareTo
->	org.apache.commons.math.fraction.FractionTest#testDoubleConstructor
->	org.apache.commons.math.fraction.FractionTest#testLongValue
->	org.apache.commons.math.fraction.FractionTest#testDigitLimitConstructor
->	org.apache.commons.math.fraction.FractionTest#testIntValue
->	org.apache.commons.math.fraction.FractionTest#testDivide
->	org.apache.commons.math.fraction.FractionTest#testMultiply
->	org.apache.commons.math.fraction.FractionTest#testEqualsAndHashCode
->	org.apache.commons.math.fraction.FractionTest#testNegate
->	org.apache.commons.math.fraction.FractionTest#testGoldenRatio
->	org.apache.commons.math.fraction.FractionTest#testIntegerOverflow
->	org.apache.commons.math.fraction.FractionTest#testDoubleValue
->	org.apache.commons.math.fraction.FractionTest#testConstructor
->	org.apache.commons.math.linear.SingularValueSolverTest#testSolve
->	org.apache.commons.math.linear.SingularValueSolverTest#testSolveDimensionErrors
->	org.apache.commons.math.linear.SingularValueSolverTest#testSolveSingularityErrors
->	org.apache.commons.math.linear.SingularValueSolverTest#testConditionNumber
->	org.apache.commons.math.linear.SingularValueDecompositionImplTest#testUOrthogonal
->	org.apache.commons.math.linear.SingularValueDecompositionImplTest#testMoreColumns
->	org.apache.commons.math.linear.SingularValueDecompositionImplTest#testDimensions
->	org.apache.commons.math.linear.SingularValueDecompositionImplTest#testConditionNumber
->	org.apache.commons.math.linear.SingularValueDecompositionImplTest#testAEqualUSVt
->	org.apache.commons.math.linear.SingularValueDecompositionImplTest#testMoreRows
->	org.apache.commons.math.linear.SingularValueDecompositionImplTest#testVOrthogonal
->	org.apache.commons.math.linear.SingularValueDecompositionImplTest#testMatricesValues1
->	org.apache.commons.math.linear.SingularValueDecompositionImplTest#testMatricesValues2
->	org.apache.commons.math.optimization.MultiDirectionalTest#testCostExceptions
->	org.apache.commons.math.optimization.MultiDirectionalTest#testRosenbrock
->	org.apache.commons.math.optimization.MultiDirectionalTest#testPowell
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatImproperNegative
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatImproper
->	org.apache.commons.math.fraction.FractionFormatTest#testParseProper
->	org.apache.commons.math.fraction.FractionFormatTest#testParseProperNegative
->	org.apache.commons.math.fraction.FractionFormatTest#testParse
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatZero
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatNegative
->	org.apache.commons.math.fraction.FractionFormatTest#testParseInteger
->	org.apache.commons.math.fraction.FractionFormatTest#testFormat
->	org.apache.commons.math.fraction.FractionFormatTest#testParseNegative
->	org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegratorTest#testPredictorCoefficients
->	org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegratorTest#testDimensionCheck
->	org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegratorTest#testBackward
->	org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegratorTest#testSmallStep
->	org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegratorTest#testDecreasingSteps
->	org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegratorTest#testBigStep
->	org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegratorTest#testCorrectorCoefficients
->	junit.framework.TestSuite$1#warning
->	org.apache.commons.math.util.MathUtilsTest#testBinomialCoefficientLarge
->	org.apache.commons.math.ode.nonstiff.AdamsBashforthIntegratorTest#testDimensionCheck
->	org.apache.commons.math.ode.nonstiff.AdamsBashforthIntegratorTest#testBackward
->	org.apache.commons.math.ode.nonstiff.AdamsBashforthIntegratorTest#testSmallStep
->	org.apache.commons.math.ode.nonstiff.AdamsBashforthIntegratorTest#testDecreasingSteps
->	org.apache.commons.math.ode.nonstiff.AdamsBashforthIntegratorTest#testBigStep
->	org.apache.commons.math.ode.nonstiff.AdamsBashforthIntegratorTest#testCoefficients
 
 ## Human Patch 
 
@@ -12871,72 +11801,6 @@ index 03c92eb..8cb7590 100644
 # Math 93
 
 
-Nb Executed tests: 1504
-
-Nb Failing tests: 62
-
->	org.apache.commons.math.fraction.FractionTest#testFloatValue
->	org.apache.commons.math.fraction.FractionTest#testAbs
->	org.apache.commons.math.fraction.FractionTest#testAdd
->	org.apache.commons.math.fraction.FractionTest#testSubtract
->	org.apache.commons.math.fraction.FractionTest#testReciprocal
->	org.apache.commons.math.fraction.FractionTest#testEpsilonLimitConstructor
->	org.apache.commons.math.fraction.FractionTest#testGetReducedFraction
->	org.apache.commons.math.fraction.FractionTest#testConstructorDouble
->	org.apache.commons.math.fraction.FractionTest#testCompareTo
->	org.apache.commons.math.fraction.FractionTest#testDoubleConstructor
->	org.apache.commons.math.fraction.FractionTest#testLongValue
->	org.apache.commons.math.fraction.FractionTest#testDigitLimitConstructor
->	org.apache.commons.math.fraction.FractionTest#testIntValue
->	org.apache.commons.math.fraction.FractionTest#testDivide
->	org.apache.commons.math.fraction.FractionTest#testMultiply
->	org.apache.commons.math.fraction.FractionTest#testEqualsAndHashCode
->	org.apache.commons.math.fraction.FractionTest#testNegate
->	org.apache.commons.math.fraction.FractionTest#testGoldenRatio
->	org.apache.commons.math.fraction.FractionTest#testIntegerOverflow
->	org.apache.commons.math.fraction.FractionTest#testDoubleValue
->	org.apache.commons.math.fraction.FractionTest#testConstructor
->	org.apache.commons.math.linear.SingularValueSolverTest#testSolve
->	org.apache.commons.math.linear.SingularValueSolverTest#testSolveDimensionErrors
->	org.apache.commons.math.linear.SingularValueSolverTest#testSolveSingularityErrors
->	org.apache.commons.math.linear.SingularValueSolverTest#testConditionNumber
->	org.apache.commons.math.linear.SingularValueDecompositionImplTest#testUOrthogonal
->	org.apache.commons.math.linear.SingularValueDecompositionImplTest#testMoreColumns
->	org.apache.commons.math.linear.SingularValueDecompositionImplTest#testDimensions
->	org.apache.commons.math.linear.SingularValueDecompositionImplTest#testConditionNumber
->	org.apache.commons.math.linear.SingularValueDecompositionImplTest#testAEqualUSVt
->	org.apache.commons.math.linear.SingularValueDecompositionImplTest#testMoreRows
->	org.apache.commons.math.linear.SingularValueDecompositionImplTest#testVOrthogonal
->	org.apache.commons.math.linear.SingularValueDecompositionImplTest#testMatricesValues1
->	org.apache.commons.math.linear.SingularValueDecompositionImplTest#testMatricesValues2
->	org.apache.commons.math.optimization.MultiDirectionalTest#testCostExceptions
->	org.apache.commons.math.optimization.MultiDirectionalTest#testRosenbrock
->	org.apache.commons.math.optimization.MultiDirectionalTest#testPowell
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatImproperNegative
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatImproper
->	org.apache.commons.math.fraction.FractionFormatTest#testParseProper
->	org.apache.commons.math.fraction.FractionFormatTest#testParseProperNegative
->	org.apache.commons.math.fraction.FractionFormatTest#testParse
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatZero
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatNegative
->	org.apache.commons.math.fraction.FractionFormatTest#testParseInteger
->	org.apache.commons.math.fraction.FractionFormatTest#testFormat
->	org.apache.commons.math.fraction.FractionFormatTest#testParseNegative
->	org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegratorTest#testPredictorCoefficients
->	org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegratorTest#testDimensionCheck
->	org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegratorTest#testBackward
->	org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegratorTest#testSmallStep
->	org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegratorTest#testDecreasingSteps
->	org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegratorTest#testBigStep
->	org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegratorTest#testCorrectorCoefficients
->	junit.framework.TestSuite$1#warning
->	org.apache.commons.math.util.MathUtilsTest#testFactorial
->	org.apache.commons.math.ode.nonstiff.AdamsBashforthIntegratorTest#testDimensionCheck
->	org.apache.commons.math.ode.nonstiff.AdamsBashforthIntegratorTest#testBackward
->	org.apache.commons.math.ode.nonstiff.AdamsBashforthIntegratorTest#testSmallStep
->	org.apache.commons.math.ode.nonstiff.AdamsBashforthIntegratorTest#testDecreasingSteps
->	org.apache.commons.math.ode.nonstiff.AdamsBashforthIntegratorTest#testBigStep
->	org.apache.commons.math.ode.nonstiff.AdamsBashforthIntegratorTest#testCoefficients
 
 ## Human Patch 
 
@@ -13004,72 +11868,6 @@ index 1389d5a..50ed22a 100644
 # Math 94
 
 
-Nb Executed tests: 1501
-
-Nb Failing tests: 62
-
->	org.apache.commons.math.fraction.FractionTest#testFloatValue
->	org.apache.commons.math.fraction.FractionTest#testAbs
->	org.apache.commons.math.fraction.FractionTest#testAdd
->	org.apache.commons.math.fraction.FractionTest#testSubtract
->	org.apache.commons.math.fraction.FractionTest#testReciprocal
->	org.apache.commons.math.fraction.FractionTest#testEpsilonLimitConstructor
->	org.apache.commons.math.fraction.FractionTest#testGetReducedFraction
->	org.apache.commons.math.fraction.FractionTest#testConstructorDouble
->	org.apache.commons.math.fraction.FractionTest#testCompareTo
->	org.apache.commons.math.fraction.FractionTest#testDoubleConstructor
->	org.apache.commons.math.fraction.FractionTest#testLongValue
->	org.apache.commons.math.fraction.FractionTest#testDigitLimitConstructor
->	org.apache.commons.math.fraction.FractionTest#testIntValue
->	org.apache.commons.math.fraction.FractionTest#testDivide
->	org.apache.commons.math.fraction.FractionTest#testMultiply
->	org.apache.commons.math.fraction.FractionTest#testEqualsAndHashCode
->	org.apache.commons.math.fraction.FractionTest#testNegate
->	org.apache.commons.math.fraction.FractionTest#testGoldenRatio
->	org.apache.commons.math.fraction.FractionTest#testIntegerOverflow
->	org.apache.commons.math.fraction.FractionTest#testDoubleValue
->	org.apache.commons.math.fraction.FractionTest#testConstructor
->	org.apache.commons.math.linear.SingularValueSolverTest#testSolve
->	org.apache.commons.math.linear.SingularValueSolverTest#testSolveDimensionErrors
->	org.apache.commons.math.linear.SingularValueSolverTest#testSolveSingularityErrors
->	org.apache.commons.math.linear.SingularValueSolverTest#testConditionNumber
->	org.apache.commons.math.linear.SingularValueDecompositionImplTest#testUOrthogonal
->	org.apache.commons.math.linear.SingularValueDecompositionImplTest#testMoreColumns
->	org.apache.commons.math.linear.SingularValueDecompositionImplTest#testDimensions
->	org.apache.commons.math.linear.SingularValueDecompositionImplTest#testConditionNumber
->	org.apache.commons.math.linear.SingularValueDecompositionImplTest#testAEqualUSVt
->	org.apache.commons.math.linear.SingularValueDecompositionImplTest#testMoreRows
->	org.apache.commons.math.linear.SingularValueDecompositionImplTest#testVOrthogonal
->	org.apache.commons.math.linear.SingularValueDecompositionImplTest#testMatricesValues1
->	org.apache.commons.math.linear.SingularValueDecompositionImplTest#testMatricesValues2
->	org.apache.commons.math.optimization.MultiDirectionalTest#testCostExceptions
->	org.apache.commons.math.optimization.MultiDirectionalTest#testRosenbrock
->	org.apache.commons.math.optimization.MultiDirectionalTest#testPowell
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatImproperNegative
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatImproper
->	org.apache.commons.math.fraction.FractionFormatTest#testParseProper
->	org.apache.commons.math.fraction.FractionFormatTest#testParseProperNegative
->	org.apache.commons.math.fraction.FractionFormatTest#testParse
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatZero
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatNegative
->	org.apache.commons.math.fraction.FractionFormatTest#testParseInteger
->	org.apache.commons.math.fraction.FractionFormatTest#testFormat
->	org.apache.commons.math.fraction.FractionFormatTest#testParseNegative
->	org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegratorTest#testPredictorCoefficients
->	org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegratorTest#testDimensionCheck
->	org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegratorTest#testBackward
->	org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegratorTest#testSmallStep
->	org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegratorTest#testDecreasingSteps
->	org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegratorTest#testBigStep
->	org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegratorTest#testCorrectorCoefficients
->	junit.framework.TestSuite$1#warning
->	org.apache.commons.math.util.MathUtilsTest#testGcd
->	org.apache.commons.math.ode.nonstiff.AdamsBashforthIntegratorTest#testDimensionCheck
->	org.apache.commons.math.ode.nonstiff.AdamsBashforthIntegratorTest#testBackward
->	org.apache.commons.math.ode.nonstiff.AdamsBashforthIntegratorTest#testSmallStep
->	org.apache.commons.math.ode.nonstiff.AdamsBashforthIntegratorTest#testDecreasingSteps
->	org.apache.commons.math.ode.nonstiff.AdamsBashforthIntegratorTest#testBigStep
->	org.apache.commons.math.ode.nonstiff.AdamsBashforthIntegratorTest#testCoefficients
 
 ## Human Patch 
 
@@ -13093,59 +11891,6 @@ index df71405..c5342ae 100644
 # Math 95
 
 
-Nb Executed tests: 1301
-
-Nb Failing tests: 49
-
->	org.apache.commons.math.distribution.FDistributionTest#testSmallDegreesOfFreedom
->	org.apache.commons.math.fraction.FractionTest#testFloatValue
->	org.apache.commons.math.fraction.FractionTest#testAbs
->	org.apache.commons.math.fraction.FractionTest#testAdd
->	org.apache.commons.math.fraction.FractionTest#testSubtract
->	org.apache.commons.math.fraction.FractionTest#testReciprocal
->	org.apache.commons.math.fraction.FractionTest#testEpsilonLimitConstructor
->	org.apache.commons.math.fraction.FractionTest#testGetReducedFraction
->	org.apache.commons.math.fraction.FractionTest#testConstructorDouble
->	org.apache.commons.math.fraction.FractionTest#testCompareTo
->	org.apache.commons.math.fraction.FractionTest#testDoubleConstructor
->	org.apache.commons.math.fraction.FractionTest#testLongValue
->	org.apache.commons.math.fraction.FractionTest#testDigitLimitConstructor
->	org.apache.commons.math.fraction.FractionTest#testIntValue
->	org.apache.commons.math.fraction.FractionTest#testDivide
->	org.apache.commons.math.fraction.FractionTest#testMultiply
->	org.apache.commons.math.fraction.FractionTest#testEqualsAndHashCode
->	org.apache.commons.math.fraction.FractionTest#testNegate
->	org.apache.commons.math.fraction.FractionTest#testGoldenRatio
->	org.apache.commons.math.fraction.FractionTest#testIntegerOverflow
->	org.apache.commons.math.fraction.FractionTest#testDoubleValue
->	org.apache.commons.math.fraction.FractionTest#testConstructor
->	org.apache.commons.math.optimization.MultiDirectionalTest#testCostExceptions
->	org.apache.commons.math.optimization.MultiDirectionalTest#testRosenbrock
->	org.apache.commons.math.optimization.MultiDirectionalTest#testPowell
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatImproperNegative
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatImproper
->	org.apache.commons.math.fraction.FractionFormatTest#testParseProper
->	org.apache.commons.math.fraction.FractionFormatTest#testParseProperNegative
->	org.apache.commons.math.fraction.FractionFormatTest#testParse
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatZero
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatNegative
->	org.apache.commons.math.fraction.FractionFormatTest#testParseInteger
->	org.apache.commons.math.fraction.FractionFormatTest#testFormat
->	org.apache.commons.math.fraction.FractionFormatTest#testParseNegative
->	org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegratorTest#testPredictorCoefficients
->	org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegratorTest#testDimensionCheck
->	org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegratorTest#testBackward
->	org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegratorTest#testSmallStep
->	org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegratorTest#testDecreasingSteps
->	org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegratorTest#testBigStep
->	org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegratorTest#testCorrectorCoefficients
->	junit.framework.TestSuite$1#warning
->	org.apache.commons.math.ode.nonstiff.AdamsBashforthIntegratorTest#testDimensionCheck
->	org.apache.commons.math.ode.nonstiff.AdamsBashforthIntegratorTest#testBackward
->	org.apache.commons.math.ode.nonstiff.AdamsBashforthIntegratorTest#testSmallStep
->	org.apache.commons.math.ode.nonstiff.AdamsBashforthIntegratorTest#testDecreasingSteps
->	org.apache.commons.math.ode.nonstiff.AdamsBashforthIntegratorTest#testBigStep
->	org.apache.commons.math.ode.nonstiff.AdamsBashforthIntegratorTest#testCoefficients
 
 ## Human Patch 
 
@@ -13175,7 +11920,7 @@ index 59aeb07..3959403 100644
 
 ## Genprog 
 
-org.apache.commons.math.distribution.FDistributionImpl:144 (Suspicious rank: 105 (Ochiai), 168 (Ample), 83 (Tarantula))
+org.apache.commons.math.distribution.FDistributionImpl:144
 ```Java
 return 0.0
 ```
@@ -13184,60 +11929,22 @@ Execution time: 0:00:27.361000
 
 Grid5000 node : graphene-104.nancy.grid5000.fr
 
+## Kali 
+
+org.apache.commons.math.distribution.FDistributionImpl:144
+```Java
+if (true)
+	return 0.0;
+
+```
+
+Execution time: 0:04:35.159000
+
+Grid5000 node : graphene-106.nancy.grid5000.fr
+
 # Math 96
 
 
-Nb Executed tests: 1272
-
-Nb Failing tests: 47
-
->	org.apache.commons.math.fraction.FractionTest#testFloatValue
->	org.apache.commons.math.fraction.FractionTest#testAbs
->	org.apache.commons.math.fraction.FractionTest#testAdd
->	org.apache.commons.math.fraction.FractionTest#testSubtract
->	org.apache.commons.math.fraction.FractionTest#testReciprocal
->	org.apache.commons.math.fraction.FractionTest#testEpsilonLimitConstructor
->	org.apache.commons.math.fraction.FractionTest#testGetReducedFraction
->	org.apache.commons.math.fraction.FractionTest#testConstructorDouble
->	org.apache.commons.math.fraction.FractionTest#testCompareTo
->	org.apache.commons.math.fraction.FractionTest#testDoubleConstructor
->	org.apache.commons.math.fraction.FractionTest#testLongValue
->	org.apache.commons.math.fraction.FractionTest#testDigitLimitConstructor
->	org.apache.commons.math.fraction.FractionTest#testIntValue
->	org.apache.commons.math.fraction.FractionTest#testDivide
->	org.apache.commons.math.fraction.FractionTest#testMultiply
->	org.apache.commons.math.fraction.FractionTest#testEqualsAndHashCode
->	org.apache.commons.math.fraction.FractionTest#testNegate
->	org.apache.commons.math.fraction.FractionTest#testGoldenRatio
->	org.apache.commons.math.fraction.FractionTest#testIntegerOverflow
->	org.apache.commons.math.fraction.FractionTest#testDoubleValue
->	org.apache.commons.math.fraction.FractionTest#testConstructor
->	org.apache.commons.math.optimization.MultiDirectionalTest#testCostExceptions
->	org.apache.commons.math.optimization.MultiDirectionalTest#testRosenbrock
->	org.apache.commons.math.optimization.MultiDirectionalTest#testPowell
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatImproperNegative
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatImproper
->	org.apache.commons.math.fraction.FractionFormatTest#testParseProper
->	org.apache.commons.math.fraction.FractionFormatTest#testParseProperNegative
->	org.apache.commons.math.fraction.FractionFormatTest#testParse
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatZero
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatNegative
->	org.apache.commons.math.fraction.FractionFormatTest#testParseInteger
->	org.apache.commons.math.fraction.FractionFormatTest#testFormat
->	org.apache.commons.math.fraction.FractionFormatTest#testParseNegative
->	org.apache.commons.math.complex.ComplexTest#testMath221
->	org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegratorTest#testPredictorCoefficients
->	org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegratorTest#testDimensionCheck
->	org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegratorTest#testSmallStep
->	org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegratorTest#testDecreasingSteps
->	org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegratorTest#testBigStep
->	org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegratorTest#testCorrectorCoefficients
->	junit.framework.TestSuite$1#warning
->	org.apache.commons.math.ode.nonstiff.AdamsBashforthIntegratorTest#testDimensionCheck
->	org.apache.commons.math.ode.nonstiff.AdamsBashforthIntegratorTest#testSmallStep
->	org.apache.commons.math.ode.nonstiff.AdamsBashforthIntegratorTest#testDecreasingSteps
->	org.apache.commons.math.ode.nonstiff.AdamsBashforthIntegratorTest#testBigStep
->	org.apache.commons.math.ode.nonstiff.AdamsBashforthIntegratorTest#testCoefficients
 
 ## Human Patch 
 
@@ -13264,45 +11971,6 @@ index 8b622cb..16b3873 100644
 # Math 97
 
 
-Nb Executed tests: 1095
-
-Nb Failing tests: 35
-
->	org.apache.commons.math.fraction.FractionTest#testFloatValue
->	org.apache.commons.math.fraction.FractionTest#testAbs
->	org.apache.commons.math.fraction.FractionTest#testAdd
->	org.apache.commons.math.fraction.FractionTest#testSubtract
->	org.apache.commons.math.fraction.FractionTest#testReciprocal
->	org.apache.commons.math.fraction.FractionTest#testEpsilonLimitConstructor
->	org.apache.commons.math.fraction.FractionTest#testGetReducedFraction
->	org.apache.commons.math.fraction.FractionTest#testConstructorDouble
->	org.apache.commons.math.fraction.FractionTest#testCompareTo
->	org.apache.commons.math.fraction.FractionTest#testDoubleConstructor
->	org.apache.commons.math.fraction.FractionTest#testLongValue
->	org.apache.commons.math.fraction.FractionTest#testDigitLimitConstructor
->	org.apache.commons.math.fraction.FractionTest#testIntValue
->	org.apache.commons.math.fraction.FractionTest#testDivide
->	org.apache.commons.math.fraction.FractionTest#testMultiply
->	org.apache.commons.math.fraction.FractionTest#testEqualsAndHashCode
->	org.apache.commons.math.fraction.FractionTest#testNegate
->	org.apache.commons.math.fraction.FractionTest#testGoldenRatio
->	org.apache.commons.math.fraction.FractionTest#testIntegerOverflow
->	org.apache.commons.math.fraction.FractionTest#testDoubleValue
->	org.apache.commons.math.fraction.FractionTest#testConstructor
->	org.apache.commons.math.optimization.MultiDirectionalTest#testCostExceptions
->	org.apache.commons.math.optimization.MultiDirectionalTest#testRosenbrock
->	org.apache.commons.math.optimization.MultiDirectionalTest#testPowell
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatImproperNegative
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatImproper
->	org.apache.commons.math.fraction.FractionFormatTest#testParseProper
->	org.apache.commons.math.fraction.FractionFormatTest#testParseProperNegative
->	org.apache.commons.math.fraction.FractionFormatTest#testParse
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatZero
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatNegative
->	org.apache.commons.math.fraction.FractionFormatTest#testParseInteger
->	org.apache.commons.math.fraction.FractionFormatTest#testFormat
->	org.apache.commons.math.fraction.FractionFormatTest#testParseNegative
->	org.apache.commons.math.analysis.BrentSolverTest#testRootEndpoints
 
 ## Human Patch 
 
@@ -13366,7 +12034,7 @@ index 57f64a9..01a9ee5 100644
 
 ## NopolPC 
 
-org.apache.commons.math.analysis.BrentSolver:136 (Suspicious rank: 68 (Ochiai), 68 (Ample), 68 (Tarantula))
+org.apache.commons.math.analysis.BrentSolver:136
 ```Java
 (min)<=(1)
 ```
@@ -13381,7 +12049,7 @@ Grid5000 node: chinqchint-14.lille.grid5000.fr
 
 ## NopolC 
 
-org.apache.commons.math.analysis.BrentSolver:135 (Suspicious rank: 90 (Ochiai), 95 (Ample), 87 (Tarantula))
+org.apache.commons.math.analysis.BrentSolver:135
 ```Java
 (((yMin)<(yMax))&&((yMin * yMax) >= 0))||((min)==(yMin))
 ```
@@ -13397,46 +12065,6 @@ Grid5000 node: chinqchint-16.lille.grid5000.fr
 # Math 98
 
 
-Nb Executed tests: 1094
-
-Nb Failing tests: 36
-
->	org.apache.commons.math.fraction.FractionTest#testFloatValue
->	org.apache.commons.math.fraction.FractionTest#testAbs
->	org.apache.commons.math.fraction.FractionTest#testAdd
->	org.apache.commons.math.fraction.FractionTest#testSubtract
->	org.apache.commons.math.fraction.FractionTest#testReciprocal
->	org.apache.commons.math.fraction.FractionTest#testEpsilonLimitConstructor
->	org.apache.commons.math.fraction.FractionTest#testGetReducedFraction
->	org.apache.commons.math.fraction.FractionTest#testConstructorDouble
->	org.apache.commons.math.fraction.FractionTest#testCompareTo
->	org.apache.commons.math.fraction.FractionTest#testDoubleConstructor
->	org.apache.commons.math.fraction.FractionTest#testLongValue
->	org.apache.commons.math.fraction.FractionTest#testDigitLimitConstructor
->	org.apache.commons.math.fraction.FractionTest#testIntValue
->	org.apache.commons.math.fraction.FractionTest#testDivide
->	org.apache.commons.math.fraction.FractionTest#testMultiply
->	org.apache.commons.math.fraction.FractionTest#testEqualsAndHashCode
->	org.apache.commons.math.fraction.FractionTest#testNegate
->	org.apache.commons.math.fraction.FractionTest#testGoldenRatio
->	org.apache.commons.math.fraction.FractionTest#testIntegerOverflow
->	org.apache.commons.math.fraction.FractionTest#testDoubleValue
->	org.apache.commons.math.fraction.FractionTest#testConstructor
->	org.apache.commons.math.linear.BigMatrixImplTest#testMath209
->	org.apache.commons.math.optimization.MultiDirectionalTest#testCostExceptions
->	org.apache.commons.math.optimization.MultiDirectionalTest#testRosenbrock
->	org.apache.commons.math.optimization.MultiDirectionalTest#testPowell
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatImproperNegative
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatImproper
->	org.apache.commons.math.fraction.FractionFormatTest#testParseProper
->	org.apache.commons.math.fraction.FractionFormatTest#testParseProperNegative
->	org.apache.commons.math.fraction.FractionFormatTest#testParse
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatZero
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatNegative
->	org.apache.commons.math.fraction.FractionFormatTest#testParseInteger
->	org.apache.commons.math.fraction.FractionFormatTest#testFormat
->	org.apache.commons.math.fraction.FractionFormatTest#testParseNegative
->	org.apache.commons.math.linear.RealMatrixImplTest#testMath209
 
 ## Human Patch 
 
@@ -13473,45 +12101,6 @@ index 3a717ff..7910644 100644
 # Math 99
 
 
-Nb Executed tests: 1180
-
-Nb Failing tests: 35
-
->	org.apache.commons.math.fraction.FractionTest#testFloatValue
->	org.apache.commons.math.fraction.FractionTest#testAbs
->	org.apache.commons.math.fraction.FractionTest#testAdd
->	org.apache.commons.math.fraction.FractionTest#testSubtract
->	org.apache.commons.math.fraction.FractionTest#testReciprocal
->	org.apache.commons.math.fraction.FractionTest#testEpsilonLimitConstructor
->	org.apache.commons.math.fraction.FractionTest#testGetReducedFraction
->	org.apache.commons.math.fraction.FractionTest#testConstructorDouble
->	org.apache.commons.math.fraction.FractionTest#testCompareTo
->	org.apache.commons.math.fraction.FractionTest#testDoubleConstructor
->	org.apache.commons.math.fraction.FractionTest#testLongValue
->	org.apache.commons.math.fraction.FractionTest#testDigitLimitConstructor
->	org.apache.commons.math.fraction.FractionTest#testIntValue
->	org.apache.commons.math.fraction.FractionTest#testDivide
->	org.apache.commons.math.fraction.FractionTest#testMultiply
->	org.apache.commons.math.fraction.FractionTest#testEqualsAndHashCode
->	org.apache.commons.math.fraction.FractionTest#testNegate
->	org.apache.commons.math.fraction.FractionTest#testGoldenRatio
->	org.apache.commons.math.fraction.FractionTest#testIntegerOverflow
->	org.apache.commons.math.fraction.FractionTest#testDoubleValue
->	org.apache.commons.math.fraction.FractionTest#testConstructor
->	org.apache.commons.math.optimization.MultiDirectionalTest#testCostExceptions
->	org.apache.commons.math.optimization.MultiDirectionalTest#testRosenbrock
->	org.apache.commons.math.optimization.MultiDirectionalTest#testPowell
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatImproperNegative
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatImproper
->	org.apache.commons.math.fraction.FractionFormatTest#testParseProper
->	org.apache.commons.math.fraction.FractionFormatTest#testParseProperNegative
->	org.apache.commons.math.fraction.FractionFormatTest#testParse
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatZero
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatNegative
->	org.apache.commons.math.fraction.FractionFormatTest#testParseInteger
->	org.apache.commons.math.fraction.FractionFormatTest#testFormat
->	org.apache.commons.math.fraction.FractionFormatTest#testParseNegative
->	org.apache.commons.math.analysis.BrentSolverTest#testRootEndpoints
 
 ## Human Patch 
 
@@ -13575,7 +12164,7 @@ index da8b3f5..01a9ee5 100644
 
 ## NopolPC 
 
-org.apache.commons.math.analysis.BrentSolver:136 (Suspicious rank: 68 (Ochiai), 68 (Ample), 68 (Tarantula))
+org.apache.commons.math.analysis.BrentSolver:136
 ```Java
 (min)<=(1)
 ```
@@ -13590,7 +12179,7 @@ Grid5000 node: chimint-1.lille.grid5000.fr
 
 ## NopolC 
 
-org.apache.commons.math.analysis.BrentSolver:135 (Suspicious rank: 90 (Ochiai), 95 (Ample), 87 (Tarantula))
+org.apache.commons.math.analysis.BrentSolver:135
 ```Java
 ((!((1)<(min)))||((yMax)<=(org.apache.commons.math.analysis.BrentSolver.serialVersionUID)))&&((yMin * yMax) >= 0)
 ```
@@ -13606,45 +12195,6 @@ Grid5000 node: chinqchint-14.lille.grid5000.fr
 # Math 100
 
 
-Nb Executed tests: 1179
-
-Nb Failing tests: 35
-
->	org.apache.commons.math.fraction.FractionTest#testFloatValue
->	org.apache.commons.math.fraction.FractionTest#testAbs
->	org.apache.commons.math.fraction.FractionTest#testAdd
->	org.apache.commons.math.fraction.FractionTest#testSubtract
->	org.apache.commons.math.fraction.FractionTest#testReciprocal
->	org.apache.commons.math.fraction.FractionTest#testEpsilonLimitConstructor
->	org.apache.commons.math.fraction.FractionTest#testGetReducedFraction
->	org.apache.commons.math.fraction.FractionTest#testConstructorDouble
->	org.apache.commons.math.fraction.FractionTest#testCompareTo
->	org.apache.commons.math.fraction.FractionTest#testDoubleConstructor
->	org.apache.commons.math.fraction.FractionTest#testLongValue
->	org.apache.commons.math.fraction.FractionTest#testDigitLimitConstructor
->	org.apache.commons.math.fraction.FractionTest#testIntValue
->	org.apache.commons.math.fraction.FractionTest#testDivide
->	org.apache.commons.math.fraction.FractionTest#testMultiply
->	org.apache.commons.math.fraction.FractionTest#testEqualsAndHashCode
->	org.apache.commons.math.fraction.FractionTest#testNegate
->	org.apache.commons.math.fraction.FractionTest#testGoldenRatio
->	org.apache.commons.math.fraction.FractionTest#testIntegerOverflow
->	org.apache.commons.math.fraction.FractionTest#testDoubleValue
->	org.apache.commons.math.fraction.FractionTest#testConstructor
->	org.apache.commons.math.estimation.GaussNewtonEstimatorTest#testBoundParameters
->	org.apache.commons.math.optimization.MultiDirectionalTest#testCostExceptions
->	org.apache.commons.math.optimization.MultiDirectionalTest#testRosenbrock
->	org.apache.commons.math.optimization.MultiDirectionalTest#testPowell
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatImproperNegative
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatImproper
->	org.apache.commons.math.fraction.FractionFormatTest#testParseProper
->	org.apache.commons.math.fraction.FractionFormatTest#testParseProperNegative
->	org.apache.commons.math.fraction.FractionFormatTest#testParse
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatZero
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatNegative
->	org.apache.commons.math.fraction.FractionFormatTest#testParseInteger
->	org.apache.commons.math.fraction.FractionFormatTest#testFormat
->	org.apache.commons.math.fraction.FractionFormatTest#testParseNegative
 
 ## Human Patch 
 
@@ -13683,46 +12233,6 @@ index 8e5fe1a..19e06a0 100644
 # Math 101
 
 
-Nb Executed tests: 1177
-
-Nb Failing tests: 36
-
->	org.apache.commons.math.fraction.FractionTest#testFloatValue
->	org.apache.commons.math.fraction.FractionTest#testAbs
->	org.apache.commons.math.fraction.FractionTest#testAdd
->	org.apache.commons.math.fraction.FractionTest#testSubtract
->	org.apache.commons.math.fraction.FractionTest#testReciprocal
->	org.apache.commons.math.fraction.FractionTest#testEpsilonLimitConstructor
->	org.apache.commons.math.fraction.FractionTest#testGetReducedFraction
->	org.apache.commons.math.fraction.FractionTest#testConstructorDouble
->	org.apache.commons.math.fraction.FractionTest#testCompareTo
->	org.apache.commons.math.fraction.FractionTest#testDoubleConstructor
->	org.apache.commons.math.fraction.FractionTest#testLongValue
->	org.apache.commons.math.fraction.FractionTest#testDigitLimitConstructor
->	org.apache.commons.math.fraction.FractionTest#testIntValue
->	org.apache.commons.math.fraction.FractionTest#testDivide
->	org.apache.commons.math.fraction.FractionTest#testMultiply
->	org.apache.commons.math.fraction.FractionTest#testEqualsAndHashCode
->	org.apache.commons.math.fraction.FractionTest#testNegate
->	org.apache.commons.math.fraction.FractionTest#testGoldenRatio
->	org.apache.commons.math.fraction.FractionTest#testIntegerOverflow
->	org.apache.commons.math.fraction.FractionTest#testDoubleValue
->	org.apache.commons.math.fraction.FractionTest#testConstructor
->	org.apache.commons.math.complex.FrenchComplexFormatTest#testForgottenImaginaryCharacter
->	org.apache.commons.math.optimization.MultiDirectionalTest#testCostExceptions
->	org.apache.commons.math.optimization.MultiDirectionalTest#testRosenbrock
->	org.apache.commons.math.optimization.MultiDirectionalTest#testPowell
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatImproperNegative
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatImproper
->	org.apache.commons.math.fraction.FractionFormatTest#testParseProper
->	org.apache.commons.math.fraction.FractionFormatTest#testParseProperNegative
->	org.apache.commons.math.fraction.FractionFormatTest#testParse
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatZero
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatNegative
->	org.apache.commons.math.fraction.FractionFormatTest#testParseInteger
->	org.apache.commons.math.fraction.FractionFormatTest#testFormat
->	org.apache.commons.math.fraction.FractionFormatTest#testParseNegative
->	org.apache.commons.math.complex.ComplexFormatTest#testForgottenImaginaryCharacter
 
 ## Human Patch 
 
@@ -13748,45 +12258,6 @@ index 0757d9b..c22d873 100644
 # Math 102
 
 
-Nb Executed tests: 1146
-
-Nb Failing tests: 35
-
->	org.apache.commons.math.fraction.FractionTest#testFloatValue
->	org.apache.commons.math.fraction.FractionTest#testAbs
->	org.apache.commons.math.fraction.FractionTest#testAdd
->	org.apache.commons.math.fraction.FractionTest#testSubtract
->	org.apache.commons.math.fraction.FractionTest#testReciprocal
->	org.apache.commons.math.fraction.FractionTest#testGetReducedFraction
->	org.apache.commons.math.fraction.FractionTest#testConstructorDouble
->	org.apache.commons.math.fraction.FractionTest#testCompareTo
->	org.apache.commons.math.fraction.FractionTest#testLongValue
->	org.apache.commons.math.fraction.FractionTest#testIntValue
->	org.apache.commons.math.fraction.FractionTest#testDivide
->	org.apache.commons.math.fraction.FractionTest#testMultiply
->	org.apache.commons.math.fraction.FractionTest#testEqualsAndHashCode
->	org.apache.commons.math.fraction.FractionTest#testNegate
->	org.apache.commons.math.fraction.FractionTest#testDoubleValue
->	org.apache.commons.math.fraction.FractionTest#testConstructor
->	org.apache.commons.math.optimization.MultiDirectionalTest#testCostExceptions
->	org.apache.commons.math.optimization.MultiDirectionalTest#testRosenbrock
->	org.apache.commons.math.optimization.MultiDirectionalTest#testPowell
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatImproperNegative
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatImproper
->	org.apache.commons.math.fraction.FractionFormatTest#testParseProper
->	org.apache.commons.math.fraction.FractionFormatTest#testParseProperNegative
->	org.apache.commons.math.fraction.FractionFormatTest#testParse
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatZero
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatNegative
->	org.apache.commons.math.fraction.FractionFormatTest#testParseInteger
->	org.apache.commons.math.fraction.FractionFormatTest#testFormat
->	org.apache.commons.math.fraction.FractionFormatTest#testParseNegative
->	org.apache.commons.math.stat.inference.ChiSquareFactoryTest#testChiSquareLargeTestStatistic
->	org.apache.commons.math.stat.inference.ChiSquareFactoryTest#testChiSquare
->	org.apache.commons.math.stat.inference.TestUtilsTest#testChiSquareLargeTestStatistic
->	org.apache.commons.math.stat.inference.TestUtilsTest#testChiSquare
->	org.apache.commons.math.stat.inference.ChiSquareTestTest#testChiSquareLargeTestStatistic
->	org.apache.commons.math.stat.inference.ChiSquareTestTest#testChiSquare
 
 ## Human Patch 
 
@@ -13851,39 +12322,6 @@ index 984d56d..137d4c5 100644
 # Math 103
 
 
-Nb Executed tests: 1014
-
-Nb Failing tests: 29
-
->	org.apache.commons.math.fraction.FractionTest#testFloatValue
->	org.apache.commons.math.fraction.FractionTest#testAbs
->	org.apache.commons.math.fraction.FractionTest#testAdd
->	org.apache.commons.math.fraction.FractionTest#testSubtract
->	org.apache.commons.math.fraction.FractionTest#testReciprocal
->	org.apache.commons.math.fraction.FractionTest#testGetReducedFraction
->	org.apache.commons.math.fraction.FractionTest#testConstructorDouble
->	org.apache.commons.math.fraction.FractionTest#testCompareTo
->	org.apache.commons.math.fraction.FractionTest#testLongValue
->	org.apache.commons.math.fraction.FractionTest#testIntValue
->	org.apache.commons.math.fraction.FractionTest#testDivide
->	org.apache.commons.math.fraction.FractionTest#testMultiply
->	org.apache.commons.math.fraction.FractionTest#testEqualsAndHashCode
->	org.apache.commons.math.fraction.FractionTest#testNegate
->	org.apache.commons.math.fraction.FractionTest#testDoubleValue
->	org.apache.commons.math.fraction.FractionTest#testConstructor
->	org.apache.commons.math.optimization.MultiDirectionalTest#testRosenbrock
->	org.apache.commons.math.optimization.MultiDirectionalTest#testPowell
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatImproperNegative
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatImproper
->	org.apache.commons.math.fraction.FractionFormatTest#testParseProper
->	org.apache.commons.math.fraction.FractionFormatTest#testParseProperNegative
->	org.apache.commons.math.fraction.FractionFormatTest#testParse
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatZero
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatNegative
->	org.apache.commons.math.fraction.FractionFormatTest#testParseInteger
->	org.apache.commons.math.fraction.FractionFormatTest#testFormat
->	org.apache.commons.math.fraction.FractionFormatTest#testParseNegative
->	org.apache.commons.math.distribution.NormalDistributionTest#testExtremeValues
 
 ## Human Patch 
 
@@ -13925,39 +12363,6 @@ index a08eac5..ff54236 100644
 # Math 104
 
 
-Nb Executed tests: 1003
-
-Nb Failing tests: 29
-
->	org.apache.commons.math.fraction.FractionTest#testFloatValue
->	org.apache.commons.math.fraction.FractionTest#testAbs
->	org.apache.commons.math.fraction.FractionTest#testAdd
->	org.apache.commons.math.fraction.FractionTest#testSubtract
->	org.apache.commons.math.fraction.FractionTest#testReciprocal
->	org.apache.commons.math.fraction.FractionTest#testGetReducedFraction
->	org.apache.commons.math.fraction.FractionTest#testConstructorDouble
->	org.apache.commons.math.fraction.FractionTest#testCompareTo
->	org.apache.commons.math.fraction.FractionTest#testLongValue
->	org.apache.commons.math.fraction.FractionTest#testIntValue
->	org.apache.commons.math.fraction.FractionTest#testDivide
->	org.apache.commons.math.fraction.FractionTest#testMultiply
->	org.apache.commons.math.fraction.FractionTest#testEqualsAndHashCode
->	org.apache.commons.math.fraction.FractionTest#testNegate
->	org.apache.commons.math.fraction.FractionTest#testDoubleValue
->	org.apache.commons.math.fraction.FractionTest#testConstructor
->	org.apache.commons.math.optimization.MultiDirectionalTest#testRosenbrock
->	org.apache.commons.math.optimization.MultiDirectionalTest#testPowell
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatImproperNegative
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatImproper
->	org.apache.commons.math.fraction.FractionFormatTest#testParseProper
->	org.apache.commons.math.fraction.FractionFormatTest#testParseProperNegative
->	org.apache.commons.math.fraction.FractionFormatTest#testParse
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatZero
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatNegative
->	org.apache.commons.math.fraction.FractionFormatTest#testParseInteger
->	org.apache.commons.math.fraction.FractionFormatTest#testFormat
->	org.apache.commons.math.fraction.FractionFormatTest#testParseNegative
->	org.apache.commons.math.special.GammaTest#testRegularizedGammaPositivePositive
 
 ## Human Patch 
 
@@ -13993,7 +12398,7 @@ index ba2c4db..8c565cb 100644
 
 ## NopolC 
 
-org.apache.commons.math.special.Gamma:162 (Suspicious rank: 88 (Ochiai), 116 (Ample), 88 (Tarantula))
+org.apache.commons.math.special.Gamma:162
 ```Java
 (!((x)<(1)))&&(((a >= 1.0) && (x > a))||((1)==(a)))
 ```
@@ -14009,37 +12414,6 @@ Grid5000 node: chimint-14.lille.grid5000.fr
 # Math 105
 
 
-Nb Executed tests: 887
-
-Nb Failing tests: 27
-
->	org.apache.commons.math.fraction.FractionTest#testFloatValue
->	org.apache.commons.math.fraction.FractionTest#testAbs
->	org.apache.commons.math.fraction.FractionTest#testAdd
->	org.apache.commons.math.fraction.FractionTest#testSubtract
->	org.apache.commons.math.fraction.FractionTest#testReciprocal
->	org.apache.commons.math.fraction.FractionTest#testGetReducedFraction
->	org.apache.commons.math.fraction.FractionTest#testConstructorDouble
->	org.apache.commons.math.fraction.FractionTest#testCompareTo
->	org.apache.commons.math.fraction.FractionTest#testLongValue
->	org.apache.commons.math.fraction.FractionTest#testIntValue
->	org.apache.commons.math.fraction.FractionTest#testDivide
->	org.apache.commons.math.fraction.FractionTest#testMultiply
->	org.apache.commons.math.fraction.FractionTest#testEqualsAndHashCode
->	org.apache.commons.math.fraction.FractionTest#testNegate
->	org.apache.commons.math.fraction.FractionTest#testDoubleValue
->	org.apache.commons.math.fraction.FractionTest#testConstructor
->	org.apache.commons.math.stat.regression.SimpleRegressionTest#testSSENonNegative
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatImproperNegative
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatImproper
->	org.apache.commons.math.fraction.FractionFormatTest#testParseProper
->	org.apache.commons.math.fraction.FractionFormatTest#testParseProperNegative
->	org.apache.commons.math.fraction.FractionFormatTest#testParse
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatZero
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatNegative
->	org.apache.commons.math.fraction.FractionFormatTest#testParseInteger
->	org.apache.commons.math.fraction.FractionFormatTest#testFormat
->	org.apache.commons.math.fraction.FractionFormatTest#testParseNegative
 
 ## Human Patch 
 
@@ -14062,7 +12436,7 @@ index d9fa592..c105a41 100644
 
 ## NopolPC 
 
-org.apache.commons.math.stat.regression.SimpleRegression:107 (Suspicious rank: 69 (Ochiai), 72 (Ample), 72 (Tarantula))
+org.apache.commons.math.stat.regression.SimpleRegression:107
 ```Java
 (((y)<=(x))&&((y)<=(x)))||(!((1)<(x)))
 ```
@@ -14078,37 +12452,6 @@ Grid5000 node: chinqchint-14.lille.grid5000.fr
 # Math 106
 
 
-Nb Executed tests: 875
-
-Nb Failing tests: 27
-
->	org.apache.commons.math.fraction.FractionTest#testFloatValue
->	org.apache.commons.math.fraction.FractionTest#testAbs
->	org.apache.commons.math.fraction.FractionTest#testAdd
->	org.apache.commons.math.fraction.FractionTest#testSubtract
->	org.apache.commons.math.fraction.FractionTest#testReciprocal
->	org.apache.commons.math.fraction.FractionTest#testGetReducedFraction
->	org.apache.commons.math.fraction.FractionTest#testConstructorDouble
->	org.apache.commons.math.fraction.FractionTest#testCompareTo
->	org.apache.commons.math.fraction.FractionTest#testLongValue
->	org.apache.commons.math.fraction.FractionTest#testIntValue
->	org.apache.commons.math.fraction.FractionTest#testDivide
->	org.apache.commons.math.fraction.FractionTest#testMultiply
->	org.apache.commons.math.fraction.FractionTest#testEqualsAndHashCode
->	org.apache.commons.math.fraction.FractionTest#testNegate
->	org.apache.commons.math.fraction.FractionTest#testDoubleValue
->	org.apache.commons.math.fraction.FractionTest#testConstructor
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatImproperNegative
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatImproper
->	org.apache.commons.math.fraction.FractionFormatTest#testParseProper
->	org.apache.commons.math.fraction.FractionFormatTest#testParseProperNegative
->	org.apache.commons.math.fraction.FractionFormatTest#testParse
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatZero
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatNegative
->	org.apache.commons.math.fraction.FractionFormatTest#testParseProperInvalidMinus
->	org.apache.commons.math.fraction.FractionFormatTest#testParseInteger
->	org.apache.commons.math.fraction.FractionFormatTest#testFormat
->	org.apache.commons.math.fraction.FractionFormatTest#testParseNegative
 
 ## Human Patch 
 
@@ -14149,14 +12492,6 @@ index a98b665..5dfa386 100644
 # Time 1
 
 
-Nb Executed tests: 12128
-
-Nb Failing tests: 4
-
->	org.joda.time.TestPartial_Constructors#testConstructorEx7_TypeArray_intArray
->	org.joda.time.TestPartial_Constructors#testConstructorEx7_TypeArray_intArray
->	junit.framework.TestSuite$1#warning
->	org.joda.time.TestPartial_Constructors#testConstructorEx7_TypeArray_intArray
 
 ## Human Patch 
 
@@ -14207,14 +12542,6 @@ index bf44e01..7e0ce57 100644
 # Time 2
 
 
-Nb Executed tests: 12128
-
-Nb Failing tests: 4
-
->	org.joda.time.TestPartial_Basics#testWith_baseAndArgHaveNoRange
->	org.joda.time.TestPartial_Basics#testWith_baseAndArgHaveNoRange
->	org.joda.time.TestPartial_Basics#testWith_baseAndArgHaveNoRange
->	junit.framework.TestSuite$1#warning
 
 ## Human Patch 
 
@@ -14280,26 +12607,6 @@ index 7e0ce57..bf44e01 100644
 # Time 3
 
 
-Nb Executed tests: 12119
-
-Nb Failing tests: 16
-
->	org.joda.time.TestMutableDateTime_Adds#testAddYears_int_dstOverlapWinter_addZero
->	org.joda.time.TestMutableDateTime_Adds#testAddDays_int_dstOverlapWinter_addZero
->	org.joda.time.TestMutableDateTime_Adds#testAddWeeks_int_dstOverlapWinter_addZero
->	org.joda.time.TestMutableDateTime_Adds#testAdd_DurationFieldType_int_dstOverlapWinter_addZero
->	org.joda.time.TestMutableDateTime_Adds#testAddMonths_int_dstOverlapWinter_addZero
->	org.joda.time.TestMutableDateTime_Adds#testAddYears_int_dstOverlapWinter_addZero
->	org.joda.time.TestMutableDateTime_Adds#testAddDays_int_dstOverlapWinter_addZero
->	org.joda.time.TestMutableDateTime_Adds#testAddWeeks_int_dstOverlapWinter_addZero
->	org.joda.time.TestMutableDateTime_Adds#testAdd_DurationFieldType_int_dstOverlapWinter_addZero
->	org.joda.time.TestMutableDateTime_Adds#testAddMonths_int_dstOverlapWinter_addZero
->	org.joda.time.TestMutableDateTime_Adds#testAddYears_int_dstOverlapWinter_addZero
->	org.joda.time.TestMutableDateTime_Adds#testAddDays_int_dstOverlapWinter_addZero
->	org.joda.time.TestMutableDateTime_Adds#testAddWeeks_int_dstOverlapWinter_addZero
->	org.joda.time.TestMutableDateTime_Adds#testAdd_DurationFieldType_int_dstOverlapWinter_addZero
->	org.joda.time.TestMutableDateTime_Adds#testAddMonths_int_dstOverlapWinter_addZero
->	junit.framework.TestSuite$1#warning
 
 ## Human Patch 
 
@@ -14424,14 +12731,6 @@ index 9aa8602..237b256 100644
 # Time 4
 
 
-Nb Executed tests: 12047
-
-Nb Failing tests: 4
-
->	org.joda.time.TestPartial_Basics#testWith3
->	org.joda.time.TestPartial_Basics#testWith3
->	org.joda.time.TestPartial_Basics#testWith3
->	junit.framework.TestSuite$1#warning
 
 ## Human Patch 
 
@@ -14458,20 +12757,6 @@ index 8e8e603..aaf0a0f 100644
 # Time 5
 
 
-Nb Executed tests: 12044
-
-Nb Failing tests: 10
-
->	org.joda.time.TestPeriod_Basics#testNormalizedStandard_periodType_months1
->	org.joda.time.TestPeriod_Basics#testNormalizedStandard_periodType_months2
->	org.joda.time.TestPeriod_Basics#testNormalizedStandard_periodType_monthsWeeks
->	org.joda.time.TestPeriod_Basics#testNormalizedStandard_periodType_months1
->	org.joda.time.TestPeriod_Basics#testNormalizedStandard_periodType_months2
->	org.joda.time.TestPeriod_Basics#testNormalizedStandard_periodType_monthsWeeks
->	junit.framework.TestSuite$1#warning
->	org.joda.time.TestPeriod_Basics#testNormalizedStandard_periodType_months1
->	org.joda.time.TestPeriod_Basics#testNormalizedStandard_periodType_months2
->	org.joda.time.TestPeriod_Basics#testNormalizedStandard_periodType_monthsWeeks
 
 ## Human Patch 
 
@@ -14524,26 +12809,6 @@ index 5ea67a7..5b36bc5 100644
 # Time 6
 
 
-Nb Executed tests: 11999
-
-Nb Failing tests: 16
-
->	org.joda.time.chrono.TestGJDate#test_cutoverPreZero
->	org.joda.time.chrono.TestGJDate#test_plusWeekyears_positiveToNegative_crossCutover
->	org.joda.time.chrono.TestGJDate#test_plusYears_positiveToZero_crossCutover
->	org.joda.time.chrono.TestGJDate#test_plusYears_positiveToNegative_crossCutover
->	org.joda.time.chrono.TestGJDate#test_plusWeekyears_positiveToZero_crossCutover
->	junit.framework.TestSuite$1#warning
->	org.joda.time.chrono.TestGJDate#test_cutoverPreZero
->	org.joda.time.chrono.TestGJDate#test_plusWeekyears_positiveToNegative_crossCutover
->	org.joda.time.chrono.TestGJDate#test_plusYears_positiveToZero_crossCutover
->	org.joda.time.chrono.TestGJDate#test_plusYears_positiveToNegative_crossCutover
->	org.joda.time.chrono.TestGJDate#test_plusWeekyears_positiveToZero_crossCutover
->	org.joda.time.chrono.TestGJDate#test_cutoverPreZero
->	org.joda.time.chrono.TestGJDate#test_plusWeekyears_positiveToNegative_crossCutover
->	org.joda.time.chrono.TestGJDate#test_plusYears_positiveToZero_crossCutover
->	org.joda.time.chrono.TestGJDate#test_plusYears_positiveToNegative_crossCutover
->	org.joda.time.chrono.TestGJDate#test_plusWeekyears_positiveToZero_crossCutover
 
 ## Human Patch 
 
@@ -14605,17 +12870,6 @@ index d1556f5..960fe47 100644
 # Time 7
 
 
-Nb Executed tests: 11945
-
-Nb Failing tests: 7
-
->	org.joda.time.format.TestDateTimeFormatter#testParseInto_monthDay_feb29_newYork_startOfYear
->	org.joda.time.format.TestDateTimeFormatter#testParseInto_monthDay_feb29_tokyo_endOfYear
->	junit.framework.TestSuite$1#warning
->	org.joda.time.format.TestDateTimeFormatter#testParseInto_monthDay_feb29_newYork_startOfYear
->	org.joda.time.format.TestDateTimeFormatter#testParseInto_monthDay_feb29_tokyo_endOfYear
->	org.joda.time.format.TestDateTimeFormatter#testParseInto_monthDay_feb29_newYork_startOfYear
->	org.joda.time.format.TestDateTimeFormatter#testParseInto_monthDay_feb29_tokyo_endOfYear
 
 ## Human Patch 
 
@@ -14644,14 +12898,6 @@ index 913d036..553b035 100644
 # Time 8
 
 
-Nb Executed tests: 11915
-
-Nb Failing tests: 4
-
->	org.joda.time.TestDateTimeZone#testForOffsetHoursMinutes_int_int
->	org.joda.time.TestDateTimeZone#testForOffsetHoursMinutes_int_int
->	junit.framework.TestSuite$1#warning
->	org.joda.time.TestDateTimeZone#testForOffsetHoursMinutes_int_int
 
 ## Human Patch 
 
@@ -14686,14 +12932,6 @@ index a127604..afa75d7 100644
 # Time 9
 
 
-Nb Executed tests: 11915
-
-Nb Failing tests: 4
-
->	org.joda.time.TestDateTimeZone#testForOffsetHoursMinutes_int_int
->	org.joda.time.TestDateTimeZone#testForOffsetHoursMinutes_int_int
->	junit.framework.TestSuite$1#warning
->	org.joda.time.TestDateTimeZone#testForOffsetHoursMinutes_int_int
 
 ## Human Patch 
 
@@ -14763,17 +13001,6 @@ index afa75d7..f62ab9c 100644
 # Time 10
 
 
-Nb Executed tests: 11867
-
-Nb Failing tests: 7
-
->	org.joda.time.TestDays#testFactory_daysBetween_RPartial_MonthDay
->	org.joda.time.TestMonths#testFactory_monthsBetween_RPartial_MonthDay
->	org.joda.time.TestDays#testFactory_daysBetween_RPartial_MonthDay
->	org.joda.time.TestMonths#testFactory_monthsBetween_RPartial_MonthDay
->	org.joda.time.TestDays#testFactory_daysBetween_RPartial_MonthDay
->	org.joda.time.TestMonths#testFactory_monthsBetween_RPartial_MonthDay
->	junit.framework.TestSuite$1#warning
 
 ## Human Patch 
 
@@ -14806,14 +13033,6 @@ index 839d3b8..79283b5 100644
 # Time 11
 
 
-Nb Executed tests: 11852
-
-Nb Failing tests: 4
-
->	org.joda.time.tz.TestCompiler#testDateTimeZoneBuilder
->	org.joda.time.tz.TestCompiler#testDateTimeZoneBuilder
->	junit.framework.TestSuite$1#warning
->	org.joda.time.tz.TestCompiler#testDateTimeZoneBuilder
 
 ## Human Patch 
 
@@ -14844,35 +13063,6 @@ index 64da5ea..6efe071 100644
 # Time 12
 
 
-Nb Executed tests: 11813
-
-Nb Failing tests: 25
-
->	org.joda.time.TestLocalDateTime_Constructors#testFactory_fromDateFields_beforeYearZero1
->	org.joda.time.TestLocalDateTime_Constructors#testFactory_fromDateFields_beforeYearZero3
->	org.joda.time.TestLocalDateTime_Constructors#testFactory_fromCalendarFields_beforeYearZero1
->	org.joda.time.TestLocalDateTime_Constructors#testFactory_fromCalendarFields_beforeYearZero3
->	org.joda.time.TestLocalDate_Constructors#testFactory_fromDateFields_beforeYearZero1
->	org.joda.time.TestLocalDate_Constructors#testFactory_fromDateFields_beforeYearZero3
->	org.joda.time.TestLocalDate_Constructors#testFactory_fromCalendarFields_beforeYearZero1
->	org.joda.time.TestLocalDate_Constructors#testFactory_fromCalendarFields_beforeYearZero3
->	org.joda.time.TestLocalDate_Constructors#testFactory_fromDateFields_beforeYearZero1
->	org.joda.time.TestLocalDate_Constructors#testFactory_fromDateFields_beforeYearZero3
->	org.joda.time.TestLocalDate_Constructors#testFactory_fromCalendarFields_beforeYearZero1
->	org.joda.time.TestLocalDate_Constructors#testFactory_fromCalendarFields_beforeYearZero3
->	org.joda.time.TestLocalDateTime_Constructors#testFactory_fromDateFields_beforeYearZero1
->	org.joda.time.TestLocalDateTime_Constructors#testFactory_fromDateFields_beforeYearZero3
->	org.joda.time.TestLocalDateTime_Constructors#testFactory_fromCalendarFields_beforeYearZero1
->	org.joda.time.TestLocalDateTime_Constructors#testFactory_fromCalendarFields_beforeYearZero3
->	org.joda.time.TestLocalDate_Constructors#testFactory_fromDateFields_beforeYearZero1
->	org.joda.time.TestLocalDate_Constructors#testFactory_fromDateFields_beforeYearZero3
->	org.joda.time.TestLocalDate_Constructors#testFactory_fromCalendarFields_beforeYearZero1
->	org.joda.time.TestLocalDate_Constructors#testFactory_fromCalendarFields_beforeYearZero3
->	junit.framework.TestSuite$1#warning
->	org.joda.time.TestLocalDateTime_Constructors#testFactory_fromDateFields_beforeYearZero1
->	org.joda.time.TestLocalDateTime_Constructors#testFactory_fromDateFields_beforeYearZero3
->	org.joda.time.TestLocalDateTime_Constructors#testFactory_fromCalendarFields_beforeYearZero1
->	org.joda.time.TestLocalDateTime_Constructors#testFactory_fromCalendarFields_beforeYearZero3
 
 ## Human Patch 
 
@@ -14941,14 +13131,6 @@ index e75deca..325192b 100644
 # Time 13
 
 
-Nb Executed tests: 11753
-
-Nb Failing tests: 4
-
->	org.joda.time.format.TestISOPeriodFormat#testFormatStandard_negative
->	junit.framework.TestSuite$1#warning
->	org.joda.time.format.TestISOPeriodFormat#testFormatStandard_negative
->	org.joda.time.format.TestISOPeriodFormat#testFormatStandard_negative
 
 ## Human Patch 
 
@@ -14992,35 +13174,6 @@ index 29b0872..2471fce 100644
 # Time 14
 
 
-Nb Executed tests: 11723
-
-Nb Failing tests: 25
-
->	org.joda.time.TestMonthDay_Basics#testPlusMonths_int_negativeFromLeap
->	org.joda.time.TestMonthDay_Basics#testMinusDays_int_negativeFromLeap
->	org.joda.time.TestMonthDay_Basics#testPlusMonths_int_fromLeap
->	org.joda.time.TestMonthDay_Basics#testPlusMonths_int_negativeEndOfMonthAdjust
->	org.joda.time.TestMonthDay_Basics#testMinusMonths_int_endOfMonthAdjust
->	org.joda.time.TestMonthDay_Basics#testMinusMonths_int_negativeFromLeap
->	org.joda.time.TestMonthDay_Basics#testMinusMonths_int_fromLeap
->	org.joda.time.TestMonthDay_Basics#testPlusDays_int_fromLeap
->	org.joda.time.TestMonthDay_Basics#testPlusMonths_int_negativeFromLeap
->	org.joda.time.TestMonthDay_Basics#testMinusDays_int_negativeFromLeap
->	org.joda.time.TestMonthDay_Basics#testPlusMonths_int_fromLeap
->	org.joda.time.TestMonthDay_Basics#testPlusMonths_int_negativeEndOfMonthAdjust
->	org.joda.time.TestMonthDay_Basics#testMinusMonths_int_endOfMonthAdjust
->	org.joda.time.TestMonthDay_Basics#testMinusMonths_int_negativeFromLeap
->	org.joda.time.TestMonthDay_Basics#testMinusMonths_int_fromLeap
->	org.joda.time.TestMonthDay_Basics#testPlusDays_int_fromLeap
->	junit.framework.TestSuite$1#warning
->	org.joda.time.TestMonthDay_Basics#testPlusMonths_int_negativeFromLeap
->	org.joda.time.TestMonthDay_Basics#testMinusDays_int_negativeFromLeap
->	org.joda.time.TestMonthDay_Basics#testPlusMonths_int_fromLeap
->	org.joda.time.TestMonthDay_Basics#testPlusMonths_int_negativeEndOfMonthAdjust
->	org.joda.time.TestMonthDay_Basics#testMinusMonths_int_endOfMonthAdjust
->	org.joda.time.TestMonthDay_Basics#testMinusMonths_int_negativeFromLeap
->	org.joda.time.TestMonthDay_Basics#testMinusMonths_int_fromLeap
->	org.joda.time.TestMonthDay_Basics#testPlusDays_int_fromLeap
 
 ## Human Patch 
 
@@ -15048,17 +13201,6 @@ index 2892a2d..42a32e7 100644
 # Time 15
 
 
-Nb Executed tests: 11687
-
-Nb Failing tests: 7
-
->	org.joda.time.field.TestFieldUtils#testSafeMultiplyLongInt
->	org.joda.time.convert.TestReadableDurationConverter#testSetInto_Object
->	org.joda.time.field.TestFieldUtils#testSafeMultiplyLongInt
->	org.joda.time.convert.TestReadableDurationConverter#testSetInto_Object
->	junit.framework.TestSuite$1#warning
->	org.joda.time.convert.TestReadableDurationConverter#testSetInto_Object
->	org.joda.time.field.TestFieldUtils#testSafeMultiplyLongInt
 
 ## Human Patch 
 
@@ -15123,35 +13265,6 @@ index 1e045b2..55ed991 100644
 # Time 16
 
 
-Nb Executed tests: 11684
-
-Nb Failing tests: 25
-
->	org.joda.time.convert.TestReadableDurationConverter#testSetInto_Object
->	org.joda.time.format.TestDateTimeFormatter#testParseInto_monthOnly_baseStartYear
->	org.joda.time.format.TestDateTimeFormatter#testParseInto_monthOnly_parseStartYear
->	org.joda.time.format.TestDateTimeFormatter#testParseInto_monthOnly_baseEndYear
->	org.joda.time.format.TestDateTimeFormatter#testParseInto_monthOnly
->	org.joda.time.format.TestDateTimeFormatter#testParseInto_monthDay_withDefaultYear_feb29
->	org.joda.time.format.TestDateTimeFormatter#testParseInto_monthDay_feb29
->	org.joda.time.format.TestDateTimeFormatter#testParseInto_monthOnly_parseEndYear
->	org.joda.time.convert.TestReadableDurationConverter#testSetInto_Object
->	junit.framework.TestSuite$1#warning
->	org.joda.time.format.TestDateTimeFormatter#testParseInto_monthOnly_baseStartYear
->	org.joda.time.format.TestDateTimeFormatter#testParseInto_monthOnly_parseStartYear
->	org.joda.time.format.TestDateTimeFormatter#testParseInto_monthOnly_baseEndYear
->	org.joda.time.format.TestDateTimeFormatter#testParseInto_monthOnly
->	org.joda.time.format.TestDateTimeFormatter#testParseInto_monthDay_withDefaultYear_feb29
->	org.joda.time.format.TestDateTimeFormatter#testParseInto_monthDay_feb29
->	org.joda.time.format.TestDateTimeFormatter#testParseInto_monthOnly_parseEndYear
->	org.joda.time.convert.TestReadableDurationConverter#testSetInto_Object
->	org.joda.time.format.TestDateTimeFormatter#testParseInto_monthOnly_baseStartYear
->	org.joda.time.format.TestDateTimeFormatter#testParseInto_monthOnly_parseStartYear
->	org.joda.time.format.TestDateTimeFormatter#testParseInto_monthOnly_baseEndYear
->	org.joda.time.format.TestDateTimeFormatter#testParseInto_monthOnly
->	org.joda.time.format.TestDateTimeFormatter#testParseInto_monthDay_withDefaultYear_feb29
->	org.joda.time.format.TestDateTimeFormatter#testParseInto_monthDay_feb29
->	org.joda.time.format.TestDateTimeFormatter#testParseInto_monthOnly_parseEndYear
 
 ## Human Patch 
 
@@ -15175,17 +13288,6 @@ index baa276a..f92771a 100644
 # Time 17
 
 
-Nb Executed tests: 11654
-
-Nb Failing tests: 7
-
->	org.joda.time.TestDateTimeZoneCutover#testBug3476684_adjustOffset
->	org.joda.time.convert.TestReadableDurationConverter#testSetInto_Object
->	org.joda.time.convert.TestReadableDurationConverter#testSetInto_Object
->	org.joda.time.TestDateTimeZoneCutover#testBug3476684_adjustOffset
->	junit.framework.TestSuite$1#warning
->	org.joda.time.convert.TestReadableDurationConverter#testSetInto_Object
->	org.joda.time.TestDateTimeZoneCutover#testBug3476684_adjustOffset
 
 ## Human Patch 
 
@@ -15244,17 +13346,6 @@ index 7219899..ec05941 100644
 # Time 18
 
 
-Nb Executed tests: 11624
-
-Nb Failing tests: 7
-
->	org.joda.time.chrono.TestGJChronology#testLeapYearRulesConstruction
->	org.joda.time.convert.TestReadableDurationConverter#testSetInto_Object
->	org.joda.time.convert.TestReadableDurationConverter#testSetInto_Object
->	junit.framework.TestSuite$1#warning
->	org.joda.time.chrono.TestGJChronology#testLeapYearRulesConstruction
->	org.joda.time.convert.TestReadableDurationConverter#testSetInto_Object
->	org.joda.time.chrono.TestGJChronology#testLeapYearRulesConstruction
 
 ## Human Patch 
 
@@ -15295,17 +13386,6 @@ index 0a19aa6..6131f14 100644
 # Time 19
 
 
-Nb Executed tests: 11618
-
-Nb Failing tests: 7
-
->	org.joda.time.TestDateTimeZoneCutover#testDateTimeCreation_london
->	org.joda.time.convert.TestReadableDurationConverter#testSetInto_Object
->	org.joda.time.convert.TestReadableDurationConverter#testSetInto_Object
->	org.joda.time.TestDateTimeZoneCutover#testDateTimeCreation_london
->	junit.framework.TestSuite$1#warning
->	org.joda.time.convert.TestReadableDurationConverter#testSetInto_Object
->	org.joda.time.TestDateTimeZoneCutover#testDateTimeCreation_london
 
 ## Human Patch 
 
@@ -15329,17 +13409,6 @@ index ec05941..855cad0 100644
 # Time 20
 
 
-Nb Executed tests: 11609
-
-Nb Failing tests: 7
-
->	org.joda.time.convert.TestReadableDurationConverter#testSetInto_Object
->	org.joda.time.format.TestDateTimeFormatterBuilder#test_printParseZoneDawsonCreek
->	org.joda.time.convert.TestReadableDurationConverter#testSetInto_Object
->	junit.framework.TestSuite$1#warning
->	org.joda.time.format.TestDateTimeFormatterBuilder#test_printParseZoneDawsonCreek
->	org.joda.time.format.TestDateTimeFormatterBuilder#test_printParseZoneDawsonCreek
->	org.joda.time.convert.TestReadableDurationConverter#testSetInto_Object
 
 ## Human Patch 
 
@@ -15375,20 +13444,6 @@ index ebb4b08..558a586 100644
 # Time 21
 
 
-Nb Executed tests: 11603
-
-Nb Failing tests: 10
-
->	org.joda.time.TestDateTimeZone#testGetName_berlin
->	org.joda.time.TestDateTimeZone#testGetShortName_berlin
->	org.joda.time.convert.TestReadableDurationConverter#testSetInto_Object
->	org.joda.time.convert.TestReadableDurationConverter#testSetInto_Object
->	org.joda.time.TestDateTimeZone#testGetName_berlin
->	org.joda.time.TestDateTimeZone#testGetShortName_berlin
->	junit.framework.TestSuite$1#warning
->	org.joda.time.TestDateTimeZone#testGetName_berlin
->	org.joda.time.TestDateTimeZone#testGetShortName_berlin
->	org.joda.time.convert.TestReadableDurationConverter#testSetInto_Object
 
 ## Human Patch 
 
@@ -15458,41 +13513,6 @@ index 89e6739..24423f8 100644
 # Time 22
 
 
-Nb Executed tests: 11535
-
-Nb Failing tests: 31
-
->	org.joda.time.TestDuration_Basics#testToPeriod_fixedZone
->	org.joda.time.TestPeriod_Constructors#testConstructor_long_fixedZone
->	org.joda.time.convert.TestReadableDurationConverter#testSetInto_Object
->	org.joda.time.convert.TestReadableDurationConverter#testSetInto_Object
->	org.joda.time.TestDuration_Basics#testToPeriod_fixedZone
->	org.joda.time.TestDuration_Basics#testToPeriod_fixedZone
->	org.joda.time.TestPeriod_Constructors#testConstructor_long_fixedZone
->	junit.framework.TestSuite$1#warning
->	org.joda.time.TestParseISO#testSpecWeekTruncatedYWD
->	org.joda.time.TestParseISO#testSpecTimeTruncatedFractionMS
->	org.joda.time.TestParseISO#testSpecOrdinalTruncatedD
->	org.joda.time.TestParseISO#testSpecTimeComplete
->	org.joda.time.TestParseISO#testSpecTimeTruncatedMS
->	org.joda.time.TestParseISO#testSpecTruncatedYMD
->	org.joda.time.TestParseISO#testSpecTimeTruncatedM
->	org.joda.time.TestParseISO#testSpecTimeTruncatedS
->	org.joda.time.TestParseISO#testSpecWeekTruncatedD
->	org.joda.time.TestParseISO#testSpecWeekTruncatedW
->	org.joda.time.TestParseISO#testSpecWeekTruncatedWD
->	org.joda.time.TestParseISO#testSpecWeekTruncatedYW
->	org.joda.time.TestParseISO#testSpecTruncatedD
->	org.joda.time.TestParseISO#testSpecTruncatedM
->	org.joda.time.TestParseISO#testSpecTruncatedY
->	org.joda.time.TestParseISO#testSpecOrdinalTruncatedYD
->	org.joda.time.TestParseISO#testSpecReducedPrecisionC
->	org.joda.time.TestParseISO#testSpecTruncatedMD
->	org.joda.time.TestParseISO#testSpecTruncatedYM
->	org.joda.time.TestParseISO#testSpecTimeTruncatedFractionM
->	org.joda.time.TestParseISO#testSpecTimeTruncatedFractionS
->	org.joda.time.convert.TestReadableDurationConverter#testSetInto_Object
->	org.joda.time.TestPeriod_Constructors#testConstructor_long_fixedZone
 
 ## Human Patch 
 
@@ -15558,38 +13578,6 @@ index a5dcb74..e2da9f0 100644
 # Time 23
 
 
-Nb Executed tests: 11529
-
-Nb Failing tests: 28
-
->	org.joda.time.TestDateTimeZone#testForID_String_old
->	org.joda.time.convert.TestReadableDurationConverter#testSetInto_Object
->	org.joda.time.convert.TestReadableDurationConverter#testSetInto_Object
->	org.joda.time.TestDateTimeZone#testForID_String_old
->	junit.framework.TestSuite$1#warning
->	org.joda.time.TestDateTimeZone#testForID_String_old
->	org.joda.time.TestParseISO#testSpecWeekTruncatedYWD
->	org.joda.time.TestParseISO#testSpecTimeTruncatedFractionMS
->	org.joda.time.TestParseISO#testSpecOrdinalTruncatedD
->	org.joda.time.TestParseISO#testSpecTimeComplete
->	org.joda.time.TestParseISO#testSpecTimeTruncatedMS
->	org.joda.time.TestParseISO#testSpecTruncatedYMD
->	org.joda.time.TestParseISO#testSpecTimeTruncatedM
->	org.joda.time.TestParseISO#testSpecTimeTruncatedS
->	org.joda.time.TestParseISO#testSpecWeekTruncatedD
->	org.joda.time.TestParseISO#testSpecWeekTruncatedW
->	org.joda.time.TestParseISO#testSpecWeekTruncatedWD
->	org.joda.time.TestParseISO#testSpecWeekTruncatedYW
->	org.joda.time.TestParseISO#testSpecTruncatedD
->	org.joda.time.TestParseISO#testSpecTruncatedM
->	org.joda.time.TestParseISO#testSpecTruncatedY
->	org.joda.time.TestParseISO#testSpecOrdinalTruncatedYD
->	org.joda.time.TestParseISO#testSpecReducedPrecisionC
->	org.joda.time.TestParseISO#testSpecTruncatedMD
->	org.joda.time.TestParseISO#testSpecTruncatedYM
->	org.joda.time.TestParseISO#testSpecTimeTruncatedFractionM
->	org.joda.time.TestParseISO#testSpecTimeTruncatedFractionS
->	org.joda.time.convert.TestReadableDurationConverter#testSetInto_Object
 
 ## Human Patch 
 
@@ -15648,56 +13636,6 @@ index 855cad0..004821a 100644
 # Time 24
 
 
-Nb Executed tests: 11523
-
-Nb Failing tests: 46
-
->	org.joda.time.convert.TestReadableDurationConverter#testSetInto_Object
->	org.joda.time.format.TestDateTimeFormatter#testParseLocalDate_weekyear_month_week_2010
->	org.joda.time.format.TestDateTimeFormatter#testParseLocalDate_weekyear_month_week_2011
->	org.joda.time.format.TestDateTimeFormatter#testParseLocalDate_weekyear_month_week_2012
->	org.joda.time.format.TestDateTimeFormatter#testParseLocalDate_year_month_week_2010
->	org.joda.time.format.TestDateTimeFormatter#testParseLocalDate_year_month_week_2011
->	org.joda.time.format.TestDateTimeFormatter#testParseLocalDate_year_month_week_2012
->	org.joda.time.format.TestDateTimeFormatter#testParseLocalDate_year_month_week_2016
->	org.joda.time.convert.TestReadableDurationConverter#testSetInto_Object
->	junit.framework.TestSuite$1#warning
->	org.joda.time.format.TestDateTimeFormatter#testParseLocalDate_weekyear_month_week_2010
->	org.joda.time.format.TestDateTimeFormatter#testParseLocalDate_weekyear_month_week_2011
->	org.joda.time.format.TestDateTimeFormatter#testParseLocalDate_weekyear_month_week_2012
->	org.joda.time.format.TestDateTimeFormatter#testParseLocalDate_year_month_week_2010
->	org.joda.time.format.TestDateTimeFormatter#testParseLocalDate_year_month_week_2011
->	org.joda.time.format.TestDateTimeFormatter#testParseLocalDate_year_month_week_2012
->	org.joda.time.format.TestDateTimeFormatter#testParseLocalDate_year_month_week_2016
->	org.joda.time.TestParseISO#testSpecWeekTruncatedYWD
->	org.joda.time.TestParseISO#testSpecTimeTruncatedFractionMS
->	org.joda.time.TestParseISO#testSpecOrdinalTruncatedD
->	org.joda.time.TestParseISO#testSpecTimeComplete
->	org.joda.time.TestParseISO#testSpecTimeTruncatedMS
->	org.joda.time.TestParseISO#testSpecTruncatedYMD
->	org.joda.time.TestParseISO#testSpecTimeTruncatedM
->	org.joda.time.TestParseISO#testSpecTimeTruncatedS
->	org.joda.time.TestParseISO#testSpecWeekTruncatedD
->	org.joda.time.TestParseISO#testSpecWeekTruncatedW
->	org.joda.time.TestParseISO#testSpecWeekTruncatedWD
->	org.joda.time.TestParseISO#testSpecWeekTruncatedYW
->	org.joda.time.TestParseISO#testSpecTruncatedD
->	org.joda.time.TestParseISO#testSpecTruncatedM
->	org.joda.time.TestParseISO#testSpecTruncatedY
->	org.joda.time.TestParseISO#testSpecOrdinalTruncatedYD
->	org.joda.time.TestParseISO#testSpecReducedPrecisionC
->	org.joda.time.TestParseISO#testSpecTruncatedMD
->	org.joda.time.TestParseISO#testSpecTruncatedYM
->	org.joda.time.TestParseISO#testSpecTimeTruncatedFractionM
->	org.joda.time.TestParseISO#testSpecTimeTruncatedFractionS
->	org.joda.time.convert.TestReadableDurationConverter#testSetInto_Object
->	org.joda.time.format.TestDateTimeFormatter#testParseLocalDate_weekyear_month_week_2010
->	org.joda.time.format.TestDateTimeFormatter#testParseLocalDate_weekyear_month_week_2011
->	org.joda.time.format.TestDateTimeFormatter#testParseLocalDate_weekyear_month_week_2012
->	org.joda.time.format.TestDateTimeFormatter#testParseLocalDate_year_month_week_2010
->	org.joda.time.format.TestDateTimeFormatter#testParseLocalDate_year_month_week_2011
->	org.joda.time.format.TestDateTimeFormatter#testParseLocalDate_year_month_week_2012
->	org.joda.time.format.TestDateTimeFormatter#testParseLocalDate_year_month_week_2016
 
 ## Human Patch 
 
@@ -15724,44 +13662,6 @@ index 7c37fc1..b985cef 100644
 # Time 25
 
 
-Nb Executed tests: 11475
-
-Nb Failing tests: 34
-
->	org.joda.time.TestDateTimeZoneCutover#test_DateTime_constructor_Moscow_Autumn
->	org.joda.time.TestDateTimeZoneCutover#test_getOffsetFromLocal_Moscow_Autumn_overlap_mins
->	org.joda.time.TestDateTimeZoneCutover#test_getOffsetFromLocal_Moscow_Autumn
->	org.joda.time.convert.TestReadableDurationConverter#testSetInto_Object
->	org.joda.time.convert.TestReadableDurationConverter#testSetInto_Object
->	org.joda.time.TestDateTimeZoneCutover#test_DateTime_constructor_Moscow_Autumn
->	org.joda.time.TestDateTimeZoneCutover#test_getOffsetFromLocal_Moscow_Autumn_overlap_mins
->	org.joda.time.TestDateTimeZoneCutover#test_getOffsetFromLocal_Moscow_Autumn
->	junit.framework.TestSuite$1#warning
->	org.joda.time.TestParseISO#testSpecWeekTruncatedYWD
->	org.joda.time.TestParseISO#testSpecTimeTruncatedFractionMS
->	org.joda.time.TestParseISO#testSpecOrdinalTruncatedD
->	org.joda.time.TestParseISO#testSpecTimeComplete
->	org.joda.time.TestParseISO#testSpecTimeTruncatedMS
->	org.joda.time.TestParseISO#testSpecTruncatedYMD
->	org.joda.time.TestParseISO#testSpecTimeTruncatedM
->	org.joda.time.TestParseISO#testSpecTimeTruncatedS
->	org.joda.time.TestParseISO#testSpecWeekTruncatedD
->	org.joda.time.TestParseISO#testSpecWeekTruncatedW
->	org.joda.time.TestParseISO#testSpecWeekTruncatedWD
->	org.joda.time.TestParseISO#testSpecWeekTruncatedYW
->	org.joda.time.TestParseISO#testSpecTruncatedD
->	org.joda.time.TestParseISO#testSpecTruncatedM
->	org.joda.time.TestParseISO#testSpecTruncatedY
->	org.joda.time.TestParseISO#testSpecOrdinalTruncatedYD
->	org.joda.time.TestParseISO#testSpecReducedPrecisionC
->	org.joda.time.TestParseISO#testSpecTruncatedMD
->	org.joda.time.TestParseISO#testSpecTruncatedYM
->	org.joda.time.TestParseISO#testSpecTimeTruncatedFractionM
->	org.joda.time.TestParseISO#testSpecTimeTruncatedFractionS
->	org.joda.time.convert.TestReadableDurationConverter#testSetInto_Object
->	org.joda.time.TestDateTimeZoneCutover#test_DateTime_constructor_Moscow_Autumn
->	org.joda.time.TestDateTimeZoneCutover#test_getOffsetFromLocal_Moscow_Autumn_overlap_mins
->	org.joda.time.TestDateTimeZoneCutover#test_getOffsetFromLocal_Moscow_Autumn
 
 ## Human Patch 
 
@@ -15828,59 +13728,6 @@ index 81f5872..23f70a5 100644
 # Time 26
 
 
-Nb Executed tests: 11463
-
-Nb Failing tests: 49
-
->	org.joda.time.TestDateTimeZoneCutover#testWithSecondOfMinuteInDstChange
->	org.joda.time.TestDateTimeZoneCutover#testWithMinuteOfHourInDstChange
->	org.joda.time.TestDateTimeZoneCutover#testWithMinuteOfHourInDstChange_mockZone
->	org.joda.time.TestDateTimeZoneCutover#testBug2182444_usCentral
->	org.joda.time.TestDateTimeZoneCutover#testWithMillisOfSecondInDstChange_Paris_summer
->	org.joda.time.TestDateTimeZoneCutover#testWithHourOfDayInDstChange
->	org.joda.time.TestDateTimeZoneCutover#testWithMillisOfSecondInDstChange_NewYork_winter
->	org.joda.time.TestDateTimeZoneCutover#testBug2182444_ausNSW
->	org.joda.time.convert.TestReadableDurationConverter#testSetInto_Object
->	org.joda.time.convert.TestReadableDurationConverter#testSetInto_Object
->	org.joda.time.TestDateTimeZoneCutover#testWithSecondOfMinuteInDstChange
->	org.joda.time.TestDateTimeZoneCutover#testWithMinuteOfHourInDstChange
->	org.joda.time.TestDateTimeZoneCutover#testWithMinuteOfHourInDstChange_mockZone
->	org.joda.time.TestDateTimeZoneCutover#testBug2182444_usCentral
->	org.joda.time.TestDateTimeZoneCutover#testWithMillisOfSecondInDstChange_Paris_summer
->	org.joda.time.TestDateTimeZoneCutover#testWithHourOfDayInDstChange
->	org.joda.time.TestDateTimeZoneCutover#testWithMillisOfSecondInDstChange_NewYork_winter
->	org.joda.time.TestDateTimeZoneCutover#testBug2182444_ausNSW
->	junit.framework.TestSuite$1#warning
->	org.joda.time.TestParseISO#testSpecWeekTruncatedYWD
->	org.joda.time.TestParseISO#testSpecTimeTruncatedFractionMS
->	org.joda.time.TestParseISO#testSpecOrdinalTruncatedD
->	org.joda.time.TestParseISO#testSpecTimeComplete
->	org.joda.time.TestParseISO#testSpecTimeTruncatedMS
->	org.joda.time.TestParseISO#testSpecTruncatedYMD
->	org.joda.time.TestParseISO#testSpecTimeTruncatedM
->	org.joda.time.TestParseISO#testSpecTimeTruncatedS
->	org.joda.time.TestParseISO#testSpecWeekTruncatedD
->	org.joda.time.TestParseISO#testSpecWeekTruncatedW
->	org.joda.time.TestParseISO#testSpecWeekTruncatedWD
->	org.joda.time.TestParseISO#testSpecWeekTruncatedYW
->	org.joda.time.TestParseISO#testSpecTruncatedD
->	org.joda.time.TestParseISO#testSpecTruncatedM
->	org.joda.time.TestParseISO#testSpecTruncatedY
->	org.joda.time.TestParseISO#testSpecOrdinalTruncatedYD
->	org.joda.time.TestParseISO#testSpecReducedPrecisionC
->	org.joda.time.TestParseISO#testSpecTruncatedMD
->	org.joda.time.TestParseISO#testSpecTruncatedYM
->	org.joda.time.TestParseISO#testSpecTimeTruncatedFractionM
->	org.joda.time.TestParseISO#testSpecTimeTruncatedFractionS
->	org.joda.time.convert.TestReadableDurationConverter#testSetInto_Object
->	org.joda.time.TestDateTimeZoneCutover#testWithSecondOfMinuteInDstChange
->	org.joda.time.TestDateTimeZoneCutover#testWithMinuteOfHourInDstChange
->	org.joda.time.TestDateTimeZoneCutover#testWithMinuteOfHourInDstChange_mockZone
->	org.joda.time.TestDateTimeZoneCutover#testBug2182444_usCentral
->	org.joda.time.TestDateTimeZoneCutover#testWithMillisOfSecondInDstChange_Paris_summer
->	org.joda.time.TestDateTimeZoneCutover#testWithHourOfDayInDstChange
->	org.joda.time.TestDateTimeZoneCutover#testWithMillisOfSecondInDstChange_NewYork_winter
->	org.joda.time.TestDateTimeZoneCutover#testBug2182444_ausNSW
 
 ## Human Patch 
 
@@ -15969,89 +13816,6 @@ index 6cf4c71..450a4ef 100644
 # Time 27
 
 
-Nb Executed tests: 11292
-
-Nb Failing tests: 79
-
->	org.joda.time.convert.TestReadableDurationConverter#testSetInto_Object
->	org.joda.time.format.TestPeriodFormatterBuilder#testBug2495455
->	org.joda.time.TestMinutes#testFactory_parseMinutes_String
->	org.joda.time.convert.TestReadableDurationConverter#testSetInto_Object
->	org.joda.time.convert.TestStringConverter#testSetIntoPeriod_Object1
->	org.joda.time.convert.TestStringConverter#testSetIntoPeriod_Object2
->	org.joda.time.convert.TestStringConverter#testSetIntoPeriod_Object3
->	org.joda.time.convert.TestStringConverter#testSetIntoPeriod_Object4
->	org.joda.time.convert.TestStringConverter#testSetIntoPeriod_Object5
->	org.joda.time.convert.TestStringConverter#testSetIntoPeriod_Object6
->	org.joda.time.TestYears#testFactory_parseYears_String
->	org.joda.time.format.TestISOPeriodFormatParsing#testParseStandard1
->	org.joda.time.format.TestISOPeriodFormatParsing#testParseStandard2
->	org.joda.time.format.TestISOPeriodFormatParsing#testParseStandard3
->	org.joda.time.format.TestISOPeriodFormatParsing#testParseStandard4
->	org.joda.time.format.TestISOPeriodFormatParsing#testParseStandard5
->	org.joda.time.format.TestISOPeriodFormatParsing#testParseStandard6
->	org.joda.time.format.TestISOPeriodFormatParsing#testParseStandard8
->	org.joda.time.format.TestISOPeriodFormatParsing#testParseStandard9
->	org.joda.time.TestSeconds#testFactory_parseSeconds_String
->	org.joda.time.TestMutablePeriod_Basics#testToString
->	org.joda.time.TestPeriod_Basics#testToString_nullPeriodFormatter
->	org.joda.time.TestPeriod_Basics#testToString
->	org.joda.time.TestMutablePeriod_Basics#testToString
->	org.joda.time.TestYears#testFactory_parseYears_String
->	org.joda.time.TestMonths#testFactory_parseMonths_String
->	org.joda.time.TestWeeks#testFactory_parseWeeks_String
->	org.joda.time.TestDays#testFactory_parseDays_String
->	org.joda.time.TestHours#testFactory_parseHours_String
->	org.joda.time.TestMinutes#testFactory_parseMinutes_String
->	org.joda.time.TestSeconds#testFactory_parseSeconds_String
->	org.joda.time.TestMonths#testFactory_parseMonths_String
->	junit.framework.TestSuite$1#warning
->	org.joda.time.TestPeriod_Basics#testToString_nullPeriodFormatter
->	org.joda.time.TestPeriod_Basics#testToString
->	org.joda.time.format.TestPeriodFormatter#testPrint_bufferMethods
->	org.joda.time.format.TestPeriodFormatter#testParseMutablePeriod_simple
->	org.joda.time.format.TestPeriodFormatter#testPrinterParserMethods
->	org.joda.time.format.TestPeriodFormatter#testPrint_writerMethods
->	org.joda.time.format.TestPeriodFormatter#testParsePeriod_parseType
->	org.joda.time.format.TestPeriodFormatter#testPrint_simple
->	org.joda.time.format.TestPeriodFormatter#testParseInto_simple
->	org.joda.time.format.TestPeriodFormatter#testParsePeriod_simple
->	org.joda.time.format.TestISOPeriodFormat#testFormatStandard
->	org.joda.time.format.TestISOPeriodFormatParsing#testParseStandard1
->	org.joda.time.format.TestISOPeriodFormatParsing#testParseStandard2
->	org.joda.time.format.TestISOPeriodFormatParsing#testParseStandard3
->	org.joda.time.format.TestISOPeriodFormatParsing#testParseStandard4
->	org.joda.time.format.TestISOPeriodFormatParsing#testParseStandard5
->	org.joda.time.format.TestISOPeriodFormatParsing#testParseStandard6
->	org.joda.time.format.TestISOPeriodFormatParsing#testParseStandard8
->	org.joda.time.format.TestISOPeriodFormatParsing#testParseStandard9
->	org.joda.time.format.TestPeriodFormatterBuilder#testBug2495455
->	org.joda.time.TestHours#testFactory_parseHours_String
->	org.joda.time.TestParseISO#testSpecWeekTruncatedYWD
->	org.joda.time.TestParseISO#testSpecTimeTruncatedFractionMS
->	org.joda.time.TestParseISO#testSpecOrdinalTruncatedD
->	org.joda.time.TestParseISO#testSpecTimeComplete
->	org.joda.time.TestParseISO#testSpecTimeTruncatedMS
->	org.joda.time.TestParseISO#testSpecTruncatedYMD
->	org.joda.time.TestParseISO#testSpecTimeTruncatedM
->	org.joda.time.TestParseISO#testSpecTimeTruncatedS
->	org.joda.time.TestParseISO#testSpecWeekTruncatedD
->	org.joda.time.TestParseISO#testSpecWeekTruncatedW
->	org.joda.time.TestParseISO#testSpecWeekTruncatedWD
->	org.joda.time.TestParseISO#testSpecWeekTruncatedYW
->	org.joda.time.TestParseISO#testSpecTruncatedD
->	org.joda.time.TestParseISO#testSpecTruncatedM
->	org.joda.time.TestParseISO#testSpecTruncatedY
->	org.joda.time.TestParseISO#testSpecOrdinalTruncatedYD
->	org.joda.time.TestParseISO#testSpecReducedPrecisionC
->	org.joda.time.TestParseISO#testSpecTruncatedMD
->	org.joda.time.TestParseISO#testSpecTruncatedYM
->	org.joda.time.TestParseISO#testSpecTimeTruncatedFractionM
->	org.joda.time.TestParseISO#testSpecTimeTruncatedFractionS
->	org.joda.time.convert.TestReadableDurationConverter#testSetInto_Object
->	org.joda.time.format.TestISOPeriodFormat#testFormatStandard
->	org.joda.time.format.TestPeriodFormatterBuilder#testBug2495455
->	org.joda.time.TestWeeks#testFactory_parseWeeks_String
 
 ## Human Patch 
 

@@ -1,35 +1,44 @@
-export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";cp -r /home/tdurieux/projects/time/time_25 /tmp/time_25_Kali;cd /tmp/time_25_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Time/lib/* lib/;find . -type f -name "package-info.java" -delete;
-/home/tdurieux/results/Time/25/Kali/result
-cd /tmp/time_25_Kali;time java -cp /home/tdurieux/astor/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.joda.time.TestDateTimeZoneCutover:org.joda.time.TestDateTimeZoneCutover:org.joda.time.TestDateTimeZoneCutover: -package org.joda -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder build/classes/ -bintestfolder build/tests/;rm -rf /tmp/time_25_Kali;
+export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/time/time_25 /tmp/time_25_Kali;cd /tmp/time_25_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Time/lib/* lib/;find . -type f -name "package-info.java" -delete;
+/home/tdurieux/defects4j-repair/src/python/core/../../../results/Time/25/Kali/result
+cd /tmp/time_25_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.joda.time.TestDateTimeZoneCutover:org.joda.time.TestDateTimeZoneCutover:org.joda.time.TestDateTimeZoneCutover: -package org.joda -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder build/classes/ -bintestfolder build/tests/;echo "
+
+Node: `hostname`
+";echo "
+Date: `date`
+";rm -rf /tmp/time_25_Kali;
  NOT Found solution
+
 Number solutions:0
+
 All variants:
-Time Evolution(ms): 37307
+f 9.0, [Variant id: 1, #gens: 59, #ops: 0, parent:-]
 
 ----stats: 
 
 spaces: [0]: []
-time val1 [14]: [507, 502, 500, 497, 502, 499, 501, 501, 499, 500, 500, 501, 510, 502]
+time val1 [112]: [724, 459, 714, 430, 509, 430, 429, 428, 500, 878, 896, 723, 528, 923, 969, 886, 446, 764, 728, 724, 717, 659, 522, 962, 477, 807, 443, 751, 562, 654, 830, 902, 951, 722, 445, 769, 545, 446, 757, 727, 725, 1606, 488, 901, 728, 768, 60002, 501, 496, 519, 494, 560, 591, 737, 972, 977, 955, 952, 852, 986, 939, 928, 976, 977, 981, 916, 930, 993, 916, 927, 924, 592, 942, 1005, 997, 944, 939, 926, 949, 476, 941, 469, 979, 997, 442, 988, 966, 573, 832, 939, 930, 723, 677, 984, 941, 978, 1003, 973, 922, 499, 954, 947, 962, 973, 860, 923, 948, 923, 769, 60002, 1009, 882]
 time val2 [0]: []
-#gen: 27
+#gen: 0
 #patches: 0
-#RightCompilation: 13
-#WrongCompilation: 13
-#FailingTestCaseExecution: 14
+#RightCompilation: 111
+#WrongCompilation: 29
+#FailingTestCaseExecution: 112
 #RegressionTestExecution: 0
-#TestcasesExecutedval1: 4536
+#TestcasesExecutedval1: 35640
 #TestcasesExecutedval2: 0
 #FailingTestCase: 324
 #RegressionTestCases: 0
-#OfAppliedOp: 26
+#OfAppliedOp: 0
 #NotAppliedOp: 0
 #InmutatedGen: 0
 #unfinishValidation: 0
-Time Total(ms): 79076
+#ing []
+Time Total(ms): 318630
 
 
+Node: graphite-2.nancy.grid5000.fr
 
-Node: griffon-9.nancy.grid5000.fr
 
-Date: 2015-05-08T00:20:35.841151
+Date: Wed Jul 22 23:40:17 CEST 2015
+
 

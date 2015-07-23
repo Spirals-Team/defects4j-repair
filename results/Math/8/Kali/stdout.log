@@ -1,56 +1,66 @@
-export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";cp -r /home/tdurieux/projects/math/math_8 /tmp/math_8_Kali;cd /tmp/math_8_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
-/home/tdurieux/results/Math/8/Kali/result
-cd /tmp/math_8_Kali;time java -cp /home/tdurieux/astor/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.math3.distribution.DiscreteRealDistributionTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;rm -rf /tmp/math_8_Kali;
+export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/math/math_8 /tmp/math_8_Kali;cd /tmp/math_8_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
+/home/tdurieux/defects4j-repair/src/python/core/../../../results/Math/8/Kali/result
+cd /tmp/math_8_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.math3.distribution.DiscreteRealDistributionTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
 
-ProgramVariant 4
+Node: `hostname`
+";echo "
+Date: `date`
+";rm -rf /tmp/math_8_Kali;
+
+
+ --SOLUTIONS DESCRIPTION--
+
+ ----
+ProgramVariant 8
  
- operation: 
+operation: DELETE
 location= org.apache.commons.math3.distribution.DiscreteDistribution
- line= 189
- original statement= for (int i = 0 ; i < sampleSize ; i++) {
+line= 189
+original statement= for (int i = 0 ; i < sampleSize ; i++) {
 	out[i] = sample();
 }
- fix (remove original statement) "for (int i = 0 ; i < sampleSize ; i++) {
+fixed statement= "for (int i = 0 ; i < sampleSize ; i++) {
 	out[i] = sample();
 }"
- generation= 3
- 
- ----ProgramVariant 5
- 
- operation: 
-location= org.apache.commons.math3.distribution.DiscreteDistribution
- line= 190
- original statement= out[i] = sample()
- fix (remove original statement) "out[i] = sample()"
- generation= 4
+generation= 1
  
  ----
-Time Evolution(ms): 404726
+ProgramVariant 10
+ 
+operation: DELETE
+location= org.apache.commons.math3.distribution.DiscreteDistribution
+line= 190
+original statement= out[i] = sample()
+fixed statement= "out[i] = sample()"
+generation= 1
+ 
 
 ----stats: 
 
 spaces: [0]: []
-time val1 [18]: [309, 312, 315, 310, 298, 290, 289, 290, 312, 311, 215, 311, 226, 227, 325, 300, 299, 302]
-time val2 [2]: [197434, 197915]
-#gen: 25
+time val1 [58]: [363, 359, 360, 381, 358, 360, 358, 360, 357, 361, 269, 267, 335, 263, 330, 266, 337, 266, 337, 335, 334, 265, 358, 263, 258, 353, 354, 263, 261, 354, 264, 266, 264, 260, 264, 357, 264, 277, 360, 258, 264, 356, 258, 258, 263, 364, 264, 258, 364, 345, 266, 347, 266, 347, 354, 347, 264, 264]
+time val2 [2]: [231177, 229924]
+#gen: 0
 #patches: 2
-#RightCompilation: 17
+#RightCompilation: 57
 #WrongCompilation: 7
-#FailingTestCaseExecution: 18
+#FailingTestCaseExecution: 58
 #RegressionTestExecution: 2
-#TestcasesExecutedval1: 234
+#TestcasesExecutedval1: 754
 #TestcasesExecutedval2: 9650
 #FailingTestCase: 13
 #RegressionTestCases: 4825
-#OfAppliedOp: 24
+#OfAppliedOp: 0
 #NotAppliedOp: 0
 #InmutatedGen: 0
 #unfinishValidation: 0
-Time Total(ms): 1393326
+#ing []
+Time Total(ms): 1522621
 
 
+Node: graphite-1.nancy.grid5000.fr
 
-Node: griffon-39.nancy.grid5000.fr
 
-Date: 2015-05-08T02:03:33.853902
+Date: Thu Jul 23 01:02:23 CEST 2015
+
 
