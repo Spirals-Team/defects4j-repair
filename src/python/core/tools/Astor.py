@@ -17,7 +17,8 @@ class Astor(Tool):
 		id,
 		mode="statement",
 		maxgen="1000000",
-		population="1"):
+		population="1",
+		seed="10"):
 		source = None
 		for index, src in project.src.iteritems():
 			if id <= int(index):
@@ -47,6 +48,7 @@ class Astor(Tool):
 		cmd += ' -jvm4testexecution ' + conf.javaHome
 		cmd += ' -javacompliancelevel ' + str(project.complianceLevel[str(id)]['source'])
 		cmd += ' -maxgen ' + maxgen
+		cmd += ' -seed ' + seed
 		cmd += ' -population ' + population 
 		cmd += ' -srcjavafolder ' + source['srcjava']
 		cmd += ' -srctestfolder ' + source['srctest']
