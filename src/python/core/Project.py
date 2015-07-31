@@ -23,3 +23,6 @@ class Project(object):
 			self.classpath = collections.OrderedDict(sorted(self.data["classpath"].items(), key=lambda t: int(t[0])))
 			self.angelicValue = self.data["angelicValue"]
 		pass
+
+	def __str__(self):
+		return self.name

@@ -37,3 +37,6 @@ class Tool(object):
 	def getHostname(self):
 		cmd = 'hostname;'
 		return subprocess.check_output(cmd, shell=True)
+	
+	def __str__(self):
+		return self.name
