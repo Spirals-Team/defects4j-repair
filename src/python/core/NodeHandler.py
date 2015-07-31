@@ -1,4 +1,5 @@
 import os
+import sys
 import time
 import subprocess
 
@@ -10,9 +11,10 @@ class NodeHandler(object):
 		self.running = 0
 
 	def run(self):
+		totalTask = len(self.tasks)
+		startTime = time.time()
 		while(len(self.tasks) > 0):
 			self.getRunning()
-			print len(self.tasks), self.running >= self.maxNode
 			if self.running < self.maxNode:
 				task = self.tasks.pop()
 				filename = task.project.name.lower() + '_' + str(task.id)
@@ -43,20 +45,24 @@ class NodeHandler(object):
 					stderrlog,
 					nodeCmd
 				)
-				print cmd
-				subprocess.call(cmd, shell=True)
+				subprocess.check_call(cmd, shell=True)
 				self.running += 1
+				self.printStatus(totalTask, startTime)
 			else:
 				time.sleep( 5 )
 				self.getRunning()
+				self.printStatus(totalTask, startTime)
 		while(True):
 			self.getRunning()
-			print str(self.running) + " tasks run"
+			self.printStatus(totalTask, startTime)
 			if self.running > 0:
 				time.sleep( 5 )
 			else:
 				break
-
+	def printStatus(self, totalTask, startTime):
+		sys.stdout.write("\033[F")
+		sys.stdout.write("\033[K")
+		print("%d tasks to run (%d%%), %d tasks running (running for %2.2f sec)" % (len(self.tasks), len(self.tasks)/totalTask,self.running, time.time() - startTime))
 	def getRunning(self):
 		cmd = 'oarstat -u | grep `whoami` | wc -l'
 		output = subprocess.check_output(cmd,shell=True)
