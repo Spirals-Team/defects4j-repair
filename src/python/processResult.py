@@ -10,10 +10,7 @@ from core.Config import conf
 reload(sys)  
 sys.setdefaultencoding('Cp1252')
 
-def repeat_to_length(string_to_expand, length):
-   return (string_to_expand * ((length/len(string_to_expand))+1))[:length]
-
-tools = ["NopolPC", "NopolC", "BrutpolC", "BrutpolPC", "Ranking", "Genprog", "Kali"]
+tools = ["NopolPC", "NopolC", "BrutpolPC", "BrutpolC", "Genprog", "Kali"]
 
 root = conf.resultsRoot
 resultsAll = {}
@@ -29,45 +26,81 @@ fixedBugs = 0
 totalBugs = 0
 totalExecutionTime = 0
 
+count = {}
+result = "# Summary\n\n"
+body = ""
+line = "BugId             | "
+texTable = """\\begin{table}[!t]
+\label{tab:bugs_summary}
+\centering
+\\resizebox{0.5\\textwidth}{!}{
+\setlength\\tabcolsep{0.3 ex}
+\\begin{tabular}{|c|c|c|c|c|c|}
+\hline 
+Bug id            & """
+for tool in tools:
+	if tool == "Ranking":
+		continue
+	line += "{0:9} | ".format(tool)
+	texTable += "{0:9} & ".format(tool)
+
+tableHeader = "%sTotal\n----------------- | " % line
+texTable += "Total \\\\\n\\hline\n"
+for tool in tools:
+	if tool == "Ranking":
+		continue
+	tableHeader += "--------- | "
+tableHeader += "------\n"
+result += tableHeader
+
+fullTable = tableHeader
+body = ""
+print("Start the output proccess")
 for project in os.listdir(root):
 	projectPath = os.path.join(root, project) 
 	if os.path.isfile(projectPath):
 		continue
-	if project == ".git":
-		continue
+	smallName = project[0]
 	resultsProject = {}
-	resultsProjectPath = os.path.join(projectPath, "results.json")
-	rankingProjectPath = os.path.join(projectPath, "ranking.json")
 	rankingBug = {}
-	for bugId in os.listdir(projectPath):
+	for bugId in sorted(os.listdir(projectPath), key = lambda k: int(k) if k.isdigit() else k):
 		bugPath = os.path.join(projectPath, bugId) 
 		if not bugId.isdigit() or os.path.isfile(bugPath):
 			continue
+		bugId = int(bugId)
+
+		sys.stdout.write("\033[F")
+		sys.stdout.write("\033[K")
+		print "Process: %s %d" %(project, bugId)
+		
+		ranking = None
+
+		totalBugs += 1
+		line = "{0:17} |"
+		lineArgs = []
+		texLineArgs = []
+		texLineTable = "{0:17} &"
+		lineArgs += ["[%s%d](#%s-%s)" % (smallName, bugId, project.lower(), bugId)]
+		texLineArgs += ["%s%d"  % (smallName, bugId)]
+		lineCount = 0
+
 		resultsBugPath = os.path.join(bugPath, "results.json")
 		resultsBug = {}
-		for tool in os.listdir(bugPath):
+		for (index, tool) in enumerate(tools):
+			if tool == "Ranking":
+				continue
 			toolPath = os.path.join(bugPath, tool)
 			if os.path.isfile(toolPath):
 				continue
+			line += " {%d:9} |" % (index + 1)
+			texLineTable +=  " {%d:9} &" % (index + 1)
 			resultsToolPath = os.path.join(toolPath, "results.json")
 			stderrToolPath = os.path.join(toolPath, "stderr.log")
 			stdoutToolPath = os.path.join(toolPath, "stdout.log")
 			if os.path.exists(resultsToolPath):
 				with open(resultsToolPath) as data_file:
-					data = json.load(data_file)
-					if tool == "Ranking":
-						rankingBug[bugId] = data
-					else:
-						resultsBug[tool] = data
+					resultsBug[tool] = json.load(data_file)
 			elif os.path.exists(stderrToolPath):
-				with open(stderrToolPath) as data_file:
-					data = data_file.read()
-					if len(data) == 0:
-						resultsBug[tool] = {
-							"error": "EMPTY"
-						}
-						nbError += 1
-						continue
 				with open(stderrToolPath) as data_file:
 					data = data_file.read()
 					m = re.search("Job [0-9]+ KILLED", data)
@@ -86,112 +119,113 @@ for project in os.listdir(root):
 							"error": "ERROR"
 						}
 						nbError += 1
-		resultsProject[int(bugId)] = resultsBug
-		resultsBugFile = open(resultsBugPath, "w")
-		resultsBugFile.write(json.dumps(resultsBug, sort_keys=True))
-		resultsBugFile.close()
-	rankingAll[project] = rankingBug
-	resultsAll[project] = resultsProject
-	resultsProjectFile = open(resultsProjectPath, "w")
-	resultsProjectFile.write(json.dumps(resultsProject, sort_keys=True))
-	resultsProjectFile.close()
-	rankingProjectFile = open(rankingProjectPath, "w")
-	rankingProjectFile.write(json.dumps(rankingBug, sort_keys=True))
-	rankingProjectFile.close()
-resultsAllFile = open(resultsAllPath, "w")
-resultsAllFile.write(json.dumps(resultsAll, sort_keys=True))
-resultsAllFile.close()
-
-count = {}
-result = "# Summary\n\n"
-body = ""
-line = "BugId             | "
-texTable = """\\begin{table}[!t]
-\label{tab:bugs_summary}
-\centering
-\\resizebox{0.5\\textwidth}{!}{
-\setlength\\tabcolsep{0.3 ex}
-\\begin{tabular}{|c|c|c|c|c|c|}
-\hline 
-Bug id & """
-for tool in tools:
-	if tool == "Ranking":
-		continue
-	line += "%s | " % tool
-	texTable += "%s & " % tool
-result += "%sTotal\n%s | " % (line, repeat_to_length("-", 17))
-texTable += "Total\\\\\n\\hline\n"
-for tool in tools:
-	if tool == "Ranking":
-		continue
-	result += "%s | " % repeat_to_length("-", len(tool)) 
-result += "%s\n" % repeat_to_length("-", 6)
-
-for project in resultsAll:
-	smallName = project[0]
-	for bugId in resultsAll[project]:
-		totalBugs += 1
-		line = "[%s%d](#%s-%s)" % (smallName, bugId, project.lower(), bugId)
-		line = "%s%s| " % (line, repeat_to_length(" ", 18 - len(line)))
-		texLineTable = "%s%d"  % (smallName, bugId)
-		texLineTable = "%s%s& " % (texLineTable, repeat_to_length(" ", 7 - len(texLineTable)))
-		lineCount = 0
-		for tool in tools:
-			if tool == "Ranking":
-				continue
-			if(tool in resultsAll[project][bugId]):
-				if 'executionTime' in resultsAll[project][bugId][tool]:
-					totalExecutionTime += resultsAll[project][bugId][tool]['executionTime']
-				elif 'timeTotal' in resultsAll[project][bugId][tool]:
-					if resultsAll[project][bugId][tool]['timeTotal']:
-						totalExecutionTime += int(resultsAll[project][bugId][tool]['timeTotal'])
-				if ("patch" in resultsAll[project][bugId][tool] and resultsAll[project][bugId][tool]["patch"]):
-					line += "Yes%s" % repeat_to_length(" ", len(tool) - 3)
-					texLineTable += "Fixed%s" % repeat_to_length(" ", len(tool) - 5)
-					lineCount += 1
-					if(not tool in count):
-						count[tool] = 1
-					else:
-						count[tool] += 1
-				elif ("operations" in resultsAll[project][bugId][tool] and len(resultsAll[project][bugId][tool]["operations"]) > 0):
-					line += "Yes%s" % repeat_to_length(" ", len(tool) - 3)
-					texLineTable += "Fixed%s" % repeat_to_length(" ", len(tool) - 5)
-					lineCount += 1
-					if(not tool in count):
-						count[tool] = 1
-					else:
-						count[tool] += 1
-				else:
-					line += "No%s" % repeat_to_length(" ", len(tool) - 2)
-					texLineTable += "--%s" % repeat_to_length(" ", len(tool) - 2)
 			else:
-				line += "%s" % repeat_to_length(" ", len(tool))
-				texLineTable += "%s" % repeat_to_length(" ", len(tool))
-			line += " | "
-			texLineTable += " & "
+				lineArgs += [""]
+				texLineArgs += [""]
+				continue
+
+			if 'executionTime' in resultsBug[tool]:
+				totalExecutionTime += resultsBug[tool]['executionTime']
+			elif 'timeTotal' in resultsBug[tool]:
+				if resultsBug[tool]['timeTotal']:
+					totalExecutionTime += int(resultsBug[tool]['timeTotal'])
+			if (("patch" in resultsBug[tool] and resultsBug[tool]["patch"]) or 
+				("operations" in resultsBug[tool] and len(resultsBug[tool]["operations"]) > 0)):
+				if ranking is None:
+					rankingPath = os.path.join(os.path.join(bugPath, "Ranking"), "results.json")
+					if os.path.exists(rankingPath):
+						with open(rankingPath) as data_file:
+							ranking = json.load(data_file)
+					# create the body of the file
+					body += "# %s %s\n\n" % (project, bugId)
+					if 'executedTest' in ranking:
+						body += "Nb Executed tests: %s\n\n" % ranking['executedTest']
+					if 'failedTest' in ranking:
+						body += "Nb Failing tests: %s\n\n" % ranking['failedTest']
+					if 'failedTestDetails' in ranking:
+						for test in ranking['failedTestDetails']:
+							body += ">\t%s#%s\n" % (test['class'], test['method'])
+					body += "\n## Human Patch \n\n"
+					path = os.path.join(conf.defects4jRoot, "framework/projects", project, "patches",  "%d.src.patch" % bugId)
+					with open(path) as patchFile:
+						content = patchFile.read()
+						body += "```Java\n%s\n```\n\n" % (content)
+				lineArgs += ["Yes"]
+				texLineArgs += ["Fixed"]
+				lineCount += 1
+				if(not tool in count):
+					count[tool] = 1
+				else:
+					count[tool] += 1
+
+				body += "## %s \n\n" % (tool)
+				if "operations" in resultsBug[tool]:
+					for operation in resultsBug[tool]["operations"]:
+						lineKey = "%s:%d" % (operation['patchLocation']["className"], operation['patchLocation']["line"])
+						if 'suspicious' in ranking and lineKey in ranking['suspicious']:
+							ranks = ranking['suspicious'][lineKey]['rank']
+							body += "%s (Suspicious rank: " % (lineKey)
+							for rank in ranks:
+								body += "%s %d, " % (rank, ranks[rank])
+							body += ")\n"
+						else:
+							body += "%s\n" % (lineKey)
+						if 'type' in operation:
+							body+= operation["type"] + "\n"
+						body += "```Java\n%s\n```\n\n" % (operation["patch"])
+				else:
+					lineKey = "%s:%d" % (resultsBug[tool]['patchLocation']["className"], resultsBug[tool]['patchLocation']["line"])
+					if 'suspicious' in ranking and lineKey in ranking['suspicious']:
+						ranks = ranking['suspicious'][lineKey]['rank']
+						body += "%s (Suspicious rank: " % (lineKey)
+						for rank in ranks:
+							body += "%s %d, " % (rank, ranks[rank])
+						body += ")\n"
+					else:
+						body += "%s\n" % (lineKey)
+					body += "```Java\n%s\n```\n\n" % (resultsBug[tool]["patch"])
+					body += "Nb Angelic value: %d\n\n" % resultsBug[tool]['nbAngelicValue']
+					body += "Nb analyzed Statement: %d\n\n" % resultsBug[tool]['nbStatement']
+				if 'executionTime' in resultsBug[tool]:
+					body += "Execution time: %s\n\n" % datetime.timedelta(milliseconds=resultsBug[tool]['executionTime'])
+				if 'node' in resultsBug[tool]:
+					body += "Grid5000 node: %s\n\n" % resultsBug[tool]['node']
+
+
+			elif ("error" in resultsBug[tool]):
+				lineArgs += [resultsBug[tool]["error"]]
+				texLineArgs += ["--"]
+			else:
+				lineArgs += ["No"]
+				texLineArgs += ["--"]
+		line += "{%d:7}" % (len(tools) + 1)
+		texLineTable +=  "{%d:7} \\\\" % (len(tools) + 1)
+		lineArgs += [lineCount]
 		if lineCount > 0:
-			result += "%s%d\n" % (line, lineCount)
-			texTable += "%sFixed\\\\\n" % (texLineTable)
+			texLineArgs += ["Fixed"]
+			result += line.format(*lineArgs) + "\n"
+			texTable += texLineTable.format(*lineArgs) + "\n"
 			fixedBugs += 1
+		else:
+			fullTable += line.format(*lineArgs) + "\n"
+
 	texTable += "\hline\n"
 
-totalLine = "Total %s| " % repeat_to_length(" ", 12)
-texLineTable = "Total  & "
+totalLine = "{0:17} | ".format("Total")
+texLineTable = "{0:17} & ".format("Total")
 total = 0
 for tool in tools:
 	if tool == "Ranking":
 		continue
+	value = 0
+	percent = 0
 	if(tool in count):
 		total += count[tool]
-		tmp = "%d (%d%%)" % (count[tool], float(count[tool])/float(totalBugs)*100)
-		totalLine += "%s%s" % (tmp, repeat_to_length(" ", len(tool) - len(tmp)))
-		texLineTable += "%d (%d\\%%)" % (count[tool], float(count[tool])/float(totalBugs)*100)
-	else:
-		totalLine += "0%s" % repeat_to_length(" ", len(tool) - 1)
-		texLineTable += "0%s" % (tmp, repeat_to_length(" ", len(tool) - 1))
-	totalLine += " | "
-	texLineTable += " & "
-totalLine += "%d\n"  % (total)
+		value = count[tool]
+		percent = float(count[tool])/float(totalBugs)*100
+	totalLine += "{0:9} | ".format("%d (%d%%)" % (value, percent))
+	texLineTable += "{0:9} & ".format("%d (%d\\%%)" % (value, percent))
+totalLine += "{0:6}\n".format(total)
 totalLine += "Fixed bugs: %d/%d (%d%%)\n\n" % (fixedBugs, totalBugs, float(fixedBugs)/float(totalBugs)*100)
 totalLine += "Nb bugs ends with an execution error: %d\n\n"  % (nbError)
 totalLine += "Nb bugs ends with an empty log: %d\n\n"  % (nbEmpty)
@@ -208,82 +242,7 @@ texTable += """\hline
 result += totalLine
 
 result += "# Complete data\n\n"
-line = "BugId             | "
-for tool in tools:
-	if tool == "Ranking":
-		continue
-	line += "%s | " % tool
-result += "%sTotal\n%s | " % (line, repeat_to_length("-", 17))
-for tool in tools:
-	if tool == "Ranking":
-		continue
-	result += "%s | " % repeat_to_length("-", len(tool)) 
-result += "%s\n" % repeat_to_length("-", 6)
-for project in resultsAll:
-	smallName = project[0]
-	for bugId in resultsAll[project]:
-		line = "[%s%d](#%s-%s)" % (smallName, bugId, project.lower(), bugId)
-		line = "%s%s| " % (line, repeat_to_length(" ", 18 - len(line)))
-		body += "# %s %s\n\n\n" % (project, bugId)
-		lineCount = 0
-
-		if str(bugId) in rankingAll[project]:
-			if 'executedTest' in rankingAll[project][str(bugId)]:
-				body += "Nb Executed tests: %s\n\n" % rankingAll[project][str(bugId)]['executedTest']
-			if 'failedTest' in rankingAll[project][str(bugId)]:
-				body += "Nb Failing tests: %s\n\n" % rankingAll[project][str(bugId)]['failedTest']
-			if 'failedTestDetails' in rankingAll[project][str(bugId)]:
-				for test in rankingAll[project][str(bugId)]['failedTestDetails']:
-					body += ">\t%s#%s\n" % (test['class'], test['method'])
-
-		body += "\n## Human Patch \n\n"
-		path = os.path.join(conf.defects4jRoot, "framework/projects", project, "patches",  "%d.src.patch" % bugId)
-		with open(path) as patchFile:
-			content = patchFile.read()
-			body += "```Java\n%s\n```\n\n" % (content)
-		
-		for tool in tools:
-			if tool == "Ranking":
-				continue
-			if(tool in resultsAll[project][bugId]):
-				if ('error' in resultsAll[project][bugId][tool]):
-					line += "%s%s" % (resultsAll[project][bugId][tool]['error'], repeat_to_length(" ", len(tool) - len(resultsAll[project][bugId][tool]['error'])))
-				elif ("patch" in resultsAll[project][bugId][tool] and resultsAll[project][bugId][tool]["patch"]):
-					body += "## %s \n\n" % (tool)
-					lineKey = "%s:%d" % (resultsAll[project][bugId][tool]['patchLocation']["className"], resultsAll[project][bugId][tool]['patchLocation']["line"])
-					if str(bugId) in  rankingAll[project] and 'suspicious' in rankingAll[project][str(bugId)] and lineKey in rankingAll[project][str(bugId)]['suspicious']:
-						rank = rankingAll[project][str(bugId)]['suspicious'][lineKey]['rank']
-						body += "%s (Suspicious rank: %d (Ochiai), %d (Ample), %d (Tarantula))\n" % (lineKey, rank['ochiai'], rank['ample'], rank['tarantula'] )
-					else:
-						body += "%s\n" % (lineKey)
-					body += "```Java\n%s\n```\n\n" % (resultsAll[project][bugId][tool]["patch"])
-					body += "Nb Angelic value: %d\n\n" % resultsAll[project][bugId][tool]['nbAngelicValue']
-					body += "Nb analyzed Statement: %d\n\n" % resultsAll[project][bugId][tool]['nbStatement']
-					body += "Execution time: %s\n\n" % datetime.timedelta(milliseconds=resultsAll[project][bugId][tool]['executionTime'])
-					body += "Grid5000 node: %s\n\n" % resultsAll[project][bugId][tool]['node']
-					line += "Yes%s" % repeat_to_length(" ", len(tool) - 3)
-					lineCount += 1
-				elif ("operations" in resultsAll[project][bugId][tool] and len(resultsAll[project][bugId][tool]["operations"]) > 0):
-					body += "## %s \n\n" % (tool)
-					for operation in resultsAll[project][bugId][tool]["operations"]:
-						lineKey = "%s:%d" % (operation['patchLocation']["className"], operation['patchLocation']["line"])
-						if str(bugId) in  rankingAll[project] and 'suspicious' in rankingAll[project][str(bugId)] and lineKey in rankingAll[project][str(bugId)]['suspicious']:
-							rank = rankingAll[project][str(bugId)]['suspicious'][lineKey]['rank']
-							body += "%s (Suspicious rank: %d (Ochiai), %d (Ample), %d (Tarantula))\n" % (lineKey, rank['ochiai'], rank['ample'], rank['tarantula'] )
-						else:
-							body += "%s\n" % (lineKey)
-						body += "```Java\n%s\n```\n\n" % (operation["patch"])
-					body += "Execution time: %s\n\n" % datetime.timedelta(milliseconds=int(resultsAll[project][bugId][tool]['timeTotal']))
-					# body += "Execution time: %sms\n\n" % resultsAll[project][bugId][tool]['timeTotal']
-					body += "Grid5000 node : %s\n\n" % resultsAll[project][bugId][tool]['node']
-					line += "Yes%s" % repeat_to_length(" ", len(tool) - 3)
-					lineCount += 1
-				else:
-					line += "No%s" % repeat_to_length(" ", len(tool) - 2)
-			else:
-				line += "%s" % repeat_to_length(" ", len(tool))
-			line += " | "
-		result += "%s%d\n" % (line, lineCount)
+result += fullTable
 result += totalLine
 print result
 
