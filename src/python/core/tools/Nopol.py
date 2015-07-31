@@ -84,7 +84,7 @@ class Nopol(Tool):
         m = re.search('Nb variables in SMT : ([0-9]+)', log)
         if m:
             nbVariable = int(m.group(1))
-        m = re.search('Nopol Execution time : ([0-9]+)ms', log)
+        m = re.search('NoPol Execution time : ([0-9]+)ms', log)
         if m:
             executionTime = int(m.group(1))
         m = re.search('----PATCH FOUND----\n([^:]+):([0-9]+): ([^ ]+) (.+)', log)
