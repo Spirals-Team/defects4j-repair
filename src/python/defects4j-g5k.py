@@ -52,6 +52,8 @@ for tool in args.tools:
         tools.append(NopolC())
         tools.append(Astor())
         tools.append(Kali())
+        tools.append(BrutpolPC())
+        tools.append(BrutpolC())
     elif tool.lower() == "nopol":
         tools.append(NopolPC())
         tools.append(NopolC())
