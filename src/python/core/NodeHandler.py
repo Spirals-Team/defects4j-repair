@@ -20,6 +20,7 @@ class NodeHandler(object):
 				filename = task.project.name.lower() + '_' + str(task.id)
 				stdoutlog =  os.path.join(task.project.logPath, str(task.id), task.tool.name, 'stdout.log')
 				stderrlog =  os.path.join(task.project.logPath, str(task.id), task.tool.name, 'stderr.log')
+				resultlog =  os.path.join(task.project.logPath, str(task.id), task.tool.name, 'results.json')
 
 				if not os.path.exists(os.path.dirname(stdoutlog)):
 					os.makedirs(os.path.dirname(stdoutlog))
@@ -27,8 +28,9 @@ class NodeHandler(object):
 				if not os.path.exists(os.path.dirname(stderrlog)):
 					os.makedirs(os.path.dirname(stderrlog))
 
-				cmd = 'rm ' + stdoutlog + ';'
-				cmd += 'rm ' + stderrlog + ';'
+				cmd = 'rm %s; ' % stdoutlog
+				cmd += 'rm %s; ' % stderrlog
+				cmd += 'rm %s; ' % resultlog
 
 				nodeCmdArgs = "%s -p %s -t %s -i %d" % (
 					os.path.join(os.path.dirname(__file__), '..', 'defects4j-g5k-node.py'),
