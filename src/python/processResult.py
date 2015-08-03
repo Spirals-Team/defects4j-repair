@@ -124,7 +124,7 @@ for project in os.listdir(root):
 				texLineArgs += [""]
 				continue
 
-			if 'executionTime' in resultsBug[tool]:
+			if 'executionTime' in resultsBug[tool] and resultsBug[tool]['executionTime']:
 				totalExecutionTime += resultsBug[tool]['executionTime']
 			elif 'timeTotal' in resultsBug[tool]:
 				if resultsBug[tool]['timeTotal']:
@@ -206,8 +206,7 @@ for project in os.listdir(root):
 			result += line.format(*lineArgs) + "\n"
 			texTable += texLineTable.format(*lineArgs) + "\n"
 			fixedBugs += 1
-		else:
-			fullTable += line.format(*lineArgs) + "\n"
+		fullTable += line.format(*lineArgs) + "\n"
 
 	texTable += "\hline\n"
 
