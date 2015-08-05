@@ -12,5 +12,6 @@ class Config(object):
 		self.resultsRoot = os.path.join(defects4jRepairRoot, "results")
 		self.z3Root = os.path.join(defects4jRepairRoot, "libs", "z3")
 		self.javaHome = expanduser("/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/")
+		self.javaArgs = ""
 
 conf = Config()
