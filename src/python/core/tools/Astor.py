@@ -120,6 +120,7 @@ class Astor(Tool):
 				className = None
 				line = None
 				patch = None
+				buggyStatement = None
 				type = None
 				variant = 0
 				m = re.search('^([0-9]+)$', op, flags=re.MULTILINE+re.DOTALL)
@@ -136,7 +137,10 @@ class Astor(Tool):
 				m = re.search('line= ([0-9]+)', op)
 				if m:
 					line = m.group(1)
-				m = re.search('^fixed statement= "(.*)"', op, flags=re.MULTILINE+re.DOTALL)
+				m = re.search('^original statement= "?(.*)"?\nfixed statement', op, flags=re.MULTILINE+re.DOTALL)
+				if m:
+					buggyStatement = m.group(1)
+				m = re.search('^fixed statement= "?(.*)"?\ngeneration', op, flags=re.MULTILINE+re.DOTALL)
 				if m:
 					patch = m.group(1)
 				if type == "DELETE":
@@ -144,7 +148,6 @@ class Astor(Tool):
 				m = re.search('generation= ([0-9]+)', op)
 				if m:
 					generation = m.group(1)
-
 				if(patch == None):
 					continue
 				operations.append({
@@ -156,6 +159,7 @@ class Astor(Tool):
 						'line': int(line)
 					},
 					'patch': patch,
+					'buggyStatement': buggyStatement
 				})
 
 		results = {
