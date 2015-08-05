@@ -34,7 +34,7 @@ class Nopol(Tool):
         cmd += 'export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;'
         cmd += 'export PATH="' + conf.javaHome + ':$PATH";'
         cmd += 'cp -r ' + conf.z3Root + ' lib/z3;'
-        cmd += 'time java -cp ' + self.jar + ":%s/../lib/tools.jar" % conf.javaHome + ' ' + self.main
+        cmd += 'time java %s -cp %s:%s/../lib/tools.jar %s' % (conf.javaArgs, self.jar, conf.javaHome, self.main)
         cmd += ' --mode ' + mode
         cmd += ' --type ' + type
         cmd += ' --oracle ' + oracle

@@ -11,6 +11,7 @@ class Astor(Tool):
 	"""docstring for Astor"""
 	def __init__(self, name="Genprog"):
 		super(Astor, self).__init__(name, "astor")
+		self.maxExecution = "01:30:00"
 
 	def runAstor(self, 
 		project, 
@@ -39,7 +40,7 @@ class Astor(Tool):
 		cmd = 'cd ' + workdir +  ';'
 		cmd += 'export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;'
 		cmd += 'export PATH="' + conf.javaHome + ':$PATH";'
-		cmd += 'time java -cp ' + self.jar + ' ' + self.main
+		cmd += 'time java %s -cp %s %s' % (conf.javaArgs, self.jar, self.main)
 		cmd += ' -mode ' + mode
 		cmd += ' -location .' 
 		cmd += ' -dependencies lib/'

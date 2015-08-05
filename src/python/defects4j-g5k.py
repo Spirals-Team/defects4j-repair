@@ -24,6 +24,7 @@ def initParser():
     parser.add_argument('-projects', nargs='+', required=True, help='Which project (all, math, lang, time)')
     parser.add_argument('-tools', nargs='+', required=True, help='Which tool (all, nopol, ranking, ...)')
     parser.add_argument('-id', nargs='+', help='Bug id')
+    parser.add_argument('--timeout', required=False, help='Node timeout')
     parser.add_argument('--with-angelic', action='store_true', default=False, help='Run only bug with angelic')
     return parser.parse_args()
 
@@ -77,8 +78,6 @@ for tool in args.tools:
 
 tasks = []
 
-print projects, tools, tasks
-
 for project in projects:
     for tool in tools:
         if args.id:
@@ -93,8 +92,6 @@ for project in projects:
             for i in range(1, project.nbBugs + 1):
                 task = RunnerTask(tool, project, int(i))
                 tasks.append(task)
-
-print len(tasks)
-
+                
 nodeHandler = NodeHandler(tasks)
-nodeHandler.run()
+nodeHandler.run(args.timeout)

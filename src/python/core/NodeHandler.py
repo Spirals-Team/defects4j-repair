@@ -10,9 +10,10 @@ class NodeHandler(object):
 		self.tasks = tasks
 		self.running = 0
 
-	def run(self):
+	def run(self, timeoutNode=None):
 		totalTask = len(self.tasks)
 		startTime = time.time()
+		print "Execute %d tasks" % totalTask
 		while(len(self.tasks) > 0):
 			self.getRunning()
 			if self.running < self.maxNode:
@@ -42,12 +43,13 @@ class NodeHandler(object):
 
 				# cmd += path
 				cmd += "oarsub -l nodes=1,walltime=%s -O %s -E %s \"%s\"" % (
-					task.project.maxExecution,
+					timeoutNode if timeoutNode else task.tool.maxExecution,
 					stdoutlog,
 					stderrlog,
 					nodeCmd
 				)
-				subprocess.check_call(cmd, shell=True)
+				devnull = open('/dev/null', 'w')
+				temp = subprocess.call(cmd, shell=True, stdin=None, stdout=devnull, stderr=devnull)
 				self.running += 1
 				self.printStatus(totalTask, startTime)
 			else:
@@ -61,11 +63,13 @@ class NodeHandler(object):
 				time.sleep( 5 )
 			else:
 				break
+		print "Execute %d tasks in %2.2f sec" % (totalTask, time.time() - startTime)
 	def printStatus(self, totalTask, startTime):
 		sys.stdout.write("\033[F")
 		sys.stdout.write("\033[K")
-		print("%d tasks to run (%d%%), %d tasks running (running for %2.2f sec)" % (len(self.tasks), len(self.tasks)/totalTask,self.running, time.time() - startTime))
+		print("%d tasks to run, %d tasks running, %2.2f%% completed (running for %2.2f sec)" % (len(self.tasks),self.running,(totalTask-len(self.tasks)-self.running)/float(totalTask)*100, time.time() - startTime))
 	def getRunning(self):
 		cmd = 'oarstat -u | grep `whoami` | wc -l'
-		output = subprocess.check_output(cmd,shell=True)
+		devnull = open('/dev/null', 'w')
+		output = subprocess.check_output(cmd,shell=True, stdin=None, stderr=devnull)
 		self.running = int(output)

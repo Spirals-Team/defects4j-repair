@@ -4,4 +4,3 @@ class TimeProject(Project):
 	"""docstring for TimeProject"""
 	def __init__(self):
 		super(TimeProject, self).__init__("Time")
-		self.maxExecution = "01:00:00"

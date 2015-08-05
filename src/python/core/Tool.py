@@ -10,6 +10,7 @@ class Tool(object):
 	def __init__(self, name, configName):
 		self.name = name
 		self.configName = configName
+		self.maxExecution = "01:00:00"
 		self.parseData();
 
 	def parseData(self):
