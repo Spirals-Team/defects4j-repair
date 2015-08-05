@@ -1,0 +1,43 @@
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
+java.lang.RuntimeException: java.util.concurrent.TimeoutException
+	at xxl.java.junit.TestSuiteExecution.executionResult(TestSuiteExecution.java:100)
+	at xxl.java.junit.TestSuiteExecution.runTestCase(TestSuiteExecution.java:41)
+	at xxl.java.junit.TestSuiteExecution.runTestCases(TestSuiteExecution.java:84)
+	at fr.inria.lille.repair.nopol.synth.ConstraintModelBuilder.buildFor(ConstraintModelBuilder.java:78)
+	at fr.inria.lille.repair.nopol.synth.brutpol.BrutSynthesizer.buildPatch(BrutSynthesizer.java:61)
+	at fr.inria.lille.repair.nopol.NoPol.solveWithMultipleBuild(NoPol.java:178)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:120)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:90)
+	at fr.inria.lille.repair.nopol.NoPolLauncher.launch(NoPolLauncher.java:85)
+	at fr.inria.lille.repair.Main.main(Main.java:59)
+Caused by: java.util.concurrent.TimeoutException
+	at java.util.concurrent.FutureTask.get(FutureTask.java:201)
+	at xxl.java.junit.TestSuiteExecution.executionResult(TestSuiteExecution.java:93)
+	... 9 more
+Exception in thread "main" java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at java.io.UnixFileSystem.list(Native Method)
+	at java.io.File.list(File.java:1116)
+	at java.io.File.listFiles(File.java:1201)
+	at spoon.support.compiler.FileSystemFolder.getSubFolders(FileSystemFolder.java:78)
+	at spoon.support.compiler.FileSystemFolder.getAllJavaFiles(FileSystemFolder.java:103)
+	at spoon.support.compiler.FileSystemFolder.getAllJavaFiles(FileSystemFolder.java:104)
+	at spoon.support.compiler.FileSystemFolder.getAllJavaFiles(FileSystemFolder.java:104)
+	at spoon.support.compiler.FileSystemFolder.getAllJavaFiles(FileSystemFolder.java:104)
+	at spoon.support.compiler.FileSystemFolder.getAllJavaFiles(FileSystemFolder.java:104)
+	at spoon.support.compiler.FileSystemFolder.getAllJavaFiles(FileSystemFolder.java:104)
+	at spoon.support.StandardEnvironment.verifySourceClasspath(StandardEnvironment.java:421)
+	at spoon.support.StandardEnvironment.setSourceClasspath(StandardEnvironment.java:404)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.setSourceClasspath(JDTBasedSpoonCompiler.java:922)
+	at fr.inria.lille.commons.spoon.util.SpoonModelLibrary.modelFor(SpoonModelLibrary.java:50)
+	at fr.inria.lille.commons.spoon.SpoonedFile.<init>(SpoonedFile.java:50)
+	at fr.inria.lille.commons.spoon.SpoonedClass.<init>(SpoonedClass.java:13)
+	at fr.inria.lille.commons.spoon.SpoonedProject.forked(SpoonedProject.java:42)
+	at fr.inria.lille.repair.nopol.synth.SynthesizerFactory.getFor(SynthesizerFactory.java:68)
+	at fr.inria.lille.repair.nopol.NoPol.solveWithMultipleBuild(NoPol.java:157)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:120)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:90)
+	at fr.inria.lille.repair.nopol.NoPolLauncher.launch(NoPolLauncher.java:85)
+	at fr.inria.lille.repair.Main.main(Main.java:59)
+Command exited with non-zero status 1
+3206.71user 9.22system 22:56.23elapsed 233%CPU (0avgtext+0avgdata 3277448maxresident)k
+392inputs+19528outputs (0major+1227272minor)pagefaults 0swaps

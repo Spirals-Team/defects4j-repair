@@ -1,0 +1,37 @@
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
+com.sun.jdi.ClassNotPreparedException
+	at com.sun.tools.jdi.JDWPException.toJDIException(JDWPException.java:51)
+	at com.sun.tools.jdi.ReferenceTypeImpl.getInterfaces(ReferenceTypeImpl.java:572)
+	at com.sun.tools.jdi.ClassTypeImpl.interfaces(ClassTypeImpl.java:70)
+	at com.sun.tools.jdi.ClassTypeImpl.addVisibleMethods(ClassTypeImpl.java:392)
+	at com.sun.tools.jdi.ReferenceTypeImpl.visibleMethods(ReferenceTypeImpl.java:526)
+	at com.sun.tools.jdi.ReferenceTypeImpl.methodsByName(ReferenceTypeImpl.java:542)
+	at fr.inria.lille.spirals.repair.synthesizer.collect.DataCollector.collectMethods(DataCollector.java:255)
+	at fr.inria.lille.spirals.repair.synthesizer.collect.DataCollector.collectMethods(DataCollector.java:193)
+	at fr.inria.lille.spirals.repair.synthesizer.collect.DataCollector.collect(DataCollector.java:85)
+	at fr.inria.lille.spirals.repair.synthesizer.SynthesizerImpl.collectValues(SynthesizerImpl.java:336)
+	at fr.inria.lille.spirals.repair.synthesizer.SynthesizerImpl.processBreakPointEvents(SynthesizerImpl.java:227)
+	at fr.inria.lille.spirals.repair.synthesizer.SynthesizerImpl.processVMEvents(SynthesizerImpl.java:131)
+	at fr.inria.lille.spirals.repair.synthesizer.SynthesizerImpl.run(SynthesizerImpl.java:104)
+	at fr.inria.lille.repair.nopol.synth.brutpol.BrutSynthesizer.buildPatch(BrutSynthesizer.java:125)
+	at fr.inria.lille.repair.nopol.NoPol.solveWithMultipleBuild(NoPol.java:178)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:120)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:90)
+	at fr.inria.lille.repair.nopol.NoPolLauncher.launch(NoPolLauncher.java:85)
+	at fr.inria.lille.repair.Main.main(Main.java:59)
+java.lang.RuntimeException: java.util.concurrent.TimeoutException
+	at xxl.java.junit.TestSuiteExecution.executionResult(TestSuiteExecution.java:100)
+	at xxl.java.junit.TestSuiteExecution.runTestCase(TestSuiteExecution.java:41)
+	at xxl.java.junit.TestSuiteExecution.runTestCases(TestSuiteExecution.java:84)
+	at fr.inria.lille.repair.nopol.synth.ConstraintModelBuilder.buildFor(ConstraintModelBuilder.java:74)
+	at fr.inria.lille.repair.nopol.synth.brutpol.BrutSynthesizer.buildPatch(BrutSynthesizer.java:61)
+	at fr.inria.lille.repair.nopol.NoPol.solveWithMultipleBuild(NoPol.java:178)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:120)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:90)
+	at fr.inria.lille.repair.nopol.NoPolLauncher.launch(NoPolLauncher.java:85)
+	at fr.inria.lille.repair.Main.main(Main.java:59)
+Caused by: java.util.concurrent.TimeoutException
+	at java.util.concurrent.FutureTask.get(FutureTask.java:201)
+	at xxl.java.junit.TestSuiteExecution.executionResult(TestSuiteExecution.java:93)
+	... 9 more
+## OAR [2015-08-04 14:07:09] Job 2027 KILLED ##
