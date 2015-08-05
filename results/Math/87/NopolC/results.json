@@ -1,12 +1,12 @@
 {
-    "date": "Mon May 11 21:02:05 CEST 2015\n\n\n", 
-    "executionTime": 58674, 
+    "date": "Tue Aug  4 19:30:59 CEST 2015\n\n", 
+    "executionTime": 53415, 
     "nbAngelicValue": 1, 
     "nbSMTInput": 120, 
-    "nbSMTVariable": 30, 
-    "nbStatement": 127, 
-    "node": "chinqchint-24.lille.grid5000.fr", 
-    "patch": "((1)!=(org.apache.commons.math.optimization.linear.SimplexTableau.this.numSlackVariables))&&(!(restrictToNonNegative))", 
+    "nbSMTVariable": 29, 
+    "nbStatement": 128, 
+    "node": "graphene-81.nancy.grid5000.fr", 
+    "patch": "(((1) != (constraints.size())) || (org.apache.commons.math.optimization.linear.SimplexTableau.this.numSlackVariables < zIndex)) && (!(restrictToNonNegative))", 
     "patchLocation": {
         "className": "org.apache.commons.math.optimization.linear.SimplexTableau", 
         "line": 160

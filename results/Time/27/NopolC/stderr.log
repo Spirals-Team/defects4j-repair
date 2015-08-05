@@ -1,1 +1,53 @@
-## OAR [2015-05-11 20:58:42] Job 1498993 KILLED
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
+java.lang.RuntimeException: java.util.concurrent.TimeoutException
+	at xxl.java.junit.TestSuiteExecution.executionResult(TestSuiteExecution.java:100)
+	at xxl.java.junit.TestSuiteExecution.runTestCase(TestSuiteExecution.java:41)
+	at xxl.java.junit.TestSuiteExecution.runTestCases(TestSuiteExecution.java:84)
+	at fr.inria.lille.repair.nopol.synth.ConstraintModelBuilder.buildFor(ConstraintModelBuilder.java:78)
+	at fr.inria.lille.repair.nopol.synth.DefaultSynthesizer.buildPatch(DefaultSynthesizer.java:72)
+	at fr.inria.lille.repair.nopol.NoPol.solveWithMultipleBuild(NoPol.java:178)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:120)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:90)
+	at fr.inria.lille.repair.nopol.NoPolLauncher.launch(NoPolLauncher.java:85)
+	at fr.inria.lille.repair.Main.main(Main.java:59)
+Caused by: java.util.concurrent.TimeoutException
+	at java.util.concurrent.FutureTask.get(FutureTask.java:201)
+	at xxl.java.junit.TestSuiteExecution.executionResult(TestSuiteExecution.java:93)
+	... 9 more
+Exception in thread "main" java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at java.util.ArrayList.iterator(ArrayList.java:814)
+	at spoon.reflect.visitor.CtScanner.scanReferences(CtScanner.java:171)
+	at spoon.reflect.visitor.CtScanner.visitCtLiteral(CtScanner.java:464)
+	at spoon.support.reflect.code.CtLiteralImpl.accept(CtLiteralImpl.java:30)
+	at spoon.reflect.visitor.CtScanner.scan(CtScanner.java:153)
+	at spoon.reflect.visitor.CtScanner.visitCtBinaryOperator(CtScanner.java:276)
+	at spoon.support.reflect.code.CtBinaryOperatorImpl.accept(CtBinaryOperatorImpl.java:63)
+	at spoon.reflect.visitor.CtScanner.scan(CtScanner.java:153)
+	at spoon.reflect.visitor.CtScanner.visitCtWhile(CtScanner.java:721)
+	at spoon.support.reflect.code.CtWhileImpl.accept(CtWhileImpl.java:30)
+	at spoon.reflect.visitor.CtScanner.scan(CtScanner.java:153)
+	at spoon.reflect.visitor.CtScanner.scan(CtScanner.java:142)
+	at spoon.reflect.visitor.CtScanner.visitCtBlock(CtScanner.java:283)
+	at spoon.support.reflect.code.CtBlockImpl.accept(CtBlockImpl.java:45)
+	at spoon.reflect.visitor.CtScanner.scan(CtScanner.java:153)
+	at spoon.reflect.visitor.CtScanner.visitCtIf(CtScanner.java:434)
+	at spoon.support.reflect.code.CtIfImpl.accept(CtIfImpl.java:37)
+	at spoon.reflect.visitor.CtScanner.scan(CtScanner.java:153)
+	at spoon.reflect.visitor.CtScanner.scan(CtScanner.java:142)
+	at spoon.reflect.visitor.CtScanner.visitCtBlock(CtScanner.java:283)
+	at spoon.support.reflect.code.CtBlockImpl.accept(CtBlockImpl.java:45)
+	at spoon.reflect.visitor.CtScanner.scan(CtScanner.java:153)
+	at spoon.reflect.visitor.CtScanner.visitCtIf(CtScanner.java:433)
+	at spoon.support.reflect.code.CtIfImpl.accept(CtIfImpl.java:37)
+	at spoon.reflect.visitor.CtScanner.scan(CtScanner.java:153)
+	at spoon.reflect.visitor.CtScanner.scan(CtScanner.java:142)
+	at spoon.reflect.visitor.CtScanner.visitCtBlock(CtScanner.java:283)
+	at spoon.support.reflect.code.CtBlockImpl.accept(CtBlockImpl.java:45)
+	at spoon.reflect.visitor.CtScanner.scan(CtScanner.java:153)
+	at spoon.reflect.visitor.CtScanner.visitCtMethod(CtScanner.java:503)
+	at spoon.support.reflect.declaration.CtMethodImpl.accept(CtMethodImpl.java:51)
+	at spoon.reflect.visitor.CtScanner.scan(CtScanner.java:153)
+
+real	41m44.990s
+user	306m2.196s
+sys	1m24.789s

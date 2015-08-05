@@ -1,12 +1,12 @@
 {
-    "date": "Mon May 11 21:14:10 CEST 2015\n\n\n", 
-    "executionTime": 586654, 
+    "date": "Tue Aug  4 19:55:45 CEST 2015\n\n", 
+    "executionTime": 492653, 
     "nbAngelicValue": 1, 
     "nbSMTInput": 925, 
-    "nbSMTVariable": 43, 
-    "nbStatement": 92, 
-    "node": "chimint-1.lille.grid5000.fr", 
-    "patch": "(fp > 0)||((gNorm)<=(org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer.this.orthoTolerance))", 
+    "nbSMTVariable": 42, 
+    "nbStatement": 79, 
+    "node": "graphene-91.nancy.grid5000.fr", 
+    "patch": "(fp > 0) || ((!(org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer.this.orthoTolerance < gNorm)) && (org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer.this.permutation!=null))", 
     "patchLocation": {
         "className": "org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer", 
         "line": 613

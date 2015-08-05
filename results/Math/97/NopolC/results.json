@@ -1,12 +1,12 @@
 {
-    "date": "Mon May 11 21:00:38 CEST 2015\n\n\n", 
-    "executionTime": 64637, 
+    "date": "Tue Aug  4 19:25:51 CEST 2015\n\n", 
+    "executionTime": 49504, 
     "nbAngelicValue": 1, 
     "nbSMTInput": 461, 
-    "nbSMTVariable": 11, 
-    "nbStatement": 90, 
-    "node": "chinqchint-16.lille.grid5000.fr", 
-    "patch": "(((yMin)<(yMax))&&((yMin * yMax) >= 0))||((min)==(yMin))", 
+    "nbSMTVariable": 10, 
+    "nbStatement": 86, 
+    "node": "graphene-79.nancy.grid5000.fr", 
+    "patch": "((min <= 0) || (min == 1)) && ((yMin * yMax) >= 0)", 
     "patchLocation": {
         "className": "org.apache.commons.math.analysis.BrentSolver", 
         "line": 135

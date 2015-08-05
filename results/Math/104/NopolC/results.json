@@ -1,12 +1,12 @@
 {
-    "date": "Mon May 11 21:04:52 CEST 2015\n\n\n", 
-    "executionTime": 81715, 
+    "date": "Tue Aug  4 19:48:35 CEST 2015\n\n", 
+    "executionTime": 1251552, 
     "nbAngelicValue": 1, 
-    "nbSMTInput": 969, 
-    "nbSMTVariable": 10, 
+    "nbSMTInput": 971, 
+    "nbSMTVariable": 16, 
     "nbStatement": 88, 
-    "node": "chimint-14.lille.grid5000.fr", 
-    "patch": "(!((x)<(1)))&&(((a >= 1.0) && (x > a))||((1)==(a)))", 
+    "node": "graphene-87.nancy.grid5000.fr", 
+    "patch": "((a == 1) || ((a >= 1.0) && (x > a))) && (org.apache.commons.math.special.Gamma.HALF_LOG_2_PI <= x)", 
     "patchLocation": {
         "className": "org.apache.commons.math.special.Gamma", 
         "line": 162

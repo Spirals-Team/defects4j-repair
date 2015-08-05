@@ -1,1 +1,53 @@
-## OAR [2015-05-11 22:14:25] Job 1499118 KILLED
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
+java.lang.RuntimeException: java.util.concurrent.TimeoutException
+	at xxl.java.junit.TestSuiteExecution.executionResult(TestSuiteExecution.java:100)
+	at xxl.java.junit.TestSuiteExecution.runTestCase(TestSuiteExecution.java:41)
+	at xxl.java.junit.TestSuiteExecution.runTestCases(TestSuiteExecution.java:84)
+	at fr.inria.lille.repair.nopol.synth.ConstraintModelBuilder.buildFor(ConstraintModelBuilder.java:74)
+	at fr.inria.lille.repair.nopol.synth.DefaultSynthesizer.buildPatch(DefaultSynthesizer.java:72)
+	at fr.inria.lille.repair.nopol.NoPol.solveWithMultipleBuild(NoPol.java:178)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:120)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:90)
+	at fr.inria.lille.repair.nopol.NoPolLauncher.launch(NoPolLauncher.java:85)
+	at fr.inria.lille.repair.Main.main(Main.java:59)
+Caused by: java.util.concurrent.TimeoutException
+	at java.util.concurrent.FutureTask.get(FutureTask.java:201)
+	at xxl.java.junit.TestSuiteExecution.executionResult(TestSuiteExecution.java:93)
+	... 9 more
+Exception in thread "main" java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at java.util.ArrayList.iterator(ArrayList.java:814)
+	at java.util.Collections$UnmodifiableCollection$1.<init>(Collections.java:1064)
+	at java.util.Collections$UnmodifiableCollection.iterator(Collections.java:1063)
+	at spoon.reflect.visitor.CtScanner.scan(CtScanner.java:141)
+	at spoon.reflect.visitor.CtScanner.visitCtVariableAccess(CtScanner.java:702)
+	at spoon.reflect.visitor.CtScanner.visitCtVariableRead(CtScanner.java:710)
+	at spoon.support.reflect.code.CtVariableReadImpl.accept(CtVariableReadImpl.java:27)
+	at spoon.reflect.visitor.CtScanner.scan(CtScanner.java:153)
+	at spoon.reflect.visitor.QueryVisitor.scan(QueryVisitor.java:61)
+	at spoon.reflect.visitor.CtScanner.visitCtBinaryOperator(CtScanner.java:275)
+	at spoon.support.reflect.code.CtBinaryOperatorImpl.accept(CtBinaryOperatorImpl.java:63)
+	at spoon.reflect.visitor.CtScanner.scan(CtScanner.java:153)
+	at spoon.reflect.visitor.QueryVisitor.scan(QueryVisitor.java:61)
+	at spoon.reflect.visitor.CtScanner.visitCtBinaryOperator(CtScanner.java:275)
+	at spoon.support.reflect.code.CtBinaryOperatorImpl.accept(CtBinaryOperatorImpl.java:63)
+	at spoon.reflect.visitor.CtScanner.scan(CtScanner.java:153)
+	at spoon.reflect.visitor.QueryVisitor.scan(QueryVisitor.java:61)
+	at spoon.reflect.visitor.CtScanner.visitCtOperatorAssignment(CtScanner.java:569)
+	at spoon.support.reflect.code.CtOperatorAssignmentImpl.accept(CtOperatorAssignmentImpl.java:32)
+	at spoon.reflect.visitor.CtScanner.scan(CtScanner.java:153)
+	at spoon.reflect.visitor.QueryVisitor.scan(QueryVisitor.java:61)
+	at spoon.reflect.visitor.CtScanner.scan(CtScanner.java:142)
+	at spoon.reflect.visitor.CtScanner.visitCtBlock(CtScanner.java:283)
+	at spoon.support.reflect.code.CtBlockImpl.accept(CtBlockImpl.java:45)
+	at spoon.reflect.visitor.CtScanner.scan(CtScanner.java:153)
+	at spoon.reflect.visitor.QueryVisitor.scan(QueryVisitor.java:61)
+	at spoon.reflect.visitor.Query.getElements(Query.java:74)
+	at spoon.support.compiler.jdt.JDTTreeBuilder.getLocalVariableDeclaration(JDTTreeBuilder.java:1430)
+	at spoon.support.compiler.jdt.JDTTreeBuilder$ReferenceBuilder.getVariableReference(JDTTreeBuilder.java:690)
+	at spoon.support.compiler.jdt.JDTTreeBuilder.visit(JDTTreeBuilder.java:2571)
+	at org.eclipse.jdt.internal.compiler.ast.SingleNameReference.traverse(SingleNameReference.java:1036)
+	at org.eclipse.jdt.internal.compiler.ast.BinaryExpression.traverse(BinaryExpression.java:1907)
+
+real	23m38.565s
+user	65m22.529s
+sys	0m14.541s

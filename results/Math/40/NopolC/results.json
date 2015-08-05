@@ -1,12 +1,12 @@
 {
-    "date": "Mon May 11 21:20:23 CEST 2015\n\n\n", 
-    "executionTime": 500974, 
+    "date": "Tue Aug  4 20:08:39 CEST 2015\n\n", 
+    "executionTime": 501370, 
     "nbAngelicValue": 1, 
     "nbSMTInput": 697, 
-    "nbSMTVariable": 31, 
-    "nbStatement": 31, 
-    "node": "chinqchint-43.lille.grid5000.fr", 
-    "patch": "(((xA)<=(absYA))||((signChangeIndex - start) >= (end - signChangeIndex)))&&(x!=null)", 
+    "nbSMTVariable": 30, 
+    "nbStatement": 46, 
+    "node": "graphene-74.nancy.grid5000.fr", 
+    "patch": "((signChangeIndex - start) >= (end - signChangeIndex)) || (xA <= yA)", 
     "patchLocation": {
         "className": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
         "line": 260

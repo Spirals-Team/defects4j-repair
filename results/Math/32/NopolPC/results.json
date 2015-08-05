@@ -1,12 +1,12 @@
 {
-    "date": "Mon May 11 23:23:17 CEST 2015\n\n\n", 
-    "executionTime": 1013994, 
+    "date": "Wed Aug  5 00:35:49 CEST 2015\n\n", 
+    "executionTime": 830124, 
     "nbAngelicValue": 1, 
     "nbSMTInput": 24, 
     "nbSMTVariable": 20, 
-    "nbStatement": 221, 
-    "node": "chimint-14.lille.grid5000.fr", 
-    "patch": "((!(((boundary.size())-(plusList.size()))<(minusList.size())))&&((1)<=(plusList.size())))||((minusList.size())==((boundary.size())+(-1)))", 
+    "nbStatement": 175, 
+    "node": "graphene-88.nancy.grid5000.fr", 
+    "patch": "((!(boundary.size() - plusList.size() < minusList.size())) && (1 <= plusList.size())) || (minusList.size() == boundary.size() + -1)", 
     "patchLocation": {
         "className": "org.apache.commons.math3.geometry.partitioning.AbstractRegion", 
         "line": 214

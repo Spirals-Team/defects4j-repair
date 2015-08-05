@@ -1,12 +1,12 @@
 {
-    "date": "Mon May 11 21:41:36 CEST 2015\n\n\n", 
-    "executionTime": 943998, 
+    "date": "Tue Aug  4 20:17:45 CEST 2015\n\n", 
+    "executionTime": 759577, 
     "nbAngelicValue": 1, 
     "nbSMTInput": 43, 
-    "nbSMTVariable": 28, 
-    "nbStatement": 22, 
-    "node": "chimint-15.lille.grid5000.fr", 
-    "patch": "!(((org.apache.commons.math3.optimization.linear.SimplexTableau.this.numSlackVariables)==(org.apache.commons.math3.optimization.linear.SimplexTableau.this.constraints.size()))||((entry)<=(0)))", 
+    "nbSMTVariable": 27, 
+    "nbStatement": 31, 
+    "node": "graphene-5.nancy.grid5000.fr", 
+    "patch": "((org.apache.commons.math3.optimization.linear.SimplexTableau.NEGATIVE_VAR_COLUMN_LABEL.length()) != (org.apache.commons.math3.optimization.linear.SimplexTableau.this.numArtificialVariables)) && ((0.0 < entry) || (org.apache.commons.math3.optimization.linear.SimplexTableau.this.constraints.isEmpty()))", 
     "patchLocation": {
         "className": "org.apache.commons.math3.optimization.linear.SimplexTableau", 
         "line": 338

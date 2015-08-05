@@ -1,15 +1,15 @@
 {
-    "date": "Mon May 11 23:18:56 CEST 2015\n\n\n", 
-    "executionTime": 1121312, 
-    "nbAngelicValue": 2, 
-    "nbSMTInput": 79, 
-    "nbSMTVariable": 17, 
-    "nbStatement": 8, 
-    "node": "chimint-19.lille.grid5000.fr", 
-    "patch": "(((-1)!=(x))&&((f0)<=(atol)))||((ftol)==(atol))", 
+    "date": "Tue Aug  4 23:18:01 CEST 2015\n\n", 
+    "executionTime": 815404, 
+    "nbAngelicValue": 1, 
+    "nbSMTInput": 4149, 
+    "nbSMTVariable": 18, 
+    "nbStatement": 6, 
+    "node": "graphene-80.nancy.grid5000.fr", 
+    "patch": "!((x == 1) || ((1 < x) && (inverted)))", 
     "patchLocation": {
         "className": "org.apache.commons.math.analysis.solvers.BaseSecantSolver", 
-        "line": 240
+        "line": 186
     }, 
     "patchType": "PRECONDITION"
 }
