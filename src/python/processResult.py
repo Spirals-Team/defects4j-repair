@@ -56,7 +56,7 @@ result += tableHeader
 fullTable = tableHeader
 body = ""
 print("Start the output proccess")
-for project in os.listdir(root):
+for project in sorted(os.listdir(root)):
 	projectPath = os.path.join(root, project) 
 	if os.path.isfile(projectPath):
 		continue
@@ -196,7 +196,10 @@ for project in os.listdir(root):
 				lineArgs += [resultsBug[tool]["error"]]
 				texLineArgs += ["--"]
 			else:
-				lineArgs += ["No"]
+				if "nbAngelicValue" in resultsBug[tool]:
+					lineArgs += ["%d AV" % resultsBug[tool]["nbAngelicValue"]]
+				else:
+					lineArgs += ["No"]
 				texLineArgs += ["--"]
 		line += "{%d:7}" % (len(tools) + 1)
 		texLineTable +=  "{%d:7} \\\\" % (len(tools) + 1)
