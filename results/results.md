@@ -2,298 +2,305 @@
 
 BugId             | NopolPC   | NopolC    | BrutpolPC | BrutpolC  | Genprog   | Kali      | Total
 ----------------- | --------- | --------- | --------- | --------- | --------- | --------- | ------
-[C3](#chart-3)    | TIMEOUT   | Yes       | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      1
-[C5](#chart-5)    | TIMEOUT   | Yes       | TIMEOUT   | Yes       | TIMEOUT   | No        |      2
-[C6](#chart-6)    | Yes       | Yes       | Yes       | Yes       | TIMEOUT   | No        |      4
-[C9](#chart-9)    | TIMEOUT   | TIMEOUT   | Yes       | Yes       | TIMEOUT   | No        |      2
-[C13](#chart-13)  | Yes       | Yes       | Yes       | TIMEOUT   | TIMEOUT   | No        |      3
-[C17](#chart-17)  | TIMEOUT   | 0 AV      | Yes       | Yes       | TIMEOUT   | No        |      2
-[C21](#chart-21)  | Yes       | Yes       | Yes       | Yes       | TIMEOUT   | No        |      4
-[C25](#chart-25)  | Yes       | Yes       | TIMEOUT   | Yes       | TIMEOUT   | No        |      3
-[C26](#chart-26)  | Yes       | Yes       | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      2
-[L39](#lang-39)   | Yes       | 0 AV      | ERROR     | ERROR     | TIMEOUT   | No        |      1
-[L44](#lang-44)   | Yes       | Yes       | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      2
-[L46](#lang-46)   | Yes       | 0 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      1
-[L51](#lang-51)   | 0 AV      | Yes       | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      1
-[L53](#lang-53)   | Yes       | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      1
-[L55](#lang-55)   | Yes       | 0 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      1
-[L58](#lang-58)   | Yes       | Yes       | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      2
+[C3](#chart-3)    | TIMEOUT   | Yes       | 0 AV      | 1 AV      |           | No        |      1
+[C5](#chart-5)    | TIMEOUT   | Yes       | 0 AV      | Yes       | No        | No        |      2
+[C6](#chart-6)    | Yes       | Yes       | Yes       | Yes       | No        | No        |      4
+[C9](#chart-9)    | TIMEOUT   | TIMEOUT   | Yes       | Yes       | No        | No        |      2
+[C13](#chart-13)  | Yes       | Yes       | Yes       | TIMEOUT   | No        | No        |      3
+[C17](#chart-17)  | TIMEOUT   | 0 AV      | Yes       | Yes       | No        | No        |      2
+[C21](#chart-21)  | Yes       | Yes       | Yes       | Yes       | No        | No        |      4
+[C25](#chart-25)  | Yes       | Yes       | Yes       | Yes       | ERROR     | No        |      4
+[C26](#chart-26)  | Yes       | Yes       | Yes       | TIMEOUT   | ERROR     | No        |      3
+[L39](#lang-39)   | Yes       | 0 AV      | Yes       | 0 AV      | No        | No        |      2
+[L44](#lang-44)   | Yes       | Yes       | TIMEOUT   | TIMEOUT   | No        | No        |      2
+[L46](#lang-46)   | Yes       | 0 AV      | TIMEOUT   | 0 AV      | No        | No        |      1
+[L51](#lang-51)   | 0 AV      | Yes       | 0 AV      | TIMEOUT   | No        | No        |      1
+[L53](#lang-53)   | Yes       | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        | No        |      1
+[L55](#lang-55)   | Yes       | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      1
+[L58](#lang-58)   | Yes       | Yes       | TIMEOUT   | TIMEOUT   | No        | No        |      2
 [M2](#math-2)     | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | Yes       | Yes       |      2
+[M5](#math-5)     | TIMEOUT   | 2 AV      | TIMEOUT   | ERROR     | Yes       | No        |      1
 [M8](#math-8)     | TIMEOUT   | 1 AV      | TIMEOUT   | ERROR     | Yes       | Yes       |      2
-[M32](#math-32)   | Yes       | 0 AV      | TIMEOUT   | Yes       | No        | No        |      2
-[M33](#math-33)   | Yes       | Yes       | Yes       | TIMEOUT   | No        | No        |      3
-[M40](#math-40)   | 1 AV      | Yes       | 0 AV      | TIMEOUT   | No        | Yes       |      2
+[M24](#math-24)   | 5 AV      | 1 AV      | TIMEOUT   | 1 AV      | Yes       | No        |      1
+[M32](#math-32)   | Yes       | 0 AV      | TIMEOUT   | Yes       | ERROR     | No        |      2
+[M33](#math-33)   | Yes       | Yes       | Yes       |           | ERROR     | No        |      3
+[M40](#math-40)   | 1 AV      | Yes       | 0 AV      | 1 AV      | ERROR     | Yes       |      2
 [M41](#math-41)   | 21 AV     | 10 AV     | Yes       | Yes       | No        | No        |      2
 [M42](#math-42)   | Yes       | TIMEOUT   | Yes       | TIMEOUT   | No        | No        |      2
-[M46](#math-46)   | 2 AV      | 2 AV      | Yes       | TIMEOUT   | No        | No        |      1
-[M49](#math-49)   | Yes       | Yes       | Yes       | TIMEOUT   | Yes       | Yes       |      5
-[M50](#math-50)   | Yes       | Yes       | Yes       | TIMEOUT   | Yes       | Yes       |      5
-[M57](#math-57)   | Yes       | Yes       | TIMEOUT   | TIMEOUT   | No        | No        |      2
-[M58](#math-58)   | Yes       | Yes       | Yes       | TIMEOUT   | No        | No        |      3
-[M69](#math-69)   | Yes       | 2 AV      | Yes       | TIMEOUT   | No        | No        |      2
-[M71](#math-71)   | 4 AV      | Yes       | Yes       | TIMEOUT   | No        | TIMEOUT   |      2
-[M73](#math-73)   | 0 AV      | Yes       | 0 AV      | TIMEOUT   | No        | No        |      1
-[M78](#math-78)   | Yes       | TIMEOUT   | Yes       | TIMEOUT   | Yes       | Yes       |      4
-[M80](#math-80)   | Yes       | TIMEOUT   | 3 AV      | TIMEOUT   | Yes       | Yes       |      3
+[M46](#math-46)   | 2 AV      | 2 AV      | Yes       | ERROR     | No        | No        |      1
+[M49](#math-49)   | Yes       | Yes       | Yes       | ERROR     | ERROR     | Yes       |      4
+[M50](#math-50)   | Yes       | Yes       | Yes       | 2 AV      | Yes       | Yes       |      5
+[M53](#math-53)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | Yes       | No        |      1
+[M57](#math-57)   | Yes       | Yes       | 3 AV      | 1 AV      | No        | No        |      2
+[M58](#math-58)   | Yes       | Yes       | Yes       | 1 AV      | ERROR     | No        |      3
+[M69](#math-69)   | Yes       | 2 AV      | Yes       | 2 AV      | No        | No        |      2
+[M70](#math-70)   | 0 AV      | 0 AV      | 0 AV      | TIMEOUT   | Yes       | No        |      1
+[M71](#math-71)   | 4 AV      | Yes       | Yes       | 3 AV      | Yes       | TIMEOUT   |      3
+[M73](#math-73)   | 0 AV      | Yes       | 0 AV      | ERROR     | Yes       | No        |      2
+[M78](#math-78)   | Yes       | TIMEOUT   | Yes       | ERROR     | No        | Yes       |      3
+[M80](#math-80)   | Yes       | TIMEOUT   | 3 AV      | ERROR     | Yes       | Yes       |      3
 [M81](#math-81)   | Yes       | Yes       | TIMEOUT   | TIMEOUT   | Yes       | Yes       |      4
-[M82](#math-82)   | Yes       | 0 AV      | TIMEOUT   | TIMEOUT   | Yes       | Yes       |      3
+[M82](#math-82)   | Yes       | 0 AV      | TIMEOUT   |           | Yes       | Yes       |      3
 [M85](#math-85)   | Yes       | Yes       | Yes       | Yes       | Yes       | Yes       |      6
-[M87](#math-87)   | Yes       | Yes       | Yes       | TIMEOUT   | No        | No        |      3
-[M88](#math-88)   | Yes       | 1 AV      | Yes       | TIMEOUT   | No        | No        |      2
-[M95](#math-95)   | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | No        | Yes       |      1
+[M87](#math-87)   | Yes       | Yes       | Yes       | ERROR     | No        | No        |      3
+[M88](#math-88)   | Yes       | 1 AV      | Yes       | ERROR     | No        | No        |      2
+[M95](#math-95)   | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | Yes       | Yes       |      2
+[M96](#math-96)   | 0 AV      | 1 AV      | 0 AV      | Yes       | No        | No        |      1
 [M97](#math-97)   | Yes       | Yes       | Yes       | Yes       | No        | No        |      4
 [M99](#math-99)   | Yes       | Yes       | Yes       | Yes       | No        | No        |      4
 [M104](#math-104) | 0 AV      | Yes       | 0 AV      | TIMEOUT   | No        | No        |      1
-[M105](#math-105) | Yes       | 0 AV      | Yes       | TIMEOUT   | No        | No        |      2
-[T11](#time-11)   | Yes       | Yes       | Yes       | TIMEOUT   | TIMEOUT   | No        |      3
-Total             | 30 (13%)  | 25 (11%)  | 22 (9%)   | 11 (4%)   | 9 (4%)    | 11 (4%)   |    108
-Fixed bugs: 44/224 (19%)
+[M105](#math-105) | Yes       | 0 AV      | Yes       | ERROR     | No        | No        |      2
+[T11](#time-11)   | Yes       | Yes       | Yes       | ERROR     | No        | No        |      3
+Total             | 30 (13%)  | 25 (11%)  | 25 (11%)  | 12 (5%)   | 14 (6%)   | 11 (4%)   |    117
+Execution time    | 3 days, 9:25:15.659000 | 3 days, 17:26:42.646000 | 1 day, 20:40:05.778000 | 1 day, 4:27:47.618000 | 6 days, 14:55:17.146000 | 22:58:33.116000 | 33 days, 23:53:41.963000
+Fixed bugs: 49/224 (21%)
 
-Nb bugs ends with an execution error: 54
+Nb bugs ends with an execution error: 110
 
 Nb bugs ends with an empty log: 0
 
-Nb bugs ends with the Grid5000 timeout: 561
+Nb bugs ends with the Grid5000 timeout: 390
 
-Total execution time: 36 days, 23:26:59.557000
+Total execution time: 33 days, 23:53:41.963000
 # Complete data
 
 BugId             | NopolPC   | NopolC    | BrutpolPC | BrutpolC  | Genprog   | Kali      | Total
 ----------------- | --------- | --------- | --------- | --------- | --------- | --------- | ------
-[C1](#chart-1)    | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[C2](#chart-2)    | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[C3](#chart-3)    | TIMEOUT   | Yes       | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      1
-[C4](#chart-4)    | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[C5](#chart-5)    | TIMEOUT   | Yes       | TIMEOUT   | Yes       | TIMEOUT   | No        |      2
-[C6](#chart-6)    | Yes       | Yes       | Yes       | Yes       | TIMEOUT   | No        |      4
-[C7](#chart-7)    | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
+[C1](#chart-1)    | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[C2](#chart-2)    | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | ERROR     | No        |      0
+[C3](#chart-3)    | TIMEOUT   | Yes       | 0 AV      | 1 AV      |           | No        |      1
+[C4](#chart-4)    | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[C5](#chart-5)    | TIMEOUT   | Yes       | 0 AV      | Yes       | No        | No        |      2
+[C6](#chart-6)    | Yes       | Yes       | Yes       | Yes       | No        | No        |      4
+[C7](#chart-7)    | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        | No        |      0
 [C8](#chart-8)    | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | ERROR     | ERROR     |      0
-[C9](#chart-9)    | TIMEOUT   | TIMEOUT   | Yes       | Yes       | TIMEOUT   | No        |      2
-[C10](#chart-10)  | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[C11](#chart-11)  | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[C12](#chart-12)  | TIMEOUT   | 0 AV      | ERROR     | ERROR     | TIMEOUT   | No        |      0
-[C13](#chart-13)  | Yes       | Yes       | Yes       | TIMEOUT   | TIMEOUT   | No        |      3
-[C14](#chart-14)  | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[C15](#chart-15)  | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[C16](#chart-16)  | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[C17](#chart-17)  | TIMEOUT   | 0 AV      | Yes       | Yes       | TIMEOUT   | No        |      2
-[C18](#chart-18)  | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[C19](#chart-19)  | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[C20](#chart-20)  | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[C21](#chart-21)  | Yes       | Yes       | Yes       | Yes       | TIMEOUT   | No        |      4
-[C22](#chart-22)  | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[C23](#chart-23)  | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[C24](#chart-24)  | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[C25](#chart-25)  | Yes       | Yes       | TIMEOUT   | Yes       | TIMEOUT   | No        |      3
-[C26](#chart-26)  | Yes       | Yes       | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      2
-[L1](#lang-1)     | 0 AV      | 1 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[L2](#lang-2)     | TIMEOUT   | 1 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[L3](#lang-3)     | TIMEOUT   | 1 AV      | ERROR     | ERROR     | TIMEOUT   | No        |      0
-[L4](#lang-4)     | TIMEOUT   | 1 AV      | ERROR     | ERROR     | TIMEOUT   | No        |      0
-[L5](#lang-5)     | TIMEOUT   | 1 AV      | ERROR     | ERROR     | TIMEOUT   | No        |      0
-[L6](#lang-6)     | 0 AV      | 1 AV      | ERROR     | ERROR     | TIMEOUT   | No        |      0
-[L7](#lang-7)     | TIMEOUT   | 2 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[L8](#lang-8)     | TIMEOUT   | 0 AV      | ERROR     | ERROR     | TIMEOUT   | No        |      0
-[L9](#lang-9)     | TIMEOUT   | 1 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        |      0
-[L10](#lang-10)   | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[L11](#lang-11)   | 0 AV      | 0 AV      | ERROR     | ERROR     | TIMEOUT   | No        |      0
-[L12](#lang-12)   | 0 AV      | 0 AV      | ERROR     | ERROR     | TIMEOUT   | No        |      0
-[L13](#lang-13)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[L14](#lang-14)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[L15](#lang-15)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[L16](#lang-16)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[L17](#lang-17)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[L18](#lang-18)   | TIMEOUT   | 0 AV      | ERROR     | ERROR     | TIMEOUT   | No        |      0
-[L19](#lang-19)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[L20](#lang-20)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[L21](#lang-21)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[L22](#lang-22)   | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[L23](#lang-23)   | 0 AV      | TIMEOUT   | 0 AV      | 0 AV      | TIMEOUT   | No        |      0
-[L24](#lang-24)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[L25](#lang-25)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[L26](#lang-26)   | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[L27](#lang-27)   | 0 AV      | 1 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[L28](#lang-28)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[L29](#lang-29)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[L30](#lang-30)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[L31](#lang-31)   | 0 AV      | 0 AV      | ERROR     | ERROR     | TIMEOUT   | No        |      0
-[L32](#lang-32)   | 0 AV      | 0 AV      | ERROR     | ERROR     | TIMEOUT   | No        |      0
-[L33](#lang-33)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[L34](#lang-34)   | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[L35](#lang-35)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[L36](#lang-36)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[L37](#lang-37)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[L38](#lang-38)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[L39](#lang-39)   | Yes       | 0 AV      | ERROR     | ERROR     | TIMEOUT   | No        |      1
-[L40](#lang-40)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[L41](#lang-41)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[L42](#lang-42)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[L43](#lang-43)   | 0 AV      | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        |      0
-[L44](#lang-44)   | Yes       | Yes       | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      2
-[L45](#lang-45)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[L46](#lang-46)   | Yes       | 0 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      1
-[L47](#lang-47)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[L48](#lang-48)   | 0 AV      | 0 AV      | ERROR     | ERROR     | TIMEOUT   | No        |      0
-[L49](#lang-49)   | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[L50](#lang-50)   | 0 AV      | 0 AV      | ERROR     | ERROR     | TIMEOUT   | No        |      0
-[L51](#lang-51)   | 0 AV      | Yes       | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      1
-[L52](#lang-52)   | 0 AV      | 0 AV      | ERROR     | ERROR     | TIMEOUT   | No        |      0
-[L53](#lang-53)   | Yes       | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      1
-[L54](#lang-54)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[L55](#lang-55)   | Yes       | 0 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      1
-[L56](#lang-56)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[L57](#lang-57)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[L58](#lang-58)   | Yes       | Yes       | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      2
-[L59](#lang-59)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[L60](#lang-60)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[L61](#lang-61)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[L62](#lang-62)   | 0 AV      | 0 AV      | ERROR     | ERROR     | TIMEOUT   | No        |      0
-[L63](#lang-63)   | TIMEOUT   | 1 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[L64](#lang-64)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[L65](#lang-65)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[M1](#math-1)     | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[C9](#chart-9)    | TIMEOUT   | TIMEOUT   | Yes       | Yes       | No        | No        |      2
+[C10](#chart-10)  | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[C11](#chart-11)  | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[C12](#chart-12)  | TIMEOUT   | 0 AV      | ERROR     | ERROR     | ERROR     | No        |      0
+[C13](#chart-13)  | Yes       | Yes       | Yes       | TIMEOUT   | No        | No        |      3
+[C14](#chart-14)  | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[C15](#chart-15)  | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | ERROR     | No        |      0
+[C16](#chart-16)  | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[C17](#chart-17)  | TIMEOUT   | 0 AV      | Yes       | Yes       | No        | No        |      2
+[C18](#chart-18)  | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | ERROR     | No        |      0
+[C19](#chart-19)  | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[C20](#chart-20)  | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[C21](#chart-21)  | Yes       | Yes       | Yes       | Yes       | No        | No        |      4
+[C22](#chart-22)  | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[C23](#chart-23)  | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[C24](#chart-24)  | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[C25](#chart-25)  | Yes       | Yes       | Yes       | Yes       | ERROR     | No        |      4
+[C26](#chart-26)  | Yes       | Yes       | Yes       | TIMEOUT   | ERROR     | No        |      3
+[L1](#lang-1)     | 0 AV      | 1 AV      | 0 AV      | 0 AV      | ERROR     | No        |      0
+[L2](#lang-2)     | TIMEOUT   | 1 AV      | 0 AV      | 0 AV      | ERROR     | No        |      0
+[L3](#lang-3)     | TIMEOUT   | 1 AV      | 0 AV      | 0 AV      | ERROR     | No        |      0
+[L4](#lang-4)     | TIMEOUT   | 1 AV      | 0 AV      | 0 AV      | ERROR     | No        |      0
+[L5](#lang-5)     | TIMEOUT   | 1 AV      | 0 AV      | 0 AV      | ERROR     | No        |      0
+[L6](#lang-6)     | 0 AV      | 1 AV      | 0 AV      | 0 AV      | ERROR     | No        |      0
+[L7](#lang-7)     | TIMEOUT   | 2 AV      | 2 AV      | 1 AV      | ERROR     | No        |      0
+[L8](#lang-8)     | TIMEOUT   | 0 AV      | ERROR     | ERROR     | No        | No        |      0
+[L9](#lang-9)     | TIMEOUT   | 1 AV      | TIMEOUT   | 0 AV      | ERROR     | No        |      0
+[L10](#lang-10)   | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | ERROR     | No        |      0
+[L11](#lang-11)   | 0 AV      | 0 AV      | ERROR     | ERROR     | No        | No        |      0
+[L12](#lang-12)   | 0 AV      | 0 AV      | ERROR     | ERROR     | No        | No        |      0
+[L13](#lang-13)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[L14](#lang-14)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[L15](#lang-15)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[L16](#lang-16)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[L17](#lang-17)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[L18](#lang-18)   | TIMEOUT   | 0 AV      | ERROR     | ERROR     | No        | No        |      0
+[L19](#lang-19)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[L20](#lang-20)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[L21](#lang-21)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[L22](#lang-22)   | TIMEOUT   | TIMEOUT   | 2 AV      | 1 AV      | No        | No        |      0
+[L23](#lang-23)   | 0 AV      | TIMEOUT   | 0 AV      | 0 AV      | No        | No        |      0
+[L24](#lang-24)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[L25](#lang-25)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[L26](#lang-26)   | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[L27](#lang-27)   | 0 AV      | 1 AV      | 0 AV      | 1 AV      | No        | No        |      0
+[L28](#lang-28)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[L29](#lang-29)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[L30](#lang-30)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[L31](#lang-31)   | 0 AV      | 0 AV      | ERROR     | ERROR     | No        | No        |      0
+[L32](#lang-32)   | 0 AV      | 0 AV      | ERROR     | ERROR     | No        | No        |      0
+[L33](#lang-33)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[L34](#lang-34)   | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[L35](#lang-35)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[L36](#lang-36)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[L37](#lang-37)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[L38](#lang-38)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[L39](#lang-39)   | Yes       | 0 AV      | Yes       | 0 AV      | No        | No        |      2
+[L40](#lang-40)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[L41](#lang-41)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[L42](#lang-42)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[L43](#lang-43)   | 0 AV      | 0 AV      | 0 AV      | TIMEOUT   | No        | No        |      0
+[L44](#lang-44)   | Yes       | Yes       | TIMEOUT   | TIMEOUT   | No        | No        |      2
+[L45](#lang-45)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[L46](#lang-46)   | Yes       | 0 AV      | TIMEOUT   | 0 AV      | No        | No        |      1
+[L47](#lang-47)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[L48](#lang-48)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[L49](#lang-49)   | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[L50](#lang-50)   | 0 AV      | 0 AV      | ERROR     | ERROR     | No        | No        |      0
+[L51](#lang-51)   | 0 AV      | Yes       | 0 AV      | TIMEOUT   | No        | No        |      1
+[L52](#lang-52)   | 0 AV      | 0 AV      | ERROR     | ERROR     | No        | No        |      0
+[L53](#lang-53)   | Yes       | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        | No        |      1
+[L54](#lang-54)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[L55](#lang-55)   | Yes       | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      1
+[L56](#lang-56)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[L57](#lang-57)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[L58](#lang-58)   | Yes       | Yes       | TIMEOUT   | TIMEOUT   | No        | No        |      2
+[L59](#lang-59)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[L60](#lang-60)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[L61](#lang-61)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[L62](#lang-62)   | 0 AV      | 0 AV      | ERROR     | ERROR     | No        | No        |      0
+[L63](#lang-63)   | TIMEOUT   | 1 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[L64](#lang-64)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[L65](#lang-65)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[M1](#math-1)     | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | ERROR     | No        |      0
 [M2](#math-2)     | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | Yes       | Yes       |      2
 [M3](#math-3)     | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
 [M4](#math-4)     | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        | No        |      0
-[M5](#math-5)     | TIMEOUT   | 2 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[M5](#math-5)     | TIMEOUT   | 2 AV      | TIMEOUT   | ERROR     | Yes       | No        |      1
 [M6](#math-6)     | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | ERROR     | ERROR     |      0
-[M7](#math-7)     | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[M7](#math-7)     | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | ERROR     | No        |      0
 [M8](#math-8)     | TIMEOUT   | 1 AV      | TIMEOUT   | ERROR     | Yes       | Yes       |      2
 [M9](#math-9)     | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
-[M10](#math-10)   | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[M10](#math-10)   | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | ERROR     | No        |      0
 [M11](#math-11)   | TIMEOUT   | TIMEOUT   | TIMEOUT   | ERROR     | No        | No        |      0
 [M12](#math-12)   | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        | No        |      0
-[M13](#math-13)   | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[M13](#math-13)   | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | ERROR     | No        |      0
 [M14](#math-14)   | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
-[M15](#math-15)   | TIMEOUT   | 1 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
-[M16](#math-16)   | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        | No        |      0
-[M17](#math-17)   | 0 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        | No        |      0
-[M18](#math-18)   | TIMEOUT   | 1 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
-[M19](#math-19)   | 0 AV      | 1 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[M15](#math-15)   | TIMEOUT   | 1 AV      | TIMEOUT   | 1 AV      | ERROR     | No        |      0
+[M16](#math-16)   | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | ERROR     | No        |      0
+[M17](#math-17)   | 0 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | ERROR     | No        |      0
+[M18](#math-18)   | TIMEOUT   | 1 AV      | TIMEOUT   | TIMEOUT   | ERROR     | No        |      0
+[M19](#math-19)   | 0 AV      | 1 AV      | 0 AV      | 1 AV      | ERROR     | No        |      0
 [M20](#math-20)   | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | ERROR     | ERROR     |      0
 [M21](#math-21)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
 [M22](#math-22)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
 [M23](#math-23)   | 0 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        | No        |      0
-[M24](#math-24)   | 5 AV      | 1 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[M24](#math-24)   | 5 AV      | 1 AV      | TIMEOUT   | 1 AV      | Yes       | No        |      1
 [M25](#math-25)   | 0 AV      | 0 AV      | TIMEOUT   | ERROR     | No        | No        |      0
 [M26](#math-26)   | 0 AV      | 0 AV      | TIMEOUT   | ERROR     | No        | No        |      0
 [M27](#math-27)   | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        | No        |      0
-[M28](#math-28)   | 0 AV      | TIMEOUT   | 0 AV      | TIMEOUT   | No        | No        |      0
+[M28](#math-28)   | 0 AV      | TIMEOUT   | 0 AV      | TIMEOUT   | ERROR     | No        |      0
 [M29](#math-29)   | 0 AV      | TIMEOUT   | TIMEOUT   | 0 AV      | No        | No        |      0
-[M30](#math-30)   | 0 AV      | 1 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
-[M31](#math-31)   | 6 AV      | 3 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
-[M32](#math-32)   | Yes       | 0 AV      | TIMEOUT   | Yes       | No        | No        |      2
-[M33](#math-33)   | Yes       | Yes       | Yes       | TIMEOUT   | No        | No        |      3
+[M30](#math-30)   | 0 AV      | 1 AV      | 0 AV      | 1 AV      | ERROR     | No        |      0
+[M31](#math-31)   | 6 AV      | 3 AV      | 6 AV      | TIMEOUT   | No        | No        |      0
+[M32](#math-32)   | Yes       | 0 AV      | TIMEOUT   | Yes       | ERROR     | No        |      2
+[M33](#math-33)   | Yes       | Yes       | Yes       |           | ERROR     | No        |      3
 [M34](#math-34)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
-[M35](#math-35)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | ERROR     | ERROR     |      0
+[M35](#math-35)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | ERROR     | ERROR     |      0
 [M36](#math-36)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
 [M37](#math-37)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
 [M38](#math-38)   | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
-[M39](#math-39)   | ERROR     | ERROR     | TIMEOUT   | TIMEOUT   | No        | No        |      0
-[M40](#math-40)   | 1 AV      | Yes       | 0 AV      | TIMEOUT   | No        | Yes       |      2
+[M39](#math-39)   | ERROR     | ERROR     | TIMEOUT   | TIMEOUT   | ERROR     | No        |      0
+[M40](#math-40)   | 1 AV      | Yes       | 0 AV      | 1 AV      | ERROR     | Yes       |      2
 [M41](#math-41)   | 21 AV     | 10 AV     | Yes       | Yes       | No        | No        |      2
 [M42](#math-42)   | Yes       | TIMEOUT   | Yes       | TIMEOUT   | No        | No        |      2
-[M43](#math-43)   | 0 AV      | 1 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
-[M44](#math-44)   | TIMEOUT   | 0 AV      | TIMEOUT   | 0 AV      | No        | No        |      0
+[M43](#math-43)   | 0 AV      | 1 AV      | 0 AV      | 1 AV      | No        | No        |      0
+[M44](#math-44)   | TIMEOUT   | 0 AV      | TIMEOUT   | 0 AV      | ERROR     | No        |      0
 [M45](#math-45)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
-[M46](#math-46)   | 2 AV      | 2 AV      | Yes       | TIMEOUT   | No        | No        |      1
+[M46](#math-46)   | 2 AV      | 2 AV      | Yes       | ERROR     | No        | No        |      1
 [M47](#math-47)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
-[M48](#math-48)   | TIMEOUT   | TIMEOUT   | TIMEOUT   | 0 AV      | No        | No        |      0
-[M49](#math-49)   | Yes       | Yes       | Yes       | TIMEOUT   | Yes       | Yes       |      5
-[M50](#math-50)   | Yes       | Yes       | Yes       | TIMEOUT   | Yes       | Yes       |      5
+[M48](#math-48)   | TIMEOUT   | TIMEOUT   | TIMEOUT   | 0 AV      | ERROR     | No        |      0
+[M49](#math-49)   | Yes       | Yes       | Yes       | ERROR     | ERROR     | Yes       |      4
+[M50](#math-50)   | Yes       | Yes       | Yes       | 2 AV      | Yes       | Yes       |      5
 [M51](#math-51)   | TIMEOUT   | TIMEOUT   | TIMEOUT   | 0 AV      | ERROR     | ERROR     |      0
-[M52](#math-52)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
-[M53](#math-53)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
-[M54](#math-54)   | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        | TIMEOUT   |      0
+[M52](#math-52)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
+[M53](#math-53)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | Yes       | No        |      1
+[M54](#math-54)   | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | ERROR     | TIMEOUT   |      0
 [M55](#math-55)   | 0 AV      | 0 AV      | 0 AV      | TIMEOUT   | No        | No        |      0
 [M56](#math-56)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
-[M57](#math-57)   | Yes       | Yes       | TIMEOUT   | TIMEOUT   | No        | No        |      2
-[M58](#math-58)   | Yes       | Yes       | Yes       | TIMEOUT   | No        | No        |      3
-[M59](#math-59)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
-[M60](#math-60)   | 0 AV      | 1 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
-[M61](#math-61)   | 0 AV      | 0 AV      | 0 AV      | TIMEOUT   | No        | No        |      0
-[M62](#math-62)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[M57](#math-57)   | Yes       | Yes       | 3 AV      | 1 AV      | No        | No        |      2
+[M58](#math-58)   | Yes       | Yes       | Yes       | 1 AV      | ERROR     | No        |      3
+[M59](#math-59)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | ERROR     | No        |      0
+[M60](#math-60)   | 0 AV      | 1 AV      | TIMEOUT   | TIMEOUT   | ERROR     | No        |      0
+[M61](#math-61)   | 0 AV      | 0 AV      | 0 AV      | TIMEOUT   | ERROR     | No        |      0
+[M62](#math-62)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | ERROR     | No        |      0
 [M63](#math-63)   | 0 AV      | 0 AV      | 0 AV      | TIMEOUT   | No        | No        |      0
 [M64](#math-64)   | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
 [M65](#math-65)   | 0 AV      | 0 AV      | 0 AV      | TIMEOUT   | No        | No        |      0
 [M66](#math-66)   | 0 AV      | 0 AV      | 0 AV      | TIMEOUT   | No        | No        |      0
 [M67](#math-67)   | 0 AV      | 0 AV      | 0 AV      | TIMEOUT   | No        | No        |      0
 [M68](#math-68)   | 0 AV      | 0 AV      | 0 AV      | TIMEOUT   | No        | No        |      0
-[M69](#math-69)   | Yes       | 2 AV      | Yes       | TIMEOUT   | No        | No        |      2
-[M70](#math-70)   | 0 AV      | 0 AV      | 0 AV      | TIMEOUT   | No        | No        |      0
-[M71](#math-71)   | 4 AV      | Yes       | Yes       | TIMEOUT   | No        | TIMEOUT   |      2
+[M69](#math-69)   | Yes       | 2 AV      | Yes       | 2 AV      | No        | No        |      2
+[M70](#math-70)   | 0 AV      | 0 AV      | 0 AV      | TIMEOUT   | Yes       | No        |      1
+[M71](#math-71)   | 4 AV      | Yes       | Yes       | 3 AV      | Yes       | TIMEOUT   |      3
 [M72](#math-72)   | 0 AV      | 0 AV      | 0 AV      | TIMEOUT   | No        | No        |      0
-[M73](#math-73)   | 0 AV      | Yes       | 0 AV      | TIMEOUT   | No        | No        |      1
-[M74](#math-74)   | TIMEOUT   | 0 AV      | 0 AV      | TIMEOUT   | No        | ERROR     |      0
+[M73](#math-73)   | 0 AV      | Yes       | 0 AV      | ERROR     | Yes       | No        |      2
+[M74](#math-74)   | TIMEOUT   | 0 AV      | 0 AV      | TIMEOUT   | ERROR     | ERROR     |      0
 [M75](#math-75)   | 0 AV      | 0 AV      | 0 AV      | TIMEOUT   | No        | No        |      0
-[M76](#math-76)   | 0 AV      | 0 AV      | 0 AV      | TIMEOUT   | No        | No        |      0
+[M76](#math-76)   | 0 AV      | 0 AV      | 0 AV      | TIMEOUT   | ERROR     | No        |      0
 [M77](#math-77)   | 0 AV      | 0 AV      | 0 AV      | TIMEOUT   | No        | No        |      0
-[M78](#math-78)   | Yes       | TIMEOUT   | Yes       | TIMEOUT   | Yes       | Yes       |      4
-[M79](#math-79)   | 1 AV      | 1 AV      | 2 AV      | TIMEOUT   | No        | No        |      0
-[M80](#math-80)   | Yes       | TIMEOUT   | 3 AV      | TIMEOUT   | Yes       | Yes       |      3
+[M78](#math-78)   | Yes       | TIMEOUT   | Yes       | ERROR     | No        | Yes       |      3
+[M79](#math-79)   | 1 AV      | 1 AV      | 2 AV      | ERROR     | No        | No        |      0
+[M80](#math-80)   | Yes       | TIMEOUT   | 3 AV      | ERROR     | Yes       | Yes       |      3
 [M81](#math-81)   | Yes       | Yes       | TIMEOUT   | TIMEOUT   | Yes       | Yes       |      4
-[M82](#math-82)   | Yes       | 0 AV      | TIMEOUT   | TIMEOUT   | Yes       | Yes       |      3
-[M83](#math-83)   | 0 AV      | 0 AV      | 0 AV      | TIMEOUT   | No        | No        |      0
-[M84](#math-84)   | 0 AV      | 0 AV      | 0 AV      | TIMEOUT   | No        | No        |      0
+[M82](#math-82)   | Yes       | 0 AV      | TIMEOUT   |           | Yes       | Yes       |      3
+[M83](#math-83)   | 0 AV      | 0 AV      |           | TIMEOUT   | No        | No        |      0
+[M84](#math-84)   | 0 AV      | 0 AV      | 0 AV      | TIMEOUT   | ERROR     | No        |      0
 [M85](#math-85)   | Yes       | Yes       | Yes       | Yes       | Yes       | Yes       |      6
-[M86](#math-86)   | 5 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
-[M87](#math-87)   | Yes       | Yes       | Yes       | TIMEOUT   | No        | No        |      3
-[M88](#math-88)   | Yes       | 1 AV      | Yes       | TIMEOUT   | No        | No        |      2
+[M86](#math-86)   | 5 AV      | 0 AV      | TIMEOUT   | ERROR     | No        | No        |      0
+[M87](#math-87)   | Yes       | Yes       | Yes       | ERROR     | No        | No        |      3
+[M88](#math-88)   | Yes       | 1 AV      | Yes       | ERROR     | No        | No        |      2
 [M89](#math-89)   | 0 AV      | 0 AV      | 0 AV      | TIMEOUT   | No        | No        |      0
 [M90](#math-90)   | 0 AV      | 0 AV      | 0 AV      | TIMEOUT   | No        | No        |      0
 [M91](#math-91)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
 [M92](#math-92)   | 0 AV      | 0 AV      | 0 AV      | TIMEOUT   | No        | No        |      0
 [M93](#math-93)   | 0 AV      | 0 AV      | 0 AV      | TIMEOUT   | No        | No        |      0
 [M94](#math-94)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
-[M95](#math-95)   | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | No        | Yes       |      1
-[M96](#math-96)   | 0 AV      | 1 AV      | 0 AV      | TIMEOUT   | No        | No        |      0
+[M95](#math-95)   | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | Yes       | Yes       |      2
+[M96](#math-96)   | 0 AV      | 1 AV      | 0 AV      | Yes       | No        | No        |      1
 [M97](#math-97)   | Yes       | Yes       | Yes       | Yes       | No        | No        |      4
 [M98](#math-98)   | 0 AV      | 0 AV      | 0 AV      | TIMEOUT   | No        | No        |      0
 [M99](#math-99)   | Yes       | Yes       | Yes       | Yes       | No        | No        |      4
 [M100](#math-100) | 0 AV      | 0 AV      | 0 AV      | TIMEOUT   | No        | No        |      0
-[M101](#math-101) | 0 AV      | 1 AV      | 0 AV      | TIMEOUT   | No        | No        |      0
+[M101](#math-101) | 0 AV      | 1 AV      | 0 AV      | ERROR     | No        | No        |      0
 [M102](#math-102) | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
 [M103](#math-103) | 0 AV      | 0 AV      | 0 AV      | TIMEOUT   | No        | No        |      0
 [M104](#math-104) | 0 AV      | Yes       | 0 AV      | TIMEOUT   | No        | No        |      1
-[M105](#math-105) | Yes       | 0 AV      | Yes       | TIMEOUT   | No        | No        |      2
+[M105](#math-105) | Yes       | 0 AV      | Yes       | ERROR     | No        | No        |      2
 [M106](#math-106) | 7 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        | No        |      0
-[T1](#time-1)     | 0 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[T2](#time-2)     | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[T3](#time-3)     | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[T4](#time-4)     | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[T5](#time-5)     | 0 AV      | 1 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[T6](#time-6)     | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[T7](#time-7)     | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[T8](#time-8)     | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[T9](#time-9)     | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[T10](#time-10)   | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[T11](#time-11)   | Yes       | Yes       | Yes       | TIMEOUT   | TIMEOUT   | No        |      3
-[T12](#time-12)   | ERROR     | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | No        |      0
-[T13](#time-13)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[T14](#time-14)   | TIMEOUT   | 1 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[T15](#time-15)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[T16](#time-16)   | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[T17](#time-17)   | TIMEOUT   | 1 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[T18](#time-18)   | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[T19](#time-19)   | TIMEOUT   | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | No        |      0
-[T20](#time-20)   | 0 AV      | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        |      0
-[T21](#time-21)   | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
-[T22](#time-22)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | TIMEOUT   | No        |      0
-[T23](#time-23)   | 0 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        |      0
+[T1](#time-1)     | 0 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[T2](#time-2)     | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[T3](#time-3)     | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[T4](#time-4)     | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[T5](#time-5)     | 0 AV      | 1 AV      | 2 AV      | ERROR     | ERROR     | No        |      0
+[T6](#time-6)     | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | ERROR     | No        |      0
+[T7](#time-7)     | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | ERROR     | No        |      0
+[T8](#time-8)     | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[T9](#time-9)     | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[T10](#time-10)   | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[T11](#time-11)   | Yes       | Yes       | Yes       | ERROR     | No        | No        |      3
+[T12](#time-12)   | ERROR     | TIMEOUT   | 0 AV      | TIMEOUT   | ERROR     | No        |      0
+[T13](#time-13)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | ERROR     | No        |      0
+[T14](#time-14)   | TIMEOUT   | 1 AV      | ERROR     | 3 AV      | ERROR     | No        |      0
+[T15](#time-15)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[T16](#time-16)   | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | ERROR     | No        |      0
+[T17](#time-17)   | TIMEOUT   | 1 AV      | TIMEOUT   | 1 AV      | No        | No        |      0
+[T18](#time-18)   | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[T19](#time-19)   | TIMEOUT   | TIMEOUT   | 0 AV      | TIMEOUT   | No        | No        |      0
+[T20](#time-20)   | 0 AV      | 0 AV      | 0 AV      | TIMEOUT   | No        | No        |      0
+[T21](#time-21)   | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[T22](#time-22)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | ERROR     | No        |      0
+[T23](#time-23)   | 0 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | ERROR     | No        |      0
 [T24](#time-24)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | ERROR     | ERROR     |      0
-[T25](#time-25)   | 0 AV      | TIMEOUT   | TIMEOUT   | 0 AV      | TIMEOUT   | No        |      0
-[T26](#time-26)   | 0 AV      | 0 AV      | TIMEOUT   | 0 AV      | TIMEOUT   | No        |      0
+[T25](#time-25)   | 0 AV      | TIMEOUT   | TIMEOUT   | 0 AV      | ERROR     | No        |      0
+[T26](#time-26)   | 0 AV      | 0 AV      | TIMEOUT   | 0 AV      | ERROR     | No        |      0
 [T27](#time-27)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | ERROR     | ERROR     |      0
-Total             | 30 (13%)  | 25 (11%)  | 22 (9%)   | 11 (4%)   | 9 (4%)    | 11 (4%)   |    108
-Fixed bugs: 44/224 (19%)
+Total             | 30 (13%)  | 25 (11%)  | 25 (11%)  | 12 (5%)   | 14 (6%)   | 11 (4%)   |    117
+Execution time    | 3 days, 9:25:15.659000 | 3 days, 17:26:42.646000 | 1 day, 20:40:05.778000 | 1 day, 4:27:47.618000 | 6 days, 14:55:17.146000 | 22:58:33.116000 | 33 days, 23:53:41.963000
+Fixed bugs: 49/224 (21%)
 
-Nb bugs ends with an execution error: 54
+Nb bugs ends with an execution error: 110
 
 Nb bugs ends with an empty log: 0
 
-Nb bugs ends with the Grid5000 timeout: 561
+Nb bugs ends with the Grid5000 timeout: 390
 
-Total execution time: 36 days, 23:26:59.557000
+Total execution time: 33 days, 23:53:41.963000
 
 
 
@@ -403,9 +410,9 @@ Nb Angelic value: 1
 
 Nb analyzed Statement: 4
 
-Execution time: 0:04:43.919000
+Execution time: 0:00:42.919000
 
-Grid5000 node: cletus-8
+Grid5000 node: graphene-41.nancy.grid5000.fr
 
 # Chart 6
 
@@ -507,9 +514,9 @@ Nb Angelic value: 3
 
 Nb analyzed Statement: 19
 
-Execution time: 0:15:22.449000
+Execution time: 0:00:55.150000
 
-Grid5000 node: ralph-1
+Grid5000 node: graphene-27.nancy.grid5000.fr
 
 ## BrutpolC 
 
@@ -522,9 +529,9 @@ Nb Angelic value: 1
 
 Nb analyzed Statement: 19
 
-Execution time: 0:05:53.348000
+Execution time: 0:00:43.411000
 
-Grid5000 node: cletus-2
+Grid5000 node: graphene-42.nancy.grid5000.fr
 
 # Chart 9
 
@@ -594,9 +601,9 @@ Nb Angelic value: 1
 
 Nb analyzed Statement: 1
 
-Execution time: 0:04:58.103000
+Execution time: 0:00:41.247000
 
-Grid5000 node: moe-1
+Grid5000 node: graphene-45.nancy.grid5000.fr
 
 ## BrutpolC 
 
@@ -609,9 +616,9 @@ Nb Angelic value: 3
 
 Nb analyzed Statement: 7
 
-Execution time: 0:11:49.937000
+Execution time: 0:00:55.226000
 
-Grid5000 node: albertson-1
+Grid5000 node: graphene-45.nancy.grid5000.fr
 
 # Chart 13
 
@@ -1268,9 +1275,9 @@ Nb Angelic value: 4
 
 Nb analyzed Statement: 78
 
-Execution time: 0:16:47.103000
+Execution time: 0:01:10.224000
 
-Grid5000 node: moe-3
+Grid5000 node: graphene-27.nancy.grid5000.fr
 
 # Chart 17
 
@@ -1312,9 +1319,9 @@ Nb Angelic value: 1
 
 Nb analyzed Statement: 1
 
-Execution time: 0:04:12.073000
+Execution time: 0:00:41.064000
 
-Grid5000 node: barney-1
+Grid5000 node: graphene-87.nancy.grid5000.fr
 
 ## BrutpolC 
 
@@ -1327,9 +1334,9 @@ Nb Angelic value: 1
 
 Nb analyzed Statement: 3
 
-Execution time: 0:04:06.070000
+Execution time: 0:00:41.958000
 
-Grid5000 node: quimby
+Grid5000 node: graphene-27.nancy.grid5000.fr
 
 # Chart 21
 
@@ -1565,9 +1572,9 @@ Nb Angelic value: 1
 
 Nb analyzed Statement: 9
 
-Execution time: 0:06:18.139000
+Execution time: 0:00:42.772000
 
-Grid5000 node: cletus-3
+Grid5000 node: graphene-42.nancy.grid5000.fr
 
 ## BrutpolC 
 
@@ -1580,9 +1587,9 @@ Nb Angelic value: 1
 
 Nb analyzed Statement: 73
 
-Execution time: 0:09:58.737000
+Execution time: 0:00:51.744000
 
-Grid5000 node: moe-1
+Grid5000 node: graphene-42.nancy.grid5000.fr
 
 # Chart 25
 
@@ -1803,6 +1810,21 @@ Execution time: 0:00:37.503000
 
 Grid5000 node: graphene-72.nancy.grid5000.fr
 
+## BrutpolPC 
+
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset:111 (Suspicious rank: ample 18, jaccard 18, ochiai 9, naish1 19963, gp13 18, naish2 18, tarantula 64, )
+```Java
+this.equals(masd)
+```
+
+Nb Angelic value: 2
+
+Nb analyzed Statement: 19
+
+Execution time: 0:06:24.235000
+
+Grid5000 node: graphene-59.nancy.grid5000.fr
+
 ## BrutpolC 
 
 org.jfree.data.statistics.DefaultStatisticalCategoryDataset:110 (Suspicious rank: ample 17, jaccard 17, ochiai 8, naish1 19962, gp13 17, naish2 17, tarantula 63, )
@@ -1814,9 +1836,9 @@ Nb Angelic value: 1
 
 Nb analyzed Statement: 20
 
-Execution time: 0:20:14.288000
+Execution time: 0:00:51.072000
 
-Grid5000 node: albertson-1
+Grid5000 node: graphene-92.nancy.grid5000.fr
 
 # Chart 26
 
@@ -1930,6 +1952,21 @@ Execution time: 0:01:01.433000
 
 Grid5000 node: graphene-84.nancy.grid5000.fr
 
+## BrutpolPC 
+
+org.jfree.chart.axis.AxisCollection:132 (Suspicious rank: ample 185, jaccard 249, ochiai 244, naish1 17995, gp13 185, naish2 185, tarantula 761, )
+```Java
+0 != axis.getLabelAngle()
+```
+
+Nb Angelic value: 1
+
+Nb analyzed Statement: 228
+
+Execution time: 0:31:29.397000
+
+Grid5000 node: graphene-91.nancy.grid5000.fr
+
 # Lang 39
 
 Nb Executed tests: 1618
@@ -1972,6 +2009,21 @@ Nb analyzed Statement: 29
 Execution time: 0:05:45.321000
 
 Grid5000 node: graphene-75.nancy.grid5000.fr
+
+## BrutpolPC 
+
+org.apache.commons.lang3.StringUtils:3675 (Suspicious rank: ample 11, jaccard 11, ochiai 26, naish1 7828, gp13 11, naish2 11, tarantula 11, )
+```Java
+repeat
+```
+
+Nb Angelic value: 1
+
+Nb analyzed Statement: 29
+
+Execution time: 0:05:53.656000
+
+Grid5000 node: graphene-51.nancy.grid5000.fr
 
 # Lang 44
 
@@ -2422,13 +2474,13 @@ index 81e180c..2769127 100644
 
 ## Genprog 
 
-org.apache.commons.math3.distribution.AbstractIntegerDistribution:137 (Suspicious rank: ample 22, jaccard 22, ochiai 21, naish1 35443, gp13 22, naish2 22, tarantula 22, )
-DELETE
+org.apache.commons.math3.distribution.HypergeometricDistribution:321 (Suspicious rank: ample 4, jaccard 4, ochiai 11, naish1 35409, gp13 4, naish2 4, tarantula 4, )
+INSERT_BEFORE
 ```Java
-remove
+numericalVarianceIsCalculated = true
 ```
 
-Grid5000 node: graphene-65.nancy.grid5000.fr
+Grid5000 node: graphene-50.nancy.grid5000.fr
 
 ## Kali 
 
@@ -2476,6 +2528,43 @@ if (false) {
 ```
 
 Grid5000 node: graphene-106.nancy.grid5000.fr
+
+# Math 5
+
+Nb Executed tests: 4949
+
+Nb Failing tests: 1
+
+>	org.apache.commons.math3.complex.ComplexTest#testReciprocalZero
+
+## Human Patch 
+
+```Java
+diff --git a/org/apache/commons/math3/complex/Complex.java b/org/apache/commons/math3/complex/Complex.java
+index ac8185b..22b23f2 100644
+--- a/org/apache/commons/math3/complex/Complex.java
++++ b/org/apache/commons/math3/complex/Complex.java
+@@ -302,7 +302,7 @@ public class Complex implements FieldElement<Complex>, Serializable  {
+         }
+ 
+         if (real == 0.0 && imaginary == 0.0) {
+-            return INF;
++            return NaN;
+         }
+ 
+         if (isInfinite) {
+
+```
+
+## Genprog 
+
+org.apache.commons.math3.complex.Complex:305 (Suspicious rank: ample 1, jaccard 1, ochiai 1, naish1 33968, gp13 1, naish2 1, tarantula 1, )
+REPLACE
+```Java
+return org.apache.commons.math3.complex.Complex.INF
+```
+
+Grid5000 node: graphene-35.nancy.grid5000.fr
 
 # Math 8
 
@@ -2531,7 +2620,7 @@ DELETE
 remove
 ```
 
-Grid5000 node: graphene-82.nancy.grid5000.fr
+Grid5000 node: graphene-37.nancy.grid5000.fr
 
 ## Kali 
 
@@ -2548,6 +2637,98 @@ remove
 ```
 
 Grid5000 node: graphite-1.nancy.grid5000.fr
+
+# Math 24
+
+Nb Executed tests: 4095
+
+Nb Failing tests: 1
+
+>	org.apache.commons.math3.optimization.univariate.BrentOptimizerTest#testMath855
+
+## Human Patch 
+
+```Java
+diff --git a/org/apache/commons/math3/optimization/univariate/BrentOptimizer.java b/org/apache/commons/math3/optimization/univariate/BrentOptimizer.java
+index cff5bfd..ee2227c 100644
+--- a/org/apache/commons/math3/optimization/univariate/BrentOptimizer.java
++++ b/org/apache/commons/math3/optimization/univariate/BrentOptimizer.java
+@@ -227,7 +226,7 @@ public class BrentOptimizer extends BaseAbstractUnivariateOptimizer {
+ 
+                 if (checker != null) {
+                     if (checker.converged(iter, previous, current)) {
+-                        return best(current, previous, isMinim);
++                        return current;
+                     }
+                 }
+ 
+@@ -264,36 +263,9 @@ public class BrentOptimizer extends BaseAbstractUnivariateOptimizer {
+                     }
+                 }
+             } else { // Default termination (Brent's criterion).
+-                return best(current, previous, isMinim);
++                return current;
+             }
+             ++iter;
+         }
+     }
+-
+-    /**
+-     * Selects the best of two points.
+-     *
+-     * @param a Point and value.
+-     * @param b Point and value.
+-     * @param isMinim {@code true} if the selected point must be the one with
+-     * the lowest value.
+-     * @return the best point, or {@code null} if {@code a} and {@code b} are
+-     * both {@code null}.
+-     */
+-    private UnivariatePointValuePair best(UnivariatePointValuePair a,
+-                                          UnivariatePointValuePair b,
+-                                          boolean isMinim) {
+-        if (a == null) {
+-            return b;
+-        }
+-        if (b == null) {
+-            return a;
+-        }
+-
+-        if (isMinim) {
+-            return a.getValue() < b.getValue() ? a : b;
+-        } else {
+-            return a.getValue() > b.getValue() ? a : b;
+-        }
+-    }
+ }
+
+```
+
+## Genprog 
+
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:241 (Suspicious rank: ample 34, jaccard 34, ochiai 70, naish1 27650, gp13 34, naish2 34, tarantula 34, )
+INSERT_AFTER
+```Java
+if (((p > (q * (a - x))) && (p < (q * (b - x)))) && ((org.apache.commons.math3.util.FastMath.abs(p)) < (org.apache.commons.math3.util.FastMath.abs(((0.5 * q) * r))))) {
+	d = p / q;
+	u = x + d;
+	if (((u - a) < tol2) || ((b - u) < tol2)) {
+		if (x <= m) {
+			d = tol1;
+		} else {
+			d = -tol1;
+		}
+	} 
+} else {
+	if (x < m) {
+		e = b - x;
+	} else {
+		e = a - x;
+	}
+	d = (org.apache.commons.math3.optimization.univariate.BrentOptimizer.GOLDEN_SECTION) * e;
+}
+```
+
+Grid5000 node: graphene-86.nancy.grid5000.fr
 
 # Math 32
 
@@ -2775,18 +2956,18 @@ index 1de139f..e5518e3 100644
 
 ## BrutpolPC 
 
-org.apache.commons.math.stat.descriptive.moment.Variance:521 (Suspicious rank: ample 18, jaccard 18, ochiai 30, naish1 24205, gp13 18, naish2 18, tarantula 18, )
+org.apache.commons.math.stat.descriptive.moment.Variance:514 (Suspicious rank: ample 12, jaccard 12, ochiai 25, naish1 24190, gp13 12, naish2 12, tarantula 12, )
 ```Java
 mean <= length
 ```
 
-Nb Angelic value: 3
+Nb Angelic value: 5
 
-Nb analyzed Statement: 5
+Nb analyzed Statement: 10
 
-Execution time: 0:13:52.861000
+Execution time: 0:20:00.262000
 
-Grid5000 node: graphene-86.nancy.grid5000.fr
+Grid5000 node: graphene-50.nancy.grid5000.fr
 
 ## BrutpolC 
 
@@ -2861,9 +3042,9 @@ Nb Angelic value: 1
 
 Nb analyzed Statement: 2
 
-Execution time: 0:08:18.592000
+Execution time: 0:08:16.074000
 
-Grid5000 node: graphene-76.nancy.grid5000.fr
+Grid5000 node: graphene-46.nancy.grid5000.fr
 
 # Math 46
 
@@ -2915,9 +3096,9 @@ Nb Angelic value: 1
 
 Nb analyzed Statement: 2
 
-Execution time: 0:05:46.077000
+Execution time: 0:05:50.484000
 
-Grid5000 node: graphene-9.nancy.grid5000.fr
+Grid5000 node: graphene-7.nancy.grid5000.fr
 
 # Math 49
 
@@ -3014,19 +3195,9 @@ Nb Angelic value: 1
 
 Nb analyzed Statement: 14
 
-Execution time: 0:06:34.676000
+Execution time: 0:06:35.017000
 
-Grid5000 node: graphene-89.nancy.grid5000.fr
-
-## Genprog 
-
-org.apache.commons.math.util.OpenIntToDoubleHashMap:399 (Suspicious rank: ample 38, jaccard 38, ochiai 44, naish1 23268, gp13 38, naish2 38, tarantula 38, )
-DELETE
-```Java
-remove
-```
-
-Grid5000 node: graphene-47.nancy.grid5000.fr
+Grid5000 node: graphene-75.nancy.grid5000.fr
 
 ## Kali 
 
@@ -3143,7 +3314,7 @@ DELETE
 remove
 ```
 
-Grid5000 node: graphene-60.nancy.grid5000.fr
+Grid5000 node: graphene-70.nancy.grid5000.fr
 
 ## Kali 
 
@@ -3154,6 +3325,46 @@ remove
 ```
 
 Grid5000 node: graphene-102.nancy.grid5000.fr
+
+# Math 53
+
+Nb Executed tests: 2525
+
+Nb Failing tests: 1
+
+>	org.apache.commons.math.complex.ComplexTest#testAddNaN
+
+## Human Patch 
+
+```Java
+diff --git a/org/apache/commons/math/complex/Complex.java b/org/apache/commons/math/complex/Complex.java
+index ab58c78..e0a8e97 100644
+--- a/org/apache/commons/math/complex/Complex.java
++++ b/org/apache/commons/math/complex/Complex.java
+@@ -150,9 +150,6 @@ public class Complex implements FieldElement<Complex>, Serializable  {
+     public Complex add(Complex rhs)
+         throws NullArgumentException {
+         MathUtils.checkNotNull(rhs);
+-        if (isNaN || rhs.isNaN) {
+-            return NaN;
+-        }
+         return createComplex(real + rhs.getReal(),
+             imaginary + rhs.getImaginary());
+     }
+
+```
+
+## Genprog 
+
+org.apache.commons.math.complex.Complex:152 (Suspicious rank: ample 2, jaccard 2, ochiai 1, naish1 21136, gp13 2, naish2 2, tarantula 2, )
+INSERT_BEFORE
+```Java
+if ((isNaN) || (rhs.isNaN)) {
+	return org.apache.commons.math.complex.Complex.NaN;
+} 
+```
+
+Grid5000 node: graphene-80.nancy.grid5000.fr
 
 # Math 57
 
@@ -3282,9 +3493,9 @@ Nb Angelic value: 1
 
 Nb analyzed Statement: 78
 
-Execution time: 0:04:54.010000
+Execution time: 0:04:54.683000
 
-Grid5000 node: graphene-15.nancy.grid5000.fr
+Grid5000 node: graphene-88.nancy.grid5000.fr
 
 # Math 69
 
@@ -3340,9 +3551,46 @@ Nb Angelic value: 1
 
 Nb analyzed Statement: 15
 
-Execution time: 0:33:08.346000
+Execution time: 0:30:40.149000
 
-Grid5000 node: graphene-23.nancy.grid5000.fr
+Grid5000 node: graphene-72.nancy.grid5000.fr
+
+# Math 70
+
+Nb Executed tests: 2184
+
+Nb Failing tests: 1
+
+>	org.apache.commons.math.analysis.solvers.BisectionSolverTest#testMath369
+
+## Human Patch 
+
+```Java
+diff --git a/org/apache/commons/math/analysis/solvers/BisectionSolver.java b/org/apache/commons/math/analysis/solvers/BisectionSolver.java
+index 180caef..3f66927 100644
+--- a/org/apache/commons/math/analysis/solvers/BisectionSolver.java
++++ b/org/apache/commons/math/analysis/solvers/BisectionSolver.java
+@@ -69,7 +69,7 @@ public class BisectionSolver extends UnivariateRealSolverImpl {
+     /** {@inheritDoc} */
+     public double solve(final UnivariateRealFunction f, double min, double max, double initial)
+         throws MaxIterationsExceededException, FunctionEvaluationException {
+-        return solve(f, min, max);
++        return solve(min, max);
+     }
+ 
+     /** {@inheritDoc} */
+
+```
+
+## Genprog 
+
+org.apache.commons.math.analysis.solvers.BisectionSolver:72 (Suspicious rank: ample 1, jaccard 1, ochiai 1, naish1 16589, gp13 1, naish2 1, tarantula 1, )
+REPLACE
+```Java
+return solve(f, min, max)
+```
+
+Grid5000 node: graphene-93.nancy.grid5000.fr
 
 # Math 71
 
@@ -3476,9 +3724,19 @@ Nb Angelic value: 4
 
 Nb analyzed Statement: 55
 
-Execution time: 0:48:22.770000
+Execution time: 0:48:27.156000
 
-Grid5000 node: graphene-24.nancy.grid5000.fr
+Grid5000 node: graphene-66.nancy.grid5000.fr
+
+## Genprog 
+
+org.apache.commons.math.ode.events.EventState:175 (Suspicious rank: ample 83, jaccard 180, ochiai 83, naish1 16283, gp13 83, naish2 83, tarantula 180, )
+INSERT_BEFORE
+```Java
+pendingEvent = true
+```
+
+Grid5000 node: graphene-95.nancy.grid5000.fr
 
 # Math 73
 
@@ -3547,6 +3805,16 @@ Nb analyzed Statement: 17
 Execution time: 0:00:40.722000
 
 Grid5000 node: graphene-82.nancy.grid5000.fr
+
+## Genprog 
+
+org.apache.commons.math.analysis.solvers.BrentSolver:132 (Suspicious rank: ample 1, jaccard 1, ochiai 1, naish1 15933, gp13 1, naish2 1, tarantula 1, )
+REPLACE
+```Java
+return solve(f, min, max)
+```
+
+Grid5000 node: graphene-99.nancy.grid5000.fr
 
 # Math 78
 
@@ -3644,16 +3912,6 @@ Execution time: 0:02:03.438000
 
 Grid5000 node: graphene-11.nancy.grid5000.fr
 
-## Genprog 
-
-org.apache.commons.math.ode.events.EventState:283 (Suspicious rank: ample 185, jaccard 185, ochiai 182, naish1 16660, gp13 185, naish2 185, tarantula 185, )
-DELETE
-```Java
-remove
-```
-
-Grid5000 node: graphene-71.nancy.grid5000.fr
-
 ## Kali 
 
 org.apache.commons.math.ode.events.EventState:283 (Suspicious rank: ample 185, jaccard 185, ochiai 182, naish1 16660, gp13 185, naish2 185, tarantula 185, )
@@ -3708,12 +3966,12 @@ Grid5000 node: graphene-55.nancy.grid5000.fr
 ## Genprog 
 
 org.apache.commons.math.linear.EigenDecompositionImpl:1139 (Suspicious rank: ample 1, jaccard 1, ochiai 18, naish1 16068, gp13 1, naish2 1, tarantula 1, )
-DELETE
+REPLACE
 ```Java
-remove
+g = 0.25 * 0.333
 ```
 
-Grid5000 node: graphene-48.nancy.grid5000.fr
+Grid5000 node: graphene-8.nancy.grid5000.fr
 
 ## Kali 
 
@@ -3905,7 +4163,7 @@ DELETE
 remove
 ```
 
-Grid5000 node: graphene-4.nancy.grid5000.fr
+Grid5000 node: graphene-9.nancy.grid5000.fr
 
 ## Kali 
 
@@ -4108,7 +4366,7 @@ DELETE
 remove
 ```
 
-Grid5000 node: graphene-8.nancy.grid5000.fr
+Grid5000 node: graphene-10.nancy.grid5000.fr
 
 ## Kali 
 
@@ -4188,9 +4446,9 @@ Nb Angelic value: 1
 
 Nb analyzed Statement: 4
 
-Execution time: 0:00:41.322000
+Execution time: 0:00:40.572000
 
-Grid5000 node: graphene-30.nancy.grid5000.fr
+Grid5000 node: graphene-46.nancy.grid5000.fr
 
 ## BrutpolC 
 
@@ -4203,19 +4461,19 @@ Nb Angelic value: 1
 
 Nb analyzed Statement: 37
 
-Execution time: 0:13:02.872000
+Execution time: 0:00:48.501000
 
-Grid5000 node: moe-2
+Grid5000 node: graphene-7.nancy.grid5000.fr
 
 ## Genprog 
 
-org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils:199 (Suspicious rank: ample 4, jaccard 4, ochiai 1, naish1 15706, gp13 4, naish2 4, tarantula 4, )
+org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils:198 (Suspicious rank: ample 41, jaccard 41, ochiai 46, naish1 15686, gp13 41, naish2 41, tarantula 41, )
 DELETE
 ```Java
 remove
 ```
 
-Grid5000 node: graphene-62.nancy.grid5000.fr
+Grid5000 node: graphene-2.nancy.grid5000.fr
 
 ## Kali 
 
@@ -4317,9 +4575,9 @@ Nb Angelic value: 2
 
 Nb analyzed Statement: 72
 
-Execution time: 0:10:47.858000
+Execution time: 0:10:36.552000
 
-Grid5000 node: graphene-37.nancy.grid5000.fr
+Grid5000 node: graphene-7.nancy.grid5000.fr
 
 # Math 88
 
@@ -4420,9 +4678,9 @@ Nb Angelic value: 1
 
 Nb analyzed Statement: 1
 
-Execution time: 0:01:25.089000
+Execution time: 0:01:23.108000
 
-Grid5000 node: graphene-42.nancy.grid5000.fr
+Grid5000 node: graphene-6.nancy.grid5000.fr
 
 # Math 95
 
@@ -4506,6 +4764,16 @@ index 59aeb07..3959403 100644
 
 ```
 
+## Genprog 
+
+org.apache.commons.math.distribution.FDistributionImpl:144 (Suspicious rank: ample 1393, jaccard 105, ochiai 105, naish1 8365, gp13 105, naish2 105, tarantula 83, )
+REPLACE
+```Java
+return denominatorDegreesOfFreedom
+```
+
+Grid5000 node: graphene-25.nancy.grid5000.fr
+
 ## Kali 
 
 org.apache.commons.math.distribution.FDistributionImpl:144 (Suspicious rank: ample 1393, jaccard 105, ochiai 105, naish1 8365, gp13 105, naish2 105, tarantula 83, )
@@ -4517,6 +4785,97 @@ if (true)
 ```
 
 Grid5000 node: graphene-106.nancy.grid5000.fr
+
+# Math 96
+
+Nb Executed tests: 1272
+
+Nb Failing tests: 47
+
+>	org.apache.commons.math.fraction.FractionTest#testFloatValue
+>	org.apache.commons.math.fraction.FractionTest#testAbs
+>	org.apache.commons.math.fraction.FractionTest#testAdd
+>	org.apache.commons.math.fraction.FractionTest#testSubtract
+>	org.apache.commons.math.fraction.FractionTest#testReciprocal
+>	org.apache.commons.math.fraction.FractionTest#testEpsilonLimitConstructor
+>	org.apache.commons.math.fraction.FractionTest#testGetReducedFraction
+>	org.apache.commons.math.fraction.FractionTest#testConstructorDouble
+>	org.apache.commons.math.fraction.FractionTest#testCompareTo
+>	org.apache.commons.math.fraction.FractionTest#testDoubleConstructor
+>	org.apache.commons.math.fraction.FractionTest#testLongValue
+>	org.apache.commons.math.fraction.FractionTest#testDigitLimitConstructor
+>	org.apache.commons.math.fraction.FractionTest#testIntValue
+>	org.apache.commons.math.fraction.FractionTest#testDivide
+>	org.apache.commons.math.fraction.FractionTest#testMultiply
+>	org.apache.commons.math.fraction.FractionTest#testEqualsAndHashCode
+>	org.apache.commons.math.fraction.FractionTest#testNegate
+>	org.apache.commons.math.fraction.FractionTest#testGoldenRatio
+>	org.apache.commons.math.fraction.FractionTest#testIntegerOverflow
+>	org.apache.commons.math.fraction.FractionTest#testDoubleValue
+>	org.apache.commons.math.fraction.FractionTest#testConstructor
+>	org.apache.commons.math.optimization.MultiDirectionalTest#testCostExceptions
+>	org.apache.commons.math.optimization.MultiDirectionalTest#testRosenbrock
+>	org.apache.commons.math.optimization.MultiDirectionalTest#testPowell
+>	org.apache.commons.math.fraction.FractionFormatTest#testFormatImproperNegative
+>	org.apache.commons.math.fraction.FractionFormatTest#testFormatImproper
+>	org.apache.commons.math.fraction.FractionFormatTest#testParseProper
+>	org.apache.commons.math.fraction.FractionFormatTest#testParseProperNegative
+>	org.apache.commons.math.fraction.FractionFormatTest#testParse
+>	org.apache.commons.math.fraction.FractionFormatTest#testFormatZero
+>	org.apache.commons.math.fraction.FractionFormatTest#testFormatNegative
+>	org.apache.commons.math.fraction.FractionFormatTest#testParseInteger
+>	org.apache.commons.math.fraction.FractionFormatTest#testFormat
+>	org.apache.commons.math.fraction.FractionFormatTest#testParseNegative
+>	org.apache.commons.math.complex.ComplexTest#testMath221
+>	org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegratorTest#testPredictorCoefficients
+>	org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegratorTest#testDimensionCheck
+>	org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegratorTest#testSmallStep
+>	org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegratorTest#testDecreasingSteps
+>	org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegratorTest#testBigStep
+>	org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegratorTest#testCorrectorCoefficients
+>	junit.framework.TestSuite$1#warning
+>	org.apache.commons.math.ode.nonstiff.AdamsBashforthIntegratorTest#testDimensionCheck
+>	org.apache.commons.math.ode.nonstiff.AdamsBashforthIntegratorTest#testSmallStep
+>	org.apache.commons.math.ode.nonstiff.AdamsBashforthIntegratorTest#testDecreasingSteps
+>	org.apache.commons.math.ode.nonstiff.AdamsBashforthIntegratorTest#testBigStep
+>	org.apache.commons.math.ode.nonstiff.AdamsBashforthIntegratorTest#testCoefficients
+
+## Human Patch 
+
+```Java
+diff --git a/org/apache/commons/math/complex/Complex.java b/org/apache/commons/math/complex/Complex.java
+index 8b622cb..16b3873 100644
+--- a/org/apache/commons/math/complex/Complex.java
++++ b/org/apache/commons/math/complex/Complex.java
+@@ -255,7 +255,10 @@ public class Complex implements Serializable  {
+                 if (rhs.isNaN()) {
+                     ret = this.isNaN();
+                 } else {
+-                    ret = (real == rhs.real) && (imaginary == rhs.imaginary); 
++                ret = (Double.doubleToRawLongBits(real) ==
++                        Double.doubleToRawLongBits(rhs.getReal())) &&
++                    (Double.doubleToRawLongBits(imaginary) ==
++                        Double.doubleToRawLongBits(rhs.getImaginary())); 
+                 }
+             } catch (ClassCastException ex) {
+                 // ignore exception
+
+```
+
+## BrutpolC 
+
+org.apache.commons.math.complex.Complex:248 (Suspicious rank: ample 2269, jaccard 113, ochiai 112, naish1 8115, gp13 113, naish2 113, tarantula 113, )
+```Java
+0 == (1 + this.imaginary)
+```
+
+Nb Angelic value: 1
+
+Nb analyzed Statement: 100
+
+Execution time: 0:02:26.476000
+
+Grid5000 node: graphene-12.nancy.grid5000.fr
 
 # Math 97
 
@@ -4676,9 +5035,9 @@ Nb Angelic value: 1
 
 Nb analyzed Statement: 86
 
-Execution time: 0:48:37.095000
+Execution time: 0:00:48.958000
 
-Grid5000 node: abraham
+Grid5000 node: graphene-14.nancy.grid5000.fr
 
 # Math 99
 
@@ -4838,9 +5197,9 @@ Nb Angelic value: 1
 
 Nb analyzed Statement: 86
 
-Execution time: 0:46:08.854000
+Execution time: 0:00:49.411000
 
-Grid5000 node: barney-2
+Grid5000 node: graphene-30.nancy.grid5000.fr
 
 # Math 104
 
@@ -5086,7 +5445,7 @@ Nb Angelic value: 1
 
 Nb analyzed Statement: 25
 
-Execution time: 0:06:31.116000
+Execution time: 0:01:17.962000
 
-Grid5000 node: albertson-2
+Grid5000 node: graphene-65.nancy.grid5000.fr
 
