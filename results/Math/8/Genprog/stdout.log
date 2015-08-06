@@ -1,49 +1,66 @@
-export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";cp -r /home/tdurieux/projects/math/math_8 /tmp/math_8_Genprog;cd /tmp/math_8_Genprog;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
-/home/tdurieux/results/Math/8/Genprog/result
-cd /tmp/math_8_Genprog;time java -cp /home/tdurieux/astor/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar fr.inria.main.evolution.MainjGenProg -mode statement -location . -dependencies lib/ -failing org.apache.commons.math3.distribution.DiscreteRealDistributionTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
+export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/math/math_8 /tmp/math_8_Genprog;cd /tmp/math_8_Genprog;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
+/home/tdurieux/defects4j-repair/src/python/core/../../../results/Math/8/Genprog/result
+cd /tmp/math_8_Genprog;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java -Xmx8g -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement -location . -dependencies lib/ -failing org.apache.commons.math3.distribution.DiscreteRealDistributionTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -seed 10 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
 
 Node: `hostname`
 ";echo "
 Date: `date`
 ";rm -rf /tmp/math_8_Genprog;
 
-ProgramVariant 44
- 
- operation: 
-location= org.apache.commons.math3.distribution.DiscreteDistribution
- line= 190
- original statement= out[i] = sample()
- fix (remove original statement) "out[i] = sample()"
- generation= 22
- 
+End Repair Loops: Found solution
+Solution stored at: ./outputMutation//MainjGenProg-.//src/
+
+Number solutions:1
+f (sol): 0.0, [Variant id: 6 (SOL) , #gens: 23, #ops: 1, parent:5]
+
+All variants:
+f 1.0, [Variant id: 7, #gens: 24, #ops: 0, parent:-]
+
+Solution details
+
+ --SOLUTIONS DESCRIPTION--
+
  ----
-Time Evolution(ms): 181922
+ProgramVariant 6
+ 
+operation: DELETE
+location= org.apache.commons.math3.distribution.DiscreteDistribution
+line= 190
+original statement= out[i] = sample()
+fixed statement= out[i] = sample()
+generation= 3
+ingredientScope= -
+ 
+--Space: LOCAL
+org.apache.commons.math3.util.MathArrays=373|CtLocalVariableImpl:163;CtForImpl:32;CtSwitchImpl:3;CtAssignmentImpl:27;CtReturnImpl:47;CtOperatorAssignmentImpl:15;CtInvocationImpl:12;CtThrowImpl:17;CtBreakImpl:4;CtIfImpl:53;,org.apache.commons.math3.distribution.DiscreteDistribution=35|CtLocalVariableImpl:7;CtForImpl:5;CtReturnImpl:5;CtAssignmentImpl:5;CtOperatorAssignmentImpl:2;CtInvocationImpl:5;CtThrowImpl:2;CtIfImpl:4;,
 
 ----stats: 
 
-spaces: [19]: [35, 373, 35, 35, 35, 35, 35, 35, 373, 35, 373, 5, 35, 5, 5, 7, 373, 5, 5]
-time val1 [5]: [321, 359, 311, 218, 310]
-time val2 [1]: [176504]
-#gen: 22
+spaces navigation: [1]: [(id:4| CtOperatorAssignmentImpl| size: 35| notcompiles| LOCAL) ]
+time val1 [3]: [274, 276, 304]
+time val2 [1]: [153630]
+#gen: 3
 #patches: 1
-#RightCompilation: 4
-#WrongCompilation: 18
-#FailingTestCaseExecution: 5
+#RightCompilation: 2
+#WrongCompilation: 1
+#FailingTestCaseExecution: 3
 #RegressionTestExecution: 1
-#TestcasesExecutedval1: 65
+#TestcasesExecutedval1: 39
 #TestcasesExecutedval2: 4825
 #FailingTestCase: 13
 #RegressionTestCases: 4825
-#OfAppliedOp: 22
+#OfAppliedOp: 3
 #NotAppliedOp: 0
 #InmutatedGen: 0
 #unfinishValidation: 0
-Time Total(ms): 1132555
+#ing [CtIfImpl, CtOperatorAssignmentImpl, CtAssignmentImpl]
+Time Evolution(ms): 155834
+Time Total(ms): 1018642
 
 
-Node: griffon-1.nancy.grid5000.fr
+Node: graphene-37.nancy.grid5000.fr
 
 
-Date: Tue May 12 06:46:57 CEST 2015
+Date: Wed Aug  5 20:13:42 CEST 2015
 
 

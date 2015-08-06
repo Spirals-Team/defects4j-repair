@@ -1,49 +1,8 @@
-export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";cp -r /home/tdurieux/projects/math/math_44 /tmp/math_44_Genprog;cd /tmp/math_44_Genprog;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
-/home/tdurieux/results/Math/44/Genprog/result
-cd /tmp/math_44_Genprog;time java -cp /home/tdurieux/astor/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar fr.inria.main.evolution.MainjGenProg -mode statement -location . -dependencies lib/ -failing org.apache.commons.math.ode.events.EventStateTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
+export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/math/math_44 /tmp/math_44_Genprog;cd /tmp/math_44_Genprog;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
+/home/tdurieux/defects4j-repair/src/python/core/../../../results/Math/44/Genprog/result
+cd /tmp/math_44_Genprog;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java -Xmx8g -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement -location . -dependencies lib/ -failing org.apache.commons.math.ode.events.EventStateTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -seed 10 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
 
 Node: `hostname`
 ";echo "
 Date: `date`
 ";rm -rf /tmp/math_44_Genprog;
-
-ProgramVariant 284
- 
- operation: 
-location= org.apache.commons.math.ode.AbstractIntegrator
- line= 325
- original statement= isLastStep = currentEvent.stop()
- fixed statement= "statesInitialized = false"
- generation= 142
- 
- ----
-Time Evolution(ms): 256250
-
-----stats: 
-
-spaces: [112]: [116, 29, 85, 116, 103, 116, 116, 39, 7, 103, 85, 98, 103, 116, 95, 40, 16, 116, 116, 103, 21, 85, 18, 8, 103, 85, 103, 28, 116, 116, 103, 13, 28, 85, 116, 85, 98, 39, 28, 116, 11, 95, 36, 103, 98, 103, 12, 103, 98, 85, 16, 95, 85, 85, 116, 116, 116, 11, 98, 7, 103, 103, 21, 116, 95, 36, 7, 116, 85, 13, 95, 103, 116, 17, 18, 18, 18, 95, 40, 39, 18, 98, 103, 8, 103, 116, 28, 18, 26, 21, 116, 85, 98, 98, 85, 85, 29, 98, 95, 98, 98, 85, 85, 18, 26, 98, 95, 28, 116, 116, 28, 95]
-time val1 [51]: [282, 281, 278, 60003, 460, 341, 60003, 286, 303, 342, 278, 285, 300, 289, 413, 287, 280, 279, 293, 358, 278, 278, 302, 305, 461, 371, 285, 352, 284, 418, 267, 354, 459, 457, 440, 292, 317, 292, 290, 343, 282, 281, 282, 293, 401, 284, 290, 283, 291, 398, 372]
-time val2 [1]: [60633]
-#gen: 142
-#patches: 1
-#RightCompilation: 50
-#WrongCompilation: 92
-#FailingTestCaseExecution: 51
-#RegressionTestExecution: 1
-#TestcasesExecutedval1: 98
-#TestcasesExecutedval2: 2988
-#FailingTestCase: 2
-#RegressionTestCases: 2988
-#OfAppliedOp: 142
-#NotAppliedOp: 0
-#InmutatedGen: 0
-#unfinishValidation: 0
-Time Total(ms): 587091
-
-
-Node: graphite-3.nancy.grid5000.fr
-
-
-Date: Tue May 12 03:57:22 CEST 2015
-
-

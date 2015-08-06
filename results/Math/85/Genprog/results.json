@@ -3,42 +3,47 @@
     "FailingTestCaseExecution": "10", 
     "InmutatedGen": "0", 
     "NotAppliedOp": "0", 
-    "OfAppliedOp": "28", 
+    "OfAppliedOp": "17", 
     "RegressionTestCases": "1875", 
     "RegressionTestExecution": "1", 
     "RightCompilation": "9", 
-    "WrongCompilation": "19", 
-    "date": "Tue May 12 00:44:55 CEST 2015\n\n\n", 
-    "gen": "28", 
-    "node": "graphene-104.nancy.grid5000.fr", 
+    "WrongCompilation": "8", 
+    "date": "Wed Aug  5 18:52:05 CEST 2015\n\n", 
+    "gen": "17", 
+    "gens": "60", 
+    "node": "graphene-2.nancy.grid5000.fr", 
     "operations": [
         {
-            "generation": 28, 
+            "buggyStatement": "if ((fa * fb) >= 0.0) {\n\tthrow new org.apache.commons.math.ConvergenceException((\"number of iterations={0}, maximum iterations={1}, \" + (\"initial={2}, lower bound={3}, upper bound={4}, final a value={5}, \" + \"final b value={6}, f(a)={7}, f(b)={8}\")) , numIterations , maximumIterations , initial , lowerBound , upperBound , a , b , fa , fb);\n} ", 
+            "generation": 17, 
             "patch": "remove", 
             "patchLocation": {
                 "className": "org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils", 
-                "line": 199
-            }
+                "line": 198
+            }, 
+            "type": "DELETE", 
+            "variant": 34
         }
     ], 
+    "ops": "0", 
     "patches": "1", 
-    "programVariant": "56", 
-    "timeEvaluation": "11227", 
-    "timeTotal": "37372", 
+    "programVariant": "34", 
+    "timeEvaluation": "11099", 
+    "timeTotal": "38178", 
     "timeVal1": [
-        219, 
-        212, 
-        222, 
-        221, 
+        242, 
         227, 
-        206, 
-        212, 
         228, 
         226, 
-        224
+        217, 
+        227, 
+        229, 
+        227, 
+        217, 
+        223
     ], 
     "timeVal2": [
-        6791
+        6790
     ], 
     "unfinishValidation": "0"
 }

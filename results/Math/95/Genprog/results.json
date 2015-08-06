@@ -1,36 +1,46 @@
 {
     "FailingTestCase": "9", 
-    "FailingTestCaseExecution": "2", 
-    "InmutatedGen": "0", 
+    "FailingTestCaseExecution": "7", 
+    "InmutatedGen": "1", 
     "NotAppliedOp": "0", 
-    "OfAppliedOp": "8", 
+    "OfAppliedOp": "16", 
     "RegressionTestCases": "1191", 
     "RegressionTestExecution": "1", 
-    "RightCompilation": "1", 
-    "WrongCompilation": "7", 
-    "date": "Mon May 11 23:41:21 CEST 2015\n\n\n", 
-    "gen": "8", 
-    "node": "graphene-104.nancy.grid5000.fr", 
+    "RightCompilation": "6", 
+    "WrongCompilation": "10", 
+    "date": "Wed Aug  5 18:51:34 CEST 2015\n\n", 
+    "gen": "16", 
+    "gens": "28", 
+    "node": "graphene-25.nancy.grid5000.fr", 
     "operations": [
         {
-            "generation": 8, 
-            "patch": "return 0.0", 
+            "buggyStatement": "return (getDenominatorDegreesOfFreedom()) / ((getDenominatorDegreesOfFreedom()) - 2.0)", 
+            "generation": 16, 
+            "patch": "return denominatorDegreesOfFreedom", 
             "patchLocation": {
                 "className": "org.apache.commons.math.distribution.FDistributionImpl", 
                 "line": 144
-            }
+            }, 
+            "type": "REPLACE", 
+            "variant": 32
         }
     ], 
+    "ops": "0", 
     "patches": "1", 
-    "programVariant": "16", 
-    "timeEvaluation": "7620", 
-    "timeTotal": "27361", 
+    "programVariant": "32", 
+    "timeEvaluation": "9415", 
+    "timeTotal": "30418", 
     "timeVal1": [
         183, 
-        172
+        173, 
+        173, 
+        176, 
+        207, 
+        177, 
+        389
     ], 
     "timeVal2": [
-        6271
+        6361
     ], 
     "unfinishValidation": "0"
 }

@@ -1,49 +1,8 @@
-export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";cp -r /home/tdurieux/projects/math/math_40 /tmp/math_40_Genprog;cd /tmp/math_40_Genprog;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
-/home/tdurieux/results/Math/40/Genprog/result
-cd /tmp/math_40_Genprog;time java -cp /home/tdurieux/astor/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar fr.inria.main.evolution.MainjGenProg -mode statement -location . -dependencies lib/ -failing org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolverTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
+export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/math/math_40 /tmp/math_40_Genprog;cd /tmp/math_40_Genprog;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
+/home/tdurieux/defects4j-repair/src/python/core/../../../results/Math/40/Genprog/result
+cd /tmp/math_40_Genprog;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java -Xmx8g -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement -location . -dependencies lib/ -failing org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolverTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -seed 10 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
 
 Node: `hostname`
 ";echo "
 Date: `date`
 ";rm -rf /tmp/math_40_Genprog;
-
-ProgramVariant 1022
- 
- operation: 
-location= org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver
- line= 269
- original statement= nextX = java.lang.Double.NaN
- fixed statement= "signChangeIndex = 2"
- generation= 511
- 
- ----
-Time Evolution(ms): 2614248
-
-----stats: 
-
-spaces: [390]: [39, 116, 6, 116, 9, 116, 116, 21, 70, 70, 116, 3, 21, 70, 116, 34, 1, 116, 116, 70, 19, 116, 5, 70, 116, 70, 116, 70, 116, 116, 17, 116, 12, 12, 19, 19, 116, 70, 19, 116, 39, 116, 116, 116, 116, 116, 1, 116, 5, 116, 8, 6, 116, 116, 116, 116, 70, 116, 5, 70, 12, 70, 70, 116, 1, 70, 3, 116, 17, 116, 70, 21, 23, 116, 70, 116, 116, 39, 70, 70, 116, 70, 116, 70, 116, 1, 9, 39, 116, 70, 116, 17, 39, 39, 3, 34, 34, 39, 70, 116, 21, 116, 70, 19, 116, 116, 70, 70, 116, 116, 39, 116, 116, 116, 116, 116, 39, 116, 8, 5, 116, 70, 39, 19, 116, 70, 17, 17, 19, 23, 116, 116, 116, 116, 39, 116, 116, 116, 34, 70, 70, 70, 70, 116, 8, 9, 9, 21, 116, 116, 116, 23, 70, 116, 17, 1, 39, 1, 116, 9, 116, 1, 17, 70, 21, 3, 116, 70, 1, 116, 5, 116, 116, 116, 9, 5, 39, 116, 3, 116, 116, 116, 3, 12, 116, 1, 116, 19, 116, 70, 116, 39, 12, 5, 23, 116, 39, 116, 39, 116, 116, 5, 39, 21, 116, 9, 70, 116, 116, 17, 116, 70, 39, 70, 21, 70, 116, 116, 5, 21, 116, 116, 116, 116, 116, 21, 116, 70, 116, 116, 116, 116, 70, 70, 70, 8, 116, 116, 39, 9, 39, 70, 70, 70, 21, 116, 116, 116, 116, 116, 70, 116, 19, 116, 116, 116, 116, 116, 70, 116, 116, 23, 21, 39, 70, 70, 3, 116, 116, 116, 70, 70, 116, 39, 116, 39, 116, 70, 17, 19, 116, 5, 39, 19, 16, 19, 116, 70, 70, 70, 116, 116, 16, 1, 70, 70, 3, 116, 116, 116, 116, 116, 5, 16, 39, 70, 116, 70, 116, 21, 70, 116, 70, 116, 8, 21, 116, 116, 70, 116, 116, 116, 116, 17, 116, 116, 116, 17, 21, 70, 23, 21, 70, 116, 39, 39, 116, 116, 21, 19, 39, 116, 116, 70, 116, 116, 5, 70, 34, 116, 116, 116, 116, 116, 116, 70, 5, 116, 70, 116, 116, 116, 116, 116, 70, 116, 116, 39, 70, 116, 34, 116, 17, 39, 23, 39, 17, 116, 116, 116, 34, 39, 116, 70, 70, 9, 19, 116, 116, 116]
-time val1 [191]: [224, 227, 214, 227, 230, 220, 227, 218, 203, 219, 211, 223, 222, 60002, 205, 218, 225, 220, 206, 229, 202, 223, 225, 227, 202, 60001, 222, 60001, 206, 221, 200, 220, 204, 221, 60001, 223, 220, 220, 220, 205, 221, 204, 224, 60002, 223, 221, 221, 199, 220, 220, 221, 199, 224, 220, 211, 220, 224, 219, 224, 219, 227, 220, 204, 223, 205, 221, 60002, 222, 231, 209, 220, 221, 60002, 223, 221, 219, 221, 220, 226, 226, 221, 200, 224, 218, 221, 220, 220, 220, 222, 202, 226, 213, 200, 60002, 221, 222, 219, 60002, 226, 220, 214, 219, 221, 222, 222, 221, 219, 206, 222, 220, 219, 227, 223, 218, 220, 202, 220, 221, 222, 222, 57548, 225, 215, 219, 221, 200, 226, 218, 226, 224, 191, 203, 56933, 224, 203, 200, 2247, 209, 221, 225, 222, 226, 205, 204, 222, 222, 202, 220, 220, 203, 60002, 224, 219, 222, 220, 224, 57526, 206, 220, 223, 223, 201, 224, 221, 220, 60001, 225, 201, 225, 221, 222, 202, 60001, 225, 220, 222, 204, 226, 218, 224, 218, 202, 2291, 213, 221, 200, 221, 201, 221, 205, 201]
-time val2 [6]: [110389, 110115, 640005, 109804, 640005, 46371]
-#gen: 511
-#patches: 1
-#RightCompilation: 190
-#WrongCompilation: 321
-#FailingTestCaseExecution: 191
-#RegressionTestExecution: 6
-#TestcasesExecutedval1: 2685
-#TestcasesExecutedval2: 12272
-#FailingTestCase: 15
-#RegressionTestCases: 3068
-#OfAppliedOp: 511
-#NotAppliedOp: 0
-#InmutatedGen: 20
-#unfinishValidation: 2
-Time Total(ms): 2848899
-
-
-Node: graphene-100.nancy.grid5000.fr
-
-
-Date: Tue May 12 04:40:26 CEST 2015
-
-

@@ -1,4 +1,23 @@
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
+java.lang.NullPointerException
+	at fr.inria.astor.core.manipulation.sourcecode.VariableResolver.compatiblesSubType(VariableResolver.java:109)
+	at fr.inria.astor.core.manipulation.sourcecode.VariableResolver.matchVariable(VariableResolver.java:74)
+	at fr.inria.astor.core.manipulation.sourcecode.VariableResolver.fitInPlace(VariableResolver.java:153)
+	at fr.inria.astor.core.manipulation.sourcecode.VariableResolver.fitInPlace(VariableResolver.java:175)
+	at fr.inria.astor.core.manipulation.sourcecode.VariableResolver.fitInPlace(VariableResolver.java:204)
+	at fr.inria.astor.core.loop.evolutionary.JGenProg.getFixIngredient(JGenProg.java:321)
+	at fr.inria.astor.core.loop.evolutionary.JGenProg.createOperationForGen(JGenProg.java:219)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.modifyProgramVariant(EvolutionaryEngine.java:501)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.createNewProgramVariant(EvolutionaryEngine.java:416)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.processGenerations(EvolutionaryEngine.java:226)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.startEvolution(EvolutionaryEngine.java:125)
+	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:200)
+	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:234)
+Exception in thread "main" java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:203)
+	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:234)
 
-real	9m48.410s
-user	11m58.937s
-sys	0m12.581s
+real	7m32.282s
+user	8m33.716s
+sys	0m5.128s

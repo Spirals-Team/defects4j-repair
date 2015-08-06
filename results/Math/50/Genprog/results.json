@@ -1,40 +1,68 @@
 {
     "FailingTestCase": "9", 
-    "FailingTestCaseExecution": "6", 
-    "InmutatedGen": "0", 
+    "FailingTestCaseExecution": "28", 
+    "InmutatedGen": "1", 
     "NotAppliedOp": "0", 
-    "OfAppliedOp": "12", 
+    "OfAppliedOp": "64", 
     "RegressionTestCases": "2822", 
-    "RegressionTestExecution": "1", 
-    "RightCompilation": "5", 
-    "WrongCompilation": "7", 
-    "date": "Tue May 12 03:16:59 CEST 2015\n\n\n", 
-    "gen": "12", 
-    "node": "graphene-103.nancy.grid5000.fr", 
+    "RegressionTestExecution": "2", 
+    "RightCompilation": "27", 
+    "WrongCompilation": "37", 
+    "date": "Wed Aug  5 19:57:33 CEST 2015\n\n", 
+    "gen": "64", 
+    "gens": "38", 
+    "node": "graphene-70.nancy.grid5000.fr", 
     "operations": [
         {
-            "generation": 12, 
+            "buggyStatement": "x0 = 0.5 * ((x0 + x1) - delta)", 
+            "generation": 64, 
             "patch": "remove", 
             "patchLocation": {
                 "className": "org.apache.commons.math.analysis.solvers.BaseSecantSolver", 
                 "line": 191
-            }
+            }, 
+            "type": "DELETE", 
+            "variant": 128
         }
     ], 
+    "ops": "0", 
     "patches": "1", 
-    "programVariant": "24", 
-    "timeEvaluation": "51318", 
-    "timeTotal": "226161", 
+    "programVariant": "128", 
+    "timeEvaluation": "100329", 
+    "timeTotal": "279417", 
     "timeVal1": [
+        276, 
         265, 
+        264, 
+        257, 
+        264, 
         265, 
-        261, 
+        262, 
+        285, 
+        272, 
         266, 
-        260, 
-        258
+        287, 
+        267, 
+        262, 
+        263, 
+        272, 
+        264, 
+        269, 
+        265, 
+        264, 
+        267, 
+        265, 
+        196, 
+        265, 
+        264, 
+        265, 
+        259, 
+        262, 
+        263
     ], 
     "timeVal2": [
-        48077
+        44371, 
+        44325
     ], 
     "unfinishValidation": "0"
 }

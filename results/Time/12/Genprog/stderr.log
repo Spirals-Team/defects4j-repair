@@ -1,11 +1,21 @@
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
 java.lang.IllegalArgumentException: The validation process does not execute well the test cases
- Exception in thread "main" java.lang.ExceptionInInitializerError
+ Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
+Exception in thread "main" java.lang.ExceptionInInitializerError
 	at org.joda.time.TestLocalDateTime_Constructors.<clinit>(TestLocalDateTime_Constructors.java:45)
 	at java.lang.Class.forName0(Native Method)
 	at java.lang.Class.forName(Class.java:191)
 	at fr.inria.astor.junitexec.JUnitTestExecutor.main(JUnitTestExecutor.java:106)
-Caused by: org.joda.time.IllegalFieldValueException: Value -543 for year is not supported
-	at org.joda.time.chrono.GJChronology$CutoverField.set(GJChronology.java:719)
+Caused by: org.joda.time.IllegalFieldValueException: Value -209648 for dayOfMonth must be in the range [1,31]
+	at org.joda.time.field.FieldUtils.verifyValueBounds(FieldUtils.java:236)
+	at org.joda.time.chrono.BasicChronology.getDateMidnightMillis(BasicChronology.java:345)
+	at org.joda.time.chrono.JulianChronology.getDateMidnightMillis(JulianChronology.java:207)
+	at org.joda.time.chrono.BasicChronology.getDateTimeMillis(BasicChronology.java:92)
+	at org.joda.time.chrono.JulianChronology.getDateTimeMillis(JulianChronology.java:50)
+	at org.joda.time.chrono.GJChronology.convertByYear(GJChronology.java:83)
+	at org.joda.time.chrono.GJChronology.gregorianToJulianByYear(GJChronology.java:579)
+	at org.joda.time.chrono.GJChronology$CutoverField.gregorianToJulian(GJChronology.java:915)
+	at org.joda.time.chrono.GJChronology$CutoverField.set(GJChronology.java:715)
 	at org.joda.time.field.DelegatedDateTimeField.set(DelegatedDateTimeField.java:172)
 	at org.joda.time.field.SkipUndoDateTimeField.set(SkipUndoDateTimeField.java:91)
 	at org.joda.time.field.DecoratedDateTimeField.set(DecoratedDateTimeField.java:82)
@@ -22,20 +32,29 @@ Caused by: org.joda.time.IllegalFieldValueException: Value -543 for year is not 
 	at fr.inria.astor.core.validation.executors.JUnitExecutorProcess.execute(JUnitExecutorProcess.java:78)
 	at fr.inria.astor.core.validation.executors.JUnitExecutorProcess.execute(JUnitExecutorProcess.java:34)
 	at fr.inria.astor.core.validation.validators.ProcessValidator.validate(ProcessValidator.java:58)
-	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.validateInstance(EvolutionaryEngine.java:746)
-	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.processCreatedVariant(EvolutionaryEngine.java:345)
-	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.processGenerations(EvolutionaryEngine.java:211)
-	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.startEvolution(EvolutionaryEngine.java:127)
-	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:137)
-	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:171)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.validateInstance(EvolutionaryEngine.java:758)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.processCreatedVariant(EvolutionaryEngine.java:367)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.processGenerations(EvolutionaryEngine.java:233)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.startEvolution(EvolutionaryEngine.java:125)
+	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:200)
+	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:234)
 Exception in thread "main" java.lang.AssertionError: The validation process does not execute well the test cases
- Exception in thread "main" java.lang.ExceptionInInitializerError
+ Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
+Exception in thread "main" java.lang.ExceptionInInitializerError
 	at org.joda.time.TestLocalDateTime_Constructors.<clinit>(TestLocalDateTime_Constructors.java:45)
 	at java.lang.Class.forName0(Native Method)
 	at java.lang.Class.forName(Class.java:191)
 	at fr.inria.astor.junitexec.JUnitTestExecutor.main(JUnitTestExecutor.java:106)
-Caused by: org.joda.time.IllegalFieldValueException: Value -543 for year is not supported
-	at org.joda.time.chrono.GJChronology$CutoverField.set(GJChronology.java:719)
+Caused by: org.joda.time.IllegalFieldValueException: Value -209648 for dayOfMonth must be in the range [1,31]
+	at org.joda.time.field.FieldUtils.verifyValueBounds(FieldUtils.java:236)
+	at org.joda.time.chrono.BasicChronology.getDateMidnightMillis(BasicChronology.java:345)
+	at org.joda.time.chrono.JulianChronology.getDateMidnightMillis(JulianChronology.java:207)
+	at org.joda.time.chrono.BasicChronology.getDateTimeMillis(BasicChronology.java:92)
+	at org.joda.time.chrono.JulianChronology.getDateTimeMillis(JulianChronology.java:50)
+	at org.joda.time.chrono.GJChronology.convertByYear(GJChronology.java:83)
+	at org.joda.time.chrono.GJChronology.gregorianToJulianByYear(GJChronology.java:579)
+	at org.joda.time.chrono.GJChronology$CutoverField.gregorianToJulian(GJChronology.java:915)
+	at org.joda.time.chrono.GJChronology$CutoverField.set(GJChronology.java:715)
 	at org.joda.time.field.DelegatedDateTimeField.set(DelegatedDateTimeField.java:172)
 	at org.joda.time.field.SkipUndoDateTimeField.set(SkipUndoDateTimeField.java:91)
 	at org.joda.time.field.DecoratedDateTimeField.set(DecoratedDateTimeField.java:82)
@@ -49,9 +68,9 @@ Caused by: org.joda.time.IllegalFieldValueException: Value -543 for year is not 
 	... 4 more
 
 	at org.junit.Assert.fail(Assert.java:88)
-	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:140)
-	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:171)
+	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:203)
+	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:234)
 
-real	8m16.792s
-user	7m25.296s
-sys	0m7.168s
+real	1m29.167s
+user	2m12.420s
+sys	0m2.568s

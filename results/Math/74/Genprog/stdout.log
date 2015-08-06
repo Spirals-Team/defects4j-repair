@@ -1,42 +1,8 @@
-export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";cp -r /home/tdurieux/projects/math/math_74 /tmp/math_74_Genprog;cd /tmp/math_74_Genprog;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
-/home/tdurieux/results/Math/74/Genprog/result
-cd /tmp/math_74_Genprog;time java -cp /home/tdurieux/astor/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar fr.inria.main.evolution.MainjGenProg -mode statement -location . -dependencies lib/ -failing org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegratorTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
+export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/math/math_74 /tmp/math_74_Genprog;cd /tmp/math_74_Genprog;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
+/home/tdurieux/defects4j-repair/src/python/core/../../../results/Math/74/Genprog/result
+cd /tmp/math_74_Genprog;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java -Xmx8g -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement -location . -dependencies lib/ -failing org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegratorTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -seed 10 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
 
 Node: `hostname`
 ";echo "
 Date: `date`
 ";rm -rf /tmp/math_74_Genprog;
- NOT Found solution
-Number solutions:0
-All variants:
-f 1.0, [Variant id: 1439, #gens: 646, #ops: 0, parent:-]
-Time Evolution(ms): 3691009
-
-----stats: 
-
-spaces: [537]: [103, 72, 6, 57, 31, 48, 182, 48, 12, 17, 160, 103, 50, 48, 64, 104, 160, 377, 86, 103, 103, 18, 13, 57, 182, 103, 1, 103, 160, 57, 12, 79, 16, 43, 185, 48, 79, 172, 103, 103, 39, 160, 103, 8, 103, 8, 103, 27, 18, 49, 172, 72, 103, 160, 160, 160, 7, 2, 2, 103, 27, 8, 37, 160, 39, 2, 27, 185, 103, 34, 49, 4, 6, 57, 12, 64, 50, 35, 103, 37, 103, 49, 185, 104, 103, 103, 57, 30, 57, 37, 17, 109, 377, 6, 18, 103, 160, 57, 185, 33, 185, 72, 49, 57, 103, 185, 103, 7, 49, 37, 185, 22, 18, 109, 103, 160, 160, 182, 103, 182, 182, 182, 4, 19, 26, 172, 103, 7, 27, 160, 103, 103, 16, 109, 160, 103, 11, 182, 103, 26, 160, 103, 16, 3, 103, 103, 57, 86, 20, 2, 4, 13, 39, 103, 33, 26, 51, 160, 172, 103, 103, 109, 103, 35, 86, 103, 12, 160, 160, 103, 49, 30, 86, 160, 103, 4, 103, 57, 185, 49, 160, 18, 103, 48, 57, 8, 79, 160, 57, 103, 27, 35, 57, 49, 103, 160, 185, 160, 43, 17, 8, 172, 377, 160, 377, 26, 103, 26, 37, 17, 49, 4, 26, 29, 49, 20, 185, 51, 103, 103, 103, 182, 16, 109, 103, 9, 17, 185, 8, 103, 103, 49, 185, 182, 43, 185, 160, 79, 103, 34, 185, 7, 79, 39, 49, 103, 103, 103, 57, 182, 79, 49, 103, 86, 37, 30, 22, 104, 57, 4, 79, 20, 72, 48, 27, 72, 26, 8, 160, 45, 365, 79, 49, 185, 103, 49, 160, 103, 4, 49, 86, 20, 5, 6, 109, 6, 103, 3, 16, 57, 103, 57, 103, 185, 103, 103, 49, 7, 160, 6, 103, 45, 37, 30, 7, 26, 109, 103, 103, 39, 72, 49, 103, 51, 12, 103, 103, 103, 45, 109, 103, 48, 160, 103, 103, 109, 103, 103, 6, 8, 20, 160, 160, 185, 185, 11, 109, 17, 4, 43, 109, 2, 95, 103, 27, 185, 45, 57, 49, 172, 103, 7, 49, 103, 19, 103, 35, 49, 17, 103, 19, 104, 27, 160, 185, 182, 20, 103, 8, 8, 48, 103, 27, 8, 103, 109, 1, 79, 103, 2, 103, 160, 27, 7, 57, 185, 9, 12, 48, 185, 13, 4, 160, 103, 26, 104, 160, 185, 103, 34, 3, 16, 160, 48, 49, 22, 49, 6, 103, 79, 51, 29, 34, 48, 4, 185, 104, 3, 49, 103, 160, 16, 26, 172, 49, 49, 57, 185, 103, 182, 34, 185, 185, 49, 103, 103, 103, 72, 79, 20, 160, 6, 103, 26, 48, 48, 92, 103, 1, 1, 182, 160, 39, 34, 79, 103, 182, 104, 103, 6, 31, 182, 30, 160, 172, 49, 185, 160, 103, 6, 51, 49, 34, 103, 8, 49, 11, 57, 30, 18, 20, 79, 103, 26, 160, 62, 103, 72, 27, 9, 103, 37, 7, 49, 34, 31, 34, 37, 103, 160, 4, 103, 6, 160, 109, 27, 20, 57, 4, 103, 103, 79, 49, 37, 79, 103, 48, 1, 49, 29, 86, 6, 30, 185, 34, 26, 103, 34, 109, 33, 45, 103, 160, 79, 103, 104, 37]
-time val1 [234]: [400, 372, 392, 60001, 60002, 400, 373, 203, 393, 394, 391, 397, 366, 60002, 398, 391, 394, 264, 394, 60002, 396, 392, 322, 423, 392, 362, 394, 60002, 60002, 395, 449, 60002, 396, 231, 60002, 176, 60002, 394, 394, 362, 394, 393, 230, 60002, 205, 60002, 294, 392, 60001, 60002, 395, 60002, 385, 60002, 60002, 394, 393, 395, 393, 394, 394, 174, 394, 392, 42487, 229, 393, 200, 381, 392, 393, 60001, 232, 320, 345, 393, 392, 202, 342, 365, 393, 60001, 395, 60002, 365, 60002, 377, 60002, 362, 394, 173, 393, 393, 203, 394, 60002, 396, 394, 393, 348, 394, 394, 393, 296, 373, 183, 366, 394, 392, 60001, 60009, 60002, 406, 394, 394, 392, 320, 396, 391, 186, 203, 397, 392, 60001, 60002, 394, 60002, 60002, 207, 393, 451, 394, 369, 204, 60001, 394, 393, 60001, 395, 392, 343, 395, 394, 203, 60002, 395, 60002, 362, 394, 212, 394, 393, 60001, 60002, 394, 207, 393, 393, 204, 392, 395, 397, 60001, 396, 60002, 397, 393, 60002, 60002, 307, 213, 371, 60002, 398, 60002, 60002, 396, 393, 47594, 394, 394, 392, 208, 395, 394, 371, 60002, 410, 392, 60002, 60002, 395, 395, 203, 394, 60002, 396, 393, 60002, 392, 392, 60002, 397, 60002, 206, 60002, 395, 10671, 51126, 386, 393, 395, 202, 209, 393, 393, 393, 204, 364, 297, 230, 394, 394, 393, 391, 60002, 60002, 395, 60002, 395, 60001, 407, 255, 60002]
-time val2 [0]: []
-#gen: 719
-#patches: 0
-#RightCompilation: 233
-#WrongCompilation: 486
-#FailingTestCaseExecution: 234
-#RegressionTestExecution: 0
-#TestcasesExecutedval1: 1074
-#TestcasesExecutedval2: 0
-#FailingTestCase: 6
-#RegressionTestCases: 0
-#OfAppliedOp: 719
-#NotAppliedOp: 0
-#InmutatedGen: 11
-#unfinishValidation: 0
-Time Total(ms): 3721464
-
-
-Node: graphene-105.nancy.grid5000.fr
-
-
-Date: Tue May 12 02:46:14 CEST 2015
-
-

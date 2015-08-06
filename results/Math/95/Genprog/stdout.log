@@ -1,49 +1,66 @@
-export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";cp -r /home/tdurieux/projects/math/math_95 /tmp/math_95_Genprog;cd /tmp/math_95_Genprog;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
-/home/tdurieux/results/Math/95/Genprog/result
-cd /tmp/math_95_Genprog;time java -cp /home/tdurieux/astor/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar fr.inria.main.evolution.MainjGenProg -mode statement -location . -dependencies lib/ -failing org.apache.commons.math.distribution.FDistributionTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 6 -maxgen 1000000 -population 1 -srcjavafolder src/java/ -srctestfolder src/test/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
+export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/math/math_95 /tmp/math_95_Genprog;cd /tmp/math_95_Genprog;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
+/home/tdurieux/defects4j-repair/src/python/core/../../../results/Math/95/Genprog/result
+cd /tmp/math_95_Genprog;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java -Xmx8g -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement -location . -dependencies lib/ -failing org.apache.commons.math.distribution.FDistributionTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 6 -maxgen 1000000 -seed 10 -population 1 -srcjavafolder src/java/ -srctestfolder src/test/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
 
 Node: `hostname`
 ";echo "
 Date: `date`
 ";rm -rf /tmp/math_95_Genprog;
 
-ProgramVariant 16
- 
- operation: 
-location= org.apache.commons.math.distribution.FDistributionImpl
- line= 144
- original statement= return (getDenominatorDegreesOfFreedom()) / ((getDenominatorDegreesOfFreedom()) - 2.0)
- fixed statement= "return 0.0"
- generation= 8
- 
+End Repair Loops: Found solution
+Solution stored at: ./outputMutation//MainjGenProg-.//src/
+
+Number solutions:1
+f (sol): 0.0, [Variant id: 32 (SOL) , #gens: 28, #ops: 1, parent:31]
+
+All variants:
+f 1.0, [Variant id: 33, #gens: 28, #ops: 0, parent:-]
+
+Solution details
+
+ --SOLUTIONS DESCRIPTION--
+
  ----
-Time Evolution(ms): 7620
+ProgramVariant 32
+ 
+operation: REPLACE
+location= org.apache.commons.math.distribution.FDistributionImpl
+line= 144
+original statement= return (getDenominatorDegreesOfFreedom()) / ((getDenominatorDegreesOfFreedom()) - 2.0)
+fixed statement= return denominatorDegreesOfFreedom
+generation= 16
+ingredientScope= LOCAL
+ 
+--Space: LOCAL
+org.apache.commons.math.distribution.FDistributionImpl=26|CtLocalVariableImpl:3;CtReturnImpl:9;CtAssignmentImpl:4;CtInvocationImpl:3;CtThrowImpl:2;CtIfImpl:5;,org.apache.commons.math.distribution.AbstractContinuousDistribution=18|CtLocalVariableImpl:5;CtAssignmentImpl:1;CtReturnImpl:4;CtInvocationImpl:2;CtThrowImpl:3;CtIfImpl:3;,org.apache.commons.math.analysis.UnivariateRealSolverUtils=33|CtLocalVariableImpl:6;CtAssignmentImpl:5;CtReturnImpl:5;CtInvocationImpl:4;CtDoImpl:1;CtThrowImpl:5;CtIfImpl:6;CtUnaryOperatorImpl:1;,
 
 ----stats: 
 
-spaces: [6]: [18, 26, 18, 26, 3, 9]
-time val1 [2]: [183, 172]
-time val2 [1]: [6271]
-#gen: 8
+spaces navigation: [32]: [(id:2| CtAssignmentImpl| size: 26| notcompiles| LOCAL) , (id:2| CtAssignmentImpl| size: 26| alreadyanalyzed| LOCAL) , (id:2| CtAssignmentImpl| size: 26| compiles| LOCAL) , (id:4| CtAssignmentImpl| size: 26| notcompiles| LOCAL) , (id:4| CtAssignmentImpl| size: 26| notcompiles| LOCAL) , (id:4| CtAssignmentImpl| size: 26| compiles| LOCAL) , (id:6| CtIfImpl| size: 6| compiles| LOCAL) , (id:8| CtIfImpl| size: 5| compiles| LOCAL) , (id:10| CtReturnImpl| size: 33| notcompiles| LOCAL) , (id:12| CtIfImpl| size: 5| alreadyanalyzed| LOCAL) , (id:12| CtIfImpl| size: 5| notcompiles| LOCAL) , (id:12| CtIfImpl| size: 5| notcompiles| LOCAL) , (id:12| CtIfImpl| size: 5| notcompiles| LOCAL) , (id:12| CtIfImpl| size: 5| alreadyanalyzed| LOCAL) , (id:12| CtReturnImpl| size: 26| notcompiles| LOCAL) , (id:14| CtLocalVariableImpl| size: 5| notcompiles| LOCAL) , (id:16| CtReturnImpl| size: 26| notcompiles| LOCAL) , (id:16| CtReturnImpl| size: 26| notcompiles| LOCAL) , (id:18| CtLocalVariableImpl| size: 18| notcompiles| LOCAL) , (id:18| CtLocalVariableImpl| size: 18| notcompiles| LOCAL) , (id:18| CtLocalVariableImpl| size: 18| notcompiles| LOCAL) , (id:20| CtReturnImpl| size: 26| notcompiles| LOCAL) , (id:22| CtReturnImpl| size: 26| notcompiles| LOCAL) , (id:26| CtIfImpl| size: 6| alreadyanalyzed| LOCAL) , (id:26| CtIfImpl| size: 6| compiles| LOCAL) , (id:28| CtAssignmentImpl| size: 26| alreadyanalyzed| LOCAL) , (id:28| CtAssignmentImpl| size: 26| alreadyanalyzed| LOCAL) , (id:28| CtAssignmentImpl| size: 26| notcompiles| LOCAL) , (id:32| CtReturnImpl| size: 9| notcompiles| LOCAL) , (id:32| CtReturnImpl| size: 9| alreadyanalyzed| LOCAL) , (id:32| CtReturnImpl| size: 9| notcompiles| LOCAL) , (id:32| CtReturnImpl| size: 9| compiles| LOCAL) ]
+time val1 [7]: [183, 173, 173, 176, 207, 177, 389]
+time val2 [1]: [6361]
+#gen: 16
 #patches: 1
-#RightCompilation: 1
-#WrongCompilation: 7
-#FailingTestCaseExecution: 2
+#RightCompilation: 6
+#WrongCompilation: 10
+#FailingTestCaseExecution: 7
 #RegressionTestExecution: 1
-#TestcasesExecutedval1: 18
+#TestcasesExecutedval1: 63
 #TestcasesExecutedval2: 1191
 #FailingTestCase: 9
 #RegressionTestCases: 1191
-#OfAppliedOp: 8
+#OfAppliedOp: 16
 #NotAppliedOp: 0
-#InmutatedGen: 0
+#InmutatedGen: 1
 #unfinishValidation: 0
-Time Total(ms): 27361
+#ing [CtAssignmentImpl, CtAssignmentImpl, CtIfImpl, CtIfImpl, CtReturnImpl, CtIfImpl, CtReturnImpl, CtLocalVariableImpl, CtReturnImpl, CtLocalVariableImpl, CtReturnImpl, CtReturnImpl, CtReturnImpl, CtIfImpl, CtAssignmentImpl, CtAssignmentImpl, CtReturnImpl]
+Time Evolution(ms): 9415
+Time Total(ms): 30418
 
 
-Node: graphene-104.nancy.grid5000.fr
+Node: graphene-25.nancy.grid5000.fr
 
 
-Date: Mon May 11 23:41:21 CEST 2015
+Date: Wed Aug  5 18:51:34 CEST 2015
 
 
