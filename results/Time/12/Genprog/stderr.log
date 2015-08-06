@@ -32,12 +32,12 @@ Caused by: org.joda.time.IllegalFieldValueException: Value -209648 for dayOfMont
 	at fr.inria.astor.core.validation.executors.JUnitExecutorProcess.execute(JUnitExecutorProcess.java:78)
 	at fr.inria.astor.core.validation.executors.JUnitExecutorProcess.execute(JUnitExecutorProcess.java:34)
 	at fr.inria.astor.core.validation.validators.ProcessValidator.validate(ProcessValidator.java:58)
-	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.validateInstance(EvolutionaryEngine.java:758)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.validateInstance(EvolutionaryEngine.java:763)
 	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.processCreatedVariant(EvolutionaryEngine.java:367)
 	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.processGenerations(EvolutionaryEngine.java:233)
 	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.startEvolution(EvolutionaryEngine.java:125)
-	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:200)
-	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:234)
+	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:198)
+	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
 Exception in thread "main" java.lang.AssertionError: The validation process does not execute well the test cases
  Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
 Exception in thread "main" java.lang.ExceptionInInitializerError
@@ -68,9 +68,9 @@ Caused by: org.joda.time.IllegalFieldValueException: Value -209648 for dayOfMont
 	... 4 more
 
 	at org.junit.Assert.fail(Assert.java:88)
-	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:203)
-	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:234)
+	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:201)
+	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
 
-real	1m29.167s
-user	2m12.420s
-sys	0m2.568s
+real	1m47.722s
+user	2m41.734s
+sys	0m4.692s

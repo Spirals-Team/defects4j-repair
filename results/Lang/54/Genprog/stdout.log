@@ -1,0 +1,47 @@
+export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/lang/lang_54 /tmp/lang_54_Genprog;cd /tmp/lang_54_Genprog;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Lang/lib/* lib/;find . -type f -name "package-info.java" -delete;
+/home/tdurieux/defects4j-repair/src/python/core/../../../results/Lang/54/Genprog/result
+cd /tmp/lang_54_Genprog;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java  -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement -location . -dependencies lib/ -failing org.apache.commons.lang.LocaleUtilsTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 3 -maxgen 1000000 -seed 10 -population 1 -srcjavafolder src/java/ -srctestfolder src/test/ -binjavafolder target/classes/ -bintestfolder target/tests/;echo "
+
+Node: `hostname`
+";echo "
+Date: `date`
+";rm -rf /tmp/lang_54_Genprog;
+
+2015-08-06 20:16:21,538 INFO main - End Repair Loops: NOT Found solution
+2015-08-06 20:16:21,538 INFO main - 
+Number solutions:0
+2015-08-06 20:16:21,538 INFO main - 
+All variants:
+2015-08-06 20:16:21,538 INFO main - f 79.0, [Variant id: 56203, #gens: 14, #ops: 0, parent:-]
+2015-08-06 20:16:21,538 INFO main - --Space: LOCAL
+org.apache.commons.lang.LocaleUtils=70|,
+2015-08-06 20:16:21,538 INFO main - 
+----stats: 
+2015-08-06 20:16:21,538 INFO main - 
+spaces navigation: [33]: {(CtIfImpl| size: 19| alreadyanalyzed| LOCAL| REPLACE) =225007, (CtLocalVariableImpl| size: 14| compiles| LOCAL| REPLACE) =55, (CtReturnImpl| size: 70| alreadyanalyzed| LOCAL| INSERT_AFTER) =173100, (CtThrowImpl| size: 70| compiles| LOCAL| INSERT_AFTER) =26, (CtIfImpl| size: 70| compiles| LOCAL| INSERT_BEFORE) =146, (CtLocalVariableImpl| size: 14| alreadyanalyzed| LOCAL| REPLACE) =139260, (CtReturnImpl| size: 70| compiles| LOCAL| INSERT_AFTER) =33, (CtReturnImpl| size: 11| notcompiles| LOCAL| REPLACE) =16, (CtReturnImpl| size: 70| alreadyanalyzed| LOCAL| INSERT_BEFORE) =185230, (CtThrowImpl| size: 70| alreadyanalyzed| LOCAL| INSERT_AFTER) =169062, (CtThrowImpl| size: 5| alreadyanalyzed| LOCAL| REPLACE) =11770, (CtLocalVariableImpl| size: 70| alreadyanalyzed| LOCAL| INSERT_BEFORE) =700364, (CtThrowImpl| size: 70| alreadyanalyzed| LOCAL| INSERT_BEFORE) =174491, (CtIfImpl| size: 70| alreadyanalyzed| LOCAL| INSERT_AFTER) =829091, (CtIfImpl| size: 70| alreadyanalyzed| LOCAL| INSERT_BEFORE) =823444, (CtIfImpl| size: 70| notcompiles| LOCAL| INSERT_BEFORE) =232, (CtLocalVariableImpl| size: 70| notcompiles| LOCAL| INSERT_AFTER) =196, (CtLocalVariableImpl| size: 70| alreadyanalyzed| LOCAL| INSERT_AFTER) =702708, (CtLocalVariableImpl| size: 70| compiles| LOCAL| INSERT_AFTER) =119, (CtReturnImpl| size: 70| notcompiles| LOCAL| INSERT_AFTER) =93, (CtLocalVariableImpl| size: 70| notcompiles| LOCAL| INSERT_BEFORE) =196, (CtIfImpl| size: 70| notcompiles| LOCAL| INSERT_AFTER) =232, (CtReturnImpl| size: 70| compiles| LOCAL| INSERT_BEFORE) =33, (CtIfImpl| size: 19| compiles| LOCAL| REPLACE) =32, (CtThrowImpl| size: 70| notcompiles| LOCAL| INSERT_AFTER) =37, (CtReturnImpl| size: 11| compiles| LOCAL| REPLACE) =4, (CtReturnImpl| size: 11| alreadyanalyzed| LOCAL| REPLACE) =29050, (CtIfImpl| size: 70| compiles| LOCAL| INSERT_AFTER) =146, (CtIfImpl| size: 19| notcompiles| LOCAL| REPLACE) =76, (CtLocalVariableImpl| size: 70| compiles| LOCAL| INSERT_BEFORE) =119, (CtReturnImpl| size: 70| notcompiles| LOCAL| INSERT_BEFORE) =93, (CtThrowImpl| size: 70| compiles| LOCAL| INSERT_BEFORE) =26, (CtThrowImpl| size: 70| notcompiles| LOCAL| INSERT_BEFORE) =37}
+#gen: 28101
+#patches: 0
+#RightCompilation: 0
+#WrongCompilation: 27593
+#FailingTestCaseExecution: 1
+#RegressionTestExecution: 1
+#TestcasesExecutedval1: 12
+#TestcasesExecutedval2: 1629
+#FailingTestCase: 12
+#RegressionTestCases: 1629
+#OfAppliedOp: 27593
+#NotAppliedOp: 0
+#InmutatedGen: 80405
+#unfinishValidation: 0
+#ing {CtLocalVariableImpl=40156, CtReturnImpl=10350, CtThrowImpl=9770, CtIfImpl=47722}
+#untilcompile {1=141, 2=78, 3=62, 4=46, 5=220, 6=31, 7=19, 8=18, 9=21, 10=11, 11=174, 12=11, 13=14, 14=712, 15=9, 17=6, 16=8, 19=766, 18=9, 21=11, 20=7, 23=7, 22=7, 25=31, 24=56, 27=8, 26=4, 29=5, 28=48, 31=3, 30=39, 34=4, 35=6, 32=2, 33=163, 38=99, 39=9, 36=3, 37=4, 42=4, 43=7, 40=1, 41=3, 46=2, 47=24, 44=16, 45=2, 51=1, 50=2, 49=8, 48=1, 54=1, 52=26, 59=1, 58=2, 63=6, 62=1, 61=6, 68=2, 70=3386, 71=11, 66=9, 76=2, 77=2, 78=1, 79=1, 72=1, 73=2, 74=1, 75=154, 85=1, 84=681, 87=1, 86=11, 81=152, 83=1, 82=2, 93=2, 92=3, 95=41, 94=59, 89=796, 91=1, 90=3, 103=235, 100=49, 101=1, 98=66, 99=1, 96=1, 111=4, 108=135, 109=7, 106=1, 107=1, 104=1, 105=4, 119=10, 118=1, 117=46, 114=23, 113=13, 112=2, 127=30, 125=1, 123=1, 122=51, 120=1, 137=1, 136=15, 141=7, 140=1657, 143=1, 142=1, 129=1, 128=5, 131=4, 130=1, 133=7, 132=3, 135=1, 154=474, 155=4, 156=10, 159=617, 144=1, 145=139, 146=2, 147=3, 149=1, 150=1, 151=111, 171=1, 170=52, 169=1, 168=77, 175=9, 173=237, 162=1, 161=1, 160=3, 166=1, 165=44, 164=55, 187=55, 184=34, 189=15, 178=129, 179=10, 176=2, 177=1, 182=12, 183=17, 181=1, 205=1, 206=19, 201=8, 203=7, 202=1, 197=27, 196=2, 198=7, 192=67, 195=4, 194=3, 220=4, 221=73, 222=5, 216=7, 217=5, 219=1, 212=1, 214=2, 215=90, 208=5, 209=1, 210=832, 211=18, 239=1, 238=61, 236=1, 235=41, 234=44, 233=1, 232=2, 231=2, 230=2, 229=402, 228=1, 226=7, 225=5, 224=315, 254=34, 255=1, 252=9, 253=18, 251=1, 248=114, 249=8, 246=5, 247=1, 245=10, 243=210, 240=48, 241=1, 275=1, 273=14, 272=3, 279=1, 278=7, 276=30, 282=3, 281=14, 280=412, 287=3, 286=5, 285=41, 284=1, 259=19, 257=50, 262=79, 263=3, 266=1, 267=36, 264=5, 265=4, 270=2, 271=11, 268=8, 305=32, 304=34, 306=1, 309=1, 308=46, 311=2, 310=38, 313=152, 315=5, 314=1, 316=1, 319=13, 318=99, 290=4, 291=53, 292=3, 293=1, 294=186, 295=5, 296=13, 297=4, 299=278, 300=2, 301=1, 302=1, 343=10, 342=1, 341=11, 340=1, 338=10, 337=35, 336=1, 351=17, 350=210, 349=1, 348=5, 346=16, 327=57, 324=36, 325=1, 322=2, 323=11, 321=7, 334=3, 335=2, 332=58, 333=4, 330=1, 329=18, 373=1, 375=25, 374=37, 369=168, 371=1, 370=3, 381=4, 380=26, 383=108, 376=2, 379=1, 378=34, 356=2, 357=12, 352=1, 354=2, 355=27, 364=117, 365=8, 366=5, 367=1, 360=5, 361=40, 362=9, 410=2, 411=7, 408=8, 414=1, 415=1, 412=3, 413=18, 402=50, 400=2, 407=26, 404=1, 405=2, 394=22, 393=13, 392=2, 399=16, 397=34, 387=1, 385=8, 391=6, 390=2, 389=5, 388=69, 440=3, 441=3, 442=1, 443=1, 444=19, 445=15, 446=1, 447=1, 432=7, 434=73, 435=8, 436=3, 437=3, 438=1, 439=76, 425=27, 424=2, 427=9, 426=4, 431=19, 430=4, 417=1, 416=28, 419=1, 418=9, 421=21, 420=133, 422=2, 478=6, 476=2, 477=14, 474=1, 475=1, 472=46, 473=1, 469=15, 467=22, 464=13, 465=2, 463=7, 462=2, 461=1, 460=2, 459=3, 458=52, 457=1, 455=8, 454=3, 453=76, 452=2, 451=4, 450=23, 449=3, 448=22, 508=2, 509=60, 510=5, 504=38, 505=6, 506=1, 507=1, 500=2, 501=9, 502=5, 503=1, 496=5, 497=7, 498=1, 499=1, 493=2, 495=16, 489=1, 488=5, 491=12, 490=59, 484=3, 486=13, 481=3, 483=15, 482=6, 550=1, 551=2, 548=7, 549=3, 546=1, 547=12, 544=3, 545=3, 558=4, 559=1, 556=16, 554=1, 552=2, 553=11, 567=9, 566=2, 565=6, 564=2, 562=2, 561=14, 560=29, 575=10, 574=22, 572=3, 571=10, 570=2, 569=1, 516=3, 518=13, 519=1, 514=13, 515=11, 524=2, 525=2, 520=11, 521=1, 523=45, 533=7, 532=4, 535=1, 534=9, 529=2, 528=37, 531=2, 541=3, 540=2, 543=2, 542=26, 537=27, 536=2, 539=14, 538=2, 610=1, 609=7, 614=1, 615=1, 612=20, 618=7, 617=8, 623=8, 620=1, 621=3, 626=10, 631=7, 630=12, 629=1, 628=8, 635=2, 634=2, 632=2, 639=1, 637=6, 636=4, 576=3, 577=1, 578=4, 579=28, 580=4, 581=2, 582=1, 583=5, 584=4, 585=7, 586=9, 588=11, 589=5, 590=4, 591=2, 593=28, 592=3, 595=3, 594=6, 597=2, 596=1, 599=4, 598=19, 601=2, 600=6, 603=5, 602=3, 605=7, 604=10, 607=11, 687=8, 685=1, 683=1, 682=16, 679=2, 677=11, 674=6, 673=3, 702=6, 703=4, 700=7, 701=11, 698=6, 699=7, 696=14, 694=1, 695=2, 692=1, 693=14, 690=2, 688=5, 653=1, 652=2, 655=3, 654=3, 649=24, 648=5, 651=10, 650=8, 645=11, 644=6, 647=6, 646=3, 641=3, 640=6, 642=5, 668=16, 669=5, 664=5, 665=3, 666=1, 660=10, 661=5, 663=19, 656=6, 658=5, 659=4, 747=3, 744=5, 750=1, 749=5, 739=2, 738=11, 736=1, 743=1, 741=1, 762=2, 763=16, 760=3, 761=7, 766=17, 754=3, 755=4, 752=16, 753=4, 758=13, 757=16, 712=16, 715=10, 714=8, 717=2, 719=12, 705=6, 704=4, 707=18, 706=5, 709=1, 711=5, 710=6, 728=6, 730=4, 733=11, 735=1, 720=3, 722=1, 724=3, 725=3, 822=17, 817=14, 819=2, 827=5, 805=1, 806=3, 800=4, 803=8, 812=1, 813=5, 814=12, 808=10, 809=3, 811=2, 789=8, 786=1, 784=5, 798=2, 795=1, 775=2, 770=7, 771=13, 768=3, 781=2, 776=2, 864=1, 865=3, 868=9, 870=2, 873=11, 878=4, 854=1, 859=5, 856=1, 840=1, 929=7, 924=1, 921=4, 980=2}
+2015-08-06 20:16:21,539 INFO main - Time Evolution(ms): 3660013
+2015-08-06 20:16:21,539 INFO fr.inria.main.AbstractMain - Time Total(ms): 3692663
+
+
+Node: graphene-85.nancy.grid5000.fr
+
+
+Date: Thu Aug  6 22:16:22 CEST 2015
+
+

@@ -2,15 +2,15 @@
 
 BugId             | NopolPC   | NopolC    | BrutpolPC | BrutpolC  | Genprog   | Kali      | Total
 ----------------- | --------- | --------- | --------- | --------- | --------- | --------- | ------
-[C3](#chart-3)    | TIMEOUT   | Yes       | 0 AV      | 1 AV      |           | No        |      1
+[C3](#chart-3)    | TIMEOUT   | Yes       | 0 AV      | 1 AV      | No        | No        |      1
 [C5](#chart-5)    | TIMEOUT   | Yes       | 0 AV      | Yes       | No        | No        |      2
 [C6](#chart-6)    | Yes       | Yes       | Yes       | Yes       | No        | No        |      4
 [C9](#chart-9)    | TIMEOUT   | TIMEOUT   | Yes       | Yes       | No        | No        |      2
 [C13](#chart-13)  | Yes       | Yes       | Yes       | TIMEOUT   | No        | No        |      3
 [C17](#chart-17)  | TIMEOUT   | 0 AV      | Yes       | Yes       | No        | No        |      2
 [C21](#chart-21)  | Yes       | Yes       | Yes       | Yes       | No        | No        |      4
-[C25](#chart-25)  | Yes       | Yes       | Yes       | Yes       | ERROR     | No        |      4
-[C26](#chart-26)  | Yes       | Yes       | Yes       | TIMEOUT   | ERROR     | No        |      3
+[C25](#chart-25)  | Yes       | Yes       | Yes       | Yes       | No        | No        |      4
+[C26](#chart-26)  | Yes       | Yes       | Yes       | TIMEOUT   | No        | No        |      3
 [L39](#lang-39)   | Yes       | 0 AV      | Yes       | 0 AV      | No        | No        |      2
 [L44](#lang-44)   | Yes       | Yes       | TIMEOUT   | TIMEOUT   | No        | No        |      2
 [L46](#lang-46)   | Yes       | 0 AV      | TIMEOUT   | 0 AV      | No        | No        |      1
@@ -22,25 +22,27 @@ BugId             | NopolPC   | NopolC    | BrutpolPC | BrutpolC  | Genprog   | 
 [M5](#math-5)     | TIMEOUT   | 2 AV      | TIMEOUT   | ERROR     | Yes       | No        |      1
 [M8](#math-8)     | TIMEOUT   | 1 AV      | TIMEOUT   | ERROR     | Yes       | Yes       |      2
 [M24](#math-24)   | 5 AV      | 1 AV      | TIMEOUT   | 1 AV      | Yes       | No        |      1
-[M32](#math-32)   | Yes       | 0 AV      | TIMEOUT   | Yes       | ERROR     | No        |      2
-[M33](#math-33)   | Yes       | Yes       | Yes       |           | ERROR     | No        |      3
-[M40](#math-40)   | 1 AV      | Yes       | 0 AV      | 1 AV      | ERROR     | Yes       |      2
+[M32](#math-32)   | Yes       | 0 AV      | TIMEOUT   | Yes       | No        | No        |      2
+[M33](#math-33)   | Yes       | Yes       | Yes       | TIMEOUT   | No        | No        |      3
+[M40](#math-40)   | 1 AV      | Yes       | 0 AV      | 1 AV      | No        | Yes       |      2
 [M41](#math-41)   | 21 AV     | 10 AV     | Yes       | Yes       | No        | No        |      2
 [M42](#math-42)   | Yes       | TIMEOUT   | Yes       | TIMEOUT   | No        | No        |      2
+[M44](#math-44)   | TIMEOUT   | 0 AV      | TIMEOUT   | 0 AV      | Yes       | No        |      1
 [M46](#math-46)   | 2 AV      | 2 AV      | Yes       | ERROR     | No        | No        |      1
-[M49](#math-49)   | Yes       | Yes       | Yes       | ERROR     | ERROR     | Yes       |      4
+[M49](#math-49)   | Yes       | Yes       | Yes       | ERROR     | Yes       | Yes       |      5
 [M50](#math-50)   | Yes       | Yes       | Yes       | 2 AV      | Yes       | Yes       |      5
 [M53](#math-53)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | Yes       | No        |      1
 [M57](#math-57)   | Yes       | Yes       | 3 AV      | 1 AV      | No        | No        |      2
-[M58](#math-58)   | Yes       | Yes       | Yes       | 1 AV      | ERROR     | No        |      3
+[M58](#math-58)   | Yes       | Yes       | Yes       | 1 AV      | No        | No        |      3
 [M69](#math-69)   | Yes       | 2 AV      | Yes       | 2 AV      | No        | No        |      2
 [M70](#math-70)   | 0 AV      | 0 AV      | 0 AV      | TIMEOUT   | Yes       | No        |      1
-[M71](#math-71)   | 4 AV      | Yes       | Yes       | 3 AV      | Yes       | TIMEOUT   |      3
+[M71](#math-71)   | 4 AV      | Yes       | Yes       | 3 AV      | Yes       | ERROR     |      3
 [M73](#math-73)   | 0 AV      | Yes       | 0 AV      | ERROR     | Yes       | No        |      2
-[M78](#math-78)   | Yes       | TIMEOUT   | Yes       | ERROR     | No        | Yes       |      3
+[M78](#math-78)   | Yes       | TIMEOUT   | Yes       | ERROR     | Yes       | Yes       |      4
 [M80](#math-80)   | Yes       | TIMEOUT   | 3 AV      | ERROR     | Yes       | Yes       |      3
 [M81](#math-81)   | Yes       | Yes       | TIMEOUT   | TIMEOUT   | Yes       | Yes       |      4
-[M82](#math-82)   | Yes       | 0 AV      | TIMEOUT   |           | Yes       | Yes       |      3
+[M82](#math-82)   | Yes       | 0 AV      | TIMEOUT   | TIMEOUT   | Yes       | Yes       |      3
+[M84](#math-84)   | 0 AV      | 0 AV      | 0 AV      | TIMEOUT   | Yes       | No        |      1
 [M85](#math-85)   | Yes       | Yes       | Yes       | Yes       | Yes       | Yes       |      6
 [M87](#math-87)   | Yes       | Yes       | Yes       | ERROR     | No        | No        |      3
 [M88](#math-88)   | Yes       | 1 AV      | Yes       | ERROR     | No        | No        |      2
@@ -51,24 +53,23 @@ BugId             | NopolPC   | NopolC    | BrutpolPC | BrutpolC  | Genprog   | 
 [M104](#math-104) | 0 AV      | Yes       | 0 AV      | TIMEOUT   | No        | No        |      1
 [M105](#math-105) | Yes       | 0 AV      | Yes       | ERROR     | No        | No        |      2
 [T11](#time-11)   | Yes       | Yes       | Yes       | ERROR     | No        | No        |      3
-Total             | 30 (13%)  | 25 (11%)  | 25 (11%)  | 12 (5%)   | 14 (6%)   | 11 (4%)   |    117
-Execution time    | 3 days, 9:25:15.659000 | 3 days, 17:26:42.646000 | 1 day, 20:40:05.778000 | 1 day, 4:27:47.618000 | 6 days, 14:55:17.146000 | 22:58:33.116000 | 33 days, 23:53:41.963000
-Fixed bugs: 49/224 (21%)
+Total             | 30 (13%)  | 25 (11%)  | 25 (11%)  | 12 (5%)   | 18 (8%)   | 11 (4%)   |    121
+Fixed bugs: 51/224 (22%)
 
-Nb bugs ends with an execution error: 110
+Nb bugs ends with an execution error: 61
 
 Nb bugs ends with an empty log: 0
 
 Nb bugs ends with the Grid5000 timeout: 390
 
-Total execution time: 33 days, 23:53:41.963000
+Total execution time: 36 days, 5:18:43.829000
 # Complete data
 
 BugId             | NopolPC   | NopolC    | BrutpolPC | BrutpolC  | Genprog   | Kali      | Total
 ----------------- | --------- | --------- | --------- | --------- | --------- | --------- | ------
 [C1](#chart-1)    | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        | No        |      0
-[C2](#chart-2)    | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | ERROR     | No        |      0
-[C3](#chart-3)    | TIMEOUT   | Yes       | 0 AV      | 1 AV      |           | No        |      1
+[C2](#chart-2)    | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[C3](#chart-3)    | TIMEOUT   | Yes       | 0 AV      | 1 AV      | No        | No        |      1
 [C4](#chart-4)    | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        | No        |      0
 [C5](#chart-5)    | TIMEOUT   | Yes       | 0 AV      | Yes       | No        | No        |      2
 [C6](#chart-6)    | Yes       | Yes       | Yes       | Yes       | No        | No        |      4
@@ -77,31 +78,31 @@ BugId             | NopolPC   | NopolC    | BrutpolPC | BrutpolC  | Genprog   | 
 [C9](#chart-9)    | TIMEOUT   | TIMEOUT   | Yes       | Yes       | No        | No        |      2
 [C10](#chart-10)  | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
 [C11](#chart-11)  | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        | No        |      0
-[C12](#chart-12)  | TIMEOUT   | 0 AV      | ERROR     | ERROR     | ERROR     | No        |      0
+[C12](#chart-12)  | TIMEOUT   | 0 AV      | ERROR     | ERROR     | No        | No        |      0
 [C13](#chart-13)  | Yes       | Yes       | Yes       | TIMEOUT   | No        | No        |      3
 [C14](#chart-14)  | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
-[C15](#chart-15)  | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | ERROR     | No        |      0
+[C15](#chart-15)  | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        | No        |      0
 [C16](#chart-16)  | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        | No        |      0
 [C17](#chart-17)  | TIMEOUT   | 0 AV      | Yes       | Yes       | No        | No        |      2
-[C18](#chart-18)  | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | ERROR     | No        |      0
+[C18](#chart-18)  | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
 [C19](#chart-19)  | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
 [C20](#chart-20)  | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
 [C21](#chart-21)  | Yes       | Yes       | Yes       | Yes       | No        | No        |      4
 [C22](#chart-22)  | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
 [C23](#chart-23)  | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
 [C24](#chart-24)  | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
-[C25](#chart-25)  | Yes       | Yes       | Yes       | Yes       | ERROR     | No        |      4
-[C26](#chart-26)  | Yes       | Yes       | Yes       | TIMEOUT   | ERROR     | No        |      3
-[L1](#lang-1)     | 0 AV      | 1 AV      | 0 AV      | 0 AV      | ERROR     | No        |      0
-[L2](#lang-2)     | TIMEOUT   | 1 AV      | 0 AV      | 0 AV      | ERROR     | No        |      0
-[L3](#lang-3)     | TIMEOUT   | 1 AV      | 0 AV      | 0 AV      | ERROR     | No        |      0
-[L4](#lang-4)     | TIMEOUT   | 1 AV      | 0 AV      | 0 AV      | ERROR     | No        |      0
-[L5](#lang-5)     | TIMEOUT   | 1 AV      | 0 AV      | 0 AV      | ERROR     | No        |      0
-[L6](#lang-6)     | 0 AV      | 1 AV      | 0 AV      | 0 AV      | ERROR     | No        |      0
-[L7](#lang-7)     | TIMEOUT   | 2 AV      | 2 AV      | 1 AV      | ERROR     | No        |      0
+[C25](#chart-25)  | Yes       | Yes       | Yes       | Yes       | No        | No        |      4
+[C26](#chart-26)  | Yes       | Yes       | Yes       | TIMEOUT   | No        | No        |      3
+[L1](#lang-1)     | 0 AV      | 1 AV      | 0 AV      | 0 AV      | No        | No        |      0
+[L2](#lang-2)     | TIMEOUT   | 1 AV      | 0 AV      | 0 AV      | No        | No        |      0
+[L3](#lang-3)     | TIMEOUT   | 1 AV      | 0 AV      | 0 AV      | No        | No        |      0
+[L4](#lang-4)     | TIMEOUT   | 1 AV      | 0 AV      | 0 AV      | No        | No        |      0
+[L5](#lang-5)     | TIMEOUT   | 1 AV      | 0 AV      | 0 AV      | No        | No        |      0
+[L6](#lang-6)     | 0 AV      | 1 AV      | 0 AV      | 0 AV      | No        | No        |      0
+[L7](#lang-7)     | TIMEOUT   | 2 AV      | 2 AV      | 1 AV      | No        | No        |      0
 [L8](#lang-8)     | TIMEOUT   | 0 AV      | ERROR     | ERROR     | No        | No        |      0
-[L9](#lang-9)     | TIMEOUT   | 1 AV      | TIMEOUT   | 0 AV      | ERROR     | No        |      0
-[L10](#lang-10)   | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | ERROR     | No        |      0
+[L9](#lang-9)     | TIMEOUT   | 1 AV      | TIMEOUT   | 0 AV      | No        | No        |      0
+[L10](#lang-10)   | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        | No        |      0
 [L11](#lang-11)   | 0 AV      | 0 AV      | ERROR     | ERROR     | No        | No        |      0
 [L12](#lang-12)   | 0 AV      | 0 AV      | ERROR     | ERROR     | No        | No        |      0
 [L13](#lang-13)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
@@ -157,25 +158,25 @@ BugId             | NopolPC   | NopolC    | BrutpolPC | BrutpolC  | Genprog   | 
 [L63](#lang-63)   | TIMEOUT   | 1 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
 [L64](#lang-64)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
 [L65](#lang-65)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
-[M1](#math-1)     | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | ERROR     | No        |      0
+[M1](#math-1)     | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
 [M2](#math-2)     | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | Yes       | Yes       |      2
 [M3](#math-3)     | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
 [M4](#math-4)     | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        | No        |      0
 [M5](#math-5)     | TIMEOUT   | 2 AV      | TIMEOUT   | ERROR     | Yes       | No        |      1
 [M6](#math-6)     | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | ERROR     | ERROR     |      0
-[M7](#math-7)     | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | ERROR     | No        |      0
+[M7](#math-7)     | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        | No        |      0
 [M8](#math-8)     | TIMEOUT   | 1 AV      | TIMEOUT   | ERROR     | Yes       | Yes       |      2
 [M9](#math-9)     | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
-[M10](#math-10)   | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | ERROR     | No        |      0
+[M10](#math-10)   | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
 [M11](#math-11)   | TIMEOUT   | TIMEOUT   | TIMEOUT   | ERROR     | No        | No        |      0
 [M12](#math-12)   | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        | No        |      0
-[M13](#math-13)   | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | ERROR     | No        |      0
+[M13](#math-13)   | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
 [M14](#math-14)   | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
-[M15](#math-15)   | TIMEOUT   | 1 AV      | TIMEOUT   | 1 AV      | ERROR     | No        |      0
-[M16](#math-16)   | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | ERROR     | No        |      0
-[M17](#math-17)   | 0 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | ERROR     | No        |      0
-[M18](#math-18)   | TIMEOUT   | 1 AV      | TIMEOUT   | TIMEOUT   | ERROR     | No        |      0
-[M19](#math-19)   | 0 AV      | 1 AV      | 0 AV      | 1 AV      | ERROR     | No        |      0
+[M15](#math-15)   | TIMEOUT   | 1 AV      | TIMEOUT   | 1 AV      | No        | No        |      0
+[M16](#math-16)   | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[M17](#math-17)   | 0 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[M18](#math-18)   | TIMEOUT   | 1 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[M19](#math-19)   | 0 AV      | 1 AV      | 0 AV      | 1 AV      | No        | No        |      0
 [M20](#math-20)   | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | ERROR     | ERROR     |      0
 [M21](#math-21)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
 [M22](#math-22)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
@@ -184,41 +185,41 @@ BugId             | NopolPC   | NopolC    | BrutpolPC | BrutpolC  | Genprog   | 
 [M25](#math-25)   | 0 AV      | 0 AV      | TIMEOUT   | ERROR     | No        | No        |      0
 [M26](#math-26)   | 0 AV      | 0 AV      | TIMEOUT   | ERROR     | No        | No        |      0
 [M27](#math-27)   | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        | No        |      0
-[M28](#math-28)   | 0 AV      | TIMEOUT   | 0 AV      | TIMEOUT   | ERROR     | No        |      0
+[M28](#math-28)   | 0 AV      | TIMEOUT   | 0 AV      | TIMEOUT   | No        | No        |      0
 [M29](#math-29)   | 0 AV      | TIMEOUT   | TIMEOUT   | 0 AV      | No        | No        |      0
-[M30](#math-30)   | 0 AV      | 1 AV      | 0 AV      | 1 AV      | ERROR     | No        |      0
+[M30](#math-30)   | 0 AV      | 1 AV      | 0 AV      | 1 AV      | No        | No        |      0
 [M31](#math-31)   | 6 AV      | 3 AV      | 6 AV      | TIMEOUT   | No        | No        |      0
-[M32](#math-32)   | Yes       | 0 AV      | TIMEOUT   | Yes       | ERROR     | No        |      2
-[M33](#math-33)   | Yes       | Yes       | Yes       |           | ERROR     | No        |      3
+[M32](#math-32)   | Yes       | 0 AV      | TIMEOUT   | Yes       | No        | No        |      2
+[M33](#math-33)   | Yes       | Yes       | Yes       | TIMEOUT   | No        | No        |      3
 [M34](#math-34)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
 [M35](#math-35)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | ERROR     | ERROR     |      0
 [M36](#math-36)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
 [M37](#math-37)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
 [M38](#math-38)   | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
-[M39](#math-39)   | ERROR     | ERROR     | TIMEOUT   | TIMEOUT   | ERROR     | No        |      0
-[M40](#math-40)   | 1 AV      | Yes       | 0 AV      | 1 AV      | ERROR     | Yes       |      2
+[M39](#math-39)   | ERROR     | ERROR     | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[M40](#math-40)   | 1 AV      | Yes       | 0 AV      | 1 AV      | No        | Yes       |      2
 [M41](#math-41)   | 21 AV     | 10 AV     | Yes       | Yes       | No        | No        |      2
 [M42](#math-42)   | Yes       | TIMEOUT   | Yes       | TIMEOUT   | No        | No        |      2
 [M43](#math-43)   | 0 AV      | 1 AV      | 0 AV      | 1 AV      | No        | No        |      0
-[M44](#math-44)   | TIMEOUT   | 0 AV      | TIMEOUT   | 0 AV      | ERROR     | No        |      0
+[M44](#math-44)   | TIMEOUT   | 0 AV      | TIMEOUT   | 0 AV      | Yes       | No        |      1
 [M45](#math-45)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
 [M46](#math-46)   | 2 AV      | 2 AV      | Yes       | ERROR     | No        | No        |      1
 [M47](#math-47)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
-[M48](#math-48)   | TIMEOUT   | TIMEOUT   | TIMEOUT   | 0 AV      | ERROR     | No        |      0
-[M49](#math-49)   | Yes       | Yes       | Yes       | ERROR     | ERROR     | Yes       |      4
+[M48](#math-48)   | TIMEOUT   | TIMEOUT   | TIMEOUT   | 0 AV      | No        | No        |      0
+[M49](#math-49)   | Yes       | Yes       | Yes       | ERROR     | Yes       | Yes       |      5
 [M50](#math-50)   | Yes       | Yes       | Yes       | 2 AV      | Yes       | Yes       |      5
 [M51](#math-51)   | TIMEOUT   | TIMEOUT   | TIMEOUT   | 0 AV      | ERROR     | ERROR     |      0
 [M52](#math-52)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
 [M53](#math-53)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | Yes       | No        |      1
-[M54](#math-54)   | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | ERROR     | TIMEOUT   |      0
+[M54](#math-54)   | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        | ERROR     |      0
 [M55](#math-55)   | 0 AV      | 0 AV      | 0 AV      | TIMEOUT   | No        | No        |      0
 [M56](#math-56)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
 [M57](#math-57)   | Yes       | Yes       | 3 AV      | 1 AV      | No        | No        |      2
-[M58](#math-58)   | Yes       | Yes       | Yes       | 1 AV      | ERROR     | No        |      3
-[M59](#math-59)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | ERROR     | No        |      0
-[M60](#math-60)   | 0 AV      | 1 AV      | TIMEOUT   | TIMEOUT   | ERROR     | No        |      0
-[M61](#math-61)   | 0 AV      | 0 AV      | 0 AV      | TIMEOUT   | ERROR     | No        |      0
-[M62](#math-62)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | ERROR     | No        |      0
+[M58](#math-58)   | Yes       | Yes       | Yes       | 1 AV      | No        | No        |      3
+[M59](#math-59)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[M60](#math-60)   | 0 AV      | 1 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[M61](#math-61)   | 0 AV      | 0 AV      | 0 AV      | TIMEOUT   | No        | No        |      0
+[M62](#math-62)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
 [M63](#math-63)   | 0 AV      | 0 AV      | 0 AV      | TIMEOUT   | No        | No        |      0
 [M64](#math-64)   | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
 [M65](#math-65)   | 0 AV      | 0 AV      | 0 AV      | TIMEOUT   | No        | No        |      0
@@ -227,20 +228,20 @@ BugId             | NopolPC   | NopolC    | BrutpolPC | BrutpolC  | Genprog   | 
 [M68](#math-68)   | 0 AV      | 0 AV      | 0 AV      | TIMEOUT   | No        | No        |      0
 [M69](#math-69)   | Yes       | 2 AV      | Yes       | 2 AV      | No        | No        |      2
 [M70](#math-70)   | 0 AV      | 0 AV      | 0 AV      | TIMEOUT   | Yes       | No        |      1
-[M71](#math-71)   | 4 AV      | Yes       | Yes       | 3 AV      | Yes       | TIMEOUT   |      3
+[M71](#math-71)   | 4 AV      | Yes       | Yes       | 3 AV      | Yes       | ERROR     |      3
 [M72](#math-72)   | 0 AV      | 0 AV      | 0 AV      | TIMEOUT   | No        | No        |      0
 [M73](#math-73)   | 0 AV      | Yes       | 0 AV      | ERROR     | Yes       | No        |      2
-[M74](#math-74)   | TIMEOUT   | 0 AV      | 0 AV      | TIMEOUT   | ERROR     | ERROR     |      0
+[M74](#math-74)   | TIMEOUT   | 0 AV      | 0 AV      | TIMEOUT   | No        | ERROR     |      0
 [M75](#math-75)   | 0 AV      | 0 AV      | 0 AV      | TIMEOUT   | No        | No        |      0
-[M76](#math-76)   | 0 AV      | 0 AV      | 0 AV      | TIMEOUT   | ERROR     | No        |      0
+[M76](#math-76)   | 0 AV      | 0 AV      | 0 AV      | TIMEOUT   | No        | No        |      0
 [M77](#math-77)   | 0 AV      | 0 AV      | 0 AV      | TIMEOUT   | No        | No        |      0
-[M78](#math-78)   | Yes       | TIMEOUT   | Yes       | ERROR     | No        | Yes       |      3
+[M78](#math-78)   | Yes       | TIMEOUT   | Yes       | ERROR     | Yes       | Yes       |      4
 [M79](#math-79)   | 1 AV      | 1 AV      | 2 AV      | ERROR     | No        | No        |      0
 [M80](#math-80)   | Yes       | TIMEOUT   | 3 AV      | ERROR     | Yes       | Yes       |      3
 [M81](#math-81)   | Yes       | Yes       | TIMEOUT   | TIMEOUT   | Yes       | Yes       |      4
-[M82](#math-82)   | Yes       | 0 AV      | TIMEOUT   |           | Yes       | Yes       |      3
-[M83](#math-83)   | 0 AV      | 0 AV      |           | TIMEOUT   | No        | No        |      0
-[M84](#math-84)   | 0 AV      | 0 AV      | 0 AV      | TIMEOUT   | ERROR     | No        |      0
+[M82](#math-82)   | Yes       | 0 AV      | TIMEOUT   | TIMEOUT   | Yes       | Yes       |      3
+[M83](#math-83)   | 0 AV      | 0 AV      | ERROR     | TIMEOUT   | No        | No        |      0
+[M84](#math-84)   | 0 AV      | 0 AV      | 0 AV      | TIMEOUT   | Yes       | No        |      1
 [M85](#math-85)   | Yes       | Yes       | Yes       | Yes       | Yes       | Yes       |      6
 [M86](#math-86)   | 5 AV      | 0 AV      | TIMEOUT   | ERROR     | No        | No        |      0
 [M87](#math-87)   | Yes       | Yes       | Yes       | ERROR     | No        | No        |      3
@@ -267,40 +268,39 @@ BugId             | NopolPC   | NopolC    | BrutpolPC | BrutpolC  | Genprog   | 
 [T2](#time-2)     | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
 [T3](#time-3)     | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        | No        |      0
 [T4](#time-4)     | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
-[T5](#time-5)     | 0 AV      | 1 AV      | 2 AV      | ERROR     | ERROR     | No        |      0
-[T6](#time-6)     | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | ERROR     | No        |      0
-[T7](#time-7)     | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | ERROR     | No        |      0
+[T5](#time-5)     | 0 AV      | 1 AV      | 2 AV      | ERROR     | No        | No        |      0
+[T6](#time-6)     | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[T7](#time-7)     | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        | No        |      0
 [T8](#time-8)     | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
 [T9](#time-9)     | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
 [T10](#time-10)   | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
 [T11](#time-11)   | Yes       | Yes       | Yes       | ERROR     | No        | No        |      3
 [T12](#time-12)   | ERROR     | TIMEOUT   | 0 AV      | TIMEOUT   | ERROR     | No        |      0
-[T13](#time-13)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | ERROR     | No        |      0
-[T14](#time-14)   | TIMEOUT   | 1 AV      | ERROR     | 3 AV      | ERROR     | No        |      0
+[T13](#time-13)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[T14](#time-14)   | TIMEOUT   | 1 AV      | ERROR     | 3 AV      | No        | No        |      0
 [T15](#time-15)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
-[T16](#time-16)   | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | ERROR     | No        |      0
+[T16](#time-16)   | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        | No        |      0
 [T17](#time-17)   | TIMEOUT   | 1 AV      | TIMEOUT   | 1 AV      | No        | No        |      0
 [T18](#time-18)   | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        | No        |      0
 [T19](#time-19)   | TIMEOUT   | TIMEOUT   | 0 AV      | TIMEOUT   | No        | No        |      0
 [T20](#time-20)   | 0 AV      | 0 AV      | 0 AV      | TIMEOUT   | No        | No        |      0
 [T21](#time-21)   | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
-[T22](#time-22)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | ERROR     | No        |      0
-[T23](#time-23)   | 0 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | ERROR     | No        |      0
+[T22](#time-22)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
+[T23](#time-23)   | 0 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        | No        |      0
 [T24](#time-24)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | ERROR     | ERROR     |      0
-[T25](#time-25)   | 0 AV      | TIMEOUT   | TIMEOUT   | 0 AV      | ERROR     | No        |      0
-[T26](#time-26)   | 0 AV      | 0 AV      | TIMEOUT   | 0 AV      | ERROR     | No        |      0
+[T25](#time-25)   | 0 AV      | TIMEOUT   | TIMEOUT   | 0 AV      | No        | No        |      0
+[T26](#time-26)   | 0 AV      | 0 AV      | TIMEOUT   | 0 AV      | No        | No        |      0
 [T27](#time-27)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | ERROR     | ERROR     |      0
-Total             | 30 (13%)  | 25 (11%)  | 25 (11%)  | 12 (5%)   | 14 (6%)   | 11 (4%)   |    117
-Execution time    | 3 days, 9:25:15.659000 | 3 days, 17:26:42.646000 | 1 day, 20:40:05.778000 | 1 day, 4:27:47.618000 | 6 days, 14:55:17.146000 | 22:58:33.116000 | 33 days, 23:53:41.963000
-Fixed bugs: 49/224 (21%)
+Total             | 30 (13%)  | 25 (11%)  | 25 (11%)  | 12 (5%)   | 18 (8%)   | 11 (4%)   |    121
+Fixed bugs: 51/224 (22%)
 
-Nb bugs ends with an execution error: 110
+Nb bugs ends with an execution error: 61
 
 Nb bugs ends with an empty log: 0
 
 Nb bugs ends with the Grid5000 timeout: 390
 
-Total execution time: 33 days, 23:53:41.963000
+Total execution time: 36 days, 5:18:43.829000
 
 
 
@@ -2474,13 +2474,13 @@ index 81e180c..2769127 100644
 
 ## Genprog 
 
-org.apache.commons.math3.distribution.HypergeometricDistribution:321 (Suspicious rank: ample 4, jaccard 4, ochiai 11, naish1 35409, gp13 4, naish2 4, tarantula 4, )
-INSERT_BEFORE
+org.apache.commons.math3.distribution.AbstractIntegerDistribution:138 (Suspicious rank: ample 17, jaccard 17, ochiai 22, naish1 35438, gp13 17, naish2 17, tarantula 17, )
+DELETE
 ```Java
-numericalVarianceIsCalculated = true
+remove
 ```
 
-Grid5000 node: graphene-50.nancy.grid5000.fr
+Grid5000 node: griffon-35.nancy.grid5000.fr
 
 ## Kali 
 
@@ -2564,7 +2564,7 @@ REPLACE
 return org.apache.commons.math3.complex.Complex.INF
 ```
 
-Grid5000 node: graphene-35.nancy.grid5000.fr
+Grid5000 node: griffon-39.nancy.grid5000.fr
 
 # Math 8
 
@@ -2620,7 +2620,7 @@ DELETE
 remove
 ```
 
-Grid5000 node: graphene-37.nancy.grid5000.fr
+Grid5000 node: griffon-58.nancy.grid5000.fr
 
 ## Kali 
 
@@ -2706,7 +2706,7 @@ index cff5bfd..ee2227c 100644
 ## Genprog 
 
 org.apache.commons.math3.optimization.univariate.BrentOptimizer:241 (Suspicious rank: ample 34, jaccard 34, ochiai 70, naish1 27650, gp13 34, naish2 34, tarantula 34, )
-INSERT_AFTER
+REPLACE
 ```Java
 if (((p > (q * (a - x))) && (p < (q * (b - x)))) && ((org.apache.commons.math3.util.FastMath.abs(p)) < (org.apache.commons.math3.util.FastMath.abs(((0.5 * q) * r))))) {
 	d = p / q;
@@ -2728,7 +2728,7 @@ if (((p > (q * (a - x))) && (p < (q * (b - x)))) && ((org.apache.commons.math3.u
 }
 ```
 
-Grid5000 node: graphene-86.nancy.grid5000.fr
+Grid5000 node: griffon-20.nancy.grid5000.fr
 
 # Math 32
 
@@ -3046,6 +3046,70 @@ Execution time: 0:08:16.074000
 
 Grid5000 node: graphene-46.nancy.grid5000.fr
 
+# Math 44
+
+Nb Executed tests: 3119
+
+Nb Failing tests: 1
+
+>	org.apache.commons.math.ode.events.EventStateTest#testIssue695
+
+## Human Patch 
+
+```Java
+diff --git a/org/apache/commons/math/ode/AbstractIntegrator.java b/org/apache/commons/math/ode/AbstractIntegrator.java
+index 8f315e3..2d878b1 100644
+--- a/org/apache/commons/math/ode/AbstractIntegrator.java
++++ b/org/apache/commons/math/ode/AbstractIntegrator.java
+@@ -40,6 +40,7 @@ import org.apache.commons.math.ode.sampling.AbstractStepInterpolator;
+ import org.apache.commons.math.ode.sampling.StepHandler;
+ import org.apache.commons.math.util.FastMath;
+ import org.apache.commons.math.util.Incrementor;
++import org.apache.commons.math.util.MathUtils;
+ import org.apache.commons.math.util.Precision;
+ 
+ /**
+@@ -277,6 +278,7 @@ public abstract class AbstractIntegrator implements FirstOrderIntegrator {
+ 
+             double previousT = interpolator.getGlobalPreviousTime();
+             final double currentT = interpolator.getGlobalCurrentTime();
++            resetOccurred = false;
+ 
+             // initialize the events states if needed
+             if (! statesInitialized) {
+@@ -330,9 +332,6 @@ public abstract class AbstractIntegrator implements FirstOrderIntegrator {
+                 if (isLastStep) {
+                     // the event asked to stop integration
+                     System.arraycopy(eventY, 0, y, 0, y.length);
+-                    for (final EventState remaining : occuringEvents) {
+-                        remaining.stepAccepted(eventT, eventY);
+-                    }
+                     return eventT;
+                 }
+ 
+@@ -342,9 +341,6 @@ public abstract class AbstractIntegrator implements FirstOrderIntegrator {
+                     System.arraycopy(eventY, 0, y, 0, y.length);
+                     computeDerivatives(eventT, y, yDot);
+                     resetOccurred = true;
+-                    for (final EventState remaining : occuringEvents) {
+-                        remaining.stepAccepted(eventT, eventY);
+-                    }
+                     return eventT;
+                 }
+ 
+
+```
+
+## Genprog 
+
+org.apache.commons.math.ode.AbstractIntegrator:325 (Suspicious rank: ample 36, jaccard 36, ochiai 31, naish1 23846, gp13 36, naish2 36, tarantula 36, )
+INSERT_BEFORE
+```Java
+statesInitialized = false
+```
+
+Grid5000 node: graphene-72.nancy.grid5000.fr
+
 # Math 46
 
 Nb Executed tests: 2997
@@ -3199,6 +3263,16 @@ Execution time: 0:06:35.017000
 
 Grid5000 node: graphene-75.nancy.grid5000.fr
 
+## Genprog 
+
+org.apache.commons.math.util.OpenIntToDoubleHashMap:399 (Suspicious rank: ample 38, jaccard 38, ochiai 44, naish1 23268, gp13 38, naish2 38, tarantula 38, )
+DELETE
+```Java
+remove
+```
+
+Grid5000 node: griffon-11.nancy.grid5000.fr
+
 ## Kali 
 
 org.apache.commons.math.linear.OpenMapRealVector:664 (Suspicious rank: ample 21, jaccard 21, ochiai 20, naish1 23315, gp13 21, naish2 21, tarantula 21, )
@@ -3314,7 +3388,7 @@ DELETE
 remove
 ```
 
-Grid5000 node: graphene-70.nancy.grid5000.fr
+Grid5000 node: griffon-15.nancy.grid5000.fr
 
 ## Kali 
 
@@ -3364,7 +3438,7 @@ if ((isNaN) || (rhs.isNaN)) {
 } 
 ```
 
-Grid5000 node: graphene-80.nancy.grid5000.fr
+Grid5000 node: griffon-20.nancy.grid5000.fr
 
 # Math 57
 
@@ -3590,7 +3664,7 @@ REPLACE
 return solve(f, min, max)
 ```
 
-Grid5000 node: graphene-93.nancy.grid5000.fr
+Grid5000 node: griffon-71.nancy.grid5000.fr
 
 # Math 71
 
@@ -3736,7 +3810,7 @@ INSERT_BEFORE
 pendingEvent = true
 ```
 
-Grid5000 node: graphene-95.nancy.grid5000.fr
+Grid5000 node: griffon-72.nancy.grid5000.fr
 
 # Math 73
 
@@ -3814,7 +3888,7 @@ REPLACE
 return solve(f, min, max)
 ```
 
-Grid5000 node: graphene-99.nancy.grid5000.fr
+Grid5000 node: griffon-77.nancy.grid5000.fr
 
 # Math 78
 
@@ -3912,6 +3986,16 @@ Execution time: 0:02:03.438000
 
 Grid5000 node: graphene-11.nancy.grid5000.fr
 
+## Genprog 
+
+org.apache.commons.math.ode.events.EventState:283 (Suspicious rank: ample 185, jaccard 185, ochiai 182, naish1 16660, gp13 185, naish2 185, tarantula 185, )
+DELETE
+```Java
+remove
+```
+
+Grid5000 node: griffon-73.nancy.grid5000.fr
+
 ## Kali 
 
 org.apache.commons.math.ode.events.EventState:283 (Suspicious rank: ample 185, jaccard 185, ochiai 182, naish1 16660, gp13 185, naish2 185, tarantula 185, )
@@ -3971,7 +4055,7 @@ REPLACE
 g = 0.25 * 0.333
 ```
 
-Grid5000 node: graphene-8.nancy.grid5000.fr
+Grid5000 node: griffon-85.nancy.grid5000.fr
 
 ## Kali 
 
@@ -4163,7 +4247,7 @@ DELETE
 remove
 ```
 
-Grid5000 node: graphene-9.nancy.grid5000.fr
+Grid5000 node: griffon-9.nancy.grid5000.fr
 
 ## Kali 
 
@@ -4366,7 +4450,7 @@ DELETE
 remove
 ```
 
-Grid5000 node: graphene-10.nancy.grid5000.fr
+Grid5000 node: griffon-4.nancy.grid5000.fr
 
 ## Kali 
 
@@ -4377,6 +4461,60 @@ remove
 ```
 
 Grid5000 node: graphene-13.nancy.grid5000.fr
+
+# Math 84
+
+Nb Executed tests: 2054
+
+Nb Failing tests: 2
+
+>	org.apache.commons.math.optimization.direct.MultiDirectionalTest#testMinimizeMaximize
+>	org.apache.commons.math.optimization.direct.MultiDirectionalTest#testMath283
+
+## Human Patch 
+
+```Java
+diff --git a/org/apache/commons/math/optimization/direct/MultiDirectional.java b/org/apache/commons/math/optimization/direct/MultiDirectional.java
+index 929560c..955d0d8 100644
+--- a/org/apache/commons/math/optimization/direct/MultiDirectional.java
++++ b/org/apache/commons/math/optimization/direct/MultiDirectional.java
+@@ -61,7 +60,6 @@ public class MultiDirectional extends DirectSearchOptimizer {
+     protected void iterateSimplex(final Comparator<RealPointValuePair> comparator)
+         throws FunctionEvaluationException, OptimizationException, IllegalArgumentException {
+ 
+-        final RealConvergenceChecker checker = getConvergenceChecker();
+         while (true) {
+ 
+             incrementIterationsCounter();
+@@ -93,16 +91,6 @@ public class MultiDirectional extends DirectSearchOptimizer {
+                 return;
+             }
+ 
+-            // check convergence
+-            final int iter = getIterations();
+-            boolean converged = true;
+-            for (int i = 0; i < simplex.length; ++i) {
+-                converged &= checker.converged(iter, original[i], simplex[i]);
+-            }
+-            if (converged) {
+-                return;
+-            }
+-
+         }
+ 
+     }
+
+```
+
+## Genprog 
+
+org.apache.commons.math.optimization.direct.MultiDirectional:90 (Suspicious rank: ample 16, jaccard 16, ochiai 7, naish1 16169, gp13 16, naish2 16, tarantula 16, )
+REPLACE
+```Java
+return 
+```
+
+Grid5000 node: graphene-1.nancy.grid5000.fr
 
 # Math 85
 
@@ -4473,7 +4611,7 @@ DELETE
 remove
 ```
 
-Grid5000 node: graphene-2.nancy.grid5000.fr
+Grid5000 node: graphene-114.nancy.grid5000.fr
 
 ## Kali 
 
@@ -4772,7 +4910,7 @@ REPLACE
 return denominatorDegreesOfFreedom
 ```
 
-Grid5000 node: graphene-25.nancy.grid5000.fr
+Grid5000 node: graphene-34.nancy.grid5000.fr
 
 ## Kali 
 

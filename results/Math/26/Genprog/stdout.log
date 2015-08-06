@@ -1,27 +1,25 @@
 export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/math/math_26 /tmp/math_26_Genprog;cd /tmp/math_26_Genprog;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
 /home/tdurieux/defects4j-repair/src/python/core/../../../results/Math/26/Genprog/result
-cd /tmp/math_26_Genprog;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java -Xmx8g -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement -location . -dependencies lib/ -failing org.apache.commons.math3.fraction.FractionTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -seed 10 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
+cd /tmp/math_26_Genprog;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java  -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement -location . -dependencies lib/ -failing org.apache.commons.math3.fraction.FractionTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -seed 10 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
 
 Node: `hostname`
 ";echo "
 Date: `date`
 ";rm -rf /tmp/math_26_Genprog;
 
-End Repair Loops: NOT Found solution
-
+2015-08-06 19:24:23,816 INFO main - End Repair Loops: NOT Found solution
+2015-08-06 19:24:23,816 INFO main - 
 Number solutions:0
-
+2015-08-06 19:24:23,816 INFO main - 
 All variants:
-f 1.7976931348623157E308, [Variant id: 1936363, #gens: 0, #ops: 0, parent:-]
---Space: LOCAL
+2015-08-06 19:24:23,816 INFO main - f 1.7976931348623157E308, [Variant id: 1791447, #gens: 0, #ops: 0, parent:-]
+2015-08-06 19:24:23,817 INFO main - --Space: LOCAL
 
-
+2015-08-06 19:24:23,818 INFO main - 
 ----stats: 
-
-spaces navigation: [0]: []
-time val1 [0]: []
-time val2 [0]: []
-#gen: 968181
+2015-08-06 19:24:23,818 INFO main - 
+spaces navigation: [0]: {}
+#gen: 895723
 #patches: 0
 #RightCompilation: 0
 #WrongCompilation: 0
@@ -35,14 +33,15 @@ time val2 [0]: []
 #NotAppliedOp: 0
 #InmutatedGen: 0
 #unfinishValidation: 0
-#ing []
-Time Evolution(ms): 3660001
-Time Total(ms): 4212505
+#ing {}
+#untilcompile {}
+2015-08-06 19:24:23,818 INFO main - Time Evolution(ms): 3660006
+2015-08-06 19:24:23,818 INFO fr.inria.main.AbstractMain - Time Total(ms): 4297748
 
 
-Node: graphene-45.nancy.grid5000.fr
+Node: griffon-23.nancy.grid5000.fr
 
 
-Date: Wed Aug  5 21:04:33 CEST 2015
+Date: Thu Aug  6 21:24:24 CEST 2015
 
 

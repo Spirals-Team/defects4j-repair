@@ -1,0 +1,47 @@
+export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/math/math_45 /tmp/math_45_Genprog;cd /tmp/math_45_Genprog;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
+/home/tdurieux/defects4j-repair/src/python/core/../../../results/Math/45/Genprog/result
+cd /tmp/math_45_Genprog;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java  -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement -location . -dependencies lib/ -failing org.apache.commons.math.linear.OpenMapRealMatrixTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -seed 10 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
+
+Node: `hostname`
+";echo "
+Date: `date`
+";rm -rf /tmp/math_45_Genprog;
+
+2015-08-06 19:12:49,309 INFO main - End Repair Loops: NOT Found solution
+2015-08-06 19:12:49,309 INFO main - 
+Number solutions:0
+2015-08-06 19:12:49,309 INFO main - 
+All variants:
+2015-08-06 19:12:49,309 INFO main - f 1.0, [Variant id: 30455, #gens: 5, #ops: 0, parent:-]
+2015-08-06 19:12:49,309 INFO main - --Space: LOCAL
+org.apache.commons.math.util.OpenIntToDoubleHashMap=171|,
+2015-08-06 19:12:49,309 INFO main - 
+----stats: 
+2015-08-06 19:12:49,309 INFO main - 
+spaces navigation: [26]: {(CtIfImpl| size: 26| notcompiles| LOCAL| REPLACE) =31, (CtLocalVariableImpl| size: 171| notcompiles| LOCAL| INSERT_AFTER) =137, (CtIfImpl| size: 171| alreadyanalyzed| LOCAL| INSERT_AFTER) =764221, (CtReturnImpl| size: 171| compiles| LOCAL| INSERT_BEFORE) =62, (CtLocalVariableImpl| size: 171| alreadyanalyzed| LOCAL| INSERT_BEFORE) =754753, (CtReturnImpl| size: 171| notcompiles| LOCAL| INSERT_AFTER) =66, (CtReturnImpl| size: 171| alreadyanalyzed| LOCAL| INSERT_BEFORE) =379300, (CtLocalVariableImpl| size: 171| notcompiles| LOCAL| INSERT_BEFORE) =137, (CtReturnImpl| size: 36| notcompiles| LOCAL| REPLACE) =16, (CtReturnImpl| size: 171| compiles| LOCAL| INSERT_AFTER) =62, (CtIfImpl| size: 26| alreadyanalyzed| LOCAL| REPLACE) =118681, (CtIfImpl| size: 171| compiles| LOCAL| INSERT_AFTER) =120, (CtIfImpl| size: 171| notcompiles| LOCAL| INSERT_BEFORE) =136, (CtLocalVariableImpl| size: 171| compiles| LOCAL| INSERT_AFTER) =118, (CtIfImpl| size: 171| compiles| LOCAL| INSERT_BEFORE) =120, (CtIfImpl| size: 26| compiles| LOCAL| REPLACE) =3, (CtIfImpl| size: 171| notcompiles| LOCAL| INSERT_AFTER) =136, (CtReturnImpl| size: 171| notcompiles| LOCAL| INSERT_BEFORE) =66, (CtLocalVariableImpl| size: 171| alreadyanalyzed| LOCAL| INSERT_AFTER) =746685, (CtIfImpl| size: 171| alreadyanalyzed| LOCAL| INSERT_BEFORE) =738221, (CtReturnImpl| size: 171| alreadyanalyzed| LOCAL| INSERT_AFTER) =390166, (CtReturnImpl| size: 36| compiles| LOCAL| REPLACE) =8, (CtLocalVariableImpl| size: 171| compiles| LOCAL| INSERT_BEFORE) =118, (CtReturnImpl| size: 36| alreadyanalyzed| LOCAL| REPLACE) =79539, (CtLocalVariableImpl| size: 34| compiles| LOCAL| REPLACE) =49, (CtLocalVariableImpl| size: 34| alreadyanalyzed| LOCAL| REPLACE) =154169}
+#gen: 15227
+#patches: 0
+#RightCompilation: 6722
+#WrongCompilation: 5068
+#FailingTestCaseExecution: 6723
+#RegressionTestExecution: 0
+#TestcasesExecutedval1: 6723
+#TestcasesExecutedval2: 0
+#FailingTestCase: 1
+#RegressionTestCases: 0
+#OfAppliedOp: 11790
+#NotAppliedOp: 0
+#InmutatedGen: 33344
+#unfinishValidation: 0
+#ing {CtLocalVariableImpl=18023, CtReturnImpl=9069, CtIfImpl=18042}
+#untilcompile {275=8, 1=103, 2=85, 549=89, 3=59, 4=44, 547=199, 5=30, 6=34, 7=13, 8=16, 9=14, 10=9, 11=10, 12=4, 13=5, 14=6, 15=5, 17=1, 259=12, 16=4, 565=109, 19=1, 18=2, 257=20, 21=3, 20=4, 23=1, 22=3, 575=218, 25=2, 267=43, 24=1, 573=444, 27=17, 265=21, 26=409, 29=8, 28=8, 31=3, 30=5, 34=386, 35=9, 32=1, 33=2, 38=10, 513=431, 39=5, 36=191, 515=1, 37=18, 42=5, 43=2, 40=3, 41=4, 47=3, 44=3, 45=2, 51=1, 50=1, 49=2, 291=24, 55=2, 293=51, 53=1, 52=24, 57=3, 56=1, 63=1, 301=58, 62=43, 539=198, 61=7, 60=95, 68=25, 343=1, 342=880, 70=48, 71=5, 64=3, 65=3, 67=1, 77=1, 78=1, 79=1, 72=1, 346=1, 344=1, 84=2, 86=15, 80=1, 83=1, 92=1, 95=1, 94=10, 88=3, 373=1, 100=1, 101=1, 374=1, 855=453, 98=2, 368=289, 581=111, 96=24, 583=218, 97=1, 376=256, 104=4, 378=123, 105=1, 357=1, 114=1, 125=2, 360=1, 122=4, 362=1, 120=3, 410=37, 408=1, 684=210, 140=1, 412=82, 402=128, 130=11, 132=2, 404=64, 152=1, 394=35, 155=1, 156=14, 145=1, 171=1786, 174=1, 446=62, 172=1, 436=111, 166=1, 438=221, 428=125, 188=1, 430=60, 183=1, 205=377, 207=181, 197=378, 198=1, 223=38, 218=1, 213=1, 210=1, 239=31, 233=60, 718=491, 231=129, 710=448, 250=1, 720=219, 242=1, 243=1, 241=59}
+2015-08-06 19:12:49,309 INFO main - Time Evolution(ms): 3660006
+2015-08-06 19:12:49,309 INFO fr.inria.main.AbstractMain - Time Total(ms): 3837326
+
+
+Node: graphene-85.nancy.grid5000.fr
+
+
+Date: Thu Aug  6 21:12:49 CEST 2015
+
+

@@ -1,23 +1,23 @@
 export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/math/math_8 /tmp/math_8_Genprog;cd /tmp/math_8_Genprog;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
 /home/tdurieux/defects4j-repair/src/python/core/../../../results/Math/8/Genprog/result
-cd /tmp/math_8_Genprog;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java -Xmx8g -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement -location . -dependencies lib/ -failing org.apache.commons.math3.distribution.DiscreteRealDistributionTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -seed 10 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
+cd /tmp/math_8_Genprog;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java  -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement -location . -dependencies lib/ -failing org.apache.commons.math3.distribution.DiscreteRealDistributionTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -seed 10 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
 
 Node: `hostname`
 ";echo "
 Date: `date`
 ";rm -rf /tmp/math_8_Genprog;
 
-End Repair Loops: Found solution
-Solution stored at: ./outputMutation//MainjGenProg-.//src/
-
+2015-08-06 19:30:20,907 INFO main - End Repair Loops: Found solution
+2015-08-06 19:30:20,907 INFO main - Solution stored at: ./outputMutation//MainjGenProg-.//src/
+2015-08-06 19:30:20,907 INFO main - 
 Number solutions:1
-f (sol): 0.0, [Variant id: 6 (SOL) , #gens: 23, #ops: 1, parent:5]
-
+2015-08-06 19:30:20,907 INFO main - f (sol): 0.0, [Variant id: 6 (SOL) , #gens: 23, #ops: 1, parent:5]
+2015-08-06 19:30:20,907 INFO main - 
 All variants:
-f 1.0, [Variant id: 7, #gens: 24, #ops: 0, parent:-]
-
+2015-08-06 19:30:20,907 INFO main - f 1.0, [Variant id: 7, #gens: 24, #ops: 0, parent:-]
+2015-08-06 19:30:20,907 INFO main - 
 Solution details
-
+2015-08-06 19:30:20,907 INFO main - 
  --SOLUTIONS DESCRIPTION--
 
  ----
@@ -31,14 +31,12 @@ fixed statement= out[i] = sample()
 generation= 3
 ingredientScope= -
  
---Space: LOCAL
-org.apache.commons.math3.util.MathArrays=373|CtLocalVariableImpl:163;CtForImpl:32;CtSwitchImpl:3;CtAssignmentImpl:27;CtReturnImpl:47;CtOperatorAssignmentImpl:15;CtInvocationImpl:12;CtThrowImpl:17;CtBreakImpl:4;CtIfImpl:53;,org.apache.commons.math3.distribution.DiscreteDistribution=35|CtLocalVariableImpl:7;CtForImpl:5;CtReturnImpl:5;CtAssignmentImpl:5;CtOperatorAssignmentImpl:2;CtInvocationImpl:5;CtThrowImpl:2;CtIfImpl:4;,
-
+2015-08-06 19:30:20,908 INFO main - --Space: LOCAL
+org.apache.commons.math3.util.MathArrays=373|,org.apache.commons.math3.distribution.DiscreteDistribution=35|,
+2015-08-06 19:30:20,908 INFO main - 
 ----stats: 
-
-spaces navigation: [1]: [(id:4| CtOperatorAssignmentImpl| size: 35| notcompiles| LOCAL) ]
-time val1 [3]: [274, 276, 304]
-time val2 [1]: [153630]
+2015-08-06 19:30:20,908 INFO main - 
+spaces navigation: [1]: {(CtOperatorAssignmentImpl| size: 35| compiles| LOCAL| INSERT_BEFORE) =1}
 #gen: 3
 #patches: 1
 #RightCompilation: 2
@@ -53,14 +51,15 @@ time val2 [1]: [153630]
 #NotAppliedOp: 0
 #InmutatedGen: 0
 #unfinishValidation: 0
-#ing [CtIfImpl, CtOperatorAssignmentImpl, CtAssignmentImpl]
-Time Evolution(ms): 155834
-Time Total(ms): 1018642
+#ing {CtAssignmentImpl=1, CtOperatorAssignmentImpl=1, CtIfImpl=1}
+#untilcompile {1=1}
+2015-08-06 19:30:20,908 INFO main - Time Evolution(ms): 186832
+2015-08-06 19:30:20,908 INFO fr.inria.main.AbstractMain - Time Total(ms): 1179193
 
 
-Node: graphene-37.nancy.grid5000.fr
+Node: griffon-58.nancy.grid5000.fr
 
 
-Date: Wed Aug  5 20:13:42 CEST 2015
+Date: Thu Aug  6 21:30:21 CEST 2015
 
 

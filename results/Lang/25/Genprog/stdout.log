@@ -1,0 +1,47 @@
+export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/lang/lang_25 /tmp/lang_25_Genprog;cd /tmp/lang_25_Genprog;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Lang/lib/* lib/;find . -type f -name "package-info.java" -delete;
+/home/tdurieux/defects4j-repair/src/python/core/../../../results/Lang/25/Genprog/result
+cd /tmp/lang_25_Genprog;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java  -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement -location . -dependencies lib/ -failing org.apache.commons.lang3.text.translate.EntityArraysTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -seed 10 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
+
+Node: `hostname`
+";echo "
+Date: `date`
+";rm -rf /tmp/lang_25_Genprog;
+
+2015-08-06 20:51:36,311 INFO main - End Repair Loops: NOT Found solution
+2015-08-06 20:51:36,311 INFO main - 
+Number solutions:0
+2015-08-06 20:51:36,311 INFO main - 
+All variants:
+2015-08-06 20:51:36,311 INFO main - f 157.0, [Variant id: 306251, #gens: 1, #ops: 0, parent:-]
+2015-08-06 20:51:36,311 INFO main - --Space: LOCAL
+org.apache.commons.lang3.text.translate.EntityArrays=16|,
+2015-08-06 20:51:36,311 INFO main - 
+----stats: 
+2015-08-06 20:51:36,311 INFO main - 
+spaces navigation: [8]: {(CtReturnImpl| size: 16| compiles| LOCAL| INSERT_BEFORE) =2, (CtReturnImpl| size: 16| notcompiles| LOCAL| INSERT_BEFORE) =4, (CtReturnImpl| size: 16| alreadyanalyzed| LOCAL| INSERT_BEFORE) =610510, (CtReturnImpl| size: 16| alreadyanalyzed| LOCAL| INSERT_AFTER) =622197, (CtReturnImpl| size: 11| alreadyanalyzed| LOCAL| REPLACE) =420067, (CtReturnImpl| size: 16| compiles| LOCAL| INSERT_AFTER) =2, (CtReturnImpl| size: 16| notcompiles| LOCAL| INSERT_AFTER) =4, (CtReturnImpl| size: 11| notcompiles| LOCAL| REPLACE) =1}
+#gen: 153125
+#patches: 0
+#RightCompilation: 2
+#WrongCompilation: 37892
+#FailingTestCaseExecution: 3
+#RegressionTestExecution: 1
+#TestcasesExecutedval1: 9
+#TestcasesExecutedval2: 1821
+#FailingTestCase: 3
+#RegressionTestCases: 1821
+#OfAppliedOp: 37894
+#NotAppliedOp: 0
+#InmutatedGen: 115231
+#unfinishValidation: 0
+#ing {CtReturnImpl=153125}
+#untilcompile {16=77043, 1=1, 7=1, 10=1, 11=38188, 13=1}
+2015-08-06 20:51:36,312 INFO main - Time Evolution(ms): 3660004
+2015-08-06 20:51:36,312 INFO fr.inria.main.AbstractMain - Time Total(ms): 3692919
+
+
+Node: griffon-72.nancy.grid5000.fr
+
+
+Date: Thu Aug  6 22:51:36 CEST 2015
+
+

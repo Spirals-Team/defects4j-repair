@@ -1,0 +1,34 @@
+{
+    "FailingTestCase": "2", 
+    "FailingTestCaseExecution": "159", 
+    "InmutatedGen": "10", 
+    "NotAppliedOp": "0", 
+    "OfAppliedOp": "316", 
+    "RegressionTestCases": "2988", 
+    "RegressionTestExecution": "2", 
+    "RightCompilation": "158", 
+    "WrongCompilation": "158", 
+    "date": "Thu Aug  6 20:19:13 CEST 2015\n\n", 
+    "gen": "316", 
+    "gens": "282", 
+    "node": "graphene-72.nancy.grid5000.fr", 
+    "operations": [
+        {
+            "buggyStatement": "isLastStep = currentEvent.stop()", 
+            "generation": 316, 
+            "patch": "statesInitialized = false", 
+            "patchLocation": {
+                "className": "org.apache.commons.math.ode.AbstractIntegrator", 
+                "line": 325
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 632
+        }
+    ], 
+    "ops": "0", 
+    "patches": "1", 
+    "programVariant": "632", 
+    "timeEvaluation": "379713", 
+    "timeTotal": "618164", 
+    "unfinishValidation": "0"
+}

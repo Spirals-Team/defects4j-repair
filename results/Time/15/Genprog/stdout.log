@@ -1,0 +1,47 @@
+export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/time/time_15 /tmp/time_15_Genprog;cd /tmp/time_15_Genprog;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Time/lib/* lib/;find . -type f -name "package-info.java" -delete;
+/home/tdurieux/defects4j-repair/src/python/core/../../../results/Time/15/Genprog/result
+cd /tmp/time_15_Genprog;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java  -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement -location . -dependencies lib/ -failing org.joda.time.field.TestFieldUtils: -package org.joda -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -seed 10 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder build/classes/ -bintestfolder build/tests/;echo "
+
+Node: `hostname`
+";echo "
+Date: `date`
+";rm -rf /tmp/time_15_Genprog;
+
+2015-08-06 18:07:44,529 INFO main - End Repair Loops: NOT Found solution
+2015-08-06 18:07:44,529 INFO main - 
+Number solutions:0
+2015-08-06 18:07:44,529 INFO main - 
+All variants:
+2015-08-06 18:07:44,529 INFO main - f 1.0, [Variant id: 64249, #gens: 4, #ops: 0, parent:-]
+2015-08-06 18:07:44,529 INFO main - --Space: LOCAL
+org.joda.time.field.FieldUtils=62|,org.joda.time.Duration=52|,org.joda.time.DateTimeUtils=76|,
+2015-08-06 18:07:44,529 INFO main - 
+----stats: 
+2015-08-06 18:07:44,529 INFO main - 
+spaces navigation: [26]: {(CtReturnImpl| size: 76| alreadyanalyzed| LOCAL| INSERT_BEFORE) =406513, (CtReturnImpl| size: 76| notcompiles| LOCAL| INSERT_BEFORE) =38, (CtReturnImpl| size: 76| compiles| LOCAL| INSERT_AFTER) =21, (CtIfImpl| size: 52| alreadyanalyzed| LOCAL| INSERT_AFTER) =283722, (CtReturnImpl| size: 52| compiles| LOCAL| INSERT_AFTER) =9, (CtReturnImpl| size: 52| alreadyanalyzed| LOCAL| INSERT_AFTER) =285727, (CtIfImpl| size: 52| notcompiles| LOCAL| INSERT_BEFORE) =30, (CtIfImpl| size: 10| notcompiles| LOCAL| REPLACE) =8, (CtIfImpl| size: 52| notcompiles| LOCAL| INSERT_AFTER) =30, (CtReturnImpl| size: 52| alreadyanalyzed| LOCAL| INSERT_BEFORE) =286028, (CtReturnImpl| size: 76| notcompiles| LOCAL| INSERT_AFTER) =38, (CtIfImpl| size: 52| compiles| LOCAL| INSERT_AFTER) =9, (CtReturnImpl| size: 76| compiles| LOCAL| INSERT_BEFORE) =21, (CtReturnImpl| size: 26| alreadyanalyzed| LOCAL| REPLACE) =140097, (CtReturnImpl| size: 52| notcompiles| LOCAL| INSERT_BEFORE) =24, (CtReturnImpl| size: 26| notcompiles| LOCAL| REPLACE) =10, (CtReturnImpl| size: 32| notcompiles| LOCAL| REPLACE) =13, (CtReturnImpl| size: 32| alreadyanalyzed| LOCAL| REPLACE) =172252, (CtReturnImpl| size: 52| compiles| LOCAL| INSERT_BEFORE) =9, (CtReturnImpl| size: 76| alreadyanalyzed| LOCAL| INSERT_AFTER) =412543, (CtIfImpl| size: 52| alreadyanalyzed| LOCAL| INSERT_BEFORE) =278203, (CtReturnImpl| size: 26| compiles| LOCAL| REPLACE) =8, (CtIfImpl| size: 52| compiles| LOCAL| INSERT_BEFORE) =9, (CtIfImpl| size: 10| alreadyanalyzed| LOCAL| REPLACE) =55632, (CtReturnImpl| size: 32| compiles| LOCAL| REPLACE) =2, (CtReturnImpl| size: 52| notcompiles| LOCAL| INSERT_AFTER) =24}
+#gen: 32124
+#patches: 0
+#RightCompilation: 5450
+#WrongCompilation: 16659
+#FailingTestCaseExecution: 5451
+#RegressionTestExecution: 0
+#TestcasesExecutedval1: 27255
+#TestcasesExecutedval2: 0
+#FailingTestCase: 5
+#RegressionTestCases: 0
+#OfAppliedOp: 22109
+#NotAppliedOp: 0
+#InmutatedGen: 65530
+#unfinishValidation: 0
+#ing {CtReturnImpl=65816, CtIfImpl=21823}
+#untilcompile {1=10, 2=10, 3=4, 138=1664, 4=3, 5=2, 6=6, 7=4, 8=1, 128=1433, 9=1, 10=755, 11=3, 130=1572, 12=1, 13=3, 14=1, 17=1, 16=2, 19=2, 24=2, 27=2, 26=732, 34=4, 35=2, 32=731, 33=1, 38=1, 174=1, 36=149, 42=190, 160=1549, 50=1, 55=2, 54=1, 52=3102, 59=1, 58=141, 57=1, 62=359, 61=1, 180=3141, 68=448, 69=1, 67=1, 76=1483, 78=741, 84=392, 86=366, 88=820, 90=2, 110=785, 108=328, 104=757, 118=809, 112=1, 126=1}
+2015-08-06 18:07:44,530 INFO main - Time Evolution(ms): 3660023
+2015-08-06 18:07:44,530 INFO fr.inria.main.AbstractMain - Time Total(ms): 3701945
+
+
+Node: griffon-39.nancy.grid5000.fr
+
+
+Date: Thu Aug  6 20:07:45 CEST 2015
+
+

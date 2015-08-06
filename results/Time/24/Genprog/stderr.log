@@ -1,23 +1,62 @@
 Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
-java.lang.NullPointerException
-	at fr.inria.astor.core.manipulation.sourcecode.VariableResolver.compatiblesSubType(VariableResolver.java:109)
-	at fr.inria.astor.core.manipulation.sourcecode.VariableResolver.matchVariable(VariableResolver.java:74)
-	at fr.inria.astor.core.manipulation.sourcecode.VariableResolver.fitInPlace(VariableResolver.java:153)
-	at fr.inria.astor.core.manipulation.sourcecode.VariableResolver.fitInPlace(VariableResolver.java:204)
-	at fr.inria.astor.core.loop.evolutionary.JGenProg.getFixIngredient(JGenProg.java:321)
-	at fr.inria.astor.core.loop.evolutionary.JGenProg.getFixIngredient(JGenProg.java:274)
-	at fr.inria.astor.core.loop.evolutionary.JGenProg.createOperationForGen(JGenProg.java:210)
-	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.modifyProgramVariant(EvolutionaryEngine.java:501)
-	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.createNewProgramVariant(EvolutionaryEngine.java:416)
-	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.processGenerations(EvolutionaryEngine.java:226)
-	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.startEvolution(EvolutionaryEngine.java:125)
-	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:200)
-	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:234)
-Exception in thread "main" java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:86)
-	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:203)
-	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:234)
+java.lang.IllegalArgumentException: The validation process does not execute well the test cases
+ Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
+Exception in thread "main" java.lang.ExceptionInInitializerError
+	at org.joda.time.format.TestDateTimeFormatter.<clinit>(TestDateTimeFormatter.java:53)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:191)
+	at fr.inria.astor.junitexec.JUnitTestExecutor.main(JUnitTestExecutor.java:106)
+Caused by: org.joda.time.IllegalFieldValueException: Value 1061999921 for weekyear must be in the range [-292275054,292278993]
+	at org.joda.time.field.FieldUtils.verifyValueBounds(FieldUtils.java:215)
+	at org.joda.time.chrono.BasicWeekyearDateTimeField.set(BasicWeekyearDateTimeField.java:56)
+	at org.joda.time.chrono.BasicWeekyearDateTimeField.add(BasicWeekyearDateTimeField.java:26)
+	at org.joda.time.field.BaseDateTimeField.roundCeiling(BaseDateTimeField.java:888)
+	at org.joda.time.chrono.GJChronology.assemble(GJChronology.java:230)
+	at org.joda.time.chrono.AssembledChronology.setFields(AssembledChronology.java:323)
+	at org.joda.time.chrono.AssembledChronology.<init>(AssembledChronology.java:102)
+	at org.joda.time.chrono.GJChronology.<init>(GJChronology.java:90)
+	at org.joda.time.chrono.GJChronology.getInstance(GJChronology.java:60)
+	at org.joda.time.chrono.GJChronology.getInstance(GJChronology.java:35)
+	at org.joda.time.chrono.BuddhistChronology.getInstance(BuddhistChronology.java:110)
+	at org.joda.time.chrono.BuddhistChronology.<clinit>(BuddhistChronology.java:74)
+	... 4 more
 
-real	0m47.146s
-user	1m19.625s
-sys	0m1.596s
+	at fr.inria.astor.core.validation.executors.JUnitExecutorProcess.getTestResult(JUnitExecutorProcess.java:130)
+	at fr.inria.astor.core.validation.executors.JUnitExecutorProcess.execute(JUnitExecutorProcess.java:78)
+	at fr.inria.astor.core.validation.executors.JUnitExecutorProcess.execute(JUnitExecutorProcess.java:34)
+	at fr.inria.astor.core.validation.validators.ProcessValidator.validate(ProcessValidator.java:58)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.validateInstance(EvolutionaryEngine.java:763)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.processCreatedVariant(EvolutionaryEngine.java:367)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.processGenerations(EvolutionaryEngine.java:233)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.startEvolution(EvolutionaryEngine.java:125)
+	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:198)
+	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
+Exception in thread "main" java.lang.AssertionError: The validation process does not execute well the test cases
+ Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
+Exception in thread "main" java.lang.ExceptionInInitializerError
+	at org.joda.time.format.TestDateTimeFormatter.<clinit>(TestDateTimeFormatter.java:53)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:191)
+	at fr.inria.astor.junitexec.JUnitTestExecutor.main(JUnitTestExecutor.java:106)
+Caused by: org.joda.time.IllegalFieldValueException: Value 1061999921 for weekyear must be in the range [-292275054,292278993]
+	at org.joda.time.field.FieldUtils.verifyValueBounds(FieldUtils.java:215)
+	at org.joda.time.chrono.BasicWeekyearDateTimeField.set(BasicWeekyearDateTimeField.java:56)
+	at org.joda.time.chrono.BasicWeekyearDateTimeField.add(BasicWeekyearDateTimeField.java:26)
+	at org.joda.time.field.BaseDateTimeField.roundCeiling(BaseDateTimeField.java:888)
+	at org.joda.time.chrono.GJChronology.assemble(GJChronology.java:230)
+	at org.joda.time.chrono.AssembledChronology.setFields(AssembledChronology.java:323)
+	at org.joda.time.chrono.AssembledChronology.<init>(AssembledChronology.java:102)
+	at org.joda.time.chrono.GJChronology.<init>(GJChronology.java:90)
+	at org.joda.time.chrono.GJChronology.getInstance(GJChronology.java:60)
+	at org.joda.time.chrono.GJChronology.getInstance(GJChronology.java:35)
+	at org.joda.time.chrono.BuddhistChronology.getInstance(BuddhistChronology.java:110)
+	at org.joda.time.chrono.BuddhistChronology.<clinit>(BuddhistChronology.java:74)
+	... 4 more
+
+	at org.junit.Assert.fail(Assert.java:88)
+	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:201)
+	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
+
+real	5m28.568s
+user	6m41.813s
+sys	0m8.301s
