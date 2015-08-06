@@ -1,2 +1,35 @@
 Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
-## OAR [2015-08-04 18:20:54] Job 2119 KILLED ##
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+	at java.util.Arrays.copyOfRange(Arrays.java:2694)
+	at java.lang.String.<init>(String.java:203)
+	at java.lang.StringBuilder.toString(StringBuilder.java:405)
+	at ch.qos.logback.core.pattern.PatternLayoutBase.writeLoopOnConverters(PatternLayoutBase.java:122)
+	at ch.qos.logback.classic.PatternLayout.doLayout(PatternLayout.java:168)
+	at ch.qos.logback.classic.PatternLayout.doLayout(PatternLayout.java:59)
+	at ch.qos.logback.core.encoder.LayoutWrappingEncoder.doEncode(LayoutWrappingEncoder.java:134)
+	at ch.qos.logback.core.OutputStreamAppender.writeOut(OutputStreamAppender.java:188)
+	at ch.qos.logback.core.OutputStreamAppender.subAppend(OutputStreamAppender.java:212)
+	at ch.qos.logback.core.OutputStreamAppender.append(OutputStreamAppender.java:103)
+	at ch.qos.logback.core.UnsynchronizedAppenderBase.doAppend(UnsynchronizedAppenderBase.java:88)
+	at ch.qos.logback.core.spi.AppenderAttachableImpl.appendLoopOnAppenders(AppenderAttachableImpl.java:48)
+	at ch.qos.logback.classic.Logger.appendLoopOnAppenders(Logger.java:272)
+	at ch.qos.logback.classic.Logger.callAppenders(Logger.java:259)
+	at ch.qos.logback.classic.Logger.buildLoggingEventAndAppend(Logger.java:441)
+	at ch.qos.logback.classic.Logger.filterAndLog_0_Or3Plus(Logger.java:395)
+	at ch.qos.logback.classic.Logger.debug(Logger.java:502)
+	at fr.inria.lille.spirals.repair.synthesizer.collect.DataCombiner.addExpressionIn(DataCombiner.java:172)
+	at fr.inria.lille.spirals.repair.synthesizer.collect.DataCombiner.combineExpressionOperator(DataCombiner.java:110)
+	at fr.inria.lille.spirals.repair.synthesizer.collect.DataCombiner.combinePrimitives(DataCombiner.java:84)
+	at fr.inria.lille.spirals.repair.synthesizer.collect.DataCombiner.combine(DataCombiner.java:31)
+	at fr.inria.lille.spirals.repair.synthesizer.SynthesizerImpl.combineValues(SynthesizerImpl.java:459)
+	at fr.inria.lille.spirals.repair.synthesizer.SynthesizerImpl.run(SynthesizerImpl.java:106)
+	at fr.inria.lille.repair.nopol.synth.brutpol.BrutSynthesizer.buildPatch(BrutSynthesizer.java:125)
+	at fr.inria.lille.repair.nopol.NoPol.solveWithMultipleBuild(NoPol.java:178)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:120)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:90)
+	at fr.inria.lille.repair.nopol.NoPolLauncher.launch(NoPolLauncher.java:85)
+	at fr.inria.lille.repair.Main.main(Main.java:59)
+
+real	84m31.187s
+user	279m29.480s
+sys	1m26.925s

@@ -164,4 +164,25 @@ Exception in thread "Thread-105" java.lang.NullPointerException
 	at org.joda.time.tz.DateTimeZoneBuilder.toDateTimeZone(DateTimeZoneBuilder.java:176)
 	at org.joda.time.tz.TestCompiler$1.run(TestCompiler.java:94)
 	at java.lang.Thread.run(Thread.java:745)
-## OAR [2015-08-04 13:06:58] Job 2005 KILLED ##
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+	at java.util.HashMap.createEntry(HashMap.java:897)
+	at java.util.HashMap.addEntry(HashMap.java:884)
+	at java.util.HashMap.put(HashMap.java:505)
+	at java.util.HashSet.add(HashSet.java:217)
+	at fr.inria.lille.spirals.repair.commons.Candidates.addToCache(Candidates.java:129)
+	at fr.inria.lille.spirals.repair.commons.Candidates.addToCache(Candidates.java:121)
+	at fr.inria.lille.spirals.repair.commons.Candidates.add(Candidates.java:35)
+	at fr.inria.lille.spirals.repair.commons.Candidates.addAll(Candidates.java:74)
+	at fr.inria.lille.spirals.repair.synthesizer.collect.DataCombiner.combine(DataCombiner.java:38)
+	at fr.inria.lille.spirals.repair.synthesizer.SynthesizerImpl.combineValues(SynthesizerImpl.java:459)
+	at fr.inria.lille.spirals.repair.synthesizer.SynthesizerImpl.run(SynthesizerImpl.java:106)
+	at fr.inria.lille.repair.nopol.synth.brutpol.BrutSynthesizer.buildPatch(BrutSynthesizer.java:125)
+	at fr.inria.lille.repair.nopol.NoPol.solveWithMultipleBuild(NoPol.java:178)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:120)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:90)
+	at fr.inria.lille.repair.nopol.NoPolLauncher.launch(NoPolLauncher.java:85)
+	at fr.inria.lille.repair.Main.main(Main.java:59)
+
+real	38m11.057s
+user	123m14.942s
+sys	1m53.935s

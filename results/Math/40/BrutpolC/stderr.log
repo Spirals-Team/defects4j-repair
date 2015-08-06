@@ -1,2 +1,21 @@
 Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
-## OAR [2015-08-04 18:07:49] Job 2109 KILLED ##
+Exception in thread "main" java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at java.util.Arrays.copyOfRange(Arrays.java:2694)
+	at java.lang.String.<init>(String.java:203)
+	at java.lang.StringBuilder.toString(StringBuilder.java:405)
+	at fr.inria.lille.spirals.repair.synthesizer.collect.DataCombiner.addExpressionIn(DataCombiner.java:172)
+	at fr.inria.lille.spirals.repair.synthesizer.collect.DataCombiner.combineExpressionOperator(DataCombiner.java:97)
+	at fr.inria.lille.spirals.repair.synthesizer.collect.DataCombiner.combinePrimitives(DataCombiner.java:84)
+	at fr.inria.lille.spirals.repair.synthesizer.collect.DataCombiner.combine(DataCombiner.java:31)
+	at fr.inria.lille.spirals.repair.synthesizer.SynthesizerImpl.combineValues(SynthesizerImpl.java:459)
+	at fr.inria.lille.spirals.repair.synthesizer.SynthesizerImpl.run(SynthesizerImpl.java:106)
+	at fr.inria.lille.repair.nopol.synth.brutpol.BrutSynthesizer.buildPatch(BrutSynthesizer.java:125)
+	at fr.inria.lille.repair.nopol.NoPol.solveWithMultipleBuild(NoPol.java:178)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:120)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:90)
+	at fr.inria.lille.repair.nopol.NoPolLauncher.launch(NoPolLauncher.java:85)
+	at fr.inria.lille.repair.Main.main(Main.java:59)
+
+real	54m28.179s
+user	212m51.322s
+sys	4m1.687s

@@ -18,4 +18,55 @@ com.sun.jdi.ClassNotLoadedException: Class org.apache.commons.math.linear.ArrayR
 	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:90)
 	at fr.inria.lille.repair.nopol.NoPolLauncher.launch(NoPolLauncher.java:85)
 	at fr.inria.lille.repair.Main.main(Main.java:59)
-## OAR [2015-08-04 16:07:19] Job 2069 KILLED ##
+com.sun.jdi.ClassNotLoadedException: Class org.apache.commons.math.linear.ArrayRealVector[] not loaded
+	at com.sun.tools.jdi.ClassLoaderReferenceImpl.findType(ClassLoaderReferenceImpl.java:106)
+	at com.sun.tools.jdi.ReferenceTypeImpl.findType(ReferenceTypeImpl.java:1156)
+	at com.sun.tools.jdi.FieldImpl.findType(FieldImpl.java:73)
+	at com.sun.tools.jdi.FieldImpl.type(FieldImpl.java:68)
+	at fr.inria.lille.spirals.repair.synthesizer.collect.factory.ExpressionFacotry.create(ExpressionFacotry.java:59)
+	at fr.inria.lille.spirals.repair.synthesizer.collect.DataCollector.collectFields(DataCollector.java:173)
+	at fr.inria.lille.spirals.repair.synthesizer.collect.DataCollector.collect(DataCollector.java:134)
+	at fr.inria.lille.spirals.repair.synthesizer.collect.DataCollector.collect(DataCollector.java:95)
+	at fr.inria.lille.spirals.repair.synthesizer.SynthesizerImpl.collectValues(SynthesizerImpl.java:336)
+	at fr.inria.lille.spirals.repair.synthesizer.SynthesizerImpl.processBreakPointEvents(SynthesizerImpl.java:227)
+	at fr.inria.lille.spirals.repair.synthesizer.SynthesizerImpl.processVMEvents(SynthesizerImpl.java:131)
+	at fr.inria.lille.spirals.repair.synthesizer.SynthesizerImpl.run(SynthesizerImpl.java:104)
+	at fr.inria.lille.repair.nopol.synth.brutpol.BrutSynthesizer.buildPatch(BrutSynthesizer.java:125)
+	at fr.inria.lille.repair.nopol.NoPol.solveWithMultipleBuild(NoPol.java:178)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:120)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:90)
+	at fr.inria.lille.repair.nopol.NoPolLauncher.launch(NoPolLauncher.java:85)
+	at fr.inria.lille.repair.Main.main(Main.java:59)
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+	at java.util.Arrays.copyOf(Arrays.java:2219)
+	at java.util.ArrayList.toArray(ArrayList.java:358)
+	at java.util.ArrayList.addAll(ArrayList.java:559)
+	at fr.inria.lille.spirals.repair.synthesizer.collect.DataCombiner.combine(DataCombiner.java:31)
+	at fr.inria.lille.spirals.repair.synthesizer.SynthesizerImpl.combineValues(SynthesizerImpl.java:459)
+	at fr.inria.lille.spirals.repair.synthesizer.SynthesizerImpl.run(SynthesizerImpl.java:106)
+	at fr.inria.lille.repair.nopol.synth.brutpol.BrutSynthesizer.buildPatch(BrutSynthesizer.java:125)
+	at fr.inria.lille.repair.nopol.NoPol.solveWithMultipleBuild(NoPol.java:178)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:120)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:90)
+	at fr.inria.lille.repair.nopol.NoPolLauncher.launch(NoPolLauncher.java:85)
+	at fr.inria.lille.repair.Main.main(Main.java:59)
+
+real	47m52.307s
+user	96m30.462s
+sys	3m27.281s
+Traceback (most recent call last):
+  File "/home/tdurieux/defects4j-repair/src/python/core/../defects4j-g5k-node.py", line 57, in <module>
+    tool.run(project, id)
+  File "/home/tdurieux/defects4j-repair/src/python/core/tools/BrutpolC.py", line 13, in run
+    self.parseLog(slittedLog[1], project, id)
+  File "/home/tdurieux/defects4j-repair/src/python/core/tools/Nopol.py", line 71, in parseLog
+    node = self.getHostname()
+  File "/home/tdurieux/defects4j-repair/src/python/core/Tool.py", line 40, in getHostname
+    return subprocess.check_output(cmd, shell=True)
+  File "/usr/lib/python2.7/subprocess.py", line 537, in check_output
+    process = Popen(stdout=PIPE, *popenargs, **kwargs)
+  File "/usr/lib/python2.7/subprocess.py", line 679, in __init__
+    errread, errwrite)
+  File "/usr/lib/python2.7/subprocess.py", line 1153, in _execute_child
+    self.pid = os.fork()
+OSError: [Errno 12] Cannot allocate memory

@@ -1,2 +1,23 @@
 Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
-## OAR [2015-08-04 17:40:44] Job 2099 KILLED ##
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+	at java.util.Arrays.copyOf(Arrays.java:2219)
+	at java.util.ArrayList.grow(ArrayList.java:242)
+	at java.util.ArrayList.ensureExplicitCapacity(ArrayList.java:216)
+	at java.util.ArrayList.ensureCapacityInternal(ArrayList.java:208)
+	at java.util.ArrayList.add(ArrayList.java:440)
+	at fr.inria.lille.spirals.repair.synthesizer.collect.DataCombiner.addExpressionIn(DataCombiner.java:173)
+	at fr.inria.lille.spirals.repair.synthesizer.collect.DataCombiner.combineExpressionOperator(DataCombiner.java:97)
+	at fr.inria.lille.spirals.repair.synthesizer.collect.DataCombiner.combinePrimitives(DataCombiner.java:84)
+	at fr.inria.lille.spirals.repair.synthesizer.collect.DataCombiner.combine(DataCombiner.java:31)
+	at fr.inria.lille.spirals.repair.synthesizer.SynthesizerImpl.combineValues(SynthesizerImpl.java:459)
+	at fr.inria.lille.spirals.repair.synthesizer.SynthesizerImpl.run(SynthesizerImpl.java:106)
+	at fr.inria.lille.repair.nopol.synth.brutpol.BrutSynthesizer.buildPatch(BrutSynthesizer.java:125)
+	at fr.inria.lille.repair.nopol.NoPol.solveWithMultipleBuild(NoPol.java:178)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:120)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:90)
+	at fr.inria.lille.repair.nopol.NoPolLauncher.launch(NoPolLauncher.java:85)
+	at fr.inria.lille.repair.Main.main(Main.java:59)
+
+real	38m42.352s
+user	110m9.797s
+sys	1m39.374s

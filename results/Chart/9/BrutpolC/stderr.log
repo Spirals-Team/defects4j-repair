@@ -1,5 +1,5 @@
-mkdir: cannot create directory 'lib/': File exists
-cp: cannot stat '/home/spirals/tdurieux/defects4j/framework/projects/Chart/lib/*': No such file or directory
+mkdir: cannot create directory `lib/': File exists
+cp: cannot stat `/home/tdurieux/defects4j/framework/projects/Chart/lib/*': No such file or directory
 Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
 xxl.java.compiler.DynamicCompilationException: Aborting: dynamic compilation failed
 	at xxl.java.compiler.DynamicClassCompiler.runCompilationTask(DynamicClassCompiler.java:95)
@@ -33,6 +33,7 @@ xxl.java.compiler.DynamicCompilationException: Aborting: dynamic compilation fai
 	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:90)
 	at fr.inria.lille.repair.nopol.NoPolLauncher.launch(NoPolLauncher.java:85)
 	at fr.inria.lille.repair.Main.main(Main.java:59)
-Command exited with non-zero status 1
-123.32user 5.62system 11:53.72elapsed 18%CPU (0avgtext+0avgdata 1654608maxresident)k
-440inputs+94200outputs (0major+711313minor)pagefaults 0swaps
+
+real	0m55.778s
+user	1m35.466s
+sys	0m3.312s

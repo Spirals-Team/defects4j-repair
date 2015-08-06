@@ -1,47 +1,25 @@
-Cannot open config file (/tmp/math_8_BrutpolC/.defects4j.config): No such file or directory
-/tmp/math_8_BrutpolC is not a valid working directory!
 Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
-java.lang.IllegalArgumentException: File does not exist in: 'target/classes/'
-	at xxl.java.library.FileLibrary.fail(FileLibrary.java:129)
-	at xxl.java.library.FileLibrary.openFrom(FileLibrary.java:29)
-	at xxl.java.library.FileLibrary.urlFrom(FileLibrary.java:100)
-	at xxl.java.library.JavaLibrary.classpathFrom(JavaLibrary.java:84)
-	at fr.inria.lille.repair.Main.main(Main.java:50)
+Exception in thread "main" java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at java.util.Arrays.copyOf(Arrays.java:2367)
+	at java.lang.AbstractStringBuilder.expandCapacity(AbstractStringBuilder.java:130)
+	at java.lang.AbstractStringBuilder.ensureCapacityInternal(AbstractStringBuilder.java:114)
+	at java.lang.AbstractStringBuilder.append(AbstractStringBuilder.java:415)
+	at java.lang.StringBuilder.append(StringBuilder.java:132)
+	at java.lang.StringBuilder.append(StringBuilder.java:128)
+	at fr.inria.lille.spirals.repair.synthesizer.collect.DataCombiner.addExpressionIn(DataCombiner.java:172)
+	at fr.inria.lille.spirals.repair.synthesizer.collect.DataCombiner.combineExpressionOperator(DataCombiner.java:97)
+	at fr.inria.lille.spirals.repair.synthesizer.collect.DataCombiner.combinePrimitives(DataCombiner.java:84)
+	at fr.inria.lille.spirals.repair.synthesizer.collect.DataCombiner.combine(DataCombiner.java:31)
+	at fr.inria.lille.spirals.repair.synthesizer.SynthesizerImpl.combineValues(SynthesizerImpl.java:459)
+	at fr.inria.lille.spirals.repair.synthesizer.SynthesizerImpl.run(SynthesizerImpl.java:106)
+	at fr.inria.lille.repair.nopol.synth.brutpol.BrutSynthesizer.buildPatch(BrutSynthesizer.java:125)
+	at fr.inria.lille.repair.nopol.NoPol.solveWithMultipleBuild(NoPol.java:178)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:120)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:90)
+	at fr.inria.lille.repair.nopol.NoPolLauncher.launch(NoPolLauncher.java:85)
+	at fr.inria.lille.repair.Main.main(Main.java:59)
 
-Usage: java -jar nopol.jar
-                          [(-m|--mode) <repair|ranking>] [(-e|--type) <loop|condition|precondition|arithmetic>] [(-o|--oracle) <angelic|symbolic>] [(-y|--synthesis) <smt|brutpol>] [(-l|--solver) <z3|cvc4>] [(-p|--solver-path) <solverPath>] (-s|--source) source1:source2:...:sourceN  (-c|--classpath) <classpath> [(-t|--test) test1:test2:...:testN ] [--complianceLevel <complianceLevel>]
-
-  [(-m|--mode) <repair|ranking>]
-        Define the mode of execution. (default: repair)
-
-  [(-e|--type) <loop|condition|precondition|arithmetic>]
-        The type of statement to analyze (only used with repair mode). (default:
-        condition)
-
-  [(-o|--oracle) <angelic|symbolic>]
-        Define the oracle (only used with repair mode). (default: angelic)
-
-  [(-y|--synthesis) <smt|brutpol>]
-        Define the patch synthesis. (default: smt)
-
-  [(-l|--solver) <z3|cvc4>]
-        Define the solver (only used with smt synthesis). (default: z3)
-
-  [(-p|--solver-path) <solverPath>]
-        Define the solver binary path (only used with smt synthesis).
-
-  (-s|--source) source1:source2:...:sourceN 
-        Define the path to the source code of the project.
-
-  (-c|--classpath) <classpath>
-        Define the classpath of the project.
-
-  [(-t|--test) test1:test2:...:testN ]
-        Define the tests of the project.
-
-  [--complianceLevel <complianceLevel>]
-        The compliance level of the project. (default: 7)
-
-Command exited with non-zero status 1
-0.21user 0.02system 0:01.25elapsed 18%CPU (0avgtext+0avgdata 27128maxresident)k
-0inputs+232outputs (0major+3306minor)pagefaults 0swaps
+real	31m33.756s
+user	68m49.258s
+sys	0m51.743s
+rm: write error: Disk quota exceeded

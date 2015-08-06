@@ -1,23 +1,7 @@
-mkdir: cannot create directory 'lib/': File exists
-cp: cannot stat '/home/spirals/tdurieux/defects4j/framework/projects/Chart/lib/*': No such file or directory
+mkdir: cannot create directory `lib/': File exists
+cp: cannot stat `/home/tdurieux/defects4j/framework/projects/Chart/lib/*': No such file or directory
 Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
-java.util.concurrent.TimeoutException
-	at java.util.concurrent.FutureTask.get(FutureTask.java:201)
-	at fr.inria.lille.spirals.repair.synthesizer.collect.DataCollector.callMethod(DataCollector.java:374)
-	at fr.inria.lille.spirals.repair.synthesizer.collect.DataCollector.collectMethods(DataCollector.java:303)
-	at fr.inria.lille.spirals.repair.synthesizer.collect.DataCollector.collectMethods(DataCollector.java:338)
-	at fr.inria.lille.spirals.repair.synthesizer.collect.DataCollector.collect(DataCollector.java:135)
-	at fr.inria.lille.spirals.repair.synthesizer.collect.DataCollector.collect(DataCollector.java:95)
-	at fr.inria.lille.spirals.repair.synthesizer.SynthesizerImpl.collectValues(SynthesizerImpl.java:336)
-	at fr.inria.lille.spirals.repair.synthesizer.SynthesizerImpl.processBreakPointEvents(SynthesizerImpl.java:227)
-	at fr.inria.lille.spirals.repair.synthesizer.SynthesizerImpl.processVMEvents(SynthesizerImpl.java:131)
-	at fr.inria.lille.spirals.repair.synthesizer.SynthesizerImpl.run(SynthesizerImpl.java:104)
-	at fr.inria.lille.repair.nopol.synth.brutpol.BrutSynthesizer.buildPatch(BrutSynthesizer.java:125)
-	at fr.inria.lille.repair.nopol.NoPol.solveWithMultipleBuild(NoPol.java:178)
-	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:120)
-	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:90)
-	at fr.inria.lille.repair.nopol.NoPolLauncher.launch(NoPolLauncher.java:85)
-	at fr.inria.lille.repair.Main.main(Main.java:59)
-Command exited with non-zero status 1
-124.51user 3.08system 6:24.23elapsed 33%CPU (0avgtext+0avgdata 1198764maxresident)k
-440inputs+31856outputs (0major+592064minor)pagefaults 0swaps
+
+real	0m43.284s
+user	1m21.133s
+sys	0m1.844s
