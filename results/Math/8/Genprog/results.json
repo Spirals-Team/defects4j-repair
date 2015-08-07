@@ -1,34 +1,34 @@
 {
     "FailingTestCase": "13", 
-    "FailingTestCaseExecution": "3", 
-    "InmutatedGen": "0", 
+    "FailingTestCaseExecution": "5", 
+    "InmutatedGen": "2", 
     "NotAppliedOp": "0", 
-    "OfAppliedOp": "3", 
+    "OfAppliedOp": "13", 
     "RegressionTestCases": "4825", 
     "RegressionTestExecution": "1", 
-    "RightCompilation": "2", 
-    "WrongCompilation": "1", 
-    "date": "Thu Aug  6 21:30:21 CEST 2015\n\n", 
-    "gen": "3", 
+    "RightCompilation": "4", 
+    "WrongCompilation": "9", 
+    "date": "Fri Aug  7 02:18:30 CEST 2015\n\n", 
+    "gen": "13", 
     "gens": "24", 
-    "node": "griffon-58.nancy.grid5000.fr", 
+    "node": "griffon-39.nancy.grid5000.fr", 
     "operations": [
         {
-            "buggyStatement": "out[i] = sample()", 
-            "generation": 3, 
+            "buggyStatement": "for (int i = 0 ; i < sampleSize ; i++) {\n\tout[i] = sample();\n}", 
+            "generation": 13, 
             "patch": "remove", 
             "patchLocation": {
                 "className": "org.apache.commons.math3.distribution.DiscreteDistribution", 
-                "line": 190
+                "line": 189
             }, 
             "type": "DELETE", 
-            "variant": 6
+            "variant": 26
         }
     ], 
     "ops": "0", 
     "patches": "1", 
-    "programVariant": "6", 
-    "timeEvaluation": "186832", 
-    "timeTotal": "1179193", 
+    "programVariant": "26", 
+    "timeEvaluation": "206643", 
+    "timeTotal": "1166512", 
     "unfinishValidation": "0"
 }

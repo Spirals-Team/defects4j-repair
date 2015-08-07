@@ -6,16 +6,8 @@ Exception in thread "main" java.lang.ExceptionInInitializerError
 	at java.lang.Class.forName0(Native Method)
 	at java.lang.Class.forName(Class.java:191)
 	at fr.inria.astor.junitexec.JUnitTestExecutor.main(JUnitTestExecutor.java:106)
-Caused by: org.joda.time.IllegalFieldValueException: Value 1061999921 for weekyear must be in the range [-292275054,292278993]
-	at org.joda.time.field.FieldUtils.verifyValueBounds(FieldUtils.java:215)
-	at org.joda.time.chrono.BasicWeekyearDateTimeField.set(BasicWeekyearDateTimeField.java:56)
-	at org.joda.time.chrono.BasicWeekyearDateTimeField.add(BasicWeekyearDateTimeField.java:26)
-	at org.joda.time.field.BaseDateTimeField.roundCeiling(BaseDateTimeField.java:888)
-	at org.joda.time.chrono.GJChronology.assemble(GJChronology.java:230)
-	at org.joda.time.chrono.AssembledChronology.setFields(AssembledChronology.java:323)
-	at org.joda.time.chrono.AssembledChronology.<init>(AssembledChronology.java:102)
-	at org.joda.time.chrono.GJChronology.<init>(GJChronology.java:90)
-	at org.joda.time.chrono.GJChronology.getInstance(GJChronology.java:60)
+Caused by: java.lang.NullPointerException
+	at org.joda.time.chrono.GJChronology.getInstance(GJChronology.java:54)
 	at org.joda.time.chrono.GJChronology.getInstance(GJChronology.java:35)
 	at org.joda.time.chrono.BuddhistChronology.getInstance(BuddhistChronology.java:110)
 	at org.joda.time.chrono.BuddhistChronology.<clinit>(BuddhistChronology.java:74)
@@ -38,16 +30,8 @@ Exception in thread "main" java.lang.ExceptionInInitializerError
 	at java.lang.Class.forName0(Native Method)
 	at java.lang.Class.forName(Class.java:191)
 	at fr.inria.astor.junitexec.JUnitTestExecutor.main(JUnitTestExecutor.java:106)
-Caused by: org.joda.time.IllegalFieldValueException: Value 1061999921 for weekyear must be in the range [-292275054,292278993]
-	at org.joda.time.field.FieldUtils.verifyValueBounds(FieldUtils.java:215)
-	at org.joda.time.chrono.BasicWeekyearDateTimeField.set(BasicWeekyearDateTimeField.java:56)
-	at org.joda.time.chrono.BasicWeekyearDateTimeField.add(BasicWeekyearDateTimeField.java:26)
-	at org.joda.time.field.BaseDateTimeField.roundCeiling(BaseDateTimeField.java:888)
-	at org.joda.time.chrono.GJChronology.assemble(GJChronology.java:230)
-	at org.joda.time.chrono.AssembledChronology.setFields(AssembledChronology.java:323)
-	at org.joda.time.chrono.AssembledChronology.<init>(AssembledChronology.java:102)
-	at org.joda.time.chrono.GJChronology.<init>(GJChronology.java:90)
-	at org.joda.time.chrono.GJChronology.getInstance(GJChronology.java:60)
+Caused by: java.lang.NullPointerException
+	at org.joda.time.chrono.GJChronology.getInstance(GJChronology.java:54)
 	at org.joda.time.chrono.GJChronology.getInstance(GJChronology.java:35)
 	at org.joda.time.chrono.BuddhistChronology.getInstance(BuddhistChronology.java:110)
 	at org.joda.time.chrono.BuddhistChronology.<clinit>(BuddhistChronology.java:74)
@@ -57,6 +41,6 @@ Caused by: org.joda.time.IllegalFieldValueException: Value 1061999921 for weekye
 	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:201)
 	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
 
-real	5m28.568s
-user	6m41.813s
-sys	0m8.301s
+real	10m26.537s
+user	12m26.543s
+sys	0m12.181s

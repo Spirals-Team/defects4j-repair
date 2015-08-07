@@ -1,34 +1,34 @@
 {
     "FailingTestCase": "19", 
-    "FailingTestCaseExecution": "151", 
-    "InmutatedGen": "17", 
+    "FailingTestCaseExecution": "59", 
+    "InmutatedGen": "1", 
     "NotAppliedOp": "0", 
-    "OfAppliedOp": "308", 
+    "OfAppliedOp": "110", 
     "RegressionTestCases": "2059", 
-    "RegressionTestExecution": "2", 
-    "RightCompilation": "150", 
-    "WrongCompilation": "158", 
-    "date": "Thu Aug  6 20:33:03 CEST 2015\n\n", 
-    "gen": "308", 
+    "RegressionTestExecution": "1", 
+    "RightCompilation": "58", 
+    "WrongCompilation": "52", 
+    "date": "Fri Aug  7 01:11:45 CEST 2015\n\n", 
+    "gen": "110", 
     "gens": "275", 
-    "node": "griffon-72.nancy.grid5000.fr", 
+    "node": "griffon-65.nancy.grid5000.fr", 
     "operations": [
         {
-            "buggyStatement": "final double h = (t1 - (t0)) / n", 
-            "generation": 308, 
-            "patch": "pendingEvent = true", 
+            "buggyStatement": "for (int i = 0 ; i < n ; ++i) {\n\ttb += h;\n\tinterpolator.setInterpolatedTime(tb);\n\tfinal double gb = handler.g(tb, interpolator.getInterpolatedState());\n\tif ((g0Positive) ^ (gb >= 0)) {\n\t\tif ((ga * gb) > 0) {\n\t\t\tfinal double epsilon = (forward ? 0.25 : -0.25) * (convergence);\n\t\t\tfor (int k = 0 ; (k < 4) && ((ga * gb) > 0) ; ++k) {\n\t\t\t\tta += epsilon;\n\t\t\t\tinterpolator.setInterpolatedTime(ta);\n\t\t\t\tga = handler.g(ta, interpolator.getInterpolatedState());\n\t\t\t}\n\t\t\tif ((ga * gb) > 0) {\n\t\t\t\tthrow org.apache.commons.math.MathRuntimeException.createInternalError(null);\n\t\t\t} \n\t\t} \n\t\tincreasing = gb >= ga;\n\t\tfinal org.apache.commons.math.analysis.UnivariateRealFunction f = new org.apache.commons.math.analysis.UnivariateRealFunction() {\n\t\t\tpublic double value(final double t) throws org.apache.commons.math.FunctionEvaluationException {\n\t\t\t\ttry {\n\t\t\t\t\tinterpolator.setInterpolatedTime(t);\n\t\t\t\t\treturn handler.g(t, interpolator.getInterpolatedState());\n\t\t\t\t} catch (org.apache.commons.math.ode.DerivativeException e) {\n\t\t\t\t\tthrow new org.apache.commons.math.FunctionEvaluationException(e , t);\n\t\t\t\t} catch (org.apache.commons.math.ode.events.EventException e) {\n\t\t\t\t\tthrow new org.apache.commons.math.FunctionEvaluationException(e , t);\n\t\t\t\t}\n\t\t\t}\n\t\t};\n\t\tfinal org.apache.commons.math.analysis.solvers.BrentSolver solver = new org.apache.commons.math.analysis.solvers.BrentSolver();\n\t\tsolver.setAbsoluteAccuracy(convergence);\n\t\tsolver.setMaximalIterationCount(maxIterationCount);\n\t\tfinal double root = ta <= tb ? solver.solve(f, ta, tb) : solver.solve(f, tb, ta);\n\t\tif (((java.lang.Math.abs((root - ta))) <= (convergence)) && ((java.lang.Math.abs((root - (previousEventTime)))) <= (convergence))) {\n\t\t\tta = tb;\n\t\t\tga = gb;\n\t\t} else if ((java.lang.Double.isNaN(previousEventTime)) || ((java.lang.Math.abs(((previousEventTime) - root))) > (convergence))) {\n\t\t\tpendingEventTime = root;\n\t\t\tif ((pendingEvent) && ((java.lang.Math.abs((t1 - (pendingEventTime)))) <= (convergence))) {\n\t\t\t\treturn false;\n\t\t\t} \n\t\t\tpendingEvent = true;\n\t\t\treturn true;\n\t\t} \n\t} else {\n\t\tta = tb;\n\t\tga = gb;\n\t}\n}", 
+            "generation": 110, 
+            "patch": "if ((pendingEvent) && ((java.lang.Math.abs((t1 - (pendingEventTime)))) <= (convergence))) {\n\treturn false;\n} ", 
             "patchLocation": {
                 "className": "org.apache.commons.math.ode.events.EventState", 
-                "line": 175
+                "line": 180
             }, 
-            "type": "INSERT_BEFORE", 
-            "variant": 616
+            "type": "REPLACE", 
+            "variant": 220
         }
     ], 
     "ops": "0", 
     "patches": "1", 
-    "programVariant": "616", 
-    "timeEvaluation": "1455648", 
-    "timeTotal": "1491733", 
+    "programVariant": "220", 
+    "timeEvaluation": "889033", 
+    "timeTotal": "928616", 
     "unfinishValidation": "0"
 }

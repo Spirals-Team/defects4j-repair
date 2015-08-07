@@ -1,47 +1,47 @@
 export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/chart/chart_10 /tmp/chart_10_Genprog;cd /tmp/chart_10_Genprog;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Chart/lib/* lib/;find . -type f -name "package-info.java" -delete;
 /home/tdurieux/defects4j-repair/src/python/core/../../../results/Chart/10/Genprog/result
-cd /tmp/chart_10_Genprog;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java  -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement -location . -dependencies lib/ -failing org.jfree.chart.imagemap.junit.StandardToolTipTagFragmentGeneratorTests: -package org.jfree -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 4 -maxgen 1000000 -seed 10 -population 1 -srcjavafolder source/ -srctestfolder tests/ -binjavafolder build/ -bintestfolder build-tests/;echo "
+cd /tmp/chart_10_Genprog;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java  -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement -location . -dependencies lib/ -failing org.jfree.chart.imagemap.junit.StandardToolTipTagFragmentGeneratorTests: -package org.jfree -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 4 -maxgen 1000000 -seed 10 -scope package  -population 1 -srcjavafolder source/ -srctestfolder tests/ -binjavafolder build/ -bintestfolder build-tests/;echo "
 
 Node: `hostname`
 ";echo "
 Date: `date`
 ";rm -rf /tmp/chart_10_Genprog;
 
-2015-08-06 21:30:42,856 INFO main - End Repair Loops: NOT Found solution
-2015-08-06 21:30:42,856 INFO main - 
+2015-08-07 02:22:39,322 INFO main - End Repair Loops: NOT Found solution
+2015-08-07 02:22:39,322 INFO main - 
 Number solutions:0
-2015-08-06 21:30:42,856 INFO main - 
+2015-08-07 02:22:39,322 INFO main - 
 All variants:
-2015-08-06 21:30:42,856 INFO main - f 1.0, [Variant id: 366391, #gens: 1, #ops: 0, parent:-]
-2015-08-06 21:30:42,856 INFO main - --Space: LOCAL
-org.jfree.chart.imagemap.StandardToolTipTagFragmentGenerator=2|,
-2015-08-06 21:30:42,856 INFO main - 
+2015-08-07 02:22:39,322 INFO main - f 1.0, [Variant id: 250495, #gens: 1, #ops: 0, parent:-]
+2015-08-07 02:22:39,322 INFO main - --Space: PACKAGE
+org.jfree.data.function=14|,org.jfree.chart=2014|,org.jfree.chart.labels=725|,org.jfree.chart.annotations=963|,org.jfree.data.statistics=1227|,org.jfree.chart.entity=231|,org.jfree.chart.renderer.junit=5|,org.jfree.chart.urls=248|,org.jfree.chart.plot.dial=1204|,org.jfree.chart.block=1020|,org.jfree.chart.util=1522|,org.jfree.data.gantt=236|,org.jfree.data.io=49|,org.jfree.chart.plot.junit=5|,org.jfree.chart.demo=148|,org.jfree.data.category=309|,org.jfree.data.time.ohlc=105|,org.jfree.data.xy=1707|,org.jfree.chart.title=862|,org.jfree.chart.renderer=952|,org.jfree.chart.imagemap=50|,org.jfree.data.xml=146|,org.jfree.chart.needle=338|,org.jfree.chart.editor=527|,org.jfree.data.resources=12|,org.jfree.chart.plot.dial.junit=1|,org.jfree.chart.axis=4786|,org.jfree.chart.resources=2|,org.jfree.chart.renderer.xy=4061|,org.jfree.chart.servlet=122|,org.jfree.data.general=949|,org.jfree.chart.text=535|,org.jfree.data=928|,org.jfree.chart.plot=7529|,org.jfree.chart.event=50|,org.jfree.chart.ui=357|,org.jfree.chart.encoders=80|,org.jfree.data.jdbc=172|,org.jfree.chart.renderer.category=3538|,org.jfree.data.time=2247|,
+2015-08-07 02:22:39,322 INFO main - 
 ----stats: 
-2015-08-06 21:30:42,856 INFO main - 
-spaces navigation: [5]: {(CtReturnImpl| size: 2| alreadyanalyzed| LOCAL| INSERT_AFTER) =91891, (CtReturnImpl| size: 2| compiles| LOCAL| INSERT_AFTER) =1, (CtReturnImpl| size: 1| alreadyanalyzed| LOCAL| REPLACE) =45567, (CtReturnImpl| size: 2| alreadyanalyzed| LOCAL| INSERT_BEFORE) =92200, (CtReturnImpl| size: 2| compiles| LOCAL| INSERT_BEFORE) =1}
-#gen: 183195
+2015-08-07 02:22:39,322 INFO main - 
+spaces navigation: [14]: {(CtReturnImpl| size: 50| compiles| PACKAGE| INSERT_BEFORE) =11, (CtReturnImpl| size: 7| notcompiles| PACKAGE| REPLACE) =5, (CtReturnImpl| size: 50| alreadyanalyzed| LOCAL| INSERT_BEFORE) =218608, (CtReturnImpl| size: 50| notcompiles| PACKAGE| INSERT_AFTER) =31, (CtReturnImpl| size: 50| alreadyanalyzed| PACKAGE| INSERT_BEFORE) =1344861, (CtReturnImpl| size: 50| compiles| LOCAL| INSERT_AFTER) =1, (CtReturnImpl| size: 50| compiles| PACKAGE| INSERT_AFTER) =11, (CtReturnImpl| size: 50| alreadyanalyzed| PACKAGE| INSERT_AFTER) =1347985, (CtReturnImpl| size: 50| alreadyanalyzed| LOCAL| INSERT_AFTER) =219168, (CtReturnImpl| size: 7| alreadyanalyzed| LOCAL| REPLACE) =31399, (CtReturnImpl| size: 7| compiles| PACKAGE| REPLACE) =1, (CtReturnImpl| size: 7| alreadyanalyzed| PACKAGE| REPLACE) =187360, (CtReturnImpl| size: 50| compiles| LOCAL| INSERT_BEFORE) =1, (CtReturnImpl| size: 50| notcompiles| PACKAGE| INSERT_BEFORE) =31}
+#gen: 125247
 #patches: 0
-#RightCompilation: 2
-#WrongCompilation: 45581
-#FailingTestCaseExecution: 3
+#RightCompilation: 5
+#WrongCompilation: 31379
+#FailingTestCaseExecution: 6
 #RegressionTestExecution: 0
-#TestcasesExecutedval1: 3
+#TestcasesExecutedval1: 6
 #TestcasesExecutedval2: 0
 #FailingTestCase: 1
 #RegressionTestCases: 0
-#OfAppliedOp: 45583
+#OfAppliedOp: 31384
 #NotAppliedOp: 0
-#InmutatedGen: 137612
+#InmutatedGen: 93863
 #unfinishValidation: 0
-#ing {CtReturnImpl=183195}
-#untilcompile {1=45568, 2=92046}
-2015-08-06 21:30:42,856 INFO main - Time Evolution(ms): 3661391
-2015-08-06 21:30:42,856 INFO fr.inria.main.AbstractMain - Time Total(ms): 3702727
+#ing {CtReturnImpl=125247}
+#untilcompile {1=6, 2=5, 3=4, 4=1, 5=2, 6=1, 37=1, 7=31252, 9=1, 13=1, 15=1, 50=62611, 19=1, 18=1}
+2015-08-07 02:22:39,323 INFO main - Time Evolution(ms): 3661497
+2015-08-07 02:22:39,323 INFO fr.inria.main.AbstractMain - Time Total(ms): 3708228
 
 
-Node: griffon-17.nancy.grid5000.fr
+Node: griffon-39.nancy.grid5000.fr
 
 
-Date: Thu Aug  6 23:30:43 CEST 2015
+Date: Fri Aug  7 04:22:39 CEST 2015
 
 

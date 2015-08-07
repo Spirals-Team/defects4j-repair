@@ -1,47 +1,47 @@
 export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/lang/lang_14 /tmp/lang_14_Genprog;cd /tmp/lang_14_Genprog;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Lang/lib/* lib/;find . -type f -name "package-info.java" -delete;
 /home/tdurieux/defects4j-repair/src/python/core/../../../results/Lang/14/Genprog/result
-cd /tmp/lang_14_Genprog;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java  -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement -location . -dependencies lib/ -failing org.apache.commons.lang3.StringUtilsEqualsIndexOfTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -seed 10 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/tests/;echo "
+cd /tmp/lang_14_Genprog;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java  -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement -location . -dependencies lib/ -failing org.apache.commons.lang3.StringUtilsEqualsIndexOfTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -seed 10 -scope package  -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/tests/;echo "
 
 Node: `hostname`
 ";echo "
 Date: `date`
 ";rm -rf /tmp/lang_14_Genprog;
 
-2015-08-06 21:17:28,282 INFO main - End Repair Loops: NOT Found solution
-2015-08-06 21:17:28,282 INFO main - 
+2015-08-07 02:08:27,542 INFO main - End Repair Loops: NOT Found solution
+2015-08-07 02:08:27,542 INFO main - 
 Number solutions:0
-2015-08-06 21:17:28,282 INFO main - 
+2015-08-07 02:08:27,542 INFO main - 
 All variants:
-2015-08-06 21:17:28,282 INFO main - f 1.0, [Variant id: 3013, #gens: 1, #ops: 0, parent:-]
-2015-08-06 21:17:28,282 INFO main - --Space: LOCAL
-org.apache.commons.lang3.StringUtils=1249|,
-2015-08-06 21:17:28,282 INFO main - 
+2015-08-07 02:08:27,542 INFO main - f 1.0, [Variant id: 3841, #gens: 1, #ops: 0, parent:-]
+2015-08-07 02:08:27,542 INFO main - --Space: PACKAGE
+org.apache.commons.lang3.text.translate=181|,org.apache.commons.lang3=3837|,org.apache.commons.lang3.text=1430|,org.apache.commons.lang3.event=52|,org.apache.commons.lang3.builder=1227|,org.apache.commons.lang3.time=835|,org.apache.commons.lang3.mutable=205|,org.apache.commons.lang3.exception=222|,org.apache.commons.lang3.concurrent=273|,org.apache.commons.lang3.math=620|,org.apache.commons.lang3.tuple=65|,org.apache.commons.lang3.reflect=600|,
+2015-08-07 02:08:27,543 INFO main - 
 ----stats: 
-2015-08-06 21:17:28,282 INFO main - 
-spaces navigation: [9]: {(CtReturnImpl| size: 1249| compiles| LOCAL| INSERT_BEFORE) =179, (CtReturnImpl| size: 1249| notcompiles| LOCAL| INSERT_BEFORE) =581, (CtReturnImpl| size: 1249| notcompiles| LOCAL| INSERT_AFTER) =581, (CtReturnImpl| size: 395| compiles| LOCAL| REPLACE) =22, (CtReturnImpl| size: 1249| alreadyanalyzed| LOCAL| INSERT_BEFORE) =238023, (CtReturnImpl| size: 395| notcompiles| LOCAL| REPLACE) =138, (CtReturnImpl| size: 395| alreadyanalyzed| LOCAL| REPLACE) =143294, (CtReturnImpl| size: 1249| compiles| LOCAL| INSERT_AFTER) =179, (CtReturnImpl| size: 1249| alreadyanalyzed| LOCAL| INSERT_AFTER) =219029}
-#gen: 1506
+2015-08-07 02:08:27,543 INFO main - 
+spaces navigation: [18]: {(CtReturnImpl| size: 1309| compiles| LOCAL| REPLACE) =22, (CtReturnImpl| size: 3837| compiles| PACKAGE| INSERT_BEFORE) =301, (CtReturnImpl| size: 3837| notcompiles| PACKAGE| INSERT_AFTER) =1153, (CtReturnImpl| size: 3837| compiles| LOCAL| INSERT_BEFORE) =166, (CtReturnImpl| size: 3837| alreadyanalyzed| PACKAGE| INSERT_AFTER) =31118, (CtReturnImpl| size: 1309| notcompiles| LOCAL| REPLACE) =138, (CtReturnImpl| size: 1309| compiles| PACKAGE| REPLACE) =34, (CtReturnImpl| size: 3837| alreadyanalyzed| LOCAL| INSERT_BEFORE) =3421, (CtReturnImpl| size: 3837| alreadyanalyzed| PACKAGE| INSERT_BEFORE) =4462, (CtReturnImpl| size: 3837| compiles| LOCAL| INSERT_AFTER) =179, (CtReturnImpl| size: 3837| notcompiles| LOCAL| INSERT_AFTER) =581, (CtReturnImpl| size: 3837| notcompiles| PACKAGE| INSERT_BEFORE) =1095, (CtReturnImpl| size: 3837| notcompiles| LOCAL| INSERT_BEFORE) =552, (CtReturnImpl| size: 1309| notcompiles| PACKAGE| REPLACE) =351, (CtReturnImpl| size: 3837| alreadyanalyzed| LOCAL| INSERT_AFTER) =22490, (CtReturnImpl| size: 1309| alreadyanalyzed| PACKAGE| REPLACE) =260590, (CtReturnImpl| size: 3837| compiles| PACKAGE| INSERT_AFTER) =315, (CtReturnImpl| size: 1309| alreadyanalyzed| LOCAL| REPLACE) =250139}
+#gen: 1920
 #patches: 0
 #RightCompilation: 0
-#WrongCompilation: 786
+#WrongCompilation: 1523
 #FailingTestCaseExecution: 1
 #RegressionTestExecution: 0
 #TestcasesExecutedval1: 49
 #TestcasesExecutedval2: 0
 #FailingTestCase: 49
 #RegressionTestCases: 0
-#OfAppliedOp: 786
+#OfAppliedOp: 1523
 #NotAppliedOp: 0
-#InmutatedGen: 720
+#InmutatedGen: 397
 #unfinishValidation: 0
-#ing {CtReturnImpl=1506}
-#untilcompile {1=40, 2=30, 3=31, 4=22, 5=24, 6=13, 7=16, 8=13, 9=15, 10=14, 11=11, 12=7, 13=7, 14=8, 15=7, 395=361, 17=4, 16=3, 154=1, 19=5, 18=4, 21=4, 20=7, 23=1, 22=2, 25=2, 24=4, 27=1, 26=4, 29=4, 31=3, 30=3, 32=2, 33=2, 39=3, 1249=359, 36=2, 37=1, 42=4, 644=1, 43=1, 40=2, 41=2, 45=1, 49=1, 54=1, 53=4, 59=3, 58=3, 57=2, 176=1, 182=1, 63=2, 62=1, 61=2, 69=1, 341=1, 70=1, 203=1, 66=1, 73=1, 75=1, 627=1, 86=1, 223=1, 81=1, 80=1, 95=2, 91=1, 239=1, 103=1, 237=1, 98=2, 110=1, 230=1, 108=1, 588=1, 106=1, 708=1, 366=1, 121=1}
-2015-08-06 21:17:28,282 INFO main - Time Evolution(ms): 3661020
-2015-08-06 21:17:28,282 INFO fr.inria.main.AbstractMain - Time Total(ms): 3693210
+#ing {CtReturnImpl=1920}
+#untilcompile {1=87, 2=67, 549=1, 3=52, 4=67, 5=43, 6=45, 7=46, 8=37, 9=32, 10=39, 11=28, 287=1, 12=22, 13=32, 285=1, 14=19, 3837=9, 15=16, 17=19, 259=1, 16=20, 19=14, 18=10, 21=11, 263=1, 20=6, 23=13, 22=10, 25=12, 24=8, 27=8, 26=8, 29=5, 28=8, 31=5, 30=11, 34=7, 35=3, 32=1, 33=7, 38=4, 39=3, 36=9, 37=2, 42=1, 43=2, 40=6, 41=5, 46=2, 47=4, 44=4, 45=8, 51=5, 50=3, 49=2, 48=5, 55=2, 54=3, 53=2, 59=6, 58=2, 298=1, 57=2, 56=3, 63=1, 536=1, 62=5, 60=1, 343=1, 70=2, 71=1, 64=2, 65=2, 1309=388, 66=3, 76=2, 77=1, 78=1, 79=3, 72=1, 73=1, 75=1, 87=2, 86=1, 80=1, 93=1, 92=1, 95=1, 94=1, 89=1, 91=1, 90=2, 103=1, 101=2, 99=1, 110=1, 111=3, 109=1, 106=3, 107=2, 119=2, 118=2, 117=2, 116=1, 838=1, 114=1, 112=1, 126=1, 123=1, 122=2, 121=2, 120=1, 139=2, 129=2, 403=1, 132=1, 135=1, 156=1, 158=1, 146=1, 147=1, 170=1, 175=2, 173=1, 160=1, 166=1, 184=1, 190=1, 2575=1, 177=1, 181=1, 204=1, 472=1, 465=1, 212=1, 752=1, 210=1, 448=1, 234=1, 1666=1, 231=1, 499=1, 488=1, 246=1, 243=1}
+2015-08-07 02:08:27,543 INFO main - Time Evolution(ms): 3674234
+2015-08-07 02:08:27,543 INFO fr.inria.main.AbstractMain - Time Total(ms): 3707099
 
 
-Node: griffon-2.nancy.grid5000.fr
+Node: griffon-63.nancy.grid5000.fr
 
 
-Date: Thu Aug  6 23:17:28 CEST 2015
+Date: Fri Aug  7 04:08:27 CEST 2015
 
 

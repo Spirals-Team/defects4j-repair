@@ -1,47 +1,47 @@
 export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/lang/lang_40 /tmp/lang_40_Genprog;cd /tmp/lang_40_Genprog;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Lang/lib/* lib/;find . -type f -name "package-info.java" -delete;
 /home/tdurieux/defects4j-repair/src/python/core/../../../results/Lang/40/Genprog/result
-cd /tmp/lang_40_Genprog;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java  -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement -location . -dependencies lib/ -failing org.apache.commons.lang.StringUtilsEqualsIndexOfTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -seed 10 -population 1 -srcjavafolder src/java/ -srctestfolder src/test/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
+cd /tmp/lang_40_Genprog;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java  -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement -location . -dependencies lib/ -failing org.apache.commons.lang.StringUtilsEqualsIndexOfTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -seed 10 -scope package  -population 1 -srcjavafolder src/java/ -srctestfolder src/test/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
 
 Node: `hostname`
 ";echo "
 Date: `date`
 ";rm -rf /tmp/lang_40_Genprog;
 
-2015-08-06 20:26:18,697 INFO main - End Repair Loops: NOT Found solution
-2015-08-06 20:26:18,697 INFO main - 
+2015-08-07 01:14:35,843 INFO main - End Repair Loops: NOT Found solution
+2015-08-07 01:14:35,843 INFO main - 
 Number solutions:0
-2015-08-06 20:26:18,697 INFO main - 
+2015-08-07 01:14:35,843 INFO main - 
 All variants:
-2015-08-06 20:26:18,697 INFO main - f 151.0, [Variant id: 3825, #gens: 4, #ops: 0, parent:-]
-2015-08-06 20:26:18,697 INFO main - --Space: LOCAL
-org.apache.commons.lang.StringUtils=1070|,
-2015-08-06 20:26:18,697 INFO main - 
+2015-08-07 01:14:35,843 INFO main - f 151.0, [Variant id: 5815, #gens: 4, #ops: 0, parent:-]
+2015-08-07 01:14:35,843 INFO main - --Space: PACKAGE
+org.apache.commons.lang.concurrent=26|,org.apache.commons.lang.text.translate=189|,org.apache.commons.lang.builder=1184|,org.apache.commons.lang.time=863|,org.apache.commons.lang.exception=262|,org.apache.commons.lang.mutable=186|,org.apache.commons.lang.text=1268|,org.apache.commons.lang.reflect=324|,org.apache.commons.lang.math=1080|,org.apache.commons.lang=3062|,
+2015-08-07 01:14:35,843 INFO main - 
 ----stats: 
-2015-08-06 20:26:18,697 INFO main - 
-spaces navigation: [18]: {(CtReturnImpl| size: 1070| notcompiles| LOCAL| INSERT_AFTER) =948, (CtIfImpl| size: 1070| alreadyanalyzed| LOCAL| INSERT_BEFORE) =187538, (CtReturnImpl| size: 353| compiles| LOCAL| REPLACE) =70, (CtReturnImpl| size: 1070| compiles| LOCAL| INSERT_AFTER) =336, (CtIfImpl| size: 288| compiles| LOCAL| REPLACE) =11, (CtIfImpl| size: 1070| alreadyanalyzed| LOCAL| INSERT_AFTER) =169498, (CtIfImpl| size: 1070| compiles| LOCAL| INSERT_BEFORE) =168, (CtReturnImpl| size: 1070| compiles| LOCAL| INSERT_BEFORE) =336, (CtIfImpl| size: 1070| notcompiles| LOCAL| INSERT_AFTER) =474, (CtReturnImpl| size: 1070| alreadyanalyzed| LOCAL| INSERT_AFTER) =87367, (CtReturnImpl| size: 1070| alreadyanalyzed| LOCAL| INSERT_BEFORE) =95228, (CtReturnImpl| size: 353| notcompiles| LOCAL| REPLACE) =228, (CtIfImpl| size: 288| notcompiles| LOCAL| REPLACE) =182, (CtIfImpl| size: 1070| notcompiles| LOCAL| INSERT_BEFORE) =474, (CtReturnImpl| size: 1070| notcompiles| LOCAL| INSERT_BEFORE) =948, (CtIfImpl| size: 1070| compiles| LOCAL| INSERT_AFTER) =168, (CtIfImpl| size: 288| alreadyanalyzed| LOCAL| REPLACE) =105578, (CtReturnImpl| size: 353| alreadyanalyzed| LOCAL| REPLACE) =112964}
-#gen: 1912
+2015-08-07 01:14:35,843 INFO main - 
+spaces navigation: [36]: {(CtIfImpl| size: 719| notcompiles| PACKAGE| REPLACE) =247, (CtReturnImpl| size: 1064| compiles| PACKAGE| REPLACE) =114, (CtIfImpl| size: 719| compiles| LOCAL| REPLACE) =11, (CtIfImpl| size: 3062| compiles| LOCAL| INSERT_AFTER) =166, (CtReturnImpl| size: 3062| compiles| LOCAL| INSERT_BEFORE) =213, (CtReturnImpl| size: 1064| notcompiles| PACKAGE| REPLACE) =432, (CtIfImpl| size: 3062| notcompiles| LOCAL| INSERT_BEFORE) =430, (CtReturnImpl| size: 3062| compiles| LOCAL| INSERT_AFTER) =208, (CtReturnImpl| size: 1064| alreadyanalyzed| PACKAGE| REPLACE) =135576, (CtIfImpl| size: 3062| alreadyanalyzed| PACKAGE| INSERT_BEFORE) =2460, (CtReturnImpl| size: 3062| alreadyanalyzed| PACKAGE| INSERT_AFTER) =1000, (CtReturnImpl| size: 1064| notcompiles| LOCAL| REPLACE) =228, (CtIfImpl| size: 3062| alreadyanalyzed| LOCAL| INSERT_AFTER) =4555, (CtReturnImpl| size: 3062| notcompiles| PACKAGE| INSERT_AFTER) =853, (CtIfImpl| size: 3062| compiles| LOCAL| INSERT_BEFORE) =153, (CtIfImpl| size: 3062| alreadyanalyzed| PACKAGE| INSERT_AFTER) =4933, (CtReturnImpl| size: 3062| compiles| PACKAGE| INSERT_AFTER) =273, (CtReturnImpl| size: 3062| alreadyanalyzed| LOCAL| INSERT_AFTER) =1127, (CtReturnImpl| size: 3062| notcompiles| LOCAL| INSERT_BEFORE) =535, (CtIfImpl| size: 3062| alreadyanalyzed| LOCAL| INSERT_BEFORE) =2391, (CtReturnImpl| size: 3062| alreadyanalyzed| PACKAGE| INSERT_BEFORE) =1170, (CtIfImpl| size: 3062| compiles| PACKAGE| INSERT_AFTER) =261, (CtReturnImpl| size: 1064| alreadyanalyzed| LOCAL| REPLACE) =166676, (CtIfImpl| size: 3062| notcompiles| LOCAL| INSERT_AFTER) =463, (CtReturnImpl| size: 3062| notcompiles| PACKAGE| INSERT_BEFORE) =897, (CtIfImpl| size: 719| alreadyanalyzed| LOCAL| REPLACE) =130001, (CtIfImpl| size: 719| notcompiles| LOCAL| REPLACE) =182, (CtIfImpl| size: 3062| compiles| PACKAGE| INSERT_BEFORE) =248, (CtIfImpl| size: 3062| notcompiles| PACKAGE| INSERT_BEFORE) =720, (CtReturnImpl| size: 3062| compiles| PACKAGE| INSERT_BEFORE) =293, (CtIfImpl| size: 719| compiles| PACKAGE| REPLACE) =13, (CtIfImpl| size: 719| alreadyanalyzed| PACKAGE| REPLACE) =166300, (CtIfImpl| size: 3062| notcompiles| PACKAGE| INSERT_AFTER) =786, (CtReturnImpl| size: 1064| compiles| LOCAL| REPLACE) =70, (CtReturnImpl| size: 3062| alreadyanalyzed| LOCAL| INSERT_BEFORE) =1317, (CtReturnImpl| size: 3062| notcompiles| LOCAL| INSERT_AFTER) =492}
+#gen: 2907
 #patches: 0
-#RightCompilation: 587
-#WrongCompilation: 1239
-#FailingTestCaseExecution: 588
+#RightCompilation: 773
+#WrongCompilation: 2129
+#FailingTestCaseExecution: 774
 #RegressionTestExecution: 1
-#TestcasesExecutedval1: 15876
+#TestcasesExecutedval1: 20898
 #TestcasesExecutedval2: 1643
 #FailingTestCase: 27
 #RegressionTestCases: 1643
-#OfAppliedOp: 1826
+#OfAppliedOp: 2902
 #NotAppliedOp: 0
-#InmutatedGen: 1160
+#InmutatedGen: 689
 #unfinishValidation: 0
-#ing {CtReturnImpl=1599, CtIfImpl=1387}
-#untilcompile {1=116, 2=78, 1102=1, 3=56, 1103=1, 4=53, 5=49, 1098=1, 6=42, 1099=1, 7=33, 8=29, 9=25, 10=16, 11=13, 12=13, 1089=1, 13=18, 14=20, 1091=1, 15=13, 17=10, 16=11, 19=10, 18=9, 21=8, 20=6, 1112=1, 23=6, 22=5, 25=5, 1108=1, 24=3, 27=4, 26=8, 2178=2, 3273=1, 29=8, 1104=1, 28=5, 31=3, 30=3, 1106=2, 2716=2, 516=1, 34=5, 2235=1, 35=5, 32=3, 33=2, 38=2, 39=1, 2236=1, 36=1, 514=1, 37=2, 42=2, 43=2, 40=1, 41=3, 1122=1, 46=1, 47=1, 44=2, 45=4, 2219=1, 51=1, 3301=1, 49=4, 48=1, 55=2, 54=1, 53=1, 52=4, 59=1, 58=1, 56=2, 63=3, 62=1, 536=1, 61=2, 60=2, 68=2, 69=2, 71=1, 64=2, 65=1, 66=2, 76=1, 78=1, 72=1, 1028=1, 73=1, 3230=1, 74=1, 1569=1, 75=2, 1031=1, 84=3, 83=1, 82=2, 92=1, 3210=3, 88=2, 576=4, 577=2, 579=1, 101=1, 580=1, 1070=49, 2781=18, 1071=2, 581=1, 582=2, 97=1, 584=1, 3259=1, 111=1, 106=1, 589=2, 1083=1, 119=1, 1082=1, 1080=1, 1087=1, 1086=1, 1085=1, 1084=1, 1073=1, 1072=1, 1078=2, 1077=1, 1076=2, 2064=14, 138=1, 1760=2, 128=1, 1231=1, 675=1, 152=1, 1776=2, 154=1, 156=1, 1785=1, 693=1, 1255=1, 170=1, 649=2, 651=1, 650=1, 645=1, 1736=1, 644=1, 1738=1, 646=2, 167=1, 641=19, 643=1, 642=4, 1745=1, 664=1, 667=1, 2572=1, 661=1, 176=1, 657=1, 659=1, 200=1, 1158=1, 1711=9, 1160=1, 2140=17, 1164=1, 217=1, 1715=1, 1175=1, 753=1, 1183=1, 713=1, 239=1, 719=1, 233=1, 2160=1, 2174=1, 230=1, 707=1, 706=5, 2170=2, 2150=1, 729=1, 2148=1, 250=1, 2146=2, 2630=1, 2144=1, 2145=1, 249=1, 1688=1, 2153=1, 274=1, 276=1, 1363=1, 1362=1, 1361=1, 1360=1, 1358=17, 806=1, 2463=1, 263=1, 1902=1, 271=1, 304=3, 307=3, 1406=1, 306=1, 309=2, 308=3, 311=1, 312=1, 1398=1, 3563=13, 1395=1, 318=1, 288=56, 289=6, 290=13, 772=2, 291=11, 292=6, 2493=7, 293=4, 294=7, 295=6, 296=5, 297=6, 298=1, 299=4, 300=1, 1377=1, 301=2, 302=1, 303=1, 2509=1, 340=1, 339=1, 336=1, 2501=1, 346=1, 327=1, 324=1, 325=1, 322=1, 323=1, 320=1, 1282=4, 333=1, 2515=1, 331=1, 2513=1, 2542=1, 369=2, 370=1, 383=1, 3498=6, 379=2, 356=1, 357=3, 358=4, 359=2, 1324=1, 353=36, 354=5, 355=5, 364=2, 365=3, 367=2, 361=2, 362=5, 363=3, 413=1, 403=1, 395=1, 394=1, 393=1, 4280=12, 399=1, 386=1, 385=1, 384=1, 1484=1, 929=2, 931=2, 388=2, 1527=1, 2008=1, 2846=8, 1999=9, 1016=1, 1429=1, 2383=1, 1437=1, 1408=2, 1002=1, 2398=1, 994=3, 1423=19, 449=1, 511=1, 1460=1, 1936=1, 1443=1, 2428=9}
-2015-08-06 20:26:18,698 INFO main - Time Evolution(ms): 3662304
-2015-08-06 20:26:18,698 INFO fr.inria.main.AbstractMain - Time Total(ms): 3693829
+#ing {CtReturnImpl=1924, CtIfImpl=1667}
+#untilcompile {1100=1, 1=181, 2=193, 3=143, 1096=2, 4=129, 2205=1, 5=116, 6=81, 7=77, 8=54, 1093=1, 9=57, 10=51, 1094=2, 11=52, 12=40, 1088=1, 13=38, 1089=1, 1090=1, 14=34, 15=37, 1117=1, 17=23, 16=26, 1119=1, 19=11, 18=23, 21=16, 1113=1, 20=14, 1115=1, 23=12, 22=15, 25=13, 24=15, 27=10, 26=6, 29=5, 1105=1, 28=13, 2183=1, 31=5, 1106=1, 30=7, 34=3, 35=7, 32=12, 33=5, 38=7, 39=4, 36=4, 37=3, 42=1, 40=3, 1125=1, 41=4, 46=1, 47=1, 44=3, 45=5, 51=5, 50=2, 49=5, 48=3, 55=3, 54=5, 53=5, 52=4, 59=1, 57=1, 63=1, 1139=1, 60=3, 68=2, 69=2, 70=2, 64=1, 65=1, 66=2, 67=1, 77=1, 1575=1, 78=6, 79=1, 72=1, 73=2, 74=1, 75=2, 86=1, 81=1, 82=1, 93=1, 92=1, 95=1, 89=1, 88=1, 91=1, 90=2, 1066=2, 102=2, 103=1, 1067=7, 1064=60, 1065=3, 3254=1, 1070=5, 99=1, 1071=6, 1068=10, 97=2, 1069=8, 110=1, 109=1, 107=1, 104=2, 105=1, 1082=2, 1081=2, 115=1, 1087=2, 1086=2, 1085=1, 1084=3, 1075=2, 126=1, 1074=2, 1073=4, 1072=2, 1553=1, 1079=2, 1077=2, 120=1, 1076=3, 140=1, 143=2, 130=2, 1773=1, 1783=19, 144=2, 1786=3, 1787=3, 1784=4, 1785=3, 1790=2, 149=1, 1791=1, 150=1, 151=1, 1789=1, 174=1, 161=1, 164=2, 186=1, 177=1, 747=2, 746=2, 2135=1, 744=1, 750=3, 2128=8, 749=1, 2131=1, 202=1, 197=1, 739=2, 738=1, 737=3, 736=4, 743=3, 742=2, 741=2, 740=3, 762=2, 763=1, 760=1, 1180=1, 759=1, 236=1, 719=89, 1189=1, 728=12, 729=5, 730=3, 731=4, 732=10, 733=3, 734=5, 735=2, 720=17, 721=15, 247=1, 722=11, 723=11, 724=14, 725=10, 726=9, 727=6, 1369=1, 825=1, 285=1, 257=1, 814=1, 270=1, 305=1, 788=1, 3566=5, 772=1, 292=1, 1871=1, 783=1, 2510=2, 2509=2, 2504=1, 2502=4, 347=1, 867=1, 2523=1, 2520=1, 332=1, 1831=1, 1813=1, 1810=1, 1808=1, 1805=1, 1802=2, 1800=1, 1801=1, 1798=2, 1799=1, 360=1, 1794=1, 1317=1, 1795=3, 1792=3, 1793=1, 2852=1, 1489=1, 2856=1, 2858=1, 1477=1, 392=1, 2865=1, 939=1, 2867=1, 2875=1, 2874=1, 914=1, 2847=3, 2920=1, 1438=5, 1439=1, 1465=1, 502=1, 1441=1, 1440=1, 1445=2, 1444=1, 1449=1, 2905=1, 1450=1, 1452=1}
+2015-08-07 01:14:35,844 INFO main - Time Evolution(ms): 3660036
+2015-08-07 01:14:35,844 INFO fr.inria.main.AbstractMain - Time Total(ms): 3692106
 
 
-Node: griffon-57.nancy.grid5000.fr
+Node: griffon-34.nancy.grid5000.fr
 
 
-Date: Thu Aug  6 22:26:19 CEST 2015
+Date: Fri Aug  7 03:14:36 CEST 2015
 
 

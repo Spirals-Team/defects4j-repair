@@ -1,34 +1,34 @@
 {
     "FailingTestCase": "13", 
-    "FailingTestCaseExecution": "10", 
-    "InmutatedGen": "0", 
+    "FailingTestCaseExecution": "33", 
+    "InmutatedGen": "2", 
     "NotAppliedOp": "0", 
-    "OfAppliedOp": "17", 
+    "OfAppliedOp": "102", 
     "RegressionTestCases": "1875", 
     "RegressionTestExecution": "1", 
-    "RightCompilation": "9", 
-    "WrongCompilation": "8", 
-    "date": "Thu Aug  6 19:07:25 CEST 2015\n\n", 
-    "gen": "17", 
+    "RightCompilation": "32", 
+    "WrongCompilation": "70", 
+    "date": "Thu Aug  6 23:58:22 CEST 2015\n\n", 
+    "gen": "102", 
     "gens": "60", 
-    "node": "graphene-114.nancy.grid5000.fr", 
+    "node": "graphene-19.nancy.grid5000.fr", 
     "operations": [
         {
             "buggyStatement": "if ((fa * fb) >= 0.0) {\n\tthrow new org.apache.commons.math.ConvergenceException((\"number of iterations={0}, maximum iterations={1}, \" + (\"initial={2}, lower bound={3}, upper bound={4}, final a value={5}, \" + \"final b value={6}, f(a)={7}, f(b)={8}\")) , numIterations , maximumIterations , initial , lowerBound , upperBound , a , b , fa , fb);\n} ", 
-            "generation": 17, 
+            "generation": 102, 
             "patch": "remove", 
             "patchLocation": {
                 "className": "org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils", 
                 "line": 198
             }, 
             "type": "DELETE", 
-            "variant": 34
+            "variant": 204
         }
     ], 
     "ops": "0", 
     "patches": "1", 
-    "programVariant": "34", 
-    "timeEvaluation": "11336", 
-    "timeTotal": "38145", 
+    "programVariant": "204", 
+    "timeEvaluation": "139134", 
+    "timeTotal": "168751", 
     "unfinishValidation": "0"
 }

@@ -21,7 +21,7 @@ BugId             | NopolPC   | NopolC    | BrutpolPC | BrutpolC  | Genprog   | 
 [M2](#math-2)     | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | Yes       | Yes       |      2
 [M5](#math-5)     | TIMEOUT   | 2 AV      | TIMEOUT   | ERROR     | Yes       | No        |      1
 [M8](#math-8)     | TIMEOUT   | 1 AV      | TIMEOUT   | ERROR     | Yes       | Yes       |      2
-[M24](#math-24)   | 5 AV      | 1 AV      | TIMEOUT   | 1 AV      | Yes       | No        |      1
+[M18](#math-18)   | TIMEOUT   | 1 AV      | TIMEOUT   | TIMEOUT   | Yes       | No        |      1
 [M32](#math-32)   | Yes       | 0 AV      | TIMEOUT   | Yes       | No        | No        |      2
 [M33](#math-33)   | Yes       | Yes       | Yes       | TIMEOUT   | No        | No        |      3
 [M40](#math-40)   | 1 AV      | Yes       | 0 AV      | 1 AV      | No        | Yes       |      2
@@ -42,7 +42,6 @@ BugId             | NopolPC   | NopolC    | BrutpolPC | BrutpolC  | Genprog   | 
 [M80](#math-80)   | Yes       | TIMEOUT   | 3 AV      | ERROR     | Yes       | Yes       |      3
 [M81](#math-81)   | Yes       | Yes       | TIMEOUT   | TIMEOUT   | Yes       | Yes       |      4
 [M82](#math-82)   | Yes       | 0 AV      | TIMEOUT   | TIMEOUT   | Yes       | Yes       |      3
-[M84](#math-84)   | 0 AV      | 0 AV      | 0 AV      | TIMEOUT   | Yes       | No        |      1
 [M85](#math-85)   | Yes       | Yes       | Yes       | Yes       | Yes       | Yes       |      6
 [M87](#math-87)   | Yes       | Yes       | Yes       | ERROR     | No        | No        |      3
 [M88](#math-88)   | Yes       | 1 AV      | Yes       | ERROR     | No        | No        |      2
@@ -53,16 +52,16 @@ BugId             | NopolPC   | NopolC    | BrutpolPC | BrutpolC  | Genprog   | 
 [M104](#math-104) | 0 AV      | Yes       | 0 AV      | TIMEOUT   | No        | No        |      1
 [M105](#math-105) | Yes       | 0 AV      | Yes       | ERROR     | No        | No        |      2
 [T11](#time-11)   | Yes       | Yes       | Yes       | ERROR     | No        | No        |      3
-Total             | 30 (13%)  | 25 (11%)  | 25 (11%)  | 12 (5%)   | 18 (8%)   | 11 (4%)   |    121
-Fixed bugs: 51/224 (22%)
+Total             | 30 (13%)  | 25 (11%)  | 25 (11%)  | 12 (5%)   | 17 (7%)   | 11 (4%)   |    120
+Fixed bugs: 50/224 (22%)
 
-Nb bugs ends with an execution error: 61
+Nb bugs ends with an execution error: 60
 
 Nb bugs ends with an empty log: 0
 
-Nb bugs ends with the Grid5000 timeout: 390
+Nb bugs ends with the Grid5000 timeout: 391
 
-Total execution time: 36 days, 5:18:43.829000
+Total execution time: 36 days, 7:31:27.272000
 # Complete data
 
 BugId             | NopolPC   | NopolC    | BrutpolPC | BrutpolC  | Genprog   | Kali      | Total
@@ -175,13 +174,13 @@ BugId             | NopolPC   | NopolC    | BrutpolPC | BrutpolC  | Genprog   | 
 [M15](#math-15)   | TIMEOUT   | 1 AV      | TIMEOUT   | 1 AV      | No        | No        |      0
 [M16](#math-16)   | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        | No        |      0
 [M17](#math-17)   | 0 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        | No        |      0
-[M18](#math-18)   | TIMEOUT   | 1 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
+[M18](#math-18)   | TIMEOUT   | 1 AV      | TIMEOUT   | TIMEOUT   | Yes       | No        |      1
 [M19](#math-19)   | 0 AV      | 1 AV      | 0 AV      | 1 AV      | No        | No        |      0
 [M20](#math-20)   | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | ERROR     | ERROR     |      0
 [M21](#math-21)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
 [M22](#math-22)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
 [M23](#math-23)   | 0 AV      | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        | No        |      0
-[M24](#math-24)   | 5 AV      | 1 AV      | TIMEOUT   | 1 AV      | Yes       | No        |      1
+[M24](#math-24)   | 5 AV      | 1 AV      | TIMEOUT   | 1 AV      | No        | No        |      0
 [M25](#math-25)   | 0 AV      | 0 AV      | TIMEOUT   | ERROR     | No        | No        |      0
 [M26](#math-26)   | 0 AV      | 0 AV      | TIMEOUT   | ERROR     | No        | No        |      0
 [M27](#math-27)   | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        | No        |      0
@@ -211,7 +210,7 @@ BugId             | NopolPC   | NopolC    | BrutpolPC | BrutpolC  | Genprog   | 
 [M51](#math-51)   | TIMEOUT   | TIMEOUT   | TIMEOUT   | 0 AV      | ERROR     | ERROR     |      0
 [M52](#math-52)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
 [M53](#math-53)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | Yes       | No        |      1
-[M54](#math-54)   | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        | ERROR     |      0
+[M54](#math-54)   | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        | TIMEOUT   |      0
 [M55](#math-55)   | 0 AV      | 0 AV      | 0 AV      | TIMEOUT   | No        | No        |      0
 [M56](#math-56)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
 [M57](#math-57)   | Yes       | Yes       | 3 AV      | 1 AV      | No        | No        |      2
@@ -241,7 +240,7 @@ BugId             | NopolPC   | NopolC    | BrutpolPC | BrutpolC  | Genprog   | 
 [M81](#math-81)   | Yes       | Yes       | TIMEOUT   | TIMEOUT   | Yes       | Yes       |      4
 [M82](#math-82)   | Yes       | 0 AV      | TIMEOUT   | TIMEOUT   | Yes       | Yes       |      3
 [M83](#math-83)   | 0 AV      | 0 AV      | ERROR     | TIMEOUT   | No        | No        |      0
-[M84](#math-84)   | 0 AV      | 0 AV      | 0 AV      | TIMEOUT   | Yes       | No        |      1
+[M84](#math-84)   | 0 AV      | 0 AV      | 0 AV      | TIMEOUT   | No        | No        |      0
 [M85](#math-85)   | Yes       | Yes       | Yes       | Yes       | Yes       | Yes       |      6
 [M86](#math-86)   | 5 AV      | 0 AV      | TIMEOUT   | ERROR     | No        | No        |      0
 [M87](#math-87)   | Yes       | Yes       | Yes       | ERROR     | No        | No        |      3
@@ -291,16 +290,16 @@ BugId             | NopolPC   | NopolC    | BrutpolPC | BrutpolC  | Genprog   | 
 [T25](#time-25)   | 0 AV      | TIMEOUT   | TIMEOUT   | 0 AV      | No        | No        |      0
 [T26](#time-26)   | 0 AV      | 0 AV      | TIMEOUT   | 0 AV      | No        | No        |      0
 [T27](#time-27)   | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   | ERROR     | ERROR     |      0
-Total             | 30 (13%)  | 25 (11%)  | 25 (11%)  | 12 (5%)   | 18 (8%)   | 11 (4%)   |    121
-Fixed bugs: 51/224 (22%)
+Total             | 30 (13%)  | 25 (11%)  | 25 (11%)  | 12 (5%)   | 17 (7%)   | 11 (4%)   |    120
+Fixed bugs: 50/224 (22%)
 
-Nb bugs ends with an execution error: 61
+Nb bugs ends with an execution error: 60
 
 Nb bugs ends with an empty log: 0
 
-Nb bugs ends with the Grid5000 timeout: 390
+Nb bugs ends with the Grid5000 timeout: 391
 
-Total execution time: 36 days, 5:18:43.829000
+Total execution time: 36 days, 7:31:27.272000
 
 
 
@@ -2480,7 +2479,7 @@ DELETE
 remove
 ```
 
-Grid5000 node: griffon-35.nancy.grid5000.fr
+Grid5000 node: griffon-33.nancy.grid5000.fr
 
 ## Kali 
 
@@ -2564,7 +2563,7 @@ REPLACE
 return org.apache.commons.math3.complex.Complex.INF
 ```
 
-Grid5000 node: griffon-39.nancy.grid5000.fr
+Grid5000 node: griffon-57.nancy.grid5000.fr
 
 # Math 8
 
@@ -2614,13 +2613,13 @@ index 879eb2a..8c08dbe 100644
 
 ## Genprog 
 
-org.apache.commons.math3.distribution.DiscreteDistribution:190 (Suspicious rank: ample 4, jaccard 4, ochiai 4, naish1 33478, gp13 4, naish2 4, tarantula 4, )
+org.apache.commons.math3.distribution.DiscreteDistribution:189 (Suspicious rank: ample 3, jaccard 3, ochiai 3, naish1 33466, gp13 3, naish2 3, tarantula 3, )
 DELETE
 ```Java
 remove
 ```
 
-Grid5000 node: griffon-58.nancy.grid5000.fr
+Grid5000 node: griffon-39.nancy.grid5000.fr
 
 ## Kali 
 
@@ -2638,97 +2637,80 @@ remove
 
 Grid5000 node: graphite-1.nancy.grid5000.fr
 
-# Math 24
+# Math 18
 
-Nb Executed tests: 4095
+Nb Executed tests: 4171
 
 Nb Failing tests: 1
 
->	org.apache.commons.math3.optimization.univariate.BrentOptimizerTest#testMath855
+>	org.apache.commons.math3.optimization.direct.CMAESOptimizerTest#testFitAccuracyDependsOnBoundary
 
 ## Human Patch 
 
 ```Java
-diff --git a/org/apache/commons/math3/optimization/univariate/BrentOptimizer.java b/org/apache/commons/math3/optimization/univariate/BrentOptimizer.java
-index cff5bfd..ee2227c 100644
---- a/org/apache/commons/math3/optimization/univariate/BrentOptimizer.java
-+++ b/org/apache/commons/math3/optimization/univariate/BrentOptimizer.java
-@@ -227,7 +226,7 @@ public class BrentOptimizer extends BaseAbstractUnivariateOptimizer {
- 
-                 if (checker != null) {
-                     if (checker.converged(iter, previous, current)) {
--                        return best(current, previous, isMinim);
-+                        return current;
-                     }
-                 }
- 
-@@ -264,36 +263,9 @@ public class BrentOptimizer extends BaseAbstractUnivariateOptimizer {
-                     }
-                 }
-             } else { // Default termination (Brent's criterion).
--                return best(current, previous, isMinim);
-+                return current;
-             }
-             ++iter;
+diff --git a/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java b/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java
+index 866c8fd..f6a4f28 100644
+--- a/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java
++++ b/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java
+@@ -585,8 +585,8 @@ public class CMAESOptimizer
+         // initialize sigma
+         double[][] sigmaArray = new double[guess.length][1];
+         for (int i = 0; i < guess.length; i++) {
+-            final double range = (boundaries == null) ? 1.0 : boundaries[1][i] - boundaries[0][i];
+-            sigmaArray[i][0] = ((inputSigma == null) ? 0.3 : inputSigma[i]) / range;
++            final double range =  (boundaries == null) ? 1.0 : boundaries[1][i] - boundaries[0][i];
++            sigmaArray[i][0]   = ((inputSigma == null) ? 0.3 : inputSigma[i]) / range;
          }
-     }
+         RealMatrix insigma = new Array2DRowRealMatrix(sigmaArray, false);
+         sigma = max(insigma); // overall standard deviation
+@@ -929,7 +929,7 @@ public class CMAESOptimizer
+             double[] res = new double[x.length];
+             for (int i = 0; i < x.length; i++) {
+                 double diff = boundaries[1][i] - boundaries[0][i];
+-                res[i] = x[i] / diff;
++                res[i] = (x[i] - boundaries[0][i]) / diff;
+             }
+             return res;
+         }
+@@ -955,7 +955,7 @@ public class CMAESOptimizer
+             double[] res = new double[x.length];
+             for (int i = 0; i < x.length; i++) {
+                 double diff = boundaries[1][i] - boundaries[0][i];
+-                res[i] = diff * x[i];
++                res[i] = diff * x[i] + boundaries[0][i];
+             }
+             return res;
+         }
+@@ -986,15 +986,11 @@ public class CMAESOptimizer
+             if (boundaries == null) {
+                 return true;
+             }
 -
--    /**
--     * Selects the best of two points.
--     *
--     * @param a Point and value.
--     * @param b Point and value.
--     * @param isMinim {@code true} if the selected point must be the one with
--     * the lowest value.
--     * @return the best point, or {@code null} if {@code a} and {@code b} are
--     * both {@code null}.
--     */
--    private UnivariatePointValuePair best(UnivariatePointValuePair a,
--                                          UnivariatePointValuePair b,
--                                          boolean isMinim) {
--        if (a == null) {
--            return b;
--        }
--        if (b == null) {
--            return a;
--        }
+-            final double[] bLoEnc = encode(boundaries[0]);
+-            final double[] bHiEnc = encode(boundaries[1]);
 -
--        if (isMinim) {
--            return a.getValue() < b.getValue() ? a : b;
--        } else {
--            return a.getValue() > b.getValue() ? a : b;
--        }
--    }
- }
+             for (int i = 0; i < x.length; i++) {
+-                if (x[i] < bLoEnc[i]) {
++                if (x[i] < 0) {
+                     return false;
+                 }
+-                if (x[i] > bHiEnc[i]) {
++                if (x[i] > 1.0) {
+                     return false;
+                 }
+             }
 
 ```
 
 ## Genprog 
 
-org.apache.commons.math3.optimization.univariate.BrentOptimizer:241 (Suspicious rank: ample 34, jaccard 34, ochiai 70, naish1 27650, gp13 34, naish2 34, tarantula 34, )
-REPLACE
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:586 (Suspicious rank: ample 293, jaccard 293, ochiai 189, naish1 27849, gp13 293, naish2 293, tarantula 293, )
+INSERT_BEFORE
 ```Java
-if (((p > (q * (a - x))) && (p < (q * (b - x)))) && ((org.apache.commons.math3.util.FastMath.abs(p)) < (org.apache.commons.math3.util.FastMath.abs(((0.5 * q) * r))))) {
-	d = p / q;
-	u = x + d;
-	if (((u - a) < tol2) || ((b - u) < tol2)) {
-		if (x <= m) {
-			d = tol1;
-		} else {
-			d = -tol1;
-		}
-	} 
-} else {
-	if (x < m) {
-		e = b - x;
-	} else {
-		e = a - x;
-	}
-	d = (org.apache.commons.math3.optimization.univariate.BrentOptimizer.GOLDEN_SECTION) * e;
-}
+boundaries = null
 ```
 
-Grid5000 node: griffon-20.nancy.grid5000.fr
+Grid5000 node: griffon-73.nancy.grid5000.fr
 
 # Math 32
 
@@ -3102,13 +3084,13 @@ index 8f315e3..2d878b1 100644
 
 ## Genprog 
 
-org.apache.commons.math.ode.AbstractIntegrator:325 (Suspicious rank: ample 36, jaccard 36, ochiai 31, naish1 23846, gp13 36, naish2 36, tarantula 36, )
+org.apache.commons.math.ode.AbstractIntegrator:313 (Suspicious rank: ample 19, jaccard 19, ochiai 23, naish1 23467, gp13 19, naish2 19, tarantula 19, )
 INSERT_BEFORE
 ```Java
 statesInitialized = false
 ```
 
-Grid5000 node: graphene-72.nancy.grid5000.fr
+Grid5000 node: graphene-55.nancy.grid5000.fr
 
 # Math 46
 
@@ -3271,7 +3253,7 @@ DELETE
 remove
 ```
 
-Grid5000 node: griffon-11.nancy.grid5000.fr
+Grid5000 node: graphene-9.nancy.grid5000.fr
 
 ## Kali 
 
@@ -3388,7 +3370,7 @@ DELETE
 remove
 ```
 
-Grid5000 node: griffon-15.nancy.grid5000.fr
+Grid5000 node: griffon-11.nancy.grid5000.fr
 
 ## Kali 
 
@@ -3430,7 +3412,7 @@ index ab58c78..e0a8e97 100644
 
 ## Genprog 
 
-org.apache.commons.math.complex.Complex:152 (Suspicious rank: ample 2, jaccard 2, ochiai 1, naish1 21136, gp13 2, naish2 2, tarantula 2, )
+org.apache.commons.math.complex.Complex:153 (Suspicious rank: ample 1, jaccard 1, ochiai 2, naish1 21135, gp13 1, naish2 1, tarantula 1, )
 INSERT_BEFORE
 ```Java
 if ((isNaN) || (rhs.isNaN)) {
@@ -3438,7 +3420,7 @@ if ((isNaN) || (rhs.isNaN)) {
 } 
 ```
 
-Grid5000 node: griffon-20.nancy.grid5000.fr
+Grid5000 node: griffon-18.nancy.grid5000.fr
 
 # Math 57
 
@@ -3661,10 +3643,10 @@ index 180caef..3f66927 100644
 org.apache.commons.math.analysis.solvers.BisectionSolver:72 (Suspicious rank: ample 1, jaccard 1, ochiai 1, naish1 16589, gp13 1, naish2 1, tarantula 1, )
 REPLACE
 ```Java
-return solve(f, min, max)
+return solve(f, initial, max)
 ```
 
-Grid5000 node: griffon-71.nancy.grid5000.fr
+Grid5000 node: griffon-63.nancy.grid5000.fr
 
 # Math 71
 
@@ -3804,13 +3786,15 @@ Grid5000 node: graphene-66.nancy.grid5000.fr
 
 ## Genprog 
 
-org.apache.commons.math.ode.events.EventState:175 (Suspicious rank: ample 83, jaccard 180, ochiai 83, naish1 16283, gp13 83, naish2 83, tarantula 180, )
-INSERT_BEFORE
+org.apache.commons.math.ode.events.EventState:180 (Suspicious rank: ample 72, jaccard 169, ochiai 87, naish1 16070, gp13 72, naish2 72, tarantula 169, )
+REPLACE
 ```Java
-pendingEvent = true
+if ((pendingEvent) && ((java.lang.Math.abs((t1 - (pendingEventTime)))) <= (convergence))) {
+	return false;
+} 
 ```
 
-Grid5000 node: griffon-72.nancy.grid5000.fr
+Grid5000 node: griffon-65.nancy.grid5000.fr
 
 # Math 73
 
@@ -3882,13 +3866,13 @@ Grid5000 node: graphene-82.nancy.grid5000.fr
 
 ## Genprog 
 
-org.apache.commons.math.analysis.solvers.BrentSolver:132 (Suspicious rank: ample 1, jaccard 1, ochiai 1, naish1 15933, gp13 1, naish2 1, tarantula 1, )
-REPLACE
+org.apache.commons.math.analysis.solvers.BrentSolver:127 (Suspicious rank: ample 8, jaccard 8, ochiai 11, naish1 15902, gp13 8, naish2 8, tarantula 8, )
+INSERT_BEFORE
 ```Java
-return solve(f, min, max)
+verifyBracketing(min, max, f)
 ```
 
-Grid5000 node: griffon-77.nancy.grid5000.fr
+Grid5000 node: griffon-68.nancy.grid5000.fr
 
 # Math 78
 
@@ -3994,7 +3978,7 @@ DELETE
 remove
 ```
 
-Grid5000 node: griffon-73.nancy.grid5000.fr
+Grid5000 node: griffon-72.nancy.grid5000.fr
 
 ## Kali 
 
@@ -4050,12 +4034,12 @@ Grid5000 node: graphene-55.nancy.grid5000.fr
 ## Genprog 
 
 org.apache.commons.math.linear.EigenDecompositionImpl:1139 (Suspicious rank: ample 1, jaccard 1, ochiai 18, naish1 16068, gp13 1, naish2 1, tarantula 1, )
-REPLACE
+DELETE
 ```Java
-g = 0.25 * 0.333
+remove
 ```
 
-Grid5000 node: griffon-85.nancy.grid5000.fr
+Grid5000 node: griffon-72.nancy.grid5000.fr
 
 ## Kali 
 
@@ -4241,13 +4225,13 @@ Grid5000 node: graphene-80.nancy.grid5000.fr
 
 ## Genprog 
 
-org.apache.commons.math.linear.EigenDecompositionImpl:1540 (Suspicious rank: ample 3, jaccard 3, ochiai 10, naish1 16249, gp13 3, naish2 3, tarantula 3, )
+org.apache.commons.math.linear.EigenDecompositionImpl:1541 (Suspicious rank: ample 4, jaccard 4, ochiai 11, naish1 16250, gp13 4, naish2 4, tarantula 4, )
 DELETE
 ```Java
 remove
 ```
 
-Grid5000 node: griffon-9.nancy.grid5000.fr
+Grid5000 node: griffon-77.nancy.grid5000.fr
 
 ## Kali 
 
@@ -4444,13 +4428,13 @@ Grid5000 node: graphene-73.nancy.grid5000.fr
 
 ## Genprog 
 
-org.apache.commons.math.optimization.linear.SimplexSolver:63 (Suspicious rank: ample 37, jaccard 37, ochiai 47, naish1 16048, gp13 37, naish2 37, tarantula 37, )
-DELETE
+org.apache.commons.math.util.MathUtils:372 (Suspicious rank: ample 79, jaccard 79, ochiai 78, naish1 16180, gp13 79, naish2 79, tarantula 79, )
+REPLACE
 ```Java
-remove
+return x >= (org.apache.commons.math.util.MathUtils.ZB) ? org.apache.commons.math.util.MathUtils.PB : org.apache.commons.math.util.MathUtils.NB
 ```
 
-Grid5000 node: griffon-4.nancy.grid5000.fr
+Grid5000 node: griffon-77.nancy.grid5000.fr
 
 ## Kali 
 
@@ -4461,60 +4445,6 @@ remove
 ```
 
 Grid5000 node: graphene-13.nancy.grid5000.fr
-
-# Math 84
-
-Nb Executed tests: 2054
-
-Nb Failing tests: 2
-
->	org.apache.commons.math.optimization.direct.MultiDirectionalTest#testMinimizeMaximize
->	org.apache.commons.math.optimization.direct.MultiDirectionalTest#testMath283
-
-## Human Patch 
-
-```Java
-diff --git a/org/apache/commons/math/optimization/direct/MultiDirectional.java b/org/apache/commons/math/optimization/direct/MultiDirectional.java
-index 929560c..955d0d8 100644
---- a/org/apache/commons/math/optimization/direct/MultiDirectional.java
-+++ b/org/apache/commons/math/optimization/direct/MultiDirectional.java
-@@ -61,7 +60,6 @@ public class MultiDirectional extends DirectSearchOptimizer {
-     protected void iterateSimplex(final Comparator<RealPointValuePair> comparator)
-         throws FunctionEvaluationException, OptimizationException, IllegalArgumentException {
- 
--        final RealConvergenceChecker checker = getConvergenceChecker();
-         while (true) {
- 
-             incrementIterationsCounter();
-@@ -93,16 +91,6 @@ public class MultiDirectional extends DirectSearchOptimizer {
-                 return;
-             }
- 
--            // check convergence
--            final int iter = getIterations();
--            boolean converged = true;
--            for (int i = 0; i < simplex.length; ++i) {
--                converged &= checker.converged(iter, original[i], simplex[i]);
--            }
--            if (converged) {
--                return;
--            }
--
-         }
- 
-     }
-
-```
-
-## Genprog 
-
-org.apache.commons.math.optimization.direct.MultiDirectional:90 (Suspicious rank: ample 16, jaccard 16, ochiai 7, naish1 16169, gp13 16, naish2 16, tarantula 16, )
-REPLACE
-```Java
-return 
-```
-
-Grid5000 node: graphene-1.nancy.grid5000.fr
 
 # Math 85
 
@@ -4611,7 +4541,7 @@ DELETE
 remove
 ```
 
-Grid5000 node: graphene-114.nancy.grid5000.fr
+Grid5000 node: graphene-19.nancy.grid5000.fr
 
 ## Kali 
 
@@ -4907,10 +4837,10 @@ index 59aeb07..3959403 100644
 org.apache.commons.math.distribution.FDistributionImpl:144 (Suspicious rank: ample 1393, jaccard 105, ochiai 105, naish1 8365, gp13 105, naish2 105, tarantula 83, )
 REPLACE
 ```Java
-return denominatorDegreesOfFreedom
+return 1
 ```
 
-Grid5000 node: graphene-34.nancy.grid5000.fr
+Grid5000 node: graphene-19.nancy.grid5000.fr
 
 ## Kali 
 

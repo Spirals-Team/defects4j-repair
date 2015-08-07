@@ -1,22 +1,34 @@
 {
     "FailingTestCase": "26", 
-    "FailingTestCaseExecution": "569", 
-    "InmutatedGen": "199", 
+    "FailingTestCaseExecution": "209", 
+    "InmutatedGen": "14", 
     "NotAppliedOp": "0", 
-    "OfAppliedOp": "1305", 
-    "RegressionTestCases": "0", 
-    "RegressionTestExecution": "0", 
-    "RightCompilation": "568", 
-    "WrongCompilation": "737", 
-    "date": "Thu Aug  6 21:32:06 CEST 2015\n\n", 
-    "gen": "1305", 
+    "OfAppliedOp": "643", 
+    "RegressionTestCases": "4148", 
+    "RegressionTestExecution": "1", 
+    "RightCompilation": "208", 
+    "WrongCompilation": "435", 
+    "date": "Fri Aug  7 02:07:31 CEST 2015\n\n", 
+    "gen": "643", 
     "gens": "567", 
-    "node": "griffon-14.nancy.grid5000.fr", 
-    "operations": [], 
+    "node": "griffon-73.nancy.grid5000.fr", 
+    "operations": [
+        {
+            "buggyStatement": "double[][] sigmaArray = new double[guess.length][1]", 
+            "generation": 643, 
+            "patch": "boundaries = null", 
+            "patchLocation": {
+                "className": "org.apache.commons.math3.optimization.direct.CMAESOptimizer", 
+                "line": 586
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 1286
+        }
+    ], 
     "ops": "0", 
-    "patches": "0", 
-    "programVariant": null, 
-    "timeEvaluation": "3662555", 
-    "timeTotal": "4335645", 
+    "patches": "1", 
+    "programVariant": "1286", 
+    "timeEvaluation": "1879491", 
+    "timeTotal": "2553966", 
     "unfinishValidation": "0"
 }

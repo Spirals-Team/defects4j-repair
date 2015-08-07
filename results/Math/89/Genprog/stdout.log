@@ -1,47 +1,47 @@
 export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/math/math_89 /tmp/math_89_Genprog;cd /tmp/math_89_Genprog;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
 /home/tdurieux/defects4j-repair/src/python/core/../../../results/Math/89/Genprog/result
-cd /tmp/math_89_Genprog;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java  -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement -location . -dependencies lib/ -failing org.apache.commons.math.stat.FrequencyTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 6 -maxgen 1000000 -seed 10 -population 1 -srcjavafolder src/java/ -srctestfolder src/test/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
+cd /tmp/math_89_Genprog;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java  -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement -location . -dependencies lib/ -failing org.apache.commons.math.stat.FrequencyTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 6 -maxgen 1000000 -seed 10 -scope package  -population 1 -srcjavafolder src/java/ -srctestfolder src/test/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
 
 Node: `hostname`
 ";echo "
 Date: `date`
 ";rm -rf /tmp/math_89_Genprog;
 
-2015-08-06 18:08:04,685 INFO main - End Repair Loops: NOT Found solution
-2015-08-06 18:08:04,685 INFO main - 
+2015-08-06 22:56:08,726 INFO main - End Repair Loops: NOT Found solution
+2015-08-06 22:56:08,726 INFO main - 
 Number solutions:0
-2015-08-06 18:08:04,685 INFO main - 
+2015-08-06 22:56:08,726 INFO main - 
 All variants:
-2015-08-06 18:08:04,685 INFO main - f 1.0, [Variant id: 219649, #gens: 1, #ops: 0, parent:-]
-2015-08-06 18:08:04,685 INFO main - --Space: LOCAL
-org.apache.commons.math.stat.Frequency=91|,
-2015-08-06 18:08:04,685 INFO main - 
+2015-08-06 22:56:08,726 INFO main - f 1.0, [Variant id: 181797, #gens: 1, #ops: 0, parent:-]
+2015-08-06 22:56:08,726 INFO main - --Space: PACKAGE
+org.apache.commons.math.analysis.interpolation=75|,org.apache.commons.math.special=74|,org.apache.commons.math.analysis=22|,org.apache.commons.math.util=755|,org.apache.commons.math.stat.descriptive=519|,org.apache.commons.math.stat.regression=192|,org.apache.commons.math.stat.correlation=108|,org.apache.commons.math.linear.decomposition=1522|,org.apache.commons.math.ode.sampling=162|,org.apache.commons.math=137|,org.apache.commons.math.analysis.polynomials=314|,org.apache.commons.math.genetics=31|,org.apache.commons.math.optimization.linear=208|,org.apache.commons.math.ode.nonstiff=1325|,org.apache.commons.math.optimization.univariate=85|,org.apache.commons.math.optimization.direct=182|,org.apache.commons.math.optimization.general=533|,org.apache.commons.math.stat=133|,org.apache.commons.math.distribution=493|,org.apache.commons.math.ode.events=127|,org.apache.commons.math.stat.descriptive.summary=96|,org.apache.commons.math.geometry=492|,org.apache.commons.math.linear=2895|,org.apache.commons.math.estimation=81|,org.apache.commons.math.analysis.integration=164|,org.apache.commons.math.stat.descriptive.rank=88|,org.apache.commons.math.random=485|,org.apache.commons.math.fraction=572|,org.apache.commons.math.complex=213|,org.apache.commons.math.transform=377|,org.apache.commons.math.stat.inference=45|,org.apache.commons.math.optimization=283|,org.apache.commons.math.ode=320|,org.apache.commons.math.stat.descriptive.moment=349|,org.apache.commons.math.analysis.solvers=603|,
+2015-08-06 22:56:08,726 INFO main - 
 ----stats: 
-2015-08-06 18:08:04,685 INFO main - 
-spaces navigation: [9]: {(CtInvocationImpl| size: 20| compiles| LOCAL| REPLACE) =2, (CtInvocationImpl| size: 91| compiles| LOCAL| INSERT_AFTER) =26, (CtInvocationImpl| size: 91| compiles| LOCAL| INSERT_BEFORE) =26, (CtInvocationImpl| size: 91| alreadyanalyzed| LOCAL| INSERT_BEFORE) =2490501, (CtInvocationImpl| size: 91| notcompiles| LOCAL| INSERT_BEFORE) =45, (CtInvocationImpl| size: 91| notcompiles| LOCAL| INSERT_AFTER) =45, (CtInvocationImpl| size: 91| alreadyanalyzed| LOCAL| INSERT_AFTER) =2521701, (CtInvocationImpl| size: 20| alreadyanalyzed| LOCAL| REPLACE) =548643, (CtInvocationImpl| size: 20| notcompiles| LOCAL| REPLACE) =12}
-#gen: 109824
+2015-08-06 22:56:08,726 INFO main - 
+spaces navigation: [15]: {(CtInvocationImpl| size: 133| compiles| PACKAGE| INSERT_AFTER) =7, (CtInvocationImpl| size: 133| compiles| PACKAGE| INSERT_BEFORE) =7, (CtInvocationImpl| size: 133| compiles| LOCAL| INSERT_AFTER) =26, (CtInvocationImpl| size: 133| notcompiles| LOCAL| INSERT_BEFORE) =45, (CtInvocationImpl| size: 133| alreadyanalyzed| LOCAL| INSERT_BEFORE) =2115438, (CtInvocationImpl| size: 133| notcompiles| PACKAGE| INSERT_BEFORE) =32, (CtInvocationImpl| size: 133| compiles| LOCAL| INSERT_BEFORE) =26, (CtInvocationImpl| size: 133| notcompiles| PACKAGE| INSERT_AFTER) =32, (CtInvocationImpl| size: 133| notcompiles| LOCAL| INSERT_AFTER) =45, (CtInvocationImpl| size: 133| alreadyanalyzed| LOCAL| INSERT_AFTER) =2103775, (CtInvocationImpl| size: 21| alreadyanalyzed| LOCAL| REPLACE) =477362, (CtInvocationImpl| size: 21| notcompiles| LOCAL| REPLACE) =12, (CtInvocationImpl| size: 133| alreadyanalyzed| PACKAGE| INSERT_BEFORE) =908753, (CtInvocationImpl| size: 21| compiles| LOCAL| REPLACE) =2, (CtInvocationImpl| size: 133| alreadyanalyzed| PACKAGE| INSERT_AFTER) =903282}
+#gen: 90898
 #patches: 0
 #RightCompilation: 0
-#WrongCompilation: 27316
+#WrongCompilation: 22825
 #FailingTestCaseExecution: 1
 #RegressionTestExecution: 0
 #TestcasesExecutedval1: 7
 #TestcasesExecutedval2: 0
 #FailingTestCase: 7
 #RegressionTestCases: 0
-#OfAppliedOp: 27316
+#OfAppliedOp: 22825
 #NotAppliedOp: 0
-#InmutatedGen: 82508
+#InmutatedGen: 68073
 #unfinishValidation: 0
-#ing {CtInvocationImpl=109824}
-#untilcompile {1=7, 2=6, 3=6, 4=5, 5=4, 6=5, 37=1, 42=1, 8=3, 9=1, 10=1, 11=3, 12=2, 13=4, 17=1, 16=1, 21=1, 20=27432, 24=1, 29=1, 91=55076}
-2015-08-06 18:08:04,685 INFO main - Time Evolution(ms): 3661070
-2015-08-06 18:08:04,685 INFO fr.inria.main.AbstractMain - Time Total(ms): 3684016
+#ing {CtInvocationImpl=90898}
+#untilcompile {1=9, 2=6, 3=8, 4=4, 5=3, 6=3, 67=1, 7=4, 8=5, 9=1, 131=1, 10=3, 11=4, 133=45341, 17=1, 16=1, 18=1, 21=22732, 23=1, 22=1, 25=3, 92=1, 28=2, 39=1, 46=1, 106=1, 113=1, 53=1}
+2015-08-06 22:56:08,726 INFO main - Time Evolution(ms): 3660048
+2015-08-06 22:56:08,726 INFO fr.inria.main.AbstractMain - Time Total(ms): 3684517
 
 
-Node: graphene-129.nancy.grid5000.fr
+Node: graphene-13.nancy.grid5000.fr
 
 
-Date: Thu Aug  6 20:08:05 CEST 2015
+Date: Fri Aug  7 00:56:09 CEST 2015
 
 

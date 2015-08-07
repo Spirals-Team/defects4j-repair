@@ -1,34 +1,34 @@
 {
     "FailingTestCase": "98", 
-    "FailingTestCaseExecution": "126", 
+    "FailingTestCaseExecution": "17", 
     "InmutatedGen": "6", 
     "NotAppliedOp": "0", 
-    "OfAppliedOp": "260", 
+    "OfAppliedOp": "103", 
     "RegressionTestCases": "2395", 
     "RegressionTestExecution": "1", 
-    "RightCompilation": "125", 
-    "WrongCompilation": "135", 
-    "date": "Thu Aug  6 20:12:45 CEST 2015\n\n", 
-    "gen": "260", 
-    "gens": "36", 
-    "node": "griffon-20.nancy.grid5000.fr", 
+    "RightCompilation": "16", 
+    "WrongCompilation": "87", 
+    "date": "Fri Aug  7 01:00:08 CEST 2015\n\n", 
+    "gen": "103", 
+    "gens": "4", 
+    "node": "griffon-18.nancy.grid5000.fr", 
     "operations": [
         {
-            "buggyStatement": "org.apache.commons.math.util.MathUtils.checkNotNull(rhs)", 
-            "generation": 260, 
+            "buggyStatement": "return createComplex(((real) + (rhs.getReal())), ((imaginary) + (rhs.getImaginary())))", 
+            "generation": 103, 
             "patch": "if ((isNaN) || (rhs.isNaN)) {\n\treturn org.apache.commons.math.complex.Complex.NaN;\n} ", 
             "patchLocation": {
                 "className": "org.apache.commons.math.complex.Complex", 
-                "line": 152
+                "line": 153
             }, 
             "type": "INSERT_BEFORE", 
-            "variant": 520
+            "variant": 206
         }
     ], 
     "ops": "0", 
     "patches": "1", 
-    "programVariant": "520", 
-    "timeEvaluation": "95410", 
-    "timeTotal": "253861", 
+    "programVariant": "206", 
+    "timeEvaluation": "43938", 
+    "timeTotal": "205641", 
     "unfinishValidation": "0"
 }

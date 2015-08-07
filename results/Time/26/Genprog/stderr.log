@@ -21,7 +21,17 @@ java.lang.IndexOutOfBoundsException: Index: -1, Size: 24
 	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.startEvolution(EvolutionaryEngine.java:125)
 	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:198)
 	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
-java.lang.IndexOutOfBoundsException: Index: -1, Size: 23
+java.lang.IllegalStateException: Undo: Not valid fix position
+	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.remove(CtStatementTransformator.java:66)
+	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.revert(CtStatementTransformator.java:43)
+	at fr.inria.astor.core.loop.evolutionary.JGenProg.undoOperationToSpoonElement(JGenProg.java:352)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.undoSingleGeneration(EvolutionaryEngine.java:465)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.reverseOperationInModel(EvolutionaryEngine.java:450)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.processGenerations(EvolutionaryEngine.java:244)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.startEvolution(EvolutionaryEngine.java:125)
+	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:198)
+	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
+java.lang.IndexOutOfBoundsException: Index: -1, Size: 24
 	at java.util.ArrayList.rangeCheckForAdd(ArrayList.java:643)
 	at java.util.ArrayList.add(ArrayList.java:455)
 	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.revert(CtStatementTransformator.java:31)
@@ -32,7 +42,20 @@ java.lang.IndexOutOfBoundsException: Index: -1, Size: 23
 	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.startEvolution(EvolutionaryEngine.java:125)
 	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:198)
 	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
-java.lang.IndexOutOfBoundsException: Index: -1, Size: 23
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at java.util.ArrayList.elementData(ArrayList.java:400)
+	at java.util.ArrayList.get(ArrayList.java:413)
+	at spoon.support.reflect.code.CtBlockImpl.getStatement(CtBlockImpl.java:59)
+	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.remove(CtStatementTransformator.java:61)
+	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.revert(CtStatementTransformator.java:40)
+	at fr.inria.astor.core.loop.evolutionary.JGenProg.undoOperationToSpoonElement(JGenProg.java:352)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.undoSingleGeneration(EvolutionaryEngine.java:465)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.reverseOperationInModel(EvolutionaryEngine.java:450)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.processGenerations(EvolutionaryEngine.java:244)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.startEvolution(EvolutionaryEngine.java:125)
+	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:198)
+	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
+java.lang.IndexOutOfBoundsException: Index: -1, Size: 25
 	at java.util.ArrayList.rangeCheckForAdd(ArrayList.java:643)
 	at java.util.ArrayList.add(ArrayList.java:455)
 	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.revert(CtStatementTransformator.java:31)
@@ -43,7 +66,27 @@ java.lang.IndexOutOfBoundsException: Index: -1, Size: 23
 	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.startEvolution(EvolutionaryEngine.java:125)
 	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:198)
 	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
-java.lang.IndexOutOfBoundsException: Index: -1, Size: 23
+java.lang.IllegalStateException: Undo: Not valid fix position
+	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.remove(CtStatementTransformator.java:66)
+	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.revert(CtStatementTransformator.java:43)
+	at fr.inria.astor.core.loop.evolutionary.JGenProg.undoOperationToSpoonElement(JGenProg.java:352)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.undoSingleGeneration(EvolutionaryEngine.java:465)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.reverseOperationInModel(EvolutionaryEngine.java:450)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.processGenerations(EvolutionaryEngine.java:244)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.startEvolution(EvolutionaryEngine.java:125)
+	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:198)
+	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
+java.lang.IllegalStateException: Undo: Not valid fix position
+	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.remove(CtStatementTransformator.java:66)
+	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.revert(CtStatementTransformator.java:43)
+	at fr.inria.astor.core.loop.evolutionary.JGenProg.undoOperationToSpoonElement(JGenProg.java:352)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.undoSingleGeneration(EvolutionaryEngine.java:465)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.reverseOperationInModel(EvolutionaryEngine.java:450)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.processGenerations(EvolutionaryEngine.java:244)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.startEvolution(EvolutionaryEngine.java:125)
+	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:198)
+	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
+java.lang.IndexOutOfBoundsException: Index: -1, Size: 27
 	at java.util.ArrayList.rangeCheckForAdd(ArrayList.java:643)
 	at java.util.ArrayList.add(ArrayList.java:455)
 	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.revert(CtStatementTransformator.java:31)
@@ -54,7 +97,7 @@ java.lang.IndexOutOfBoundsException: Index: -1, Size: 23
 	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.startEvolution(EvolutionaryEngine.java:125)
 	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:198)
 	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
-java.lang.IndexOutOfBoundsException: Index: -1, Size: 23
+java.lang.IndexOutOfBoundsException: Index: -1, Size: 27
 	at java.util.ArrayList.rangeCheckForAdd(ArrayList.java:643)
 	at java.util.ArrayList.add(ArrayList.java:455)
 	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.revert(CtStatementTransformator.java:31)
@@ -65,7 +108,7 @@ java.lang.IndexOutOfBoundsException: Index: -1, Size: 23
 	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.startEvolution(EvolutionaryEngine.java:125)
 	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:198)
 	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
-java.lang.IndexOutOfBoundsException: Index: -1, Size: 23
+java.lang.IndexOutOfBoundsException: Index: -1, Size: 27
 	at java.util.ArrayList.rangeCheckForAdd(ArrayList.java:643)
 	at java.util.ArrayList.add(ArrayList.java:455)
 	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.revert(CtStatementTransformator.java:31)
@@ -76,7 +119,7 @@ java.lang.IndexOutOfBoundsException: Index: -1, Size: 23
 	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.startEvolution(EvolutionaryEngine.java:125)
 	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:198)
 	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
-java.lang.IndexOutOfBoundsException: Index: -1, Size: 23
+java.lang.IndexOutOfBoundsException: Index: -1, Size: 27
 	at java.util.ArrayList.rangeCheckForAdd(ArrayList.java:643)
 	at java.util.ArrayList.add(ArrayList.java:455)
 	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.revert(CtStatementTransformator.java:31)
@@ -87,7 +130,7 @@ java.lang.IndexOutOfBoundsException: Index: -1, Size: 23
 	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.startEvolution(EvolutionaryEngine.java:125)
 	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:198)
 	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
-java.lang.IndexOutOfBoundsException: Index: -1, Size: 23
+java.lang.IndexOutOfBoundsException: Index: -1, Size: 27
 	at java.util.ArrayList.rangeCheckForAdd(ArrayList.java:643)
 	at java.util.ArrayList.add(ArrayList.java:455)
 	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.revert(CtStatementTransformator.java:31)
@@ -98,7 +141,60 @@ java.lang.IndexOutOfBoundsException: Index: -1, Size: 23
 	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.startEvolution(EvolutionaryEngine.java:125)
 	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:198)
 	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
-java.lang.IndexOutOfBoundsException: Index: -1, Size: 23
+java.lang.IllegalStateException: Undo: Not valid fix position
+	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.remove(CtStatementTransformator.java:66)
+	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.revert(CtStatementTransformator.java:43)
+	at fr.inria.astor.core.loop.evolutionary.JGenProg.undoOperationToSpoonElement(JGenProg.java:352)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.undoSingleGeneration(EvolutionaryEngine.java:465)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.reverseOperationInModel(EvolutionaryEngine.java:450)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.processGenerations(EvolutionaryEngine.java:244)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.startEvolution(EvolutionaryEngine.java:125)
+	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:198)
+	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
+java.lang.IllegalStateException: Undo: Not valid fix position
+	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.remove(CtStatementTransformator.java:66)
+	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.revert(CtStatementTransformator.java:43)
+	at fr.inria.astor.core.loop.evolutionary.JGenProg.undoOperationToSpoonElement(JGenProg.java:352)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.undoSingleGeneration(EvolutionaryEngine.java:465)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.reverseOperationInModel(EvolutionaryEngine.java:450)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.processGenerations(EvolutionaryEngine.java:244)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.startEvolution(EvolutionaryEngine.java:125)
+	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:198)
+	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
+java.lang.IllegalStateException: Undo: Not valid fix position
+	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.remove(CtStatementTransformator.java:66)
+	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.revert(CtStatementTransformator.java:43)
+	at fr.inria.astor.core.loop.evolutionary.JGenProg.undoOperationToSpoonElement(JGenProg.java:352)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.undoSingleGeneration(EvolutionaryEngine.java:465)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.reverseOperationInModel(EvolutionaryEngine.java:450)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.processGenerations(EvolutionaryEngine.java:244)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.startEvolution(EvolutionaryEngine.java:125)
+	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:198)
+	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at java.util.ArrayList.elementData(ArrayList.java:400)
+	at java.util.ArrayList.get(ArrayList.java:413)
+	at spoon.support.reflect.code.CtBlockImpl.getStatement(CtBlockImpl.java:59)
+	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.remove(CtStatementTransformator.java:61)
+	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.revert(CtStatementTransformator.java:40)
+	at fr.inria.astor.core.loop.evolutionary.JGenProg.undoOperationToSpoonElement(JGenProg.java:352)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.undoSingleGeneration(EvolutionaryEngine.java:465)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.reverseOperationInModel(EvolutionaryEngine.java:450)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.processGenerations(EvolutionaryEngine.java:244)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.startEvolution(EvolutionaryEngine.java:125)
+	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:198)
+	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
+java.lang.IllegalStateException: Undo: Not valid fix position
+	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.remove(CtStatementTransformator.java:66)
+	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.revert(CtStatementTransformator.java:43)
+	at fr.inria.astor.core.loop.evolutionary.JGenProg.undoOperationToSpoonElement(JGenProg.java:352)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.undoSingleGeneration(EvolutionaryEngine.java:465)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.reverseOperationInModel(EvolutionaryEngine.java:450)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.processGenerations(EvolutionaryEngine.java:244)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.startEvolution(EvolutionaryEngine.java:125)
+	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:198)
+	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
+java.lang.IndexOutOfBoundsException: Index: -1, Size: 32
 	at java.util.ArrayList.rangeCheckForAdd(ArrayList.java:643)
 	at java.util.ArrayList.add(ArrayList.java:455)
 	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.revert(CtStatementTransformator.java:31)
@@ -110,6 +206,6 @@ java.lang.IndexOutOfBoundsException: Index: -1, Size: 23
 	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:198)
 	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
 
-real	61m45.447s
-user	68m26.673s
-sys	0m27.526s
+real	61m45.237s
+user	67m51.922s
+sys	0m26.922s

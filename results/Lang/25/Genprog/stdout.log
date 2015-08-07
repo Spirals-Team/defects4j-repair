@@ -1,47 +1,47 @@
 export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/lang/lang_25 /tmp/lang_25_Genprog;cd /tmp/lang_25_Genprog;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Lang/lib/* lib/;find . -type f -name "package-info.java" -delete;
 /home/tdurieux/defects4j-repair/src/python/core/../../../results/Lang/25/Genprog/result
-cd /tmp/lang_25_Genprog;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java  -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement -location . -dependencies lib/ -failing org.apache.commons.lang3.text.translate.EntityArraysTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -seed 10 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
+cd /tmp/lang_25_Genprog;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java  -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement -location . -dependencies lib/ -failing org.apache.commons.lang3.text.translate.EntityArraysTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -seed 10 -scope package  -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
 
 Node: `hostname`
 ";echo "
 Date: `date`
 ";rm -rf /tmp/lang_25_Genprog;
 
-2015-08-06 20:51:36,311 INFO main - End Repair Loops: NOT Found solution
-2015-08-06 20:51:36,311 INFO main - 
+2015-08-07 02:04:59,666 INFO main - End Repair Loops: NOT Found solution
+2015-08-07 02:04:59,666 INFO main - 
 Number solutions:0
-2015-08-06 20:51:36,311 INFO main - 
+2015-08-07 02:04:59,666 INFO main - 
 All variants:
-2015-08-06 20:51:36,311 INFO main - f 157.0, [Variant id: 306251, #gens: 1, #ops: 0, parent:-]
-2015-08-06 20:51:36,311 INFO main - --Space: LOCAL
-org.apache.commons.lang3.text.translate.EntityArrays=16|,
-2015-08-06 20:51:36,311 INFO main - 
+2015-08-07 02:04:59,666 INFO main - f 157.0, [Variant id: 72815, #gens: 1, #ops: 0, parent:-]
+2015-08-07 02:04:59,666 INFO main - --Space: PACKAGE
+org.apache.commons.lang3.text.translate=163|,org.apache.commons.lang3=3473|,org.apache.commons.lang3.text=1426|,org.apache.commons.lang3.event=52|,org.apache.commons.lang3.builder=1233|,org.apache.commons.lang3.time=882|,org.apache.commons.lang3.mutable=205|,org.apache.commons.lang3.exception=209|,org.apache.commons.lang3.concurrent=261|,org.apache.commons.lang3.math=617|,org.apache.commons.lang3.reflect=595|,
+2015-08-07 02:04:59,667 INFO main - 
 ----stats: 
-2015-08-06 20:51:36,311 INFO main - 
-spaces navigation: [8]: {(CtReturnImpl| size: 16| compiles| LOCAL| INSERT_BEFORE) =2, (CtReturnImpl| size: 16| notcompiles| LOCAL| INSERT_BEFORE) =4, (CtReturnImpl| size: 16| alreadyanalyzed| LOCAL| INSERT_BEFORE) =610510, (CtReturnImpl| size: 16| alreadyanalyzed| LOCAL| INSERT_AFTER) =622197, (CtReturnImpl| size: 11| alreadyanalyzed| LOCAL| REPLACE) =420067, (CtReturnImpl| size: 16| compiles| LOCAL| INSERT_AFTER) =2, (CtReturnImpl| size: 16| notcompiles| LOCAL| INSERT_AFTER) =4, (CtReturnImpl| size: 11| notcompiles| LOCAL| REPLACE) =1}
-#gen: 153125
+2015-08-07 02:04:59,667 INFO main - 
+spaces navigation: [17]: {(CtReturnImpl| size: 163| notcompiles| PACKAGE| INSERT_BEFORE) =87, (CtReturnImpl| size: 42| notcompiles| PACKAGE| REPLACE) =14, (CtReturnImpl| size: 163| compiles| LOCAL| INSERT_AFTER) =2, (CtReturnImpl| size: 163| compiles| LOCAL| INSERT_BEFORE) =2, (CtReturnImpl| size: 163| notcompiles| LOCAL| INSERT_AFTER) =4, (CtReturnImpl| size: 163| alreadyanalyzed| PACKAGE| INSERT_AFTER) =1291577, (CtReturnImpl| size: 163| notcompiles| LOCAL| INSERT_BEFORE) =4, (CtReturnImpl| size: 42| alreadyanalyzed| LOCAL| REPLACE) =99200, (CtReturnImpl| size: 163| notcompiles| PACKAGE| INSERT_AFTER) =87, (CtReturnImpl| size: 42| compiles| PACKAGE| REPLACE) =7, (CtReturnImpl| size: 42| notcompiles| LOCAL| REPLACE) =1, (CtReturnImpl| size: 42| alreadyanalyzed| PACKAGE| REPLACE) =280230, (CtReturnImpl| size: 163| compiles| PACKAGE| INSERT_AFTER) =32, (CtReturnImpl| size: 163| compiles| PACKAGE| INSERT_BEFORE) =32, (CtReturnImpl| size: 163| alreadyanalyzed| LOCAL| INSERT_AFTER) =223377, (CtReturnImpl| size: 163| alreadyanalyzed| LOCAL| INSERT_BEFORE) =212981, (CtReturnImpl| size: 163| alreadyanalyzed| PACKAGE| INSERT_BEFORE) =1230751}
+#gen: 36407
 #patches: 0
-#RightCompilation: 2
-#WrongCompilation: 37892
-#FailingTestCaseExecution: 3
+#RightCompilation: 8
+#WrongCompilation: 9219
+#FailingTestCaseExecution: 9
 #RegressionTestExecution: 1
-#TestcasesExecutedval1: 9
+#TestcasesExecutedval1: 27
 #TestcasesExecutedval2: 1821
 #FailingTestCase: 3
 #RegressionTestCases: 1821
-#OfAppliedOp: 37894
+#OfAppliedOp: 9227
 #NotAppliedOp: 0
-#InmutatedGen: 115231
+#InmutatedGen: 27180
 #unfinishValidation: 0
-#ing {CtReturnImpl=153125}
-#untilcompile {16=77043, 1=1, 7=1, 10=1, 11=38188, 13=1}
-2015-08-06 20:51:36,312 INFO main - Time Evolution(ms): 3660004
-2015-08-06 20:51:36,312 INFO fr.inria.main.AbstractMain - Time Total(ms): 3692919
+#ing {CtReturnImpl=36407}
+#untilcompile {1=9, 2=14, 3=6, 4=3, 5=6, 6=1, 7=2, 8=2, 77=1, 9=1, 10=3, 11=1, 12=2, 73=1, 13=5, 16=5, 19=1, 23=2, 24=1, 27=2, 29=1, 28=1, 42=9033, 163=18147, 40=2, 41=1, 109=2}
+2015-08-07 02:04:59,667 INFO main - Time Evolution(ms): 3660009
+2015-08-07 02:04:59,667 INFO fr.inria.main.AbstractMain - Time Total(ms): 3694866
 
 
-Node: griffon-72.nancy.grid5000.fr
+Node: griffon-30.nancy.grid5000.fr
 
 
-Date: Thu Aug  6 22:51:36 CEST 2015
+Date: Fri Aug  7 04:05:00 CEST 2015
 
 

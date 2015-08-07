@@ -2,31 +2,16 @@ Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
 java.lang.IllegalArgumentException: The validation process does not execute well the test cases
  Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
 Exception in thread "main" java.lang.ExceptionInInitializerError
-	at org.joda.time.TestLocalDateTime_Constructors.<clinit>(TestLocalDateTime_Constructors.java:45)
+	at org.joda.time.chrono.ISOChronology.<clinit>(ISOChronology.java:66)
+	at org.joda.time.TestLocalDateTime_Constructors.<clinit>(TestLocalDateTime_Constructors.java:41)
 	at java.lang.Class.forName0(Native Method)
 	at java.lang.Class.forName(Class.java:191)
 	at fr.inria.astor.junitexec.JUnitTestExecutor.main(JUnitTestExecutor.java:106)
-Caused by: org.joda.time.IllegalFieldValueException: Value -209648 for dayOfMonth must be in the range [1,31]
-	at org.joda.time.field.FieldUtils.verifyValueBounds(FieldUtils.java:236)
-	at org.joda.time.chrono.BasicChronology.getDateMidnightMillis(BasicChronology.java:345)
-	at org.joda.time.chrono.JulianChronology.getDateMidnightMillis(JulianChronology.java:207)
-	at org.joda.time.chrono.BasicChronology.getDateTimeMillis(BasicChronology.java:92)
-	at org.joda.time.chrono.JulianChronology.getDateTimeMillis(JulianChronology.java:50)
-	at org.joda.time.chrono.GJChronology.convertByYear(GJChronology.java:83)
-	at org.joda.time.chrono.GJChronology.gregorianToJulianByYear(GJChronology.java:579)
-	at org.joda.time.chrono.GJChronology$CutoverField.gregorianToJulian(GJChronology.java:915)
-	at org.joda.time.chrono.GJChronology$CutoverField.set(GJChronology.java:715)
-	at org.joda.time.field.DelegatedDateTimeField.set(DelegatedDateTimeField.java:172)
-	at org.joda.time.field.SkipUndoDateTimeField.set(SkipUndoDateTimeField.java:91)
-	at org.joda.time.field.DecoratedDateTimeField.set(DecoratedDateTimeField.java:82)
-	at org.joda.time.field.OffsetDateTimeField.set(OffsetDateTimeField.java:153)
-	at org.joda.time.chrono.BaseChronology.getDateTimeMillis(BaseChronology.java:132)
-	at org.joda.time.chrono.AssembledChronology.getDateTimeMillis(AssembledChronology.java:136)
-	at org.joda.time.base.BaseDateTime.<init>(BaseDateTime.java:254)
-	at org.joda.time.DateTime.<init>(DateTime.java:516)
-	at org.joda.time.chrono.BuddhistChronology.getInstance(BuddhistChronology.java:112)
-	at org.joda.time.chrono.BuddhistChronology.<clinit>(BuddhistChronology.java:74)
-	... 4 more
+Caused by: java.lang.IllegalArgumentException: The field must be supported
+	at org.joda.time.field.DecoratedDateTimeField.<init>(DecoratedDateTimeField.java:59)
+	at org.joda.time.field.ZeroIsMaxDateTimeField.<init>(ZeroIsMaxDateTimeField.java:45)
+	at org.joda.time.chrono.BasicChronology.<clinit>(BasicChronology.java:57)
+	... 5 more
 
 	at fr.inria.astor.core.validation.executors.JUnitExecutorProcess.getTestResult(JUnitExecutorProcess.java:130)
 	at fr.inria.astor.core.validation.executors.JUnitExecutorProcess.execute(JUnitExecutorProcess.java:78)
@@ -41,36 +26,21 @@ Caused by: org.joda.time.IllegalFieldValueException: Value -209648 for dayOfMont
 Exception in thread "main" java.lang.AssertionError: The validation process does not execute well the test cases
  Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
 Exception in thread "main" java.lang.ExceptionInInitializerError
-	at org.joda.time.TestLocalDateTime_Constructors.<clinit>(TestLocalDateTime_Constructors.java:45)
+	at org.joda.time.chrono.ISOChronology.<clinit>(ISOChronology.java:66)
+	at org.joda.time.TestLocalDateTime_Constructors.<clinit>(TestLocalDateTime_Constructors.java:41)
 	at java.lang.Class.forName0(Native Method)
 	at java.lang.Class.forName(Class.java:191)
 	at fr.inria.astor.junitexec.JUnitTestExecutor.main(JUnitTestExecutor.java:106)
-Caused by: org.joda.time.IllegalFieldValueException: Value -209648 for dayOfMonth must be in the range [1,31]
-	at org.joda.time.field.FieldUtils.verifyValueBounds(FieldUtils.java:236)
-	at org.joda.time.chrono.BasicChronology.getDateMidnightMillis(BasicChronology.java:345)
-	at org.joda.time.chrono.JulianChronology.getDateMidnightMillis(JulianChronology.java:207)
-	at org.joda.time.chrono.BasicChronology.getDateTimeMillis(BasicChronology.java:92)
-	at org.joda.time.chrono.JulianChronology.getDateTimeMillis(JulianChronology.java:50)
-	at org.joda.time.chrono.GJChronology.convertByYear(GJChronology.java:83)
-	at org.joda.time.chrono.GJChronology.gregorianToJulianByYear(GJChronology.java:579)
-	at org.joda.time.chrono.GJChronology$CutoverField.gregorianToJulian(GJChronology.java:915)
-	at org.joda.time.chrono.GJChronology$CutoverField.set(GJChronology.java:715)
-	at org.joda.time.field.DelegatedDateTimeField.set(DelegatedDateTimeField.java:172)
-	at org.joda.time.field.SkipUndoDateTimeField.set(SkipUndoDateTimeField.java:91)
-	at org.joda.time.field.DecoratedDateTimeField.set(DecoratedDateTimeField.java:82)
-	at org.joda.time.field.OffsetDateTimeField.set(OffsetDateTimeField.java:153)
-	at org.joda.time.chrono.BaseChronology.getDateTimeMillis(BaseChronology.java:132)
-	at org.joda.time.chrono.AssembledChronology.getDateTimeMillis(AssembledChronology.java:136)
-	at org.joda.time.base.BaseDateTime.<init>(BaseDateTime.java:254)
-	at org.joda.time.DateTime.<init>(DateTime.java:516)
-	at org.joda.time.chrono.BuddhistChronology.getInstance(BuddhistChronology.java:112)
-	at org.joda.time.chrono.BuddhistChronology.<clinit>(BuddhistChronology.java:74)
-	... 4 more
+Caused by: java.lang.IllegalArgumentException: The field must be supported
+	at org.joda.time.field.DecoratedDateTimeField.<init>(DecoratedDateTimeField.java:59)
+	at org.joda.time.field.ZeroIsMaxDateTimeField.<init>(ZeroIsMaxDateTimeField.java:45)
+	at org.joda.time.chrono.BasicChronology.<clinit>(BasicChronology.java:57)
+	... 5 more
 
 	at org.junit.Assert.fail(Assert.java:88)
 	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:201)
 	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
 
-real	1m47.722s
-user	2m41.734s
-sys	0m4.692s
+real	14m9.923s
+user	16m28.190s
+sys	0m17.109s

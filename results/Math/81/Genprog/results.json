@@ -1,34 +1,34 @@
 {
     "FailingTestCase": "17", 
-    "FailingTestCaseExecution": "30", 
-    "InmutatedGen": "1", 
+    "FailingTestCaseExecution": "3", 
+    "InmutatedGen": "0", 
     "NotAppliedOp": "0", 
-    "OfAppliedOp": "59", 
+    "OfAppliedOp": "3", 
     "RegressionTestCases": "1993", 
-    "RegressionTestExecution": "2", 
-    "RightCompilation": "29", 
-    "WrongCompilation": "30", 
-    "date": "Thu Aug  6 19:11:53 CEST 2015\n\n", 
-    "gen": "59", 
+    "RegressionTestExecution": "1", 
+    "RightCompilation": "2", 
+    "WrongCompilation": "1", 
+    "date": "Fri Aug  7 00:19:25 CEST 2015\n\n", 
+    "gen": "3", 
     "gens": "342", 
-    "node": "griffon-9.nancy.grid5000.fr", 
+    "node": "griffon-77.nancy.grid5000.fr", 
     "operations": [
         {
-            "buggyStatement": "if ((end - start) > 2) {\n\tb2 = (work[(nn - 13)]) / (work[(nn - 15)]);\n\ta2 = a2 + b2;\n\tfor (int i4 = nn - 17 ; i4 >= (((4 * start) + 2) + (pingPong)) ; i4 -= 4) {\n\t\tif (b2 == 0.0) {\n\t\t\tbreak;\n\t\t} \n\t\tb1 = b2;\n\t\tif ((work[i4]) > (work[(i4 - 2)])) {\n\t\t\treturn ;\n\t\t} \n\t\tb2 = b2 * ((work[i4]) / (work[(i4 - 2)]));\n\t\ta2 = a2 + b2;\n\t\tif (((100 * (java.lang.Math.max(b2, b1))) < a2) || (cnst1 < a2)) {\n\t\t\tbreak;\n\t\t} \n\t}\n\ta2 = cnst3 * a2;\n} ", 
-            "generation": 59, 
+            "buggyStatement": "b2 = (work[(nn - 13)]) / (work[(nn - 15)])", 
+            "generation": 3, 
             "patch": "remove", 
             "patchLocation": {
                 "className": "org.apache.commons.math.linear.EigenDecompositionImpl", 
-                "line": 1540
+                "line": 1541
             }, 
             "type": "DELETE", 
-            "variant": 118
+            "variant": 6
         }
     ], 
     "ops": "0", 
     "patches": "1", 
-    "programVariant": "118", 
-    "timeEvaluation": "167130", 
-    "timeTotal": "203983", 
+    "programVariant": "6", 
+    "timeEvaluation": "14103", 
+    "timeTotal": "53825", 
     "unfinishValidation": "0"
 }

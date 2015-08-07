@@ -1,27 +1,27 @@
 export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/math/math_85 /tmp/math_85_Genprog;cd /tmp/math_85_Genprog;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
 /home/tdurieux/defects4j-repair/src/python/core/../../../results/Math/85/Genprog/result
-cd /tmp/math_85_Genprog;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java  -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement -location . -dependencies lib/ -failing org.apache.commons.math.distribution.NormalDistributionTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -seed 10 -population 1 -srcjavafolder src/java/ -srctestfolder src/test/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
+cd /tmp/math_85_Genprog;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java  -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement -location . -dependencies lib/ -failing org.apache.commons.math.distribution.NormalDistributionTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -seed 10 -scope package  -population 1 -srcjavafolder src/java/ -srctestfolder src/test/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
 
 Node: `hostname`
 ";echo "
 Date: `date`
 ";rm -rf /tmp/math_85_Genprog;
 
-2015-08-06 17:07:25,079 INFO main - End Repair Loops: Found solution
-2015-08-06 17:07:25,079 INFO main - Solution stored at: ./outputMutation//MainjGenProg-.//src/
-2015-08-06 17:07:25,079 INFO main - 
+2015-08-06 21:58:21,653 INFO main - End Repair Loops: Found solution
+2015-08-06 21:58:21,653 INFO main - Solution stored at: ./outputMutation//MainjGenProg-.//src/
+2015-08-06 21:58:21,653 INFO main - 
 Number solutions:1
-2015-08-06 17:07:25,079 INFO main - f (sol): 0.0, [Variant id: 34 (SOL) , #gens: 59, #ops: 1, parent:33]
-2015-08-06 17:07:25,079 INFO main - 
+2015-08-06 21:58:21,653 INFO main - f (sol): 0.0, [Variant id: 204 (SOL) , #gens: 59, #ops: 1, parent:203]
+2015-08-06 21:58:21,653 INFO main - 
 All variants:
-2015-08-06 17:07:25,079 INFO main - f 1.0, [Variant id: 35, #gens: 60, #ops: 0, parent:-]
-2015-08-06 17:07:25,079 INFO main - 
+2015-08-06 21:58:21,653 INFO main - f 1.0, [Variant id: 205, #gens: 60, #ops: 0, parent:-]
+2015-08-06 21:58:21,653 INFO main - 
 Solution details
-2015-08-06 17:07:25,079 INFO main - 
+2015-08-06 21:58:21,653 INFO main - 
  --SOLUTIONS DESCRIPTION--
 
  ----
-ProgramVariant 34
+ProgramVariant 204
  
 operation: DELETE
 location= org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils
@@ -32,38 +32,38 @@ original statement= if ((fa * fb) >= 0.0) {
 fixed statement= if ((fa * fb) >= 0.0) {
 	throw new org.apache.commons.math.ConvergenceException(("number of iterations={0}, maximum iterations={1}, " + ("initial={2}, lower bound={3}, upper bound={4}, final a value={5}, " + "final b value={6}, f(a)={7}, f(b)={8}")) , numIterations , maximumIterations , initial , lowerBound , upperBound , a , b , fa , fb);
 } 
-generation= 17
+generation= 102
 ingredientScope= -
  
-2015-08-06 17:07:25,079 INFO main - --Space: LOCAL
-org.apache.commons.math.special.Gamma=54|,org.apache.commons.math.distribution.AbstractContinuousDistribution=18|,org.apache.commons.math.special.Erf=5|,org.apache.commons.math.distribution.NormalDistributionImpl=38|,org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils=32|,
-2015-08-06 17:07:25,079 INFO main - 
+2015-08-06 21:58:21,654 INFO main - --Space: PACKAGE
+org.apache.commons.math.analysis.interpolation=175|,org.apache.commons.math.special=86|,org.apache.commons.math.util=1007|,org.apache.commons.math.analysis=22|,org.apache.commons.math.stat.descriptive=578|,org.apache.commons.math.stat.regression=182|,org.apache.commons.math.stat.correlation=129|,org.apache.commons.math.stat.clustering=79|,org.apache.commons.math.stat.ranking=95|,org.apache.commons.math=150|,org.apache.commons.math.ode.sampling=223|,org.apache.commons.math.genetics=241|,org.apache.commons.math.analysis.polynomials=324|,org.apache.commons.math.optimization.linear=240|,org.apache.commons.math.optimization.univariate=92|,org.apache.commons.math.ode.nonstiff=1293|,org.apache.commons.math.optimization.direct=186|,org.apache.commons.math.optimization.general=539|,org.apache.commons.math.stat=150|,org.apache.commons.math.distribution=493|,org.apache.commons.math.ode.events=130|,org.apache.commons.math.stat.descriptive.summary=96|,org.apache.commons.math.geometry=502|,org.apache.commons.math.linear=6585|,org.apache.commons.math.estimation=81|,org.apache.commons.math.analysis.integration=164|,org.apache.commons.math.stat.descriptive.rank=88|,org.apache.commons.math.random=485|,org.apache.commons.math.fraction=584|,org.apache.commons.math.complex=227|,org.apache.commons.math.transform=377|,org.apache.commons.math.stat.inference=45|,org.apache.commons.math.optimization.fitting=166|,org.apache.commons.math.optimization=302|,org.apache.commons.math.ode=213|,org.apache.commons.math.stat.descriptive.moment=375|,org.apache.commons.math.analysis.solvers=603|,
+2015-08-06 21:58:21,654 INFO main - 
 ----stats: 
-2015-08-06 17:07:25,079 INFO main - 
-spaces navigation: [16]: {(CtLocalVariableImpl| size: 18| compiles| LOCAL| INSERT_AFTER) =1, (CtLocalVariableImpl| size: 5| compiles| LOCAL| INSERT_AFTER) =1, (CtThrowImpl| size: 54| compiles| LOCAL| INSERT_AFTER) =1, (CtThrowImpl| size: 54| notcompiles| LOCAL| INSERT_AFTER) =1, (CtIfImpl| size: 38| compiles| LOCAL| INSERT_AFTER) =1, (CtAssignmentImpl| size: 32| compiles| LOCAL| INSERT_AFTER) =1, (CtReturnImpl| size: 38| compiles| LOCAL| INSERT_BEFORE) =2, (CtReturnImpl| size: 12| notcompiles| LOCAL| REPLACE) =1, (CtReturnImpl| size: 38| notcompiles| LOCAL| INSERT_BEFORE) =1, (CtIfImpl| size: 18| compiles| LOCAL| INSERT_AFTER) =1, (CtAssignmentImpl| size: 32| compiles| LOCAL| INSERT_BEFORE) =1, (CtReturnImpl| size: 12| compiles| LOCAL| REPLACE) =1, (CtAssignmentImpl| size: 54| compiles| LOCAL| INSERT_BEFORE) =1, (CtLocalVariableImpl| size: 5| notcompiles| LOCAL| INSERT_AFTER) =1, (CtIfImpl| size: 38| notcompiles| LOCAL| INSERT_AFTER) =1, (CtReturnImpl| size: 12| alreadyanalyzed| LOCAL| REPLACE) =1}
-#gen: 17
+2015-08-06 21:58:21,654 INFO main - 
+spaces navigation: [81]: {(CtAssignmentImpl| size: 603| notcompiles| PACKAGE| INSERT_AFTER) =4, (CtIfImpl| size: 90| alreadyanalyzed| LOCAL| REPLACE) =9, (CtUnaryOperatorImpl| size: 9| alreadyanalyzed| LOCAL| REPLACE) =4, (CtThrowImpl| size: 603| compiles| PACKAGE| INSERT_BEFORE) =1, (CtIfImpl| size: 493| notcompiles| LOCAL| INSERT_AFTER) =3, (CtAssignmentImpl| size: 86| notcompiles| LOCAL| INSERT_BEFORE) =1, (CtLocalVariableImpl| size: 86| notcompiles| LOCAL| INSERT_BEFORE) =1, (CtIfImpl| size: 90| compiles| PACKAGE| REPLACE) =4, (CtThrowImpl| size: 86| compiles| LOCAL| INSERT_AFTER) =1, (CtAssignmentImpl| size: 26| notcompiles| PACKAGE| REPLACE) =3, (CtAssignmentImpl| size: 493| compiles| PACKAGE| INSERT_AFTER) =2, (CtIfImpl| size: 12| compiles| LOCAL| REPLACE) =1, (CtAssignmentImpl| size: 493| notcompiles| LOCAL| INSERT_AFTER) =1, (CtAssignmentImpl| size: 493| compiles| LOCAL| INSERT_BEFORE) =2, (CtIfImpl| size: 493| compiles| LOCAL| INSERT_AFTER) =3, (CtLocalVariableImpl| size: 603| notcompiles| PACKAGE| INSERT_AFTER) =4, (CtIfImpl| size: 90| notcompiles| LOCAL| REPLACE) =6, (CtReturnImpl| size: 149| notcompiles| LOCAL| REPLACE) =1, (CtAssignmentImpl| size: 100| notcompiles| LOCAL| REPLACE) =1, (CtIfImpl| size: 80| notcompiles| LOCAL| REPLACE) =1, (CtUnaryOperatorImpl| size: 9| alreadyanalyzed| PACKAGE| REPLACE) =4, (CtLocalVariableImpl| size: 86| notcompiles| PACKAGE| INSERT_BEFORE) =2, (CtReturnImpl| size: 493| compiles| PACKAGE| INSERT_BEFORE) =1, (CtLocalVariableImpl| size: 493| compiles| PACKAGE| INSERT_BEFORE) =1, (CtLocalVariableImpl| size: 86| alreadyanalyzed| LOCAL| INSERT_BEFORE) =1, (CtAssignmentImpl| size: 26| compiles| PACKAGE| REPLACE) =1, (CtAssignmentImpl| size: 26| alreadyanalyzed| LOCAL| REPLACE) =1, (CtAssignmentImpl| size: 26| notcompiles| LOCAL| REPLACE) =6, (CtIfImpl| size: 493| alreadyanalyzed| LOCAL| INSERT_BEFORE) =1, (CtAssignmentImpl| size: 493| compiles| LOCAL| INSERT_AFTER) =3, (CtLocalVariableImpl| size: 86| compiles| LOCAL| INSERT_AFTER) =1, (CtAssignmentImpl| size: 603| compiles| PACKAGE| INSERT_AFTER) =1, (CtThrowImpl| size: 493| notcompiles| PACKAGE| INSERT_AFTER) =4, (CtIfImpl| size: 493| notcompiles| LOCAL| INSERT_BEFORE) =1, (CtIfImpl| size: 90| alreadyanalyzed| PACKAGE| REPLACE) =29, (CtIfImpl| size: 493| compiles| LOCAL| INSERT_BEFORE) =2, (CtAssignmentImpl| size: 100| notcompiles| PACKAGE| REPLACE) =4, (CtAssignmentImpl| size: 86| compiles| LOCAL| INSERT_AFTER) =2, (CtIfImpl| size: 12| alreadyanalyzed| PACKAGE| REPLACE) =1, (CtReturnImpl| size: 493| notcompiles| LOCAL| INSERT_AFTER) =2, (CtIfImpl| size: 493| compiles| PACKAGE| INSERT_BEFORE) =4, (CtThrowImpl| size: 26| notcompiles| PACKAGE| REPLACE) =1, (CtReturnImpl| size: 493| compiles| PACKAGE| INSERT_AFTER) =3, (CtAssignmentImpl| size: 86| notcompiles| PACKAGE| INSERT_AFTER) =2, (CtAssignmentImpl| size: 493| notcompiles| PACKAGE| INSERT_AFTER) =8, (CtThrowImpl| size: 493| compiles| PACKAGE| INSERT_AFTER) =1, (CtIfImpl| size: 12| notcompiles| PACKAGE| REPLACE) =3, (CtAssignmentImpl| size: 86| compiles| LOCAL| INSERT_BEFORE) =1, (CtLocalVariableImpl| size: 493| compiles| PACKAGE| INSERT_AFTER) =1, (CtIfImpl| size: 80| compiles| LOCAL| REPLACE) =2, (CtIfImpl| size: 86| compiles| LOCAL| INSERT_BEFORE) =1, (CtIfImpl| size: 493| notcompiles| PACKAGE| INSERT_AFTER) =8, (CtThrowImpl| size: 26| compiles| LOCAL| REPLACE) =1, (CtIfImpl| size: 493| compiles| PACKAGE| INSERT_AFTER) =5, (CtIfImpl| size: 90| notcompiles| PACKAGE| REPLACE) =74, (CtReturnImpl| size: 603| compiles| LOCAL| INSERT_AFTER) =1, (CtReturnImpl| size: 493| notcompiles| PACKAGE| INSERT_BEFORE) =1, (CtLocalVariableImpl| size: 58| compiles| PACKAGE| REPLACE) =1, (CtAssignmentImpl| size: 86| notcompiles| LOCAL| INSERT_AFTER) =1, (CtAssignmentImpl| size: 100| compiles| PACKAGE| REPLACE) =2, (CtLocalVariableImpl| size: 86| compiles| PACKAGE| INSERT_BEFORE) =1, (CtLocalVariableImpl| size: 493| notcompiles| PACKAGE| INSERT_BEFORE) =1, (CtIfImpl| size: 493| notcompiles| PACKAGE| INSERT_BEFORE) =10, (CtReturnImpl| size: 603| notcompiles| PACKAGE| INSERT_AFTER) =2, (CtReturnImpl| size: 493| compiles| LOCAL| INSERT_BEFORE) =1, (CtReturnImpl| size: 149| compiles| PACKAGE| REPLACE) =3, (CtAssignmentImpl| size: 493| compiles| PACKAGE| INSERT_BEFORE) =3, (CtThrowImpl| size: 603| compiles| PACKAGE| INSERT_AFTER) =1, (CtAssignmentImpl| size: 100| compiles| LOCAL| REPLACE) =2, (CtUnaryOperatorImpl| size: 9| notcompiles| PACKAGE| REPLACE) =1, (CtThrowImpl| size: 493| compiles| PACKAGE| INSERT_BEFORE) =1, (CtLocalVariableImpl| size: 603| compiles| PACKAGE| INSERT_AFTER) =2, (CtReturnImpl| size: 493| notcompiles| PACKAGE| INSERT_AFTER) =6, (CtReturnImpl| size: 493| compiles| LOCAL| INSERT_AFTER) =1, (CtThrowImpl| size: 86| compiles| PACKAGE| INSERT_AFTER) =1, (CtAssignmentImpl| size: 493| notcompiles| PACKAGE| INSERT_BEFORE) =13, (CtIfImpl| size: 80| alreadyanalyzed| PACKAGE| REPLACE) =18, (CtThrowImpl| size: 603| notcompiles| PACKAGE| INSERT_AFTER) =8, (CtIfImpl| size: 80| notcompiles| PACKAGE| REPLACE) =32, (CtAssignmentImpl| size: 603| compiles| LOCAL| INSERT_AFTER) =1, (CtIfImpl| size: 90| compiles| LOCAL| REPLACE) =3}
+#gen: 102
 #patches: 1
-#RightCompilation: 9
-#WrongCompilation: 8
-#FailingTestCaseExecution: 10
+#RightCompilation: 32
+#WrongCompilation: 70
+#FailingTestCaseExecution: 33
 #RegressionTestExecution: 1
-#TestcasesExecutedval1: 130
+#TestcasesExecutedval1: 403
 #TestcasesExecutedval2: 1875
 #FailingTestCase: 13
 #RegressionTestCases: 1875
-#OfAppliedOp: 17
+#OfAppliedOp: 102
 #NotAppliedOp: 0
-#InmutatedGen: 0
+#InmutatedGen: 2
 #unfinishValidation: 0
-#ing {CtLocalVariableImpl=2, CtReturnImpl=4, CtAssignmentImpl=5, CtThrowImpl=1, CtIfImpl=5}
-#untilcompile {1=6, 2=4, 3=1}
-2015-08-06 17:07:25,079 INFO main - Time Evolution(ms): 11336
-2015-08-06 17:07:25,079 INFO fr.inria.main.AbstractMain - Time Total(ms): 38145
+#ing {CtLocalVariableImpl=12, CtReturnImpl=15, CtAssignmentImpl=29, CtThrowImpl=8, CtIfImpl=39, CtUnaryOperatorImpl=1}
+#untilcompile {1=24, 2=14, 3=9, 4=4, 5=6, 6=3, 52=1, 7=3, 9=1, 11=1, 12=1, 91=1, 14=1}
+2015-08-06 21:58:21,654 INFO main - Time Evolution(ms): 139134
+2015-08-06 21:58:21,654 INFO fr.inria.main.AbstractMain - Time Total(ms): 168751
 
 
-Node: graphene-114.nancy.grid5000.fr
+Node: graphene-19.nancy.grid5000.fr
 
 
-Date: Thu Aug  6 19:07:25 CEST 2015
+Date: Thu Aug  6 23:58:22 CEST 2015
 
 

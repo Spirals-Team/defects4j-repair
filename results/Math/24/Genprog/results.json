@@ -1,34 +1,22 @@
 {
     "FailingTestCase": "9", 
-    "FailingTestCaseExecution": "48", 
-    "InmutatedGen": "16", 
+    "FailingTestCaseExecution": "436", 
+    "InmutatedGen": "19", 
     "NotAppliedOp": "0", 
-    "OfAppliedOp": "106", 
+    "OfAppliedOp": "968", 
     "RegressionTestCases": "4072", 
-    "RegressionTestExecution": "1", 
-    "RightCompilation": "47", 
-    "WrongCompilation": "59", 
-    "date": "Thu Aug  6 20:27:31 CEST 2015\n\n", 
-    "gen": "106", 
+    "RegressionTestExecution": "26", 
+    "RightCompilation": "435", 
+    "WrongCompilation": "533", 
+    "date": "Fri Aug  7 02:18:16 CEST 2015\n\n", 
+    "gen": "968", 
     "gens": "121", 
-    "node": "griffon-20.nancy.grid5000.fr", 
-    "operations": [
-        {
-            "buggyStatement": "v = w", 
-            "generation": 106, 
-            "patch": "if (((p > (q * (a - x))) && (p < (q * (b - x)))) && ((org.apache.commons.math3.util.FastMath.abs(p)) < (org.apache.commons.math3.util.FastMath.abs(((0.5 * q) * r))))) {\n\td = p / q;\n\tu = x + d;\n\tif (((u - a) < tol2) || ((b - u) < tol2)) {\n\t\tif (x <= m) {\n\t\t\td = tol1;\n\t\t} else {\n\t\t\td = -tol1;\n\t\t}\n\t} \n} else {\n\tif (x < m) {\n\t\te = b - x;\n\t} else {\n\t\te = a - x;\n\t}\n\td = (org.apache.commons.math3.optimization.univariate.BrentOptimizer.GOLDEN_SECTION) * e;\n}", 
-            "patchLocation": {
-                "className": "org.apache.commons.math3.optimization.univariate.BrentOptimizer", 
-                "line": 241
-            }, 
-            "type": "REPLACE", 
-            "variant": 212
-        }
-    ], 
+    "node": "griffon-11.nancy.grid5000.fr", 
+    "operations": [], 
     "ops": "0", 
-    "patches": "1", 
-    "programVariant": "212", 
-    "timeEvaluation": "190034", 
-    "timeTotal": "856857", 
+    "patches": "0", 
+    "programVariant": null, 
+    "timeEvaluation": "3755208", 
+    "timeTotal": "4422653", 
     "unfinishValidation": "0"
 }
