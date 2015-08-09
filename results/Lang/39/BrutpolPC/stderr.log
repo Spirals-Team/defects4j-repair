@@ -3,8 +3,8 @@ java.lang.RuntimeException: java.util.concurrent.TimeoutException
 	at xxl.java.junit.TestSuiteExecution.executionResult(TestSuiteExecution.java:100)
 	at xxl.java.junit.TestSuiteExecution.runTestCase(TestSuiteExecution.java:41)
 	at xxl.java.junit.TestSuiteExecution.runTestCases(TestSuiteExecution.java:84)
-	at fr.inria.lille.repair.nopol.synth.ConstraintModelBuilder.buildFor(ConstraintModelBuilder.java:78)
-	at fr.inria.lille.repair.nopol.synth.brutpol.BrutSynthesizer.buildPatch(BrutSynthesizer.java:61)
+	at fr.inria.lille.repair.nopol.synth.ConstraintModelBuilder.buildFor(ConstraintModelBuilder.java:84)
+	at fr.inria.lille.repair.nopol.synth.brutpol.BrutSynthesizer.buildPatch(BrutSynthesizer.java:62)
 	at fr.inria.lille.repair.nopol.NoPol.solveWithMultipleBuild(NoPol.java:178)
 	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:120)
 	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:90)
@@ -15,6 +15,6 @@ Caused by: java.util.concurrent.TimeoutException
 	at xxl.java.junit.TestSuiteExecution.executionResult(TestSuiteExecution.java:93)
 	... 9 more
 
-real	5m54.253s
-user	6m40.293s
-sys	0m3.164s
+real	6m16.843s
+user	8m16.707s
+sys	0m9.289s

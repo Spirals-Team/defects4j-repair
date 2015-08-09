@@ -1,5 +1,5 @@
 export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/chart/chart_5 /tmp/chart_5_BrutpolC;cd /tmp/chart_5_BrutpolC;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Chart/lib/* lib/;find . -type f -name "package-info.java" -delete;
-cd /tmp/chart_5_BrutpolC;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/defects4j-repair/src/python/core/../../../libs/z3 lib/z3;time java -Xmx8g -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/nopol.jar:/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin//../lib/tools.jar fr.inria.lille.repair.Main --mode repair --type condition --oracle angelic --synthesis brutpol --solver z3 --solver-path /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/z3/z3 --complianceLevel 4 --source source/ --classpath build/:build-tests/:lib/cobertura-lib/servlet-api-2.5-6.1.14.jar:lib/servlet.jar:/home/tdurieux/defects4j-repair/src/python/core/../../..//libs/nopol.jar;echo "
+cd /tmp/chart_5_BrutpolC;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/defects4j-repair/src/python/core/../../../libs/z3 lib/z3;time java  -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/nopol.jar:/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin//../lib/tools.jar fr.inria.lille.repair.Main --mode repair --type condition --oracle angelic --synthesis brutpol --solver z3 --solver-path /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/z3/z3 --complianceLevel 4 --source source/ --classpath build/:build-tests/:lib/cobertura-lib/servlet-api-2.5-6.1.14.jar:lib/servlet.jar:/home/tdurieux/defects4j-repair/src/python/core/../../..//libs/nopol.jar;echo "
 
 Node: `hostname`
 ";echo "
@@ -16,14 +16,14 @@ Nb Statements Analyzed : 4
 Nb Statements with Angelic Value Found : 1
 Nb run failing test  : [2, 1]
 Nb run passing test : [1, 4]
-NoPol Execution time : 42919ms
+NoPol Execution time : 42686ms
 ----PATCH FOUND----
 org.jfree.data.xy.XYSeries:561: CONDITIONAL this.equals(x)
 
 
-Node: graphene-41.nancy.grid5000.fr
+Node: graphite-2.nancy.grid5000.fr
 
 
-Date: Thu Aug  6 00:20:30 CEST 2015
+Date: Sun Aug  9 00:56:50 CEST 2015
 
 

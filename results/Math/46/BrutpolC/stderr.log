@@ -6,18 +6,22 @@ Exception in thread "main" java.lang.OutOfMemoryError: unable to create new nati
 	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1360)
 	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:132)
 	at java.util.concurrent.Executors$DelegatedExecutorService.submit(Executors.java:641)
-	at fr.inria.lille.spirals.repair.synthesizer.collect.DataCollector.callMethod(DataCollector.java:372)
-	at fr.inria.lille.spirals.repair.synthesizer.collect.DataCollector.collectMethods(DataCollector.java:303)
-	at fr.inria.lille.spirals.repair.synthesizer.collect.DataCollector.collectMethods(DataCollector.java:338)
+	at fr.inria.lille.spirals.repair.synthesizer.collect.DataCollector.callMethod(DataCollector.java:375)
+	at fr.inria.lille.spirals.repair.synthesizer.collect.DataCollector.collectMethods(DataCollector.java:306)
+	at fr.inria.lille.spirals.repair.synthesizer.collect.DataCollector.collectMethods(DataCollector.java:341)
 	at fr.inria.lille.spirals.repair.synthesizer.collect.DataCollector.collect(DataCollector.java:135)
 	at fr.inria.lille.spirals.repair.synthesizer.collect.DataCollector.collect(DataCollector.java:95)
 	at fr.inria.lille.spirals.repair.synthesizer.SynthesizerImpl.collectValues(SynthesizerImpl.java:336)
 	at fr.inria.lille.spirals.repair.synthesizer.SynthesizerImpl.processBreakPointEvents(SynthesizerImpl.java:227)
 	at fr.inria.lille.spirals.repair.synthesizer.SynthesizerImpl.processVMEvents(SynthesizerImpl.java:131)
 	at fr.inria.lille.spirals.repair.synthesizer.SynthesizerImpl.run(SynthesizerImpl.java:104)
-	at fr.inria.lille.repair.nopol.synth.brutpol.BrutSynthesizer.buildPatch(BrutSynthesizer.java:125)
+	at fr.inria.lille.repair.nopol.synth.brutpol.BrutSynthesizer.buildPatch(BrutSynthesizer.java:132)
 	at fr.inria.lille.repair.nopol.NoPol.solveWithMultipleBuild(NoPol.java:178)
 	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:120)
 	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:90)
 	at fr.inria.lille.repair.nopol.NoPolLauncher.launch(NoPolLauncher.java:85)
 	at fr.inria.lille.repair.Main.main(Main.java:59)
+
+real	10m24.991s
+user	6m24.048s
+sys	6m22.256s

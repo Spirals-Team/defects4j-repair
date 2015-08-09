@@ -1,2 +1,22 @@
 Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
-## OAR [2015-08-06 00:18:43] Job 627811 KILLED ##
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+	at java.util.HashMap.createEntry(HashMap.java:897)
+	at java.util.HashMap.addEntry(HashMap.java:884)
+	at java.util.HashMap.put(HashMap.java:505)
+	at fr.inria.lille.spirals.repair.commons.Candidates.addToCache(Candidates.java:130)
+	at fr.inria.lille.spirals.repair.commons.Candidates.addToCache(Candidates.java:121)
+	at fr.inria.lille.spirals.repair.commons.Candidates.add(Candidates.java:35)
+	at fr.inria.lille.spirals.repair.commons.Candidates.addAll(Candidates.java:74)
+	at fr.inria.lille.spirals.repair.synthesizer.collect.DataCombiner.combine(DataCombiner.java:38)
+	at fr.inria.lille.spirals.repair.synthesizer.SynthesizerImpl.combineValues(SynthesizerImpl.java:459)
+	at fr.inria.lille.spirals.repair.synthesizer.SynthesizerImpl.run(SynthesizerImpl.java:106)
+	at fr.inria.lille.repair.nopol.synth.brutpol.BrutSynthesizer.buildPatch(BrutSynthesizer.java:132)
+	at fr.inria.lille.repair.nopol.NoPol.solveWithMultipleBuild(NoPol.java:178)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:120)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:90)
+	at fr.inria.lille.repair.nopol.NoPolLauncher.launch(NoPolLauncher.java:85)
+	at fr.inria.lille.repair.Main.main(Main.java:59)
+
+real	27m53.287s
+user	64m17.985s
+sys	1m35.550s
