@@ -207,7 +207,7 @@ for project in sorted(os.listdir(root)):
 		if lineCount > 0:
 			texLineArgs += ["Fixed"]
 			result += line.format(*lineArgs) + "\n"
-			texTable += texLineTable.format(*lineArgs) + "\n"
+			texTable += texLineTable.format(*texLineArgs) + "\n"
 			fixedBugs += 1
 		fullTable += line.format(*lineArgs) + "\n"
 
