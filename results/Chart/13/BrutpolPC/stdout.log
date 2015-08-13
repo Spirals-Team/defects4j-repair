@@ -16,14 +16,14 @@ Nb Statements Analyzed : 78
 Nb Statements with Angelic Value Found : 4
 Nb run failing test  : [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 2, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1]
 Nb run passing test : [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 4, 1, 4, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 4]
-NoPol Execution time : 77548ms
+NoPol Execution time : 143264ms
 ----PATCH FOUND----
-org.jfree.chart.block.AbstractBlock:162: PRECONDITION this.bounds.contains(this.bounds)
+org.jfree.chart.block.AbstractBlock:162: PRECONDITION this.bounds.contains(width, this.height)
 
 
-Node: graphite-2.nancy.grid5000.fr
+Node: griffon-20.nancy.grid5000.fr
 
 
-Date: Sun Aug  9 01:58:32 CEST 2015
+Date: Thu Aug 13 04:31:06 CEST 2015
 
 

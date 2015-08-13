@@ -8,20 +8,22 @@ Date: `date`
 
 Nb classes : 578
 Nb methods : 3768
-Nb statements: 24351
+Nb statements: 24349
 Nb statement executed by the passing tests of the patched line: 0
 Nb statement executed by the failing tests of the patched line: 0
 Nb unit tests : 3173
-Nb Statements Analyzed : 9
-Nb Statements with Angelic Value Found : 1
-Nb run failing test  : [1]
-Nb run passing test : [21]
-NoPol Execution time : 1671811ms
+Nb Statements Analyzed : 17
+Nb Statements with Angelic Value Found : 3
+Nb run failing test  : [1, 1, 1]
+Nb run passing test : [21, 21, 21]
+NoPol Execution time : 1269656ms
+----PATCH FOUND----
+org.apache.commons.math.optimization.linear.SimplexTableau:338: CONDITIONAL (0 < entry) || (this.getHeight() == this.tableau.getFrobeniusNorm())
 
 
-Node: graphene-108.nancy.grid5000.fr
+Node: graphene-34.nancy.grid5000.fr
 
 
-Date: Sat Aug  8 14:24:45 CEST 2015
+Date: Thu Aug 13 00:00:37 CEST 2015
 
 

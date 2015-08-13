@@ -12,18 +12,18 @@ Nb statements: 23414
 Nb statement executed by the passing tests of the patched line: 0
 Nb statement executed by the failing tests of the patched line: 0
 Nb unit tests : 2954
-Nb Statements Analyzed : 14
-Nb Statements with Angelic Value Found : 1
-Nb run failing test  : [2, 2, 2, 2, 2, 1]
-Nb run passing test : [1, 1, 1, 1, 1, 7]
-NoPol Execution time : 452578ms
+Nb Statements Analyzed : 28
+Nb Statements with Angelic Value Found : 5
+Nb run failing test  : [2, 2, 2, 2, 2, 1, 1, 2, 2, 2, 1, 1, 2, 2, 1]
+Nb run passing test : [1, 1, 1, 1, 1, 7, 7, 1, 1, 1, 11, 11, 1, 1, 14]
+NoPol Execution time : 1596481ms
 ----PATCH FOUND----
-org.apache.commons.math.linear.OpenMapRealVector:667: PRECONDITION this.virtualSize != this.ebeDivide(this).dotProduct(this)
+org.apache.commons.math.util.OpenIntToDoubleHashMap:213: PRECONDITION this.size != this.probe(1, key)
 
 
-Node: graphite-2.nancy.grid5000.fr
+Node: griffon-12.nancy.grid5000.fr
 
 
-Date: Sat Aug  8 18:43:48 CEST 2015
+Date: Thu Aug 13 01:51:41 CEST 2015
 
 

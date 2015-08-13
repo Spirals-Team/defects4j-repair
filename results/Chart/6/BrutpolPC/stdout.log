@@ -12,18 +12,18 @@ Nb statements: 22191
 Nb statement executed by the passing tests of the patched line: 0
 Nb statement executed by the failing tests of the patched line: 0
 Nb unit tests : 3789
-Nb Statements Analyzed : 17
-Nb Statements with Angelic Value Found : 2
-Nb run failing test  : [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1]
-Nb run passing test : [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 9, 9]
-NoPol Execution time : 50801ms
+Nb Statements Analyzed : 19
+Nb Statements with Angelic Value Found : 3
+Nb run failing test  : [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1, 2, 1]
+Nb run passing test : [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 9, 9, 4, 9]
+NoPol Execution time : 244386ms
 ----PATCH FOUND----
-org.jfree.chart.util.AbstractObjectList:194: PRECONDITION obj.equals(this)
+org.jfree.chart.util.AbstractObjectList:193: PRECONDITION 0 == this.increment
 
 
-Node: graphene-108.nancy.grid5000.fr
+Node: griffon-72.nancy.grid5000.fr
 
 
-Date: Sun Aug  9 01:10:18 CEST 2015
+Date: Thu Aug 13 04:37:11 CEST 2015
 
 

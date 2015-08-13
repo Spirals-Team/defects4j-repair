@@ -1,45 +1,20 @@
 Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
 java.lang.RuntimeException: java.util.concurrent.TimeoutException
-	at xxl.java.junit.TestSuiteExecution.executionResult(TestSuiteExecution.java:100)
-	at xxl.java.junit.TestSuiteExecution.runTestCase(TestSuiteExecution.java:41)
-	at xxl.java.junit.TestSuiteExecution.runTestCases(TestSuiteExecution.java:84)
-	at fr.inria.lille.repair.nopol.synth.ConstraintModelBuilder.buildFor(ConstraintModelBuilder.java:78)
-	at fr.inria.lille.repair.nopol.synth.brutpol.BrutSynthesizer.buildPatch(BrutSynthesizer.java:61)
-	at fr.inria.lille.repair.nopol.NoPol.solveWithMultipleBuild(NoPol.java:178)
-	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:120)
-	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:90)
+	at xxl.java.junit.TestSuiteExecution.executionResult(TestSuiteExecution.java:101)
+	at xxl.java.junit.TestSuiteExecution.runTestCase(TestSuiteExecution.java:42)
+	at xxl.java.junit.TestSuiteExecution.runTestCases(TestSuiteExecution.java:85)
+	at fr.inria.lille.repair.nopol.synth.ConstraintModelBuilder.buildFor(ConstraintModelBuilder.java:84)
+	at fr.inria.lille.repair.nopol.synth.brutpol.BrutSynthesizer.buildPatch(BrutSynthesizer.java:64)
+	at fr.inria.lille.repair.nopol.NoPol.solveWithMultipleBuild(NoPol.java:185)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:123)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:93)
 	at fr.inria.lille.repair.nopol.NoPolLauncher.launch(NoPolLauncher.java:85)
 	at fr.inria.lille.repair.Main.main(Main.java:59)
 Caused by: java.util.concurrent.TimeoutException
 	at java.util.concurrent.FutureTask.get(FutureTask.java:201)
-	at xxl.java.junit.TestSuiteExecution.executionResult(TestSuiteExecution.java:93)
+	at xxl.java.junit.TestSuiteExecution.executionResult(TestSuiteExecution.java:94)
 	... 9 more
-Exception in thread "main" java.lang.OutOfMemoryError: GC overhead limit exceeded
-	at java.util.Arrays.copyOfRange(Arrays.java:2694)
-	at java.lang.String.<init>(String.java:203)
-	at java.lang.String.substring(String.java:1877)
-	at java.io.File.getName(File.java:456)
-	at spoon.compiler.SpoonResourceHelper.isArchive(SpoonResourceHelper.java:43)
-	at spoon.support.compiler.FileSystemFolder.getSubFolders(FileSystemFolder.java:79)
-	at spoon.support.compiler.FileSystemFolder.getAllJavaFiles(FileSystemFolder.java:103)
-	at spoon.support.compiler.FileSystemFolder.getAllJavaFiles(FileSystemFolder.java:104)
-	at spoon.support.compiler.FileSystemFolder.getAllJavaFiles(FileSystemFolder.java:104)
-	at spoon.support.compiler.FileSystemFolder.getAllJavaFiles(FileSystemFolder.java:104)
-	at spoon.support.compiler.FileSystemFolder.getAllJavaFiles(FileSystemFolder.java:104)
-	at spoon.support.compiler.FileSystemFolder.getAllJavaFiles(FileSystemFolder.java:104)
-	at spoon.support.StandardEnvironment.verifySourceClasspath(StandardEnvironment.java:421)
-	at spoon.support.StandardEnvironment.setSourceClasspath(StandardEnvironment.java:404)
-	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.setSourceClasspath(JDTBasedSpoonCompiler.java:922)
-	at fr.inria.lille.commons.spoon.util.SpoonModelLibrary.modelFor(SpoonModelLibrary.java:50)
-	at fr.inria.lille.commons.spoon.SpoonedFile.<init>(SpoonedFile.java:50)
-	at fr.inria.lille.commons.spoon.SpoonedClass.<init>(SpoonedClass.java:13)
-	at fr.inria.lille.commons.spoon.SpoonedProject.forked(SpoonedProject.java:42)
-	at fr.inria.lille.repair.nopol.synth.SynthesizerFactory.getFor(SynthesizerFactory.java:68)
-	at fr.inria.lille.repair.nopol.NoPol.solveWithMultipleBuild(NoPol.java:157)
-	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:120)
-	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:90)
-	at fr.inria.lille.repair.nopol.NoPolLauncher.launch(NoPolLauncher.java:85)
-	at fr.inria.lille.repair.Main.main(Main.java:59)
-Command exited with non-zero status 1
-13534.83user 43.45system 38:06.45elapsed 593%CPU (0avgtext+0avgdata 3283460maxresident)k
-11248inputs+28736outputs (19major+1119955minor)pagefaults 0swaps
+
+real	60m19.820s
+user	422m5.707s
+sys	1m58.463s

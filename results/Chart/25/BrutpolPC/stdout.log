@@ -12,23 +12,18 @@ Nb statements: 20322
 Nb statement executed by the passing tests of the patched line: 0
 Nb statement executed by the failing tests of the patched line: 0
 Nb unit tests : 3243
-Nb Statements Analyzed : 2
-Nb Statements with Angelic Value Found : 1
-Nb run failing test  : [1]
-Nb run passing test : [19]
-NoPol Execution time : 258634ms
-OpenJDK 64-Bit Server VM warning: Attempt to deallocate stack guard pages failed.
-OpenJDK 64-Bit Server VM warning: INFO: os::commit_memory(0x00007f63ee330000, 12288, 0) failed; error='Cannot allocate memory' (errno=12)
-#
-# There is insufficient memory for the Java Runtime Environment to continue.
-# Native memory allocation (malloc) failed to allocate 12288 bytes for committing reserved memory.
-# An error report file with more information is saved as:
-# /tmp/chart_25_BrutpolPC/hs_err_pid8352.log
+Nb Statements Analyzed : 19
+Nb Statements with Angelic Value Found : 2
+Nb run failing test  : [1, 2, 2, 2, 1]
+Nb run passing test : [19, 10, 10, 10, 19]
+NoPol Execution time : 514755ms
+----PATCH FOUND----
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset:111: PRECONDITION this.equals(masd)
 
 
-Node: graphite-1.nancy.grid5000.fr
+Node: griffon-22.nancy.grid5000.fr
 
 
-Date: Sun Aug  9 02:03:20 CEST 2015
+Date: Thu Aug 13 04:20:16 CEST 2015
 
 

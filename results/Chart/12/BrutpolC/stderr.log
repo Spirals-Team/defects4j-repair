@@ -1,46 +1,55 @@
-Cannot open config file (/tmp/chart_12_BrutpolC/.defects4j.config): No such file or directory
-/tmp/chart_12_BrutpolC is not a valid working directory!
-cp: cannot stat '/home/spirals/tdurieux/defects4j/framework/projects/Chart/lib/*': No such file or directory
+mkdir: cannot create directory `lib/': File exists
+cp: cannot stat `/home/tdurieux/defects4j/framework/projects/Chart/lib/*': No such file or directory
 Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
-java.lang.IllegalArgumentException: File does not exist in: 'source/'
-	at xxl.java.library.FileLibrary.fail(FileLibrary.java:129)
-	at xxl.java.library.FileLibrary.openFrom(FileLibrary.java:29)
-	at fr.inria.lille.repair.Main.main(Main.java:46)
+xxl.java.compiler.DynamicCompilationException: Aborting: dynamic compilation failed
+	at xxl.java.compiler.DynamicClassCompiler.runCompilationTask(DynamicClassCompiler.java:95)
+	at xxl.java.compiler.DynamicClassCompiler.javaBytecodeFor(DynamicClassCompiler.java:63)
+	at fr.inria.lille.commons.spoon.SpoonedFile.compilationFor(SpoonedFile.java:177)
+	at fr.inria.lille.commons.spoon.SpoonedFile.compileModelledClasses(SpoonedFile.java:154)
+	at fr.inria.lille.commons.spoon.SpoonedFile.processModelledClasses(SpoonedFile.java:138)
+	at fr.inria.lille.commons.spoon.SpoonedFile.process(SpoonedFile.java:128)
+	at fr.inria.lille.commons.spoon.SpoonedFile.processedAndDumpedToClassLoader(SpoonedFile.java:119)
+	at fr.inria.lille.commons.spoon.SpoonedFile.processedAndDumpedToClassLoader(SpoonedFile.java:115)
+	at fr.inria.lille.repair.nopol.synth.ConstraintModelBuilder.<init>(ConstraintModelBuilder.java:59)
+	at fr.inria.lille.repair.nopol.synth.SynthesizerFactory.getFor(SynthesizerFactory.java:125)
+	at fr.inria.lille.repair.nopol.NoPol.solveWithMultipleBuild(NoPol.java:164)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:123)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:93)
+	at fr.inria.lille.repair.nopol.NoPolLauncher.launch(NoPolLauncher.java:85)
+	at fr.inria.lille.repair.Main.main(Main.java:59)
+xxl.java.compiler.DynamicCompilationException: Aborting: dynamic compilation failed
+	at xxl.java.compiler.DynamicClassCompiler.runCompilationTask(DynamicClassCompiler.java:95)
+	at xxl.java.compiler.DynamicClassCompiler.javaBytecodeFor(DynamicClassCompiler.java:63)
+	at fr.inria.lille.commons.spoon.SpoonedFile.compilationFor(SpoonedFile.java:177)
+	at fr.inria.lille.commons.spoon.SpoonedFile.compileModelledClasses(SpoonedFile.java:154)
+	at fr.inria.lille.commons.spoon.SpoonedFile.processModelledClasses(SpoonedFile.java:138)
+	at fr.inria.lille.commons.spoon.SpoonedFile.process(SpoonedFile.java:128)
+	at fr.inria.lille.commons.spoon.SpoonedFile.processedAndDumpedToClassLoader(SpoonedFile.java:119)
+	at fr.inria.lille.commons.spoon.SpoonedFile.processedAndDumpedToClassLoader(SpoonedFile.java:115)
+	at fr.inria.lille.repair.nopol.synth.ConstraintModelBuilder.<init>(ConstraintModelBuilder.java:59)
+	at fr.inria.lille.repair.nopol.synth.SynthesizerFactory.getFor(SynthesizerFactory.java:125)
+	at fr.inria.lille.repair.nopol.NoPol.solveWithMultipleBuild(NoPol.java:164)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:123)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:93)
+	at fr.inria.lille.repair.nopol.NoPolLauncher.launch(NoPolLauncher.java:85)
+	at fr.inria.lille.repair.Main.main(Main.java:59)
+xxl.java.compiler.DynamicCompilationException: Aborting: dynamic compilation failed
+	at xxl.java.compiler.DynamicClassCompiler.runCompilationTask(DynamicClassCompiler.java:95)
+	at xxl.java.compiler.DynamicClassCompiler.javaBytecodeFor(DynamicClassCompiler.java:63)
+	at fr.inria.lille.commons.spoon.SpoonedFile.compilationFor(SpoonedFile.java:177)
+	at fr.inria.lille.commons.spoon.SpoonedFile.compileModelledClasses(SpoonedFile.java:154)
+	at fr.inria.lille.commons.spoon.SpoonedFile.processModelledClasses(SpoonedFile.java:138)
+	at fr.inria.lille.commons.spoon.SpoonedFile.process(SpoonedFile.java:128)
+	at fr.inria.lille.commons.spoon.SpoonedFile.processedAndDumpedToClassLoader(SpoonedFile.java:119)
+	at fr.inria.lille.commons.spoon.SpoonedFile.processedAndDumpedToClassLoader(SpoonedFile.java:115)
+	at fr.inria.lille.repair.nopol.synth.ConstraintModelBuilder.<init>(ConstraintModelBuilder.java:59)
+	at fr.inria.lille.repair.nopol.synth.SynthesizerFactory.getFor(SynthesizerFactory.java:125)
+	at fr.inria.lille.repair.nopol.NoPol.solveWithMultipleBuild(NoPol.java:164)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:123)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:93)
+	at fr.inria.lille.repair.nopol.NoPolLauncher.launch(NoPolLauncher.java:85)
+	at fr.inria.lille.repair.Main.main(Main.java:59)
 
-Usage: java -jar nopol.jar
-                          [(-m|--mode) <repair|ranking>] [(-e|--type) <loop|condition|precondition|arithmetic>] [(-o|--oracle) <angelic|symbolic>] [(-y|--synthesis) <smt|brutpol>] [(-l|--solver) <z3|cvc4>] [(-p|--solver-path) <solverPath>] (-s|--source) source1:source2:...:sourceN  (-c|--classpath) <classpath> [(-t|--test) test1:test2:...:testN ] [--complianceLevel <complianceLevel>]
-
-  [(-m|--mode) <repair|ranking>]
-        Define the mode of execution. (default: repair)
-
-  [(-e|--type) <loop|condition|precondition|arithmetic>]
-        The type of statement to analyze (only used with repair mode). (default:
-        condition)
-
-  [(-o|--oracle) <angelic|symbolic>]
-        Define the oracle (only used with repair mode). (default: angelic)
-
-  [(-y|--synthesis) <smt|brutpol>]
-        Define the patch synthesis. (default: smt)
-
-  [(-l|--solver) <z3|cvc4>]
-        Define the solver (only used with smt synthesis). (default: z3)
-
-  [(-p|--solver-path) <solverPath>]
-        Define the solver binary path (only used with smt synthesis).
-
-  (-s|--source) source1:source2:...:sourceN 
-        Define the path to the source code of the project.
-
-  (-c|--classpath) <classpath>
-        Define the classpath of the project.
-
-  [(-t|--test) test1:test2:...:testN ]
-        Define the tests of the project.
-
-  [--complianceLevel <complianceLevel>]
-        The compliance level of the project. (default: 7)
-
-Command exited with non-zero status 1
-0.13user 0.02system 0:01.40elapsed 11%CPU (0avgtext+0avgdata 27240maxresident)k
-0inputs+200outputs (0major+3415minor)pagefaults 0swaps
+real	60m10.890s
+user	186m59.297s
+sys	4m54.454s

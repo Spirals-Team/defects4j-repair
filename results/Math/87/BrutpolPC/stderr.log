@@ -1,18 +1,18 @@
 Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
 java.lang.RuntimeException: java.util.concurrent.TimeoutException
-	at xxl.java.junit.TestSuiteExecution.executionResult(TestSuiteExecution.java:100)
-	at xxl.java.junit.TestSuiteExecution.runTestCase(TestSuiteExecution.java:41)
-	at xxl.java.junit.TestSuiteExecution.runTestCases(TestSuiteExecution.java:84)
+	at xxl.java.junit.TestSuiteExecution.executionResult(TestSuiteExecution.java:101)
+	at xxl.java.junit.TestSuiteExecution.runTestCase(TestSuiteExecution.java:42)
+	at xxl.java.junit.TestSuiteExecution.runTestCases(TestSuiteExecution.java:85)
 	at fr.inria.lille.repair.nopol.synth.ConstraintModelBuilder.buildFor(ConstraintModelBuilder.java:84)
-	at fr.inria.lille.repair.nopol.synth.brutpol.BrutSynthesizer.buildPatch(BrutSynthesizer.java:62)
-	at fr.inria.lille.repair.nopol.NoPol.solveWithMultipleBuild(NoPol.java:178)
-	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:120)
-	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:90)
+	at fr.inria.lille.repair.nopol.synth.brutpol.BrutSynthesizer.buildPatch(BrutSynthesizer.java:64)
+	at fr.inria.lille.repair.nopol.NoPol.solveWithMultipleBuild(NoPol.java:185)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:123)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:93)
 	at fr.inria.lille.repair.nopol.NoPolLauncher.launch(NoPolLauncher.java:85)
 	at fr.inria.lille.repair.Main.main(Main.java:59)
 Caused by: java.util.concurrent.TimeoutException
 	at java.util.concurrent.FutureTask.get(FutureTask.java:201)
-	at xxl.java.junit.TestSuiteExecution.executionResult(TestSuiteExecution.java:93)
+	at xxl.java.junit.TestSuiteExecution.executionResult(TestSuiteExecution.java:94)
 	... 9 more
 xxl.java.compiler.DynamicCompilationException: Aborting: dynamic compilation failed
 	at xxl.java.compiler.DynamicClassCompiler.runCompilationTask(DynamicClassCompiler.java:95)
@@ -24,35 +24,13 @@ xxl.java.compiler.DynamicCompilationException: Aborting: dynamic compilation fai
 	at fr.inria.lille.commons.spoon.SpoonedFile.processedAndDumpedToClassLoader(SpoonedFile.java:119)
 	at fr.inria.lille.commons.spoon.SpoonedFile.processedAndDumpedToClassLoader(SpoonedFile.java:115)
 	at fr.inria.lille.repair.nopol.patch.TestPatch.passesAllTests(TestPatch.java:61)
-	at fr.inria.lille.repair.nopol.NoPol.isOk(NoPol.java:207)
-	at fr.inria.lille.repair.nopol.NoPol.solveWithMultipleBuild(NoPol.java:179)
-	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:120)
-	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:90)
-	at fr.inria.lille.repair.nopol.NoPolLauncher.launch(NoPolLauncher.java:85)
-	at fr.inria.lille.repair.Main.main(Main.java:59)
-Exception in thread "main" java.lang.OutOfMemoryError: unable to create new native thread
-	at java.lang.Thread.start0(Native Method)
-	at java.lang.Thread.start(Thread.java:714)
-	at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:949)
-	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1360)
-	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:132)
-	at java.util.concurrent.Executors$DelegatedExecutorService.submit(Executors.java:641)
-	at fr.inria.lille.spirals.repair.synthesizer.collect.DataCollector.callMethod(DataCollector.java:375)
-	at fr.inria.lille.spirals.repair.synthesizer.collect.DataCollector.collectMethods(DataCollector.java:306)
-	at fr.inria.lille.spirals.repair.synthesizer.collect.DataCollector.collectMethods(DataCollector.java:341)
-	at fr.inria.lille.spirals.repair.synthesizer.collect.DataCollector.collect(DataCollector.java:135)
-	at fr.inria.lille.spirals.repair.synthesizer.collect.DataCollector.collect(DataCollector.java:95)
-	at fr.inria.lille.spirals.repair.synthesizer.SynthesizerImpl.collectValues(SynthesizerImpl.java:336)
-	at fr.inria.lille.spirals.repair.synthesizer.SynthesizerImpl.processBreakPointEvents(SynthesizerImpl.java:227)
-	at fr.inria.lille.spirals.repair.synthesizer.SynthesizerImpl.processVMEvents(SynthesizerImpl.java:131)
-	at fr.inria.lille.spirals.repair.synthesizer.SynthesizerImpl.run(SynthesizerImpl.java:104)
-	at fr.inria.lille.repair.nopol.synth.brutpol.BrutSynthesizer.buildPatch(BrutSynthesizer.java:132)
-	at fr.inria.lille.repair.nopol.NoPol.solveWithMultipleBuild(NoPol.java:178)
-	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:120)
-	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:90)
+	at fr.inria.lille.repair.nopol.NoPol.isOk(NoPol.java:214)
+	at fr.inria.lille.repair.nopol.NoPol.solveWithMultipleBuild(NoPol.java:186)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:123)
+	at fr.inria.lille.repair.nopol.NoPol.build(NoPol.java:93)
 	at fr.inria.lille.repair.nopol.NoPolLauncher.launch(NoPolLauncher.java:85)
 	at fr.inria.lille.repair.Main.main(Main.java:59)
 
-real	13m26.810s
-user	12m1.097s
-sys	6m13.023s
+real	14m5.167s
+user	14m16.098s
+sys	1m56.927s
