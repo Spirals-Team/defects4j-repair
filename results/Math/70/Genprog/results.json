@@ -1,34 +1,34 @@
 {
     "FailingTestCase": "12", 
-    "FailingTestCaseExecution": "17", 
-    "InmutatedGen": "0", 
+    "FailingTestCaseExecution": "14", 
+    "InmutatedGen": "2", 
     "NotAppliedOp": "0", 
-    "OfAppliedOp": "55", 
+    "OfAppliedOp": "48", 
     "RegressionTestCases": "2074", 
-    "RegressionTestExecution": "2", 
-    "RightCompilation": "16", 
-    "WrongCompilation": "39", 
-    "date": "Fri Aug  7 00:57:26 CEST 2015\n\n", 
-    "gen": "55", 
-    "gens": "9", 
-    "node": "griffon-63.nancy.grid5000.fr", 
+    "RegressionTestExecution": "1", 
+    "RightCompilation": "13", 
+    "WrongCompilation": "35", 
+    "date": "Thu Aug 13 21:56:01 CEST 2015\n\n", 
+    "gen": "48", 
+    "gens": "929", 
+    "node": "griffon-20.nancy.grid5000.fr", 
     "operations": [
         {
             "buggyStatement": "return solve(min, max)", 
-            "generation": 55, 
-            "patch": "return solve(f, initial, max)", 
+            "generation": 48, 
+            "patch": "return solve(f, min, max)", 
             "patchLocation": {
                 "className": "org.apache.commons.math.analysis.solvers.BisectionSolver", 
                 "line": 72
             }, 
             "type": "REPLACE", 
-            "variant": 110
+            "variant": 96
         }
     ], 
     "ops": "0", 
     "patches": "1", 
-    "programVariant": "110", 
-    "timeEvaluation": "29947", 
-    "timeTotal": "69966", 
+    "programVariant": "96", 
+    "timeEvaluation": "35267", 
+    "timeTotal": "74952", 
     "unfinishValidation": "0"
 }

@@ -1,5 +1,54 @@
 Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
+java.lang.IllegalArgumentException: The validation process does not execute well the test cases
+ Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
+Exception in thread "main" java.lang.ExceptionInInitializerError
+	at org.joda.time.chrono.ISOChronology.assemble(ISOChronology.java:76)
+	at org.joda.time.chrono.AssembledChronology.setFields(AssembledChronology.java:274)
+	at org.joda.time.chrono.AssembledChronology.<init>(AssembledChronology.java:84)
+	at org.joda.time.chrono.ISOChronology.<init>(ISOChronology.java:48)
+	at org.joda.time.chrono.ISOChronology.<clinit>(ISOChronology.java:15)
+	at org.joda.time.TestPartial_Basics.<clinit>(TestPartial_Basics.java:47)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:191)
+	at fr.inria.astor.junitexec.JUnitTestExecutor.main(JUnitTestExecutor.java:106)
+Caused by: java.lang.IllegalArgumentException: The field must be supported
+	at org.joda.time.field.DecoratedDateTimeField.<init>(DecoratedDateTimeField.java:14)
+	at org.joda.time.chrono.ISOYearOfEraDateTimeField.<init>(ISOYearOfEraDateTimeField.java:48)
+	at org.joda.time.chrono.ISOYearOfEraDateTimeField.<clinit>(ISOYearOfEraDateTimeField.java:42)
+	... 9 more
 
-real	61m45.433s
-user	65m32.958s
-sys	0m27.470s
+	at fr.inria.astor.core.validation.executors.JUnitExecutorProcess.getTestResult(JUnitExecutorProcess.java:130)
+	at fr.inria.astor.core.validation.executors.JUnitExecutorProcess.execute(JUnitExecutorProcess.java:78)
+	at fr.inria.astor.core.validation.executors.JUnitExecutorProcess.execute(JUnitExecutorProcess.java:34)
+	at fr.inria.astor.core.validation.validators.ProcessValidator.validate(ProcessValidator.java:58)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.validateInstance(EvolutionaryEngine.java:768)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.processCreatedVariant(EvolutionaryEngine.java:365)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.processGenerations(EvolutionaryEngine.java:229)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.startEvolution(EvolutionaryEngine.java:124)
+	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:198)
+	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
+Exception in thread "main" java.lang.AssertionError: The validation process does not execute well the test cases
+ Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
+Exception in thread "main" java.lang.ExceptionInInitializerError
+	at org.joda.time.chrono.ISOChronology.assemble(ISOChronology.java:76)
+	at org.joda.time.chrono.AssembledChronology.setFields(AssembledChronology.java:274)
+	at org.joda.time.chrono.AssembledChronology.<init>(AssembledChronology.java:84)
+	at org.joda.time.chrono.ISOChronology.<init>(ISOChronology.java:48)
+	at org.joda.time.chrono.ISOChronology.<clinit>(ISOChronology.java:15)
+	at org.joda.time.TestPartial_Basics.<clinit>(TestPartial_Basics.java:47)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:191)
+	at fr.inria.astor.junitexec.JUnitTestExecutor.main(JUnitTestExecutor.java:106)
+Caused by: java.lang.IllegalArgumentException: The field must be supported
+	at org.joda.time.field.DecoratedDateTimeField.<init>(DecoratedDateTimeField.java:14)
+	at org.joda.time.chrono.ISOYearOfEraDateTimeField.<init>(ISOYearOfEraDateTimeField.java:48)
+	at org.joda.time.chrono.ISOYearOfEraDateTimeField.<clinit>(ISOYearOfEraDateTimeField.java:42)
+	... 9 more
+
+	at org.junit.Assert.fail(Assert.java:88)
+	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:201)
+	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
+
+real	1m14.045s
+user	1m59.691s
+sys	0m1.948s

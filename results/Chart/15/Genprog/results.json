@@ -1,22 +1,34 @@
 {
     "FailingTestCase": "3", 
-    "FailingTestCaseExecution": "1", 
-    "InmutatedGen": "126", 
+    "FailingTestCaseExecution": "5", 
+    "InmutatedGen": "0", 
     "NotAppliedOp": "0", 
-    "OfAppliedOp": "7846", 
+    "OfAppliedOp": "6", 
     "RegressionTestCases": "0", 
-    "RegressionTestExecution": "0", 
-    "RightCompilation": "0", 
-    "WrongCompilation": "7846", 
-    "date": "Fri Aug  7 04:19:29 CEST 2015\n\n", 
-    "gen": "7846", 
-    "gens": "474", 
-    "node": "griffon-15.nancy.grid5000.fr", 
-    "operations": [], 
+    "RegressionTestExecution": "1", 
+    "RightCompilation": "4", 
+    "WrongCompilation": "2", 
+    "date": "Fri Aug 14 06:23:43 CEST 2015\n\n", 
+    "gen": "6", 
+    "gens": "870", 
+    "node": "griffon-39.nancy.grid5000.fr", 
+    "operations": [
+        {
+            "buggyStatement": "if (isCircular()) {\n\tdouble min = (java.lang.Math.min(linkW, linkH)) / 2;\n\tlinkX = (((linkX + linkX) + linkW) / 2) - min;\n\tlinkY = (((linkY + linkY) + linkH) / 2) - min;\n\tlinkW = 2 * min;\n\tlinkH = 2 * min;\n} ", 
+            "generation": 6, 
+            "patch": "if (org.jfree.data.general.DatasetUtilities.isEmptyOrNull(getDataset())) {\n\tdrawNoDataMessage(g2, plotArea);\n\tg2.setClip(savedClip);\n\tdrawOutline(g2, plotArea);\n\treturn ;\n} ", 
+            "patchLocation": {
+                "className": "org.jfree.chart.plot.PiePlot3D", 
+                "line": 272
+            }, 
+            "type": "REPLACE", 
+            "variant": 12
+        }
+    ], 
     "ops": "0", 
-    "patches": "0", 
-    "programVariant": null, 
-    "timeEvaluation": "3660102", 
-    "timeTotal": "3708221", 
+    "patches": "1", 
+    "programVariant": "12", 
+    "timeEvaluation": "10862", 
+    "timeTotal": "55933", 
     "unfinishValidation": "0"
 }

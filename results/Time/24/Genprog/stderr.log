@@ -6,21 +6,29 @@ Exception in thread "main" java.lang.ExceptionInInitializerError
 	at java.lang.Class.forName0(Native Method)
 	at java.lang.Class.forName(Class.java:191)
 	at fr.inria.astor.junitexec.JUnitTestExecutor.main(JUnitTestExecutor.java:106)
-Caused by: java.lang.NullPointerException
-	at org.joda.time.chrono.GJChronology.getInstance(GJChronology.java:54)
+Caused by: java.lang.UnsupportedOperationException: year field is unsupported
+	at org.joda.time.field.UnsupportedDateTimeField.unsupported(UnsupportedDateTimeField.java:242)
+	at org.joda.time.field.UnsupportedDateTimeField.get(UnsupportedDateTimeField.java:54)
+	at org.joda.time.chrono.GJChronology.convertByYear(GJChronology.java:6)
+	at org.joda.time.chrono.GJChronology.julianToGregorianByYear(GJChronology.java:254)
+	at org.joda.time.chrono.GJChronology.assemble(GJChronology.java:207)
+	at org.joda.time.chrono.AssembledChronology.setFields(AssembledChronology.java:274)
+	at org.joda.time.chrono.AssembledChronology.<init>(AssembledChronology.java:84)
+	at org.joda.time.chrono.GJChronology.<init>(GJChronology.java:90)
+	at org.joda.time.chrono.GJChronology.getInstance(GJChronology.java:60)
 	at org.joda.time.chrono.GJChronology.getInstance(GJChronology.java:35)
-	at org.joda.time.chrono.BuddhistChronology.getInstance(BuddhistChronology.java:110)
-	at org.joda.time.chrono.BuddhistChronology.<clinit>(BuddhistChronology.java:74)
+	at org.joda.time.chrono.BuddhistChronology.getInstance(BuddhistChronology.java:29)
+	at org.joda.time.chrono.BuddhistChronology.<clinit>(BuddhistChronology.java:13)
 	... 4 more
 
 	at fr.inria.astor.core.validation.executors.JUnitExecutorProcess.getTestResult(JUnitExecutorProcess.java:130)
 	at fr.inria.astor.core.validation.executors.JUnitExecutorProcess.execute(JUnitExecutorProcess.java:78)
 	at fr.inria.astor.core.validation.executors.JUnitExecutorProcess.execute(JUnitExecutorProcess.java:34)
 	at fr.inria.astor.core.validation.validators.ProcessValidator.validate(ProcessValidator.java:58)
-	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.validateInstance(EvolutionaryEngine.java:763)
-	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.processCreatedVariant(EvolutionaryEngine.java:367)
-	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.processGenerations(EvolutionaryEngine.java:233)
-	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.startEvolution(EvolutionaryEngine.java:125)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.validateInstance(EvolutionaryEngine.java:768)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.processCreatedVariant(EvolutionaryEngine.java:365)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.processGenerations(EvolutionaryEngine.java:229)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.startEvolution(EvolutionaryEngine.java:124)
 	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:198)
 	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
 Exception in thread "main" java.lang.AssertionError: The validation process does not execute well the test cases
@@ -30,17 +38,25 @@ Exception in thread "main" java.lang.ExceptionInInitializerError
 	at java.lang.Class.forName0(Native Method)
 	at java.lang.Class.forName(Class.java:191)
 	at fr.inria.astor.junitexec.JUnitTestExecutor.main(JUnitTestExecutor.java:106)
-Caused by: java.lang.NullPointerException
-	at org.joda.time.chrono.GJChronology.getInstance(GJChronology.java:54)
+Caused by: java.lang.UnsupportedOperationException: year field is unsupported
+	at org.joda.time.field.UnsupportedDateTimeField.unsupported(UnsupportedDateTimeField.java:242)
+	at org.joda.time.field.UnsupportedDateTimeField.get(UnsupportedDateTimeField.java:54)
+	at org.joda.time.chrono.GJChronology.convertByYear(GJChronology.java:6)
+	at org.joda.time.chrono.GJChronology.julianToGregorianByYear(GJChronology.java:254)
+	at org.joda.time.chrono.GJChronology.assemble(GJChronology.java:207)
+	at org.joda.time.chrono.AssembledChronology.setFields(AssembledChronology.java:274)
+	at org.joda.time.chrono.AssembledChronology.<init>(AssembledChronology.java:84)
+	at org.joda.time.chrono.GJChronology.<init>(GJChronology.java:90)
+	at org.joda.time.chrono.GJChronology.getInstance(GJChronology.java:60)
 	at org.joda.time.chrono.GJChronology.getInstance(GJChronology.java:35)
-	at org.joda.time.chrono.BuddhistChronology.getInstance(BuddhistChronology.java:110)
-	at org.joda.time.chrono.BuddhistChronology.<clinit>(BuddhistChronology.java:74)
+	at org.joda.time.chrono.BuddhistChronology.getInstance(BuddhistChronology.java:29)
+	at org.joda.time.chrono.BuddhistChronology.<clinit>(BuddhistChronology.java:13)
 	... 4 more
 
 	at org.junit.Assert.fail(Assert.java:88)
 	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:201)
 	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
 
-real	10m26.537s
-user	12m26.543s
-sys	0m12.181s
+real	8m39.685s
+user	9m21.607s
+sys	0m8.909s

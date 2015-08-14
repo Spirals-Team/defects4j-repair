@@ -1,5 +1,62 @@
 Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
+java.lang.IllegalArgumentException: The validation process does not execute well the test cases
+ Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
+Exception in thread "main" java.io.IOException: Resource not found: "org/joda/time/tz/data/UTC" ClassLoader: sun.misc.Launcher$AppClassLoader@3485def8
+	at org.joda.time.tz.ZoneInfoProvider.openResource(ZoneInfoProvider.java:96)
+	at org.joda.time.tz.ZoneInfoProvider.loadZoneData(ZoneInfoProvider.java:105)
+	at org.joda.time.tz.ZoneInfoProvider.getZone(ZoneInfoProvider.java:69)
+	at org.joda.time.DateTimeZone.setProvider0(DateTimeZone.java:206)
+	at org.joda.time.DateTimeZone.<clinit>(DateTimeZone.java:22)
+	at org.joda.time.TestDateTimeZoneCutover.<clinit>(TestDateTimeZoneCutover.java:58)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:191)
+	at fr.inria.astor.junitexec.JUnitTestExecutor.main(JUnitTestExecutor.java:106)
+Exception in thread "main" java.lang.ExceptionInInitializerError
+	at org.joda.time.TestDateTimeZoneCutover.<clinit>(TestDateTimeZoneCutover.java:58)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:191)
+	at fr.inria.astor.junitexec.JUnitTestExecutor.main(JUnitTestExecutor.java:106)
+Caused by: java.lang.IllegalArgumentException: Invalid UTC zone provided
+	at org.joda.time.DateTimeZone.setProvider0(DateTimeZone.java:207)
+	at org.joda.time.DateTimeZone.<clinit>(DateTimeZone.java:22)
+	... 4 more
 
-real	61m44.467s
-user	66m19.217s
-sys	0m35.690s
+	at fr.inria.astor.core.validation.executors.JUnitExecutorProcess.getTestResult(JUnitExecutorProcess.java:130)
+	at fr.inria.astor.core.validation.executors.JUnitExecutorProcess.execute(JUnitExecutorProcess.java:78)
+	at fr.inria.astor.core.validation.executors.JUnitExecutorProcess.execute(JUnitExecutorProcess.java:34)
+	at fr.inria.astor.core.validation.validators.ProcessValidator.validate(ProcessValidator.java:58)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.validateInstance(EvolutionaryEngine.java:768)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.processCreatedVariant(EvolutionaryEngine.java:365)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.processGenerations(EvolutionaryEngine.java:229)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.startEvolution(EvolutionaryEngine.java:124)
+	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:198)
+	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
+Exception in thread "main" java.lang.AssertionError: The validation process does not execute well the test cases
+ Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
+Exception in thread "main" java.io.IOException: Resource not found: "org/joda/time/tz/data/UTC" ClassLoader: sun.misc.Launcher$AppClassLoader@3485def8
+	at org.joda.time.tz.ZoneInfoProvider.openResource(ZoneInfoProvider.java:96)
+	at org.joda.time.tz.ZoneInfoProvider.loadZoneData(ZoneInfoProvider.java:105)
+	at org.joda.time.tz.ZoneInfoProvider.getZone(ZoneInfoProvider.java:69)
+	at org.joda.time.DateTimeZone.setProvider0(DateTimeZone.java:206)
+	at org.joda.time.DateTimeZone.<clinit>(DateTimeZone.java:22)
+	at org.joda.time.TestDateTimeZoneCutover.<clinit>(TestDateTimeZoneCutover.java:58)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:191)
+	at fr.inria.astor.junitexec.JUnitTestExecutor.main(JUnitTestExecutor.java:106)
+Exception in thread "main" java.lang.ExceptionInInitializerError
+	at org.joda.time.TestDateTimeZoneCutover.<clinit>(TestDateTimeZoneCutover.java:58)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:191)
+	at fr.inria.astor.junitexec.JUnitTestExecutor.main(JUnitTestExecutor.java:106)
+Caused by: java.lang.IllegalArgumentException: Invalid UTC zone provided
+	at org.joda.time.DateTimeZone.setProvider0(DateTimeZone.java:207)
+	at org.joda.time.DateTimeZone.<clinit>(DateTimeZone.java:22)
+	... 4 more
+
+	at org.junit.Assert.fail(Assert.java:88)
+	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:201)
+	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
+
+real	5m4.144s
+user	6m27.388s
+sys	0m6.576s

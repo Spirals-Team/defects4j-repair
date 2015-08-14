@@ -1,34 +1,34 @@
 {
     "FailingTestCase": "6", 
-    "FailingTestCaseExecution": "4", 
-    "InmutatedGen": "0", 
+    "FailingTestCaseExecution": "28", 
+    "InmutatedGen": "3", 
     "NotAppliedOp": "0", 
-    "OfAppliedOp": "8", 
+    "OfAppliedOp": "50", 
     "RegressionTestCases": "2032", 
     "RegressionTestExecution": "1", 
-    "RightCompilation": "3", 
-    "WrongCompilation": "5", 
-    "date": "Fri Aug  7 00:56:57 CEST 2015\n\n", 
-    "gen": "8", 
-    "gens": "23", 
-    "node": "griffon-68.nancy.grid5000.fr", 
+    "RightCompilation": "27", 
+    "WrongCompilation": "23", 
+    "date": "Thu Aug 13 21:54:35 CEST 2015\n\n", 
+    "gen": "50", 
+    "gens": "927", 
+    "node": "griffon-33.nancy.grid5000.fr", 
     "operations": [
         {
-            "buggyStatement": "if ((yInitial * yMax) < 0) {\n\treturn solve(f, initial, yInitial, max, yMax, initial, yInitial);\n} ", 
-            "generation": 8, 
-            "patch": "verifyBracketing(min, max, f)", 
+            "buggyStatement": "return solve(f, min, yMin, max, yMax, initial, yInitial)", 
+            "generation": 50, 
+            "patch": "return solve(f, min, max)", 
             "patchLocation": {
                 "className": "org.apache.commons.math.analysis.solvers.BrentSolver", 
-                "line": 127
+                "line": 132
             }, 
-            "type": "INSERT_BEFORE", 
-            "variant": 16
+            "type": "REPLACE", 
+            "variant": 100
         }
     ], 
     "ops": "0", 
     "patches": "1", 
-    "programVariant": "16", 
-    "timeEvaluation": "10356", 
-    "timeTotal": "46000", 
+    "programVariant": "100", 
+    "timeEvaluation": "33925", 
+    "timeTotal": "68839", 
     "unfinishValidation": "0"
 }

@@ -1,22 +1,34 @@
 {
     "FailingTestCase": "5", 
-    "FailingTestCaseExecution": "1", 
-    "InmutatedGen": "2929", 
+    "FailingTestCaseExecution": "22", 
+    "InmutatedGen": "0", 
     "NotAppliedOp": "0", 
-    "OfAppliedOp": "20892", 
+    "OfAppliedOp": "47", 
     "RegressionTestCases": "0", 
-    "RegressionTestExecution": "0", 
-    "RightCompilation": "0", 
-    "WrongCompilation": "20892", 
-    "date": "Fri Aug  7 04:19:32 CEST 2015\n\n", 
-    "gen": "20892", 
-    "gens": "171", 
-    "node": "griffon-32.nancy.grid5000.fr", 
-    "operations": [], 
+    "RegressionTestExecution": "1", 
+    "RightCompilation": "21", 
+    "WrongCompilation": "26", 
+    "date": "Fri Aug 14 06:24:51 CEST 2015\n\n", 
+    "gen": "47", 
+    "gens": "894", 
+    "node": "graphene-57.nancy.grid5000.fr", 
+    "operations": [
+        {
+            "buggyStatement": "if ((this.leftBlock) != null) {\n\torg.jfree.chart.block.RectangleConstraint c3 = new org.jfree.chart.block.RectangleConstraint(0.0 , new org.jfree.data.Range(0.0 , constraint.getWidth()) , org.jfree.chart.block.LengthConstraintType.RANGE , h[2] , null , org.jfree.chart.block.LengthConstraintType.FIXED);\n\torg.jfree.chart.util.Size2D size = this.leftBlock.arrange(g2, c3);\n\tw[2] = size.width;\n} ", 
+            "generation": 47, 
+            "patch": "remove", 
+            "patchLocation": {
+                "className": "org.jfree.chart.block.BorderArrangement", 
+                "line": 482
+            }, 
+            "type": "DELETE", 
+            "variant": 94
+        }
+    ], 
     "ops": "0", 
-    "patches": "0", 
-    "programVariant": null, 
-    "timeEvaluation": "3660100", 
-    "timeTotal": "3708173", 
+    "patches": "1", 
+    "programVariant": "94", 
+    "timeEvaluation": "23010", 
+    "timeTotal": "60615", 
     "unfinishValidation": "0"
 }

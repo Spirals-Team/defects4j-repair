@@ -1,65 +1,65 @@
 export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/math/math_70 /tmp/math_70_Genprog;cd /tmp/math_70_Genprog;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
 /home/tdurieux/defects4j-repair/src/python/core/../../../results/Math/70/Genprog/result
-cd /tmp/math_70_Genprog;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java  -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement -location . -dependencies lib/ -failing org.apache.commons.math.analysis.solvers.BisectionSolverTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -seed 10 -scope package  -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
+cd /tmp/math_70_Genprog;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java  -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement -location . -dependencies lib/ -failing org.apache.commons.math.analysis.solvers.BisectionSolverTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -seed 10 -maxtime 165  -scope local  -stopfirst true -flthreshold 0 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
 
 Node: `hostname`
 ";echo "
 Date: `date`
 ";rm -rf /tmp/math_70_Genprog;
 
-2015-08-06 22:57:26,548 INFO main - End Repair Loops: Found solution
-2015-08-06 22:57:26,548 INFO main - Solution stored at: ./outputMutation//MainjGenProg-.//src/
-2015-08-06 22:57:26,548 INFO main - 
+End Repair Loops: Found solution
+Solution stored at: ./outputMutation//MainjGenProg-.//src/
+
 Number solutions:1
-2015-08-06 22:57:26,548 INFO main - f (sol): 0.0, [Variant id: 110 (SOL) , #gens: 9, #ops: 1, parent:109]
-2015-08-06 22:57:26,548 INFO main - 
+f (sol): 0.0, [Variant id: 96 (SOL) , #gens: 929, #ops: 1, parent:95]
+
 All variants:
-2015-08-06 22:57:26,548 INFO main - f 1.0, [Variant id: 111, #gens: 9, #ops: 0, parent:-]
-2015-08-06 22:57:26,548 INFO main - 
+f 1.0, [Variant id: 97, #gens: 929, #ops: 0, parent:-]
+
 Solution details
-2015-08-06 22:57:26,548 INFO main - 
+
  --SOLUTIONS DESCRIPTION--
 
  ----
-ProgramVariant 110
+ProgramVariant 96
  
 operation: REPLACE
 location= org.apache.commons.math.analysis.solvers.BisectionSolver
 line= 72
 original statement= return solve(min, max)
-fixed statement= return solve(f, initial, max)
-generation= 55
-ingredientScope= PACKAGE
+fixed statement= return solve(f, min, max)
+generation= 48
+ingredientScope= LOCAL
  
-2015-08-06 22:57:26,549 INFO main - --Space: PACKAGE
-org.apache.commons.math.analysis.interpolation=750|,org.apache.commons.math.special=87|,org.apache.commons.math.util=1134|,org.apache.commons.math.analysis=132|,org.apache.commons.math.stat.descriptive=595|,org.apache.commons.math.stat.regression=165|,org.apache.commons.math.stat.correlation=129|,org.apache.commons.math.stat.clustering=87|,org.apache.commons.math.ode.jacobians=245|,org.apache.commons.math.stat.ranking=95|,org.apache.commons.math=161|,org.apache.commons.math.ode.sampling=237|,org.apache.commons.math.genetics=244|,org.apache.commons.math.analysis.polynomials=302|,org.apache.commons.math.optimization.linear=261|,org.apache.commons.math.optimization.univariate=89|,org.apache.commons.math.ode.nonstiff=1309|,org.apache.commons.math.optimization.direct=193|,org.apache.commons.math.optimization.general=541|,org.apache.commons.math.stat=149|,org.apache.commons.math.distribution=629|,org.apache.commons.math.ode.events=136|,org.apache.commons.math.stat.descriptive.summary=110|,org.apache.commons.math.geometry=501|,org.apache.commons.math.linear=6123|,org.apache.commons.math.estimation=81|,org.apache.commons.math.analysis.integration=149|,org.apache.commons.math.stat.descriptive.rank=88|,org.apache.commons.math.random=633|,org.apache.commons.math.fraction=583|,org.apache.commons.math.complex=222|,org.apache.commons.math.transform=358|,org.apache.commons.math.stat.inference=45|,org.apache.commons.math.optimization.fitting=168|,org.apache.commons.math.optimization=329|,org.apache.commons.math.ode=213|,org.apache.commons.math.stat.descriptive.moment=458|,org.apache.commons.math.analysis.solvers=560|,
-2015-08-06 22:57:26,549 INFO main - 
+--Space: LOCAL
+org.apache.commons.math.stat.descriptive.summary.SumOfLogs=24|,org.apache.commons.math.stat.descriptive.MultivariateSummaryStatistics=118|,org.apache.commons.math.linear.Array2DRowRealMatrix=185|,org.apache.commons.math.distribution.AbstractContinuousDistribution=24|,org.apache.commons.math.util.ContinuedFraction=51|,org.apache.commons.math.util.MathUtils=420|,org.apache.commons.math.optimization.general.AbstractLeastSquaresOptimizer=83|,org.apache.commons.math.analysis.solvers.BisectionSolver=24|,org.apache.commons.math.stat.descriptive.moment.FirstMoment=27|,org.apache.commons.math.optimization.fitting.WeightedObservedPoint=7|,org.apache.commons.math.special.Gamma=55|,org.apache.commons.math.complex.Complex=143|,org.apache.commons.math.stat.descriptive.moment.Mean=38|,org.apache.commons.math.analysis.interpolation.BicubicSplineInterpolator=45|,org.apache.commons.math.stat.descriptive.rank.Max=24|,org.apache.commons.math.analysis.interpolation.BicubicSplineInterpolatingFunction=87|,org.apache.commons.math.optimization.general.GaussNewtonOptimizer=32|,org.apache.commons.math.analysis.solvers.LaguerreSolver=120|,org.apache.commons.math.special.Beta=27|,org.apache.commons.math.stat.descriptive.summary.SumOfSquares=24|,org.apache.commons.math.stat.descriptive.moment.GeometricMean=22|,org.apache.commons.math.analysis.interpolation.SmoothingPolynomialBicubicSplineInterpolator=39|,org.apache.commons.math.linear.BlockRealMatrix=693|,org.apache.commons.math.optimization.VectorialPointValuePair=10|,org.apache.commons.math.analysis.interpolation.SplineInterpolator=39|,org.apache.commons.math.ConvergingAlgorithmImpl=18|,org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl=38|,org.apache.commons.math.optimization.fitting.CurveFitter=31|,org.apache.commons.math.analysis.interpolation.BicubicSplineFunction=85|,org.apache.commons.math.analysis.polynomials.PolynomialSplineFunction=36|,org.apache.commons.math.analysis.polynomials.PolynomialFunction=87|,org.apache.commons.math.stat.descriptive.SynchronizedMultivariateSummaryStatistics=31|,org.apache.commons.math.linear.AbstractRealMatrix=365|,org.apache.commons.math.stat.descriptive.summary.Sum=31|,org.apache.commons.math.stat.descriptive.AbstractUnivariateStatistic=31|,org.apache.commons.math.optimization.SimpleVectorialValueChecker=16|,org.apache.commons.math.linear.MatrixUtils=172|,org.apache.commons.math.linear.QRDecompositionImpl=151|,org.apache.commons.math.stat.descriptive.rank.Min=24|,org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils=32|,org.apache.commons.math.optimization.fitting.PolynomialFitter=18|,org.apache.commons.math.stat.descriptive.moment.VectorialCovariance=43|,
+
 ----stats: 
-2015-08-06 22:57:26,549 INFO main - 
-spaces navigation: [48]: {(CtLocalVariableImpl| size: 560| alreadyanalyzed| LOCAL| INSERT_BEFORE) =1, (CtReturnImpl| size: 560| notcompiles| PACKAGE| INSERT_AFTER) =2, (CtLocalVariableImpl| size: 560| notcompiles| PACKAGE| INSERT_BEFORE) =4, (CtAssignmentImpl| size: 560| notcompiles| PACKAGE| INSERT_AFTER) =9, (CtAssignmentImpl| size: 560| compiles| LOCAL| INSERT_BEFORE) =1, (CtInvocationImpl| size: 560| compiles| LOCAL| INSERT_AFTER) =1, (CtAssignmentImpl| size: 560| compiles| LOCAL| INSERT_AFTER) =1, (CtReturnImpl| size: 84| compiles| PACKAGE| REPLACE) =10, (CtReturnImpl| size: 560| compiles| PACKAGE| INSERT_BEFORE) =5, (CtLocalVariableImpl| size: 560| notcompiles| PACKAGE| INSERT_AFTER) =1, (CtReturnImpl| size: 84| alreadyanalyzed| PACKAGE| REPLACE) =36, (CtAssignmentImpl| size: 147| compiles| PACKAGE| REPLACE) =1, (CtReturnImpl| size: 84| alreadyanalyzed| LOCAL| REPLACE) =1, (CtReturnImpl| size: 560| alreadyanalyzed| PACKAGE| INSERT_BEFORE) =1, (CtAssignmentImpl| size: 147| alreadyanalyzed| PACKAGE| REPLACE) =30, (CtReturnImpl| size: 560| notcompiles| PACKAGE| INSERT_BEFORE) =7, (CtAssignmentImpl| size: 147| notcompiles| PACKAGE| REPLACE) =52, (CtWhileImpl| size: 560| compiles| LOCAL| INSERT_AFTER) =1, (CtAssignmentImpl| size: 560| compiles| PACKAGE| INSERT_AFTER) =3, (CtLocalVariableImpl| size: 126| compiles| PACKAGE| REPLACE) =2, (CtReturnImpl| size: 560| compiles| LOCAL| INSERT_AFTER) =1, (CtInvocationImpl| size: 560| notcompiles| PACKAGE| INSERT_AFTER) =7, (CtReturnImpl| size: 84| notcompiles| LOCAL| REPLACE) =1, (CtInvocationImpl| size: 560| compiles| PACKAGE| INSERT_AFTER) =2, (CtReturnImpl| size: 560| notcompiles| LOCAL| INSERT_BEFORE) =2, (CtAssignmentImpl| size: 147| compiles| LOCAL| REPLACE) =1, (CtLocalVariableImpl| size: 560| alreadyanalyzed| PACKAGE| INSERT_AFTER) =1, (CtWhileImpl| size: 560| compiles| PACKAGE| INSERT_BEFORE) =1, (CtAssignmentImpl| size: 560| notcompiles| PACKAGE| INSERT_BEFORE) =1, (CtReturnImpl| size: 560| compiles| PACKAGE| INSERT_AFTER) =1, (CtLocalVariableImpl| size: 560| compiles| LOCAL| INSERT_AFTER) =1, (CtReturnImpl| size: 84| notcompiles| PACKAGE| REPLACE) =23, (CtInvocationImpl| size: 560| compiles| PACKAGE| INSERT_BEFORE) =1, (CtLocalVariableImpl| size: 560| compiles| PACKAGE| INSERT_BEFORE) =1, (CtAssignmentImpl| size: 560| compiles| PACKAGE| INSERT_BEFORE) =1, (CtWhileImpl| size: 560| notcompiles| PACKAGE| INSERT_AFTER) =7, (CtInvocationImpl| size: 560| alreadyanalyzed| PACKAGE| INSERT_AFTER) =1, (CtInvocationImpl| size: 560| notcompiles| LOCAL| INSERT_AFTER) =1, (CtAssignmentImpl| size: 147| alreadyanalyzed| LOCAL| REPLACE) =1, (CtInvocationImpl| size: 68| compiles| PACKAGE| REPLACE) =2, (CtReturnImpl| size: 560| compiles| LOCAL| INSERT_BEFORE) =1, (CtReturnImpl| size: 84| compiles| LOCAL| REPLACE) =2, (CtWhileImpl| size: 560| notcompiles| PACKAGE| INSERT_BEFORE) =5, (CtWhileImpl| size: 560| compiles| PACKAGE| INSERT_AFTER) =1, (CtInvocationImpl| size: 68| compiles| LOCAL| REPLACE) =1, (CtLocalVariableImpl| size: 560| notcompiles| LOCAL| INSERT_AFTER) =1, (CtInvocationImpl| size: 560| notcompiles| PACKAGE| INSERT_BEFORE) =1, (CtLocalVariableImpl| size: 560| compiles| PACKAGE| INSERT_AFTER) =1}
-#gen: 55
+
+spaces navigation: [29]: {(CtReturnImpl| size: 24| compiles| LOCAL| INSERT_BEFORE) =4, (CtInvocationImpl| size: 24| compiles| LOCAL| INSERT_BEFORE) =4, (CtAssignmentImpl| size: 24| compiles| LOCAL| INSERT_AFTER) =1, (CtReturnImpl| size: 24| notcompiles| LOCAL| INSERT_BEFORE) =4, (CtAssignmentImpl| size: 38| compiles| LOCAL| INSERT_BEFORE) =2, (CtAssignmentImpl| size: 6| compiles| LOCAL| REPLACE) =2, (CtLocalVariableImpl| size: 24| notcompiles| LOCAL| INSERT_BEFORE) =1, (CtReturnImpl| size: 4| compiles| LOCAL| REPLACE) =2, (CtLocalVariableImpl| size: 24| compiles| LOCAL| INSERT_BEFORE) =3, (CtReturnImpl| size: 24| alreadyanalyzed| LOCAL| INSERT_BEFORE) =1, (CtReturnImpl| size: 24| compiles| LOCAL| INSERT_AFTER) =7, (CtReturnImpl| size: 4| alreadyanalyzed| LOCAL| REPLACE) =1, (CtInvocationImpl| size: 5| compiles| LOCAL| REPLACE) =2, (CtInvocationImpl| size: 24| alreadyanalyzed| LOCAL| INSERT_BEFORE) =6, (CtLocalVariableImpl| size: 4| alreadyanalyzed| LOCAL| REPLACE) =3, (CtWhileImpl| size: 1| alreadyanalyzed| LOCAL| REPLACE) =1, (CtInvocationImpl| size: 24| notcompiles| LOCAL| INSERT_BEFORE) =7, (CtAssignmentImpl| size: 38| notcompiles| LOCAL| INSERT_BEFORE) =2, (CtReturnImpl| size: 24| notcompiles| LOCAL| INSERT_AFTER) =10, (CtReturnImpl| size: 5| alreadyanalyzed| LOCAL| REPLACE) =3, (CtReturnImpl| size: 5| notcompiles| LOCAL| REPLACE) =2, (CtLocalVariableImpl| size: 4| compiles| LOCAL| REPLACE) =3, (CtReturnImpl| size: 5| compiles| LOCAL| REPLACE) =1, (CtReturnImpl| size: 24| alreadyanalyzed| LOCAL| INSERT_AFTER) =9, (CtWhileImpl| size: 24| compiles| LOCAL| INSERT_AFTER) =2, (CtAssignmentImpl| size: 6| alreadyanalyzed| LOCAL| REPLACE) =1, (CtWhileImpl| size: 24| compiles| LOCAL| INSERT_BEFORE) =3, (CtInvocationImpl| size: 5| alreadyanalyzed| LOCAL| REPLACE) =1, (CtAssignmentImpl| size: 24| compiles| LOCAL| INSERT_BEFORE) =3}
+#gen: 48
 #patches: 1
-#RightCompilation: 16
-#WrongCompilation: 39
-#FailingTestCaseExecution: 17
-#RegressionTestExecution: 2
-#TestcasesExecutedval1: 204
-#TestcasesExecutedval2: 4148
+#RightCompilation: 13
+#WrongCompilation: 35
+#FailingTestCaseExecution: 14
+#RegressionTestExecution: 1
+#TestcasesExecutedval1: 168
+#TestcasesExecutedval2: 2074
 #FailingTestCase: 12
 #RegressionTestCases: 2074
-#OfAppliedOp: 55
+#OfAppliedOp: 48
 #NotAppliedOp: 0
-#InmutatedGen: 0
+#InmutatedGen: 2
 #unfinishValidation: 0
-#ing {CtLocalVariableImpl=7, CtReturnImpl=27, CtAssignmentImpl=10, CtInvocationImpl=8, CtWhileImpl=3}
-#untilcompile {1=15, 2=9, 3=3, 4=1, 5=5, 6=2, 7=1, 8=2, 9=1, 13=1, 14=1, 15=1, 82=1}
-2015-08-06 22:57:26,549 INFO main - Time Evolution(ms): 29947
-2015-08-06 22:57:26,549 INFO fr.inria.main.AbstractMain - Time Total(ms): 69966
+#ing {CtLocalVariableImpl=6, CtReturnImpl=20, CtAssignmentImpl=9, CtInvocationImpl=9, CtWhileImpl=6}
+#untilcompile {1=21, 2=8, 3=4, 4=1, 5=1, 6=1, 8=1, 9=1, 10=1}
+Time Evolution(ms): 35267
+Time Total(ms): 74952
 
 
-Node: griffon-63.nancy.grid5000.fr
+Node: griffon-20.nancy.grid5000.fr
 
 
-Date: Fri Aug  7 00:57:26 CEST 2015
+Date: Thu Aug 13 21:56:01 CEST 2015
 
 

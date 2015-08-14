@@ -1,22 +1,34 @@
 {
     "FailingTestCase": "10", 
-    "FailingTestCaseExecution": "1", 
-    "InmutatedGen": "302", 
+    "FailingTestCaseExecution": "85", 
+    "InmutatedGen": "4", 
     "NotAppliedOp": "0", 
-    "OfAppliedOp": "5395", 
+    "OfAppliedOp": "188", 
     "RegressionTestCases": "0", 
-    "RegressionTestExecution": "0", 
-    "RightCompilation": "0", 
-    "WrongCompilation": "5395", 
-    "date": "Fri Aug  7 05:07:31 CEST 2015\n\n", 
-    "gen": "5395", 
-    "gens": "31", 
-    "node": "griffon-30.nancy.grid5000.fr", 
-    "operations": [], 
+    "RegressionTestExecution": "1", 
+    "RightCompilation": "84", 
+    "WrongCompilation": "104", 
+    "date": "Fri Aug 14 06:30:35 CEST 2015\n\n", 
+    "gen": "188", 
+    "gens": "872", 
+    "node": "graphene-47.nancy.grid5000.fr", 
+    "operations": [
+        {
+            "buggyStatement": "if (dataset != null) {\n\treturn result;\n} ", 
+            "generation": 188, 
+            "patch": "remove", 
+            "patchLocation": {
+                "className": "org.jfree.chart.renderer.category.AbstractCategoryItemRenderer", 
+                "line": 1797
+            }, 
+            "type": "DELETE", 
+            "variant": 376
+        }
+    ], 
     "ops": "0", 
-    "patches": "0", 
-    "programVariant": null, 
-    "timeEvaluation": "3660347", 
-    "timeTotal": "3715101", 
+    "patches": "1", 
+    "programVariant": "376", 
+    "timeEvaluation": "136342", 
+    "timeTotal": "179603", 
     "unfinishValidation": "0"
 }

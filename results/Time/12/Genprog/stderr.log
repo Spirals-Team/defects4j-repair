@@ -2,45 +2,57 @@ Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
 java.lang.IllegalArgumentException: The validation process does not execute well the test cases
  Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
 Exception in thread "main" java.lang.ExceptionInInitializerError
-	at org.joda.time.chrono.ISOChronology.<clinit>(ISOChronology.java:66)
-	at org.joda.time.TestLocalDateTime_Constructors.<clinit>(TestLocalDateTime_Constructors.java:41)
+	at org.joda.time.TestLocalDateTime_Constructors.<clinit>(TestLocalDateTime_Constructors.java:45)
 	at java.lang.Class.forName0(Native Method)
 	at java.lang.Class.forName(Class.java:191)
 	at fr.inria.astor.junitexec.JUnitTestExecutor.main(JUnitTestExecutor.java:106)
-Caused by: java.lang.IllegalArgumentException: The field must be supported
-	at org.joda.time.field.DecoratedDateTimeField.<init>(DecoratedDateTimeField.java:59)
-	at org.joda.time.field.ZeroIsMaxDateTimeField.<init>(ZeroIsMaxDateTimeField.java:45)
-	at org.joda.time.chrono.BasicChronology.<clinit>(BasicChronology.java:57)
-	... 5 more
+Caused by: java.lang.NullPointerException
+	at org.joda.time.chrono.GJChronology$CutoverField.<init>(GJChronology.java:300)
+	at org.joda.time.chrono.GJChronology$CutoverField.<init>(GJChronology.java:296)
+	at org.joda.time.chrono.GJChronology.assemble(GJChronology.java:230)
+	at org.joda.time.chrono.AssembledChronology.setFields(AssembledChronology.java:274)
+	at org.joda.time.chrono.AssembledChronology.<init>(AssembledChronology.java:84)
+	at org.joda.time.chrono.GJChronology.<init>(GJChronology.java:90)
+	at org.joda.time.chrono.GJChronology.getInstance(GJChronology.java:60)
+	at org.joda.time.chrono.GJChronology.getInstance(GJChronology.java:35)
+	at org.joda.time.chrono.BuddhistChronology.getInstance(BuddhistChronology.java:29)
+	at org.joda.time.chrono.BuddhistChronology.<clinit>(BuddhistChronology.java:13)
+	... 4 more
 
 	at fr.inria.astor.core.validation.executors.JUnitExecutorProcess.getTestResult(JUnitExecutorProcess.java:130)
 	at fr.inria.astor.core.validation.executors.JUnitExecutorProcess.execute(JUnitExecutorProcess.java:78)
 	at fr.inria.astor.core.validation.executors.JUnitExecutorProcess.execute(JUnitExecutorProcess.java:34)
 	at fr.inria.astor.core.validation.validators.ProcessValidator.validate(ProcessValidator.java:58)
-	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.validateInstance(EvolutionaryEngine.java:763)
-	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.processCreatedVariant(EvolutionaryEngine.java:367)
-	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.processGenerations(EvolutionaryEngine.java:233)
-	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.startEvolution(EvolutionaryEngine.java:125)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.validateInstance(EvolutionaryEngine.java:768)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.processCreatedVariant(EvolutionaryEngine.java:365)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.processGenerations(EvolutionaryEngine.java:229)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.startEvolution(EvolutionaryEngine.java:124)
 	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:198)
 	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
 Exception in thread "main" java.lang.AssertionError: The validation process does not execute well the test cases
  Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
 Exception in thread "main" java.lang.ExceptionInInitializerError
-	at org.joda.time.chrono.ISOChronology.<clinit>(ISOChronology.java:66)
-	at org.joda.time.TestLocalDateTime_Constructors.<clinit>(TestLocalDateTime_Constructors.java:41)
+	at org.joda.time.TestLocalDateTime_Constructors.<clinit>(TestLocalDateTime_Constructors.java:45)
 	at java.lang.Class.forName0(Native Method)
 	at java.lang.Class.forName(Class.java:191)
 	at fr.inria.astor.junitexec.JUnitTestExecutor.main(JUnitTestExecutor.java:106)
-Caused by: java.lang.IllegalArgumentException: The field must be supported
-	at org.joda.time.field.DecoratedDateTimeField.<init>(DecoratedDateTimeField.java:59)
-	at org.joda.time.field.ZeroIsMaxDateTimeField.<init>(ZeroIsMaxDateTimeField.java:45)
-	at org.joda.time.chrono.BasicChronology.<clinit>(BasicChronology.java:57)
-	... 5 more
+Caused by: java.lang.NullPointerException
+	at org.joda.time.chrono.GJChronology$CutoverField.<init>(GJChronology.java:300)
+	at org.joda.time.chrono.GJChronology$CutoverField.<init>(GJChronology.java:296)
+	at org.joda.time.chrono.GJChronology.assemble(GJChronology.java:230)
+	at org.joda.time.chrono.AssembledChronology.setFields(AssembledChronology.java:274)
+	at org.joda.time.chrono.AssembledChronology.<init>(AssembledChronology.java:84)
+	at org.joda.time.chrono.GJChronology.<init>(GJChronology.java:90)
+	at org.joda.time.chrono.GJChronology.getInstance(GJChronology.java:60)
+	at org.joda.time.chrono.GJChronology.getInstance(GJChronology.java:35)
+	at org.joda.time.chrono.BuddhistChronology.getInstance(BuddhistChronology.java:29)
+	at org.joda.time.chrono.BuddhistChronology.<clinit>(BuddhistChronology.java:13)
+	... 4 more
 
 	at org.junit.Assert.fail(Assert.java:88)
 	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:201)
 	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
 
-real	14m9.923s
-user	16m28.190s
-sys	0m17.109s
+real	3m57.771s
+user	5m19.476s
+sys	0m5.940s

@@ -1,0 +1,34 @@
+{
+    "FailingTestCase": "23", 
+    "FailingTestCaseExecution": "2", 
+    "InmutatedGen": "0", 
+    "NotAppliedOp": "0", 
+    "OfAppliedOp": "6", 
+    "RegressionTestCases": "0", 
+    "RegressionTestExecution": "2", 
+    "RightCompilation": "1", 
+    "WrongCompilation": "5", 
+    "date": "Fri Aug 14 06:26:37 CEST 2015\n\n", 
+    "gen": "6", 
+    "gens": "894", 
+    "node": "graphene-52.nancy.grid5000.fr", 
+    "operations": [
+        {
+            "buggyStatement": "return this.data[0].length", 
+            "generation": 6, 
+            "patch": "int rows = getRowCount()", 
+            "patchLocation": {
+                "className": "org.jfree.data.xy.MatrixSeries", 
+                "line": 88
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 12
+        }
+    ], 
+    "ops": "0", 
+    "patches": "1", 
+    "programVariant": "12", 
+    "timeEvaluation": "5535", 
+    "timeTotal": "43918", 
+    "unfinishValidation": "0"
+}
