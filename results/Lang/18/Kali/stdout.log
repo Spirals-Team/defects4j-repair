@@ -1,30 +1,29 @@
 export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/lang/lang_18 /tmp/lang_18_Kali;cd /tmp/lang_18_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Lang/lib/* lib/;find . -type f -name "package-info.java" -delete;
 /home/tdurieux/defects4j-repair/src/python/core/../../../results/Lang/18/Kali/result
-cd /tmp/lang_18_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.lang3.time.FastDateFormatTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/tests/;echo "
+cd /tmp/lang_18_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java  -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.lang3.time.FastDateFormatTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -seed 10 -maxtime 60  -scope local  -stopfirst true -flthreshold 0 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/tests/;echo "
 
 Node: `hostname`
 ";echo "
 Date: `date`
 ";rm -rf /tmp/lang_18_Kali;
- NOT Found solution
+
+End Repair Loops: NOT Found solution
 
 Number solutions:0
 
 All variants:
-f 30.0, [Variant id: 1, #gens: 48, #ops: 0, parent:-]
+f 2.0, [Variant id: 1, #gens: 850, #ops: 0, parent:-]
 
 ----stats: 
 
-spaces: [0]: []
-time val1 [85]: [239, 237, 246, 236, 235, 235, 236, 237, 245, 234, 237, 234, 242, 234, 236, 242, 236, 234, 238, 235, 239, 235, 235, 236, 237, 236, 245, 248, 253, 243, 235, 238, 234, 236, 240, 237, 255, 236, 233, 234, 235, 240, 237, 234, 234, 239, 241, 241, 238, 235, 237, 238, 239, 233, 236, 233, 235, 237, 236, 240, 236, 235, 234, 236, 239, 236, 235, 234, 245, 232, 237, 237, 234, 237, 235, 234, 238, 241, 235, 234, 235, 234, 236, 236, 235]
-time val2 [1]: [9782]
+spaces navigation: [0]: {}
 #gen: 0
 #patches: 0
-#RightCompilation: 84
-#WrongCompilation: 22
-#FailingTestCaseExecution: 85
+#RightCompilation: 1780
+#WrongCompilation: 298
+#FailingTestCaseExecution: 1781
 #RegressionTestExecution: 1
-#TestcasesExecutedval1: 1275
+#TestcasesExecutedval1: 26655
 #TestcasesExecutedval2: 1902
 #FailingTestCase: 15
 #RegressionTestCases: 1902
@@ -32,13 +31,14 @@ time val2 [1]: [9782]
 #NotAppliedOp: 0
 #InmutatedGen: 0
 #unfinishValidation: 0
-#ing []
-Time Total(ms): 65812
+#ing {}
+#untilcompile {}
+Time Total(ms): 1243709
 
 
-Node: graphene-19.nancy.grid5000.fr
+Node: graphene-60.nancy.grid5000.fr
 
 
-Date: Thu Jul 23 00:46:26 CEST 2015
+Date: Thu Aug 13 20:33:53 CEST 2015
 
 

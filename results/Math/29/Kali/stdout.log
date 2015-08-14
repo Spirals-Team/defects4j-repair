@@ -1,30 +1,29 @@
 export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/math/math_29 /tmp/math_29_Kali;cd /tmp/math_29_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
 /home/tdurieux/defects4j-repair/src/python/core/../../../results/Math/29/Kali/result
-cd /tmp/math_29_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.math3.linear.SparseRealVectorTest:org.apache.commons.math3.linear.SparseRealVectorTest:org.apache.commons.math3.linear.SparseRealVectorTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
+cd /tmp/math_29_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java  -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.math3.linear.SparseRealVectorTest:org.apache.commons.math3.linear.SparseRealVectorTest:org.apache.commons.math3.linear.SparseRealVectorTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -seed 10 -maxtime 60  -scope local  -stopfirst true -flthreshold 0 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
 
 Node: `hostname`
 ";echo "
 Date: `date`
 ";rm -rf /tmp/math_29_Kali;
- NOT Found solution
+
+End Repair Loops: NOT Found solution
 
 Number solutions:0
 
 All variants:
-f 9.0, [Variant id: 1, #gens: 126, #ops: 0, parent:-]
+f 9.0, [Variant id: 1, #gens: 924, #ops: 0, parent:-]
 
 ----stats: 
 
-spaces: [0]: []
-time val1 [250]: [461, 426, 425, 428, 426, 422, 421, 425, 423, 426, 423, 421, 378, 376, 434, 423, 424, 422, 422, 429, 433, 423, 422, 367, 369, 369, 370, 369, 368, 366, 425, 370, 377, 374, 424, 374, 381, 376, 422, 425, 434, 423, 431, 426, 426, 422, 60002, 426, 60002, 423, 422, 423, 60002, 428, 424, 60002, 426, 423, 423, 423, 422, 421, 411, 424, 424, 417, 422, 422, 422, 423, 60002, 60002, 60002, 60001, 60002, 60002, 60002, 60002, 60003, 60002, 60002, 411, 60002, 412, 60002, 405, 408, 60002, 60001, 406, 60001, 413, 60001, 412, 60002, 45926, 60002, 405, 402, 404, 402, 403, 404, 423, 365, 354, 422, 423, 365, 350, 423, 365, 372, 370, 371, 370, 369, 422, 369, 383, 368, 367, 366, 421, 368, 367, 366, 422, 60002, 424, 365, 368, 358, 424, 366, 352, 421, 421, 365, 351, 423, 365, 372, 371, 432, 422, 374, 421, 350, 374, 376, 374, 374, 424, 374, 422, 361, 351, 427, 366, 358, 361, 359, 420, 395, 423, 422, 423, 410, 424, 424, 423, 423, 422, 423, 426, 423, 421, 389, 423, 379, 436, 367, 367, 371, 368, 420, 369, 367, 359, 359, 360, 374, 360, 372, 423, 427, 361, 360, 359, 360, 371, 358, 306, 371, 356, 359, 361, 359, 363, 60002, 60002, 60002, 388, 60001, 60002, 60002, 60002, 60002, 42613, 60002, 427, 427, 423, 60002, 428, 426, 420, 304, 307, 304, 419, 303, 421, 427, 451, 305, 425, 422, 429, 305, 422, 306, 420, 423, 304, 420, 305, 420, 422]
-time val2 [0]: []
+spaces navigation: [0]: {}
 #gen: 0
 #patches: 0
-#RightCompilation: 249
-#WrongCompilation: 53
-#FailingTestCaseExecution: 250
+#RightCompilation: 1663
+#WrongCompilation: 439
+#FailingTestCaseExecution: 1664
 #RegressionTestExecution: 0
-#TestcasesExecutedval1: 45360
+#TestcasesExecutedval1: 340410
 #TestcasesExecutedval2: 0
 #FailingTestCase: 210
 #RegressionTestCases: 0
@@ -32,13 +31,14 @@ time val2 [0]: []
 #NotAppliedOp: 0
 #InmutatedGen: 0
 #unfinishValidation: 0
-#ing []
-Time Total(ms): 2799141
+#ing {}
+#untilcompile {}
+Time Total(ms): 4616428
 
 
-Node: graphene-20.nancy.grid5000.fr
+Node: graphene-34.nancy.grid5000.fr
 
 
-Date: Thu Jul 23 01:17:58 CEST 2015
+Date: Thu Aug 13 20:41:22 CEST 2015
 
 

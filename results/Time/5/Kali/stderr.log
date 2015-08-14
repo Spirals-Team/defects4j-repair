@@ -1,40 +1,53 @@
 Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
-spoon.reflect.declaration.ParentNotInitializedException: parent not initialized for class spoon.support.reflect.code.CtIfImpl (/tmp/time_5_Kali/outputMutation/MainjGenProg-./src/default/org/joda/time/PeriodType.java:373)
-	at spoon.support.reflect.declaration.CtElementImpl.getParent(CtElementImpl.java:199)
-	at spoon.support.reflect.declaration.CtElementImpl.getParent(CtElementImpl.java:221)
-	at spoon.support.reflect.declaration.CtElementImpl.getParent(CtElementImpl.java:225)
-	at spoon.support.reflect.declaration.CtElementImpl.getParent(CtElementImpl.java:225)
-	at spoon.support.reflect.declaration.CtElementImpl.getParent(CtElementImpl.java:225)
-	at spoon.support.reflect.declaration.CtElementImpl.getParent(CtElementImpl.java:225)
-	at spoon.reflect.visitor.DefaultJavaPrettyPrinter.visitCtNewArray(DefaultJavaPrettyPrinter.java:1554)
-	at spoon.support.reflect.code.CtNewArrayImpl.accept(CtNewArrayImpl.java:37)
-	at spoon.reflect.visitor.DefaultJavaPrettyPrinter.scan(DefaultJavaPrettyPrinter.java:463)
-	at spoon.reflect.visitor.DefaultJavaPrettyPrinter.visitCtConstructorCall(DefaultJavaPrettyPrinter.java:1607)
-	at spoon.support.reflect.code.CtConstructorCallImpl.accept(CtConstructorCallImpl.java:24)
-	at spoon.reflect.visitor.DefaultJavaPrettyPrinter.scan(DefaultJavaPrettyPrinter.java:463)
-	at spoon.reflect.visitor.DefaultJavaPrettyPrinter.visitCtAssignment(DefaultJavaPrettyPrinter.java:689)
-	at spoon.support.reflect.code.CtAssignmentImpl.accept(CtAssignmentImpl.java:44)
-	at spoon.reflect.visitor.DefaultJavaPrettyPrinter.scan(DefaultJavaPrettyPrinter.java:463)
-	at spoon.reflect.visitor.DefaultJavaPrettyPrinter.writeStatement(DefaultJavaPrettyPrinter.java:2177)
-	at spoon.reflect.visitor.DefaultJavaPrettyPrinter.visitCtBlock(DefaultJavaPrettyPrinter.java:720)
-	at spoon.support.reflect.code.CtBlockImpl.accept(CtBlockImpl.java:43)
-	at spoon.reflect.visitor.DefaultJavaPrettyPrinter.scan(DefaultJavaPrettyPrinter.java:463)
-	at spoon.reflect.visitor.DefaultJavaPrettyPrinter.visitCtIf(DefaultJavaPrettyPrinter.java:1176)
-	at spoon.support.reflect.code.CtIfImpl.accept(CtIfImpl.java:37)
-	at spoon.reflect.visitor.DefaultJavaPrettyPrinter.scan(DefaultJavaPrettyPrinter.java:463)
-	at spoon.support.reflect.declaration.CtElementImpl.toString(CtElementImpl.java:368)
-	at fr.inria.astor.core.util.StringUtil.trunc(StringUtil.java:17)
-	at fr.inria.astor.core.entities.GenOperationInstance.toString(GenOperationInstance.java:99)
-	at java.lang.String.valueOf(String.java:2847)
-	at java.lang.StringBuilder.append(StringBuilder.java:128)
-	at fr.inria.astor.core.loop.evolutionary.JKali.startEvolution(JKali.java:55)
-	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:201)
-	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:235)
-Exception in thread "main" java.lang.AssertionError: parent not initialized for class spoon.support.reflect.code.CtIfImpl (/tmp/time_5_Kali/outputMutation/MainjGenProg-./src/default/org/joda/time/PeriodType.java:373)
-	at org.junit.Assert.fail(Assert.java:88)
-	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:204)
-	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:235)
+java.lang.IllegalArgumentException: The validation process does not execute well the test cases
+ Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
+Exception in thread "main" java.lang.ExceptionInInitializerError
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:191)
+	at fr.inria.astor.junitexec.JUnitTestExecutor.main(JUnitTestExecutor.java:106)
+Caused by: java.lang.IllegalArgumentException: Id must not be null
+	at org.joda.time.DateTimeZone.<init>(DateTimeZone.java:394)
+	at org.joda.time.tz.CachedDateTimeZone.<init>(CachedDateTimeZone.java:42)
+	at org.joda.time.tz.CachedDateTimeZone.forZone(CachedDateTimeZone.java:34)
+	at org.joda.time.tz.DateTimeZoneBuilder.readFrom(DateTimeZoneBuilder.java:20)
+	at org.joda.time.tz.DateTimeZoneBuilder.readFrom(DateTimeZoneBuilder.java:7)
+	at org.joda.time.tz.ZoneInfoProvider.loadZoneData(ZoneInfoProvider.java:106)
+	at org.joda.time.tz.ZoneInfoProvider.getZone(ZoneInfoProvider.java:60)
+	at org.joda.time.DateTimeZone.forID(DateTimeZone.java:79)
+	at org.joda.time.TestPeriod_Basics.<clinit>(TestPeriod_Basics.java:44)
+	... 3 more
 
-real	1m13.764s
-user	2m9.164s
-sys	0m4.668s
+	at fr.inria.astor.core.validation.executors.JUnitExecutorProcess.getTestResult(JUnitExecutorProcess.java:130)
+	at fr.inria.astor.core.validation.executors.JUnitExecutorProcess.execute(JUnitExecutorProcess.java:78)
+	at fr.inria.astor.core.validation.executors.JUnitExecutorProcess.execute(JUnitExecutorProcess.java:34)
+	at fr.inria.astor.core.validation.validators.ProcessValidator.validate(ProcessValidator.java:58)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.validateInstance(EvolutionaryEngine.java:768)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.processCreatedVariant(EvolutionaryEngine.java:365)
+	at fr.inria.astor.core.loop.evolutionary.JKali.startEvolution(JKali.java:66)
+	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:198)
+	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
+Exception in thread "main" java.lang.AssertionError: The validation process does not execute well the test cases
+ Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
+Exception in thread "main" java.lang.ExceptionInInitializerError
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:191)
+	at fr.inria.astor.junitexec.JUnitTestExecutor.main(JUnitTestExecutor.java:106)
+Caused by: java.lang.IllegalArgumentException: Id must not be null
+	at org.joda.time.DateTimeZone.<init>(DateTimeZone.java:394)
+	at org.joda.time.tz.CachedDateTimeZone.<init>(CachedDateTimeZone.java:42)
+	at org.joda.time.tz.CachedDateTimeZone.forZone(CachedDateTimeZone.java:34)
+	at org.joda.time.tz.DateTimeZoneBuilder.readFrom(DateTimeZoneBuilder.java:20)
+	at org.joda.time.tz.DateTimeZoneBuilder.readFrom(DateTimeZoneBuilder.java:7)
+	at org.joda.time.tz.ZoneInfoProvider.loadZoneData(ZoneInfoProvider.java:106)
+	at org.joda.time.tz.ZoneInfoProvider.getZone(ZoneInfoProvider.java:60)
+	at org.joda.time.DateTimeZone.forID(DateTimeZone.java:79)
+	at org.joda.time.TestPeriod_Basics.<clinit>(TestPeriod_Basics.java:44)
+	... 3 more
+
+	at org.junit.Assert.fail(Assert.java:88)
+	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:201)
+	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
+
+real	5m46.293s
+user	7m8.139s
+sys	0m12.489s

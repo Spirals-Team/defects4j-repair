@@ -1,30 +1,29 @@
 export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/math/math_30 /tmp/math_30_Kali;cd /tmp/math_30_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
 /home/tdurieux/defects4j-repair/src/python/core/../../../results/Math/30/Kali/result
-cd /tmp/math_30_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.math3.stat.inference.MannWhitneyUTestTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
+cd /tmp/math_30_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java  -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.math3.stat.inference.MannWhitneyUTestTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -seed 10 -maxtime 60  -scope local  -stopfirst true -flthreshold 0 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
 
 Node: `hostname`
 ";echo "
 Date: `date`
 ";rm -rf /tmp/math_30_Kali;
- NOT Found solution
+
+End Repair Loops: NOT Found solution
 
 Number solutions:0
 
 All variants:
-f 1.0, [Variant id: 1, #gens: 38, #ops: 0, parent:-]
+f 1.0, [Variant id: 1, #gens: 932, #ops: 0, parent:-]
 
 ----stats: 
 
-spaces: [0]: []
-time val1 [77]: [216, 200, 210, 201, 202, 200, 206, 202, 203, 207, 201, 210, 206, 212, 208, 200, 208, 201, 204, 204, 207, 206, 202, 199, 203, 199, 201, 198, 209, 200, 236, 199, 200, 201, 201, 202, 202, 193, 195, 194, 196, 193, 195, 207, 195, 200, 197, 199, 198, 200, 207, 201, 203, 200, 193, 199, 194, 200, 201, 201, 201, 199, 202, 207, 202, 201, 201, 206, 203, 199, 212, 199, 201, 201, 212, 213, 202]
-time val2 [1]: [66790]
+spaces navigation: [0]: {}
 #gen: 0
 #patches: 0
-#RightCompilation: 76
-#WrongCompilation: 16
-#FailingTestCaseExecution: 77
+#RightCompilation: 1659
+#WrongCompilation: 441
+#FailingTestCaseExecution: 1660
 #RegressionTestExecution: 1
-#TestcasesExecutedval1: 231
+#TestcasesExecutedval1: 4980
 #TestcasesExecutedval2: 3694
 #FailingTestCase: 3
 #RegressionTestCases: 3694
@@ -32,13 +31,14 @@ time val2 [1]: [66790]
 #NotAppliedOp: 0
 #InmutatedGen: 0
 #unfinishValidation: 0
-#ing []
-Time Total(ms): 638954
+#ing {}
+#untilcompile {}
+Time Total(ms): 1733988
 
 
-Node: graphene-21.nancy.grid5000.fr
+Node: graphene-60.nancy.grid5000.fr
 
 
-Date: Thu Jul 23 00:42:00 CEST 2015
+Date: Thu Aug 13 19:53:17 CEST 2015
 
 

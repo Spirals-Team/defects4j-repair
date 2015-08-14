@@ -1,34 +1,63 @@
 mkdir: cannot create directory `lib/': File exists
 cp: cannot stat `/home/tdurieux/defects4j/framework/projects/Chart/lib/*': No such file or directory
 Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
-spoon.compiler.ModelBuildingException: snippet compilation error while compiling: class Wrapper {
-	java.lang.Object wrap() {
-		return true;
-	}
-}
-	at spoon.support.compiler.SnippetCompilationHelper.build(SnippetCompilationHelper.java:129)
-	at spoon.support.compiler.SnippetCompilationHelper.compileExpression(SnippetCompilationHelper.java:144)
-	at spoon.support.reflect.code.CtCodeSnippetExpressionImpl.compile(CtCodeSnippetExpressionImpl.java:30)
-	at fr.inria.astor.core.loop.evolutionary.JKali.createReturn(JKali.java:144)
-	at fr.inria.astor.core.loop.evolutionary.JKali.createKaliOperators(JKali.java:94)
-	at fr.inria.astor.core.loop.evolutionary.JKali.startEvolution(JKali.java:51)
-	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:201)
-	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:235)
-Caused by: spoon.support.compiler.SnippetCompilationError
-	at spoon.support.compiler.jdt.JDTSnippetCompiler.report(JDTSnippetCompiler.java:119)
-	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.reportProblems(JDTBasedSpoonCompiler.java:553)
-	at spoon.support.compiler.jdt.JDTSnippetCompiler.build(JDTSnippetCompiler.java:38)
-	at spoon.support.compiler.SnippetCompilationHelper.build(SnippetCompilationHelper.java:127)
-	... 7 more
-Exception in thread "main" java.lang.AssertionError: snippet compilation error while compiling: class Wrapper {
-	java.lang.Object wrap() {
-		return true;
-	}
-}
-	at org.junit.Assert.fail(Assert.java:88)
-	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:204)
-	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:235)
+java.lang.IllegalStateException: Undo: Not valid fix position
+	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.remove(CtStatementTransformator.java:66)
+	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.revert(CtStatementTransformator.java:40)
+	at fr.inria.astor.core.loop.evolutionary.JGenProg.undoOperationToSpoonElement(JGenProg.java:352)
+	at fr.inria.astor.core.loop.evolutionary.JKali.startEvolution(JKali.java:73)
+	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:198)
+	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
+java.lang.IllegalStateException: Undo: Not valid fix position
+	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.remove(CtStatementTransformator.java:66)
+	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.revert(CtStatementTransformator.java:40)
+	at fr.inria.astor.core.loop.evolutionary.JGenProg.undoOperationToSpoonElement(JGenProg.java:352)
+	at fr.inria.astor.core.loop.evolutionary.JKali.startEvolution(JKali.java:73)
+	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:198)
+	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
+java.lang.IllegalStateException: Undo: Not valid fix position
+	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.remove(CtStatementTransformator.java:66)
+	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.revert(CtStatementTransformator.java:40)
+	at fr.inria.astor.core.loop.evolutionary.JGenProg.undoOperationToSpoonElement(JGenProg.java:352)
+	at fr.inria.astor.core.loop.evolutionary.JKali.startEvolution(JKali.java:73)
+	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:198)
+	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
+java.lang.IllegalStateException: Undo: Not valid fix position
+	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.remove(CtStatementTransformator.java:66)
+	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.revert(CtStatementTransformator.java:40)
+	at fr.inria.astor.core.loop.evolutionary.JGenProg.undoOperationToSpoonElement(JGenProg.java:352)
+	at fr.inria.astor.core.loop.evolutionary.JKali.startEvolution(JKali.java:73)
+	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:198)
+	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
+java.lang.IllegalStateException: Undo: Not valid fix position
+	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.remove(CtStatementTransformator.java:66)
+	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.revert(CtStatementTransformator.java:40)
+	at fr.inria.astor.core.loop.evolutionary.JGenProg.undoOperationToSpoonElement(JGenProg.java:352)
+	at fr.inria.astor.core.loop.evolutionary.JKali.startEvolution(JKali.java:73)
+	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:198)
+	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
+java.lang.IllegalStateException: Undo: Not valid fix position
+	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.remove(CtStatementTransformator.java:66)
+	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.revert(CtStatementTransformator.java:40)
+	at fr.inria.astor.core.loop.evolutionary.JGenProg.undoOperationToSpoonElement(JGenProg.java:352)
+	at fr.inria.astor.core.loop.evolutionary.JKali.startEvolution(JKali.java:73)
+	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:198)
+	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
+java.lang.IllegalStateException: Undo: Not valid fix position
+	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.remove(CtStatementTransformator.java:66)
+	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.revert(CtStatementTransformator.java:40)
+	at fr.inria.astor.core.loop.evolutionary.JGenProg.undoOperationToSpoonElement(JGenProg.java:352)
+	at fr.inria.astor.core.loop.evolutionary.JKali.startEvolution(JKali.java:73)
+	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:198)
+	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
+java.lang.IllegalStateException: Undo: Not valid fix position
+	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.remove(CtStatementTransformator.java:66)
+	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.revert(CtStatementTransformator.java:40)
+	at fr.inria.astor.core.loop.evolutionary.JGenProg.undoOperationToSpoonElement(JGenProg.java:352)
+	at fr.inria.astor.core.loop.evolutionary.JKali.startEvolution(JKali.java:73)
+	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:198)
+	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
 
-real	0m35.819s
-user	0m56.796s
-sys	0m1.672s
+real	15m18.208s
+user	18m32.654s
+sys	1m9.744s

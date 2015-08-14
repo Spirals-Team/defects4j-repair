@@ -1,5 +1,71 @@
 Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
+java.lang.IllegalArgumentException: The validation process does not execute well the test cases
+ Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
+Exception in thread "main" java.io.EOFException
+	at java.io.DataInputStream.readFully(DataInputStream.java:197)
+	at java.io.DataInputStream.readUTF(DataInputStream.java:609)
+	at java.io.DataInputStream.readUTF(DataInputStream.java:564)
+	at org.joda.time.tz.DateTimeZoneBuilder$Recurrence.readFrom(DateTimeZoneBuilder.java:431)
+	at org.joda.time.tz.DateTimeZoneBuilder$DSTZone.readFrom(DateTimeZoneBuilder.java:757)
+	at org.joda.time.tz.DateTimeZoneBuilder$PrecalculatedZone.readFrom(DateTimeZoneBuilder.java:921)
+	at org.joda.time.tz.DateTimeZoneBuilder.readFrom(DateTimeZoneBuilder.java:20)
+	at org.joda.time.tz.DateTimeZoneBuilder.readFrom(DateTimeZoneBuilder.java:7)
+	at org.joda.time.tz.ZoneInfoProvider.loadZoneData(ZoneInfoProvider.java:106)
+	at org.joda.time.tz.ZoneInfoProvider.getZone(ZoneInfoProvider.java:60)
+	at org.joda.time.DateTimeZone.forID(DateTimeZone.java:77)
+	at org.joda.time.TestDateTimeZone.<clinit>(TestDateTimeZone.java:71)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:191)
+	at fr.inria.astor.junitexec.JUnitTestExecutor.main(JUnitTestExecutor.java:106)
+Exception in thread "main" java.lang.ExceptionInInitializerError
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:191)
+	at fr.inria.astor.junitexec.JUnitTestExecutor.main(JUnitTestExecutor.java:106)
+Caused by: java.lang.IllegalArgumentException: The datetime zone id 'Europe/Paris' is not recognised
+	at org.joda.time.DateTimeZone.forID(DateTimeZone.java:90)
+	at org.joda.time.TestDateTimeZone.<clinit>(TestDateTimeZone.java:71)
+	... 3 more
 
-real	0m41.825s
-user	1m24.457s
-sys	0m2.860s
+	at fr.inria.astor.core.validation.executors.JUnitExecutorProcess.getTestResult(JUnitExecutorProcess.java:130)
+	at fr.inria.astor.core.validation.executors.JUnitExecutorProcess.execute(JUnitExecutorProcess.java:78)
+	at fr.inria.astor.core.validation.executors.JUnitExecutorProcess.execute(JUnitExecutorProcess.java:34)
+	at fr.inria.astor.core.validation.validators.ProcessValidator.validate(ProcessValidator.java:58)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.validateInstance(EvolutionaryEngine.java:768)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.processCreatedVariant(EvolutionaryEngine.java:365)
+	at fr.inria.astor.core.loop.evolutionary.JKali.startEvolution(JKali.java:66)
+	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:198)
+	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
+Exception in thread "main" java.lang.AssertionError: The validation process does not execute well the test cases
+ Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
+Exception in thread "main" java.io.EOFException
+	at java.io.DataInputStream.readFully(DataInputStream.java:197)
+	at java.io.DataInputStream.readUTF(DataInputStream.java:609)
+	at java.io.DataInputStream.readUTF(DataInputStream.java:564)
+	at org.joda.time.tz.DateTimeZoneBuilder$Recurrence.readFrom(DateTimeZoneBuilder.java:431)
+	at org.joda.time.tz.DateTimeZoneBuilder$DSTZone.readFrom(DateTimeZoneBuilder.java:757)
+	at org.joda.time.tz.DateTimeZoneBuilder$PrecalculatedZone.readFrom(DateTimeZoneBuilder.java:921)
+	at org.joda.time.tz.DateTimeZoneBuilder.readFrom(DateTimeZoneBuilder.java:20)
+	at org.joda.time.tz.DateTimeZoneBuilder.readFrom(DateTimeZoneBuilder.java:7)
+	at org.joda.time.tz.ZoneInfoProvider.loadZoneData(ZoneInfoProvider.java:106)
+	at org.joda.time.tz.ZoneInfoProvider.getZone(ZoneInfoProvider.java:60)
+	at org.joda.time.DateTimeZone.forID(DateTimeZone.java:77)
+	at org.joda.time.TestDateTimeZone.<clinit>(TestDateTimeZone.java:71)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:191)
+	at fr.inria.astor.junitexec.JUnitTestExecutor.main(JUnitTestExecutor.java:106)
+Exception in thread "main" java.lang.ExceptionInInitializerError
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:191)
+	at fr.inria.astor.junitexec.JUnitTestExecutor.main(JUnitTestExecutor.java:106)
+Caused by: java.lang.IllegalArgumentException: The datetime zone id 'Europe/Paris' is not recognised
+	at org.joda.time.DateTimeZone.forID(DateTimeZone.java:90)
+	at org.joda.time.TestDateTimeZone.<clinit>(TestDateTimeZone.java:71)
+	... 3 more
+
+	at org.junit.Assert.fail(Assert.java:88)
+	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:201)
+	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
+
+real	3m11.821s
+user	4m19.032s
+sys	0m7.492s

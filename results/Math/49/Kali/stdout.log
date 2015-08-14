@@ -1,16 +1,28 @@
 export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/math/math_49 /tmp/math_49_Kali;cd /tmp/math_49_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
 /home/tdurieux/defects4j-repair/src/python/core/../../../results/Math/49/Kali/result
-cd /tmp/math_49_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.math.linear.SparseRealVectorTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
+cd /tmp/math_49_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java  -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.math.linear.SparseRealVectorTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -seed 10 -maxtime 60  -scope local  -stopfirst true -flthreshold 0 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
 
 Node: `hostname`
 ";echo "
 Date: `date`
 ";rm -rf /tmp/math_49_Kali;
 
-warning: ignoring inconsistent parent for CtLiteralImpl (CtIfImpl != CtReturnImpl)(unknown file)
-warning: ignoring inconsistent parent for CtLiteralImpl (CtIfImpl != CtReturnImpl)(unknown file)
+End Repair Loops: Found solution
+Solution stored at: ./outputMutation//MainjGenProg-.//src/
+
+Number solutions:3
+f (sol): 0.0, [Variant id: 28 (SOL) , #gens: 947, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 78 (SOL) , #gens: 947, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 79 (SOL) , #gens: 947, #ops: 1, parent:1]
+
+All variants:
+f 1.0, [Variant id: 1, #gens: 947, #ops: 0, parent:-]
+
+Solution details
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
 warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtLiteralImpl (CtReturnImpl != CtReturnImpl)(unknown file)
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
 
  --SOLUTIONS DESCRIPTION--
 
@@ -25,12 +37,13 @@ original statement= if (!(isDefaultValue(value))) {
 } else if (entries.containsKey(index)) {
 	entries.remove(index);
 } 
-fixed statement= "if (true) {
+fixed statement= if (true) {
 	entries.put(index, value);
 } else if (entries.containsKey(index)) {
 	entries.remove(index);
-} "
+} 
 generation= 1
+ingredientScope= -
  
  ----
 ProgramVariant 78
@@ -39,8 +52,9 @@ operation: DELETE
 location= org.apache.commons.math.util.OpenIntToDoubleHashMap
 line= 399
 original statement= ++(count)
-fixed statement= "++(count)"
+fixed statement= ++(count)
 generation= 1
+ingredientScope= -
  
  ----
 ProgramVariant 79
@@ -49,24 +63,23 @@ operation: INSERT_BEFORE
 location= org.apache.commons.math.util.OpenIntToDoubleHashMap
 line= 399
 original statement= ++(count)
-fixed statement= "if (true)
-	return 0.0;
-"
+fixed statement= if (true)
+	return 0d;
+
 generation= 1
+ingredientScope= -
  
 
 ----stats: 
 
-spaces: [0]: []
-time val1 [165]: [327, 324, 327, 336, 332, 324, 324, 321, 321, 322, 322, 323, 323, 302, 303, 324, 325, 325, 330, 333, 328, 323, 295, 296, 295, 312, 298, 299, 295, 323, 326, 324, 332, 323, 296, 322, 313, 305, 324, 324, 309, 325, 292, 299, 291, 295, 327, 291, 292, 293, 309, 302, 317, 326, 302, 311, 324, 303, 308, 302, 320, 322, 318, 324, 314, 319, 317, 327, 326, 304, 299, 324, 323, 306, 297, 324, 304, 290, 325, 304, 295, 325, 323, 304, 296, 324, 303, 326, 291, 295, 323, 307, 289, 290, 290, 275, 321, 323, 300, 302, 303, 302, 326, 302, 323, 323, 321, 321, 306, 302, 304, 303, 323, 304, 289, 323, 239, 289, 292, 293, 306, 290, 304, 322, 322, 296, 294, 295, 296, 302, 296, 240, 303, 302, 295, 296, 296, 304, 302, 322, 325, 312, 323, 325, 323, 322, 326, 328, 322, 323, 325, 322, 323, 243, 239, 325, 237, 322, 323, 325, 237, 324, 323, 324, 325]
-time val2 [6]: [45004, 44881, 44693, 44968, 44635, 44694]
+spaces navigation: [0]: {}
 #gen: 0
 #patches: 3
-#RightCompilation: 164
-#WrongCompilation: 34
-#FailingTestCaseExecution: 165
+#RightCompilation: 1762
+#WrongCompilation: 376
+#FailingTestCaseExecution: 1763
 #RegressionTestExecution: 6
-#TestcasesExecutedval1: 1485
+#TestcasesExecutedval1: 15858
 #TestcasesExecutedval2: 16944
 #FailingTestCase: 9
 #RegressionTestCases: 2824
@@ -74,13 +87,14 @@ time val2 [6]: [45004, 44881, 44693, 44968, 44635, 44694]
 #NotAppliedOp: 0
 #InmutatedGen: 0
 #unfinishValidation: 0
-#ing []
-Time Total(ms): 524208
+#ing {}
+#untilcompile {}
+Time Total(ms): 1793653
 
 
-Node: graphene-100.nancy.grid5000.fr
+Node: griffon-74.nancy.grid5000.fr
 
 
-Date: Thu Jul 23 00:30:40 CEST 2015
+Date: Thu Aug 13 19:46:53 CEST 2015
 
 

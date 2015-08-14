@@ -1,8 +1,119 @@
 export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/math/math_44 /tmp/math_44_Kali;cd /tmp/math_44_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
 /home/tdurieux/defects4j-repair/src/python/core/../../../results/Math/44/Kali/result
-cd /tmp/math_44_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.math.ode.events.EventStateTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
+cd /tmp/math_44_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java  -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.math.ode.events.EventStateTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -seed 10 -maxtime 60  -scope local  -stopfirst true -flthreshold 0 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
 
 Node: `hostname`
 ";echo "
 Date: `date`
 ";rm -rf /tmp/math_44_Kali;
+
+End Repair Loops: Found solution
+Solution stored at: ./outputMutation//MainjGenProg-.//src/
+
+Number solutions:4
+f (sol): 0.0, [Variant id: 199 (SOL) , #gens: 928, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 201 (SOL) , #gens: 928, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 726 (SOL) , #gens: 928, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 730 (SOL) , #gens: 928, #ops: 1, parent:1]
+
+All variants:
+f 1.0, [Variant id: 1, #gens: 928, #ops: 0, parent:-]
+
+Solution details
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+
+ --SOLUTIONS DESCRIPTION--
+
+ ----
+ProgramVariant 199
+ 
+operation: INSERT_BEFORE
+location= org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver
+line= 385
+original statement= this.allowed = allowedSolution
+fixed statement= if (true)
+	return 0d;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 201
+ 
+operation: INSERT_BEFORE
+location= org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver
+line= 386
+original statement= return super.solve(maxEval, f, min, max)
+fixed statement= if (true)
+	return 0d;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 726
+ 
+operation: REPLACE
+location= org.apache.commons.math.ode.AbstractIntegrator
+line= 284
+original statement= if (!(statesInitialized)) {
+	for (org.apache.commons.math.ode.events.EventState state : eventsStates) {
+		state.reinitializeBegin(interpolator);
+	}
+	statesInitialized = true;
+} 
+fixed statement= if (true) {
+	for (org.apache.commons.math.ode.events.EventState state : eventsStates) {
+		state.reinitializeBegin(interpolator);
+	}
+	statesInitialized = true;
+} 
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 730
+ 
+operation: DELETE
+location= org.apache.commons.math.ode.AbstractIntegrator
+line= 288
+original statement= statesInitialized = true
+fixed statement= statesInitialized = true
+generation= 1
+ingredientScope= -
+ 
+
+----stats: 
+
+spaces navigation: [0]: {}
+#gen: 0
+#patches: 4
+#RightCompilation: 728
+#WrongCompilation: 1406
+#FailingTestCaseExecution: 729
+#RegressionTestExecution: 15
+#TestcasesExecutedval1: 1390
+#TestcasesExecutedval2: 44820
+#FailingTestCase: 2
+#RegressionTestCases: 2988
+#OfAppliedOp: 0
+#NotAppliedOp: 0
+#InmutatedGen: 0
+#unfinishValidation: 0
+#ing {}
+#untilcompile {}
+Time Total(ms): 3994945
+
+
+Node: griffon-15.nancy.grid5000.fr
+
+
+Date: Thu Aug 13 20:24:47 CEST 2015
+
+

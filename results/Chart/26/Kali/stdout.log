@@ -1,8 +1,1045 @@
 export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/chart/chart_26 /tmp/chart_26_Kali;cd /tmp/chart_26_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Chart/lib/* lib/;find . -type f -name "package-info.java" -delete;
 /home/tdurieux/defects4j-repair/src/python/core/../../../results/Chart/26/Kali/result
-cd /tmp/chart_26_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.jfree.chart.junit.AreaChartTests:org.jfree.chart.junit.BarChart3DTests:org.jfree.chart.junit.BarChartTests:org.jfree.chart.junit.GanttChartTests:org.jfree.chart.junit.GanttChartTests:org.jfree.chart.junit.LineChart3DTests:org.jfree.chart.junit.LineChartTests:org.jfree.chart.junit.StackedAreaChartTests:org.jfree.chart.junit.StackedBarChart3DTests:org.jfree.chart.junit.StackedBarChartTests:org.jfree.chart.junit.WaterfallChartTests:org.jfree.chart.plot.junit.CategoryPlotTests:org.jfree.chart.plot.junit.CategoryPlotTests:org.jfree.chart.plot.junit.CategoryPlotTests:org.jfree.chart.renderer.category.junit.BoxAndWhiskerRendererTests:org.jfree.chart.renderer.category.junit.GroupedStackedBarRendererTests:org.jfree.chart.renderer.category.junit.IntervalBarRendererTests:org.jfree.chart.renderer.category.junit.LayeredBarRendererTests:org.jfree.chart.renderer.category.junit.LevelRendererTests:org.jfree.chart.renderer.category.junit.MinMaxCategoryRendererTests:org.jfree.chart.renderer.category.junit.StatisticalBarRendererTests:org.jfree.chart.renderer.category.junit.StatisticalLineAndShapeRendererTests: -package org.jfree -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 4 -maxgen 1000000 -population 1 -srcjavafolder source/ -srctestfolder tests/ -binjavafolder build/ -bintestfolder build-tests/;echo "
+cd /tmp/chart_26_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java  -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.jfree.chart.junit.AreaChartTests:org.jfree.chart.junit.BarChart3DTests:org.jfree.chart.junit.BarChartTests:org.jfree.chart.junit.GanttChartTests:org.jfree.chart.junit.GanttChartTests:org.jfree.chart.junit.LineChart3DTests:org.jfree.chart.junit.LineChartTests:org.jfree.chart.junit.StackedAreaChartTests:org.jfree.chart.junit.StackedBarChart3DTests:org.jfree.chart.junit.StackedBarChartTests:org.jfree.chart.junit.WaterfallChartTests:org.jfree.chart.plot.junit.CategoryPlotTests:org.jfree.chart.plot.junit.CategoryPlotTests:org.jfree.chart.plot.junit.CategoryPlotTests:org.jfree.chart.renderer.category.junit.BoxAndWhiskerRendererTests:org.jfree.chart.renderer.category.junit.GroupedStackedBarRendererTests:org.jfree.chart.renderer.category.junit.IntervalBarRendererTests:org.jfree.chart.renderer.category.junit.LayeredBarRendererTests:org.jfree.chart.renderer.category.junit.LevelRendererTests:org.jfree.chart.renderer.category.junit.MinMaxCategoryRendererTests:org.jfree.chart.renderer.category.junit.StatisticalBarRendererTests:org.jfree.chart.renderer.category.junit.StatisticalLineAndShapeRendererTests: -package org.jfree -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 4 -maxgen 1000000 -seed 10 -maxtime 60  -scope local  -stopfirst true -flthreshold 0 -population 1 -srcjavafolder source/ -srctestfolder tests/ -binjavafolder build/ -bintestfolder build-tests/;echo "
 
 Node: `hostname`
 ";echo "
 Date: `date`
 ";rm -rf /tmp/chart_26_Kali;
+
+End Repair Loops: Found solution
+Solution stored at: ./outputMutation//MainjGenProg-.//src/
+
+Number solutions:52
+f (sol): 0.0, [Variant id: 3 (SOL) , #gens: 917, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 135 (SOL) , #gens: 917, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 137 (SOL) , #gens: 917, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 139 (SOL) , #gens: 917, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 140 (SOL) , #gens: 917, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 143 (SOL) , #gens: 917, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 147 (SOL) , #gens: 917, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 149 (SOL) , #gens: 917, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 151 (SOL) , #gens: 917, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 153 (SOL) , #gens: 917, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 155 (SOL) , #gens: 917, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 157 (SOL) , #gens: 917, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 159 (SOL) , #gens: 917, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 161 (SOL) , #gens: 917, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 165 (SOL) , #gens: 917, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 167 (SOL) , #gens: 917, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 573 (SOL) , #gens: 917, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 577 (SOL) , #gens: 917, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 580 (SOL) , #gens: 917, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 581 (SOL) , #gens: 917, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 697 (SOL) , #gens: 917, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 758 (SOL) , #gens: 917, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 774 (SOL) , #gens: 917, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 778 (SOL) , #gens: 917, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 781 (SOL) , #gens: 917, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 889 (SOL) , #gens: 917, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 891 (SOL) , #gens: 917, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 893 (SOL) , #gens: 917, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 1265 (SOL) , #gens: 917, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 1267 (SOL) , #gens: 917, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 1271 (SOL) , #gens: 917, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 1273 (SOL) , #gens: 917, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 1275 (SOL) , #gens: 917, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 1277 (SOL) , #gens: 917, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 1281 (SOL) , #gens: 917, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 1283 (SOL) , #gens: 917, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 1285 (SOL) , #gens: 917, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 1289 (SOL) , #gens: 917, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 1293 (SOL) , #gens: 917, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 1294 (SOL) , #gens: 917, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 1295 (SOL) , #gens: 917, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 1297 (SOL) , #gens: 917, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 1299 (SOL) , #gens: 917, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 1301 (SOL) , #gens: 917, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 1305 (SOL) , #gens: 917, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 1309 (SOL) , #gens: 917, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 1311 (SOL) , #gens: 917, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 1313 (SOL) , #gens: 917, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 1315 (SOL) , #gens: 917, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 1317 (SOL) , #gens: 917, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 1320 (SOL) , #gens: 917, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 1321 (SOL) , #gens: 917, #ops: 1, parent:1]
+
+All variants:
+f 30.0, [Variant id: 1, #gens: 917, #ops: 0, parent:-]
+
+Solution details
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+
+ --SOLUTIONS DESCRIPTION--
+
+ ----
+ProgramVariant 3
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2547
+original statement= state = new org.jfree.chart.plot.PlotRenderingInfo(null)
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 135
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2536
+original statement= boolean b1 = (area.getWidth()) <= (org.jfree.chart.plot.Plot.MINIMUM_WIDTH_TO_DRAW)
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 137
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2537
+original statement= boolean b2 = (area.getHeight()) <= (org.jfree.chart.plot.Plot.MINIMUM_HEIGHT_TO_DRAW)
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 139
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2538
+original statement= if (b1 || b2) {
+	return ;
+} 
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 140
+ 
+operation: REPLACE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2538
+original statement= if (b1 || b2) {
+	return ;
+} 
+fixed statement= if (true) {
+	return ;
+} 
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 143
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2543
+original statement= if (state == null) {
+	state = new org.jfree.chart.plot.PlotRenderingInfo(null);
+} 
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 147
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2549
+original statement= state.setPlotArea(area)
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 149
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2552
+original statement= org.jfree.chart.util.RectangleInsets insets = getInsets()
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 151
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2553
+original statement= insets.trim(area)
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 153
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2556
+original statement= org.jfree.chart.axis.AxisSpace space = calculateAxisSpace(g2, area)
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 155
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2557
+original statement= java.awt.geom.Rectangle2D dataArea = space.shrink(area, null)
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 157
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2558
+original statement= this.axisOffset.trim(dataArea)
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 159
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2560
+original statement= state.setDataArea(dataArea)
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 161
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2564
+original statement= if ((getRenderer()) != null) {
+	getRenderer().drawBackground(g2, this, dataArea);
+} else {
+	drawBackground(g2, dataArea);
+}
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 165
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2565
+original statement= getRenderer().drawBackground(g2, this, dataArea)
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 167
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2571
+original statement= java.util.Map axisStateMap = drawAxes(g2, area, dataArea, state)
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 573
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.axis.AxisCollection
+line= 126
+original statement= if (axis == null) {
+	throw new java.lang.IllegalArgumentException("Null \'axis\' argument.");
+} 
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 577
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.axis.AxisCollection
+line= 129
+original statement= if (edge == null) {
+	throw new java.lang.IllegalArgumentException("Null \'edge\' argument.");
+} 
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 580
+ 
+operation: DELETE
+location= org.jfree.chart.axis.AxisCollection
+line= 132
+original statement= if (edge == (org.jfree.chart.util.RectangleEdge.TOP)) {
+	this.axesAtTop.add(axis);
+} else if (edge == (org.jfree.chart.util.RectangleEdge.BOTTOM)) {
+	this.axesAtBottom.add(axis);
+} else if (edge == (org.jfree.chart.util.RectangleEdge.LEFT)) {
+	this.axesAtLeft.add(axis);
+} else if (edge == (org.jfree.chart.util.RectangleEdge.RIGHT)) {
+	this.axesAtRight.add(axis);
+} 
+fixed statement= if (edge == (org.jfree.chart.util.RectangleEdge.TOP)) {
+	this.axesAtTop.add(axis);
+} else if (edge == (org.jfree.chart.util.RectangleEdge.BOTTOM)) {
+	this.axesAtBottom.add(axis);
+} else if (edge == (org.jfree.chart.util.RectangleEdge.LEFT)) {
+	this.axesAtLeft.add(axis);
+} else if (edge == (org.jfree.chart.util.RectangleEdge.RIGHT)) {
+	this.axesAtRight.add(axis);
+} 
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 581
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.axis.AxisCollection
+line= 132
+original statement= if (edge == (org.jfree.chart.util.RectangleEdge.TOP)) {
+	this.axesAtTop.add(axis);
+} else if (edge == (org.jfree.chart.util.RectangleEdge.BOTTOM)) {
+	this.axesAtBottom.add(axis);
+} else if (edge == (org.jfree.chart.util.RectangleEdge.LEFT)) {
+	this.axesAtLeft.add(axis);
+} else if (edge == (org.jfree.chart.util.RectangleEdge.RIGHT)) {
+	this.axesAtRight.add(axis);
+} 
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 697
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.axis.Axis
+line= 314
+original statement= return this.visible
+fixed statement= if (true)
+	return false;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 758
+ 
+operation: REPLACE
+location= org.jfree.chart.axis.Axis
+line= 1101
+original statement= if ((label == null) || (label.equals(""))) {
+	return state;
+} 
+fixed statement= if (true) {
+	return state;
+} 
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 774
+ 
+operation: DELETE
+location= org.jfree.chart.axis.Axis
+line= 1113
+original statement= if (edge == (org.jfree.chart.util.RectangleEdge.TOP)) {
+	java.awt.geom.AffineTransform t = java.awt.geom.AffineTransform.getRotateInstance(getLabelAngle(), labelBounds.getCenterX(), labelBounds.getCenterY());
+	java.awt.Shape rotatedLabelBounds = t.createTransformedShape(labelBounds);
+	labelBounds = rotatedLabelBounds.getBounds2D();
+	float w = ((float)(labelBounds.getWidth()));
+	float h = ((float)(labelBounds.getHeight()));
+	float labelx = ((float)(dataArea.getCenterX()));
+	float labely = ((float)(((state.getCursor()) - (insets.getBottom())) - (h / 2.0)));
+	org.jfree.chart.text.TextUtilities.drawRotatedString(label, g2, labelx, labely, org.jfree.chart.text.TextAnchor.CENTER, getLabelAngle(), org.jfree.chart.text.TextAnchor.CENTER);
+	hotspot = new java.awt.geom.Rectangle2D.Float((labelx - (w / 2.0F)) , (labely - (h / 2.0F)) , w , h);
+	state.cursorUp((((insets.getTop()) + (labelBounds.getHeight())) + (insets.getBottom())));
+} else if (edge == (org.jfree.chart.util.RectangleEdge.BOTTOM)) {
+	java.awt.geom.AffineTransform t = java.awt.geom.AffineTransform.getRotateInstance(getLabelAngle(), labelBounds.getCenterX(), labelBounds.getCenterY());
+	java.awt.Shape rotatedLabelBounds = t.createTransformedShape(labelBounds);
+	labelBounds = rotatedLabelBounds.getBounds2D();
+	float w = ((float)(labelBounds.getWidth()));
+	float h = ((float)(labelBounds.getHeight()));
+	float labelx = ((float)(dataArea.getCenterX()));
+	float labely = ((float)(((state.getCursor()) + (insets.getTop())) + (h / 2.0)));
+	org.jfree.chart.text.TextUtilities.drawRotatedString(label, g2, labelx, labely, org.jfree.chart.text.TextAnchor.CENTER, getLabelAngle(), org.jfree.chart.text.TextAnchor.CENTER);
+	hotspot = new java.awt.geom.Rectangle2D.Float((labelx - (w / 2.0F)) , (labely - (h / 2.0F)) , w , h);
+	state.cursorDown((((insets.getTop()) + (labelBounds.getHeight())) + (insets.getBottom())));
+} else if (edge == (org.jfree.chart.util.RectangleEdge.LEFT)) {
+	java.awt.geom.AffineTransform t = java.awt.geom.AffineTransform.getRotateInstance(((getLabelAngle()) - ((java.lang.Math.PI) / 2.0)), labelBounds.getCenterX(), labelBounds.getCenterY());
+	java.awt.Shape rotatedLabelBounds = t.createTransformedShape(labelBounds);
+	labelBounds = rotatedLabelBounds.getBounds2D();
+	float w = ((float)(labelBounds.getWidth()));
+	float h = ((float)(labelBounds.getHeight()));
+	float labelx = ((float)(((state.getCursor()) - (insets.getRight())) - (w / 2.0)));
+	float labely = ((float)(dataArea.getCenterY()));
+	org.jfree.chart.text.TextUtilities.drawRotatedString(label, g2, labelx, labely, org.jfree.chart.text.TextAnchor.CENTER, ((getLabelAngle()) - ((java.lang.Math.PI) / 2.0)), org.jfree.chart.text.TextAnchor.CENTER);
+	hotspot = new java.awt.geom.Rectangle2D.Float((labelx - (w / 2.0F)) , (labely - (h / 2.0F)) , w , h);
+	state.cursorLeft((((insets.getLeft()) + (labelBounds.getWidth())) + (insets.getRight())));
+} else if (edge == (org.jfree.chart.util.RectangleEdge.RIGHT)) {
+	java.awt.geom.AffineTransform t = java.awt.geom.AffineTransform.getRotateInstance(((getLabelAngle()) + ((java.lang.Math.PI) / 2.0)), labelBounds.getCenterX(), labelBounds.getCenterY());
+	java.awt.Shape rotatedLabelBounds = t.createTransformedShape(labelBounds);
+	labelBounds = rotatedLabelBounds.getBounds2D();
+	float w = ((float)(labelBounds.getWidth()));
+	float h = ((float)(labelBounds.getHeight()));
+	float labelx = ((float)(((state.getCursor()) + (insets.getLeft())) + (w / 2.0)));
+	float labely = ((float)((dataArea.getY()) + ((dataArea.getHeight()) / 2.0)));
+	org.jfree.chart.text.TextUtilities.drawRotatedString(label, g2, labelx, labely, org.jfree.chart.text.TextAnchor.CENTER, ((getLabelAngle()) + ((java.lang.Math.PI) / 2.0)), org.jfree.chart.text.TextAnchor.CENTER);
+	hotspot = new java.awt.geom.Rectangle2D.Float((labelx - (w / 2.0F)) , (labely - (h / 2.0F)) , w , h);
+	state.cursorRight((((insets.getLeft()) + (labelBounds.getWidth())) + (insets.getRight())));
+} 
+fixed statement= if (edge == (org.jfree.chart.util.RectangleEdge.TOP)) {
+	java.awt.geom.AffineTransform t = java.awt.geom.AffineTransform.getRotateInstance(getLabelAngle(), labelBounds.getCenterX(), labelBounds.getCenterY());
+	java.awt.Shape rotatedLabelBounds = t.createTransformedShape(labelBounds);
+	labelBounds = rotatedLabelBounds.getBounds2D();
+	float w = ((float)(labelBounds.getWidth()));
+	float h = ((float)(labelBounds.getHeight()));
+	float labelx = ((float)(dataArea.getCenterX()));
+	float labely = ((float)(((state.getCursor()) - (insets.getBottom())) - (h / 2.0)));
+	org.jfree.chart.text.TextUtilities.drawRotatedString(label, g2, labelx, labely, org.jfree.chart.text.TextAnchor.CENTER, getLabelAngle(), org.jfree.chart.text.TextAnchor.CENTER);
+	hotspot = new java.awt.geom.Rectangle2D.Float((labelx - (w / 2.0F)) , (labely - (h / 2.0F)) , w , h);
+	state.cursorUp((((insets.getTop()) + (labelBounds.getHeight())) + (insets.getBottom())));
+} else if (edge == (org.jfree.chart.util.RectangleEdge.BOTTOM)) {
+	java.awt.geom.AffineTransform t = java.awt.geom.AffineTransform.getRotateInstance(getLabelAngle(), labelBounds.getCenterX(), labelBounds.getCenterY());
+	java.awt.Shape rotatedLabelBounds = t.createTransformedShape(labelBounds);
+	labelBounds = rotatedLabelBounds.getBounds2D();
+	float w = ((float)(labelBounds.getWidth()));
+	float h = ((float)(labelBounds.getHeight()));
+	float labelx = ((float)(dataArea.getCenterX()));
+	float labely = ((float)(((state.getCursor()) + (insets.getTop())) + (h / 2.0)));
+	org.jfree.chart.text.TextUtilities.drawRotatedString(label, g2, labelx, labely, org.jfree.chart.text.TextAnchor.CENTER, getLabelAngle(), org.jfree.chart.text.TextAnchor.CENTER);
+	hotspot = new java.awt.geom.Rectangle2D.Float((labelx - (w / 2.0F)) , (labely - (h / 2.0F)) , w , h);
+	state.cursorDown((((insets.getTop()) + (labelBounds.getHeight())) + (insets.getBottom())));
+} else if (edge == (org.jfree.chart.util.RectangleEdge.LEFT)) {
+	java.awt.geom.AffineTransform t = java.awt.geom.AffineTransform.getRotateInstance(((getLabelAngle()) - ((java.lang.Math.PI) / 2.0)), labelBounds.getCenterX(), labelBounds.getCenterY());
+	java.awt.Shape rotatedLabelBounds = t.createTransformedShape(labelBounds);
+	labelBounds = rotatedLabelBounds.getBounds2D();
+	float w = ((float)(labelBounds.getWidth()));
+	float h = ((float)(labelBounds.getHeight()));
+	float labelx = ((float)(((state.getCursor()) - (insets.getRight())) - (w / 2.0)));
+	float labely = ((float)(dataArea.getCenterY()));
+	org.jfree.chart.text.TextUtilities.drawRotatedString(label, g2, labelx, labely, org.jfree.chart.text.TextAnchor.CENTER, ((getLabelAngle()) - ((java.lang.Math.PI) / 2.0)), org.jfree.chart.text.TextAnchor.CENTER);
+	hotspot = new java.awt.geom.Rectangle2D.Float((labelx - (w / 2.0F)) , (labely - (h / 2.0F)) , w , h);
+	state.cursorLeft((((insets.getLeft()) + (labelBounds.getWidth())) + (insets.getRight())));
+} else if (edge == (org.jfree.chart.util.RectangleEdge.RIGHT)) {
+	java.awt.geom.AffineTransform t = java.awt.geom.AffineTransform.getRotateInstance(((getLabelAngle()) + ((java.lang.Math.PI) / 2.0)), labelBounds.getCenterX(), labelBounds.getCenterY());
+	java.awt.Shape rotatedLabelBounds = t.createTransformedShape(labelBounds);
+	labelBounds = rotatedLabelBounds.getBounds2D();
+	float w = ((float)(labelBounds.getWidth()));
+	float h = ((float)(labelBounds.getHeight()));
+	float labelx = ((float)(((state.getCursor()) + (insets.getLeft())) + (w / 2.0)));
+	float labely = ((float)((dataArea.getY()) + ((dataArea.getHeight()) / 2.0)));
+	org.jfree.chart.text.TextUtilities.drawRotatedString(label, g2, labelx, labely, org.jfree.chart.text.TextAnchor.CENTER, ((getLabelAngle()) + ((java.lang.Math.PI) / 2.0)), org.jfree.chart.text.TextAnchor.CENTER);
+	hotspot = new java.awt.geom.Rectangle2D.Float((labelx - (w / 2.0F)) , (labely - (h / 2.0F)) , w , h);
+	state.cursorRight((((insets.getLeft()) + (labelBounds.getWidth())) + (insets.getRight())));
+} 
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 778
+ 
+operation: DELETE
+location= org.jfree.chart.axis.Axis
+line= 1190
+original statement= if ((plotState != null) && (hotspot != null)) {
+	org.jfree.chart.entity.EntityCollection entities = plotState.getOwner().getEntityCollection();
+	if (entities != null) {
+		entities.add(new org.jfree.chart.entity.AxisLabelEntity(this , hotspot , this.labelToolTip , this.labelURL));
+	} 
+} 
+fixed statement= if ((plotState != null) && (hotspot != null)) {
+	org.jfree.chart.entity.EntityCollection entities = plotState.getOwner().getEntityCollection();
+	if (entities != null) {
+		entities.add(new org.jfree.chart.entity.AxisLabelEntity(this , hotspot , this.labelToolTip , this.labelURL));
+	} 
+} 
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 781
+ 
+operation: REPLACE
+location= org.jfree.chart.axis.Axis
+line= 1190
+original statement= if ((plotState != null) && (hotspot != null)) {
+	org.jfree.chart.entity.EntityCollection entities = plotState.getOwner().getEntityCollection();
+	if (entities != null) {
+		entities.add(new org.jfree.chart.entity.AxisLabelEntity(this , hotspot , this.labelToolTip , this.labelURL));
+	} 
+} 
+fixed statement= if (false) {
+	org.jfree.chart.entity.EntityCollection entities = plotState.getOwner().getEntityCollection();
+	if (entities != null) {
+		entities.add(new org.jfree.chart.entity.AxisLabelEntity(this , hotspot , this.labelToolTip , this.labelURL));
+	} 
+} 
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 889
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.JFreeChart
+line= 1198
+original statement= org.jfree.chart.title.Title currentTitle = ((org.jfree.chart.title.Title)(iterator.next()))
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 891
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.JFreeChart
+line= 1199
+original statement= org.jfree.chart.entity.EntityCollection e = drawTitle(currentTitle, g2, nonTitleArea, (entities != null))
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 893
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.JFreeChart
+line= 1201
+original statement= if (e != null) {
+	entities.addAll(e);
+} 
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 1265
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.JFreeChart
+line= 1130
+original statement= notifyListeners(new org.jfree.chart.event.ChartProgressEvent(this , this , org.jfree.chart.event.ChartProgressEvent.DRAWING_STARTED , 0))
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 1267
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.JFreeChart
+line= 1134
+original statement= if (info != null) {
+	info.clear();
+	info.setChartArea(chartArea);
+} 
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 1271
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.JFreeChart
+line= 1140
+original statement= java.awt.Shape savedClip = g2.getClip()
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 1273
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.JFreeChart
+line= 1141
+original statement= g2.clip(chartArea)
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 1275
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.JFreeChart
+line= 1143
+original statement= g2.addRenderingHints(this.renderingHints)
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 1277
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.JFreeChart
+line= 1146
+original statement= if ((this.backgroundPaint) != null) {
+	g2.setPaint(this.backgroundPaint);
+	g2.fill(chartArea);
+} 
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 1281
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.JFreeChart
+line= 1147
+original statement= g2.setPaint(this.backgroundPaint)
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 1283
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.JFreeChart
+line= 1148
+original statement= g2.fill(chartArea)
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 1285
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.JFreeChart
+line= 1151
+original statement= if ((this.backgroundImage) != null) {
+	java.awt.Composite originalComposite = g2.getComposite();
+	g2.setComposite(java.awt.AlphaComposite.getInstance(java.awt.AlphaComposite.SRC_OVER, this.backgroundImageAlpha));
+	java.awt.geom.Rectangle2D dest = new java.awt.geom.Rectangle2D.Double(0.0 , 0.0 , this.backgroundImage.getWidth(null) , this.backgroundImage.getHeight(null));
+	org.jfree.chart.util.Align.align(dest, chartArea, this.backgroundImageAlignment);
+	g2.drawImage(this.backgroundImage, ((int)(dest.getX())), ((int)(dest.getY())), ((int)(dest.getWidth())), ((int)(dest.getHeight())), null);
+	g2.setComposite(originalComposite);
+} 
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 1289
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.JFreeChart
+line= 1165
+original statement= if (isBorderVisible()) {
+	java.awt.Paint paint = getBorderPaint();
+	java.awt.Stroke stroke = getBorderStroke();
+	if ((paint != null) && (stroke != null)) {
+		java.awt.geom.Rectangle2D borderArea = new java.awt.geom.Rectangle2D.Double(chartArea.getX() , chartArea.getY() , ((chartArea.getWidth()) - 1.0) , ((chartArea.getHeight()) - 1.0));
+		g2.setPaint(paint);
+		g2.setStroke(stroke);
+		g2.draw(borderArea);
+	} 
+} 
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 1293
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.JFreeChart
+line= 1180
+original statement= java.awt.geom.Rectangle2D nonTitleArea = new java.awt.geom.Rectangle2D.Double()
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 1294
+ 
+operation: DELETE
+location= org.jfree.chart.JFreeChart
+line= 1181
+original statement= nonTitleArea.setRect(chartArea)
+fixed statement= nonTitleArea.setRect(chartArea)
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 1295
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.JFreeChart
+line= 1181
+original statement= nonTitleArea.setRect(chartArea)
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 1297
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.JFreeChart
+line= 1182
+original statement= this.padding.trim(nonTitleArea)
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 1299
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.JFreeChart
+line= 1184
+original statement= org.jfree.chart.entity.EntityCollection entities = null
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 1301
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.JFreeChart
+line= 1185
+original statement= if (info != null) {
+	entities = info.getEntityCollection();
+} 
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 1305
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.JFreeChart
+line= 1188
+original statement= if ((this.title) != null) {
+	org.jfree.chart.entity.EntityCollection e = drawTitle(this.title, g2, nonTitleArea, (entities != null));
+	if (e != null) {
+		entities.addAll(e);
+	} 
+} 
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 1309
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.JFreeChart
+line= 1196
+original statement= java.util.Iterator iterator = this.subtitles.iterator()
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 1311
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.JFreeChart
+line= 1197
+original statement= while (iterator.hasNext()) {
+	org.jfree.chart.title.Title currentTitle = ((org.jfree.chart.title.Title)(iterator.next()));
+	org.jfree.chart.entity.EntityCollection e = drawTitle(currentTitle, g2, nonTitleArea, (entities != null));
+	if (e != null) {
+		entities.addAll(e);
+	} 
+}
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 1313
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.JFreeChart
+line= 1206
+original statement= java.awt.geom.Rectangle2D plotArea = nonTitleArea
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 1315
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.JFreeChart
+line= 1209
+original statement= org.jfree.chart.plot.PlotRenderingInfo plotInfo = null
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 1317
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.JFreeChart
+line= 1210
+original statement= if (info != null) {
+	plotInfo = info.getPlotInfo();
+} 
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 1320
+ 
+operation: DELETE
+location= org.jfree.chart.JFreeChart
+line= 1213
+original statement= this.plot.draw(g2, plotArea, anchor, null, plotInfo)
+fixed statement= this.plot.draw(g2, plotArea, anchor, null, plotInfo)
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 1321
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.JFreeChart
+line= 1213
+original statement= this.plot.draw(g2, plotArea, anchor, null, plotInfo)
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+
+----stats: 
+
+spaces navigation: [0]: {}
+#gen: 0
+#patches: 52
+#RightCompilation: 1704
+#WrongCompilation: 492
+#FailingTestCaseExecution: 1705
+#RegressionTestExecution: 52
+#TestcasesExecutedval1: 218913
+#TestcasesExecutedval2: 0
+#FailingTestCase: 129
+#RegressionTestCases: 0
+#OfAppliedOp: 0
+#NotAppliedOp: 0
+#InmutatedGen: 0
+#unfinishValidation: 0
+#ing {}
+#untilcompile {}
+Time Total(ms): 3675299
+
+
+Node: griffon-8.nancy.grid5000.fr
+
+
+Date: Thu Aug 13 21:24:56 CEST 2015
+
+

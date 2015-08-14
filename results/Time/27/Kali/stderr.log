@@ -2,17 +2,17 @@ Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
 java.lang.IllegalStateException: Undo: Not valid fix position
 	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.remove(CtStatementTransformator.java:66)
 	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.revert(CtStatementTransformator.java:40)
-	at fr.inria.astor.core.loop.evolutionary.JGenProg.undoOperationToSpoonElement(JGenProg.java:329)
-	at fr.inria.astor.core.loop.evolutionary.JKali.startEvolution(JKali.java:71)
-	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:201)
-	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:235)
+	at fr.inria.astor.core.loop.evolutionary.JGenProg.undoOperationToSpoonElement(JGenProg.java:352)
+	at fr.inria.astor.core.loop.evolutionary.JKali.startEvolution(JKali.java:73)
+	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:198)
+	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
 java.lang.IllegalStateException: Undo: Not valid fix position
 	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.remove(CtStatementTransformator.java:66)
 	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.revert(CtStatementTransformator.java:40)
-	at fr.inria.astor.core.loop.evolutionary.JGenProg.undoOperationToSpoonElement(JGenProg.java:329)
-	at fr.inria.astor.core.loop.evolutionary.JKali.startEvolution(JKali.java:71)
-	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:201)
-	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:235)
+	at fr.inria.astor.core.loop.evolutionary.JGenProg.undoOperationToSpoonElement(JGenProg.java:352)
+	at fr.inria.astor.core.loop.evolutionary.JKali.startEvolution(JKali.java:73)
+	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:198)
+	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
 java.lang.IllegalArgumentException: The validation process does not execute well the test cases
  Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
 Exception in thread "main" java.lang.ExceptionInInitializerError
@@ -32,11 +32,11 @@ Caused by: java.lang.NullPointerException
 	at fr.inria.astor.core.validation.executors.JUnitExecutorProcess.execute(JUnitExecutorProcess.java:78)
 	at fr.inria.astor.core.validation.executors.JUnitExecutorProcess.execute(JUnitExecutorProcess.java:34)
 	at fr.inria.astor.core.validation.validators.ProcessValidator.validate(ProcessValidator.java:58)
-	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.validateInstance(EvolutionaryEngine.java:747)
-	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.processCreatedVariant(EvolutionaryEngine.java:351)
-	at fr.inria.astor.core.loop.evolutionary.JKali.startEvolution(JKali.java:64)
-	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:201)
-	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:235)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.validateInstance(EvolutionaryEngine.java:768)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.processCreatedVariant(EvolutionaryEngine.java:365)
+	at fr.inria.astor.core.loop.evolutionary.JKali.startEvolution(JKali.java:66)
+	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:198)
+	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
 Exception in thread "main" java.lang.AssertionError: The validation process does not execute well the test cases
  Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
 Exception in thread "main" java.lang.ExceptionInInitializerError
@@ -53,9 +53,9 @@ Caused by: java.lang.NullPointerException
 	... 4 more
 
 	at org.junit.Assert.fail(Assert.java:88)
-	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:204)
-	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:235)
+	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:201)
+	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
 
-real	7m7.695s
-user	8m40.821s
-sys	0m26.658s
+real	5m46.194s
+user	6m54.110s
+sys	0m11.273s

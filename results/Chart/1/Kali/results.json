@@ -1,23 +1,56 @@
 {
     "FailingTestCase": "10", 
-    "FailingTestCaseExecution": "1", 
+    "FailingTestCaseExecution": "2002", 
     "InmutatedGen": "0", 
     "NotAppliedOp": "0", 
-    "OfAppliedOp": "31", 
+    "OfAppliedOp": "0", 
     "RegressionTestCases": "0", 
-    "RegressionTestExecution": "0", 
-    "RightCompilation": "0", 
-    "WrongCompilation": "31", 
-    "date": "2015-05-08T07:57:58.266101\n\n", 
-    "gen": "32", 
-    "node": "griffon-20.nancy.grid5000.fr", 
-    "operations": [], 
-    "patches": "0", 
-    "programVariant": null, 
-    "timeEvaluation": "14922", 
-    "timeTotal": "61132", 
-    "timeVal1": [
-        296
+    "RegressionTestExecution": "3", 
+    "RightCompilation": "2001", 
+    "WrongCompilation": "295", 
+    "date": "Thu Aug 13 21:03:33 CEST 2015\n\n", 
+    "gen": "0", 
+    "gens": "872", 
+    "node": "graphene-7.nancy.grid5000.fr", 
+    "operations": [
+        {
+            "buggyStatement": "if (dataset != null) {\n\treturn result;\n} ", 
+            "generation": 1, 
+            "patch": "remove", 
+            "patchLocation": {
+                "className": "org.jfree.chart.renderer.category.AbstractCategoryItemRenderer", 
+                "line": 1797
+            }, 
+            "type": "DELETE", 
+            "variant": 70
+        }, 
+        {
+            "buggyStatement": "if (dataset != null) {\n\treturn result;\n} ", 
+            "generation": 1, 
+            "patch": "if (false) {\n\treturn result;\n} ", 
+            "patchLocation": {
+                "className": "org.jfree.chart.renderer.category.AbstractCategoryItemRenderer", 
+                "line": 1797
+            }, 
+            "type": "REPLACE", 
+            "variant": 73
+        }, 
+        {
+            "buggyStatement": "return result", 
+            "generation": 1, 
+            "patch": "remove", 
+            "patchLocation": {
+                "className": "org.jfree.chart.renderer.category.AbstractCategoryItemRenderer", 
+                "line": 1798
+            }, 
+            "type": "DELETE", 
+            "variant": 74
+        }
     ], 
+    "ops": "0", 
+    "patches": "3", 
+    "programVariant": "70", 
+    "timeEvaluation": null, 
+    "timeTotal": "1275683", 
     "unfinishValidation": "0"
 }

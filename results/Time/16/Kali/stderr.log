@@ -1,5 +1,65 @@
 Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
+java.lang.IllegalArgumentException: The validation process does not execute well the test cases
+ Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
+Exception in thread "main" java.lang.ExceptionInInitializerError
+	at org.joda.time.chrono.ISOChronology.<clinit>(ISOChronology.java:15)
+	at org.joda.time.format.TestDateTimeFormatter.<clinit>(TestDateTimeFormatter.java:51)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:191)
+	at fr.inria.astor.junitexec.JUnitTestExecutor.main(JUnitTestExecutor.java:106)
+Caused by: java.lang.IllegalArgumentException: The type must not be null
+	at org.joda.time.field.BaseDateTimeField.<init>(BaseDateTimeField.java:8)
+	at org.joda.time.field.PreciseDurationDateTimeField.<init>(PreciseDurationDateTimeField.java:10)
+	at org.joda.time.chrono.GJDayOfWeekDateTimeField.<init>(GJDayOfWeekDateTimeField.java:8)
+	at org.joda.time.chrono.BasicChronology.assemble(BasicChronology.java:166)
+	at org.joda.time.chrono.GregorianChronology.assemble(GregorianChronology.java:91)
+	at org.joda.time.chrono.AssembledChronology.setFields(AssembledChronology.java:274)
+	at org.joda.time.chrono.AssembledChronology.<init>(AssembledChronology.java:84)
+	at org.joda.time.chrono.BasicChronology.<init>(BasicChronology.java:71)
+	at org.joda.time.chrono.BasicGJChronology.<init>(BasicGJChronology.java:31)
+	at org.joda.time.chrono.GregorianChronology.<init>(GregorianChronology.java:65)
+	at org.joda.time.chrono.GregorianChronology.getInstance(GregorianChronology.java:53)
+	at org.joda.time.chrono.GregorianChronology.getInstance(GregorianChronology.java:32)
+	at org.joda.time.chrono.GregorianChronology.<clinit>(GregorianChronology.java:20)
+	... 5 more
 
-real	4m2.549s
-user	5m48.398s
-sys	0m16.413s
+	at fr.inria.astor.core.validation.executors.JUnitExecutorProcess.getTestResult(JUnitExecutorProcess.java:130)
+	at fr.inria.astor.core.validation.executors.JUnitExecutorProcess.execute(JUnitExecutorProcess.java:78)
+	at fr.inria.astor.core.validation.executors.JUnitExecutorProcess.execute(JUnitExecutorProcess.java:34)
+	at fr.inria.astor.core.validation.validators.ProcessValidator.validate(ProcessValidator.java:58)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.validateInstance(EvolutionaryEngine.java:768)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.processCreatedVariant(EvolutionaryEngine.java:365)
+	at fr.inria.astor.core.loop.evolutionary.JKali.startEvolution(JKali.java:66)
+	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:198)
+	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
+Exception in thread "main" java.lang.AssertionError: The validation process does not execute well the test cases
+ Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
+Exception in thread "main" java.lang.ExceptionInInitializerError
+	at org.joda.time.chrono.ISOChronology.<clinit>(ISOChronology.java:15)
+	at org.joda.time.format.TestDateTimeFormatter.<clinit>(TestDateTimeFormatter.java:51)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:191)
+	at fr.inria.astor.junitexec.JUnitTestExecutor.main(JUnitTestExecutor.java:106)
+Caused by: java.lang.IllegalArgumentException: The type must not be null
+	at org.joda.time.field.BaseDateTimeField.<init>(BaseDateTimeField.java:8)
+	at org.joda.time.field.PreciseDurationDateTimeField.<init>(PreciseDurationDateTimeField.java:10)
+	at org.joda.time.chrono.GJDayOfWeekDateTimeField.<init>(GJDayOfWeekDateTimeField.java:8)
+	at org.joda.time.chrono.BasicChronology.assemble(BasicChronology.java:166)
+	at org.joda.time.chrono.GregorianChronology.assemble(GregorianChronology.java:91)
+	at org.joda.time.chrono.AssembledChronology.setFields(AssembledChronology.java:274)
+	at org.joda.time.chrono.AssembledChronology.<init>(AssembledChronology.java:84)
+	at org.joda.time.chrono.BasicChronology.<init>(BasicChronology.java:71)
+	at org.joda.time.chrono.BasicGJChronology.<init>(BasicGJChronology.java:31)
+	at org.joda.time.chrono.GregorianChronology.<init>(GregorianChronology.java:65)
+	at org.joda.time.chrono.GregorianChronology.getInstance(GregorianChronology.java:53)
+	at org.joda.time.chrono.GregorianChronology.getInstance(GregorianChronology.java:32)
+	at org.joda.time.chrono.GregorianChronology.<clinit>(GregorianChronology.java:20)
+	... 5 more
+
+	at org.junit.Assert.fail(Assert.java:88)
+	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:201)
+	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
+
+real	4m38.755s
+user	5m58.058s
+sys	0m9.329s

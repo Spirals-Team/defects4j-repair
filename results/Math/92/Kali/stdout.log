@@ -1,30 +1,29 @@
 export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/math/math_92 /tmp/math_92_Kali;cd /tmp/math_92_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
 /home/tdurieux/defects4j-repair/src/python/core/../../../results/Math/92/Kali/result
-cd /tmp/math_92_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.math.util.MathUtilsTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 6 -maxgen 1000000 -population 1 -srcjavafolder src/java/ -srctestfolder src/test/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
+cd /tmp/math_92_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java  -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.math.util.MathUtilsTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 6 -maxgen 1000000 -seed 10 -maxtime 60  -scope local  -stopfirst true -flthreshold 0 -population 1 -srcjavafolder src/java/ -srctestfolder src/test/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
 
 Node: `hostname`
 ";echo "
 Date: `date`
 ";rm -rf /tmp/math_92_Kali;
- NOT Found solution
+
+End Repair Loops: NOT Found solution
 
 Number solutions:0
 
 All variants:
-f 1.0, [Variant id: 1, #gens: 27, #ops: 0, parent:-]
+f 1.0, [Variant id: 1, #gens: 921, #ops: 0, parent:-]
 
 ----stats: 
 
-spaces: [0]: []
-time val1 [67]: [250, 247, 217, 213, 214, 249, 215, 244, 215, 226, 241, 217, 244, 217, 214, 244, 220, 227, 243, 216, 216, 648, 244, 213, 245, 214, 218, 214, 244, 214, 217, 246, 244, 214, 219, 246, 243, 213, 213, 242, 220, 213, 212, 213, 214, 213, 214, 217, 224, 213, 212, 242, 215, 215, 243, 243, 217, 213, 243, 245, 213, 213, 245, 244, 214, 214, 243]
-time val2 [0]: []
+spaces navigation: [0]: {}
 #gen: 0
 #patches: 0
-#RightCompilation: 66
-#WrongCompilation: 12
-#FailingTestCaseExecution: 67
+#RightCompilation: 1652
+#WrongCompilation: 418
+#FailingTestCaseExecution: 1653
 #RegressionTestExecution: 0
-#TestcasesExecutedval1: 2881
+#TestcasesExecutedval1: 71079
 #TestcasesExecutedval2: 0
 #FailingTestCase: 43
 #RegressionTestCases: 0
@@ -32,13 +31,14 @@ time val2 [0]: []
 #NotAppliedOp: 0
 #InmutatedGen: 0
 #unfinishValidation: 0
-#ing []
-Time Total(ms): 43575
+#ing {}
+#untilcompile {}
+Time Total(ms): 818648
 
 
-Node: graphene-103.nancy.grid5000.fr
+Node: griffon-74.nancy.grid5000.fr
 
 
-Date: Thu Jul 23 00:01:01 CEST 2015
+Date: Thu Aug 13 19:16:34 CEST 2015
 
 

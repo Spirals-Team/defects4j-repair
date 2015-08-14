@@ -1,8 +1,44 @@
 export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/lang/lang_57 /tmp/lang_57_Kali;cd /tmp/lang_57_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Lang/lib/* lib/;find . -type f -name "package-info.java" -delete;
 /home/tdurieux/defects4j-repair/src/python/core/../../../results/Lang/57/Kali/result
-cd /tmp/lang_57_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.lang.LocaleUtilsTest:org.apache.commons.lang.LocaleUtilsTest:org.apache.commons.lang.LocaleUtilsTest:org.apache.commons.lang.LocaleUtilsTest:org.apache.commons.lang.LocaleUtilsTest:org.apache.commons.lang.LocaleUtilsTest:org.apache.commons.lang.LocaleUtilsTest:org.apache.commons.lang.LocaleUtilsTest:org.apache.commons.lang.LocaleUtilsTest:org.apache.commons.lang.LocaleUtilsTest:org.apache.commons.lang.LocaleUtilsTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 3 -maxgen 1000000 -population 1 -srcjavafolder src/java/ -srctestfolder src/test/ -binjavafolder target/classes/ -bintestfolder target/tests/;echo "
+cd /tmp/lang_57_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java  -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.lang.LocaleUtilsTest:org.apache.commons.lang.LocaleUtilsTest:org.apache.commons.lang.LocaleUtilsTest:org.apache.commons.lang.LocaleUtilsTest:org.apache.commons.lang.LocaleUtilsTest:org.apache.commons.lang.LocaleUtilsTest:org.apache.commons.lang.LocaleUtilsTest:org.apache.commons.lang.LocaleUtilsTest:org.apache.commons.lang.LocaleUtilsTest:org.apache.commons.lang.LocaleUtilsTest:org.apache.commons.lang.LocaleUtilsTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 3 -maxgen 1000000 -seed 10 -maxtime 60  -scope local  -stopfirst true -flthreshold 0 -population 1 -srcjavafolder src/java/ -srctestfolder src/test/ -binjavafolder target/classes/ -bintestfolder target/tests/;echo "
 
 Node: `hostname`
 ";echo "
 Date: `date`
 ";rm -rf /tmp/lang_57_Kali;
+
+End Repair Loops: NOT Found solution
+
+Number solutions:0
+
+All variants:
+f 84.0, [Variant id: 1, #gens: 856, #ops: 0, parent:-]
+
+----stats: 
+
+spaces navigation: [0]: {}
+#gen: 0
+#patches: 0
+#RightCompilation: 0
+#WrongCompilation: 2086
+#FailingTestCaseExecution: 1
+#RegressionTestExecution: 1
+#TestcasesExecutedval1: 121
+#TestcasesExecutedval2: 1609
+#FailingTestCase: 121
+#RegressionTestCases: 1609
+#OfAppliedOp: 0
+#NotAppliedOp: 0
+#InmutatedGen: 0
+#unfinishValidation: 0
+#ing {}
+#untilcompile {}
+Time Total(ms): 300058
+
+
+Node: griffon-74.nancy.grid5000.fr
+
+
+Date: Thu Aug 13 19:57:49 CEST 2015
+
+

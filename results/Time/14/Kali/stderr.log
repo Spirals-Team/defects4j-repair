@@ -8,28 +8,28 @@ Exception in thread "main" java.lang.ExceptionInInitializerError
 	at fr.inria.astor.junitexec.JUnitTestExecutor.main(JUnitTestExecutor.java:106)
 Caused by: java.lang.IllegalArgumentException: The type must not be null
 	at org.joda.time.field.BaseDurationField.<init>(BaseDurationField.java:10)
-	at org.joda.time.field.DecoratedDurationField.<init>(DecoratedDurationField.java:52)
-	at org.joda.time.chrono.LimitChronology$LimitDurationField.<init>(LimitChronology.java:392)
-	at org.joda.time.chrono.LimitChronology.convertField(LimitChronology.java:262)
-	at org.joda.time.chrono.LimitChronology.assemble(LimitChronology.java:214)
-	at org.joda.time.chrono.AssembledChronology.setFields(AssembledChronology.java:323)
-	at org.joda.time.chrono.AssembledChronology.<init>(AssembledChronology.java:102)
-	at org.joda.time.chrono.LimitChronology.<init>(LimitChronology.java:99)
-	at org.joda.time.chrono.LimitChronology.getInstance(LimitChronology.java:81)
-	at org.joda.time.chrono.CopticChronology.getInstance(CopticChronology.java:141)
-	at org.joda.time.chrono.CopticChronology.getInstance(CopticChronology.java:108)
-	at org.joda.time.chrono.CopticChronology.<clinit>(CopticChronology.java:78)
+	at org.joda.time.field.DecoratedDurationField.<init>(DecoratedDurationField.java:8)
+	at org.joda.time.chrono.LimitChronology$LimitDurationField.<init>(LimitChronology.java:230)
+	at org.joda.time.chrono.LimitChronology.convertField(LimitChronology.java:137)
+	at org.joda.time.chrono.LimitChronology.assemble(LimitChronology.java:94)
+	at org.joda.time.chrono.AssembledChronology.setFields(AssembledChronology.java:274)
+	at org.joda.time.chrono.AssembledChronology.<init>(AssembledChronology.java:84)
+	at org.joda.time.chrono.LimitChronology.<init>(LimitChronology.java:26)
+	at org.joda.time.chrono.LimitChronology.getInstance(LimitChronology.java:16)
+	at org.joda.time.chrono.CopticChronology.getInstance(CopticChronology.java:53)
+	at org.joda.time.chrono.CopticChronology.getInstance(CopticChronology.java:30)
+	at org.joda.time.chrono.CopticChronology.<clinit>(CopticChronology.java:18)
 	... 4 more
 
 	at fr.inria.astor.core.validation.executors.JUnitExecutorProcess.getTestResult(JUnitExecutorProcess.java:130)
 	at fr.inria.astor.core.validation.executors.JUnitExecutorProcess.execute(JUnitExecutorProcess.java:78)
 	at fr.inria.astor.core.validation.executors.JUnitExecutorProcess.execute(JUnitExecutorProcess.java:34)
 	at fr.inria.astor.core.validation.validators.ProcessValidator.validate(ProcessValidator.java:58)
-	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.validateInstance(EvolutionaryEngine.java:747)
-	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.processCreatedVariant(EvolutionaryEngine.java:351)
-	at fr.inria.astor.core.loop.evolutionary.JKali.startEvolution(JKali.java:64)
-	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:201)
-	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:235)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.validateInstance(EvolutionaryEngine.java:768)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.processCreatedVariant(EvolutionaryEngine.java:365)
+	at fr.inria.astor.core.loop.evolutionary.JKali.startEvolution(JKali.java:66)
+	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:198)
+	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
 Exception in thread "main" java.lang.AssertionError: The validation process does not execute well the test cases
  Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
 Exception in thread "main" java.lang.ExceptionInInitializerError
@@ -39,23 +39,23 @@ Exception in thread "main" java.lang.ExceptionInInitializerError
 	at fr.inria.astor.junitexec.JUnitTestExecutor.main(JUnitTestExecutor.java:106)
 Caused by: java.lang.IllegalArgumentException: The type must not be null
 	at org.joda.time.field.BaseDurationField.<init>(BaseDurationField.java:10)
-	at org.joda.time.field.DecoratedDurationField.<init>(DecoratedDurationField.java:52)
-	at org.joda.time.chrono.LimitChronology$LimitDurationField.<init>(LimitChronology.java:392)
-	at org.joda.time.chrono.LimitChronology.convertField(LimitChronology.java:262)
-	at org.joda.time.chrono.LimitChronology.assemble(LimitChronology.java:214)
-	at org.joda.time.chrono.AssembledChronology.setFields(AssembledChronology.java:323)
-	at org.joda.time.chrono.AssembledChronology.<init>(AssembledChronology.java:102)
-	at org.joda.time.chrono.LimitChronology.<init>(LimitChronology.java:99)
-	at org.joda.time.chrono.LimitChronology.getInstance(LimitChronology.java:81)
-	at org.joda.time.chrono.CopticChronology.getInstance(CopticChronology.java:141)
-	at org.joda.time.chrono.CopticChronology.getInstance(CopticChronology.java:108)
-	at org.joda.time.chrono.CopticChronology.<clinit>(CopticChronology.java:78)
+	at org.joda.time.field.DecoratedDurationField.<init>(DecoratedDurationField.java:8)
+	at org.joda.time.chrono.LimitChronology$LimitDurationField.<init>(LimitChronology.java:230)
+	at org.joda.time.chrono.LimitChronology.convertField(LimitChronology.java:137)
+	at org.joda.time.chrono.LimitChronology.assemble(LimitChronology.java:94)
+	at org.joda.time.chrono.AssembledChronology.setFields(AssembledChronology.java:274)
+	at org.joda.time.chrono.AssembledChronology.<init>(AssembledChronology.java:84)
+	at org.joda.time.chrono.LimitChronology.<init>(LimitChronology.java:26)
+	at org.joda.time.chrono.LimitChronology.getInstance(LimitChronology.java:16)
+	at org.joda.time.chrono.CopticChronology.getInstance(CopticChronology.java:53)
+	at org.joda.time.chrono.CopticChronology.getInstance(CopticChronology.java:30)
+	at org.joda.time.chrono.CopticChronology.<clinit>(CopticChronology.java:18)
 	... 4 more
 
 	at org.junit.Assert.fail(Assert.java:88)
-	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:204)
-	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:235)
+	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:201)
+	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
 
-real	1m54.948s
-user	3m10.512s
-sys	0m8.337s
+real	1m41.012s
+user	2m27.685s
+sys	0m3.872s

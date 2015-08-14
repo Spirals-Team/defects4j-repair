@@ -1,25 +1,166 @@
 {
     "FailingTestCase": "26", 
-    "FailingTestCaseExecution": "1", 
+    "FailingTestCaseExecution": "1677", 
     "InmutatedGen": "0", 
     "NotAppliedOp": "0", 
     "OfAppliedOp": "0", 
-    "RegressionTestCases": "0", 
-    "RegressionTestExecution": "0", 
-    "RightCompilation": "0", 
-    "WrongCompilation": "510", 
-    "date": "Thu Jul 23 00:41:45 CEST 2015\n\n", 
+    "RegressionTestCases": "3958", 
+    "RegressionTestExecution": "13", 
+    "RightCompilation": "1676", 
+    "WrongCompilation": "416", 
+    "date": "Thu Aug 13 20:22:23 CEST 2015\n\n", 
     "gen": "0", 
-    "gens": "222", 
-    "node": "graphene-19.nancy.grid5000.fr", 
-    "operations": [], 
-    "ops": "0", 
-    "patches": "0", 
-    "programVariant": null, 
-    "timeEvaluation": null, 
-    "timeTotal": "622482", 
-    "timeVal1": [
-        362
+    "gens": "924", 
+    "node": "graphene-7.nancy.grid5000.fr", 
+    "operations": [
+        {
+            "buggyStatement": "if (row == (tableau.getBasicRow(i))) {\n\tif (i < minIndex) {\n\t\tminIndex = i;\n\t\tminRow = row;\n\t} \n} ", 
+            "generation": 1, 
+            "patch": "if (true) {\n\tif (i < minIndex) {\n\t\tminIndex = i;\n\t\tminRow = row;\n\t} \n} ", 
+            "patchLocation": {
+                "className": "org.apache.commons.math3.optimization.linear.SimplexSolver", 
+                "line": 138
+            }, 
+            "type": "REPLACE", 
+            "variant": 18
+        }, 
+        {
+            "buggyStatement": "if (i < minIndex) {\n\tminIndex = i;\n\tminRow = row;\n} ", 
+            "generation": 1, 
+            "patch": "if (true) {\n\tminIndex = i;\n\tminRow = row;\n} ", 
+            "patchLocation": {
+                "className": "org.apache.commons.math3.optimization.linear.SimplexSolver", 
+                "line": 139
+            }, 
+            "type": "REPLACE", 
+            "variant": 22
+        }, 
+        {
+            "buggyStatement": "minIndex = i", 
+            "generation": 1, 
+            "patch": "remove", 
+            "patchLocation": {
+                "className": "org.apache.commons.math3.optimization.linear.SimplexSolver", 
+                "line": 140
+            }, 
+            "type": "DELETE", 
+            "variant": 24
+        }, 
+        {
+            "buggyStatement": "return minRow", 
+            "generation": 1, 
+            "patch": "remove", 
+            "patchLocation": {
+                "className": "org.apache.commons.math3.optimization.linear.SimplexSolver", 
+                "line": 147
+            }, 
+            "type": "DELETE", 
+            "variant": 28
+        }, 
+        {
+            "buggyStatement": "if ((org.apache.commons.math3.util.Precision.equals(entry, 1.0, maxUlps)) && (row.equals(tableau.getBasicRow(column)))) {\n\treturn row;\n} ", 
+            "generation": 1, 
+            "patch": "remove", 
+            "patchLocation": {
+                "className": "org.apache.commons.math3.optimization.linear.SimplexSolver", 
+                "line": 123
+            }, 
+            "type": "DELETE", 
+            "variant": 62
+        }, 
+        {
+            "buggyStatement": "if ((org.apache.commons.math3.util.Precision.equals(entry, 1.0, maxUlps)) && (row.equals(tableau.getBasicRow(column)))) {\n\treturn row;\n} ", 
+            "generation": 1, 
+            "patch": "if (true) {\n\treturn row;\n} ", 
+            "patchLocation": {
+                "className": "org.apache.commons.math3.optimization.linear.SimplexSolver", 
+                "line": 123
+            }, 
+            "type": "REPLACE", 
+            "variant": 64
+        }, 
+        {
+            "buggyStatement": "if ((org.apache.commons.math3.util.Precision.equals(entry, 1.0, maxUlps)) && (row.equals(tableau.getBasicRow(column)))) {\n\treturn row;\n} ", 
+            "generation": 1, 
+            "patch": "if (false) {\n\treturn row;\n} ", 
+            "patchLocation": {
+                "className": "org.apache.commons.math3.optimization.linear.SimplexSolver", 
+                "line": 123
+            }, 
+            "type": "REPLACE", 
+            "variant": 65
+        }, 
+        {
+            "buggyStatement": "return row", 
+            "generation": 1, 
+            "patch": "remove", 
+            "patchLocation": {
+                "className": "org.apache.commons.math3.optimization.linear.SimplexSolver", 
+                "line": 124
+            }, 
+            "type": "DELETE", 
+            "variant": 66
+        }, 
+        {
+            "buggyStatement": "minRatioPositions.add(i)", 
+            "generation": 1, 
+            "patch": "remove", 
+            "patchLocation": {
+                "className": "org.apache.commons.math3.optimization.linear.SimplexSolver", 
+                "line": 104
+            }, 
+            "type": "DELETE", 
+            "variant": 72
+        }, 
+        {
+            "buggyStatement": "for (java.lang.Integer row : minRatioPositions) {\n\tfor (int i = 0 ; i < (tableau.getNumArtificialVariables()) ; i++) {\n\t\tint column = i + (tableau.getArtificialVariableOffset());\n\t\tfinal double entry = tableau.getEntry(row, column);\n\t\tif ((org.apache.commons.math3.util.Precision.equals(entry, 1.0, maxUlps)) && (row.equals(tableau.getBasicRow(column)))) {\n\t\t\treturn row;\n\t\t} \n\t}\n}", 
+            "generation": 1, 
+            "patch": "remove", 
+            "patchLocation": {
+                "className": "org.apache.commons.math3.optimization.linear.SimplexSolver", 
+                "line": 119
+            }, 
+            "type": "DELETE", 
+            "variant": 74
+        }, 
+        {
+            "buggyStatement": "for (int i = 0 ; i < (tableau.getNumArtificialVariables()) ; i++) {\n\tint column = i + (tableau.getArtificialVariableOffset());\n\tfinal double entry = tableau.getEntry(row, column);\n\tif ((org.apache.commons.math3.util.Precision.equals(entry, 1.0, maxUlps)) && (row.equals(tableau.getBasicRow(column)))) {\n\t\treturn row;\n\t} \n}", 
+            "generation": 1, 
+            "patch": "remove", 
+            "patchLocation": {
+                "className": "org.apache.commons.math3.optimization.linear.SimplexSolver", 
+                "line": 120
+            }, 
+            "type": "DELETE", 
+            "variant": 76
+        }, 
+        {
+            "buggyStatement": "minValue = entry", 
+            "generation": 1, 
+            "patch": "remove", 
+            "patchLocation": {
+                "className": "org.apache.commons.math3.optimization.linear.SimplexSolver", 
+                "line": 77
+            }, 
+            "type": "DELETE", 
+            "variant": 198
+        }, 
+        {
+            "buggyStatement": "if (cmp == 0) {\n\tminRatioPositions.add(i);\n} else if (cmp < 0) {\n\tminRatio = ratio;\n\tminRatioPositions = new java.util.ArrayList<java.lang.Integer>();\n\tminRatioPositions.add(i);\n} ", 
+            "generation": 1, 
+            "patch": "if (false) {\n\tminRatioPositions.add(i);\n} else if (cmp < 0) {\n\tminRatio = ratio;\n\tminRatioPositions = new java.util.ArrayList<java.lang.Integer>();\n\tminRatioPositions.add(i);\n} ", 
+            "patchLocation": {
+                "className": "org.apache.commons.math3.optimization.linear.SimplexSolver", 
+                "line": 103
+            }, 
+            "type": "REPLACE", 
+            "variant": 225
+        }
     ], 
+    "ops": "0", 
+    "patches": "13", 
+    "programVariant": "18", 
+    "timeEvaluation": null, 
+    "timeTotal": "3457844", 
     "unfinishValidation": "0"
 }

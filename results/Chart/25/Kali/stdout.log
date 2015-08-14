@@ -1,8 +1,2813 @@
 export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/chart/chart_25 /tmp/chart_25_Kali;cd /tmp/chart_25_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Chart/lib/* lib/;find . -type f -name "package-info.java" -delete;
 /home/tdurieux/defects4j-repair/src/python/core/../../../results/Chart/25/Kali/result
-cd /tmp/chart_25_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.jfree.chart.renderer.category.junit.StatisticalBarRendererTests:org.jfree.chart.renderer.category.junit.StatisticalBarRendererTests:org.jfree.chart.renderer.category.junit.StatisticalBarRendererTests:org.jfree.chart.renderer.category.junit.StatisticalBarRendererTests: -package org.jfree -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 4 -maxgen 1000000 -population 1 -srcjavafolder source/ -srctestfolder tests/ -binjavafolder build/ -bintestfolder build-tests/;echo "
+cd /tmp/chart_25_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java  -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.jfree.chart.renderer.category.junit.StatisticalBarRendererTests:org.jfree.chart.renderer.category.junit.StatisticalBarRendererTests:org.jfree.chart.renderer.category.junit.StatisticalBarRendererTests:org.jfree.chart.renderer.category.junit.StatisticalBarRendererTests: -package org.jfree -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 4 -maxgen 1000000 -seed 10 -maxtime 60  -scope local  -stopfirst true -flthreshold 0 -population 1 -srcjavafolder source/ -srctestfolder tests/ -binjavafolder build/ -bintestfolder build-tests/;echo "
 
 Node: `hostname`
 ";echo "
 Date: `date`
 ";rm -rf /tmp/chart_25_Kali;
+
+End Repair Loops: Found solution
+Solution stored at: ./outputMutation//MainjGenProg-.//src/
+
+Number solutions:146
+f (sol): 0.0, [Variant id: 3 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 7 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 9 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 10 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 11 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 15 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 17 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 18 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 19 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 21 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 22 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 23 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 25 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 27 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 45 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 47 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 49 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 229 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 230 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 231 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 291 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 415 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 417 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 418 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 419 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 421 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 423 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 424 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 425 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 427 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 428 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 429 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 431 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 445 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 447 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 449 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 514 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 515 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 519 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 521 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 522 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 523 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 525 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 527 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 528 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 529 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 531 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 532 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 533 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 535 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 547 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 548 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 549 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 559 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 561 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 564 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 565 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 570 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 571 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 573 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 574 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 575 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 577 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 578 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 579 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 584 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 587 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 588 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 590 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 591 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 592 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 593 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 596 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 597 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 598 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 599 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 614 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 619 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 620 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 621 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 625 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 626 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 627 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 629 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 631 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 633 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 634 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 635 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 647 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 649 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 651 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 653 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 655 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 656 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 657 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 658 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 659 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 928 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 930 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 932 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 935 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 936 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 957 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 1217 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 1219 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 1221 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 1222 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 1225 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 1229 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 1231 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 1233 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 1235 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 1237 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 1239 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 1241 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 1243 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 1247 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 1249 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 1251 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 1253 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 1255 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 1257 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 1259 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 1263 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 1267 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 1269 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 1271 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 1273 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 1275 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 1277 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 1279 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 1281 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 1283 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 1284 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 1285 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 1289 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 1291 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 1293 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 1295 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 1299 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 1301 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 1303 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 1304 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 1305 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 1306 (SOL) , #gens: 937, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 1307 (SOL) , #gens: 937, #ops: 1, parent:1]
+
+All variants:
+f 16.0, [Variant id: 1, #gens: 937, #ops: 0, parent:-]
+
+Solution details
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+
+ --SOLUTIONS DESCRIPTION--
+
+ ----
+ProgramVariant 3
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.renderer.category.StatisticalBarRenderer
+line= 200
+original statement= if (!(data instanceof org.jfree.data.statistics.StatisticalCategoryDataset)) {
+	throw new java.lang.IllegalArgumentException("Requires StatisticalCategoryDataset.");
+} 
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 7
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.renderer.category.StatisticalBarRenderer
+line= 204
+original statement= org.jfree.data.statistics.StatisticalCategoryDataset statData = ((org.jfree.data.statistics.StatisticalCategoryDataset)(data))
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 9
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.renderer.category.StatisticalBarRenderer
+line= 206
+original statement= org.jfree.chart.plot.PlotOrientation orientation = plot.getOrientation()
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 10
+ 
+operation: DELETE
+location= org.jfree.chart.renderer.category.StatisticalBarRenderer
+line= 207
+original statement= if (orientation == (org.jfree.chart.plot.PlotOrientation.HORIZONTAL)) {
+	drawHorizontalItem(g2, state, dataArea, plot, domainAxis, rangeAxis, statData, row, column);
+} else if (orientation == (org.jfree.chart.plot.PlotOrientation.VERTICAL)) {
+	drawVerticalItem(g2, state, dataArea, plot, domainAxis, rangeAxis, statData, row, column);
+} 
+fixed statement= if (orientation == (org.jfree.chart.plot.PlotOrientation.HORIZONTAL)) {
+	drawHorizontalItem(g2, state, dataArea, plot, domainAxis, rangeAxis, statData, row, column);
+} else if (orientation == (org.jfree.chart.plot.PlotOrientation.VERTICAL)) {
+	drawVerticalItem(g2, state, dataArea, plot, domainAxis, rangeAxis, statData, row, column);
+} 
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 11
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.renderer.category.StatisticalBarRenderer
+line= 207
+original statement= if (orientation == (org.jfree.chart.plot.PlotOrientation.HORIZONTAL)) {
+	drawHorizontalItem(g2, state, dataArea, plot, domainAxis, rangeAxis, statData, row, column);
+} else if (orientation == (org.jfree.chart.plot.PlotOrientation.VERTICAL)) {
+	drawVerticalItem(g2, state, dataArea, plot, domainAxis, rangeAxis, statData, row, column);
+} 
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 15
+ 
+operation: INSERT_BEFORE
+location= org.jfree.data.statistics.DefaultStatisticalCategoryDataset
+line= 107
+original statement= java.lang.Number result = null
+fixed statement= if (true)
+	return null;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 17
+ 
+operation: INSERT_BEFORE
+location= org.jfree.data.statistics.DefaultStatisticalCategoryDataset
+line= 108
+original statement= org.jfree.data.statistics.MeanAndStandardDeviation masd = ((org.jfree.data.statistics.MeanAndStandardDeviation)(this.data.getObject(row, column)))
+fixed statement= if (true)
+	return null;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 18
+ 
+operation: DELETE
+location= org.jfree.data.statistics.DefaultStatisticalCategoryDataset
+line= 110
+original statement= if (masd != null) {
+	result = masd.getMean();
+} 
+fixed statement= if (masd != null) {
+	result = masd.getMean();
+} 
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 19
+ 
+operation: INSERT_BEFORE
+location= org.jfree.data.statistics.DefaultStatisticalCategoryDataset
+line= 110
+original statement= if (masd != null) {
+	result = masd.getMean();
+} 
+fixed statement= if (true)
+	return null;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 21
+ 
+operation: REPLACE
+location= org.jfree.data.statistics.DefaultStatisticalCategoryDataset
+line= 110
+original statement= if (masd != null) {
+	result = masd.getMean();
+} 
+fixed statement= if (false) {
+	result = masd.getMean();
+} 
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 22
+ 
+operation: DELETE
+location= org.jfree.data.statistics.DefaultStatisticalCategoryDataset
+line= 111
+original statement= result = masd.getMean()
+fixed statement= result = masd.getMean()
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 23
+ 
+operation: INSERT_BEFORE
+location= org.jfree.data.statistics.DefaultStatisticalCategoryDataset
+line= 111
+original statement= result = masd.getMean()
+fixed statement= if (true)
+	return null;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 25
+ 
+operation: INSERT_BEFORE
+location= org.jfree.data.statistics.DefaultStatisticalCategoryDataset
+line= 113
+original statement= return result
+fixed statement= if (true)
+	return null;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 27
+ 
+operation: INSERT_BEFORE
+location= org.jfree.data.statistics.DefaultStatisticalCategoryDataset
+line= 126
+original statement= return getMeanValue(row, column)
+fixed statement= if (true)
+	return null;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 45
+ 
+operation: INSERT_BEFORE
+location= org.jfree.data.statistics.DefaultStatisticalCategoryDataset
+line= 264
+original statement= return this.data.getRowCount()
+fixed statement= if (true)
+	return 0;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 47
+ 
+operation: INSERT_BEFORE
+location= org.jfree.data.statistics.DefaultStatisticalCategoryDataset
+line= 273
+original statement= return this.data.getColumnCount()
+fixed statement= if (true)
+	return 0;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 49
+ 
+operation: INSERT_BEFORE
+location= org.jfree.data.statistics.MeanAndStandardDeviation
+line= 95
+original statement= return this.mean
+fixed statement= if (true)
+	return null;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 229
+ 
+operation: INSERT_BEFORE
+location= org.jfree.data.statistics.DefaultStatisticalCategoryDataset
+line= 299
+original statement= org.jfree.data.statistics.MeanAndStandardDeviation item = new org.jfree.data.statistics.MeanAndStandardDeviation(mean , standardDeviation)
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 230
+ 
+operation: DELETE
+location= org.jfree.data.statistics.DefaultStatisticalCategoryDataset
+line= 301
+original statement= this.data.addObject(item, rowKey, columnKey)
+fixed statement= this.data.addObject(item, rowKey, columnKey)
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 231
+ 
+operation: INSERT_BEFORE
+location= org.jfree.data.statistics.DefaultStatisticalCategoryDataset
+line= 301
+original statement= this.data.addObject(item, rowKey, columnKey)
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 291
+ 
+operation: INSERT_BEFORE
+location= org.jfree.data.KeyedObjects2D
+line= 229
+original statement= row = ((org.jfree.data.KeyedObjects)(this.rows.get(rowIndex)))
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 415
+ 
+operation: INSERT_BEFORE
+location= org.jfree.data.KeyedObjects2D
+line= 108
+original statement= java.lang.Object result = null
+fixed statement= if (true)
+	return null;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 417
+ 
+operation: INSERT_BEFORE
+location= org.jfree.data.KeyedObjects2D
+line= 109
+original statement= org.jfree.data.KeyedObjects rowData = ((org.jfree.data.KeyedObjects)(this.rows.get(row)))
+fixed statement= if (true)
+	return null;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 418
+ 
+operation: DELETE
+location= org.jfree.data.KeyedObjects2D
+line= 110
+original statement= if (rowData != null) {
+	java.lang.Comparable columnKey = ((java.lang.Comparable)(this.columnKeys.get(column)));
+	if (columnKey != null) {
+		result = rowData.getObject(columnKey);
+	} 
+} 
+fixed statement= if (rowData != null) {
+	java.lang.Comparable columnKey = ((java.lang.Comparable)(this.columnKeys.get(column)));
+	if (columnKey != null) {
+		result = rowData.getObject(columnKey);
+	} 
+} 
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 419
+ 
+operation: INSERT_BEFORE
+location= org.jfree.data.KeyedObjects2D
+line= 110
+original statement= if (rowData != null) {
+	java.lang.Comparable columnKey = ((java.lang.Comparable)(this.columnKeys.get(column)));
+	if (columnKey != null) {
+		result = rowData.getObject(columnKey);
+	} 
+} 
+fixed statement= if (true)
+	return null;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 421
+ 
+operation: REPLACE
+location= org.jfree.data.KeyedObjects2D
+line= 110
+original statement= if (rowData != null) {
+	java.lang.Comparable columnKey = ((java.lang.Comparable)(this.columnKeys.get(column)));
+	if (columnKey != null) {
+		result = rowData.getObject(columnKey);
+	} 
+} 
+fixed statement= if (false) {
+	java.lang.Comparable columnKey = ((java.lang.Comparable)(this.columnKeys.get(column)));
+	if (columnKey != null) {
+		result = rowData.getObject(columnKey);
+	} 
+} 
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 423
+ 
+operation: INSERT_BEFORE
+location= org.jfree.data.KeyedObjects2D
+line= 111
+original statement= java.lang.Comparable columnKey = ((java.lang.Comparable)(this.columnKeys.get(column)))
+fixed statement= if (true)
+	return null;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 424
+ 
+operation: DELETE
+location= org.jfree.data.KeyedObjects2D
+line= 112
+original statement= if (columnKey != null) {
+	result = rowData.getObject(columnKey);
+} 
+fixed statement= if (columnKey != null) {
+	result = rowData.getObject(columnKey);
+} 
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 425
+ 
+operation: INSERT_BEFORE
+location= org.jfree.data.KeyedObjects2D
+line= 112
+original statement= if (columnKey != null) {
+	result = rowData.getObject(columnKey);
+} 
+fixed statement= if (true)
+	return null;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 427
+ 
+operation: REPLACE
+location= org.jfree.data.KeyedObjects2D
+line= 112
+original statement= if (columnKey != null) {
+	result = rowData.getObject(columnKey);
+} 
+fixed statement= if (false) {
+	result = rowData.getObject(columnKey);
+} 
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 428
+ 
+operation: DELETE
+location= org.jfree.data.KeyedObjects2D
+line= 113
+original statement= result = rowData.getObject(columnKey)
+fixed statement= result = rowData.getObject(columnKey)
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 429
+ 
+operation: INSERT_BEFORE
+location= org.jfree.data.KeyedObjects2D
+line= 113
+original statement= result = rowData.getObject(columnKey)
+fixed statement= if (true)
+	return null;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 431
+ 
+operation: INSERT_BEFORE
+location= org.jfree.data.KeyedObjects2D
+line= 116
+original statement= return result
+fixed statement= if (true)
+	return null;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 445
+ 
+operation: INSERT_BEFORE
+location= org.jfree.data.KeyedObjects
+line= 163
+original statement= return getObject(getIndex(key))
+fixed statement= if (true)
+	return null;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 447
+ 
+operation: INSERT_BEFORE
+location= org.jfree.data.KeyedObjects2D
+line= 86
+original statement= return this.rowKeys.size()
+fixed statement= if (true)
+	return 0;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 449
+ 
+operation: INSERT_BEFORE
+location= org.jfree.data.KeyedObjects2D
+line= 95
+original statement= return this.columnKeys.size()
+fixed statement= if (true)
+	return 0;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 514
+ 
+operation: DELETE
+location= org.jfree.data.KeyedObjects
+line= 132
+original statement= result = i
+fixed statement= result = i
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 515
+ 
+operation: INSERT_BEFORE
+location= org.jfree.data.KeyedObjects
+line= 132
+original statement= result = i
+fixed statement= if (true)
+	return 0;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 519
+ 
+operation: INSERT_BEFORE
+location= org.jfree.data.KeyedObject
+line= 94
+original statement= return this.object
+fixed statement= if (true)
+	return null;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 521
+ 
+operation: INSERT_BEFORE
+location= org.jfree.data.KeyedObjects
+line= 88
+original statement= java.lang.Object result = null
+fixed statement= if (true)
+	return null;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 522
+ 
+operation: DELETE
+location= org.jfree.data.KeyedObjects
+line= 89
+original statement= if ((item >= 0) && (item < (this.data.size()))) {
+	org.jfree.data.KeyedObject kobj = ((org.jfree.data.KeyedObject)(this.data.get(item)));
+	if (kobj != null) {
+		result = kobj.getObject();
+	} 
+} 
+fixed statement= if ((item >= 0) && (item < (this.data.size()))) {
+	org.jfree.data.KeyedObject kobj = ((org.jfree.data.KeyedObject)(this.data.get(item)));
+	if (kobj != null) {
+		result = kobj.getObject();
+	} 
+} 
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 523
+ 
+operation: INSERT_BEFORE
+location= org.jfree.data.KeyedObjects
+line= 89
+original statement= if ((item >= 0) && (item < (this.data.size()))) {
+	org.jfree.data.KeyedObject kobj = ((org.jfree.data.KeyedObject)(this.data.get(item)));
+	if (kobj != null) {
+		result = kobj.getObject();
+	} 
+} 
+fixed statement= if (true)
+	return null;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 525
+ 
+operation: REPLACE
+location= org.jfree.data.KeyedObjects
+line= 89
+original statement= if ((item >= 0) && (item < (this.data.size()))) {
+	org.jfree.data.KeyedObject kobj = ((org.jfree.data.KeyedObject)(this.data.get(item)));
+	if (kobj != null) {
+		result = kobj.getObject();
+	} 
+} 
+fixed statement= if (false) {
+	org.jfree.data.KeyedObject kobj = ((org.jfree.data.KeyedObject)(this.data.get(item)));
+	if (kobj != null) {
+		result = kobj.getObject();
+	} 
+} 
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 527
+ 
+operation: INSERT_BEFORE
+location= org.jfree.data.KeyedObjects
+line= 90
+original statement= org.jfree.data.KeyedObject kobj = ((org.jfree.data.KeyedObject)(this.data.get(item)))
+fixed statement= if (true)
+	return null;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 528
+ 
+operation: DELETE
+location= org.jfree.data.KeyedObjects
+line= 91
+original statement= if (kobj != null) {
+	result = kobj.getObject();
+} 
+fixed statement= if (kobj != null) {
+	result = kobj.getObject();
+} 
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 529
+ 
+operation: INSERT_BEFORE
+location= org.jfree.data.KeyedObjects
+line= 91
+original statement= if (kobj != null) {
+	result = kobj.getObject();
+} 
+fixed statement= if (true)
+	return null;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 531
+ 
+operation: REPLACE
+location= org.jfree.data.KeyedObjects
+line= 91
+original statement= if (kobj != null) {
+	result = kobj.getObject();
+} 
+fixed statement= if (false) {
+	result = kobj.getObject();
+} 
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 532
+ 
+operation: DELETE
+location= org.jfree.data.KeyedObjects
+line= 92
+original statement= result = kobj.getObject()
+fixed statement= result = kobj.getObject()
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 533
+ 
+operation: INSERT_BEFORE
+location= org.jfree.data.KeyedObjects
+line= 92
+original statement= result = kobj.getObject()
+fixed statement= if (true)
+	return null;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 535
+ 
+operation: INSERT_BEFORE
+location= org.jfree.data.KeyedObjects
+line= 95
+original statement= return result
+fixed statement= if (true)
+	return null;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 547
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.renderer.category.AbstractCategoryItemRenderer
+line= 248
+original statement= return 1
+fixed statement= if (true)
+	return 0;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 548
+ 
+operation: DELETE
+location= org.jfree.data.KeyedObjects2D
+line= 212
+original statement= setObject(object, rowKey, columnKey)
+fixed statement= setObject(object, rowKey, columnKey)
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 549
+ 
+operation: INSERT_BEFORE
+location= org.jfree.data.KeyedObjects2D
+line= 212
+original statement= setObject(object, rowKey, columnKey)
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 559
+ 
+operation: INSERT_BEFORE
+location= org.jfree.data.KeyedObjects2D
+line= 227
+original statement= int rowIndex = this.rowKeys.indexOf(rowKey)
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 561
+ 
+operation: INSERT_BEFORE
+location= org.jfree.data.KeyedObjects2D
+line= 228
+original statement= if (rowIndex >= 0) {
+	row = ((org.jfree.data.KeyedObjects)(this.rows.get(rowIndex)));
+} else {
+	this.rowKeys.add(rowKey);
+	row = new org.jfree.data.KeyedObjects();
+	this.rows.add(row);
+}
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 564
+ 
+operation: DELETE
+location= org.jfree.data.KeyedObjects2D
+line= 232
+original statement= this.rowKeys.add(rowKey)
+fixed statement= this.rowKeys.add(rowKey)
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 565
+ 
+operation: INSERT_BEFORE
+location= org.jfree.data.KeyedObjects2D
+line= 232
+original statement= this.rowKeys.add(rowKey)
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 570
+ 
+operation: DELETE
+location= org.jfree.data.KeyedObjects2D
+line= 236
+original statement= row.setObject(columnKey, object)
+fixed statement= row.setObject(columnKey, object)
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 571
+ 
+operation: INSERT_BEFORE
+location= org.jfree.data.KeyedObjects2D
+line= 236
+original statement= row.setObject(columnKey, object)
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 573
+ 
+operation: INSERT_BEFORE
+location= org.jfree.data.KeyedObjects2D
+line= 237
+original statement= int columnIndex = this.columnKeys.indexOf(columnKey)
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 574
+ 
+operation: DELETE
+location= org.jfree.data.KeyedObjects2D
+line= 238
+original statement= if (columnIndex < 0) {
+	this.columnKeys.add(columnKey);
+} 
+fixed statement= if (columnIndex < 0) {
+	this.columnKeys.add(columnKey);
+} 
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 575
+ 
+operation: INSERT_BEFORE
+location= org.jfree.data.KeyedObjects2D
+line= 238
+original statement= if (columnIndex < 0) {
+	this.columnKeys.add(columnKey);
+} 
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 577
+ 
+operation: REPLACE
+location= org.jfree.data.KeyedObjects2D
+line= 238
+original statement= if (columnIndex < 0) {
+	this.columnKeys.add(columnKey);
+} 
+fixed statement= if (false) {
+	this.columnKeys.add(columnKey);
+} 
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 578
+ 
+operation: DELETE
+location= org.jfree.data.KeyedObjects2D
+line= 239
+original statement= this.columnKeys.add(columnKey)
+fixed statement= this.columnKeys.add(columnKey)
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 579
+ 
+operation: INSERT_BEFORE
+location= org.jfree.data.KeyedObjects2D
+line= 239
+original statement= this.columnKeys.add(columnKey)
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 584
+ 
+operation: DELETE
+location= org.jfree.data.KeyedObjects
+line= 131
+original statement= if (ko.getKey().equals(key)) {
+	result = i;
+} 
+fixed statement= if (ko.getKey().equals(key)) {
+	result = i;
+} 
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 587
+ 
+operation: REPLACE
+location= org.jfree.data.KeyedObjects
+line= 131
+original statement= if (ko.getKey().equals(key)) {
+	result = i;
+} 
+fixed statement= if (false) {
+	result = i;
+} 
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 588
+ 
+operation: DELETE
+location= org.jfree.data.KeyedObjects
+line= 134
+original statement= i++
+fixed statement= i++
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 590
+ 
+operation: DELETE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2865
+original statement= for (int column = 0 ; column < columnCount ; column++) {
+	if ((this.rowRenderingOrder) == (org.jfree.chart.util.SortOrder.ASCENDING)) {
+		for (int row = 0 ; row < rowCount ; row++) {
+			renderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass);
+		}
+	} else {
+		for (int row = rowCount - 1 ; row >= 0 ; row--) {
+			renderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass);
+		}
+	}
+}
+fixed statement= for (int column = 0 ; column < columnCount ; column++) {
+	if ((this.rowRenderingOrder) == (org.jfree.chart.util.SortOrder.ASCENDING)) {
+		for (int row = 0 ; row < rowCount ; row++) {
+			renderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass);
+		}
+	} else {
+		for (int row = rowCount - 1 ; row >= 0 ; row--) {
+			renderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass);
+		}
+	}
+}
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 591
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2865
+original statement= for (int column = 0 ; column < columnCount ; column++) {
+	if ((this.rowRenderingOrder) == (org.jfree.chart.util.SortOrder.ASCENDING)) {
+		for (int row = 0 ; row < rowCount ; row++) {
+			renderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass);
+		}
+	} else {
+		for (int row = rowCount - 1 ; row >= 0 ; row--) {
+			renderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass);
+		}
+	}
+}
+fixed statement= if (true)
+	return false;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 592
+ 
+operation: DELETE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2866
+original statement= if ((this.rowRenderingOrder) == (org.jfree.chart.util.SortOrder.ASCENDING)) {
+	for (int row = 0 ; row < rowCount ; row++) {
+		renderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass);
+	}
+} else {
+	for (int row = rowCount - 1 ; row >= 0 ; row--) {
+		renderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass);
+	}
+}
+fixed statement= if ((this.rowRenderingOrder) == (org.jfree.chart.util.SortOrder.ASCENDING)) {
+	for (int row = 0 ; row < rowCount ; row++) {
+		renderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass);
+	}
+} else {
+	for (int row = rowCount - 1 ; row >= 0 ; row--) {
+		renderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass);
+	}
+}
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 593
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2866
+original statement= if ((this.rowRenderingOrder) == (org.jfree.chart.util.SortOrder.ASCENDING)) {
+	for (int row = 0 ; row < rowCount ; row++) {
+		renderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass);
+	}
+} else {
+	for (int row = rowCount - 1 ; row >= 0 ; row--) {
+		renderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass);
+	}
+}
+fixed statement= if (true)
+	return false;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 596
+ 
+operation: DELETE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2867
+original statement= for (int row = 0 ; row < rowCount ; row++) {
+	renderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass);
+}
+fixed statement= for (int row = 0 ; row < rowCount ; row++) {
+	renderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass);
+}
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 597
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2867
+original statement= for (int row = 0 ; row < rowCount ; row++) {
+	renderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass);
+}
+fixed statement= if (true)
+	return false;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 598
+ 
+operation: DELETE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2868
+original statement= renderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass)
+fixed statement= renderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass)
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 599
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2868
+original statement= renderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass)
+fixed statement= if (true)
+	return false;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 614
+ 
+operation: DELETE
+location= org.jfree.data.KeyedObjects
+line= 129
+original statement= while (iterator.hasNext()) {
+	org.jfree.data.KeyedObject ko = ((org.jfree.data.KeyedObject)(iterator.next()));
+	if (ko.getKey().equals(key)) {
+		result = i;
+	} 
+	i++;
+}
+fixed statement= while (iterator.hasNext()) {
+	org.jfree.data.KeyedObject ko = ((org.jfree.data.KeyedObject)(iterator.next()));
+	if (ko.getKey().equals(key)) {
+		result = i;
+	} 
+	i++;
+}
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 619
+ 
+operation: INSERT_BEFORE
+location= org.jfree.data.KeyedObjects
+line= 186
+original statement= int keyIndex = getIndex(key)
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 620
+ 
+operation: DELETE
+location= org.jfree.data.KeyedObjects
+line= 187
+original statement= if (keyIndex >= 0) {
+	org.jfree.data.KeyedObject ko = ((org.jfree.data.KeyedObject)(this.data.get(keyIndex)));
+	ko.setObject(object);
+} else {
+	org.jfree.data.KeyedObject ko = new org.jfree.data.KeyedObject(key , object);
+	this.data.add(ko);
+}
+fixed statement= if (keyIndex >= 0) {
+	org.jfree.data.KeyedObject ko = ((org.jfree.data.KeyedObject)(this.data.get(keyIndex)));
+	ko.setObject(object);
+} else {
+	org.jfree.data.KeyedObject ko = new org.jfree.data.KeyedObject(key , object);
+	this.data.add(ko);
+}
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 621
+ 
+operation: INSERT_BEFORE
+location= org.jfree.data.KeyedObjects
+line= 187
+original statement= if (keyIndex >= 0) {
+	org.jfree.data.KeyedObject ko = ((org.jfree.data.KeyedObject)(this.data.get(keyIndex)));
+	ko.setObject(object);
+} else {
+	org.jfree.data.KeyedObject ko = new org.jfree.data.KeyedObject(key , object);
+	this.data.add(ko);
+}
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 625
+ 
+operation: INSERT_BEFORE
+location= org.jfree.data.KeyedObjects
+line= 192
+original statement= org.jfree.data.KeyedObject ko = new org.jfree.data.KeyedObject(key , object)
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 626
+ 
+operation: DELETE
+location= org.jfree.data.KeyedObjects
+line= 193
+original statement= this.data.add(ko)
+fixed statement= this.data.add(ko)
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 627
+ 
+operation: INSERT_BEFORE
+location= org.jfree.data.KeyedObjects
+line= 193
+original statement= this.data.add(ko)
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 629
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.JFreeChart
+line= 1373
+original statement= return createBufferedImage(width, height, java.awt.image.BufferedImage.TYPE_INT_RGB, info)
+fixed statement= if (true)
+	return null;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 631
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.JFreeChart
+line= 1391
+original statement= java.awt.image.BufferedImage image = new java.awt.image.BufferedImage(width , height , imageType)
+fixed statement= if (true)
+	return null;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 633
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.JFreeChart
+line= 1392
+original statement= java.awt.Graphics2D g2 = image.createGraphics()
+fixed statement= if (true)
+	return null;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 634
+ 
+operation: DELETE
+location= org.jfree.chart.JFreeChart
+line= 1393
+original statement= draw(g2, new java.awt.geom.Rectangle2D.Double(0 , 0 , width , height), null, info)
+fixed statement= draw(g2, new java.awt.geom.Rectangle2D.Double(0 , 0 , width , height), null, info)
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 635
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.JFreeChart
+line= 1393
+original statement= draw(g2, new java.awt.geom.Rectangle2D.Double(0 , 0 , width , height), null, info)
+fixed statement= if (true)
+	return null;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 647
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2857
+original statement= foundData = true
+fixed statement= if (true)
+	return false;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 649
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2858
+original statement= org.jfree.chart.renderer.category.CategoryItemRendererState state = renderer.initialise(g2, dataArea, this, index, info)
+fixed statement= if (true)
+	return false;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 651
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2860
+original statement= int columnCount = currentDataset.getColumnCount()
+fixed statement= if (true)
+	return false;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 653
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2861
+original statement= int rowCount = currentDataset.getRowCount()
+fixed statement= if (true)
+	return false;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 655
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2862
+original statement= int passCount = renderer.getPassCount()
+fixed statement= if (true)
+	return false;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 656
+ 
+operation: DELETE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2863
+original statement= for (int pass = 0 ; pass < passCount ; pass++) {
+	if ((this.columnRenderingOrder) == (org.jfree.chart.util.SortOrder.ASCENDING)) {
+		for (int column = 0 ; column < columnCount ; column++) {
+			if ((this.rowRenderingOrder) == (org.jfree.chart.util.SortOrder.ASCENDING)) {
+				for (int row = 0 ; row < rowCount ; row++) {
+					renderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass);
+				}
+			} else {
+				for (int row = rowCount - 1 ; row >= 0 ; row--) {
+					renderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass);
+				}
+			}
+		}
+	} else {
+		for (int column = columnCount - 1 ; column >= 0 ; column--) {
+			if ((this.rowRenderingOrder) == (org.jfree.chart.util.SortOrder.ASCENDING)) {
+				for (int row = 0 ; row < rowCount ; row++) {
+					renderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass);
+				}
+			} else {
+				for (int row = rowCount - 1 ; row >= 0 ; row--) {
+					renderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass);
+				}
+			}
+		}
+	}
+}
+fixed statement= for (int pass = 0 ; pass < passCount ; pass++) {
+	if ((this.columnRenderingOrder) == (org.jfree.chart.util.SortOrder.ASCENDING)) {
+		for (int column = 0 ; column < columnCount ; column++) {
+			if ((this.rowRenderingOrder) == (org.jfree.chart.util.SortOrder.ASCENDING)) {
+				for (int row = 0 ; row < rowCount ; row++) {
+					renderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass);
+				}
+			} else {
+				for (int row = rowCount - 1 ; row >= 0 ; row--) {
+					renderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass);
+				}
+			}
+		}
+	} else {
+		for (int column = columnCount - 1 ; column >= 0 ; column--) {
+			if ((this.rowRenderingOrder) == (org.jfree.chart.util.SortOrder.ASCENDING)) {
+				for (int row = 0 ; row < rowCount ; row++) {
+					renderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass);
+				}
+			} else {
+				for (int row = rowCount - 1 ; row >= 0 ; row--) {
+					renderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass);
+				}
+			}
+		}
+	}
+}
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 657
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2863
+original statement= for (int pass = 0 ; pass < passCount ; pass++) {
+	if ((this.columnRenderingOrder) == (org.jfree.chart.util.SortOrder.ASCENDING)) {
+		for (int column = 0 ; column < columnCount ; column++) {
+			if ((this.rowRenderingOrder) == (org.jfree.chart.util.SortOrder.ASCENDING)) {
+				for (int row = 0 ; row < rowCount ; row++) {
+					renderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass);
+				}
+			} else {
+				for (int row = rowCount - 1 ; row >= 0 ; row--) {
+					renderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass);
+				}
+			}
+		}
+	} else {
+		for (int column = columnCount - 1 ; column >= 0 ; column--) {
+			if ((this.rowRenderingOrder) == (org.jfree.chart.util.SortOrder.ASCENDING)) {
+				for (int row = 0 ; row < rowCount ; row++) {
+					renderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass);
+				}
+			} else {
+				for (int row = rowCount - 1 ; row >= 0 ; row--) {
+					renderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass);
+				}
+			}
+		}
+	}
+}
+fixed statement= if (true)
+	return false;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 658
+ 
+operation: DELETE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2864
+original statement= if ((this.columnRenderingOrder) == (org.jfree.chart.util.SortOrder.ASCENDING)) {
+	for (int column = 0 ; column < columnCount ; column++) {
+		if ((this.rowRenderingOrder) == (org.jfree.chart.util.SortOrder.ASCENDING)) {
+			for (int row = 0 ; row < rowCount ; row++) {
+				renderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass);
+			}
+		} else {
+			for (int row = rowCount - 1 ; row >= 0 ; row--) {
+				renderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass);
+			}
+		}
+	}
+} else {
+	for (int column = columnCount - 1 ; column >= 0 ; column--) {
+		if ((this.rowRenderingOrder) == (org.jfree.chart.util.SortOrder.ASCENDING)) {
+			for (int row = 0 ; row < rowCount ; row++) {
+				renderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass);
+			}
+		} else {
+			for (int row = rowCount - 1 ; row >= 0 ; row--) {
+				renderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass);
+			}
+		}
+	}
+}
+fixed statement= if ((this.columnRenderingOrder) == (org.jfree.chart.util.SortOrder.ASCENDING)) {
+	for (int column = 0 ; column < columnCount ; column++) {
+		if ((this.rowRenderingOrder) == (org.jfree.chart.util.SortOrder.ASCENDING)) {
+			for (int row = 0 ; row < rowCount ; row++) {
+				renderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass);
+			}
+		} else {
+			for (int row = rowCount - 1 ; row >= 0 ; row--) {
+				renderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass);
+			}
+		}
+	}
+} else {
+	for (int column = columnCount - 1 ; column >= 0 ; column--) {
+		if ((this.rowRenderingOrder) == (org.jfree.chart.util.SortOrder.ASCENDING)) {
+			for (int row = 0 ; row < rowCount ; row++) {
+				renderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass);
+			}
+		} else {
+			for (int row = rowCount - 1 ; row >= 0 ; row--) {
+				renderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass);
+			}
+		}
+	}
+}
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 659
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2864
+original statement= if ((this.columnRenderingOrder) == (org.jfree.chart.util.SortOrder.ASCENDING)) {
+	for (int column = 0 ; column < columnCount ; column++) {
+		if ((this.rowRenderingOrder) == (org.jfree.chart.util.SortOrder.ASCENDING)) {
+			for (int row = 0 ; row < rowCount ; row++) {
+				renderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass);
+			}
+		} else {
+			for (int row = rowCount - 1 ; row >= 0 ; row--) {
+				renderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass);
+			}
+		}
+	}
+} else {
+	for (int column = columnCount - 1 ; column >= 0 ; column--) {
+		if ((this.rowRenderingOrder) == (org.jfree.chart.util.SortOrder.ASCENDING)) {
+			for (int row = 0 ; row < rowCount ; row++) {
+				renderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass);
+			}
+		} else {
+			for (int row = rowCount - 1 ; row >= 0 ; row--) {
+				renderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass);
+			}
+		}
+	}
+}
+fixed statement= if (true)
+	return false;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 928
+ 
+operation: DELETE
+location= org.jfree.data.general.DatasetUtilities
+line= 574
+original statement= for (int r = 0 ; r < rowCount ; r++) {
+	for (int c = 0 ; c < columnCount ; c++) {
+		if ((dataset.getValue(r, c)) != null) {
+			return false;
+		} 
+	}
+}
+fixed statement= for (int r = 0 ; r < rowCount ; r++) {
+	for (int c = 0 ; c < columnCount ; c++) {
+		if ((dataset.getValue(r, c)) != null) {
+			return false;
+		} 
+	}
+}
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 930
+ 
+operation: DELETE
+location= org.jfree.data.general.DatasetUtilities
+line= 575
+original statement= for (int c = 0 ; c < columnCount ; c++) {
+	if ((dataset.getValue(r, c)) != null) {
+		return false;
+	} 
+}
+fixed statement= for (int c = 0 ; c < columnCount ; c++) {
+	if ((dataset.getValue(r, c)) != null) {
+		return false;
+	} 
+}
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 932
+ 
+operation: DELETE
+location= org.jfree.data.general.DatasetUtilities
+line= 576
+original statement= if ((dataset.getValue(r, c)) != null) {
+	return false;
+} 
+fixed statement= if ((dataset.getValue(r, c)) != null) {
+	return false;
+} 
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 935
+ 
+operation: REPLACE
+location= org.jfree.data.general.DatasetUtilities
+line= 576
+original statement= if ((dataset.getValue(r, c)) != null) {
+	return false;
+} 
+fixed statement= if (false) {
+	return false;
+} 
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 936
+ 
+operation: DELETE
+location= org.jfree.data.general.DatasetUtilities
+line= 577
+original statement= return false
+fixed statement= return false
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 957
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2569
+original statement= state = new org.jfree.chart.plot.PlotRenderingInfo(null)
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 1217
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2558
+original statement= boolean b1 = (area.getWidth()) <= (org.jfree.chart.plot.Plot.MINIMUM_WIDTH_TO_DRAW)
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 1219
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2559
+original statement= boolean b2 = (area.getHeight()) <= (org.jfree.chart.plot.Plot.MINIMUM_HEIGHT_TO_DRAW)
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 1221
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2560
+original statement= if (b1 || b2) {
+	return ;
+} 
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 1222
+ 
+operation: REPLACE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2560
+original statement= if (b1 || b2) {
+	return ;
+} 
+fixed statement= if (true) {
+	return ;
+} 
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 1225
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2565
+original statement= if (state == null) {
+	state = new org.jfree.chart.plot.PlotRenderingInfo(null);
+} 
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 1229
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2571
+original statement= state.setPlotArea(area)
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 1231
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2574
+original statement= org.jfree.chart.util.RectangleInsets insets = getInsets()
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 1233
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2575
+original statement= insets.trim(area)
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 1235
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2578
+original statement= org.jfree.chart.axis.AxisSpace space = calculateAxisSpace(g2, area)
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 1237
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2579
+original statement= java.awt.geom.Rectangle2D dataArea = space.shrink(area, null)
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 1239
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2580
+original statement= this.axisOffset.trim(dataArea)
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 1241
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2582
+original statement= state.setDataArea(dataArea)
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 1243
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2586
+original statement= if ((getRenderer()) != null) {
+	getRenderer().drawBackground(g2, this, dataArea);
+} else {
+	drawBackground(g2, dataArea);
+}
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 1247
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2587
+original statement= getRenderer().drawBackground(g2, this, dataArea)
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 1249
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2593
+original statement= java.util.Map axisStateMap = drawAxes(g2, area, dataArea, state)
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 1251
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2596
+original statement= java.awt.Shape savedClip = g2.getClip()
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 1253
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2597
+original statement= g2.clip(dataArea)
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 1255
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2599
+original statement= drawDomainGridlines(g2, dataArea)
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 1257
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2601
+original statement= org.jfree.chart.axis.AxisState rangeAxisState = ((org.jfree.chart.axis.AxisState)(axisStateMap.get(getRangeAxis())))
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 1259
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2602
+original statement= if (rangeAxisState == null) {
+	if (parentState != null) {
+		rangeAxisState = ((org.jfree.chart.axis.AxisState)(parentState.getSharedAxisStates().get(getRangeAxis())));
+	} 
+} 
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 1263
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2608
+original statement= if (rangeAxisState != null) {
+	drawRangeGridlines(g2, dataArea, rangeAxisState.getTicks());
+} 
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 1267
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2609
+original statement= drawRangeGridlines(g2, dataArea, rangeAxisState.getTicks())
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 1269
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2613
+original statement= for (int i = 0 ; i < (this.renderers.size()) ; i++) {
+	drawDomainMarkers(g2, dataArea, i, org.jfree.chart.util.Layer.BACKGROUND);
+}
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 1271
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2614
+original statement= drawDomainMarkers(g2, dataArea, i, org.jfree.chart.util.Layer.BACKGROUND)
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 1273
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2616
+original statement= for (int i = 0 ; i < (this.renderers.size()) ; i++) {
+	drawRangeMarkers(g2, dataArea, i, org.jfree.chart.util.Layer.BACKGROUND);
+}
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 1275
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2617
+original statement= drawRangeMarkers(g2, dataArea, i, org.jfree.chart.util.Layer.BACKGROUND)
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 1277
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2621
+original statement= boolean foundData = false
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 1279
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2624
+original statement= java.awt.Composite originalComposite = g2.getComposite()
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 1281
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2625
+original statement= g2.setComposite(java.awt.AlphaComposite.getInstance(java.awt.AlphaComposite.SRC_OVER, getForegroundAlpha()))
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 1283
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2628
+original statement= org.jfree.chart.plot.DatasetRenderingOrder order = getDatasetRenderingOrder()
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 1284
+ 
+operation: DELETE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2629
+original statement= if (order == (org.jfree.chart.plot.DatasetRenderingOrder.FORWARD)) {
+	int datasetCount = this.datasets.size();
+	for (int i = 0 ; i < datasetCount ; i++) {
+		org.jfree.chart.renderer.category.CategoryItemRenderer r = getRenderer(i);
+		if (r != null) {
+			org.jfree.chart.axis.CategoryAxis domainAxis = getDomainAxisForDataset(i);
+			org.jfree.chart.axis.ValueAxis rangeAxis = getRangeAxisForDataset(i);
+			r.drawAnnotations(g2, dataArea, domainAxis, rangeAxis, org.jfree.chart.util.Layer.BACKGROUND, state);
+		} 
+	}
+	for (int i = 0 ; i < datasetCount ; i++) {
+		foundData = (render(g2, dataArea, i, state)) || foundData;
+	}
+	for (int i = 0 ; i < datasetCount ; i++) {
+		org.jfree.chart.renderer.category.CategoryItemRenderer r = getRenderer(i);
+		if (r != null) {
+			org.jfree.chart.axis.CategoryAxis domainAxis = getDomainAxisForDataset(i);
+			org.jfree.chart.axis.ValueAxis rangeAxis = getRangeAxisForDataset(i);
+			r.drawAnnotations(g2, dataArea, domainAxis, rangeAxis, org.jfree.chart.util.Layer.FOREGROUND, state);
+		} 
+	}
+} else {
+	int datasetCount = this.datasets.size();
+	for (int i = datasetCount - 1 ; i >= 0 ; i--) {
+		org.jfree.chart.renderer.category.CategoryItemRenderer r = getRenderer(i);
+		if (r != null) {
+			org.jfree.chart.axis.CategoryAxis domainAxis = getDomainAxisForDataset(i);
+			org.jfree.chart.axis.ValueAxis rangeAxis = getRangeAxisForDataset(i);
+			r.drawAnnotations(g2, dataArea, domainAxis, rangeAxis, org.jfree.chart.util.Layer.BACKGROUND, state);
+		} 
+	}
+	for (int i = (this.datasets.size()) - 1 ; i >= 0 ; i--) {
+		foundData = (render(g2, dataArea, i, state)) || foundData;
+	}
+	for (int i = datasetCount - 1 ; i >= 0 ; i--) {
+		org.jfree.chart.renderer.category.CategoryItemRenderer r = getRenderer(i);
+		if (r != null) {
+			org.jfree.chart.axis.CategoryAxis domainAxis = getDomainAxisForDataset(i);
+			org.jfree.chart.axis.ValueAxis rangeAxis = getRangeAxisForDataset(i);
+			r.drawAnnotations(g2, dataArea, domainAxis, rangeAxis, org.jfree.chart.util.Layer.FOREGROUND, state);
+		} 
+	}
+}
+fixed statement= if (order == (org.jfree.chart.plot.DatasetRenderingOrder.FORWARD)) {
+	int datasetCount = this.datasets.size();
+	for (int i = 0 ; i < datasetCount ; i++) {
+		org.jfree.chart.renderer.category.CategoryItemRenderer r = getRenderer(i);
+		if (r != null) {
+			org.jfree.chart.axis.CategoryAxis domainAxis = getDomainAxisForDataset(i);
+			org.jfree.chart.axis.ValueAxis rangeAxis = getRangeAxisForDataset(i);
+			r.drawAnnotations(g2, dataArea, domainAxis, rangeAxis, org.jfree.chart.util.Layer.BACKGROUND, state);
+		} 
+	}
+	for (int i = 0 ; i < datasetCount ; i++) {
+		foundData = (render(g2, dataArea, i, state)) || foundData;
+	}
+	for (int i = 0 ; i < datasetCount ; i++) {
+		org.jfree.chart.renderer.category.CategoryItemRenderer r = getRenderer(i);
+		if (r != null) {
+			org.jfree.chart.axis.CategoryAxis domainAxis = getDomainAxisForDataset(i);
+			org.jfree.chart.axis.ValueAxis rangeAxis = getRangeAxisForDataset(i);
+			r.drawAnnotations(g2, dataArea, domainAxis, rangeAxis, org.jfree.chart.util.Layer.FOREGROUND, state);
+		} 
+	}
+} else {
+	int datasetCount = this.datasets.size();
+	for (int i = datasetCount - 1 ; i >= 0 ; i--) {
+		org.jfree.chart.renderer.category.CategoryItemRenderer r = getRenderer(i);
+		if (r != null) {
+			org.jfree.chart.axis.CategoryAxis domainAxis = getDomainAxisForDataset(i);
+			org.jfree.chart.axis.ValueAxis rangeAxis = getRangeAxisForDataset(i);
+			r.drawAnnotations(g2, dataArea, domainAxis, rangeAxis, org.jfree.chart.util.Layer.BACKGROUND, state);
+		} 
+	}
+	for (int i = (this.datasets.size()) - 1 ; i >= 0 ; i--) {
+		foundData = (render(g2, dataArea, i, state)) || foundData;
+	}
+	for (int i = datasetCount - 1 ; i >= 0 ; i--) {
+		org.jfree.chart.renderer.category.CategoryItemRenderer r = getRenderer(i);
+		if (r != null) {
+			org.jfree.chart.axis.CategoryAxis domainAxis = getDomainAxisForDataset(i);
+			org.jfree.chart.axis.ValueAxis rangeAxis = getRangeAxisForDataset(i);
+			r.drawAnnotations(g2, dataArea, domainAxis, rangeAxis, org.jfree.chart.util.Layer.FOREGROUND, state);
+		} 
+	}
+}
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 1285
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2629
+original statement= if (order == (org.jfree.chart.plot.DatasetRenderingOrder.FORWARD)) {
+	int datasetCount = this.datasets.size();
+	for (int i = 0 ; i < datasetCount ; i++) {
+		org.jfree.chart.renderer.category.CategoryItemRenderer r = getRenderer(i);
+		if (r != null) {
+			org.jfree.chart.axis.CategoryAxis domainAxis = getDomainAxisForDataset(i);
+			org.jfree.chart.axis.ValueAxis rangeAxis = getRangeAxisForDataset(i);
+			r.drawAnnotations(g2, dataArea, domainAxis, rangeAxis, org.jfree.chart.util.Layer.BACKGROUND, state);
+		} 
+	}
+	for (int i = 0 ; i < datasetCount ; i++) {
+		foundData = (render(g2, dataArea, i, state)) || foundData;
+	}
+	for (int i = 0 ; i < datasetCount ; i++) {
+		org.jfree.chart.renderer.category.CategoryItemRenderer r = getRenderer(i);
+		if (r != null) {
+			org.jfree.chart.axis.CategoryAxis domainAxis = getDomainAxisForDataset(i);
+			org.jfree.chart.axis.ValueAxis rangeAxis = getRangeAxisForDataset(i);
+			r.drawAnnotations(g2, dataArea, domainAxis, rangeAxis, org.jfree.chart.util.Layer.FOREGROUND, state);
+		} 
+	}
+} else {
+	int datasetCount = this.datasets.size();
+	for (int i = datasetCount - 1 ; i >= 0 ; i--) {
+		org.jfree.chart.renderer.category.CategoryItemRenderer r = getRenderer(i);
+		if (r != null) {
+			org.jfree.chart.axis.CategoryAxis domainAxis = getDomainAxisForDataset(i);
+			org.jfree.chart.axis.ValueAxis rangeAxis = getRangeAxisForDataset(i);
+			r.drawAnnotations(g2, dataArea, domainAxis, rangeAxis, org.jfree.chart.util.Layer.BACKGROUND, state);
+		} 
+	}
+	for (int i = (this.datasets.size()) - 1 ; i >= 0 ; i--) {
+		foundData = (render(g2, dataArea, i, state)) || foundData;
+	}
+	for (int i = datasetCount - 1 ; i >= 0 ; i--) {
+		org.jfree.chart.renderer.category.CategoryItemRenderer r = getRenderer(i);
+		if (r != null) {
+			org.jfree.chart.axis.CategoryAxis domainAxis = getDomainAxisForDataset(i);
+			org.jfree.chart.axis.ValueAxis rangeAxis = getRangeAxisForDataset(i);
+			r.drawAnnotations(g2, dataArea, domainAxis, rangeAxis, org.jfree.chart.util.Layer.FOREGROUND, state);
+		} 
+	}
+}
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 1289
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2661
+original statement= int datasetCount = this.datasets.size()
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 1291
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2662
+original statement= for (int i = datasetCount - 1 ; i >= 0 ; i--) {
+	org.jfree.chart.renderer.category.CategoryItemRenderer r = getRenderer(i);
+	if (r != null) {
+		org.jfree.chart.axis.CategoryAxis domainAxis = getDomainAxisForDataset(i);
+		org.jfree.chart.axis.ValueAxis rangeAxis = getRangeAxisForDataset(i);
+		r.drawAnnotations(g2, dataArea, domainAxis, rangeAxis, org.jfree.chart.util.Layer.BACKGROUND, state);
+	} 
+}
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 1293
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2663
+original statement= org.jfree.chart.renderer.category.CategoryItemRenderer r = getRenderer(i)
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 1295
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2664
+original statement= if (r != null) {
+	org.jfree.chart.axis.CategoryAxis domainAxis = getDomainAxisForDataset(i);
+	org.jfree.chart.axis.ValueAxis rangeAxis = getRangeAxisForDataset(i);
+	r.drawAnnotations(g2, dataArea, domainAxis, rangeAxis, org.jfree.chart.util.Layer.BACKGROUND, state);
+} 
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 1299
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2665
+original statement= org.jfree.chart.axis.CategoryAxis domainAxis = getDomainAxisForDataset(i)
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 1301
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2666
+original statement= org.jfree.chart.axis.ValueAxis rangeAxis = getRangeAxisForDataset(i)
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 1303
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2667
+original statement= r.drawAnnotations(g2, dataArea, domainAxis, rangeAxis, org.jfree.chart.util.Layer.BACKGROUND, state)
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 1304
+ 
+operation: DELETE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2672
+original statement= for (int i = (this.datasets.size()) - 1 ; i >= 0 ; i--) {
+	foundData = (render(g2, dataArea, i, state)) || foundData;
+}
+fixed statement= for (int i = (this.datasets.size()) - 1 ; i >= 0 ; i--) {
+	foundData = (render(g2, dataArea, i, state)) || foundData;
+}
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 1305
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2672
+original statement= for (int i = (this.datasets.size()) - 1 ; i >= 0 ; i--) {
+	foundData = (render(g2, dataArea, i, state)) || foundData;
+}
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 1306
+ 
+operation: DELETE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2673
+original statement= foundData = (render(g2, dataArea, i, state)) || foundData
+fixed statement= foundData = (render(g2, dataArea, i, state)) || foundData
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 1307
+ 
+operation: INSERT_BEFORE
+location= org.jfree.chart.plot.CategoryPlot
+line= 2673
+original statement= foundData = (render(g2, dataArea, i, state)) || foundData
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+
+----stats: 
+
+spaces navigation: [0]: {}
+#gen: 0
+#patches: 146
+#RightCompilation: 1817
+#WrongCompilation: 471
+#FailingTestCaseExecution: 1818
+#RegressionTestExecution: 146
+#TestcasesExecutedval1: 65448
+#TestcasesExecutedval2: 0
+#FailingTestCase: 36
+#RegressionTestCases: 0
+#OfAppliedOp: 0
+#NotAppliedOp: 0
+#InmutatedGen: 0
+#unfinishValidation: 0
+#ing {}
+#untilcompile {}
+Time Total(ms): 2075372
+
+
+Node: griffon-35.nancy.grid5000.fr
+
+
+Date: Thu Aug 13 20:58:36 CEST 2015
+
+

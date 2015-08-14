@@ -1,30 +1,29 @@
 export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/lang/lang_2 /tmp/lang_2_Kali;cd /tmp/lang_2_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Lang/lib/* lib/;find . -type f -name "package-info.java" -delete;
 /home/tdurieux/defects4j-repair/src/python/core/../../../results/Lang/2/Kali/result
-cd /tmp/lang_2_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.lang3.LocaleUtilsTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 6 -maxgen 1000000 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/tests/;echo "
+cd /tmp/lang_2_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java  -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.lang3.LocaleUtilsTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 6 -maxgen 1000000 -seed 10 -maxtime 60  -scope local  -stopfirst true -flthreshold 0 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/tests/;echo "
 
 Node: `hostname`
 ";echo "
 Date: `date`
 ";rm -rf /tmp/lang_2_Kali;
- NOT Found solution
+
+End Repair Loops: NOT Found solution
 
 Number solutions:0
 
 All variants:
-f 2.0, [Variant id: 1, #gens: 90, #ops: 0, parent:-]
+f 2.0, [Variant id: 1, #gens: 866, #ops: 0, parent:-]
 
 ----stats: 
 
-spaces: [0]: []
-time val1 [1]: [198]
-time val2 [0]: []
+spaces navigation: [0]: {}
 #gen: 0
 #patches: 0
-#RightCompilation: 0
-#WrongCompilation: 232
-#FailingTestCaseExecution: 1
+#RightCompilation: 1807
+#WrongCompilation: 325
+#FailingTestCaseExecution: 1808
 #RegressionTestExecution: 0
-#TestcasesExecutedval1: 14
+#TestcasesExecutedval1: 25312
 #TestcasesExecutedval2: 0
 #FailingTestCase: 14
 #RegressionTestCases: 0
@@ -32,13 +31,14 @@ time val2 [0]: []
 #NotAppliedOp: 0
 #InmutatedGen: 0
 #unfinishValidation: 0
-#ing []
-Time Total(ms): 79398
+#ing {}
+#untilcompile {}
+Time Total(ms): 1008520
 
 
-Node: graphene-118.nancy.grid5000.fr
+Node: graphene-9.nancy.grid5000.fr
 
 
-Date: Thu Jul 23 00:48:31 CEST 2015
+Date: Thu Aug 13 20:39:19 CEST 2015
 
 

@@ -1,23 +1,1629 @@
 {
     "FailingTestCase": "36", 
-    "FailingTestCaseExecution": "1", 
+    "FailingTestCaseExecution": "1818", 
     "InmutatedGen": "0", 
     "NotAppliedOp": "0", 
-    "OfAppliedOp": "2129", 
+    "OfAppliedOp": "0", 
     "RegressionTestCases": "0", 
-    "RegressionTestExecution": "0", 
-    "RightCompilation": "0", 
-    "WrongCompilation": "2129", 
-    "date": "2015-05-08T08:17:20.295525\n\n", 
-    "gen": "2130", 
-    "node": "griffon-1.nancy.grid5000.fr", 
-    "operations": [], 
-    "patches": "0", 
-    "programVariant": null, 
-    "timeEvaluation": "1664417", 
-    "timeTotal": "1711326", 
-    "timeVal1": [
-        780
+    "RegressionTestExecution": "146", 
+    "RightCompilation": "1817", 
+    "WrongCompilation": "471", 
+    "date": "Thu Aug 13 20:58:36 CEST 2015\n\n", 
+    "gen": "0", 
+    "gens": "937", 
+    "node": "griffon-35.nancy.grid5000.fr", 
+    "operations": [
+        {
+            "buggyStatement": "if (!(data instanceof org.jfree.data.statistics.StatisticalCategoryDataset)) {\n\tthrow new java.lang.IllegalArgumentException(\"Requires StatisticalCategoryDataset.\");\n} ", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn ;\n", 
+            "patchLocation": {
+                "className": "org.jfree.chart.renderer.category.StatisticalBarRenderer", 
+                "line": 200
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 3
+        }, 
+        {
+            "buggyStatement": "org.jfree.data.statistics.StatisticalCategoryDataset statData = ((org.jfree.data.statistics.StatisticalCategoryDataset)(data))", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn ;\n", 
+            "patchLocation": {
+                "className": "org.jfree.chart.renderer.category.StatisticalBarRenderer", 
+                "line": 204
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 7
+        }, 
+        {
+            "buggyStatement": "org.jfree.chart.plot.PlotOrientation orientation = plot.getOrientation()", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn ;\n", 
+            "patchLocation": {
+                "className": "org.jfree.chart.renderer.category.StatisticalBarRenderer", 
+                "line": 206
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 9
+        }, 
+        {
+            "buggyStatement": "if (orientation == (org.jfree.chart.plot.PlotOrientation.HORIZONTAL)) {\n\tdrawHorizontalItem(g2, state, dataArea, plot, domainAxis, rangeAxis, statData, row, column);\n} else if (orientation == (org.jfree.chart.plot.PlotOrientation.VERTICAL)) {\n\tdrawVerticalItem(g2, state, dataArea, plot, domainAxis, rangeAxis, statData, row, column);\n} ", 
+            "generation": 1, 
+            "patch": "remove", 
+            "patchLocation": {
+                "className": "org.jfree.chart.renderer.category.StatisticalBarRenderer", 
+                "line": 207
+            }, 
+            "type": "DELETE", 
+            "variant": 10
+        }, 
+        {
+            "buggyStatement": "if (orientation == (org.jfree.chart.plot.PlotOrientation.HORIZONTAL)) {\n\tdrawHorizontalItem(g2, state, dataArea, plot, domainAxis, rangeAxis, statData, row, column);\n} else if (orientation == (org.jfree.chart.plot.PlotOrientation.VERTICAL)) {\n\tdrawVerticalItem(g2, state, dataArea, plot, domainAxis, rangeAxis, statData, row, column);\n} ", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn ;\n", 
+            "patchLocation": {
+                "className": "org.jfree.chart.renderer.category.StatisticalBarRenderer", 
+                "line": 207
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 11
+        }, 
+        {
+            "buggyStatement": "java.lang.Number result = null", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn null;\n", 
+            "patchLocation": {
+                "className": "org.jfree.data.statistics.DefaultStatisticalCategoryDataset", 
+                "line": 107
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 15
+        }, 
+        {
+            "buggyStatement": "org.jfree.data.statistics.MeanAndStandardDeviation masd = ((org.jfree.data.statistics.MeanAndStandardDeviation)(this.data.getObject(row, column)))", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn null;\n", 
+            "patchLocation": {
+                "className": "org.jfree.data.statistics.DefaultStatisticalCategoryDataset", 
+                "line": 108
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 17
+        }, 
+        {
+            "buggyStatement": "if (masd != null) {\n\tresult = masd.getMean();\n} ", 
+            "generation": 1, 
+            "patch": "remove", 
+            "patchLocation": {
+                "className": "org.jfree.data.statistics.DefaultStatisticalCategoryDataset", 
+                "line": 110
+            }, 
+            "type": "DELETE", 
+            "variant": 18
+        }, 
+        {
+            "buggyStatement": "if (masd != null) {\n\tresult = masd.getMean();\n} ", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn null;\n", 
+            "patchLocation": {
+                "className": "org.jfree.data.statistics.DefaultStatisticalCategoryDataset", 
+                "line": 110
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 19
+        }, 
+        {
+            "buggyStatement": "if (masd != null) {\n\tresult = masd.getMean();\n} ", 
+            "generation": 1, 
+            "patch": "if (false) {\n\tresult = masd.getMean();\n} ", 
+            "patchLocation": {
+                "className": "org.jfree.data.statistics.DefaultStatisticalCategoryDataset", 
+                "line": 110
+            }, 
+            "type": "REPLACE", 
+            "variant": 21
+        }, 
+        {
+            "buggyStatement": "result = masd.getMean()", 
+            "generation": 1, 
+            "patch": "remove", 
+            "patchLocation": {
+                "className": "org.jfree.data.statistics.DefaultStatisticalCategoryDataset", 
+                "line": 111
+            }, 
+            "type": "DELETE", 
+            "variant": 22
+        }, 
+        {
+            "buggyStatement": "result = masd.getMean()", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn null;\n", 
+            "patchLocation": {
+                "className": "org.jfree.data.statistics.DefaultStatisticalCategoryDataset", 
+                "line": 111
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 23
+        }, 
+        {
+            "buggyStatement": "return result", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn null;\n", 
+            "patchLocation": {
+                "className": "org.jfree.data.statistics.DefaultStatisticalCategoryDataset", 
+                "line": 113
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 25
+        }, 
+        {
+            "buggyStatement": "return getMeanValue(row, column)", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn null;\n", 
+            "patchLocation": {
+                "className": "org.jfree.data.statistics.DefaultStatisticalCategoryDataset", 
+                "line": 126
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 27
+        }, 
+        {
+            "buggyStatement": "return this.data.getRowCount()", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn 0;\n", 
+            "patchLocation": {
+                "className": "org.jfree.data.statistics.DefaultStatisticalCategoryDataset", 
+                "line": 264
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 45
+        }, 
+        {
+            "buggyStatement": "return this.data.getColumnCount()", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn 0;\n", 
+            "patchLocation": {
+                "className": "org.jfree.data.statistics.DefaultStatisticalCategoryDataset", 
+                "line": 273
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 47
+        }, 
+        {
+            "buggyStatement": "return this.mean", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn null;\n", 
+            "patchLocation": {
+                "className": "org.jfree.data.statistics.MeanAndStandardDeviation", 
+                "line": 95
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 49
+        }, 
+        {
+            "buggyStatement": "org.jfree.data.statistics.MeanAndStandardDeviation item = new org.jfree.data.statistics.MeanAndStandardDeviation(mean , standardDeviation)", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn ;\n", 
+            "patchLocation": {
+                "className": "org.jfree.data.statistics.DefaultStatisticalCategoryDataset", 
+                "line": 299
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 229
+        }, 
+        {
+            "buggyStatement": "this.data.addObject(item, rowKey, columnKey)", 
+            "generation": 1, 
+            "patch": "remove", 
+            "patchLocation": {
+                "className": "org.jfree.data.statistics.DefaultStatisticalCategoryDataset", 
+                "line": 301
+            }, 
+            "type": "DELETE", 
+            "variant": 230
+        }, 
+        {
+            "buggyStatement": "this.data.addObject(item, rowKey, columnKey)", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn ;\n", 
+            "patchLocation": {
+                "className": "org.jfree.data.statistics.DefaultStatisticalCategoryDataset", 
+                "line": 301
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 231
+        }, 
+        {
+            "buggyStatement": "row = ((org.jfree.data.KeyedObjects)(this.rows.get(rowIndex)))", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn ;\n", 
+            "patchLocation": {
+                "className": "org.jfree.data.KeyedObjects2D", 
+                "line": 229
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 291
+        }, 
+        {
+            "buggyStatement": "java.lang.Object result = null", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn null;\n", 
+            "patchLocation": {
+                "className": "org.jfree.data.KeyedObjects2D", 
+                "line": 108
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 415
+        }, 
+        {
+            "buggyStatement": "org.jfree.data.KeyedObjects rowData = ((org.jfree.data.KeyedObjects)(this.rows.get(row)))", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn null;\n", 
+            "patchLocation": {
+                "className": "org.jfree.data.KeyedObjects2D", 
+                "line": 109
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 417
+        }, 
+        {
+            "buggyStatement": "if (rowData != null) {\n\tjava.lang.Comparable columnKey = ((java.lang.Comparable)(this.columnKeys.get(column)));\n\tif (columnKey != null) {\n\t\tresult = rowData.getObject(columnKey);\n\t} \n} ", 
+            "generation": 1, 
+            "patch": "remove", 
+            "patchLocation": {
+                "className": "org.jfree.data.KeyedObjects2D", 
+                "line": 110
+            }, 
+            "type": "DELETE", 
+            "variant": 418
+        }, 
+        {
+            "buggyStatement": "if (rowData != null) {\n\tjava.lang.Comparable columnKey = ((java.lang.Comparable)(this.columnKeys.get(column)));\n\tif (columnKey != null) {\n\t\tresult = rowData.getObject(columnKey);\n\t} \n} ", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn null;\n", 
+            "patchLocation": {
+                "className": "org.jfree.data.KeyedObjects2D", 
+                "line": 110
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 419
+        }, 
+        {
+            "buggyStatement": "if (rowData != null) {\n\tjava.lang.Comparable columnKey = ((java.lang.Comparable)(this.columnKeys.get(column)));\n\tif (columnKey != null) {\n\t\tresult = rowData.getObject(columnKey);\n\t} \n} ", 
+            "generation": 1, 
+            "patch": "if (false) {\n\tjava.lang.Comparable columnKey = ((java.lang.Comparable)(this.columnKeys.get(column)));\n\tif (columnKey != null) {\n\t\tresult = rowData.getObject(columnKey);\n\t} \n} ", 
+            "patchLocation": {
+                "className": "org.jfree.data.KeyedObjects2D", 
+                "line": 110
+            }, 
+            "type": "REPLACE", 
+            "variant": 421
+        }, 
+        {
+            "buggyStatement": "java.lang.Comparable columnKey = ((java.lang.Comparable)(this.columnKeys.get(column)))", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn null;\n", 
+            "patchLocation": {
+                "className": "org.jfree.data.KeyedObjects2D", 
+                "line": 111
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 423
+        }, 
+        {
+            "buggyStatement": "if (columnKey != null) {\n\tresult = rowData.getObject(columnKey);\n} ", 
+            "generation": 1, 
+            "patch": "remove", 
+            "patchLocation": {
+                "className": "org.jfree.data.KeyedObjects2D", 
+                "line": 112
+            }, 
+            "type": "DELETE", 
+            "variant": 424
+        }, 
+        {
+            "buggyStatement": "if (columnKey != null) {\n\tresult = rowData.getObject(columnKey);\n} ", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn null;\n", 
+            "patchLocation": {
+                "className": "org.jfree.data.KeyedObjects2D", 
+                "line": 112
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 425
+        }, 
+        {
+            "buggyStatement": "if (columnKey != null) {\n\tresult = rowData.getObject(columnKey);\n} ", 
+            "generation": 1, 
+            "patch": "if (false) {\n\tresult = rowData.getObject(columnKey);\n} ", 
+            "patchLocation": {
+                "className": "org.jfree.data.KeyedObjects2D", 
+                "line": 112
+            }, 
+            "type": "REPLACE", 
+            "variant": 427
+        }, 
+        {
+            "buggyStatement": "result = rowData.getObject(columnKey)", 
+            "generation": 1, 
+            "patch": "remove", 
+            "patchLocation": {
+                "className": "org.jfree.data.KeyedObjects2D", 
+                "line": 113
+            }, 
+            "type": "DELETE", 
+            "variant": 428
+        }, 
+        {
+            "buggyStatement": "result = rowData.getObject(columnKey)", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn null;\n", 
+            "patchLocation": {
+                "className": "org.jfree.data.KeyedObjects2D", 
+                "line": 113
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 429
+        }, 
+        {
+            "buggyStatement": "return result", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn null;\n", 
+            "patchLocation": {
+                "className": "org.jfree.data.KeyedObjects2D", 
+                "line": 116
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 431
+        }, 
+        {
+            "buggyStatement": "return getObject(getIndex(key))", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn null;\n", 
+            "patchLocation": {
+                "className": "org.jfree.data.KeyedObjects", 
+                "line": 163
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 445
+        }, 
+        {
+            "buggyStatement": "return this.rowKeys.size()", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn 0;\n", 
+            "patchLocation": {
+                "className": "org.jfree.data.KeyedObjects2D", 
+                "line": 86
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 447
+        }, 
+        {
+            "buggyStatement": "return this.columnKeys.size()", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn 0;\n", 
+            "patchLocation": {
+                "className": "org.jfree.data.KeyedObjects2D", 
+                "line": 95
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 449
+        }, 
+        {
+            "buggyStatement": "result = i", 
+            "generation": 1, 
+            "patch": "remove", 
+            "patchLocation": {
+                "className": "org.jfree.data.KeyedObjects", 
+                "line": 132
+            }, 
+            "type": "DELETE", 
+            "variant": 514
+        }, 
+        {
+            "buggyStatement": "result = i", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn 0;\n", 
+            "patchLocation": {
+                "className": "org.jfree.data.KeyedObjects", 
+                "line": 132
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 515
+        }, 
+        {
+            "buggyStatement": "return this.object", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn null;\n", 
+            "patchLocation": {
+                "className": "org.jfree.data.KeyedObject", 
+                "line": 94
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 519
+        }, 
+        {
+            "buggyStatement": "java.lang.Object result = null", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn null;\n", 
+            "patchLocation": {
+                "className": "org.jfree.data.KeyedObjects", 
+                "line": 88
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 521
+        }, 
+        {
+            "buggyStatement": "if ((item >= 0) && (item < (this.data.size()))) {\n\torg.jfree.data.KeyedObject kobj = ((org.jfree.data.KeyedObject)(this.data.get(item)));\n\tif (kobj != null) {\n\t\tresult = kobj.getObject();\n\t} \n} ", 
+            "generation": 1, 
+            "patch": "remove", 
+            "patchLocation": {
+                "className": "org.jfree.data.KeyedObjects", 
+                "line": 89
+            }, 
+            "type": "DELETE", 
+            "variant": 522
+        }, 
+        {
+            "buggyStatement": "if ((item >= 0) && (item < (this.data.size()))) {\n\torg.jfree.data.KeyedObject kobj = ((org.jfree.data.KeyedObject)(this.data.get(item)));\n\tif (kobj != null) {\n\t\tresult = kobj.getObject();\n\t} \n} ", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn null;\n", 
+            "patchLocation": {
+                "className": "org.jfree.data.KeyedObjects", 
+                "line": 89
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 523
+        }, 
+        {
+            "buggyStatement": "if ((item >= 0) && (item < (this.data.size()))) {\n\torg.jfree.data.KeyedObject kobj = ((org.jfree.data.KeyedObject)(this.data.get(item)));\n\tif (kobj != null) {\n\t\tresult = kobj.getObject();\n\t} \n} ", 
+            "generation": 1, 
+            "patch": "if (false) {\n\torg.jfree.data.KeyedObject kobj = ((org.jfree.data.KeyedObject)(this.data.get(item)));\n\tif (kobj != null) {\n\t\tresult = kobj.getObject();\n\t} \n} ", 
+            "patchLocation": {
+                "className": "org.jfree.data.KeyedObjects", 
+                "line": 89
+            }, 
+            "type": "REPLACE", 
+            "variant": 525
+        }, 
+        {
+            "buggyStatement": "org.jfree.data.KeyedObject kobj = ((org.jfree.data.KeyedObject)(this.data.get(item)))", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn null;\n", 
+            "patchLocation": {
+                "className": "org.jfree.data.KeyedObjects", 
+                "line": 90
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 527
+        }, 
+        {
+            "buggyStatement": "if (kobj != null) {\n\tresult = kobj.getObject();\n} ", 
+            "generation": 1, 
+            "patch": "remove", 
+            "patchLocation": {
+                "className": "org.jfree.data.KeyedObjects", 
+                "line": 91
+            }, 
+            "type": "DELETE", 
+            "variant": 528
+        }, 
+        {
+            "buggyStatement": "if (kobj != null) {\n\tresult = kobj.getObject();\n} ", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn null;\n", 
+            "patchLocation": {
+                "className": "org.jfree.data.KeyedObjects", 
+                "line": 91
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 529
+        }, 
+        {
+            "buggyStatement": "if (kobj != null) {\n\tresult = kobj.getObject();\n} ", 
+            "generation": 1, 
+            "patch": "if (false) {\n\tresult = kobj.getObject();\n} ", 
+            "patchLocation": {
+                "className": "org.jfree.data.KeyedObjects", 
+                "line": 91
+            }, 
+            "type": "REPLACE", 
+            "variant": 531
+        }, 
+        {
+            "buggyStatement": "result = kobj.getObject()", 
+            "generation": 1, 
+            "patch": "remove", 
+            "patchLocation": {
+                "className": "org.jfree.data.KeyedObjects", 
+                "line": 92
+            }, 
+            "type": "DELETE", 
+            "variant": 532
+        }, 
+        {
+            "buggyStatement": "result = kobj.getObject()", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn null;\n", 
+            "patchLocation": {
+                "className": "org.jfree.data.KeyedObjects", 
+                "line": 92
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 533
+        }, 
+        {
+            "buggyStatement": "return result", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn null;\n", 
+            "patchLocation": {
+                "className": "org.jfree.data.KeyedObjects", 
+                "line": 95
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 535
+        }, 
+        {
+            "buggyStatement": "return 1", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn 0;\n", 
+            "patchLocation": {
+                "className": "org.jfree.chart.renderer.category.AbstractCategoryItemRenderer", 
+                "line": 248
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 547
+        }, 
+        {
+            "buggyStatement": "setObject(object, rowKey, columnKey)", 
+            "generation": 1, 
+            "patch": "remove", 
+            "patchLocation": {
+                "className": "org.jfree.data.KeyedObjects2D", 
+                "line": 212
+            }, 
+            "type": "DELETE", 
+            "variant": 548
+        }, 
+        {
+            "buggyStatement": "setObject(object, rowKey, columnKey)", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn ;\n", 
+            "patchLocation": {
+                "className": "org.jfree.data.KeyedObjects2D", 
+                "line": 212
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 549
+        }, 
+        {
+            "buggyStatement": "int rowIndex = this.rowKeys.indexOf(rowKey)", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn ;\n", 
+            "patchLocation": {
+                "className": "org.jfree.data.KeyedObjects2D", 
+                "line": 227
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 559
+        }, 
+        {
+            "buggyStatement": "if (rowIndex >= 0) {\n\trow = ((org.jfree.data.KeyedObjects)(this.rows.get(rowIndex)));\n} else {\n\tthis.rowKeys.add(rowKey);\n\trow = new org.jfree.data.KeyedObjects();\n\tthis.rows.add(row);\n}", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn ;\n", 
+            "patchLocation": {
+                "className": "org.jfree.data.KeyedObjects2D", 
+                "line": 228
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 561
+        }, 
+        {
+            "buggyStatement": "this.rowKeys.add(rowKey)", 
+            "generation": 1, 
+            "patch": "remove", 
+            "patchLocation": {
+                "className": "org.jfree.data.KeyedObjects2D", 
+                "line": 232
+            }, 
+            "type": "DELETE", 
+            "variant": 564
+        }, 
+        {
+            "buggyStatement": "this.rowKeys.add(rowKey)", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn ;\n", 
+            "patchLocation": {
+                "className": "org.jfree.data.KeyedObjects2D", 
+                "line": 232
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 565
+        }, 
+        {
+            "buggyStatement": "row.setObject(columnKey, object)", 
+            "generation": 1, 
+            "patch": "remove", 
+            "patchLocation": {
+                "className": "org.jfree.data.KeyedObjects2D", 
+                "line": 236
+            }, 
+            "type": "DELETE", 
+            "variant": 570
+        }, 
+        {
+            "buggyStatement": "row.setObject(columnKey, object)", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn ;\n", 
+            "patchLocation": {
+                "className": "org.jfree.data.KeyedObjects2D", 
+                "line": 236
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 571
+        }, 
+        {
+            "buggyStatement": "int columnIndex = this.columnKeys.indexOf(columnKey)", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn ;\n", 
+            "patchLocation": {
+                "className": "org.jfree.data.KeyedObjects2D", 
+                "line": 237
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 573
+        }, 
+        {
+            "buggyStatement": "if (columnIndex < 0) {\n\tthis.columnKeys.add(columnKey);\n} ", 
+            "generation": 1, 
+            "patch": "remove", 
+            "patchLocation": {
+                "className": "org.jfree.data.KeyedObjects2D", 
+                "line": 238
+            }, 
+            "type": "DELETE", 
+            "variant": 574
+        }, 
+        {
+            "buggyStatement": "if (columnIndex < 0) {\n\tthis.columnKeys.add(columnKey);\n} ", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn ;\n", 
+            "patchLocation": {
+                "className": "org.jfree.data.KeyedObjects2D", 
+                "line": 238
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 575
+        }, 
+        {
+            "buggyStatement": "if (columnIndex < 0) {\n\tthis.columnKeys.add(columnKey);\n} ", 
+            "generation": 1, 
+            "patch": "if (false) {\n\tthis.columnKeys.add(columnKey);\n} ", 
+            "patchLocation": {
+                "className": "org.jfree.data.KeyedObjects2D", 
+                "line": 238
+            }, 
+            "type": "REPLACE", 
+            "variant": 577
+        }, 
+        {
+            "buggyStatement": "this.columnKeys.add(columnKey)", 
+            "generation": 1, 
+            "patch": "remove", 
+            "patchLocation": {
+                "className": "org.jfree.data.KeyedObjects2D", 
+                "line": 239
+            }, 
+            "type": "DELETE", 
+            "variant": 578
+        }, 
+        {
+            "buggyStatement": "this.columnKeys.add(columnKey)", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn ;\n", 
+            "patchLocation": {
+                "className": "org.jfree.data.KeyedObjects2D", 
+                "line": 239
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 579
+        }, 
+        {
+            "buggyStatement": "if (ko.getKey().equals(key)) {\n\tresult = i;\n} ", 
+            "generation": 1, 
+            "patch": "remove", 
+            "patchLocation": {
+                "className": "org.jfree.data.KeyedObjects", 
+                "line": 131
+            }, 
+            "type": "DELETE", 
+            "variant": 584
+        }, 
+        {
+            "buggyStatement": "if (ko.getKey().equals(key)) {\n\tresult = i;\n} ", 
+            "generation": 1, 
+            "patch": "if (false) {\n\tresult = i;\n} ", 
+            "patchLocation": {
+                "className": "org.jfree.data.KeyedObjects", 
+                "line": 131
+            }, 
+            "type": "REPLACE", 
+            "variant": 587
+        }, 
+        {
+            "buggyStatement": "i++", 
+            "generation": 1, 
+            "patch": "remove", 
+            "patchLocation": {
+                "className": "org.jfree.data.KeyedObjects", 
+                "line": 134
+            }, 
+            "type": "DELETE", 
+            "variant": 588
+        }, 
+        {
+            "buggyStatement": "for (int column = 0 ; column < columnCount ; column++) {\n\tif ((this.rowRenderingOrder) == (org.jfree.chart.util.SortOrder.ASCENDING)) {\n\t\tfor (int row = 0 ; row < rowCount ; row++) {\n\t\t\trenderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass);\n\t\t}\n\t} else {\n\t\tfor (int row = rowCount - 1 ; row >= 0 ; row--) {\n\t\t\trenderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass);\n\t\t}\n\t}\n}", 
+            "generation": 1, 
+            "patch": "remove", 
+            "patchLocation": {
+                "className": "org.jfree.chart.plot.CategoryPlot", 
+                "line": 2865
+            }, 
+            "type": "DELETE", 
+            "variant": 590
+        }, 
+        {
+            "buggyStatement": "for (int column = 0 ; column < columnCount ; column++) {\n\tif ((this.rowRenderingOrder) == (org.jfree.chart.util.SortOrder.ASCENDING)) {\n\t\tfor (int row = 0 ; row < rowCount ; row++) {\n\t\t\trenderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass);\n\t\t}\n\t} else {\n\t\tfor (int row = rowCount - 1 ; row >= 0 ; row--) {\n\t\t\trenderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass);\n\t\t}\n\t}\n}", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn false;\n", 
+            "patchLocation": {
+                "className": "org.jfree.chart.plot.CategoryPlot", 
+                "line": 2865
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 591
+        }, 
+        {
+            "buggyStatement": "if ((this.rowRenderingOrder) == (org.jfree.chart.util.SortOrder.ASCENDING)) {\n\tfor (int row = 0 ; row < rowCount ; row++) {\n\t\trenderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass);\n\t}\n} else {\n\tfor (int row = rowCount - 1 ; row >= 0 ; row--) {\n\t\trenderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass);\n\t}\n}", 
+            "generation": 1, 
+            "patch": "remove", 
+            "patchLocation": {
+                "className": "org.jfree.chart.plot.CategoryPlot", 
+                "line": 2866
+            }, 
+            "type": "DELETE", 
+            "variant": 592
+        }, 
+        {
+            "buggyStatement": "if ((this.rowRenderingOrder) == (org.jfree.chart.util.SortOrder.ASCENDING)) {\n\tfor (int row = 0 ; row < rowCount ; row++) {\n\t\trenderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass);\n\t}\n} else {\n\tfor (int row = rowCount - 1 ; row >= 0 ; row--) {\n\t\trenderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass);\n\t}\n}", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn false;\n", 
+            "patchLocation": {
+                "className": "org.jfree.chart.plot.CategoryPlot", 
+                "line": 2866
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 593
+        }, 
+        {
+            "buggyStatement": "for (int row = 0 ; row < rowCount ; row++) {\n\trenderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass);\n}", 
+            "generation": 1, 
+            "patch": "remove", 
+            "patchLocation": {
+                "className": "org.jfree.chart.plot.CategoryPlot", 
+                "line": 2867
+            }, 
+            "type": "DELETE", 
+            "variant": 596
+        }, 
+        {
+            "buggyStatement": "for (int row = 0 ; row < rowCount ; row++) {\n\trenderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass);\n}", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn false;\n", 
+            "patchLocation": {
+                "className": "org.jfree.chart.plot.CategoryPlot", 
+                "line": 2867
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 597
+        }, 
+        {
+            "buggyStatement": "renderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass)", 
+            "generation": 1, 
+            "patch": "remove", 
+            "patchLocation": {
+                "className": "org.jfree.chart.plot.CategoryPlot", 
+                "line": 2868
+            }, 
+            "type": "DELETE", 
+            "variant": 598
+        }, 
+        {
+            "buggyStatement": "renderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass)", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn false;\n", 
+            "patchLocation": {
+                "className": "org.jfree.chart.plot.CategoryPlot", 
+                "line": 2868
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 599
+        }, 
+        {
+            "buggyStatement": "while (iterator.hasNext()) {\n\torg.jfree.data.KeyedObject ko = ((org.jfree.data.KeyedObject)(iterator.next()));\n\tif (ko.getKey().equals(key)) {\n\t\tresult = i;\n\t} \n\ti++;\n}", 
+            "generation": 1, 
+            "patch": "remove", 
+            "patchLocation": {
+                "className": "org.jfree.data.KeyedObjects", 
+                "line": 129
+            }, 
+            "type": "DELETE", 
+            "variant": 614
+        }, 
+        {
+            "buggyStatement": "int keyIndex = getIndex(key)", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn ;\n", 
+            "patchLocation": {
+                "className": "org.jfree.data.KeyedObjects", 
+                "line": 186
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 619
+        }, 
+        {
+            "buggyStatement": "if (keyIndex >= 0) {\n\torg.jfree.data.KeyedObject ko = ((org.jfree.data.KeyedObject)(this.data.get(keyIndex)));\n\tko.setObject(object);\n} else {\n\torg.jfree.data.KeyedObject ko = new org.jfree.data.KeyedObject(key , object);\n\tthis.data.add(ko);\n}", 
+            "generation": 1, 
+            "patch": "remove", 
+            "patchLocation": {
+                "className": "org.jfree.data.KeyedObjects", 
+                "line": 187
+            }, 
+            "type": "DELETE", 
+            "variant": 620
+        }, 
+        {
+            "buggyStatement": "if (keyIndex >= 0) {\n\torg.jfree.data.KeyedObject ko = ((org.jfree.data.KeyedObject)(this.data.get(keyIndex)));\n\tko.setObject(object);\n} else {\n\torg.jfree.data.KeyedObject ko = new org.jfree.data.KeyedObject(key , object);\n\tthis.data.add(ko);\n}", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn ;\n", 
+            "patchLocation": {
+                "className": "org.jfree.data.KeyedObjects", 
+                "line": 187
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 621
+        }, 
+        {
+            "buggyStatement": "org.jfree.data.KeyedObject ko = new org.jfree.data.KeyedObject(key , object)", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn ;\n", 
+            "patchLocation": {
+                "className": "org.jfree.data.KeyedObjects", 
+                "line": 192
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 625
+        }, 
+        {
+            "buggyStatement": "this.data.add(ko)", 
+            "generation": 1, 
+            "patch": "remove", 
+            "patchLocation": {
+                "className": "org.jfree.data.KeyedObjects", 
+                "line": 193
+            }, 
+            "type": "DELETE", 
+            "variant": 626
+        }, 
+        {
+            "buggyStatement": "this.data.add(ko)", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn ;\n", 
+            "patchLocation": {
+                "className": "org.jfree.data.KeyedObjects", 
+                "line": 193
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 627
+        }, 
+        {
+            "buggyStatement": "return createBufferedImage(width, height, java.awt.image.BufferedImage.TYPE_INT_RGB, info)", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn null;\n", 
+            "patchLocation": {
+                "className": "org.jfree.chart.JFreeChart", 
+                "line": 1373
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 629
+        }, 
+        {
+            "buggyStatement": "java.awt.image.BufferedImage image = new java.awt.image.BufferedImage(width , height , imageType)", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn null;\n", 
+            "patchLocation": {
+                "className": "org.jfree.chart.JFreeChart", 
+                "line": 1391
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 631
+        }, 
+        {
+            "buggyStatement": "java.awt.Graphics2D g2 = image.createGraphics()", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn null;\n", 
+            "patchLocation": {
+                "className": "org.jfree.chart.JFreeChart", 
+                "line": 1392
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 633
+        }, 
+        {
+            "buggyStatement": "draw(g2, new java.awt.geom.Rectangle2D.Double(0 , 0 , width , height), null, info)", 
+            "generation": 1, 
+            "patch": "remove", 
+            "patchLocation": {
+                "className": "org.jfree.chart.JFreeChart", 
+                "line": 1393
+            }, 
+            "type": "DELETE", 
+            "variant": 634
+        }, 
+        {
+            "buggyStatement": "draw(g2, new java.awt.geom.Rectangle2D.Double(0 , 0 , width , height), null, info)", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn null;\n", 
+            "patchLocation": {
+                "className": "org.jfree.chart.JFreeChart", 
+                "line": 1393
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 635
+        }, 
+        {
+            "buggyStatement": "foundData = true", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn false;\n", 
+            "patchLocation": {
+                "className": "org.jfree.chart.plot.CategoryPlot", 
+                "line": 2857
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 647
+        }, 
+        {
+            "buggyStatement": "org.jfree.chart.renderer.category.CategoryItemRendererState state = renderer.initialise(g2, dataArea, this, index, info)", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn false;\n", 
+            "patchLocation": {
+                "className": "org.jfree.chart.plot.CategoryPlot", 
+                "line": 2858
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 649
+        }, 
+        {
+            "buggyStatement": "int columnCount = currentDataset.getColumnCount()", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn false;\n", 
+            "patchLocation": {
+                "className": "org.jfree.chart.plot.CategoryPlot", 
+                "line": 2860
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 651
+        }, 
+        {
+            "buggyStatement": "int rowCount = currentDataset.getRowCount()", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn false;\n", 
+            "patchLocation": {
+                "className": "org.jfree.chart.plot.CategoryPlot", 
+                "line": 2861
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 653
+        }, 
+        {
+            "buggyStatement": "int passCount = renderer.getPassCount()", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn false;\n", 
+            "patchLocation": {
+                "className": "org.jfree.chart.plot.CategoryPlot", 
+                "line": 2862
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 655
+        }, 
+        {
+            "buggyStatement": "for (int pass = 0 ; pass < passCount ; pass++) {\n\tif ((this.columnRenderingOrder) == (org.jfree.chart.util.SortOrder.ASCENDING)) {\n\t\tfor (int column = 0 ; column < columnCount ; column++) {\n\t\t\tif ((this.rowRenderingOrder) == (org.jfree.chart.util.SortOrder.ASCENDING)) {\n\t\t\t\tfor (int row = 0 ; row < rowCount ; row++) {\n\t\t\t\t\trenderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass);\n\t\t\t\t}\n\t\t\t} else {\n\t\t\t\tfor (int row = rowCount - 1 ; row >= 0 ; row--) {\n\t\t\t\t\trenderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass);\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t} else {\n\t\tfor (int column = columnCount - 1 ; column >= 0 ; column--) {\n\t\t\tif ((this.rowRenderingOrder) == (org.jfree.chart.util.SortOrder.ASCENDING)) {\n\t\t\t\tfor (int row = 0 ; row < rowCount ; row++) {\n\t\t\t\t\trenderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass);\n\t\t\t\t}\n\t\t\t} else {\n\t\t\t\tfor (int row = rowCount - 1 ; row >= 0 ; row--) {\n\t\t\t\t\trenderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass);\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}\n}", 
+            "generation": 1, 
+            "patch": "remove", 
+            "patchLocation": {
+                "className": "org.jfree.chart.plot.CategoryPlot", 
+                "line": 2863
+            }, 
+            "type": "DELETE", 
+            "variant": 656
+        }, 
+        {
+            "buggyStatement": "for (int pass = 0 ; pass < passCount ; pass++) {\n\tif ((this.columnRenderingOrder) == (org.jfree.chart.util.SortOrder.ASCENDING)) {\n\t\tfor (int column = 0 ; column < columnCount ; column++) {\n\t\t\tif ((this.rowRenderingOrder) == (org.jfree.chart.util.SortOrder.ASCENDING)) {\n\t\t\t\tfor (int row = 0 ; row < rowCount ; row++) {\n\t\t\t\t\trenderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass);\n\t\t\t\t}\n\t\t\t} else {\n\t\t\t\tfor (int row = rowCount - 1 ; row >= 0 ; row--) {\n\t\t\t\t\trenderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass);\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t} else {\n\t\tfor (int column = columnCount - 1 ; column >= 0 ; column--) {\n\t\t\tif ((this.rowRenderingOrder) == (org.jfree.chart.util.SortOrder.ASCENDING)) {\n\t\t\t\tfor (int row = 0 ; row < rowCount ; row++) {\n\t\t\t\t\trenderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass);\n\t\t\t\t}\n\t\t\t} else {\n\t\t\t\tfor (int row = rowCount - 1 ; row >= 0 ; row--) {\n\t\t\t\t\trenderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass);\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}\n}", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn false;\n", 
+            "patchLocation": {
+                "className": "org.jfree.chart.plot.CategoryPlot", 
+                "line": 2863
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 657
+        }, 
+        {
+            "buggyStatement": "if ((this.columnRenderingOrder) == (org.jfree.chart.util.SortOrder.ASCENDING)) {\n\tfor (int column = 0 ; column < columnCount ; column++) {\n\t\tif ((this.rowRenderingOrder) == (org.jfree.chart.util.SortOrder.ASCENDING)) {\n\t\t\tfor (int row = 0 ; row < rowCount ; row++) {\n\t\t\t\trenderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass);\n\t\t\t}\n\t\t} else {\n\t\t\tfor (int row = rowCount - 1 ; row >= 0 ; row--) {\n\t\t\t\trenderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass);\n\t\t\t}\n\t\t}\n\t}\n} else {\n\tfor (int column = columnCount - 1 ; column >= 0 ; column--) {\n\t\tif ((this.rowRenderingOrder) == (org.jfree.chart.util.SortOrder.ASCENDING)) {\n\t\t\tfor (int row = 0 ; row < rowCount ; row++) {\n\t\t\t\trenderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass);\n\t\t\t}\n\t\t} else {\n\t\t\tfor (int row = rowCount - 1 ; row >= 0 ; row--) {\n\t\t\t\trenderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass);\n\t\t\t}\n\t\t}\n\t}\n}", 
+            "generation": 1, 
+            "patch": "remove", 
+            "patchLocation": {
+                "className": "org.jfree.chart.plot.CategoryPlot", 
+                "line": 2864
+            }, 
+            "type": "DELETE", 
+            "variant": 658
+        }, 
+        {
+            "buggyStatement": "if ((this.columnRenderingOrder) == (org.jfree.chart.util.SortOrder.ASCENDING)) {\n\tfor (int column = 0 ; column < columnCount ; column++) {\n\t\tif ((this.rowRenderingOrder) == (org.jfree.chart.util.SortOrder.ASCENDING)) {\n\t\t\tfor (int row = 0 ; row < rowCount ; row++) {\n\t\t\t\trenderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass);\n\t\t\t}\n\t\t} else {\n\t\t\tfor (int row = rowCount - 1 ; row >= 0 ; row--) {\n\t\t\t\trenderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass);\n\t\t\t}\n\t\t}\n\t}\n} else {\n\tfor (int column = columnCount - 1 ; column >= 0 ; column--) {\n\t\tif ((this.rowRenderingOrder) == (org.jfree.chart.util.SortOrder.ASCENDING)) {\n\t\t\tfor (int row = 0 ; row < rowCount ; row++) {\n\t\t\t\trenderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass);\n\t\t\t}\n\t\t} else {\n\t\t\tfor (int row = rowCount - 1 ; row >= 0 ; row--) {\n\t\t\t\trenderer.drawItem(g2, state, dataArea, this, domainAxis, rangeAxis, currentDataset, row, column, pass);\n\t\t\t}\n\t\t}\n\t}\n}", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn false;\n", 
+            "patchLocation": {
+                "className": "org.jfree.chart.plot.CategoryPlot", 
+                "line": 2864
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 659
+        }, 
+        {
+            "buggyStatement": "for (int r = 0 ; r < rowCount ; r++) {\n\tfor (int c = 0 ; c < columnCount ; c++) {\n\t\tif ((dataset.getValue(r, c)) != null) {\n\t\t\treturn false;\n\t\t} \n\t}\n}", 
+            "generation": 1, 
+            "patch": "remove", 
+            "patchLocation": {
+                "className": "org.jfree.data.general.DatasetUtilities", 
+                "line": 574
+            }, 
+            "type": "DELETE", 
+            "variant": 928
+        }, 
+        {
+            "buggyStatement": "for (int c = 0 ; c < columnCount ; c++) {\n\tif ((dataset.getValue(r, c)) != null) {\n\t\treturn false;\n\t} \n}", 
+            "generation": 1, 
+            "patch": "remove", 
+            "patchLocation": {
+                "className": "org.jfree.data.general.DatasetUtilities", 
+                "line": 575
+            }, 
+            "type": "DELETE", 
+            "variant": 930
+        }, 
+        {
+            "buggyStatement": "if ((dataset.getValue(r, c)) != null) {\n\treturn false;\n} ", 
+            "generation": 1, 
+            "patch": "remove", 
+            "patchLocation": {
+                "className": "org.jfree.data.general.DatasetUtilities", 
+                "line": 576
+            }, 
+            "type": "DELETE", 
+            "variant": 932
+        }, 
+        {
+            "buggyStatement": "if ((dataset.getValue(r, c)) != null) {\n\treturn false;\n} ", 
+            "generation": 1, 
+            "patch": "if (false) {\n\treturn false;\n} ", 
+            "patchLocation": {
+                "className": "org.jfree.data.general.DatasetUtilities", 
+                "line": 576
+            }, 
+            "type": "REPLACE", 
+            "variant": 935
+        }, 
+        {
+            "buggyStatement": "return false", 
+            "generation": 1, 
+            "patch": "remove", 
+            "patchLocation": {
+                "className": "org.jfree.data.general.DatasetUtilities", 
+                "line": 577
+            }, 
+            "type": "DELETE", 
+            "variant": 936
+        }, 
+        {
+            "buggyStatement": "state = new org.jfree.chart.plot.PlotRenderingInfo(null)", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn ;\n", 
+            "patchLocation": {
+                "className": "org.jfree.chart.plot.CategoryPlot", 
+                "line": 2569
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 957
+        }, 
+        {
+            "buggyStatement": "boolean b1 = (area.getWidth()) <= (org.jfree.chart.plot.Plot.MINIMUM_WIDTH_TO_DRAW)", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn ;\n", 
+            "patchLocation": {
+                "className": "org.jfree.chart.plot.CategoryPlot", 
+                "line": 2558
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 1217
+        }, 
+        {
+            "buggyStatement": "boolean b2 = (area.getHeight()) <= (org.jfree.chart.plot.Plot.MINIMUM_HEIGHT_TO_DRAW)", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn ;\n", 
+            "patchLocation": {
+                "className": "org.jfree.chart.plot.CategoryPlot", 
+                "line": 2559
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 1219
+        }, 
+        {
+            "buggyStatement": "if (b1 || b2) {\n\treturn ;\n} ", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn ;\n", 
+            "patchLocation": {
+                "className": "org.jfree.chart.plot.CategoryPlot", 
+                "line": 2560
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 1221
+        }, 
+        {
+            "buggyStatement": "if (b1 || b2) {\n\treturn ;\n} ", 
+            "generation": 1, 
+            "patch": "if (true) {\n\treturn ;\n} ", 
+            "patchLocation": {
+                "className": "org.jfree.chart.plot.CategoryPlot", 
+                "line": 2560
+            }, 
+            "type": "REPLACE", 
+            "variant": 1222
+        }, 
+        {
+            "buggyStatement": "if (state == null) {\n\tstate = new org.jfree.chart.plot.PlotRenderingInfo(null);\n} ", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn ;\n", 
+            "patchLocation": {
+                "className": "org.jfree.chart.plot.CategoryPlot", 
+                "line": 2565
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 1225
+        }, 
+        {
+            "buggyStatement": "state.setPlotArea(area)", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn ;\n", 
+            "patchLocation": {
+                "className": "org.jfree.chart.plot.CategoryPlot", 
+                "line": 2571
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 1229
+        }, 
+        {
+            "buggyStatement": "org.jfree.chart.util.RectangleInsets insets = getInsets()", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn ;\n", 
+            "patchLocation": {
+                "className": "org.jfree.chart.plot.CategoryPlot", 
+                "line": 2574
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 1231
+        }, 
+        {
+            "buggyStatement": "insets.trim(area)", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn ;\n", 
+            "patchLocation": {
+                "className": "org.jfree.chart.plot.CategoryPlot", 
+                "line": 2575
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 1233
+        }, 
+        {
+            "buggyStatement": "org.jfree.chart.axis.AxisSpace space = calculateAxisSpace(g2, area)", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn ;\n", 
+            "patchLocation": {
+                "className": "org.jfree.chart.plot.CategoryPlot", 
+                "line": 2578
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 1235
+        }, 
+        {
+            "buggyStatement": "java.awt.geom.Rectangle2D dataArea = space.shrink(area, null)", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn ;\n", 
+            "patchLocation": {
+                "className": "org.jfree.chart.plot.CategoryPlot", 
+                "line": 2579
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 1237
+        }, 
+        {
+            "buggyStatement": "this.axisOffset.trim(dataArea)", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn ;\n", 
+            "patchLocation": {
+                "className": "org.jfree.chart.plot.CategoryPlot", 
+                "line": 2580
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 1239
+        }, 
+        {
+            "buggyStatement": "state.setDataArea(dataArea)", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn ;\n", 
+            "patchLocation": {
+                "className": "org.jfree.chart.plot.CategoryPlot", 
+                "line": 2582
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 1241
+        }, 
+        {
+            "buggyStatement": "if ((getRenderer()) != null) {\n\tgetRenderer().drawBackground(g2, this, dataArea);\n} else {\n\tdrawBackground(g2, dataArea);\n}", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn ;\n", 
+            "patchLocation": {
+                "className": "org.jfree.chart.plot.CategoryPlot", 
+                "line": 2586
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 1243
+        }, 
+        {
+            "buggyStatement": "getRenderer().drawBackground(g2, this, dataArea)", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn ;\n", 
+            "patchLocation": {
+                "className": "org.jfree.chart.plot.CategoryPlot", 
+                "line": 2587
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 1247
+        }, 
+        {
+            "buggyStatement": "java.util.Map axisStateMap = drawAxes(g2, area, dataArea, state)", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn ;\n", 
+            "patchLocation": {
+                "className": "org.jfree.chart.plot.CategoryPlot", 
+                "line": 2593
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 1249
+        }, 
+        {
+            "buggyStatement": "java.awt.Shape savedClip = g2.getClip()", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn ;\n", 
+            "patchLocation": {
+                "className": "org.jfree.chart.plot.CategoryPlot", 
+                "line": 2596
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 1251
+        }, 
+        {
+            "buggyStatement": "g2.clip(dataArea)", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn ;\n", 
+            "patchLocation": {
+                "className": "org.jfree.chart.plot.CategoryPlot", 
+                "line": 2597
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 1253
+        }, 
+        {
+            "buggyStatement": "drawDomainGridlines(g2, dataArea)", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn ;\n", 
+            "patchLocation": {
+                "className": "org.jfree.chart.plot.CategoryPlot", 
+                "line": 2599
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 1255
+        }, 
+        {
+            "buggyStatement": "org.jfree.chart.axis.AxisState rangeAxisState = ((org.jfree.chart.axis.AxisState)(axisStateMap.get(getRangeAxis())))", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn ;\n", 
+            "patchLocation": {
+                "className": "org.jfree.chart.plot.CategoryPlot", 
+                "line": 2601
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 1257
+        }, 
+        {
+            "buggyStatement": "if (rangeAxisState == null) {\n\tif (parentState != null) {\n\t\trangeAxisState = ((org.jfree.chart.axis.AxisState)(parentState.getSharedAxisStates().get(getRangeAxis())));\n\t} \n} ", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn ;\n", 
+            "patchLocation": {
+                "className": "org.jfree.chart.plot.CategoryPlot", 
+                "line": 2602
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 1259
+        }, 
+        {
+            "buggyStatement": "if (rangeAxisState != null) {\n\tdrawRangeGridlines(g2, dataArea, rangeAxisState.getTicks());\n} ", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn ;\n", 
+            "patchLocation": {
+                "className": "org.jfree.chart.plot.CategoryPlot", 
+                "line": 2608
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 1263
+        }, 
+        {
+            "buggyStatement": "drawRangeGridlines(g2, dataArea, rangeAxisState.getTicks())", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn ;\n", 
+            "patchLocation": {
+                "className": "org.jfree.chart.plot.CategoryPlot", 
+                "line": 2609
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 1267
+        }, 
+        {
+            "buggyStatement": "for (int i = 0 ; i < (this.renderers.size()) ; i++) {\n\tdrawDomainMarkers(g2, dataArea, i, org.jfree.chart.util.Layer.BACKGROUND);\n}", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn ;\n", 
+            "patchLocation": {
+                "className": "org.jfree.chart.plot.CategoryPlot", 
+                "line": 2613
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 1269
+        }, 
+        {
+            "buggyStatement": "drawDomainMarkers(g2, dataArea, i, org.jfree.chart.util.Layer.BACKGROUND)", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn ;\n", 
+            "patchLocation": {
+                "className": "org.jfree.chart.plot.CategoryPlot", 
+                "line": 2614
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 1271
+        }, 
+        {
+            "buggyStatement": "for (int i = 0 ; i < (this.renderers.size()) ; i++) {\n\tdrawRangeMarkers(g2, dataArea, i, org.jfree.chart.util.Layer.BACKGROUND);\n}", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn ;\n", 
+            "patchLocation": {
+                "className": "org.jfree.chart.plot.CategoryPlot", 
+                "line": 2616
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 1273
+        }, 
+        {
+            "buggyStatement": "drawRangeMarkers(g2, dataArea, i, org.jfree.chart.util.Layer.BACKGROUND)", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn ;\n", 
+            "patchLocation": {
+                "className": "org.jfree.chart.plot.CategoryPlot", 
+                "line": 2617
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 1275
+        }, 
+        {
+            "buggyStatement": "boolean foundData = false", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn ;\n", 
+            "patchLocation": {
+                "className": "org.jfree.chart.plot.CategoryPlot", 
+                "line": 2621
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 1277
+        }, 
+        {
+            "buggyStatement": "java.awt.Composite originalComposite = g2.getComposite()", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn ;\n", 
+            "patchLocation": {
+                "className": "org.jfree.chart.plot.CategoryPlot", 
+                "line": 2624
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 1279
+        }, 
+        {
+            "buggyStatement": "g2.setComposite(java.awt.AlphaComposite.getInstance(java.awt.AlphaComposite.SRC_OVER, getForegroundAlpha()))", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn ;\n", 
+            "patchLocation": {
+                "className": "org.jfree.chart.plot.CategoryPlot", 
+                "line": 2625
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 1281
+        }, 
+        {
+            "buggyStatement": "org.jfree.chart.plot.DatasetRenderingOrder order = getDatasetRenderingOrder()", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn ;\n", 
+            "patchLocation": {
+                "className": "org.jfree.chart.plot.CategoryPlot", 
+                "line": 2628
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 1283
+        }, 
+        {
+            "buggyStatement": "if (order == (org.jfree.chart.plot.DatasetRenderingOrder.FORWARD)) {\n\tint datasetCount = this.datasets.size();\n\tfor (int i = 0 ; i < datasetCount ; i++) {\n\t\torg.jfree.chart.renderer.category.CategoryItemRenderer r = getRenderer(i);\n\t\tif (r != null) {\n\t\t\torg.jfree.chart.axis.CategoryAxis domainAxis = getDomainAxisForDataset(i);\n\t\t\torg.jfree.chart.axis.ValueAxis rangeAxis = getRangeAxisForDataset(i);\n\t\t\tr.drawAnnotations(g2, dataArea, domainAxis, rangeAxis, org.jfree.chart.util.Layer.BACKGROUND, state);\n\t\t} \n\t}\n\tfor (int i = 0 ; i < datasetCount ; i++) {\n\t\tfoundData = (render(g2, dataArea, i, state)) || foundData;\n\t}\n\tfor (int i = 0 ; i < datasetCount ; i++) {\n\t\torg.jfree.chart.renderer.category.CategoryItemRenderer r = getRenderer(i);\n\t\tif (r != null) {\n\t\t\torg.jfree.chart.axis.CategoryAxis domainAxis = getDomainAxisForDataset(i);\n\t\t\torg.jfree.chart.axis.ValueAxis rangeAxis = getRangeAxisForDataset(i);\n\t\t\tr.drawAnnotations(g2, dataArea, domainAxis, rangeAxis, org.jfree.chart.util.Layer.FOREGROUND, state);\n\t\t} \n\t}\n} else {\n\tint datasetCount = this.datasets.size();\n\tfor (int i = datasetCount - 1 ; i >= 0 ; i--) {\n\t\torg.jfree.chart.renderer.category.CategoryItemRenderer r = getRenderer(i);\n\t\tif (r != null) {\n\t\t\torg.jfree.chart.axis.CategoryAxis domainAxis = getDomainAxisForDataset(i);\n\t\t\torg.jfree.chart.axis.ValueAxis rangeAxis = getRangeAxisForDataset(i);\n\t\t\tr.drawAnnotations(g2, dataArea, domainAxis, rangeAxis, org.jfree.chart.util.Layer.BACKGROUND, state);\n\t\t} \n\t}\n\tfor (int i = (this.datasets.size()) - 1 ; i >= 0 ; i--) {\n\t\tfoundData = (render(g2, dataArea, i, state)) || foundData;\n\t}\n\tfor (int i = datasetCount - 1 ; i >= 0 ; i--) {\n\t\torg.jfree.chart.renderer.category.CategoryItemRenderer r = getRenderer(i);\n\t\tif (r != null) {\n\t\t\torg.jfree.chart.axis.CategoryAxis domainAxis = getDomainAxisForDataset(i);\n\t\t\torg.jfree.chart.axis.ValueAxis rangeAxis = getRangeAxisForDataset(i);\n\t\t\tr.drawAnnotations(g2, dataArea, domainAxis, rangeAxis, org.jfree.chart.util.Layer.FOREGROUND, state);\n\t\t} \n\t}\n}", 
+            "generation": 1, 
+            "patch": "remove", 
+            "patchLocation": {
+                "className": "org.jfree.chart.plot.CategoryPlot", 
+                "line": 2629
+            }, 
+            "type": "DELETE", 
+            "variant": 1284
+        }, 
+        {
+            "buggyStatement": "if (order == (org.jfree.chart.plot.DatasetRenderingOrder.FORWARD)) {\n\tint datasetCount = this.datasets.size();\n\tfor (int i = 0 ; i < datasetCount ; i++) {\n\t\torg.jfree.chart.renderer.category.CategoryItemRenderer r = getRenderer(i);\n\t\tif (r != null) {\n\t\t\torg.jfree.chart.axis.CategoryAxis domainAxis = getDomainAxisForDataset(i);\n\t\t\torg.jfree.chart.axis.ValueAxis rangeAxis = getRangeAxisForDataset(i);\n\t\t\tr.drawAnnotations(g2, dataArea, domainAxis, rangeAxis, org.jfree.chart.util.Layer.BACKGROUND, state);\n\t\t} \n\t}\n\tfor (int i = 0 ; i < datasetCount ; i++) {\n\t\tfoundData = (render(g2, dataArea, i, state)) || foundData;\n\t}\n\tfor (int i = 0 ; i < datasetCount ; i++) {\n\t\torg.jfree.chart.renderer.category.CategoryItemRenderer r = getRenderer(i);\n\t\tif (r != null) {\n\t\t\torg.jfree.chart.axis.CategoryAxis domainAxis = getDomainAxisForDataset(i);\n\t\t\torg.jfree.chart.axis.ValueAxis rangeAxis = getRangeAxisForDataset(i);\n\t\t\tr.drawAnnotations(g2, dataArea, domainAxis, rangeAxis, org.jfree.chart.util.Layer.FOREGROUND, state);\n\t\t} \n\t}\n} else {\n\tint datasetCount = this.datasets.size();\n\tfor (int i = datasetCount - 1 ; i >= 0 ; i--) {\n\t\torg.jfree.chart.renderer.category.CategoryItemRenderer r = getRenderer(i);\n\t\tif (r != null) {\n\t\t\torg.jfree.chart.axis.CategoryAxis domainAxis = getDomainAxisForDataset(i);\n\t\t\torg.jfree.chart.axis.ValueAxis rangeAxis = getRangeAxisForDataset(i);\n\t\t\tr.drawAnnotations(g2, dataArea, domainAxis, rangeAxis, org.jfree.chart.util.Layer.BACKGROUND, state);\n\t\t} \n\t}\n\tfor (int i = (this.datasets.size()) - 1 ; i >= 0 ; i--) {\n\t\tfoundData = (render(g2, dataArea, i, state)) || foundData;\n\t}\n\tfor (int i = datasetCount - 1 ; i >= 0 ; i--) {\n\t\torg.jfree.chart.renderer.category.CategoryItemRenderer r = getRenderer(i);\n\t\tif (r != null) {\n\t\t\torg.jfree.chart.axis.CategoryAxis domainAxis = getDomainAxisForDataset(i);\n\t\t\torg.jfree.chart.axis.ValueAxis rangeAxis = getRangeAxisForDataset(i);\n\t\t\tr.drawAnnotations(g2, dataArea, domainAxis, rangeAxis, org.jfree.chart.util.Layer.FOREGROUND, state);\n\t\t} \n\t}\n}", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn ;\n", 
+            "patchLocation": {
+                "className": "org.jfree.chart.plot.CategoryPlot", 
+                "line": 2629
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 1285
+        }, 
+        {
+            "buggyStatement": "int datasetCount = this.datasets.size()", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn ;\n", 
+            "patchLocation": {
+                "className": "org.jfree.chart.plot.CategoryPlot", 
+                "line": 2661
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 1289
+        }, 
+        {
+            "buggyStatement": "for (int i = datasetCount - 1 ; i >= 0 ; i--) {\n\torg.jfree.chart.renderer.category.CategoryItemRenderer r = getRenderer(i);\n\tif (r != null) {\n\t\torg.jfree.chart.axis.CategoryAxis domainAxis = getDomainAxisForDataset(i);\n\t\torg.jfree.chart.axis.ValueAxis rangeAxis = getRangeAxisForDataset(i);\n\t\tr.drawAnnotations(g2, dataArea, domainAxis, rangeAxis, org.jfree.chart.util.Layer.BACKGROUND, state);\n\t} \n}", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn ;\n", 
+            "patchLocation": {
+                "className": "org.jfree.chart.plot.CategoryPlot", 
+                "line": 2662
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 1291
+        }, 
+        {
+            "buggyStatement": "org.jfree.chart.renderer.category.CategoryItemRenderer r = getRenderer(i)", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn ;\n", 
+            "patchLocation": {
+                "className": "org.jfree.chart.plot.CategoryPlot", 
+                "line": 2663
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 1293
+        }, 
+        {
+            "buggyStatement": "if (r != null) {\n\torg.jfree.chart.axis.CategoryAxis domainAxis = getDomainAxisForDataset(i);\n\torg.jfree.chart.axis.ValueAxis rangeAxis = getRangeAxisForDataset(i);\n\tr.drawAnnotations(g2, dataArea, domainAxis, rangeAxis, org.jfree.chart.util.Layer.BACKGROUND, state);\n} ", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn ;\n", 
+            "patchLocation": {
+                "className": "org.jfree.chart.plot.CategoryPlot", 
+                "line": 2664
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 1295
+        }, 
+        {
+            "buggyStatement": "org.jfree.chart.axis.CategoryAxis domainAxis = getDomainAxisForDataset(i)", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn ;\n", 
+            "patchLocation": {
+                "className": "org.jfree.chart.plot.CategoryPlot", 
+                "line": 2665
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 1299
+        }, 
+        {
+            "buggyStatement": "org.jfree.chart.axis.ValueAxis rangeAxis = getRangeAxisForDataset(i)", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn ;\n", 
+            "patchLocation": {
+                "className": "org.jfree.chart.plot.CategoryPlot", 
+                "line": 2666
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 1301
+        }, 
+        {
+            "buggyStatement": "r.drawAnnotations(g2, dataArea, domainAxis, rangeAxis, org.jfree.chart.util.Layer.BACKGROUND, state)", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn ;\n", 
+            "patchLocation": {
+                "className": "org.jfree.chart.plot.CategoryPlot", 
+                "line": 2667
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 1303
+        }, 
+        {
+            "buggyStatement": "for (int i = (this.datasets.size()) - 1 ; i >= 0 ; i--) {\n\tfoundData = (render(g2, dataArea, i, state)) || foundData;\n}", 
+            "generation": 1, 
+            "patch": "remove", 
+            "patchLocation": {
+                "className": "org.jfree.chart.plot.CategoryPlot", 
+                "line": 2672
+            }, 
+            "type": "DELETE", 
+            "variant": 1304
+        }, 
+        {
+            "buggyStatement": "for (int i = (this.datasets.size()) - 1 ; i >= 0 ; i--) {\n\tfoundData = (render(g2, dataArea, i, state)) || foundData;\n}", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn ;\n", 
+            "patchLocation": {
+                "className": "org.jfree.chart.plot.CategoryPlot", 
+                "line": 2672
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 1305
+        }, 
+        {
+            "buggyStatement": "foundData = (render(g2, dataArea, i, state)) || foundData", 
+            "generation": 1, 
+            "patch": "remove", 
+            "patchLocation": {
+                "className": "org.jfree.chart.plot.CategoryPlot", 
+                "line": 2673
+            }, 
+            "type": "DELETE", 
+            "variant": 1306
+        }, 
+        {
+            "buggyStatement": "foundData = (render(g2, dataArea, i, state)) || foundData", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn ;\n", 
+            "patchLocation": {
+                "className": "org.jfree.chart.plot.CategoryPlot", 
+                "line": 2673
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 1307
+        }
     ], 
+    "ops": "0", 
+    "patches": "146", 
+    "programVariant": "3", 
+    "timeEvaluation": null, 
+    "timeTotal": "2075372", 
     "unfinishValidation": "0"
 }

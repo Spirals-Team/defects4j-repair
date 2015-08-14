@@ -1,13 +1,23 @@
 export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/math/math_40 /tmp/math_40_Kali;cd /tmp/math_40_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
 /home/tdurieux/defects4j-repair/src/python/core/../../../results/Math/40/Kali/result
-cd /tmp/math_40_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolverTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
+cd /tmp/math_40_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java  -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolverTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -seed 10 -maxtime 60  -scope local  -stopfirst true -flthreshold 0 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
 
 Node: `hostname`
 ";echo "
 Date: `date`
 ";rm -rf /tmp/math_40_Kali;
 
-warning: ignoring inconsistent parent for CtLiteralImpl (CtIfImpl != CtReturnImpl)(unknown file)
+End Repair Loops: Found solution
+Solution stored at: ./outputMutation//MainjGenProg-.//src/
+
+Number solutions:1
+f (sol): 0.0, [Variant id: 60 (SOL) , #gens: 941, #ops: 1, parent:1]
+
+All variants:
+f 1.0, [Variant id: 1, #gens: 941, #ops: 0, parent:-]
+
+Solution details
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
 
  --SOLUTIONS DESCRIPTION--
 
@@ -22,40 +32,40 @@ original statement= if ((signChangeIndex - start) >= (end - signChangeIndex)) {
 } else {
 	--end;
 }
-fixed statement= "if (true) {
+fixed statement= if (true) {
 	++start;
 } else {
 	--end;
-}"
+}
 generation= 1
+ingredientScope= -
  
 
 ----stats: 
 
-spaces: [0]: []
-time val1 [153]: [231, 224, 207, 214, 57850, 58129, 226, 219, 235, 214, 206, 211, 205, 208, 207, 206, 206, 218, 208, 214, 213, 228, 224, 230, 222, 223, 208, 215, 60002, 211, 2311, 2310, 212, 2737, 2777, 209, 207, 224, 207, 226, 208, 223, 208, 60002, 209, 205, 225, 208, 206, 214, 205, 221, 225, 222, 215, 225, 205, 223, 206, 229, 206, 230, 207, 228, 207, 229, 226, 226, 204, 225, 206, 222, 205, 223, 206, 223, 208, 206, 209, 204, 210, 204, 204, 203, 202, 203, 202, 205, 203, 225, 203, 202, 225, 205, 230, 224, 206, 207, 203, 206, 204, 203, 60001, 208, 210, 60002, 236, 206, 210, 227, 205, 224, 204, 205, 222, 229, 206, 205, 231, 208, 228, 206, 207, 210, 217, 206, 206, 206, 202, 203, 215, 203, 223, 202, 216, 200, 221, 203, 204, 203, 216, 206, 203, 218, 204, 202, 226, 203, 203, 227, 204, 226, 229]
-time val2 [7]: [110407, 117057, 640006, 640006, 640005, 640006, 50471]
+spaces navigation: [0]: {}
 #gen: 0
 #patches: 1
-#RightCompilation: 152
-#WrongCompilation: 38
-#FailingTestCaseExecution: 153
-#RegressionTestExecution: 7
-#TestcasesExecutedval1: 2235
-#TestcasesExecutedval2: 9204
+#RightCompilation: 1692
+#WrongCompilation: 436
+#FailingTestCaseExecution: 1693
+#RegressionTestExecution: 6
+#TestcasesExecutedval1: 25305
+#TestcasesExecutedval2: 6136
 #FailingTestCase: 15
 #RegressionTestCases: 3068
 #OfAppliedOp: 0
 #NotAppliedOp: 0
 #InmutatedGen: 0
 #unfinishValidation: 4
-#ing []
-Time Total(ms): 3510658
+#ing {}
+#untilcompile {}
+Time Total(ms): 4890731
 
 
-Node: graphene-102.nancy.grid5000.fr
+Node: griffon-31.nancy.grid5000.fr
 
 
-Date: Thu Jul 23 01:25:23 CEST 2015
+Date: Thu Aug 13 20:41:43 CEST 2015
 
 

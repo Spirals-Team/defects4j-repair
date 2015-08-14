@@ -1,30 +1,29 @@
 export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/math/math_24 /tmp/math_24_Kali;cd /tmp/math_24_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
 /home/tdurieux/defects4j-repair/src/python/core/../../../results/Math/24/Kali/result
-cd /tmp/math_24_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.math3.optimization.univariate.BrentOptimizerTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
+cd /tmp/math_24_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java  -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.math3.optimization.univariate.BrentOptimizerTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -seed 10 -maxtime 60  -scope local  -stopfirst true -flthreshold 0 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
 
 Node: `hostname`
 ";echo "
 Date: `date`
 ";rm -rf /tmp/math_24_Kali;
- NOT Found solution
+
+End Repair Loops: NOT Found solution
 
 Number solutions:0
 
 All variants:
-f 1.0, [Variant id: 1, #gens: 121, #ops: 0, parent:-]
+f 1.0, [Variant id: 1, #gens: 938, #ops: 0, parent:-]
 
 ----stats: 
 
-spaces: [0]: []
-time val1 [237]: [219, 230, 214, 239, 214, 215, 219, 221, 218, 217, 219, 219, 216, 219, 220, 212, 225, 221, 219, 214, 215, 235, 206, 223, 213, 214, 214, 226, 205, 220, 204, 215, 224, 213, 214, 238, 210, 239, 227, 60001, 201, 232, 197, 226, 202, 224, 197, 225, 198, 227, 198, 224, 229, 231, 202, 216, 196, 223, 218, 193, 195, 195, 195, 194, 197, 197, 195, 194, 60002, 200, 227, 198, 195, 195, 193, 195, 229, 194, 214, 223, 223, 196, 226, 197, 225, 195, 224, 195, 224, 194, 222, 225, 225, 195, 224, 194, 217, 195, 232, 192, 228, 223, 231, 195, 226, 226, 234, 201, 233, 193, 227, 196, 224, 222, 226, 197, 233, 193, 226, 193, 228, 213, 228, 203, 197, 215, 194, 221, 216, 215, 195, 208, 195, 214, 195, 194, 212, 229, 195, 224, 227, 225, 194, 227, 228, 224, 199, 223, 195, 227, 195, 223, 194, 224, 195, 228, 196, 224, 195, 230, 197, 228, 231, 229, 202, 226, 198, 211, 228, 216, 197, 222, 199, 223, 197, 227, 199, 215, 195, 209, 195, 195, 193, 194, 193, 193, 213, 196, 193, 194, 196, 199, 193, 195, 194, 194, 228, 230, 210, 234, 206, 211, 223, 213, 193, 212, 215, 215, 192, 210, 214, 229, 194, 210, 193, 233, 193, 225, 193, 193, 194, 224, 195, 221, 195, 197, 213, 212, 214, 212, 213, 214, 214, 227, 216, 215, 215]
-time val2 [15]: [81167, 81058, 81280, 80795, 80952, 81148, 80903, 81046, 81132, 81149, 81851, 80829, 81269, 81232, 81024]
+spaces navigation: [0]: {}
 #gen: 0
 #patches: 0
-#RightCompilation: 236
-#WrongCompilation: 48
-#FailingTestCaseExecution: 237
+#RightCompilation: 1715
+#WrongCompilation: 419
+#FailingTestCaseExecution: 1716
 #RegressionTestExecution: 15
-#TestcasesExecutedval1: 2115
+#TestcasesExecutedval1: 15417
 #TestcasesExecutedval2: 61080
 #FailingTestCase: 9
 #RegressionTestCases: 4072
@@ -32,13 +31,14 @@ time val2 [15]: [81167, 81058, 81280, 80795, 80952, 81148, 80903, 81046, 81132, 
 #NotAppliedOp: 0
 #InmutatedGen: 0
 #unfinishValidation: 0
-#ing []
-Time Total(ms): 1963547
+#ing {}
+#untilcompile {}
+Time Total(ms): 3138571
 
 
-Node: graphene-15.nancy.grid5000.fr
+Node: graphene-33.nancy.grid5000.fr
 
 
-Date: Thu Jul 23 01:04:07 CEST 2015
+Date: Thu Aug 13 20:20:02 CEST 2015
 
 

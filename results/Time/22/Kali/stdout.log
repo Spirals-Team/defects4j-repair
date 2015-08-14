@@ -1,44 +1,8 @@
 export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/time/time_22 /tmp/time_22_Kali;cd /tmp/time_22_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Time/lib/* lib/;find . -type f -name "package-info.java" -delete;
 /home/tdurieux/defects4j-repair/src/python/core/../../../results/Time/22/Kali/result
-cd /tmp/time_22_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.joda.time.TestDuration_Basics:org.joda.time.TestPeriod_Constructors: -package org.joda -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder build/classes/ -bintestfolder build/tests/;echo "
+cd /tmp/time_22_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java  -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.joda.time.TestDuration_Basics:org.joda.time.TestPeriod_Constructors: -package org.joda -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -seed 10 -maxtime 60  -scope local  -stopfirst true -flthreshold 0 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder build/classes/ -bintestfolder build/tests/;echo "
 
 Node: `hostname`
 ";echo "
 Date: `date`
 ";rm -rf /tmp/time_22_Kali;
- NOT Found solution
-
-Number solutions:0
-
-All variants:
-f 2.0, [Variant id: 1, #gens: 40, #ops: 0, parent:-]
-
-----stats: 
-
-spaces: [0]: []
-time val1 [73]: [575, 568, 835, 765, 814, 824, 701, 755, 836, 810, 809, 806, 787, 805, 782, 840, 830, 822, 826, 839, 838, 811, 832, 516, 836, 845, 839, 712, 839, 810, 844, 838, 824, 838, 823, 537, 809, 822, 833, 527, 524, 523, 815, 840, 818, 819, 837, 839, 829, 835, 818, 796, 736, 836, 835, 815, 840, 801, 540, 518, 519, 791, 717, 749, 827, 804, 826, 839, 662, 522, 845, 807, 576]
-time val2 [1]: [351]
-#gen: 0
-#patches: 0
-#RightCompilation: 72
-#WrongCompilation: 20
-#FailingTestCaseExecution: 73
-#RegressionTestExecution: 1
-#TestcasesExecutedval1: 10585
-#TestcasesExecutedval2: 1
-#FailingTestCase: 145
-#RegressionTestCases: 1
-#OfAppliedOp: 0
-#NotAppliedOp: 0
-#InmutatedGen: 0
-#unfinishValidation: 0
-#ing []
-Time Total(ms): 153255
-
-
-Node: graphite-3.nancy.grid5000.fr
-
-
-Date: Wed Jul 22 23:42:31 CEST 2015
-
-

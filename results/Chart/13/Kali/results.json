@@ -1,23 +1,78 @@
 {
     "FailingTestCase": "5", 
-    "FailingTestCaseExecution": "1", 
+    "FailingTestCaseExecution": "1963", 
     "InmutatedGen": "0", 
     "NotAppliedOp": "0", 
-    "OfAppliedOp": "171", 
+    "OfAppliedOp": "0", 
     "RegressionTestCases": "0", 
-    "RegressionTestExecution": "0", 
-    "RightCompilation": "0", 
-    "WrongCompilation": "171", 
-    "date": "2015-05-08T07:54:35.815676\n\n", 
-    "gen": "172", 
-    "node": "griffon-34.nancy.grid5000.fr", 
-    "operations": [], 
-    "patches": "0", 
-    "programVariant": null, 
-    "timeEvaluation": "14403", 
-    "timeTotal": "57578", 
-    "timeVal1": [
-        265
+    "RegressionTestExecution": "5", 
+    "RightCompilation": "1962", 
+    "WrongCompilation": "344", 
+    "date": "Thu Aug 13 20:53:06 CEST 2015\n\n", 
+    "gen": "0", 
+    "gens": "894", 
+    "node": "griffon-73.nancy.grid5000.fr", 
+    "operations": [
+        {
+            "buggyStatement": "if ((this.leftBlock) != null) {\n\torg.jfree.chart.block.RectangleConstraint c3 = new org.jfree.chart.block.RectangleConstraint(0.0 , new org.jfree.data.Range(0.0 , constraint.getWidth()) , org.jfree.chart.block.LengthConstraintType.RANGE , h[2] , null , org.jfree.chart.block.LengthConstraintType.FIXED);\n\torg.jfree.chart.util.Size2D size = this.leftBlock.arrange(g2, c3);\n\tw[2] = size.width;\n} ", 
+            "generation": 1, 
+            "patch": "remove", 
+            "patchLocation": {
+                "className": "org.jfree.chart.block.BorderArrangement", 
+                "line": 482
+            }, 
+            "type": "DELETE", 
+            "variant": 88
+        }, 
+        {
+            "buggyStatement": "if ((this.leftBlock) != null) {\n\torg.jfree.chart.block.RectangleConstraint c3 = new org.jfree.chart.block.RectangleConstraint(0.0 , new org.jfree.data.Range(0.0 , constraint.getWidth()) , org.jfree.chart.block.LengthConstraintType.RANGE , h[2] , null , org.jfree.chart.block.LengthConstraintType.FIXED);\n\torg.jfree.chart.util.Size2D size = this.leftBlock.arrange(g2, c3);\n\tw[2] = size.width;\n} ", 
+            "generation": 1, 
+            "patch": "if (false) {\n\torg.jfree.chart.block.RectangleConstraint c3 = new org.jfree.chart.block.RectangleConstraint(0.0 , new org.jfree.data.Range(0.0 , constraint.getWidth()) , org.jfree.chart.block.LengthConstraintType.RANGE , h[2] , null , org.jfree.chart.block.LengthConstraintType.FIXED);\n\torg.jfree.chart.util.Size2D size = this.leftBlock.arrange(g2, c3);\n\tw[2] = size.width;\n} ", 
+            "patchLocation": {
+                "className": "org.jfree.chart.block.BorderArrangement", 
+                "line": 482
+            }, 
+            "type": "REPLACE", 
+            "variant": 91
+        }, 
+        {
+            "buggyStatement": "w[2] = size.width", 
+            "generation": 1, 
+            "patch": "remove", 
+            "patchLocation": {
+                "className": "org.jfree.chart.block.BorderArrangement", 
+                "line": 489
+            }, 
+            "type": "DELETE", 
+            "variant": 96
+        }, 
+        {
+            "buggyStatement": "if ((this.rightBlock) != null) {\n\torg.jfree.chart.block.RectangleConstraint c4 = new org.jfree.chart.block.RectangleConstraint(0.0 , new org.jfree.data.Range(0.0 , ((constraint.getWidth()) - (w[2]))) , org.jfree.chart.block.LengthConstraintType.RANGE , h[2] , null , org.jfree.chart.block.LengthConstraintType.FIXED);\n\torg.jfree.chart.util.Size2D size = this.rightBlock.arrange(g2, c4);\n\tw[3] = size.width;\n} ", 
+            "generation": 1, 
+            "patch": "remove", 
+            "patchLocation": {
+                "className": "org.jfree.chart.block.BorderArrangement", 
+                "line": 492
+            }, 
+            "type": "DELETE", 
+            "variant": 100
+        }, 
+        {
+            "buggyStatement": "if ((this.rightBlock) != null) {\n\torg.jfree.chart.block.RectangleConstraint c4 = new org.jfree.chart.block.RectangleConstraint(0.0 , new org.jfree.data.Range(0.0 , ((constraint.getWidth()) - (w[2]))) , org.jfree.chart.block.LengthConstraintType.RANGE , h[2] , null , org.jfree.chart.block.LengthConstraintType.FIXED);\n\torg.jfree.chart.util.Size2D size = this.rightBlock.arrange(g2, c4);\n\tw[3] = size.width;\n} ", 
+            "generation": 1, 
+            "patch": "if (false) {\n\torg.jfree.chart.block.RectangleConstraint c4 = new org.jfree.chart.block.RectangleConstraint(0.0 , new org.jfree.data.Range(0.0 , ((constraint.getWidth()) - (w[2]))) , org.jfree.chart.block.LengthConstraintType.RANGE , h[2] , null , org.jfree.chart.block.LengthConstraintType.FIXED);\n\torg.jfree.chart.util.Size2D size = this.rightBlock.arrange(g2, c4);\n\tw[3] = size.width;\n} ", 
+            "patchLocation": {
+                "className": "org.jfree.chart.block.BorderArrangement", 
+                "line": 492
+            }, 
+            "type": "REPLACE", 
+            "variant": 103
+        }
     ], 
+    "ops": "0", 
+    "patches": "5", 
+    "programVariant": "88", 
+    "timeEvaluation": null, 
+    "timeTotal": "1061883", 
     "unfinishValidation": "0"
 }

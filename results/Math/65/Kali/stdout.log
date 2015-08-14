@@ -1,30 +1,29 @@
 export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/math/math_65 /tmp/math_65_Kali;cd /tmp/math_65_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
 /home/tdurieux/defects4j-repair/src/python/core/../../../results/Math/65/Kali/result
-cd /tmp/math_65_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizerTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
+cd /tmp/math_65_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java  -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizerTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -seed 10 -maxtime 60  -scope local  -stopfirst true -flthreshold 0 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
 
 Node: `hostname`
 ";echo "
 Date: `date`
 ";rm -rf /tmp/math_65_Kali;
- NOT Found solution
+
+End Repair Loops: NOT Found solution
 
 Number solutions:0
 
 All variants:
-f 1.0, [Variant id: 1, #gens: 277, #ops: 0, parent:-]
+f 1.0, [Variant id: 1, #gens: 942, #ops: 0, parent:-]
 
 ----stats: 
 
-spaces: [0]: []
-time val1 [510]: [250, 222, 225, 221, 224, 223, 225, 231, 221, 220, 222, 223, 222, 225, 222, 228, 221, 245, 220, 246, 245, 217, 205, 207, 229, 211, 229, 209, 208, 239, 221, 228, 207, 217, 206, 219, 210, 206, 243, 248, 223, 221, 222, 222, 221, 222, 222, 222, 221, 239, 225, 219, 235, 222, 221, 225, 221, 223, 219, 222, 221, 222, 219, 222, 220, 223, 221, 221, 220, 223, 222, 220, 221, 222, 220, 221, 219, 223, 214, 239, 217, 228, 240, 214, 243, 215, 242, 244, 221, 216, 222, 215, 217, 216, 231, 220, 208, 208, 206, 209, 208, 207, 212, 221, 205, 204, 268, 277, 233, 221, 219, 231, 243, 243, 510, 244, 206, 213, 205, 214, 204, 251, 204, 213, 205, 213, 204, 228, 204, 244, 204, 204, 245, 208, 205, 205, 261, 206, 245, 204, 243, 205, 204, 245, 204, 247, 243, 206, 246, 204, 248, 204, 245, 205, 205, 205, 205, 206, 205, 245, 204, 205, 204, 204, 205, 231, 204, 248, 204, 205, 204, 206, 204, 205, 205, 203, 244, 204, 204, 243, 244, 204, 248, 204, 353, 204, 229, 204, 204, 229, 203, 204, 205, 244, 204, 204, 200, 205, 201, 200, 204, 200, 201, 224, 200, 228, 201, 199, 222, 199, 209, 201, 243, 200, 245, 243, 244, 192, 225, 200, 206, 205, 209, 988, 206, 244, 990, 203, 988, 204, 243, 203, 203, 205, 250, 205, 277, 204, 278, 204, 205, 287, 204, 277, 204, 204, 244, 203, 204, 204, 208, 233, 204, 60001, 208, 244, 60002, 246, 204, 244, 204, 247, 204, 244, 262, 260, 204, 244, 206, 247, 206, 204, 246, 209, 240, 205, 232, 206, 208, 242, 245, 204, 213, 257, 205, 205, 205, 204, 243, 277, 437, 277, 281, 279, 267, 283, 406, 262, 255, 256, 254, 259, 255, 319, 258, 256, 255, 427, 255, 255, 509, 256, 255, 513, 227, 227, 227, 228, 229, 227, 228, 228, 248, 227, 227, 227, 227, 226, 205, 199, 194, 199, 205, 213, 201, 198, 197, 199, 199, 198, 199, 199, 198, 199, 202, 197, 199, 200, 200, 199, 243, 204, 203, 203, 244, 203, 204, 204, 203, 205, 205, 204, 204, 233, 204, 203, 205, 203, 204, 203, 209, 203, 203, 404, 206, 204, 204, 204, 204, 203, 204, 210, 204, 206, 203, 243, 204, 212, 244, 205, 204, 243, 205, 194, 204, 204, 203, 244, 204, 204, 245, 204, 249, 204, 346, 220, 205, 205, 204, 227, 205, 410, 206, 230, 205, 212, 203, 205, 206, 221, 222, 255, 253, 245, 243, 243, 244, 214, 242, 203, 203, 204, 242, 224, 209, 242, 224, 224, 224, 225, 241, 230, 225, 224, 245, 200, 207, 245, 204, 200, 201, 200, 199, 198, 201, 201, 205, 205, 242, 211, 221, 222, 244, 244, 213, 246, 242, 197, 211, 243, 191, 198, 242, 193, 206, 244, 243, 192, 243, 190, 242, 191, 191, 191, 189, 193, 192, 195, 193, 194, 191, 194, 191, 195, 205, 194, 203, 190, 244, 200, 243, 199, 200, 211, 211, 212, 211, 243, 243, 213]
-time val2 [0]: []
+spaces navigation: [0]: {}
 #gen: 0
 #patches: 0
-#RightCompilation: 509
-#WrongCompilation: 93
-#FailingTestCaseExecution: 510
+#RightCompilation: 1689
+#WrongCompilation: 411
+#FailingTestCaseExecution: 1690
 #RegressionTestExecution: 0
-#TestcasesExecutedval1: 8128
+#TestcasesExecutedval1: 27008
 #TestcasesExecutedval2: 0
 #FailingTestCase: 16
 #RegressionTestCases: 0
@@ -32,13 +31,14 @@ time val2 [0]: []
 #NotAppliedOp: 0
 #InmutatedGen: 0
 #unfinishValidation: 0
-#ing []
-Time Total(ms): 316111
+#ing {}
+#untilcompile {}
+Time Total(ms): 903414
 
 
-Node: graphene-105.nancy.grid5000.fr
+Node: graphene-60.nancy.grid5000.fr
 
 
-Date: Thu Jul 23 00:10:40 CEST 2015
+Date: Thu Aug 13 19:23:29 CEST 2015
 
 

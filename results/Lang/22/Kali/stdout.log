@@ -1,30 +1,29 @@
 export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/lang/lang_22 /tmp/lang_22_Kali;cd /tmp/lang_22_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Lang/lib/* lib/;find . -type f -name "package-info.java" -delete;
 /home/tdurieux/defects4j-repair/src/python/core/../../../results/Lang/22/Kali/result
-cd /tmp/lang_22_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.lang3.math.FractionTest:org.apache.commons.lang3.math.FractionTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
+cd /tmp/lang_22_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java  -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.lang3.math.FractionTest:org.apache.commons.lang3.math.FractionTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -seed 10 -maxtime 60  -scope local  -stopfirst true -flthreshold 0 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
 
 Node: `hostname`
 ";echo "
 Date: `date`
 ";rm -rf /tmp/lang_22_Kali;
- NOT Found solution
+
+End Repair Loops: NOT Found solution
 
 Number solutions:0
 
 All variants:
-f 155.0, [Variant id: 1, #gens: 54, #ops: 0, parent:-]
+f 155.0, [Variant id: 1, #gens: 880, #ops: 0, parent:-]
 
 ----stats: 
 
-spaces: [0]: []
-time val1 [131]: [323, 319, 322, 322, 318, 319, 318, 326, 578, 317, 321, 318, 322, 320, 319, 320, 326, 319, 322, 319, 319, 321, 320, 318, 323, 318, 318, 320, 320, 321, 320, 60002, 192, 60001, 188, 60002, 60002, 60001, 188, 60002, 190, 319, 60001, 188, 185, 185, 317, 184, 181, 320, 188, 184, 187, 60002, 189, 60002, 60002, 60002, 189, 60002, 188, 60002, 188, 185, 315, 185, 188, 317, 316, 190, 319, 186, 319, 323, 320, 318, 320, 320, 319, 319, 321, 324, 185, 186, 200, 188, 186, 185, 320, 320, 319, 325, 319, 318, 319, 320, 187, 188, 319, 187, 187, 318, 318, 186, 188, 318, 319, 187, 186, 319, 318, 186, 186, 318, 189, 187, 185, 187, 186, 185, 60001, 190, 318, 319, 318, 320, 318, 318, 322, 318, 318]
-time val2 [4]: [8547, 8571, 8554, 8549]
+spaces navigation: [0]: {}
 #gen: 0
 #patches: 0
-#RightCompilation: 130
-#WrongCompilation: 12
-#FailingTestCaseExecution: 131
+#RightCompilation: 1831
+#WrongCompilation: 327
+#FailingTestCaseExecution: 1832
 #RegressionTestExecution: 4
-#TestcasesExecutedval1: 5850
+#TestcasesExecutedval1: 90900
 #TestcasesExecutedval2: 7300
 #FailingTestCase: 50
 #RegressionTestCases: 1825
@@ -32,13 +31,14 @@ time val2 [4]: [8547, 8571, 8554, 8549]
 #NotAppliedOp: 0
 #InmutatedGen: 0
 #unfinishValidation: 0
-#ing []
-Time Total(ms): 937378
+#ing {}
+#untilcompile {}
+Time Total(ms): 2022439
 
 
-Node: graphene-103.nancy.grid5000.fr
+Node: graphene-59.nancy.grid5000.fr
 
 
-Date: Thu Jul 23 01:00:40 CEST 2015
+Date: Thu Aug 13 20:40:29 CEST 2015
 
 

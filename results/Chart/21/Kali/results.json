@@ -1,23 +1,56 @@
 {
     "FailingTestCase": "8", 
-    "FailingTestCaseExecution": "1", 
+    "FailingTestCaseExecution": "1954", 
     "InmutatedGen": "0", 
     "NotAppliedOp": "0", 
-    "OfAppliedOp": "67", 
+    "OfAppliedOp": "0", 
     "RegressionTestCases": "0", 
-    "RegressionTestExecution": "0", 
-    "RightCompilation": "0", 
-    "WrongCompilation": "67", 
-    "date": "2015-05-08T07:52:25.097967\n\n", 
-    "gen": "68", 
-    "node": "graphene-77.nancy.grid5000.fr", 
-    "operations": [], 
-    "patches": "0", 
-    "programVariant": null, 
-    "timeEvaluation": "5710", 
-    "timeTotal": "39859", 
-    "timeVal1": [
-        209
+    "RegressionTestExecution": "3", 
+    "RightCompilation": "1953", 
+    "WrongCompilation": "339", 
+    "date": "Thu Aug 13 20:45:06 CEST 2015\n\n", 
+    "gen": "0", 
+    "gens": "883", 
+    "node": "griffon-77.nancy.grid5000.fr", 
+    "operations": [
+        {
+            "buggyStatement": "return false", 
+            "generation": 1, 
+            "patch": "remove", 
+            "patchLocation": {
+                "className": "org.jfree.data.Range", 
+                "line": 335
+            }, 
+            "type": "DELETE", 
+            "variant": 14
+        }, 
+        {
+            "buggyStatement": "if (!((this.lower) == (range.lower))) {\n\treturn false;\n} ", 
+            "generation": 1, 
+            "patch": "remove", 
+            "patchLocation": {
+                "className": "org.jfree.data.Range", 
+                "line": 334
+            }, 
+            "type": "DELETE", 
+            "variant": 158
+        }, 
+        {
+            "buggyStatement": "if (!((this.lower) == (range.lower))) {\n\treturn false;\n} ", 
+            "generation": 1, 
+            "patch": "if (false) {\n\treturn false;\n} ", 
+            "patchLocation": {
+                "className": "org.jfree.data.Range", 
+                "line": 334
+            }, 
+            "type": "REPLACE", 
+            "variant": 161
+        }
     ], 
+    "ops": "0", 
+    "patches": "3", 
+    "programVariant": "14", 
+    "timeEvaluation": null, 
+    "timeTotal": "1026367", 
     "unfinishValidation": "0"
 }

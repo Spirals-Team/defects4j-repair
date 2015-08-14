@@ -1,12 +1,22 @@
 export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/math/math_50 /tmp/math_50_Kali;cd /tmp/math_50_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
 /home/tdurieux/defects4j-repair/src/python/core/../../../results/Math/50/Kali/result
-cd /tmp/math_50_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.math.analysis.solvers.RegulaFalsiSolverTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
+cd /tmp/math_50_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java  -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.math.analysis.solvers.RegulaFalsiSolverTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -seed 10 -maxtime 60  -scope local  -stopfirst true -flthreshold 0 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
 
 Node: `hostname`
 ";echo "
 Date: `date`
 ";rm -rf /tmp/math_50_Kali;
 
+End Repair Loops: Found solution
+Solution stored at: ./outputMutation//MainjGenProg-.//src/
+
+Number solutions:1
+f (sol): 0.0, [Variant id: 4 (SOL) , #gens: 949, #ops: 1, parent:1]
+
+All variants:
+f 1.0, [Variant id: 1, #gens: 949, #ops: 0, parent:-]
+
+Solution details
 
  --SOLUTIONS DESCRIPTION--
 
@@ -17,22 +27,21 @@ operation: DELETE
 location= org.apache.commons.math.analysis.solvers.BaseSecantSolver
 line= 191
 original statement= x0 = 0.5 * ((x0 + x1) - delta)
-fixed statement= "x0 = 0.5 * ((x0 + x1) - delta)"
+fixed statement= x0 = 0.5 * ((x0 + x1) - delta)
 generation= 1
+ingredientScope= -
  
 
 ----stats: 
 
-spaces: [0]: []
-time val1 [79]: [277, 265, 263, 273, 266, 266, 255, 269, 266, 285, 261, 261, 283, 267, 265, 290, 267, 266, 261, 269, 262, 279, 261, 285, 261, 265, 272, 265, 266, 262, 261, 261, 263, 259, 261, 264, 258, 260, 263, 264, 263, 260, 264, 258, 264, 266, 243, 246, 264, 262, 265, 264, 265, 262, 263, 266, 267, 263, 264, 264, 265, 282, 292, 278, 297, 279, 279, 266, 257, 276, 262, 258, 258, 262, 264, 278, 263, 258, 257]
-time val2 [2]: [44770, 44591]
+spaces navigation: [0]: {}
 #gen: 0
 #patches: 1
-#RightCompilation: 78
-#WrongCompilation: 16
-#FailingTestCaseExecution: 79
+#RightCompilation: 1733
+#WrongCompilation: 385
+#FailingTestCaseExecution: 1734
 #RegressionTestExecution: 2
-#TestcasesExecutedval1: 711
+#TestcasesExecutedval1: 15597
 #TestcasesExecutedval2: 5644
 #FailingTestCase: 9
 #RegressionTestCases: 2822
@@ -40,13 +49,14 @@ time val2 [2]: [44770, 44591]
 #NotAppliedOp: 0
 #InmutatedGen: 0
 #unfinishValidation: 0
-#ing []
-Time Total(ms): 295261
+#ing {}
+#untilcompile {}
+Time Total(ms): 1404249
 
 
-Node: graphene-102.nancy.grid5000.fr
+Node: griffon-77.nancy.grid5000.fr
 
 
-Date: Thu Jul 23 00:26:05 CEST 2015
+Date: Thu Aug 13 19:39:40 CEST 2015
 
 

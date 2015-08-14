@@ -1,30 +1,29 @@
 export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/math/math_17 /tmp/math_17_Kali;cd /tmp/math_17_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
 /home/tdurieux/defects4j-repair/src/python/core/../../../results/Math/17/Kali/result
-cd /tmp/math_17_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.math3.dfp.DfpTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
+cd /tmp/math_17_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java  -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.math3.dfp.DfpTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -seed 10 -maxtime 60  -scope local  -stopfirst true -flthreshold 0 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
 
 Node: `hostname`
 ";echo "
 Date: `date`
 ";rm -rf /tmp/math_17_Kali;
- NOT Found solution
+
+End Repair Loops: NOT Found solution
 
 Number solutions:0
 
 All variants:
-f 1.0, [Variant id: 1, #gens: 229, #ops: 0, parent:-]
+f 1.0, [Variant id: 1, #gens: 930, #ops: 0, parent:-]
 
 ----stats: 
 
-spaces: [0]: []
-time val1 [523]: [567, 553, 557, 560, 552, 555, 557, 536, 538, 571, 557, 555, 560, 562, 564, 542, 565, 554, 547, 558, 561, 572, 552, 560, 566, 560, 556, 563, 561, 560, 1097, 563, 558, 566, 556, 556, 552, 561, 556, 556, 554, 557, 555, 558, 556, 550, 561, 556, 556, 567, 562, 553, 554, 552, 568, 564, 556, 555, 550, 554, 552, 558, 558, 556, 555, 547, 554, 556, 557, 550, 555, 553, 553, 565, 553, 551, 550, 554, 557, 537, 553, 556, 530, 543, 551, 558, 555, 554, 551, 555, 550, 560, 539, 555, 553, 554, 551, 560, 551, 554, 552, 560, 556, 550, 556, 557, 549, 557, 551, 554, 554, 560, 554, 552, 562, 552, 550, 556, 553, 551, 560, 550, 540, 538, 554, 558, 1514, 1520, 549, 553, 343, 554, 347, 557, 347, 553, 343, 556, 555, 553, 389, 550, 552, 555, 560, 549, 556, 555, 551, 556, 551, 550, 554, 557, 539, 552, 562, 552, 554, 557, 555, 563, 552, 554, 559, 557, 551, 557, 555, 557, 550, 552, 555, 557, 552, 550, 555, 556, 552, 554, 555, 549, 560, 561, 560, 1906, 553, 1898, 362, 552, 562, 360, 553, 355, 551, 366, 553, 361, 550, 362, 371, 366, 561, 359, 551, 369, 556, 362, 548, 549, 554, 237, 554, 249, 338, 562, 252, 552, 245, 549, 853, 249, 251, 251, 248, 252, 234, 250, 349, 253, 60002, 254, 272, 250, 283, 235, 250, 870, 248, 866, 249, 868, 868, 873, 249, 251, 251, 259, 250, 258, 247, 1892, 250, 562, 251, 560, 251, 1901, 555, 251, 557, 569, 233, 554, 249, 563, 556, 250, 558, 552, 556, 554, 555, 551, 1183, 60002, 1189, 60002, 60002, 60002, 60002, 60002, 558, 1898, 1920, 558, 553, 1907, 562, 553, 1924, 1915, 1912, 1918, 1924, 555, 1917, 558, 1914, 551, 557, 555, 1910, 1923, 1914, 1682, 1896, 1718, 1924, 1684, 1928, 1653, 1898, 555, 1898, 288, 556, 562, 1920, 555, 1908, 560, 558, 1917, 571, 1927, 60002, 1908, 559, 1906, 557, 552, 552, 1925, 60002, 355, 556, 1908, 553, 551, 1906, 554, 1865, 1865, 557, 1864, 1881, 549, 1865, 1866, 561, 1847, 1845, 60002, 274, 60002, 60002, 13291, 13287, 13287, 13288, 60002, 13281, 13233, 13236, 550, 293, 60001, 555, 560, 553, 265, 267, 552, 554, 268, 60002, 560, 560, 268, 60002, 549, 551, 265, 60002, 556, 552, 264, 265, 555, 60001, 270, 558, 60002, 60002, 265, 60001, 60001, 544, 178, 239, 558, 178, 299, 178, 181, 177, 554, 183, 4639, 559, 178, 548, 180, 556, 549, 354, 179, 230, 359, 240, 605, 239, 242, 239, 178, 326, 543, 548, 540, 553, 543, 1893, 554, 555, 60002, 554, 551, 60001, 550, 552, 548, 553, 535, 746, 549, 557, 549, 548, 555, 551, 565, 544, 534, 538, 561, 557, 554, 554, 550, 551, 554, 555, 177, 207, 534, 533, 552, 535, 547, 552, 558, 350, 551, 352, 547, 561, 558, 556, 554, 536, 551, 557, 559, 554, 555, 555, 554, 553, 554, 353, 552, 353, 354, 354, 536, 553, 554, 354, 552, 550, 356, 353, 551, 561, 552, 557, 549, 563, 553, 552, 537, 555, 562, 557, 550, 551, 558, 562, 178, 178, 2110, 178]
-time val2 [0]: []
+spaces navigation: [0]: {}
 #gen: 0
 #patches: 0
-#RightCompilation: 522
-#WrongCompilation: 50
-#FailingTestCaseExecution: 523
+#RightCompilation: 1773
+#WrongCompilation: 373
+#FailingTestCaseExecution: 1774
 #RegressionTestExecution: 0
-#TestcasesExecutedval1: 12974
+#TestcasesExecutedval1: 45500
 #TestcasesExecutedval2: 0
 #FailingTestCase: 26
 #RegressionTestCases: 0
@@ -32,13 +31,14 @@ time val2 [0]: []
 #NotAppliedOp: 0
 #InmutatedGen: 0
 #unfinishValidation: 0
-#ing []
-Time Total(ms): 2472153
+#ing {}
+#untilcompile {}
+Time Total(ms): 4718305
 
 
-Node: graphene-115.nancy.grid5000.fr
+Node: griffon-72.nancy.grid5000.fr
 
 
-Date: Thu Jul 23 01:18:25 CEST 2015
+Date: Thu Aug 13 20:51:48 CEST 2015
 
 

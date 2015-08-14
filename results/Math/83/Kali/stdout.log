@@ -1,30 +1,29 @@
 export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/math/math_83 /tmp/math_83_Kali;cd /tmp/math_83_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
 /home/tdurieux/defects4j-repair/src/python/core/../../../results/Math/83/Kali/result
-cd /tmp/math_83_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.math.optimization.linear.SimplexSolverTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
+cd /tmp/math_83_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java  -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.math.optimization.linear.SimplexSolverTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -seed 10 -maxtime 60  -scope local  -stopfirst true -flthreshold 0 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
 
 Node: `hostname`
 ";echo "
 Date: `date`
 ";rm -rf /tmp/math_83_Kali;
- NOT Found solution
+
+End Repair Loops: NOT Found solution
 
 Number solutions:0
 
 All variants:
-f 1.0, [Variant id: 1, #gens: 159, #ops: 0, parent:-]
+f 1.0, [Variant id: 1, #gens: 915, #ops: 0, parent:-]
 
 ----stats: 
 
-spaces: [0]: []
-time val1 [299]: [264, 260, 261, 268, 260, 60002, 270, 261, 263, 255, 256, 256, 248, 254, 266, 265, 280, 256, 263, 259, 262, 256, 255, 257, 254, 255, 257, 257, 268, 257, 256, 256, 261, 256, 263, 262, 260, 256, 262, 256, 261, 266, 261, 260, 238, 231, 260, 232, 238, 231, 236, 238, 231, 232, 260, 250, 254, 231, 245, 60002, 249, 260, 260, 256, 261, 257, 260, 255, 256, 260, 261, 254, 261, 267, 254, 261, 254, 256, 261, 257, 261, 254, 254, 260, 257, 258, 257, 260, 246, 236, 234, 259, 258, 234, 259, 206, 204, 205, 204, 260, 204, 255, 203, 259, 204, 202, 230, 242, 226, 232, 226, 231, 261, 227, 261, 230, 236, 239, 230, 259, 259, 231, 258, 258, 232, 250, 259, 231, 259, 231, 260, 232, 232, 251, 259, 231, 257, 264, 261, 60001, 240, 243, 261, 256, 231, 260, 256, 259, 259, 260, 258, 249, 260, 249, 259, 259, 260, 261, 261, 247, 246, 260, 203, 245, 226, 230, 231, 230, 260, 259, 261, 231, 231, 260, 260, 212, 261, 216, 213, 212, 240, 239, 242, 219, 255, 261, 261, 261, 261, 261, 259, 261, 264, 256, 261, 256, 261, 256, 255, 240, 240, 213, 239, 214, 241, 248, 212, 214, 247, 247, 252, 251, 253, 252, 236, 216, 215, 210, 226, 262, 213, 260, 210, 210, 210, 210, 261, 211, 262, 261, 210, 261, 210, 209, 261, 210, 261, 209, 260, 210, 245, 261, 210, 219, 217, 211, 210, 210, 340, 209, 262, 211, 254, 260, 262, 210, 261, 212, 219, 261, 212, 211, 261, 213, 223, 224, 211, 216, 210, 219, 210, 211, 261, 210, 233, 260, 209, 253, 218, 217, 219, 218, 216, 228, 223, 218, 218, 217, 266, 238, 232, 234, 213, 210, 261, 262, 260, 268, 261]
-time val2 [0]: []
+spaces navigation: [0]: {}
 #gen: 0
 #patches: 0
-#RightCompilation: 298
-#WrongCompilation: 68
-#FailingTestCaseExecution: 299
+#RightCompilation: 1733
+#WrongCompilation: 401
+#FailingTestCaseExecution: 1734
 #RegressionTestExecution: 0
-#TestcasesExecutedval1: 3848
+#TestcasesExecutedval1: 22503
 #TestcasesExecutedval2: 0
 #FailingTestCase: 13
 #RegressionTestCases: 0
@@ -32,13 +31,14 @@ time val2 [0]: []
 #NotAppliedOp: 0
 #InmutatedGen: 0
 #unfinishValidation: 0
-#ing []
-Time Total(ms): 315017
+#ing {}
+#untilcompile {}
+Time Total(ms): 1162183
 
 
-Node: graphene-100.nancy.grid5000.fr
+Node: griffon-92.nancy.grid5000.fr
 
 
-Date: Thu Jul 23 00:06:30 CEST 2015
+Date: Thu Aug 13 19:23:13 CEST 2015
 
 

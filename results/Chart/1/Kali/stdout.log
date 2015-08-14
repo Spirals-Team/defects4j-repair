@@ -1,8 +1,95 @@
 export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/chart/chart_1 /tmp/chart_1_Kali;cd /tmp/chart_1_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Chart/lib/* lib/;find . -type f -name "package-info.java" -delete;
 /home/tdurieux/defects4j-repair/src/python/core/../../../results/Chart/1/Kali/result
-cd /tmp/chart_1_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.jfree.chart.renderer.category.junit.AbstractCategoryItemRendererTests: -package org.jfree -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 4 -maxgen 1000000 -population 1 -srcjavafolder source/ -srctestfolder tests/ -binjavafolder build/ -bintestfolder build-tests/;echo "
+cd /tmp/chart_1_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java  -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.jfree.chart.renderer.category.junit.AbstractCategoryItemRendererTests: -package org.jfree -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 4 -maxgen 1000000 -seed 10 -maxtime 60  -scope local  -stopfirst true -flthreshold 0 -population 1 -srcjavafolder source/ -srctestfolder tests/ -binjavafolder build/ -bintestfolder build-tests/;echo "
 
 Node: `hostname`
 ";echo "
 Date: `date`
 ";rm -rf /tmp/chart_1_Kali;
+
+End Repair Loops: Found solution
+Solution stored at: ./outputMutation//MainjGenProg-.//src/
+
+Number solutions:3
+f (sol): 0.0, [Variant id: 70 (SOL) , #gens: 872, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 73 (SOL) , #gens: 872, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 74 (SOL) , #gens: 872, #ops: 1, parent:1]
+
+All variants:
+f 1.0, [Variant id: 1, #gens: 872, #ops: 0, parent:-]
+
+Solution details
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+
+ --SOLUTIONS DESCRIPTION--
+
+ ----
+ProgramVariant 70
+ 
+operation: DELETE
+location= org.jfree.chart.renderer.category.AbstractCategoryItemRenderer
+line= 1797
+original statement= if (dataset != null) {
+	return result;
+} 
+fixed statement= if (dataset != null) {
+	return result;
+} 
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 73
+ 
+operation: REPLACE
+location= org.jfree.chart.renderer.category.AbstractCategoryItemRenderer
+line= 1797
+original statement= if (dataset != null) {
+	return result;
+} 
+fixed statement= if (false) {
+	return result;
+} 
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 74
+ 
+operation: DELETE
+location= org.jfree.chart.renderer.category.AbstractCategoryItemRenderer
+line= 1798
+original statement= return result
+fixed statement= return result
+generation= 1
+ingredientScope= -
+ 
+
+----stats: 
+
+spaces navigation: [0]: {}
+#gen: 0
+#patches: 3
+#RightCompilation: 2001
+#WrongCompilation: 295
+#FailingTestCaseExecution: 2002
+#RegressionTestExecution: 3
+#TestcasesExecutedval1: 20020
+#TestcasesExecutedval2: 0
+#FailingTestCase: 10
+#RegressionTestCases: 0
+#OfAppliedOp: 0
+#NotAppliedOp: 0
+#InmutatedGen: 0
+#unfinishValidation: 0
+#ing {}
+#untilcompile {}
+Time Total(ms): 1275683
+
+
+Node: graphene-7.nancy.grid5000.fr
+
+
+Date: Thu Aug 13 21:03:33 CEST 2015
+
+

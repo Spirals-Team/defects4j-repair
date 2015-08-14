@@ -1,14 +1,28 @@
 export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/math/math_2 /tmp/math_2_Kali;cd /tmp/math_2_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
 /home/tdurieux/defects4j-repair/src/python/core/../../../results/Math/2/Kali/result
-cd /tmp/math_2_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.math3.distribution.HypergeometricDistributionTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
+cd /tmp/math_2_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java  -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.math3.distribution.HypergeometricDistributionTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -seed 10 -maxtime 60  -scope local  -stopfirst true -flthreshold 0 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
 
 Node: `hostname`
 ";echo "
 Date: `date`
 ";rm -rf /tmp/math_2_Kali;
 
-warning: ignoring inconsistent parent for CtLiteralImpl (CtIfImpl != CtReturnImpl)(unknown file)
-warning: ignoring inconsistent parent for CtLiteralImpl (CtIfImpl != CtReturnImpl)(unknown file)
+End Repair Loops: Found solution
+Solution stored at: ./outputMutation//MainjGenProg-.//src/
+
+Number solutions:5
+f (sol): 0.0, [Variant id: 46 (SOL) , #gens: 920, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 49 (SOL) , #gens: 920, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 50 (SOL) , #gens: 920, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 58 (SOL) , #gens: 920, #ops: 1, parent:1]
+f (sol): 0.0, [Variant id: 61 (SOL) , #gens: 920, #ops: 1, parent:1]
+
+All variants:
+f 1.0, [Variant id: 1, #gens: 920, #ops: 0, parent:-]
+
+Solution details
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
 
  --SOLUTIONS DESCRIPTION--
 
@@ -21,10 +35,11 @@ line= 137
 original statement= if (tmp < upper) {
 	upper = ((int)(java.lang.Math.ceil(tmp))) - 1;
 } 
-fixed statement= "if (tmp < upper) {
+fixed statement= if (tmp < upper) {
 	upper = ((int)(java.lang.Math.ceil(tmp))) - 1;
-} "
+} 
 generation= 1
+ingredientScope= -
  
  ----
 ProgramVariant 49
@@ -35,10 +50,11 @@ line= 137
 original statement= if (tmp < upper) {
 	upper = ((int)(java.lang.Math.ceil(tmp))) - 1;
 } 
-fixed statement= "if (false) {
+fixed statement= if (false) {
 	upper = ((int)(java.lang.Math.ceil(tmp))) - 1;
-} "
+} 
 generation= 1
+ingredientScope= -
  
  ----
 ProgramVariant 50
@@ -47,8 +63,9 @@ operation: DELETE
 location= org.apache.commons.math3.distribution.AbstractIntegerDistribution
 line= 138
 original statement= upper = ((int)(java.lang.Math.ceil(tmp))) - 1
-fixed statement= "upper = ((int)(java.lang.Math.ceil(tmp))) - 1"
+fixed statement= upper = ((int)(java.lang.Math.ceil(tmp))) - 1
 generation= 1
+ingredientScope= -
  
  ----
 ProgramVariant 58
@@ -68,7 +85,7 @@ original statement= if (chebyshevApplies) {
 		upper = ((int)(java.lang.Math.ceil(tmp))) - 1;
 	} 
 } 
-fixed statement= "if (chebyshevApplies) {
+fixed statement= if (chebyshevApplies) {
 	double k = org.apache.commons.math3.util.FastMath.sqrt(((1.0 - p) / p));
 	double tmp = mu - (k * sigma);
 	if (tmp > lower) {
@@ -79,8 +96,9 @@ fixed statement= "if (chebyshevApplies) {
 	if (tmp < upper) {
 		upper = ((int)(java.lang.Math.ceil(tmp))) - 1;
 	} 
-} "
+} 
 generation= 1
+ingredientScope= -
  
  ----
 ProgramVariant 61
@@ -100,7 +118,7 @@ original statement= if (chebyshevApplies) {
 		upper = ((int)(java.lang.Math.ceil(tmp))) - 1;
 	} 
 } 
-fixed statement= "if (false) {
+fixed statement= if (false) {
 	double k = org.apache.commons.math3.util.FastMath.sqrt(((1.0 - p) / p));
 	double tmp = mu - (k * sigma);
 	if (tmp > lower) {
@@ -111,36 +129,36 @@ fixed statement= "if (false) {
 	if (tmp < upper) {
 		upper = ((int)(java.lang.Math.ceil(tmp))) - 1;
 	} 
-} "
+} 
 generation= 1
+ingredientScope= -
  
 
 ----stats: 
 
-spaces: [0]: []
-time val1 [68]: [288, 279, 298, 302, 271, 299, 299, 299, 271, 299, 299, 298, 307, 299, 297, 270, 271, 268, 268, 272, 267, 273, 269, 276, 271, 272, 277, 286, 271, 274, 273, 296, 276, 271, 296, 303, 279, 268, 268, 270, 296, 277, 270, 299, 277, 276, 272, 286, 267, 276, 268, 271, 270, 269, 269, 276, 271, 270, 270, 277, 270, 268, 271, 269, 271, 269, 261, 271]
-time val2 [5]: [118580, 118007, 117898, 118114, 118049]
+spaces navigation: [0]: {}
 #gen: 0
 #patches: 5
-#RightCompilation: 67
-#WrongCompilation: 21
-#FailingTestCaseExecution: 68
-#RegressionTestExecution: 5
-#TestcasesExecutedval1: 1088
-#TestcasesExecutedval2: 25840
+#RightCompilation: 1777
+#WrongCompilation: 343
+#FailingTestCaseExecution: 1778
+#RegressionTestExecution: 8
+#TestcasesExecutedval1: 28432
+#TestcasesExecutedval2: 36176
 #FailingTestCase: 16
 #RegressionTestCases: 5168
 #OfAppliedOp: 0
 #NotAppliedOp: 0
 #InmutatedGen: 0
-#unfinishValidation: 0
-#ing []
-Time Total(ms): 984266
+#unfinishValidation: 1
+#ing {}
+#untilcompile {}
+Time Total(ms): 3661774
 
 
-Node: graphene-106.nancy.grid5000.fr
+Node: griffon-2.nancy.grid5000.fr
 
 
-Date: Thu Jul 23 00:56:21 CEST 2015
+Date: Thu Aug 13 20:47:02 CEST 2015
 
 

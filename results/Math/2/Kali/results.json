@@ -1,18 +1,20 @@
 {
     "FailingTestCase": "16", 
-    "FailingTestCaseExecution": "68", 
+    "FailingTestCaseExecution": "1778", 
     "InmutatedGen": "0", 
     "NotAppliedOp": "0", 
     "OfAppliedOp": "0", 
     "RegressionTestCases": "5168", 
-    "RegressionTestExecution": "5", 
-    "RightCompilation": "67", 
-    "WrongCompilation": "21", 
-    "date": "Thu Jul 23 00:56:21 CEST 2015\n\n", 
+    "RegressionTestExecution": "8", 
+    "RightCompilation": "1777", 
+    "WrongCompilation": "343", 
+    "date": "Thu Aug 13 20:47:02 CEST 2015\n\n", 
     "gen": "0", 
-    "node": "graphene-106.nancy.grid5000.fr", 
+    "gens": "920", 
+    "node": "griffon-2.nancy.grid5000.fr", 
     "operations": [
         {
+            "buggyStatement": "if (tmp < upper) {\n\tupper = ((int)(java.lang.Math.ceil(tmp))) - 1;\n} ", 
             "generation": 1, 
             "patch": "remove", 
             "patchLocation": {
@@ -23,6 +25,7 @@
             "variant": 46
         }, 
         {
+            "buggyStatement": "if (tmp < upper) {\n\tupper = ((int)(java.lang.Math.ceil(tmp))) - 1;\n} ", 
             "generation": 1, 
             "patch": "if (false) {\n\tupper = ((int)(java.lang.Math.ceil(tmp))) - 1;\n} ", 
             "patchLocation": {
@@ -33,6 +36,7 @@
             "variant": 49
         }, 
         {
+            "buggyStatement": "upper = ((int)(java.lang.Math.ceil(tmp))) - 1", 
             "generation": 1, 
             "patch": "remove", 
             "patchLocation": {
@@ -43,6 +47,7 @@
             "variant": 50
         }, 
         {
+            "buggyStatement": "if (chebyshevApplies) {\n\tdouble k = org.apache.commons.math3.util.FastMath.sqrt(((1.0 - p) / p));\n\tdouble tmp = mu - (k * sigma);\n\tif (tmp > lower) {\n\t\tlower = ((int)(java.lang.Math.ceil(tmp))) - 1;\n\t} \n\tk = 1.0 / k;\n\ttmp = mu + (k * sigma);\n\tif (tmp < upper) {\n\t\tupper = ((int)(java.lang.Math.ceil(tmp))) - 1;\n\t} \n} ", 
             "generation": 1, 
             "patch": "remove", 
             "patchLocation": {
@@ -53,6 +58,7 @@
             "variant": 58
         }, 
         {
+            "buggyStatement": "if (chebyshevApplies) {\n\tdouble k = org.apache.commons.math3.util.FastMath.sqrt(((1.0 - p) / p));\n\tdouble tmp = mu - (k * sigma);\n\tif (tmp > lower) {\n\t\tlower = ((int)(java.lang.Math.ceil(tmp))) - 1;\n\t} \n\tk = 1.0 / k;\n\ttmp = mu + (k * sigma);\n\tif (tmp < upper) {\n\t\tupper = ((int)(java.lang.Math.ceil(tmp))) - 1;\n\t} \n} ", 
             "generation": 1, 
             "patch": "if (false) {\n\tdouble k = org.apache.commons.math3.util.FastMath.sqrt(((1.0 - p) / p));\n\tdouble tmp = mu - (k * sigma);\n\tif (tmp > lower) {\n\t\tlower = ((int)(java.lang.Math.ceil(tmp))) - 1;\n\t} \n\tk = 1.0 / k;\n\ttmp = mu + (k * sigma);\n\tif (tmp < upper) {\n\t\tupper = ((int)(java.lang.Math.ceil(tmp))) - 1;\n\t} \n} ", 
             "patchLocation": {
@@ -63,86 +69,10 @@
             "variant": 61
         }
     ], 
+    "ops": "0", 
     "patches": "5", 
     "programVariant": "46", 
     "timeEvaluation": null, 
-    "timeTotal": "984266", 
-    "timeVal1": [
-        288, 
-        279, 
-        298, 
-        302, 
-        271, 
-        299, 
-        299, 
-        299, 
-        271, 
-        299, 
-        299, 
-        298, 
-        307, 
-        299, 
-        297, 
-        270, 
-        271, 
-        268, 
-        268, 
-        272, 
-        267, 
-        273, 
-        269, 
-        276, 
-        271, 
-        272, 
-        277, 
-        286, 
-        271, 
-        274, 
-        273, 
-        296, 
-        276, 
-        271, 
-        296, 
-        303, 
-        279, 
-        268, 
-        268, 
-        270, 
-        296, 
-        277, 
-        270, 
-        299, 
-        277, 
-        276, 
-        272, 
-        286, 
-        267, 
-        276, 
-        268, 
-        271, 
-        270, 
-        269, 
-        269, 
-        276, 
-        271, 
-        270, 
-        270, 
-        277, 
-        270, 
-        268, 
-        271, 
-        269, 
-        271, 
-        269, 
-        261, 
-        271
-    ], 
-    "timeVal2": [
-        118580, 
-        118007, 
-        117898, 
-        118114, 
-        118049
-    ], 
-    "unfinishValidation": "0"
+    "timeTotal": "3661774", 
+    "unfinishValidation": "1"
 }
