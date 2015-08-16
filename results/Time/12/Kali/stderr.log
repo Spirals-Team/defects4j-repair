@@ -1,73 +1,26 @@
 Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
-java.lang.IllegalArgumentException: The validation process does not execute well the test cases
- Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
-Exception in thread "main" java.lang.ExceptionInInitializerError
-	at org.joda.time.TestLocalDateTime_Constructors.<clinit>(TestLocalDateTime_Constructors.java:45)
-	at java.lang.Class.forName0(Native Method)
-	at java.lang.Class.forName(Class.java:191)
-	at fr.inria.astor.junitexec.JUnitTestExecutor.main(JUnitTestExecutor.java:106)
-Caused by: org.joda.time.IllegalFieldValueException: Value 0 for year is not supported
-	at org.joda.time.chrono.JulianChronology.adjustYearForSet(JulianChronology.java:24)
-	at org.joda.time.chrono.JulianChronology.getDateMidnightMillis(JulianChronology.java:98)
-	at org.joda.time.chrono.BasicChronology.getDateTimeMillis(BasicChronology.java:92)
-	at org.joda.time.chrono.JulianChronology.getDateTimeMillis(JulianChronology.java:2)
-	at org.joda.time.chrono.GJChronology.convertByYear(GJChronology.java:6)
-	at org.joda.time.chrono.GJChronology.gregorianToJulianByYear(GJChronology.java:269)
-	at org.joda.time.chrono.GJChronology$CutoverField.gregorianToJulian(GJChronology.java:558)
-	at org.joda.time.chrono.GJChronology$CutoverField.set(GJChronology.java:386)
-	at org.joda.time.field.DelegatedDateTimeField.set(DelegatedDateTimeField.java:119)
-	at org.joda.time.field.SkipUndoDateTimeField.set(SkipUndoDateTimeField.java:91)
-	at org.joda.time.field.DecoratedDateTimeField.set(DecoratedDateTimeField.java:31)
-	at org.joda.time.field.OffsetDateTimeField.set(OffsetDateTimeField.java:59)
-	at org.joda.time.chrono.BaseChronology.getDateTimeMillis(BaseChronology.java:23)
-	at org.joda.time.chrono.AssembledChronology.getDateTimeMillis(AssembledChronology.java:108)
-	at org.joda.time.base.BaseDateTime.<init>(BaseDateTime.java:61)
-	at org.joda.time.DateTime.<init>(DateTime.java:101)
-	at org.joda.time.chrono.BuddhistChronology.getInstance(BuddhistChronology.java:30)
-	at org.joda.time.chrono.BuddhistChronology.<clinit>(BuddhistChronology.java:13)
-	... 4 more
-
-	at fr.inria.astor.core.validation.executors.JUnitExecutorProcess.getTestResult(JUnitExecutorProcess.java:130)
-	at fr.inria.astor.core.validation.executors.JUnitExecutorProcess.execute(JUnitExecutorProcess.java:78)
-	at fr.inria.astor.core.validation.executors.JUnitExecutorProcess.execute(JUnitExecutorProcess.java:34)
-	at fr.inria.astor.core.validation.validators.ProcessValidator.validate(ProcessValidator.java:58)
-	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.validateInstance(EvolutionaryEngine.java:768)
-	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.processCreatedVariant(EvolutionaryEngine.java:365)
-	at fr.inria.astor.core.loop.evolutionary.JKali.startEvolution(JKali.java:66)
+java.lang.IllegalStateException: Undo: Not valid fix position
+	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.remove(CtStatementTransformator.java:66)
+	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.revert(CtStatementTransformator.java:40)
+	at fr.inria.astor.core.loop.evolutionary.JGenProg.undoOperationToSpoonElement(JGenProg.java:352)
+	at fr.inria.astor.core.loop.evolutionary.JKali.startEvolution(JKali.java:78)
 	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:198)
 	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
-Exception in thread "main" java.lang.AssertionError: The validation process does not execute well the test cases
- Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
-Exception in thread "main" java.lang.ExceptionInInitializerError
-	at org.joda.time.TestLocalDateTime_Constructors.<clinit>(TestLocalDateTime_Constructors.java:45)
-	at java.lang.Class.forName0(Native Method)
-	at java.lang.Class.forName(Class.java:191)
-	at fr.inria.astor.junitexec.JUnitTestExecutor.main(JUnitTestExecutor.java:106)
-Caused by: org.joda.time.IllegalFieldValueException: Value 0 for year is not supported
-	at org.joda.time.chrono.JulianChronology.adjustYearForSet(JulianChronology.java:24)
-	at org.joda.time.chrono.JulianChronology.getDateMidnightMillis(JulianChronology.java:98)
-	at org.joda.time.chrono.BasicChronology.getDateTimeMillis(BasicChronology.java:92)
-	at org.joda.time.chrono.JulianChronology.getDateTimeMillis(JulianChronology.java:2)
-	at org.joda.time.chrono.GJChronology.convertByYear(GJChronology.java:6)
-	at org.joda.time.chrono.GJChronology.gregorianToJulianByYear(GJChronology.java:269)
-	at org.joda.time.chrono.GJChronology$CutoverField.gregorianToJulian(GJChronology.java:558)
-	at org.joda.time.chrono.GJChronology$CutoverField.set(GJChronology.java:386)
-	at org.joda.time.field.DelegatedDateTimeField.set(DelegatedDateTimeField.java:119)
-	at org.joda.time.field.SkipUndoDateTimeField.set(SkipUndoDateTimeField.java:91)
-	at org.joda.time.field.DecoratedDateTimeField.set(DecoratedDateTimeField.java:31)
-	at org.joda.time.field.OffsetDateTimeField.set(OffsetDateTimeField.java:59)
-	at org.joda.time.chrono.BaseChronology.getDateTimeMillis(BaseChronology.java:23)
-	at org.joda.time.chrono.AssembledChronology.getDateTimeMillis(AssembledChronology.java:108)
-	at org.joda.time.base.BaseDateTime.<init>(BaseDateTime.java:61)
-	at org.joda.time.DateTime.<init>(DateTime.java:101)
-	at org.joda.time.chrono.BuddhistChronology.getInstance(BuddhistChronology.java:30)
-	at org.joda.time.chrono.BuddhistChronology.<clinit>(BuddhistChronology.java:13)
-	... 4 more
-
-	at org.junit.Assert.fail(Assert.java:88)
-	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:201)
+java.lang.IllegalStateException: Undo: Not valid fix position
+	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.remove(CtStatementTransformator.java:66)
+	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.revert(CtStatementTransformator.java:40)
+	at fr.inria.astor.core.loop.evolutionary.JGenProg.undoOperationToSpoonElement(JGenProg.java:352)
+	at fr.inria.astor.core.loop.evolutionary.JKali.startEvolution(JKali.java:78)
+	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:198)
+	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
+java.lang.IllegalStateException: Undo: Not valid fix position
+	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.remove(CtStatementTransformator.java:66)
+	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.revert(CtStatementTransformator.java:40)
+	at fr.inria.astor.core.loop.evolutionary.JGenProg.undoOperationToSpoonElement(JGenProg.java:352)
+	at fr.inria.astor.core.loop.evolutionary.JKali.startEvolution(JKali.java:78)
+	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:198)
 	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
 
-real	1m22.520s
-user	2m9.332s
-sys	0m2.956s
+real	82m26.979s
+user	234m31.663s
+sys	3m51.342s

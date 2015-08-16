@@ -57,18 +57,18 @@ BugId             | NopolPC   | NopolC    | BrutpolPC | BrutpolC  | Genprog   | 
 [M99](#math-99)   | Yes       | Yes       | Yes       | Yes       | No        | No        |      4
 [M104](#math-104) | 0 AV      | Yes       | 0 AV      | 1 AV      | No        | No        |      1
 [M105](#math-105) | Yes       | 0 AV      | Yes       | 0 AV      | No        | No        |      2
-[T7](#time-7)     | TIMEOUT   | TIMEOUT   | Yes       | ERROR     | ERROR     | ERROR     |      1
+[T7](#time-7)     | TIMEOUT   | TIMEOUT   | Yes       | ERROR     | No        | No        |      1
 [T11](#time-11)   | Yes       | Yes       | Yes       | Yes       | No        | No        |      4
 Total             | 30 (13%)  | 25 (11%)  | 24 (10%)  | 14 (6%)   | 30 (13%)  | 23 (10%)  |    146
 Fixed bugs: 57/224 (25%)
 
-Nb bugs ends with an execution error: 64
+Nb bugs ends with an execution error: 15
 
 Nb bugs ends with an empty log: 0
 
-Nb bugs ends with the Grid5000 timeout: 148
+Nb bugs ends with the Grid5000 timeout: 149
 
-Total execution time: 47 days, 2:42:28.039000
+Total execution time: 51 days, 1:37:21.828000
 # Complete data
 
 BugId             | NopolPC   | NopolC    | BrutpolPC | BrutpolC  | Genprog   | Kali      | Total
@@ -270,43 +270,43 @@ BugId             | NopolPC   | NopolC    | BrutpolPC | BrutpolC  | Genprog   | 
 [M104](#math-104) | 0 AV      | Yes       | 0 AV      | 1 AV      | No        | No        |      1
 [M105](#math-105) | Yes       | 0 AV      | Yes       | 0 AV      | No        | No        |      2
 [M106](#math-106) | 7 AV      | TIMEOUT   | 7 AV      | 5 AV      | No        | No        |      0
-[T1](#time-1)     | 0 AV      | TIMEOUT   | 0 AV      | ERROR     | ERROR     | ERROR     |      0
-[T2](#time-2)     | 0 AV      | 0 AV      | 0 AV      | 0 AV      | ERROR     | ERROR     |      0
-[T3](#time-3)     | TIMEOUT   | TIMEOUT   | 0 AV      | 1 AV      | ERROR     | ERROR     |      0
-[T4](#time-4)     | 0 AV      | 0 AV      | 1 AV      | 1 AV      | ERROR     | ERROR     |      0
-[T5](#time-5)     | 0 AV      | 1 AV      | 2 AV      | 1 AV      | ERROR     | ERROR     |      0
-[T6](#time-6)     | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | ERROR     |      0
-[T7](#time-7)     | TIMEOUT   | TIMEOUT   | Yes       | ERROR     | ERROR     | ERROR     |      1
-[T8](#time-8)     | 0 AV      | 0 AV      | 0 AV      | 0 AV      | ERROR     | ERROR     |      0
-[T9](#time-9)     | 0 AV      | 0 AV      | 0 AV      | 0 AV      | ERROR     | ERROR     |      0
-[T10](#time-10)   | TIMEOUT   | 0 AV      | 0 AV      | 0 AV      | ERROR     | ERROR     |      0
+[T1](#time-1)     | 0 AV      | TIMEOUT   | 0 AV      | ERROR     | No        | No        |      0
+[T2](#time-2)     | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
+[T3](#time-3)     | TIMEOUT   | TIMEOUT   | 0 AV      | 1 AV      | No        | No        |      0
+[T4](#time-4)     | 0 AV      | 0 AV      | 1 AV      | 1 AV      | No        | No        |      0
+[T5](#time-5)     | 0 AV      | 1 AV      | 2 AV      | 1 AV      | No        | No        |      0
+[T6](#time-6)     | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
+[T7](#time-7)     | TIMEOUT   | TIMEOUT   | Yes       | ERROR     | No        | No        |      1
+[T8](#time-8)     | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
+[T9](#time-9)     | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
+[T10](#time-10)   | TIMEOUT   | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
 [T11](#time-11)   | Yes       | Yes       | Yes       | Yes       | No        | No        |      4
-[T12](#time-12)   | ERROR     | TIMEOUT   | 0 AV      | 2 AV      | ERROR     | ERROR     |      0
-[T13](#time-13)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | ERROR     | ERROR     |      0
-[T14](#time-14)   | TIMEOUT   | 1 AV      | 1 AV      | 3 AV      | ERROR     | ERROR     |      0
+[T12](#time-12)   | ERROR     | TIMEOUT   | 0 AV      | 2 AV      | No        | No        |      0
+[T13](#time-13)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
+[T14](#time-14)   | TIMEOUT   | 1 AV      | 1 AV      | 3 AV      | No        | No        |      0
 [T15](#time-15)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[T16](#time-16)   | TIMEOUT   | TIMEOUT   | TIMEOUT   | 4 AV      | ERROR     | ERROR     |      0
-[T17](#time-17)   | TIMEOUT   | 1 AV      | 0 AV      | 2 AV      | ERROR     | ERROR     |      0
-[T18](#time-18)   | TIMEOUT   | TIMEOUT   | 3 AV      | 2 AV      | ERROR     | ERROR     |      0
-[T19](#time-19)   | TIMEOUT   | TIMEOUT   | 0 AV      | ERROR     | ERROR     | ERROR     |      0
-[T20](#time-20)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | ERROR     | ERROR     |      0
-[T21](#time-21)   | TIMEOUT   | 0 AV      | 0 AV      | 0 AV      | ERROR     | ERROR     |      0
-[T22](#time-22)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | ERROR     | ERROR     |      0
-[T23](#time-23)   | 0 AV      | TIMEOUT   | 0 AV      | 0 AV      | ERROR     | ERROR     |      0
-[T24](#time-24)   | 0 AV      | 0 AV      | 0 AV      | 1 AV      | ERROR     | ERROR     |      0
-[T25](#time-25)   | 0 AV      | TIMEOUT   | 0 AV      | 0 AV      | ERROR     | ERROR     |      0
-[T26](#time-26)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | ERROR     | ERROR     |      0
-[T27](#time-27)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | ERROR     | ERROR     |      0
+[T16](#time-16)   | TIMEOUT   | TIMEOUT   | TIMEOUT   | 4 AV      | No        | No        |      0
+[T17](#time-17)   | TIMEOUT   | 1 AV      | 0 AV      | 2 AV      | No        | No        |      0
+[T18](#time-18)   | TIMEOUT   | TIMEOUT   | 3 AV      | 2 AV      | No        | No        |      0
+[T19](#time-19)   | TIMEOUT   | TIMEOUT   | 0 AV      | ERROR     | No        | No        |      0
+[T20](#time-20)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
+[T21](#time-21)   | TIMEOUT   | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
+[T22](#time-22)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
+[T23](#time-23)   | 0 AV      | TIMEOUT   | 0 AV      | 0 AV      | No        | No        |      0
+[T24](#time-24)   | 0 AV      | 0 AV      | 0 AV      | 1 AV      | No        | No        |      0
+[T25](#time-25)   | 0 AV      | TIMEOUT   | 0 AV      | 0 AV      | No        | TIMEOUT   |      0
+[T26](#time-26)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
+[T27](#time-27)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
 Total             | 30 (13%)  | 25 (11%)  | 24 (10%)  | 14 (6%)   | 30 (13%)  | 23 (10%)  |    146
 Fixed bugs: 57/224 (25%)
 
-Nb bugs ends with an execution error: 64
+Nb bugs ends with an execution error: 15
 
 Nb bugs ends with an empty log: 0
 
-Nb bugs ends with the Grid5000 timeout: 148
+Nb bugs ends with the Grid5000 timeout: 149
 
-Total execution time: 47 days, 2:42:28.039000
+Total execution time: 51 days, 1:37:21.828000
 
 
 

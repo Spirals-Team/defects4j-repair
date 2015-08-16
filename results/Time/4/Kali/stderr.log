@@ -1,45 +1,26 @@
 Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
-java.lang.IllegalArgumentException: The validation process does not execute well the test cases
- Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
-Exception in thread "main" java.lang.ExceptionInInitializerError
-	at org.joda.time.TestPartial_Basics.<clinit>(TestPartial_Basics.java:44)
-	at java.lang.Class.forName0(Native Method)
-	at java.lang.Class.forName(Class.java:191)
-	at fr.inria.astor.junitexec.JUnitTestExecutor.main(JUnitTestExecutor.java:106)
-Caused by: java.lang.IllegalArgumentException: The type must not be null
-	at org.joda.time.field.BaseDateTimeField.<init>(BaseDateTimeField.java:8)
-	at org.joda.time.field.DecoratedDateTimeField.<init>(DecoratedDateTimeField.java:9)
-	at org.joda.time.field.ZeroIsMaxDateTimeField.<init>(ZeroIsMaxDateTimeField.java:7)
-	at org.joda.time.chrono.BasicChronology.<clinit>(BasicChronology.java:57)
-	... 4 more
-
-	at fr.inria.astor.core.validation.executors.JUnitExecutorProcess.getTestResult(JUnitExecutorProcess.java:130)
-	at fr.inria.astor.core.validation.executors.JUnitExecutorProcess.execute(JUnitExecutorProcess.java:78)
-	at fr.inria.astor.core.validation.executors.JUnitExecutorProcess.execute(JUnitExecutorProcess.java:34)
-	at fr.inria.astor.core.validation.validators.ProcessValidator.validate(ProcessValidator.java:58)
-	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.validateInstance(EvolutionaryEngine.java:768)
-	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.processCreatedVariant(EvolutionaryEngine.java:365)
-	at fr.inria.astor.core.loop.evolutionary.JKali.startEvolution(JKali.java:66)
+java.lang.IllegalStateException: Undo: Not valid fix position
+	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.remove(CtStatementTransformator.java:66)
+	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.revert(CtStatementTransformator.java:40)
+	at fr.inria.astor.core.loop.evolutionary.JGenProg.undoOperationToSpoonElement(JGenProg.java:352)
+	at fr.inria.astor.core.loop.evolutionary.JKali.startEvolution(JKali.java:78)
 	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:198)
 	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
-Exception in thread "main" java.lang.AssertionError: The validation process does not execute well the test cases
- Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
-Exception in thread "main" java.lang.ExceptionInInitializerError
-	at org.joda.time.TestPartial_Basics.<clinit>(TestPartial_Basics.java:44)
-	at java.lang.Class.forName0(Native Method)
-	at java.lang.Class.forName(Class.java:191)
-	at fr.inria.astor.junitexec.JUnitTestExecutor.main(JUnitTestExecutor.java:106)
-Caused by: java.lang.IllegalArgumentException: The type must not be null
-	at org.joda.time.field.BaseDateTimeField.<init>(BaseDateTimeField.java:8)
-	at org.joda.time.field.DecoratedDateTimeField.<init>(DecoratedDateTimeField.java:9)
-	at org.joda.time.field.ZeroIsMaxDateTimeField.<init>(ZeroIsMaxDateTimeField.java:7)
-	at org.joda.time.chrono.BasicChronology.<clinit>(BasicChronology.java:57)
-	... 4 more
-
-	at org.junit.Assert.fail(Assert.java:88)
-	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:201)
+java.lang.IllegalStateException: Undo: Not valid fix position
+	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.remove(CtStatementTransformator.java:66)
+	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.revert(CtStatementTransformator.java:40)
+	at fr.inria.astor.core.loop.evolutionary.JGenProg.undoOperationToSpoonElement(JGenProg.java:352)
+	at fr.inria.astor.core.loop.evolutionary.JKali.startEvolution(JKali.java:78)
+	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:198)
+	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
+java.lang.IllegalStateException: Undo: Not valid fix position
+	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.remove(CtStatementTransformator.java:66)
+	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.revert(CtStatementTransformator.java:40)
+	at fr.inria.astor.core.loop.evolutionary.JGenProg.undoOperationToSpoonElement(JGenProg.java:352)
+	at fr.inria.astor.core.loop.evolutionary.JKali.startEvolution(JKali.java:78)
+	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:198)
 	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
 
-real	0m57.733s
-user	1m36.130s
-sys	0m2.108s
+real	54m52.632s
+user	49m23.233s
+sys	2m7.136s
