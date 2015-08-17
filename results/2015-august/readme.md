@@ -1,314 +1,308 @@
 # Summary
 
-BugId             | NopolPC   | NopolC    | BrutpolPC | BrutpolC  | Genprog   | Kali      | Total
------------------ | --------- | --------- | --------- | --------- | --------- | --------- | ------
-[C1](#chart-1)    | TIMEOUT   | TIMEOUT   | No        | No        | Yes       | Yes       |      2
-[C3](#chart-3)    | TIMEOUT   | Yes       | No        | No        | Yes       | No       |      2
-[C4](#chart-4)    | TIMEOUT   | TIMEOUT   | Yes       | No        | No       | No       |      1
-[C5](#chart-5)    | TIMEOUT   | Yes       | No        | Yes       | Yes       | Yes       |      4
-[C6](#chart-6)    | Yes       | Yes       | Yes       | Yes       | Yes       | No       |      5
-[C7](#chart-7)    | TIMEOUT   | TIMEOUT   | No        | No        | Yes       | No       |      1
-[C8](#chart-8)    | TIMEOUT   | No        | No        | No        | Yes       | TIMEOUT   |      1
-[C9](#chart-9)    | TIMEOUT   | TIMEOUT   | Yes       | Yes       | Yes       | No       |      3
-[C13](#chart-13)  | Yes       | Yes       | Yes       | No        | Yes       | Yes       |      5
-[C15](#chart-15)  | TIMEOUT   | TIMEOUT   | No        | No        | Yes       | Yes       |      2
-[C17](#chart-17)  | TIMEOUT   | No        | Yes       | Yes       | No       | No       |      2
-[C21](#chart-21)  | Yes       | Yes       | No        | No        | Yes       | Yes       |      4
-[C25](#chart-25)  | Yes       | Yes       | Yes       | Yes       | Yes       | Yes       |      6
-[C26](#chart-26)  | Yes       | Yes       | No        | Yes       | No    | Yes       |      4
-[L39](#lang-39)   | Yes       | No        | Yes       | No        | No       | No       |      2
-[L44](#lang-44)   | Yes       | Yes       | No        | No        | No    | No    |      2
-[L46](#lang-46)   | Yes       | No        | No        | No        | No    | No    |      1
-[L51](#lang-51)   | No        | Yes       | No        | No        | No    | No    |      1
-[L53](#lang-53)   | Yes       | TIMEOUT   | No        | No        | No       | No       |      1
-[L55](#lang-55)   | Yes       | No        | No        | No        | No    | No    |      1
-[L58](#lang-58)   | Yes       | Yes       | No        | No        | No       | No       |      2
-[M2](#math-2)     | TIMEOUT   | TIMEOUT   | TIMEOUT   | ERROR     | Yes       | Yes       |      2
-[M5](#math-5)     | TIMEOUT   | No        | No        | No        | Yes       | No       |      1
-[M8](#math-8)     | TIMEOUT   | No        | No        | No        | Yes       | Yes       |      2
-[M28](#math-28)   | No        | TIMEOUT   | No        | No        | Yes       | Yes       |      2
-[M32](#math-32)   | Yes       | No        | No        | Yes       | No    | Yes       |      3
-[M33](#math-33)   | Yes       | Yes       | Yes       | No        | No       | No       |      3
-[M40](#math-40)   | No        | Yes       | No        | No        | Yes       | Yes       |      3
-[M41](#math-41)   | No       | No       | Yes       | Yes       | No       | No       |      2
-[M42](#math-42)   | Yes       | TIMEOUT   | Yes       | Yes       | No       | No       |      3
-[M44](#math-44)   | TIMEOUT   | No        | No        | No        | Yes       | Yes       |      2
-[M46](#math-46)   | No        | No        | Yes       | No        | No       | No       |      1
-[M49](#math-49)   | Yes       | Yes       | Yes       | No        | Yes       | Yes       |      5
-[M50](#math-50)   | Yes       | Yes       | Yes       | No        | Yes       | Yes       |      5
-[M53](#math-53)   | No        | No        | No        | No        | Yes       | No       |      1
-[M56](#math-56)   | No        | No        | No        | No        | Yes       | No       |      1
-[M57](#math-57)   | Yes       | Yes       | No        | No        | No       | No       |      2
-[M58](#math-58)   | Yes       | Yes       | Yes       | ERROR     | No    | TIMEOUT   |      3
-[M69](#math-69)   | Yes       | No        | No        | No        | No       | No       |      1
-[M70](#math-70)   | No        | No        | No        | No        | Yes       | No       |      1
-[M71](#math-71)   | No        | Yes       | Yes       | No        | Yes       | TIMEOUT   |      3
-[M73](#math-73)   | No        | Yes       | No        | No        | Yes       | No       |      2
-[M78](#math-78)   | Yes       | TIMEOUT   | Yes       | No        | Yes       | Yes       |      4
-[M80](#math-80)   | Yes       | TIMEOUT   | No        | No        | Yes       | Yes       |      3
-[M81](#math-81)   | Yes       | Yes       | TIMEOUT   | TIMEOUT   | Yes       | Yes       |      4
-[M82](#math-82)   | Yes       | No        | No        | No        | Yes       | Yes       |      3
-[M84](#math-84)   | No        | No        | No        | No        | Yes       | Yes       |      2
-[M85](#math-85)   | Yes       | Yes       | Yes       | Yes       | Yes       | Yes       |      6
-[M87](#math-87)   | Yes       | Yes       | Yes       | No        | No       | No       |      3
-[M88](#math-88)   | Yes       | No        | Yes       | No        | No       | No       |      2
-[M95](#math-95)   | TIMEOUT   | No        | No        | No        | Yes       | Yes       |      2
-[M96](#math-96)   | No        | No        | No        | Yes       | No       | No       |      1
-[M97](#math-97)   | Yes       | Yes       | Yes       | Yes       | No       | No       |      4
-[M99](#math-99)   | Yes       | Yes       | Yes       | Yes       | No       | No       |      4
-[M104](#math-104) | No        | Yes       | No        | No        | No    | No       |      1
-[M105](#math-105) | Yes       | No        | Yes       | No        | No       | No       |      2
-[T4](#time-4)     | No        | No        | No        | No        | Yes       | Yes       |      2
-[T7](#time-7)     | TIMEOUT   | TIMEOUT   | Yes       | ERROR     | No       | No       |      1
-[T11](#time-11)   | Yes       | Yes       | Yes       | Yes       | Yes       | Yes       |      6
-Total             | 30 (13%)  | 25 (11%)  | 24 (10%)  | 14 (6%)   | 33 (14%)  | 24 (10%)  |    150
-Fixed bugs: 59/224 (26%)
+BugId             | NopolPC   | NopolC    | Genprog   | Kali      | Total
+----------------- | --------- | --------- | --------- | --------- | ------
+[C1](#chart-1)    | TIMEOUT   | TIMEOUT   | Yes       | Yes       |      2
+[C3](#chart-3)    | TIMEOUT   | Yes       | Yes       | No       |      2
+[C5](#chart-5)    | TIMEOUT   | Yes       | Yes       | Yes       |      3
+[C6](#chart-6)    | Yes       | Yes       | Yes       | No       |      3
+[C7](#chart-7)    | TIMEOUT   | TIMEOUT   | Yes       | No       |      1
+[C8](#chart-8)    | TIMEOUT   | No        | Yes       | TIMEOUT   |      1
+[C9](#chart-9)    | TIMEOUT   | TIMEOUT   | Yes       | No       |      1
+[C13](#chart-13)  | Yes       | Yes       | Yes       | Yes       |      4
+[C15](#chart-15)  | TIMEOUT   | TIMEOUT   | Yes       | Yes       |      2
+[C21](#chart-21)  | Yes       | Yes       | Yes       | Yes       |      4
+[C25](#chart-25)  | Yes       | Yes       | Yes       | Yes       |      4
+[C26](#chart-26)  | Yes       | Yes       | No    | Yes       |      3
+[L39](#lang-39)   | Yes       | No        | No       | No       |      1
+[L44](#lang-44)   | Yes       | Yes       | No    | No    |      2
+[L46](#lang-46)   | Yes       | No        | No    | No    |      1
+[L51](#lang-51)   | No        | Yes       | No    | No    |      1
+[L53](#lang-53)   | Yes       | TIMEOUT   | No       | No       |      1
+[L55](#lang-55)   | Yes       | No        | No    | No    |      1
+[L58](#lang-58)   | Yes       | Yes       | No       | No       |      2
+[M2](#math-2)     | TIMEOUT   | TIMEOUT   | Yes       | Yes       |      2
+[M5](#math-5)     | TIMEOUT   | No        | Yes       | No       |      1
+[M8](#math-8)     | TIMEOUT   | No        | Yes       | Yes       |      2
+[M28](#math-28)   | No        | TIMEOUT   | Yes       | Yes       |      2
+[M32](#math-32)   | Yes       | No        | No    | Yes       |      2
+[M33](#math-33)   | Yes       | Yes       | No       | No       |      2
+[M40](#math-40)   | No        | Yes       | Yes       | Yes       |      3
+[M42](#math-42)   | Yes       | TIMEOUT   | No       | No       |      1
+[M44](#math-44)   | TIMEOUT   | No        | Yes       | Yes       |      2
+[M49](#math-49)   | Yes       | Yes       | Yes       | Yes       |      4
+[M50](#math-50)   | Yes       | Yes       | Yes       | Yes       |      4
+[M53](#math-53)   | No        | No        | Yes       | No       |      1
+[M56](#math-56)   | No        | No        | Yes       | No       |      1
+[M57](#math-57)   | Yes       | Yes       | No       | No       |      2
+[M58](#math-58)   | Yes       | Yes       | No    | TIMEOUT   |      2
+[M69](#math-69)   | Yes       | No        | No       | No       |      1
+[M70](#math-70)   | No        | No        | Yes       | No       |      1
+[M71](#math-71)   | No        | Yes       | Yes       | TIMEOUT   |      2
+[M73](#math-73)   | No        | Yes       | Yes       | No       |      2
+[M78](#math-78)   | Yes       | TIMEOUT   | Yes       | Yes       |      3
+[M80](#math-80)   | Yes       | TIMEOUT   | Yes       | Yes       |      3
+[M81](#math-81)   | Yes       | Yes       | Yes       | Yes       |      4
+[M82](#math-82)   | Yes       | No        | Yes       | Yes       |      3
+[M84](#math-84)   | No        | No        | Yes       | Yes       |      2
+[M85](#math-85)   | Yes       | Yes       | Yes       | Yes       |      4
+[M87](#math-87)   | Yes       | Yes       | No       | No       |      2
+[M88](#math-88)   | Yes       | No        | No       | No       |      1
+[M95](#math-95)   | TIMEOUT   | No        | Yes       | Yes       |      2
+[M97](#math-97)   | Yes       | Yes       | No       | No       |      2
+[M99](#math-99)   | Yes       | Yes       | No       | No       |      2
+[M104](#math-104) | No        | Yes       | No    | No       |      1
+[M105](#math-105) | Yes       | No        | No       | No       |      1
+[T4](#time-4)     | No        | No        | Yes       | Yes       |      2
+[T11](#time-11)   | Yes       | Yes       | Yes       | Yes       |      4
+Total             | 30 (13%)  | 25 (11%)  | 33 (14%)  | 24 (10%)  |    112
+Fixed bugs: 53/224 (23%)
 
-Nb bugs ends with an execution error: 15
+Nb bugs ends with an execution error: 9
 
 Nb bugs ends with an empty log: 0
 
-Nb bugs ends with the Grid5000 timeout: 149
+Nb bugs ends with the Grid5000 timeout: 133
 
-Total execution time: 36 days, 23:03:34.852000
+Total execution time: 24 days, 9:25:58.832000
 # Complete data
 
-BugId             | NopolPC   | NopolC    | BrutpolPC | BrutpolC  | Genprog   | Kali      | Total
------------------ | --------- | --------- | --------- | --------- | --------- | --------- | ------
-[C1](#chart-1)    | TIMEOUT   | TIMEOUT   | No        | No        | Yes       | Yes       |      2
-[C2](#chart-2)    | TIMEOUT   | TIMEOUT   | No        | No        | No       | No       |      0
-[C3](#chart-3)    | TIMEOUT   | Yes       | No        | No        | Yes       | No       |      2
-[C4](#chart-4)    | TIMEOUT   | TIMEOUT   | Yes       | No        | No       | No       |      1
-[C5](#chart-5)    | TIMEOUT   | Yes       | No        | Yes       | Yes       | Yes       |      4
-[C6](#chart-6)    | Yes       | Yes       | Yes       | Yes       | Yes       | No       |      5
-[C7](#chart-7)    | TIMEOUT   | TIMEOUT   | No        | No        | Yes       | No       |      1
-[C8](#chart-8)    | TIMEOUT   | No        | No        | No        | Yes       | TIMEOUT   |      1
-[C9](#chart-9)    | TIMEOUT   | TIMEOUT   | Yes       | Yes       | Yes       | No       |      3
-[C10](#chart-10)  | TIMEOUT   | No        | No        | No        | No       | No       |      0
-[C11](#chart-11)  | TIMEOUT   | TIMEOUT   | No        | No        | No       | No       |      0
-[C12](#chart-12)  | TIMEOUT   | No        | No        | No        | No       | No       |      0
-[C13](#chart-13)  | Yes       | Yes       | Yes       | No        | Yes       | Yes       |      5
-[C14](#chart-14)  | TIMEOUT   | No        | No        | No        | No       | No       |      0
-[C15](#chart-15)  | TIMEOUT   | TIMEOUT   | No        | No        | Yes       | Yes       |      2
-[C16](#chart-16)  | TIMEOUT   | TIMEOUT   | No        | No        | No       | No       |      0
-[C17](#chart-17)  | TIMEOUT   | No        | Yes       | Yes       | No       | No       |      2
-[C18](#chart-18)  | TIMEOUT   | No        | No        | No        | No       | No       |      0
-[C19](#chart-19)  | TIMEOUT   | No        | No        | No        | No       | No       |      0
-[C20](#chart-20)  | TIMEOUT   | No        | No        | No        | No       | No       |      0
-[C21](#chart-21)  | Yes       | Yes       | No        | No        | Yes       | Yes       |      4
-[C22](#chart-22)  | TIMEOUT   | No        | No        | No        | No       | No       |      0
-[C23](#chart-23)  | TIMEOUT   | No        | No        | No        | No       | No       |      0
-[C24](#chart-24)  | TIMEOUT   | No        | No        | No        | No       | No       |      0
-[C25](#chart-25)  | Yes       | Yes       | Yes       | Yes       | Yes       | Yes       |      6
-[C26](#chart-26)  | Yes       | Yes       | No        | Yes       | No    | Yes       |      4
-[L1](#lang-1)     | No        | No        | No        | No        | No       | No       |      0
-[L2](#lang-2)     | TIMEOUT   | No        | No        | No        | No       | No       |      0
-[L3](#lang-3)     | TIMEOUT   | No        | No        | No        | No       | No       |      0
-[L4](#lang-4)     | TIMEOUT   | No        | No        | No        | No       | No       |      0
-[L5](#lang-5)     | TIMEOUT   | No        | No        | No        | No       | No       |      0
-[L6](#lang-6)     | No        | No        | No        | No        | No       | No    |      0
-[L7](#lang-7)     | TIMEOUT   | No        | No        | No        | No    | No       |      0
-[L8](#lang-8)     | TIMEOUT   | No        | No        | No        | No       | No       |      0
-[L9](#lang-9)     | TIMEOUT   | No        | No        | No        | No       | No       |      0
-[L10](#lang-10)   | TIMEOUT   | TIMEOUT   | No       | No       | No       | No    |      0
-[L11](#lang-11)   | No        | No        | No        | No        | No       | No       |      0
-[L12](#lang-12)   | No        | No        | No        | No        | No       | No       |      0
-[L13](#lang-13)   | No        | No        | No        | No        | No       | No       |      0
-[L14](#lang-14)   | No        | No        | No        | No        | No       | No       |      0
-[L15](#lang-15)   | No        | No        | No        | No        | No       | No       |      0
-[L16](#lang-16)   | No        | No        | No        | No        | No    | TIMEOUT   |      0
-[L17](#lang-17)   | No        | No        | No        | No        | No    | TIMEOUT   |      0
-[L18](#lang-18)   | TIMEOUT   | No        | No        | No        | No    | No    |      0
-[L19](#lang-19)   | No        | No        | No        | No        | No       | No       |      0
-[L20](#lang-20)   | No        | No        | No        | No        | No    | No    |      0
-[L21](#lang-21)   | No        | No        | No        | No        | No    | No    |      0
-[L22](#lang-22)   | TIMEOUT   | TIMEOUT   | No        | No        | No    | No    |      0
-[L23](#lang-23)   | No        | TIMEOUT   | No        | TIMEOUT   | No       | No       |      0
-[L24](#lang-24)   | No        | No        | No        | No        | No       | No       |      0
-[L25](#lang-25)   | No        | No        | No        | No        | No    | No    |      0
-[L26](#lang-26)   | TIMEOUT   | No        | No        | No        | No       | No       |      0
-[L27](#lang-27)   | No        | No        | No        | No        | No       | No       |      0
-[L28](#lang-28)   | No        | No        | No        | No        | No       | No       |      0
-[L29](#lang-29)   | No        | No        | No        | No        | No       | No       |      0
-[L30](#lang-30)   | No        | No        | No        | No        | No       | No       |      0
-[L31](#lang-31)   | No        | No        | No        | No        | No       | No       |      0
-[L32](#lang-32)   | No        | No        | No        | No        | No       | No       |      0
-[L33](#lang-33)   | No        | No        | No        | No        | No       | No       |      0
-[L34](#lang-34)   | TIMEOUT   | No        | No        | No        | No       | No       |      0
-[L35](#lang-35)   | No        | No        | No        | No        | No    | No    |      0
-[L36](#lang-36)   | No        | No        | No        | No        | No       | No       |      0
-[L37](#lang-37)   | No        | No        | No        | No        | No       | No       |      0
-[L38](#lang-38)   | No        | No        | No        | No        | No       | No       |      0
-[L39](#lang-39)   | Yes       | No        | Yes       | No        | No       | No       |      2
-[L40](#lang-40)   | No        | No        | No        | No        | No    | No    |      0
-[L41](#lang-41)   | No        | No        | No        | No        | No       | No       |      0
-[L42](#lang-42)   | No        | No        | No        | No        | No       | No       |      0
-[L43](#lang-43)   | No        | No        | No        | No        | No    | No    |      0
-[L44](#lang-44)   | Yes       | Yes       | No        | No        | No    | No    |      2
-[L45](#lang-45)   | No        | No        | No        | No        | No    | No    |      0
-[L46](#lang-46)   | Yes       | No        | No        | No        | No    | No    |      1
-[L47](#lang-47)   | No        | No        | No        | No        | No    | No    |      0
-[L48](#lang-48)   | No        | No        | No        | No        | No       | No       |      0
-[L49](#lang-49)   | TIMEOUT   | No        | No        | No        | No    | TIMEOUT   |      0
-[L50](#lang-50)   | No        | No        | No        | No        | No    | No    |      0
-[L51](#lang-51)   | No        | Yes       | No        | No        | No    | No    |      1
-[L52](#lang-52)   | No        | No        | No        | No        | No    | No    |      0
-[L53](#lang-53)   | Yes       | TIMEOUT   | No        | No        | No       | No       |      1
-[L54](#lang-54)   | No        | No        | No        | No        | No    | TIMEOUT   |      0
-[L55](#lang-55)   | Yes       | No        | No        | No        | No    | No    |      1
-[L56](#lang-56)   | No        | No        | No        | No        | No    | No    |      0
-[L57](#lang-57)   | No        | No        | No        | No        | No    | No    |      0
-[L58](#lang-58)   | Yes       | Yes       | No        | No        | No       | No       |      2
-[L59](#lang-59)   | No        | No        | No        | No        | No    | No    |      0
-[L60](#lang-60)   | No        | No        | No        | No        | No    | No    |      0
-[L61](#lang-61)   | No        | No        | No        | No        | No    | No    |      0
-[L62](#lang-62)   | No        | No        | No        | No        | No       | No       |      0
-[L63](#lang-63)   | TIMEOUT   | No        | No        | No        | No    | No    |      0
-[L64](#lang-64)   | No        | No        | No        | No        | No    | No    |      0
-[L65](#lang-65)   | No        | No        | No        | No        | No       | No       |      0
-[M1](#math-1)     | TIMEOUT   | No        | No        | No        | No       | No       |      0
-[M2](#math-2)     | TIMEOUT   | TIMEOUT   | TIMEOUT   | ERROR     | Yes       | Yes       |      2
-[M3](#math-3)     | TIMEOUT   | No        | No        | No        | No       | No       |      0
-[M4](#math-4)     | TIMEOUT   | TIMEOUT   | No        | No        | No       | No       |      0
-[M5](#math-5)     | TIMEOUT   | No        | No        | No        | Yes       | No       |      1
-[M6](#math-6)     | TIMEOUT   | No        | No        | No        | ERROR     | ERROR     |      0
-[M7](#math-7)     | TIMEOUT   | TIMEOUT   | No        | No        | No    | TIMEOUT   |      0
-[M8](#math-8)     | TIMEOUT   | No        | No        | No        | Yes       | Yes       |      2
-[M9](#math-9)     | TIMEOUT   | No        | No        | No        | No       | No    |      0
-[M10](#math-10)   | TIMEOUT   | No        | No        | No        | No       | No       |      0
-[M11](#math-11)   | TIMEOUT   | TIMEOUT   | No        | No        | No       | No       |      0
-[M12](#math-12)   | TIMEOUT   | TIMEOUT   | TIMEOUT   | ERROR     | No       | TIMEOUT   |      0
-[M13](#math-13)   | TIMEOUT   | No        | No        | No        | No       | TIMEOUT   |      0
-[M14](#math-14)   | TIMEOUT   | No        | No        | No        | No       | TIMEOUT   |      0
-[M15](#math-15)   | TIMEOUT   | No        | No        | TIMEOUT   | No       | TIMEOUT   |      0
-[M16](#math-16)   | TIMEOUT   | TIMEOUT   | No        | No        | No       | TIMEOUT   |      0
-[M17](#math-17)   | No        | TIMEOUT   | No        | No        | No       | No       |      0
-[M18](#math-18)   | TIMEOUT   | No        | TIMEOUT   | TIMEOUT   | No       | TIMEOUT   |      0
-[M19](#math-19)   | No        | No        | No        | No        | No       | No       |      0
-[M20](#math-20)   | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | ERROR     | ERROR     |      0
-[M21](#math-21)   | No        | No        | No        | No        | No       | No       |      0
-[M22](#math-22)   | No        | No        | No        | No        | No       | No       |      0
-[M23](#math-23)   | No        | TIMEOUT   | No        | No        | No       | No    |      0
-[M24](#math-24)   | No        | No        | No        | No        | No    | TIMEOUT   |      0
-[M25](#math-25)   | No        | No        | No        | No        | No       | No       |      0
-[M26](#math-26)   | No        | No        | No        | No        | No    | No       |      0
-[M27](#math-27)   | TIMEOUT   | TIMEOUT   | No        | No        | No       | No       |      0
-[M28](#math-28)   | No        | TIMEOUT   | No        | No        | Yes       | Yes       |      2
-[M29](#math-29)   | No        | TIMEOUT   | No        | TIMEOUT   | No       | No       |      0
-[M30](#math-30)   | No        | No        | No        | TIMEOUT   | No    | No    |      0
-[M31](#math-31)   | No        | No        | No        | No        | No       | No       |      0
-[M32](#math-32)   | Yes       | No        | No        | Yes       | No    | Yes       |      3
-[M33](#math-33)   | Yes       | Yes       | Yes       | No        | No       | No       |      3
-[M34](#math-34)   | No        | No        | No        | No        | No       | No       |      0
-[M35](#math-35)   | No        | No        | No        | No        | No       | No       |      0
-[M36](#math-36)   | No        | No        | No        | No        | No       | No       |      0
-[M37](#math-37)   | No        | No        | No        | No        | No       | No       |      0
-[M38](#math-38)   | TIMEOUT   | No        | No        | No        | No       | No       |      0
-[M39](#math-39)   | ERROR     | ERROR     | No        | No        | No       | TIMEOUT   |      0
-[M40](#math-40)   | No        | Yes       | No        | No        | Yes       | Yes       |      3
-[M41](#math-41)   | No       | No       | Yes       | Yes       | No       | No       |      2
-[M42](#math-42)   | Yes       | TIMEOUT   | Yes       | Yes       | No       | No       |      3
-[M43](#math-43)   | No        | No        | No        | No        | No       | No       |      0
-[M44](#math-44)   | TIMEOUT   | No        | No        | No        | Yes       | Yes       |      2
-[M45](#math-45)   | No        | No        | No        | No        | No       | No       |      0
-[M46](#math-46)   | No        | No        | Yes       | No        | No       | No       |      1
-[M47](#math-47)   | No        | No        | No        | No        | No       | No       |      0
-[M48](#math-48)   | TIMEOUT   | TIMEOUT   | No        | No        | No       | No       |      0
-[M49](#math-49)   | Yes       | Yes       | Yes       | No        | Yes       | Yes       |      5
-[M50](#math-50)   | Yes       | Yes       | Yes       | No        | Yes       | Yes       |      5
-[M51](#math-51)   | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        | ERROR     | ERROR     |      0
-[M52](#math-52)   | No        | No        | No        | No        | No       | No       |      0
-[M53](#math-53)   | No        | No        | No        | No        | Yes       | No       |      1
-[M54](#math-54)   | TIMEOUT   | TIMEOUT   | No        | No        | No       | TIMEOUT   |      0
-[M55](#math-55)   | No        | No        | No        | No        | No       | No       |      0
-[M56](#math-56)   | No        | No        | No        | No        | Yes       | No       |      1
-[M57](#math-57)   | Yes       | Yes       | No        | No        | No       | No       |      2
-[M58](#math-58)   | Yes       | Yes       | Yes       | ERROR     | No    | TIMEOUT   |      3
-[M59](#math-59)   | No        | No        | No        | No        | No       | TIMEOUT   |      0
-[M60](#math-60)   | No        | No        | No        | No        | No       | No       |      0
-[M61](#math-61)   | No        | No        | No        | No        | No       | No       |      0
-[M62](#math-62)   | No        | No        | No        | No        | No       | No       |      0
-[M63](#math-63)   | No        | No        | No        | No        | No       | No       |      0
-[M64](#math-64)   | TIMEOUT   | No        | No        | No        | No       | No       |      0
-[M65](#math-65)   | No        | No        | No        | No        | No       | No       |      0
-[M66](#math-66)   | No        | No        | No        | No        | No       | No       |      0
-[M67](#math-67)   | No        | No        | No        | No        | No       | No       |      0
-[M68](#math-68)   | No        | No        | No        | No        | No       | No       |      0
-[M69](#math-69)   | Yes       | No        | No        | No        | No       | No       |      1
-[M70](#math-70)   | No        | No        | No        | No        | Yes       | No       |      1
-[M71](#math-71)   | No        | Yes       | Yes       | No        | Yes       | TIMEOUT   |      3
-[M72](#math-72)   | No        | No        | No        | No        | No    | No       |      0
-[M73](#math-73)   | No        | Yes       | No        | No        | Yes       | No       |      2
-[M74](#math-74)   | TIMEOUT   | No        | TIMEOUT   | TIMEOUT   | No       | No       |      0
-[M75](#math-75)   | No        | No        | No        | No        | No       | No       |      0
-[M76](#math-76)   | No        | No        | No        | No        | No       | No       |      0
-[M77](#math-77)   | No        | No        | No        | No        | No       | No       |      0
-[M78](#math-78)   | Yes       | TIMEOUT   | Yes       | No        | Yes       | Yes       |      4
-[M79](#math-79)   | No        | No        | No        | No        | No    | No       |      0
-[M80](#math-80)   | Yes       | TIMEOUT   | No        | No        | Yes       | Yes       |      3
-[M81](#math-81)   | Yes       | Yes       | TIMEOUT   | TIMEOUT   | Yes       | Yes       |      4
-[M82](#math-82)   | Yes       | No        | No        | No        | Yes       | Yes       |      3
-[M83](#math-83)   | No        | No        | No        | No        | No       | No       |      0
-[M84](#math-84)   | No        | No        | No        | No        | Yes       | Yes       |      2
-[M85](#math-85)   | Yes       | Yes       | Yes       | Yes       | Yes       | Yes       |      6
-[M86](#math-86)   | No        | No        | No        | No        | No       | No       |      0
-[M87](#math-87)   | Yes       | Yes       | Yes       | No        | No       | No       |      3
-[M88](#math-88)   | Yes       | No        | Yes       | No        | No       | No       |      2
-[M89](#math-89)   | No        | No        | No        | No        | No       | No       |      0
-[M90](#math-90)   | No        | No        | No        | No        | No       | No       |      0
-[M91](#math-91)   | No        | No        | No        | No        | No       | No       |      0
-[M92](#math-92)   | No        | No        | No        | No        | No       | No       |      0
-[M93](#math-93)   | No        | No        | No        | No        | No       | No       |      0
-[M94](#math-94)   | No        | No        | No        | No        | No       | No       |      0
-[M95](#math-95)   | TIMEOUT   | No        | No        | No        | Yes       | Yes       |      2
-[M96](#math-96)   | No        | No        | No        | Yes       | No       | No       |      1
-[M97](#math-97)   | Yes       | Yes       | Yes       | Yes       | No       | No       |      4
-[M98](#math-98)   | No        | No        | No        | No        | No       | No       |      0
-[M99](#math-99)   | Yes       | Yes       | Yes       | Yes       | No       | No       |      4
-[M100](#math-100) | No        | No        | No        | No        | No       | No       |      0
-[M101](#math-101) | No        | No        | No        | No        | No       | No       |      0
-[M102](#math-102) | TIMEOUT   | No        | No        | No        | No       | No       |      0
-[M103](#math-103) | No        | No        | No        | No        | No       | No       |      0
-[M104](#math-104) | No        | Yes       | No        | No        | No    | No       |      1
-[M105](#math-105) | Yes       | No        | Yes       | No        | No       | No       |      2
-[M106](#math-106) | No        | TIMEOUT   | No        | No        | No       | No       |      0
-[T1](#time-1)     | No        | TIMEOUT   | No        | ERROR     | No    | No       |      0
-[T2](#time-2)     | No        | No        | No        | No        | No    | No       |      0
-[T3](#time-3)     | TIMEOUT   | TIMEOUT   | No        | No        | No       | No       |      0
-[T4](#time-4)     | No        | No        | No        | No        | Yes       | Yes       |      2
-[T5](#time-5)     | No        | No        | No        | No        | No       | No       |      0
-[T6](#time-6)     | No        | No        | No        | No        | No       | No       |      0
-[T7](#time-7)     | TIMEOUT   | TIMEOUT   | Yes       | ERROR     | No       | No       |      1
-[T8](#time-8)     | No        | No        | No        | No        | No       | No       |      0
-[T9](#time-9)     | No        | No        | No        | No        | No       | No       |      0
-[T10](#time-10)   | TIMEOUT   | No        | No        | No        | No       | No       |      0
-[T11](#time-11)   | Yes       | Yes       | Yes       | Yes       | Yes       | Yes       |      6
-[T12](#time-12)   | ERROR     | TIMEOUT   | No        | No        | No       | No       |      0
-[T13](#time-13)   | No        | No        | No        | No        | No       | No       |      0
-[T14](#time-14)   | TIMEOUT   | No        | No        | No        | No       | No       |      0
-[T15](#time-15)   | No        | No        | No        | No        | No       | No       |      0
-[T16](#time-16)   | TIMEOUT   | TIMEOUT   | TIMEOUT   | No        | No       | No       |      0
-[T17](#time-17)   | TIMEOUT   | No        | No        | No        | No       | No    |      0
-[T18](#time-18)   | TIMEOUT   | TIMEOUT   | No        | No        | No       | No    |      0
-[T19](#time-19)   | TIMEOUT   | TIMEOUT   | No        | ERROR     | No       | TIMEOUT   |      0
-[T20](#time-20)   | No        | No        | No        | No        | No       | No       |      0
-[T21](#time-21)   | TIMEOUT   | No        | No        | No        | No       | TIMEOUT   |      0
-[T22](#time-22)   | No        | No        | No        | No        | No    | No    |      0
-[T23](#time-23)   | No        | TIMEOUT   | No        | No        | No       | No       |      0
-[T24](#time-24)   | No        | No        | No        | No        | No       | No    |      0
-[T25](#time-25)   | No        | TIMEOUT   | No        | No        | No       | TIMEOUT   |      0
-[T26](#time-26)   | No        | No        | No        | No        | No       | No       |      0
-[T27](#time-27)   | No        | No        | No        | No        | No    | No       |      0
-Total             | 30 (13%)  | 25 (11%)  | 24 (10%)  | 14 (6%)   | 33 (14%)  | 24 (10%)  |    150
-Fixed bugs: 59/224 (26%)
+BugId             | NopolPC   | NopolC    | Genprog   | Kali      | Total
+----------------- | --------- | --------- | --------- | --------- | ------
+[C1](#chart-1)    | TIMEOUT   | TIMEOUT   | Yes       | Yes       |      2
+[C2](#chart-2)    | TIMEOUT   | TIMEOUT   | No       | No       |      0
+[C3](#chart-3)    | TIMEOUT   | Yes       | Yes       | No       |      2
+[C4](#chart-4)    | TIMEOUT   | TIMEOUT   | No       | No       |      0
+[C5](#chart-5)    | TIMEOUT   | Yes       | Yes       | Yes       |      3
+[C6](#chart-6)    | Yes       | Yes       | Yes       | No       |      3
+[C7](#chart-7)    | TIMEOUT   | TIMEOUT   | Yes       | No       |      1
+[C8](#chart-8)    | TIMEOUT   | No        | Yes       | TIMEOUT   |      1
+[C9](#chart-9)    | TIMEOUT   | TIMEOUT   | Yes       | No       |      1
+[C10](#chart-10)  | TIMEOUT   | No        | No       | No       |      0
+[C11](#chart-11)  | TIMEOUT   | TIMEOUT   | No       | No       |      0
+[C12](#chart-12)  | TIMEOUT   | No        | No       | No       |      0
+[C13](#chart-13)  | Yes       | Yes       | Yes       | Yes       |      4
+[C14](#chart-14)  | TIMEOUT   | No        | No       | No       |      0
+[C15](#chart-15)  | TIMEOUT   | TIMEOUT   | Yes       | Yes       |      2
+[C16](#chart-16)  | TIMEOUT   | TIMEOUT   | No       | No       |      0
+[C17](#chart-17)  | TIMEOUT   | No        | No       | No       |      0
+[C18](#chart-18)  | TIMEOUT   | No        | No       | No       |      0
+[C19](#chart-19)  | TIMEOUT   | No        | No       | No       |      0
+[C20](#chart-20)  | TIMEOUT   | No        | No       | No       |      0
+[C21](#chart-21)  | Yes       | Yes       | Yes       | Yes       |      4
+[C22](#chart-22)  | TIMEOUT   | No        | No       | No       |      0
+[C23](#chart-23)  | TIMEOUT   | No        | No       | No       |      0
+[C24](#chart-24)  | TIMEOUT   | No        | No       | No       |      0
+[C25](#chart-25)  | Yes       | Yes       | Yes       | Yes       |      4
+[C26](#chart-26)  | Yes       | Yes       | No    | Yes       |      3
+[L1](#lang-1)     | No        | No        | No       | No       |      0
+[L2](#lang-2)     | TIMEOUT   | No        | No       | No       |      0
+[L3](#lang-3)     | TIMEOUT   | No        | No       | No       |      0
+[L4](#lang-4)     | TIMEOUT   | No        | No       | No       |      0
+[L5](#lang-5)     | TIMEOUT   | No        | No       | No       |      0
+[L6](#lang-6)     | No        | No        | No       | No    |      0
+[L7](#lang-7)     | TIMEOUT   | No        | No    | No       |      0
+[L8](#lang-8)     | TIMEOUT   | No        | No       | No       |      0
+[L9](#lang-9)     | TIMEOUT   | No        | No       | No       |      0
+[L10](#lang-10)   | TIMEOUT   | TIMEOUT   | No       | No    |      0
+[L11](#lang-11)   | No        | No        | No       | No       |      0
+[L12](#lang-12)   | No        | No        | No       | No       |      0
+[L13](#lang-13)   | No        | No        | No       | No       |      0
+[L14](#lang-14)   | No        | No        | No       | No       |      0
+[L15](#lang-15)   | No        | No        | No       | No       |      0
+[L16](#lang-16)   | No        | No        | No    | TIMEOUT   |      0
+[L17](#lang-17)   | No        | No        | No    | TIMEOUT   |      0
+[L18](#lang-18)   | TIMEOUT   | No        | No    | No    |      0
+[L19](#lang-19)   | No        | No        | No       | No       |      0
+[L20](#lang-20)   | No        | No        | No    | No    |      0
+[L21](#lang-21)   | No        | No        | No    | No    |      0
+[L22](#lang-22)   | TIMEOUT   | TIMEOUT   | No    | No    |      0
+[L23](#lang-23)   | No        | TIMEOUT   | No       | No       |      0
+[L24](#lang-24)   | No        | No        | No       | No       |      0
+[L25](#lang-25)   | No        | No        | No    | No    |      0
+[L26](#lang-26)   | TIMEOUT   | No        | No       | No       |      0
+[L27](#lang-27)   | No        | No        | No       | No       |      0
+[L28](#lang-28)   | No        | No        | No       | No       |      0
+[L29](#lang-29)   | No        | No        | No       | No       |      0
+[L30](#lang-30)   | No        | No        | No       | No       |      0
+[L31](#lang-31)   | No        | No        | No       | No       |      0
+[L32](#lang-32)   | No        | No        | No       | No       |      0
+[L33](#lang-33)   | No        | No        | No       | No       |      0
+[L34](#lang-34)   | TIMEOUT   | No        | No       | No       |      0
+[L35](#lang-35)   | No        | No        | No    | No    |      0
+[L36](#lang-36)   | No        | No        | No       | No       |      0
+[L37](#lang-37)   | No        | No        | No       | No       |      0
+[L38](#lang-38)   | No        | No        | No       | No       |      0
+[L39](#lang-39)   | Yes       | No        | No       | No       |      1
+[L40](#lang-40)   | No        | No        | No    | No    |      0
+[L41](#lang-41)   | No        | No        | No       | No       |      0
+[L42](#lang-42)   | No        | No        | No       | No       |      0
+[L43](#lang-43)   | No        | No        | No    | No    |      0
+[L44](#lang-44)   | Yes       | Yes       | No    | No    |      2
+[L45](#lang-45)   | No        | No        | No    | No    |      0
+[L46](#lang-46)   | Yes       | No        | No    | No    |      1
+[L47](#lang-47)   | No        | No        | No    | No    |      0
+[L48](#lang-48)   | No        | No        | No       | No       |      0
+[L49](#lang-49)   | TIMEOUT   | No        | No    | TIMEOUT   |      0
+[L50](#lang-50)   | No        | No        | No    | No    |      0
+[L51](#lang-51)   | No        | Yes       | No    | No    |      1
+[L52](#lang-52)   | No        | No        | No    | No    |      0
+[L53](#lang-53)   | Yes       | TIMEOUT   | No       | No       |      1
+[L54](#lang-54)   | No        | No        | No    | TIMEOUT   |      0
+[L55](#lang-55)   | Yes       | No        | No    | No    |      1
+[L56](#lang-56)   | No        | No        | No    | No    |      0
+[L57](#lang-57)   | No        | No        | No    | No    |      0
+[L58](#lang-58)   | Yes       | Yes       | No       | No       |      2
+[L59](#lang-59)   | No        | No        | No    | No    |      0
+[L60](#lang-60)   | No        | No        | No    | No    |      0
+[L61](#lang-61)   | No        | No        | No    | No    |      0
+[L62](#lang-62)   | No        | No        | No       | No       |      0
+[L63](#lang-63)   | TIMEOUT   | No        | No    | No    |      0
+[L64](#lang-64)   | No        | No        | No    | No    |      0
+[L65](#lang-65)   | No        | No        | No       | No       |      0
+[M1](#math-1)     | TIMEOUT   | No        | No       | No       |      0
+[M2](#math-2)     | TIMEOUT   | TIMEOUT   | Yes       | Yes       |      2
+[M3](#math-3)     | TIMEOUT   | No        | No       | No       |      0
+[M4](#math-4)     | TIMEOUT   | TIMEOUT   | No       | No       |      0
+[M5](#math-5)     | TIMEOUT   | No        | Yes       | No       |      1
+[M6](#math-6)     | TIMEOUT   | No        | ERROR     | ERROR     |      0
+[M7](#math-7)     | TIMEOUT   | TIMEOUT   | No    | TIMEOUT   |      0
+[M8](#math-8)     | TIMEOUT   | No        | Yes       | Yes       |      2
+[M9](#math-9)     | TIMEOUT   | No        | No       | No    |      0
+[M10](#math-10)   | TIMEOUT   | No        | No       | No       |      0
+[M11](#math-11)   | TIMEOUT   | TIMEOUT   | No       | No       |      0
+[M12](#math-12)   | TIMEOUT   | TIMEOUT   | No       | TIMEOUT   |      0
+[M13](#math-13)   | TIMEOUT   | No        | No       | TIMEOUT   |      0
+[M14](#math-14)   | TIMEOUT   | No        | No       | TIMEOUT   |      0
+[M15](#math-15)   | TIMEOUT   | No        | No       | TIMEOUT   |      0
+[M16](#math-16)   | TIMEOUT   | TIMEOUT   | No       | TIMEOUT   |      0
+[M17](#math-17)   | No        | TIMEOUT   | No       | No       |      0
+[M18](#math-18)   | TIMEOUT   | No        | No       | TIMEOUT   |      0
+[M19](#math-19)   | No        | No        | No       | No       |      0
+[M20](#math-20)   | TIMEOUT   | TIMEOUT   | ERROR     | ERROR     |      0
+[M21](#math-21)   | No        | No        | No       | No       |      0
+[M22](#math-22)   | No        | No        | No       | No       |      0
+[M23](#math-23)   | No        | TIMEOUT   | No       | No    |      0
+[M24](#math-24)   | No        | No        | No    | TIMEOUT   |      0
+[M25](#math-25)   | No        | No        | No       | No       |      0
+[M26](#math-26)   | No        | No        | No    | No       |      0
+[M27](#math-27)   | TIMEOUT   | TIMEOUT   | No       | No       |      0
+[M28](#math-28)   | No        | TIMEOUT   | Yes       | Yes       |      2
+[M29](#math-29)   | No        | TIMEOUT   | No       | No       |      0
+[M30](#math-30)   | No        | No        | No    | No    |      0
+[M31](#math-31)   | No        | No        | No       | No       |      0
+[M32](#math-32)   | Yes       | No        | No    | Yes       |      2
+[M33](#math-33)   | Yes       | Yes       | No       | No       |      2
+[M34](#math-34)   | No        | No        | No       | No       |      0
+[M35](#math-35)   | No        | No        | No       | No       |      0
+[M36](#math-36)   | No        | No        | No       | No       |      0
+[M37](#math-37)   | No        | No        | No       | No       |      0
+[M38](#math-38)   | TIMEOUT   | No        | No       | No       |      0
+[M39](#math-39)   | ERROR     | ERROR     | No       | TIMEOUT   |      0
+[M40](#math-40)   | No        | Yes       | Yes       | Yes       |      3
+[M41](#math-41)   | No       | No       | No       | No       |      0
+[M42](#math-42)   | Yes       | TIMEOUT   | No       | No       |      1
+[M43](#math-43)   | No        | No        | No       | No       |      0
+[M44](#math-44)   | TIMEOUT   | No        | Yes       | Yes       |      2
+[M45](#math-45)   | No        | No        | No       | No       |      0
+[M46](#math-46)   | No        | No        | No       | No       |      0
+[M47](#math-47)   | No        | No        | No       | No       |      0
+[M48](#math-48)   | TIMEOUT   | TIMEOUT   | No       | No       |      0
+[M49](#math-49)   | Yes       | Yes       | Yes       | Yes       |      4
+[M50](#math-50)   | Yes       | Yes       | Yes       | Yes       |      4
+[M51](#math-51)   | TIMEOUT   | TIMEOUT   | ERROR     | ERROR     |      0
+[M52](#math-52)   | No        | No        | No       | No       |      0
+[M53](#math-53)   | No        | No        | Yes       | No       |      1
+[M54](#math-54)   | TIMEOUT   | TIMEOUT   | No       | TIMEOUT   |      0
+[M55](#math-55)   | No        | No        | No       | No       |      0
+[M56](#math-56)   | No        | No        | Yes       | No       |      1
+[M57](#math-57)   | Yes       | Yes       | No       | No       |      2
+[M58](#math-58)   | Yes       | Yes       | No    | TIMEOUT   |      2
+[M59](#math-59)   | No        | No        | No       | TIMEOUT   |      0
+[M60](#math-60)   | No        | No        | No       | No       |      0
+[M61](#math-61)   | No        | No        | No       | No       |      0
+[M62](#math-62)   | No        | No        | No       | No       |      0
+[M63](#math-63)   | No        | No        | No       | No       |      0
+[M64](#math-64)   | TIMEOUT   | No        | No       | No       |      0
+[M65](#math-65)   | No        | No        | No       | No       |      0
+[M66](#math-66)   | No        | No        | No       | No       |      0
+[M67](#math-67)   | No        | No        | No       | No       |      0
+[M68](#math-68)   | No        | No        | No       | No       |      0
+[M69](#math-69)   | Yes       | No        | No       | No       |      1
+[M70](#math-70)   | No        | No        | Yes       | No       |      1
+[M71](#math-71)   | No        | Yes       | Yes       | TIMEOUT   |      2
+[M72](#math-72)   | No        | No        | No    | No       |      0
+[M73](#math-73)   | No        | Yes       | Yes       | No       |      2
+[M74](#math-74)   | TIMEOUT   | No        | No       | No       |      0
+[M75](#math-75)   | No        | No        | No       | No       |      0
+[M76](#math-76)   | No        | No        | No       | No       |      0
+[M77](#math-77)   | No        | No        | No       | No       |      0
+[M78](#math-78)   | Yes       | TIMEOUT   | Yes       | Yes       |      3
+[M79](#math-79)   | No        | No        | No    | No       |      0
+[M80](#math-80)   | Yes       | TIMEOUT   | Yes       | Yes       |      3
+[M81](#math-81)   | Yes       | Yes       | Yes       | Yes       |      4
+[M82](#math-82)   | Yes       | No        | Yes       | Yes       |      3
+[M83](#math-83)   | No        | No        | No       | No       |      0
+[M84](#math-84)   | No        | No        | Yes       | Yes       |      2
+[M85](#math-85)   | Yes       | Yes       | Yes       | Yes       |      4
+[M86](#math-86)   | No        | No        | No       | No       |      0
+[M87](#math-87)   | Yes       | Yes       | No       | No       |      2
+[M88](#math-88)   | Yes       | No        | No       | No       |      1
+[M89](#math-89)   | No        | No        | No       | No       |      0
+[M90](#math-90)   | No        | No        | No       | No       |      0
+[M91](#math-91)   | No        | No        | No       | No       |      0
+[M92](#math-92)   | No        | No        | No       | No       |      0
+[M93](#math-93)   | No        | No        | No       | No       |      0
+[M94](#math-94)   | No        | No        | No       | No       |      0
+[M95](#math-95)   | TIMEOUT   | No        | Yes       | Yes       |      2
+[M96](#math-96)   | No        | No        | No       | No       |      0
+[M97](#math-97)   | Yes       | Yes       | No       | No       |      2
+[M98](#math-98)   | No        | No        | No       | No       |      0
+[M99](#math-99)   | Yes       | Yes       | No       | No       |      2
+[M100](#math-100) | No        | No        | No       | No       |      0
+[M101](#math-101) | No        | No        | No       | No       |      0
+[M102](#math-102) | TIMEOUT   | No        | No       | No       |      0
+[M103](#math-103) | No        | No        | No       | No       |      0
+[M104](#math-104) | No        | Yes       | No    | No       |      1
+[M105](#math-105) | Yes       | No        | No       | No       |      1
+[M106](#math-106) | No        | TIMEOUT   | No       | No       |      0
+[T1](#time-1)     | No        | TIMEOUT   | No    | No       |      0
+[T2](#time-2)     | No        | No        | No    | No       |      0
+[T3](#time-3)     | TIMEOUT   | TIMEOUT   | No       | No       |      0
+[T4](#time-4)     | No        | No        | Yes       | Yes       |      2
+[T5](#time-5)     | No        | No        | No       | No       |      0
+[T6](#time-6)     | No        | No        | No       | No       |      0
+[T7](#time-7)     | TIMEOUT   | TIMEOUT   | No       | No       |      0
+[T8](#time-8)     | No        | No        | No       | No       |      0
+[T9](#time-9)     | No        | No        | No       | No       |      0
+[T10](#time-10)   | TIMEOUT   | No        | No       | No       |      0
+[T11](#time-11)   | Yes       | Yes       | Yes       | Yes       |      4
+[T12](#time-12)   | ERROR     | TIMEOUT   | No       | No       |      0
+[T13](#time-13)   | No        | No        | No       | No       |      0
+[T14](#time-14)   | TIMEOUT   | No        | No       | No       |      0
+[T15](#time-15)   | No        | No        | No       | No       |      0
+[T16](#time-16)   | TIMEOUT   | TIMEOUT   | No       | No       |      0
+[T17](#time-17)   | TIMEOUT   | No        | No       | No    |      0
+[T18](#time-18)   | TIMEOUT   | TIMEOUT   | No       | No    |      0
+[T19](#time-19)   | TIMEOUT   | TIMEOUT   | No       | TIMEOUT   |      0
+[T20](#time-20)   | No        | No        | No       | No       |      0
+[T21](#time-21)   | TIMEOUT   | No        | No       | TIMEOUT   |      0
+[T22](#time-22)   | No        | No        | No    | No    |      0
+[T23](#time-23)   | No        | TIMEOUT   | No       | No       |      0
+[T24](#time-24)   | No        | No        | No       | No    |      0
+[T25](#time-25)   | No        | TIMEOUT   | No       | TIMEOUT   |      0
+[T26](#time-26)   | No        | No        | No       | No       |      0
+[T27](#time-27)   | No        | No        | No    | No       |      0
+Total             | 30 (13%)  | 25 (11%)  | 33 (14%)  | 24 (10%)  |    112
+Fixed bugs: 53/224 (23%)
 
-Nb bugs ends with an execution error: 15
+Nb bugs ends with an execution error: 9
 
 Nb bugs ends with an empty log: 0
 
-Nb bugs ends with the Grid5000 timeout: 149
+Nb bugs ends with the Grid5000 timeout: 133
 
-Total execution time: 36 days, 23:03:34.852000
+Total execution time: 24 days, 9:25:58.832000
 
 
 
@@ -428,103 +422,6 @@ findBoundsByIteration()
 
 Grid5000 node: graphene-75.nancy.grid5000.fr
 
-# Chart 4
-
-Nb Executed tests: 4374
-
-Nb Failing tests: 44
-
->	org.jfree.chart.junit.JFreeChartTests#testSerialization4
->	org.jfree.chart.junit.ScatterPlotTests#testDrawWithNullInfo
->	org.jfree.chart.junit.ScatterPlotTests#testSetSeriesToolTipGenerator
->	org.jfree.chart.junit.ScatterPlotTests#testReplaceDataset
->	org.jfree.chart.junit.TimeSeriesChartTests#testDrawWithNullInfo
->	org.jfree.chart.junit.TimeSeriesChartTests#testSetSeriesToolTipGenerator
->	org.jfree.chart.junit.TimeSeriesChartTests#testReplaceDataset
->	org.jfree.chart.junit.XYAreaChartTests#testDrawWithNullInfo
->	org.jfree.chart.junit.XYAreaChartTests#testSetSeriesToolTipGenerator
->	org.jfree.chart.junit.XYAreaChartTests#testReplaceDataset
->	org.jfree.chart.junit.XYStepAreaChartTests#testDrawWithNullInfo
->	org.jfree.chart.junit.XYStepAreaChartTests#testSetSeriesToolTipGenerator
->	org.jfree.chart.junit.XYStepAreaChartTests#testReplaceDataset
->	org.jfree.chart.junit.XYStepChartTests#testDrawWithNullInfo
->	org.jfree.chart.junit.XYStepChartTests#testSetSeriesToolTipGenerator
->	org.jfree.chart.junit.XYStepChartTests#testReplaceDataset
->	org.jfree.chart.axis.junit.LogAxisTests#testXYAutoRange1
->	org.jfree.chart.axis.junit.LogAxisTests#testXYAutoRange2
->	org.jfree.chart.junit.XYStepAreaChartTests#testDrawWithNullInfo
->	org.jfree.chart.junit.XYStepAreaChartTests#testSetSeriesToolTipGenerator
->	org.jfree.chart.junit.XYStepAreaChartTests#testReplaceDataset
->	org.jfree.chart.plot.junit.XYPlotTests#testDrawRangeGridlines
->	org.jfree.chart.junit.JFreeChartTests#testSerialization4
->	org.jfree.chart.junit.ScatterPlotTests#testDrawWithNullInfo
->	org.jfree.chart.junit.ScatterPlotTests#testSetSeriesToolTipGenerator
->	org.jfree.chart.junit.ScatterPlotTests#testReplaceDataset
->	org.jfree.chart.plot.junit.XYPlotTests#testDrawRangeGridlines
->	org.jfree.chart.junit.TimeSeriesChartTests#testDrawWithNullInfo
->	org.jfree.chart.junit.TimeSeriesChartTests#testSetSeriesToolTipGenerator
->	org.jfree.chart.junit.TimeSeriesChartTests#testReplaceDataset
->	org.jfree.chart.axis.junit.LogAxisTests#testXYAutoRange1
->	org.jfree.chart.axis.junit.LogAxisTests#testXYAutoRange2
->	org.jfree.chart.axis.junit.NumberAxisTests#testXYAutoRange1
->	org.jfree.chart.axis.junit.NumberAxisTests#testXYAutoRange2
->	org.jfree.chart.axis.junit.ValueAxisTests#testAxisMargins
->	org.jfree.chart.junit.XYAreaChartTests#testDrawWithNullInfo
->	org.jfree.chart.junit.XYAreaChartTests#testSetSeriesToolTipGenerator
->	org.jfree.chart.junit.XYAreaChartTests#testReplaceDataset
->	org.jfree.chart.axis.junit.ValueAxisTests#testAxisMargins
->	org.jfree.chart.junit.XYStepChartTests#testDrawWithNullInfo
->	org.jfree.chart.junit.XYStepChartTests#testSetSeriesToolTipGenerator
->	org.jfree.chart.junit.XYStepChartTests#testReplaceDataset
->	org.jfree.chart.axis.junit.NumberAxisTests#testXYAutoRange1
->	org.jfree.chart.axis.junit.NumberAxisTests#testXYAutoRange2
-
-## Human Patch 
-
-```Java
-Index: org/jfree/chart/plot/XYPlot.java
-===================================================================
---- org/jfree/chart/plot/XYPlot.java	(revision 2183)
-+++ org/jfree/chart/plot/XYPlot.java	(revision 2182)
-@@ -4490,14 +4490,12 @@
-                     }
-                 }
-                 
--                if (r != null) {
--                    Collection c = r.getAnnotations();
--                    Iterator i = c.iterator();
--                    while (i.hasNext()) {
--                        XYAnnotation a = (XYAnnotation) i.next();
--                        if (a instanceof XYAnnotationBoundsInfo) {
--                            includedAnnotations.add(a);
--                        }
-+                Collection c = r.getAnnotations();
-+                Iterator i = c.iterator();
-+                while (i.hasNext()) {
-+                    XYAnnotation a = (XYAnnotation) i.next();
-+                    if (a instanceof XYAnnotationBoundsInfo) {
-+                        includedAnnotations.add(a);
-                     }
-                 }
-             }
-
-```
-
-## BrutpolPC 
-
-org.jfree.chart.plot.XYPlot:1607 (Suspicious rank: ample 1109, jaccard 571, ochiai 583, naish1 24663, gp13 706, naish2 706, tarantula 425, )
-```Java
-this.domainMinorGridlinesVisible
-```
-
-Nb Angelic value: 1
-
-Nb analyzed Statement: 583
-
-Execution time: 0:07:21.284000
-
-Grid5000 node: graphene-97.nancy.grid5000.fr
-
 # Chart 5
 
 Nb Executed tests: 4081
@@ -575,21 +472,6 @@ Nb analyzed Statement: 4
 Execution time: 0:00:34.849000
 
 Grid5000 node: graphene-57.nancy.grid5000.fr
-
-## BrutpolC 
-
-org.jfree.data.xy.XYSeries:561 (Suspicious rank: ample 3, jaccard 3, ochiai 3, naish1 24208, gp13 3, naish2 3, tarantula 3, )
-```Java
-this.equals(x)
-```
-
-Nb Angelic value: 1
-
-Nb analyzed Statement: 4
-
-Execution time: 0:01:43.868000
-
-Grid5000 node: graphene-82.nancy.grid5000.fr
 
 ## Genprog 
 
@@ -703,36 +585,6 @@ Nb analyzed Statement: 51
 Execution time: 0:00:39.572000
 
 Grid5000 node: graphene-61.nancy.grid5000.fr
-
-## BrutpolPC 
-
-org.jfree.chart.util.AbstractObjectList:193 (Suspicious rank: ample 4, jaccard 40, ochiai 19, naish1 22174, gp13 4, naish2 4, tarantula 40, )
-```Java
-0 == this.increment
-```
-
-Nb Angelic value: 3
-
-Nb analyzed Statement: 19
-
-Execution time: 0:04:04.386000
-
-Grid5000 node: griffon-72.nancy.grid5000.fr
-
-## BrutpolC 
-
-org.jfree.chart.util.AbstractObjectList:193 (Suspicious rank: ample 4, jaccard 40, ochiai 19, naish1 22174, gp13 4, naish2 4, tarantula 40, )
-```Java
-0 == this.increment
-```
-
-Nb Angelic value: 1
-
-Nb analyzed Statement: 19
-
-Execution time: 0:01:45.013000
-
-Grid5000 node: graphene-99.nancy.grid5000.fr
 
 ## Genprog 
 
@@ -877,36 +729,6 @@ Index: org/jfree/data/time/TimeSeries.java
  
 
 ```
-
-## BrutpolPC 
-
-org.jfree.data.time.TimeSeries:883 (Suspicious rank: ample 11, jaccard 11, ochiai 16, naish1 22017, gp13 11, naish2 11, tarantula 11, )
-```Java
-this.data.contains(this)
-```
-
-Nb Angelic value: 1
-
-Nb analyzed Statement: 1
-
-Execution time: 0:01:46.827000
-
-Grid5000 node: griffon-72.nancy.grid5000.fr
-
-## BrutpolC 
-
-org.jfree.data.time.TimeSeries:940 (Suspicious rank: ample 15, jaccard 15, ochiai 10, naish1 22044, gp13 15, naish2 15, tarantula 15, )
-```Java
-emptyRange
-```
-
-Nb Angelic value: 3
-
-Nb analyzed Statement: 7
-
-Execution time: 0:03:51.520000
-
-Grid5000 node: graphene-99.nancy.grid5000.fr
 
 ## Genprog 
 
@@ -1562,21 +1384,6 @@ Execution time: 0:00:37.314000
 
 Grid5000 node: graphene-76.nancy.grid5000.fr
 
-## BrutpolPC 
-
-org.jfree.chart.block.AbstractBlock:162 (Suspicious rank: ample 78, jaccard 78, ochiai 75, naish1 21887, gp13 78, naish2 78, tarantula 78, )
-```Java
-this.bounds.contains(width, this.height)
-```
-
-Nb Angelic value: 4
-
-Nb analyzed Statement: 78
-
-Execution time: 0:02:23.264000
-
-Grid5000 node: griffon-20.nancy.grid5000.fr
-
 ## Genprog 
 
 org.jfree.chart.block.BorderArrangement:330 (Suspicious rank: ample 37, jaccard 37, ochiai 21, naish1 21855, gp13 37, naish2 37, tarantula 37, )
@@ -2059,65 +1866,6 @@ if (true)
 
 Grid5000 node: graphene-73.nancy.grid5000.fr
 
-# Chart 17
-
-Nb Executed tests: 3499
-
-Nb Failing tests: 2
-
->	org.jfree.data.time.junit.TimeSeriesTests#testBug1832432
->	org.jfree.data.time.junit.TimeSeriesTests#testBug1832432
-
-## Human Patch 
-
-```Java
-Index: org/jfree/data/time/TimeSeries.java
-===================================================================
---- org/jfree/data/time/TimeSeries.java	(revision 622)
-+++ org/jfree/data/time/TimeSeries.java	(revision 621)
-@@ -854,8 +853,7 @@
-      *         subclasses may differ.
-      */
-     public Object clone() throws CloneNotSupportedException {
--        TimeSeries clone = (TimeSeries) super.clone();
--        clone.data = (List) ObjectUtilities.deepClone(this.data);
-+        Object clone = createCopy(0, getItemCount() - 1);
-         return clone;
-     }
- 
-
-```
-
-## BrutpolPC 
-
-org.jfree.data.time.TimeSeries:880 (Suspicious rank: ample 1, jaccard 1, ochiai 1, naish1 21647, gp13 1, naish2 1, tarantula 1, )
-```Java
-this.data.contains(this)
-```
-
-Nb Angelic value: 1
-
-Nb analyzed Statement: 1
-
-Execution time: 0:01:49.194000
-
-Grid5000 node: griffon-92.nancy.grid5000.fr
-
-## BrutpolC 
-
-org.jfree.data.time.TimeSeries:879 (Suspicious rank: ample 3, jaccard 3, ochiai 4, naish1 21611, gp13 3, naish2 3, tarantula 3, )
-```Java
-this.data.contains(this)
-```
-
-Nb Angelic value: 1
-
-Nb analyzed Statement: 3
-
-Execution time: 0:01:47.024000
-
-Grid5000 node: griffon-17.nancy.grid5000.fr
-
 # Chart 21
 
 Nb Executed tests: 3303
@@ -2593,36 +2341,6 @@ Nb analyzed Statement: 20
 Execution time: 0:00:37.503000
 
 Grid5000 node: graphene-72.nancy.grid5000.fr
-
-## BrutpolPC 
-
-org.jfree.data.statistics.DefaultStatisticalCategoryDataset:111 (Suspicious rank: ample 18, jaccard 18, ochiai 9, naish1 19963, gp13 18, naish2 18, tarantula 64, )
-```Java
-this.equals(masd)
-```
-
-Nb Angelic value: 2
-
-Nb analyzed Statement: 19
-
-Execution time: 0:08:34.755000
-
-Grid5000 node: griffon-22.nancy.grid5000.fr
-
-## BrutpolC 
-
-org.jfree.data.statistics.DefaultStatisticalCategoryDataset:110 (Suspicious rank: ample 17, jaccard 17, ochiai 8, naish1 19962, gp13 17, naish2 17, tarantula 63, )
-```Java
-this.equals(masd)
-```
-
-Nb Angelic value: 1
-
-Nb analyzed Statement: 20
-
-Execution time: 0:01:52.873000
-
-Grid5000 node: griffon-59.nancy.grid5000.fr
 
 ## Genprog 
 
@@ -3609,21 +3327,6 @@ Execution time: 0:01:01.433000
 
 Grid5000 node: graphene-84.nancy.grid5000.fr
 
-## BrutpolC 
-
-org.jfree.chart.axis.Axis:1101 (Suspicious rank: ample 199, jaccard 267, ochiai 327, naish1 15242, gp13 199, naish2 199, tarantula 912, )
-```Java
-this.tickLabelsVisible
-```
-
-Nb Angelic value: 3
-
-Nb analyzed Statement: 291
-
-Execution time: 0:43:36.171000
-
-Grid5000 node: graphene-97.nancy.grid5000.fr
-
 ## Kali 
 
 org.jfree.chart.plot.CategoryPlot:2547 (Suspicious rank: ample 1, jaccard 1, ochiai 1, naish1 15018, gp13 1, naish2 1, tarantula 1, )
@@ -4079,21 +3782,6 @@ Nb analyzed Statement: 29
 Execution time: 0:05:45.321000
 
 Grid5000 node: graphene-75.nancy.grid5000.fr
-
-## BrutpolPC 
-
-org.apache.commons.lang3.StringUtils:3675 (Suspicious rank: ample 11, jaccard 11, ochiai 26, naish1 7828, gp13 11, naish2 11, tarantula 11, )
-```Java
-repeat
-```
-
-Nb Angelic value: 1
-
-Nb analyzed Statement: 29
-
-Execution time: 0:06:54.576000
-
-Grid5000 node: graphene-99.nancy.grid5000.fr
 
 # Lang 44
 
@@ -4938,21 +4626,6 @@ Execution time: 0:13:50.124000
 
 Grid5000 node: graphene-88.nancy.grid5000.fr
 
-## BrutpolC 
-
-org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet:135 (Suspicious rank: ample 3, jaccard 3, ochiai 1, naish1 24965, gp13 3, naish2 3, tarantula 3, )
-```Java
-this.isEmpty()
-```
-
-Nb Angelic value: 1
-
-Nb analyzed Statement: 4
-
-Execution time: 0:13:55.694000
-
-Grid5000 node: graphene-92.nancy.grid5000.fr
-
 ## Kali 
 
 org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet:135 (Suspicious rank: ample 3, jaccard 3, ochiai 1, naish1 24965, gp13 3, naish2 3, tarantula 3, )
@@ -5025,21 +4698,6 @@ Nb analyzed Statement: 31
 Execution time: 0:12:39.577000
 
 Grid5000 node: graphene-5.nancy.grid5000.fr
-
-## BrutpolPC 
-
-org.apache.commons.math3.optimization.linear.SimplexTableau:339 (Suspicious rank: ample 6, jaccard 6, ochiai 6, naish1 24710, gp13 6, naish2 6, tarantula 6, )
-```Java
-this.numArtificialVariables != this.getNumObjectiveFunctions()
-```
-
-Nb Angelic value: 1
-
-Nb analyzed Statement: 4
-
-Execution time: 0:13:26.080000
-
-Grid5000 node: graphene-39.nancy.grid5000.fr
 
 # Math 40
 
@@ -5117,63 +4775,6 @@ if (true) {
 
 Grid5000 node: graphene-20.nancy.grid5000.fr
 
-# Math 41
-
-Nb Executed tests: 3194
-
-Nb Failing tests: 1
-
->	org.apache.commons.math.stat.descriptive.moment.VarianceTest#testEvaluateArraySegmentWeighted
-
-## Human Patch 
-
-```Java
-diff --git a/org/apache/commons/math/stat/descriptive/moment/Variance.java b/org/apache/commons/math/stat/descriptive/moment/Variance.java
-index 1de139f..e5518e3 100644
---- a/org/apache/commons/math/stat/descriptive/moment/Variance.java
-+++ b/org/apache/commons/math/stat/descriptive/moment/Variance.java
-@@ -517,7 +517,7 @@ public class Variance extends AbstractStorelessUnivariateStatistic implements Se
-                 }
- 
-                 double sumWts = 0;
--                for (int i = begin; i < begin + length; i++) {
-+                for (int i = 0; i < weights.length; i++) {
-                     sumWts += weights[i];
-                 }
- 
-
-```
-
-## BrutpolPC 
-
-org.apache.commons.math.stat.descriptive.moment.Variance:524 (Suspicious rank: ample 19, jaccard 19, ochiai 31, naish1 24206, gp13 19, naish2 19, tarantula 19, )
-```Java
-mean <= length
-```
-
-Nb Angelic value: 2
-
-Nb analyzed Statement: 4
-
-Execution time: 0:12:03.127000
-
-Grid5000 node: graphene-34.nancy.grid5000.fr
-
-## BrutpolC 
-
-org.apache.commons.math.stat.descriptive.moment.Variance:509 (Suspicious rank: ample 11, jaccard 11, ochiai 20, naish1 24185, gp13 11, naish2 11, tarantula 11, )
-```Java
-mean <= length
-```
-
-Nb Angelic value: 1
-
-Nb analyzed Statement: 15
-
-Execution time: 0:09:17.290000
-
-Grid5000 node: griffon-22.nancy.grid5000.fr
-
 # Math 42
 
 Nb Executed tests: 3173
@@ -5220,36 +4821,6 @@ Nb analyzed Statement: 28
 Execution time: 0:37:04.382000
 
 Grid5000 node: graphene-5.nancy.grid5000.fr
-
-## BrutpolPC 
-
-org.apache.commons.math.optimization.linear.SimplexTableau:347 (Suspicious rank: ample 2, jaccard 2, ochiai 1, naish1 24208, gp13 2, naish2 2, tarantula 2, )
-```Java
-0 != this.numSlackVariables
-```
-
-Nb Angelic value: 1
-
-Nb analyzed Statement: 2
-
-Execution time: 0:09:38.733000
-
-Grid5000 node: graphene-92.nancy.grid5000.fr
-
-## BrutpolC 
-
-org.apache.commons.math.optimization.linear.SimplexTableau:338 (Suspicious rank: ample 6, jaccard 6, ochiai 7, naish1 23982, gp13 6, naish2 6, tarantula 6, )
-```Java
-(0 < entry) || (this.getHeight() == this.tableau.getFrobeniusNorm())
-```
-
-Nb Angelic value: 3
-
-Nb analyzed Statement: 17
-
-Execution time: 0:21:09.656000
-
-Grid5000 node: graphene-34.nancy.grid5000.fr
 
 # Math 44
 
@@ -5352,60 +4923,6 @@ remove
 
 Grid5000 node: griffon-15.nancy.grid5000.fr
 
-# Math 46
-
-Nb Executed tests: 2997
-
-Nb Failing tests: 2
-
->	org.apache.commons.math.complex.ComplexTest#testAtanI
->	org.apache.commons.math.complex.ComplexTest#testDivideZero
-
-## Human Patch 
-
-```Java
-diff --git a/org/apache/commons/math/complex/Complex.java b/org/apache/commons/math/complex/Complex.java
-index dd0b00a..137765c 100644
---- a/org/apache/commons/math/complex/Complex.java
-+++ b/org/apache/commons/math/complex/Complex.java
-@@ -256,8 +256,7 @@ public class Complex implements FieldElement<Complex>, Serializable  {
-         }
- 
-         if (divisor.isZero) {
--            // return isZero ? NaN : INF; // See MATH-657
--            return NaN;
-+            return isZero ? NaN : INF;
-         }
- 
-         if (divisor.isInfinite() && !isInfinite()) {
-@@ -293,8 +292,7 @@ public class Complex implements FieldElement<Complex>, Serializable  {
-             return NaN;
-         }
-         if (divisor == 0d) {
--            // return isZero ? NaN : INF; // See MATH-657
--            return NaN;
-+            return isZero ? NaN : INF;
-         }
-         if (Double.isInfinite(divisor)) {
-             return !isInfinite() ? ZERO : NaN;
-
-```
-
-## BrutpolPC 
-
-org.apache.commons.math.complex.Complex:259 (Suspicious rank: ample 1, jaccard 1, ochiai 1, naish1 23203, gp13 1, naish2 1, tarantula 2, )
-```Java
-0 == this.multiply(this).getReal()
-```
-
-Nb Angelic value: 1
-
-Nb analyzed Statement: 2
-
-Execution time: 0:06:59.821000
-
-Grid5000 node: griffon-35.nancy.grid5000.fr
-
 # Math 49
 
 Nb Executed tests: 2954
@@ -5489,21 +5006,6 @@ Nb analyzed Statement: 15
 Execution time: 0:04:56.944000
 
 Grid5000 node: graphene-80.nancy.grid5000.fr
-
-## BrutpolPC 
-
-org.apache.commons.math.util.OpenIntToDoubleHashMap:213 (Suspicious rank: ample 32, jaccard 32, ochiai 33, naish1 23309, gp13 32, naish2 32, tarantula 32, )
-```Java
-this.size != this.probe(1, key)
-```
-
-Nb Angelic value: 5
-
-Nb analyzed Statement: 28
-
-Execution time: 0:26:36.481000
-
-Grid5000 node: griffon-12.nancy.grid5000.fr
 
 ## Genprog 
 
@@ -5606,21 +5108,6 @@ Nb analyzed Statement: 6
 Execution time: 0:08:04.495000
 
 Grid5000 node: graphene-59.nancy.grid5000.fr
-
-## BrutpolPC 
-
-org.apache.commons.math.analysis.solvers.BaseSecantSolver:191 (Suspicious rank: ample 4, jaccard 4, ochiai 2, naish1 23311, gp13 4, naish2 4, tarantula 4, )
-```Java
-this.isBracketing(x0, f0)
-```
-
-Nb Angelic value: 1
-
-Nb analyzed Statement: 3
-
-Execution time: 0:06:11.155000
-
-Grid5000 node: graphene-93.nancy.grid5000.fr
 
 ## Genprog 
 
@@ -5844,21 +5331,6 @@ Execution time: 0:08:12.653000
 
 Grid5000 node: graphene-91.nancy.grid5000.fr
 
-## BrutpolPC 
-
-org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:620 (Suspicious rank: ample 85, jaccard 85, ochiai 93, naish1 19199, gp13 85, naish2 85, tarantula 85, )
-```Java
-this.costRelativeTolerance != this.orthoTolerance
-```
-
-Nb Angelic value: 1
-
-Nb analyzed Statement: 78
-
-Execution time: 0:06:39.119000
-
-Grid5000 node: graphite-3.nancy.grid5000.fr
-
 # Math 69
 
 Nb Executed tests: 2186
@@ -6060,21 +5532,6 @@ Execution time: 0:44:51.622000
 
 Grid5000 node: graphene-58.nancy.grid5000.fr
 
-## BrutpolPC 
-
-org.apache.commons.math.ode.events.EventState:260 (Suspicious rank: ample 66, jaccard 163, ochiai 68, naish1 16213, gp13 66, naish2 66, tarantula 163, )
-```Java
-h <= this.nextAction
-```
-
-Nb Angelic value: 4
-
-Nb analyzed Statement: 55
-
-Execution time: 0:52:27.066000
-
-Grid5000 node: graphene-25.nancy.grid5000.fr
-
 ## Genprog 
 
 org.apache.commons.math.ode.events.EventState:188 (Suspicious rank: ample 68, jaccard 165, ochiai 91, naish1 16066, gp13 68, naish2 68, tarantula 165, )
@@ -6245,21 +5702,6 @@ Nb analyzed Statement: 9
 Execution time: 0:00:47.478000
 
 Grid5000 node: graphene-55.nancy.grid5000.fr
-
-## BrutpolPC 
-
-org.apache.commons.math.ode.events.EventState:207 (Suspicious rank: ample 159, jaccard 159, ochiai 157, naish1 16589, gp13 159, naish2 159, tarantula 159, )
-```Java
-this.t0 <= this.maxIterationCount
-```
-
-Nb Angelic value: 2
-
-Nb analyzed Statement: 33
-
-Execution time: 0:04:04.720000
-
-Grid5000 node: graphene-39.nancy.grid5000.fr
 
 ## Genprog 
 
@@ -6883,36 +6325,6 @@ Execution time: 0:00:41.210000
 
 Grid5000 node: graphene-67.nancy.grid5000.fr
 
-## BrutpolPC 
-
-org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils:199 (Suspicious rank: ample 4, jaccard 4, ochiai 1, naish1 15706, gp13 4, naish2 4, tarantula 4, )
-```Java
-initial == lowerBound
-```
-
-Nb Angelic value: 1
-
-Nb analyzed Statement: 4
-
-Execution time: 0:01:46.548000
-
-Grid5000 node: griffon-59.nancy.grid5000.fr
-
-## BrutpolC 
-
-org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils:198 (Suspicious rank: ample 41, jaccard 41, ochiai 46, naish1 15686, gp13 41, naish2 41, tarantula 41, )
-```Java
-0.0 == fa
-```
-
-Nb Angelic value: 1
-
-Nb analyzed Statement: 37
-
-Execution time: 0:01:47.895000
-
-Grid5000 node: graphene-81.nancy.grid5000.fr
-
 ## Genprog 
 
 org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils:199 (Suspicious rank: ample 4, jaccard 4, ochiai 1, naish1 15706, gp13 4, naish2 4, tarantula 4, )
@@ -7012,21 +6424,6 @@ Execution time: 0:00:53.415000
 
 Grid5000 node: graphene-81.nancy.grid5000.fr
 
-## BrutpolPC 
-
-org.apache.commons.math.optimization.linear.SimplexTableau:161 (Suspicious rank: ample 43, jaccard 43, ochiai 25, naish1 14789, gp13 43, naish2 43, tarantula 43, )
-```Java
-this.numDecisionVariables != height
-```
-
-Nb Angelic value: 3
-
-Nb analyzed Statement: 75
-
-Execution time: 0:14:04.406000
-
-Grid5000 node: griffon-91.nancy.grid5000.fr
-
 # Math 88
 
 Nb Executed tests: 1880
@@ -7114,21 +6511,6 @@ Nb analyzed Statement: 1
 Execution time: 0:00:31.932000
 
 Grid5000 node: graphene-49.nancy.grid5000.fr
-
-## BrutpolPC 
-
-org.apache.commons.math.optimization.linear.SimplexTableau:352 (Suspicious rank: ample 1, jaccard 1, ochiai 1, naish1 14715, gp13 1, naish2 1, tarantula 1, )
-```Java
-this.numDecisionVariables != this.numSlackVariables
-```
-
-Nb Angelic value: 1
-
-Nb analyzed Statement: 1
-
-Execution time: 0:02:28.757000
-
-Grid5000 node: graphene-82.nancy.grid5000.fr
 
 # Math 95
 
@@ -7233,97 +6615,6 @@ if (true)
 ```
 
 Grid5000 node: graphene-78.nancy.grid5000.fr
-
-# Math 96
-
-Nb Executed tests: 1272
-
-Nb Failing tests: 47
-
->	org.apache.commons.math.fraction.FractionTest#testFloatValue
->	org.apache.commons.math.fraction.FractionTest#testAbs
->	org.apache.commons.math.fraction.FractionTest#testAdd
->	org.apache.commons.math.fraction.FractionTest#testSubtract
->	org.apache.commons.math.fraction.FractionTest#testReciprocal
->	org.apache.commons.math.fraction.FractionTest#testEpsilonLimitConstructor
->	org.apache.commons.math.fraction.FractionTest#testGetReducedFraction
->	org.apache.commons.math.fraction.FractionTest#testConstructorDouble
->	org.apache.commons.math.fraction.FractionTest#testCompareTo
->	org.apache.commons.math.fraction.FractionTest#testDoubleConstructor
->	org.apache.commons.math.fraction.FractionTest#testLongValue
->	org.apache.commons.math.fraction.FractionTest#testDigitLimitConstructor
->	org.apache.commons.math.fraction.FractionTest#testIntValue
->	org.apache.commons.math.fraction.FractionTest#testDivide
->	org.apache.commons.math.fraction.FractionTest#testMultiply
->	org.apache.commons.math.fraction.FractionTest#testEqualsAndHashCode
->	org.apache.commons.math.fraction.FractionTest#testNegate
->	org.apache.commons.math.fraction.FractionTest#testGoldenRatio
->	org.apache.commons.math.fraction.FractionTest#testIntegerOverflow
->	org.apache.commons.math.fraction.FractionTest#testDoubleValue
->	org.apache.commons.math.fraction.FractionTest#testConstructor
->	org.apache.commons.math.optimization.MultiDirectionalTest#testCostExceptions
->	org.apache.commons.math.optimization.MultiDirectionalTest#testRosenbrock
->	org.apache.commons.math.optimization.MultiDirectionalTest#testPowell
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatImproperNegative
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatImproper
->	org.apache.commons.math.fraction.FractionFormatTest#testParseProper
->	org.apache.commons.math.fraction.FractionFormatTest#testParseProperNegative
->	org.apache.commons.math.fraction.FractionFormatTest#testParse
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatZero
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatNegative
->	org.apache.commons.math.fraction.FractionFormatTest#testParseInteger
->	org.apache.commons.math.fraction.FractionFormatTest#testFormat
->	org.apache.commons.math.fraction.FractionFormatTest#testParseNegative
->	org.apache.commons.math.complex.ComplexTest#testMath221
->	org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegratorTest#testPredictorCoefficients
->	org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegratorTest#testDimensionCheck
->	org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegratorTest#testSmallStep
->	org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegratorTest#testDecreasingSteps
->	org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegratorTest#testBigStep
->	org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegratorTest#testCorrectorCoefficients
->	junit.framework.TestSuite$1#warning
->	org.apache.commons.math.ode.nonstiff.AdamsBashforthIntegratorTest#testDimensionCheck
->	org.apache.commons.math.ode.nonstiff.AdamsBashforthIntegratorTest#testSmallStep
->	org.apache.commons.math.ode.nonstiff.AdamsBashforthIntegratorTest#testDecreasingSteps
->	org.apache.commons.math.ode.nonstiff.AdamsBashforthIntegratorTest#testBigStep
->	org.apache.commons.math.ode.nonstiff.AdamsBashforthIntegratorTest#testCoefficients
-
-## Human Patch 
-
-```Java
-diff --git a/org/apache/commons/math/complex/Complex.java b/org/apache/commons/math/complex/Complex.java
-index 8b622cb..16b3873 100644
---- a/org/apache/commons/math/complex/Complex.java
-+++ b/org/apache/commons/math/complex/Complex.java
-@@ -255,7 +255,10 @@ public class Complex implements Serializable  {
-                 if (rhs.isNaN()) {
-                     ret = this.isNaN();
-                 } else {
--                    ret = (real == rhs.real) && (imaginary == rhs.imaginary); 
-+                ret = (Double.doubleToRawLongBits(real) ==
-+                        Double.doubleToRawLongBits(rhs.getReal())) &&
-+                    (Double.doubleToRawLongBits(imaginary) ==
-+                        Double.doubleToRawLongBits(rhs.getImaginary())); 
-                 }
-             } catch (ClassCastException ex) {
-                 // ignore exception
-
-```
-
-## BrutpolC 
-
-org.apache.commons.math.complex.Complex:248 (Suspicious rank: ample 2269, jaccard 113, ochiai 112, naish1 8115, gp13 113, naish2 113, tarantula 113, )
-```Java
-0 == (1 + this.imaginary)
-```
-
-Nb Angelic value: 1
-
-Nb analyzed Statement: 100
-
-Execution time: 0:02:58.838000
-
-Grid5000 node: griffon-74.nancy.grid5000.fr
 
 # Math 97
 
@@ -7457,36 +6748,6 @@ Execution time: 0:00:49.504000
 
 Grid5000 node: graphene-79.nancy.grid5000.fr
 
-## BrutpolPC 
-
-org.apache.commons.math.analysis.BrentSolver:136 (Suspicious rank: ample 924, jaccard 68, ochiai 68, naish1 6894, gp13 68, naish2 68, tarantula 68, )
-```Java
-min == 1
-```
-
-Nb Angelic value: 1
-
-Nb analyzed Statement: 68
-
-Execution time: 0:01:35.191000
-
-Grid5000 node: graphene-40.nancy.grid5000.fr
-
-## BrutpolC 
-
-org.apache.commons.math.analysis.BrentSolver:135 (Suspicious rank: ample 6982, jaccard 87, ochiai 90, naish1 6893, gp13 87, naish2 87, tarantula 87, )
-```Java
-(max - yMin) <= yMin
-```
-
-Nb Angelic value: 1
-
-Nb analyzed Statement: 86
-
-Execution time: 0:01:53.521000
-
-Grid5000 node: griffon-59.nancy.grid5000.fr
-
 # Math 99
 
 Nb Executed tests: 1180
@@ -7618,36 +6879,6 @@ Nb analyzed Statement: 86
 Execution time: 0:00:55.209000
 
 Grid5000 node: graphene-81.nancy.grid5000.fr
-
-## BrutpolPC 
-
-org.apache.commons.math.analysis.BrentSolver:136 (Suspicious rank: ample 861, jaccard 68, ochiai 68, naish1 7155, gp13 68, naish2 68, tarantula 68, )
-```Java
-min == 1
-```
-
-Nb Angelic value: 1
-
-Nb analyzed Statement: 68
-
-Execution time: 0:01:40.724000
-
-Grid5000 node: griffon-1.nancy.grid5000.fr
-
-## BrutpolC 
-
-org.apache.commons.math.analysis.BrentSolver:135 (Suspicious rank: ample 5982, jaccard 88, ochiai 90, naish1 7186, gp13 88, naish2 88, tarantula 88, )
-```Java
-(max - yMin) <= yMin
-```
-
-Nb Angelic value: 1
-
-Nb analyzed Statement: 86
-
-Execution time: 0:01:53.439000
-
-Grid5000 node: griffon-74.nancy.grid5000.fr
 
 # Math 104
 
@@ -7800,21 +7031,6 @@ Execution time: 0:04:00.684000
 
 Grid5000 node: graphene-64.nancy.grid5000.fr
 
-## BrutpolPC 
-
-org.apache.commons.math.stat.regression.SimpleRegression:116 (Suspicious rank: ample 557, jaccard 74, ochiai 77, naish1 4327, gp13 74, naish2 74, tarantula 74, )
-```Java
-dy <= this.getRegressionSumSquares(x)
-```
-
-Nb Angelic value: 1
-
-Nb analyzed Statement: 73
-
-Execution time: 0:01:47.626000
-
-Grid5000 node: griffon-5.nancy.grid5000.fr
-
 # Time 4
 
 Nb Executed tests: 12047
@@ -7867,59 +7083,6 @@ if (true)
 	return 0;
 
 ```
-
-Grid5000 node: graphene-108.nancy.grid5000.fr
-
-# Time 7
-
-Nb Executed tests: 11945
-
-Nb Failing tests: 7
-
->	org.joda.time.format.TestDateTimeFormatter#testParseInto_monthDay_feb29_newYork_startOfYear
->	org.joda.time.format.TestDateTimeFormatter#testParseInto_monthDay_feb29_tokyo_endOfYear
->	junit.framework.TestSuite$1#warning
->	org.joda.time.format.TestDateTimeFormatter#testParseInto_monthDay_feb29_newYork_startOfYear
->	org.joda.time.format.TestDateTimeFormatter#testParseInto_monthDay_feb29_tokyo_endOfYear
->	org.joda.time.format.TestDateTimeFormatter#testParseInto_monthDay_feb29_newYork_startOfYear
->	org.joda.time.format.TestDateTimeFormatter#testParseInto_monthDay_feb29_tokyo_endOfYear
-
-## Human Patch 
-
-```Java
-diff --git a/org/joda/time/format/DateTimeFormatter.java b/org/joda/time/format/DateTimeFormatter.java
-index 913d036..553b035 100644
---- a/org/joda/time/format/DateTimeFormatter.java
-+++ b/org/joda/time/format/DateTimeFormatter.java
-@@ -705,12 +703,11 @@ public class DateTimeFormatter {
-         
-         long instantMillis = instant.getMillis();
-         Chronology chrono = instant.getChronology();
--        int defaultYear = DateTimeUtils.getChronology(chrono).year().get(instantMillis);
-         long instantLocal = instantMillis + chrono.getZone().getOffset(instantMillis);
-         chrono = selectChronology(chrono);
-         
-         DateTimeParserBucket bucket = new DateTimeParserBucket(
--            instantLocal, chrono, iLocale, iPivotYear, defaultYear);
-+            instantLocal, chrono, iLocale, iPivotYear, chrono.year().get(instantLocal));
-         int newPos = parser.parseInto(bucket, text, position);
-         instant.setMillis(bucket.computeMillis(false, text));
-         if (iOffsetParsed && bucket.getOffsetInteger() != null) {
-
-```
-
-## BrutpolPC 
-
-org.joda.time.format.DateTimeParserBucket:359 (Suspicious rank: ample 19, jaccard 19, ochiai 19, naish1 10152, gp13 19, naish2 19, tarantula 19, )
-```Java
-resetFields
-```
-
-Nb Angelic value: 1
-
-Nb analyzed Statement: 18
-
-Execution time: 0:02:06.621000
 
 Grid5000 node: graphene-108.nancy.grid5000.fr
 
@@ -7989,36 +7152,6 @@ Nb analyzed Statement: 26
 Execution time: 0:04:42.370000
 
 Grid5000 node: graphene-26.nancy.grid5000.fr
-
-## BrutpolPC 
-
-org.joda.time.tz.DateTimeZoneBuilder:372 (Suspicious rank: ample 108, jaccard 108, ochiai 110, naish1 10249, gp13 108, naish2 108, tarantula 108, )
-```Java
-transitions.contains(this)
-```
-
-Nb Angelic value: 1
-
-Nb analyzed Statement: 25
-
-Execution time: 0:02:16.360000
-
-Grid5000 node: graphene-112.nancy.grid5000.fr
-
-## BrutpolC 
-
-org.joda.time.tz.DateTimeZoneBuilder:309 (Suspicious rank: ample 49, jaccard 49, ochiai 99, naish1 10021, gp13 49, naish2 49, tarantula 49, )
-```Java
-0 != nameKey.length()
-```
-
-Nb Angelic value: 3
-
-Nb analyzed Statement: 36
-
-Execution time: 0:10:11.057000
-
-Grid5000 node: griffon-29.nancy.grid5000.fr
 
 ## Genprog 
 

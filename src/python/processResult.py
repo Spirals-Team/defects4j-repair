@@ -7,10 +7,11 @@ import sys
 import datetime
 from core.Config import conf
 
+tools = ["NopolPC", "NopolC", "Genprog", "Kali"]
+
 reload(sys)  
 sys.setdefaultencoding('Cp1252')
 
-tools = ["NopolPC", "NopolC", "BrutpolPC", "BrutpolC", "Genprog", "Kali"]
 
 root = conf.resultsRoot
 resultsAll = {}
