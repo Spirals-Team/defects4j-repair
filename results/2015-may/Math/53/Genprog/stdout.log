@@ -1,0 +1,51 @@
+export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";cp -r /home/tdurieux/projects/math/math_53 /tmp/math_53_Genprog;cd /tmp/math_53_Genprog;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
+/home/tdurieux/results/Math/53/Genprog/result
+cd /tmp/math_53_Genprog;time java -cp /home/tdurieux/astor/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar fr.inria.main.evolution.MainjGenProg -mode statement -location . -dependencies lib/ -failing org.apache.commons.math.complex.ComplexTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
+
+Node: `hostname`
+";echo "
+Date: `date`
+";rm -rf /tmp/math_53_Genprog;
+
+ProgramVariant 136
+ 
+ operation: 
+location= org.apache.commons.math.complex.Complex
+ line= 152
+ original statement= org.apache.commons.math.util.MathUtils.checkNotNull(rhs)
+ fixed statement= "if ((isNaN) || (rhs.isNaN)) {
+	return org.apache.commons.math.complex.Complex.NaN;
+} "
+ generation= 68
+ 
+ ----
+Time Evolution(ms): 35957
+
+----stats: 
+
+spaces: [51]: [147, 147, 70, 147, 147, 147, 147, 147, 147, 147, 147, 147, 9, 147, 147, 147, 70, 9, 147, 70, 70, 70, 147, 70, 147, 147, 9, 147, 147, 147, 147, 147, 147, 147, 70, 70, 70, 147, 147, 147, 70, 147, 147, 147, 70, 147, 147, 70, 70, 147, 147]
+time val1 [10]: [320, 312, 319, 313, 541, 307, 309, 307, 312, 308]
+time val2 [1]: [29014]
+#gen: 68
+#patches: 1
+#RightCompilation: 9
+#WrongCompilation: 59
+#FailingTestCaseExecution: 10
+#RegressionTestExecution: 1
+#TestcasesExecutedval1: 980
+#TestcasesExecutedval2: 2395
+#FailingTestCase: 98
+#RegressionTestCases: 2395
+#OfAppliedOp: 68
+#NotAppliedOp: 0
+#InmutatedGen: 0
+#unfinishValidation: 0
+Time Total(ms): 175116
+
+
+Node: graphene-103.nancy.grid5000.fr
+
+
+Date: Tue May 12 03:08:44 CEST 2015
+
+

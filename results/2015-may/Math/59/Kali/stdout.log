@@ -1,0 +1,35 @@
+export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";cp -r /home/tdurieux/projects/math/math_59 /tmp/math_59_Kali;cd /tmp/math_59_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
+/home/tdurieux/results/Math/59/Kali/result
+cd /tmp/math_59_Kali;time java -cp /home/tdurieux/astor/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.math.util.FastMathTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;rm -rf /tmp/math_59_Kali;
+ NOT Found solution
+Number solutions:0
+All variants:
+Time Evolution(ms): 657515
+
+----stats: 
+
+spaces: [0]: []
+time val1 [55]: [12973, 4434, 12860, 13149, 12876, 12972, 12895, 12962, 535, 12829, 535, 530, 533, 12902, 13128, 13100, 536, 12916, 527, 12965, 12974, 12897, 12981, 12992, 13035, 404, 408, 13036, 13064, 12961, 13140, 12967, 406, 408, 13038, 410, 397, 789, 24206, 13320, 24273, 24326, 806, 206, 12456, 12679, 60001, 60002, 12979, 12970, 12897, 12906, 12967, 13162, 12764]
+time val2 [0]: []
+#gen: 79
+#patches: 0
+#RightCompilation: 54
+#WrongCompilation: 24
+#FailingTestCaseExecution: 55
+#RegressionTestExecution: 0
+#TestcasesExecutedval1: 1537
+#TestcasesExecutedval2: 0
+#FailingTestCase: 29
+#RegressionTestCases: 0
+#OfAppliedOp: 78
+#NotAppliedOp: 0
+#InmutatedGen: 0
+#unfinishValidation: 0
+Time Total(ms): 734003
+
+
+
+Node: griffon-31.nancy.grid5000.fr
+
+Date: 2015-05-08T01:36:53.756843
+

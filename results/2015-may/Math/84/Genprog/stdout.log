@@ -1,0 +1,51 @@
+export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";cp -r /home/tdurieux/projects/math/math_84 /tmp/math_84_Genprog;cd /tmp/math_84_Genprog;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
+/home/tdurieux/results/Math/84/Genprog/result
+cd /tmp/math_84_Genprog;time java -cp /home/tdurieux/astor/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar fr.inria.main.evolution.MainjGenProg -mode statement -location . -dependencies lib/ -failing org.apache.commons.math.optimization.direct.MultiDirectionalTest:org.apache.commons.math.optimization.direct.MultiDirectionalTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
+
+Node: `hostname`
+";echo "
+Date: `date`
+";rm -rf /tmp/math_84_Genprog;
+
+ProgramVariant 246
+ 
+ operation: 
+location= org.apache.commons.math.optimization.direct.MultiDirectional
+ line= 90
+ original statement= if ((comparator.compare(contracted, best)) < 0) {
+	return ;
+} 
+ fixed statement= "return "
+ generation= 123
+ 
+ ----
+Time Evolution(ms): 324639
+
+----stats: 
+
+spaces: [96]: [95, 95, 95, 32, 95, 95, 95, 14, 95, 95, 95, 95, 95, 95, 95, 10, 32, 18, 32, 32, 95, 95, 32, 95, 32, 8, 14, 95, 9, 9, 32, 95, 95, 32, 32, 95, 95, 95, 2, 32, 95, 95, 4, 32, 95, 32, 4, 32, 32, 95, 10, 13, 32, 32, 21, 21, 32, 32, 95, 9, 32, 32, 32, 95, 95, 18, 32, 32, 95, 95, 32, 95, 95, 32, 10, 32, 95, 9, 32, 95, 32, 18, 11, 9, 32, 32, 32, 10, 32, 11, 9, 32, 18, 95, 95, 32]
+time val1 [50]: [236, 250, 235, 232, 186, 233, 234, 210, 224, 60002, 200, 232, 226, 60002, 190, 232, 221, 60002, 234, 239, 60002, 223, 189, 185, 226, 230, 234, 186, 234, 232, 235, 230, 195, 233, 234, 235, 232, 213, 249, 197, 196, 214, 244, 232, 214, 60002, 219, 197, 233, 222]
+time val2 [1]: [7787]
+#gen: 123
+#patches: 1
+#RightCompilation: 49
+#WrongCompilation: 74
+#FailingTestCaseExecution: 50
+#RegressionTestExecution: 1
+#TestcasesExecutedval1: 450
+#TestcasesExecutedval2: 1946
+#FailingTestCase: 10
+#RegressionTestCases: 1946
+#OfAppliedOp: 123
+#NotAppliedOp: 0
+#InmutatedGen: 1
+#unfinishValidation: 0
+Time Total(ms): 354614
+
+
+Node: griffon-1.nancy.grid5000.fr
+
+
+Date: Tue May 12 00:51:06 CEST 2015
+
+

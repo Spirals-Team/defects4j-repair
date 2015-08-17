@@ -1,0 +1,35 @@
+export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";cp -r /home/tdurieux/projects/math/math_24 /tmp/math_24_Kali;cd /tmp/math_24_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
+/home/tdurieux/results/Math/24/Kali/result
+cd /tmp/math_24_Kali;time java -cp /home/tdurieux/astor/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.math3.optimization.univariate.BrentOptimizerTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;rm -rf /tmp/math_24_Kali;
+ NOT Found solution
+Number solutions:0
+All variants:
+Time Evolution(ms): 821980
+
+----stats: 
+
+spaces: [0]: []
+time val1 [74]: [239, 247, 239, 241, 241, 241, 243, 256, 240, 254, 240, 238, 254, 60001, 257, 253, 254, 252, 256, 256, 244, 60001, 258, 252, 252, 252, 255, 250, 252, 253, 242, 260, 259, 260, 264, 256, 255, 261, 256, 255, 244, 238, 233, 241, 256, 252, 253, 251, 254, 255, 251, 257, 251, 258, 259, 254, 242, 250, 251, 250, 240, 231, 240, 238, 257, 231, 261, 254, 216, 248, 250, 238, 239, 239]
+time val2 [5]: [134418, 134350, 134109, 134190, 133824]
+#gen: 122
+#patches: 0
+#RightCompilation: 73
+#WrongCompilation: 48
+#FailingTestCaseExecution: 74
+#RegressionTestExecution: 5
+#TestcasesExecutedval1: 648
+#TestcasesExecutedval2: 20360
+#FailingTestCase: 9
+#RegressionTestCases: 4072
+#OfAppliedOp: 121
+#NotAppliedOp: 0
+#InmutatedGen: 0
+#unfinishValidation: 0
+Time Total(ms): 1479287
+
+
+
+Node: griffon-30.nancy.grid5000.fr
+
+Date: 2015-05-08T01:56:04.636980
+

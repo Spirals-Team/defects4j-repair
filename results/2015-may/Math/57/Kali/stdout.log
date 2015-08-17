@@ -1,0 +1,35 @@
+export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";cp -r /home/tdurieux/projects/math/math_57 /tmp/math_57_Kali;cd /tmp/math_57_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
+/home/tdurieux/results/Math/57/Kali/result
+cd /tmp/math_57_Kali;time java -cp /home/tdurieux/astor/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.math.stat.clustering.KMeansPlusPlusClustererTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;rm -rf /tmp/math_57_Kali;
+ NOT Found solution
+Number solutions:0
+All variants:
+Time Evolution(ms): 200304
+
+----stats: 
+
+spaces: [0]: []
+time val1 [26]: [476, 464, 472, 60002, 60001, 60001, 3427, 336, 336, 355, 339, 340, 180, 304, 181, 280, 554, 278, 341, 363, 472, 472, 357, 357, 486, 515]
+time val2 [0]: []
+#gen: 52
+#patches: 0
+#RightCompilation: 25
+#WrongCompilation: 26
+#FailingTestCaseExecution: 26
+#RegressionTestExecution: 0
+#TestcasesExecutedval1: 92
+#TestcasesExecutedval2: 0
+#FailingTestCase: 4
+#RegressionTestCases: 0
+#OfAppliedOp: 51
+#NotAppliedOp: 0
+#InmutatedGen: 0
+#unfinishValidation: 0
+Time Total(ms): 367667
+
+
+
+Node: griffon-30.nancy.grid5000.fr
+
+Date: 2015-05-08T01:30:55.279373
+

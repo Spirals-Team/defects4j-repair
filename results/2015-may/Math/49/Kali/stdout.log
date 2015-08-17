@@ -1,0 +1,43 @@
+export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";cp -r /home/tdurieux/projects/math/math_49 /tmp/math_49_Kali;cd /tmp/math_49_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
+/home/tdurieux/results/Math/49/Kali/result
+cd /tmp/math_49_Kali;time java -cp /home/tdurieux/astor/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.math.linear.SparseRealVectorTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;rm -rf /tmp/math_49_Kali;
+
+ProgramVariant 35
+ 
+ operation: 
+location= org.apache.commons.math.util.OpenIntToDoubleHashMap
+ line= 399
+ original statement= ++(count)
+ fix (remove original statement) "++(count)"
+ generation= 34
+ 
+ ----
+Time Evolution(ms): 86854
+
+----stats: 
+
+spaces: [0]: []
+time val1 [47]: [376, 369, 373, 365, 369, 369, 347, 368, 369, 368, 341, 340, 369, 368, 369, 337, 335, 344, 369, 356, 370, 369, 360, 371, 369, 368, 370, 369, 346, 332, 368, 343, 369, 344, 371, 352, 366, 346, 346, 336, 347, 370, 366, 367, 368, 368, 369]
+time val2 [1]: [56426]
+#gen: 81
+#patches: 1
+#RightCompilation: 46
+#WrongCompilation: 34
+#FailingTestCaseExecution: 47
+#RegressionTestExecution: 1
+#TestcasesExecutedval1: 423
+#TestcasesExecutedval2: 2824
+#FailingTestCase: 9
+#RegressionTestCases: 2824
+#OfAppliedOp: 80
+#NotAppliedOp: 0
+#InmutatedGen: 0
+#unfinishValidation: 0
+Time Total(ms): 297796
+
+
+
+Node: griffon-8.nancy.grid5000.fr
+
+Date: 2015-05-08T01:31:11.384710
+

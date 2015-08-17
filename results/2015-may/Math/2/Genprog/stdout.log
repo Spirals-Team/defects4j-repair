@@ -1,0 +1,49 @@
+export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";cp -r /home/tdurieux/projects/math/math_2 /tmp/math_2_Genprog;cd /tmp/math_2_Genprog;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
+/home/tdurieux/results/Math/2/Genprog/result
+cd /tmp/math_2_Genprog;time java -cp /home/tdurieux/astor/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar fr.inria.main.evolution.MainjGenProg -mode statement -location . -dependencies lib/ -failing org.apache.commons.math3.distribution.HypergeometricDistributionTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
+
+Node: `hostname`
+";echo "
+Date: `date`
+";rm -rf /tmp/math_2_Genprog;
+
+ProgramVariant 84
+ 
+ operation: 
+location= org.apache.commons.math3.distribution.AbstractIntegerDistribution
+ line= 138
+ original statement= upper = ((int)(java.lang.Math.ceil(tmp))) - 1
+ fix (remove original statement) "upper = ((int)(java.lang.Math.ceil(tmp))) - 1"
+ generation= 42
+ 
+ ----
+Time Evolution(ms): 122747
+
+----stats: 
+
+spaces: [31]: [63, 63, 15, 11, 63, 11, 63, 63, 55, 63, 55, 55, 63, 55, 15, 63, 15, 11, 63, 55, 15, 55, 55, 63, 55, 11, 55, 55, 63, 55, 55]
+time val1 [11]: [305, 305, 306, 304, 280, 310, 276, 279, 281, 277, 303]
+time val2 [1]: [117355]
+#gen: 42
+#patches: 1
+#RightCompilation: 10
+#WrongCompilation: 32
+#FailingTestCaseExecution: 11
+#RegressionTestExecution: 1
+#TestcasesExecutedval1: 176
+#TestcasesExecutedval2: 5168
+#FailingTestCase: 16
+#RegressionTestCases: 5168
+#OfAppliedOp: 42
+#NotAppliedOp: 0
+#InmutatedGen: 0
+#unfinishValidation: 0
+Time Total(ms): 467848
+
+
+Node: graphene-102.nancy.grid5000.fr
+
+
+Date: Tue May 12 07:08:17 CEST 2015
+
+

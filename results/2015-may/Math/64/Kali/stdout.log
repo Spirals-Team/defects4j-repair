@@ -1,0 +1,35 @@
+export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";cp -r /home/tdurieux/projects/math/math_64 /tmp/math_64_Kali;cd /tmp/math_64_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
+/home/tdurieux/results/Math/64/Kali/result
+cd /tmp/math_64_Kali;time java -cp /home/tdurieux/astor/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.math.optimization.general.MinpackTest:org.apache.commons.math.optimization.general.MinpackTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;rm -rf /tmp/math_64_Kali;
+ NOT Found solution
+Number solutions:0
+All variants:
+Time Evolution(ms): 241238
+
+----stats: 
+
+spaces: [0]: []
+time val1 [238]: [422, 372, 423, 381, 390, 509, 595, 391, 393, 373, 1381, 1374, 431, 377, 493, 490, 1452, 511, 512, 408, 1463, 364, 409, 288, 289, 331, 324, 330, 363, 436, 417, 430, 400, 441, 426, 404, 417, 295, 421, 407, 417, 787, 814, 1544, 504, 1535, 537, 495, 400, 400, 1534, 535, 557, 422, 1558, 702, 677, 678, 519, 433, 432, 440, 377, 330, 512, 416, 372, 842, 389, 424, 424, 422, 336, 338, 553, 542, 341, 352, 354, 370, 60002, 414, 329, 336, 338, 241, 387, 338, 415, 1426, 328, 325, 268, 327, 328, 270, 399, 407, 346, 420, 429, 453, 395, 477, 387, 241, 239, 238, 238, 236, 239, 238, 416, 417, 418, 539, 390, 391, 322, 240, 238, 240, 256, 273, 242, 446, 391, 386, 268, 300, 875, 875, 281, 286, 451, 457, 452, 454, 474, 274, 60001, 553, 412, 360, 462, 418, 422, 433, 366, 338, 413, 239, 240, 424, 532, 386, 489, 284, 499, 282, 435, 1431, 271, 271, 272, 304, 270, 271, 240, 237, 224, 224, 223, 236, 238, 423, 428, 225, 226, 238, 553, 239, 240, 238, 1403, 226, 228, 227, 423, 227, 225, 227, 426, 458, 488, 270, 1415, 276, 327, 240, 412, 418, 417, 421, 417, 227, 417, 256, 257, 256, 417, 240, 238, 240, 239, 421, 368, 440, 421, 230, 422, 425, 423, 424, 231, 232, 233, 220, 233, 232, 228, 225, 423, 424, 426, 258, 256, 423]
+time val2 [0]: []
+#gen: 343
+#patches: 0
+#RightCompilation: 237
+#WrongCompilation: 105
+#FailingTestCaseExecution: 238
+#RegressionTestExecution: 0
+#TestcasesExecutedval1: 8496
+#TestcasesExecutedval2: 0
+#FailingTestCase: 36
+#RegressionTestCases: 0
+#OfAppliedOp: 342
+#NotAppliedOp: 0
+#InmutatedGen: 0
+#unfinishValidation: 0
+Time Total(ms): 281501
+
+
+
+Node: griffon-33.nancy.grid5000.fr
+
+Date: 2015-05-08T01:28:26.699751
+

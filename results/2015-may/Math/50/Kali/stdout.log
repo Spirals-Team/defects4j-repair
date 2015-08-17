@@ -1,0 +1,43 @@
+export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";cp -r /home/tdurieux/projects/math/math_50 /tmp/math_50_Kali;cd /tmp/math_50_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
+/home/tdurieux/results/Math/50/Kali/result
+cd /tmp/math_50_Kali;time java -cp /home/tdurieux/astor/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.math.analysis.solvers.RegulaFalsiSolverTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;rm -rf /tmp/math_50_Kali;
+
+ProgramVariant 3
+ 
+ operation: 
+location= org.apache.commons.math.analysis.solvers.BaseSecantSolver
+ line= 191
+ original statement= x0 = 0.5 * ((x0 + x1) - delta)
+ fix (remove original statement) "x0 = 0.5 * ((x0 + x1) - delta)"
+ generation= 2
+ 
+ ----
+Time Evolution(ms): 104835
+
+----stats: 
+
+spaces: [0]: []
+time val1 [23]: [268, 259, 263, 261, 279, 261, 283, 265, 260, 275, 283, 258, 259, 265, 251, 258, 273, 259, 262, 260, 252, 260, 253]
+time val2 [2]: [47984, 47923]
+#gen: 39
+#patches: 1
+#RightCompilation: 22
+#WrongCompilation: 16
+#FailingTestCaseExecution: 23
+#RegressionTestExecution: 2
+#TestcasesExecutedval1: 207
+#TestcasesExecutedval2: 5644
+#FailingTestCase: 9
+#RegressionTestCases: 2822
+#OfAppliedOp: 38
+#NotAppliedOp: 0
+#InmutatedGen: 0
+#unfinishValidation: 0
+Time Total(ms): 289932
+
+
+
+Node: graphene-74.nancy.grid5000.fr
+
+Date: 2015-05-08T01:31:06.497612
+

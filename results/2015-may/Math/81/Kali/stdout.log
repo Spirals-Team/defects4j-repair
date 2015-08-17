@@ -1,0 +1,128 @@
+export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";cp -r /home/tdurieux/projects/math/math_81 /tmp/math_81_Kali;cd /tmp/math_81_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
+/home/tdurieux/results/Math/81/Kali/result
+cd /tmp/math_81_Kali;time java -cp /home/tdurieux/astor/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.math.linear.EigenDecompositionImplTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;rm -rf /tmp/math_81_Kali;
+
+ProgramVariant 11
+ 
+ operation: 
+location= org.apache.commons.math.linear.EigenDecompositionImpl
+ line= 1540
+ original statement= if ((end - start) > 2) {
+	b2 = (work[(nn - 13)]) / (work[(nn - 15)]);
+	a2 = a2 + b2;
+	for (int i4 = nn - 17 ; i4 >= (((4 * start) + 2) + (pingPong)) ; i4 -= 4) {
+		if (b2 == 0.0) {
+			break;
+		} 
+		b1 = b2;
+		if ((work[i4]) > (work[(i4 - 2)])) {
+			return ;
+		} 
+		b2 = b2 * ((work[i4]) / (work[(i4 - 2)]));
+		a2 = a2 + b2;
+		if (((100 * (java.lang.Math.max(b2, b1))) < a2) || (cnst1 < a2)) {
+			break;
+		} 
+	}
+	a2 = cnst3 * a2;
+} 
+ fix (remove original statement) "if ((end - start) > 2) {
+	b2 = (work[(nn - 13)]) / (work[(nn - 15)]);
+	a2 = a2 + b2;
+	for (int i4 = nn - 17 ; i4 >= (((4 * start) + 2) + (pingPong)) ; i4 -= 4) {
+		if (b2 == 0.0) {
+			break;
+		} 
+		b1 = b2;
+		if ((work[i4]) > (work[(i4 - 2)])) {
+			return ;
+		} 
+		b2 = b2 * ((work[i4]) / (work[(i4 - 2)]));
+		a2 = a2 + b2;
+		if (((100 * (java.lang.Math.max(b2, b1))) < a2) || (cnst1 < a2)) {
+			break;
+		} 
+	}
+	a2 = cnst3 * a2;
+} "
+ generation= 10
+ 
+ ----ProgramVariant 12
+ 
+ operation: 
+location= org.apache.commons.math.linear.EigenDecompositionImpl
+ line= 1541
+ original statement= b2 = (work[(nn - 13)]) / (work[(nn - 15)])
+ fix (remove original statement) "b2 = (work[(nn - 13)]) / (work[(nn - 15)])"
+ generation= 11
+ 
+ ----ProgramVariant 17
+ 
+ operation: 
+location= org.apache.commons.math.linear.EigenDecompositionImpl
+ line= 1477
+ original statement= a2 = 0.0
+ fix (remove original statement) "a2 = 0.0"
+ generation= 16
+ 
+ ----ProgramVariant 19
+ 
+ operation: 
+location= org.apache.commons.math.linear.EigenDecompositionImpl
+ line= 1481
+ original statement= b2 = (work[(nn - 5)]) / (work[(nn - 7)])
+ fix (remove original statement) "b2 = (work[(nn - 5)]) / (work[(nn - 7)])"
+ generation= 18
+ 
+ ----ProgramVariant 36
+ 
+ operation: 
+location= org.apache.commons.math.linear.EigenDecompositionImpl
+ line= 1517
+ original statement= if (a2 < cnst1) {
+	s = (gam * (1 - (java.lang.Math.sqrt(a2)))) / (1 + a2);
+} 
+ fix (remove original statement) "if (a2 < cnst1) {
+	s = (gam * (1 - (java.lang.Math.sqrt(a2)))) / (1 + a2);
+} "
+ generation= 35
+ 
+ ----ProgramVariant 37
+ 
+ operation: 
+location= org.apache.commons.math.linear.EigenDecompositionImpl
+ line= 1518
+ original statement= s = (gam * (1 - (java.lang.Math.sqrt(a2)))) / (1 + a2)
+ fix (remove original statement) "s = (gam * (1 - (java.lang.Math.sqrt(a2)))) / (1 + a2)"
+ generation= 36
+ 
+ ----
+Time Evolution(ms): 1281933
+
+----stats: 
+
+spaces: [0]: []
+time val1 [230]: [369, 366, 373, 364, 364, 367, 367, 364, 366, 359, 364, 364, 366, 365, 365, 367, 366, 366, 60002, 382, 367, 367, 367, 366, 367, 366, 366, 381, 349, 348, 365, 366, 350, 368, 367, 363, 366, 367, 372, 366, 346, 377, 367, 60001, 381, 366, 377, 366, 379, 367, 366, 366, 367, 368, 60001, 368, 371, 414, 403, 366, 350, 364, 367, 366, 367, 350, 349, 348, 350, 382, 368, 378, 367, 397, 371, 60001, 60001, 370, 60002, 60001, 60002, 368, 377, 506, 411, 525, 388, 60001, 376, 60001, 390, 366, 410, 365, 408, 366, 367, 379, 376, 381, 378, 378, 367, 381, 377, 380, 382, 377, 384, 381, 376, 367, 357, 370, 367, 360, 349, 349, 368, 350, 365, 60001, 367, 355, 438, 60001, 369, 60001, 369, 362, 438, 60001, 368, 382, 368, 365, 381, 380, 60002, 372, 394, 366, 535, 60001, 386, 60001, 371, 405, 371, 406, 373, 368, 369, 370, 369, 372, 370, 371, 386, 371, 367, 370, 368, 368, 373, 368, 368, 366, 368, 368, 370, 370, 362, 369, 362, 368, 369, 369, 369, 409, 397, 383, 382, 371, 374, 368, 367, 369, 372, 375, 60001, 371, 360, 369, 371, 368, 368, 387, 368, 368, 367, 346, 372, 346, 369, 370, 361, 371, 369, 367, 371, 368, 347, 348, 386, 347, 368, 401, 400, 402, 401, 400, 399, 372, 399, 369, 401, 403, 403, 372]
+time val2 [6]: [10561, 10348, 10494, 10359, 10512, 10670]
+#gen: 343
+#patches: 6
+#RightCompilation: 229
+#WrongCompilation: 113
+#FailingTestCaseExecution: 230
+#RegressionTestExecution: 6
+#TestcasesExecutedval1: 3604
+#TestcasesExecutedval2: 11958
+#FailingTestCase: 17
+#RegressionTestCases: 1993
+#OfAppliedOp: 342
+#NotAppliedOp: 0
+#InmutatedGen: 0
+#unfinishValidation: 0
+Time Total(ms): 1318785
+
+
+
+Node: griffon-11.nancy.grid5000.fr
+
+Date: 2015-05-08T01:44:01.865482
+

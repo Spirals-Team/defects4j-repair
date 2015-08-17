@@ -1,0 +1,43 @@
+java.lang.IllegalArgumentException: The validation process does not execute well the test cases
+ Exception in thread "main" java.lang.ExceptionInInitializerError
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:191)
+	at fr.inria.astor.junitexec.JUnitTestExecutor.main(JUnitTestExecutor.java:106)
+Caused by: java.lang.IllegalArgumentException: Period does not support field 'years'
+	at org.joda.time.base.BasePeriod.checkAndUpdate(BasePeriod.java:159)
+	at org.joda.time.base.BasePeriod.setPeriodInternal(BasePeriod.java:190)
+	at org.joda.time.base.BasePeriod.<init>(BasePeriod.java:13)
+	at org.joda.time.Period.<init>(Period.java:302)
+	at org.joda.time.format.TestPeriodFormatterBuilder.<clinit>(TestPeriodFormatterBuilder.java:37)
+	... 3 more
+
+	at fr.inria.astor.core.validation.executors.JUnitExecutorProcess.getTestResult(JUnitExecutorProcess.java:130)
+	at fr.inria.astor.core.validation.executors.JUnitExecutorProcess.execute(JUnitExecutorProcess.java:78)
+	at fr.inria.astor.core.validation.executors.JUnitExecutorProcess.execute(JUnitExecutorProcess.java:34)
+	at fr.inria.astor.core.validation.validators.ProcessValidator.validate(ProcessValidator.java:58)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.validateInstance(EvolutionaryEngine.java:746)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.processCreatedVariant(EvolutionaryEngine.java:345)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.processGenerations(EvolutionaryEngine.java:211)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.startEvolution(EvolutionaryEngine.java:127)
+	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:137)
+	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:171)
+Exception in thread "main" java.lang.AssertionError: The validation process does not execute well the test cases
+ Exception in thread "main" java.lang.ExceptionInInitializerError
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:191)
+	at fr.inria.astor.junitexec.JUnitTestExecutor.main(JUnitTestExecutor.java:106)
+Caused by: java.lang.IllegalArgumentException: Period does not support field 'years'
+	at org.joda.time.base.BasePeriod.checkAndUpdate(BasePeriod.java:159)
+	at org.joda.time.base.BasePeriod.setPeriodInternal(BasePeriod.java:190)
+	at org.joda.time.base.BasePeriod.<init>(BasePeriod.java:13)
+	at org.joda.time.Period.<init>(Period.java:302)
+	at org.joda.time.format.TestPeriodFormatterBuilder.<clinit>(TestPeriodFormatterBuilder.java:37)
+	... 3 more
+
+	at org.junit.Assert.fail(Assert.java:88)
+	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:140)
+	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:171)
+
+real	2m22.176s
+user	3m16.156s
+sys	0m4.980s

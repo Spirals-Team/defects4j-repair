@@ -1,0 +1,43 @@
+export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";cp -r /home/tdurieux/projects/math/math_78 /tmp/math_78_Kali;cd /tmp/math_78_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
+/home/tdurieux/results/Math/78/Kali/result
+cd /tmp/math_78_Kali;time java -cp /home/tdurieux/astor/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.math.ode.events.EventStateTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;rm -rf /tmp/math_78_Kali;
+
+ProgramVariant 51
+ 
+ operation: 
+location= org.apache.commons.math.ode.events.EventState
+ line= 283
+ original statement= t0 = t
+ fix (remove original statement) "t0 = t"
+ generation= 50
+ 
+ ----
+Time Evolution(ms): 47140
+
+----stats: 
+
+spaces: [0]: []
+time val1 [40]: [168, 164, 168, 184, 158, 157, 175, 163, 183, 159, 160, 169, 158, 160, 173, 157, 164, 169, 164, 157, 165, 167, 155, 157, 154, 166, 154, 163, 162, 164, 156, 163, 162, 160, 175, 177, 157, 163, 157, 174]
+time val2 [4]: [8910, 9161, 9121, 9209]
+#gen: 62
+#patches: 1
+#RightCompilation: 39
+#WrongCompilation: 22
+#FailingTestCaseExecution: 40
+#RegressionTestExecution: 4
+#TestcasesExecutedval1: 40
+#TestcasesExecutedval2: 7992
+#FailingTestCase: 1
+#RegressionTestCases: 1998
+#OfAppliedOp: 61
+#NotAppliedOp: 0
+#InmutatedGen: 0
+#unfinishValidation: 0
+Time Total(ms): 76086
+
+
+
+Node: graphene-74.nancy.grid5000.fr
+
+Date: 2015-05-08T01:23:43.242056
+

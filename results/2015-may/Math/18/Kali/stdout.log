@@ -1,0 +1,35 @@
+export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";cp -r /home/tdurieux/projects/math/math_18 /tmp/math_18_Kali;cd /tmp/math_18_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
+/home/tdurieux/results/Math/18/Kali/result
+cd /tmp/math_18_Kali;time java -cp /home/tdurieux/astor/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.math3.optimization.direct.CMAESOptimizerTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;rm -rf /tmp/math_18_Kali;
+ NOT Found solution
+Number solutions:0
+All variants:
+Time Evolution(ms): 1863244
+
+----stats: 
+
+spaces: [0]: []
+time val1 [341]: [6823, 6795, 6825, 6783, 6866, 6998, 7044, 7044, 7153, 7205, 7176, 7189, 7288, 7562, 7774, 7063, 7257, 7205, 6751, 6751, 7281, 6712, 7415, 7160, 7398, 7111, 7252, 6778, 7616, 6966, 7147, 6920, 748, 776, 1475, 16471, 20545, 2719, 21545, 7636, 1640, 6810, 6888, 6771, 27933, 26608, 26798, 6218, 3324, 1517, 35900, 6997, 6823, 6756, 6698, 6351, 7432, 7560, 7904, 1484, 1526, 1530, 1544, 1560, 1568, 1540, 3841, 4138, 7994, 7535, 6939, 6502, 288, 258, 6800, 6991, 306, 455, 368, 370, 16476, 462, 435, 19763, 17858, 10917, 4994, 6834, 6999, 472, 7214, 6985, 7035, 7221, 441, 441, 6785, 7212, 6853, 6781, 10443, 7000, 6834, 6807, 6915, 6974, 6930, 6948, 6946, 6849, 451, 451, 450, 438, 7881, 7075, 6966, 283, 20668, 330, 396, 453, 397, 1131, 442, 11488, 13849, 506, 10210, 11418, 7652, 6745, 707, 367, 291, 5930, 391, 284, 6800, 285, 299, 1452, 1494, 305, 303, 6838, 6921, 2347, 2389, 16613, 10999, 12413, 7090, 7061, 955, 388, 385, 20480, 906, 913, 9561, 9630, 9493, 454, 453, 454, 451, 454, 455, 482, 482, 489, 1662, 1651, 1631, 2984, 2933, 480, 471, 2907, 2979, 470, 468, 470, 1530, 1550, 1567, 397, 395, 9585, 607, 608, 609, 608, 6790, 7010, 7312, 6957, 949, 945, 944, 961, 963, 955, 385, 387, 390, 763, 737, 6771, 6884, 6849, 6675, 6855, 6897, 6954, 2381, 435, 397, 399, 7329, 1517, 1573, 7003, 6730, 7239, 454, 452, 453, 6959, 492, 497, 432, 433, 429, 7208, 7196, 7236, 7335, 1562, 1626, 924, 1520, 1490, 1573, 1544, 6957, 6890, 1621, 1578, 757, 777, 746, 735, 755, 746, 7062, 246, 246, 6843, 471, 470, 7065, 1490, 1507, 1527, 6989, 6826, 6935, 6838, 1501, 1511, 1986, 1671, 6803, 7219, 7219, 6905, 6914, 6792, 6933, 6976, 6783, 4325, 60002, 6819, 6787, 6939, 7218, 6863, 6965, 6788, 6850, 6746, 7039, 1534, 1526, 1605, 1593, 1572, 1517, 1511, 1518, 1935, 3333, 1504, 1585, 1664, 1593, 6791, 6839, 6794, 1552, 1330, 7113, 6791, 6795, 6868, 6785, 316, 6727, 291, 297, 247, 304, 6375, 6861, 6854, 6292, 6996, 7119, 6915, 303, 6792, 6820, 6854, 6901, 6973, 3440, 3458, 3426]
+time val2 [0]: []
+#gen: 568
+#patches: 0
+#RightCompilation: 340
+#WrongCompilation: 227
+#FailingTestCaseExecution: 341
+#RegressionTestExecution: 0
+#TestcasesExecutedval1: 8840
+#TestcasesExecutedval2: 0
+#FailingTestCase: 26
+#RegressionTestCases: 0
+#OfAppliedOp: 567
+#NotAppliedOp: 0
+#InmutatedGen: 0
+#unfinishValidation: 0
+Time Total(ms): 2503543
+
+
+
+Node: griffon-57.nancy.grid5000.fr
+
+Date: 2015-05-08T02:15:24.294703
+

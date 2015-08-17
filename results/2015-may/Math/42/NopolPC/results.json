@@ -1,0 +1,15 @@
+{
+    "date": "Mon May 11 23:50:23 CEST 2015\n\n\n", 
+    "executionTime": 2829826, 
+    "nbAngelicValue": 9, 
+    "nbSMTInput": 147, 
+    "nbSMTVariable": 26, 
+    "nbStatement": 24, 
+    "node": "chinqchint-20.lille.grid5000.fr", 
+    "patch": "!((org.apache.commons.math.optimization.linear.SimplexTableau.this.restrictToNonNegative)&&(((org.apache.commons.math.optimization.linear.SimplexTableau.this.numSlackVariables)<=(org.apache.commons.math.optimization.linear.SimplexTableau.this.epsilon))||(org.apache.commons.math.optimization.linear.SimplexTableau.this.constraints.isEmpty())))", 
+    "patchLocation": {
+        "className": "org.apache.commons.math.optimization.linear.SimplexTableau", 
+        "line": 317
+    }, 
+    "patchType": "PRECONDITION"
+}

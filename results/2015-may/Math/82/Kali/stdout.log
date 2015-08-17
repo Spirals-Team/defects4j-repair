@@ -1,0 +1,43 @@
+export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";cp -r /home/tdurieux/projects/math/math_82 /tmp/math_82_Kali;cd /tmp/math_82_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
+/home/tdurieux/results/Math/82/Kali/result
+cd /tmp/math_82_Kali;time java -cp /home/tdurieux/astor/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.math.optimization.linear.SimplexSolverTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;rm -rf /tmp/math_82_Kali;
+
+ProgramVariant 45
+ 
+ operation: 
+location= org.apache.commons.math.optimization.linear.SimplexSolver
+ line= 63
+ original statement= minValue = tableau.getEntry(0, i)
+ fix (remove original statement) "minValue = tableau.getEntry(0, i)"
+ generation= 44
+ 
+ ----
+Time Evolution(ms): 113735
+
+----stats: 
+
+spaces: [0]: []
+time val1 [76]: [304, 302, 303, 304, 60001, 305, 287, 301, 301, 306, 309, 301, 302, 302, 297, 304, 298, 298, 300, 273, 301, 236, 237, 301, 288, 301, 263, 262, 299, 273, 267, 277, 267, 289, 265, 302, 302, 299, 298, 298, 300, 302, 281, 265, 301, 267, 302, 300, 301, 303, 303, 249, 247, 247, 289, 288, 301, 301, 301, 301, 302, 251, 266, 303, 303, 303, 247, 247, 249, 300, 250, 251, 249, 272, 267, 300]
+time val2 [1]: [7655]
+#gen: 142
+#patches: 1
+#RightCompilation: 75
+#WrongCompilation: 66
+#FailingTestCaseExecution: 76
+#RegressionTestExecution: 1
+#TestcasesExecutedval1: 1050
+#TestcasesExecutedval2: 1948
+#FailingTestCase: 14
+#RegressionTestCases: 1948
+#OfAppliedOp: 141
+#NotAppliedOp: 0
+#InmutatedGen: 0
+#unfinishValidation: 0
+Time Total(ms): 144165
+
+
+
+Node: griffon-5.nancy.grid5000.fr
+
+Date: 2015-05-08T01:24:26.946873
+

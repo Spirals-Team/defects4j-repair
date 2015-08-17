@@ -1,0 +1,35 @@
+export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";cp -r /home/tdurieux/projects/math/math_40 /tmp/math_40_Kali;cd /tmp/math_40_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
+/home/tdurieux/results/Math/40/Kali/result
+cd /tmp/math_40_Kali;time java -cp /home/tdurieux/astor/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolverTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;rm -rf /tmp/math_40_Kali;
+ NOT Found solution
+Number solutions:0
+All variants:
+Time Evolution(ms): 1542819
+
+----stats: 
+
+spaces: [0]: []
+time val1 [46]: [251, 253, 60002, 258, 237, 255, 255, 60002, 2748, 2700, 238, 255, 260, 254, 60001, 241, 230, 254, 238, 253, 261, 262, 260, 259, 255, 258, 253, 255, 258, 233, 60001, 260, 255, 259, 260, 265, 236, 233, 244, 254, 244, 255, 234, 245, 229, 255]
+time val2 [2]: [640008, 640007]
+#gen: 84
+#patches: 0
+#RightCompilation: 45
+#WrongCompilation: 38
+#FailingTestCaseExecution: 46
+#RegressionTestExecution: 2
+#TestcasesExecutedval1: 630
+#TestcasesExecutedval2: 0
+#FailingTestCase: 15
+#RegressionTestCases: 0
+#OfAppliedOp: 83
+#NotAppliedOp: 0
+#InmutatedGen: 0
+#unfinishValidation: 2
+Time Total(ms): 1855752
+
+
+
+Node: griffon-73.nancy.grid5000.fr
+
+Date: 2015-05-08T01:58:16.475511
+

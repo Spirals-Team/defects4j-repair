@@ -1,0 +1,49 @@
+export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";cp -r /home/tdurieux/projects/math/math_70 /tmp/math_70_Genprog;cd /tmp/math_70_Genprog;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
+/home/tdurieux/results/Math/70/Genprog/result
+cd /tmp/math_70_Genprog;time java -cp /home/tdurieux/astor/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar fr.inria.main.evolution.MainjGenProg -mode statement -location . -dependencies lib/ -failing org.apache.commons.math.analysis.solvers.BisectionSolverTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
+
+Node: `hostname`
+";echo "
+Date: `date`
+";rm -rf /tmp/math_70_Genprog;
+
+ProgramVariant 34
+ 
+ operation: 
+location= org.apache.commons.math.analysis.solvers.BisectionSolver
+ line= 72
+ original statement= return solve(min, max)
+ fixed statement= "return solve(f, min, max)"
+ generation= 17
+ 
+ ----
+Time Evolution(ms): 12922
+
+----stats: 
+
+spaces: [13]: [5, 24, 5, 24, 5, 24, 24, 24, 24, 24, 24, 24, 4]
+time val1 [5]: [185, 163, 170, 163, 161]
+time val2 [1]: [10731]
+#gen: 17
+#patches: 1
+#RightCompilation: 4
+#WrongCompilation: 13
+#FailingTestCaseExecution: 5
+#RegressionTestExecution: 1
+#TestcasesExecutedval1: 60
+#TestcasesExecutedval2: 2074
+#FailingTestCase: 12
+#RegressionTestCases: 2074
+#OfAppliedOp: 17
+#NotAppliedOp: 0
+#InmutatedGen: 0
+#unfinishValidation: 0
+Time Total(ms): 45360
+
+
+Node: graphene-102.nancy.grid5000.fr
+
+
+Date: Tue May 12 01:48:20 CEST 2015
+
+
