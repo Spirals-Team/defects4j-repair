@@ -3,62 +3,62 @@
 BugId             | NopolPC   | NopolC    | BrutpolPC | BrutpolC  | Genprog   | Kali      | Total
 ----------------- | --------- | --------- | --------- | --------- | --------- | --------- | ------
 [C1](#chart-1)    | TIMEOUT   | TIMEOUT   | 2 AV      | 1 AV      | Yes       | Yes       |      2
-[C3](#chart-3)    | TIMEOUT   | Yes       | 0 AV      | 1 AV      | Yes       | No        |      2
-[C4](#chart-4)    | TIMEOUT   | TIMEOUT   | Yes       | 0 AV      | No        | No        |      1
+[C3](#chart-3)    | TIMEOUT   | Yes       | 0 AV      | 1 AV      | Yes       | 0 Reg     |      2
+[C4](#chart-4)    | TIMEOUT   | TIMEOUT   | Yes       | 0 AV      | 0 Reg     | 0 Reg     |      1
 [C5](#chart-5)    | TIMEOUT   | Yes       | 0 AV      | Yes       | Yes       | Yes       |      4
-[C6](#chart-6)    | Yes       | Yes       | Yes       | Yes       | Yes       | No        |      5
-[C7](#chart-7)    | TIMEOUT   | TIMEOUT   | 0 AV      | 0 AV      | Yes       | No        |      1
+[C6](#chart-6)    | Yes       | Yes       | Yes       | Yes       | Yes       | 0 Reg     |      5
+[C7](#chart-7)    | TIMEOUT   | TIMEOUT   | 0 AV      | 0 AV      | Yes       | 0 Reg     |      1
 [C8](#chart-8)    | TIMEOUT   | 0 AV      | 0 AV      | 0 AV      | Yes       | Yes       |      2
-[C9](#chart-9)    | TIMEOUT   | TIMEOUT   | Yes       | Yes       | Yes       | No        |      3
+[C9](#chart-9)    | TIMEOUT   | TIMEOUT   | Yes       | Yes       | Yes       | 0 Reg     |      3
 [C13](#chart-13)  | Yes       | Yes       | Yes       | 2 AV      | Yes       | Yes       |      5
 [C15](#chart-15)  | TIMEOUT   | TIMEOUT   | 1 AV      | 0 AV      | Yes       | Yes       |      2
-[C17](#chart-17)  | TIMEOUT   | 0 AV      | Yes       | Yes       | No        | No        |      2
+[C17](#chart-17)  | TIMEOUT   | 0 AV      | Yes       | Yes       | 0 Reg     | 0 Reg     |      2
 [C21](#chart-21)  | Yes       | Yes       | 2 AV      | 1 AV      | Yes       | Yes       |      4
 [C25](#chart-25)  | Yes       | Yes       | Yes       | Yes       | Yes       | Yes       |      6
-[C26](#chart-26)  | Yes       | Yes       | 5 AV      | Yes       | No        | Yes       |      4
-[L39](#lang-39)   | Yes       | 0 AV      | Yes       | 0 AV      | No        | No        |      2
-[L44](#lang-44)   | Yes       | Yes       | 1 AV      | 5 AV      | No        | No        |      2
-[L46](#lang-46)   | Yes       | 0 AV      | 1 AV      | 0 AV      | No        | No        |      1
-[L51](#lang-51)   | 0 AV      | Yes       | 0 AV      | 2 AV      | No        | No        |      1
-[L53](#lang-53)   | Yes       | TIMEOUT   | 3 AV      | 1 AV      | No        | No        |      1
-[L55](#lang-55)   | Yes       | 0 AV      | 1 AV      | 0 AV      | No        | No        |      1
-[L58](#lang-58)   | Yes       | Yes       | 3 AV      | 4 AV      | No        | No        |      2
+[C26](#chart-26)  | Yes       | Yes       | 5 AV      | Yes       | 0 Reg     | Yes       |      4
+[L39](#lang-39)   | Yes       | 0 AV      | Yes       | 0 AV      | 1618 Reg  | 1618 Reg  |      2
+[L44](#lang-44)   | Yes       | Yes       | 1 AV      | 5 AV      | 1798 Reg  | 1798 Reg  |      2
+[L46](#lang-46)   | Yes       | 0 AV      | 1 AV      | 0 AV      | 1748 Reg  | 1748 Reg  |      1
+[L51](#lang-51)   | 0 AV      | Yes       | 0 AV      | 2 AV      | 1644 Reg  | 1644 Reg  |      1
+[L53](#lang-53)   | Yes       | TIMEOUT   | 3 AV      | 1 AV      | 0 Reg     | 0 Reg     |      1
+[L55](#lang-55)   | Yes       | 0 AV      | 1 AV      | 0 AV      | 1629 Reg  | 1629 Reg  |      1
+[L58](#lang-58)   | Yes       | Yes       | 3 AV      | 4 AV      | 0 Reg     | 0 Reg     |      2
 [M2](#math-2)     | TIMEOUT   | TIMEOUT   | TIMEOUT   | ERROR     | Yes       | Yes       |      2
-[M5](#math-5)     | TIMEOUT   | 2 AV      | 0 AV      | 2 AV      | Yes       | No        |      1
+[M5](#math-5)     | TIMEOUT   | 2 AV      | 0 AV      | 2 AV      | Yes       | 0 Reg     |      1
 [M8](#math-8)     | TIMEOUT   | 1 AV      | 2 AV      | 0 AV      | Yes       | Yes       |      2
 [M28](#math-28)   | 0 AV      | TIMEOUT   | 0 AV      | 8 AV      | Yes       | Yes       |      2
-[M32](#math-32)   | Yes       | 0 AV      | 1 AV      | Yes       | No        | Yes       |      3
-[M33](#math-33)   | Yes       | Yes       | Yes       | 2 AV      | No        | No        |      3
+[M32](#math-32)   | Yes       | 0 AV      | 1 AV      | Yes       | 3572 Reg  | Yes       |      3
+[M33](#math-33)   | Yes       | Yes       | Yes       | 2 AV      | 0 Reg     | 0 Reg     |      3
 [M40](#math-40)   | 1 AV      | Yes       | 0 AV      | 1 AV      | Yes       | Yes       |      3
-[M41](#math-41)   | 21 AV     | 10 AV     | Yes       | Yes       | No        | No        |      2
-[M42](#math-42)   | Yes       | TIMEOUT   | Yes       | Yes       | No        | No        |      3
+[M41](#math-41)   | 21 AV     | 10 AV     | Yes       | Yes       | 0 Reg     | 0 Reg     |      2
+[M42](#math-42)   | Yes       | TIMEOUT   | Yes       | Yes       | 3042 Reg  | 0 Reg     |      3
 [M44](#math-44)   | TIMEOUT   | 0 AV      | 0 AV      | 0 AV      | Yes       | Yes       |      2
-[M46](#math-46)   | 2 AV      | 2 AV      | Yes       | 2 AV      | No        | No        |      1
+[M46](#math-46)   | 2 AV      | 2 AV      | Yes       | 2 AV      | 0 Reg     | 0 Reg     |      1
 [M49](#math-49)   | Yes       | Yes       | Yes       | 4 AV      | Yes       | Yes       |      5
 [M50](#math-50)   | Yes       | Yes       | Yes       | 4 AV      | Yes       | Yes       |      5
-[M53](#math-53)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | Yes       | No        |      1
-[M57](#math-57)   | Yes       | Yes       | 3 AV      | 1 AV      | No        | No        |      2
-[M58](#math-58)   | Yes       | Yes       | Yes       | ERROR     | No        | TIMEOUT   |      3
-[M69](#math-69)   | Yes       | 2 AV      | 1 AV      | 2 AV      | No        | No        |      1
-[M70](#math-70)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | Yes       | No        |      1
+[M53](#math-53)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | Yes       | 0 Reg     |      1
+[M57](#math-57)   | Yes       | Yes       | 3 AV      | 1 AV      | 0 Reg     | 0 Reg     |      2
+[M58](#math-58)   | Yes       | Yes       | Yes       | ERROR     | 2224 Reg  | TIMEOUT   |      3
+[M69](#math-69)   | Yes       | 2 AV      | 1 AV      | 2 AV      | 0 Reg     | 0 Reg     |      1
+[M70](#math-70)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | Yes       | 0 Reg     |      1
 [M71](#math-71)   | 4 AV      | Yes       | Yes       | 2 AV      | Yes       | TIMEOUT   |      3
-[M73](#math-73)   | 0 AV      | Yes       | 0 AV      | 1 AV      | Yes       | No        |      2
+[M73](#math-73)   | 0 AV      | Yes       | 0 AV      | 1 AV      | Yes       | 0 Reg     |      2
 [M78](#math-78)   | Yes       | TIMEOUT   | Yes       | 4 AV      | Yes       | Yes       |      4
 [M80](#math-80)   | Yes       | TIMEOUT   | 3 AV      | 2 AV      | Yes       | Yes       |      3
 [M81](#math-81)   | Yes       | Yes       | TIMEOUT   | TIMEOUT   | Yes       | Yes       |      4
 [M82](#math-82)   | Yes       | 0 AV      | 2 AV      | 0 AV      | Yes       | Yes       |      3
 [M84](#math-84)   | 0 AV      | 0 AV      | 0 AV      | 1 AV      | Yes       | Yes       |      2
 [M85](#math-85)   | Yes       | Yes       | Yes       | Yes       | Yes       | Yes       |      6
-[M87](#math-87)   | Yes       | Yes       | Yes       | 1 AV      | No        | No        |      3
-[M88](#math-88)   | Yes       | 1 AV      | Yes       | 1 AV      | No        | No        |      2
+[M87](#math-87)   | Yes       | Yes       | Yes       | 1 AV      | 0 Reg     | 0 Reg     |      3
+[M88](#math-88)   | Yes       | 1 AV      | Yes       | 1 AV      | 0 Reg     | 0 Reg     |      2
 [M95](#math-95)   | TIMEOUT   | 0 AV      | 0 AV      | 0 AV      | Yes       | Yes       |      2
-[M96](#math-96)   | 0 AV      | 1 AV      | 0 AV      | Yes       | No        | No        |      1
-[M97](#math-97)   | Yes       | Yes       | Yes       | Yes       | No        | No        |      4
-[M99](#math-99)   | Yes       | Yes       | Yes       | Yes       | No        | No        |      4
-[M104](#math-104) | 0 AV      | Yes       | 0 AV      | 1 AV      | No        | No        |      1
-[M105](#math-105) | Yes       | 0 AV      | Yes       | 0 AV      | No        | No        |      2
-[T7](#time-7)     | TIMEOUT   | TIMEOUT   | Yes       | ERROR     | No        | No        |      1
-[T11](#time-11)   | Yes       | Yes       | Yes       | Yes       | No        | No        |      4
+[M96](#math-96)   | 0 AV      | 1 AV      | 0 AV      | Yes       | 0 Reg     | 0 Reg     |      1
+[M97](#math-97)   | Yes       | Yes       | Yes       | Yes       | 0 Reg     | 0 Reg     |      4
+[M99](#math-99)   | Yes       | Yes       | Yes       | Yes       | 0 Reg     | 0 Reg     |      4
+[M104](#math-104) | 0 AV      | Yes       | 0 AV      | 1 AV      | 0 Reg     | 0 Reg     |      1
+[M105](#math-105) | Yes       | 0 AV      | Yes       | 0 AV      | 0 Reg     | 0 Reg     |      2
+[T7](#time-7)     | TIMEOUT   | TIMEOUT   | Yes       | ERROR     | 0 Reg     | 0 Reg     |      1
+[T11](#time-11)   | Yes       | Yes       | Yes       | Yes       | 1 Reg     | 1 Reg     |      4
 Total             | 30 (13%)  | 25 (11%)  | 24 (10%)  | 14 (6%)   | 30 (13%)  | 23 (10%)  |    146
 Fixed bugs: 57/224 (25%)
 
@@ -74,229 +74,229 @@ Total execution time: 51 days, 1:37:21.828000
 BugId             | NopolPC   | NopolC    | BrutpolPC | BrutpolC  | Genprog   | Kali      | Total
 ----------------- | --------- | --------- | --------- | --------- | --------- | --------- | ------
 [C1](#chart-1)    | TIMEOUT   | TIMEOUT   | 2 AV      | 1 AV      | Yes       | Yes       |      2
-[C2](#chart-2)    | TIMEOUT   | TIMEOUT   | 0 AV      | 0 AV      | No        | No        |      0
-[C3](#chart-3)    | TIMEOUT   | Yes       | 0 AV      | 1 AV      | Yes       | No        |      2
-[C4](#chart-4)    | TIMEOUT   | TIMEOUT   | Yes       | 0 AV      | No        | No        |      1
+[C2](#chart-2)    | TIMEOUT   | TIMEOUT   | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[C3](#chart-3)    | TIMEOUT   | Yes       | 0 AV      | 1 AV      | Yes       | 0 Reg     |      2
+[C4](#chart-4)    | TIMEOUT   | TIMEOUT   | Yes       | 0 AV      | 0 Reg     | 0 Reg     |      1
 [C5](#chart-5)    | TIMEOUT   | Yes       | 0 AV      | Yes       | Yes       | Yes       |      4
-[C6](#chart-6)    | Yes       | Yes       | Yes       | Yes       | Yes       | No        |      5
-[C7](#chart-7)    | TIMEOUT   | TIMEOUT   | 0 AV      | 0 AV      | Yes       | No        |      1
+[C6](#chart-6)    | Yes       | Yes       | Yes       | Yes       | Yes       | 0 Reg     |      5
+[C7](#chart-7)    | TIMEOUT   | TIMEOUT   | 0 AV      | 0 AV      | Yes       | 0 Reg     |      1
 [C8](#chart-8)    | TIMEOUT   | 0 AV      | 0 AV      | 0 AV      | Yes       | Yes       |      2
-[C9](#chart-9)    | TIMEOUT   | TIMEOUT   | Yes       | Yes       | Yes       | No        |      3
-[C10](#chart-10)  | TIMEOUT   | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[C11](#chart-11)  | TIMEOUT   | TIMEOUT   | 0 AV      | 0 AV      | No        | No        |      0
-[C12](#chart-12)  | TIMEOUT   | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
+[C9](#chart-9)    | TIMEOUT   | TIMEOUT   | Yes       | Yes       | Yes       | 0 Reg     |      3
+[C10](#chart-10)  | TIMEOUT   | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[C11](#chart-11)  | TIMEOUT   | TIMEOUT   | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[C12](#chart-12)  | TIMEOUT   | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
 [C13](#chart-13)  | Yes       | Yes       | Yes       | 2 AV      | Yes       | Yes       |      5
-[C14](#chart-14)  | TIMEOUT   | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
+[C14](#chart-14)  | TIMEOUT   | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
 [C15](#chart-15)  | TIMEOUT   | TIMEOUT   | 1 AV      | 0 AV      | Yes       | Yes       |      2
-[C16](#chart-16)  | TIMEOUT   | TIMEOUT   | 0 AV      | 0 AV      | No        | No        |      0
-[C17](#chart-17)  | TIMEOUT   | 0 AV      | Yes       | Yes       | No        | No        |      2
-[C18](#chart-18)  | TIMEOUT   | 0 AV      | 1 AV      | 0 AV      | No        | No        |      0
-[C19](#chart-19)  | TIMEOUT   | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[C20](#chart-20)  | TIMEOUT   | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
+[C16](#chart-16)  | TIMEOUT   | TIMEOUT   | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[C17](#chart-17)  | TIMEOUT   | 0 AV      | Yes       | Yes       | 0 Reg     | 0 Reg     |      2
+[C18](#chart-18)  | TIMEOUT   | 0 AV      | 1 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[C19](#chart-19)  | TIMEOUT   | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[C20](#chart-20)  | TIMEOUT   | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
 [C21](#chart-21)  | Yes       | Yes       | 2 AV      | 1 AV      | Yes       | Yes       |      4
-[C22](#chart-22)  | TIMEOUT   | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[C23](#chart-23)  | TIMEOUT   | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[C24](#chart-24)  | TIMEOUT   | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
+[C22](#chart-22)  | TIMEOUT   | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[C23](#chart-23)  | TIMEOUT   | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[C24](#chart-24)  | TIMEOUT   | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
 [C25](#chart-25)  | Yes       | Yes       | Yes       | Yes       | Yes       | Yes       |      6
-[C26](#chart-26)  | Yes       | Yes       | 5 AV      | Yes       | No        | Yes       |      4
-[L1](#lang-1)     | 0 AV      | 1 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[L2](#lang-2)     | TIMEOUT   | 1 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[L3](#lang-3)     | TIMEOUT   | 1 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[L4](#lang-4)     | TIMEOUT   | 1 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[L5](#lang-5)     | TIMEOUT   | 1 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[L6](#lang-6)     | 0 AV      | 1 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[L7](#lang-7)     | TIMEOUT   | 2 AV      | 2 AV      | 1 AV      | No        | No        |      0
-[L8](#lang-8)     | TIMEOUT   | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[L9](#lang-9)     | TIMEOUT   | 1 AV      | 0 AV      | 0 AV      | No        | TIMEOUT   |      0
-[L10](#lang-10)   | TIMEOUT   | TIMEOUT   | 18 AV     | 12 AV     | No        | TIMEOUT   |      0
-[L11](#lang-11)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[L12](#lang-12)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[L13](#lang-13)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[L14](#lang-14)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[L15](#lang-15)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[L16](#lang-16)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[L17](#lang-17)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[L18](#lang-18)   | TIMEOUT   | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[L19](#lang-19)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[L20](#lang-20)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[L21](#lang-21)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[L22](#lang-22)   | TIMEOUT   | TIMEOUT   | 2 AV      | 1 AV      | No        | No        |      0
-[L23](#lang-23)   | 0 AV      | TIMEOUT   | 0 AV      | TIMEOUT   | No        | No        |      0
-[L24](#lang-24)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[L25](#lang-25)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[L26](#lang-26)   | TIMEOUT   | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[L27](#lang-27)   | 0 AV      | 1 AV      | 0 AV      | 1 AV      | No        | No        |      0
-[L28](#lang-28)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[L29](#lang-29)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[L30](#lang-30)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[L31](#lang-31)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[L32](#lang-32)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[L33](#lang-33)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[L34](#lang-34)   | TIMEOUT   | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[L35](#lang-35)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[L36](#lang-36)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[L37](#lang-37)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[L38](#lang-38)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[L39](#lang-39)   | Yes       | 0 AV      | Yes       | 0 AV      | No        | No        |      2
-[L40](#lang-40)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[L41](#lang-41)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[L42](#lang-42)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[L43](#lang-43)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[L44](#lang-44)   | Yes       | Yes       | 1 AV      | 5 AV      | No        | No        |      2
-[L45](#lang-45)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[L46](#lang-46)   | Yes       | 0 AV      | 1 AV      | 0 AV      | No        | No        |      1
-[L47](#lang-47)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[L48](#lang-48)   | 0 AV      | 0 AV      | 2 AV      | 2 AV      | No        | No        |      0
-[L49](#lang-49)   | TIMEOUT   | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[L50](#lang-50)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[L51](#lang-51)   | 0 AV      | Yes       | 0 AV      | 2 AV      | No        | No        |      1
-[L52](#lang-52)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[L53](#lang-53)   | Yes       | TIMEOUT   | 3 AV      | 1 AV      | No        | No        |      1
-[L54](#lang-54)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[L55](#lang-55)   | Yes       | 0 AV      | 1 AV      | 0 AV      | No        | No        |      1
-[L56](#lang-56)   | 0 AV      | 0 AV      | 1 AV      | 1 AV      | No        | No        |      0
-[L57](#lang-57)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[L58](#lang-58)   | Yes       | Yes       | 3 AV      | 4 AV      | No        | No        |      2
-[L59](#lang-59)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[L60](#lang-60)   | 0 AV      | 0 AV      | 2 AV      | 2 AV      | No        | No        |      0
-[L61](#lang-61)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[L62](#lang-62)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[L63](#lang-63)   | TIMEOUT   | 1 AV      | 1 AV      | 1 AV      | No        | No        |      0
-[L64](#lang-64)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[L65](#lang-65)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[M1](#math-1)     | TIMEOUT   | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
+[C26](#chart-26)  | Yes       | Yes       | 5 AV      | Yes       | 0 Reg     | Yes       |      4
+[L1](#lang-1)     | 0 AV      | 1 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[L2](#lang-2)     | TIMEOUT   | 1 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[L3](#lang-3)     | TIMEOUT   | 1 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[L4](#lang-4)     | TIMEOUT   | 1 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[L5](#lang-5)     | TIMEOUT   | 1 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[L6](#lang-6)     | 0 AV      | 1 AV      | 0 AV      | 0 AV      | 2263 Reg  | 2263 Reg  |      0
+[L7](#lang-7)     | TIMEOUT   | 2 AV      | 2 AV      | 1 AV      | 2261 Reg  | 2261 Reg  |      0
+[L8](#lang-8)     | TIMEOUT   | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[L9](#lang-9)     | TIMEOUT   | 1 AV      | 0 AV      | 0 AV      | 0 Reg     | TIMEOUT   |      0
+[L10](#lang-10)   | TIMEOUT   | TIMEOUT   | 18 AV     | 12 AV     | 2198 Reg  | TIMEOUT   |      0
+[L11](#lang-11)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[L12](#lang-12)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[L13](#lang-13)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[L14](#lang-14)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[L15](#lang-15)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[L16](#lang-16)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 2046 Reg  | 2046 Reg  |      0
+[L17](#lang-17)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 1903 Reg  | 1903 Reg  |      0
+[L18](#lang-18)   | TIMEOUT   | 0 AV      | 0 AV      | 0 AV      | 1902 Reg  | 1902 Reg  |      0
+[L19](#lang-19)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[L20](#lang-20)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 1876 Reg  | 1876 Reg  |      0
+[L21](#lang-21)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 1827 Reg  | 1827 Reg  |      0
+[L22](#lang-22)   | TIMEOUT   | TIMEOUT   | 2 AV      | 1 AV      | 1825 Reg  | 1825 Reg  |      0
+[L23](#lang-23)   | 0 AV      | TIMEOUT   | 0 AV      | TIMEOUT   | 0 Reg     | 0 Reg     |      0
+[L24](#lang-24)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[L25](#lang-25)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 1821 Reg  | 1821 Reg  |      0
+[L26](#lang-26)   | TIMEOUT   | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[L27](#lang-27)   | 0 AV      | 1 AV      | 0 AV      | 1 AV      | 0 Reg     | 0 Reg     |      0
+[L28](#lang-28)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[L29](#lang-29)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[L30](#lang-30)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[L31](#lang-31)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[L32](#lang-32)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[L33](#lang-33)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[L34](#lang-34)   | TIMEOUT   | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[L35](#lang-35)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 1644 Reg  | 1644 Reg  |      0
+[L36](#lang-36)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[L37](#lang-37)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[L38](#lang-38)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 1624 Reg  | 0 Reg     |      0
+[L39](#lang-39)   | Yes       | 0 AV      | Yes       | 0 AV      | 1618 Reg  | 1618 Reg  |      2
+[L40](#lang-40)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 1643 Reg  | 1643 Reg  |      0
+[L41](#lang-41)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[L42](#lang-42)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[L43](#lang-43)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 1821 Reg  | 1821 Reg  |      0
+[L44](#lang-44)   | Yes       | Yes       | 1 AV      | 5 AV      | 1798 Reg  | 1798 Reg  |      2
+[L45](#lang-45)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 1796 Reg  | 1796 Reg  |      0
+[L46](#lang-46)   | Yes       | 0 AV      | 1 AV      | 0 AV      | 1748 Reg  | 1748 Reg  |      1
+[L47](#lang-47)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 1748 Reg  | 1748 Reg  |      0
+[L48](#lang-48)   | 0 AV      | 0 AV      | 2 AV      | 2 AV      | 0 Reg     | 0 Reg     |      0
+[L49](#lang-49)   | TIMEOUT   | 0 AV      | 0 AV      | 0 AV      | 1669 Reg  | 1669 Reg  |      0
+[L50](#lang-50)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 1733 Reg  | 1733 Reg  |      0
+[L51](#lang-51)   | 0 AV      | Yes       | 0 AV      | 2 AV      | 1644 Reg  | 1644 Reg  |      1
+[L52](#lang-52)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 1644 Reg  | 1644 Reg  |      0
+[L53](#lang-53)   | Yes       | TIMEOUT   | 3 AV      | 1 AV      | 0 Reg     | 0 Reg     |      1
+[L54](#lang-54)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 1629 Reg  | 1629 Reg  |      0
+[L55](#lang-55)   | Yes       | 0 AV      | 1 AV      | 0 AV      | 1629 Reg  | 1629 Reg  |      1
+[L56](#lang-56)   | 0 AV      | 0 AV      | 1 AV      | 1 AV      | 1610 Reg  | 1610 Reg  |      0
+[L57](#lang-57)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 1609 Reg  | 1609 Reg  |      0
+[L58](#lang-58)   | Yes       | Yes       | 3 AV      | 4 AV      | 0 Reg     | 0 Reg     |      2
+[L59](#lang-59)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 1606 Reg  | 1606 Reg  |      0
+[L60](#lang-60)   | 0 AV      | 0 AV      | 2 AV      | 2 AV      | 1603 Reg  | 1603 Reg  |      0
+[L61](#lang-61)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 1602 Reg  | 1602 Reg  |      0
+[L62](#lang-62)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[L63](#lang-63)   | TIMEOUT   | 1 AV      | 1 AV      | 1 AV      | 1590 Reg  | 1590 Reg  |      0
+[L64](#lang-64)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 1586 Reg  | 1586 Reg  |      0
+[L65](#lang-65)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[M1](#math-1)     | TIMEOUT   | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
 [M2](#math-2)     | TIMEOUT   | TIMEOUT   | TIMEOUT   | ERROR     | Yes       | Yes       |      2
-[M3](#math-3)     | TIMEOUT   | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[M4](#math-4)     | TIMEOUT   | TIMEOUT   | 2 AV      | 1 AV      | No        | No        |      0
-[M5](#math-5)     | TIMEOUT   | 2 AV      | 0 AV      | 2 AV      | Yes       | No        |      1
+[M3](#math-3)     | TIMEOUT   | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[M4](#math-4)     | TIMEOUT   | TIMEOUT   | 2 AV      | 1 AV      | 0 Reg     | 0 Reg     |      0
+[M5](#math-5)     | TIMEOUT   | 2 AV      | 0 AV      | 2 AV      | Yes       | 0 Reg     |      1
 [M6](#math-6)     | TIMEOUT   | 0 AV      | 0 AV      | 0 AV      | ERROR     | ERROR     |      0
 [M7](#math-7)     | TIMEOUT   | TIMEOUT   | 6 AV      | 7 AV      | TIMEOUT   | TIMEOUT   |      0
 [M8](#math-8)     | TIMEOUT   | 1 AV      | 2 AV      | 0 AV      | Yes       | Yes       |      2
-[M9](#math-9)     | TIMEOUT   | 0 AV      | 0 AV      | 0 AV      | TIMEOUT   | No        |      0
-[M10](#math-10)   | TIMEOUT   | 0 AV      | 0 AV      | 0 AV      | TIMEOUT   | No        |      0
-[M11](#math-11)   | TIMEOUT   | TIMEOUT   | 0 AV      | 0 AV      | No        | No        |      0
+[M9](#math-9)     | TIMEOUT   | 0 AV      | 0 AV      | 0 AV      | TIMEOUT   | 4801 Reg  |      0
+[M10](#math-10)   | TIMEOUT   | 0 AV      | 0 AV      | 0 AV      | TIMEOUT   | 0 Reg     |      0
+[M11](#math-11)   | TIMEOUT   | TIMEOUT   | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
 [M12](#math-12)   | TIMEOUT   | TIMEOUT   | TIMEOUT   | ERROR     | TIMEOUT   | TIMEOUT   |      0
 [M13](#math-13)   | TIMEOUT   | 0 AV      | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   |      0
 [M14](#math-14)   | TIMEOUT   | 0 AV      | 0 AV      | 0 AV      | TIMEOUT   | TIMEOUT   |      0
-[M15](#math-15)   | TIMEOUT   | 1 AV      | 2 AV      | TIMEOUT   | No        | TIMEOUT   |      0
-[M16](#math-16)   | TIMEOUT   | TIMEOUT   | 0 AV      | 0 AV      | No        | TIMEOUT   |      0
-[M17](#math-17)   | 0 AV      | TIMEOUT   | 0 AV      | 0 AV      | No        | No        |      0
-[M18](#math-18)   | TIMEOUT   | 1 AV      | TIMEOUT   | TIMEOUT   | No        | TIMEOUT   |      0
-[M19](#math-19)   | 0 AV      | 1 AV      | 0 AV      | 1 AV      | No        | No        |      0
+[M15](#math-15)   | TIMEOUT   | 1 AV      | 2 AV      | TIMEOUT   | 4240 Reg  | TIMEOUT   |      0
+[M16](#math-16)   | TIMEOUT   | TIMEOUT   | 0 AV      | 0 AV      | 0 Reg     | TIMEOUT   |      0
+[M17](#math-17)   | 0 AV      | TIMEOUT   | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[M18](#math-18)   | TIMEOUT   | 1 AV      | TIMEOUT   | TIMEOUT   | 0 Reg     | TIMEOUT   |      0
+[M19](#math-19)   | 0 AV      | 1 AV      | 0 AV      | 1 AV      | 0 Reg     | 0 Reg     |      0
 [M20](#math-20)   | TIMEOUT   | TIMEOUT   | TIMEOUT   | TIMEOUT   | ERROR     | ERROR     |      0
-[M21](#math-21)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[M22](#math-22)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[M23](#math-23)   | 0 AV      | TIMEOUT   | 0 AV      | 1 AV      | No        | No        |      0
-[M24](#math-24)   | 5 AV      | 1 AV      | 3 AV      | 1 AV      | No        | No        |      0
-[M25](#math-25)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[M26](#math-26)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[M27](#math-27)   | TIMEOUT   | TIMEOUT   | 0 AV      | 0 AV      | No        | No        |      0
+[M21](#math-21)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[M22](#math-22)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[M23](#math-23)   | 0 AV      | TIMEOUT   | 0 AV      | 1 AV      | 0 Reg     | 4073 Reg  |      0
+[M24](#math-24)   | 5 AV      | 1 AV      | 3 AV      | 1 AV      | 4072 Reg  | 4072 Reg  |      0
+[M25](#math-25)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[M26](#math-26)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 3959 Reg  | 0 Reg     |      0
+[M27](#math-27)   | TIMEOUT   | TIMEOUT   | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
 [M28](#math-28)   | 0 AV      | TIMEOUT   | 0 AV      | 8 AV      | Yes       | Yes       |      2
-[M29](#math-29)   | 0 AV      | TIMEOUT   | 0 AV      | TIMEOUT   | No        | No        |      0
-[M30](#math-30)   | 0 AV      | 1 AV      | 0 AV      | TIMEOUT   | No        | No        |      0
-[M31](#math-31)   | 6 AV      | 3 AV      | 1 AV      | 1 AV      | No        | No        |      0
-[M32](#math-32)   | Yes       | 0 AV      | 1 AV      | Yes       | No        | Yes       |      3
-[M33](#math-33)   | Yes       | Yes       | Yes       | 2 AV      | No        | No        |      3
-[M34](#math-34)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[M35](#math-35)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[M36](#math-36)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[M37](#math-37)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[M38](#math-38)   | TIMEOUT   | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[M39](#math-39)   | ERROR     | ERROR     | 7 AV      | 1 AV      | No        | TIMEOUT   |      0
+[M29](#math-29)   | 0 AV      | TIMEOUT   | 0 AV      | TIMEOUT   | 0 Reg     | 0 Reg     |      0
+[M30](#math-30)   | 0 AV      | 1 AV      | 0 AV      | TIMEOUT   | 3694 Reg  | 3694 Reg  |      0
+[M31](#math-31)   | 6 AV      | 3 AV      | 1 AV      | 1 AV      | 0 Reg     | 0 Reg     |      0
+[M32](#math-32)   | Yes       | 0 AV      | 1 AV      | Yes       | 3572 Reg  | Yes       |      3
+[M33](#math-33)   | Yes       | Yes       | Yes       | 2 AV      | 0 Reg     | 0 Reg     |      3
+[M34](#math-34)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[M35](#math-35)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[M36](#math-36)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[M37](#math-37)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[M38](#math-38)   | TIMEOUT   | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[M39](#math-39)   | ERROR     | ERROR     | 7 AV      | 1 AV      | 0 Reg     | TIMEOUT   |      0
 [M40](#math-40)   | 1 AV      | Yes       | 0 AV      | 1 AV      | Yes       | Yes       |      3
-[M41](#math-41)   | 21 AV     | 10 AV     | Yes       | Yes       | No        | No        |      2
-[M42](#math-42)   | Yes       | TIMEOUT   | Yes       | Yes       | No        | No        |      3
-[M43](#math-43)   | 0 AV      | 1 AV      | 0 AV      | 1 AV      | No        | No        |      0
+[M41](#math-41)   | 21 AV     | 10 AV     | Yes       | Yes       | 0 Reg     | 0 Reg     |      2
+[M42](#math-42)   | Yes       | TIMEOUT   | Yes       | Yes       | 3042 Reg  | 0 Reg     |      3
+[M43](#math-43)   | 0 AV      | 1 AV      | 0 AV      | 1 AV      | 0 Reg     | 0 Reg     |      0
 [M44](#math-44)   | TIMEOUT   | 0 AV      | 0 AV      | 0 AV      | Yes       | Yes       |      2
-[M45](#math-45)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[M46](#math-46)   | 2 AV      | 2 AV      | Yes       | 2 AV      | No        | No        |      1
-[M47](#math-47)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[M48](#math-48)   | TIMEOUT   | TIMEOUT   | 0 AV      | 0 AV      | No        | No        |      0
+[M45](#math-45)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[M46](#math-46)   | 2 AV      | 2 AV      | Yes       | 2 AV      | 0 Reg     | 0 Reg     |      1
+[M47](#math-47)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[M48](#math-48)   | TIMEOUT   | TIMEOUT   | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
 [M49](#math-49)   | Yes       | Yes       | Yes       | 4 AV      | Yes       | Yes       |      5
 [M50](#math-50)   | Yes       | Yes       | Yes       | 4 AV      | Yes       | Yes       |      5
 [M51](#math-51)   | TIMEOUT   | TIMEOUT   | TIMEOUT   | 0 AV      | ERROR     | ERROR     |      0
-[M52](#math-52)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[M53](#math-53)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | Yes       | No        |      1
-[M54](#math-54)   | TIMEOUT   | TIMEOUT   | 0 AV      | 0 AV      | No        | TIMEOUT   |      0
-[M55](#math-55)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[M56](#math-56)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[M57](#math-57)   | Yes       | Yes       | 3 AV      | 1 AV      | No        | No        |      2
-[M58](#math-58)   | Yes       | Yes       | Yes       | ERROR     | No        | TIMEOUT   |      3
-[M59](#math-59)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | TIMEOUT   |      0
-[M60](#math-60)   | 0 AV      | 1 AV      | 0 AV      | 1 AV      | No        | No        |      0
-[M61](#math-61)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[M62](#math-62)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[M63](#math-63)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[M64](#math-64)   | TIMEOUT   | 0 AV      | 2 AV      | 0 AV      | No        | No        |      0
-[M65](#math-65)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[M66](#math-66)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[M67](#math-67)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[M68](#math-68)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[M69](#math-69)   | Yes       | 2 AV      | 1 AV      | 2 AV      | No        | No        |      1
-[M70](#math-70)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | Yes       | No        |      1
+[M52](#math-52)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[M53](#math-53)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | Yes       | 0 Reg     |      1
+[M54](#math-54)   | TIMEOUT   | TIMEOUT   | 0 AV      | 0 AV      | 0 Reg     | TIMEOUT   |      0
+[M55](#math-55)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[M56](#math-56)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 2270 Reg  | 0 Reg     |      0
+[M57](#math-57)   | Yes       | Yes       | 3 AV      | 1 AV      | 0 Reg     | 0 Reg     |      2
+[M58](#math-58)   | Yes       | Yes       | Yes       | ERROR     | 2224 Reg  | TIMEOUT   |      3
+[M59](#math-59)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | TIMEOUT   |      0
+[M60](#math-60)   | 0 AV      | 1 AV      | 0 AV      | 1 AV      | 0 Reg     | 0 Reg     |      0
+[M61](#math-61)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[M62](#math-62)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[M63](#math-63)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[M64](#math-64)   | TIMEOUT   | 0 AV      | 2 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[M65](#math-65)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[M66](#math-66)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[M67](#math-67)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[M68](#math-68)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[M69](#math-69)   | Yes       | 2 AV      | 1 AV      | 2 AV      | 0 Reg     | 0 Reg     |      1
+[M70](#math-70)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | Yes       | 0 Reg     |      1
 [M71](#math-71)   | 4 AV      | Yes       | Yes       | 2 AV      | Yes       | TIMEOUT   |      3
-[M72](#math-72)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[M73](#math-73)   | 0 AV      | Yes       | 0 AV      | 1 AV      | Yes       | No        |      2
-[M74](#math-74)   | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | No        | No        |      0
-[M75](#math-75)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[M76](#math-76)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[M77](#math-77)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
+[M72](#math-72)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 2032 Reg  | 0 Reg     |      0
+[M73](#math-73)   | 0 AV      | Yes       | 0 AV      | 1 AV      | Yes       | 0 Reg     |      2
+[M74](#math-74)   | TIMEOUT   | 0 AV      | TIMEOUT   | TIMEOUT   | 0 Reg     | 0 Reg     |      0
+[M75](#math-75)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[M76](#math-76)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[M77](#math-77)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
 [M78](#math-78)   | Yes       | TIMEOUT   | Yes       | 4 AV      | Yes       | Yes       |      4
-[M79](#math-79)   | 1 AV      | 1 AV      | 2 AV      | 1 AV      | No        | No        |      0
+[M79](#math-79)   | 1 AV      | 1 AV      | 2 AV      | 1 AV      | 1996 Reg  | 0 Reg     |      0
 [M80](#math-80)   | Yes       | TIMEOUT   | 3 AV      | 2 AV      | Yes       | Yes       |      3
 [M81](#math-81)   | Yes       | Yes       | TIMEOUT   | TIMEOUT   | Yes       | Yes       |      4
 [M82](#math-82)   | Yes       | 0 AV      | 2 AV      | 0 AV      | Yes       | Yes       |      3
-[M83](#math-83)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
+[M83](#math-83)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
 [M84](#math-84)   | 0 AV      | 0 AV      | 0 AV      | 1 AV      | Yes       | Yes       |      2
 [M85](#math-85)   | Yes       | Yes       | Yes       | Yes       | Yes       | Yes       |      6
-[M86](#math-86)   | 5 AV      | 0 AV      | 1 AV      | 0 AV      | No        | No        |      0
-[M87](#math-87)   | Yes       | Yes       | Yes       | 1 AV      | No        | No        |      3
-[M88](#math-88)   | Yes       | 1 AV      | Yes       | 1 AV      | No        | No        |      2
-[M89](#math-89)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[M90](#math-90)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[M91](#math-91)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[M92](#math-92)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[M93](#math-93)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[M94](#math-94)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
+[M86](#math-86)   | 5 AV      | 0 AV      | 1 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[M87](#math-87)   | Yes       | Yes       | Yes       | 1 AV      | 0 Reg     | 0 Reg     |      3
+[M88](#math-88)   | Yes       | 1 AV      | Yes       | 1 AV      | 0 Reg     | 0 Reg     |      2
+[M89](#math-89)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[M90](#math-90)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[M91](#math-91)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[M92](#math-92)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[M93](#math-93)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[M94](#math-94)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
 [M95](#math-95)   | TIMEOUT   | 0 AV      | 0 AV      | 0 AV      | Yes       | Yes       |      2
-[M96](#math-96)   | 0 AV      | 1 AV      | 0 AV      | Yes       | No        | No        |      1
-[M97](#math-97)   | Yes       | Yes       | Yes       | Yes       | No        | No        |      4
-[M98](#math-98)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[M99](#math-99)   | Yes       | Yes       | Yes       | Yes       | No        | No        |      4
-[M100](#math-100) | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[M101](#math-101) | 0 AV      | 1 AV      | 0 AV      | 1 AV      | No        | No        |      0
-[M102](#math-102) | TIMEOUT   | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[M103](#math-103) | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[M104](#math-104) | 0 AV      | Yes       | 0 AV      | 1 AV      | No        | No        |      1
-[M105](#math-105) | Yes       | 0 AV      | Yes       | 0 AV      | No        | No        |      2
-[M106](#math-106) | 7 AV      | TIMEOUT   | 7 AV      | 5 AV      | No        | No        |      0
-[T1](#time-1)     | 0 AV      | TIMEOUT   | 0 AV      | ERROR     | No        | No        |      0
-[T2](#time-2)     | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[T3](#time-3)     | TIMEOUT   | TIMEOUT   | 0 AV      | 1 AV      | No        | No        |      0
-[T4](#time-4)     | 0 AV      | 0 AV      | 1 AV      | 1 AV      | No        | No        |      0
-[T5](#time-5)     | 0 AV      | 1 AV      | 2 AV      | 1 AV      | No        | No        |      0
-[T6](#time-6)     | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[T7](#time-7)     | TIMEOUT   | TIMEOUT   | Yes       | ERROR     | No        | No        |      1
-[T8](#time-8)     | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[T9](#time-9)     | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[T10](#time-10)   | TIMEOUT   | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[T11](#time-11)   | Yes       | Yes       | Yes       | Yes       | No        | No        |      4
-[T12](#time-12)   | ERROR     | TIMEOUT   | 0 AV      | 2 AV      | No        | No        |      0
-[T13](#time-13)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[T14](#time-14)   | TIMEOUT   | 1 AV      | 1 AV      | 3 AV      | No        | No        |      0
-[T15](#time-15)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[T16](#time-16)   | TIMEOUT   | TIMEOUT   | TIMEOUT   | 4 AV      | No        | No        |      0
-[T17](#time-17)   | TIMEOUT   | 1 AV      | 0 AV      | 2 AV      | No        | No        |      0
-[T18](#time-18)   | TIMEOUT   | TIMEOUT   | 3 AV      | 2 AV      | No        | No        |      0
-[T19](#time-19)   | TIMEOUT   | TIMEOUT   | 0 AV      | ERROR     | No        | No        |      0
-[T20](#time-20)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[T21](#time-21)   | TIMEOUT   | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[T22](#time-22)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[T23](#time-23)   | 0 AV      | TIMEOUT   | 0 AV      | 0 AV      | No        | No        |      0
-[T24](#time-24)   | 0 AV      | 0 AV      | 0 AV      | 1 AV      | No        | No        |      0
-[T25](#time-25)   | 0 AV      | TIMEOUT   | 0 AV      | 0 AV      | No        | TIMEOUT   |      0
-[T26](#time-26)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
-[T27](#time-27)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | No        | No        |      0
+[M96](#math-96)   | 0 AV      | 1 AV      | 0 AV      | Yes       | 0 Reg     | 0 Reg     |      1
+[M97](#math-97)   | Yes       | Yes       | Yes       | Yes       | 0 Reg     | 0 Reg     |      4
+[M98](#math-98)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[M99](#math-99)   | Yes       | Yes       | Yes       | Yes       | 0 Reg     | 0 Reg     |      4
+[M100](#math-100) | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[M101](#math-101) | 0 AV      | 1 AV      | 0 AV      | 1 AV      | 0 Reg     | 0 Reg     |      0
+[M102](#math-102) | TIMEOUT   | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[M103](#math-103) | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[M104](#math-104) | 0 AV      | Yes       | 0 AV      | 1 AV      | 0 Reg     | 0 Reg     |      1
+[M105](#math-105) | Yes       | 0 AV      | Yes       | 0 AV      | 0 Reg     | 0 Reg     |      2
+[M106](#math-106) | 7 AV      | TIMEOUT   | 7 AV      | 5 AV      | 0 Reg     | 0 Reg     |      0
+[T1](#time-1)     | 0 AV      | TIMEOUT   | 0 AV      | ERROR     | 0 Reg     | 0 Reg     |      0
+[T2](#time-2)     | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[T3](#time-3)     | TIMEOUT   | TIMEOUT   | 0 AV      | 1 AV      | 0 Reg     | 0 Reg     |      0
+[T4](#time-4)     | 0 AV      | 0 AV      | 1 AV      | 1 AV      | 1 Reg     | 1 Reg     |      0
+[T5](#time-5)     | 0 AV      | 1 AV      | 2 AV      | 1 AV      | 0 Reg     | 0 Reg     |      0
+[T6](#time-6)     | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[T7](#time-7)     | TIMEOUT   | TIMEOUT   | Yes       | ERROR     | 0 Reg     | 0 Reg     |      1
+[T8](#time-8)     | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[T9](#time-9)     | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[T10](#time-10)   | TIMEOUT   | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[T11](#time-11)   | Yes       | Yes       | Yes       | Yes       | 1 Reg     | 1 Reg     |      4
+[T12](#time-12)   | ERROR     | TIMEOUT   | 0 AV      | 2 AV      | 0 Reg     | 0 Reg     |      0
+[T13](#time-13)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[T14](#time-14)   | TIMEOUT   | 1 AV      | 1 AV      | 3 AV      | 0 Reg     | 0 Reg     |      0
+[T15](#time-15)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[T16](#time-16)   | TIMEOUT   | TIMEOUT   | TIMEOUT   | 4 AV      | 0 Reg     | 0 Reg     |      0
+[T17](#time-17)   | TIMEOUT   | 1 AV      | 0 AV      | 2 AV      | 0 Reg     | 1 Reg     |      0
+[T18](#time-18)   | TIMEOUT   | TIMEOUT   | 3 AV      | 2 AV      | 0 Reg     | 0 Reg     |      0
+[T19](#time-19)   | TIMEOUT   | TIMEOUT   | 0 AV      | ERROR     | 0 Reg     | 0 Reg     |      0
+[T20](#time-20)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[T21](#time-21)   | TIMEOUT   | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[T22](#time-22)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 1 Reg     | 1 Reg     |      0
+[T23](#time-23)   | 0 AV      | TIMEOUT   | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[T24](#time-24)   | 0 AV      | 0 AV      | 0 AV      | 1 AV      | 0 Reg     | 1 Reg     |      0
+[T25](#time-25)   | 0 AV      | TIMEOUT   | 0 AV      | 0 AV      | 0 Reg     | TIMEOUT   |      0
+[T26](#time-26)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
+[T27](#time-27)   | 0 AV      | 0 AV      | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
 Total             | 30 (13%)  | 25 (11%)  | 24 (10%)  | 14 (6%)   | 30 (13%)  | 23 (10%)  |    146
 Fixed bugs: 57/224 (25%)
 

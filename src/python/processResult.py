@@ -198,6 +198,8 @@ for project in sorted(os.listdir(root)):
 			else:
 				if "nbAngelicValue" in resultsBug[tool]:
 					lineArgs += ["%d AV" % resultsBug[tool]["nbAngelicValue"]]
+				elif "RegressionTestCases" in resultsBug[tool]:
+					lineArgs += ["%s Reg" % resultsBug[tool]["RegressionTestCases"]]
 				else:
 					lineArgs += ["No"]
 				texLineArgs += ["--"]
