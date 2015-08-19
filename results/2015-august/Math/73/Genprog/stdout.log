@@ -1,65 +1,65 @@
 export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/math/math_73 /tmp/math_73_Genprog;cd /tmp/math_73_Genprog;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
-/home/tdurieux/defects4j-repair/src/python/core/../../../results/Math/73/Genprog/result
-cd /tmp/math_73_Genprog;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java  -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement -location . -dependencies lib/ -failing org.apache.commons.math.analysis.solvers.BrentSolverTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -seed 10 -maxtime 165  -scope local  -stopfirst true -flthreshold 0 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
+/home/tdurieux/defects4j-repair/src/python/core/../../../results/2015-august/Math/73/Genprog/result
+cd /tmp/math_73_Genprog;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java  -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement -location . -dependencies lib/ -failing org.apache.commons.math.analysis.solvers.BrentSolverTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -seed 10 -maxtime 60  -scope local  -stopfirst true -flthreshold 0 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
 
 Node: `hostname`
 ";echo "
 Date: `date`
 ";rm -rf /tmp/math_73_Genprog;
 
-End Repair Loops: Found solution
-Solution stored at: ./outputMutation//MainjGenProg-.//src/
-
+2015-08-18 19:22:19,455 INFO main - End Repair Loops: Found solution
+2015-08-18 19:22:19,455 INFO main - Solution stored at: ./outputMutation//MainjGenProg-.//src/
+2015-08-18 19:22:19,455 INFO main - 
 Number solutions:1
-f (sol): 0.0, [Variant id: 100 (SOL) , #gens: 927, #ops: 1, parent:99]
-
+2015-08-18 19:22:19,455 INFO main - f (sol): 0.0, [Variant id: 144 (SOL) , #gens: 953, #ops: 1, parent:143]
+2015-08-18 19:22:19,455 INFO main - 
 All variants:
-f 1.0, [Variant id: 101, #gens: 927, #ops: 0, parent:-]
-
+2015-08-18 19:22:19,455 INFO main - f 1.0, [Variant id: 145, #gens: 953, #ops: 0, parent:-]
+2015-08-18 19:22:19,455 INFO main - 
 Solution details
-
+2015-08-18 19:22:19,455 INFO main - 
  --SOLUTIONS DESCRIPTION--
 
  ----
-ProgramVariant 100
+ProgramVariant 144
  
 operation: REPLACE
 location= org.apache.commons.math.analysis.solvers.BrentSolver
 line= 132
 original statement= return solve(f, min, yMin, max, yMax, initial, yInitial)
 fixed statement= return solve(f, min, max)
-generation= 50
+generation= 72
 ingredientScope= LOCAL
  
---Space: LOCAL
-org.apache.commons.math.stat.descriptive.summary.SumOfLogs=24|,org.apache.commons.math.stat.descriptive.MultivariateSummaryStatistics=118|,org.apache.commons.math.linear.Array2DRowRealMatrix=185|,org.apache.commons.math.distribution.AbstractContinuousDistribution=18|,org.apache.commons.math.analysis.SinFunction=5|,org.apache.commons.math.distribution.AbstractDistribution=4|,org.apache.commons.math.util.ContinuedFraction=34|,org.apache.commons.math.optimization.univariate.BrentOptimizer=69|,org.apache.commons.math.util.MathUtils=405|,org.apache.commons.math.genetics.OnePointCrossover=18|,org.apache.commons.math.genetics.ChromosomePair=6|,org.apache.commons.math.genetics.GeneticAlgorithm=36|,org.apache.commons.math.stat.descriptive.moment.FirstMoment=27|,org.apache.commons.math.special.Gamma=54|,org.apache.commons.math.genetics.AbstractListChromosome=8|,org.apache.commons.math.distribution.FDistributionImpl=30|,org.apache.commons.math.genetics.DummyBinaryChromosome=4|,org.apache.commons.math.analysis.solvers.SecantSolver=47|,org.apache.commons.math.complex.Complex=145|,org.apache.commons.math.fraction.Fraction=151|,org.apache.commons.math.analysis.MonitoredFunction=7|,org.apache.commons.math.stat.descriptive.moment.Mean=38|,org.apache.commons.math.stat.descriptive.rank.Max=24|,org.apache.commons.math.analysis.solvers.LaguerreSolver=119|,org.apache.commons.math.analysis.solvers.UnivariateRealSolverFactoryImpl=6|,org.apache.commons.math.stat.descriptive.moment.GeometricMean=22|,org.apache.commons.math.stat.descriptive.summary.SumOfSquares=24|,org.apache.commons.math.special.Beta=27|,org.apache.commons.math.analysis.QuinticFunction=5|,org.apache.commons.math.analysis.polynomials.PolynomialFunctionLagrangeForm=82|,org.apache.commons.math.genetics.BinaryChromosome=14|,org.apache.commons.math.ConvergingAlgorithmImpl=18|,org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl=38|,org.apache.commons.math.analysis.polynomials.PolynomialFunction=88|,org.apache.commons.math.analysis.solvers.UnivariateRealSolverFactory=2|,org.apache.commons.math.stat.descriptive.SynchronizedMultivariateSummaryStatistics=31|,org.apache.commons.math.linear.AbstractRealMatrix=365|,org.apache.commons.math.stat.descriptive.summary.Sum=31|,org.apache.commons.math.stat.descriptive.AbstractUnivariateStatistic=31|,org.apache.commons.math.linear.MatrixUtils=172|,org.apache.commons.math.analysis.solvers.BrentSolver=95|,org.apache.commons.math.stat.descriptive.rank.Min=24|,org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils=32|,org.apache.commons.math.stat.descriptive.moment.VectorialCovariance=44|,
-
+2015-08-18 19:22:19,455 INFO main - --Space: LOCAL
+org.apache.commons.math.stat.descriptive.summary.SumOfLogs=25|,org.apache.commons.math.stat.descriptive.MultivariateSummaryStatistics=119|,org.apache.commons.math.linear.Array2DRowRealMatrix=185|,org.apache.commons.math.distribution.AbstractContinuousDistribution=18|,org.apache.commons.math.analysis.SinFunction=5|,org.apache.commons.math.distribution.AbstractDistribution=4|,org.apache.commons.math.util.ContinuedFraction=35|,org.apache.commons.math.optimization.univariate.BrentOptimizer=70|,org.apache.commons.math.util.MathUtils=437|,org.apache.commons.math.genetics.OnePointCrossover=20|,org.apache.commons.math.genetics.ChromosomePair=6|,org.apache.commons.math.genetics.GeneticAlgorithm=37|,org.apache.commons.math.stat.descriptive.moment.FirstMoment=27|,org.apache.commons.math.special.Gamma=58|,org.apache.commons.math.genetics.AbstractListChromosome=8|,org.apache.commons.math.distribution.FDistributionImpl=30|,org.apache.commons.math.genetics.DummyBinaryChromosome=4|,org.apache.commons.math.analysis.solvers.SecantSolver=47|,org.apache.commons.math.complex.Complex=166|,org.apache.commons.math.fraction.Fraction=153|,org.apache.commons.math.analysis.MonitoredFunction=7|,org.apache.commons.math.stat.descriptive.moment.Mean=40|,org.apache.commons.math.stat.descriptive.rank.Max=26|,org.apache.commons.math.analysis.solvers.LaguerreSolver=124|,org.apache.commons.math.analysis.solvers.UnivariateRealSolverFactoryImpl=6|,org.apache.commons.math.stat.descriptive.moment.GeometricMean=22|,org.apache.commons.math.stat.descriptive.summary.SumOfSquares=25|,org.apache.commons.math.special.Beta=28|,org.apache.commons.math.analysis.QuinticFunction=5|,org.apache.commons.math.analysis.polynomials.PolynomialFunctionLagrangeForm=83|,org.apache.commons.math.genetics.BinaryChromosome=20|,org.apache.commons.math.ConvergingAlgorithmImpl=18|,org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl=41|,org.apache.commons.math.analysis.polynomials.PolynomialFunction=94|,org.apache.commons.math.analysis.solvers.UnivariateRealSolverFactory=2|,org.apache.commons.math.stat.descriptive.SynchronizedMultivariateSummaryStatistics=31|,org.apache.commons.math.linear.AbstractRealMatrix=365|,org.apache.commons.math.stat.descriptive.summary.Sum=33|,org.apache.commons.math.stat.descriptive.AbstractUnivariateStatistic=34|,org.apache.commons.math.linear.MatrixUtils=172|,org.apache.commons.math.analysis.solvers.BrentSolver=99|,org.apache.commons.math.stat.descriptive.rank.Min=26|,org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils=32|,org.apache.commons.math.stat.descriptive.moment.VectorialCovariance=54|,
+2015-08-18 19:22:19,455 INFO main - 
 ----stats: 
-
-spaces navigation: [38]: {(CtInvocationImpl| size: 95| compiles| LOCAL| INSERT_AFTER) =2, (CtIfImpl| size: 95| notcompiles| LOCAL| INSERT_BEFORE) =7, (CtThrowImpl| size: 2| alreadyanalyzed| LOCAL| REPLACE) =2, (CtInvocationImpl| size: 95| notcompiles| LOCAL| INSERT_AFTER) =2, (CtReturnImpl| size: 95| compiles| LOCAL| INSERT_AFTER) =2, (CtLocalVariableImpl| size: 95| compiles| LOCAL| INSERT_AFTER) =2, (CtIfImpl| size: 17| alreadyanalyzed| LOCAL| REPLACE) =7, (CtReturnImpl| size: 95| alreadyanalyzed| LOCAL| INSERT_AFTER) =1, (CtAssignmentImpl| size: 38| compiles| LOCAL| INSERT_BEFORE) =1, (CtReturnImpl| size: 11| notcompiles| LOCAL| REPLACE) =4, (CtThrowImpl| size: 95| compiles| LOCAL| INSERT_BEFORE) =1, (CtIfImpl| size: 5| notcompiles| LOCAL| REPLACE) =1, (CtIfImpl| size: 5| compiles| LOCAL| REPLACE) =1, (CtLocalVariableImpl| size: 95| notcompiles| LOCAL| INSERT_AFTER) =6, (CtAssignmentImpl| size: 95| notcompiles| LOCAL| INSERT_AFTER) =5, (CtAssignmentImpl| size: 33| compiles| LOCAL| REPLACE) =2, (CtThrowImpl| size: 95| compiles| LOCAL| INSERT_AFTER) =2, (CtInvocationImpl| size: 13| notcompiles| LOCAL| REPLACE) =1, (CtIfImpl| size: 38| compiles| LOCAL| INSERT_BEFORE) =2, (CtReturnImpl| size: 95| notcompiles| LOCAL| INSERT_AFTER) =9, (CtIfImpl| size: 17| compiles| LOCAL| REPLACE) =3, (CtLocalVariableImpl| size: 95| notcompiles| LOCAL| INSERT_BEFORE) =11, (CtIfImpl| size: 95| compiles| LOCAL| INSERT_AFTER) =4, (CtInvocationImpl| size: 95| compiles| LOCAL| INSERT_BEFORE) =1, (CtReturnImpl| size: 95| compiles| LOCAL| INSERT_BEFORE) =1, (CtIfImpl| size: 95| alreadyanalyzed| LOCAL| INSERT_AFTER) =2, (CtThrowImpl| size: 95| notcompiles| LOCAL| INSERT_AFTER) =2, (CtInvocationImpl| size: 13| compiles| LOCAL| REPLACE) =1, (CtLocalVariableImpl| size: 17| compiles| LOCAL| REPLACE) =1, (CtIfImpl| size: 38| notcompiles| LOCAL| INSERT_BEFORE) =1, (CtReturnImpl| size: 11| compiles| LOCAL| REPLACE) =2, (CtReturnImpl| size: 11| alreadyanalyzed| LOCAL| REPLACE) =8, (CtIfImpl| size: 17| notcompiles| LOCAL| REPLACE) =17, (CtIfImpl| size: 95| notcompiles| LOCAL| INSERT_AFTER) =4, (CtIfImpl| size: 95| compiles| LOCAL| INSERT_BEFORE) =3, (CtLocalVariableImpl| size: 95| compiles| LOCAL| INSERT_BEFORE) =4, (CtThrowImpl| size: 95| notcompiles| LOCAL| INSERT_BEFORE) =3, (CtAssignmentImpl| size: 95| compiles| LOCAL| INSERT_AFTER) =2}
-#gen: 50
+2015-08-18 19:22:19,455 INFO main - 
+spaces navigation: [42]: {(CtIfImpl| size: 99| compiles| LOCAL| INSERT_BEFORE) =4, (CtThrowImpl| size: 2| alreadyanalyzed| LOCAL| REPLACE) =3, (CtInvocationImpl| size: 99| notcompiles| LOCAL| INSERT_BEFORE) =6, (CtReturnImpl| size: 99| compiles| LOCAL| INSERT_AFTER) =1, (CtInvocationImpl| size: 99| compiles| LOCAL| INSERT_AFTER) =6, (CtThrowImpl| size: 99| compiles| LOCAL| INSERT_BEFORE) =1, (CtAssignmentImpl| size: 99| compiles| LOCAL| INSERT_BEFORE) =1, (CtUnaryOperatorImpl| size: 3| alreadyanalyzed| LOCAL| REPLACE) =2, (CtReturnImpl| size: 11| notcompiles| LOCAL| REPLACE) =1, (CtLocalVariableImpl| size: 99| alreadyanalyzed| LOCAL| INSERT_AFTER) =1, (CtReturnImpl| size: 99| notcompiles| LOCAL| INSERT_AFTER) =3, (CtAssignmentImpl| size: 33| compiles| LOCAL| REPLACE) =3, (CtAssignmentImpl| size: 99| compiles| LOCAL| INSERT_AFTER) =1, (CtInvocationImpl| size: 13| notcompiles| LOCAL| REPLACE) =1, (CtLocalVariableImpl| size: 99| notcompiles| LOCAL| INSERT_BEFORE) =31, (CtInvocationImpl| size: 99| compiles| LOCAL| INSERT_BEFORE) =1, (CtIfImpl| size: 21| notcompiles| LOCAL| REPLACE) =48, (CtLocalVariableImpl| size: 99| compiles| LOCAL| INSERT_AFTER) =2, (CtUnaryOperatorImpl| size: 99| notcompiles| LOCAL| INSERT_AFTER) =2, (CtLocalVariableImpl| size: 99| alreadyanalyzed| LOCAL| INSERT_BEFORE) =3, (CtIfImpl| size: 99| notcompiles| LOCAL| INSERT_AFTER) =4, (CtInvocationImpl| size: 99| alreadyanalyzed| LOCAL| INSERT_AFTER) =4, (CtIfImpl| size: 99| notcompiles| LOCAL| INSERT_BEFORE) =12, (CtIfImpl| size: 21| compiles| LOCAL| REPLACE) =6, (CtAssignmentImpl| size: 99| alreadyanalyzed| LOCAL| INSERT_AFTER) =1, (CtIfImpl| size: 99| compiles| LOCAL| INSERT_AFTER) =7, (CtAssignmentImpl| size: 99| notcompiles| LOCAL| INSERT_AFTER) =4, (CtLocalVariableImpl| size: 99| compiles| LOCAL| INSERT_BEFORE) =8, (CtReturnImpl| size: 5| compiles| LOCAL| REPLACE) =1, (CtInvocationImpl| size: 13| compiles| LOCAL| REPLACE) =1, (CtAssignmentImpl| size: 16| compiles| LOCAL| REPLACE) =1, (CtInvocationImpl| size: 99| notcompiles| LOCAL| INSERT_AFTER) =22, (CtThrowImpl| size: 99| notcompiles| LOCAL| INSERT_BEFORE) =1, (CtLocalVariableImpl| size: 17| compiles| LOCAL| REPLACE) =3, (CtIfImpl| size: 21| alreadyanalyzed| LOCAL| REPLACE) =36, (CtThrowImpl| size: 2| notcompiles| LOCAL| REPLACE) =1, (CtReturnImpl| size: 11| alreadyanalyzed| LOCAL| REPLACE) =2, (CtReturnImpl| size: 11| compiles| LOCAL| REPLACE) =3, (CtUnaryOperatorImpl| size: 3| notcompiles| LOCAL| REPLACE) =1, (CtReturnImpl| size: 99| compiles| LOCAL| INSERT_BEFORE) =1, (CtThrowImpl| size: 41| compiles| LOCAL| INSERT_BEFORE) =1, (CtUnaryOperatorImpl| size: 99| compiles| LOCAL| INSERT_AFTER) =1}
+#gen: 72
 #patches: 1
-#RightCompilation: 27
-#WrongCompilation: 23
-#FailingTestCaseExecution: 28
+#RightCompilation: 41
+#WrongCompilation: 31
+#FailingTestCaseExecution: 42
 #RegressionTestExecution: 1
-#TestcasesExecutedval1: 168
+#TestcasesExecutedval1: 252
 #TestcasesExecutedval2: 2032
 #FailingTestCase: 6
 #RegressionTestCases: 2032
-#OfAppliedOp: 50
+#OfAppliedOp: 72
 #NotAppliedOp: 0
-#InmutatedGen: 3
+#InmutatedGen: 5
 #unfinishValidation: 0
-#ing {CtLocalVariableImpl=8, CtAssignmentImpl=10, CtReturnImpl=9, CtInvocationImpl=5, CtThrowImpl=4, CtIfImpl=17}
-#untilcompile {1=15, 16=1, 2=6, 18=1, 3=7, 4=1, 6=2, 7=3, 11=1}
-Time Evolution(ms): 33925
-Time Total(ms): 68839
+#ing {CtLocalVariableImpl=14, CtReturnImpl=7, CtAssignmentImpl=12, CtInvocationImpl=11, CtThrowImpl=5, CtIfImpl=25, CtUnaryOperatorImpl=3}
+#untilcompile {1=18, 2=10, 3=6, 4=4, 5=2, 6=2, 7=5, 8=1, 11=1, 13=1, 16=1, 21=2, 23=1}
+2015-08-18 19:22:19,456 INFO main - Time Evolution(ms): 35564
+2015-08-18 19:22:19,456 INFO fr.inria.main.AbstractMain - Time Total(ms): 65979
 
 
-Node: griffon-33.nancy.grid5000.fr
+Node: graphene-64.nancy.grid5000.fr
 
 
-Date: Thu Aug 13 21:54:35 CEST 2015
+Date: Tue Aug 18 21:22:19 CEST 2015
 
 

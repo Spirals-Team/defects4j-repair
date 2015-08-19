@@ -1,34 +1,34 @@
 {
     "FailingTestCase": "3", 
-    "FailingTestCaseExecution": "5", 
-    "InmutatedGen": "0", 
+    "FailingTestCaseExecution": "48", 
+    "InmutatedGen": "1", 
     "NotAppliedOp": "0", 
-    "OfAppliedOp": "6", 
-    "RegressionTestCases": "0", 
+    "OfAppliedOp": "125", 
+    "RegressionTestCases": "1790", 
     "RegressionTestExecution": "1", 
-    "RightCompilation": "4", 
-    "WrongCompilation": "2", 
-    "date": "Fri Aug 14 06:23:43 CEST 2015\n\n", 
-    "gen": "6", 
-    "gens": "870", 
-    "node": "griffon-39.nancy.grid5000.fr", 
+    "RightCompilation": "47", 
+    "WrongCompilation": "78", 
+    "date": "Wed Aug 19 01:00:56 CEST 2015\n\n", 
+    "gen": "125", 
+    "gens": "1044", 
+    "node": "graphene-69.nancy.grid5000.fr", 
     "operations": [
         {
-            "buggyStatement": "if (isCircular()) {\n\tdouble min = (java.lang.Math.min(linkW, linkH)) / 2;\n\tlinkX = (((linkX + linkX) + linkW) / 2) - min;\n\tlinkY = (((linkY + linkY) + linkH) / 2) - min;\n\tlinkW = 2 * min;\n\tlinkH = 2 * min;\n} ", 
-            "generation": 6, 
-            "patch": "if (org.jfree.data.general.DatasetUtilities.isEmptyOrNull(getDataset())) {\n\tdrawNoDataMessage(g2, plotArea);\n\tg2.setClip(savedClip);\n\tdrawOutline(g2, plotArea);\n\treturn ;\n} ", 
+            "buggyStatement": "this.plot.draw(g2, plotArea, anchor, null, plotInfo)", 
+            "generation": 125, 
+            "patch": "fireChartChanged()", 
             "patchLocation": {
-                "className": "org.jfree.chart.plot.PiePlot3D", 
-                "line": 272
+                "className": "org.jfree.chart.JFreeChart", 
+                "line": 1219
             }, 
             "type": "REPLACE", 
-            "variant": 12
+            "variant": 250
         }
     ], 
     "ops": "0", 
     "patches": "1", 
-    "programVariant": "12", 
-    "timeEvaluation": "10862", 
-    "timeTotal": "55933", 
+    "programVariant": "250", 
+    "timeEvaluation": "92900", 
+    "timeTotal": "133026", 
     "unfinishValidation": "0"
 }

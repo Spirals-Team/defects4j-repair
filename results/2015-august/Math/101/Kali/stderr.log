@@ -3,7 +3,7 @@ java.lang.IllegalStateException: Undo: Not valid fix position
 	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.remove(CtStatementTransformator.java:66)
 	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.revert(CtStatementTransformator.java:40)
 	at fr.inria.astor.core.loop.evolutionary.JGenProg.undoOperationToSpoonElement(JGenProg.java:352)
-	at fr.inria.astor.core.loop.evolutionary.JKali.startEvolution(JKali.java:73)
+	at fr.inria.astor.core.loop.evolutionary.JKali.startEvolution(JKali.java:74)
 	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:198)
 	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
 java.lang.IndexOutOfBoundsException: Index: -1, Size: 17
@@ -11,7 +11,7 @@ java.lang.IndexOutOfBoundsException: Index: -1, Size: 17
 	at java.util.ArrayList.add(ArrayList.java:455)
 	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.revert(CtStatementTransformator.java:31)
 	at fr.inria.astor.core.loop.evolutionary.JGenProg.undoOperationToSpoonElement(JGenProg.java:352)
-	at fr.inria.astor.core.loop.evolutionary.JKali.startEvolution(JKali.java:73)
+	at fr.inria.astor.core.loop.evolutionary.JKali.startEvolution(JKali.java:74)
 	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:198)
 	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
 java.lang.ArrayIndexOutOfBoundsException: -1
@@ -21,10 +21,10 @@ java.lang.ArrayIndexOutOfBoundsException: -1
 	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.remove(CtStatementTransformator.java:61)
 	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.revert(CtStatementTransformator.java:40)
 	at fr.inria.astor.core.loop.evolutionary.JGenProg.undoOperationToSpoonElement(JGenProg.java:352)
-	at fr.inria.astor.core.loop.evolutionary.JKali.startEvolution(JKali.java:73)
+	at fr.inria.astor.core.loop.evolutionary.JKali.startEvolution(JKali.java:74)
 	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:198)
 	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
 
-real	1m52.694s
-user	2m31.317s
-sys	0m4.604s
+real	1m56.241s
+user	2m35.886s
+sys	0m5.088s

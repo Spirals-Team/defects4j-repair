@@ -1,5 +1,5 @@
 export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/chart/chart_5 /tmp/chart_5_Kali;cd /tmp/chart_5_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Chart/lib/* lib/;find . -type f -name "package-info.java" -delete;
-/home/tdurieux/defects4j-repair/src/python/core/../../../results/Chart/5/Kali/result
+/home/tdurieux/defects4j-repair/src/python/core/../../../results/2015-august/Chart/5/Kali/result
 cd /tmp/chart_5_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java  -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.jfree.data.xy.junit.XYSeriesTests: -package org.jfree -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 4 -maxgen 1000000 -seed 10 -maxtime 60  -scope local  -stopfirst true -flthreshold 0 -population 1 -srcjavafolder source/ -srctestfolder tests/ -binjavafolder build/ -bintestfolder build-tests/;echo "
 
 Node: `hostname`
@@ -7,18 +7,18 @@ Node: `hostname`
 Date: `date`
 ";rm -rf /tmp/chart_5_Kali;
 
-End Repair Loops: Found solution
-Solution stored at: ./outputMutation//MainjGenProg-.//src/
-
+2015-08-18 23:02:12,112 INFO main - End Repair Loops: Found solution
+2015-08-18 23:02:12,112 INFO main - Solution stored at: ./outputMutation//MainjGenProg-.//src/
+2015-08-18 23:02:12,112 INFO main - 
 Number solutions:1
-f (sol): 0.0, [Variant id: 9 (SOL) , #gens: 887, #ops: 1, parent:1]
-
+2015-08-18 23:02:12,112 INFO main - f (sol): 0.0, [Variant id: 9 (SOL) , #gens: 1078, #ops: 1, parent:1]
+2015-08-18 23:02:12,112 INFO main - 
 All variants:
-f 1.0, [Variant id: 1, #gens: 887, #ops: 0, parent:-]
-
+2015-08-18 23:02:12,112 INFO main - f 1.0, [Variant id: 1, #gens: 1078, #ops: 0, parent:-]
+2015-08-18 23:02:12,112 INFO main - 
 Solution details
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-
+2015-08-18 23:02:12,113 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:02:12,113 INFO main - 
  --SOLUTIONS DESCRIPTION--
 
  ----
@@ -40,32 +40,32 @@ fixed statement= if (false) {
 generation= 1
 ingredientScope= -
  
-
+2015-08-18 23:02:12,113 INFO main - 
 ----stats: 
-
+2015-08-18 23:02:12,113 INFO main - 
 spaces navigation: [0]: {}
 #gen: 0
 #patches: 1
-#RightCompilation: 1970
+#RightCompilation: 2454
 #WrongCompilation: 334
-#FailingTestCaseExecution: 1971
+#FailingTestCaseExecution: 2455
 #RegressionTestExecution: 1
-#TestcasesExecutedval1: 41391
-#TestcasesExecutedval2: 0
+#TestcasesExecutedval1: 51555
+#TestcasesExecutedval2: 2041
 #FailingTestCase: 21
-#RegressionTestCases: 0
+#RegressionTestCases: 2041
 #OfAppliedOp: 0
 #NotAppliedOp: 0
 #InmutatedGen: 0
 #unfinishValidation: 0
 #ing {}
 #untilcompile {}
-Time Total(ms): 868069
+2015-08-18 23:02:12,113 INFO fr.inria.main.AbstractMain - Time Total(ms): 1069472
 
 
-Node: graphene-9.nancy.grid5000.fr
+Node: graphene-68.nancy.grid5000.fr
 
 
-Date: Thu Aug 13 20:55:00 CEST 2015
+Date: Wed Aug 19 01:02:12 CEST 2015
 
 

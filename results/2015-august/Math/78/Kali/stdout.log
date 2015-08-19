@@ -1,5 +1,5 @@
 export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/math/math_78 /tmp/math_78_Kali;cd /tmp/math_78_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
-/home/tdurieux/defects4j-repair/src/python/core/../../../results/Math/78/Kali/result
+/home/tdurieux/defects4j-repair/src/python/core/../../../results/2015-august/Math/78/Kali/result
 cd /tmp/math_78_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java  -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.math.ode.events.EventStateTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -seed 10 -maxtime 60  -scope local  -stopfirst true -flthreshold 0 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
 
 Node: `hostname`
@@ -7,21 +7,21 @@ Node: `hostname`
 Date: `date`
 ";rm -rf /tmp/math_78_Kali;
 
-End Repair Loops: Found solution
-Solution stored at: ./outputMutation//MainjGenProg-.//src/
-
+2015-08-18 18:13:16,906 INFO main - End Repair Loops: Found solution
+2015-08-18 18:13:16,906 INFO main - Solution stored at: ./outputMutation//MainjGenProg-.//src/
+2015-08-18 18:13:16,906 INFO main - 
 Number solutions:1
-f (sol): 0.0, [Variant id: 108 (SOL) , #gens: 920, #ops: 1, parent:1]
-
+2015-08-18 18:13:16,906 INFO main - f (sol): 0.0, [Variant id: 116 (SOL) , #gens: 945, #ops: 1, parent:1]
+2015-08-18 18:13:16,906 INFO main - 
 All variants:
-f 1.0, [Variant id: 1, #gens: 920, #ops: 0, parent:-]
-
+2015-08-18 18:13:16,906 INFO main - f 1.0, [Variant id: 1, #gens: 945, #ops: 0, parent:-]
+2015-08-18 18:13:16,906 INFO main - 
 Solution details
-
+2015-08-18 18:13:16,906 INFO main - 
  --SOLUTIONS DESCRIPTION--
 
  ----
-ProgramVariant 108
+ProgramVariant 116
  
 operation: DELETE
 location= org.apache.commons.math.ode.events.EventState
@@ -31,17 +31,17 @@ fixed statement= t0 = t
 generation= 1
 ingredientScope= -
  
-
+2015-08-18 18:13:16,906 INFO main - 
 ----stats: 
-
+2015-08-18 18:13:16,906 INFO main - 
 spaces navigation: [0]: {}
 #gen: 0
 #patches: 1
-#RightCompilation: 1761
+#RightCompilation: 1831
 #WrongCompilation: 379
-#FailingTestCaseExecution: 1762
+#FailingTestCaseExecution: 1832
 #RegressionTestExecution: 11
-#TestcasesExecutedval1: 1762
+#TestcasesExecutedval1: 1832
 #TestcasesExecutedval2: 21978
 #FailingTestCase: 1
 #RegressionTestCases: 1998
@@ -51,12 +51,12 @@ spaces navigation: [0]: {}
 #unfinishValidation: 0
 #ing {}
 #untilcompile {}
-Time Total(ms): 838552
+2015-08-18 18:13:16,906 INFO fr.inria.main.AbstractMain - Time Total(ms): 719666
 
 
-Node: griffon-5.nancy.grid5000.fr
+Node: graphene-64.nancy.grid5000.fr
 
 
-Date: Thu Aug 13 19:18:49 CEST 2015
+Date: Tue Aug 18 20:13:17 CEST 2015
 
 

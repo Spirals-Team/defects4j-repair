@@ -1,5 +1,5 @@
 export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/math/math_8 /tmp/math_8_Kali;cd /tmp/math_8_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
-/home/tdurieux/defects4j-repair/src/python/core/../../../results/Math/8/Kali/result
+/home/tdurieux/defects4j-repair/src/python/core/../../../results/2015-august/Math/8/Kali/result
 cd /tmp/math_8_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java  -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.math3.distribution.DiscreteRealDistributionTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -seed 10 -maxtime 60  -scope local  -stopfirst true -flthreshold 0 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
 
 Node: `hostname`
@@ -7,18 +7,18 @@ Node: `hostname`
 Date: `date`
 ";rm -rf /tmp/math_8_Kali;
 
-End Repair Loops: Found solution
-Solution stored at: ./outputMutation//MainjGenProg-.//src/
-
+2015-08-18 19:20:30,199 INFO main - End Repair Loops: Found solution
+2015-08-18 19:20:30,199 INFO main - Solution stored at: ./outputMutation//MainjGenProg-.//src/
+2015-08-18 19:20:30,199 INFO main - 
 Number solutions:2
-f (sol): 0.0, [Variant id: 8 (SOL) , #gens: 922, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 10 (SOL) , #gens: 922, #ops: 1, parent:1]
-
+2015-08-18 19:20:30,199 INFO main - f (sol): 0.0, [Variant id: 8 (SOL) , #gens: 956, #ops: 1, parent:1]
+2015-08-18 19:20:30,199 INFO main - f (sol): 0.0, [Variant id: 10 (SOL) , #gens: 956, #ops: 1, parent:1]
+2015-08-18 19:20:30,199 INFO main - 
 All variants:
-f 1.0, [Variant id: 1, #gens: 922, #ops: 0, parent:-]
-
+2015-08-18 19:20:30,199 INFO main - f 1.0, [Variant id: 1, #gens: 956, #ops: 0, parent:-]
+2015-08-18 19:20:30,199 INFO main - 
 Solution details
-
+2015-08-18 19:20:30,199 INFO main - 
  --SOLUTIONS DESCRIPTION--
 
  ----
@@ -47,32 +47,32 @@ fixed statement= out[i] = sample()
 generation= 1
 ingredientScope= -
  
-
+2015-08-18 19:20:30,199 INFO main - 
 ----stats: 
-
+2015-08-18 19:20:30,199 INFO main - 
 spaces navigation: [0]: {}
 #gen: 0
 #patches: 2
-#RightCompilation: 1838
+#RightCompilation: 1920
 #WrongCompilation: 320
-#FailingTestCaseExecution: 1839
+#FailingTestCaseExecution: 1921
 #RegressionTestExecution: 2
-#TestcasesExecutedval1: 23907
-#TestcasesExecutedval2: 9650
+#TestcasesExecutedval1: 24973
+#TestcasesExecutedval2: 9398
 #FailingTestCase: 13
-#RegressionTestCases: 4825
+#RegressionTestCases: 4699
 #OfAppliedOp: 0
 #NotAppliedOp: 0
 #InmutatedGen: 0
 #unfinishValidation: 0
 #ing {}
 #untilcompile {}
-Time Total(ms): 2825393
+2015-08-18 19:20:30,199 INFO fr.inria.main.AbstractMain - Time Total(ms): 2636789
 
 
-Node: griffon-77.nancy.grid5000.fr
+Node: graphene-64.nancy.grid5000.fr
 
 
-Date: Thu Aug 13 20:27:20 CEST 2015
+Date: Tue Aug 18 21:20:30 CEST 2015
 
 

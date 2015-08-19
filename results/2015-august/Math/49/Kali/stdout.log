@@ -1,5 +1,5 @@
 export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/math/math_49 /tmp/math_49_Kali;cd /tmp/math_49_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
-/home/tdurieux/defects4j-repair/src/python/core/../../../results/Math/49/Kali/result
+/home/tdurieux/defects4j-repair/src/python/core/../../../results/2015-august/Math/49/Kali/result
 cd /tmp/math_49_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java  -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.math.linear.SparseRealVectorTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -seed 10 -maxtime 60  -scope local  -stopfirst true -flthreshold 0 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
 
 Node: `hostname`
@@ -7,27 +7,27 @@ Node: `hostname`
 Date: `date`
 ";rm -rf /tmp/math_49_Kali;
 
-End Repair Loops: Found solution
-Solution stored at: ./outputMutation//MainjGenProg-.//src/
-
+2015-08-18 18:45:18,124 INFO main - End Repair Loops: Found solution
+2015-08-18 18:45:18,124 INFO main - Solution stored at: ./outputMutation//MainjGenProg-.//src/
+2015-08-18 18:45:18,124 INFO main - 
 Number solutions:3
-f (sol): 0.0, [Variant id: 28 (SOL) , #gens: 947, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 78 (SOL) , #gens: 947, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 79 (SOL) , #gens: 947, #ops: 1, parent:1]
-
+2015-08-18 18:45:18,124 INFO main - f (sol): 0.0, [Variant id: 38 (SOL) , #gens: 962, #ops: 1, parent:1]
+2015-08-18 18:45:18,125 INFO main - f (sol): 0.0, [Variant id: 90 (SOL) , #gens: 962, #ops: 1, parent:1]
+2015-08-18 18:45:18,125 INFO main - f (sol): 0.0, [Variant id: 91 (SOL) , #gens: 962, #ops: 1, parent:1]
+2015-08-18 18:45:18,125 INFO main - 
 All variants:
-f 1.0, [Variant id: 1, #gens: 947, #ops: 0, parent:-]
-
+2015-08-18 18:45:18,125 INFO main - f 1.0, [Variant id: 1, #gens: 962, #ops: 0, parent:-]
+2015-08-18 18:45:18,125 INFO main - 
 Solution details
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
-
+2015-08-18 18:45:18,125 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 18:45:18,125 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 18:45:18,125 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 18:45:18,125 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+2015-08-18 18:45:18,125 INFO main - 
  --SOLUTIONS DESCRIPTION--
 
  ----
-ProgramVariant 28
+ProgramVariant 38
  
 operation: REPLACE
 location= org.apache.commons.math.linear.OpenMapRealVector
@@ -46,7 +46,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 78
+ProgramVariant 90
  
 operation: DELETE
 location= org.apache.commons.math.util.OpenIntToDoubleHashMap
@@ -57,7 +57,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 79
+ProgramVariant 91
  
 operation: INSERT_BEFORE
 location= org.apache.commons.math.util.OpenIntToDoubleHashMap
@@ -69,32 +69,32 @@ fixed statement= if (true)
 generation= 1
 ingredientScope= -
  
-
+2015-08-18 18:45:18,125 INFO main - 
 ----stats: 
-
+2015-08-18 18:45:18,125 INFO main - 
 spaces navigation: [0]: {}
 #gen: 0
 #patches: 3
-#RightCompilation: 1762
+#RightCompilation: 1796
 #WrongCompilation: 376
-#FailingTestCaseExecution: 1763
+#FailingTestCaseExecution: 1797
 #RegressionTestExecution: 6
-#TestcasesExecutedval1: 15858
-#TestcasesExecutedval2: 16944
+#TestcasesExecutedval1: 16164
+#TestcasesExecutedval2: 16746
 #FailingTestCase: 9
-#RegressionTestCases: 2824
+#RegressionTestCases: 2791
 #OfAppliedOp: 0
 #NotAppliedOp: 0
 #InmutatedGen: 0
 #unfinishValidation: 0
 #ing {}
 #untilcompile {}
-Time Total(ms): 1793653
+2015-08-18 18:45:18,125 INFO fr.inria.main.AbstractMain - Time Total(ms): 1916407
 
 
-Node: griffon-74.nancy.grid5000.fr
+Node: graphene-62.nancy.grid5000.fr
 
 
-Date: Thu Aug 13 19:46:53 CEST 2015
+Date: Tue Aug 18 20:45:18 CEST 2015
 
 

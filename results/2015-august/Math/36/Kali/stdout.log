@@ -1,5 +1,5 @@
 export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/math/math_36 /tmp/math_36_Kali;cd /tmp/math_36_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
-/home/tdurieux/defects4j-repair/src/python/core/../../../results/Math/36/Kali/result
+/home/tdurieux/defects4j-repair/src/python/core/../../../results/2015-august/Math/36/Kali/result
 cd /tmp/math_36_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java  -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.math.fraction.BigFractionTest:org.apache.commons.math.fraction.BigFractionTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -seed 10 -maxtime 60  -scope local  -stopfirst true -flthreshold 0 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
 
 Node: `hostname`
@@ -7,23 +7,23 @@ Node: `hostname`
 Date: `date`
 ";rm -rf /tmp/math_36_Kali;
 
-End Repair Loops: NOT Found solution
-
+2015-08-18 18:45:14,119 INFO main - End Repair Loops: NOT Found solution
+2015-08-18 18:45:14,119 INFO main - 
 Number solutions:0
-
+2015-08-18 18:45:14,119 INFO main - 
 All variants:
-f 4.0, [Variant id: 1, #gens: 949, #ops: 0, parent:-]
-
+2015-08-18 18:45:14,119 INFO main - f 4.0, [Variant id: 1, #gens: 963, #ops: 0, parent:-]
+2015-08-18 18:45:14,119 INFO main - 
 ----stats: 
-
+2015-08-18 18:45:14,119 INFO main - 
 spaces navigation: [0]: {}
 #gen: 0
 #patches: 0
-#RightCompilation: 1742
+#RightCompilation: 1780
 #WrongCompilation: 448
-#FailingTestCaseExecution: 1743
+#FailingTestCaseExecution: 1781
 #RegressionTestExecution: 0
-#TestcasesExecutedval1: 94122
+#TestcasesExecutedval1: 96174
 #TestcasesExecutedval2: 0
 #FailingTestCase: 54
 #RegressionTestCases: 0
@@ -33,12 +33,12 @@ spaces navigation: [0]: {}
 #unfinishValidation: 0
 #ing {}
 #untilcompile {}
-Time Total(ms): 2173819
+2015-08-18 18:45:14,120 INFO fr.inria.main.AbstractMain - Time Total(ms): 1702079
 
 
-Node: griffon-1.nancy.grid5000.fr
+Node: graphene-59.nancy.grid5000.fr
 
 
-Date: Thu Aug 13 19:57:11 CEST 2015
+Date: Tue Aug 18 20:45:14 CEST 2015
 
 

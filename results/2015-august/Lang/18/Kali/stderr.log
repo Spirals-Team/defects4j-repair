@@ -1,26 +1,19 @@
 Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
-java.lang.NullPointerException
-	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.remove(CtStatementTransformator.java:62)
+java.lang.IllegalStateException: Undo: Not valid fix position
+	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.remove(CtStatementTransformator.java:66)
 	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.revert(CtStatementTransformator.java:40)
 	at fr.inria.astor.core.loop.evolutionary.JGenProg.undoOperationToSpoonElement(JGenProg.java:352)
-	at fr.inria.astor.core.loop.evolutionary.JKali.startEvolution(JKali.java:73)
+	at fr.inria.astor.core.loop.evolutionary.JKali.startEvolution(JKali.java:74)
 	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:198)
 	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
 java.lang.IllegalStateException: Undo: Not valid fix position
 	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.remove(CtStatementTransformator.java:66)
 	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.revert(CtStatementTransformator.java:40)
 	at fr.inria.astor.core.loop.evolutionary.JGenProg.undoOperationToSpoonElement(JGenProg.java:352)
-	at fr.inria.astor.core.loop.evolutionary.JKali.startEvolution(JKali.java:73)
-	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:198)
-	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
-java.lang.IllegalStateException: Undo: Not valid fix position
-	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.remove(CtStatementTransformator.java:66)
-	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.revert(CtStatementTransformator.java:40)
-	at fr.inria.astor.core.loop.evolutionary.JGenProg.undoOperationToSpoonElement(JGenProg.java:352)
-	at fr.inria.astor.core.loop.evolutionary.JKali.startEvolution(JKali.java:73)
+	at fr.inria.astor.core.loop.evolutionary.JKali.startEvolution(JKali.java:74)
 	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:198)
 	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
 
-real	20m44.322s
-user	26m36.176s
-sys	0m54.359s
+real	20m12.508s
+user	25m30.528s
+sys	0m51.471s

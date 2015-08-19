@@ -1,5 +1,5 @@
 export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/chart/chart_17 /tmp/chart_17_Kali;cd /tmp/chart_17_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Chart/lib/* lib/;find . -type f -name "package-info.java" -delete;
-/home/tdurieux/defects4j-repair/src/python/core/../../../results/Chart/17/Kali/result
+/home/tdurieux/defects4j-repair/src/python/core/../../../results/2015-august/Chart/17/Kali/result
 cd /tmp/chart_17_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java  -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.jfree.data.time.junit.TimeSeriesTests: -package org.jfree -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 4 -maxgen 1000000 -seed 10 -maxtime 60  -scope local  -stopfirst true -flthreshold 0 -population 1 -srcjavafolder source/ -srctestfolder tests/ -binjavafolder build/ -bintestfolder build-tests/;echo "
 
 Node: `hostname`
@@ -7,23 +7,23 @@ Node: `hostname`
 Date: `date`
 ";rm -rf /tmp/chart_17_Kali;
 
-End Repair Loops: NOT Found solution
-
+2015-08-18 22:57:42,344 INFO main - End Repair Loops: NOT Found solution
+2015-08-18 22:57:42,344 INFO main - 
 Number solutions:0
-
+2015-08-18 22:57:42,344 INFO main - 
 All variants:
-f 1.0, [Variant id: 1, #gens: 883, #ops: 0, parent:-]
-
+2015-08-18 22:57:42,344 INFO main - f 1.0, [Variant id: 1, #gens: 1068, #ops: 0, parent:-]
+2015-08-18 22:57:42,344 INFO main - 
 ----stats: 
-
+2015-08-18 22:57:42,344 INFO main - 
 spaces navigation: [0]: {}
 #gen: 0
 #patches: 0
-#RightCompilation: 1958
+#RightCompilation: 2410
 #WrongCompilation: 342
-#FailingTestCaseExecution: 1959
+#FailingTestCaseExecution: 2411
 #RegressionTestExecution: 0
-#TestcasesExecutedval1: 41139
+#TestcasesExecutedval1: 50631
 #TestcasesExecutedval2: 0
 #FailingTestCase: 21
 #RegressionTestCases: 0
@@ -33,12 +33,12 @@ spaces navigation: [0]: {}
 #unfinishValidation: 0
 #ing {}
 #untilcompile {}
-Time Total(ms): 958343
+2015-08-18 22:57:42,344 INFO fr.inria.main.AbstractMain - Time Total(ms): 1162055
 
 
-Node: graphene-31.nancy.grid5000.fr
+Node: graphene-8.nancy.grid5000.fr
 
 
-Date: Thu Aug 13 20:47:45 CEST 2015
+Date: Wed Aug 19 00:57:42 CEST 2015
 
 

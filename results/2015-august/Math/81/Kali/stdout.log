@@ -1,5 +1,5 @@
 export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/math/math_81 /tmp/math_81_Kali;cd /tmp/math_81_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
-/home/tdurieux/defects4j-repair/src/python/core/../../../results/Math/81/Kali/result
+/home/tdurieux/defects4j-repair/src/python/core/../../../results/2015-august/Math/81/Kali/result
 cd /tmp/math_81_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java  -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.math.linear.EigenDecompositionImplTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -seed 10 -maxtime 60  -scope local  -stopfirst true -flthreshold 0 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
 
 Node: `hostname`
@@ -7,53 +7,58 @@ Node: `hostname`
 Date: `date`
 ";rm -rf /tmp/math_81_Kali;
 
-End Repair Loops: Found solution
-Solution stored at: ./outputMutation//MainjGenProg-.//src/
-
-Number solutions:17
-f (sol): 0.0, [Variant id: 5 (SOL) , #gens: 904, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 9 (SOL) , #gens: 904, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 11 (SOL) , #gens: 904, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 13 (SOL) , #gens: 904, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 15 (SOL) , #gens: 904, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 17 (SOL) , #gens: 904, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 21 (SOL) , #gens: 904, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 22 (SOL) , #gens: 904, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 23 (SOL) , #gens: 904, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 25 (SOL) , #gens: 904, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 26 (SOL) , #gens: 904, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 27 (SOL) , #gens: 904, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 38 (SOL) , #gens: 904, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 44 (SOL) , #gens: 904, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 88 (SOL) , #gens: 904, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 91 (SOL) , #gens: 904, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 92 (SOL) , #gens: 904, #ops: 1, parent:1]
-
+2015-08-18 18:49:13,117 INFO main - End Repair Loops: Found solution
+2015-08-18 18:49:13,117 INFO main - Solution stored at: ./outputMutation//MainjGenProg-.//src/
+2015-08-18 18:49:13,117 INFO main - 
+Number solutions:19
+2015-08-18 18:49:13,117 INFO main - f (sol): 0.0, [Variant id: 5 (SOL) , #gens: 944, #ops: 1, parent:1]
+2015-08-18 18:49:13,117 INFO main - f (sol): 0.0, [Variant id: 7 (SOL) , #gens: 944, #ops: 1, parent:1]
+2015-08-18 18:49:13,117 INFO main - f (sol): 0.0, [Variant id: 9 (SOL) , #gens: 944, #ops: 1, parent:1]
+2015-08-18 18:49:13,117 INFO main - f (sol): 0.0, [Variant id: 11 (SOL) , #gens: 944, #ops: 1, parent:1]
+2015-08-18 18:49:13,117 INFO main - f (sol): 0.0, [Variant id: 13 (SOL) , #gens: 944, #ops: 1, parent:1]
+2015-08-18 18:49:13,117 INFO main - f (sol): 0.0, [Variant id: 15 (SOL) , #gens: 944, #ops: 1, parent:1]
+2015-08-18 18:49:13,117 INFO main - f (sol): 0.0, [Variant id: 17 (SOL) , #gens: 944, #ops: 1, parent:1]
+2015-08-18 18:49:13,117 INFO main - f (sol): 0.0, [Variant id: 18 (SOL) , #gens: 944, #ops: 1, parent:1]
+2015-08-18 18:49:13,117 INFO main - f (sol): 0.0, [Variant id: 21 (SOL) , #gens: 944, #ops: 1, parent:1]
+2015-08-18 18:49:13,117 INFO main - f (sol): 0.0, [Variant id: 22 (SOL) , #gens: 944, #ops: 1, parent:1]
+2015-08-18 18:49:13,117 INFO main - f (sol): 0.0, [Variant id: 23 (SOL) , #gens: 944, #ops: 1, parent:1]
+2015-08-18 18:49:13,117 INFO main - f (sol): 0.0, [Variant id: 25 (SOL) , #gens: 944, #ops: 1, parent:1]
+2015-08-18 18:49:13,117 INFO main - f (sol): 0.0, [Variant id: 26 (SOL) , #gens: 944, #ops: 1, parent:1]
+2015-08-18 18:49:13,117 INFO main - f (sol): 0.0, [Variant id: 27 (SOL) , #gens: 944, #ops: 1, parent:1]
+2015-08-18 18:49:13,117 INFO main - f (sol): 0.0, [Variant id: 40 (SOL) , #gens: 944, #ops: 1, parent:1]
+2015-08-18 18:49:13,117 INFO main - f (sol): 0.0, [Variant id: 46 (SOL) , #gens: 944, #ops: 1, parent:1]
+2015-08-18 18:49:13,117 INFO main - f (sol): 0.0, [Variant id: 106 (SOL) , #gens: 944, #ops: 1, parent:1]
+2015-08-18 18:49:13,117 INFO main - f (sol): 0.0, [Variant id: 109 (SOL) , #gens: 944, #ops: 1, parent:1]
+2015-08-18 18:49:13,117 INFO main - f (sol): 0.0, [Variant id: 110 (SOL) , #gens: 944, #ops: 1, parent:1]
+2015-08-18 18:49:13,117 INFO main - 
 All variants:
-f 1.0, [Variant id: 1, #gens: 904, #ops: 0, parent:-]
-
+2015-08-18 18:49:13,117 INFO main - f 1.0, [Variant id: 1, #gens: 944, #ops: 0, parent:-]
+2015-08-18 18:49:13,117 INFO main - 
 Solution details
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-
+2015-08-18 18:49:13,118 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 18:49:13,118 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 18:49:13,118 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 18:49:13,118 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 18:49:13,118 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 18:49:13,118 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 18:49:13,118 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 18:49:13,118 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 18:49:13,118 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 18:49:13,118 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 18:49:13,118 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 18:49:13,118 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 18:49:13,118 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 18:49:13,118 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 18:49:13,118 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 18:49:13,118 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 18:49:13,118 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 18:49:13,118 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 18:49:13,118 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 18:49:13,119 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 18:49:13,119 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 18:49:13,119 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 18:49:13,119 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 18:49:13,119 INFO main - 
  --SOLUTIONS DESCRIPTION--
 
  ----
@@ -63,6 +68,19 @@ operation: INSERT_BEFORE
 location= org.apache.commons.math.linear.EigenDecompositionImpl
 line= 1526
 original statement= tType = -5
+fixed statement= if (true)
+	return ;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 7
+ 
+operation: INSERT_BEFORE
+location= org.apache.commons.math.linear.EigenDecompositionImpl
+line= 1527
+original statement= double s = 0.25 * (dMin)
 fixed statement= if (true)
 	return ;
 
@@ -133,6 +151,21 @@ original statement= if (((work[(np - 8)]) > b2) || ((work[(np - 4)]) > b1)) {
 fixed statement= if (true)
 	return ;
 
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 18
+ 
+operation: REPLACE
+location= org.apache.commons.math.linear.EigenDecompositionImpl
+line= 1534
+original statement= if (((work[(np - 8)]) > b2) || ((work[(np - 4)]) > b1)) {
+	return ;
+} 
+fixed statement= if (true) {
+	return ;
+} 
 generation= 1
 ingredientScope= -
  
@@ -299,7 +332,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 38
+ProgramVariant 40
  
 operation: DELETE
 location= org.apache.commons.math.linear.EigenDecompositionImpl
@@ -310,7 +343,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 44
+ProgramVariant 46
  
 operation: DELETE
 location= org.apache.commons.math.linear.EigenDecompositionImpl
@@ -321,7 +354,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 88
+ProgramVariant 106
  
 operation: DELETE
 location= org.apache.commons.math.linear.EigenDecompositionImpl
@@ -336,7 +369,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 91
+ProgramVariant 109
  
 operation: REPLACE
 location= org.apache.commons.math.linear.EigenDecompositionImpl
@@ -351,7 +384,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 92
+ProgramVariant 110
  
 operation: DELETE
 location= org.apache.commons.math.linear.EigenDecompositionImpl
@@ -361,17 +394,17 @@ fixed statement= s = (gam * (1 - (java.lang.Math.sqrt(a2)))) / (1 + a2)
 generation= 1
 ingredientScope= -
  
-
+2015-08-18 18:49:13,119 INFO main - 
 ----stats: 
-
+2015-08-18 18:49:13,119 INFO main - 
 spaces navigation: [0]: {}
 #gen: 0
-#patches: 17
-#RightCompilation: 1714
+#patches: 19
+#RightCompilation: 1824
 #WrongCompilation: 356
-#FailingTestCaseExecution: 1715
+#FailingTestCaseExecution: 1825
 #RegressionTestExecution: 19
-#TestcasesExecutedval1: 28594
+#TestcasesExecutedval1: 30464
 #TestcasesExecutedval2: 37867
 #FailingTestCase: 17
 #RegressionTestCases: 1993
@@ -381,12 +414,12 @@ spaces navigation: [0]: {}
 #unfinishValidation: 0
 #ing {}
 #untilcompile {}
-Time Total(ms): 3281092
+2015-08-18 18:49:13,119 INFO fr.inria.main.AbstractMain - Time Total(ms): 3128522
 
 
-Node: griffon-8.nancy.grid5000.fr
+Node: graphene-61.nancy.grid5000.fr
 
 
-Date: Thu Aug 13 19:58:55 CEST 2015
+Date: Tue Aug 18 20:49:13 CEST 2015
 
 

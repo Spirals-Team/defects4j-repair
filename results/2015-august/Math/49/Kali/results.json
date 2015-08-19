@@ -1,17 +1,17 @@
 {
     "FailingTestCase": "9", 
-    "FailingTestCaseExecution": "1763", 
+    "FailingTestCaseExecution": "1797", 
     "InmutatedGen": "0", 
     "NotAppliedOp": "0", 
     "OfAppliedOp": "0", 
-    "RegressionTestCases": "2824", 
+    "RegressionTestCases": "2791", 
     "RegressionTestExecution": "6", 
-    "RightCompilation": "1762", 
+    "RightCompilation": "1796", 
     "WrongCompilation": "376", 
-    "date": "Thu Aug 13 19:46:53 CEST 2015\n\n", 
+    "date": "Tue Aug 18 20:45:18 CEST 2015\n\n", 
     "gen": "0", 
-    "gens": "947", 
-    "node": "griffon-74.nancy.grid5000.fr", 
+    "gens": "962", 
+    "node": "graphene-62.nancy.grid5000.fr", 
     "operations": [
         {
             "buggyStatement": "if (!(isDefaultValue(value))) {\n\tentries.put(index, value);\n} else if (entries.containsKey(index)) {\n\tentries.remove(index);\n} ", 
@@ -22,7 +22,7 @@
                 "line": 664
             }, 
             "type": "REPLACE", 
-            "variant": 28
+            "variant": 38
         }, 
         {
             "buggyStatement": "++(count)", 
@@ -33,7 +33,7 @@
                 "line": 399
             }, 
             "type": "DELETE", 
-            "variant": 78
+            "variant": 90
         }, 
         {
             "buggyStatement": "++(count)", 
@@ -44,13 +44,13 @@
                 "line": 399
             }, 
             "type": "INSERT_BEFORE", 
-            "variant": 79
+            "variant": 91
         }
     ], 
     "ops": "0", 
     "patches": "3", 
-    "programVariant": "28", 
+    "programVariant": "38", 
     "timeEvaluation": null, 
-    "timeTotal": "1793653", 
+    "timeTotal": "1916407", 
     "unfinishValidation": "0"
 }

@@ -1,34 +1,34 @@
 {
     "FailingTestCase": "18", 
-    "FailingTestCaseExecution": "45", 
-    "InmutatedGen": "4", 
+    "FailingTestCaseExecution": "21", 
+    "InmutatedGen": "0", 
     "NotAppliedOp": "0", 
-    "OfAppliedOp": "82", 
+    "OfAppliedOp": "28", 
     "RegressionTestCases": "1994", 
     "RegressionTestExecution": "1", 
-    "RightCompilation": "44", 
-    "WrongCompilation": "38", 
-    "date": "Thu Aug 13 21:53:25 CEST 2015\n\n", 
-    "gen": "82", 
-    "gens": "903", 
-    "node": "graphene-57.nancy.grid5000.fr", 
+    "RightCompilation": "20", 
+    "WrongCompilation": "8", 
+    "date": "Tue Aug 18 21:13:47 CEST 2015\n\n", 
+    "gen": "28", 
+    "gens": "937", 
+    "node": "graphene-76.nancy.grid5000.fr", 
     "operations": [
         {
-            "buggyStatement": "for (int i = 1 ; i < n ; ++i) {\n\tfinal int fourI = 4 * i;\n\tfinal double eiM1 = secondary[((index + i) - 1)];\n\tfinal double ratio = eiM1 / di;\n\twork[(fourI - 2)] = (ratio * ratio) * (java.lang.Math.abs(di));\n\tdi = ((main[(index + i)]) - lambda) - (eiM1 * ratio);\n\twork[fourI] = java.lang.Math.abs(di);\n}", 
-            "generation": 82, 
-            "patch": "pingPong = 1 - (pingPong)", 
+            "buggyStatement": "for (int k = 0 ; k < 4 ; k += step) {\n\tfinal double tmp = work[(i + k)];\n\twork[(i + k)] = work[(j - k)];\n\twork[(j - k)] = tmp;\n}", 
+            "generation": 28, 
+            "patch": "remove", 
             "patchLocation": {
                 "className": "org.apache.commons.math.linear.EigenDecompositionImpl", 
-                "line": 1256
+                "line": 1137
             }, 
-            "type": "INSERT_BEFORE", 
-            "variant": 164
+            "type": "DELETE", 
+            "variant": 56
         }
     ], 
     "ops": "0", 
     "patches": "1", 
-    "programVariant": "164", 
-    "timeEvaluation": "54496", 
-    "timeTotal": "86716", 
+    "programVariant": "56", 
+    "timeEvaluation": "29118", 
+    "timeTotal": "62271", 
     "unfinishValidation": "0"
 }

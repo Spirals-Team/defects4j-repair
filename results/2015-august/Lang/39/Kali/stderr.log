@@ -1,12 +1,840 @@
 Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
 java.lang.NullPointerException
+	at spoon.reflect.visitor.DefaultJavaPrettyPrinter.visitCtBlock(DefaultJavaPrettyPrinter.java:718)
+	at spoon.support.reflect.code.CtBlockImpl.accept(CtBlockImpl.java:43)
+	at spoon.reflect.visitor.DefaultJavaPrettyPrinter.scan(DefaultJavaPrettyPrinter.java:463)
+	at spoon.reflect.visitor.DefaultJavaPrettyPrinter.visitCtConstructor(DefaultJavaPrettyPrinter.java:889)
+	at spoon.support.reflect.declaration.CtConstructorImpl.accept(CtConstructorImpl.java:49)
+	at spoon.reflect.visitor.DefaultJavaPrettyPrinter.scan(DefaultJavaPrettyPrinter.java:463)
+	at spoon.reflect.visitor.DefaultJavaPrettyPrinter.visitCtClass(DefaultJavaPrettyPrinter.java:840)
+	at spoon.support.reflect.declaration.CtClassImpl.accept(CtClassImpl.java:53)
+	at spoon.reflect.visitor.DefaultJavaPrettyPrinter.scan(DefaultJavaPrettyPrinter.java:463)
+	at fr.inria.astor.core.manipulation.bytecode.compiler.SpoonClassCompiler.sourceForModelledClass(SpoonClassCompiler.java:135)
+	at fr.inria.astor.core.manipulation.bytecode.compiler.SpoonClassCompiler.compileOnMemory(SpoonClassCompiler.java:108)
+	at fr.inria.astor.core.manipulation.MutationSupporter.compileOnMemoryProgramVariant(MutationSupporter.java:139)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.processCreatedVariant(EvolutionaryEngine.java:346)
+	at fr.inria.astor.core.loop.evolutionary.JKali.startEvolution(JKali.java:67)
+	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:198)
+	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
+java.lang.NullPointerException
 	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.remove(CtStatementTransformator.java:62)
 	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.revert(CtStatementTransformator.java:40)
 	at fr.inria.astor.core.loop.evolutionary.JGenProg.undoOperationToSpoonElement(JGenProg.java:352)
-	at fr.inria.astor.core.loop.evolutionary.JKali.startEvolution(JKali.java:73)
+	at fr.inria.astor.core.loop.evolutionary.JKali.startEvolution(JKali.java:74)
 	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:198)
 	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
+java.lang.NullPointerException
+	at spoon.reflect.visitor.DefaultJavaPrettyPrinter.visitCtBlock(DefaultJavaPrettyPrinter.java:718)
+	at spoon.support.reflect.code.CtBlockImpl.accept(CtBlockImpl.java:43)
+	at spoon.reflect.visitor.DefaultJavaPrettyPrinter.scan(DefaultJavaPrettyPrinter.java:463)
+	at spoon.reflect.visitor.DefaultJavaPrettyPrinter.visitCtConstructor(DefaultJavaPrettyPrinter.java:889)
+	at spoon.support.reflect.declaration.CtConstructorImpl.accept(CtConstructorImpl.java:49)
+	at spoon.reflect.visitor.DefaultJavaPrettyPrinter.scan(DefaultJavaPrettyPrinter.java:463)
+	at spoon.reflect.visitor.DefaultJavaPrettyPrinter.visitCtClass(DefaultJavaPrettyPrinter.java:840)
+	at spoon.support.reflect.declaration.CtClassImpl.accept(CtClassImpl.java:53)
+	at spoon.reflect.visitor.DefaultJavaPrettyPrinter.scan(DefaultJavaPrettyPrinter.java:463)
+	at fr.inria.astor.core.manipulation.bytecode.compiler.SpoonClassCompiler.sourceForModelledClass(SpoonClassCompiler.java:135)
+	at fr.inria.astor.core.manipulation.bytecode.compiler.SpoonClassCompiler.compileOnMemory(SpoonClassCompiler.java:108)
+	at fr.inria.astor.core.manipulation.MutationSupporter.compileOnMemoryProgramVariant(MutationSupporter.java:139)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.processCreatedVariant(EvolutionaryEngine.java:346)
+	at fr.inria.astor.core.loop.evolutionary.JKali.startEvolution(JKali.java:67)
+	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:198)
+	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
+java.lang.NullPointerException
+	at spoon.reflect.visitor.DefaultJavaPrettyPrinter.visitCtBlock(DefaultJavaPrettyPrinter.java:718)
+	at spoon.support.reflect.code.CtBlockImpl.accept(CtBlockImpl.java:43)
+	at spoon.reflect.visitor.DefaultJavaPrettyPrinter.scan(DefaultJavaPrettyPrinter.java:463)
+	at spoon.reflect.visitor.DefaultJavaPrettyPrinter.visitCtConstructor(DefaultJavaPrettyPrinter.java:889)
+	at spoon.support.reflect.declaration.CtConstructorImpl.accept(CtConstructorImpl.java:49)
+	at spoon.reflect.visitor.DefaultJavaPrettyPrinter.scan(DefaultJavaPrettyPrinter.java:463)
+	at spoon.reflect.visitor.DefaultJavaPrettyPrinter.visitCtClass(DefaultJavaPrettyPrinter.java:840)
+	at spoon.support.reflect.declaration.CtClassImpl.accept(CtClassImpl.java:53)
+	at spoon.reflect.visitor.DefaultJavaPrettyPrinter.scan(DefaultJavaPrettyPrinter.java:463)
+	at fr.inria.astor.core.manipulation.bytecode.compiler.SpoonClassCompiler.sourceForModelledClass(SpoonClassCompiler.java:135)
+	at fr.inria.astor.core.manipulation.bytecode.compiler.SpoonClassCompiler.compileOnMemory(SpoonClassCompiler.java:108)
+	at fr.inria.astor.core.manipulation.MutationSupporter.compileOnMemoryProgramVariant(MutationSupporter.java:139)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.processCreatedVariant(EvolutionaryEngine.java:346)
+	at fr.inria.astor.core.loop.evolutionary.JKali.startEvolution(JKali.java:67)
+	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:198)
+	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
+java.lang.NullPointerException
+	at spoon.reflect.visitor.DefaultJavaPrettyPrinter.visitCtBlock(DefaultJavaPrettyPrinter.java:718)
+	at spoon.support.reflect.code.CtBlockImpl.accept(CtBlockImpl.java:43)
+	at spoon.reflect.visitor.DefaultJavaPrettyPrinter.scan(DefaultJavaPrettyPrinter.java:463)
+	at spoon.reflect.visitor.DefaultJavaPrettyPrinter.visitCtConstructor(DefaultJavaPrettyPrinter.java:889)
+	at spoon.support.reflect.declaration.CtConstructorImpl.accept(CtConstructorImpl.java:49)
+	at spoon.reflect.visitor.DefaultJavaPrettyPrinter.scan(DefaultJavaPrettyPrinter.java:463)
+	at spoon.reflect.visitor.DefaultJavaPrettyPrinter.visitCtClass(DefaultJavaPrettyPrinter.java:840)
+	at spoon.support.reflect.declaration.CtClassImpl.accept(CtClassImpl.java:53)
+	at spoon.reflect.visitor.DefaultJavaPrettyPrinter.scan(DefaultJavaPrettyPrinter.java:463)
+	at fr.inria.astor.core.manipulation.bytecode.compiler.SpoonClassCompiler.sourceForModelledClass(SpoonClassCompiler.java:135)
+	at fr.inria.astor.core.manipulation.bytecode.compiler.SpoonClassCompiler.compileOnMemory(SpoonClassCompiler.java:108)
+	at fr.inria.astor.core.manipulation.MutationSupporter.compileOnMemoryProgramVariant(MutationSupporter.java:139)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.processCreatedVariant(EvolutionaryEngine.java:346)
+	at fr.inria.astor.core.loop.evolutionary.JKali.startEvolution(JKali.java:67)
+	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:198)
+	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
+java.lang.NullPointerException
+	at spoon.reflect.visitor.DefaultJavaPrettyPrinter.visitCtBlock(DefaultJavaPrettyPrinter.java:718)
+	at spoon.support.reflect.code.CtBlockImpl.accept(CtBlockImpl.java:43)
+	at spoon.reflect.visitor.DefaultJavaPrettyPrinter.scan(DefaultJavaPrettyPrinter.java:463)
+	at spoon.reflect.visitor.DefaultJavaPrettyPrinter.visitCtConstructor(DefaultJavaPrettyPrinter.java:889)
+	at spoon.support.reflect.declaration.CtConstructorImpl.accept(CtConstructorImpl.java:49)
+	at spoon.reflect.visitor.DefaultJavaPrettyPrinter.scan(DefaultJavaPrettyPrinter.java:463)
+	at spoon.reflect.visitor.DefaultJavaPrettyPrinter.visitCtClass(DefaultJavaPrettyPrinter.java:840)
+	at spoon.support.reflect.declaration.CtClassImpl.accept(CtClassImpl.java:53)
+	at spoon.reflect.visitor.DefaultJavaPrettyPrinter.scan(DefaultJavaPrettyPrinter.java:463)
+	at fr.inria.astor.core.manipulation.bytecode.compiler.SpoonClassCompiler.sourceForModelledClass(SpoonClassCompiler.java:135)
+	at fr.inria.astor.core.manipulation.bytecode.compiler.SpoonClassCompiler.compileOnMemory(SpoonClassCompiler.java:108)
+	at fr.inria.astor.core.manipulation.MutationSupporter.compileOnMemoryProgramVariant(MutationSupporter.java:139)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.processCreatedVariant(EvolutionaryEngine.java:346)
+	at fr.inria.astor.core.loop.evolutionary.JKali.startEvolution(JKali.java:67)
+	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:198)
+	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
+java.lang.NullPointerException
+	at spoon.reflect.visitor.DefaultJavaPrettyPrinter.visitCtBlock(DefaultJavaPrettyPrinter.java:718)
+	at spoon.support.reflect.code.CtBlockImpl.accept(CtBlockImpl.java:43)
+	at spoon.reflect.visitor.DefaultJavaPrettyPrinter.scan(DefaultJavaPrettyPrinter.java:463)
+	at spoon.reflect.visitor.DefaultJavaPrettyPrinter.visitCtConstructor(DefaultJavaPrettyPrinter.java:889)
+	at spoon.support.reflect.declaration.CtConstructorImpl.accept(CtConstructorImpl.java:49)
+	at spoon.reflect.visitor.DefaultJavaPrettyPrinter.scan(DefaultJavaPrettyPrinter.java:463)
+	at spoon.reflect.visitor.DefaultJavaPrettyPrinter.visitCtClass(DefaultJavaPrettyPrinter.java:840)
+	at spoon.support.reflect.declaration.CtClassImpl.accept(CtClassImpl.java:53)
+	at spoon.reflect.visitor.DefaultJavaPrettyPrinter.scan(DefaultJavaPrettyPrinter.java:463)
+	at fr.inria.astor.core.manipulation.bytecode.compiler.SpoonClassCompiler.sourceForModelledClass(SpoonClassCompiler.java:135)
+	at fr.inria.astor.core.manipulation.bytecode.compiler.SpoonClassCompiler.compileOnMemory(SpoonClassCompiler.java:108)
+	at fr.inria.astor.core.manipulation.MutationSupporter.compileOnMemoryProgramVariant(MutationSupporter.java:139)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.processCreatedVariant(EvolutionaryEngine.java:346)
+	at fr.inria.astor.core.loop.evolutionary.JKali.startEvolution(JKali.java:67)
+	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:198)
+	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
+java.lang.NullPointerException
+	at spoon.reflect.visitor.DefaultJavaPrettyPrinter.visitCtBlock(DefaultJavaPrettyPrinter.java:718)
+	at spoon.support.reflect.code.CtBlockImpl.accept(CtBlockImpl.java:43)
+	at spoon.reflect.visitor.DefaultJavaPrettyPrinter.scan(DefaultJavaPrettyPrinter.java:463)
+	at spoon.reflect.visitor.DefaultJavaPrettyPrinter.visitCtConstructor(DefaultJavaPrettyPrinter.java:889)
+	at spoon.support.reflect.declaration.CtConstructorImpl.accept(CtConstructorImpl.java:49)
+	at spoon.reflect.visitor.DefaultJavaPrettyPrinter.scan(DefaultJavaPrettyPrinter.java:463)
+	at spoon.reflect.visitor.DefaultJavaPrettyPrinter.visitCtClass(DefaultJavaPrettyPrinter.java:840)
+	at spoon.support.reflect.declaration.CtClassImpl.accept(CtClassImpl.java:53)
+	at spoon.reflect.visitor.DefaultJavaPrettyPrinter.scan(DefaultJavaPrettyPrinter.java:463)
+	at fr.inria.astor.core.manipulation.bytecode.compiler.SpoonClassCompiler.sourceForModelledClass(SpoonClassCompiler.java:135)
+	at fr.inria.astor.core.manipulation.bytecode.compiler.SpoonClassCompiler.compileOnMemory(SpoonClassCompiler.java:108)
+	at fr.inria.astor.core.manipulation.MutationSupporter.compileOnMemoryProgramVariant(MutationSupporter.java:139)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.processCreatedVariant(EvolutionaryEngine.java:346)
+	at fr.inria.astor.core.loop.evolutionary.JKali.startEvolution(JKali.java:67)
+	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:198)
+	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
+java.lang.NullPointerException
+	at spoon.reflect.visitor.DefaultJavaPrettyPrinter.visitCtBlock(DefaultJavaPrettyPrinter.java:718)
+	at spoon.support.reflect.code.CtBlockImpl.accept(CtBlockImpl.java:43)
+	at spoon.reflect.visitor.DefaultJavaPrettyPrinter.scan(DefaultJavaPrettyPrinter.java:463)
+	at spoon.reflect.visitor.DefaultJavaPrettyPrinter.visitCtConstructor(DefaultJavaPrettyPrinter.java:889)
+	at spoon.support.reflect.declaration.CtConstructorImpl.accept(CtConstructorImpl.java:49)
+	at spoon.reflect.visitor.DefaultJavaPrettyPrinter.scan(DefaultJavaPrettyPrinter.java:463)
+	at spoon.reflect.visitor.DefaultJavaPrettyPrinter.visitCtClass(DefaultJavaPrettyPrinter.java:840)
+	at spoon.support.reflect.declaration.CtClassImpl.accept(CtClassImpl.java:53)
+	at spoon.reflect.visitor.DefaultJavaPrettyPrinter.scan(DefaultJavaPrettyPrinter.java:463)
+	at fr.inria.astor.core.manipulation.bytecode.compiler.SpoonClassCompiler.sourceForModelledClass(SpoonClassCompiler.java:135)
+	at fr.inria.astor.core.manipulation.bytecode.compiler.SpoonClassCompiler.compileOnMemory(SpoonClassCompiler.java:108)
+	at fr.inria.astor.core.manipulation.MutationSupporter.compileOnMemoryProgramVariant(MutationSupporter.java:139)
+	at fr.inria.astor.core.loop.evolutionary.EvolutionaryEngine.processCreatedVariant(EvolutionaryEngine.java:346)
+	at fr.inria.astor.core.loop.evolutionary.JKali.startEvolution(JKali.java:67)
+	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:198)
+	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.remove(CtStatementTransformator.java:62)
+	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.revert(CtStatementTransformator.java:40)
+	at fr.inria.astor.core.loop.evolutionary.JGenProg.undoOperationToSpoonElement(JGenProg.java:352)
+	at fr.inria.astor.core.loop.evolutionary.JKali.startEvolution(JKali.java:74)
+	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:198)
+	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.remove(CtStatementTransformator.java:62)
+	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.revert(CtStatementTransformator.java:40)
+	at fr.inria.astor.core.loop.evolutionary.JGenProg.undoOperationToSpoonElement(JGenProg.java:352)
+	at fr.inria.astor.core.loop.evolutionary.JKali.startEvolution(JKali.java:74)
+	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:198)
+	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.remove(CtStatementTransformator.java:62)
+	at fr.inria.astor.core.loop.evolutionary.transformators.CtStatementTransformator.revert(CtStatementTransformator.java:40)
+	at fr.inria.astor.core.loop.evolutionary.JGenProg.undoOperationToSpoonElement(JGenProg.java:352)
+	at fr.inria.astor.core.loop.evolutionary.JKali.startEvolution(JKali.java:74)
+	at fr.inria.main.evolution.MainjGenProg.run(MainjGenProg.java:198)
+	at fr.inria.main.evolution.MainjGenProg.main(MainjGenProg.java:232)
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
+java.lang.NullPointerException
 
-real	23m40.281s
-user	32m53.627s
-sys	1m25.961s
+real	1m38.121s
+user	2m28.405s
+sys	0m4.344s

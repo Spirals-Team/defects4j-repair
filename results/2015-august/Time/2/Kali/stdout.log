@@ -1,29 +1,29 @@
 export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/time/time_2 /tmp/time_2_Kali;cd /tmp/time_2_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Time/lib/* lib/;find . -type f -name "package-info.java" -delete;
-/home/tdurieux/defects4j-repair/src/python/core/../../../results/Time/2/Kali/result
-cd /tmp/time_2_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java  -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.joda.time.TestPartial_Basics: -package org.joda -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -seed 10 -maxtime 165  -scope local  -stopfirst true -flthreshold 0 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
+/home/tdurieux/defects4j-repair/src/python/core/../../../results/2015-august/Time/2/Kali/result
+cd /tmp/time_2_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java  -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.joda.time.TestPartial_Basics: -package org.joda -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -seed 10 -maxtime 60  -scope local  -stopfirst true -flthreshold 0 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
 
 Node: `hostname`
 ";echo "
 Date: `date`
 ";rm -rf /tmp/time_2_Kali;
 
-End Repair Loops: NOT Found solution
-
+2015-08-18 17:32:46,920 INFO main - End Repair Loops: NOT Found solution
+2015-08-18 17:32:46,920 INFO main - 
 Number solutions:0
-
+2015-08-18 17:32:46,920 INFO main - 
 All variants:
-f 1.0, [Variant id: 1, #gens: 1009, #ops: 0, parent:-]
-
+2015-08-18 17:32:46,920 INFO main - f 1.0, [Variant id: 1, #gens: 1002, #ops: 0, parent:-]
+2015-08-18 17:32:46,920 INFO main - 
 ----stats: 
-
+2015-08-18 17:32:46,920 INFO main - 
 spaces navigation: [0]: {}
 #gen: 0
 #patches: 0
-#RightCompilation: 1926
-#WrongCompilation: 466
-#FailingTestCaseExecution: 1927
+#RightCompilation: 1916
+#WrongCompilation: 416
+#FailingTestCaseExecution: 1917
 #RegressionTestExecution: 0
-#TestcasesExecutedval1: 37800
+#TestcasesExecutedval1: 27216
 #TestcasesExecutedval2: 0
 #FailingTestCase: 72
 #RegressionTestCases: 0
@@ -33,12 +33,12 @@ spaces navigation: [0]: {}
 #unfinishValidation: 0
 #ing {}
 #untilcompile {}
-Time Total(ms): 3264368
+2015-08-18 17:32:46,920 INFO fr.inria.main.AbstractMain - Time Total(ms): 1855896
 
 
-Node: graphite-4.nancy.grid5000.fr
+Node: graphene-105.nancy.grid5000.fr
 
 
-Date: Sat Aug 15 20:30:18 CEST 2015
+Date: Tue Aug 18 19:32:47 CEST 2015
 
 

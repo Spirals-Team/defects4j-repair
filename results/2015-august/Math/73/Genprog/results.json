@@ -1,34 +1,34 @@
 {
     "FailingTestCase": "6", 
-    "FailingTestCaseExecution": "28", 
-    "InmutatedGen": "3", 
+    "FailingTestCaseExecution": "42", 
+    "InmutatedGen": "5", 
     "NotAppliedOp": "0", 
-    "OfAppliedOp": "50", 
+    "OfAppliedOp": "72", 
     "RegressionTestCases": "2032", 
     "RegressionTestExecution": "1", 
-    "RightCompilation": "27", 
-    "WrongCompilation": "23", 
-    "date": "Thu Aug 13 21:54:35 CEST 2015\n\n", 
-    "gen": "50", 
-    "gens": "927", 
-    "node": "griffon-33.nancy.grid5000.fr", 
+    "RightCompilation": "41", 
+    "WrongCompilation": "31", 
+    "date": "Tue Aug 18 21:22:19 CEST 2015\n\n", 
+    "gen": "72", 
+    "gens": "953", 
+    "node": "graphene-64.nancy.grid5000.fr", 
     "operations": [
         {
             "buggyStatement": "return solve(f, min, yMin, max, yMax, initial, yInitial)", 
-            "generation": 50, 
+            "generation": 72, 
             "patch": "return solve(f, min, max)", 
             "patchLocation": {
                 "className": "org.apache.commons.math.analysis.solvers.BrentSolver", 
                 "line": 132
             }, 
             "type": "REPLACE", 
-            "variant": 100
+            "variant": 144
         }
     ], 
     "ops": "0", 
     "patches": "1", 
-    "programVariant": "100", 
-    "timeEvaluation": "33925", 
-    "timeTotal": "68839", 
+    "programVariant": "144", 
+    "timeEvaluation": "35564", 
+    "timeTotal": "65979", 
     "unfinishValidation": "0"
 }

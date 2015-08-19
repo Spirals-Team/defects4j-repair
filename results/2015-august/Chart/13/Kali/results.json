@@ -1,17 +1,17 @@
 {
     "FailingTestCase": "5", 
-    "FailingTestCaseExecution": "1963", 
+    "FailingTestCaseExecution": "2403", 
     "InmutatedGen": "0", 
     "NotAppliedOp": "0", 
     "OfAppliedOp": "0", 
-    "RegressionTestCases": "0", 
+    "RegressionTestCases": "1799", 
     "RegressionTestExecution": "5", 
-    "RightCompilation": "1962", 
+    "RightCompilation": "2402", 
     "WrongCompilation": "344", 
-    "date": "Thu Aug 13 20:53:06 CEST 2015\n\n", 
+    "date": "Wed Aug 19 00:56:39 CEST 2015\n\n", 
     "gen": "0", 
-    "gens": "894", 
-    "node": "griffon-73.nancy.grid5000.fr", 
+    "gens": "1071", 
+    "node": "graphene-62.nancy.grid5000.fr", 
     "operations": [
         {
             "buggyStatement": "if ((this.leftBlock) != null) {\n\torg.jfree.chart.block.RectangleConstraint c3 = new org.jfree.chart.block.RectangleConstraint(0.0 , new org.jfree.data.Range(0.0 , constraint.getWidth()) , org.jfree.chart.block.LengthConstraintType.RANGE , h[2] , null , org.jfree.chart.block.LengthConstraintType.FIXED);\n\torg.jfree.chart.util.Size2D size = this.leftBlock.arrange(g2, c3);\n\tw[2] = size.width;\n} ", 
@@ -22,7 +22,7 @@
                 "line": 482
             }, 
             "type": "DELETE", 
-            "variant": 88
+            "variant": 96
         }, 
         {
             "buggyStatement": "if ((this.leftBlock) != null) {\n\torg.jfree.chart.block.RectangleConstraint c3 = new org.jfree.chart.block.RectangleConstraint(0.0 , new org.jfree.data.Range(0.0 , constraint.getWidth()) , org.jfree.chart.block.LengthConstraintType.RANGE , h[2] , null , org.jfree.chart.block.LengthConstraintType.FIXED);\n\torg.jfree.chart.util.Size2D size = this.leftBlock.arrange(g2, c3);\n\tw[2] = size.width;\n} ", 
@@ -33,7 +33,7 @@
                 "line": 482
             }, 
             "type": "REPLACE", 
-            "variant": 91
+            "variant": 99
         }, 
         {
             "buggyStatement": "w[2] = size.width", 
@@ -44,7 +44,7 @@
                 "line": 489
             }, 
             "type": "DELETE", 
-            "variant": 96
+            "variant": 104
         }, 
         {
             "buggyStatement": "if ((this.rightBlock) != null) {\n\torg.jfree.chart.block.RectangleConstraint c4 = new org.jfree.chart.block.RectangleConstraint(0.0 , new org.jfree.data.Range(0.0 , ((constraint.getWidth()) - (w[2]))) , org.jfree.chart.block.LengthConstraintType.RANGE , h[2] , null , org.jfree.chart.block.LengthConstraintType.FIXED);\n\torg.jfree.chart.util.Size2D size = this.rightBlock.arrange(g2, c4);\n\tw[3] = size.width;\n} ", 
@@ -55,7 +55,7 @@
                 "line": 492
             }, 
             "type": "DELETE", 
-            "variant": 100
+            "variant": 108
         }, 
         {
             "buggyStatement": "if ((this.rightBlock) != null) {\n\torg.jfree.chart.block.RectangleConstraint c4 = new org.jfree.chart.block.RectangleConstraint(0.0 , new org.jfree.data.Range(0.0 , ((constraint.getWidth()) - (w[2]))) , org.jfree.chart.block.LengthConstraintType.RANGE , h[2] , null , org.jfree.chart.block.LengthConstraintType.FIXED);\n\torg.jfree.chart.util.Size2D size = this.rightBlock.arrange(g2, c4);\n\tw[3] = size.width;\n} ", 
@@ -66,13 +66,13 @@
                 "line": 492
             }, 
             "type": "REPLACE", 
-            "variant": 103
+            "variant": 111
         }
     ], 
     "ops": "0", 
     "patches": "5", 
-    "programVariant": "88", 
+    "programVariant": "96", 
     "timeEvaluation": null, 
-    "timeTotal": "1061883", 
+    "timeTotal": "1087694", 
     "unfinishValidation": "0"
 }

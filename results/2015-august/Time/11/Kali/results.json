@@ -1,22 +1,265 @@
 {
     "FailingTestCase": "8", 
-    "FailingTestCaseExecution": "2011", 
+    "FailingTestCaseExecution": "1985", 
     "InmutatedGen": "0", 
     "NotAppliedOp": "0", 
     "OfAppliedOp": "0", 
-    "RegressionTestCases": "1", 
+    "RegressionTestCases": "3949", 
     "RegressionTestExecution": "22", 
-    "RightCompilation": "2010", 
-    "WrongCompilation": "468", 
-    "date": "Sat Aug 15 18:29:30 CEST 2015\n\n", 
+    "RightCompilation": "1984", 
+    "WrongCompilation": "446", 
+    "date": "Tue Aug 18 19:35:05 CEST 2015\n\n", 
     "gen": "0", 
-    "gens": "1029", 
-    "node": "graphite-4.nancy.grid5000.fr", 
-    "operations": [], 
+    "gens": "1025", 
+    "node": "graphene-115.nancy.grid5000.fr", 
+    "operations": [
+        {
+            "buggyStatement": "if (org.joda.time.tz.ZoneInfoCompiler.verbose()) {\n\tjava.lang.System.out.println((\"Fixing duplicate recurrent name key - \" + (tailZone.iStartRecurrence.getNameKey())));\n} ", 
+            "generation": 1, 
+            "patch": "remove", 
+            "patchLocation": {
+                "className": "org.joda.time.tz.DateTimeZoneBuilder", 
+                "line": 1460
+            }, 
+            "type": "DELETE", 
+            "variant": 4
+        }, 
+        {
+            "buggyStatement": "if (org.joda.time.tz.ZoneInfoCompiler.verbose()) {\n\tjava.lang.System.out.println((\"Fixing duplicate recurrent name key - \" + (tailZone.iStartRecurrence.getNameKey())));\n} ", 
+            "generation": 1, 
+            "patch": "if (true) {\n\tjava.lang.System.out.println((\"Fixing duplicate recurrent name key - \" + (tailZone.iStartRecurrence.getNameKey())));\n} ", 
+            "patchLocation": {
+                "className": "org.joda.time.tz.DateTimeZoneBuilder", 
+                "line": 1460
+            }, 
+            "type": "REPLACE", 
+            "variant": 6
+        }, 
+        {
+            "buggyStatement": "if (org.joda.time.tz.ZoneInfoCompiler.verbose()) {\n\tjava.lang.System.out.println((\"Fixing duplicate recurrent name key - \" + (tailZone.iStartRecurrence.getNameKey())));\n} ", 
+            "generation": 1, 
+            "patch": "if (false) {\n\tjava.lang.System.out.println((\"Fixing duplicate recurrent name key - \" + (tailZone.iStartRecurrence.getNameKey())));\n} ", 
+            "patchLocation": {
+                "className": "org.joda.time.tz.DateTimeZoneBuilder", 
+                "line": 1460
+            }, 
+            "type": "REPLACE", 
+            "variant": 7
+        }, 
+        {
+            "buggyStatement": "return org.joda.time.tz.ZoneInfoCompiler.cVerbose.get()", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn false;\n", 
+            "patchLocation": {
+                "className": "org.joda.time.tz.ZoneInfoCompiler", 
+                "line": 78
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 19
+        }, 
+        {
+            "buggyStatement": "return new org.joda.time.tz.DateTimeZoneBuilder.DSTZone(id , iStandardOffset , startRule.iRecurrence , endRule.iRecurrence)", 
+            "generation": 1, 
+            "patch": "remove", 
+            "patchLocation": {
+                "className": "org.joda.time.tz.DateTimeZoneBuilder", 
+                "line": 1154
+            }, 
+            "type": "DELETE", 
+            "variant": 20
+        }, 
+        {
+            "buggyStatement": "return new org.joda.time.tz.DateTimeZoneBuilder.DSTZone(id , iStandardOffset , startRule.iRecurrence , endRule.iRecurrence)", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn null;\n", 
+            "patchLocation": {
+                "className": "org.joda.time.tz.DateTimeZoneBuilder", 
+                "line": 1154
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 21
+        }, 
+        {
+            "buggyStatement": "if (tailZone.iStartRecurrence.getNameKey().equals(tailZone.iEndRecurrence.getNameKey())) {\n\tif (org.joda.time.tz.ZoneInfoCompiler.verbose()) {\n\t\tjava.lang.System.out.println((\"Fixing duplicate recurrent name key - \" + (tailZone.iStartRecurrence.getNameKey())));\n\t} \n\tif ((tailZone.iStartRecurrence.getSaveMillis()) > 0) {\n\t\ttailZone = new org.joda.time.tz.DateTimeZoneBuilder.DSTZone(tailZone.getID() , tailZone.iStandardOffset , tailZone.iStartRecurrence.renameAppend(\"-Summer\") , tailZone.iEndRecurrence);\n\t} else {\n\t\ttailZone = new org.joda.time.tz.DateTimeZoneBuilder.DSTZone(tailZone.getID() , tailZone.iStandardOffset , tailZone.iStartRecurrence , tailZone.iEndRecurrence.renameAppend(\"-Summer\"));\n\t}\n} ", 
+            "generation": 1, 
+            "patch": "remove", 
+            "patchLocation": {
+                "className": "org.joda.time.tz.DateTimeZoneBuilder", 
+                "line": 1458
+            }, 
+            "type": "DELETE", 
+            "variant": 24
+        }, 
+        {
+            "buggyStatement": "if (tailZone.iStartRecurrence.getNameKey().equals(tailZone.iEndRecurrence.getNameKey())) {\n\tif (org.joda.time.tz.ZoneInfoCompiler.verbose()) {\n\t\tjava.lang.System.out.println((\"Fixing duplicate recurrent name key - \" + (tailZone.iStartRecurrence.getNameKey())));\n\t} \n\tif ((tailZone.iStartRecurrence.getSaveMillis()) > 0) {\n\t\ttailZone = new org.joda.time.tz.DateTimeZoneBuilder.DSTZone(tailZone.getID() , tailZone.iStandardOffset , tailZone.iStartRecurrence.renameAppend(\"-Summer\") , tailZone.iEndRecurrence);\n\t} else {\n\t\ttailZone = new org.joda.time.tz.DateTimeZoneBuilder.DSTZone(tailZone.getID() , tailZone.iStandardOffset , tailZone.iStartRecurrence , tailZone.iEndRecurrence.renameAppend(\"-Summer\"));\n\t}\n} ", 
+            "generation": 1, 
+            "patch": "if (false) {\n\tif (org.joda.time.tz.ZoneInfoCompiler.verbose()) {\n\t\tjava.lang.System.out.println((\"Fixing duplicate recurrent name key - \" + (tailZone.iStartRecurrence.getNameKey())));\n\t} \n\tif ((tailZone.iStartRecurrence.getSaveMillis()) > 0) {\n\t\ttailZone = new org.joda.time.tz.DateTimeZoneBuilder.DSTZone(tailZone.getID() , tailZone.iStandardOffset , tailZone.iStartRecurrence.renameAppend(\"-Summer\") , tailZone.iEndRecurrence);\n\t} else {\n\t\ttailZone = new org.joda.time.tz.DateTimeZoneBuilder.DSTZone(tailZone.getID() , tailZone.iStandardOffset , tailZone.iStartRecurrence , tailZone.iEndRecurrence.renameAppend(\"-Summer\"));\n\t}\n} ", 
+            "patchLocation": {
+                "className": "org.joda.time.tz.DateTimeZoneBuilder", 
+                "line": 1458
+            }, 
+            "type": "REPLACE", 
+            "variant": 27
+        }, 
+        {
+            "buggyStatement": "return iToYear", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn 0;\n", 
+            "patchLocation": {
+                "className": "org.joda.time.tz.DateTimeZoneBuilder", 
+                "line": 827
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 43
+        }, 
+        {
+            "buggyStatement": "if ((iRules.size()) == 2) {\n\torg.joda.time.tz.DateTimeZoneBuilder.Rule startRule = iRules.get(0);\n\torg.joda.time.tz.DateTimeZoneBuilder.Rule endRule = iRules.get(1);\n\tif (((startRule.getToYear()) == (java.lang.Integer.MAX_VALUE)) && ((endRule.getToYear()) == (java.lang.Integer.MAX_VALUE))) {\n\t\treturn new org.joda.time.tz.DateTimeZoneBuilder.DSTZone(id , iStandardOffset , startRule.iRecurrence , endRule.iRecurrence);\n\t} \n} ", 
+            "generation": 1, 
+            "patch": "remove", 
+            "patchLocation": {
+                "className": "org.joda.time.tz.DateTimeZoneBuilder", 
+                "line": 1141
+            }, 
+            "type": "DELETE", 
+            "variant": 160
+        }, 
+        {
+            "buggyStatement": "if ((iRules.size()) == 2) {\n\torg.joda.time.tz.DateTimeZoneBuilder.Rule startRule = iRules.get(0);\n\torg.joda.time.tz.DateTimeZoneBuilder.Rule endRule = iRules.get(1);\n\tif (((startRule.getToYear()) == (java.lang.Integer.MAX_VALUE)) && ((endRule.getToYear()) == (java.lang.Integer.MAX_VALUE))) {\n\t\treturn new org.joda.time.tz.DateTimeZoneBuilder.DSTZone(id , iStandardOffset , startRule.iRecurrence , endRule.iRecurrence);\n\t} \n} ", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn null;\n", 
+            "patchLocation": {
+                "className": "org.joda.time.tz.DateTimeZoneBuilder", 
+                "line": 1141
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 161
+        }, 
+        {
+            "buggyStatement": "if ((iRules.size()) == 2) {\n\torg.joda.time.tz.DateTimeZoneBuilder.Rule startRule = iRules.get(0);\n\torg.joda.time.tz.DateTimeZoneBuilder.Rule endRule = iRules.get(1);\n\tif (((startRule.getToYear()) == (java.lang.Integer.MAX_VALUE)) && ((endRule.getToYear()) == (java.lang.Integer.MAX_VALUE))) {\n\t\treturn new org.joda.time.tz.DateTimeZoneBuilder.DSTZone(id , iStandardOffset , startRule.iRecurrence , endRule.iRecurrence);\n\t} \n} ", 
+            "generation": 1, 
+            "patch": "if (false) {\n\torg.joda.time.tz.DateTimeZoneBuilder.Rule startRule = iRules.get(0);\n\torg.joda.time.tz.DateTimeZoneBuilder.Rule endRule = iRules.get(1);\n\tif (((startRule.getToYear()) == (java.lang.Integer.MAX_VALUE)) && ((endRule.getToYear()) == (java.lang.Integer.MAX_VALUE))) {\n\t\treturn new org.joda.time.tz.DateTimeZoneBuilder.DSTZone(id , iStandardOffset , startRule.iRecurrence , endRule.iRecurrence);\n\t} \n} ", 
+            "patchLocation": {
+                "className": "org.joda.time.tz.DateTimeZoneBuilder", 
+                "line": 1141
+            }, 
+            "type": "REPLACE", 
+            "variant": 163
+        }, 
+        {
+            "buggyStatement": "org.joda.time.tz.DateTimeZoneBuilder.Rule startRule = iRules.get(0)", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn null;\n", 
+            "patchLocation": {
+                "className": "org.joda.time.tz.DateTimeZoneBuilder", 
+                "line": 1142
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 165
+        }, 
+        {
+            "buggyStatement": "org.joda.time.tz.DateTimeZoneBuilder.Rule endRule = iRules.get(1)", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn null;\n", 
+            "patchLocation": {
+                "className": "org.joda.time.tz.DateTimeZoneBuilder", 
+                "line": 1143
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 167
+        }, 
+        {
+            "buggyStatement": "if (((startRule.getToYear()) == (java.lang.Integer.MAX_VALUE)) && ((endRule.getToYear()) == (java.lang.Integer.MAX_VALUE))) {\n\treturn new org.joda.time.tz.DateTimeZoneBuilder.DSTZone(id , iStandardOffset , startRule.iRecurrence , endRule.iRecurrence);\n} ", 
+            "generation": 1, 
+            "patch": "remove", 
+            "patchLocation": {
+                "className": "org.joda.time.tz.DateTimeZoneBuilder", 
+                "line": 1144
+            }, 
+            "type": "DELETE", 
+            "variant": 168
+        }, 
+        {
+            "buggyStatement": "if (((startRule.getToYear()) == (java.lang.Integer.MAX_VALUE)) && ((endRule.getToYear()) == (java.lang.Integer.MAX_VALUE))) {\n\treturn new org.joda.time.tz.DateTimeZoneBuilder.DSTZone(id , iStandardOffset , startRule.iRecurrence , endRule.iRecurrence);\n} ", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn null;\n", 
+            "patchLocation": {
+                "className": "org.joda.time.tz.DateTimeZoneBuilder", 
+                "line": 1144
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 169
+        }, 
+        {
+            "buggyStatement": "if (((startRule.getToYear()) == (java.lang.Integer.MAX_VALUE)) && ((endRule.getToYear()) == (java.lang.Integer.MAX_VALUE))) {\n\treturn new org.joda.time.tz.DateTimeZoneBuilder.DSTZone(id , iStandardOffset , startRule.iRecurrence , endRule.iRecurrence);\n} ", 
+            "generation": 1, 
+            "patch": "if (false) {\n\treturn new org.joda.time.tz.DateTimeZoneBuilder.DSTZone(id , iStandardOffset , startRule.iRecurrence , endRule.iRecurrence);\n} ", 
+            "patchLocation": {
+                "className": "org.joda.time.tz.DateTimeZoneBuilder", 
+                "line": 1144
+            }, 
+            "type": "REPLACE", 
+            "variant": 171
+        }, 
+        {
+            "buggyStatement": "if (tailZone != null) {\n\tif (tailZone.iStartRecurrence.getNameKey().equals(tailZone.iEndRecurrence.getNameKey())) {\n\t\tif (org.joda.time.tz.ZoneInfoCompiler.verbose()) {\n\t\t\tjava.lang.System.out.println((\"Fixing duplicate recurrent name key - \" + (tailZone.iStartRecurrence.getNameKey())));\n\t\t} \n\t\tif ((tailZone.iStartRecurrence.getSaveMillis()) > 0) {\n\t\t\ttailZone = new org.joda.time.tz.DateTimeZoneBuilder.DSTZone(tailZone.getID() , tailZone.iStandardOffset , tailZone.iStartRecurrence.renameAppend(\"-Summer\") , tailZone.iEndRecurrence);\n\t\t} else {\n\t\t\ttailZone = new org.joda.time.tz.DateTimeZoneBuilder.DSTZone(tailZone.getID() , tailZone.iStandardOffset , tailZone.iStartRecurrence , tailZone.iEndRecurrence.renameAppend(\"-Summer\"));\n\t\t}\n\t} \n} ", 
+            "generation": 1, 
+            "patch": "remove", 
+            "patchLocation": {
+                "className": "org.joda.time.tz.DateTimeZoneBuilder", 
+                "line": 1457
+            }, 
+            "type": "DELETE", 
+            "variant": 244
+        }, 
+        {
+            "buggyStatement": "if (tailZone != null) {\n\tif (tailZone.iStartRecurrence.getNameKey().equals(tailZone.iEndRecurrence.getNameKey())) {\n\t\tif (org.joda.time.tz.ZoneInfoCompiler.verbose()) {\n\t\t\tjava.lang.System.out.println((\"Fixing duplicate recurrent name key - \" + (tailZone.iStartRecurrence.getNameKey())));\n\t\t} \n\t\tif ((tailZone.iStartRecurrence.getSaveMillis()) > 0) {\n\t\t\ttailZone = new org.joda.time.tz.DateTimeZoneBuilder.DSTZone(tailZone.getID() , tailZone.iStandardOffset , tailZone.iStartRecurrence.renameAppend(\"-Summer\") , tailZone.iEndRecurrence);\n\t\t} else {\n\t\t\ttailZone = new org.joda.time.tz.DateTimeZoneBuilder.DSTZone(tailZone.getID() , tailZone.iStandardOffset , tailZone.iStartRecurrence , tailZone.iEndRecurrence.renameAppend(\"-Summer\"));\n\t\t}\n\t} \n} ", 
+            "generation": 1, 
+            "patch": "if (false) {\n\tif (tailZone.iStartRecurrence.getNameKey().equals(tailZone.iEndRecurrence.getNameKey())) {\n\t\tif (org.joda.time.tz.ZoneInfoCompiler.verbose()) {\n\t\t\tjava.lang.System.out.println((\"Fixing duplicate recurrent name key - \" + (tailZone.iStartRecurrence.getNameKey())));\n\t\t} \n\t\tif ((tailZone.iStartRecurrence.getSaveMillis()) > 0) {\n\t\t\ttailZone = new org.joda.time.tz.DateTimeZoneBuilder.DSTZone(tailZone.getID() , tailZone.iStandardOffset , tailZone.iStartRecurrence.renameAppend(\"-Summer\") , tailZone.iEndRecurrence);\n\t\t} else {\n\t\t\ttailZone = new org.joda.time.tz.DateTimeZoneBuilder.DSTZone(tailZone.getID() , tailZone.iStandardOffset , tailZone.iStartRecurrence , tailZone.iEndRecurrence.renameAppend(\"-Summer\"));\n\t\t}\n\t} \n} ", 
+            "patchLocation": {
+                "className": "org.joda.time.tz.DateTimeZoneBuilder", 
+                "line": 1457
+            }, 
+            "type": "REPLACE", 
+            "variant": 247
+        }, 
+        {
+            "buggyStatement": "if ((tailZone == null) && (i == (ruleSetCount - 1))) {\n\ttailZone = rs.buildTailZone(id);\n} ", 
+            "generation": 1, 
+            "patch": "remove", 
+            "patchLocation": {
+                "className": "org.joda.time.tz.DateTimeZoneBuilder", 
+                "line": 371
+            }, 
+            "type": "DELETE", 
+            "variant": 282
+        }, 
+        {
+            "buggyStatement": "if ((tailZone == null) && (i == (ruleSetCount - 1))) {\n\ttailZone = rs.buildTailZone(id);\n} ", 
+            "generation": 1, 
+            "patch": "if (false) {\n\ttailZone = rs.buildTailZone(id);\n} ", 
+            "patchLocation": {
+                "className": "org.joda.time.tz.DateTimeZoneBuilder", 
+                "line": 371
+            }, 
+            "type": "REPLACE", 
+            "variant": 285
+        }, 
+        {
+            "buggyStatement": "tailZone = rs.buildTailZone(id)", 
+            "generation": 1, 
+            "patch": "remove", 
+            "patchLocation": {
+                "className": "org.joda.time.tz.DateTimeZoneBuilder", 
+                "line": 372
+            }, 
+            "type": "DELETE", 
+            "variant": 286
+        }
+    ], 
     "ops": "0", 
-    "patches": "0", 
-    "programVariant": null, 
+    "patches": "22", 
+    "programVariant": "4", 
     "timeEvaluation": null, 
-    "timeTotal": "3689190", 
+    "timeTotal": "2005817", 
     "unfinishValidation": "0"
 }

@@ -1,5 +1,5 @@
 export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/math/math_82 /tmp/math_82_Kali;cd /tmp/math_82_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
-/home/tdurieux/defects4j-repair/src/python/core/../../../results/Math/82/Kali/result
+/home/tdurieux/defects4j-repair/src/python/core/../../../results/2015-august/Math/82/Kali/result
 cd /tmp/math_82_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java  -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.math.optimization.linear.SimplexSolverTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -seed 10 -maxtime 60  -scope local  -stopfirst true -flthreshold 0 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
 
 Node: `hostname`
@@ -7,21 +7,21 @@ Node: `hostname`
 Date: `date`
 ";rm -rf /tmp/math_82_Kali;
 
-End Repair Loops: Found solution
-Solution stored at: ./outputMutation//MainjGenProg-.//src/
-
+2015-08-18 18:12:50,021 INFO main - End Repair Loops: Found solution
+2015-08-18 18:12:50,021 INFO main - Solution stored at: ./outputMutation//MainjGenProg-.//src/
+2015-08-18 18:12:50,021 INFO main - 
 Number solutions:1
-f (sol): 0.0, [Variant id: 100 (SOL) , #gens: 918, #ops: 1, parent:1]
-
+2015-08-18 18:12:50,021 INFO main - f (sol): 0.0, [Variant id: 104 (SOL) , #gens: 946, #ops: 1, parent:1]
+2015-08-18 18:12:50,021 INFO main - 
 All variants:
-f 1.0, [Variant id: 1, #gens: 918, #ops: 0, parent:-]
-
+2015-08-18 18:12:50,021 INFO main - f 1.0, [Variant id: 1, #gens: 946, #ops: 0, parent:-]
+2015-08-18 18:12:50,021 INFO main - 
 Solution details
-
+2015-08-18 18:12:50,021 INFO main - 
  --SOLUTIONS DESCRIPTION--
 
  ----
-ProgramVariant 100
+ProgramVariant 104
  
 operation: DELETE
 location= org.apache.commons.math.optimization.linear.SimplexSolver
@@ -31,17 +31,17 @@ fixed statement= minValue = tableau.getEntry(0, i)
 generation= 1
 ingredientScope= -
  
-
+2015-08-18 18:12:50,021 INFO main - 
 ----stats: 
-
+2015-08-18 18:12:50,021 INFO main - 
 spaces navigation: [0]: {}
 #gen: 0
 #patches: 1
-#RightCompilation: 1731
+#RightCompilation: 1807
 #WrongCompilation: 407
-#FailingTestCaseExecution: 1732
+#FailingTestCaseExecution: 1808
 #RegressionTestExecution: 1
-#TestcasesExecutedval1: 24220
+#TestcasesExecutedval1: 25284
 #TestcasesExecutedval2: 1948
 #FailingTestCase: 14
 #RegressionTestCases: 1948
@@ -51,12 +51,12 @@ spaces navigation: [0]: {}
 #unfinishValidation: 0
 #ing {}
 #untilcompile {}
-Time Total(ms): 1108776
+2015-08-18 18:12:50,021 INFO fr.inria.main.AbstractMain - Time Total(ms): 968666
 
 
-Node: griffon-91.nancy.grid5000.fr
+Node: graphene-65.nancy.grid5000.fr
 
 
-Date: Thu Aug 13 19:22:35 CEST 2015
+Date: Tue Aug 18 20:12:50 CEST 2015
 
 

@@ -1,5 +1,5 @@
 export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/math/math_32 /tmp/math_32_Kali;cd /tmp/math_32_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
-/home/tdurieux/defects4j-repair/src/python/core/../../../results/Math/32/Kali/result
+/home/tdurieux/defects4j-repair/src/python/core/../../../results/2015-august/Math/32/Kali/result
 cd /tmp/math_32_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java  -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.math3.geometry.euclidean.threed.PolyhedronsSetTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -seed 10 -maxtime 60  -scope local  -stopfirst true -flthreshold 0 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
 
 Node: `hostname`
@@ -7,22 +7,22 @@ Node: `hostname`
 Date: `date`
 ";rm -rf /tmp/math_32_Kali;
 
-End Repair Loops: Found solution
-Solution stored at: ./outputMutation//MainjGenProg-.//src/
-
+2015-08-18 18:40:46,604 INFO main - End Repair Loops: Found solution
+2015-08-18 18:40:46,604 INFO main - Solution stored at: ./outputMutation//MainjGenProg-.//src/
+2015-08-18 18:40:46,604 INFO main - 
 Number solutions:1
-f (sol): 0.0, [Variant id: 5 (SOL) , #gens: 861, #ops: 1, parent:1]
-
+2015-08-18 18:40:46,604 INFO main - f (sol): 0.0, [Variant id: 7 (SOL) , #gens: 958, #ops: 1, parent:1]
+2015-08-18 18:40:46,604 INFO main - 
 All variants:
-f 1.0, [Variant id: 1, #gens: 861, #ops: 0, parent:-]
-
+2015-08-18 18:40:46,604 INFO main - f 1.0, [Variant id: 1, #gens: 958, #ops: 0, parent:-]
+2015-08-18 18:40:46,604 INFO main - 
 Solution details
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-
+2015-08-18 18:40:46,604 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 18:40:46,604 INFO main - 
  --SOLUTIONS DESCRIPTION--
 
  ----
-ProgramVariant 5
+ProgramVariant 7
  
 operation: REPLACE
 location= org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet
@@ -44,32 +44,32 @@ fixed statement= if (false) {
 generation= 1
 ingredientScope= -
  
-
+2015-08-18 18:40:46,604 INFO main - 
 ----stats: 
-
+2015-08-18 18:40:46,604 INFO main - 
 spaces navigation: [0]: {}
 #gen: 0
 #patches: 1
-#RightCompilation: 285
-#WrongCompilation: 1715
-#FailingTestCaseExecution: 286
+#RightCompilation: 343
+#WrongCompilation: 1899
+#FailingTestCaseExecution: 344
 #RegressionTestExecution: 1
-#TestcasesExecutedval1: 1716
-#TestcasesExecutedval2: 3572
+#TestcasesExecutedval1: 2064
+#TestcasesExecutedval2: 3502
 #FailingTestCase: 6
-#RegressionTestCases: 3572
+#RegressionTestCases: 3502
 #OfAppliedOp: 0
 #NotAppliedOp: 0
 #InmutatedGen: 0
 #unfinishValidation: 0
 #ing {}
 #untilcompile {}
-Time Total(ms): 1121320
+2015-08-18 18:40:46,604 INFO fr.inria.main.AbstractMain - Time Total(ms): 1093678
 
 
-Node: griffon-91.nancy.grid5000.fr
+Node: graphene-18.nancy.grid5000.fr
 
 
-Date: Thu Aug 13 19:41:51 CEST 2015
+Date: Tue Aug 18 20:40:47 CEST 2015
 
 

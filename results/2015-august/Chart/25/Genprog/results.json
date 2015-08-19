@@ -1,34 +1,34 @@
 {
     "FailingTestCase": "36", 
-    "FailingTestCaseExecution": "22", 
+    "FailingTestCaseExecution": "11", 
     "InmutatedGen": "0", 
     "NotAppliedOp": "0", 
-    "OfAppliedOp": "70", 
-    "RegressionTestCases": "0", 
+    "OfAppliedOp": "33", 
+    "RegressionTestCases": "1625", 
     "RegressionTestExecution": "1", 
-    "RightCompilation": "21", 
-    "WrongCompilation": "49", 
-    "date": "Fri Aug 14 06:19:18 CEST 2015\n\n", 
-    "gen": "70", 
-    "gens": "937", 
-    "node": "graphene-59.nancy.grid5000.fr", 
+    "RightCompilation": "10", 
+    "WrongCompilation": "23", 
+    "date": "Wed Aug 19 00:55:35 CEST 2015\n\n", 
+    "gen": "33", 
+    "gens": "993", 
+    "node": "graphene-53.nancy.grid5000.fr", 
     "operations": [
         {
-            "buggyStatement": "draw(g2, new java.awt.geom.Rectangle2D.Double(0 , 0 , width , height), null, info)", 
-            "generation": 70, 
-            "patch": "this.plot.addChangeListener(this)", 
+            "buggyStatement": "this.data.addObject(item, rowKey, columnKey)", 
+            "generation": 33, 
+            "patch": "remove", 
             "patchLocation": {
-                "className": "org.jfree.chart.JFreeChart", 
-                "line": 1393
+                "className": "org.jfree.data.statistics.DefaultStatisticalCategoryDataset", 
+                "line": 301
             }, 
-            "type": "REPLACE", 
-            "variant": 140
+            "type": "DELETE", 
+            "variant": 66
         }
     ], 
     "ops": "0", 
     "patches": "1", 
-    "programVariant": "140", 
-    "timeEvaluation": "55671", 
-    "timeTotal": "95046", 
+    "programVariant": "66", 
+    "timeEvaluation": "34539", 
+    "timeTotal": "72917", 
     "unfinishValidation": "0"
 }

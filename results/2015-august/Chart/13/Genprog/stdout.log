@@ -1,73 +1,65 @@
 export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/chart/chart_13 /tmp/chart_13_Genprog;cd /tmp/chart_13_Genprog;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Chart/lib/* lib/;find . -type f -name "package-info.java" -delete;
-/home/tdurieux/defects4j-repair/src/python/core/../../../results/Chart/13/Genprog/result
-cd /tmp/chart_13_Genprog;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java  -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement -location . -dependencies lib/ -failing org.jfree.chart.block.junit.BorderArrangementTests: -package org.jfree -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 4 -maxgen 1000000 -seed 10 -maxtime 165  -scope local  -stopfirst true -flthreshold 0 -population 1 -srcjavafolder source/ -srctestfolder tests/ -binjavafolder build/ -bintestfolder build-tests/;echo "
+/home/tdurieux/defects4j-repair/src/python/core/../../../results/2015-august/Chart/13/Genprog/result
+cd /tmp/chart_13_Genprog;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java  -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement -location . -dependencies lib/ -failing org.jfree.chart.block.junit.BorderArrangementTests: -package org.jfree -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 4 -maxgen 1000000 -seed 10 -maxtime 60  -scope local  -stopfirst true -flthreshold 0 -population 1 -srcjavafolder source/ -srctestfolder tests/ -binjavafolder build/ -bintestfolder build-tests/;echo "
 
 Node: `hostname`
 ";echo "
 Date: `date`
 ";rm -rf /tmp/chart_13_Genprog;
 
-End Repair Loops: Found solution
-Solution stored at: ./outputMutation//MainjGenProg-.//src/
-
+2015-08-18 23:00:43,586 INFO main - End Repair Loops: Found solution
+2015-08-18 23:00:43,586 INFO main - Solution stored at: ./outputMutation//MainjGenProg-.//src/
+2015-08-18 23:00:43,586 INFO main - 
 Number solutions:1
-f (sol): 0.0, [Variant id: 94 (SOL) , #gens: 893, #ops: 1, parent:93]
-
+2015-08-18 23:00:43,586 INFO main - f (sol): 0.0, [Variant id: 148 (SOL) , #gens: 1072, #ops: 1, parent:147]
+2015-08-18 23:00:43,586 INFO main - 
 All variants:
-f 1.0, [Variant id: 95, #gens: 894, #ops: 0, parent:-]
-
+2015-08-18 23:00:43,586 INFO main - f 1.0, [Variant id: 149, #gens: 1071, #ops: 0, parent:-]
+2015-08-18 23:00:43,586 INFO main - 
 Solution details
-
+2015-08-18 23:00:43,586 INFO main - 
  --SOLUTIONS DESCRIPTION--
 
  ----
-ProgramVariant 94
+ProgramVariant 148
  
-operation: DELETE
+operation: INSERT_BEFORE
 location= org.jfree.chart.block.BorderArrangement
-line= 482
-original statement= if ((this.leftBlock) != null) {
-	org.jfree.chart.block.RectangleConstraint c3 = new org.jfree.chart.block.RectangleConstraint(0.0 , new org.jfree.data.Range(0.0 , constraint.getWidth()) , org.jfree.chart.block.LengthConstraintType.RANGE , h[2] , null , org.jfree.chart.block.LengthConstraintType.FIXED);
-	org.jfree.chart.util.Size2D size = this.leftBlock.arrange(g2, c3);
-	w[2] = size.width;
-} 
-fixed statement= if ((this.leftBlock) != null) {
-	org.jfree.chart.block.RectangleConstraint c3 = new org.jfree.chart.block.RectangleConstraint(0.0 , new org.jfree.data.Range(0.0 , constraint.getWidth()) , org.jfree.chart.block.LengthConstraintType.RANGE , h[2] , null , org.jfree.chart.block.LengthConstraintType.FIXED);
-	org.jfree.chart.util.Size2D size = this.leftBlock.arrange(g2, c3);
-	w[2] = size.width;
-} 
-generation= 47
-ingredientScope= -
+line= 330
+original statement= h[3] = size.height
+fixed statement= this.leftBlock = null
+generation= 74
+ingredientScope= LOCAL
  
---Space: LOCAL
-org.jfree.chart.util.HashUtilities=34|,org.jfree.chart.text.TextAnchor=30|,org.jfree.data.gantt.TaskSeries=31|,org.jfree.data.general.Series=53|,org.jfree.chart.block.BlockBorder=49|,org.jfree.data.xy.OHLCDataItem=35|,org.jfree.chart.labels.ItemLabelPosition=31|,org.jfree.data.gantt.TaskSeriesCollection=166|,org.jfree.chart.util.AbstractObjectList=67|,org.jfree.chart.renderer.xy.CandlestickRenderer=197|,org.jfree.data.time.SimpleTimePeriod=39|,org.jfree.chart.util.StrokeList=27|,org.jfree.chart.block.BorderArrangement=207|,org.jfree.chart.util.RectangleInsets=136|,org.jfree.chart.labels.HighLowItemLabelGenerator=50|,org.jfree.data.xy.MatrixSeries=35|,org.jfree.chart.block.BlockContainer=60|,org.jfree.chart.util.ShapeList=27|,org.jfree.chart.util.ShapeUtilities=183|,org.jfree.chart.block.EmptyBlock=9|,org.jfree.chart.labels.StandardXYSeriesLabelGenerator=24|,org.jfree.chart.renderer.xy.AbstractXYItemRenderer=463|,org.jfree.data.gantt.Task=39|,org.jfree.chart.block.AbstractBlock=123|,org.jfree.chart.util.BooleanList=7|,org.jfree.chart.block.GridArrangement=74|,org.jfree.data.Range=63|,org.jfree.chart.util.Size2D=20|,org.jfree.data.general.AbstractDataset=24|,org.jfree.chart.block.RectangleConstraint=54|,org.jfree.chart.labels.ItemLabelAnchor=39|,org.jfree.chart.util.ObjectUtilities=105|,org.jfree.chart.util.PaintUtilities=35|,org.jfree.data.xy.DefaultOHLCDataset=50|,org.jfree.data.xy.MatrixSeriesCollection=56|,org.jfree.chart.util.SerialUtilities=211|,org.jfree.chart.renderer.AbstractRenderer=480|,org.jfree.chart.util.PaintList=30|,
-
+2015-08-18 23:00:43,586 INFO main - --Space: LOCAL
+org.jfree.chart.util.HashUtilities=34|,org.jfree.chart.text.TextAnchor=61|,org.jfree.data.gantt.TaskSeries=35|,org.jfree.data.general.Series=56|,org.jfree.chart.block.BlockBorder=52|,org.jfree.data.xy.OHLCDataItem=41|,org.jfree.chart.labels.ItemLabelPosition=35|,org.jfree.data.gantt.TaskSeriesCollection=173|,org.jfree.chart.util.AbstractObjectList=69|,org.jfree.chart.renderer.xy.CandlestickRenderer=215|,org.jfree.data.time.SimpleTimePeriod=45|,org.jfree.chart.util.StrokeList=27|,org.jfree.chart.block.BorderArrangement=225|,org.jfree.chart.util.RectangleInsets=139|,org.jfree.chart.labels.HighLowItemLabelGenerator=53|,org.jfree.data.xy.MatrixSeries=38|,org.jfree.chart.block.BlockContainer=66|,org.jfree.chart.util.ShapeList=27|,org.jfree.chart.util.ShapeUtilities=195|,org.jfree.chart.block.EmptyBlock=9|,org.jfree.chart.labels.StandardXYSeriesLabelGenerator=26|,org.jfree.chart.renderer.xy.AbstractXYItemRenderer=512|,org.jfree.data.gantt.Task=44|,org.jfree.chart.block.AbstractBlock=130|,org.jfree.chart.util.BooleanList=7|,org.jfree.chart.block.GridArrangement=85|,org.jfree.data.Range=70|,org.jfree.chart.util.Size2D=21|,org.jfree.data.general.AbstractDataset=24|,org.jfree.chart.block.RectangleConstraint=62|,org.jfree.chart.labels.ItemLabelAnchor=90|,org.jfree.chart.util.ObjectUtilities=112|,org.jfree.chart.util.PaintUtilities=36|,org.jfree.data.xy.DefaultOHLCDataset=53|,org.jfree.data.xy.MatrixSeriesCollection=57|,org.jfree.chart.util.SerialUtilities=246|,org.jfree.chart.renderer.AbstractRenderer=529|,org.jfree.chart.util.PaintList=31|,
+2015-08-18 23:00:43,586 INFO main - 
 ----stats: 
-
-spaces navigation: [33]: {(CtIfImpl| size: 49| compiles| LOCAL| REPLACE) =3, (CtIfImpl| size: 22| notcompiles| LOCAL| REPLACE) =3, (CtIfImpl| size: 207| compiles| LOCAL| INSERT_AFTER) =2, (CtReturnImpl| size: 63| compiles| LOCAL| INSERT_AFTER) =1, (CtInvocationImpl| size: 207| compiles| LOCAL| INSERT_AFTER) =2, (CtLocalVariableImpl| size: 61| compiles| LOCAL| REPLACE) =1, (CtLocalVariableImpl| size: 61| alreadyanalyzed| LOCAL| REPLACE) =1, (CtReturnImpl| size: 20| compiles| LOCAL| INSERT_AFTER) =1, (CtAssignmentImpl| size: 207| notcompiles| LOCAL| INSERT_AFTER) =1, (CtAssignmentImpl| size: 207| compiles| LOCAL| INSERT_AFTER) =2, (CtAssignmentImpl| size: 61| notcompiles| LOCAL| REPLACE) =1, (CtLocalVariableImpl| size: 207| compiles| LOCAL| INSERT_AFTER) =1, (CtLocalVariableImpl| size: 207| notcompiles| LOCAL| INSERT_BEFORE) =2, (CtReturnImpl| size: 54| compiles| LOCAL| INSERT_AFTER) =1, (CtLocalVariableImpl| size: 207| notcompiles| LOCAL| INSERT_AFTER) =2, (CtReturnImpl| size: 123| compiles| LOCAL| INSERT_AFTER) =3, (CtAssignmentImpl| size: 61| alreadyanalyzed| LOCAL| REPLACE) =1, (CtAssignmentImpl| size: 61| compiles| LOCAL| REPLACE) =2, (CtReturnImpl| size: 35| compiles| LOCAL| REPLACE) =1, (CtLocalVariableImpl| size: 207| alreadyanalyzed| LOCAL| INSERT_BEFORE) =1, (CtIfImpl| size: 25| compiles| LOCAL| REPLACE) =1, (CtIfImpl| size: 25| alreadyanalyzed| LOCAL| REPLACE) =2, (CtIfImpl| size: 25| notcompiles| LOCAL| REPLACE) =6, (CtIfImpl| size: 22| compiles| LOCAL| REPLACE) =1, (CtLocalVariableImpl| size: 20| compiles| LOCAL| REPLACE) =1, (CtIfImpl| size: 22| alreadyanalyzed| LOCAL| REPLACE) =1, (CtAssignmentImpl| size: 207| compiles| LOCAL| INSERT_BEFORE) =3, (CtInvocationImpl| size: 207| notcompiles| LOCAL| INSERT_BEFORE) =2, (CtInvocationImpl| size: 207| compiles| LOCAL| INSERT_BEFORE) =1, (CtReturnImpl| size: 3| compiles| LOCAL| REPLACE) =1, (CtLocalVariableImpl| size: 207| compiles| LOCAL| INSERT_BEFORE) =3, (CtAssignmentImpl| size: 31| compiles| LOCAL| REPLACE) =1, (CtAssignmentImpl| size: 207| notcompiles| LOCAL| INSERT_BEFORE) =2}
-#gen: 47
+2015-08-18 23:00:43,586 INFO main - 
+spaces navigation: [44]: {(CtIfImpl| size: 225| compiles| LOCAL| INSERT_BEFORE) =5, (CtReturnImpl| size: 139| compiles| LOCAL| INSERT_BEFORE) =1, (CtInvocationImpl| size: 18| notcompiles| LOCAL| REPLACE) =2, (CtIfImpl| size: 22| notcompiles| LOCAL| REPLACE) =1, (CtLocalVariableImpl| size: 225| notcompiles| LOCAL| INSERT_AFTER) =7, (CtReturnImpl| size: 3| notcompiles| LOCAL| REPLACE) =1, (CtReturnImpl| size: 9| compiles| LOCAL| INSERT_BEFORE) =1, (CtLocalVariableImpl| size: 225| compiles| LOCAL| INSERT_BEFORE) =3, (CtLocalVariableImpl| size: 130| compiles| LOCAL| INSERT_BEFORE) =1, (CtIfImpl| size: 225| compiles| LOCAL| INSERT_AFTER) =4, (CtLocalVariableImpl| size: 61| compiles| LOCAL| REPLACE) =4, (CtLocalVariableImpl| size: 130| notcompiles| LOCAL| INSERT_AFTER) =1, (CtReturnImpl| size: 225| compiles| LOCAL| INSERT_BEFORE) =1, (CtAssignmentImpl| size: 225| notcompiles| LOCAL| INSERT_BEFORE) =8, (CtReturnImpl| size: 32| notcompiles| LOCAL| REPLACE) =1, (CtIfImpl| size: 60| compiles| LOCAL| REPLACE) =2, (CtReturnImpl| size: 139| notcompiles| LOCAL| INSERT_BEFORE) =1, (CtLocalVariableImpl| size: 33| alreadyanalyzed| LOCAL| REPLACE) =2, (CtLocalVariableImpl| size: 33| compiles| LOCAL| REPLACE) =1, (CtInvocationImpl| size: 225| compiles| LOCAL| INSERT_BEFORE) =2, (CtAssignmentImpl| size: 61| notcompiles| LOCAL| REPLACE) =14, (CtReturnImpl| size: 32| compiles| LOCAL| REPLACE) =2, (CtLocalVariableImpl| size: 225| compiles| LOCAL| INSERT_AFTER) =5, (CtLocalVariableImpl| size: 225| alreadyanalyzed| LOCAL| INSERT_AFTER) =1, (CtIfImpl| size: 225| notcompiles| LOCAL| INSERT_BEFORE) =4, (CtAssignmentImpl| size: 61| alreadyanalyzed| LOCAL| REPLACE) =11, (CtAssignmentImpl| size: 61| compiles| LOCAL| REPLACE) =3, (CtReturnImpl| size: 9| alreadyanalyzed| LOCAL| INSERT_BEFORE) =2, (CtReturnImpl| size: 130| notcompiles| LOCAL| INSERT_BEFORE) =1, (CtInvocationImpl| size: 18| compiles| LOCAL| REPLACE) =1, (CtIfImpl| size: 22| compiles| LOCAL| REPLACE) =1, (CtInvocationImpl| size: 225| compiles| LOCAL| INSERT_AFTER) =2, (CtReturnImpl| size: 32| alreadyanalyzed| LOCAL| REPLACE) =1, (CtReturnImpl| size: 139| compiles| LOCAL| INSERT_AFTER) =2, (CtInvocationImpl| size: 18| alreadyanalyzed| LOCAL| REPLACE) =27, (CtReturnImpl| size: 130| compiles| LOCAL| INSERT_BEFORE) =2, (CtLocalVariableImpl| size: 130| notcompiles| LOCAL| INSERT_BEFORE) =1, (CtAssignmentImpl| size: 225| compiles| LOCAL| INSERT_BEFORE) =9, (CtIfImpl| size: 225| notcompiles| LOCAL| INSERT_AFTER) =3, (CtReturnImpl| size: 3| compiles| LOCAL| REPLACE) =1, (CtReturnImpl| size: 9| notcompiles| LOCAL| INSERT_BEFORE) =4, (CtReturnImpl| size: 225| compiles| LOCAL| INSERT_AFTER) =2, (CtLocalVariableImpl| size: 225| notcompiles| LOCAL| INSERT_BEFORE) =2, (CtLocalVariableImpl| size: 130| compiles| LOCAL| INSERT_AFTER) =1}
+#gen: 74
 #patches: 1
-#RightCompilation: 21
-#WrongCompilation: 26
-#FailingTestCaseExecution: 22
+#RightCompilation: 38
+#WrongCompilation: 36
+#FailingTestCaseExecution: 39
 #RegressionTestExecution: 1
-#TestcasesExecutedval1: 110
-#TestcasesExecutedval2: 0
+#TestcasesExecutedval1: 195
+#TestcasesExecutedval2: 1799
 #FailingTestCase: 5
-#RegressionTestCases: 0
-#OfAppliedOp: 47
+#RegressionTestCases: 1799
+#OfAppliedOp: 74
 #NotAppliedOp: 0
-#InmutatedGen: 0
+#InmutatedGen: 1
 #unfinishValidation: 0
-#ing {CtLocalVariableImpl=9, CtAssignmentImpl=13, CtReturnImpl=11, CtInvocationImpl=4, CtIfImpl=10}
-#untilcompile {1=21, 2=5, 3=4, 5=1, 9=1}
-Time Evolution(ms): 23010
-Time Total(ms): 60615
+#ing {CtLocalVariableImpl=18, CtAssignmentImpl=18, CtReturnImpl=15, CtInvocationImpl=7, CtIfImpl=17}
+#untilcompile {1=27, 2=16, 18=1, 3=7, 4=3, 7=1, 22=1, 12=1}
+2015-08-18 23:00:43,586 INFO main - Time Evolution(ms): 41085
+2015-08-18 23:00:43,586 INFO fr.inria.main.AbstractMain - Time Total(ms): 80483
 
 
-Node: graphene-57.nancy.grid5000.fr
+Node: graphene-76.nancy.grid5000.fr
 
 
-Date: Fri Aug 14 06:24:51 CEST 2015
+Date: Wed Aug 19 01:00:43 CEST 2015
 
 

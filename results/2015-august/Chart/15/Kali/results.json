@@ -1,17 +1,17 @@
 {
     "FailingTestCase": "3", 
-    "FailingTestCaseExecution": "1863", 
+    "FailingTestCaseExecution": "2309", 
     "InmutatedGen": "0", 
     "NotAppliedOp": "0", 
     "OfAppliedOp": "0", 
-    "RegressionTestCases": "0", 
+    "RegressionTestCases": "1790", 
     "RegressionTestExecution": "47", 
-    "RightCompilation": "1862", 
+    "RightCompilation": "2308", 
     "WrongCompilation": "358", 
-    "date": "Thu Aug 13 21:07:43 CEST 2015\n\n", 
+    "date": "Wed Aug 19 01:20:35 CEST 2015\n\n", 
     "gen": "0", 
-    "gens": "870", 
-    "node": "graphene-60.nancy.grid5000.fr", 
+    "gens": "1044", 
+    "node": "graphene-73.nancy.grid5000.fr", 
     "operations": [
         {
             "buggyStatement": "org.jfree.chart.util.RectangleInsets insets = getInsets()", 
@@ -209,7 +209,7 @@
                 "line": 272
             }, 
             "type": "INSERT_BEFORE", 
-            "variant": 53
+            "variant": 55
         }, 
         {
             "buggyStatement": "org.jfree.chart.plot.PiePlotState state = initialise(g2, plotArea, this, null, info)", 
@@ -220,7 +220,7 @@
                 "line": 280
             }, 
             "type": "INSERT_BEFORE", 
-            "variant": 57
+            "variant": 59
         }, 
         {
             "buggyStatement": "org.jfree.chart.entity.EntityCollection e = drawTitle(this.title, g2, nonTitleArea, (entities != null))", 
@@ -231,7 +231,7 @@
                 "line": 1195
             }, 
             "type": "INSERT_BEFORE", 
-            "variant": 111
+            "variant": 113
         }, 
         {
             "buggyStatement": "if (e != null) {\n\tentities.addAll(e);\n} ", 
@@ -242,7 +242,7 @@
                 "line": 1197
             }, 
             "type": "INSERT_BEFORE", 
-            "variant": 113
+            "variant": 115
         }, 
         {
             "buggyStatement": "org.jfree.chart.title.Title currentTitle = ((org.jfree.chart.title.Title)(iterator.next()))", 
@@ -253,7 +253,7 @@
                 "line": 1204
             }, 
             "type": "INSERT_BEFORE", 
-            "variant": 379
+            "variant": 403
         }, 
         {
             "buggyStatement": "org.jfree.chart.entity.EntityCollection e = drawTitle(currentTitle, g2, nonTitleArea, (entities != null))", 
@@ -264,7 +264,7 @@
                 "line": 1205
             }, 
             "type": "INSERT_BEFORE", 
-            "variant": 381
+            "variant": 405
         }, 
         {
             "buggyStatement": "if (e != null) {\n\tentities.addAll(e);\n} ", 
@@ -275,7 +275,7 @@
                 "line": 1207
             }, 
             "type": "INSERT_BEFORE", 
-            "variant": 383
+            "variant": 407
         }, 
         {
             "buggyStatement": "notifyListeners(new org.jfree.chart.event.ChartProgressEvent(this , this , org.jfree.chart.event.ChartProgressEvent.DRAWING_STARTED , 0))", 
@@ -286,7 +286,7 @@
                 "line": 1136
             }, 
             "type": "INSERT_BEFORE", 
-            "variant": 657
+            "variant": 715
         }, 
         {
             "buggyStatement": "if (info != null) {\n\tinfo.clear();\n\tinfo.setChartArea(chartArea);\n} ", 
@@ -297,7 +297,7 @@
                 "line": 1140
             }, 
             "type": "INSERT_BEFORE", 
-            "variant": 659
+            "variant": 717
         }, 
         {
             "buggyStatement": "java.awt.Shape savedClip = g2.getClip()", 
@@ -308,7 +308,7 @@
                 "line": 1146
             }, 
             "type": "INSERT_BEFORE", 
-            "variant": 663
+            "variant": 721
         }, 
         {
             "buggyStatement": "g2.clip(chartArea)", 
@@ -319,7 +319,7 @@
                 "line": 1147
             }, 
             "type": "INSERT_BEFORE", 
-            "variant": 665
+            "variant": 723
         }, 
         {
             "buggyStatement": "g2.addRenderingHints(this.renderingHints)", 
@@ -330,7 +330,7 @@
                 "line": 1149
             }, 
             "type": "INSERT_BEFORE", 
-            "variant": 667
+            "variant": 725
         }, 
         {
             "buggyStatement": "if ((this.backgroundPaint) != null) {\n\tg2.setPaint(this.backgroundPaint);\n\tg2.fill(chartArea);\n} ", 
@@ -341,7 +341,7 @@
                 "line": 1152
             }, 
             "type": "INSERT_BEFORE", 
-            "variant": 669
+            "variant": 727
         }, 
         {
             "buggyStatement": "g2.setPaint(this.backgroundPaint)", 
@@ -352,7 +352,7 @@
                 "line": 1153
             }, 
             "type": "INSERT_BEFORE", 
-            "variant": 673
+            "variant": 731
         }, 
         {
             "buggyStatement": "g2.fill(chartArea)", 
@@ -363,7 +363,7 @@
                 "line": 1154
             }, 
             "type": "INSERT_BEFORE", 
-            "variant": 675
+            "variant": 733
         }, 
         {
             "buggyStatement": "if ((this.backgroundImage) != null) {\n\tjava.awt.Composite originalComposite = g2.getComposite();\n\tg2.setComposite(java.awt.AlphaComposite.getInstance(java.awt.AlphaComposite.SRC_OVER, this.backgroundImageAlpha));\n\tjava.awt.geom.Rectangle2D dest = new java.awt.geom.Rectangle2D.Double(0.0 , 0.0 , this.backgroundImage.getWidth(null) , this.backgroundImage.getHeight(null));\n\torg.jfree.chart.util.Align.align(dest, chartArea, this.backgroundImageAlignment);\n\tg2.drawImage(this.backgroundImage, ((int)(dest.getX())), ((int)(dest.getY())), ((int)(dest.getWidth())), ((int)(dest.getHeight())), null);\n\tg2.setComposite(originalComposite);\n} ", 
@@ -374,7 +374,7 @@
                 "line": 1157
             }, 
             "type": "INSERT_BEFORE", 
-            "variant": 677
+            "variant": 735
         }, 
         {
             "buggyStatement": "if (isBorderVisible()) {\n\tjava.awt.Paint paint = getBorderPaint();\n\tjava.awt.Stroke stroke = getBorderStroke();\n\tif ((paint != null) && (stroke != null)) {\n\t\tjava.awt.geom.Rectangle2D borderArea = new java.awt.geom.Rectangle2D.Double(chartArea.getX() , chartArea.getY() , ((chartArea.getWidth()) - 1.0) , ((chartArea.getHeight()) - 1.0));\n\t\tg2.setPaint(paint);\n\t\tg2.setStroke(stroke);\n\t\tg2.draw(borderArea);\n\t} \n} ", 
@@ -385,7 +385,7 @@
                 "line": 1171
             }, 
             "type": "INSERT_BEFORE", 
-            "variant": 681
+            "variant": 741
         }, 
         {
             "buggyStatement": "java.awt.geom.Rectangle2D nonTitleArea = new java.awt.geom.Rectangle2D.Double()", 
@@ -396,7 +396,7 @@
                 "line": 1186
             }, 
             "type": "INSERT_BEFORE", 
-            "variant": 685
+            "variant": 745
         }, 
         {
             "buggyStatement": "nonTitleArea.setRect(chartArea)", 
@@ -407,7 +407,7 @@
                 "line": 1187
             }, 
             "type": "INSERT_BEFORE", 
-            "variant": 687
+            "variant": 747
         }, 
         {
             "buggyStatement": "this.padding.trim(nonTitleArea)", 
@@ -418,7 +418,7 @@
                 "line": 1188
             }, 
             "type": "INSERT_BEFORE", 
-            "variant": 689
+            "variant": 749
         }, 
         {
             "buggyStatement": "org.jfree.chart.entity.EntityCollection entities = null", 
@@ -429,7 +429,7 @@
                 "line": 1190
             }, 
             "type": "INSERT_BEFORE", 
-            "variant": 691
+            "variant": 751
         }, 
         {
             "buggyStatement": "if (info != null) {\n\tentities = info.getEntityCollection();\n} ", 
@@ -440,7 +440,7 @@
                 "line": 1191
             }, 
             "type": "INSERT_BEFORE", 
-            "variant": 693
+            "variant": 753
         }, 
         {
             "buggyStatement": "if ((this.title) != null) {\n\torg.jfree.chart.entity.EntityCollection e = drawTitle(this.title, g2, nonTitleArea, (entities != null));\n\tif (e != null) {\n\t\tentities.addAll(e);\n\t} \n} ", 
@@ -451,7 +451,7 @@
                 "line": 1194
             }, 
             "type": "INSERT_BEFORE", 
-            "variant": 697
+            "variant": 757
         }, 
         {
             "buggyStatement": "java.util.Iterator iterator = this.subtitles.iterator()", 
@@ -462,7 +462,7 @@
                 "line": 1202
             }, 
             "type": "INSERT_BEFORE", 
-            "variant": 701
+            "variant": 761
         }, 
         {
             "buggyStatement": "while (iterator.hasNext()) {\n\torg.jfree.chart.title.Title currentTitle = ((org.jfree.chart.title.Title)(iterator.next()));\n\torg.jfree.chart.entity.EntityCollection e = drawTitle(currentTitle, g2, nonTitleArea, (entities != null));\n\tif (e != null) {\n\t\tentities.addAll(e);\n\t} \n}", 
@@ -473,7 +473,7 @@
                 "line": 1203
             }, 
             "type": "INSERT_BEFORE", 
-            "variant": 703
+            "variant": 765
         }, 
         {
             "buggyStatement": "java.awt.geom.Rectangle2D plotArea = nonTitleArea", 
@@ -484,7 +484,7 @@
                 "line": 1212
             }, 
             "type": "INSERT_BEFORE", 
-            "variant": 705
+            "variant": 767
         }, 
         {
             "buggyStatement": "org.jfree.chart.plot.PlotRenderingInfo plotInfo = null", 
@@ -495,7 +495,7 @@
                 "line": 1215
             }, 
             "type": "INSERT_BEFORE", 
-            "variant": 707
+            "variant": 769
         }, 
         {
             "buggyStatement": "if (info != null) {\n\tplotInfo = info.getPlotInfo();\n} ", 
@@ -506,7 +506,7 @@
                 "line": 1216
             }, 
             "type": "INSERT_BEFORE", 
-            "variant": 709
+            "variant": 771
         }, 
         {
             "buggyStatement": "this.plot.draw(g2, plotArea, anchor, null, plotInfo)", 
@@ -517,7 +517,7 @@
                 "line": 1219
             }, 
             "type": "DELETE", 
-            "variant": 712
+            "variant": 774
         }, 
         {
             "buggyStatement": "this.plot.draw(g2, plotArea, anchor, null, plotInfo)", 
@@ -528,13 +528,13 @@
                 "line": 1219
             }, 
             "type": "INSERT_BEFORE", 
-            "variant": 713
+            "variant": 775
         }
     ], 
     "ops": "0", 
     "patches": "47", 
     "programVariant": "15", 
     "timeEvaluation": null, 
-    "timeTotal": "1943351", 
+    "timeTotal": "2526935", 
     "unfinishValidation": "0"
 }

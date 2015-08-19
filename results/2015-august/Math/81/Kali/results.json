@@ -1,17 +1,17 @@
 {
     "FailingTestCase": "17", 
-    "FailingTestCaseExecution": "1715", 
+    "FailingTestCaseExecution": "1825", 
     "InmutatedGen": "0", 
     "NotAppliedOp": "0", 
     "OfAppliedOp": "0", 
     "RegressionTestCases": "1993", 
     "RegressionTestExecution": "19", 
-    "RightCompilation": "1714", 
+    "RightCompilation": "1824", 
     "WrongCompilation": "356", 
-    "date": "Thu Aug 13 19:58:55 CEST 2015\n\n", 
+    "date": "Tue Aug 18 20:49:13 CEST 2015\n\n", 
     "gen": "0", 
-    "gens": "904", 
-    "node": "griffon-8.nancy.grid5000.fr", 
+    "gens": "944", 
+    "node": "graphene-61.nancy.grid5000.fr", 
     "operations": [
         {
             "buggyStatement": "tType = -5", 
@@ -23,6 +23,17 @@
             }, 
             "type": "INSERT_BEFORE", 
             "variant": 5
+        }, 
+        {
+            "buggyStatement": "double s = 0.25 * (dMin)", 
+            "generation": 1, 
+            "patch": "if (true)\n\treturn ;\n", 
+            "patchLocation": {
+                "className": "org.apache.commons.math.linear.EigenDecompositionImpl", 
+                "line": 1527
+            }, 
+            "type": "INSERT_BEFORE", 
+            "variant": 7
         }, 
         {
             "buggyStatement": "final int np = nn - (2 * (pingPong))", 
@@ -78,6 +89,17 @@
             }, 
             "type": "INSERT_BEFORE", 
             "variant": 17
+        }, 
+        {
+            "buggyStatement": "if (((work[(np - 8)]) > b2) || ((work[(np - 4)]) > b1)) {\n\treturn ;\n} ", 
+            "generation": 1, 
+            "patch": "if (true) {\n\treturn ;\n} ", 
+            "patchLocation": {
+                "className": "org.apache.commons.math.linear.EigenDecompositionImpl", 
+                "line": 1534
+            }, 
+            "type": "REPLACE", 
+            "variant": 18
         }, 
         {
             "buggyStatement": "double a2 = ((work[(np - 8)]) / b2) * (1 + ((work[(np - 4)]) / b1))", 
@@ -154,7 +176,7 @@
                 "line": 1477
             }, 
             "type": "DELETE", 
-            "variant": 38
+            "variant": 40
         }, 
         {
             "buggyStatement": "b2 = (work[(nn - 5)]) / (work[(nn - 7)])", 
@@ -165,7 +187,7 @@
                 "line": 1481
             }, 
             "type": "DELETE", 
-            "variant": 44
+            "variant": 46
         }, 
         {
             "buggyStatement": "if (a2 < cnst1) {\n\ts = (gam * (1 - (java.lang.Math.sqrt(a2)))) / (1 + a2);\n} ", 
@@ -176,7 +198,7 @@
                 "line": 1517
             }, 
             "type": "DELETE", 
-            "variant": 88
+            "variant": 106
         }, 
         {
             "buggyStatement": "if (a2 < cnst1) {\n\ts = (gam * (1 - (java.lang.Math.sqrt(a2)))) / (1 + a2);\n} ", 
@@ -187,7 +209,7 @@
                 "line": 1517
             }, 
             "type": "REPLACE", 
-            "variant": 91
+            "variant": 109
         }, 
         {
             "buggyStatement": "s = (gam * (1 - (java.lang.Math.sqrt(a2)))) / (1 + a2)", 
@@ -198,13 +220,13 @@
                 "line": 1518
             }, 
             "type": "DELETE", 
-            "variant": 92
+            "variant": 110
         }
     ], 
     "ops": "0", 
-    "patches": "17", 
+    "patches": "19", 
     "programVariant": "5", 
     "timeEvaluation": null, 
-    "timeTotal": "3281092", 
+    "timeTotal": "3128522", 
     "unfinishValidation": "0"
 }

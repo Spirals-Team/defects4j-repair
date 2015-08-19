@@ -1,22 +1,34 @@
 {
     "FailingTestCase": "8", 
-    "FailingTestCaseExecution": "850", 
-    "InmutatedGen": "2360", 
+    "FailingTestCaseExecution": "13", 
+    "InmutatedGen": "19", 
     "NotAppliedOp": "0", 
-    "OfAppliedOp": "5309", 
-    "RegressionTestCases": "1", 
-    "RegressionTestExecution": "24", 
-    "RightCompilation": "849", 
-    "WrongCompilation": "4460", 
-    "date": "Sun Aug 16 10:18:27 CEST 2015\n\n", 
-    "gen": "5309", 
-    "gens": "1029", 
-    "node": "graphite-1.nancy.grid5000.fr", 
-    "operations": [], 
+    "OfAppliedOp": "22", 
+    "RegressionTestCases": "3949", 
+    "RegressionTestExecution": "1", 
+    "RightCompilation": "12", 
+    "WrongCompilation": "10", 
+    "date": "Tue Aug 18 19:04:26 CEST 2015\n\n", 
+    "gen": "22", 
+    "gens": "1025", 
+    "node": "graphene-7.nancy.grid5000.fr", 
+    "operations": [
+        {
+            "buggyStatement": "if (org.joda.time.tz.ZoneInfoCompiler.verbose()) {\n\tjava.lang.System.out.println((\"Fixing duplicate recurrent name key - \" + (tailZone.iStartRecurrence.getNameKey())));\n} ", 
+            "generation": 22, 
+            "patch": "remove", 
+            "patchLocation": {
+                "className": "org.joda.time.tz.DateTimeZoneBuilder", 
+                "line": 1460
+            }, 
+            "type": "DELETE", 
+            "variant": 44
+        }
+    ], 
     "ops": "0", 
-    "patches": "0", 
-    "programVariant": null, 
-    "timeEvaluation": "9960740", 
-    "timeTotal": "10008062", 
+    "patches": "1", 
+    "programVariant": "44", 
+    "timeEvaluation": "34628", 
+    "timeTotal": "77251", 
     "unfinishValidation": "0"
 }

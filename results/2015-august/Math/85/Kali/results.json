@@ -1,17 +1,17 @@
 {
     "FailingTestCase": "13", 
-    "FailingTestCaseExecution": "1722", 
+    "FailingTestCaseExecution": "1798", 
     "InmutatedGen": "0", 
     "NotAppliedOp": "0", 
     "OfAppliedOp": "0", 
     "RegressionTestCases": "1875", 
     "RegressionTestExecution": "3", 
-    "RightCompilation": "1721", 
+    "RightCompilation": "1797", 
     "WrongCompilation": "469", 
-    "date": "Thu Aug 13 19:36:50 CEST 2015\n\n", 
+    "date": "Tue Aug 18 20:25:32 CEST 2015\n\n", 
     "gen": "0", 
-    "gens": "947", 
-    "node": "griffon-20.nancy.grid5000.fr", 
+    "gens": "973", 
+    "node": "graphene-70.nancy.grid5000.fr", 
     "operations": [
         {
             "buggyStatement": "throw new org.apache.commons.math.ConvergenceException((\"number of iterations={0}, maximum iterations={1}, \" + (\"initial={2}, lower bound={3}, upper bound={4}, final a value={5}, \" + \"final b value={6}, f(a)={7}, f(b)={8}\")) , numIterations , maximumIterations , initial , lowerBound , upperBound , a , b , fa , fb)", 
@@ -33,7 +33,7 @@
                 "line": 198
             }, 
             "type": "DELETE", 
-            "variant": 100
+            "variant": 108
         }, 
         {
             "buggyStatement": "if ((fa * fb) >= 0.0) {\n\tthrow new org.apache.commons.math.ConvergenceException((\"number of iterations={0}, maximum iterations={1}, \" + (\"initial={2}, lower bound={3}, upper bound={4}, final a value={5}, \" + \"final b value={6}, f(a)={7}, f(b)={8}\")) , numIterations , maximumIterations , initial , lowerBound , upperBound , a , b , fa , fb);\n} ", 
@@ -44,13 +44,13 @@
                 "line": 198
             }, 
             "type": "REPLACE", 
-            "variant": 103
+            "variant": 111
         }
     ], 
     "ops": "0", 
     "patches": "3", 
     "programVariant": "2", 
     "timeEvaluation": null, 
-    "timeTotal": "2032000", 
+    "timeTotal": "1882750", 
     "unfinishValidation": "0"
 }

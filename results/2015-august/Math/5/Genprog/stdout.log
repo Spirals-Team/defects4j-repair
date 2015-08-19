@@ -1,65 +1,65 @@
 export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/math/math_5 /tmp/math_5_Genprog;cd /tmp/math_5_Genprog;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
-/home/tdurieux/defects4j-repair/src/python/core/../../../results/Math/5/Genprog/result
-cd /tmp/math_5_Genprog;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java  -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement -location . -dependencies lib/ -failing org.apache.commons.math3.complex.ComplexTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -seed 10 -maxtime 165  -scope local  -stopfirst true -flthreshold 0 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
+/home/tdurieux/defects4j-repair/src/python/core/../../../results/2015-august/Math/5/Genprog/result
+cd /tmp/math_5_Genprog;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java  -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement -location . -dependencies lib/ -failing org.apache.commons.math3.complex.ComplexTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -seed 10 -maxtime 60  -scope local  -stopfirst true -flthreshold 0 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
 
 Node: `hostname`
 ";echo "
 Date: `date`
 ";rm -rf /tmp/math_5_Genprog;
 
-End Repair Loops: Found solution
-Solution stored at: ./outputMutation//MainjGenProg-.//src/
-
+2015-08-18 21:07:21,143 INFO main - End Repair Loops: Found solution
+2015-08-18 21:07:21,143 INFO main - Solution stored at: ./outputMutation//MainjGenProg-.//src/
+2015-08-18 21:07:21,143 INFO main - 
 Number solutions:1
-f (sol): 0.0, [Variant id: 174 (SOL) , #gens: 916, #ops: 1, parent:173]
-
+2015-08-18 21:07:21,143 INFO main - f (sol): 0.0, [Variant id: 736 (SOL) , #gens: 945, #ops: 1, parent:735]
+2015-08-18 21:07:21,143 INFO main - 
 All variants:
-f 1.0, [Variant id: 175, #gens: 916, #ops: 0, parent:-]
-
+2015-08-18 21:07:21,143 INFO main - f 1.0, [Variant id: 737, #gens: 945, #ops: 0, parent:-]
+2015-08-18 21:07:21,143 INFO main - 
 Solution details
-
+2015-08-18 21:07:21,143 INFO main - 
  --SOLUTIONS DESCRIPTION--
 
  ----
-ProgramVariant 174
+ProgramVariant 736
  
 operation: REPLACE
 location= org.apache.commons.math3.complex.Complex
 line= 305
 original statement= return org.apache.commons.math3.complex.Complex.NaN
 fixed statement= return org.apache.commons.math3.complex.Complex.INF
-generation= 87
+generation= 368
 ingredientScope= LOCAL
  
---Space: LOCAL
-org.apache.commons.math3.util.ArithmeticUtils=308|,org.apache.commons.math3.util.OpenIntToFieldHashMap=174|,org.apache.commons.math3.ode.sampling.StepNormalizer=51|,org.apache.commons.math3.util.FastMathLiteralArrays=6|,org.apache.commons.math3.util.FastMath=1497|,org.apache.commons.math3.ode.ExpandableStatefulODE=62|,org.apache.commons.math3.fraction.Fraction=150|,org.apache.commons.math3.ode.nonstiff.RungeKuttaStepInterpolator=45|,org.apache.commons.math3.fraction.FractionField=7|,org.apache.commons.math3.ode.nonstiff.EmbeddedRungeKuttaIntegrator=101|,org.apache.commons.math3.ode.AbstractIntegrator=103|,org.apache.commons.math3.util.Incrementor=18|,org.apache.commons.math3.ode.EquationsMapper=11|,org.apache.commons.math3.util.Precision=79|,org.apache.commons.math3.ode.sampling.StepNormalizerOutputTestBase=50|,org.apache.commons.math3.ode.nonstiff.AdaptiveStepsizeIntegrator=75|,org.apache.commons.math3.complex.Complex=196|,org.apache.commons.math3.ode.sampling.AbstractStepInterpolator=169|,org.apache.commons.math3.ode.nonstiff.GraggBulirschStoerStepInterpolator=128|,org.apache.commons.math3.ode.sampling.StepNormalizerBounds=2|,org.apache.commons.math3.ode.nonstiff.GraggBulirschStoerIntegrator=287|,
-
+2015-08-18 21:07:21,143 INFO main - --Space: LOCAL
+org.apache.commons.math3.util.ArithmeticUtils=317|,org.apache.commons.math3.util.OpenIntToFieldHashMap=184|,org.apache.commons.math3.ode.sampling.StepNormalizer=52|,org.apache.commons.math3.util.FastMathLiteralArrays=6|,org.apache.commons.math3.util.FastMath=1538|,org.apache.commons.math3.ode.ExpandableStatefulODE=64|,org.apache.commons.math3.fraction.Fraction=151|,org.apache.commons.math3.ode.nonstiff.RungeKuttaStepInterpolator=45|,org.apache.commons.math3.fraction.FractionField=7|,org.apache.commons.math3.ode.nonstiff.EmbeddedRungeKuttaIntegrator=102|,org.apache.commons.math3.ode.AbstractIntegrator=107|,org.apache.commons.math3.util.Incrementor=18|,org.apache.commons.math3.ode.EquationsMapper=11|,org.apache.commons.math3.util.Precision=97|,org.apache.commons.math3.ode.sampling.StepNormalizerOutputTestBase=50|,org.apache.commons.math3.ode.nonstiff.AdaptiveStepsizeIntegrator=78|,org.apache.commons.math3.complex.Complex=200|,org.apache.commons.math3.ode.sampling.AbstractStepInterpolator=170|,org.apache.commons.math3.ode.nonstiff.GraggBulirschStoerStepInterpolator=128|,org.apache.commons.math3.ode.sampling.StepNormalizerBounds=2|,org.apache.commons.math3.ode.nonstiff.GraggBulirschStoerIntegrator=305|,
+2015-08-18 21:07:21,143 INFO main - 
 ----stats: 
-
-spaces navigation: [20]: {(CtReturnImpl| size: 96| notcompiles| LOCAL| REPLACE) =17, (CtIfImpl| size: 196| notcompiles| LOCAL| INSERT_BEFORE) =4, (CtReturnImpl| size: 96| compiles| LOCAL| REPLACE) =17, (CtLocalVariableImpl| size: 196| compiles| LOCAL| INSERT_AFTER) =2, (CtReturnImpl| size: 196| alreadyanalyzed| LOCAL| INSERT_BEFORE) =3, (CtIfImpl| size: 55| notcompiles| LOCAL| REPLACE) =3, (CtIfImpl| size: 55| alreadyanalyzed| LOCAL| REPLACE) =2, (CtIfImpl| size: 196| alreadyanalyzed| LOCAL| INSERT_BEFORE) =1, (CtReturnImpl| size: 196| notcompiles| LOCAL| INSERT_AFTER) =3, (CtLocalVariableImpl| size: 196| notcompiles| LOCAL| INSERT_AFTER) =1, (CtReturnImpl| size: 196| notcompiles| LOCAL| INSERT_BEFORE) =11, (CtIfImpl| size: 196| notcompiles| LOCAL| INSERT_AFTER) =3, (CtIfImpl| size: 55| compiles| LOCAL| REPLACE) =6, (CtLocalVariableImpl| size: 196| compiles| LOCAL| INSERT_BEFORE) =1, (CtIfImpl| size: 196| compiles| LOCAL| INSERT_BEFORE) =7, (CtIfImpl| size: 196| compiles| LOCAL| INSERT_AFTER) =9, (CtReturnImpl| size: 196| alreadyanalyzed| LOCAL| INSERT_AFTER) =1, (CtReturnImpl| size: 196| compiles| LOCAL| INSERT_AFTER) =8, (CtReturnImpl| size: 196| compiles| LOCAL| INSERT_BEFORE) =16, (CtReturnImpl| size: 96| alreadyanalyzed| LOCAL| REPLACE) =44}
-#gen: 87
+2015-08-18 21:07:21,143 INFO main - 
+spaces navigation: [23]: {(CtLocalVariableImpl| size: 200| notcompiles| LOCAL| INSERT_AFTER) =4, (CtIfImpl| size: 200| compiles| LOCAL| INSERT_AFTER) =26, (CtReturnImpl| size: 200| compiles| LOCAL| INSERT_AFTER) =51, (CtReturnImpl| size: 96| notcompiles| LOCAL| REPLACE) =34, (CtReturnImpl| size: 200| notcompiles| LOCAL| INSERT_BEFORE) =38, (CtLocalVariableImpl| size: 200| compiles| LOCAL| INSERT_AFTER) =3, (CtReturnImpl| size: 96| compiles| LOCAL| REPLACE) =54, (CtIfImpl| size: 200| compiles| LOCAL| INSERT_BEFORE) =35, (CtIfImpl| size: 55| notcompiles| LOCAL| REPLACE) =18, (CtIfImpl| size: 55| alreadyanalyzed| LOCAL| REPLACE) =35, (CtReturnImpl| size: 200| alreadyanalyzed| LOCAL| INSERT_AFTER) =30, (CtLocalVariableImpl| size: 200| compiles| LOCAL| INSERT_BEFORE) =2, (CtIfImpl| size: 200| notcompiles| LOCAL| INSERT_BEFORE) =20, (CtIfImpl| size: 55| compiles| LOCAL| REPLACE) =35, (CtIfImpl| size: 200| alreadyanalyzed| LOCAL| INSERT_AFTER) =1, (CtReturnImpl| size: 200| alreadyanalyzed| LOCAL| INSERT_BEFORE) =40, (CtLocalVariableImpl| size: 28| compiles| LOCAL| REPLACE) =7, (CtReturnImpl| size: 200| compiles| LOCAL| INSERT_BEFORE) =53, (CtIfImpl| size: 200| alreadyanalyzed| LOCAL| INSERT_BEFORE) =16, (CtLocalVariableImpl| size: 28| alreadyanalyzed| LOCAL| REPLACE) =4, (CtIfImpl| size: 200| notcompiles| LOCAL| INSERT_AFTER) =5, (CtReturnImpl| size: 96| alreadyanalyzed| LOCAL| REPLACE) =127, (CtReturnImpl| size: 200| notcompiles| LOCAL| INSERT_AFTER) =27}
+#gen: 368
 #patches: 1
-#RightCompilation: 26
-#WrongCompilation: 61
-#FailingTestCaseExecution: 27
+#RightCompilation: 121
+#WrongCompilation: 247
+#FailingTestCaseExecution: 122
 #RegressionTestExecution: 1
-#TestcasesExecutedval1: 3321
-#TestcasesExecutedval2: 4924
+#TestcasesExecutedval1: 15006
+#TestcasesExecutedval2: 4798
 #FailingTestCase: 123
-#RegressionTestCases: 4924
-#OfAppliedOp: 87
+#RegressionTestCases: 4798
+#OfAppliedOp: 368
 #NotAppliedOp: 0
 #InmutatedGen: 0
 #unfinishValidation: 0
-#ing {CtLocalVariableImpl=4, CtReturnImpl=53, CtIfImpl=30}
-#untilcompile {1=35, 2=11, 3=10, 4=3, 5=2, 6=2, 9=1, 14=1, 15=1}
-Time Evolution(ms): 269881
-Time Total(ms): 1239104
+#ing {CtLocalVariableImpl=17, CtReturnImpl=222, CtIfImpl=129}
+#untilcompile {1=127, 2=58, 3=31, 4=15, 5=14, 6=5, 7=2, 8=3, 9=5, 10=1, 11=1, 12=1, 13=1, 19=1, 21=1}
+2015-08-18 21:07:21,143 INFO main - Time Evolution(ms): 468036
+2015-08-18 21:07:21,143 INFO fr.inria.main.AbstractMain - Time Total(ms): 1311272
 
 
-Node: griffon-33.nancy.grid5000.fr
+Node: graphene-39.nancy.grid5000.fr
 
 
-Date: Fri Aug 14 01:09:13 CEST 2015
+Date: Tue Aug 18 23:07:21 CEST 2015
 
 

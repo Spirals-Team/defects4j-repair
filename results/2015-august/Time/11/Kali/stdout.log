@@ -1,44 +1,496 @@
 export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/time/time_11 /tmp/time_11_Kali;cd /tmp/time_11_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Time/lib/* lib/;find . -type f -name "package-info.java" -delete;
-/home/tdurieux/defects4j-repair/src/python/core/../../../results/Time/11/Kali/result
-cd /tmp/time_11_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java  -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.joda.time.tz.TestCompiler: -package org.joda -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -seed 10 -maxtime 165  -scope local  -stopfirst true -flthreshold 0 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
+/home/tdurieux/defects4j-repair/src/python/core/../../../results/2015-august/Time/11/Kali/result
+cd /tmp/time_11_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java  -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.joda.time.tz.TestCompiler: -package org.joda -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -seed 10 -maxtime 60  -scope local  -stopfirst true -flthreshold 0 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
 
 Node: `hostname`
 ";echo "
 Date: `date`
 ";rm -rf /tmp/time_11_Kali;
 
-End Repair Loops: NOT Found solution
-
-Number solutions:0
-
+2015-08-18 17:35:05,392 INFO main - End Repair Loops: Found solution
+2015-08-18 17:35:05,392 INFO main - Solution stored at: ./outputMutation//MainjGenProg-.//src/
+2015-08-18 17:35:05,392 INFO main - 
+Number solutions:22
+2015-08-18 17:35:05,392 INFO main - f (sol): 0.0, [Variant id: 4 (SOL) , #gens: 1025, #ops: 1, parent:1]
+2015-08-18 17:35:05,392 INFO main - f (sol): 0.0, [Variant id: 6 (SOL) , #gens: 1025, #ops: 1, parent:1]
+2015-08-18 17:35:05,392 INFO main - f (sol): 0.0, [Variant id: 7 (SOL) , #gens: 1025, #ops: 1, parent:1]
+2015-08-18 17:35:05,392 INFO main - f (sol): 0.0, [Variant id: 19 (SOL) , #gens: 1025, #ops: 1, parent:1]
+2015-08-18 17:35:05,392 INFO main - f (sol): 0.0, [Variant id: 20 (SOL) , #gens: 1025, #ops: 1, parent:1]
+2015-08-18 17:35:05,392 INFO main - f (sol): 0.0, [Variant id: 21 (SOL) , #gens: 1025, #ops: 1, parent:1]
+2015-08-18 17:35:05,392 INFO main - f (sol): 0.0, [Variant id: 24 (SOL) , #gens: 1025, #ops: 1, parent:1]
+2015-08-18 17:35:05,392 INFO main - f (sol): 0.0, [Variant id: 27 (SOL) , #gens: 1025, #ops: 1, parent:1]
+2015-08-18 17:35:05,392 INFO main - f (sol): 0.0, [Variant id: 43 (SOL) , #gens: 1025, #ops: 1, parent:1]
+2015-08-18 17:35:05,392 INFO main - f (sol): 0.0, [Variant id: 160 (SOL) , #gens: 1025, #ops: 1, parent:1]
+2015-08-18 17:35:05,392 INFO main - f (sol): 0.0, [Variant id: 161 (SOL) , #gens: 1025, #ops: 1, parent:1]
+2015-08-18 17:35:05,392 INFO main - f (sol): 0.0, [Variant id: 163 (SOL) , #gens: 1025, #ops: 1, parent:1]
+2015-08-18 17:35:05,392 INFO main - f (sol): 0.0, [Variant id: 165 (SOL) , #gens: 1025, #ops: 1, parent:1]
+2015-08-18 17:35:05,392 INFO main - f (sol): 0.0, [Variant id: 167 (SOL) , #gens: 1025, #ops: 1, parent:1]
+2015-08-18 17:35:05,392 INFO main - f (sol): 0.0, [Variant id: 168 (SOL) , #gens: 1025, #ops: 1, parent:1]
+2015-08-18 17:35:05,392 INFO main - f (sol): 0.0, [Variant id: 169 (SOL) , #gens: 1025, #ops: 1, parent:1]
+2015-08-18 17:35:05,392 INFO main - f (sol): 0.0, [Variant id: 171 (SOL) , #gens: 1025, #ops: 1, parent:1]
+2015-08-18 17:35:05,392 INFO main - f (sol): 0.0, [Variant id: 244 (SOL) , #gens: 1025, #ops: 1, parent:1]
+2015-08-18 17:35:05,393 INFO main - f (sol): 0.0, [Variant id: 247 (SOL) , #gens: 1025, #ops: 1, parent:1]
+2015-08-18 17:35:05,393 INFO main - f (sol): 0.0, [Variant id: 282 (SOL) , #gens: 1025, #ops: 1, parent:1]
+2015-08-18 17:35:05,393 INFO main - f (sol): 0.0, [Variant id: 285 (SOL) , #gens: 1025, #ops: 1, parent:1]
+2015-08-18 17:35:05,393 INFO main - f (sol): 0.0, [Variant id: 286 (SOL) , #gens: 1025, #ops: 1, parent:1]
+2015-08-18 17:35:05,393 INFO main - 
 All variants:
-f 1.0, [Variant id: 1, #gens: 1029, #ops: 0, parent:-]
+2015-08-18 17:35:05,393 INFO main - f 1.0, [Variant id: 1, #gens: 1025, #ops: 0, parent:-]
+2015-08-18 17:35:05,393 INFO main - 
+Solution details
+2015-08-18 17:35:05,393 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 17:35:05,393 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 17:35:05,393 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 17:35:05,393 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 17:35:05,393 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+2015-08-18 17:35:05,393 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 17:35:05,393 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 17:35:05,393 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+2015-08-18 17:35:05,393 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 17:35:05,393 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 17:35:05,393 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 17:35:05,394 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+2015-08-18 17:35:05,394 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 17:35:05,394 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 17:35:05,394 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+2015-08-18 17:35:05,394 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 17:35:05,394 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 17:35:05,394 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 17:35:05,394 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+2015-08-18 17:35:05,394 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 17:35:05,394 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 17:35:05,394 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+2015-08-18 17:35:05,395 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 17:35:05,395 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 17:35:05,395 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+2015-08-18 17:35:05,395 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 17:35:05,395 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 17:35:05,396 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 17:35:05,396 INFO main - 
+ --SOLUTIONS DESCRIPTION--
 
+ ----
+ProgramVariant 4
+ 
+operation: DELETE
+location= org.joda.time.tz.DateTimeZoneBuilder
+line= 1460
+original statement= if (org.joda.time.tz.ZoneInfoCompiler.verbose()) {
+	java.lang.System.out.println(("Fixing duplicate recurrent name key - " + (tailZone.iStartRecurrence.getNameKey())));
+} 
+fixed statement= if (org.joda.time.tz.ZoneInfoCompiler.verbose()) {
+	java.lang.System.out.println(("Fixing duplicate recurrent name key - " + (tailZone.iStartRecurrence.getNameKey())));
+} 
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 6
+ 
+operation: REPLACE
+location= org.joda.time.tz.DateTimeZoneBuilder
+line= 1460
+original statement= if (org.joda.time.tz.ZoneInfoCompiler.verbose()) {
+	java.lang.System.out.println(("Fixing duplicate recurrent name key - " + (tailZone.iStartRecurrence.getNameKey())));
+} 
+fixed statement= if (true) {
+	java.lang.System.out.println(("Fixing duplicate recurrent name key - " + (tailZone.iStartRecurrence.getNameKey())));
+} 
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 7
+ 
+operation: REPLACE
+location= org.joda.time.tz.DateTimeZoneBuilder
+line= 1460
+original statement= if (org.joda.time.tz.ZoneInfoCompiler.verbose()) {
+	java.lang.System.out.println(("Fixing duplicate recurrent name key - " + (tailZone.iStartRecurrence.getNameKey())));
+} 
+fixed statement= if (false) {
+	java.lang.System.out.println(("Fixing duplicate recurrent name key - " + (tailZone.iStartRecurrence.getNameKey())));
+} 
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 19
+ 
+operation: INSERT_BEFORE
+location= org.joda.time.tz.ZoneInfoCompiler
+line= 78
+original statement= return org.joda.time.tz.ZoneInfoCompiler.cVerbose.get()
+fixed statement= if (true)
+	return false;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 20
+ 
+operation: DELETE
+location= org.joda.time.tz.DateTimeZoneBuilder
+line= 1154
+original statement= return new org.joda.time.tz.DateTimeZoneBuilder.DSTZone(id , iStandardOffset , startRule.iRecurrence , endRule.iRecurrence)
+fixed statement= return new org.joda.time.tz.DateTimeZoneBuilder.DSTZone(id , iStandardOffset , startRule.iRecurrence , endRule.iRecurrence)
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 21
+ 
+operation: INSERT_BEFORE
+location= org.joda.time.tz.DateTimeZoneBuilder
+line= 1154
+original statement= return new org.joda.time.tz.DateTimeZoneBuilder.DSTZone(id , iStandardOffset , startRule.iRecurrence , endRule.iRecurrence)
+fixed statement= if (true)
+	return null;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 24
+ 
+operation: DELETE
+location= org.joda.time.tz.DateTimeZoneBuilder
+line= 1458
+original statement= if (tailZone.iStartRecurrence.getNameKey().equals(tailZone.iEndRecurrence.getNameKey())) {
+	if (org.joda.time.tz.ZoneInfoCompiler.verbose()) {
+		java.lang.System.out.println(("Fixing duplicate recurrent name key - " + (tailZone.iStartRecurrence.getNameKey())));
+	} 
+	if ((tailZone.iStartRecurrence.getSaveMillis()) > 0) {
+		tailZone = new org.joda.time.tz.DateTimeZoneBuilder.DSTZone(tailZone.getID() , tailZone.iStandardOffset , tailZone.iStartRecurrence.renameAppend("-Summer") , tailZone.iEndRecurrence);
+	} else {
+		tailZone = new org.joda.time.tz.DateTimeZoneBuilder.DSTZone(tailZone.getID() , tailZone.iStandardOffset , tailZone.iStartRecurrence , tailZone.iEndRecurrence.renameAppend("-Summer"));
+	}
+} 
+fixed statement= if (tailZone.iStartRecurrence.getNameKey().equals(tailZone.iEndRecurrence.getNameKey())) {
+	if (org.joda.time.tz.ZoneInfoCompiler.verbose()) {
+		java.lang.System.out.println(("Fixing duplicate recurrent name key - " + (tailZone.iStartRecurrence.getNameKey())));
+	} 
+	if ((tailZone.iStartRecurrence.getSaveMillis()) > 0) {
+		tailZone = new org.joda.time.tz.DateTimeZoneBuilder.DSTZone(tailZone.getID() , tailZone.iStandardOffset , tailZone.iStartRecurrence.renameAppend("-Summer") , tailZone.iEndRecurrence);
+	} else {
+		tailZone = new org.joda.time.tz.DateTimeZoneBuilder.DSTZone(tailZone.getID() , tailZone.iStandardOffset , tailZone.iStartRecurrence , tailZone.iEndRecurrence.renameAppend("-Summer"));
+	}
+} 
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 27
+ 
+operation: REPLACE
+location= org.joda.time.tz.DateTimeZoneBuilder
+line= 1458
+original statement= if (tailZone.iStartRecurrence.getNameKey().equals(tailZone.iEndRecurrence.getNameKey())) {
+	if (org.joda.time.tz.ZoneInfoCompiler.verbose()) {
+		java.lang.System.out.println(("Fixing duplicate recurrent name key - " + (tailZone.iStartRecurrence.getNameKey())));
+	} 
+	if ((tailZone.iStartRecurrence.getSaveMillis()) > 0) {
+		tailZone = new org.joda.time.tz.DateTimeZoneBuilder.DSTZone(tailZone.getID() , tailZone.iStandardOffset , tailZone.iStartRecurrence.renameAppend("-Summer") , tailZone.iEndRecurrence);
+	} else {
+		tailZone = new org.joda.time.tz.DateTimeZoneBuilder.DSTZone(tailZone.getID() , tailZone.iStandardOffset , tailZone.iStartRecurrence , tailZone.iEndRecurrence.renameAppend("-Summer"));
+	}
+} 
+fixed statement= if (false) {
+	if (org.joda.time.tz.ZoneInfoCompiler.verbose()) {
+		java.lang.System.out.println(("Fixing duplicate recurrent name key - " + (tailZone.iStartRecurrence.getNameKey())));
+	} 
+	if ((tailZone.iStartRecurrence.getSaveMillis()) > 0) {
+		tailZone = new org.joda.time.tz.DateTimeZoneBuilder.DSTZone(tailZone.getID() , tailZone.iStandardOffset , tailZone.iStartRecurrence.renameAppend("-Summer") , tailZone.iEndRecurrence);
+	} else {
+		tailZone = new org.joda.time.tz.DateTimeZoneBuilder.DSTZone(tailZone.getID() , tailZone.iStandardOffset , tailZone.iStartRecurrence , tailZone.iEndRecurrence.renameAppend("-Summer"));
+	}
+} 
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 43
+ 
+operation: INSERT_BEFORE
+location= org.joda.time.tz.DateTimeZoneBuilder
+line= 827
+original statement= return iToYear
+fixed statement= if (true)
+	return 0;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 160
+ 
+operation: DELETE
+location= org.joda.time.tz.DateTimeZoneBuilder
+line= 1141
+original statement= if ((iRules.size()) == 2) {
+	org.joda.time.tz.DateTimeZoneBuilder.Rule startRule = iRules.get(0);
+	org.joda.time.tz.DateTimeZoneBuilder.Rule endRule = iRules.get(1);
+	if (((startRule.getToYear()) == (java.lang.Integer.MAX_VALUE)) && ((endRule.getToYear()) == (java.lang.Integer.MAX_VALUE))) {
+		return new org.joda.time.tz.DateTimeZoneBuilder.DSTZone(id , iStandardOffset , startRule.iRecurrence , endRule.iRecurrence);
+	} 
+} 
+fixed statement= if ((iRules.size()) == 2) {
+	org.joda.time.tz.DateTimeZoneBuilder.Rule startRule = iRules.get(0);
+	org.joda.time.tz.DateTimeZoneBuilder.Rule endRule = iRules.get(1);
+	if (((startRule.getToYear()) == (java.lang.Integer.MAX_VALUE)) && ((endRule.getToYear()) == (java.lang.Integer.MAX_VALUE))) {
+		return new org.joda.time.tz.DateTimeZoneBuilder.DSTZone(id , iStandardOffset , startRule.iRecurrence , endRule.iRecurrence);
+	} 
+} 
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 161
+ 
+operation: INSERT_BEFORE
+location= org.joda.time.tz.DateTimeZoneBuilder
+line= 1141
+original statement= if ((iRules.size()) == 2) {
+	org.joda.time.tz.DateTimeZoneBuilder.Rule startRule = iRules.get(0);
+	org.joda.time.tz.DateTimeZoneBuilder.Rule endRule = iRules.get(1);
+	if (((startRule.getToYear()) == (java.lang.Integer.MAX_VALUE)) && ((endRule.getToYear()) == (java.lang.Integer.MAX_VALUE))) {
+		return new org.joda.time.tz.DateTimeZoneBuilder.DSTZone(id , iStandardOffset , startRule.iRecurrence , endRule.iRecurrence);
+	} 
+} 
+fixed statement= if (true)
+	return null;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 163
+ 
+operation: REPLACE
+location= org.joda.time.tz.DateTimeZoneBuilder
+line= 1141
+original statement= if ((iRules.size()) == 2) {
+	org.joda.time.tz.DateTimeZoneBuilder.Rule startRule = iRules.get(0);
+	org.joda.time.tz.DateTimeZoneBuilder.Rule endRule = iRules.get(1);
+	if (((startRule.getToYear()) == (java.lang.Integer.MAX_VALUE)) && ((endRule.getToYear()) == (java.lang.Integer.MAX_VALUE))) {
+		return new org.joda.time.tz.DateTimeZoneBuilder.DSTZone(id , iStandardOffset , startRule.iRecurrence , endRule.iRecurrence);
+	} 
+} 
+fixed statement= if (false) {
+	org.joda.time.tz.DateTimeZoneBuilder.Rule startRule = iRules.get(0);
+	org.joda.time.tz.DateTimeZoneBuilder.Rule endRule = iRules.get(1);
+	if (((startRule.getToYear()) == (java.lang.Integer.MAX_VALUE)) && ((endRule.getToYear()) == (java.lang.Integer.MAX_VALUE))) {
+		return new org.joda.time.tz.DateTimeZoneBuilder.DSTZone(id , iStandardOffset , startRule.iRecurrence , endRule.iRecurrence);
+	} 
+} 
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 165
+ 
+operation: INSERT_BEFORE
+location= org.joda.time.tz.DateTimeZoneBuilder
+line= 1142
+original statement= org.joda.time.tz.DateTimeZoneBuilder.Rule startRule = iRules.get(0)
+fixed statement= if (true)
+	return null;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 167
+ 
+operation: INSERT_BEFORE
+location= org.joda.time.tz.DateTimeZoneBuilder
+line= 1143
+original statement= org.joda.time.tz.DateTimeZoneBuilder.Rule endRule = iRules.get(1)
+fixed statement= if (true)
+	return null;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 168
+ 
+operation: DELETE
+location= org.joda.time.tz.DateTimeZoneBuilder
+line= 1144
+original statement= if (((startRule.getToYear()) == (java.lang.Integer.MAX_VALUE)) && ((endRule.getToYear()) == (java.lang.Integer.MAX_VALUE))) {
+	return new org.joda.time.tz.DateTimeZoneBuilder.DSTZone(id , iStandardOffset , startRule.iRecurrence , endRule.iRecurrence);
+} 
+fixed statement= if (((startRule.getToYear()) == (java.lang.Integer.MAX_VALUE)) && ((endRule.getToYear()) == (java.lang.Integer.MAX_VALUE))) {
+	return new org.joda.time.tz.DateTimeZoneBuilder.DSTZone(id , iStandardOffset , startRule.iRecurrence , endRule.iRecurrence);
+} 
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 169
+ 
+operation: INSERT_BEFORE
+location= org.joda.time.tz.DateTimeZoneBuilder
+line= 1144
+original statement= if (((startRule.getToYear()) == (java.lang.Integer.MAX_VALUE)) && ((endRule.getToYear()) == (java.lang.Integer.MAX_VALUE))) {
+	return new org.joda.time.tz.DateTimeZoneBuilder.DSTZone(id , iStandardOffset , startRule.iRecurrence , endRule.iRecurrence);
+} 
+fixed statement= if (true)
+	return null;
+
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 171
+ 
+operation: REPLACE
+location= org.joda.time.tz.DateTimeZoneBuilder
+line= 1144
+original statement= if (((startRule.getToYear()) == (java.lang.Integer.MAX_VALUE)) && ((endRule.getToYear()) == (java.lang.Integer.MAX_VALUE))) {
+	return new org.joda.time.tz.DateTimeZoneBuilder.DSTZone(id , iStandardOffset , startRule.iRecurrence , endRule.iRecurrence);
+} 
+fixed statement= if (false) {
+	return new org.joda.time.tz.DateTimeZoneBuilder.DSTZone(id , iStandardOffset , startRule.iRecurrence , endRule.iRecurrence);
+} 
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 244
+ 
+operation: DELETE
+location= org.joda.time.tz.DateTimeZoneBuilder
+line= 1457
+original statement= if (tailZone != null) {
+	if (tailZone.iStartRecurrence.getNameKey().equals(tailZone.iEndRecurrence.getNameKey())) {
+		if (org.joda.time.tz.ZoneInfoCompiler.verbose()) {
+			java.lang.System.out.println(("Fixing duplicate recurrent name key - " + (tailZone.iStartRecurrence.getNameKey())));
+		} 
+		if ((tailZone.iStartRecurrence.getSaveMillis()) > 0) {
+			tailZone = new org.joda.time.tz.DateTimeZoneBuilder.DSTZone(tailZone.getID() , tailZone.iStandardOffset , tailZone.iStartRecurrence.renameAppend("-Summer") , tailZone.iEndRecurrence);
+		} else {
+			tailZone = new org.joda.time.tz.DateTimeZoneBuilder.DSTZone(tailZone.getID() , tailZone.iStandardOffset , tailZone.iStartRecurrence , tailZone.iEndRecurrence.renameAppend("-Summer"));
+		}
+	} 
+} 
+fixed statement= if (tailZone != null) {
+	if (tailZone.iStartRecurrence.getNameKey().equals(tailZone.iEndRecurrence.getNameKey())) {
+		if (org.joda.time.tz.ZoneInfoCompiler.verbose()) {
+			java.lang.System.out.println(("Fixing duplicate recurrent name key - " + (tailZone.iStartRecurrence.getNameKey())));
+		} 
+		if ((tailZone.iStartRecurrence.getSaveMillis()) > 0) {
+			tailZone = new org.joda.time.tz.DateTimeZoneBuilder.DSTZone(tailZone.getID() , tailZone.iStandardOffset , tailZone.iStartRecurrence.renameAppend("-Summer") , tailZone.iEndRecurrence);
+		} else {
+			tailZone = new org.joda.time.tz.DateTimeZoneBuilder.DSTZone(tailZone.getID() , tailZone.iStandardOffset , tailZone.iStartRecurrence , tailZone.iEndRecurrence.renameAppend("-Summer"));
+		}
+	} 
+} 
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 247
+ 
+operation: REPLACE
+location= org.joda.time.tz.DateTimeZoneBuilder
+line= 1457
+original statement= if (tailZone != null) {
+	if (tailZone.iStartRecurrence.getNameKey().equals(tailZone.iEndRecurrence.getNameKey())) {
+		if (org.joda.time.tz.ZoneInfoCompiler.verbose()) {
+			java.lang.System.out.println(("Fixing duplicate recurrent name key - " + (tailZone.iStartRecurrence.getNameKey())));
+		} 
+		if ((tailZone.iStartRecurrence.getSaveMillis()) > 0) {
+			tailZone = new org.joda.time.tz.DateTimeZoneBuilder.DSTZone(tailZone.getID() , tailZone.iStandardOffset , tailZone.iStartRecurrence.renameAppend("-Summer") , tailZone.iEndRecurrence);
+		} else {
+			tailZone = new org.joda.time.tz.DateTimeZoneBuilder.DSTZone(tailZone.getID() , tailZone.iStandardOffset , tailZone.iStartRecurrence , tailZone.iEndRecurrence.renameAppend("-Summer"));
+		}
+	} 
+} 
+fixed statement= if (false) {
+	if (tailZone.iStartRecurrence.getNameKey().equals(tailZone.iEndRecurrence.getNameKey())) {
+		if (org.joda.time.tz.ZoneInfoCompiler.verbose()) {
+			java.lang.System.out.println(("Fixing duplicate recurrent name key - " + (tailZone.iStartRecurrence.getNameKey())));
+		} 
+		if ((tailZone.iStartRecurrence.getSaveMillis()) > 0) {
+			tailZone = new org.joda.time.tz.DateTimeZoneBuilder.DSTZone(tailZone.getID() , tailZone.iStandardOffset , tailZone.iStartRecurrence.renameAppend("-Summer") , tailZone.iEndRecurrence);
+		} else {
+			tailZone = new org.joda.time.tz.DateTimeZoneBuilder.DSTZone(tailZone.getID() , tailZone.iStandardOffset , tailZone.iStartRecurrence , tailZone.iEndRecurrence.renameAppend("-Summer"));
+		}
+	} 
+} 
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 282
+ 
+operation: DELETE
+location= org.joda.time.tz.DateTimeZoneBuilder
+line= 371
+original statement= if ((tailZone == null) && (i == (ruleSetCount - 1))) {
+	tailZone = rs.buildTailZone(id);
+} 
+fixed statement= if ((tailZone == null) && (i == (ruleSetCount - 1))) {
+	tailZone = rs.buildTailZone(id);
+} 
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 285
+ 
+operation: REPLACE
+location= org.joda.time.tz.DateTimeZoneBuilder
+line= 371
+original statement= if ((tailZone == null) && (i == (ruleSetCount - 1))) {
+	tailZone = rs.buildTailZone(id);
+} 
+fixed statement= if (false) {
+	tailZone = rs.buildTailZone(id);
+} 
+generation= 1
+ingredientScope= -
+ 
+ ----
+ProgramVariant 286
+ 
+operation: DELETE
+location= org.joda.time.tz.DateTimeZoneBuilder
+line= 372
+original statement= tailZone = rs.buildTailZone(id)
+fixed statement= tailZone = rs.buildTailZone(id)
+generation= 1
+ingredientScope= -
+ 
+2015-08-18 17:35:05,396 INFO main - 
 ----stats: 
-
+2015-08-18 17:35:05,396 INFO main - 
 spaces navigation: [0]: {}
 #gen: 0
-#patches: 0
-#RightCompilation: 2010
-#WrongCompilation: 468
-#FailingTestCaseExecution: 2011
+#patches: 22
+#RightCompilation: 1984
+#WrongCompilation: 446
+#FailingTestCaseExecution: 1985
 #RegressionTestExecution: 22
-#TestcasesExecutedval1: 16048
-#TestcasesExecutedval2: 22
+#TestcasesExecutedval1: 15824
+#TestcasesExecutedval2: 86878
 #FailingTestCase: 8
-#RegressionTestCases: 1
+#RegressionTestCases: 3949
 #OfAppliedOp: 0
 #NotAppliedOp: 0
 #InmutatedGen: 0
 #unfinishValidation: 0
 #ing {}
 #untilcompile {}
-Time Total(ms): 3689190
+2015-08-18 17:35:05,396 INFO fr.inria.main.AbstractMain - Time Total(ms): 2005817
 
 
-Node: graphite-4.nancy.grid5000.fr
+Node: graphene-115.nancy.grid5000.fr
 
 
-Date: Sat Aug 15 18:29:30 CEST 2015
+Date: Tue Aug 18 19:35:05 CEST 2015
 
 

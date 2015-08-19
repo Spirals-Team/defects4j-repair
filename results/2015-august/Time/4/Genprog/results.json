@@ -1,22 +1,34 @@
 {
     "FailingTestCase": "69", 
-    "FailingTestCaseExecution": "554", 
-    "InmutatedGen": "1082", 
+    "FailingTestCaseExecution": "7", 
+    "InmutatedGen": "3", 
     "NotAppliedOp": "0", 
-    "OfAppliedOp": "5482", 
-    "RegressionTestCases": "1", 
-    "RegressionTestExecution": "4", 
-    "RightCompilation": "553", 
-    "WrongCompilation": "4929", 
-    "date": "Sun Aug 16 13:14:50 CEST 2015\n\n", 
-    "gen": "5482", 
-    "gens": "1013", 
-    "node": "graphite-4.nancy.grid5000.fr", 
-    "operations": [], 
+    "OfAppliedOp": "35", 
+    "RegressionTestCases": "4014", 
+    "RegressionTestExecution": "2", 
+    "RightCompilation": "6", 
+    "WrongCompilation": "29", 
+    "date": "Tue Aug 18 19:32:01 CEST 2015\n\n", 
+    "gen": "35", 
+    "gens": "1003", 
+    "node": "graphene-77.nancy.grid5000.fr", 
+    "operations": [
+        {
+            "buggyStatement": "return 1", 
+            "generation": 35, 
+            "patch": "return (getWrappedField().getMaximumValue()) + 1", 
+            "patchLocation": {
+                "className": "org.joda.time.field.ZeroIsMaxDateTimeField", 
+                "line": 138
+            }, 
+            "type": "REPLACE", 
+            "variant": 70
+        }
+    ], 
     "ops": "0", 
-    "patches": "0", 
-    "programVariant": null, 
-    "timeEvaluation": "9961474", 
-    "timeTotal": "10013277", 
+    "patches": "1", 
+    "programVariant": "70", 
+    "timeEvaluation": "50943", 
+    "timeTotal": "90522", 
     "unfinishValidation": "0"
 }

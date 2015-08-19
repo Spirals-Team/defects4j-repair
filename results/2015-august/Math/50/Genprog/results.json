@@ -1,34 +1,34 @@
 {
     "FailingTestCase": "9", 
-    "FailingTestCaseExecution": "19", 
-    "InmutatedGen": "1", 
+    "FailingTestCaseExecution": "11", 
+    "InmutatedGen": "0", 
     "NotAppliedOp": "0", 
-    "OfAppliedOp": "47", 
-    "RegressionTestCases": "2822", 
-    "RegressionTestExecution": "2", 
-    "RightCompilation": "18", 
-    "WrongCompilation": "29", 
-    "date": "Thu Aug 13 22:48:27 CEST 2015\n\n", 
-    "gen": "47", 
-    "gens": "949", 
-    "node": "griffon-65.nancy.grid5000.fr", 
+    "OfAppliedOp": "13", 
+    "RegressionTestCases": "2789", 
+    "RegressionTestExecution": "1", 
+    "RightCompilation": "10", 
+    "WrongCompilation": "3", 
+    "date": "Tue Aug 18 21:56:51 CEST 2015\n\n", 
+    "gen": "13", 
+    "gens": "959", 
+    "node": "graphene-78.nancy.grid5000.fr", 
     "operations": [
         {
-            "buggyStatement": "final double delta = org.apache.commons.math.util.FastMath.max((rtol * (org.apache.commons.math.util.FastMath.abs(x1))), atol)", 
-            "generation": 47, 
-            "patch": "f0 = computeObjectiveValue(x0)", 
+            "buggyStatement": "x0 = 0.5 * ((x0 + x1) - delta)", 
+            "generation": 13, 
+            "patch": "remove", 
             "patchLocation": {
                 "className": "org.apache.commons.math.analysis.solvers.BaseSecantSolver", 
-                "line": 187
+                "line": 191
             }, 
-            "type": "REPLACE", 
-            "variant": 94
+            "type": "DELETE", 
+            "variant": 26
         }
     ], 
     "ops": "0", 
     "patches": "1", 
-    "programVariant": "94", 
-    "timeEvaluation": "146828", 
-    "timeTotal": "356393", 
+    "programVariant": "26", 
+    "timeEvaluation": "131234", 
+    "timeTotal": "312210", 
     "unfinishValidation": "0"
 }

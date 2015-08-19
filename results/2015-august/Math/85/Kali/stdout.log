@@ -1,5 +1,5 @@
 export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/math/math_85 /tmp/math_85_Kali;cd /tmp/math_85_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
-/home/tdurieux/defects4j-repair/src/python/core/../../../results/Math/85/Kali/result
+/home/tdurieux/defects4j-repair/src/python/core/../../../results/2015-august/Math/85/Kali/result
 cd /tmp/math_85_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java  -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.math.distribution.NormalDistributionTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -seed 10 -maxtime 60  -scope local  -stopfirst true -flthreshold 0 -population 1 -srcjavafolder src/java/ -srctestfolder src/test/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
 
 Node: `hostname`
@@ -7,20 +7,20 @@ Node: `hostname`
 Date: `date`
 ";rm -rf /tmp/math_85_Kali;
 
-End Repair Loops: Found solution
-Solution stored at: ./outputMutation//MainjGenProg-.//src/
-
+2015-08-18 18:25:32,007 INFO main - End Repair Loops: Found solution
+2015-08-18 18:25:32,007 INFO main - Solution stored at: ./outputMutation//MainjGenProg-.//src/
+2015-08-18 18:25:32,007 INFO main - 
 Number solutions:3
-f (sol): 0.0, [Variant id: 2 (SOL) , #gens: 947, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 100 (SOL) , #gens: 947, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 103 (SOL) , #gens: 947, #ops: 1, parent:1]
-
+2015-08-18 18:25:32,007 INFO main - f (sol): 0.0, [Variant id: 2 (SOL) , #gens: 973, #ops: 1, parent:1]
+2015-08-18 18:25:32,007 INFO main - f (sol): 0.0, [Variant id: 108 (SOL) , #gens: 973, #ops: 1, parent:1]
+2015-08-18 18:25:32,007 INFO main - f (sol): 0.0, [Variant id: 111 (SOL) , #gens: 973, #ops: 1, parent:1]
+2015-08-18 18:25:32,007 INFO main - 
 All variants:
-f 1.0, [Variant id: 1, #gens: 947, #ops: 0, parent:-]
-
+2015-08-18 18:25:32,007 INFO main - f 1.0, [Variant id: 1, #gens: 973, #ops: 0, parent:-]
+2015-08-18 18:25:32,007 INFO main - 
 Solution details
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-
+2015-08-18 18:25:32,008 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 18:25:32,008 INFO main - 
  --SOLUTIONS DESCRIPTION--
 
  ----
@@ -35,7 +35,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 100
+ProgramVariant 108
  
 operation: DELETE
 location= org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils
@@ -50,7 +50,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 103
+ProgramVariant 111
  
 operation: REPLACE
 location= org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils
@@ -64,17 +64,17 @@ fixed statement= if (false) {
 generation= 1
 ingredientScope= -
  
-
+2015-08-18 18:25:32,008 INFO main - 
 ----stats: 
-
+2015-08-18 18:25:32,008 INFO main - 
 spaces navigation: [0]: {}
 #gen: 0
 #patches: 3
-#RightCompilation: 1721
+#RightCompilation: 1797
 #WrongCompilation: 469
-#FailingTestCaseExecution: 1722
+#FailingTestCaseExecution: 1798
 #RegressionTestExecution: 3
-#TestcasesExecutedval1: 22178
+#TestcasesExecutedval1: 23166
 #TestcasesExecutedval2: 5625
 #FailingTestCase: 13
 #RegressionTestCases: 1875
@@ -84,12 +84,12 @@ spaces navigation: [0]: {}
 #unfinishValidation: 0
 #ing {}
 #untilcompile {}
-Time Total(ms): 2032000
+2015-08-18 18:25:32,008 INFO fr.inria.main.AbstractMain - Time Total(ms): 1882750
 
 
-Node: griffon-20.nancy.grid5000.fr
+Node: graphene-70.nancy.grid5000.fr
 
 
-Date: Thu Aug 13 19:36:50 CEST 2015
+Date: Tue Aug 18 20:25:32 CEST 2015
 
 

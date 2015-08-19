@@ -1,34 +1,34 @@
 {
     "FailingTestCase": "26", 
-    "FailingTestCaseExecution": "23", 
-    "InmutatedGen": "5", 
+    "FailingTestCaseExecution": "11", 
+    "InmutatedGen": "2", 
     "NotAppliedOp": "0", 
-    "OfAppliedOp": "75", 
-    "RegressionTestCases": "3958", 
+    "OfAppliedOp": "18", 
+    "RegressionTestCases": "3830", 
     "RegressionTestExecution": "1", 
-    "RightCompilation": "22", 
-    "WrongCompilation": "53", 
-    "date": "Fri Aug 14 00:53:38 CEST 2015\n\n", 
-    "gen": "75", 
-    "gens": "924", 
-    "node": "graphene-61.nancy.grid5000.fr", 
+    "RightCompilation": "10", 
+    "WrongCompilation": "8", 
+    "date": "Tue Aug 18 22:15:48 CEST 2015\n\n", 
+    "gen": "18", 
+    "gens": "954", 
+    "node": "graphene-19.nancy.grid5000.fr", 
     "operations": [
         {
-            "buggyStatement": "minIndex = i", 
-            "generation": 75, 
+            "buggyStatement": "return row", 
+            "generation": 18, 
             "patch": "remove", 
             "patchLocation": {
                 "className": "org.apache.commons.math3.optimization.linear.SimplexSolver", 
-                "line": 140
+                "line": 124
             }, 
             "type": "DELETE", 
-            "variant": 150
+            "variant": 36
         }
     ], 
     "ops": "0", 
     "patches": "1", 
-    "programVariant": "150", 
-    "timeEvaluation": "268767", 
-    "timeTotal": "826721", 
+    "programVariant": "36", 
+    "timeEvaluation": "242210", 
+    "timeTotal": "815100", 
     "unfinishValidation": "0"
 }

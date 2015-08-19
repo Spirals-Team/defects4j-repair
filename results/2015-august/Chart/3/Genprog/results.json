@@ -1,34 +1,34 @@
 {
     "FailingTestCase": "37", 
-    "FailingTestCaseExecution": "89", 
+    "FailingTestCaseExecution": "54", 
     "InmutatedGen": "1", 
     "NotAppliedOp": "0", 
-    "OfAppliedOp": "195", 
-    "RegressionTestCases": "0", 
+    "OfAppliedOp": "105", 
+    "RegressionTestCases": "2195", 
     "RegressionTestExecution": "1", 
-    "RightCompilation": "88", 
-    "WrongCompilation": "107", 
-    "date": "Fri Aug 14 06:30:55 CEST 2015\n\n", 
-    "gen": "195", 
-    "gens": "880", 
-    "node": "graphene-51.nancy.grid5000.fr", 
+    "RightCompilation": "53", 
+    "WrongCompilation": "52", 
+    "date": "Wed Aug 19 01:07:17 CEST 2015\n\n", 
+    "gen": "105", 
+    "gens": "1070", 
+    "node": "graphene-75.nancy.grid5000.fr", 
     "operations": [
         {
-            "buggyStatement": "if ((item.getPeriod().compareTo(last)) > 0) {\n\tthis.data.add(item);\n\tadded = true;\n} else {\n\tint index = java.util.Collections.binarySearch(this.data, item);\n\tif (index < 0) {\n\t\tthis.data.add(((-index) - 1), item);\n\t\tadded = true;\n\t} else {\n\t\tjava.lang.StringBuffer b = new java.lang.StringBuffer();\n\t\tb.append(\"You are attempting to add an observation for \");\n\t\tb.append(\"the time period \");\n\t\tb.append(item.getPeriod().toString());\n\t\tb.append(\" but the series already contains an observation\");\n\t\tb.append(\" for that time period. Duplicates are not \");\n\t\tb.append(\"permitted.  Try using the addOrUpdate() method.\");\n\t\tthrow new org.jfree.data.general.SeriesException(b.toString());\n\t}\n}", 
-            "generation": 195, 
+            "buggyStatement": "item = ((org.jfree.data.time.TimeSeriesDataItem)(item.clone()))", 
+            "generation": 105, 
             "patch": "findBoundsByIteration()", 
             "patchLocation": {
                 "className": "org.jfree.data.time.TimeSeries", 
-                "line": 604
+                "line": 579
             }, 
             "type": "INSERT_BEFORE", 
-            "variant": 390
+            "variant": 210
         }
     ], 
     "ops": "0", 
     "patches": "1", 
-    "programVariant": "390", 
-    "timeEvaluation": "158835", 
-    "timeTotal": "200675", 
+    "programVariant": "210", 
+    "timeEvaluation": "64640", 
+    "timeTotal": "107511", 
     "unfinishValidation": "0"
 }

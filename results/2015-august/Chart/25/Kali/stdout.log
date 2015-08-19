@@ -1,5 +1,5 @@
 export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/chart/chart_25 /tmp/chart_25_Kali;cd /tmp/chart_25_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Chart/lib/* lib/;find . -type f -name "package-info.java" -delete;
-/home/tdurieux/defects4j-repair/src/python/core/../../../results/Chart/25/Kali/result
+/home/tdurieux/defects4j-repair/src/python/core/../../../results/2015-august/Chart/25/Kali/result
 cd /tmp/chart_25_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java  -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.jfree.chart.renderer.category.junit.StatisticalBarRendererTests:org.jfree.chart.renderer.category.junit.StatisticalBarRendererTests:org.jfree.chart.renderer.category.junit.StatisticalBarRendererTests:org.jfree.chart.renderer.category.junit.StatisticalBarRendererTests: -package org.jfree -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 4 -maxgen 1000000 -seed 10 -maxtime 60  -scope local  -stopfirst true -flthreshold 0 -population 1 -srcjavafolder source/ -srctestfolder tests/ -binjavafolder build/ -bintestfolder build-tests/;echo "
 
 Node: `hostname`
@@ -7,422 +7,339 @@ Node: `hostname`
 Date: `date`
 ";rm -rf /tmp/chart_25_Kali;
 
-End Repair Loops: Found solution
-Solution stored at: ./outputMutation//MainjGenProg-.//src/
-
-Number solutions:146
-f (sol): 0.0, [Variant id: 3 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 7 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 9 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 10 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 11 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 15 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 17 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 18 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 19 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 21 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 22 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 23 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 25 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 27 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 45 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 47 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 49 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 229 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 230 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 231 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 291 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 415 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 417 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 418 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 419 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 421 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 423 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 424 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 425 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 427 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 428 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 429 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 431 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 445 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 447 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 449 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 514 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 515 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 519 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 521 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 522 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 523 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 525 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 527 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 528 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 529 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 531 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 532 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 533 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 535 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 547 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 548 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 549 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 559 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 561 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 564 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 565 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 570 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 571 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 573 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 574 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 575 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 577 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 578 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 579 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 584 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 587 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 588 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 590 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 591 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 592 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 593 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 596 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 597 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 598 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 599 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 614 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 619 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 620 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 621 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 625 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 626 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 627 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 629 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 631 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 633 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 634 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 635 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 647 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 649 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 651 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 653 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 655 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 656 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 657 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 658 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 659 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 928 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 930 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 932 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 935 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 936 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 957 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 1217 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 1219 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 1221 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 1222 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 1225 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 1229 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 1231 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 1233 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 1235 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 1237 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 1239 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 1241 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 1243 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 1247 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 1249 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 1251 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 1253 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 1255 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 1257 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 1259 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 1263 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 1267 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 1269 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 1271 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 1273 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 1275 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 1277 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 1279 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 1281 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 1283 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 1284 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 1285 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 1289 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 1291 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 1293 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 1295 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 1299 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 1301 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 1303 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 1304 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 1305 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 1306 (SOL) , #gens: 937, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 1307 (SOL) , #gens: 937, #ops: 1, parent:1]
-
+2015-08-18 23:12:22,409 INFO main - End Repair Loops: Found solution
+2015-08-18 23:12:22,409 INFO main - Solution stored at: ./outputMutation//MainjGenProg-.//src/
+2015-08-18 23:12:22,410 INFO main - 
+Number solutions:113
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 5 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 9 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 11 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 12 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 13 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 17 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 19 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 20 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 21 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 23 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 24 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 25 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 27 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 29 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 47 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 49 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 51 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 238 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 307 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 443 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 445 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 446 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 447 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 449 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 451 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 452 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 453 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 455 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 456 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 457 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 459 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 475 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 477 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 579 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 602 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 603 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 605 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 606 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 607 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 609 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 610 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 611 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 624 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 625 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 626 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 627 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 630 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 631 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 632 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 633 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 665 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 667 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 669 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 670 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 671 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 683 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 685 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 687 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 689 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 691 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 692 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 693 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 694 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 695 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 982 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 984 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 986 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 989 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 990 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 1015 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 1283 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 1285 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 1287 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 1288 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 1291 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 1295 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 1297 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 1299 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 1301 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 1303 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 1305 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 1307 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 1309 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 1313 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 1315 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 1317 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 1319 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 1321 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 1323 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 1325 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 1329 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 1333 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 1335 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 1337 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 1339 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 1341 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 1343 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 1345 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 1347 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 1349 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 1350 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 1351 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 1355 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 1357 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 1359 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 1361 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 1365 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 1367 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 1369 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 1370 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 1371 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 1372 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - f (sol): 0.0, [Variant id: 1373 (SOL) , #gens: 993, #ops: 1, parent:1]
+2015-08-18 23:12:22,410 INFO main - 
 All variants:
-f 16.0, [Variant id: 1, #gens: 937, #ops: 0, parent:-]
-
+2015-08-18 23:12:22,410 INFO main - f 16.0, [Variant id: 1, #gens: 993, #ops: 0, parent:-]
+2015-08-18 23:12:22,410 INFO main - 
 Solution details
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
-
+2015-08-18 23:12:22,410 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,411 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,411 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,411 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,411 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,411 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,411 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,411 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,411 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,411 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,411 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+2015-08-18 23:12:22,411 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,411 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,411 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+2015-08-18 23:12:22,411 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,411 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,411 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+2015-08-18 23:12:22,411 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,412 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,412 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,412 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+2015-08-18 23:12:22,412 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,412 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,412 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+2015-08-18 23:12:22,412 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,412 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,412 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+2015-08-18 23:12:22,412 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,412 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,412 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+2015-08-18 23:12:22,412 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,412 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,412 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+2015-08-18 23:12:22,412 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,412 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,412 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+2015-08-18 23:12:22,412 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,412 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,412 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,412 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,412 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+2015-08-18 23:12:22,412 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,413 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,413 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+2015-08-18 23:12:22,413 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,413 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,413 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+2015-08-18 23:12:22,413 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,413 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,413 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,413 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+2015-08-18 23:12:22,413 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,413 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,413 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+2015-08-18 23:12:22,413 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,414 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,414 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,414 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+2015-08-18 23:12:22,414 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,414 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,414 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+2015-08-18 23:12:22,414 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,414 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,414 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+2015-08-18 23:12:22,414 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,414 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,414 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+2015-08-18 23:12:22,414 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,414 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,414 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+2015-08-18 23:12:22,415 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,415 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,415 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,415 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,415 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,415 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,415 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,416 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,416 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,416 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,416 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,416 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+2015-08-18 23:12:22,416 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,416 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,416 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+2015-08-18 23:12:22,417 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,417 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,417 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+2015-08-18 23:12:22,417 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,417 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,417 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+2015-08-18 23:12:22,418 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,418 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,418 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+2015-08-18 23:12:22,418 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,418 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,418 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+2015-08-18 23:12:22,418 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,418 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,418 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+2015-08-18 23:12:22,418 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,418 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,419 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+2015-08-18 23:12:22,419 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,419 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,419 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+2015-08-18 23:12:22,419 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,419 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,419 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+2015-08-18 23:12:22,419 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,419 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,419 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+2015-08-18 23:12:22,420 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,420 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,420 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+2015-08-18 23:12:22,420 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,420 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,420 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+2015-08-18 23:12:22,421 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,421 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,421 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+2015-08-18 23:12:22,421 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,421 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,421 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtReturnImpl != RootElement)null
+2015-08-18 23:12:22,423 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,423 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,423 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,424 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,424 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,424 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,424 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,424 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,424 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,425 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,425 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,425 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,425 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,425 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,426 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,426 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,426 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,426 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,426 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,426 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,427 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,427 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,427 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,427 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,428 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,428 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,428 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,428 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,428 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,428 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,429 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,429 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,429 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,429 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,430 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,430 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,430 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,430 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,430 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,430 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,431 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,431 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,431 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,431 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,432 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,432 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,432 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,432 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,432 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,432 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,433 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,433 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,433 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,433 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,434 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,434 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,434 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,434 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,434 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,434 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,435 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,435 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,436 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,436 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,437 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,437 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,437 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,437 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,438 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,438 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,438 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,438 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,439 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,439 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,439 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,439 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,440 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,440 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,441 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,441 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,442 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,442 WARN spoon.support.StandardEnvironment - warning: ignoring inconsistent parent for CtReturnImpl (CtIfImpl != RootElement)null
+2015-08-18 23:12:22,442 INFO main - 
  --SOLUTIONS DESCRIPTION--
 
  ----
-ProgramVariant 3
+ProgramVariant 5
  
 operation: INSERT_BEFORE
 location= org.jfree.chart.renderer.category.StatisticalBarRenderer
@@ -437,7 +354,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 7
+ProgramVariant 9
  
 operation: INSERT_BEFORE
 location= org.jfree.chart.renderer.category.StatisticalBarRenderer
@@ -450,7 +367,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 9
+ProgramVariant 11
  
 operation: INSERT_BEFORE
 location= org.jfree.chart.renderer.category.StatisticalBarRenderer
@@ -463,7 +380,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 10
+ProgramVariant 12
  
 operation: DELETE
 location= org.jfree.chart.renderer.category.StatisticalBarRenderer
@@ -482,7 +399,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 11
+ProgramVariant 13
  
 operation: INSERT_BEFORE
 location= org.jfree.chart.renderer.category.StatisticalBarRenderer
@@ -499,7 +416,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 15
+ProgramVariant 17
  
 operation: INSERT_BEFORE
 location= org.jfree.data.statistics.DefaultStatisticalCategoryDataset
@@ -512,7 +429,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 17
+ProgramVariant 19
  
 operation: INSERT_BEFORE
 location= org.jfree.data.statistics.DefaultStatisticalCategoryDataset
@@ -525,7 +442,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 18
+ProgramVariant 20
  
 operation: DELETE
 location= org.jfree.data.statistics.DefaultStatisticalCategoryDataset
@@ -540,7 +457,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 19
+ProgramVariant 21
  
 operation: INSERT_BEFORE
 location= org.jfree.data.statistics.DefaultStatisticalCategoryDataset
@@ -555,7 +472,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 21
+ProgramVariant 23
  
 operation: REPLACE
 location= org.jfree.data.statistics.DefaultStatisticalCategoryDataset
@@ -570,7 +487,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 22
+ProgramVariant 24
  
 operation: DELETE
 location= org.jfree.data.statistics.DefaultStatisticalCategoryDataset
@@ -581,7 +498,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 23
+ProgramVariant 25
  
 operation: INSERT_BEFORE
 location= org.jfree.data.statistics.DefaultStatisticalCategoryDataset
@@ -594,7 +511,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 25
+ProgramVariant 27
  
 operation: INSERT_BEFORE
 location= org.jfree.data.statistics.DefaultStatisticalCategoryDataset
@@ -607,7 +524,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 27
+ProgramVariant 29
  
 operation: INSERT_BEFORE
 location= org.jfree.data.statistics.DefaultStatisticalCategoryDataset
@@ -620,7 +537,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 45
+ProgramVariant 47
  
 operation: INSERT_BEFORE
 location= org.jfree.data.statistics.DefaultStatisticalCategoryDataset
@@ -633,7 +550,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 47
+ProgramVariant 49
  
 operation: INSERT_BEFORE
 location= org.jfree.data.statistics.DefaultStatisticalCategoryDataset
@@ -646,7 +563,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 49
+ProgramVariant 51
  
 operation: INSERT_BEFORE
 location= org.jfree.data.statistics.MeanAndStandardDeviation
@@ -659,20 +576,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 229
- 
-operation: INSERT_BEFORE
-location= org.jfree.data.statistics.DefaultStatisticalCategoryDataset
-line= 299
-original statement= org.jfree.data.statistics.MeanAndStandardDeviation item = new org.jfree.data.statistics.MeanAndStandardDeviation(mean , standardDeviation)
-fixed statement= if (true)
-	return ;
-
-generation= 1
-ingredientScope= -
- 
- ----
-ProgramVariant 230
+ProgramVariant 238
  
 operation: DELETE
 location= org.jfree.data.statistics.DefaultStatisticalCategoryDataset
@@ -683,20 +587,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 231
- 
-operation: INSERT_BEFORE
-location= org.jfree.data.statistics.DefaultStatisticalCategoryDataset
-line= 301
-original statement= this.data.addObject(item, rowKey, columnKey)
-fixed statement= if (true)
-	return ;
-
-generation= 1
-ingredientScope= -
- 
- ----
-ProgramVariant 291
+ProgramVariant 307
  
 operation: INSERT_BEFORE
 location= org.jfree.data.KeyedObjects2D
@@ -709,7 +600,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 415
+ProgramVariant 443
  
 operation: INSERT_BEFORE
 location= org.jfree.data.KeyedObjects2D
@@ -722,7 +613,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 417
+ProgramVariant 445
  
 operation: INSERT_BEFORE
 location= org.jfree.data.KeyedObjects2D
@@ -735,7 +626,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 418
+ProgramVariant 446
  
 operation: DELETE
 location= org.jfree.data.KeyedObjects2D
@@ -756,7 +647,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 419
+ProgramVariant 447
  
 operation: INSERT_BEFORE
 location= org.jfree.data.KeyedObjects2D
@@ -774,7 +665,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 421
+ProgramVariant 449
  
 operation: REPLACE
 location= org.jfree.data.KeyedObjects2D
@@ -795,7 +686,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 423
+ProgramVariant 451
  
 operation: INSERT_BEFORE
 location= org.jfree.data.KeyedObjects2D
@@ -808,7 +699,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 424
+ProgramVariant 452
  
 operation: DELETE
 location= org.jfree.data.KeyedObjects2D
@@ -823,7 +714,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 425
+ProgramVariant 453
  
 operation: INSERT_BEFORE
 location= org.jfree.data.KeyedObjects2D
@@ -838,7 +729,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 427
+ProgramVariant 455
  
 operation: REPLACE
 location= org.jfree.data.KeyedObjects2D
@@ -853,7 +744,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 428
+ProgramVariant 456
  
 operation: DELETE
 location= org.jfree.data.KeyedObjects2D
@@ -864,7 +755,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 429
+ProgramVariant 457
  
 operation: INSERT_BEFORE
 location= org.jfree.data.KeyedObjects2D
@@ -877,7 +768,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 431
+ProgramVariant 459
  
 operation: INSERT_BEFORE
 location= org.jfree.data.KeyedObjects2D
@@ -890,20 +781,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 445
- 
-operation: INSERT_BEFORE
-location= org.jfree.data.KeyedObjects
-line= 163
-original statement= return getObject(getIndex(key))
-fixed statement= if (true)
-	return null;
-
-generation= 1
-ingredientScope= -
- 
- ----
-ProgramVariant 447
+ProgramVariant 475
  
 operation: INSERT_BEFORE
 location= org.jfree.data.KeyedObjects2D
@@ -916,7 +794,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 449
+ProgramVariant 477
  
 operation: INSERT_BEFORE
 location= org.jfree.data.KeyedObjects2D
@@ -929,212 +807,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 514
- 
-operation: DELETE
-location= org.jfree.data.KeyedObjects
-line= 132
-original statement= result = i
-fixed statement= result = i
-generation= 1
-ingredientScope= -
- 
- ----
-ProgramVariant 515
- 
-operation: INSERT_BEFORE
-location= org.jfree.data.KeyedObjects
-line= 132
-original statement= result = i
-fixed statement= if (true)
-	return 0;
-
-generation= 1
-ingredientScope= -
- 
- ----
-ProgramVariant 519
- 
-operation: INSERT_BEFORE
-location= org.jfree.data.KeyedObject
-line= 94
-original statement= return this.object
-fixed statement= if (true)
-	return null;
-
-generation= 1
-ingredientScope= -
- 
- ----
-ProgramVariant 521
- 
-operation: INSERT_BEFORE
-location= org.jfree.data.KeyedObjects
-line= 88
-original statement= java.lang.Object result = null
-fixed statement= if (true)
-	return null;
-
-generation= 1
-ingredientScope= -
- 
- ----
-ProgramVariant 522
- 
-operation: DELETE
-location= org.jfree.data.KeyedObjects
-line= 89
-original statement= if ((item >= 0) && (item < (this.data.size()))) {
-	org.jfree.data.KeyedObject kobj = ((org.jfree.data.KeyedObject)(this.data.get(item)));
-	if (kobj != null) {
-		result = kobj.getObject();
-	} 
-} 
-fixed statement= if ((item >= 0) && (item < (this.data.size()))) {
-	org.jfree.data.KeyedObject kobj = ((org.jfree.data.KeyedObject)(this.data.get(item)));
-	if (kobj != null) {
-		result = kobj.getObject();
-	} 
-} 
-generation= 1
-ingredientScope= -
- 
- ----
-ProgramVariant 523
- 
-operation: INSERT_BEFORE
-location= org.jfree.data.KeyedObjects
-line= 89
-original statement= if ((item >= 0) && (item < (this.data.size()))) {
-	org.jfree.data.KeyedObject kobj = ((org.jfree.data.KeyedObject)(this.data.get(item)));
-	if (kobj != null) {
-		result = kobj.getObject();
-	} 
-} 
-fixed statement= if (true)
-	return null;
-
-generation= 1
-ingredientScope= -
- 
- ----
-ProgramVariant 525
- 
-operation: REPLACE
-location= org.jfree.data.KeyedObjects
-line= 89
-original statement= if ((item >= 0) && (item < (this.data.size()))) {
-	org.jfree.data.KeyedObject kobj = ((org.jfree.data.KeyedObject)(this.data.get(item)));
-	if (kobj != null) {
-		result = kobj.getObject();
-	} 
-} 
-fixed statement= if (false) {
-	org.jfree.data.KeyedObject kobj = ((org.jfree.data.KeyedObject)(this.data.get(item)));
-	if (kobj != null) {
-		result = kobj.getObject();
-	} 
-} 
-generation= 1
-ingredientScope= -
- 
- ----
-ProgramVariant 527
- 
-operation: INSERT_BEFORE
-location= org.jfree.data.KeyedObjects
-line= 90
-original statement= org.jfree.data.KeyedObject kobj = ((org.jfree.data.KeyedObject)(this.data.get(item)))
-fixed statement= if (true)
-	return null;
-
-generation= 1
-ingredientScope= -
- 
- ----
-ProgramVariant 528
- 
-operation: DELETE
-location= org.jfree.data.KeyedObjects
-line= 91
-original statement= if (kobj != null) {
-	result = kobj.getObject();
-} 
-fixed statement= if (kobj != null) {
-	result = kobj.getObject();
-} 
-generation= 1
-ingredientScope= -
- 
- ----
-ProgramVariant 529
- 
-operation: INSERT_BEFORE
-location= org.jfree.data.KeyedObjects
-line= 91
-original statement= if (kobj != null) {
-	result = kobj.getObject();
-} 
-fixed statement= if (true)
-	return null;
-
-generation= 1
-ingredientScope= -
- 
- ----
-ProgramVariant 531
- 
-operation: REPLACE
-location= org.jfree.data.KeyedObjects
-line= 91
-original statement= if (kobj != null) {
-	result = kobj.getObject();
-} 
-fixed statement= if (false) {
-	result = kobj.getObject();
-} 
-generation= 1
-ingredientScope= -
- 
- ----
-ProgramVariant 532
- 
-operation: DELETE
-location= org.jfree.data.KeyedObjects
-line= 92
-original statement= result = kobj.getObject()
-fixed statement= result = kobj.getObject()
-generation= 1
-ingredientScope= -
- 
- ----
-ProgramVariant 533
- 
-operation: INSERT_BEFORE
-location= org.jfree.data.KeyedObjects
-line= 92
-original statement= result = kobj.getObject()
-fixed statement= if (true)
-	return null;
-
-generation= 1
-ingredientScope= -
- 
- ----
-ProgramVariant 535
- 
-operation: INSERT_BEFORE
-location= org.jfree.data.KeyedObjects
-line= 95
-original statement= return result
-fixed statement= if (true)
-	return null;
-
-generation= 1
-ingredientScope= -
- 
- ----
-ProgramVariant 547
+ProgramVariant 579
  
 operation: INSERT_BEFORE
 location= org.jfree.chart.renderer.category.AbstractCategoryItemRenderer
@@ -1147,87 +820,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 548
- 
-operation: DELETE
-location= org.jfree.data.KeyedObjects2D
-line= 212
-original statement= setObject(object, rowKey, columnKey)
-fixed statement= setObject(object, rowKey, columnKey)
-generation= 1
-ingredientScope= -
- 
- ----
-ProgramVariant 549
- 
-operation: INSERT_BEFORE
-location= org.jfree.data.KeyedObjects2D
-line= 212
-original statement= setObject(object, rowKey, columnKey)
-fixed statement= if (true)
-	return ;
-
-generation= 1
-ingredientScope= -
- 
- ----
-ProgramVariant 559
- 
-operation: INSERT_BEFORE
-location= org.jfree.data.KeyedObjects2D
-line= 227
-original statement= int rowIndex = this.rowKeys.indexOf(rowKey)
-fixed statement= if (true)
-	return ;
-
-generation= 1
-ingredientScope= -
- 
- ----
-ProgramVariant 561
- 
-operation: INSERT_BEFORE
-location= org.jfree.data.KeyedObjects2D
-line= 228
-original statement= if (rowIndex >= 0) {
-	row = ((org.jfree.data.KeyedObjects)(this.rows.get(rowIndex)));
-} else {
-	this.rowKeys.add(rowKey);
-	row = new org.jfree.data.KeyedObjects();
-	this.rows.add(row);
-}
-fixed statement= if (true)
-	return ;
-
-generation= 1
-ingredientScope= -
- 
- ----
-ProgramVariant 564
- 
-operation: DELETE
-location= org.jfree.data.KeyedObjects2D
-line= 232
-original statement= this.rowKeys.add(rowKey)
-fixed statement= this.rowKeys.add(rowKey)
-generation= 1
-ingredientScope= -
- 
- ----
-ProgramVariant 565
- 
-operation: INSERT_BEFORE
-location= org.jfree.data.KeyedObjects2D
-line= 232
-original statement= this.rowKeys.add(rowKey)
-fixed statement= if (true)
-	return ;
-
-generation= 1
-ingredientScope= -
- 
- ----
-ProgramVariant 570
+ProgramVariant 602
  
 operation: DELETE
 location= org.jfree.data.KeyedObjects2D
@@ -1238,7 +831,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 571
+ProgramVariant 603
  
 operation: INSERT_BEFORE
 location= org.jfree.data.KeyedObjects2D
@@ -1251,7 +844,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 573
+ProgramVariant 605
  
 operation: INSERT_BEFORE
 location= org.jfree.data.KeyedObjects2D
@@ -1264,7 +857,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 574
+ProgramVariant 606
  
 operation: DELETE
 location= org.jfree.data.KeyedObjects2D
@@ -1279,7 +872,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 575
+ProgramVariant 607
  
 operation: INSERT_BEFORE
 location= org.jfree.data.KeyedObjects2D
@@ -1294,7 +887,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 577
+ProgramVariant 609
  
 operation: REPLACE
 location= org.jfree.data.KeyedObjects2D
@@ -1309,7 +902,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 578
+ProgramVariant 610
  
 operation: DELETE
 location= org.jfree.data.KeyedObjects2D
@@ -1320,7 +913,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 579
+ProgramVariant 611
  
 operation: INSERT_BEFORE
 location= org.jfree.data.KeyedObjects2D
@@ -1333,48 +926,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 584
- 
-operation: DELETE
-location= org.jfree.data.KeyedObjects
-line= 131
-original statement= if (ko.getKey().equals(key)) {
-	result = i;
-} 
-fixed statement= if (ko.getKey().equals(key)) {
-	result = i;
-} 
-generation= 1
-ingredientScope= -
- 
- ----
-ProgramVariant 587
- 
-operation: REPLACE
-location= org.jfree.data.KeyedObjects
-line= 131
-original statement= if (ko.getKey().equals(key)) {
-	result = i;
-} 
-fixed statement= if (false) {
-	result = i;
-} 
-generation= 1
-ingredientScope= -
- 
- ----
-ProgramVariant 588
- 
-operation: DELETE
-location= org.jfree.data.KeyedObjects
-line= 134
-original statement= i++
-fixed statement= i++
-generation= 1
-ingredientScope= -
- 
- ----
-ProgramVariant 590
+ProgramVariant 624
  
 operation: DELETE
 location= org.jfree.chart.plot.CategoryPlot
@@ -1405,7 +957,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 591
+ProgramVariant 625
  
 operation: INSERT_BEFORE
 location= org.jfree.chart.plot.CategoryPlot
@@ -1428,7 +980,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 592
+ProgramVariant 626
  
 operation: DELETE
 location= org.jfree.chart.plot.CategoryPlot
@@ -1455,7 +1007,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 593
+ProgramVariant 627
  
 operation: INSERT_BEFORE
 location= org.jfree.chart.plot.CategoryPlot
@@ -1476,7 +1028,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 596
+ProgramVariant 630
  
 operation: DELETE
 location= org.jfree.chart.plot.CategoryPlot
@@ -1491,7 +1043,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 597
+ProgramVariant 631
  
 operation: INSERT_BEFORE
 location= org.jfree.chart.plot.CategoryPlot
@@ -1506,7 +1058,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 598
+ProgramVariant 632
  
 operation: DELETE
 location= org.jfree.chart.plot.CategoryPlot
@@ -1517,7 +1069,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 599
+ProgramVariant 633
  
 operation: INSERT_BEFORE
 location= org.jfree.chart.plot.CategoryPlot
@@ -1530,122 +1082,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 614
- 
-operation: DELETE
-location= org.jfree.data.KeyedObjects
-line= 129
-original statement= while (iterator.hasNext()) {
-	org.jfree.data.KeyedObject ko = ((org.jfree.data.KeyedObject)(iterator.next()));
-	if (ko.getKey().equals(key)) {
-		result = i;
-	} 
-	i++;
-}
-fixed statement= while (iterator.hasNext()) {
-	org.jfree.data.KeyedObject ko = ((org.jfree.data.KeyedObject)(iterator.next()));
-	if (ko.getKey().equals(key)) {
-		result = i;
-	} 
-	i++;
-}
-generation= 1
-ingredientScope= -
- 
- ----
-ProgramVariant 619
- 
-operation: INSERT_BEFORE
-location= org.jfree.data.KeyedObjects
-line= 186
-original statement= int keyIndex = getIndex(key)
-fixed statement= if (true)
-	return ;
-
-generation= 1
-ingredientScope= -
- 
- ----
-ProgramVariant 620
- 
-operation: DELETE
-location= org.jfree.data.KeyedObjects
-line= 187
-original statement= if (keyIndex >= 0) {
-	org.jfree.data.KeyedObject ko = ((org.jfree.data.KeyedObject)(this.data.get(keyIndex)));
-	ko.setObject(object);
-} else {
-	org.jfree.data.KeyedObject ko = new org.jfree.data.KeyedObject(key , object);
-	this.data.add(ko);
-}
-fixed statement= if (keyIndex >= 0) {
-	org.jfree.data.KeyedObject ko = ((org.jfree.data.KeyedObject)(this.data.get(keyIndex)));
-	ko.setObject(object);
-} else {
-	org.jfree.data.KeyedObject ko = new org.jfree.data.KeyedObject(key , object);
-	this.data.add(ko);
-}
-generation= 1
-ingredientScope= -
- 
- ----
-ProgramVariant 621
- 
-operation: INSERT_BEFORE
-location= org.jfree.data.KeyedObjects
-line= 187
-original statement= if (keyIndex >= 0) {
-	org.jfree.data.KeyedObject ko = ((org.jfree.data.KeyedObject)(this.data.get(keyIndex)));
-	ko.setObject(object);
-} else {
-	org.jfree.data.KeyedObject ko = new org.jfree.data.KeyedObject(key , object);
-	this.data.add(ko);
-}
-fixed statement= if (true)
-	return ;
-
-generation= 1
-ingredientScope= -
- 
- ----
-ProgramVariant 625
- 
-operation: INSERT_BEFORE
-location= org.jfree.data.KeyedObjects
-line= 192
-original statement= org.jfree.data.KeyedObject ko = new org.jfree.data.KeyedObject(key , object)
-fixed statement= if (true)
-	return ;
-
-generation= 1
-ingredientScope= -
- 
- ----
-ProgramVariant 626
- 
-operation: DELETE
-location= org.jfree.data.KeyedObjects
-line= 193
-original statement= this.data.add(ko)
-fixed statement= this.data.add(ko)
-generation= 1
-ingredientScope= -
- 
- ----
-ProgramVariant 627
- 
-operation: INSERT_BEFORE
-location= org.jfree.data.KeyedObjects
-line= 193
-original statement= this.data.add(ko)
-fixed statement= if (true)
-	return ;
-
-generation= 1
-ingredientScope= -
- 
- ----
-ProgramVariant 629
+ProgramVariant 665
  
 operation: INSERT_BEFORE
 location= org.jfree.chart.JFreeChart
@@ -1658,7 +1095,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 631
+ProgramVariant 667
  
 operation: INSERT_BEFORE
 location= org.jfree.chart.JFreeChart
@@ -1671,7 +1108,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 633
+ProgramVariant 669
  
 operation: INSERT_BEFORE
 location= org.jfree.chart.JFreeChart
@@ -1684,7 +1121,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 634
+ProgramVariant 670
  
 operation: DELETE
 location= org.jfree.chart.JFreeChart
@@ -1695,7 +1132,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 635
+ProgramVariant 671
  
 operation: INSERT_BEFORE
 location= org.jfree.chart.JFreeChart
@@ -1708,7 +1145,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 647
+ProgramVariant 683
  
 operation: INSERT_BEFORE
 location= org.jfree.chart.plot.CategoryPlot
@@ -1721,7 +1158,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 649
+ProgramVariant 685
  
 operation: INSERT_BEFORE
 location= org.jfree.chart.plot.CategoryPlot
@@ -1734,7 +1171,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 651
+ProgramVariant 687
  
 operation: INSERT_BEFORE
 location= org.jfree.chart.plot.CategoryPlot
@@ -1747,7 +1184,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 653
+ProgramVariant 689
  
 operation: INSERT_BEFORE
 location= org.jfree.chart.plot.CategoryPlot
@@ -1760,7 +1197,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 655
+ProgramVariant 691
  
 operation: INSERT_BEFORE
 location= org.jfree.chart.plot.CategoryPlot
@@ -1773,7 +1210,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 656
+ProgramVariant 692
  
 operation: DELETE
 location= org.jfree.chart.plot.CategoryPlot
@@ -1836,7 +1273,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 657
+ProgramVariant 693
  
 operation: INSERT_BEFORE
 location= org.jfree.chart.plot.CategoryPlot
@@ -1875,7 +1312,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 658
+ProgramVariant 694
  
 operation: DELETE
 location= org.jfree.chart.plot.CategoryPlot
@@ -1934,7 +1371,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 659
+ProgramVariant 695
  
 operation: INSERT_BEFORE
 location= org.jfree.chart.plot.CategoryPlot
@@ -1971,7 +1408,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 928
+ProgramVariant 982
  
 operation: DELETE
 location= org.jfree.data.general.DatasetUtilities
@@ -1994,7 +1431,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 930
+ProgramVariant 984
  
 operation: DELETE
 location= org.jfree.data.general.DatasetUtilities
@@ -2013,7 +1450,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 932
+ProgramVariant 986
  
 operation: DELETE
 location= org.jfree.data.general.DatasetUtilities
@@ -2028,7 +1465,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 935
+ProgramVariant 989
  
 operation: REPLACE
 location= org.jfree.data.general.DatasetUtilities
@@ -2043,7 +1480,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 936
+ProgramVariant 990
  
 operation: DELETE
 location= org.jfree.data.general.DatasetUtilities
@@ -2054,7 +1491,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 957
+ProgramVariant 1015
  
 operation: INSERT_BEFORE
 location= org.jfree.chart.plot.CategoryPlot
@@ -2067,7 +1504,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 1217
+ProgramVariant 1283
  
 operation: INSERT_BEFORE
 location= org.jfree.chart.plot.CategoryPlot
@@ -2080,7 +1517,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 1219
+ProgramVariant 1285
  
 operation: INSERT_BEFORE
 location= org.jfree.chart.plot.CategoryPlot
@@ -2093,7 +1530,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 1221
+ProgramVariant 1287
  
 operation: INSERT_BEFORE
 location= org.jfree.chart.plot.CategoryPlot
@@ -2108,7 +1545,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 1222
+ProgramVariant 1288
  
 operation: REPLACE
 location= org.jfree.chart.plot.CategoryPlot
@@ -2123,7 +1560,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 1225
+ProgramVariant 1291
  
 operation: INSERT_BEFORE
 location= org.jfree.chart.plot.CategoryPlot
@@ -2138,7 +1575,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 1229
+ProgramVariant 1295
  
 operation: INSERT_BEFORE
 location= org.jfree.chart.plot.CategoryPlot
@@ -2151,7 +1588,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 1231
+ProgramVariant 1297
  
 operation: INSERT_BEFORE
 location= org.jfree.chart.plot.CategoryPlot
@@ -2164,7 +1601,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 1233
+ProgramVariant 1299
  
 operation: INSERT_BEFORE
 location= org.jfree.chart.plot.CategoryPlot
@@ -2177,7 +1614,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 1235
+ProgramVariant 1301
  
 operation: INSERT_BEFORE
 location= org.jfree.chart.plot.CategoryPlot
@@ -2190,7 +1627,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 1237
+ProgramVariant 1303
  
 operation: INSERT_BEFORE
 location= org.jfree.chart.plot.CategoryPlot
@@ -2203,7 +1640,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 1239
+ProgramVariant 1305
  
 operation: INSERT_BEFORE
 location= org.jfree.chart.plot.CategoryPlot
@@ -2216,7 +1653,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 1241
+ProgramVariant 1307
  
 operation: INSERT_BEFORE
 location= org.jfree.chart.plot.CategoryPlot
@@ -2229,7 +1666,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 1243
+ProgramVariant 1309
  
 operation: INSERT_BEFORE
 location= org.jfree.chart.plot.CategoryPlot
@@ -2246,7 +1683,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 1247
+ProgramVariant 1313
  
 operation: INSERT_BEFORE
 location= org.jfree.chart.plot.CategoryPlot
@@ -2259,7 +1696,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 1249
+ProgramVariant 1315
  
 operation: INSERT_BEFORE
 location= org.jfree.chart.plot.CategoryPlot
@@ -2272,7 +1709,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 1251
+ProgramVariant 1317
  
 operation: INSERT_BEFORE
 location= org.jfree.chart.plot.CategoryPlot
@@ -2285,7 +1722,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 1253
+ProgramVariant 1319
  
 operation: INSERT_BEFORE
 location= org.jfree.chart.plot.CategoryPlot
@@ -2298,7 +1735,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 1255
+ProgramVariant 1321
  
 operation: INSERT_BEFORE
 location= org.jfree.chart.plot.CategoryPlot
@@ -2311,7 +1748,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 1257
+ProgramVariant 1323
  
 operation: INSERT_BEFORE
 location= org.jfree.chart.plot.CategoryPlot
@@ -2324,7 +1761,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 1259
+ProgramVariant 1325
  
 operation: INSERT_BEFORE
 location= org.jfree.chart.plot.CategoryPlot
@@ -2341,7 +1778,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 1263
+ProgramVariant 1329
  
 operation: INSERT_BEFORE
 location= org.jfree.chart.plot.CategoryPlot
@@ -2356,7 +1793,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 1267
+ProgramVariant 1333
  
 operation: INSERT_BEFORE
 location= org.jfree.chart.plot.CategoryPlot
@@ -2369,7 +1806,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 1269
+ProgramVariant 1335
  
 operation: INSERT_BEFORE
 location= org.jfree.chart.plot.CategoryPlot
@@ -2384,7 +1821,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 1271
+ProgramVariant 1337
  
 operation: INSERT_BEFORE
 location= org.jfree.chart.plot.CategoryPlot
@@ -2397,7 +1834,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 1273
+ProgramVariant 1339
  
 operation: INSERT_BEFORE
 location= org.jfree.chart.plot.CategoryPlot
@@ -2412,7 +1849,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 1275
+ProgramVariant 1341
  
 operation: INSERT_BEFORE
 location= org.jfree.chart.plot.CategoryPlot
@@ -2425,7 +1862,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 1277
+ProgramVariant 1343
  
 operation: INSERT_BEFORE
 location= org.jfree.chart.plot.CategoryPlot
@@ -2438,7 +1875,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 1279
+ProgramVariant 1345
  
 operation: INSERT_BEFORE
 location= org.jfree.chart.plot.CategoryPlot
@@ -2451,7 +1888,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 1281
+ProgramVariant 1347
  
 operation: INSERT_BEFORE
 location= org.jfree.chart.plot.CategoryPlot
@@ -2464,7 +1901,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 1283
+ProgramVariant 1349
  
 operation: INSERT_BEFORE
 location= org.jfree.chart.plot.CategoryPlot
@@ -2477,7 +1914,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 1284
+ProgramVariant 1350
  
 operation: DELETE
 location= org.jfree.chart.plot.CategoryPlot
@@ -2572,7 +2009,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 1285
+ProgramVariant 1351
  
 operation: INSERT_BEFORE
 location= org.jfree.chart.plot.CategoryPlot
@@ -2627,7 +2064,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 1289
+ProgramVariant 1355
  
 operation: INSERT_BEFORE
 location= org.jfree.chart.plot.CategoryPlot
@@ -2640,7 +2077,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 1291
+ProgramVariant 1357
  
 operation: INSERT_BEFORE
 location= org.jfree.chart.plot.CategoryPlot
@@ -2660,7 +2097,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 1293
+ProgramVariant 1359
  
 operation: INSERT_BEFORE
 location= org.jfree.chart.plot.CategoryPlot
@@ -2673,7 +2110,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 1295
+ProgramVariant 1361
  
 operation: INSERT_BEFORE
 location= org.jfree.chart.plot.CategoryPlot
@@ -2690,7 +2127,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 1299
+ProgramVariant 1365
  
 operation: INSERT_BEFORE
 location= org.jfree.chart.plot.CategoryPlot
@@ -2703,7 +2140,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 1301
+ProgramVariant 1367
  
 operation: INSERT_BEFORE
 location= org.jfree.chart.plot.CategoryPlot
@@ -2716,7 +2153,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 1303
+ProgramVariant 1369
  
 operation: INSERT_BEFORE
 location= org.jfree.chart.plot.CategoryPlot
@@ -2729,7 +2166,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 1304
+ProgramVariant 1370
  
 operation: DELETE
 location= org.jfree.chart.plot.CategoryPlot
@@ -2744,7 +2181,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 1305
+ProgramVariant 1371
  
 operation: INSERT_BEFORE
 location= org.jfree.chart.plot.CategoryPlot
@@ -2759,7 +2196,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 1306
+ProgramVariant 1372
  
 operation: DELETE
 location= org.jfree.chart.plot.CategoryPlot
@@ -2770,7 +2207,7 @@ generation= 1
 ingredientScope= -
  
  ----
-ProgramVariant 1307
+ProgramVariant 1373
  
 operation: INSERT_BEFORE
 location= org.jfree.chart.plot.CategoryPlot
@@ -2782,32 +2219,32 @@ fixed statement= if (true)
 generation= 1
 ingredientScope= -
  
-
+2015-08-18 23:12:22,442 INFO main - 
 ----stats: 
-
+2015-08-18 23:12:22,442 INFO main - 
 spaces navigation: [0]: {}
 #gen: 0
-#patches: 146
-#RightCompilation: 1817
+#patches: 113
+#RightCompilation: 1967
 #WrongCompilation: 471
-#FailingTestCaseExecution: 1818
+#FailingTestCaseExecution: 1968
 #RegressionTestExecution: 146
-#TestcasesExecutedval1: 65448
-#TestcasesExecutedval2: 0
+#TestcasesExecutedval1: 70848
+#TestcasesExecutedval2: 237250
 #FailingTestCase: 36
-#RegressionTestCases: 0
+#RegressionTestCases: 1625
 #OfAppliedOp: 0
 #NotAppliedOp: 0
 #InmutatedGen: 0
 #unfinishValidation: 0
 #ing {}
 #untilcompile {}
-Time Total(ms): 2075372
+2015-08-18 23:12:22,442 INFO fr.inria.main.AbstractMain - Time Total(ms): 2729915
 
 
-Node: griffon-35.nancy.grid5000.fr
+Node: graphene-66.nancy.grid5000.fr
 
 
-Date: Thu Aug 13 20:58:36 CEST 2015
+Date: Wed Aug 19 01:12:22 CEST 2015
 
 

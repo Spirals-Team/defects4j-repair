@@ -1,34 +1,34 @@
 {
     "FailingTestCase": "21", 
-    "FailingTestCaseExecution": "97", 
-    "InmutatedGen": "7", 
+    "FailingTestCaseExecution": "96", 
+    "InmutatedGen": "1", 
     "NotAppliedOp": "0", 
-    "OfAppliedOp": "279", 
-    "RegressionTestCases": "0", 
+    "OfAppliedOp": "243", 
+    "RegressionTestCases": "2041", 
     "RegressionTestExecution": "1", 
-    "RightCompilation": "96", 
-    "WrongCompilation": "183", 
-    "date": "Fri Aug 14 06:29:45 CEST 2015\n\n", 
-    "gen": "279", 
-    "gens": "887", 
-    "node": "griffon-85.nancy.grid5000.fr", 
+    "RightCompilation": "95", 
+    "WrongCompilation": "148", 
+    "date": "Wed Aug 19 01:05:01 CEST 2015\n\n", 
+    "gen": "243", 
+    "gens": "1078", 
+    "node": "graphene-68.nancy.grid5000.fr", 
     "operations": [
         {
             "buggyStatement": "this.data.add(((-index) - 1), new org.jfree.data.xy.XYDataItem(x , y))", 
-            "generation": 279, 
+            "generation": 243, 
             "patch": "this.data.add(new org.jfree.data.xy.XYDataItem(x , y))", 
             "patchLocation": {
                 "className": "org.jfree.data.xy.XYSeries", 
                 "line": 562
             }, 
             "type": "REPLACE", 
-            "variant": 558
+            "variant": 486
         }
     ], 
     "ops": "0", 
     "patches": "1", 
-    "programVariant": "558", 
-    "timeEvaluation": "140354", 
-    "timeTotal": "187918", 
+    "programVariant": "486", 
+    "timeEvaluation": "103342", 
+    "timeTotal": "144405", 
     "unfinishValidation": "0"
 }

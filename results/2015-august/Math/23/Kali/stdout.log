@@ -1,5 +1,5 @@
 export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/math/math_23 /tmp/math_23_Kali;cd /tmp/math_23_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Math/lib/* lib/;find . -type f -name "package-info.java" -delete;
-/home/tdurieux/defects4j-repair/src/python/core/../../../results/Math/23/Kali/result
+/home/tdurieux/defects4j-repair/src/python/core/../../../results/2015-august/Math/23/Kali/result
 cd /tmp/math_23_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java  -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.math3.optimization.univariate.BrentOptimizerTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -seed 10 -maxtime 60  -scope local  -stopfirst true -flthreshold 0 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
 
 Node: `hostname`
@@ -7,38 +7,38 @@ Node: `hostname`
 Date: `date`
 ";rm -rf /tmp/math_23_Kali;
 
-End Repair Loops: NOT Found solution
-
+2015-08-18 19:13:58,395 INFO main - End Repair Loops: NOT Found solution
+2015-08-18 19:13:58,395 INFO main - 
 Number solutions:0
-
+2015-08-18 19:13:58,395 INFO main - 
 All variants:
-f 1.0, [Variant id: 1, #gens: 937, #ops: 0, parent:-]
-
+2015-08-18 19:13:58,395 INFO main - f 1.0, [Variant id: 1, #gens: 961, #ops: 0, parent:-]
+2015-08-18 19:13:58,395 INFO main - 
 ----stats: 
-
+2015-08-18 19:13:58,395 INFO main - 
 spaces navigation: [0]: {}
 #gen: 0
 #patches: 0
-#RightCompilation: 1711
+#RightCompilation: 1769
 #WrongCompilation: 423
-#FailingTestCaseExecution: 1712
+#FailingTestCaseExecution: 1770
 #RegressionTestExecution: 4
-#TestcasesExecutedval1: 17090
-#TestcasesExecutedval2: 16292
+#TestcasesExecutedval1: 17670
+#TestcasesExecutedval2: 15780
 #FailingTestCase: 10
-#RegressionTestCases: 4073
+#RegressionTestCases: 3945
 #OfAppliedOp: 0
 #NotAppliedOp: 0
 #InmutatedGen: 0
 #unfinishValidation: 0
 #ing {}
 #untilcompile {}
-Time Total(ms): 2250905
+2015-08-18 19:13:58,395 INFO fr.inria.main.AbstractMain - Time Total(ms): 2875499
 
 
-Node: graphene-59.nancy.grid5000.fr
+Node: graphene-99.nancy.grid5000.fr
 
 
-Date: Thu Aug 13 20:06:06 CEST 2015
+Date: Tue Aug 18 21:13:58 CEST 2015
 
 

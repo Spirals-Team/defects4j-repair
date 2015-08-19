@@ -1,17 +1,17 @@
 {
     "FailingTestCase": "18", 
-    "FailingTestCaseExecution": "1687", 
+    "FailingTestCaseExecution": "1781", 
     "InmutatedGen": "0", 
     "NotAppliedOp": "0", 
     "OfAppliedOp": "0", 
     "RegressionTestCases": "1994", 
     "RegressionTestExecution": "12", 
-    "RightCompilation": "1686", 
+    "RightCompilation": "1780", 
     "WrongCompilation": "332", 
-    "date": "Thu Aug 13 19:57:17 CEST 2015\n\n", 
+    "date": "Tue Aug 18 20:47:55 CEST 2015\n\n", 
     "gen": "0", 
-    "gens": "903", 
-    "node": "griffon-73.nancy.grid5000.fr", 
+    "gens": "937", 
+    "node": "graphene-72.nancy.grid5000.fr", 
     "operations": [
         {
             "buggyStatement": "int j = (4 * n) - 1", 
@@ -110,7 +110,7 @@
                 "line": 840
             }, 
             "type": "DELETE", 
-            "variant": 212
+            "variant": 248
         }, 
         {
             "buggyStatement": "if ((1.5 * (work[pingPong])) < (work[((4 * (n - 1)) + (pingPong))])) {\n\tint j = (4 * n) - 1;\n\tfor (int i = 0 ; i < j ; i += 4) {\n\t\tfor (int k = 0 ; k < 4 ; k += step) {\n\t\t\tfinal double tmp = work[(i + k)];\n\t\t\twork[(i + k)] = work[(j - k)];\n\t\t\twork[(j - k)] = tmp;\n\t\t}\n\t\tj -= 4;\n\t}\n\treturn true;\n} ", 
@@ -121,7 +121,7 @@
                 "line": 1133
             }, 
             "type": "DELETE", 
-            "variant": 400
+            "variant": 446
         }, 
         {
             "buggyStatement": "if ((1.5 * (work[pingPong])) < (work[((4 * (n - 1)) + (pingPong))])) {\n\tint j = (4 * n) - 1;\n\tfor (int i = 0 ; i < j ; i += 4) {\n\t\tfor (int k = 0 ; k < 4 ; k += step) {\n\t\t\tfinal double tmp = work[(i + k)];\n\t\t\twork[(i + k)] = work[(j - k)];\n\t\t\twork[(j - k)] = tmp;\n\t\t}\n\t\tj -= 4;\n\t}\n\treturn true;\n} ", 
@@ -132,7 +132,7 @@
                 "line": 1133
             }, 
             "type": "INSERT_BEFORE", 
-            "variant": 401
+            "variant": 447
         }, 
         {
             "buggyStatement": "if ((1.5 * (work[pingPong])) < (work[((4 * (n - 1)) + (pingPong))])) {\n\tint j = (4 * n) - 1;\n\tfor (int i = 0 ; i < j ; i += 4) {\n\t\tfor (int k = 0 ; k < 4 ; k += step) {\n\t\t\tfinal double tmp = work[(i + k)];\n\t\t\twork[(i + k)] = work[(j - k)];\n\t\t\twork[(j - k)] = tmp;\n\t\t}\n\t\tj -= 4;\n\t}\n\treturn true;\n} ", 
@@ -143,13 +143,13 @@
                 "line": 1133
             }, 
             "type": "REPLACE", 
-            "variant": 403
+            "variant": 449
         }
     ], 
     "ops": "0", 
     "patches": "12", 
     "programVariant": "29", 
     "timeEvaluation": null, 
-    "timeTotal": "3156290", 
+    "timeTotal": "2996649", 
     "unfinishValidation": "0"
 }

@@ -1,5 +1,5 @@
 export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/lang/lang_30 /tmp/lang_30_Kali;cd /tmp/lang_30_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Lang/lib/* lib/;find . -type f -name "package-info.java" -delete;
-/home/tdurieux/defects4j-repair/src/python/core/../../../results/Lang/30/Kali/result
+/home/tdurieux/defects4j-repair/src/python/core/../../../results/2015-august/Lang/30/Kali/result
 cd /tmp/lang_30_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java  -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.apache.commons.lang3.StringUtilsEqualsIndexOfTest:org.apache.commons.lang3.StringUtilsEqualsIndexOfTest:org.apache.commons.lang3.StringUtilsEqualsIndexOfTest:org.apache.commons.lang3.StringUtilsEqualsIndexOfTest:org.apache.commons.lang3.StringUtilsEqualsIndexOfTest:org.apache.commons.lang3.StringUtilsEqualsIndexOfTest:org.apache.commons.lang3.StringUtilsEqualsIndexOfTest:org.apache.commons.lang3.StringUtilsEqualsIndexOfTest:org.apache.commons.lang3.StringUtilsEqualsIndexOfTest:org.apache.commons.lang3.StringUtilsEqualsIndexOfTest: -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 5 -maxgen 1000000 -seed 10 -maxtime 60  -scope local  -stopfirst true -flthreshold 0 -population 1 -srcjavafolder src/main/java/ -srctestfolder src/test/java/ -binjavafolder target/classes/ -bintestfolder target/test-classes/;echo "
 
 Node: `hostname`
@@ -7,20 +7,20 @@ Node: `hostname`
 Date: `date`
 ";rm -rf /tmp/lang_30_Kali;
 
-End Repair Loops: NOT Found solution
-
+2015-08-18 21:10:33,638 INFO main - End Repair Loops: NOT Found solution
+2015-08-18 21:10:33,638 INFO main - 
 Number solutions:0
-
+2015-08-18 21:10:33,638 INFO main - 
 All variants:
-f 280.0, [Variant id: 1, #gens: 881, #ops: 0, parent:-]
-
+2015-08-18 21:10:33,638 INFO main - f 280.0, [Variant id: 1, #gens: 992, #ops: 0, parent:-]
+2015-08-18 21:10:33,638 INFO main - 
 ----stats: 
-
+2015-08-18 21:10:33,638 INFO main - 
 spaces navigation: [0]: {}
 #gen: 0
 #patches: 0
 #RightCompilation: 0
-#WrongCompilation: 2162
+#WrongCompilation: 2484
 #FailingTestCaseExecution: 1
 #RegressionTestExecution: 0
 #TestcasesExecutedval1: 460
@@ -33,12 +33,12 @@ spaces navigation: [0]: {}
 #unfinishValidation: 0
 #ing {}
 #untilcompile {}
-Time Total(ms): 597446
+2015-08-18 21:10:33,638 INFO fr.inria.main.AbstractMain - Time Total(ms): 508320
 
 
-Node: griffon-73.nancy.grid5000.fr
+Node: graphene-34.nancy.grid5000.fr
 
 
-Date: Thu Aug 13 20:13:21 CEST 2015
+Date: Tue Aug 18 23:10:34 CEST 2015
 
 
