@@ -15,7 +15,8 @@ tools = ["NopolPC", "NopolC", "BrutpolPC", "BrutpolC", "Genprog", "Kali"]
 root = conf.resultsRoot
 resultsAll = {}
 resultsAllPath = os.path.join(root, "results.json")
-resultsMdPath = os.path.join(root, "results.md")
+resultsMdPath = os.path.join(root, "readme.md")
+detailedResultsMdPath = os.path.join(root, "detailed-results.md")
 resultsTexPath = os.path.join(root, "results.tex")
 rankingAll = {}
 
@@ -52,8 +53,10 @@ for tool in tools:
 	tableHeader += "--------- | "
 tableHeader += "------\n"
 result += tableHeader
+resultSimple = result
 
 fullTable = tableHeader
+simpleTable = tableHeader
 body = ""
 print("Start the output proccess")
 for project in sorted(os.listdir(root)):
@@ -209,8 +212,10 @@ for project in sorted(os.listdir(root)):
 		if lineCount > 0:
 			texLineArgs += ["Fixed"]
 			result += line.format(*lineArgs) + "\n"
+			resultSimple += re.sub("[0-9]+ Reg", "No  ", re.sub("[0-9]+ AV", "No  ", line.format(*lineArgs))) + "\n"
 			texTable += texLineTable.format(*texLineArgs) + "\n"
 			fixedBugs += 1
+		simpleTable += re.sub("[0-9]+ Reg", "No  ", re.sub("[0-9]+ AV", "No  ", line.format(*lineArgs))) + "\n"
 		fullTable += line.format(*lineArgs) + "\n"
 
 	texTable += "\hline\n"
@@ -244,14 +249,17 @@ texTable += """\hline
 \end{table}
 """
 result += totalLine
-
+resultSimple += totalLine
 result += "# Complete data\n\n"
-result += fullTable
-result += totalLine
-print result
+resultSimple += "# Complete data\n\n"
+print result + fullTable + totalLine
+
+resultsAllFile = open(detailedResultsMdPath, "w")
+resultsAllFile.write("%s%s%s\n\n\n%s" % (result, fullTable,totalLine,body))
+resultsAllFile.close()
 
 resultsAllFile = open(resultsMdPath, "w")
-resultsAllFile.write("%s\n\n\n%s" % (result,body))
+resultsAllFile.write("%s%s%s\n\n\n%s" % (resultSimple, simpleTable,totalLine,body))
 resultsAllFile.close()
 
 resultsTexFile = open(resultsTexPath, "w")
