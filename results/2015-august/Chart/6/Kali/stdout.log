@@ -1,21 +1,21 @@
 export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/chart/chart_6 /tmp/chart_6_Kali;cd /tmp/chart_6_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Chart/lib/* lib/;find . -type f -name "package-info.java" -delete;
 /home/tdurieux/defects4j-repair/src/python/core/../../../results/2015-august/Chart/6/Kali/result
-cd /tmp/chart_6_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java  -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.jfree.chart.util.junit.ShapeListTests:org.jfree.chart.util.junit.ShapeListTests: -package org.jfree -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 4 -maxgen 1000000 -seed 10 -maxtime 60  -scope local  -stopfirst true -flthreshold 0 -population 1 -srcjavafolder source/ -srctestfolder tests/ -binjavafolder build/ -bintestfolder build-tests/;echo "
+cd /tmp/chart_6_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;TZ="America/New_York"; export TZexport PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java  -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.jfree.chart.util.junit.ShapeListTests:org.jfree.chart.util.junit.ShapeListTests: -package org.jfree -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 4 -maxgen 1000000 -seed 10 -maxtime 60  -scope local  -stopfirst false -flthreshold 0 -population 1 -srcjavafolder source/ -srctestfolder tests/ -binjavafolder build/ -bintestfolder build-tests/;echo "
 
 Node: `hostname`
 ";echo "
 Date: `date`
 ";rm -rf /tmp/chart_6_Kali;
 
-2015-08-18 22:59:43,805 INFO main - End Repair Loops: NOT Found solution
-2015-08-18 22:59:43,805 INFO main - 
+2015-08-25 16:11:24,411 INFO main - End Repair Loops: NOT Found solution
+2015-08-25 16:11:24,411 INFO main - 
 Number solutions:0
-2015-08-18 22:59:43,805 INFO main - 
+2015-08-25 16:11:24,411 INFO main - 
 All variants:
-2015-08-18 22:59:43,805 INFO main - f 4.0, [Variant id: 1, #gens: 1081, #ops: 0, parent:-]
-2015-08-18 22:59:43,805 INFO main - 
+2015-08-25 16:11:24,411 INFO main - f 4.0, [Variant id: 1, #gens: 1081, #ops: 0, parent:-]
+2015-08-25 16:11:24,411 INFO main - 
 ----stats: 
-2015-08-18 22:59:43,805 INFO main - 
+2015-08-25 16:11:24,411 INFO main - 
 spaces navigation: [0]: {}
 #gen: 0
 #patches: 0
@@ -33,12 +33,12 @@ spaces navigation: [0]: {}
 #unfinishValidation: 0
 #ing {}
 #untilcompile {}
-2015-08-18 22:59:43,805 INFO fr.inria.main.AbstractMain - Time Total(ms): 1004906
+2015-08-25 16:11:24,411 INFO fr.inria.main.AbstractMain - Time Total(ms): 1007532
 
 
-Node: graphene-63.nancy.grid5000.fr
+Node: graphene-9.nancy.grid5000.fr
 
 
-Date: Wed Aug 19 00:59:44 CEST 2015
+Date: Tue Aug 25 18:11:24 CEST 2015
 
 
