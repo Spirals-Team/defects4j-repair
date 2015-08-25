@@ -5,13 +5,11 @@ BugId             | NopolPC   | NopolC    | Genprog   | Kali      | Total
 [C1](#chart-1)    | TIMEOUT   | TIMEOUT   | Yes       | Yes       |      2
 [C3](#chart-3)    | TIMEOUT   | Yes       | Yes       | 0 Reg     |      2
 [C5](#chart-5)    | TIMEOUT   | Yes       | Yes       | Yes       |      3
-[C6](#chart-6)    | Yes       | Yes       | Yes       | 0 Reg     |      3
 [C7](#chart-7)    | TIMEOUT   | TIMEOUT   | Yes       | 0 Reg     |      1
-[C8](#chart-8)    | TIMEOUT   | 0 AV      | Yes       | TIMEOUT   |      1
 [C9](#chart-9)    | TIMEOUT   | TIMEOUT   | Yes       | 0 Reg     |      1
 [C13](#chart-13)  | Yes       | Yes       | Yes       | Yes       |      4
 [C15](#chart-15)  | TIMEOUT   | TIMEOUT   | Yes       | Yes       |      2
-[C21](#chart-21)  | Yes       | Yes       | Yes       | Yes       |      4
+[C21](#chart-21)  | Yes       | 1 AV      | 1655 Reg  | Yes       |      2
 [C25](#chart-25)  | Yes       | Yes       | Yes       | Yes       |      4
 [C26](#chart-26)  | Yes       | Yes       | 1599 Reg  | Yes       |      3
 [L39](#lang-39)   | Yes       | 0 AV      | 0 Reg     | 0 Reg     |      1
@@ -29,7 +27,7 @@ BugId             | NopolPC   | NopolC    | Genprog   | Kali      | Total
 [M33](#math-33)   | Yes       | Yes       | 0 Reg     | 0 Reg     |      2
 [M40](#math-40)   | 1 AV      | Yes       | Yes       | Yes       |      3
 [M42](#math-42)   | Yes       | TIMEOUT   | 0 Reg     | 0 Reg     |      1
-[M44](#math-44)   | TIMEOUT   | 0 AV      | Yes       | Yes       |      2
+[M44](#math-44)   | 0 AV      | 0 AV      | Yes       | Yes       |      2
 [M49](#math-49)   | Yes       | Yes       | Yes       | Yes       |      4
 [M50](#math-50)   | Yes       | Yes       | Yes       | Yes       |      4
 [M53](#math-53)   | 0 AV      | 0 AV      | Yes       | 0 Reg     |      1
@@ -50,21 +48,20 @@ BugId             | NopolPC   | NopolC    | Genprog   | Kali      | Total
 [M88](#math-88)   | Yes       | 1 AV      | 0 Reg     | 0 Reg     |      1
 [M95](#math-95)   | TIMEOUT   | 0 AV      | Yes       | Yes       |      2
 [M97](#math-97)   | Yes       | Yes       | 0 Reg     | 0 Reg     |      2
-[M99](#math-99)   | Yes       | Yes       | 0 Reg     | 0 Reg     |      2
 [M104](#math-104) | 0 AV      | Yes       | 1003 Reg  | 0 Reg     |      1
 [M105](#math-105) | Yes       | 0 AV      | 0 Reg     | 0 Reg     |      1
 [T4](#time-4)     | 0 AV      | 0 AV      | Yes       | Yes       |      2
 [T11](#time-11)   | Yes       | Yes       | Yes       | Yes       |      4
-Total             | 30 (13%)  | 25 (11%)  | 33 (14%)  | 24 (10%)  |    112
-Fixed bugs: 53/224 (23%)
+Total             | 28 (12%)  | 22 (9%)   | 30 (13%)  | 24 (10%)  |    104
+Fixed bugs: 50/222 (22%)
 
 Nb bugs ends with an execution error: 9
 
 Nb bugs ends with an empty log: 0
 
-Nb bugs ends with the Grid5000 timeout: 133
+Nb bugs ends with the Grid5000 timeout: 131
 
-Total execution time: 24 days, 9:25:58.832000
+Total execution time: 24 days, 8:29:51.967000
 # Complete data
 
 BugId             | NopolPC   | NopolC    | Genprog   | Kali      | Total
@@ -74,9 +71,8 @@ BugId             | NopolPC   | NopolC    | Genprog   | Kali      | Total
 [C3](#chart-3)    | TIMEOUT   | Yes       | Yes       | 0 Reg     |      2
 [C4](#chart-4)    | TIMEOUT   | TIMEOUT   | 0 Reg     | 0 Reg     |      0
 [C5](#chart-5)    | TIMEOUT   | Yes       | Yes       | Yes       |      3
-[C6](#chart-6)    | Yes       | Yes       | Yes       | 0 Reg     |      3
+[C6](#chart-6)    | TIMEOUT   | 2 AV      | 1895 Reg  | 0 Reg     |      0
 [C7](#chart-7)    | TIMEOUT   | TIMEOUT   | Yes       | 0 Reg     |      1
-[C8](#chart-8)    | TIMEOUT   | 0 AV      | Yes       | TIMEOUT   |      1
 [C9](#chart-9)    | TIMEOUT   | TIMEOUT   | Yes       | 0 Reg     |      1
 [C10](#chart-10)  | TIMEOUT   | 0 AV      | 0 Reg     | 0 Reg     |      0
 [C11](#chart-11)  | TIMEOUT   | TIMEOUT   | 0 Reg     | 0 Reg     |      0
@@ -89,7 +85,7 @@ BugId             | NopolPC   | NopolC    | Genprog   | Kali      | Total
 [C18](#chart-18)  | TIMEOUT   | 0 AV      | 0 Reg     | 0 Reg     |      0
 [C19](#chart-19)  | TIMEOUT   | 0 AV      | 0 Reg     | 0 Reg     |      0
 [C20](#chart-20)  | TIMEOUT   | 0 AV      | 0 Reg     | 0 Reg     |      0
-[C21](#chart-21)  | Yes       | Yes       | Yes       | Yes       |      4
+[C21](#chart-21)  | Yes       | 1 AV      | 1655 Reg  | Yes       |      2
 [C22](#chart-22)  | TIMEOUT   | 0 AV      | 0 Reg     | 0 Reg     |      0
 [C23](#chart-23)  | TIMEOUT   | 0 AV      | 0 Reg     | 0 Reg     |      0
 [C24](#chart-24)  | TIMEOUT   | 0 AV      | 0 Reg     | 0 Reg     |      0
@@ -203,7 +199,7 @@ BugId             | NopolPC   | NopolC    | Genprog   | Kali      | Total
 [M41](#math-41)   | 21 AV     | 10 AV     | 0 Reg     | 0 Reg     |      0
 [M42](#math-42)   | Yes       | TIMEOUT   | 0 Reg     | 0 Reg     |      1
 [M43](#math-43)   | 0 AV      | 1 AV      | 0 Reg     | 0 Reg     |      0
-[M44](#math-44)   | TIMEOUT   | 0 AV      | Yes       | Yes       |      2
+[M44](#math-44)   | 0 AV      | 0 AV      | Yes       | Yes       |      2
 [M45](#math-45)   | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
 [M46](#math-46)   | 2 AV      | 2 AV      | 0 Reg     | 0 Reg     |      0
 [M47](#math-47)   | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
@@ -258,7 +254,6 @@ BugId             | NopolPC   | NopolC    | Genprog   | Kali      | Total
 [M96](#math-96)   | 0 AV      | 1 AV      | 0 Reg     | 0 Reg     |      0
 [M97](#math-97)   | Yes       | Yes       | 0 Reg     | 0 Reg     |      2
 [M98](#math-98)   | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
-[M99](#math-99)   | Yes       | Yes       | 0 Reg     | 0 Reg     |      2
 [M100](#math-100) | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
 [M101](#math-101) | 0 AV      | 1 AV      | 0 Reg     | 0 Reg     |      0
 [M102](#math-102) | TIMEOUT   | 0 AV      | 0 Reg     | 0 Reg     |      0
@@ -293,16 +288,16 @@ BugId             | NopolPC   | NopolC    | Genprog   | Kali      | Total
 [T25](#time-25)   | 0 AV      | TIMEOUT   | 0 Reg     | TIMEOUT   |      0
 [T26](#time-26)   | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
 [T27](#time-27)   | 0 AV      | 0 AV      | 3789 Reg  | 0 Reg     |      0
-Total             | 30 (13%)  | 25 (11%)  | 33 (14%)  | 24 (10%)  |    112
-Fixed bugs: 53/224 (23%)
+Total             | 28 (12%)  | 22 (9%)   | 30 (13%)  | 24 (10%)  |    104
+Fixed bugs: 50/222 (22%)
 
 Nb bugs ends with an execution error: 9
 
 Nb bugs ends with an empty log: 0
 
-Nb bugs ends with the Grid5000 timeout: 133
+Nb bugs ends with the Grid5000 timeout: 131
 
-Total execution time: 24 days, 9:25:58.832000
+Total execution time: 24 days, 8:29:51.967000
 
 
 
@@ -497,105 +492,6 @@ if (false) {
 
 Grid5000 node: graphene-68.nancy.grid5000.fr
 
-# Chart 6
-
-Nb Executed tests: 3789
-
-Nb Failing tests: 4
-
->	org.jfree.chart.util.junit.ShapeListTests#testSerialization
->	org.jfree.chart.util.junit.ShapeListTests#testEquals
->	org.jfree.chart.util.junit.ShapeListTests#testSerialization
->	org.jfree.chart.util.junit.ShapeListTests#testEquals
-
-## Human Patch 
-
-```Java
-Index: org/jfree/chart/util/ShapeList.java
-===================================================================
---- org/jfree/chart/util/ShapeList.java	(revision 1166)
-+++ org/jfree/chart/util/ShapeList.java	(revision 1164)
-@@ -96,27 +93,26 @@
-     /**
-      * Tests the list for equality with another object (typically also a list).
-      *
--     * @param obj  the other object (<code>null</code> permitted).
-+     * @param obj  the other object.
-      *
-      * @return A boolean.
-      */
-     public boolean equals(Object obj) {
- 
-+        if (obj == null) {
-+            return false;
-+        }
-+
-         if (obj == this) {
-             return true;
-         }
--        if (!(obj instanceof ShapeList)) {
--            return false;
-+
-+        if (obj instanceof ShapeList) {
-+            return super.equals(obj);
-         }
--        ShapeList that = (ShapeList) obj;
--        int listSize = size();
--        for (int i = 0; i < listSize; i++) {
--           if (!ShapeUtilities.equal((Shape) get(i), (Shape) that.get(i))) {
--               return false;
--           }
--        }
--        return true;
- 
-+        return false;
-+
-     }
- 
-     /**
-
-```
-
-## NopolPC 
-
-org.jfree.chart.util.ShapeList:81 (Suspicious rank: ample 1, jaccard 16, ochiai 15, naish1 22144, gp13 1, naish2 1, tarantula 16, )
-```Java
-(-1) != (-1)
-```
-
-Nb Angelic value: 1
-
-Nb analyzed Statement: 16
-
-Execution time: 0:00:36.412000
-
-Grid5000 node: graphene-89.nancy.grid5000.fr
-
-## NopolC 
-
-org.jfree.chart.util.ShapeList:109 (Suspicious rank: ample 7, jaccard 83, ochiai 50, naish1 22146, gp13 7, naish2 7, tarantula 83, )
-```Java
-obj!=null
-```
-
-Nb Angelic value: 1
-
-Nb analyzed Statement: 51
-
-Execution time: 0:00:39.572000
-
-Grid5000 node: graphene-61.nancy.grid5000.fr
-
-## Genprog 
-
-org.jfree.chart.util.AbstractObjectList:131 (Suspicious rank: ample 13, jaccard 89, ochiai 59, naish1 22075, gp13 13, naish2 13, tarantula 91, )
-INSERT_BEFORE
-```Java
-java.util.Arrays.fill(this.objects, null)
-```
-
-Grid5000 node: graphene-57.nancy.grid5000.fr
-
 # Chart 7
 
 Nb Executed tests: 3641
@@ -636,42 +532,6 @@ return this.maxEndIndex
 ```
 
 Grid5000 node: graphene-75.nancy.grid5000.fr
-
-# Chart 8
-
-Nb Executed tests: 3641
-
-Nb Failing tests: 0
-
-
-## Human Patch 
-
-```Java
-Index: org/jfree/data/time/Week.java
-===================================================================
---- org/jfree/data/time/Week.java	(revision 1085)
-+++ org/jfree/data/time/Week.java	(revision 1084)
-@@ -172,7 +171,7 @@
-      */
-     public Week(Date time, TimeZone zone) {
-         // defer argument checking...
--        this(time, zone, Locale.getDefault());
-+        this(time, RegularTimePeriod.DEFAULT_TIME_ZONE, Locale.getDefault());
-     }
- 
-     /**
-
-```
-
-## Genprog 
-
-org.jfree.data.xy.MatrixSeries:88
-INSERT_BEFORE
-```Java
-fireSeriesChanged()
-```
-
-Grid5000 node: graphene-64.nancy.grid5000.fr
 
 # Chart 9
 
@@ -2061,43 +1921,18 @@ Index: org/jfree/data/statistics/DefaultBoxAndWhiskerCategoryDataset.java
 
 ## NopolPC 
 
-org.jfree.data.Range:334 (Suspicious rank: ample 75, jaccard 75, ochiai 73, naish1 20594, gp13 75, naish2 75, tarantula 75, )
+org.jfree.data.Range:335 (Suspicious rank: ample 9, jaccard 9, ochiai 9, naish1 20593, gp13 9, naish2 9, tarantula 9, )
 ```Java
-0 == 1
+((!(1 < org.jfree.data.Range.this.lower)) || (org.jfree.data.Range.this.lower <= -1 + org.jfree.data.Range.this.upper - 1)) && ((!(1 < org.jfree.data.Range.this.lower)) || (org.jfree.data.Range.this.lower <= -1 + org.jfree.data.Range.this.upper - 1))
 ```
 
 Nb Angelic value: 1
 
-Nb analyzed Statement: 73
+Nb analyzed Statement: 9
 
-Execution time: 0:00:44.899000
+Execution time: 0:00:55.900000
 
-Grid5000 node: graphene-56.nancy.grid5000.fr
-
-## NopolC 
-
-org.jfree.data.Range:334 (Suspicious rank: ample 75, jaccard 75, ochiai 73, naish1 20594, gp13 75, naish2 75, tarantula 75, )
-```Java
-0 == 1
-```
-
-Nb Angelic value: 1
-
-Nb analyzed Statement: 73
-
-Execution time: 0:00:41.548000
-
-Grid5000 node: graphene-39.nancy.grid5000.fr
-
-## Genprog 
-
-org.jfree.data.Range:334 (Suspicious rank: ample 75, jaccard 75, ochiai 73, naish1 20594, gp13 75, naish2 75, tarantula 75, )
-DELETE
-```Java
-remove
-```
-
-Grid5000 node: graphene-57.nancy.grid5000.fr
+Grid5000 node: griffon-62.nancy.grid5000.fr
 
 ## Kali 
 
@@ -4878,13 +4713,13 @@ index 8f315e3..2d878b1 100644
 
 ## Genprog 
 
-org.apache.commons.math.ode.AbstractIntegrator:314 (Suspicious rank: ample 21, jaccard 21, ochiai 24, naish1 23469, gp13 21, naish2 21, tarantula 21, )
-INSERT_BEFORE
+org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator:295 (Suspicious rank: ample 244, jaccard 244, ochiai 243, naish1 23327, gp13 244, naish2 244, tarantula 244, )
+REPLACE
 ```Java
-statesInitialized = false
+setStateInitialized(false)
 ```
 
-Grid5000 node: graphene-24.nancy.grid5000.fr
+Grid5000 node: graphene-62.nancy.grid5000.fr
 
 ## Kali 
 
@@ -6747,138 +6582,6 @@ Nb analyzed Statement: 86
 Execution time: 0:00:49.504000
 
 Grid5000 node: graphene-79.nancy.grid5000.fr
-
-# Math 99
-
-Nb Executed tests: 1180
-
-Nb Failing tests: 35
-
->	org.apache.commons.math.fraction.FractionTest#testFloatValue
->	org.apache.commons.math.fraction.FractionTest#testAbs
->	org.apache.commons.math.fraction.FractionTest#testAdd
->	org.apache.commons.math.fraction.FractionTest#testSubtract
->	org.apache.commons.math.fraction.FractionTest#testReciprocal
->	org.apache.commons.math.fraction.FractionTest#testEpsilonLimitConstructor
->	org.apache.commons.math.fraction.FractionTest#testGetReducedFraction
->	org.apache.commons.math.fraction.FractionTest#testConstructorDouble
->	org.apache.commons.math.fraction.FractionTest#testCompareTo
->	org.apache.commons.math.fraction.FractionTest#testDoubleConstructor
->	org.apache.commons.math.fraction.FractionTest#testLongValue
->	org.apache.commons.math.fraction.FractionTest#testDigitLimitConstructor
->	org.apache.commons.math.fraction.FractionTest#testIntValue
->	org.apache.commons.math.fraction.FractionTest#testDivide
->	org.apache.commons.math.fraction.FractionTest#testMultiply
->	org.apache.commons.math.fraction.FractionTest#testEqualsAndHashCode
->	org.apache.commons.math.fraction.FractionTest#testNegate
->	org.apache.commons.math.fraction.FractionTest#testGoldenRatio
->	org.apache.commons.math.fraction.FractionTest#testIntegerOverflow
->	org.apache.commons.math.fraction.FractionTest#testDoubleValue
->	org.apache.commons.math.fraction.FractionTest#testConstructor
->	org.apache.commons.math.optimization.MultiDirectionalTest#testCostExceptions
->	org.apache.commons.math.optimization.MultiDirectionalTest#testRosenbrock
->	org.apache.commons.math.optimization.MultiDirectionalTest#testPowell
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatImproperNegative
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatImproper
->	org.apache.commons.math.fraction.FractionFormatTest#testParseProper
->	org.apache.commons.math.fraction.FractionFormatTest#testParseProperNegative
->	org.apache.commons.math.fraction.FractionFormatTest#testParse
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatZero
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatNegative
->	org.apache.commons.math.fraction.FractionFormatTest#testParseInteger
->	org.apache.commons.math.fraction.FractionFormatTest#testFormat
->	org.apache.commons.math.fraction.FractionFormatTest#testParseNegative
->	org.apache.commons.math.analysis.BrentSolverTest#testRootEndpoints
-
-## Human Patch 
-
-```Java
-diff --git a/org/apache/commons/math/analysis/BrentSolver.java b/org/apache/commons/math/analysis/BrentSolver.java
-index da8b3f5..01a9ee5 100644
---- a/org/apache/commons/math/analysis/BrentSolver.java
-+++ b/org/apache/commons/math/analysis/BrentSolver.java
-@@ -128,41 +128,20 @@ public class BrentSolver extends UnivariateRealSolverImpl {
-         clearResult();
-         verifyInterval(min, max);
-         
--        double ret = Double.NaN;
--        
-         double yMin = f.value(min);
-         double yMax = f.value(max);
-         
-         // Verify bracketing
--        double sign = yMin * yMax;
--        if (sign > 0) {
--            // check if either value is close to a zero
--            if (Math.abs(yMin) <= functionValueAccuracy) {
--                setResult(min, 0);
--                ret = min;
--            } else if (Math.abs(yMax) <= functionValueAccuracy) {
--                setResult(max, 0);
--                ret = max;
--            } else {
--                // neither value is close to zero and min and max do not bracket root.
--                throw new IllegalArgumentException
--                ("Function values at endpoints do not have different signs." +
--                        "  Endpoints: [" + min + "," + max + "]" + 
--                        "  Values: [" + yMin + "," + yMax + "]");
--            }
--        } else if (sign < 0){
--            // solve using only the first endpoint as initial guess
--            ret = solve(min, yMin, max, yMax, min, yMin);
--        } else {
--            // either min or max is a root
--            if (yMin == 0.0) {
--                ret = min;
--            } else {
--                ret = max;
--            }
-+        if (yMin * yMax >= 0) {
-+            throw new IllegalArgumentException
-+            ("Function values at endpoints do not have different signs." +
-+                    "  Endpoints: [" + min + "," + max + "]" + 
-+                    "  Values: [" + yMin + "," + yMax + "]");       
-         }
- 
--        return ret;
-+        // solve using only the first endpoint as initial guess
-+        return solve(min, yMin, max, yMax, min, yMin);
-+
-     }
-         
-     /**
-
-```
-
-## NopolPC 
-
-org.apache.commons.math.analysis.BrentSolver:136 (Suspicious rank: ample 861, jaccard 68, ochiai 68, naish1 7155, gp13 68, naish2 68, tarantula 68, )
-```Java
-min <= 1
-```
-
-Nb Angelic value: 1
-
-Nb analyzed Statement: 68
-
-Execution time: 0:00:32.066000
-
-Grid5000 node: graphene-99.nancy.grid5000.fr
-
-## NopolC 
-
-org.apache.commons.math.analysis.BrentSolver:135 (Suspicious rank: ample 5982, jaccard 88, ochiai 90, naish1 7186, gp13 88, naish2 88, tarantula 88, )
-```Java
-((yMin * yMax) >= 0) && (min <= 1)
-```
-
-Nb Angelic value: 1
-
-Nb analyzed Statement: 86
-
-Execution time: 0:00:55.209000
-
-Grid5000 node: graphene-81.nancy.grid5000.fr
 
 # Math 104
 

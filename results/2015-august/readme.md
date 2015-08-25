@@ -6,8 +6,10 @@
    3 | [C3](#chart-3)    | Yes       | No       | Yes       |      2
    5 | [C5](#chart-5)    | Yes       | Yes       | Yes       |      3
    7 | [C7](#chart-7)    | Yes       | No       | TIMEOUT   |      1
+   8 | [C9](#chart-9)    | Yes       | No       | TIMEOUT   |      1
   12 | [C13](#chart-13)  | Yes       | Yes       | Yes       |      3
   14 | [C15](#chart-15)  | Yes       | Yes       | TIMEOUT   |      2
+  20 | [C21](#chart-21)  | No    | Yes       | Yes       |      2
   24 | [C25](#chart-25)  | Yes       | Yes       | Yes       |      3
   25 | [C26](#chart-26)  | No    | Yes       | Yes       |      2
   64 | [L39](#lang-39)   | No       | No       | Yes       |      1
@@ -25,10 +27,10 @@
  123 | [M33](#math-33)   | No       | No       | Yes       |      1
  130 | [M40](#math-40)   | Yes       | Yes       | Yes       |      3
  132 | [M42](#math-42)   | No       | No       | Yes       |      1
- 134 | [M44](#math-44)   | Yes       | Yes       | No        |      2
  139 | [M49](#math-49)   | Yes       | Yes       | Yes       |      3
  140 | [M50](#math-50)   | Yes       | Yes       | Yes       |      3
  143 | [M53](#math-53)   | Yes       | No       | No        |      1
+ 146 | [M56](#math-56)   | Yes       | No       | No        |      1
  147 | [M57](#math-57)   | No       | No       | Yes       |      1
  148 | [M58](#math-58)   | No    | TIMEOUT   | Yes       |      1
  159 | [M69](#math-69)   | No       | No       | Yes       |      1
@@ -45,48 +47,47 @@
  178 | [M88](#math-88)   | No       | No       | Yes       |      1
  185 | [M95](#math-95)   | Yes       | Yes       | No        |      2
  187 | [M97](#math-97)   | No       | No       | Yes       |      1
- 189 | [M99](#math-99)   | No       | No       | Yes       |      1
- 194 | [M104](#math-104) | No    | No       | Yes       |      1
- 195 | [M105](#math-105) | No       | No       | Yes       |      1
- 200 | [T4](#time-4)     | Yes       | Yes       | No        |      2
- 207 | [T11](#time-11)   | Yes       | Yes       | Yes       |      3
-     | Total             | 27 (12%)  | 22 (10%)  | 35 (16%)  |     84
-Fixed bugs: 52/223 (23%)
+ 193 | [M104](#math-104) | No    | No       | Yes       |      1
+ 194 | [M105](#math-105) | No       | No       | Yes       |      1
+ 199 | [T4](#time-4)     | Yes       | Yes       | No        |      2
+ 206 | [T11](#time-11)   | Yes       | Yes       | Yes       |      3
+     | Total             | 29 (13%)  | 23 (10%)  | 35 (15%)  |     87
+Fixed bugs: 49/222 (22%)
 
 Nb bugs ends with an execution error: 9
 
 Nb bugs ends with an empty log: 0
 
-Nb bugs ends with the Grid5000 timeout: 117
+Nb bugs ends with the Grid5000 timeout: 118
 
-Total execution time: 20 days, 12:54:36.832000
+Total execution time: 20 days, 13:45:35.449000
 # All bugs
 
  #   | BugId             | Genprog   | Kali      | Nopol     | Total
 ---- | ----------------- | --------- | --------- | --------- | ------
    1 | [C1](#chart-1)    | Yes       | Yes       | TIMEOUT   |      2
-   2 | [C2](#chart-2)    | No        | No       | TIMEOUT   |      0
+   2 | [C2](#chart-2)    | No       | No       | TIMEOUT   |      0
    3 | [C3](#chart-3)    | Yes       | No       | Yes       |      2
-   4 | [C4](#chart-4)    | No        | No       | TIMEOUT   |      0
+   4 | [C4](#chart-4)    | No       | No       | TIMEOUT   |      0
    5 | [C5](#chart-5)    | Yes       | Yes       | Yes       |      3
-   6 | [C6](#chart-6)    | No        | No       | No       |      0
+   6 | [C6](#chart-6)    | No    | No       | No        |      0
    7 | [C7](#chart-7)    | Yes       | No       | TIMEOUT   |      1
-   8 | [C9](#chart-9)    | No        | No       | TIMEOUT   |      0
-   9 | [C10](#chart-10)  | No        | No       | No        |      0
-  10 | [C11](#chart-11)  | No        | No       | TIMEOUT   |      0
-  11 | [C12](#chart-12)  | No        | No       | No        |      0
+   8 | [C9](#chart-9)    | Yes       | No       | TIMEOUT   |      1
+   9 | [C10](#chart-10)  | No       | No       | No        |      0
+  10 | [C11](#chart-11)  | No       | No       | TIMEOUT   |      0
+  11 | [C12](#chart-12)  | No       | No       | No        |      0
   12 | [C13](#chart-13)  | Yes       | Yes       | Yes       |      3
-  13 | [C14](#chart-14)  | No        | No       | No        |      0
+  13 | [C14](#chart-14)  | No       | No       | No        |      0
   14 | [C15](#chart-15)  | Yes       | Yes       | TIMEOUT   |      2
-  15 | [C16](#chart-16)  | No        | No       | TIMEOUT   |      0
-  16 | [C17](#chart-17)  | No        | No       | No        |      0
-  17 | [C18](#chart-18)  | No        | No       | No        |      0
-  18 | [C19](#chart-19)  | No        | No       | No        |      0
-  19 | [C20](#chart-20)  | No        | No       | No        |      0
-  20 | [C21](#chart-21)  | No        | No       | No        |      0
-  21 | [C22](#chart-22)  | No        | No       | No        |      0
-  22 | [C23](#chart-23)  | No        | No       | No        |      0
-  23 | [C24](#chart-24)  | No        | No       | No        |      0
+  15 | [C16](#chart-16)  | No       | No       | TIMEOUT   |      0
+  16 | [C17](#chart-17)  | No       | No       | No        |      0
+  17 | [C18](#chart-18)  | No       | No       | No        |      0
+  18 | [C19](#chart-19)  | No       | No       | No        |      0
+  19 | [C20](#chart-20)  | No       | No       | No        |      0
+  20 | [C21](#chart-21)  | No    | Yes       | Yes       |      2
+  21 | [C22](#chart-22)  | No       | No       | No        |      0
+  22 | [C23](#chart-23)  | No       | No       | No        |      0
+  23 | [C24](#chart-24)  | No       | No       | No        |      0
   24 | [C25](#chart-25)  | Yes       | Yes       | Yes       |      3
   25 | [C26](#chart-26)  | No    | Yes       | Yes       |      2
   26 | [L1](#lang-1)     | No       | No       | No        |      0
@@ -197,7 +198,7 @@ Total execution time: 20 days, 12:54:36.832000
  131 | [M41](#math-41)   | No       | No       | No       |      0
  132 | [M42](#math-42)   | No       | No       | Yes       |      1
  133 | [M43](#math-43)   | No       | No       | No        |      0
- 134 | [M44](#math-44)   | No       | No       | No        |      0
+ 134 | [M44](#math-44)   | No    | No    | No        |      0
  135 | [M45](#math-45)   | No       | No       | No        |      0
  136 | [M46](#math-46)   | No       | No       | No        |      0
  137 | [M47](#math-47)   | No       | No       | No        |      0
@@ -209,7 +210,7 @@ Total execution time: 20 days, 12:54:36.832000
  143 | [M53](#math-53)   | Yes       | No       | No        |      1
  144 | [M54](#math-54)   | No       | TIMEOUT   | TIMEOUT   |      0
  145 | [M55](#math-55)   | No       | No       | No        |      0
- 146 | [M56](#math-56)   | No       | No       | No        |      0
+ 146 | [M56](#math-56)   | Yes       | No       | No        |      1
  147 | [M57](#math-57)   | No       | No       | Yes       |      1
  148 | [M58](#math-58)   | No    | TIMEOUT   | Yes       |      1
  149 | [M59](#math-59)   | No       | TIMEOUT   | No        |      0
@@ -252,51 +253,50 @@ Total execution time: 20 days, 12:54:36.832000
  186 | [M96](#math-96)   | No       | No       | No        |      0
  187 | [M97](#math-97)   | No       | No       | Yes       |      1
  188 | [M98](#math-98)   | No       | No       | No        |      0
- 189 | [M99](#math-99)   | No       | No       | Yes       |      1
- 190 | [M100](#math-100) | No       | No       | No        |      0
- 191 | [M101](#math-101) | No       | No       | No        |      0
- 192 | [M102](#math-102) | No       | No       | No        |      0
- 193 | [M103](#math-103) | No       | No       | No        |      0
- 194 | [M104](#math-104) | No    | No       | Yes       |      1
- 195 | [M105](#math-105) | No       | No       | Yes       |      1
- 196 | [M106](#math-106) | No       | No       | No        |      0
- 197 | [T1](#time-1)     | No    | No       | No        |      0
- 198 | [T2](#time-2)     | No    | No       | No        |      0
- 199 | [T3](#time-3)     | No       | No       | TIMEOUT   |      0
- 200 | [T4](#time-4)     | Yes       | Yes       | No        |      2
- 201 | [T5](#time-5)     | No       | No       | No        |      0
- 202 | [T6](#time-6)     | No       | No       | No        |      0
- 203 | [T7](#time-7)     | No       | No       | TIMEOUT   |      0
- 204 | [T8](#time-8)     | No       | No       | No        |      0
- 205 | [T9](#time-9)     | No       | No       | No        |      0
- 206 | [T10](#time-10)   | No       | No       | No        |      0
- 207 | [T11](#time-11)   | Yes       | Yes       | Yes       |      3
- 208 | [T12](#time-12)   | No       | No       | TIMEOUT   |      0
- 209 | [T13](#time-13)   | No       | No       | No        |      0
- 210 | [T14](#time-14)   | No       | No       | No        |      0
- 211 | [T15](#time-15)   | No       | No       | No        |      0
- 212 | [T16](#time-16)   | No       | No       | TIMEOUT   |      0
- 213 | [T17](#time-17)   | No       | No    | No        |      0
- 214 | [T18](#time-18)   | No       | No    | TIMEOUT   |      0
- 215 | [T19](#time-19)   | No       | TIMEOUT   | TIMEOUT   |      0
- 216 | [T20](#time-20)   | No       | No       | No        |      0
- 217 | [T21](#time-21)   | No       | TIMEOUT   | No        |      0
- 218 | [T22](#time-22)   | No    | No    | No        |      0
- 219 | [T23](#time-23)   | No       | No       | No        |      0
- 220 | [T24](#time-24)   | No       | No    | No        |      0
- 221 | [T25](#time-25)   | No       | TIMEOUT   | No        |      0
- 222 | [T26](#time-26)   | No       | No       | No        |      0
- 223 | [T27](#time-27)   | No    | No       | No        |      0
-     | Total             | 27 (12%)  | 22 (10%)  | 35 (16%)  |     84
-Fixed bugs: 52/223 (23%)
+ 189 | [M100](#math-100) | No       | No       | No        |      0
+ 190 | [M101](#math-101) | No       | No       | No        |      0
+ 191 | [M102](#math-102) | No       | No       | No        |      0
+ 192 | [M103](#math-103) | No       | No       | No        |      0
+ 193 | [M104](#math-104) | No    | No       | Yes       |      1
+ 194 | [M105](#math-105) | No       | No       | Yes       |      1
+ 195 | [M106](#math-106) | No       | No       | No        |      0
+ 196 | [T1](#time-1)     | No    | No       | No        |      0
+ 197 | [T2](#time-2)     | No    | No       | No        |      0
+ 198 | [T3](#time-3)     | No       | No       | TIMEOUT   |      0
+ 199 | [T4](#time-4)     | Yes       | Yes       | No        |      2
+ 200 | [T5](#time-5)     | No       | No       | No        |      0
+ 201 | [T6](#time-6)     | No       | No       | No        |      0
+ 202 | [T7](#time-7)     | No       | No       | TIMEOUT   |      0
+ 203 | [T8](#time-8)     | No       | No       | No        |      0
+ 204 | [T9](#time-9)     | No       | No       | No        |      0
+ 205 | [T10](#time-10)   | No       | No       | No        |      0
+ 206 | [T11](#time-11)   | Yes       | Yes       | Yes       |      3
+ 207 | [T12](#time-12)   | No       | No       | TIMEOUT   |      0
+ 208 | [T13](#time-13)   | No       | No       | No        |      0
+ 209 | [T14](#time-14)   | No       | No       | No        |      0
+ 210 | [T15](#time-15)   | No       | No       | No        |      0
+ 211 | [T16](#time-16)   | No       | No       | TIMEOUT   |      0
+ 212 | [T17](#time-17)   | No       | No    | No        |      0
+ 213 | [T18](#time-18)   | No       | No    | TIMEOUT   |      0
+ 214 | [T19](#time-19)   | No       | TIMEOUT   | TIMEOUT   |      0
+ 215 | [T20](#time-20)   | No       | No       | No        |      0
+ 216 | [T21](#time-21)   | No       | TIMEOUT   | No        |      0
+ 217 | [T22](#time-22)   | No    | No    | No        |      0
+ 218 | [T23](#time-23)   | No       | No       | No        |      0
+ 219 | [T24](#time-24)   | No       | No    | No        |      0
+ 220 | [T25](#time-25)   | No       | TIMEOUT   | No        |      0
+ 221 | [T26](#time-26)   | No       | No       | No        |      0
+ 222 | [T27](#time-27)   | No    | No       | No        |      0
+     | Total             | 29 (13%)  | 23 (10%)  | 35 (15%)  |     87
+Fixed bugs: 49/222 (22%)
 
 Nb bugs ends with an execution error: 9
 
 Nb bugs ends with an empty log: 0
 
-Nb bugs ends with the Grid5000 timeout: 117
+Nb bugs ends with the Grid5000 timeout: 118
 
-Total execution time: 20 days, 12:54:36.832000
+Total execution time: 20 days, 13:45:35.449000
 
 
 
@@ -515,7 +515,7 @@ Index: org/jfree/data/time/TimePeriodValues.java
 
 ```
 
-## 9 Genprog 
+## 8 Genprog 
 
 org.jfree.data.time.TimePeriodValues:552 (Suspicious rank: ample 1, jaccard 1, ochiai 1, naish1 22060, gp13 1, naish2 1, tarantula 1, )
 REPLACE
@@ -526,6 +526,73 @@ return this.maxEndIndex
 
 Grid5000 node: graphene-75.nancy.grid5000.fr
 
+# Chart 9
+
+Nb Executed tests: 3641
+
+Nb Failing tests: 2
+
+>	org.jfree.data.time.junit.TimeSeriesTests#testBug1864222
+>	org.jfree.data.time.junit.TimeSeriesTests#testBug1864222
+
+## Human Patch 
+
+```Java
+Index: org/jfree/data/time/TimeSeries.java
+===================================================================
+--- org/jfree/data/time/TimeSeries.java	(revision 1083)
++++ org/jfree/data/time/TimeSeries.java	(revision 1082)
+@@ -674,7 +672,7 @@
+      */
+     public TimeSeriesDataItem addOrUpdate(RegularTimePeriod period,
+                                           double value) {
+-        return addOrUpdate(period, new Double(value));
++        return this.addOrUpdate(period, new Double(value));
+     }
+ 
+     /**
+@@ -941,7 +937,7 @@
+             endIndex = -(endIndex + 1); // this is first item AFTER end period
+             endIndex = endIndex - 1;    // so this is last item BEFORE end
+         }
+-        if ((endIndex < 0)  || (endIndex < startIndex)) {
++        if (endIndex < 0) {
+             emptyRange = true;
+         }
+         if (emptyRange) {
+@@ -970,13 +966,15 @@
+             return false;
+         }
+         TimeSeries s = (TimeSeries) object;
+-        if (!ObjectUtilities.equal(getDomainDescription(),
+-                s.getDomainDescription())) {
++        if (!ObjectUtilities.equal(
++            getDomainDescription(), s.getDomainDescription()
++        )) {
+             return false;
+         }
+ 
+-        if (!ObjectUtilities.equal(getRangeDescription(),
+-                s.getRangeDescription())) {
++        if (!ObjectUtilities.equal(
++            getRangeDescription(), s.getRangeDescription()
++        )) {
+             return false;
+         }
+ 
+
+```
+
+## 9 Genprog 
+
+org.jfree.data.time.SpreadsheetDate:457 (Suspicious rank: ample 95, jaccard 95, ochiai 99, naish1 21980, gp13 95, naish2 95, tarantula 95, )
+REPLACE
+
+```Java
+return this.day
+```
+
+Grid5000 node: graphene-53.nancy.grid5000.fr
 
 # Chart 13
 
@@ -1141,7 +1208,7 @@ Index: org/jfree/chart/block/BorderArrangement.java
 
 ```
 
-## 11 Genprog 
+## 10 Genprog 
 
 org.jfree.chart.block.BorderArrangement:330 (Suspicious rank: ample 37, jaccard 37, ochiai 21, naish1 21855, gp13 37, naish2 37, tarantula 37, )
 INSERT_BEFORE
@@ -1152,7 +1219,7 @@ this.leftBlock = null
 
 Grid5000 node: graphene-76.nancy.grid5000.fr
 
-## 12 Kali 
+## 11 Kali 
 
 org.jfree.chart.block.BorderArrangement:482 (Suspicious rank: ample 49, jaccard 49, ochiai 38, naish1 21885, gp13 49, naish2 49, tarantula 49, )
 DELETE
@@ -1163,7 +1230,7 @@ remove
 
 Grid5000 node: graphene-62.nancy.grid5000.fr
 
-## 13 Nopol 
+## 12 Nopol 
 
 org.jfree.chart.block.BorderArrangement:492 (Suspicious rank: ample 32, jaccard 32, ochiai 43, naish1 21836, gp13 32, naish2 32, tarantula 32, )
 
@@ -1221,7 +1288,7 @@ Index: org/jfree/chart/plot/PiePlot.java
 
 ```
 
-## 14 Genprog 
+## 13 Genprog 
 
 org.jfree.chart.JFreeChart:1219 (Suspicious rank: ample 457, jaccard 457, ochiai 333, naish1 21756, gp13 457, naish2 457, tarantula 457, )
 REPLACE
@@ -1232,7 +1299,7 @@ fireChartChanged()
 
 Grid5000 node: graphene-69.nancy.grid5000.fr
 
-## 15 Kali 
+## 14 Kali 
 
 org.jfree.chart.plot.PiePlot3D:230 (Suspicious rank: ample 19, jaccard 19, ochiai 7, naish1 21751, gp13 19, naish2 19, tarantula 19, )
 INSERT_BEFORE
@@ -1245,6 +1312,225 @@ if (true)
 
 Grid5000 node: graphene-73.nancy.grid5000.fr
 
+# Chart 21
+
+Nb Executed tests: 3303
+
+Nb Failing tests: 2
+
+>	org.jfree.data.statistics.junit.DefaultBoxAndWhiskerCategoryDatasetTests#testGetRangeBounds
+>	org.jfree.data.statistics.junit.DefaultBoxAndWhiskerCategoryDatasetTests#testGetRangeBounds
+
+## Human Patch 
+
+```Java
+Index: org/jfree/data/statistics/DefaultBoxAndWhiskerCategoryDataset.java
+===================================================================
+--- org/jfree/data/statistics/DefaultBoxAndWhiskerCategoryDataset.java	(revision 231)
++++ org/jfree/data/statistics/DefaultBoxAndWhiskerCategoryDataset.java	(revision 227)
+@@ -120,14 +119,12 @@
+      *
+      * @param list  a collection of values from which the various medians will 
+      *              be calculated.
+-     * @param rowKey  the row key (<code>null</code> not permitted).
+-     * @param columnKey  the column key (<code>null</code> not permitted).
+-     * 
+-     * @see #add(BoxAndWhiskerItem, Comparable, Comparable)
++     * @param rowKey  the row key.
++     * @param columnKey  the column key.
+      */
+     public void add(List list, Comparable rowKey, Comparable columnKey) {
+-        BoxAndWhiskerItem item = BoxAndWhiskerCalculator
+-                .calculateBoxAndWhiskerStatistics(list);
++        BoxAndWhiskerItem item 
++            = BoxAndWhiskerCalculator.calculateBoxAndWhiskerStatistics(list);
+         add(item, rowKey, columnKey);
+     }
+     
+@@ -136,60 +133,62 @@
+      * table.  The various median values are calculated.
+      *
+      * @param item  a box and whisker item (<code>null</code> not permitted).
+-     * @param rowKey  the row key (<code>null</code> not permitted).
+-     * @param columnKey  the column key (<code>null</code> not permitted).
+-     * 
+-     * @see #add(List, Comparable, Comparable)
++     * @param rowKey  the row key.
++     * @param columnKey  the column key.
+      */
+-    public void add(BoxAndWhiskerItem item, Comparable rowKey, 
+-            Comparable columnKey) {
++    public void add(BoxAndWhiskerItem item, 
++                    Comparable rowKey, 
++                    Comparable columnKey) {
+ 
+         this.data.addObject(item, rowKey, columnKey);
+         
+         // update cached min and max values
+         int r = this.data.getRowIndex(rowKey);
+         int c = this.data.getColumnIndex(columnKey);
+-        if ((this.maximumRangeValueRow == r && this.maximumRangeValueColumn 
+-                == c) || (this.minimumRangeValueRow == r 
+-                && this.minimumRangeValueColumn == c))  {
+-            updateBounds();
++        if (this.maximumRangeValueRow == r 
++                && this.maximumRangeValueColumn == c) {
++            this.maximumRangeValue = Double.NaN;
+         }
+-        else {
++        if (this.minimumRangeValueRow == r 
++                && this.minimumRangeValueColumn == c) {
++            this.minimumRangeValue = Double.NaN;
++        }
+         
+-            double minval = Double.NaN;
+-            if (item.getMinOutlier() != null) {
+-                minval = item.getMinOutlier().doubleValue();
+-            }
+-            double maxval = Double.NaN;
+-            if (item.getMaxOutlier() != null) {
+-                maxval = item.getMaxOutlier().doubleValue();
+-            }
+         
+-            if (Double.isNaN(this.maximumRangeValue)) {
+-                this.maximumRangeValue = maxval;
+-                this.maximumRangeValueRow = r;
+-                this.maximumRangeValueColumn = c;
+-            }
+-            else if (maxval > this.maximumRangeValue) {
+-                this.maximumRangeValue = maxval;
+-                this.maximumRangeValueRow = r;
+-                this.maximumRangeValueColumn = c;
+-            }
++        double minval = Double.NaN;
++        if (item.getMinOutlier() != null) {
++            minval = item.getMinOutlier().doubleValue();
++        }
++        double maxval = Double.NaN;
++        if (item.getMaxOutlier() != null) {
++            maxval = item.getMaxOutlier().doubleValue();
++        }
+         
+-            if (Double.isNaN(this.minimumRangeValue)) {
+-                this.minimumRangeValue = minval;
+-                this.minimumRangeValueRow = r;
+-                this.minimumRangeValueColumn = c;
+-            }
+-            else if (minval < this.minimumRangeValue) {
+-                this.minimumRangeValue = minval;
+-                this.minimumRangeValueRow = r;
+-                this.minimumRangeValueColumn = c;
+-            }
++        if (Double.isNaN(this.maximumRangeValue)) {
++            this.maximumRangeValue = maxval;
++            this.maximumRangeValueRow = r;
++            this.maximumRangeValueColumn = c;
+         }
++        else if (maxval > this.maximumRangeValue) {
++            this.maximumRangeValue = maxval;
++            this.maximumRangeValueRow = r;
++            this.maximumRangeValueColumn = c;
++        }
+         
++        if (Double.isNaN(this.minimumRangeValue)) {
++            this.minimumRangeValue = minval;
++            this.minimumRangeValueRow = r;
++            this.minimumRangeValueColumn = c;
++        }
++        else if (minval < this.minimumRangeValue) {
++            this.minimumRangeValue = minval;
++            this.minimumRangeValueRow = r;
++            this.minimumRangeValueColumn = c;
++        }
++        
+         this.rangeBounds = new Range(this.minimumRangeValue,
+               this.maximumRangeValue);
++
+         fireDatasetChanged();
+ 
+     }
+@@ -735,52 +678,6 @@
+     }
+     
+     /**
+-     * Resets the cached bounds, by iterating over the entire dataset to find
+-     * the current bounds.
+-     */
+-    private void updateBounds() {
+-        this.minimumRangeValue = Double.NaN;
+-        this.minimumRangeValueRow = -1;
+-        this.minimumRangeValueColumn = -1;
+-        this.maximumRangeValue = Double.NaN;
+-        this.maximumRangeValueRow = -1;
+-        this.maximumRangeValueColumn = -1;
+-        int rowCount = getRowCount();
+-        int columnCount = getColumnCount();
+-        for (int r = 0; r < rowCount; r++) {
+-            for (int c = 0; c < columnCount; c++) {
+-                BoxAndWhiskerItem item = getItem(r, c);
+-                if (item != null) {
+-                    Number min = item.getMinOutlier();
+-                    if (min != null) {
+-                        double minv = min.doubleValue();
+-                        if (!Double.isNaN(minv)) {
+-                            if (minv < this.minimumRangeValue || Double.isNaN(
+-                                    this.minimumRangeValue)) {
+-                                this.minimumRangeValue = minv;
+-                                this.minimumRangeValueRow = r;
+-                                this.minimumRangeValueColumn = c;
+-                            }
+-                        }
+-                    }
+-                    Number max = item.getMaxOutlier();
+-                    if (max != null) {
+-                        double maxv = max.doubleValue();
+-                        if (!Double.isNaN(maxv)) {
+-                            if (maxv > this.maximumRangeValue || Double.isNaN(
+-                                    this.maximumRangeValue)) {
+-                                this.maximumRangeValue = maxv;
+-                                this.maximumRangeValueRow = r;
+-                                this.maximumRangeValueColumn = c;
+-                            }
+-                        }
+-                    }
+-                }
+-            }
+-        }
+-    }
+-    
+-    /**
+      * Tests this dataset for equality with an arbitrary object.
+      * 
+      * @param obj  the object to test against (<code>null</code> permitted).
+
+```
+
+## 15 Kali 
+
+org.jfree.data.Range:335 (Suspicious rank: ample 9, jaccard 9, ochiai 9, naish1 20593, gp13 9, naish2 9, tarantula 9, )
+DELETE
+
+```Java
+remove
+```
+
+Grid5000 node: griffon-77.nancy.grid5000.fr
+
+## 16 Nopol 
+
+org.jfree.data.Range:335 (Suspicious rank: ample 9, jaccard 9, ochiai 9, naish1 20593, gp13 9, naish2 9, tarantula 9, )
+
+```Java
+((!(1 < org.jfree.data.Range.this.lower)) || (org.jfree.data.Range.this.lower <= -1 + org.jfree.data.Range.this.upper - 1)) && ((!(1 < org.jfree.data.Range.this.lower)) || (org.jfree.data.Range.this.lower <= -1 + org.jfree.data.Range.this.upper - 1))
+```
+
+Nb Angelic value: 1
+
+Nb analyzed Statement: 9
+
+Execution time: 0:00:55.900000
+
+Grid5000 node: griffon-62.nancy.grid5000.fr
 
 # Chart 25
 
@@ -1435,7 +1721,7 @@ Index: org/jfree/chart/renderer/category/StatisticalBarRenderer.java
 
 ```
 
-## 18 Genprog 
+## 17 Genprog 
 
 org.jfree.data.statistics.DefaultStatisticalCategoryDataset:301 (Suspicious rank: ample 65, jaccard 144, ochiai 102, naish1 19848, gp13 65, naish2 65, tarantula 160, )
 DELETE
@@ -1446,7 +1732,7 @@ remove
 
 Grid5000 node: graphene-53.nancy.grid5000.fr
 
-## 19 Kali 
+## 18 Kali 
 
 org.jfree.chart.renderer.category.StatisticalBarRenderer:200 (Suspicious rank: ample 5, jaccard 5, ochiai 1, naish1 19843, gp13 5, naish2 5, tarantula 51, )
 INSERT_BEFORE
@@ -1459,7 +1745,7 @@ if (true)
 
 Grid5000 node: graphene-66.nancy.grid5000.fr
 
-## 20 Nopol 
+## 19 Nopol 
 
 org.jfree.chart.renderer.category.StatisticalBarRenderer:207 (Suspicious rank: ample 4, jaccard 4, ochiai 4, naish1 19842, gp13 4, naish2 4, tarantula 50, )
 
@@ -1557,7 +1843,7 @@ Index: org/jfree/chart/axis/Axis.java
 
 ```
 
-## 21 Kali 
+## 20 Kali 
 
 org.jfree.chart.plot.CategoryPlot:2547 (Suspicious rank: ample 1, jaccard 1, ochiai 1, naish1 15018, gp13 1, naish2 1, tarantula 1, )
 INSERT_BEFORE
@@ -1570,7 +1856,7 @@ if (true)
 
 Grid5000 node: griffon-8.nancy.grid5000.fr
 
-## 22 Nopol 
+## 21 Nopol 
 
 org.jfree.chart.axis.AxisCollection:132 (Suspicious rank: ample 185, jaccard 249, ochiai 244, naish1 17995, gp13 185, naish2 185, tarantula 761, )
 
@@ -1614,7 +1900,7 @@ index f6cabee..14563aa 100644
 
 ```
 
-## 23 Nopol 
+## 22 Nopol 
 
 org.apache.commons.lang3.StringUtils:3675 (Suspicious rank: ample 11, jaccard 11, ochiai 26, naish1 7828, gp13 11, naish2 11, tarantula 11, )
 
@@ -1658,7 +1944,7 @@ index c5ca8cd..18a05ef 100644
 
 ```
 
-## 24 Nopol 
+## 23 Nopol 
 
 org.apache.commons.lang.NumberUtils:193 (Suspicious rank: ample 18, jaccard 18, ochiai 18, naish1 9255, gp13 18, naish2 18, tarantula 18, )
 
@@ -1820,7 +2106,7 @@ index d4f98ec..c30c663 100644
 
 ```
 
-## 25 Nopol 
+## 24 Nopol 
 
 org.apache.commons.lang.StringEscapeUtils:242 (Suspicious rank: ample 1, jaccard 1, ochiai 1, naish1 8911, gp13 1, naish2 1, tarantula 1, )
 
@@ -1862,7 +2148,7 @@ index 8b5028c..3fda4ec 100644
 
 ```
 
-## 26 Nopol 
+## 25 Nopol 
 
 org.apache.commons.lang.BooleanUtils:677 (Suspicious rank: ample 11, jaccard 11, ochiai 12, naish1 8395, gp13 11, naish2 11, tarantula 11, )
 
@@ -1921,7 +2207,7 @@ index e5138b5..9ca1bc5 100644
 
 ```
 
-## 27 Nopol 
+## 26 Nopol 
 
 org.apache.commons.lang.time.DateUtils:666 (Suspicious rank: ample 14, jaccard 14, ochiai 22, naish1 8347, gp13 14, naish2 14, tarantula 14, )
 
@@ -1966,7 +2252,7 @@ index 0f0786a..607e9b6 100644
 
 ```
 
-## 28 Nopol 
+## 27 Nopol 
 
 org.apache.commons.lang.time.StopWatch:118 (Suspicious rank: ample 8, jaccard 8, ochiai 7, naish1 8347, gp13 8, naish2 8, tarantula 8, )
 
@@ -2010,7 +2296,7 @@ index eb74e72..c0f06a4 100644
 
 ```
 
-## 29 Nopol 
+## 28 Nopol 
 
 org.apache.commons.lang.math.NumberUtils:464 (Suspicious rank: ample 2, jaccard 2, ochiai 1, naish1 8378, gp13 2, naish2 2, tarantula 2, )
 
@@ -2053,7 +2339,7 @@ index 81e180c..2769127 100644
 
 ```
 
-## 30 Genprog 
+## 29 Genprog 
 
 org.apache.commons.math3.distribution.AbstractIntegerDistribution:138 (Suspicious rank: ample 17, jaccard 17, ochiai 22, naish1 35438, gp13 17, naish2 17, tarantula 17, )
 REPLACE
@@ -2064,7 +2350,7 @@ tmp = mu + (k * sigma)
 
 Grid5000 node: graphene-37.nancy.grid5000.fr
 
-## 31 Kali 
+## 30 Kali 
 
 org.apache.commons.math3.distribution.AbstractIntegerDistribution:137 (Suspicious rank: ample 22, jaccard 22, ochiai 21, naish1 35443, gp13 22, naish2 22, tarantula 22, )
 DELETE
@@ -2102,7 +2388,7 @@ index ac8185b..22b23f2 100644
 
 ```
 
-## 32 Genprog 
+## 31 Genprog 
 
 org.apache.commons.math3.complex.Complex:305 (Suspicious rank: ample 1, jaccard 1, ochiai 1, naish1 33968, gp13 1, naish2 1, tarantula 1, )
 REPLACE
@@ -2159,7 +2445,7 @@ index 879eb2a..8c08dbe 100644
 
 ```
 
-## 33 Genprog 
+## 32 Genprog 
 
 org.apache.commons.math3.distribution.DiscreteDistribution:189 (Suspicious rank: ample 3, jaccard 3, ochiai 3, naish1 33466, gp13 3, naish2 3, tarantula 3, )
 DELETE
@@ -2170,7 +2456,7 @@ remove
 
 Grid5000 node: graphene-4.nancy.grid5000.fr
 
-## 34 Kali 
+## 33 Kali 
 
 org.apache.commons.math3.distribution.DiscreteDistribution:189 (Suspicious rank: ample 3, jaccard 3, ochiai 3, naish1 33466, gp13 3, naish2 3, tarantula 3, )
 DELETE
@@ -2257,7 +2543,7 @@ index dec310b..c2fa14d 100644
 
 ```
 
-## 35 Genprog 
+## 34 Genprog 
 
 org.apache.commons.math3.optimization.linear.SimplexSolver:124 (Suspicious rank: ample 33, jaccard 33, ochiai 33, naish1 26751, gp13 33, naish2 33, tarantula 33, )
 DELETE
@@ -2268,7 +2554,7 @@ remove
 
 Grid5000 node: graphene-19.nancy.grid5000.fr
 
-## 36 Kali 
+## 35 Kali 
 
 org.apache.commons.math3.optimization.linear.SimplexSolver:138 (Suspicious rank: ample 6, jaccard 6, ochiai 10, naish1 26541, gp13 6, naish2 6, tarantula 6, )
 REPLACE
@@ -2313,7 +2599,7 @@ index add24ac..6ba72be 100644
 
 ```
 
-## 37 Kali 
+## 36 Kali 
 
 org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet:135 (Suspicious rank: ample 3, jaccard 3, ochiai 1, naish1 24965, gp13 3, naish2 3, tarantula 3, )
 REPLACE
@@ -2330,7 +2616,7 @@ if (false) {
 
 Grid5000 node: graphene-18.nancy.grid5000.fr
 
-## 38 Nopol 
+## 37 Nopol 
 
 org.apache.commons.math3.geometry.partitioning.AbstractRegion:214 (Suspicious rank: ample 201, jaccard 201, ochiai 221, naish1 24818, gp13 201, naish2 201, tarantula 201, )
 
@@ -2373,7 +2659,7 @@ index 327b2ae..9a6993a 100644
 
 ```
 
-## 39 Nopol 
+## 38 Nopol 
 
 org.apache.commons.math3.optimization.linear.SimplexTableau:339 (Suspicious rank: ample 6, jaccard 6, ochiai 6, naish1 24710, gp13 6, naish2 6, tarantula 6, )
 
@@ -2426,7 +2712,7 @@ index 59dc461..93dd3bb 100644
 
 ```
 
-## 40 Genprog 
+## 39 Genprog 
 
 org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:235 (Suspicious rank: ample 25, jaccard 25, ochiai 25, naish1 24170, gp13 25, naish2 25, tarantula 25, )
 INSERT_BEFORE
@@ -2437,7 +2723,7 @@ signChangeIndex++
 
 Grid5000 node: graphene-27.nancy.grid5000.fr
 
-## 41 Kali 
+## 40 Kali 
 
 org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:260 (Suspicious rank: ample 31, jaccard 31, ochiai 31, naish1 24155, gp13 31, naish2 31, tarantula 31, )
 REPLACE
@@ -2452,7 +2738,7 @@ if (true) {
 
 Grid5000 node: graphene-20.nancy.grid5000.fr
 
-## 42 Nopol 
+## 41 Nopol 
 
 org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:260 (Suspicious rank: ample 31, jaccard 31, ochiai 31, naish1 24155, gp13 31, naish2 31, tarantula 31, )
 
@@ -2500,7 +2786,7 @@ index d96c916..fd89432 100644
 
 ```
 
-## 43 Nopol 
+## 42 Nopol 
 
 org.apache.commons.math.optimization.linear.SimplexTableau:416 (Suspicious rank: ample 29, jaccard 29, ochiai 36, naish1 24101, gp13 29, naish2 29, tarantula 29, )
 
@@ -2570,7 +2856,7 @@ index 13ebfd2..5db4884 100644
 
 ```
 
-## 46 Genprog 
+## 43 Genprog 
 
 org.apache.commons.math.linear.OpenMapRealVector:667 (Suspicious rank: ample 14, jaccard 14, ochiai 14, naish1 23318, gp13 14, naish2 14, tarantula 14, )
 REPLACE
@@ -2581,7 +2867,7 @@ entries.put(index, value)
 
 Grid5000 node: graphene-61.nancy.grid5000.fr
 
-## 47 Kali 
+## 44 Kali 
 
 org.apache.commons.math.linear.OpenMapRealVector:664 (Suspicious rank: ample 21, jaccard 21, ochiai 20, naish1 23315, gp13 21, naish2 21, tarantula 21, )
 REPLACE
@@ -2596,7 +2882,7 @@ if (true) {
 
 Grid5000 node: graphene-62.nancy.grid5000.fr
 
-## 48 Nopol 
+## 45 Nopol 
 
 org.apache.commons.math.linear.OpenMapRealVector:667 (Suspicious rank: ample 14, jaccard 14, ochiai 14, naish1 23318, gp13 14, naish2 14, tarantula 14, )
 
@@ -2646,7 +2932,7 @@ index c781a90..b3a23a1 100644
 
 ```
 
-## 49 Genprog 
+## 46 Genprog 
 
 org.apache.commons.math.analysis.solvers.BaseSecantSolver:191 (Suspicious rank: ample 4, jaccard 4, ochiai 2, naish1 23311, gp13 4, naish2 4, tarantula 4, )
 DELETE
@@ -2657,7 +2943,7 @@ remove
 
 Grid5000 node: graphene-78.nancy.grid5000.fr
 
-## 50 Kali 
+## 47 Kali 
 
 org.apache.commons.math.analysis.solvers.BaseSecantSolver:191 (Suspicious rank: ample 4, jaccard 4, ochiai 2, naish1 23311, gp13 4, naish2 4, tarantula 4, )
 DELETE
@@ -2668,7 +2954,7 @@ remove
 
 Grid5000 node: griffon-10.nancy.grid5000.fr
 
-## 51 Nopol 
+## 48 Nopol 
 
 org.apache.commons.math.analysis.solvers.BaseSecantSolver:186 (Suspicious rank: ample 6, jaccard 6, ochiai 6, naish1 23279, gp13 6, naish2 6, tarantula 6, )
 
@@ -2712,7 +2998,7 @@ index ab58c78..e0a8e97 100644
 
 ```
 
-## 52 Genprog 
+## 49 Genprog 
 
 org.apache.commons.math.complex.Complex:153 (Suspicious rank: ample 1, jaccard 1, ochiai 2, naish1 21135, gp13 1, naish2 1, tarantula 1, )
 INSERT_BEFORE
@@ -2725,7 +3011,40 @@ if ((isNaN) || (rhs.isNaN)) {
 
 Grid5000 node: graphene-77.nancy.grid5000.fr
 
-## 53 Genprog 
+# Math 56
+
+Nb Executed tests: 2400
+
+Nb Failing tests: 1
+
+>	org.apache.commons.math.util.MultidimensionalCounterTest#testIterationConsistency
+
+## Human Patch 
+
+```Java
+diff --git a/org/apache/commons/math/util/MultidimensionalCounter.java b/org/apache/commons/math/util/MultidimensionalCounter.java
+index fb0614e..56c9ffe 100644
+--- a/org/apache/commons/math/util/MultidimensionalCounter.java
++++ b/org/apache/commons/math/util/MultidimensionalCounter.java
+@@ -234,7 +234,13 @@ public class MultidimensionalCounter implements Iterable<Integer> {
+             indices[i] = idx;
+         }
+ 
+-        indices[last] = index - count;
++        int idx = 1;
++        while (count < index) {
++            count += idx;
++            ++idx;
++        }
++        --idx;
++        indices[last] = idx;
+ 
+         return indices;
+     }
+
+```
+
+## 50 Genprog 
 
 org.apache.commons.math.util.MultidimensionalCounter:239 (Suspicious rank: ample 15, jaccard 15, ochiai 22, naish1 19577, gp13 15, naish2 15, tarantula 15, )
 INSERT_BEFORE
@@ -2766,7 +3085,7 @@ index e09bbc3..b73ac9d 100644
 
 ```
 
-## 54 Nopol 
+## 51 Nopol 
 
 org.apache.commons.math.stat.clustering.EuclideanIntegerPoint:86 (Suspicious rank: ample 18, jaccard 18, ochiai 44, naish1 19414, gp13 18, naish2 18, tarantula 18, )
 
@@ -2811,7 +3130,7 @@ index e1b54f4..8c107de 100644
 
 ```
 
-## 55 Nopol 
+## 52 Nopol 
 
 org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:620 (Suspicious rank: ample 85, jaccard 85, ochiai 93, naish1 19199, gp13 85, naish2 85, tarantula 85, )
 
@@ -2855,7 +3174,7 @@ index dc83314..83b4c41 100644
 
 ```
 
-## 56 Nopol 
+## 53 Nopol 
 
 org.apache.commons.math.stat.correlation.PearsonsCorrelation:193 (Suspicious rank: ample 18, jaccard 18, ochiai 18, naish1 16548, gp13 18, naish2 18, tarantula 18, )
 
@@ -2898,7 +3217,7 @@ index 180caef..3f66927 100644
 
 ```
 
-## 57 Genprog 
+## 54 Genprog 
 
 org.apache.commons.math.analysis.solvers.BisectionSolver:72 (Suspicious rank: ample 1, jaccard 1, ochiai 1, naish1 16589, gp13 1, naish2 1, tarantula 1, )
 REPLACE
@@ -3015,7 +3334,7 @@ index b61b0b1..3227b98 100644
 
 ```
 
-## 58 Genprog 
+## 55 Genprog 
 
 org.apache.commons.math.ode.events.EventState:188 (Suspicious rank: ample 68, jaccard 165, ochiai 91, naish1 16066, gp13 68, naish2 68, tarantula 165, )
 INSERT_BEFORE
@@ -3028,7 +3347,7 @@ if ((pendingEvent) && ((java.lang.Math.abs((t1 - (pendingEventTime)))) <= (conve
 
 Grid5000 node: griffon-23.nancy.grid5000.fr
 
-## 59 Nopol 
+## 56 Nopol 
 
 org.apache.commons.math.analysis.solvers.BrentSolver:334 (Suspicious rank: ample 90, jaccard 188, ochiai 99, naish1 16023, gp13 90, naish2 90, tarantula 190, )
 
@@ -3097,7 +3416,7 @@ index e0cb427..4e95ed5 100644
 
 ```
 
-## 60 Genprog 
+## 57 Genprog 
 
 org.apache.commons.math.analysis.solvers.BrentSolver:132 (Suspicious rank: ample 1, jaccard 1, ochiai 1, naish1 15933, gp13 1, naish2 1, tarantula 1, )
 REPLACE
@@ -3108,7 +3427,7 @@ return solve(f, min, max)
 
 Grid5000 node: graphene-64.nancy.grid5000.fr
 
-## 61 Nopol 
+## 58 Nopol 
 
 org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl:225 (Suspicious rank: ample 16, jaccard 16, ochiai 16, naish1 15884, gp13 16, naish2 16, tarantula 16, )
 
@@ -3190,7 +3509,7 @@ index ff09646..44f6742 100644
 
 ```
 
-## 62 Genprog 
+## 59 Genprog 
 
 org.apache.commons.math.ode.events.EventState:283 (Suspicious rank: ample 185, jaccard 185, ochiai 182, naish1 16660, gp13 185, naish2 185, tarantula 185, )
 DELETE
@@ -3201,7 +3520,7 @@ remove
 
 Grid5000 node: graphene-76.nancy.grid5000.fr
 
-## 63 Kali 
+## 60 Kali 
 
 org.apache.commons.math.ode.events.EventState:283 (Suspicious rank: ample 185, jaccard 185, ochiai 182, naish1 16660, gp13 185, naish2 185, tarantula 185, )
 DELETE
@@ -3212,7 +3531,7 @@ remove
 
 Grid5000 node: graphene-64.nancy.grid5000.fr
 
-## 64 Nopol 
+## 61 Nopol 
 
 org.apache.commons.math.analysis.solvers.BrentSolver:282 (Suspicious rank: ample 32, jaccard 32, ochiai 32, naish1 16567, gp13 32, naish2 32, tarantula 32, )
 
@@ -3255,7 +3574,7 @@ index 9d1b797..3fc328d 100644
 
 ```
 
-## 65 Genprog 
+## 62 Genprog 
 
 org.apache.commons.math.linear.EigenDecompositionImpl:1137 (Suspicious rank: ample 3, jaccard 3, ochiai 16, naish1 16070, gp13 3, naish2 3, tarantula 3, )
 DELETE
@@ -3266,7 +3585,7 @@ remove
 
 Grid5000 node: graphene-76.nancy.grid5000.fr
 
-## 66 Kali 
+## 63 Kali 
 
 org.apache.commons.math.linear.EigenDecompositionImpl:1135 (Suspicious rank: ample 5, jaccard 5, ochiai 14, naish1 16072, gp13 5, naish2 5, tarantula 5, )
 INSERT_BEFORE
@@ -3279,7 +3598,7 @@ if (true)
 
 Grid5000 node: graphene-72.nancy.grid5000.fr
 
-## 67 Nopol 
+## 64 Nopol 
 
 org.apache.commons.math.linear.EigenDecompositionImpl:1139 (Suspicious rank: ample 1, jaccard 1, ochiai 18, naish1 16068, gp13 1, naish2 1, tarantula 1, )
 
@@ -3348,7 +3667,7 @@ index 3fc328d..53a40f0 100644
 
 ```
 
-## 68 Genprog 
+## 65 Genprog 
 
 org.apache.commons.math.linear.EigenDecompositionImpl:1477 (Suspicious rank: ample 26, jaccard 26, ochiai 17, naish1 16501, gp13 26, naish2 26, tarantula 26, )
 DELETE
@@ -3359,7 +3678,7 @@ remove
 
 Grid5000 node: griffon-10.nancy.grid5000.fr
 
-## 69 Kali 
+## 66 Kali 
 
 org.apache.commons.math.linear.EigenDecompositionImpl:1526 (Suspicious rank: ample 2, jaccard 2, ochiai 2, naish1 16239, gp13 2, naish2 2, tarantula 2, )
 INSERT_BEFORE
@@ -3372,7 +3691,7 @@ if (true)
 
 Grid5000 node: graphene-61.nancy.grid5000.fr
 
-## 70 Nopol 
+## 67 Nopol 
 
 org.apache.commons.math.linear.EigenDecompositionImpl:1541 (Suspicious rank: ample 4, jaccard 4, ochiai 11, naish1 16250, gp13 4, naish2 4, tarantula 4, )
 
@@ -3420,7 +3739,7 @@ index 60a1b3a..16d3bae 100644
 
 ```
 
-## 71 Genprog 
+## 68 Genprog 
 
 org.apache.commons.math.optimization.linear.SimplexSolver:63 (Suspicious rank: ample 37, jaccard 37, ochiai 47, naish1 16048, gp13 37, naish2 37, tarantula 37, )
 DELETE
@@ -3431,7 +3750,7 @@ remove
 
 Grid5000 node: graphene-42.nancy.grid5000.fr
 
-## 72 Kali 
+## 69 Kali 
 
 org.apache.commons.math.optimization.linear.SimplexSolver:63 (Suspicious rank: ample 37, jaccard 37, ochiai 47, naish1 16048, gp13 37, naish2 37, tarantula 37, )
 DELETE
@@ -3442,7 +3761,7 @@ remove
 
 Grid5000 node: graphene-65.nancy.grid5000.fr
 
-## 73 Nopol 
+## 70 Nopol 
 
 org.apache.commons.math.optimization.linear.SimplexSolver:63 (Suspicious rank: ample 37, jaccard 37, ochiai 47, naish1 16048, gp13 37, naish2 37, tarantula 37, )
 
@@ -3502,7 +3821,7 @@ index 929560c..955d0d8 100644
 
 ```
 
-## 74 Genprog 
+## 71 Genprog 
 
 org.apache.commons.math.optimization.direct.MultiDirectional:90 (Suspicious rank: ample 16, jaccard 16, ochiai 7, naish1 16169, gp13 16, naish2 16, tarantula 16, )
 REPLACE
@@ -3513,7 +3832,7 @@ return
 
 Grid5000 node: graphene-25.nancy.grid5000.fr
 
-## 75 Kali 
+## 72 Kali 
 
 org.apache.commons.math.optimization.direct.MultiDirectional:90 (Suspicious rank: ample 16, jaccard 16, ochiai 7, naish1 16169, gp13 16, naish2 16, tarantula 16, )
 INSERT_BEFORE
@@ -3553,7 +3872,7 @@ index e6398f6..5b76415 100644
 
 ```
 
-## 76 Genprog 
+## 73 Genprog 
 
 org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils:199 (Suspicious rank: ample 4, jaccard 4, ochiai 1, naish1 15706, gp13 4, naish2 4, tarantula 4, )
 DELETE
@@ -3564,7 +3883,7 @@ remove
 
 Grid5000 node: graphene-70.nancy.grid5000.fr
 
-## 77 Kali 
+## 74 Kali 
 
 org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils:199 (Suspicious rank: ample 4, jaccard 4, ochiai 1, naish1 15706, gp13 4, naish2 4, tarantula 4, )
 DELETE
@@ -3575,7 +3894,7 @@ remove
 
 Grid5000 node: graphene-70.nancy.grid5000.fr
 
-## 78 Nopol 
+## 75 Nopol 
 
 org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils:198 (Suspicious rank: ample 41, jaccard 41, ochiai 46, naish1 15686, gp13 41, naish2 41, tarantula 41, )
 
@@ -3626,7 +3945,7 @@ index b0d114e..a6d7419 100644
 
 ```
 
-## 79 Nopol 
+## 76 Nopol 
 
 org.apache.commons.math.optimization.linear.SimplexTableau:161 (Suspicious rank: ample 43, jaccard 43, ochiai 25, naish1 14789, gp13 43, naish2 43, tarantula 43, )
 
@@ -3715,7 +4034,7 @@ index a6d7419..ba57722 100644
 
 ```
 
-## 80 Nopol 
+## 77 Nopol 
 
 org.apache.commons.math.optimization.linear.SimplexTableau:352 (Suspicious rank: ample 1, jaccard 1, ochiai 1, naish1 14715, gp13 1, naish2 1, tarantula 1, )
 
@@ -3813,7 +4132,7 @@ index 59aeb07..3959403 100644
 
 ```
 
-## 81 Genprog 
+## 78 Genprog 
 
 org.apache.commons.math.distribution.FDistributionImpl:144 (Suspicious rank: ample 1393, jaccard 105, ochiai 105, naish1 8365, gp13 105, naish2 105, tarantula 83, )
 REPLACE
@@ -3824,7 +4143,7 @@ return numeratorDegreesOfFreedom
 
 Grid5000 node: graphene-65.nancy.grid5000.fr
 
-## 82 Kali 
+## 79 Kali 
 
 org.apache.commons.math.distribution.FDistributionImpl:144 (Suspicious rank: ample 1393, jaccard 105, ochiai 105, naish1 8365, gp13 105, naish2 105, tarantula 83, )
 INSERT_BEFORE
@@ -3939,7 +4258,7 @@ index 57f64a9..01a9ee5 100644
 
 ```
 
-## 83 Nopol 
+## 80 Nopol 
 
 org.apache.commons.math.analysis.BrentSolver:136 (Suspicious rank: ample 924, jaccard 68, ochiai 68, naish1 6894, gp13 68, naish2 68, tarantula 68, )
 
@@ -3954,124 +4273,6 @@ Nb analyzed Statement: 68
 Execution time: 0:00:31.820000
 
 Grid5000 node: graphene-80.nancy.grid5000.fr
-
-# Math 99
-
-Nb Executed tests: 1180
-
-Nb Failing tests: 35
-
->	org.apache.commons.math.fraction.FractionTest#testFloatValue
->	org.apache.commons.math.fraction.FractionTest#testAbs
->	org.apache.commons.math.fraction.FractionTest#testAdd
->	org.apache.commons.math.fraction.FractionTest#testSubtract
->	org.apache.commons.math.fraction.FractionTest#testReciprocal
->	org.apache.commons.math.fraction.FractionTest#testEpsilonLimitConstructor
->	org.apache.commons.math.fraction.FractionTest#testGetReducedFraction
->	org.apache.commons.math.fraction.FractionTest#testConstructorDouble
->	org.apache.commons.math.fraction.FractionTest#testCompareTo
->	org.apache.commons.math.fraction.FractionTest#testDoubleConstructor
->	org.apache.commons.math.fraction.FractionTest#testLongValue
->	org.apache.commons.math.fraction.FractionTest#testDigitLimitConstructor
->	org.apache.commons.math.fraction.FractionTest#testIntValue
->	org.apache.commons.math.fraction.FractionTest#testDivide
->	org.apache.commons.math.fraction.FractionTest#testMultiply
->	org.apache.commons.math.fraction.FractionTest#testEqualsAndHashCode
->	org.apache.commons.math.fraction.FractionTest#testNegate
->	org.apache.commons.math.fraction.FractionTest#testGoldenRatio
->	org.apache.commons.math.fraction.FractionTest#testIntegerOverflow
->	org.apache.commons.math.fraction.FractionTest#testDoubleValue
->	org.apache.commons.math.fraction.FractionTest#testConstructor
->	org.apache.commons.math.optimization.MultiDirectionalTest#testCostExceptions
->	org.apache.commons.math.optimization.MultiDirectionalTest#testRosenbrock
->	org.apache.commons.math.optimization.MultiDirectionalTest#testPowell
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatImproperNegative
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatImproper
->	org.apache.commons.math.fraction.FractionFormatTest#testParseProper
->	org.apache.commons.math.fraction.FractionFormatTest#testParseProperNegative
->	org.apache.commons.math.fraction.FractionFormatTest#testParse
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatZero
->	org.apache.commons.math.fraction.FractionFormatTest#testFormatNegative
->	org.apache.commons.math.fraction.FractionFormatTest#testParseInteger
->	org.apache.commons.math.fraction.FractionFormatTest#testFormat
->	org.apache.commons.math.fraction.FractionFormatTest#testParseNegative
->	org.apache.commons.math.analysis.BrentSolverTest#testRootEndpoints
-
-## Human Patch 
-
-```Java
-diff --git a/org/apache/commons/math/analysis/BrentSolver.java b/org/apache/commons/math/analysis/BrentSolver.java
-index da8b3f5..01a9ee5 100644
---- a/org/apache/commons/math/analysis/BrentSolver.java
-+++ b/org/apache/commons/math/analysis/BrentSolver.java
-@@ -128,41 +128,20 @@ public class BrentSolver extends UnivariateRealSolverImpl {
-         clearResult();
-         verifyInterval(min, max);
-         
--        double ret = Double.NaN;
--        
-         double yMin = f.value(min);
-         double yMax = f.value(max);
-         
-         // Verify bracketing
--        double sign = yMin * yMax;
--        if (sign > 0) {
--            // check if either value is close to a zero
--            if (Math.abs(yMin) <= functionValueAccuracy) {
--                setResult(min, 0);
--                ret = min;
--            } else if (Math.abs(yMax) <= functionValueAccuracy) {
--                setResult(max, 0);
--                ret = max;
--            } else {
--                // neither value is close to zero and min and max do not bracket root.
--                throw new IllegalArgumentException
--                ("Function values at endpoints do not have different signs." +
--                        "  Endpoints: [" + min + "," + max + "]" + 
--                        "  Values: [" + yMin + "," + yMax + "]");
--            }
--        } else if (sign < 0){
--            // solve using only the first endpoint as initial guess
--            ret = solve(min, yMin, max, yMax, min, yMin);
--        } else {
--            // either min or max is a root
--            if (yMin == 0.0) {
--                ret = min;
--            } else {
--                ret = max;
--            }
-+        if (yMin * yMax >= 0) {
-+            throw new IllegalArgumentException
-+            ("Function values at endpoints do not have different signs." +
-+                    "  Endpoints: [" + min + "," + max + "]" + 
-+                    "  Values: [" + yMin + "," + yMax + "]");       
-         }
- 
--        return ret;
-+        // solve using only the first endpoint as initial guess
-+        return solve(min, yMin, max, yMax, min, yMin);
-+
-     }
-         
-     /**
-
-```
-
-## 84 Nopol 
-
-org.apache.commons.math.analysis.BrentSolver:136 (Suspicious rank: ample 861, jaccard 68, ochiai 68, naish1 7155, gp13 68, naish2 68, tarantula 68, )
-
-```Java
-min <= 1
-```
-
-Nb Angelic value: 1
-
-Nb analyzed Statement: 68
-
-Execution time: 0:00:32.066000
-
-Grid5000 node: graphene-99.nancy.grid5000.fr
 
 # Math 104
 
@@ -4141,7 +4342,7 @@ index ba2c4db..8c565cb 100644
 
 ```
 
-## 85 Nopol 
+## 81 Nopol 
 
 org.apache.commons.math.special.Gamma:162 (Suspicious rank: ample 3683, jaccard 88, ochiai 88, naish1 6243, gp13 88, naish2 88, tarantula 88, )
 
@@ -4210,7 +4411,7 @@ index d9fa592..c105a41 100644
 
 ```
 
-## 86 Nopol 
+## 82 Nopol 
 
 org.apache.commons.math.stat.regression.SimpleRegression:108 (Suspicious rank: ample 562, jaccard 79, ochiai 70, naish1 4336, gp13 79, naish2 79, tarantula 79, )
 
@@ -4259,7 +4460,7 @@ index 8e8e603..aaf0a0f 100644
 
 ```
 
-## 87 Genprog 
+## 83 Genprog 
 
 org.joda.time.field.ZeroIsMaxDateTimeField:138 (Suspicious rank: ample 1, jaccard 1, ochiai 2, naish1 10426, gp13 1, naish2 1, tarantula 1, )
 REPLACE
@@ -4270,7 +4471,7 @@ return (getWrappedField().getMaximumValue()) + 1
 
 Grid5000 node: graphene-77.nancy.grid5000.fr
 
-## 88 Kali 
+## 84 Kali 
 
 org.joda.time.field.ZeroIsMaxDateTimeField:178 (Suspicious rank: ample 3, jaccard 3, ochiai 3, naish1 10438, gp13 3, naish2 3, tarantula 3, )
 INSERT_BEFORE
@@ -4320,7 +4521,7 @@ index 64da5ea..6efe071 100644
 
 ```
 
-## 89 Genprog 
+## 85 Genprog 
 
 org.joda.time.tz.DateTimeZoneBuilder:1460
 DELETE
@@ -4331,7 +4532,7 @@ remove
 
 Grid5000 node: graphene-7.nancy.grid5000.fr
 
-## 90 Kali 
+## 86 Kali 
 
 org.joda.time.tz.DateTimeZoneBuilder:1460
 DELETE
@@ -4342,7 +4543,7 @@ remove
 
 Grid5000 node: graphene-115.nancy.grid5000.fr
 
-## 91 Nopol 
+## 87 Nopol 
 
 org.joda.time.tz.DateTimeZoneBuilder:372 (Suspicious rank: ample 108, jaccard 108, ochiai 110, naish1 10249, gp13 108, naish2 108, tarantula 108, )
 
