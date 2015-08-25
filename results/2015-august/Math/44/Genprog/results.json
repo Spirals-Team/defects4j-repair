@@ -1,34 +1,34 @@
 {
     "FailingTestCase": "2", 
-    "FailingTestCaseExecution": "323", 
-    "InmutatedGen": "28", 
+    "FailingTestCaseExecution": "165", 
+    "InmutatedGen": "13", 
     "NotAppliedOp": "0", 
-    "OfAppliedOp": "624", 
+    "OfAppliedOp": "329", 
     "RegressionTestCases": "2956", 
-    "RegressionTestExecution": "2", 
-    "RightCompilation": "322", 
-    "WrongCompilation": "302", 
-    "date": "Tue Aug 18 22:22:29 CEST 2015\n\n", 
-    "gen": "624", 
-    "gens": "953", 
-    "node": "graphene-24.nancy.grid5000.fr", 
+    "RegressionTestExecution": "1", 
+    "RightCompilation": "164", 
+    "WrongCompilation": "165", 
+    "date": "Mon Aug 24 23:21:53 CEST 2015\n\n", 
+    "gen": "329", 
+    "gens": "295", 
+    "node": "graphene-62.nancy.grid5000.fr", 
     "operations": [
         {
-            "buggyStatement": "iterator.remove()", 
-            "generation": 624, 
-            "patch": "statesInitialized = false", 
+            "buggyStatement": "java.lang.System.arraycopy(yDotK[(stages - 1)], 0, yDotTmp, 0, y0.length)", 
+            "generation": 329, 
+            "patch": "setStateInitialized(false)", 
             "patchLocation": {
-                "className": "org.apache.commons.math.ode.AbstractIntegrator", 
-                "line": 314
+                "className": "org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator", 
+                "line": 295
             }, 
-            "type": "INSERT_BEFORE", 
-            "variant": 1248
+            "type": "REPLACE", 
+            "variant": 658
         }
     ], 
     "ops": "0", 
     "patches": "1", 
-    "programVariant": "1248", 
-    "timeEvaluation": "1404470", 
-    "timeTotal": "1667072", 
-    "unfinishValidation": "1"
+    "programVariant": "658", 
+    "timeEvaluation": "343353", 
+    "timeTotal": "603769", 
+    "unfinishValidation": "0"
 }
