@@ -1,56 +1,22 @@
 {
     "FailingTestCase": "8", 
-    "FailingTestCaseExecution": "1954", 
+    "FailingTestCaseExecution": "2454", 
     "InmutatedGen": "0", 
     "NotAppliedOp": "0", 
     "OfAppliedOp": "0", 
-    "RegressionTestCases": "0", 
+    "RegressionTestCases": "1655", 
     "RegressionTestExecution": "3", 
-    "RightCompilation": "1953", 
-    "WrongCompilation": "339", 
-    "date": "Thu Aug 13 20:45:06 CEST 2015\n\n", 
+    "RightCompilation": "2453", 
+    "WrongCompilation": "333", 
+    "date": "Tue Aug 25 21:11:58 CEST 2015\n\n", 
     "gen": "0", 
-    "gens": "883", 
-    "node": "griffon-77.nancy.grid5000.fr", 
-    "operations": [
-        {
-            "buggyStatement": "return false", 
-            "generation": 1, 
-            "patch": "remove", 
-            "patchLocation": {
-                "className": "org.jfree.data.Range", 
-                "line": 335
-            }, 
-            "type": "DELETE", 
-            "variant": 14
-        }, 
-        {
-            "buggyStatement": "if (!((this.lower) == (range.lower))) {\n\treturn false;\n} ", 
-            "generation": 1, 
-            "patch": "remove", 
-            "patchLocation": {
-                "className": "org.jfree.data.Range", 
-                "line": 334
-            }, 
-            "type": "DELETE", 
-            "variant": 158
-        }, 
-        {
-            "buggyStatement": "if (!((this.lower) == (range.lower))) {\n\treturn false;\n} ", 
-            "generation": 1, 
-            "patch": "if (false) {\n\treturn false;\n} ", 
-            "patchLocation": {
-                "className": "org.jfree.data.Range", 
-                "line": 334
-            }, 
-            "type": "REPLACE", 
-            "variant": 161
-        }
-    ], 
+    "gens": "1079", 
+    "node": "graphene-53.nancy.grid5000.fr", 
+    "operations": [], 
     "ops": "0", 
-    "patches": "3", 
-    "programVariant": "14", 
+    "patches": "0", 
+    "programVariant": null, 
     "timeEvaluation": null, 
-    "timeTotal": "1026367", 
+    "timeTotal": "1016769", 
     "unfinishValidation": "0"
 }

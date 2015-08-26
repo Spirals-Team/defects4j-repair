@@ -1,95 +1,44 @@
 export PATH="/home/tdurieux/defects4j/framework/bin:$PATH";export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";cp -r /home/tdurieux/projects/chart/chart_21 /tmp/chart_21_Kali;cd /tmp/chart_21_Kali;defects4j compile;mkdir lib/;cp -r /home/tdurieux/defects4j/framework/projects/lib/* lib/;cp -r /home/tdurieux/defects4j/framework/projects/Chart/lib/* lib/;find . -type f -name "package-info.java" -delete;
-/home/tdurieux/defects4j-repair/src/python/core/../../../results/Chart/21/Kali/result
-cd /tmp/chart_21_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;export PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java  -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.jfree.data.statistics.junit.DefaultBoxAndWhiskerCategoryDatasetTests: -package org.jfree -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 4 -maxgen 1000000 -seed 10 -maxtime 60  -scope local  -stopfirst true -flthreshold 0 -population 1 -srcjavafolder source/ -srctestfolder tests/ -binjavafolder build/ -bintestfolder build-tests/;echo "
+/home/tdurieux/defects4j-repair/src/python/core/../../../results/2015-august/Chart/21/Kali/result
+cd /tmp/chart_21_Kali;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;TZ="America/New_York"; export TZexport PATH="/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/:$PATH";time java  -cp /home/tdurieux/defects4j-repair/src/python/core/../../..//libs/astor.jar fr.inria.main.evolution.MainjGenProg -mode statement-remove -location . -dependencies lib/ -failing org.jfree.data.statistics.junit.DefaultBoxAndWhiskerCategoryDatasetTests: -package org.jfree -jvm4testexecution /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/ -javacompliancelevel 4 -maxgen 1000000 -seed 10 -maxtime 60  -scope local  -stopfirst false -flthreshold 0 -population 1 -srcjavafolder source/ -srctestfolder tests/ -binjavafolder build/ -bintestfolder build-tests/;echo "
 
 Node: `hostname`
 ";echo "
 Date: `date`
 ";rm -rf /tmp/chart_21_Kali;
 
-End Repair Loops: Found solution
-Solution stored at: ./outputMutation//MainjGenProg-.//src/
-
-Number solutions:3
-f (sol): 0.0, [Variant id: 14 (SOL) , #gens: 883, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 158 (SOL) , #gens: 883, #ops: 1, parent:1]
-f (sol): 0.0, [Variant id: 161 (SOL) , #gens: 883, #ops: 1, parent:1]
-
+2015-08-25 19:11:57,533 INFO main - End Repair Loops: NOT Found solution
+2015-08-25 19:11:57,533 INFO main - 
+Number solutions:0
+2015-08-25 19:11:57,533 INFO main - 
 All variants:
-f 1.0, [Variant id: 1, #gens: 883, #ops: 0, parent:-]
-
-Solution details
-warning: ignoring inconsistent parent for CtCodeSnippetExpressionImpl (CtIfImpl != RootElement)null
-
- --SOLUTIONS DESCRIPTION--
-
- ----
-ProgramVariant 14
- 
-operation: DELETE
-location= org.jfree.data.Range
-line= 335
-original statement= return false
-fixed statement= return false
-generation= 1
-ingredientScope= -
- 
- ----
-ProgramVariant 158
- 
-operation: DELETE
-location= org.jfree.data.Range
-line= 334
-original statement= if (!((this.lower) == (range.lower))) {
-	return false;
-} 
-fixed statement= if (!((this.lower) == (range.lower))) {
-	return false;
-} 
-generation= 1
-ingredientScope= -
- 
- ----
-ProgramVariant 161
- 
-operation: REPLACE
-location= org.jfree.data.Range
-line= 334
-original statement= if (!((this.lower) == (range.lower))) {
-	return false;
-} 
-fixed statement= if (false) {
-	return false;
-} 
-generation= 1
-ingredientScope= -
- 
-
+2015-08-25 19:11:57,533 INFO main - f 0.0, [Variant id: 1 (SOL) , #gens: 1079, #ops: 0, parent:-]
+2015-08-25 19:11:57,533 INFO main - 
 ----stats: 
-
+2015-08-25 19:11:57,533 INFO main - 
 spaces navigation: [0]: {}
 #gen: 0
-#patches: 3
-#RightCompilation: 1953
-#WrongCompilation: 339
-#FailingTestCaseExecution: 1954
+#patches: 0
+#RightCompilation: 2453
+#WrongCompilation: 333
+#FailingTestCaseExecution: 2454
 #RegressionTestExecution: 3
-#TestcasesExecutedval1: 15632
-#TestcasesExecutedval2: 0
+#TestcasesExecutedval1: 19632
+#TestcasesExecutedval2: 4965
 #FailingTestCase: 8
-#RegressionTestCases: 0
+#RegressionTestCases: 1655
 #OfAppliedOp: 0
 #NotAppliedOp: 0
 #InmutatedGen: 0
 #unfinishValidation: 0
 #ing {}
 #untilcompile {}
-Time Total(ms): 1026367
+2015-08-25 19:11:57,533 INFO fr.inria.main.AbstractMain - Time Total(ms): 1016769
 
 
-Node: griffon-77.nancy.grid5000.fr
+Node: graphene-53.nancy.grid5000.fr
 
 
-Date: Thu Aug 13 20:45:06 CEST 2015
+Date: Tue Aug 25 21:11:58 CEST 2015
 
 
