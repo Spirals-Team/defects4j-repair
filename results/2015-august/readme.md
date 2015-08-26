@@ -6,10 +6,9 @@
    3 | [C3](#chart-3)    | Yes       | No       | Yes       |      2
    5 | [C5](#chart-5)    | Yes       | Yes       | Yes       |      3
    7 | [C7](#chart-7)    | Yes       | No       | TIMEOUT   |      1
-   8 | [C9](#chart-9)    | Yes       | No       | TIMEOUT   |      1
   12 | [C13](#chart-13)  | Yes       | Yes       | Yes       |      3
   14 | [C15](#chart-15)  | Yes       | Yes       | TIMEOUT   |      2
-  20 | [C21](#chart-21)  | No    | Yes       | Yes       |      2
+  20 | [C21](#chart-21)  | No    | No    | Yes       |      1
   24 | [C25](#chart-25)  | Yes       | Yes       | Yes       |      3
   25 | [C26](#chart-26)  | No    | Yes       | Yes       |      2
   64 | [L39](#lang-39)   | No       | No       | Yes       |      1
@@ -51,8 +50,8 @@
  194 | [M105](#math-105) | No       | No       | Yes       |      1
  199 | [T4](#time-4)     | Yes       | Yes       | No        |      2
  206 | [T11](#time-11)   | Yes       | Yes       | Yes       |      3
-     | Total             | 29 (13%)  | 23 (10%)  | 35 (15%)  |     87
-Fixed bugs: 49/222 (22%)
+     | Total             | 28 (12%)  | 22 (9%)   | 35 (15%)  |     85
+Fixed bugs: 48/222 (21%)
 
 Nb bugs ends with an execution error: 9
 
@@ -60,7 +59,7 @@ Nb bugs ends with an empty log: 0
 
 Nb bugs ends with the Grid5000 timeout: 118
 
-Total execution time: 20 days, 13:45:35.449000
+Total execution time: 20 days, 14:13:44.971000
 # All bugs
 
  #   | BugId             | Genprog   | Kali      | Nopol     | Total
@@ -72,7 +71,7 @@ Total execution time: 20 days, 13:45:35.449000
    5 | [C5](#chart-5)    | Yes       | Yes       | Yes       |      3
    6 | [C6](#chart-6)    | No    | No       | No        |      0
    7 | [C7](#chart-7)    | Yes       | No       | TIMEOUT   |      1
-   8 | [C9](#chart-9)    | Yes       | No       | TIMEOUT   |      1
+   8 | [C9](#chart-9)    | No    | No       | TIMEOUT   |      0
    9 | [C10](#chart-10)  | No       | No       | No        |      0
   10 | [C11](#chart-11)  | No       | No       | TIMEOUT   |      0
   11 | [C12](#chart-12)  | No       | No       | No        |      0
@@ -84,7 +83,7 @@ Total execution time: 20 days, 13:45:35.449000
   17 | [C18](#chart-18)  | No       | No       | No        |      0
   18 | [C19](#chart-19)  | No       | No       | No        |      0
   19 | [C20](#chart-20)  | No       | No       | No        |      0
-  20 | [C21](#chart-21)  | No    | Yes       | Yes       |      2
+  20 | [C21](#chart-21)  | No    | No    | Yes       |      1
   21 | [C22](#chart-22)  | No       | No       | No        |      0
   22 | [C23](#chart-23)  | No       | No       | No        |      0
   23 | [C24](#chart-24)  | No       | No       | No        |      0
@@ -287,8 +286,8 @@ Total execution time: 20 days, 13:45:35.449000
  220 | [T25](#time-25)   | No       | TIMEOUT   | No        |      0
  221 | [T26](#time-26)   | No       | No       | No        |      0
  222 | [T27](#time-27)   | No    | No       | No        |      0
-     | Total             | 29 (13%)  | 23 (10%)  | 35 (15%)  |     87
-Fixed bugs: 49/222 (22%)
+     | Total             | 28 (12%)  | 22 (9%)   | 35 (15%)  |     85
+Fixed bugs: 48/222 (21%)
 
 Nb bugs ends with an execution error: 9
 
@@ -296,7 +295,7 @@ Nb bugs ends with an empty log: 0
 
 Nb bugs ends with the Grid5000 timeout: 118
 
-Total execution time: 20 days, 13:45:35.449000
+Total execution time: 20 days, 14:13:44.971000
 
 
 
@@ -320,15 +319,15 @@ Index: org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java
          }
          int index = this.plot.getIndexOf(this);
          CategoryDataset dataset = this.plot.getDataset(index);
--        if (dataset == null) {
-+        if (dataset != null) {
++        if (dataset == null) {
+-        if (dataset != null) {
              return result;
          }
          int seriesCount = dataset.getRowCount();
 
 ```
 
-## 1 Genprog 
+## Patch #1 Genprog 
 
 org.jfree.chart.renderer.category.AbstractCategoryItemRenderer:1797 (Suspicious rank: ample 28, jaccard 28, ochiai 32, naish1 25667, gp13 28, naish2 28, tarantula 28, )
 DELETE
@@ -339,7 +338,7 @@ remove
 
 Grid5000 node: graphene-75.nancy.grid5000.fr
 
-## 2 Kali 
+## Patch #2 Kali 
 
 org.jfree.chart.renderer.category.AbstractCategoryItemRenderer:1797 (Suspicious rank: ample 28, jaccard 28, ochiai 32, naish1 25667, gp13 28, naish2 28, tarantula 28, )
 DELETE
@@ -370,8 +369,8 @@ Index: org/jfree/data/time/TimeSeries.java
              throw new IllegalArgumentException("Requires start <= end.");
          }
          TimeSeries copy = (TimeSeries) super.clone();
--        copy.minY = Double.NaN;
--        copy.maxY = Double.NaN;
++        copy.minY = Double.NaN;
++        copy.maxY = Double.NaN;
 +
          copy.data = new java.util.ArrayList();
          if (this.data.size() > 0) {
@@ -379,7 +378,7 @@ Index: org/jfree/data/time/TimeSeries.java
 
 ```
 
-## 3 Genprog 
+## Patch #3 Genprog 
 
 org.jfree.data.time.TimeSeries:579 (Suspicious rank: ample 59, jaccard 59, ochiai 53, naish1 25132, gp13 59, naish2 59, tarantula 59, )
 INSERT_BEFORE
@@ -390,7 +389,7 @@ findBoundsByIteration()
 
 Grid5000 node: graphene-75.nancy.grid5000.fr
 
-## 4 Nopol 
+## Patch #4 Nopol 
 
 org.jfree.data.time.TimeSeries:885 (Suspicious rank: ample 41, jaccard 41, ochiai 41, naish1 25131, gp13 41, naish2 41, tarantula 41, )
 
@@ -426,23 +425,23 @@ Index: org/jfree/data/xy/XYSeries.java
          if (x == null) {
              throw new IllegalArgumentException("Null 'x' argument.");
          }
--        if (this.allowDuplicateXValues) {
--            add(x, y);
--            return null;
--        }
++        if (this.allowDuplicateXValues) {
++            add(x, y);
++            return null;
++        }
 -
--        // if we get to here, we know that duplicate X values are not permitted
++        // if we get to here, we know that duplicate X values are not permitted
          XYDataItem overwritten = null;
          int index = indexOf(x);
--        if (index >= 0) {
-+        if (index >= 0 && !this.allowDuplicateXValues) {
++        if (index >= 0) {
+-        if (index >= 0 && !this.allowDuplicateXValues) {
              XYDataItem existing = (XYDataItem) this.data.get(index);
              try {
                  overwritten = (XYDataItem) existing.clone();
 
 ```
 
-## 5 Genprog 
+## Patch #5 Genprog 
 
 org.jfree.data.xy.XYSeries:562 (Suspicious rank: ample 1, jaccard 1, ochiai 1, naish1 24209, gp13 1, naish2 1, tarantula 1, )
 REPLACE
@@ -453,7 +452,7 @@ this.data.add(new org.jfree.data.xy.XYDataItem(x , y))
 
 Grid5000 node: graphene-68.nancy.grid5000.fr
 
-## 6 Kali 
+## Patch #6 Kali 
 
 org.jfree.data.xy.XYSeries:561 (Suspicious rank: ample 3, jaccard 3, ochiai 3, naish1 24208, gp13 3, naish2 3, tarantula 3, )
 REPLACE
@@ -468,7 +467,7 @@ if (false) {
 
 Grid5000 node: graphene-68.nancy.grid5000.fr
 
-## 7 Nopol 
+## Patch #7 Nopol 
 
 org.jfree.data.xy.XYSeries:561 (Suspicious rank: ample 3, jaccard 3, ochiai 3, naish1 24208, gp13 3, naish2 3, tarantula 3, )
 
@@ -504,18 +503,18 @@ Index: org/jfree/data/time/TimePeriodValues.java
          }
          
          if (this.maxMiddleIndex >= 0) {
--            long s = getDataItem(this.maxMiddleIndex).getPeriod().getStart()
-+            long s = getDataItem(this.minMiddleIndex).getPeriod().getStart()
++            long s = getDataItem(this.maxMiddleIndex).getPeriod().getStart()
+-            long s = getDataItem(this.minMiddleIndex).getPeriod().getStart()
                  .getTime();
--            long e = getDataItem(this.maxMiddleIndex).getPeriod().getEnd()
-+            long e = getDataItem(this.minMiddleIndex).getPeriod().getEnd()
++            long e = getDataItem(this.maxMiddleIndex).getPeriod().getEnd()
+-            long e = getDataItem(this.minMiddleIndex).getPeriod().getEnd()
                  .getTime();
              long maxMiddle = s + (e - s) / 2;
              if (middle > maxMiddle) {
 
 ```
 
-## 8 Genprog 
+## Patch #8 Genprog 
 
 org.jfree.data.time.TimePeriodValues:552 (Suspicious rank: ample 1, jaccard 1, ochiai 1, naish1 22060, gp13 1, naish2 1, tarantula 1, )
 REPLACE
@@ -525,74 +524,6 @@ return this.maxEndIndex
 ```
 
 Grid5000 node: graphene-75.nancy.grid5000.fr
-
-# Chart 9
-
-Nb Executed tests: 3641
-
-Nb Failing tests: 2
-
->	org.jfree.data.time.junit.TimeSeriesTests#testBug1864222
->	org.jfree.data.time.junit.TimeSeriesTests#testBug1864222
-
-## Human Patch 
-
-```Java
-Index: org/jfree/data/time/TimeSeries.java
-===================================================================
---- org/jfree/data/time/TimeSeries.java	(revision 1083)
-+++ org/jfree/data/time/TimeSeries.java	(revision 1082)
-@@ -674,7 +672,7 @@
-      */
-     public TimeSeriesDataItem addOrUpdate(RegularTimePeriod period,
-                                           double value) {
--        return addOrUpdate(period, new Double(value));
-+        return this.addOrUpdate(period, new Double(value));
-     }
- 
-     /**
-@@ -941,7 +937,7 @@
-             endIndex = -(endIndex + 1); // this is first item AFTER end period
-             endIndex = endIndex - 1;    // so this is last item BEFORE end
-         }
--        if ((endIndex < 0)  || (endIndex < startIndex)) {
-+        if (endIndex < 0) {
-             emptyRange = true;
-         }
-         if (emptyRange) {
-@@ -970,13 +966,15 @@
-             return false;
-         }
-         TimeSeries s = (TimeSeries) object;
--        if (!ObjectUtilities.equal(getDomainDescription(),
--                s.getDomainDescription())) {
-+        if (!ObjectUtilities.equal(
-+            getDomainDescription(), s.getDomainDescription()
-+        )) {
-             return false;
-         }
- 
--        if (!ObjectUtilities.equal(getRangeDescription(),
--                s.getRangeDescription())) {
-+        if (!ObjectUtilities.equal(
-+            getRangeDescription(), s.getRangeDescription()
-+        )) {
-             return false;
-         }
- 
-
-```
-
-## 9 Genprog 
-
-org.jfree.data.time.SpreadsheetDate:457 (Suspicious rank: ample 95, jaccard 95, ochiai 99, naish1 21980, gp13 95, naish2 95, tarantula 95, )
-REPLACE
-
-```Java
-return this.day
-```
-
-Grid5000 node: graphene-53.nancy.grid5000.fr
 
 # Chart 13
 
@@ -615,145 +546,145 @@ Index: org/jfree/chart/block/BorderArrangement.java
          }
      }
 -
-+    
+-    
      /**
--     * Arranges the items in the specified container, subject to the given
-+     * Arranges the items in the specified container, subject to the given 
++     * Arranges the items in the specified container, subject to the given
+-     * Arranges the items in the specified container, subject to the given 
       * constraint.
--     *
-+     * 
++     *
+-     * 
       * @param container  the container.
       * @param g2  the graphics device.
       * @param constraint  the constraint.
--     *
-+     * 
++     *
+-     * 
       * @return The block size.
       */
--    public Size2D arrange(BlockContainer container,
--                          Graphics2D g2,
-+    public Size2D arrange(BlockContainer container, 
-+                          Graphics2D g2, 
++    public Size2D arrange(BlockContainer container,
++                          Graphics2D g2,
+-    public Size2D arrange(BlockContainer container, 
+-                          Graphics2D g2, 
                            RectangleConstraint constraint) {
--        RectangleConstraint contentConstraint
--                = container.toContentConstraint(constraint);
-+        RectangleConstraint contentConstraint 
-+            = container.toContentConstraint(constraint);
++        RectangleConstraint contentConstraint
++                = container.toContentConstraint(constraint);
+-        RectangleConstraint contentConstraint 
+-            = container.toContentConstraint(constraint);
          Size2D contentSize = null;
          LengthConstraintType w = contentConstraint.getWidthConstraintType();
          LengthConstraintType h = contentConstraint.getHeightConstraintType();
          if (w == LengthConstraintType.NONE) {
              if (h == LengthConstraintType.NONE) {
--                contentSize = arrangeNN(container, g2);
-+                contentSize = arrangeNN(container, g2);  
++                contentSize = arrangeNN(container, g2);
+-                contentSize = arrangeNN(container, g2);  
              }
              else if (h == LengthConstraintType.FIXED) {
--                throw new RuntimeException("Not implemented.");
-+                throw new RuntimeException("Not implemented.");  
++                throw new RuntimeException("Not implemented.");
+-                throw new RuntimeException("Not implemented.");  
              }
              else if (h == LengthConstraintType.RANGE) {
--                throw new RuntimeException("Not implemented.");
-+                throw new RuntimeException("Not implemented.");  
++                throw new RuntimeException("Not implemented.");
+-                throw new RuntimeException("Not implemented.");  
              }
          }
          else if (w == LengthConstraintType.FIXED) {
              if (h == LengthConstraintType.NONE) {
--                contentSize = arrangeFN(container, g2, constraint.getWidth());
-+                contentSize = arrangeFN(container, g2, constraint.getWidth());  
++                contentSize = arrangeFN(container, g2, constraint.getWidth());
+-                contentSize = arrangeFN(container, g2, constraint.getWidth());  
              }
              else if (h == LengthConstraintType.FIXED) {
--                contentSize = arrangeFF(container, g2, constraint);
-+                contentSize = arrangeFF(container, g2, constraint);  
++                contentSize = arrangeFF(container, g2, constraint);
+-                contentSize = arrangeFF(container, g2, constraint);  
              }
              else if (h == LengthConstraintType.RANGE) {
--                contentSize = arrangeFR(container, g2, constraint);
-+                contentSize = arrangeFR(container, g2, constraint);  
++                contentSize = arrangeFR(container, g2, constraint);
+-                contentSize = arrangeFR(container, g2, constraint);  
              }
          }
          else if (w == LengthConstraintType.RANGE) {
              if (h == LengthConstraintType.NONE) {
--                throw new RuntimeException("Not implemented.");
-+                throw new RuntimeException("Not implemented.");  
++                throw new RuntimeException("Not implemented.");
+-                throw new RuntimeException("Not implemented.");  
              }
              else if (h == LengthConstraintType.FIXED) {
--                throw new RuntimeException("Not implemented.");
-+                throw new RuntimeException("Not implemented.");  
++                throw new RuntimeException("Not implemented.");
+-                throw new RuntimeException("Not implemented.");  
              }
              else if (h == LengthConstraintType.RANGE) {
--                contentSize = arrangeRR(container, constraint.getWidthRange(),
--                        constraint.getHeightRange(), g2);
-+                contentSize = arrangeRR(
-+                    container, constraint.getWidthRange(),
-+                    constraint.getHeightRange(), g2
-+                );  
++                contentSize = arrangeRR(container, constraint.getWidthRange(),
++                        constraint.getHeightRange(), g2);
+-                contentSize = arrangeRR(
+-                    container, constraint.getWidthRange(),
+-                    constraint.getHeightRange(), g2
+-                );  
              }
          }
--        return new Size2D(container.calculateTotalWidth(contentSize.getWidth()),
--                container.calculateTotalHeight(contentSize.getHeight()));
-+        return new Size2D(
-+            container.calculateTotalWidth(contentSize.getWidth()),
-+            container.calculateTotalHeight(contentSize.getHeight())
-+        );
++        return new Size2D(container.calculateTotalWidth(contentSize.getWidth()),
++                container.calculateTotalHeight(contentSize.getHeight()));
+-        return new Size2D(
+-            container.calculateTotalWidth(contentSize.getWidth()),
+-            container.calculateTotalHeight(contentSize.getHeight())
+-        );
      }
 -
-+    
+-    
      /**
       * Performs an arrangement without constraints.
--     *
-+     * 
++     *
+-     * 
       * @param container  the container.
       * @param g2  the graphics device.
--     *
-+     * 
++     *
+-     * 
       * @return The container size after the arrangement.
       */
      protected Size2D arrangeNN(BlockContainer container, Graphics2D g2) {
          double[] w = new double[5];
          double[] h = new double[5];
          if (this.topBlock != null) {
--            Size2D size = this.topBlock.arrange(g2, RectangleConstraint.NONE);
-+            Size2D size = this.topBlock.arrange(
-+                g2, RectangleConstraint.NONE
-+            );
++            Size2D size = this.topBlock.arrange(g2, RectangleConstraint.NONE);
+-            Size2D size = this.topBlock.arrange(
+-                g2, RectangleConstraint.NONE
+-            );
              w[0] = size.width;
              h[0] = size.height;
          }
          if (this.bottomBlock != null) {
--            Size2D size = this.bottomBlock.arrange(g2,
--                    RectangleConstraint.NONE);
-+            Size2D size = this.bottomBlock.arrange(
-+                g2, RectangleConstraint.NONE
-+            );
++            Size2D size = this.bottomBlock.arrange(g2,
++                    RectangleConstraint.NONE);
+-            Size2D size = this.bottomBlock.arrange(
+-                g2, RectangleConstraint.NONE
+-            );
              w[1] = size.width;
              h[1] = size.height;
          }
          if (this.leftBlock != null) {
--            Size2D size = this.leftBlock.arrange(g2, RectangleConstraint.NONE);
-+            Size2D size = this.leftBlock.arrange(
-+                g2, RectangleConstraint.NONE
-+            );
++            Size2D size = this.leftBlock.arrange(g2, RectangleConstraint.NONE);
+-            Size2D size = this.leftBlock.arrange(
+-                g2, RectangleConstraint.NONE
+-            );
              w[2] = size.width;
              h[2] = size.height;
         }
          if (this.rightBlock != null) {
--            Size2D size = this.rightBlock.arrange(g2, RectangleConstraint.NONE);
-+            Size2D size = this.rightBlock.arrange(
-+                g2, RectangleConstraint.NONE
-+            );
++            Size2D size = this.rightBlock.arrange(g2, RectangleConstraint.NONE);
+-            Size2D size = this.rightBlock.arrange(
+-                g2, RectangleConstraint.NONE
+-            );
              w[3] = size.width;
              h[3] = size.height;
          }
 -
-+        
+-        
          h[2] = Math.max(h[2], h[3]);
          h[3] = h[2];
 -
-+        
+-        
          if (this.centerBlock != null) {
--            Size2D size = this.centerBlock.arrange(g2,
--                    RectangleConstraint.NONE);
-+            Size2D size = this.centerBlock.arrange(
-+                g2, RectangleConstraint.NONE
-+            );
++            Size2D size = this.centerBlock.arrange(g2,
++                    RectangleConstraint.NONE);
+-            Size2D size = this.centerBlock.arrange(
+-                g2, RectangleConstraint.NONE
+-            );
              w[4] = size.width;
              h[4] = size.height;
          }
@@ -761,99 +692,99 @@ Index: org/jfree/chart/block/BorderArrangement.java
          double centerHeight = Math.max(h[2], Math.max(h[3], h[4]));
          double height = h[0] + h[1] + centerHeight;
          if (this.topBlock != null) {
--            this.topBlock.setBounds(new Rectangle2D.Double(0.0, 0.0, width,
--                    h[0]));
-+            this.topBlock.setBounds(
-+                new Rectangle2D.Double(0.0, 0.0, width, h[0])
-+            );
++            this.topBlock.setBounds(new Rectangle2D.Double(0.0, 0.0, width,
++                    h[0]));
+-            this.topBlock.setBounds(
+-                new Rectangle2D.Double(0.0, 0.0, width, h[0])
+-            );
          }
          if (this.bottomBlock != null) {
--            this.bottomBlock.setBounds(new Rectangle2D.Double(0.0,
--                    height - h[1], width, h[1]));
-+            this.bottomBlock.setBounds(
-+                new Rectangle2D.Double(0.0, height - h[1], width, h[1])
-+            );
++            this.bottomBlock.setBounds(new Rectangle2D.Double(0.0,
++                    height - h[1], width, h[1]));
+-            this.bottomBlock.setBounds(
+-                new Rectangle2D.Double(0.0, height - h[1], width, h[1])
+-            );
          }
          if (this.leftBlock != null) {
--            this.leftBlock.setBounds(new Rectangle2D.Double(0.0, h[0], w[2],
--                    centerHeight));
-+            this.leftBlock.setBounds(
-+                new Rectangle2D.Double(0.0, h[0], w[2], centerHeight)
-+            );
++            this.leftBlock.setBounds(new Rectangle2D.Double(0.0, h[0], w[2],
++                    centerHeight));
+-            this.leftBlock.setBounds(
+-                new Rectangle2D.Double(0.0, h[0], w[2], centerHeight)
+-            );
          }
          if (this.rightBlock != null) {
--            this.rightBlock.setBounds(new Rectangle2D.Double(width - w[3],
--                    h[0], w[3], centerHeight));
-+            this.rightBlock.setBounds(
-+                new Rectangle2D.Double(width - w[3], h[0], w[3], centerHeight)
-+            );
++            this.rightBlock.setBounds(new Rectangle2D.Double(width - w[3],
++                    h[0], w[3], centerHeight));
+-            this.rightBlock.setBounds(
+-                new Rectangle2D.Double(width - w[3], h[0], w[3], centerHeight)
+-            );
          }
 -
-+        
+-        
          if (this.centerBlock != null) {
--            this.centerBlock.setBounds(new Rectangle2D.Double(w[2], h[0],
--                    width - w[2] - w[3], centerHeight));
-+            this.centerBlock.setBounds(
-+                new Rectangle2D.Double(
-+                    w[2], h[0], width - w[2] - w[3], centerHeight
-+                )
-+            );
++            this.centerBlock.setBounds(new Rectangle2D.Double(w[2], h[0],
++                    width - w[2] - w[3], centerHeight));
+-            this.centerBlock.setBounds(
+-                new Rectangle2D.Double(
+-                    w[2], h[0], width - w[2] - w[3], centerHeight
+-                )
+-            );
          }
          return new Size2D(width, height);
      }
  
      /**
       * Performs an arrangement with a fixed width and a range for the height.
--     *
-+     * 
++     *
+-     * 
       * @param container  the container.
       * @param g2  the graphics device.
       * @param constraint  the constraint.
--     *
-+     * 
++     *
+-     * 
       * @return The container size after the arrangement.
       */
      protected Size2D arrangeFR(BlockContainer container, Graphics2D g2,
                                 RectangleConstraint constraint) {
          Size2D size1 = arrangeFN(container, g2, constraint.getWidth());
          if (constraint.getHeightRange().contains(size1.getHeight())) {
--            return size1;
-+            return size1;   
++            return size1;
+-            return size1;   
          }
          else {
              double h = constraint.getHeightRange().constrain(size1.getHeight());
              RectangleConstraint c2 = constraint.toFixedHeight(h);
--            return arrange(container, g2, c2);
-+            return arrange(container, g2, c2);   
++            return arrange(container, g2, c2);
+-            return arrange(container, g2, c2);   
          }
      }
 -
--    /**
--     * Arranges the container width a fixed width and no constraint on the
-+    
-+    /** 
-+     * Arranges the container width a fixed width and no constraint on the 
++    /**
++     * Arranges the container width a fixed width and no constraint on the
+-    
+-    /** 
+-     * Arranges the container width a fixed width and no constraint on the 
       * height.
--     *
-+     * 
++     *
+-     * 
       * @param container  the container.
       * @param g2  the graphics device.
       * @param width  the fixed width.
--     *
-+     * 
++     *
+-     * 
       * @return The container size after arranging the contents.
       */
      protected Size2D arrangeFN(BlockContainer container, Graphics2D g2,
                                 double width) {
          double[] w = new double[5];
          double[] h = new double[5];
--        RectangleConstraint c1 = new RectangleConstraint(width, null,
--                LengthConstraintType.FIXED, 0.0, null,
--                LengthConstraintType.NONE);
-+        RectangleConstraint c1 = new RectangleConstraint(
-+            width, null, LengthConstraintType.FIXED,
-+            0.0, null, LengthConstraintType.NONE
-+        );
++        RectangleConstraint c1 = new RectangleConstraint(width, null,
++                LengthConstraintType.FIXED, 0.0, null,
++                LengthConstraintType.NONE);
+-        RectangleConstraint c1 = new RectangleConstraint(
+-            width, null, LengthConstraintType.FIXED,
+-            0.0, null, LengthConstraintType.NONE
+-        );
          if (this.topBlock != null) {
              Size2D size = this.topBlock.arrange(g2, c1);
              w[0] = size.width;
@@ -861,13 +792,13 @@ Index: org/jfree/chart/block/BorderArrangement.java
              w[1] = size.width;
              h[1] = size.height;
          }
--        RectangleConstraint c2 = new RectangleConstraint(0.0,
--                new Range(0.0, width), LengthConstraintType.RANGE,
--                0.0, null, LengthConstraintType.NONE);
-+        RectangleConstraint c2 = new RectangleConstraint(
-+            0.0, new Range(0.0, width), LengthConstraintType.RANGE,
-+            0.0, null, LengthConstraintType.NONE
-+        );
++        RectangleConstraint c2 = new RectangleConstraint(0.0,
++                new Range(0.0, width), LengthConstraintType.RANGE,
++                0.0, null, LengthConstraintType.NONE);
+-        RectangleConstraint c2 = new RectangleConstraint(
+-            0.0, new Range(0.0, width), LengthConstraintType.RANGE,
+-            0.0, null, LengthConstraintType.NONE
+-        );
          if (this.leftBlock != null) {
              Size2D size = this.leftBlock.arrange(g2, c2);
              w[2] = size.width;
@@ -875,33 +806,33 @@ Index: org/jfree/chart/block/BorderArrangement.java
          }
          if (this.rightBlock != null) {
              double maxW = Math.max(width - w[2], 0.0);
--            RectangleConstraint c3 = new RectangleConstraint(0.0,
--                    new Range(Math.min(w[2], maxW), maxW),
--                    LengthConstraintType.RANGE, 0.0, null,
--                    LengthConstraintType.NONE);
-+            RectangleConstraint c3 = new RectangleConstraint(
-+                0.0, new Range(Math.min(w[2], maxW), maxW), 
-+                LengthConstraintType.RANGE,
-+                0.0, null, LengthConstraintType.NONE
-+            );    
++            RectangleConstraint c3 = new RectangleConstraint(0.0,
++                    new Range(Math.min(w[2], maxW), maxW),
++                    LengthConstraintType.RANGE, 0.0, null,
++                    LengthConstraintType.NONE);
+-            RectangleConstraint c3 = new RectangleConstraint(
+-                0.0, new Range(Math.min(w[2], maxW), maxW), 
+-                LengthConstraintType.RANGE,
+-                0.0, null, LengthConstraintType.NONE
+-            );    
              Size2D size = this.rightBlock.arrange(g2, c3);
              w[3] = size.width;
              h[3] = size.height;
          }
 -
-+        
+-        
          h[2] = Math.max(h[2], h[3]);
          h[3] = h[2];
 -
-+        
+-        
          if (this.centerBlock != null) {
--            RectangleConstraint c4 = new RectangleConstraint(width - w[2]
--                    - w[3], null, LengthConstraintType.FIXED, 0.0, null,
--                    LengthConstraintType.NONE);
-+            RectangleConstraint c4 = new RectangleConstraint(
-+                width - w[2] - w[3], null, LengthConstraintType.FIXED,
-+                0.0, null, LengthConstraintType.NONE
-+            );    
++            RectangleConstraint c4 = new RectangleConstraint(width - w[2]
++                    - w[3], null, LengthConstraintType.FIXED, 0.0, null,
++                    LengthConstraintType.NONE);
+-            RectangleConstraint c4 = new RectangleConstraint(
+-                width - w[2] - w[3], null, LengthConstraintType.FIXED,
+-                0.0, null, LengthConstraintType.NONE
+-            );    
              Size2D size = this.centerBlock.arrange(g2, c4);
              w[4] = size.width;
              h[4] = size.height;
@@ -909,85 +840,85 @@ Index: org/jfree/chart/block/BorderArrangement.java
      }
  
      /**
--     * Performs an arrangement with range constraints on both the vertical
-+     * Performs an arrangement with range constraints on both the vertical 
++     * Performs an arrangement with range constraints on both the vertical
+-     * Performs an arrangement with range constraints on both the vertical 
       * and horizontal sides.
--     *
-+     * 
++     *
+-     * 
       * @param container  the container.
       * @param widthRange  the allowable range for the container width.
       * @param heightRange  the allowable range for the container height.
       * @param g2  the graphics device.
--     *
-+     * 
++     *
+-     * 
       * @return The container size.
       */
--    protected Size2D arrangeRR(BlockContainer container,
--                               Range widthRange, Range heightRange,
-+    protected Size2D arrangeRR(BlockContainer container, 
-+                               Range widthRange, Range heightRange, 
++    protected Size2D arrangeRR(BlockContainer container,
++                               Range widthRange, Range heightRange,
+-    protected Size2D arrangeRR(BlockContainer container, 
+-                               Range widthRange, Range heightRange, 
                                 Graphics2D g2) {
          double[] w = new double[5];
          double[] h = new double[5];
          if (this.topBlock != null) {
--            RectangleConstraint c1 = new RectangleConstraint(widthRange,
--                    heightRange);
-+            RectangleConstraint c1 = new RectangleConstraint(
-+                widthRange, heightRange
-+            );
++            RectangleConstraint c1 = new RectangleConstraint(widthRange,
++                    heightRange);
+-            RectangleConstraint c1 = new RectangleConstraint(
+-                widthRange, heightRange
+-            );
              Size2D size = this.topBlock.arrange(g2, c1);
              w[0] = size.width;
              h[0] = size.height;
          }
          if (this.bottomBlock != null) {
              Range heightRange2 = Range.shift(heightRange, -h[0], false);
--            RectangleConstraint c2 = new RectangleConstraint(widthRange,
--                    heightRange2);
-+            RectangleConstraint c2 = new RectangleConstraint(
-+                widthRange, heightRange2
-+            );  
++            RectangleConstraint c2 = new RectangleConstraint(widthRange,
++                    heightRange2);
+-            RectangleConstraint c2 = new RectangleConstraint(
+-                widthRange, heightRange2
+-            );  
              Size2D size = this.bottomBlock.arrange(g2, c2);
              w[1] = size.width;
              h[1] = size.height;
          }
          Range heightRange3 = Range.shift(heightRange, -(h[0] + h[1]));
          if (this.leftBlock != null) {
--            RectangleConstraint c3 = new RectangleConstraint(widthRange,
--                    heightRange3);
-+            RectangleConstraint c3 = new RectangleConstraint(
-+                widthRange, heightRange3
-+            );
++            RectangleConstraint c3 = new RectangleConstraint(widthRange,
++                    heightRange3);
+-            RectangleConstraint c3 = new RectangleConstraint(
+-                widthRange, heightRange3
+-            );
              Size2D size = this.leftBlock.arrange(g2, c3);
              w[2] = size.width;
              h[2] = size.height;
          }
          Range widthRange2 = Range.shift(widthRange, -w[2], false);
          if (this.rightBlock != null) {
--            RectangleConstraint c4 = new RectangleConstraint(widthRange2,
--                    heightRange3);
-+            RectangleConstraint c4 = new RectangleConstraint(
-+                widthRange2, heightRange3
-+            );
++            RectangleConstraint c4 = new RectangleConstraint(widthRange2,
++                    heightRange3);
+-            RectangleConstraint c4 = new RectangleConstraint(
+-                widthRange2, heightRange3
+-            );
              Size2D size = this.rightBlock.arrange(g2, c4);
              w[3] = size.width;
              h[3] = size.height;
          }
 -
-+        
+-        
          h[2] = Math.max(h[2], h[3]);
          h[3] = h[2];
          Range widthRange3 = Range.shift(widthRange, -(w[2] + w[3]), false);
          if (this.centerBlock != null) {
--            RectangleConstraint c5 = new RectangleConstraint(widthRange3,
--                    heightRange3);
--            // TODO:  the width and height ranges should be reduced by the
-+            RectangleConstraint c5 = new RectangleConstraint(
-+                widthRange3, heightRange3
-+            );
-+            // TODO:  the width and height ranges should be reduced by the 
++            RectangleConstraint c5 = new RectangleConstraint(widthRange3,
++                    heightRange3);
++            // TODO:  the width and height ranges should be reduced by the
+-            RectangleConstraint c5 = new RectangleConstraint(
+-                widthRange3, heightRange3
+-            );
+-            // TODO:  the width and height ranges should be reduced by the 
              // height required for the top and bottom, and the width required
--            // by the left and right
-+            // by the left and right 
++            // by the left and right
+-            // by the left and right 
              Size2D size = this.centerBlock.arrange(g2, c5);
              w[4] = size.width;
              h[4] = size.height;
@@ -995,56 +926,56 @@ Index: org/jfree/chart/block/BorderArrangement.java
          double width = Math.max(w[0], Math.max(w[1], w[2] + w[4] + w[3]));
          double height = h[0] + h[1] + Math.max(h[2], Math.max(h[3], h[4]));
          if (this.topBlock != null) {
--            this.topBlock.setBounds(new Rectangle2D.Double(0.0, 0.0, width,
--                    h[0]));
-+            this.topBlock.setBounds(
-+                new Rectangle2D.Double(0.0, 0.0, width, h[0])
-+            );
++            this.topBlock.setBounds(new Rectangle2D.Double(0.0, 0.0, width,
++                    h[0]));
+-            this.topBlock.setBounds(
+-                new Rectangle2D.Double(0.0, 0.0, width, h[0])
+-            );
          }
          if (this.bottomBlock != null) {
--            this.bottomBlock.setBounds(new Rectangle2D.Double(0.0,
--                    height - h[1], width, h[1]));
-+            this.bottomBlock.setBounds(
-+                new Rectangle2D.Double(0.0, height - h[1], width, h[1])
-+            );
++            this.bottomBlock.setBounds(new Rectangle2D.Double(0.0,
++                    height - h[1], width, h[1]));
+-            this.bottomBlock.setBounds(
+-                new Rectangle2D.Double(0.0, height - h[1], width, h[1])
+-            );
          }
          if (this.leftBlock != null) {
--            this.leftBlock.setBounds(new Rectangle2D.Double(0.0, h[0], w[2],
--                    h[2]));
-+            this.leftBlock.setBounds(
-+                new Rectangle2D.Double(0.0, h[0], w[2], h[2])
-+            );
++            this.leftBlock.setBounds(new Rectangle2D.Double(0.0, h[0], w[2],
++                    h[2]));
+-            this.leftBlock.setBounds(
+-                new Rectangle2D.Double(0.0, h[0], w[2], h[2])
+-            );
          }
          if (this.rightBlock != null) {
--            this.rightBlock.setBounds(new Rectangle2D.Double(width - w[3],
--                    h[0], w[3], h[3]));
-+            this.rightBlock.setBounds(
-+                new Rectangle2D.Double(width - w[3], h[0], w[3], h[3])
-+            );
++            this.rightBlock.setBounds(new Rectangle2D.Double(width - w[3],
++                    h[0], w[3], h[3]));
+-            this.rightBlock.setBounds(
+-                new Rectangle2D.Double(width - w[3], h[0], w[3], h[3])
+-            );
          }
 -
-+        
+-        
          if (this.centerBlock != null) {
--            this.centerBlock.setBounds(new Rectangle2D.Double(w[2], h[0],
--                    width - w[2] - w[3], height - h[0] - h[1]));
-+            this.centerBlock.setBounds(
-+                new Rectangle2D.Double(
-+                    w[2], h[0], width - w[2] - w[3], height - h[0] - h[1]
-+                )
-+            );
++            this.centerBlock.setBounds(new Rectangle2D.Double(w[2], h[0],
++                    width - w[2] - w[3], height - h[0] - h[1]));
+-            this.centerBlock.setBounds(
+-                new Rectangle2D.Double(
+-                    w[2], h[0], width - w[2] - w[3], height - h[0] - h[1]
+-                )
+-            );
          }
          return new Size2D(width, height);
      }
  
      /**
       * Arranges the items within a container.
--     *
-+     * 
++     *
+-     * 
       * @param container  the container.
       * @param constraint  the constraint.
       * @param g2  the graphics device.
--     *
-+     * 
++     *
+-     * 
       * @return The container size after the arrangement.
       */
      protected Size2D arrangeFF(BlockContainer container, Graphics2D g2,
@@ -1052,109 +983,109 @@ Index: org/jfree/chart/block/BorderArrangement.java
          double[] h = new double[5];
          w[0] = constraint.getWidth();
          if (this.topBlock != null) {
--            RectangleConstraint c1 = new RectangleConstraint(w[0], null,
--                    LengthConstraintType.FIXED, 0.0,
--                    new Range(0.0, constraint.getHeight()),
--                    LengthConstraintType.RANGE);
-+            RectangleConstraint c1 = new RectangleConstraint(
-+                w[0], null, LengthConstraintType.FIXED,
-+                0.0, new Range(0.0, constraint.getHeight()), 
-+                LengthConstraintType.RANGE
-+            );
++            RectangleConstraint c1 = new RectangleConstraint(w[0], null,
++                    LengthConstraintType.FIXED, 0.0,
++                    new Range(0.0, constraint.getHeight()),
++                    LengthConstraintType.RANGE);
+-            RectangleConstraint c1 = new RectangleConstraint(
+-                w[0], null, LengthConstraintType.FIXED,
+-                0.0, new Range(0.0, constraint.getHeight()), 
+-                LengthConstraintType.RANGE
+-            );
              Size2D size = this.topBlock.arrange(g2, c1);
              h[0] = size.height;
          }
          w[1] = w[0];
          if (this.bottomBlock != null) {
--            RectangleConstraint c2 = new RectangleConstraint(w[0], null,
--                    LengthConstraintType.FIXED, 0.0, new Range(0.0,
--                    constraint.getHeight() - h[0]), LengthConstraintType.RANGE);
-+            RectangleConstraint c2 = new RectangleConstraint(
-+                w[0], null, LengthConstraintType.FIXED,
-+                0.0, new Range(0.0, constraint.getHeight() - h[0]), 
-+                LengthConstraintType.RANGE
-+            );
++            RectangleConstraint c2 = new RectangleConstraint(w[0], null,
++                    LengthConstraintType.FIXED, 0.0, new Range(0.0,
++                    constraint.getHeight() - h[0]), LengthConstraintType.RANGE);
+-            RectangleConstraint c2 = new RectangleConstraint(
+-                w[0], null, LengthConstraintType.FIXED,
+-                0.0, new Range(0.0, constraint.getHeight() - h[0]), 
+-                LengthConstraintType.RANGE
+-            );
              Size2D size = this.bottomBlock.arrange(g2, c2);
              h[1] = size.height;
          }
          h[2] = constraint.getHeight() - h[1] - h[0];
          if (this.leftBlock != null) {
--            RectangleConstraint c3 = new RectangleConstraint(0.0,
--                    new Range(0.0, constraint.getWidth()),
--                    LengthConstraintType.RANGE, h[2], null,
--                    LengthConstraintType.FIXED);
-+            RectangleConstraint c3 = new RectangleConstraint(
-+                0.0, new Range(0.0, constraint.getWidth()), 
-+                LengthConstraintType.RANGE,
-+                h[2], null, LengthConstraintType.FIXED
-+            );
++            RectangleConstraint c3 = new RectangleConstraint(0.0,
++                    new Range(0.0, constraint.getWidth()),
++                    LengthConstraintType.RANGE, h[2], null,
++                    LengthConstraintType.FIXED);
+-            RectangleConstraint c3 = new RectangleConstraint(
+-                0.0, new Range(0.0, constraint.getWidth()), 
+-                LengthConstraintType.RANGE,
+-                h[2], null, LengthConstraintType.FIXED
+-            );
              Size2D size = this.leftBlock.arrange(g2, c3);
--            w[2] = size.width;
-+            w[2] = size.width;            
++            w[2] = size.width;
+-            w[2] = size.width;            
          }
          h[3] = h[2];
          if (this.rightBlock != null) {
--            RectangleConstraint c4 = new RectangleConstraint(0.0,
--                    new Range(0.0, Math.max(constraint.getWidth() - w[2], 0.0)),
--                    LengthConstraintType.RANGE, h[2], null,
--                    LengthConstraintType.FIXED);
-+            RectangleConstraint c4 = new RectangleConstraint(
-+                0.0, new Range(0.0, constraint.getWidth() - w[2]), 
-+                LengthConstraintType.RANGE,
-+                h[2], null, LengthConstraintType.FIXED
-+            );
++            RectangleConstraint c4 = new RectangleConstraint(0.0,
++                    new Range(0.0, Math.max(constraint.getWidth() - w[2], 0.0)),
++                    LengthConstraintType.RANGE, h[2], null,
++                    LengthConstraintType.FIXED);
+-            RectangleConstraint c4 = new RectangleConstraint(
+-                0.0, new Range(0.0, constraint.getWidth() - w[2]), 
+-                LengthConstraintType.RANGE,
+-                h[2], null, LengthConstraintType.FIXED
+-            );
              Size2D size = this.rightBlock.arrange(g2, c4);
--            w[3] = size.width;
-+            w[3] = size.width;            
++            w[3] = size.width;
+-            w[3] = size.width;            
          }
          h[4] = h[2];
          w[4] = constraint.getWidth() - w[3] - w[2];
          RectangleConstraint c5 = new RectangleConstraint(w[4], h[4]);
          if (this.centerBlock != null) {
--            this.centerBlock.arrange(g2, c5);
-+            this.centerBlock.arrange(g2, c5);   
++            this.centerBlock.arrange(g2, c5);
+-            this.centerBlock.arrange(g2, c5);   
          }
 -
-+       
+-       
          if (this.topBlock != null) {
--            this.topBlock.setBounds(new Rectangle2D.Double(0.0, 0.0, w[0],
--                    h[0]));
-+            this.topBlock.setBounds(
-+                new Rectangle2D.Double(0.0, 0.0, w[0], h[0])
-+            );
++            this.topBlock.setBounds(new Rectangle2D.Double(0.0, 0.0, w[0],
++                    h[0]));
+-            this.topBlock.setBounds(
+-                new Rectangle2D.Double(0.0, 0.0, w[0], h[0])
+-            );
          }
          if (this.bottomBlock != null) {
--            this.bottomBlock.setBounds(new Rectangle2D.Double(0.0, h[0] + h[2],
--                    w[1], h[1]));
-+            this.bottomBlock.setBounds(
-+                new Rectangle2D.Double(0.0, h[0] + h[2], w[1], h[1])
-+            );
++            this.bottomBlock.setBounds(new Rectangle2D.Double(0.0, h[0] + h[2],
++                    w[1], h[1]));
+-            this.bottomBlock.setBounds(
+-                new Rectangle2D.Double(0.0, h[0] + h[2], w[1], h[1])
+-            );
          }
          if (this.leftBlock != null) {
--            this.leftBlock.setBounds(new Rectangle2D.Double(0.0, h[0], w[2],
--                    h[2]));
-+            this.leftBlock.setBounds(
-+                new Rectangle2D.Double(0.0, h[0], w[2], h[2])
-+            );
++            this.leftBlock.setBounds(new Rectangle2D.Double(0.0, h[0], w[2],
++                    h[2]));
+-            this.leftBlock.setBounds(
+-                new Rectangle2D.Double(0.0, h[0], w[2], h[2])
+-            );
          }
          if (this.rightBlock != null) {
--            this.rightBlock.setBounds(new Rectangle2D.Double(w[2] + w[4], h[0],
--                    w[3], h[3]));
-+            this.rightBlock.setBounds(
-+                new Rectangle2D.Double(w[2] + w[4], h[0], w[3], h[3])
-+            );
++            this.rightBlock.setBounds(new Rectangle2D.Double(w[2] + w[4], h[0],
++                    w[3], h[3]));
+-            this.rightBlock.setBounds(
+-                new Rectangle2D.Double(w[2] + w[4], h[0], w[3], h[3])
+-            );
          }
          if (this.centerBlock != null) {
--            this.centerBlock.setBounds(new Rectangle2D.Double(w[2], h[0], w[4],
--                    h[4]));
-+            this.centerBlock.setBounds(
-+                new Rectangle2D.Double(w[2], h[0], w[4], h[4])
-+            );
++            this.centerBlock.setBounds(new Rectangle2D.Double(w[2], h[0], w[4],
++                    h[4]));
+-            this.centerBlock.setBounds(
+-                new Rectangle2D.Double(w[2], h[0], w[4], h[4])
+-            );
          }
          return new Size2D(constraint.getWidth(), constraint.getHeight());
      }
 -
-+    
+-    
      /**
       * Clears the layout.
       */
@@ -1163,52 +1094,52 @@ Index: org/jfree/chart/block/BorderArrangement.java
          this.rightBlock = null;
      }
 -
-+    
+-    
      /**
       * Tests this arrangement for equality with an arbitrary object.
--     *
-+     * 
++     *
+-     * 
       * @param obj  the object (<code>null</code> permitted).
--     *
-+     * 
++     *
+-     * 
       * @return A boolean.
       */
      public boolean equals(Object obj) {
          if (obj == this) {
--            return true;
-+            return true;   
++            return true;
+-            return true;   
          }
          if (!(obj instanceof BorderArrangement)) {
--            return false;
-+            return false;   
++            return false;
+-            return false;   
          }
          BorderArrangement that = (BorderArrangement) obj;
          if (!ObjectUtilities.equal(this.topBlock, that.topBlock)) {
--            return false;
-+            return false;   
++            return false;
+-            return false;   
          }
          if (!ObjectUtilities.equal(this.bottomBlock, that.bottomBlock)) {
--            return false;
-+            return false;   
++            return false;
+-            return false;   
          }
          if (!ObjectUtilities.equal(this.leftBlock, that.leftBlock)) {
--            return false;
-+            return false;   
++            return false;
+-            return false;   
          }
          if (!ObjectUtilities.equal(this.rightBlock, that.rightBlock)) {
--            return false;
-+            return false;   
++            return false;
+-            return false;   
          }
          if (!ObjectUtilities.equal(this.centerBlock, that.centerBlock)) {
--            return false;
-+            return false;   
++            return false;
+-            return false;   
          }
          return true;
      }
 
 ```
 
-## 10 Genprog 
+## Patch #9 Genprog 
 
 org.jfree.chart.block.BorderArrangement:330 (Suspicious rank: ample 37, jaccard 37, ochiai 21, naish1 21855, gp13 37, naish2 37, tarantula 37, )
 INSERT_BEFORE
@@ -1219,7 +1150,7 @@ this.leftBlock = null
 
 Grid5000 node: graphene-76.nancy.grid5000.fr
 
-## 11 Kali 
+## Patch #10 Kali 
 
 org.jfree.chart.block.BorderArrangement:482 (Suspicious rank: ample 49, jaccard 49, ochiai 38, naish1 21885, gp13 49, naish2 49, tarantula 49, )
 DELETE
@@ -1230,7 +1161,7 @@ remove
 
 Grid5000 node: graphene-62.nancy.grid5000.fr
 
-## 12 Nopol 
+## Patch #11 Nopol 
 
 org.jfree.chart.block.BorderArrangement:492 (Suspicious rank: ample 32, jaccard 32, ochiai 43, naish1 21836, gp13 32, naish2 32, tarantula 32, )
 
@@ -1266,9 +1197,9 @@ Index: org/jfree/chart/plot/PiePlot.java
       * @return The percent.
       */
      public double getMaximumExplodePercent() {
--        if (this.dataset == null) {
--            return 0.0;
--        }
++        if (this.dataset == null) {
++            return 0.0;
++        }
          double result = 0.0;
          Iterator iterator = this.dataset.getKeys().iterator();
          while (iterator.hasNext()) {
@@ -1276,19 +1207,19 @@ Index: org/jfree/chart/plot/PiePlot.java
       
          PiePlotState state = new PiePlotState(info);
          state.setPassesRequired(2);
--        if (this.dataset != null) {
--            state.setTotal(DatasetUtilities.calculatePieDatasetTotal(
--                    plot.getDataset()));
--        }
-+        state.setTotal(DatasetUtilities.calculatePieDatasetTotal(
-+                plot.getDataset()));
++        if (this.dataset != null) {
++            state.setTotal(DatasetUtilities.calculatePieDatasetTotal(
++                    plot.getDataset()));
++        }
+-        state.setTotal(DatasetUtilities.calculatePieDatasetTotal(
+-                plot.getDataset()));
          state.setLatestAngle(plot.getStartAngle());
          return state;
          
 
 ```
 
-## 13 Genprog 
+## Patch #12 Genprog 
 
 org.jfree.chart.JFreeChart:1219 (Suspicious rank: ample 457, jaccard 457, ochiai 333, naish1 21756, gp13 457, naish2 457, tarantula 457, )
 REPLACE
@@ -1299,7 +1230,7 @@ fireChartChanged()
 
 Grid5000 node: graphene-69.nancy.grid5000.fr
 
-## 14 Kali 
+## Patch #13 Kali 
 
 org.jfree.chart.plot.PiePlot3D:230 (Suspicious rank: ample 19, jaccard 19, ochiai 7, naish1 21751, gp13 19, naish2 19, tarantula 19, )
 INSERT_BEFORE
@@ -1332,18 +1263,18 @@ Index: org/jfree/data/statistics/DefaultBoxAndWhiskerCategoryDataset.java
       *
       * @param list  a collection of values from which the various medians will 
       *              be calculated.
--     * @param rowKey  the row key (<code>null</code> not permitted).
--     * @param columnKey  the column key (<code>null</code> not permitted).
--     * 
--     * @see #add(BoxAndWhiskerItem, Comparable, Comparable)
-+     * @param rowKey  the row key.
-+     * @param columnKey  the column key.
++     * @param rowKey  the row key (<code>null</code> not permitted).
++     * @param columnKey  the column key (<code>null</code> not permitted).
++     * 
++     * @see #add(BoxAndWhiskerItem, Comparable, Comparable)
+-     * @param rowKey  the row key.
+-     * @param columnKey  the column key.
       */
      public void add(List list, Comparable rowKey, Comparable columnKey) {
--        BoxAndWhiskerItem item = BoxAndWhiskerCalculator
--                .calculateBoxAndWhiskerStatistics(list);
-+        BoxAndWhiskerItem item 
-+            = BoxAndWhiskerCalculator.calculateBoxAndWhiskerStatistics(list);
++        BoxAndWhiskerItem item = BoxAndWhiskerCalculator
++                .calculateBoxAndWhiskerStatistics(list);
+-        BoxAndWhiskerItem item 
+-            = BoxAndWhiskerCalculator.calculateBoxAndWhiskerStatistics(list);
          add(item, rowKey, columnKey);
      }
      
@@ -1351,98 +1282,98 @@ Index: org/jfree/data/statistics/DefaultBoxAndWhiskerCategoryDataset.java
       * table.  The various median values are calculated.
       *
       * @param item  a box and whisker item (<code>null</code> not permitted).
--     * @param rowKey  the row key (<code>null</code> not permitted).
--     * @param columnKey  the column key (<code>null</code> not permitted).
--     * 
--     * @see #add(List, Comparable, Comparable)
-+     * @param rowKey  the row key.
-+     * @param columnKey  the column key.
++     * @param rowKey  the row key (<code>null</code> not permitted).
++     * @param columnKey  the column key (<code>null</code> not permitted).
++     * 
++     * @see #add(List, Comparable, Comparable)
+-     * @param rowKey  the row key.
+-     * @param columnKey  the column key.
       */
--    public void add(BoxAndWhiskerItem item, Comparable rowKey, 
--            Comparable columnKey) {
-+    public void add(BoxAndWhiskerItem item, 
-+                    Comparable rowKey, 
-+                    Comparable columnKey) {
++    public void add(BoxAndWhiskerItem item, Comparable rowKey, 
++            Comparable columnKey) {
+-    public void add(BoxAndWhiskerItem item, 
+-                    Comparable rowKey, 
+-                    Comparable columnKey) {
  
          this.data.addObject(item, rowKey, columnKey);
          
          // update cached min and max values
          int r = this.data.getRowIndex(rowKey);
          int c = this.data.getColumnIndex(columnKey);
--        if ((this.maximumRangeValueRow == r && this.maximumRangeValueColumn 
--                == c) || (this.minimumRangeValueRow == r 
--                && this.minimumRangeValueColumn == c))  {
--            updateBounds();
-+        if (this.maximumRangeValueRow == r 
-+                && this.maximumRangeValueColumn == c) {
-+            this.maximumRangeValue = Double.NaN;
++        if ((this.maximumRangeValueRow == r && this.maximumRangeValueColumn 
++                == c) || (this.minimumRangeValueRow == r 
++                && this.minimumRangeValueColumn == c))  {
++            updateBounds();
+-        if (this.maximumRangeValueRow == r 
+-                && this.maximumRangeValueColumn == c) {
+-            this.maximumRangeValue = Double.NaN;
          }
--        else {
-+        if (this.minimumRangeValueRow == r 
-+                && this.minimumRangeValueColumn == c) {
-+            this.minimumRangeValue = Double.NaN;
-+        }
++        else {
+-        if (this.minimumRangeValueRow == r 
+-                && this.minimumRangeValueColumn == c) {
+-            this.minimumRangeValue = Double.NaN;
+-        }
          
--            double minval = Double.NaN;
--            if (item.getMinOutlier() != null) {
--                minval = item.getMinOutlier().doubleValue();
--            }
--            double maxval = Double.NaN;
--            if (item.getMaxOutlier() != null) {
--                maxval = item.getMaxOutlier().doubleValue();
--            }
++            double minval = Double.NaN;
++            if (item.getMinOutlier() != null) {
++                minval = item.getMinOutlier().doubleValue();
++            }
++            double maxval = Double.NaN;
++            if (item.getMaxOutlier() != null) {
++                maxval = item.getMaxOutlier().doubleValue();
++            }
          
--            if (Double.isNaN(this.maximumRangeValue)) {
--                this.maximumRangeValue = maxval;
--                this.maximumRangeValueRow = r;
--                this.maximumRangeValueColumn = c;
--            }
--            else if (maxval > this.maximumRangeValue) {
--                this.maximumRangeValue = maxval;
--                this.maximumRangeValueRow = r;
--                this.maximumRangeValueColumn = c;
--            }
-+        double minval = Double.NaN;
-+        if (item.getMinOutlier() != null) {
-+            minval = item.getMinOutlier().doubleValue();
-+        }
-+        double maxval = Double.NaN;
-+        if (item.getMaxOutlier() != null) {
-+            maxval = item.getMaxOutlier().doubleValue();
-+        }
++            if (Double.isNaN(this.maximumRangeValue)) {
++                this.maximumRangeValue = maxval;
++                this.maximumRangeValueRow = r;
++                this.maximumRangeValueColumn = c;
++            }
++            else if (maxval > this.maximumRangeValue) {
++                this.maximumRangeValue = maxval;
++                this.maximumRangeValueRow = r;
++                this.maximumRangeValueColumn = c;
++            }
+-        double minval = Double.NaN;
+-        if (item.getMinOutlier() != null) {
+-            minval = item.getMinOutlier().doubleValue();
+-        }
+-        double maxval = Double.NaN;
+-        if (item.getMaxOutlier() != null) {
+-            maxval = item.getMaxOutlier().doubleValue();
+-        }
          
--            if (Double.isNaN(this.minimumRangeValue)) {
--                this.minimumRangeValue = minval;
--                this.minimumRangeValueRow = r;
--                this.minimumRangeValueColumn = c;
--            }
--            else if (minval < this.minimumRangeValue) {
--                this.minimumRangeValue = minval;
--                this.minimumRangeValueRow = r;
--                this.minimumRangeValueColumn = c;
--            }
-+        if (Double.isNaN(this.maximumRangeValue)) {
-+            this.maximumRangeValue = maxval;
-+            this.maximumRangeValueRow = r;
-+            this.maximumRangeValueColumn = c;
++            if (Double.isNaN(this.minimumRangeValue)) {
++                this.minimumRangeValue = minval;
++                this.minimumRangeValueRow = r;
++                this.minimumRangeValueColumn = c;
++            }
++            else if (minval < this.minimumRangeValue) {
++                this.minimumRangeValue = minval;
++                this.minimumRangeValueRow = r;
++                this.minimumRangeValueColumn = c;
++            }
+-        if (Double.isNaN(this.maximumRangeValue)) {
+-            this.maximumRangeValue = maxval;
+-            this.maximumRangeValueRow = r;
+-            this.maximumRangeValueColumn = c;
          }
-+        else if (maxval > this.maximumRangeValue) {
-+            this.maximumRangeValue = maxval;
-+            this.maximumRangeValueRow = r;
-+            this.maximumRangeValueColumn = c;
-+        }
+-        else if (maxval > this.maximumRangeValue) {
+-            this.maximumRangeValue = maxval;
+-            this.maximumRangeValueRow = r;
+-            this.maximumRangeValueColumn = c;
+-        }
          
-+        if (Double.isNaN(this.minimumRangeValue)) {
-+            this.minimumRangeValue = minval;
-+            this.minimumRangeValueRow = r;
-+            this.minimumRangeValueColumn = c;
-+        }
-+        else if (minval < this.minimumRangeValue) {
-+            this.minimumRangeValue = minval;
-+            this.minimumRangeValueRow = r;
-+            this.minimumRangeValueColumn = c;
-+        }
-+        
+-        if (Double.isNaN(this.minimumRangeValue)) {
+-            this.minimumRangeValue = minval;
+-            this.minimumRangeValueRow = r;
+-            this.minimumRangeValueColumn = c;
+-        }
+-        else if (minval < this.minimumRangeValue) {
+-            this.minimumRangeValue = minval;
+-            this.minimumRangeValueRow = r;
+-            this.minimumRangeValueColumn = c;
+-        }
+-        
          this.rangeBounds = new Range(this.minimumRangeValue,
                this.maximumRangeValue);
 +
@@ -1453,70 +1384,59 @@ Index: org/jfree/data/statistics/DefaultBoxAndWhiskerCategoryDataset.java
      }
      
      /**
--     * Resets the cached bounds, by iterating over the entire dataset to find
--     * the current bounds.
--     */
--    private void updateBounds() {
--        this.minimumRangeValue = Double.NaN;
--        this.minimumRangeValueRow = -1;
--        this.minimumRangeValueColumn = -1;
--        this.maximumRangeValue = Double.NaN;
--        this.maximumRangeValueRow = -1;
--        this.maximumRangeValueColumn = -1;
--        int rowCount = getRowCount();
--        int columnCount = getColumnCount();
--        for (int r = 0; r < rowCount; r++) {
--            for (int c = 0; c < columnCount; c++) {
--                BoxAndWhiskerItem item = getItem(r, c);
--                if (item != null) {
--                    Number min = item.getMinOutlier();
--                    if (min != null) {
--                        double minv = min.doubleValue();
--                        if (!Double.isNaN(minv)) {
--                            if (minv < this.minimumRangeValue || Double.isNaN(
--                                    this.minimumRangeValue)) {
--                                this.minimumRangeValue = minv;
--                                this.minimumRangeValueRow = r;
--                                this.minimumRangeValueColumn = c;
--                            }
--                        }
--                    }
--                    Number max = item.getMaxOutlier();
--                    if (max != null) {
--                        double maxv = max.doubleValue();
--                        if (!Double.isNaN(maxv)) {
--                            if (maxv > this.maximumRangeValue || Double.isNaN(
--                                    this.maximumRangeValue)) {
--                                this.maximumRangeValue = maxv;
--                                this.maximumRangeValueRow = r;
--                                this.maximumRangeValueColumn = c;
--                            }
--                        }
--                    }
--                }
--            }
--        }
--    }
--    
--    /**
++     * Resets the cached bounds, by iterating over the entire dataset to find
++     * the current bounds.
++     */
++    private void updateBounds() {
++        this.minimumRangeValue = Double.NaN;
++        this.minimumRangeValueRow = -1;
++        this.minimumRangeValueColumn = -1;
++        this.maximumRangeValue = Double.NaN;
++        this.maximumRangeValueRow = -1;
++        this.maximumRangeValueColumn = -1;
++        int rowCount = getRowCount();
++        int columnCount = getColumnCount();
++        for (int r = 0; r < rowCount; r++) {
++            for (int c = 0; c < columnCount; c++) {
++                BoxAndWhiskerItem item = getItem(r, c);
++                if (item != null) {
++                    Number min = item.getMinOutlier();
++                    if (min != null) {
++                        double minv = min.doubleValue();
++                        if (!Double.isNaN(minv)) {
++                            if (minv < this.minimumRangeValue || Double.isNaN(
++                                    this.minimumRangeValue)) {
++                                this.minimumRangeValue = minv;
++                                this.minimumRangeValueRow = r;
++                                this.minimumRangeValueColumn = c;
++                            }
++                        }
++                    }
++                    Number max = item.getMaxOutlier();
++                    if (max != null) {
++                        double maxv = max.doubleValue();
++                        if (!Double.isNaN(maxv)) {
++                            if (maxv > this.maximumRangeValue || Double.isNaN(
++                                    this.maximumRangeValue)) {
++                                this.maximumRangeValue = maxv;
++                                this.maximumRangeValueRow = r;
++                                this.maximumRangeValueColumn = c;
++                            }
++                        }
++                    }
++                }
++            }
++        }
++    }
++    
++    /**
       * Tests this dataset for equality with an arbitrary object.
       * 
       * @param obj  the object to test against (<code>null</code> permitted).
 
 ```
 
-## 15 Kali 
-
-org.jfree.data.Range:335 (Suspicious rank: ample 9, jaccard 9, ochiai 9, naish1 20593, gp13 9, naish2 9, tarantula 9, )
-DELETE
-
-```Java
-remove
-```
-
-Grid5000 node: griffon-77.nancy.grid5000.fr
-
-## 16 Nopol 
+## Patch #14 Nopol 
 
 org.jfree.data.Range:335 (Suspicious rank: ample 9, jaccard 9, ochiai 9, naish1 20593, gp13 9, naish2 9, tarantula 9, )
 
@@ -1558,9 +1478,9 @@ Index: org/jfree/chart/renderer/category/StatisticalBarRenderer.java
  
          // BAR X
          Number meanValue = dataset.getMeanValue(row, column);
--        if (meanValue == null) {
--            return;
--        }
++        if (meanValue == null) {
++            return;
++        }
  
          double value = meanValue.doubleValue();
          double base = 0.0;
@@ -1568,72 +1488,72 @@ Index: org/jfree/chart/renderer/category/StatisticalBarRenderer.java
          }
  
          // standard deviation lines
--        Number n = dataset.getStdDevValue(row, column);
--        if (n != null) {
--            double valueDelta = n.doubleValue();
--            double highVal = rangeAxis.valueToJava2D(meanValue.doubleValue() 
--                    + valueDelta, dataArea, yAxisLocation);
--            double lowVal = rangeAxis.valueToJava2D(meanValue.doubleValue() 
--                    - valueDelta, dataArea, yAxisLocation);
-+        double valueDelta = dataset.getStdDevValue(row, column).doubleValue();
-+        double highVal = rangeAxis.valueToJava2D(meanValue.doubleValue() 
-+                + valueDelta, dataArea, yAxisLocation);
-+        double lowVal = rangeAxis.valueToJava2D(meanValue.doubleValue() 
-+                - valueDelta, dataArea, yAxisLocation);
++        Number n = dataset.getStdDevValue(row, column);
++        if (n != null) {
++            double valueDelta = n.doubleValue();
++            double highVal = rangeAxis.valueToJava2D(meanValue.doubleValue() 
++                    + valueDelta, dataArea, yAxisLocation);
++            double lowVal = rangeAxis.valueToJava2D(meanValue.doubleValue() 
++                    - valueDelta, dataArea, yAxisLocation);
+-        double valueDelta = dataset.getStdDevValue(row, column).doubleValue();
+-        double highVal = rangeAxis.valueToJava2D(meanValue.doubleValue() 
+-                + valueDelta, dataArea, yAxisLocation);
+-        double lowVal = rangeAxis.valueToJava2D(meanValue.doubleValue() 
+-                - valueDelta, dataArea, yAxisLocation);
  
--            if (this.errorIndicatorStroke != null) {
--                g2.setStroke(this.errorIndicatorStroke);
--            }
--            else {
--                g2.setStroke(getItemOutlineStroke(row, column));
--            }
--            if (this.errorIndicatorPaint != null) {
--                g2.setPaint(this.errorIndicatorPaint);  
--            }
--            else {
--                g2.setPaint(getItemOutlinePaint(row, column));   
--            }
--        
--            Line2D line = null;
--            line = new Line2D.Double(lowVal, rectY + rectHeight / 2.0d, 
--                                     highVal, rectY + rectHeight / 2.0d);
--            g2.draw(line);
--            line = new Line2D.Double(highVal, rectY + rectHeight * 0.25, 
--                                     highVal, rectY + rectHeight * 0.75);
--            g2.draw(line);
--            line = new Line2D.Double(lowVal, rectY + rectHeight * 0.25, 
--                                     lowVal, rectY + rectHeight * 0.75);
--            g2.draw(line);
-+        if (this.errorIndicatorStroke != null) {
-+            g2.setStroke(this.errorIndicatorStroke);
-         }
-+        else {
-+            g2.setStroke(getItemOutlineStroke(row, column));
-+        }
-+        if (this.errorIndicatorPaint != null) {
-+            g2.setPaint(this.errorIndicatorPaint);  
-+        }
-+        else {
-+            g2.setPaint(getItemOutlinePaint(row, column));   
-+        }
-         
-+        Line2D line = null;
-+        line = new Line2D.Double(lowVal, rectY + rectHeight / 2.0d, 
-+                                 highVal, rectY + rectHeight / 2.0d);
-+        g2.draw(line);
-+        line = new Line2D.Double(highVal, rectY + rectHeight * 0.25, 
-+                                 highVal, rectY + rectHeight * 0.75);
-+        g2.draw(line);
-+        line = new Line2D.Double(lowVal, rectY + rectHeight * 0.25, 
-+                                 lowVal, rectY + rectHeight * 0.75);
-+        g2.draw(line);
++            if (this.errorIndicatorStroke != null) {
++                g2.setStroke(this.errorIndicatorStroke);
++            }
++            else {
++                g2.setStroke(getItemOutlineStroke(row, column));
++            }
++            if (this.errorIndicatorPaint != null) {
++                g2.setPaint(this.errorIndicatorPaint);  
++            }
++            else {
++                g2.setPaint(getItemOutlinePaint(row, column));   
++            }
 +        
++            Line2D line = null;
++            line = new Line2D.Double(lowVal, rectY + rectHeight / 2.0d, 
++                                     highVal, rectY + rectHeight / 2.0d);
++            g2.draw(line);
++            line = new Line2D.Double(highVal, rectY + rectHeight * 0.25, 
++                                     highVal, rectY + rectHeight * 0.75);
++            g2.draw(line);
++            line = new Line2D.Double(lowVal, rectY + rectHeight * 0.25, 
++                                     lowVal, rectY + rectHeight * 0.75);
++            g2.draw(line);
+-        if (this.errorIndicatorStroke != null) {
+-            g2.setStroke(this.errorIndicatorStroke);
+         }
+-        else {
+-            g2.setStroke(getItemOutlineStroke(row, column));
+-        }
+-        if (this.errorIndicatorPaint != null) {
+-            g2.setPaint(this.errorIndicatorPaint);  
+-        }
+-        else {
+-            g2.setPaint(getItemOutlinePaint(row, column));   
+-        }
+         
+-        Line2D line = null;
+-        line = new Line2D.Double(lowVal, rectY + rectHeight / 2.0d, 
+-                                 highVal, rectY + rectHeight / 2.0d);
+-        g2.draw(line);
+-        line = new Line2D.Double(highVal, rectY + rectHeight * 0.25, 
+-                                 highVal, rectY + rectHeight * 0.75);
+-        g2.draw(line);
+-        line = new Line2D.Double(lowVal, rectY + rectHeight * 0.25, 
+-                                 lowVal, rectY + rectHeight * 0.75);
+-        g2.draw(line);
+-        
          CategoryItemLabelGenerator generator = getItemLabelGenerator(row, 
                  column);
          if (generator != null && isItemLabelVisible(row, column)) {
              drawItemLabel(g2, dataset, row, column, plot, generator, bar, 
--                    (value < 0.0));
-+                (value < 0.0));
++                    (value < 0.0));
+-                (value < 0.0));
          }        
  
          // add an item entity, if this information is being collected
@@ -1641,9 +1561,9 @@ Index: org/jfree/chart/renderer/category/StatisticalBarRenderer.java
  
          // BAR Y
          Number meanValue = dataset.getMeanValue(row, column);
--        if (meanValue == null) {
--            return;
--        }
++        if (meanValue == null) {
++            return;
++        }
  
          double value = meanValue.doubleValue();
          double base = 0.0;
@@ -1651,77 +1571,77 @@ Index: org/jfree/chart/renderer/category/StatisticalBarRenderer.java
          }
  
          // standard deviation lines
--        Number n = dataset.getStdDevValue(row, column);
--        if (n != null) {
--            double valueDelta = n.doubleValue();
--            double highVal = rangeAxis.valueToJava2D(meanValue.doubleValue() 
--                    + valueDelta, dataArea, yAxisLocation);
--            double lowVal = rangeAxis.valueToJava2D(meanValue.doubleValue() 
--                    - valueDelta, dataArea, yAxisLocation);
-+        double valueDelta = dataset.getStdDevValue(row, column).doubleValue();
-+        double highVal = rangeAxis.valueToJava2D(meanValue.doubleValue() 
-+                + valueDelta, dataArea, yAxisLocation);
-+        double lowVal = rangeAxis.valueToJava2D(meanValue.doubleValue() 
-+                - valueDelta, dataArea, yAxisLocation);
++        Number n = dataset.getStdDevValue(row, column);
++        if (n != null) {
++            double valueDelta = n.doubleValue();
++            double highVal = rangeAxis.valueToJava2D(meanValue.doubleValue() 
++                    + valueDelta, dataArea, yAxisLocation);
++            double lowVal = rangeAxis.valueToJava2D(meanValue.doubleValue() 
++                    - valueDelta, dataArea, yAxisLocation);
+-        double valueDelta = dataset.getStdDevValue(row, column).doubleValue();
+-        double highVal = rangeAxis.valueToJava2D(meanValue.doubleValue() 
+-                + valueDelta, dataArea, yAxisLocation);
+-        double lowVal = rangeAxis.valueToJava2D(meanValue.doubleValue() 
+-                - valueDelta, dataArea, yAxisLocation);
  
--            if (this.errorIndicatorStroke != null) {
--                g2.setStroke(this.errorIndicatorStroke);
--            }
--            else {
--                g2.setStroke(getItemOutlineStroke(row, column));
--            }
--            if (this.errorIndicatorPaint != null) {
--                g2.setPaint(this.errorIndicatorPaint);  
--            }
--            else {
--                g2.setPaint(getItemOutlinePaint(row, column));   
--            }
--            Line2D line = null;
--            line = new Line2D.Double(rectX + rectWidth / 2.0d, lowVal,
--                                     rectX + rectWidth / 2.0d, highVal);
--            g2.draw(line);
--            line = new Line2D.Double(rectX + rectWidth / 2.0d - 5.0d, highVal,
--                                     rectX + rectWidth / 2.0d + 5.0d, highVal);
--            g2.draw(line);
--            line = new Line2D.Double(rectX + rectWidth / 2.0d - 5.0d, lowVal,
--                                     rectX + rectWidth / 2.0d + 5.0d, lowVal);
--            g2.draw(line);
-+        if (this.errorIndicatorStroke != null) {
-+            g2.setStroke(this.errorIndicatorStroke);
++            if (this.errorIndicatorStroke != null) {
++                g2.setStroke(this.errorIndicatorStroke);
++            }
++            else {
++                g2.setStroke(getItemOutlineStroke(row, column));
++            }
++            if (this.errorIndicatorPaint != null) {
++                g2.setPaint(this.errorIndicatorPaint);  
++            }
++            else {
++                g2.setPaint(getItemOutlinePaint(row, column));   
++            }
++            Line2D line = null;
++            line = new Line2D.Double(rectX + rectWidth / 2.0d, lowVal,
++                                     rectX + rectWidth / 2.0d, highVal);
++            g2.draw(line);
++            line = new Line2D.Double(rectX + rectWidth / 2.0d - 5.0d, highVal,
++                                     rectX + rectWidth / 2.0d + 5.0d, highVal);
++            g2.draw(line);
++            line = new Line2D.Double(rectX + rectWidth / 2.0d - 5.0d, lowVal,
++                                     rectX + rectWidth / 2.0d + 5.0d, lowVal);
++            g2.draw(line);
+-        if (this.errorIndicatorStroke != null) {
+-            g2.setStroke(this.errorIndicatorStroke);
          }
-+        else {
-+            g2.setStroke(getItemOutlineStroke(row, column));
-+        }
-+        if (this.errorIndicatorPaint != null) {
-+            g2.setPaint(this.errorIndicatorPaint);  
-+        }
-+        else {
-+            g2.setPaint(getItemOutlinePaint(row, column));   
-+        }
-+        Line2D line = null;
-+        line = new Line2D.Double(rectX + rectWidth / 2.0d, lowVal,
-+                                 rectX + rectWidth / 2.0d, highVal);
-+        g2.draw(line);
-+        line = new Line2D.Double(rectX + rectWidth / 2.0d - 5.0d, highVal,
-+                                 rectX + rectWidth / 2.0d + 5.0d, highVal);
-+        g2.draw(line);
-+        line = new Line2D.Double(rectX + rectWidth / 2.0d - 5.0d, lowVal,
-+                                 rectX + rectWidth / 2.0d + 5.0d, lowVal);
-+        g2.draw(line);
+-        else {
+-            g2.setStroke(getItemOutlineStroke(row, column));
+-        }
+-        if (this.errorIndicatorPaint != null) {
+-            g2.setPaint(this.errorIndicatorPaint);  
+-        }
+-        else {
+-            g2.setPaint(getItemOutlinePaint(row, column));   
+-        }
+-        Line2D line = null;
+-        line = new Line2D.Double(rectX + rectWidth / 2.0d, lowVal,
+-                                 rectX + rectWidth / 2.0d, highVal);
+-        g2.draw(line);
+-        line = new Line2D.Double(rectX + rectWidth / 2.0d - 5.0d, highVal,
+-                                 rectX + rectWidth / 2.0d + 5.0d, highVal);
+-        g2.draw(line);
+-        line = new Line2D.Double(rectX + rectWidth / 2.0d - 5.0d, lowVal,
+-                                 rectX + rectWidth / 2.0d + 5.0d, lowVal);
+-        g2.draw(line);
          
          CategoryItemLabelGenerator generator = getItemLabelGenerator(row, 
                  column);
          if (generator != null && isItemLabelVisible(row, column)) {
              drawItemLabel(g2, dataset, row, column, plot, generator, bar, 
--                    (value < 0.0));
-+                (value < 0.0));
++                    (value < 0.0));
+-                (value < 0.0));
          }        
  
          // add an item entity, if this information is being collected
 
 ```
 
-## 17 Genprog 
+## Patch #15 Genprog 
 
 org.jfree.data.statistics.DefaultStatisticalCategoryDataset:301 (Suspicious rank: ample 65, jaccard 144, ochiai 102, naish1 19848, gp13 65, naish2 65, tarantula 160, )
 DELETE
@@ -1732,7 +1652,7 @@ remove
 
 Grid5000 node: graphene-53.nancy.grid5000.fr
 
-## 18 Kali 
+## Patch #16 Kali 
 
 org.jfree.chart.renderer.category.StatisticalBarRenderer:200 (Suspicious rank: ample 5, jaccard 5, ochiai 1, naish1 19843, gp13 5, naish2 5, tarantula 51, )
 INSERT_BEFORE
@@ -1745,7 +1665,7 @@ if (true)
 
 Grid5000 node: graphene-66.nancy.grid5000.fr
 
-## 19 Nopol 
+## Patch #17 Nopol 
 
 org.jfree.chart.renderer.category.StatisticalBarRenderer:207 (Suspicious rank: ample 4, jaccard 4, ochiai 4, naish1 19842, gp13 4, naish2 4, tarantula 50, )
 
@@ -1825,25 +1745,25 @@ Index: org/jfree/chart/axis/Axis.java
  
          }
          if (plotState != null && hotspot != null) {
--            ChartRenderingInfo owner = plotState.getOwner();
--            if (owner != null) {
--                EntityCollection entities = owner.getEntityCollection();
--                if (entities != null) {
--                    entities.add(new AxisLabelEntity(this, hotspot, 
--                            this.labelToolTip, this.labelURL));
--                }
-+            EntityCollection entities = plotState.getOwner()
-+                    .getEntityCollection();
-+            if (entities != null) {
-+                entities.add(new AxisLabelEntity(this, hotspot, 
-+                        this.labelToolTip, this.labelURL));
++            ChartRenderingInfo owner = plotState.getOwner();
++            if (owner != null) {
++                EntityCollection entities = owner.getEntityCollection();
++                if (entities != null) {
++                    entities.add(new AxisLabelEntity(this, hotspot, 
++                            this.labelToolTip, this.labelURL));
++                }
+-            EntityCollection entities = plotState.getOwner()
+-                    .getEntityCollection();
+-            if (entities != null) {
+-                entities.add(new AxisLabelEntity(this, hotspot, 
+-                        this.labelToolTip, this.labelURL));
              }
          }
          return state;
 
 ```
 
-## 20 Kali 
+## Patch #18 Kali 
 
 org.jfree.chart.plot.CategoryPlot:2547 (Suspicious rank: ample 1, jaccard 1, ochiai 1, naish1 15018, gp13 1, naish2 1, tarantula 1, )
 INSERT_BEFORE
@@ -1856,7 +1776,7 @@ if (true)
 
 Grid5000 node: griffon-8.nancy.grid5000.fr
 
-## 21 Nopol 
+## Patch #19 Nopol 
 
 org.jfree.chart.axis.AxisCollection:132 (Suspicious rank: ample 185, jaccard 249, ochiai 244, naish1 17995, gp13 185, naish2 185, tarantula 761, )
 
@@ -1891,16 +1811,16 @@ index f6cabee..14563aa 100644
  
          // count the replacement text elements that are larger than their corresponding text being replaced
          for (int i = 0; i < searchList.length; i++) {
--            if (searchList[i] == null || replacementList[i] == null) {
--                continue;
--            }
++            if (searchList[i] == null || replacementList[i] == null) {
++                continue;
++            }
              int greater = replacementList[i].length() - searchList[i].length();
              if (greater > 0) {
                  increase += 3 * greater; // assume 3 matches
 
 ```
 
-## 22 Nopol 
+## Patch #20 Nopol 
 
 org.apache.commons.lang3.StringUtils:3675 (Suspicious rank: ample 11, jaccard 11, ochiai 26, naish1 7828, gp13 11, naish2 11, tarantula 11, )
 
@@ -1935,16 +1855,16 @@ index c5ca8cd..18a05ef 100644
          if (val.length() == 0) {
              throw new NumberFormatException("\"\" is not a valid number.");
          }
--        if (val.length() == 1 && !Character.isDigit(val.charAt(0))) {
--            throw new NumberFormatException(val + " is not a valid number.");
--        }
++        if (val.length() == 1 && !Character.isDigit(val.charAt(0))) {
++            throw new NumberFormatException(val + " is not a valid number.");
++        }
          if (val.startsWith("--")) {
              // this is protection for poorness in java.lang.BigDecimal.
              // it accepts this as a legal value, but it does not appear 
 
 ```
 
-## 23 Nopol 
+## Patch #21 Nopol 
 
 org.apache.commons.lang.NumberUtils:193 (Suspicious rank: ample 18, jaccard 18, ochiai 18, naish1 9255, gp13 18, naish2 18, tarantula 18, )
 
@@ -1979,8 +1899,8 @@ index d4f98ec..c30c663 100644
       * @return String with escaped values, <code>null</code> if null string input
       */
      public static String escapeJava(String str) {
--        return escapeJavaStyleString(str, false, false);
-+        return escapeJavaStyleString(str, false);
++        return escapeJavaStyleString(str, false, false);
+-        return escapeJavaStyleString(str, false);
      }
  
      /**
@@ -1988,8 +1908,8 @@ index d4f98ec..c30c663 100644
       * @throws IOException if error occurs on underlying Writer
       */
      public static void escapeJava(Writer out, String str) throws IOException {
--        escapeJavaStyleString(out, str, false, false);
-+        escapeJavaStyleString(out, str, false);
++        escapeJavaStyleString(out, str, false, false);
+-        escapeJavaStyleString(out, str, false);
      }
  
      /**
@@ -1997,8 +1917,8 @@ index d4f98ec..c30c663 100644
       * @return String with escaped values, <code>null</code> if null string input
       */
      public static String escapeJavaScript(String str) {
--        return escapeJavaStyleString(str, true, true);
-+        return escapeJavaStyleString(str, true);
++        return escapeJavaStyleString(str, true, true);
+-        return escapeJavaStyleString(str, true);
      }
  
      /**
@@ -2006,8 +1926,8 @@ index d4f98ec..c30c663 100644
       * @throws IOException if error occurs on underlying Writer
       **/
      public static void escapeJavaScript(Writer out, String str) throws IOException {
--        escapeJavaStyleString(out, str, true, true);
-+        escapeJavaStyleString(out, str, true);
++        escapeJavaStyleString(out, str, true, true);
+-        escapeJavaStyleString(out, str, true);
      }
  
      /**
@@ -2015,18 +1935,18 @@ index d4f98ec..c30c663 100644
       * 
       * @param str String to escape values in, may be null
       * @param escapeSingleQuotes escapes single quotes if <code>true</code>
--     * @param escapeForwardSlash TODO
++     * @param escapeForwardSlash TODO
       * @return the escaped string
       */
--    private static String escapeJavaStyleString(String str, boolean escapeSingleQuotes, boolean escapeForwardSlash) {
-+    private static String escapeJavaStyleString(String str, boolean escapeSingleQuotes) {
++    private static String escapeJavaStyleString(String str, boolean escapeSingleQuotes, boolean escapeForwardSlash) {
+-    private static String escapeJavaStyleString(String str, boolean escapeSingleQuotes) {
          if (str == null) {
              return null;
          }
          try {
              StringWriter writer = new StringWriter(str.length() * 2);
--            escapeJavaStyleString(writer, str, escapeSingleQuotes, escapeForwardSlash);
-+            escapeJavaStyleString(writer, str, escapeSingleQuotes);
++            escapeJavaStyleString(writer, str, escapeSingleQuotes, escapeForwardSlash);
+-            escapeJavaStyleString(writer, str, escapeSingleQuotes);
              return writer.toString();
          } catch (IOException ioe) {
              // this should never ever happen while writing to a StringWriter
@@ -2034,12 +1954,12 @@ index d4f98ec..c30c663 100644
       * @param out write to receieve the escaped string
       * @param str String to escape values in, may be null
       * @param escapeSingleQuote escapes single quotes if <code>true</code>
--     * @param escapeForwardSlash TODO
++     * @param escapeForwardSlash TODO
       * @throws IOException if an IOException occurs
       */
--    private static void escapeJavaStyleString(Writer out, String str, boolean escapeSingleQuote,
--            boolean escapeForwardSlash) throws IOException {
-+    private static void escapeJavaStyleString(Writer out, String str, boolean escapeSingleQuote) throws IOException {
++    private static void escapeJavaStyleString(Writer out, String str, boolean escapeSingleQuote,
++            boolean escapeForwardSlash) throws IOException {
+-    private static void escapeJavaStyleString(Writer out, String str, boolean escapeSingleQuote) throws IOException {
          if (out == null) {
              throw new IllegalArgumentException("The Writer must not be null");
          }
@@ -2047,28 +1967,28 @@ index d4f98ec..c30c663 100644
                  out.write("\\u00" + hex(ch));
              } else if (ch < 32) {
                  switch (ch) {
--                    case '\b' :
-+                    case '\b':
++                    case '\b' :
+-                    case '\b':
                          out.write('\\');
                          out.write('b');
                          break;
--                    case '\n' :
-+                    case '\n':
++                    case '\n' :
+-                    case '\n':
                          out.write('\\');
                          out.write('n');
                          break;
--                    case '\t' :
-+                    case '\t':
++                    case '\t' :
+-                    case '\t':
                          out.write('\\');
                          out.write('t');
                          break;
--                    case '\f' :
-+                    case '\f':
++                    case '\f' :
+-                    case '\f':
                          out.write('\\');
                          out.write('f');
                          break;
--                    case '\r' :
-+                    case '\r':
++                    case '\r' :
+-                    case '\r':
                          out.write('\\');
                          out.write('r');
                          break;
@@ -2076,37 +1996,37 @@ index d4f98ec..c30c663 100644
                  }
              } else {
                  switch (ch) {
--                    case '\'' :
-+                    case '\'':
++                    case '\'' :
+-                    case '\'':
                          if (escapeSingleQuote) {
--                            out.write('\\');
-+                          out.write('\\');
++                            out.write('\\');
+-                          out.write('\\');
                          }
                          out.write('\'');
                          break;
--                    case '"' :
-+                    case '"':
++                    case '"' :
+-                    case '"':
                          out.write('\\');
                          out.write('"');
                          break;
--                    case '\\' :
-+                    case '\\':
++                    case '\\' :
+-                    case '\\':
                          out.write('\\');
                          out.write('\\');
                          break;
--                    case '/' :
--                        if (escapeForwardSlash) {
--                            out.write('\\');
--                        }
-+                    case '/':
-+                        out.write('\\');
++                    case '/' :
++                        if (escapeForwardSlash) {
++                            out.write('\\');
++                        }
+-                    case '/':
+-                        out.write('\\');
                          out.write('/');
                          break;
                      default :
 
 ```
 
-## 24 Nopol 
+## Patch #22 Nopol 
 
 org.apache.commons.lang.StringEscapeUtils:242 (Suspicious rank: ample 1, jaccard 1, ochiai 1, naish1 8911, gp13 1, naish2 1, tarantula 1, )
 
@@ -2141,14 +2061,14 @@ index 8b5028c..3fda4ec 100644
                          (str.charAt(1) == 'E' || str.charAt(1) == 'e') &&
                          (str.charAt(2) == 'S' || str.charAt(2) == 's');
                  }
--                return false;
++                return false;
              }
              case 4: {
                  char ch = str.charAt(0);
 
 ```
 
-## 25 Nopol 
+## Patch #23 Nopol 
 
 org.apache.commons.lang.BooleanUtils:677 (Suspicious rank: ample 11, jaccard 11, ochiai 12, naish1 8395, gp13 11, naish2 11, tarantula 11, )
 
@@ -2183,31 +2103,31 @@ index e5138b5..9ca1bc5 100644
          int millisecs = val.get(Calendar.MILLISECOND);
          if (!round || millisecs < 500) {
              time = time - millisecs;
--        }
--        if (field == Calendar.SECOND) {
--            done = true;
-+            if (field == Calendar.SECOND) {
-+                done = true;
-+            }
++        }
++        if (field == Calendar.SECOND) {
++            done = true;
+-            if (field == Calendar.SECOND) {
+-                done = true;
+-            }
          }
  
          // truncate seconds
          int seconds = val.get(Calendar.SECOND);
          if (!done && (!round || seconds < 30)) {
              time = time - (seconds * 1000L);
--        }
--        if (field == Calendar.MINUTE) {
--            done = true;
-+            if (field == Calendar.MINUTE) {
-+                done = true;
-+            }
++        }
++        if (field == Calendar.MINUTE) {
++            done = true;
+-            if (field == Calendar.MINUTE) {
+-                done = true;
+-            }
          }
  
          // truncate minutes
 
 ```
 
-## 26 Nopol 
+## Patch #24 Nopol 
 
 org.apache.commons.lang.time.DateUtils:666 (Suspicious rank: ample 14, jaccard 14, ochiai 22, naish1 8347, gp13 14, naish2 14, tarantula 14, )
 
@@ -2242,17 +2162,17 @@ index 0f0786a..607e9b6 100644
          if(this.runningState != STATE_RUNNING && this.runningState != STATE_SUSPENDED) {
              throw new IllegalStateException("Stopwatch is not running. ");
          }
--        if(this.runningState == STATE_RUNNING) {
--            stopTime = System.currentTimeMillis();
--        }
-+        stopTime = System.currentTimeMillis();
++        if(this.runningState == STATE_RUNNING) {
++            stopTime = System.currentTimeMillis();
++        }
+-        stopTime = System.currentTimeMillis();
          this.runningState = STATE_STOPPED;
      }
  
 
 ```
 
-## 27 Nopol 
+## Patch #25 Nopol 
 
 org.apache.commons.lang.time.StopWatch:118 (Suspicious rank: ample 8, jaccard 8, ochiai 7, naish1 8347, gp13 8, naish2 8, tarantula 8, )
 
@@ -2287,16 +2207,16 @@ index eb74e72..c0f06a4 100644
                  case 'L' :
                      if (dec == null
                          && exp == null
--                        && (numeric.charAt(0) == '-' && isDigits(numeric.substring(1)) || isDigits(numeric))) {
-+                        && isDigits(numeric.substring(1))
-+                        && (numeric.charAt(0) == '-' || Character.isDigit(numeric.charAt(0)))) {
++                        && (numeric.charAt(0) == '-' && isDigits(numeric.substring(1)) || isDigits(numeric))) {
+-                        && isDigits(numeric.substring(1))
+-                        && (numeric.charAt(0) == '-' || Character.isDigit(numeric.charAt(0)))) {
                          try {
                              return createLong(numeric);
                          } catch (NumberFormatException nfe) {
 
 ```
 
-## 28 Nopol 
+## Patch #26 Nopol 
 
 org.apache.commons.lang.math.NumberUtils:464 (Suspicious rank: ample 2, jaccard 2, ochiai 1, naish1 8378, gp13 2, naish2 2, tarantula 2, )
 
@@ -2331,15 +2251,15 @@ index 81e180c..2769127 100644
       * size {@code n}, the mean is {@code n * m / N}.
       */
      public double getNumericalMean() {
--        return getSampleSize() * (getNumberOfSuccesses() / (double) getPopulationSize());
-+        return (double) (getSampleSize() * getNumberOfSuccesses()) / (double) getPopulationSize();
++        return getSampleSize() * (getNumberOfSuccesses() / (double) getPopulationSize());
+-        return (double) (getSampleSize() * getNumberOfSuccesses()) / (double) getPopulationSize();
      }
  
      /**
 
 ```
 
-## 29 Genprog 
+## Patch #27 Genprog 
 
 org.apache.commons.math3.distribution.AbstractIntegerDistribution:138 (Suspicious rank: ample 17, jaccard 17, ochiai 22, naish1 35438, gp13 17, naish2 17, tarantula 17, )
 REPLACE
@@ -2350,7 +2270,7 @@ tmp = mu + (k * sigma)
 
 Grid5000 node: graphene-37.nancy.grid5000.fr
 
-## 30 Kali 
+## Patch #28 Kali 
 
 org.apache.commons.math3.distribution.AbstractIntegerDistribution:137 (Suspicious rank: ample 22, jaccard 22, ochiai 21, naish1 35443, gp13 22, naish2 22, tarantula 22, )
 DELETE
@@ -2380,15 +2300,15 @@ index ac8185b..22b23f2 100644
          }
  
          if (real == 0.0 && imaginary == 0.0) {
--            return INF;
-+            return NaN;
++            return INF;
+-            return NaN;
          }
  
          if (isInfinite) {
 
 ```
 
-## 31 Genprog 
+## Patch #29 Genprog 
 
 org.apache.commons.math3.complex.Complex:305 (Suspicious rank: ample 1, jaccard 1, ochiai 1, naish1 33968, gp13 1, naish2 1, tarantula 1, )
 REPLACE
@@ -2429,23 +2349,23 @@ index 879eb2a..8c08dbe 100644
       * @throws NotStrictlyPositiveException if {@code sampleSize} is not
       * positive.
       */
--    public Object[] sample(int sampleSize) throws NotStrictlyPositiveException {
-+    public T[] sample(int sampleSize) throws NotStrictlyPositiveException {
++    public Object[] sample(int sampleSize) throws NotStrictlyPositiveException {
+-    public T[] sample(int sampleSize) throws NotStrictlyPositiveException {
          if (sampleSize <= 0) {
              throw new NotStrictlyPositiveException(LocalizedFormats.NUMBER_OF_SAMPLES,
                      sampleSize);
          }
 -
--        final Object[] out = new Object[sampleSize];
-+        @SuppressWarnings("unchecked")
-+        final T[]out = (T[]) Array.newInstance(singletons.get(0).getClass(), sampleSize);
++        final Object[] out = new Object[sampleSize];
+-        @SuppressWarnings("unchecked")
+-        final T[]out = (T[]) Array.newInstance(singletons.get(0).getClass(), sampleSize);
  
          for (int i = 0; i < sampleSize; i++) {
              out[i] = sample();
 
 ```
 
-## 32 Genprog 
+## Patch #30 Genprog 
 
 org.apache.commons.math3.distribution.DiscreteDistribution:189 (Suspicious rank: ample 3, jaccard 3, ochiai 3, naish1 33466, gp13 3, naish2 3, tarantula 3, )
 DELETE
@@ -2456,7 +2376,7 @@ remove
 
 Grid5000 node: graphene-4.nancy.grid5000.fr
 
-## 33 Kali 
+## Patch #31 Kali 
 
 org.apache.commons.math3.distribution.DiscreteDistribution:189 (Suspicious rank: ample 3, jaccard 3, ochiai 3, naish1 33466, gp13 3, naish2 3, tarantula 3, )
 DELETE
@@ -2486,20 +2406,20 @@ index dec310b..c2fa14d 100644
              // there's a degeneracy as indicated by a tie in the minimum ratio test
  
              // 1. check if there's an artificial variable that can be forced out of the basis
--            if (tableau.getNumArtificialVariables() > 0) {
--                for (Integer row : minRatioPositions) {
--                    for (int i = 0; i < tableau.getNumArtificialVariables(); i++) {
--                        int column = i + tableau.getArtificialVariableOffset();
--                        final double entry = tableau.getEntry(row, column);
--                        if (Precision.equals(entry, 1d, maxUlps) && row.equals(tableau.getBasicRow(column))) {
--                            return row;
--                        }
-+            for (Integer row : minRatioPositions) {
-+                for (int i = 0; i < tableau.getNumArtificialVariables(); i++) {
-+                    int column = i + tableau.getArtificialVariableOffset();
-+                    final double entry = tableau.getEntry(row, column);
-+                    if (Precision.equals(entry, 1d, maxUlps) && row.equals(tableau.getBasicRow(column))) {
-+                        return row;
++            if (tableau.getNumArtificialVariables() > 0) {
++                for (Integer row : minRatioPositions) {
++                    for (int i = 0; i < tableau.getNumArtificialVariables(); i++) {
++                        int column = i + tableau.getArtificialVariableOffset();
++                        final double entry = tableau.getEntry(row, column);
++                        if (Precision.equals(entry, 1d, maxUlps) && row.equals(tableau.getBasicRow(column))) {
++                            return row;
++                        }
+-            for (Integer row : minRatioPositions) {
+-                for (int i = 0; i < tableau.getNumArtificialVariables(); i++) {
+-                    int column = i + tableau.getArtificialVariableOffset();
+-                    final double entry = tableau.getEntry(row, column);
+-                    if (Precision.equals(entry, 1d, maxUlps) && row.equals(tableau.getBasicRow(column))) {
+-                        return row;
                      }
                  }
              }
@@ -2507,43 +2427,43 @@ index dec310b..c2fa14d 100644
              //
              // see http://www.stanford.edu/class/msande310/blandrule.pdf
              // see http://en.wikipedia.org/wiki/Bland%27s_rule (not equivalent to the above paper)
--            //
--            // Additional heuristic: if we did not get a solution after half of maxIterations
--            //                       revert to the simple case of just returning the top-most row
--            // This heuristic is based on empirical data gathered while investigating MATH-828.
--            if (getIterations() < getMaxIterations() / 2) {
--                Integer minRow = null;
--                int minIndex = tableau.getWidth();
--                for (Integer row : minRatioPositions) {
--                    int i = tableau.getNumObjectiveFunctions();
--                    for (; i < tableau.getWidth() - 1 && minRow != row; i++) {
--                        if (row == tableau.getBasicRow(i)) {
--                            if (i < minIndex) {
--                                minIndex = i;
--                                minRow = row;
--                            }
-+            Integer minRow = null;
-+            int minIndex = tableau.getWidth();
-+            for (Integer row : minRatioPositions) {
-+                for (int i = tableau.getNumObjectiveFunctions(); i < tableau.getWidth() - 1 && minRow != row; i++) {
-+                    if (row == tableau.getBasicRow(i)) {
-+                        if (i < minIndex) {
-+                            minIndex = i;
-+                            minRow = row;
++            //
++            // Additional heuristic: if we did not get a solution after half of maxIterations
++            //                       revert to the simple case of just returning the top-most row
++            // This heuristic is based on empirical data gathered while investigating MATH-828.
++            if (getIterations() < getMaxIterations() / 2) {
++                Integer minRow = null;
++                int minIndex = tableau.getWidth();
++                for (Integer row : minRatioPositions) {
++                    int i = tableau.getNumObjectiveFunctions();
++                    for (; i < tableau.getWidth() - 1 && minRow != row; i++) {
++                        if (row == tableau.getBasicRow(i)) {
++                            if (i < minIndex) {
++                                minIndex = i;
++                                minRow = row;
++                            }
+-            Integer minRow = null;
+-            int minIndex = tableau.getWidth();
+-            for (Integer row : minRatioPositions) {
+-                for (int i = tableau.getNumObjectiveFunctions(); i < tableau.getWidth() - 1 && minRow != row; i++) {
+-                    if (row == tableau.getBasicRow(i)) {
+-                        if (i < minIndex) {
+-                            minIndex = i;
+-                            minRow = row;
                          }
                      }
                  }
--                return minRow;
++                return minRow;
              }
 +
-+            return minRow;
+-            return minRow;
          }
          return minRatioPositions.get(0);
      }
 
 ```
 
-## 34 Genprog 
+## Patch #32 Genprog 
 
 org.apache.commons.math3.optimization.linear.SimplexSolver:124 (Suspicious rank: ample 33, jaccard 33, ochiai 33, naish1 26751, gp13 33, naish2 33, tarantula 33, )
 DELETE
@@ -2554,7 +2474,7 @@ remove
 
 Grid5000 node: graphene-19.nancy.grid5000.fr
 
-## 35 Kali 
+## Patch #33 Kali 
 
 org.apache.commons.math3.optimization.linear.SimplexSolver:138 (Suspicious rank: ample 6, jaccard 6, ochiai 10, naish1 26541, gp13 6, naish2 6, tarantula 6, )
 REPLACE
@@ -2589,17 +2509,17 @@ index add24ac..6ba72be 100644
          final Vector2D[][] v = getVertices();
  
          if (v.length == 0) {
--            final BSPTree<Euclidean2D> tree = getTree(false);
--            if (tree.getCut() == null && (Boolean) tree.getAttribute()) {
--                // the instance covers the whole space
-+            if ((Boolean) getTree(false).getAttribute()) {
++            final BSPTree<Euclidean2D> tree = getTree(false);
++            if (tree.getCut() == null && (Boolean) tree.getAttribute()) {
++                // the instance covers the whole space
+-            if ((Boolean) getTree(false).getAttribute()) {
                  setSize(Double.POSITIVE_INFINITY);
                  setBarycenter(Vector2D.NaN);
              } else {
 
 ```
 
-## 36 Kali 
+## Patch #34 Kali 
 
 org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet:135 (Suspicious rank: ample 3, jaccard 3, ochiai 1, naish1 24965, gp13 3, naish2 3, tarantula 3, )
 REPLACE
@@ -2616,7 +2536,7 @@ if (false) {
 
 Grid5000 node: graphene-18.nancy.grid5000.fr
 
-## 37 Nopol 
+## Patch #35 Nopol 
 
 org.apache.commons.math3.geometry.partitioning.AbstractRegion:214 (Suspicious rank: ample 201, jaccard 201, ochiai 221, naish1 24818, gp13 201, naish2 201, tarantula 201, )
 
@@ -2651,15 +2571,15 @@ index 327b2ae..9a6993a 100644
          // positive cost non-artificial variables
          for (int i = getNumObjectiveFunctions(); i < getArtificialVariableOffset(); i++) {
              final double entry = tableau.getEntry(0, i);
--            if (Precision.compareTo(entry, 0d, epsilon) > 0) {
-+            if (Precision.compareTo(entry, 0d, maxUlps) > 0) {
++            if (Precision.compareTo(entry, 0d, epsilon) > 0) {
+-            if (Precision.compareTo(entry, 0d, maxUlps) > 0) {
                  columnsToDrop.add(i);
              }
          }
 
 ```
 
-## 38 Nopol 
+## Patch #36 Nopol 
 
 org.apache.commons.math3.optimization.linear.SimplexTableau:339 (Suspicious rank: ample 6, jaccard 6, ochiai 6, naish1 24710, gp13 6, naish2 6, tarantula 6, )
 
@@ -2694,25 +2614,25 @@ index 59dc461..93dd3bb 100644
              double targetY;
              if (agingA >= MAXIMAL_AGING) {
                  // we keep updating the high bracket, try to compensate this
--                final int p = agingA - MAXIMAL_AGING;
--                final double weightA = (1 << p) - 1;
--                final double weightB = p + 1;
--                targetY = (weightA * yA - weightB * REDUCTION_FACTOR * yB) / (weightA + weightB);
-+                targetY = -REDUCTION_FACTOR * yB;
++                final int p = agingA - MAXIMAL_AGING;
++                final double weightA = (1 << p) - 1;
++                final double weightB = p + 1;
++                targetY = (weightA * yA - weightB * REDUCTION_FACTOR * yB) / (weightA + weightB);
+-                targetY = -REDUCTION_FACTOR * yB;
              } else if (agingB >= MAXIMAL_AGING) {
                  // we keep updating the low bracket, try to compensate this
--                final int p = agingB - MAXIMAL_AGING;
--                final double weightA = p + 1;
--                final double weightB = (1 << p) - 1;
--                targetY = (weightB * yB - weightA * REDUCTION_FACTOR * yA) / (weightA + weightB);
-+                targetY = -REDUCTION_FACTOR * yA;
++                final int p = agingB - MAXIMAL_AGING;
++                final double weightA = p + 1;
++                final double weightB = (1 << p) - 1;
++                targetY = (weightB * yB - weightA * REDUCTION_FACTOR * yA) / (weightA + weightB);
+-                targetY = -REDUCTION_FACTOR * yA;
              } else {
                  // bracketing is balanced, try to find the root itself
                  targetY = 0;
 
 ```
 
-## 39 Genprog 
+## Patch #37 Genprog 
 
 org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:235 (Suspicious rank: ample 25, jaccard 25, ochiai 25, naish1 24170, gp13 25, naish2 25, tarantula 25, )
 INSERT_BEFORE
@@ -2723,7 +2643,7 @@ signChangeIndex++
 
 Grid5000 node: graphene-27.nancy.grid5000.fr
 
-## 40 Kali 
+## Patch #38 Kali 
 
 org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:260 (Suspicious rank: ample 31, jaccard 31, ochiai 31, naish1 24155, gp13 31, naish2 31, tarantula 31, )
 REPLACE
@@ -2738,7 +2658,7 @@ if (true) {
 
 Grid5000 node: graphene-20.nancy.grid5000.fr
 
-## 41 Nopol 
+## Patch #39 Nopol 
 
 org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:260 (Suspicious rank: ample 31, jaccard 31, ochiai 31, naish1 24155, gp13 31, naish2 31, tarantula 31, )
 
@@ -2773,20 +2693,20 @@ index d96c916..fd89432 100644
              continue;
            }
            Integer basicRow = getBasicRow(colIndex);
--          if (basicRow != null && basicRow == 0) {
--              // if the basic row is found to be the objective function row
--              // set the coefficient to 0 -> this case handles unconstrained 
--              // variables that are still part of the objective function
--              coefficients[i] = 0;
--          } else if (basicRows.contains(basicRow)) {
-+          if (basicRows.contains(basicRow)) {
++          if (basicRow != null && basicRow == 0) {
++              // if the basic row is found to be the objective function row
++              // set the coefficient to 0 -> this case handles unconstrained 
++              // variables that are still part of the objective function
++              coefficients[i] = 0;
++          } else if (basicRows.contains(basicRow)) {
+-          if (basicRows.contains(basicRow)) {
                // if multiple variables can take a given value
                // then we choose the first and set the rest equal to 0
                coefficients[i] = 0 - (restrictToNonNegative ? 0 : mostNegative);
 
 ```
 
-## 42 Nopol 
+## Patch #40 Nopol 
 
 org.apache.commons.math.optimization.linear.SimplexTableau:416 (Suspicious rank: ample 29, jaccard 29, ochiai 36, naish1 24101, gp13 29, naish2 29, tarantula 29, )
 
@@ -2821,8 +2741,8 @@ index 13ebfd2..5db4884 100644
      public OpenMapRealVector ebeDivide(RealVector v) {
          checkVectorDimensions(v.getDimension());
          OpenMapRealVector res = new OpenMapRealVector(this);
--        Iterator iter = entries.iterator();
-+        Iterator iter = res.entries.iterator();
++        Iterator iter = entries.iterator();
+-        Iterator iter = res.entries.iterator();
          while (iter.hasNext()) {
              iter.advance();
              res.setEntry(iter.key(), iter.value() / v.getEntry(iter.key()));
@@ -2830,8 +2750,8 @@ index 13ebfd2..5db4884 100644
      public OpenMapRealVector ebeDivide(double[] v) {
          checkVectorDimensions(v.length);
          OpenMapRealVector res = new OpenMapRealVector(this);
--        Iterator iter = entries.iterator();
-+        Iterator iter = res.entries.iterator();
++        Iterator iter = entries.iterator();
+-        Iterator iter = res.entries.iterator();
          while (iter.hasNext()) {
              iter.advance();
              res.setEntry(iter.key(), iter.value() / v[iter.key()]);
@@ -2839,8 +2759,8 @@ index 13ebfd2..5db4884 100644
      public OpenMapRealVector ebeMultiply(RealVector v) {
          checkVectorDimensions(v.getDimension());
          OpenMapRealVector res = new OpenMapRealVector(this);
--        Iterator iter = entries.iterator();
-+        Iterator iter = res.entries.iterator();
++        Iterator iter = entries.iterator();
+-        Iterator iter = res.entries.iterator();
          while (iter.hasNext()) {
              iter.advance();
              res.setEntry(iter.key(), iter.value() * v.getEntry(iter.key()));
@@ -2848,15 +2768,15 @@ index 13ebfd2..5db4884 100644
      public OpenMapRealVector ebeMultiply(double[] v) {
          checkVectorDimensions(v.length);
          OpenMapRealVector res = new OpenMapRealVector(this);
--        Iterator iter = entries.iterator();
-+        Iterator iter = res.entries.iterator();
++        Iterator iter = entries.iterator();
+-        Iterator iter = res.entries.iterator();
          while (iter.hasNext()) {
              iter.advance();
              res.setEntry(iter.key(), iter.value() * v[iter.key()]);
 
 ```
 
-## 43 Genprog 
+## Patch #41 Genprog 
 
 org.apache.commons.math.linear.OpenMapRealVector:667 (Suspicious rank: ample 14, jaccard 14, ochiai 14, naish1 23318, gp13 14, naish2 14, tarantula 14, )
 REPLACE
@@ -2867,7 +2787,7 @@ entries.put(index, value)
 
 Grid5000 node: graphene-61.nancy.grid5000.fr
 
-## 44 Kali 
+## Patch #42 Kali 
 
 org.apache.commons.math.linear.OpenMapRealVector:664 (Suspicious rank: ample 21, jaccard 21, ochiai 20, naish1 23315, gp13 21, naish2 21, tarantula 21, )
 REPLACE
@@ -2882,7 +2802,7 @@ if (true) {
 
 Grid5000 node: graphene-62.nancy.grid5000.fr
 
-## 45 Nopol 
+## Patch #43 Nopol 
 
 org.apache.commons.math.linear.OpenMapRealVector:667 (Suspicious rank: ample 14, jaccard 14, ochiai 14, naish1 23318, gp13 14, naish2 14, tarantula 14, )
 
@@ -2917,22 +2837,22 @@ index c781a90..b3a23a1 100644
                      f0 *= f1 / (f1 + fx);
                      break;
                  case REGULA_FALSI:
--                    // Nothing.
-+                    if (x == x1) {
-+                        final double delta = FastMath.max(rtol * FastMath.abs(x1),
-+                                                          atol);
-+                        // Update formula cannot make any progress: Update the
-+                        // search interval.
-+                        x0 = 0.5 * (x0 + x1 - delta);
-+                        f0 = computeObjectiveValue(x0);
-+                    }
++                    // Nothing.
+-                    if (x == x1) {
+-                        final double delta = FastMath.max(rtol * FastMath.abs(x1),
+-                                                          atol);
+-                        // Update formula cannot make any progress: Update the
+-                        // search interval.
+-                        x0 = 0.5 * (x0 + x1 - delta);
+-                        f0 = computeObjectiveValue(x0);
+-                    }
                      break;
                  default:
                      // Should never happen.
 
 ```
 
-## 46 Genprog 
+## Patch #44 Genprog 
 
 org.apache.commons.math.analysis.solvers.BaseSecantSolver:191 (Suspicious rank: ample 4, jaccard 4, ochiai 2, naish1 23311, gp13 4, naish2 4, tarantula 4, )
 DELETE
@@ -2943,7 +2863,7 @@ remove
 
 Grid5000 node: graphene-78.nancy.grid5000.fr
 
-## 47 Kali 
+## Patch #45 Kali 
 
 org.apache.commons.math.analysis.solvers.BaseSecantSolver:191 (Suspicious rank: ample 4, jaccard 4, ochiai 2, naish1 23311, gp13 4, naish2 4, tarantula 4, )
 DELETE
@@ -2954,7 +2874,7 @@ remove
 
 Grid5000 node: griffon-10.nancy.grid5000.fr
 
-## 48 Nopol 
+## Patch #46 Nopol 
 
 org.apache.commons.math.analysis.solvers.BaseSecantSolver:186 (Suspicious rank: ample 6, jaccard 6, ochiai 6, naish1 23279, gp13 6, naish2 6, tarantula 6, )
 
@@ -2989,16 +2909,16 @@ index ab58c78..e0a8e97 100644
      public Complex add(Complex rhs)
          throws NullArgumentException {
          MathUtils.checkNotNull(rhs);
--        if (isNaN || rhs.isNaN) {
--            return NaN;
--        }
++        if (isNaN || rhs.isNaN) {
++            return NaN;
++        }
          return createComplex(real + rhs.getReal(),
              imaginary + rhs.getImaginary());
      }
 
 ```
 
-## 49 Genprog 
+## Patch #47 Genprog 
 
 org.apache.commons.math.complex.Complex:153 (Suspicious rank: ample 1, jaccard 1, ochiai 2, naish1 21135, gp13 1, naish2 1, tarantula 1, )
 INSERT_BEFORE
@@ -3030,21 +2950,21 @@ index fb0614e..56c9ffe 100644
              indices[i] = idx;
          }
  
--        indices[last] = index - count;
-+        int idx = 1;
-+        while (count < index) {
-+            count += idx;
-+            ++idx;
-+        }
-+        --idx;
-+        indices[last] = idx;
++        indices[last] = index - count;
+-        int idx = 1;
+-        while (count < index) {
+-            count += idx;
+-            ++idx;
+-        }
+-        --idx;
+-        indices[last] = idx;
  
          return indices;
      }
 
 ```
 
-## 50 Genprog 
+## Patch #48 Genprog 
 
 org.apache.commons.math.util.MultidimensionalCounter:239 (Suspicious rank: ample 15, jaccard 15, ochiai 22, naish1 19577, gp13 15, naish2 15, tarantula 15, )
 INSERT_BEFORE
@@ -3077,15 +2997,15 @@ index e09bbc3..b73ac9d 100644
          while (resultSet.size() < k) {
              // For each data point x, compute D(x), the distance between x and
              // the nearest center that has already been chosen.
--            double sum = 0;
-+            int sum = 0;
++            double sum = 0;
+-            int sum = 0;
              for (int i = 0; i < pointSet.size(); i++) {
                  final T p = pointSet.get(i);
                  final Cluster<T> nearest = getNearestCluster(resultSet, p);
 
 ```
 
-## 51 Nopol 
+## Patch #49 Nopol 
 
 org.apache.commons.math.stat.clustering.EuclideanIntegerPoint:86 (Suspicious rank: ample 18, jaccard 18, ochiai 44, naish1 19414, gp13 18, naish2 18, tarantula 18, )
 
@@ -3120,17 +3040,17 @@ index e1b54f4..8c107de 100644
       * observed points (in the same order as above).
       */
      public double[] fit() {
--        final double[] guess = (new ParameterGuesser(getObservations())).guess();
--        return fit(guess);
-+        return fit(new Gaussian.Parametric(),
-+                   (new ParameterGuesser(getObservations())).guess());
++        final double[] guess = (new ParameterGuesser(getObservations())).guess();
++        return fit(guess);
+-        return fit(new Gaussian.Parametric(),
+-                   (new ParameterGuesser(getObservations())).guess());
      }
  
      /**
 
 ```
 
-## 52 Nopol 
+## Patch #50 Nopol 
 
 org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:620 (Suspicious rank: ample 85, jaccard 85, ochiai 93, naish1 19199, gp13 85, naish2 85, tarantula 85, )
 
@@ -3166,15 +3086,15 @@ index dc83314..83b4c41 100644
                  } else {
                      double r = correlationMatrix.getEntry(i, j);
                      double t = Math.abs(r * Math.sqrt((nObs - 2)/(1 - r * r)));
--                    out[i][j] = 2 * tDistribution.cumulativeProbability(-t);
-+                    out[i][j] = 2 * (1 - tDistribution.cumulativeProbability(t));
++                    out[i][j] = 2 * tDistribution.cumulativeProbability(-t);
+-                    out[i][j] = 2 * (1 - tDistribution.cumulativeProbability(t));
                  }
              }
          }
 
 ```
 
-## 53 Nopol 
+## Patch #51 Nopol 
 
 org.apache.commons.math.stat.correlation.PearsonsCorrelation:193 (Suspicious rank: ample 18, jaccard 18, ochiai 18, naish1 16548, gp13 18, naish2 18, tarantula 18, )
 
@@ -3209,15 +3129,15 @@ index 180caef..3f66927 100644
      /** {@inheritDoc} */
      public double solve(final UnivariateRealFunction f, double min, double max, double initial)
          throws MaxIterationsExceededException, FunctionEvaluationException {
--        return solve(f, min, max);
-+        return solve(min, max);
++        return solve(f, min, max);
+-        return solve(min, max);
      }
  
      /** {@inheritDoc} */
 
 ```
 
-## 54 Genprog 
+## Patch #52 Genprog 
 
 org.apache.commons.math.analysis.solvers.BisectionSolver:72 (Suspicious rank: ample 1, jaccard 1, ochiai 1, naish1 16589, gp13 1, naish2 1, tarantula 1, )
 REPLACE
@@ -3248,18 +3168,18 @@ index 6ee9bd5..935bb8b 100644
                      if (manager.evaluateStep(interpolatorTmp)) {
                          final double dt = manager.getEventTime() - stepStart;
                          if (Math.abs(dt) <= Math.ulp(stepStart)) {
--                            // we cannot simply truncate the step, reject the current computation
--                            // and let the loop compute another state with the truncated step.
--                            // it is so small (much probably exactly 0 due to limited accuracy)
--                            // that the code above would fail handling it.
--                            // So we set up an artificial 0 size step by copying states
--                            interpolator.storeTime(stepStart);
--                            System.arraycopy(y, 0, yTmp, 0, y0.length);
--                            hNew     = 0;
--                            stepSize = 0;
--                            loop     = false;
-+                            // rejecting the step would lead to a too small next step, we accept it
-+                            loop = false;
++                            // we cannot simply truncate the step, reject the current computation
++                            // and let the loop compute another state with the truncated step.
++                            // it is so small (much probably exactly 0 due to limited accuracy)
++                            // that the code above would fail handling it.
++                            // So we set up an artificial 0 size step by copying states
++                            interpolator.storeTime(stepStart);
++                            System.arraycopy(y, 0, yTmp, 0, y0.length);
++                            hNew     = 0;
++                            stepSize = 0;
++                            loop     = false;
+-                            // rejecting the step would lead to a too small next step, we accept it
+-                            loop = false;
                          } else {
                              // reject the step to match exactly the next switch time
                              hNew = dt;
@@ -3271,18 +3191,18 @@ index e0e2f0d..27ade7b 100644
                      if (manager.evaluateStep(interpolatorTmp)) {
                          final double dt = manager.getEventTime() - stepStart;
                          if (Math.abs(dt) <= Math.ulp(stepStart)) {
--                            // we cannot simply truncate the step, reject the current computation
--                            // and let the loop compute another state with the truncated step.
--                            // it is so small (much probably exactly 0 due to limited accuracy)
--                            // that the code above would fail handling it.
--                            // So we set up an artificial 0 size step by copying states
--                            interpolator.storeTime(stepStart);
--                            System.arraycopy(y, 0, yTmp, 0, y0.length);
--                            hNew     = 0;
--                            stepSize = 0;
--                            loop     = false;
-+                            // rejecting the step would lead to a too small next step, we accept it
-+                            loop = false;
++                            // we cannot simply truncate the step, reject the current computation
++                            // and let the loop compute another state with the truncated step.
++                            // it is so small (much probably exactly 0 due to limited accuracy)
++                            // that the code above would fail handling it.
++                            // So we set up an artificial 0 size step by copying states
++                            interpolator.storeTime(stepStart);
++                            System.arraycopy(y, 0, yTmp, 0, y0.length);
++                            hNew     = 0;
++                            stepSize = 0;
++                            loop     = false;
+-                            // rejecting the step would lead to a too small next step, we accept it
+-                            loop = false;
                          } else {
                              // reject the step to match exactly the next switch time
                              hNew = dt;
@@ -3294,18 +3214,18 @@ index e03be9e..34b3dc1 100644
            if (manager.evaluateStep(interpolator)) {
                final double dt = manager.getEventTime() - stepStart;
                if (Math.abs(dt) <= Math.ulp(stepStart)) {
--                  // we cannot simply truncate the step, reject the current computation
--                  // and let the loop compute another state with the truncated step.
--                  // it is so small (much probably exactly 0 due to limited accuracy)
--                  // that the code above would fail handling it.
--                  // So we set up an artificial 0 size step by copying states
--                  interpolator.storeTime(stepStart);
--                  System.arraycopy(y, 0, yTmp, 0, y0.length);
--                  hNew     = 0;
--                  stepSize = 0;
--                  loop     = false;
-+                  // rejecting the step would lead to a too small next step, we accept it
-+                  loop = false;
++                  // we cannot simply truncate the step, reject the current computation
++                  // and let the loop compute another state with the truncated step.
++                  // it is so small (much probably exactly 0 due to limited accuracy)
++                  // that the code above would fail handling it.
++                  // So we set up an artificial 0 size step by copying states
++                  interpolator.storeTime(stepStart);
++                  System.arraycopy(y, 0, yTmp, 0, y0.length);
++                  hNew     = 0;
++                  stepSize = 0;
++                  loop     = false;
+-                  // rejecting the step would lead to a too small next step, we accept it
+-                  loop = false;
                } else {
                    // reject the step to match exactly the next switch time
                    hNew = dt;
@@ -3317,24 +3237,24 @@ index b61b0b1..3227b98 100644
          if (manager.evaluateStep(interpolator)) {
              final double dt = manager.getEventTime() - stepStart;
              if (Math.abs(dt) <= Math.ulp(stepStart)) {
--                // we cannot simply truncate the step, reject the current computation
--                // and let the loop compute another state with the truncated step.
--                // it is so small (much probably exactly 0 due to limited accuracy)
--                // that the code above would fail handling it.
--                // So we set up an artificial 0 size step by copying states
--                interpolator.storeTime(stepStart);
--                System.arraycopy(y, 0, yTmp, 0, y0.length);
--                stepSize = 0;
--                loop     = false;
-+                // rejecting the step would lead to a too small next step, we accept it
-+                loop = false;
++                // we cannot simply truncate the step, reject the current computation
++                // and let the loop compute another state with the truncated step.
++                // it is so small (much probably exactly 0 due to limited accuracy)
++                // that the code above would fail handling it.
++                // So we set up an artificial 0 size step by copying states
++                interpolator.storeTime(stepStart);
++                System.arraycopy(y, 0, yTmp, 0, y0.length);
++                stepSize = 0;
++                loop     = false;
+-                // rejecting the step would lead to a too small next step, we accept it
+-                loop = false;
              } else {
                  // reject the step to match exactly the next switch time
                  stepSize = dt;
 
 ```
 
-## 55 Genprog 
+## Patch #53 Genprog 
 
 org.apache.commons.math.ode.events.EventState:188 (Suspicious rank: ample 68, jaccard 165, ochiai 91, naish1 16066, gp13 68, naish2 68, tarantula 165, )
 INSERT_BEFORE
@@ -3347,7 +3267,7 @@ if ((pendingEvent) && ((java.lang.Math.abs((t1 - (pendingEventTime)))) <= (conve
 
 Grid5000 node: griffon-23.nancy.grid5000.fr
 
-## 56 Nopol 
+## Patch #54 Nopol 
 
 org.apache.commons.math.analysis.solvers.BrentSolver:334 (Suspicious rank: ample 90, jaccard 188, ochiai 99, naish1 16023, gp13 90, naish2 90, tarantula 190, )
 
@@ -3382,10 +3302,10 @@ index e0cb427..4e95ed5 100644
   */
  public class BrentSolver extends UnivariateRealSolverImpl {
  
--    /** Error message for non-bracketing interval. */
--    private static final String NON_BRACKETING_MESSAGE =
--        "function values at endpoints do not have different signs.  " +
--        "Endpoints: [{0}, {1}], Values: [{2}, {3}]";
++    /** Error message for non-bracketing interval. */
++    private static final String NON_BRACKETING_MESSAGE =
++        "function values at endpoints do not have different signs.  " +
++        "Endpoints: [{0}, {1}], Values: [{2}, {3}]";
 -
      /** Serializable version identifier */
      private static final long serialVersionUID = 7694577816772532779L;
@@ -3394,10 +3314,10 @@ index e0cb427..4e95ed5 100644
              return solve(f, initial, yInitial, max, yMax, initial, yInitial);
          }
  
--        if (yMin * yMax > 0) {
--            throw MathRuntimeException.createIllegalArgumentException(
--                  NON_BRACKETING_MESSAGE, min, max, yMin, yMax);
--        }
++        if (yMin * yMax > 0) {
++            throw MathRuntimeException.createIllegalArgumentException(
++                  NON_BRACKETING_MESSAGE, min, max, yMin, yMax);
++        }
 -
          // full Brent algorithm starting with provided initial guess
          return solve(f, min, yMin, max, yMax, initial, yInitial);
@@ -3406,17 +3326,17 @@ index e0cb427..4e95ed5 100644
              } else {
                  // neither value is close to zero and min and max do not bracket root.
                  throw MathRuntimeException.createIllegalArgumentException(
--                        NON_BRACKETING_MESSAGE, min, max, yMin, yMax);
-+                        "function values at endpoints do not have different signs.  " +
-+                        "Endpoints: [{0}, {1}], Values: [{2}, {3}]",
-+                        min, max, yMin, yMax);
++                        NON_BRACKETING_MESSAGE, min, max, yMin, yMax);
+-                        "function values at endpoints do not have different signs.  " +
+-                        "Endpoints: [{0}, {1}], Values: [{2}, {3}]",
+-                        min, max, yMin, yMax);
              }
          } else if (sign < 0){
              // solve using only the first endpoint as initial guess
 
 ```
 
-## 57 Genprog 
+## Patch #55 Genprog 
 
 org.apache.commons.math.analysis.solvers.BrentSolver:132 (Suspicious rank: ample 1, jaccard 1, ochiai 1, naish1 15933, gp13 1, naish2 1, tarantula 1, )
 REPLACE
@@ -3427,7 +3347,7 @@ return solve(f, min, max)
 
 Grid5000 node: graphene-64.nancy.grid5000.fr
 
-## 58 Nopol 
+## Patch #56 Nopol 
 
 org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl:225 (Suspicious rank: ample 16, jaccard 16, ochiai 16, naish1 15884, gp13 16, naish2 16, tarantula 16, )
 
@@ -3463,26 +3383,26 @@ index ff09646..44f6742 100644
                  if (g0Positive ^ (gb >= 0)) {
                      // there is a sign change: an event is expected during this step
  
--                    if (ga * gb > 0) {
--                        // this is a corner case:
--                        // - there was an event near ta,
--                        // - there is another event between ta and tb
--                        // - when ta was computed, convergence was reached on the "wrong side" of the interval
--                        // this implies that the real sign of ga is the same as gb, so we need to slightly
--                        // shift ta to make sure ga and gb get opposite signs and the solver won't complain
--                        // about bracketing
--                        final double epsilon = (forward ? 0.25 : -0.25) * convergence;
--                        for (int k = 0; (k < 4) && (ga * gb > 0); ++k) {
--                            ta += epsilon;
--                            interpolator.setInterpolatedTime(ta);
--                            ga = handler.g(ta, interpolator.getInterpolatedState());
--                        }
--                        if (ga * gb > 0) {
--                            // this should never happen
--                            throw MathRuntimeException.createInternalError(null);
--                        }
--                    }
--                         
++                    if (ga * gb > 0) {
++                        // this is a corner case:
++                        // - there was an event near ta,
++                        // - there is another event between ta and tb
++                        // - when ta was computed, convergence was reached on the "wrong side" of the interval
++                        // this implies that the real sign of ga is the same as gb, so we need to slightly
++                        // shift ta to make sure ga and gb get opposite signs and the solver won't complain
++                        // about bracketing
++                        final double epsilon = (forward ? 0.25 : -0.25) * convergence;
++                        for (int k = 0; (k < 4) && (ga * gb > 0); ++k) {
++                            ta += epsilon;
++                            interpolator.setInterpolatedTime(ta);
++                            ga = handler.g(ta, interpolator.getInterpolatedState());
++                        }
++                        if (ga * gb > 0) {
++                            // this should never happen
++                            throw MathRuntimeException.createInternalError(null);
++                        }
++                    }
++                         
                      // variation direction, with respect to the integration direction
                      increasing = gb >= ga;
  
@@ -3490,26 +3410,26 @@ index ff09646..44f6742 100644
                      final BrentSolver solver = new BrentSolver();
                      solver.setAbsoluteAccuracy(convergence);
                      solver.setMaximalIterationCount(maxIterationCount);
--                    final double root = (ta <= tb) ? solver.solve(f, ta, tb) : solver.solve(f, tb, ta);
--                    if ((Math.abs(root - ta) <= convergence) &&
--                         (Math.abs(root - previousEventTime) <= convergence)) {
-+                    double root;
-+                    try {
-+                        root = (ta <= tb) ? solver.solve(f, ta, tb) : solver.solve(f, tb, ta);
-+                    } catch (IllegalArgumentException iae) {
-+                        // the interval did not really bracket a root
-+                        root = Double.NaN;
-+                    }
-+                    if (Double.isNaN(root) ||
-+                        ((Math.abs(root - ta) <= convergence) &&
-+                         (Math.abs(root - previousEventTime) <= convergence))) {
++                    final double root = (ta <= tb) ? solver.solve(f, ta, tb) : solver.solve(f, tb, ta);
++                    if ((Math.abs(root - ta) <= convergence) &&
++                         (Math.abs(root - previousEventTime) <= convergence)) {
+-                    double root;
+-                    try {
+-                        root = (ta <= tb) ? solver.solve(f, ta, tb) : solver.solve(f, tb, ta);
+-                    } catch (IllegalArgumentException iae) {
+-                        // the interval did not really bracket a root
+-                        root = Double.NaN;
+-                    }
+-                    if (Double.isNaN(root) ||
+-                        ((Math.abs(root - ta) <= convergence) &&
+-                         (Math.abs(root - previousEventTime) <= convergence))) {
                          // we have either found nothing or found (again ?) a past event, we simply ignore it
                          ta = tb;
                          ga = gb;
 
 ```
 
-## 59 Genprog 
+## Patch #57 Genprog 
 
 org.apache.commons.math.ode.events.EventState:283 (Suspicious rank: ample 185, jaccard 185, ochiai 182, naish1 16660, gp13 185, naish2 185, tarantula 185, )
 DELETE
@@ -3520,7 +3440,7 @@ remove
 
 Grid5000 node: graphene-76.nancy.grid5000.fr
 
-## 60 Kali 
+## Patch #58 Kali 
 
 org.apache.commons.math.ode.events.EventState:283 (Suspicious rank: ample 185, jaccard 185, ochiai 182, naish1 16660, gp13 185, naish2 185, tarantula 185, )
 DELETE
@@ -3531,7 +3451,7 @@ remove
 
 Grid5000 node: graphene-64.nancy.grid5000.fr
 
-## 61 Nopol 
+## Patch #59 Nopol 
 
 org.apache.commons.math.analysis.solvers.BrentSolver:282 (Suspicious rank: ample 32, jaccard 32, ochiai 32, naish1 16567, gp13 32, naish2 32, tarantula 32, )
 
@@ -3566,15 +3486,15 @@ index 9d1b797..3fc328d 100644
      private boolean flipIfWarranted(final int n, final int step) {
          if (1.5 * work[pingPong] < work[4 * (n - 1) + pingPong]) {
              // flip array
--            int j = 4 * (n - 1);
-+            int j = 4 * n - 1;
++            int j = 4 * (n - 1);
+-            int j = 4 * n - 1;
              for (int i = 0; i < j; i += 4) {
                  for (int k = 0; k < 4; k += step) {
                      final double tmp = work[i + k];
 
 ```
 
-## 62 Genprog 
+## Patch #60 Genprog 
 
 org.apache.commons.math.linear.EigenDecompositionImpl:1137 (Suspicious rank: ample 3, jaccard 3, ochiai 16, naish1 16070, gp13 3, naish2 3, tarantula 3, )
 DELETE
@@ -3585,7 +3505,7 @@ remove
 
 Grid5000 node: graphene-76.nancy.grid5000.fr
 
-## 63 Kali 
+## Patch #61 Kali 
 
 org.apache.commons.math.linear.EigenDecompositionImpl:1135 (Suspicious rank: ample 5, jaccard 5, ochiai 14, naish1 16072, gp13 5, naish2 5, tarantula 5, )
 INSERT_BEFORE
@@ -3598,7 +3518,7 @@ if (true)
 
 Grid5000 node: graphene-72.nancy.grid5000.fr
 
-## 64 Nopol 
+## Patch #62 Nopol 
 
 org.apache.commons.math.linear.EigenDecompositionImpl:1139 (Suspicious rank: ample 1, jaccard 1, ochiai 18, naish1 16068, gp13 1, naish2 1, tarantula 1, )
 
@@ -3633,14 +3553,14 @@ index 3fc328d..53a40f0 100644
          }
  
          final double dCurrent = main[m - 1];
--        final double lower = dCurrent - eCurrent;
--        work[lowerStart + m - 1] = lower;
--        lowerSpectra = Math.min(lowerSpectra, lower);
--        final double upper = dCurrent + eCurrent;
--        work[upperStart + m - 1] = upper;
--        upperSpectra = Math.max(upperSpectra, upper);
-+        work[lowerStart + m - 1] = dCurrent - eCurrent;
-+        work[upperStart + m - 1] = dCurrent + eCurrent;
++        final double lower = dCurrent - eCurrent;
++        work[lowerStart + m - 1] = lower;
++        lowerSpectra = Math.min(lowerSpectra, lower);
++        final double upper = dCurrent + eCurrent;
++        work[upperStart + m - 1] = upper;
++        upperSpectra = Math.max(upperSpectra, upper);
+-        work[lowerStart + m - 1] = dCurrent - eCurrent;
+-        work[upperStart + m - 1] = dCurrent + eCurrent;
          minPivot = MathUtils.SAFE_MIN * Math.max(1.0, eMax * eMax);
  
      }
@@ -3648,10 +3568,10 @@ index 3fc328d..53a40f0 100644
                      diagMax    = work[4 * i0];
                      offDiagMin = work[4 * i0 + 2];
                      double previousEMin = work[4 * i0 + 3];
--                    for (int i = 4 * i0; i < 4 * n0 - 16; i += 4) {
--                        if ((work[i + 3] <= TOLERANCE_2 * work[i]) ||
-+                    for (int i = 4 * i0; i < 4 * n0 - 11; i += 4) {
-+                        if ((work[i + 3] <= TOLERANCE_2 * work[i]) &&
++                    for (int i = 4 * i0; i < 4 * n0 - 16; i += 4) {
++                        if ((work[i + 3] <= TOLERANCE_2 * work[i]) ||
+-                    for (int i = 4 * i0; i < 4 * n0 - 11; i += 4) {
+-                        if ((work[i + 3] <= TOLERANCE_2 * work[i]) &&
                              (work[i + 2] <= TOLERANCE_2 * sigma)) {
                              // insert a split
                              work[i + 2]  = -sigma;
@@ -3659,15 +3579,15 @@ index 3fc328d..53a40f0 100644
                  double a2 = (work[np - 8] / b2) * (1 + work[np - 4] / b1);
  
                  // approximate contribution to norm squared from i < nn-2.
--                if (end - start > 3) {
-+                if (end - start > 2) {
++                if (end - start > 3) {
+-                if (end - start > 2) {
                      b2 = work[nn - 13] / work[nn - 15];
                      a2 = a2 + b2;
                      for (int i4 = nn - 17; i4 >= 4 * start + 2 + pingPong; i4 -= 4) {
 
 ```
 
-## 65 Genprog 
+## Patch #63 Genprog 
 
 org.apache.commons.math.linear.EigenDecompositionImpl:1477 (Suspicious rank: ample 26, jaccard 26, ochiai 17, naish1 16501, gp13 26, naish2 26, tarantula 26, )
 DELETE
@@ -3678,7 +3598,7 @@ remove
 
 Grid5000 node: griffon-10.nancy.grid5000.fr
 
-## 66 Kali 
+## Patch #64 Kali 
 
 org.apache.commons.math.linear.EigenDecompositionImpl:1526 (Suspicious rank: ample 2, jaccard 2, ochiai 2, naish1 16239, gp13 2, naish2 2, tarantula 2, )
 INSERT_BEFORE
@@ -3691,7 +3611,7 @@ if (true)
 
 Grid5000 node: graphene-61.nancy.grid5000.fr
 
-## 67 Nopol 
+## Patch #65 Nopol 
 
 org.apache.commons.math.linear.EigenDecompositionImpl:1541 (Suspicious rank: ample 4, jaccard 4, ochiai 11, naish1 16250, gp13 4, naish2 4, tarantula 4, )
 
@@ -3726,20 +3646,20 @@ index 60a1b3a..16d3bae 100644
          double minRatio = Double.MAX_VALUE;
          Integer minRatioPos = null;
          for (int i = tableau.getNumObjectiveFunctions(); i < tableau.getHeight(); i++) {
--            final double rhs = tableau.getEntry(i, tableau.getWidth() - 1);
--            final double entry = tableau.getEntry(i, col);
--            if (MathUtils.compareTo(entry, 0, epsilon) > 0) {
--                final double ratio = rhs / entry;
-+            double rhs = tableau.getEntry(i, tableau.getWidth() - 1);
-+            if (MathUtils.compareTo(tableau.getEntry(i, col), 0, epsilon) >= 0) {
-+                double ratio = rhs / tableau.getEntry(i, col);
++            final double rhs = tableau.getEntry(i, tableau.getWidth() - 1);
++            final double entry = tableau.getEntry(i, col);
++            if (MathUtils.compareTo(entry, 0, epsilon) > 0) {
++                final double ratio = rhs / entry;
+-            double rhs = tableau.getEntry(i, tableau.getWidth() - 1);
+-            if (MathUtils.compareTo(tableau.getEntry(i, col), 0, epsilon) >= 0) {
+-                double ratio = rhs / tableau.getEntry(i, col);
                  if (ratio < minRatio) {
                      minRatio = ratio;
                      minRatioPos = i; 
 
 ```
 
-## 68 Genprog 
+## Patch #66 Genprog 
 
 org.apache.commons.math.optimization.linear.SimplexSolver:63 (Suspicious rank: ample 37, jaccard 37, ochiai 47, naish1 16048, gp13 37, naish2 37, tarantula 37, )
 DELETE
@@ -3750,7 +3670,7 @@ remove
 
 Grid5000 node: graphene-42.nancy.grid5000.fr
 
-## 69 Kali 
+## Patch #67 Kali 
 
 org.apache.commons.math.optimization.linear.SimplexSolver:63 (Suspicious rank: ample 37, jaccard 37, ochiai 47, naish1 16048, gp13 37, naish2 37, tarantula 37, )
 DELETE
@@ -3761,7 +3681,7 @@ remove
 
 Grid5000 node: graphene-65.nancy.grid5000.fr
 
-## 70 Nopol 
+## Patch #68 Nopol 
 
 org.apache.commons.math.optimization.linear.SimplexSolver:63 (Suspicious rank: ample 37, jaccard 37, ochiai 47, naish1 16048, gp13 37, naish2 37, tarantula 37, )
 
@@ -3797,7 +3717,7 @@ index 929560c..955d0d8 100644
      protected void iterateSimplex(final Comparator<RealPointValuePair> comparator)
          throws FunctionEvaluationException, OptimizationException, IllegalArgumentException {
  
--        final RealConvergenceChecker checker = getConvergenceChecker();
++        final RealConvergenceChecker checker = getConvergenceChecker();
          while (true) {
  
              incrementIterationsCounter();
@@ -3805,15 +3725,15 @@ index 929560c..955d0d8 100644
                  return;
              }
  
--            // check convergence
--            final int iter = getIterations();
--            boolean converged = true;
--            for (int i = 0; i < simplex.length; ++i) {
--                converged &= checker.converged(iter, original[i], simplex[i]);
--            }
--            if (converged) {
--                return;
--            }
++            // check convergence
++            final int iter = getIterations();
++            boolean converged = true;
++            for (int i = 0; i < simplex.length; ++i) {
++                converged &= checker.converged(iter, original[i], simplex[i]);
++            }
++            if (converged) {
++                return;
++            }
 -
          }
  
@@ -3821,7 +3741,7 @@ index 929560c..955d0d8 100644
 
 ```
 
-## 71 Genprog 
+## Patch #69 Genprog 
 
 org.apache.commons.math.optimization.direct.MultiDirectional:90 (Suspicious rank: ample 16, jaccard 16, ochiai 7, naish1 16169, gp13 16, naish2 16, tarantula 16, )
 REPLACE
@@ -3832,7 +3752,7 @@ return
 
 Grid5000 node: graphene-25.nancy.grid5000.fr
 
-## 72 Kali 
+## Patch #70 Kali 
 
 org.apache.commons.math.optimization.direct.MultiDirectional:90 (Suspicious rank: ample 16, jaccard 16, ochiai 7, naish1 16169, gp13 16, naish2 16, tarantula 16, )
 INSERT_BEFORE
@@ -3864,15 +3784,15 @@ index e6398f6..5b76415 100644
          } while ((fa * fb > 0.0) && (numIterations < maximumIterations) && 
                  ((a > lowerBound) || (b < upperBound)));
     
--        if (fa * fb > 0.0 ) {
-+        if (fa * fb >= 0.0 ) {
++        if (fa * fb > 0.0 ) {
+-        if (fa * fb >= 0.0 ) {
              throw new ConvergenceException(
                        "number of iterations={0}, maximum iterations={1}, " +
                        "initial={2}, lower bound={3}, upper bound={4}, final a value={5}, " +
 
 ```
 
-## 73 Genprog 
+## Patch #71 Genprog 
 
 org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils:199 (Suspicious rank: ample 4, jaccard 4, ochiai 1, naish1 15706, gp13 4, naish2 4, tarantula 4, )
 DELETE
@@ -3883,7 +3803,7 @@ remove
 
 Grid5000 node: graphene-70.nancy.grid5000.fr
 
-## 74 Kali 
+## Patch #72 Kali 
 
 org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils:199 (Suspicious rank: ample 4, jaccard 4, ochiai 1, naish1 15706, gp13 4, naish2 4, tarantula 4, )
 DELETE
@@ -3894,7 +3814,7 @@ remove
 
 Grid5000 node: graphene-70.nancy.grid5000.fr
 
-## 75 Nopol 
+## Patch #73 Nopol 
 
 org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils:198 (Suspicious rank: ample 41, jaccard 41, ochiai 46, naish1 15686, gp13 41, naish2 41, tarantula 41, )
 
@@ -3929,23 +3849,23 @@ index b0d114e..a6d7419 100644
      private Integer getBasicRow(final int col) {
          Integer row = null;
          for (int i = getNumObjectiveFunctions(); i < getHeight(); i++) {
--            if (MathUtils.equals(getEntry(i, col), 1.0, epsilon) && (row == null)) {
--                row = i;
--            } else if (!MathUtils.equals(getEntry(i, col), 0.0, epsilon)) {
--                return null;
-+            if (!MathUtils.equals(getEntry(i, col), 0.0, epsilon)) {
-+                if (row == null) {
-+                    row = i;
-+                } else {
-+                    return null;
-+                }
++            if (MathUtils.equals(getEntry(i, col), 1.0, epsilon) && (row == null)) {
++                row = i;
++            } else if (!MathUtils.equals(getEntry(i, col), 0.0, epsilon)) {
++                return null;
+-            if (!MathUtils.equals(getEntry(i, col), 0.0, epsilon)) {
+-                if (row == null) {
+-                    row = i;
+-                } else {
+-                    return null;
+-                }
              }
          }
          return row;
 
 ```
 
-## 76 Nopol 
+## Patch #74 Nopol 
 
 org.apache.commons.math.optimization.linear.SimplexTableau:161 (Suspicious rank: ample 43, jaccard 43, ochiai 25, naish1 14789, gp13 43, naish2 43, tarantula 43, )
 
@@ -3980,61 +3900,61 @@ index a6d7419..ba57722 100644
       */
      protected RealPointValuePair getSolution() {
          double[] coefficients = new double[getOriginalNumDecisionVariables()];
--        Integer basicRow =
--            getBasicRow(getNumObjectiveFunctions() + getOriginalNumDecisionVariables());
--        double mostNegative = basicRow == null ? 0 : getEntry(basicRow, getRhsOffset());
--        Set<Integer> basicRows = new HashSet<Integer>();
-+        double mostNegative = getDecisionVariableValue(getOriginalNumDecisionVariables());
++        Integer basicRow =
++            getBasicRow(getNumObjectiveFunctions() + getOriginalNumDecisionVariables());
++        double mostNegative = basicRow == null ? 0 : getEntry(basicRow, getRhsOffset());
++        Set<Integer> basicRows = new HashSet<Integer>();
+-        double mostNegative = getDecisionVariableValue(getOriginalNumDecisionVariables());
          for (int i = 0; i < coefficients.length; i++) {
--            basicRow = getBasicRow(getNumObjectiveFunctions() + i);
--            if (basicRows.contains(basicRow)) {
--                // if multiple variables can take a given value 
--                // then we choose the first and set the rest equal to 0
--                coefficients[i] = 0;
--            } else {
--                basicRows.add(basicRow);
--                coefficients[i] =
--                    (basicRow == null ? 0 : getEntry(basicRow, getRhsOffset())) -
--                    (restrictToNonNegative ? 0 : mostNegative);
--            }
-+            coefficients[i] =
-+                getDecisionVariableValue(i) - (restrictToNonNegative ? 0 : mostNegative); 
++            basicRow = getBasicRow(getNumObjectiveFunctions() + i);
++            if (basicRows.contains(basicRow)) {
++                // if multiple variables can take a given value 
++                // then we choose the first and set the rest equal to 0
++                coefficients[i] = 0;
++            } else {
++                basicRows.add(basicRow);
++                coefficients[i] =
++                    (basicRow == null ? 0 : getEntry(basicRow, getRhsOffset())) -
++                    (restrictToNonNegative ? 0 : mostNegative);
++            }
+-            coefficients[i] =
+-                getDecisionVariableValue(i) - (restrictToNonNegative ? 0 : mostNegative); 
          }
          return new RealPointValuePair(coefficients, f.getValue(coefficients));
      }
  
      /**
-+     * Get the value of the given decision variable.  This is not the actual
-+     * value as it is guaranteed to be >= 0 and thus must be corrected before
-+     * being returned to the user.
-+     * 
-+     * @param decisionVariable The index of the decision variable
-+     * @return The value of the given decision variable.
-+     */
-+    protected double getDecisionVariableValue(final int decisionVariable) {
-+      int col = getNumObjectiveFunctions() + decisionVariable;  
-+      Integer basicRow = getBasicRow(col);
-+      if (basicRow == null) {
-+          return 0;
-+      }
-+      // if there are multiple variables that can take the value on the RHS
-+      // then we'll give the first variable that value
-+      for (int i = getNumObjectiveFunctions(); i < col; i++) {
-+          if (tableau.getEntry(basicRow, i) == 1) {
-+              return 0;
-+          }
-+      }
-+      return getEntry(basicRow, getRhsOffset()); 
-+  }
+-     * Get the value of the given decision variable.  This is not the actual
+-     * value as it is guaranteed to be >= 0 and thus must be corrected before
+-     * being returned to the user.
+-     * 
+-     * @param decisionVariable The index of the decision variable
+-     * @return The value of the given decision variable.
+-     */
+-    protected double getDecisionVariableValue(final int decisionVariable) {
+-      int col = getNumObjectiveFunctions() + decisionVariable;  
+-      Integer basicRow = getBasicRow(col);
+-      if (basicRow == null) {
+-          return 0;
+-      }
+-      // if there are multiple variables that can take the value on the RHS
+-      // then we'll give the first variable that value
+-      for (int i = getNumObjectiveFunctions(); i < col; i++) {
+-          if (tableau.getEntry(basicRow, i) == 1) {
+-              return 0;
+-          }
+-      }
+-      return getEntry(basicRow, getRhsOffset()); 
+-  }
 +
-+    /**
+-    /**
       * Subtracts a multiple of one row from another.
       * <p>
       * After application of this operation, the following will hold:
 
 ```
 
-## 77 Nopol 
+## Patch #75 Nopol 
 
 org.apache.commons.math.optimization.linear.SimplexTableau:352 (Suspicious rank: ample 1, jaccard 1, ochiai 1, naish1 14715, gp13 1, naish2 1, tarantula 1, )
 
@@ -4117,22 +4037,22 @@ index 59aeb07..3959403 100644
       * @return initial domain value
       */
      protected double getInitialDomain(double p) {
--        double ret = 1.0;
--        double d = getDenominatorDegreesOfFreedom();
--        if (d > 2.0) {
--            // use mean
--            ret = d / (d - 2.0);
--        }
--        return ret;
-+        return getDenominatorDegreesOfFreedom() /
-+            (getDenominatorDegreesOfFreedom() - 2.0);
++        double ret = 1.0;
++        double d = getDenominatorDegreesOfFreedom();
++        if (d > 2.0) {
++            // use mean
++            ret = d / (d - 2.0);
++        }
++        return ret;
+-        return getDenominatorDegreesOfFreedom() /
+-            (getDenominatorDegreesOfFreedom() - 2.0);
      }
      
      /**
 
 ```
 
-## 78 Genprog 
+## Patch #76 Genprog 
 
 org.apache.commons.math.distribution.FDistributionImpl:144 (Suspicious rank: ample 1393, jaccard 105, ochiai 105, naish1 8365, gp13 105, naish2 105, tarantula 83, )
 REPLACE
@@ -4143,7 +4063,7 @@ return numeratorDegreesOfFreedom
 
 Grid5000 node: graphene-65.nancy.grid5000.fr
 
-## 79 Kali 
+## Patch #77 Kali 
 
 org.apache.commons.math.distribution.FDistributionImpl:144 (Suspicious rank: ample 1393, jaccard 105, ochiai 105, naish1 8365, gp13 105, naish2 105, tarantula 83, )
 INSERT_BEFORE
@@ -4209,48 +4129,48 @@ index 57f64a9..01a9ee5 100644
          clearResult();
          verifyInterval(min, max);
          
--        double ret = Double.NaN;
--        
++        double ret = Double.NaN;
++        
          double yMin = f.value(min);
          double yMax = f.value(max);
          
          // Verify bracketing
--        double sign = yMin * yMax;
--        if (sign > 0) {
--            // check if either value is close to a zero
--            if (Math.abs(yMin) <= functionValueAccuracy) {
--                setResult(min, 0);
--                ret = min;
--            } else if (Math.abs(yMax) <= functionValueAccuracy) {
--                setResult(max, 0);
--                ret = max;
--            } else {
--                // neither value is close to zero and min and max do not bracket root.
--                throw new IllegalArgumentException
--                ("Function values at endpoints do not have different signs." +
--                        "  Endpoints: [" + min + "," + max + "]" + 
--                        "  Values: [" + yMin + "," + yMax + "]");
--            }
--        } else if (sign < 0){
--            // solve using only the first endpoint as initial guess
--            ret = solve(min, yMin, max, yMax, min, yMin);
--        } else {
--            // either min or max is a root
--            if (yMin == 0.0) {
--                ret = min;
--            } else {
--                ret = max;
--            }
-+        if (yMin * yMax >= 0) {
-+            throw new IllegalArgumentException
-+            ("Function values at endpoints do not have different signs." +
-+                    "  Endpoints: [" + min + "," + max + "]" + 
-+                    "  Values: [" + yMin + "," + yMax + "]");       
++        double sign = yMin * yMax;
++        if (sign > 0) {
++            // check if either value is close to a zero
++            if (Math.abs(yMin) <= functionValueAccuracy) {
++                setResult(min, 0);
++                ret = min;
++            } else if (Math.abs(yMax) <= functionValueAccuracy) {
++                setResult(max, 0);
++                ret = max;
++            } else {
++                // neither value is close to zero and min and max do not bracket root.
++                throw new IllegalArgumentException
++                ("Function values at endpoints do not have different signs." +
++                        "  Endpoints: [" + min + "," + max + "]" + 
++                        "  Values: [" + yMin + "," + yMax + "]");
++            }
++        } else if (sign < 0){
++            // solve using only the first endpoint as initial guess
++            ret = solve(min, yMin, max, yMax, min, yMin);
++        } else {
++            // either min or max is a root
++            if (yMin == 0.0) {
++                ret = min;
++            } else {
++                ret = max;
++            }
+-        if (yMin * yMax >= 0) {
+-            throw new IllegalArgumentException
+-            ("Function values at endpoints do not have different signs." +
+-                    "  Endpoints: [" + min + "," + max + "]" + 
+-                    "  Values: [" + yMin + "," + yMax + "]");       
          }
  
--        return ret;
-+        // solve using only the first endpoint as initial guess
-+        return solve(min, yMin, max, yMax, min, yMin);
++        return ret;
+-        // solve using only the first endpoint as initial guess
+-        return solve(min, yMin, max, yMax, min, yMin);
 +
      }
          
@@ -4258,7 +4178,7 @@ index 57f64a9..01a9ee5 100644
 
 ```
 
-## 80 Nopol 
+## Patch #78 Nopol 
 
 org.apache.commons.math.analysis.BrentSolver:136 (Suspicious rank: ample 924, jaccard 68, ochiai 68, naish1 6894, gp13 68, naish2 68, tarantula 68, )
 
@@ -4321,8 +4241,8 @@ index 904e156..4239c25 100644
      private static final long serialVersionUID = -3833485397404128220L;
  
      /** Maximum allowed numerical error. */
--    private static final double DEFAULT_EPSILON = 10e-15;
-+    private static final double DEFAULT_EPSILON = 10e-9;
++    private static final double DEFAULT_EPSILON = 10e-15;
+-    private static final double DEFAULT_EPSILON = 10e-9;
  
      /**
       * Default constructor.  Prohibit instantiation.
@@ -4334,15 +4254,15 @@ index ba2c4db..8c565cb 100644
      private static final long serialVersionUID = -6587513359895466954L;
  
      /** Maximum allowed numerical error. */
--    private static final double DEFAULT_EPSILON = 10e-15;
-+    private static final double DEFAULT_EPSILON = 10e-9;
++    private static final double DEFAULT_EPSILON = 10e-15;
+-    private static final double DEFAULT_EPSILON = 10e-9;
  
      /** Lanczos coefficients */
      private static double[] lanczos =
 
 ```
 
-## 81 Nopol 
+## Patch #79 Nopol 
 
 org.apache.commons.math.special.Gamma:162 (Suspicious rank: ample 3683, jaccard 88, ochiai 88, naish1 6243, gp13 88, naish2 88, tarantula 88, )
 
@@ -4403,15 +4323,15 @@ index d9fa592..c105a41 100644
       * @return sum of squared errors associated with the regression model
       */
      public double getSumSquaredErrors() {
--        return Math.max(0d, sumYY - sumXY * sumXY / sumXX);
-+        return sumYY - sumXY * sumXY / sumXX;
++        return Math.max(0d, sumYY - sumXY * sumXY / sumXX);
+-        return sumYY - sumXY * sumXY / sumXX;
      }
  
      /**
 
 ```
 
-## 82 Nopol 
+## Patch #80 Nopol 
 
 org.apache.commons.math.stat.regression.SimpleRegression:108 (Suspicious rank: ample 562, jaccard 79, ochiai 70, naish1 4336, gp13 79, naish2 79, tarantula 79, )
 
@@ -4449,18 +4369,18 @@ index 8e8e603..aaf0a0f 100644
              newValues[i] = value;
              System.arraycopy(iTypes, i, newTypes, i + 1, newTypes.length - i - 1);
              System.arraycopy(iValues, i, newValues, i + 1, newValues.length - i - 1);
--            // use public constructor to ensure full validation
--            // this isn't overly efficient, but is safe
--            Partial newPartial = new Partial(newTypes, newValues, iChronology);
-+            
-+            Partial newPartial = new Partial(iChronology, newTypes, newValues);
++            // use public constructor to ensure full validation
++            // this isn't overly efficient, but is safe
++            Partial newPartial = new Partial(newTypes, newValues, iChronology);
+-            
+-            Partial newPartial = new Partial(iChronology, newTypes, newValues);
              iChronology.validate(newPartial, newValues);
              return newPartial;
          }
 
 ```
 
-## 83 Genprog 
+## Patch #81 Genprog 
 
 org.joda.time.field.ZeroIsMaxDateTimeField:138 (Suspicious rank: ample 1, jaccard 1, ochiai 2, naish1 10426, gp13 1, naish2 1, tarantula 1, )
 REPLACE
@@ -4471,7 +4391,7 @@ return (getWrappedField().getMaximumValue()) + 1
 
 Grid5000 node: graphene-77.nancy.grid5000.fr
 
-## 84 Kali 
+## Patch #82 Kali 
 
 org.joda.time.field.ZeroIsMaxDateTimeField:178 (Suspicious rank: ample 3, jaccard 3, ochiai 3, naish1 10438, gp13 3, naish2 3, tarantula 3, )
 INSERT_BEFORE
@@ -4506,22 +4426,22 @@ index 64da5ea..6efe071 100644
  
      static Chronology cLenientISO;
  
--    static ThreadLocal<Boolean> cVerbose = new ThreadLocal<Boolean>() {
--        protected Boolean initialValue() {
--            return Boolean.FALSE;
--        }
--    };
-+    static ThreadLocal<Boolean> cVerbose = new ThreadLocal<Boolean>();
-+    static {
-+        cVerbose.set(Boolean.FALSE);
-+    }
++    static ThreadLocal<Boolean> cVerbose = new ThreadLocal<Boolean>() {
++        protected Boolean initialValue() {
++            return Boolean.FALSE;
++        }
++    };
+-    static ThreadLocal<Boolean> cVerbose = new ThreadLocal<Boolean>();
+-    static {
+-        cVerbose.set(Boolean.FALSE);
+-    }
  
      /**
       * Gets a flag indicating that verbose logging is required.
 
 ```
 
-## 85 Genprog 
+## Patch #83 Genprog 
 
 org.joda.time.tz.DateTimeZoneBuilder:1460
 DELETE
@@ -4532,7 +4452,7 @@ remove
 
 Grid5000 node: graphene-7.nancy.grid5000.fr
 
-## 86 Kali 
+## Patch #84 Kali 
 
 org.joda.time.tz.DateTimeZoneBuilder:1460
 DELETE
@@ -4543,7 +4463,7 @@ remove
 
 Grid5000 node: graphene-115.nancy.grid5000.fr
 
-## 87 Nopol 
+## Patch #85 Nopol 
 
 org.joda.time.tz.DateTimeZoneBuilder:372 (Suspicious rank: ample 108, jaccard 108, ochiai 110, naish1 10249, gp13 108, naish2 108, tarantula 108, )
 

@@ -6,10 +6,9 @@ BugId             | NopolPC   | NopolC    | Genprog   | Kali      | Total
 [C3](#chart-3)    | TIMEOUT   | Yes       | Yes       | 0 Reg     |      2
 [C5](#chart-5)    | TIMEOUT   | Yes       | Yes       | Yes       |      3
 [C7](#chart-7)    | TIMEOUT   | TIMEOUT   | Yes       | 0 Reg     |      1
-[C9](#chart-9)    | TIMEOUT   | TIMEOUT   | Yes       | 0 Reg     |      1
 [C13](#chart-13)  | Yes       | Yes       | Yes       | Yes       |      4
 [C15](#chart-15)  | TIMEOUT   | TIMEOUT   | Yes       | Yes       |      2
-[C21](#chart-21)  | Yes       | 1 AV      | 1655 Reg  | Yes       |      2
+[C21](#chart-21)  | Yes       | 1 AV      | 1655 Reg  | 1655 Reg  |      1
 [C25](#chart-25)  | Yes       | Yes       | Yes       | Yes       |      4
 [C26](#chart-26)  | Yes       | Yes       | 1599 Reg  | Yes       |      3
 [L39](#lang-39)   | Yes       | 0 AV      | 0 Reg     | 0 Reg     |      1
@@ -52,8 +51,8 @@ BugId             | NopolPC   | NopolC    | Genprog   | Kali      | Total
 [M105](#math-105) | Yes       | 0 AV      | 0 Reg     | 0 Reg     |      1
 [T4](#time-4)     | 0 AV      | 0 AV      | Yes       | Yes       |      2
 [T11](#time-11)   | Yes       | Yes       | Yes       | Yes       |      4
-Total             | 28 (12%)  | 22 (9%)   | 30 (13%)  | 24 (10%)  |    104
-Fixed bugs: 50/222 (22%)
+Total             | 28 (12%)  | 22 (9%)   | 29 (13%)  | 23 (10%)  |    102
+Fixed bugs: 49/222 (22%)
 
 Nb bugs ends with an execution error: 9
 
@@ -61,7 +60,7 @@ Nb bugs ends with an empty log: 0
 
 Nb bugs ends with the Grid5000 timeout: 131
 
-Total execution time: 24 days, 8:29:51.967000
+Total execution time: 24 days, 8:58:01.489000
 # Complete data
 
 BugId             | NopolPC   | NopolC    | Genprog   | Kali      | Total
@@ -73,7 +72,7 @@ BugId             | NopolPC   | NopolC    | Genprog   | Kali      | Total
 [C5](#chart-5)    | TIMEOUT   | Yes       | Yes       | Yes       |      3
 [C6](#chart-6)    | TIMEOUT   | 2 AV      | 1895 Reg  | 0 Reg     |      0
 [C7](#chart-7)    | TIMEOUT   | TIMEOUT   | Yes       | 0 Reg     |      1
-[C9](#chart-9)    | TIMEOUT   | TIMEOUT   | Yes       | 0 Reg     |      1
+[C9](#chart-9)    | TIMEOUT   | TIMEOUT   | 1821 Reg  | 0 Reg     |      0
 [C10](#chart-10)  | TIMEOUT   | 0 AV      | 0 Reg     | 0 Reg     |      0
 [C11](#chart-11)  | TIMEOUT   | TIMEOUT   | 0 Reg     | 0 Reg     |      0
 [C12](#chart-12)  | TIMEOUT   | 0 AV      | 0 Reg     | 0 Reg     |      0
@@ -85,7 +84,7 @@ BugId             | NopolPC   | NopolC    | Genprog   | Kali      | Total
 [C18](#chart-18)  | TIMEOUT   | 0 AV      | 0 Reg     | 0 Reg     |      0
 [C19](#chart-19)  | TIMEOUT   | 0 AV      | 0 Reg     | 0 Reg     |      0
 [C20](#chart-20)  | TIMEOUT   | 0 AV      | 0 Reg     | 0 Reg     |      0
-[C21](#chart-21)  | Yes       | 1 AV      | 1655 Reg  | Yes       |      2
+[C21](#chart-21)  | Yes       | 1 AV      | 1655 Reg  | 1655 Reg  |      1
 [C22](#chart-22)  | TIMEOUT   | 0 AV      | 0 Reg     | 0 Reg     |      0
 [C23](#chart-23)  | TIMEOUT   | 0 AV      | 0 Reg     | 0 Reg     |      0
 [C24](#chart-24)  | TIMEOUT   | 0 AV      | 0 Reg     | 0 Reg     |      0
@@ -288,8 +287,8 @@ BugId             | NopolPC   | NopolC    | Genprog   | Kali      | Total
 [T25](#time-25)   | 0 AV      | TIMEOUT   | 0 Reg     | TIMEOUT   |      0
 [T26](#time-26)   | 0 AV      | 0 AV      | 0 Reg     | 0 Reg     |      0
 [T27](#time-27)   | 0 AV      | 0 AV      | 3789 Reg  | 0 Reg     |      0
-Total             | 28 (12%)  | 22 (9%)   | 30 (13%)  | 24 (10%)  |    104
-Fixed bugs: 50/222 (22%)
+Total             | 28 (12%)  | 22 (9%)   | 29 (13%)  | 23 (10%)  |    102
+Fixed bugs: 49/222 (22%)
 
 Nb bugs ends with an execution error: 9
 
@@ -297,7 +296,7 @@ Nb bugs ends with an empty log: 0
 
 Nb bugs ends with the Grid5000 timeout: 131
 
-Total execution time: 24 days, 8:29:51.967000
+Total execution time: 24 days, 8:58:01.489000
 
 
 
@@ -532,73 +531,6 @@ return this.maxEndIndex
 ```
 
 Grid5000 node: graphene-75.nancy.grid5000.fr
-
-# Chart 9
-
-Nb Executed tests: 3641
-
-Nb Failing tests: 2
-
->	org.jfree.data.time.junit.TimeSeriesTests#testBug1864222
->	org.jfree.data.time.junit.TimeSeriesTests#testBug1864222
-
-## Human Patch 
-
-```Java
-Index: org/jfree/data/time/TimeSeries.java
-===================================================================
---- org/jfree/data/time/TimeSeries.java	(revision 1083)
-+++ org/jfree/data/time/TimeSeries.java	(revision 1082)
-@@ -674,7 +672,7 @@
-      */
-     public TimeSeriesDataItem addOrUpdate(RegularTimePeriod period,
-                                           double value) {
--        return addOrUpdate(period, new Double(value));
-+        return this.addOrUpdate(period, new Double(value));
-     }
- 
-     /**
-@@ -941,7 +937,7 @@
-             endIndex = -(endIndex + 1); // this is first item AFTER end period
-             endIndex = endIndex - 1;    // so this is last item BEFORE end
-         }
--        if ((endIndex < 0)  || (endIndex < startIndex)) {
-+        if (endIndex < 0) {
-             emptyRange = true;
-         }
-         if (emptyRange) {
-@@ -970,13 +966,15 @@
-             return false;
-         }
-         TimeSeries s = (TimeSeries) object;
--        if (!ObjectUtilities.equal(getDomainDescription(),
--                s.getDomainDescription())) {
-+        if (!ObjectUtilities.equal(
-+            getDomainDescription(), s.getDomainDescription()
-+        )) {
-             return false;
-         }
- 
--        if (!ObjectUtilities.equal(getRangeDescription(),
--                s.getRangeDescription())) {
-+        if (!ObjectUtilities.equal(
-+            getRangeDescription(), s.getRangeDescription()
-+        )) {
-             return false;
-         }
- 
-
-```
-
-## Genprog 
-
-org.jfree.data.time.SpreadsheetDate:457 (Suspicious rank: ample 95, jaccard 95, ochiai 99, naish1 21980, gp13 95, naish2 95, tarantula 95, )
-REPLACE
-```Java
-return this.day
-```
-
-Grid5000 node: graphene-53.nancy.grid5000.fr
 
 # Chart 13
 
@@ -1933,30 +1865,6 @@ Nb analyzed Statement: 9
 Execution time: 0:00:55.900000
 
 Grid5000 node: griffon-62.nancy.grid5000.fr
-
-## Kali 
-
-org.jfree.data.Range:335 (Suspicious rank: ample 9, jaccard 9, ochiai 9, naish1 20593, gp13 9, naish2 9, tarantula 9, )
-DELETE
-```Java
-remove
-```
-
-org.jfree.data.Range:334 (Suspicious rank: ample 75, jaccard 75, ochiai 73, naish1 20594, gp13 75, naish2 75, tarantula 75, )
-DELETE
-```Java
-remove
-```
-
-org.jfree.data.Range:334 (Suspicious rank: ample 75, jaccard 75, ochiai 73, naish1 20594, gp13 75, naish2 75, tarantula 75, )
-REPLACE
-```Java
-if (false) {
-	return false;
-} 
-```
-
-Grid5000 node: griffon-77.nancy.grid5000.fr
 
 # Chart 25
 
