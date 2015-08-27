@@ -58,7 +58,7 @@ Nb bugs ends with an empty log: 0
 
 Nb bugs ends with the Grid5000 timeout: 118
 
-Total execution time: 20 days, 14:13:44.971000
+Total execution time: 20 days, 14:14:07.606000
 # All bugs
 
  #   | BugId             | jGenProg  | jKali     | Nopol     | Total
@@ -294,7 +294,7 @@ Nb bugs ends with an empty log: 0
 
 Nb bugs ends with the Grid5000 timeout: 118
 
-Total execution time: 20 days, 14:13:44.971000
+Total execution time: 20 days, 14:14:07.606000
 
 
 
@@ -478,16 +478,16 @@ org.jfree.data.xy.XYSeries:561 (Suspicious rank: ample 3, jaccard 3, ochiai 3, n
 
 Patch type: CONDITIONAL
 ```Java
-overwritten!=null
+!(org.jfree.data.xy.XYSeries.this.allowDuplicateXValues)
 ```
 
 Nb Angelic value: 1
 
 Nb analyzed Statement: 4
 
-Execution time: 0:00:34.849000
+Execution time: 0:00:57.484000
 
-Grid5000 node: graphene-57.nancy.grid5000.fr
+Grid5000 node: griffon-59.nancy.grid5000.fr
 
 # Chart 7
 

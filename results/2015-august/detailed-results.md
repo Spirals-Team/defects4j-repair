@@ -60,7 +60,7 @@ Nb bugs ends with an empty log: 0
 
 Nb bugs ends with the Grid5000 timeout: 131
 
-Total execution time: 24 days, 8:58:01.489000
+Total execution time: 24 days, 8:58:24.124000
 # Complete data
 
 BugId             | NopolPC   | NopolC    | Genprog   | Kali      | Total
@@ -296,7 +296,7 @@ Nb bugs ends with an empty log: 0
 
 Nb bugs ends with the Grid5000 timeout: 131
 
-Total execution time: 24 days, 8:58:01.489000
+Total execution time: 24 days, 8:58:24.124000
 
 
 
@@ -456,16 +456,16 @@ Index: org/jfree/data/xy/XYSeries.java
 
 org.jfree.data.xy.XYSeries:561 (Suspicious rank: ample 3, jaccard 3, ochiai 3, naish1 24208, gp13 3, naish2 3, tarantula 3, )
 ```Java
-overwritten!=null
+!(org.jfree.data.xy.XYSeries.this.allowDuplicateXValues)
 ```
 
 Nb Angelic value: 1
 
 Nb analyzed Statement: 4
 
-Execution time: 0:00:34.849000
+Execution time: 0:00:57.484000
 
-Grid5000 node: graphene-57.nancy.grid5000.fr
+Grid5000 node: griffon-59.nancy.grid5000.fr
 
 ## Genprog 
 
