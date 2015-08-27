@@ -52,13 +52,13 @@
      | Total             | 27 (12%)  | 22 (9%)   | 35 (15%)  |     84
 Fixed bugs: 47/222 (21%)
 
-Nb bugs ends with an execution error: 9
+Nb bugs ends with an execution error: 8
 
-Nb bugs ends with an empty log: 0
+Nb bugs ends with an empty log: 46
 
-Nb bugs ends with the Grid5000 timeout: 118
+Nb bugs ends with the Grid5000 timeout: 0
 
-Total execution time: 20 days, 14:14:07.606000
+Total execution time: 15 days, 16:14:07.606000
 # All bugs
 
  #   | BugId             | jGenProg  | jKali     | Nopol     | Total
@@ -269,7 +269,7 @@ Total execution time: 20 days, 14:14:07.606000
  204 | [T9](#time-9)     | No       | No       | No        |      0
  205 | [T10](#time-10)   | No       | No       | No        |      0
  206 | [T11](#time-11)   | Yes       | Yes       | Yes       |      3
- 207 | [T12](#time-12)   | No       | No       | TIMEOUT   |      0
+ 207 | [T12](#time-12)   | No       | No       | ERROR     |      0
  208 | [T13](#time-13)   | No       | No       | No        |      0
  209 | [T14](#time-14)   | No       | No       | No        |      0
  210 | [T15](#time-15)   | No       | No       | No        |      0
@@ -288,13 +288,13 @@ Total execution time: 20 days, 14:14:07.606000
      | Total             | 27 (12%)  | 22 (9%)   | 35 (15%)  |     84
 Fixed bugs: 47/222 (21%)
 
-Nb bugs ends with an execution error: 9
+Nb bugs ends with an execution error: 8
 
-Nb bugs ends with an empty log: 0
+Nb bugs ends with an empty log: 46
 
-Nb bugs ends with the Grid5000 timeout: 118
+Nb bugs ends with the Grid5000 timeout: 0
 
-Total execution time: 20 days, 14:14:07.606000
+Total execution time: 15 days, 16:14:07.606000
 
 
 
