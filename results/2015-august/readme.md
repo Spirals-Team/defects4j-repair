@@ -54,11 +54,11 @@ Fixed bugs: 47/222 (21%)
 
 Nb bugs ends with an execution error: 8
 
-Nb bugs ends with an empty log: 46
+Nb bugs ends with an empty log: 0
 
-Nb bugs ends with the Grid5000 timeout: 0
+Nb bugs ends with the Grid5000 timeout: 46
 
-Total execution time: 15 days, 16:14:07.606000
+Total execution time: 17 days, 14:14:07.606000
 # All bugs
 
  #   | BugId             | jGenProg  | jKali     | Nopol     | Total
@@ -290,11 +290,11 @@ Fixed bugs: 47/222 (21%)
 
 Nb bugs ends with an execution error: 8
 
-Nb bugs ends with an empty log: 46
+Nb bugs ends with an empty log: 0
 
-Nb bugs ends with the Grid5000 timeout: 0
+Nb bugs ends with the Grid5000 timeout: 46
 
-Total execution time: 15 days, 16:14:07.606000
+Total execution time: 17 days, 14:14:07.606000
 
 
 
@@ -1840,7 +1840,7 @@ index f6cabee..14563aa 100644
 
 ## Patch #20 Nopol 
 
-org.apache.commons.lang3.StringUtils:3675 (Suspicious rank: ample 11, jaccard 11, ochiai 26, naish1 7828, gp13 11, naish2 11, tarantula 11, )
+[org.apache.commons.lang3.StringUtils:3675](https://github.com/apache/commons-lang/blob/0aa57f04ede369a4f813bbb86d3eac1ed20b084c/src/java//org/apache/commons/lang3/StringUtils.java#L3675) (Suspicious rank: ample 11, jaccard 11, ochiai 26, naish1 7828, gp13 11, naish2 11, tarantula 11, )
 
 Patch type: PRECONDITION
 ```Java
@@ -1885,7 +1885,7 @@ index c5ca8cd..18a05ef 100644
 
 ## Patch #21 Nopol 
 
-org.apache.commons.lang.NumberUtils:193 (Suspicious rank: ample 18, jaccard 18, ochiai 18, naish1 9255, gp13 18, naish2 18, tarantula 18, )
+[org.apache.commons.lang.NumberUtils:193](https://github.com/apache/commons-lang/blob/cf28c89dcf72d27573c478eb91e3b470de060edd/src/java//org/apache/commons/lang/NumberUtils.java#L193) (Suspicious rank: ample 18, jaccard 18, ochiai 18, naish1 9255, gp13 18, naish2 18, tarantula 18, )
 
 Patch type: PRECONDITION
 ```Java
@@ -2048,7 +2048,7 @@ index d4f98ec..c30c663 100644
 
 ## Patch #22 Nopol 
 
-org.apache.commons.lang.StringEscapeUtils:242 (Suspicious rank: ample 1, jaccard 1, ochiai 1, naish1 8911, gp13 1, naish2 1, tarantula 1, )
+[org.apache.commons.lang.StringEscapeUtils:242](https://github.com/apache/commons-lang/blob/229151ec41339450e4d4f857bf92ed080d3e2430/src/java//org/apache/commons/lang/StringEscapeUtils.java#L242) (Suspicious rank: ample 1, jaccard 1, ochiai 1, naish1 8911, gp13 1, naish2 1, tarantula 1, )
 
 Patch type: PRECONDITION
 ```Java
@@ -2091,7 +2091,7 @@ index 8b5028c..3fda4ec 100644
 
 ## Patch #23 Nopol 
 
-org.apache.commons.lang.BooleanUtils:677 (Suspicious rank: ample 11, jaccard 11, ochiai 12, naish1 8395, gp13 11, naish2 11, tarantula 11, )
+[org.apache.commons.lang.BooleanUtils:677](https://github.com/apache/commons-lang/blob/3b46d611b2d595131ce0bce9bdb3209c55391be7/src/java//org/apache/commons/lang/BooleanUtils.java#L677) (Suspicious rank: ample 11, jaccard 11, ochiai 12, naish1 8395, gp13 11, naish2 11, tarantula 11, )
 
 Patch type: CONDITIONAL
 ```Java
@@ -2151,7 +2151,7 @@ index e5138b5..9ca1bc5 100644
 
 ## Patch #24 Nopol 
 
-org.apache.commons.lang.time.DateUtils:666 (Suspicious rank: ample 14, jaccard 14, ochiai 22, naish1 8347, gp13 14, naish2 14, tarantula 14, )
+[org.apache.commons.lang.time.DateUtils:666](https://github.com/apache/commons-lang/blob/b6f7a8a8be57c9525c59e9f21e958e76cee0dbaf/src/java//org/apache/commons/lang/time/DateUtils.java#L666) (Suspicious rank: ample 14, jaccard 14, ochiai 22, naish1 8347, gp13 14, naish2 14, tarantula 14, )
 
 Patch type: PRECONDITION
 ```Java
@@ -2197,7 +2197,7 @@ index 0f0786a..607e9b6 100644
 
 ## Patch #25 Nopol 
 
-org.apache.commons.lang.time.StopWatch:118 (Suspicious rank: ample 8, jaccard 8, ochiai 7, naish1 8347, gp13 8, naish2 8, tarantula 8, )
+[org.apache.commons.lang.time.StopWatch:118](https://github.com/apache/commons-lang/blob/d8c22b8e1c8592bc8c6f6169a5b090082969acd4/src/java//org/apache/commons/lang/time/StopWatch.java#L118) (Suspicious rank: ample 8, jaccard 8, ochiai 7, naish1 8347, gp13 8, naish2 8, tarantula 8, )
 
 Patch type: PRECONDITION
 ```Java
@@ -2242,7 +2242,7 @@ index eb74e72..c0f06a4 100644
 
 ## Patch #26 Nopol 
 
-org.apache.commons.lang.math.NumberUtils:464 (Suspicious rank: ample 2, jaccard 2, ochiai 1, naish1 8378, gp13 2, naish2 2, tarantula 2, )
+[org.apache.commons.lang.math.NumberUtils:464](https://github.com/apache/commons-lang/blob/8185a5f63e23be852d600a80daa5b848fa836a65/src/java//org/apache/commons/lang/math/NumberUtils.java#L464) (Suspicious rank: ample 2, jaccard 2, ochiai 1, naish1 8378, gp13 2, naish2 2, tarantula 2, )
 
 Patch type: PRECONDITION
 ```Java
@@ -2286,7 +2286,7 @@ index 81e180c..2769127 100644
 
 ## Patch #27 jGenProg 
 
-org.apache.commons.math3.distribution.AbstractIntegerDistribution:138 (Suspicious rank: ample 17, jaccard 17, ochiai 22, naish1 35438, gp13 17, naish2 17, tarantula 17, )
+[org.apache.commons.math3.distribution.AbstractIntegerDistribution:138](https://github.com/apache/commons-math/blob/6d66a863b5c0049926330ef217accba4e022a1db/src/main/java//org/apache/commons/math3/distribution/AbstractIntegerDistribution.java#L138) (Suspicious rank: ample 17, jaccard 17, ochiai 22, naish1 35438, gp13 17, naish2 17, tarantula 17, )
 
 Patch type: REPLACE 
  
@@ -2298,7 +2298,7 @@ Grid5000 node: graphene-37.nancy.grid5000.fr
 
 ## Patch #28 jKali 
 
-org.apache.commons.math3.distribution.AbstractIntegerDistribution:137 (Suspicious rank: ample 22, jaccard 22, ochiai 21, naish1 35443, gp13 22, naish2 22, tarantula 22, )
+[org.apache.commons.math3.distribution.AbstractIntegerDistribution:137](https://github.com/apache/commons-math/blob/6d66a863b5c0049926330ef217accba4e022a1db/src/main/java//org/apache/commons/math3/distribution/AbstractIntegerDistribution.java#L137) (Suspicious rank: ample 22, jaccard 22, ochiai 21, naish1 35443, gp13 22, naish2 22, tarantula 22, )
 
 Patch type: DELETE 
  
@@ -2337,7 +2337,7 @@ index ac8185b..22b23f2 100644
 
 ## Patch #29 jGenProg 
 
-org.apache.commons.math3.complex.Complex:305 (Suspicious rank: ample 1, jaccard 1, ochiai 1, naish1 33968, gp13 1, naish2 1, tarantula 1, )
+[org.apache.commons.math3.complex.Complex:305](https://github.com/apache/commons-math/blob/8c2199df0f613c63bd362303c953cee66712d56c/src/main/java//org/apache/commons/math3/complex/Complex.java#L305) (Suspicious rank: ample 1, jaccard 1, ochiai 1, naish1 33968, gp13 1, naish2 1, tarantula 1, )
 
 Patch type: REPLACE 
  
@@ -2395,7 +2395,7 @@ index 879eb2a..8c08dbe 100644
 
 ## Patch #30 jGenProg 
 
-org.apache.commons.math3.distribution.DiscreteDistribution:189 (Suspicious rank: ample 3, jaccard 3, ochiai 3, naish1 33466, gp13 3, naish2 3, tarantula 3, )
+[org.apache.commons.math3.distribution.DiscreteDistribution:189](https://github.com/apache/commons-math/blob/e65901dcb8044b41bd282f2c4b324c93c67a93cb/src/main/java//org/apache/commons/math3/distribution/DiscreteDistribution.java#L189) (Suspicious rank: ample 3, jaccard 3, ochiai 3, naish1 33466, gp13 3, naish2 3, tarantula 3, )
 
 Patch type: DELETE 
  
@@ -2407,7 +2407,7 @@ Grid5000 node: graphene-4.nancy.grid5000.fr
 
 ## Patch #31 jKali 
 
-org.apache.commons.math3.distribution.DiscreteDistribution:189 (Suspicious rank: ample 3, jaccard 3, ochiai 3, naish1 33466, gp13 3, naish2 3, tarantula 3, )
+[org.apache.commons.math3.distribution.DiscreteDistribution:189](https://github.com/apache/commons-math/blob/e65901dcb8044b41bd282f2c4b324c93c67a93cb/src/main/java//org/apache/commons/math3/distribution/DiscreteDistribution.java#L189) (Suspicious rank: ample 3, jaccard 3, ochiai 3, naish1 33466, gp13 3, naish2 3, tarantula 3, )
 
 Patch type: DELETE 
  
@@ -2495,7 +2495,7 @@ index dec310b..c2fa14d 100644
 
 ## Patch #32 jGenProg 
 
-org.apache.commons.math3.optimization.linear.SimplexSolver:124 (Suspicious rank: ample 33, jaccard 33, ochiai 33, naish1 26751, gp13 33, naish2 33, tarantula 33, )
+[org.apache.commons.math3.optimization.linear.SimplexSolver:124](https://github.com/apache/commons-math/blob/107d7f3ea8db440cb2f0a9d626c87a34ad061bae/src/main/java//org/apache/commons/math3/optimization/linear/SimplexSolver.java#L124) (Suspicious rank: ample 33, jaccard 33, ochiai 33, naish1 26751, gp13 33, naish2 33, tarantula 33, )
 
 Patch type: DELETE 
  
@@ -2507,7 +2507,7 @@ Grid5000 node: graphene-19.nancy.grid5000.fr
 
 ## Patch #33 jKali 
 
-org.apache.commons.math3.optimization.linear.SimplexSolver:138 (Suspicious rank: ample 6, jaccard 6, ochiai 10, naish1 26541, gp13 6, naish2 6, tarantula 6, )
+[org.apache.commons.math3.optimization.linear.SimplexSolver:138](https://github.com/apache/commons-math/blob/107d7f3ea8db440cb2f0a9d626c87a34ad061bae/src/main/java//org/apache/commons/math3/optimization/linear/SimplexSolver.java#L138) (Suspicious rank: ample 6, jaccard 6, ochiai 10, naish1 26541, gp13 6, naish2 6, tarantula 6, )
 
 Patch type: REPLACE 
  
@@ -2553,7 +2553,7 @@ index add24ac..6ba72be 100644
 
 ## Patch #34 jKali 
 
-org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet:135 (Suspicious rank: ample 3, jaccard 3, ochiai 1, naish1 24965, gp13 3, naish2 3, tarantula 3, )
+[org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet:135](https://github.com/apache/commons-math/blob/8f423828e0d9f34896f87d803c559adf2d953f30/src/main/java//org/apache/commons/math3/geometry/euclidean/twod/PolygonsSet.java#L135) (Suspicious rank: ample 3, jaccard 3, ochiai 1, naish1 24965, gp13 3, naish2 3, tarantula 3, )
 
 Patch type: REPLACE 
  
@@ -2571,7 +2571,7 @@ Grid5000 node: graphene-18.nancy.grid5000.fr
 
 ## Patch #35 Nopol 
 
-org.apache.commons.math3.geometry.partitioning.AbstractRegion:214 (Suspicious rank: ample 201, jaccard 201, ochiai 221, naish1 24818, gp13 201, naish2 201, tarantula 201, )
+[org.apache.commons.math3.geometry.partitioning.AbstractRegion:214](https://github.com/apache/commons-math/blob/8f423828e0d9f34896f87d803c559adf2d953f30/src/main/java//org/apache/commons/math3/geometry/partitioning/AbstractRegion.java#L214) (Suspicious rank: ample 201, jaccard 201, ochiai 221, naish1 24818, gp13 201, naish2 201, tarantula 201, )
 
 Patch type: PRECONDITION
 ```Java
@@ -2615,7 +2615,7 @@ index 327b2ae..9a6993a 100644
 
 ## Patch #36 Nopol 
 
-org.apache.commons.math3.optimization.linear.SimplexTableau:339 (Suspicious rank: ample 6, jaccard 6, ochiai 6, naish1 24710, gp13 6, naish2 6, tarantula 6, )
+[org.apache.commons.math3.optimization.linear.SimplexTableau:339](https://github.com/apache/commons-math/blob/450456208cf75b865fd3c0878b6b4f70f6b329b1/src/main/java//org/apache/commons/math3/optimization/linear/SimplexTableau.java#L339) (Suspicious rank: ample 6, jaccard 6, ochiai 6, naish1 24710, gp13 6, naish2 6, tarantula 6, )
 
 Patch type: PRECONDITION
 ```Java
@@ -2669,7 +2669,7 @@ index 59dc461..93dd3bb 100644
 
 ## Patch #37 jGenProg 
 
-org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:235 (Suspicious rank: ample 25, jaccard 25, ochiai 25, naish1 24170, gp13 25, naish2 25, tarantula 25, )
+[org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:235](https://github.com/apache/commons-math/blob/b241c3962faa9b71726ce47d9315c2af0d5c8ad7/src/main/java//org/apache/commons/math/analysis/solvers/BracketingNthOrderBrentSolver.java#L235) (Suspicious rank: ample 25, jaccard 25, ochiai 25, naish1 24170, gp13 25, naish2 25, tarantula 25, )
 
 Patch type: INSERT_BEFORE 
  
@@ -2681,7 +2681,7 @@ Grid5000 node: graphene-27.nancy.grid5000.fr
 
 ## Patch #38 jKali 
 
-org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:260 (Suspicious rank: ample 31, jaccard 31, ochiai 31, naish1 24155, gp13 31, naish2 31, tarantula 31, )
+[org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:260](https://github.com/apache/commons-math/blob/b241c3962faa9b71726ce47d9315c2af0d5c8ad7/src/main/java//org/apache/commons/math/analysis/solvers/BracketingNthOrderBrentSolver.java#L260) (Suspicious rank: ample 31, jaccard 31, ochiai 31, naish1 24155, gp13 31, naish2 31, tarantula 31, )
 
 Patch type: REPLACE 
  
@@ -2697,7 +2697,7 @@ Grid5000 node: graphene-20.nancy.grid5000.fr
 
 ## Patch #39 Nopol 
 
-org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:260 (Suspicious rank: ample 31, jaccard 31, ochiai 31, naish1 24155, gp13 31, naish2 31, tarantula 31, )
+[org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:260](https://github.com/apache/commons-math/blob/b241c3962faa9b71726ce47d9315c2af0d5c8ad7/src/main/java//org/apache/commons/math/analysis/solvers/BracketingNthOrderBrentSolver.java#L260) (Suspicious rank: ample 31, jaccard 31, ochiai 31, naish1 24155, gp13 31, naish2 31, tarantula 31, )
 
 Patch type: CONDITIONAL
 ```Java
@@ -2746,7 +2746,7 @@ index d96c916..fd89432 100644
 
 ## Patch #40 Nopol 
 
-org.apache.commons.math.optimization.linear.SimplexTableau:416 (Suspicious rank: ample 29, jaccard 29, ochiai 36, naish1 24101, gp13 29, naish2 29, tarantula 29, )
+[org.apache.commons.math.optimization.linear.SimplexTableau:416](https://github.com/apache/commons-math/blob/f14fdb5447f4ed1e103db2cecc148f391294f342/src/main/java//org/apache/commons/math/optimization/linear/SimplexTableau.java#L416) (Suspicious rank: ample 29, jaccard 29, ochiai 36, naish1 24101, gp13 29, naish2 29, tarantula 29, )
 
 Patch type: PRECONDITION
 ```Java
@@ -2817,7 +2817,7 @@ index 13ebfd2..5db4884 100644
 
 ## Patch #41 jGenProg 
 
-org.apache.commons.math.linear.OpenMapRealVector:667 (Suspicious rank: ample 14, jaccard 14, ochiai 14, naish1 23318, gp13 14, naish2 14, tarantula 14, )
+[org.apache.commons.math.linear.OpenMapRealVector:667](https://github.com/apache/commons-math/blob/7c6dd40b330d85ae718e867c4d5cee0b1c4f317b/src/main/java//org/apache/commons/math/linear/OpenMapRealVector.java#L667) (Suspicious rank: ample 14, jaccard 14, ochiai 14, naish1 23318, gp13 14, naish2 14, tarantula 14, )
 
 Patch type: REPLACE 
  
@@ -2829,7 +2829,7 @@ Grid5000 node: graphene-61.nancy.grid5000.fr
 
 ## Patch #42 jKali 
 
-org.apache.commons.math.linear.OpenMapRealVector:664 (Suspicious rank: ample 21, jaccard 21, ochiai 20, naish1 23315, gp13 21, naish2 21, tarantula 21, )
+[org.apache.commons.math.linear.OpenMapRealVector:664](https://github.com/apache/commons-math/blob/7c6dd40b330d85ae718e867c4d5cee0b1c4f317b/src/main/java//org/apache/commons/math/linear/OpenMapRealVector.java#L664) (Suspicious rank: ample 21, jaccard 21, ochiai 20, naish1 23315, gp13 21, naish2 21, tarantula 21, )
 
 Patch type: REPLACE 
  
@@ -2845,7 +2845,7 @@ Grid5000 node: graphene-62.nancy.grid5000.fr
 
 ## Patch #43 Nopol 
 
-org.apache.commons.math.linear.OpenMapRealVector:667 (Suspicious rank: ample 14, jaccard 14, ochiai 14, naish1 23318, gp13 14, naish2 14, tarantula 14, )
+[org.apache.commons.math.linear.OpenMapRealVector:667](https://github.com/apache/commons-math/blob/7c6dd40b330d85ae718e867c4d5cee0b1c4f317b/src/main/java//org/apache/commons/math/linear/OpenMapRealVector.java#L667) (Suspicious rank: ample 14, jaccard 14, ochiai 14, naish1 23318, gp13 14, naish2 14, tarantula 14, )
 
 Patch type: PRECONDITION
 ```Java
@@ -2896,7 +2896,7 @@ index c781a90..b3a23a1 100644
 
 ## Patch #44 jGenProg 
 
-org.apache.commons.math.analysis.solvers.BaseSecantSolver:191 (Suspicious rank: ample 4, jaccard 4, ochiai 2, naish1 23311, gp13 4, naish2 4, tarantula 4, )
+[org.apache.commons.math.analysis.solvers.BaseSecantSolver:191](https://github.com/apache/commons-math/blob/565b6b527fd62a97fb9f8ded6c75b97f595cb33f/src/main/java//org/apache/commons/math/analysis/solvers/BaseSecantSolver.java#L191) (Suspicious rank: ample 4, jaccard 4, ochiai 2, naish1 23311, gp13 4, naish2 4, tarantula 4, )
 
 Patch type: DELETE 
  
@@ -2908,7 +2908,7 @@ Grid5000 node: graphene-78.nancy.grid5000.fr
 
 ## Patch #45 jKali 
 
-org.apache.commons.math.analysis.solvers.BaseSecantSolver:191 (Suspicious rank: ample 4, jaccard 4, ochiai 2, naish1 23311, gp13 4, naish2 4, tarantula 4, )
+[org.apache.commons.math.analysis.solvers.BaseSecantSolver:191](https://github.com/apache/commons-math/blob/565b6b527fd62a97fb9f8ded6c75b97f595cb33f/src/main/java//org/apache/commons/math/analysis/solvers/BaseSecantSolver.java#L191) (Suspicious rank: ample 4, jaccard 4, ochiai 2, naish1 23311, gp13 4, naish2 4, tarantula 4, )
 
 Patch type: DELETE 
  
@@ -2920,7 +2920,7 @@ Grid5000 node: griffon-10.nancy.grid5000.fr
 
 ## Patch #46 Nopol 
 
-org.apache.commons.math.analysis.solvers.BaseSecantSolver:186 (Suspicious rank: ample 6, jaccard 6, ochiai 6, naish1 23279, gp13 6, naish2 6, tarantula 6, )
+[org.apache.commons.math.analysis.solvers.BaseSecantSolver:186](https://github.com/apache/commons-math/blob/565b6b527fd62a97fb9f8ded6c75b97f595cb33f/src/main/java//org/apache/commons/math/analysis/solvers/BaseSecantSolver.java#L186) (Suspicious rank: ample 6, jaccard 6, ochiai 6, naish1 23279, gp13 6, naish2 6, tarantula 6, )
 
 Patch type: PRECONDITION
 ```Java
@@ -2965,7 +2965,7 @@ index ab58c78..e0a8e97 100644
 
 ## Patch #47 jGenProg 
 
-org.apache.commons.math.complex.Complex:153 (Suspicious rank: ample 1, jaccard 1, ochiai 2, naish1 21135, gp13 1, naish2 1, tarantula 1, )
+[org.apache.commons.math.complex.Complex:153](https://github.com/apache/commons-math/blob/fe761c28ceca03d859ec34273798d67d85bd704b/src/main/java//org/apache/commons/math/complex/Complex.java#L153) (Suspicious rank: ample 1, jaccard 1, ochiai 2, naish1 21135, gp13 1, naish2 1, tarantula 1, )
 
 Patch type: INSERT_BEFORE 
  
@@ -3006,7 +3006,7 @@ index e09bbc3..b73ac9d 100644
 
 ## Patch #48 Nopol 
 
-org.apache.commons.math.stat.clustering.EuclideanIntegerPoint:86 (Suspicious rank: ample 18, jaccard 18, ochiai 44, naish1 19414, gp13 18, naish2 18, tarantula 18, )
+[org.apache.commons.math.stat.clustering.EuclideanIntegerPoint:86](https://github.com/apache/commons-math/blob/35a0923edfe498c58bfb1e86099fed85fde0c353/src/main/java//org/apache/commons/math/stat/clustering/EuclideanIntegerPoint.java#L86) (Suspicious rank: ample 18, jaccard 18, ochiai 44, naish1 19414, gp13 18, naish2 18, tarantula 18, )
 
 Patch type: PRECONDITION
 ```Java
@@ -3052,7 +3052,7 @@ index e1b54f4..8c107de 100644
 
 ## Patch #49 Nopol 
 
-org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:620 (Suspicious rank: ample 85, jaccard 85, ochiai 93, naish1 19199, gp13 85, naish2 85, tarantula 85, )
+[org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:620](https://github.com/apache/commons-math/blob/73a227619d6671f69f9dcfb614f1b6abd83e2d62/src/main/java//org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java#L620) (Suspicious rank: ample 85, jaccard 85, ochiai 93, naish1 19199, gp13 85, naish2 85, tarantula 85, )
 
 Patch type: PRECONDITION
 ```Java
@@ -3097,7 +3097,7 @@ index dc83314..83b4c41 100644
 
 ## Patch #50 Nopol 
 
-org.apache.commons.math.stat.correlation.PearsonsCorrelation:193 (Suspicious rank: ample 18, jaccard 18, ochiai 18, naish1 16548, gp13 18, naish2 18, tarantula 18, )
+[org.apache.commons.math.stat.correlation.PearsonsCorrelation:193](https://github.com/apache/commons-math/blob/eb74f8f418f9da4adb52628fe775022efc4b0467/src/main/java//org/apache/commons/math/stat/correlation/PearsonsCorrelation.java#L193) (Suspicious rank: ample 18, jaccard 18, ochiai 18, naish1 16548, gp13 18, naish2 18, tarantula 18, )
 
 Patch type: PRECONDITION
 ```Java
@@ -3141,7 +3141,7 @@ index 180caef..3f66927 100644
 
 ## Patch #51 jGenProg 
 
-org.apache.commons.math.analysis.solvers.BisectionSolver:72 (Suspicious rank: ample 1, jaccard 1, ochiai 1, naish1 16589, gp13 1, naish2 1, tarantula 1, )
+[org.apache.commons.math.analysis.solvers.BisectionSolver:72](https://github.com/apache/commons-math/blob/58f8b21d3587e1419f0a421731280f84a8c0afe4/src/main/java//org/apache/commons/math/analysis/solvers/BisectionSolver.java#L72) (Suspicious rank: ample 1, jaccard 1, ochiai 1, naish1 16589, gp13 1, naish2 1, tarantula 1, )
 
 Patch type: REPLACE 
  
@@ -3259,7 +3259,7 @@ index b61b0b1..3227b98 100644
 
 ## Patch #52 jGenProg 
 
-org.apache.commons.math.ode.events.EventState:188 (Suspicious rank: ample 68, jaccard 165, ochiai 91, naish1 16066, gp13 68, naish2 68, tarantula 165, )
+[org.apache.commons.math.ode.events.EventState:188](https://github.com/apache/commons-math/blob/7d81702ace2819d326bbe49c8249cae60850cc0c/src/main/java//org/apache/commons/math/ode/events/EventState.java#L188) (Suspicious rank: ample 68, jaccard 165, ochiai 91, naish1 16066, gp13 68, naish2 68, tarantula 165, )
 
 Patch type: INSERT_BEFORE 
  
@@ -3273,7 +3273,7 @@ Grid5000 node: griffon-23.nancy.grid5000.fr
 
 ## Patch #53 Nopol 
 
-org.apache.commons.math.analysis.solvers.BrentSolver:334 (Suspicious rank: ample 90, jaccard 188, ochiai 99, naish1 16023, gp13 90, naish2 90, tarantula 190, )
+[org.apache.commons.math.analysis.solvers.BrentSolver:334](https://github.com/apache/commons-math/blob/7d81702ace2819d326bbe49c8249cae60850cc0c/src/main/java//org/apache/commons/math/analysis/solvers/BrentSolver.java#L334) (Suspicious rank: ample 90, jaccard 188, ochiai 99, naish1 16023, gp13 90, naish2 90, tarantula 190, )
 
 Patch type: CONDITIONAL
 ```Java
@@ -3343,7 +3343,7 @@ index e0cb427..4e95ed5 100644
 
 ## Patch #54 jGenProg 
 
-org.apache.commons.math.analysis.solvers.BrentSolver:132 (Suspicious rank: ample 1, jaccard 1, ochiai 1, naish1 15933, gp13 1, naish2 1, tarantula 1, )
+[org.apache.commons.math.analysis.solvers.BrentSolver:132](https://github.com/apache/commons-math/blob/05361c5a3409a9ca8e4e3438eb87d1cd55b713a8/src/main/java//org/apache/commons/math/analysis/solvers/BrentSolver.java#L132) (Suspicious rank: ample 1, jaccard 1, ochiai 1, naish1 15933, gp13 1, naish2 1, tarantula 1, )
 
 Patch type: REPLACE 
  
@@ -3355,7 +3355,7 @@ Grid5000 node: graphene-64.nancy.grid5000.fr
 
 ## Patch #55 Nopol 
 
-org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl:225 (Suspicious rank: ample 16, jaccard 16, ochiai 16, naish1 15884, gp13 16, naish2 16, tarantula 16, )
+[org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl:225](https://github.com/apache/commons-math/blob/05361c5a3409a9ca8e4e3438eb87d1cd55b713a8/src/main/java//org/apache/commons/math/analysis/solvers/UnivariateRealSolverImpl.java#L225) (Suspicious rank: ample 16, jaccard 16, ochiai 16, naish1 15884, gp13 16, naish2 16, tarantula 16, )
 
 Patch type: CONDITIONAL
 ```Java
@@ -3438,7 +3438,7 @@ index ff09646..44f6742 100644
 
 ## Patch #56 jGenProg 
 
-org.apache.commons.math.ode.events.EventState:283 (Suspicious rank: ample 185, jaccard 185, ochiai 182, naish1 16660, gp13 185, naish2 185, tarantula 185, )
+[org.apache.commons.math.ode.events.EventState:283](https://github.com/apache/commons-math/blob/335572b99ea84b7b0665e6a818cba41e34f97203/src/main/java//org/apache/commons/math/ode/events/EventState.java#L283) (Suspicious rank: ample 185, jaccard 185, ochiai 182, naish1 16660, gp13 185, naish2 185, tarantula 185, )
 
 Patch type: DELETE 
  
@@ -3450,7 +3450,7 @@ Grid5000 node: graphene-76.nancy.grid5000.fr
 
 ## Patch #57 jKali 
 
-org.apache.commons.math.ode.events.EventState:283 (Suspicious rank: ample 185, jaccard 185, ochiai 182, naish1 16660, gp13 185, naish2 185, tarantula 185, )
+[org.apache.commons.math.ode.events.EventState:283](https://github.com/apache/commons-math/blob/335572b99ea84b7b0665e6a818cba41e34f97203/src/main/java//org/apache/commons/math/ode/events/EventState.java#L283) (Suspicious rank: ample 185, jaccard 185, ochiai 182, naish1 16660, gp13 185, naish2 185, tarantula 185, )
 
 Patch type: DELETE 
  
@@ -3462,7 +3462,7 @@ Grid5000 node: graphene-64.nancy.grid5000.fr
 
 ## Patch #58 Nopol 
 
-org.apache.commons.math.analysis.solvers.BrentSolver:282 (Suspicious rank: ample 32, jaccard 32, ochiai 32, naish1 16567, gp13 32, naish2 32, tarantula 32, )
+[org.apache.commons.math.analysis.solvers.BrentSolver:282](https://github.com/apache/commons-math/blob/335572b99ea84b7b0665e6a818cba41e34f97203/src/main/java//org/apache/commons/math/analysis/solvers/BrentSolver.java#L282) (Suspicious rank: ample 32, jaccard 32, ochiai 32, naish1 16567, gp13 32, naish2 32, tarantula 32, )
 
 Patch type: PRECONDITION
 ```Java
@@ -3506,7 +3506,7 @@ index 9d1b797..3fc328d 100644
 
 ## Patch #59 jGenProg 
 
-org.apache.commons.math.linear.EigenDecompositionImpl:1137 (Suspicious rank: ample 3, jaccard 3, ochiai 16, naish1 16070, gp13 3, naish2 3, tarantula 3, )
+[org.apache.commons.math.linear.EigenDecompositionImpl:1137](https://github.com/apache/commons-math/blob/c78a0e3b003ac36d57a3c895fc8240ef66546a56/src/main/java//org/apache/commons/math/linear/EigenDecompositionImpl.java#L1137) (Suspicious rank: ample 3, jaccard 3, ochiai 16, naish1 16070, gp13 3, naish2 3, tarantula 3, )
 
 Patch type: DELETE 
  
@@ -3518,7 +3518,7 @@ Grid5000 node: graphene-76.nancy.grid5000.fr
 
 ## Patch #60 jKali 
 
-org.apache.commons.math.linear.EigenDecompositionImpl:1135 (Suspicious rank: ample 5, jaccard 5, ochiai 14, naish1 16072, gp13 5, naish2 5, tarantula 5, )
+[org.apache.commons.math.linear.EigenDecompositionImpl:1135](https://github.com/apache/commons-math/blob/c78a0e3b003ac36d57a3c895fc8240ef66546a56/src/main/java//org/apache/commons/math/linear/EigenDecompositionImpl.java#L1135) (Suspicious rank: ample 5, jaccard 5, ochiai 14, naish1 16072, gp13 5, naish2 5, tarantula 5, )
 
 Patch type: INSERT_BEFORE 
  
@@ -3532,7 +3532,7 @@ Grid5000 node: graphene-72.nancy.grid5000.fr
 
 ## Patch #61 Nopol 
 
-org.apache.commons.math.linear.EigenDecompositionImpl:1139 (Suspicious rank: ample 1, jaccard 1, ochiai 18, naish1 16068, gp13 1, naish2 1, tarantula 1, )
+[org.apache.commons.math.linear.EigenDecompositionImpl:1139](https://github.com/apache/commons-math/blob/c78a0e3b003ac36d57a3c895fc8240ef66546a56/src/main/java//org/apache/commons/math/linear/EigenDecompositionImpl.java#L1139) (Suspicious rank: ample 1, jaccard 1, ochiai 18, naish1 16068, gp13 1, naish2 1, tarantula 1, )
 
 Patch type: PRECONDITION
 ```Java
@@ -3602,7 +3602,7 @@ index 3fc328d..53a40f0 100644
 
 ## Patch #62 jGenProg 
 
-org.apache.commons.math.linear.EigenDecompositionImpl:1477 (Suspicious rank: ample 26, jaccard 26, ochiai 17, naish1 16501, gp13 26, naish2 26, tarantula 26, )
+[org.apache.commons.math.linear.EigenDecompositionImpl:1477](https://github.com/apache/commons-math/blob/0596e3145c1a8a9c42185fe688c42b0830b64516/src/main/java//org/apache/commons/math/linear/EigenDecompositionImpl.java#L1477) (Suspicious rank: ample 26, jaccard 26, ochiai 17, naish1 16501, gp13 26, naish2 26, tarantula 26, )
 
 Patch type: DELETE 
  
@@ -3614,7 +3614,7 @@ Grid5000 node: griffon-10.nancy.grid5000.fr
 
 ## Patch #63 jKali 
 
-org.apache.commons.math.linear.EigenDecompositionImpl:1526 (Suspicious rank: ample 2, jaccard 2, ochiai 2, naish1 16239, gp13 2, naish2 2, tarantula 2, )
+[org.apache.commons.math.linear.EigenDecompositionImpl:1526](https://github.com/apache/commons-math/blob/0596e3145c1a8a9c42185fe688c42b0830b64516/src/main/java//org/apache/commons/math/linear/EigenDecompositionImpl.java#L1526) (Suspicious rank: ample 2, jaccard 2, ochiai 2, naish1 16239, gp13 2, naish2 2, tarantula 2, )
 
 Patch type: INSERT_BEFORE 
  
@@ -3628,7 +3628,7 @@ Grid5000 node: graphene-61.nancy.grid5000.fr
 
 ## Patch #64 Nopol 
 
-org.apache.commons.math.linear.EigenDecompositionImpl:1541 (Suspicious rank: ample 4, jaccard 4, ochiai 11, naish1 16250, gp13 4, naish2 4, tarantula 4, )
+[org.apache.commons.math.linear.EigenDecompositionImpl:1541](https://github.com/apache/commons-math/blob/0596e3145c1a8a9c42185fe688c42b0830b64516/src/main/java//org/apache/commons/math/linear/EigenDecompositionImpl.java#L1541) (Suspicious rank: ample 4, jaccard 4, ochiai 11, naish1 16250, gp13 4, naish2 4, tarantula 4, )
 
 Patch type: PRECONDITION
 ```Java
@@ -3677,7 +3677,7 @@ index 60a1b3a..16d3bae 100644
 
 ## Patch #65 jGenProg 
 
-org.apache.commons.math.optimization.linear.SimplexSolver:63 (Suspicious rank: ample 37, jaccard 37, ochiai 47, naish1 16048, gp13 37, naish2 37, tarantula 37, )
+[org.apache.commons.math.optimization.linear.SimplexSolver:63](https://github.com/apache/commons-math/blob/dbdff0758b40601238e88b2cffbf7ceb58ed8977/src/main/java//org/apache/commons/math/optimization/linear/SimplexSolver.java#L63) (Suspicious rank: ample 37, jaccard 37, ochiai 47, naish1 16048, gp13 37, naish2 37, tarantula 37, )
 
 Patch type: DELETE 
  
@@ -3689,7 +3689,7 @@ Grid5000 node: graphene-42.nancy.grid5000.fr
 
 ## Patch #66 jKali 
 
-org.apache.commons.math.optimization.linear.SimplexSolver:63 (Suspicious rank: ample 37, jaccard 37, ochiai 47, naish1 16048, gp13 37, naish2 37, tarantula 37, )
+[org.apache.commons.math.optimization.linear.SimplexSolver:63](https://github.com/apache/commons-math/blob/dbdff0758b40601238e88b2cffbf7ceb58ed8977/src/main/java//org/apache/commons/math/optimization/linear/SimplexSolver.java#L63) (Suspicious rank: ample 37, jaccard 37, ochiai 47, naish1 16048, gp13 37, naish2 37, tarantula 37, )
 
 Patch type: DELETE 
  
@@ -3701,7 +3701,7 @@ Grid5000 node: graphene-65.nancy.grid5000.fr
 
 ## Patch #67 Nopol 
 
-org.apache.commons.math.optimization.linear.SimplexSolver:63 (Suspicious rank: ample 37, jaccard 37, ochiai 47, naish1 16048, gp13 37, naish2 37, tarantula 37, )
+[org.apache.commons.math.optimization.linear.SimplexSolver:63](https://github.com/apache/commons-math/blob/dbdff0758b40601238e88b2cffbf7ceb58ed8977/src/main/java//org/apache/commons/math/optimization/linear/SimplexSolver.java#L63) (Suspicious rank: ample 37, jaccard 37, ochiai 47, naish1 16048, gp13 37, naish2 37, tarantula 37, )
 
 Patch type: PRECONDITION
 ```Java
@@ -3762,7 +3762,7 @@ index 929560c..955d0d8 100644
 
 ## Patch #68 jGenProg 
 
-org.apache.commons.math.optimization.direct.MultiDirectional:90 (Suspicious rank: ample 16, jaccard 16, ochiai 7, naish1 16169, gp13 16, naish2 16, tarantula 16, )
+[org.apache.commons.math.optimization.direct.MultiDirectional:90](https://github.com/apache/commons-math/blob/9cb0ca6b0fa639d30d9070f422de5a59c61eb86c/src/main/java//org/apache/commons/math/optimization/direct/MultiDirectional.java#L90) (Suspicious rank: ample 16, jaccard 16, ochiai 7, naish1 16169, gp13 16, naish2 16, tarantula 16, )
 
 Patch type: REPLACE 
  
@@ -3774,7 +3774,7 @@ Grid5000 node: graphene-25.nancy.grid5000.fr
 
 ## Patch #69 jKali 
 
-org.apache.commons.math.optimization.direct.MultiDirectional:90 (Suspicious rank: ample 16, jaccard 16, ochiai 7, naish1 16169, gp13 16, naish2 16, tarantula 16, )
+[org.apache.commons.math.optimization.direct.MultiDirectional:90](https://github.com/apache/commons-math/blob/9cb0ca6b0fa639d30d9070f422de5a59c61eb86c/src/main/java//org/apache/commons/math/optimization/direct/MultiDirectional.java#L90) (Suspicious rank: ample 16, jaccard 16, ochiai 7, naish1 16169, gp13 16, naish2 16, tarantula 16, )
 
 Patch type: INSERT_BEFORE 
  
@@ -3815,7 +3815,7 @@ index e6398f6..5b76415 100644
 
 ## Patch #70 jGenProg 
 
-org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils:199 (Suspicious rank: ample 4, jaccard 4, ochiai 1, naish1 15706, gp13 4, naish2 4, tarantula 4, )
+[org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils:199](https://github.com/apache/commons-math/blob/26281773d85fa96594c16aee56e36805f3254064/src/java//org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils.java#L199) (Suspicious rank: ample 4, jaccard 4, ochiai 1, naish1 15706, gp13 4, naish2 4, tarantula 4, )
 
 Patch type: DELETE 
  
@@ -3827,7 +3827,7 @@ Grid5000 node: graphene-70.nancy.grid5000.fr
 
 ## Patch #71 jKali 
 
-org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils:199 (Suspicious rank: ample 4, jaccard 4, ochiai 1, naish1 15706, gp13 4, naish2 4, tarantula 4, )
+[org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils:199](https://github.com/apache/commons-math/blob/26281773d85fa96594c16aee56e36805f3254064/src/java//org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils.java#L199) (Suspicious rank: ample 4, jaccard 4, ochiai 1, naish1 15706, gp13 4, naish2 4, tarantula 4, )
 
 Patch type: DELETE 
  
@@ -3839,7 +3839,7 @@ Grid5000 node: graphene-70.nancy.grid5000.fr
 
 ## Patch #72 Nopol 
 
-org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils:198 (Suspicious rank: ample 41, jaccard 41, ochiai 46, naish1 15686, gp13 41, naish2 41, tarantula 41, )
+[org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils:198](https://github.com/apache/commons-math/blob/26281773d85fa96594c16aee56e36805f3254064/src/java//org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils.java#L198) (Suspicious rank: ample 41, jaccard 41, ochiai 46, naish1 15686, gp13 41, naish2 41, tarantula 41, )
 
 Patch type: PRECONDITION
 ```Java
@@ -3891,7 +3891,7 @@ index b0d114e..a6d7419 100644
 
 ## Patch #73 Nopol 
 
-org.apache.commons.math.optimization.linear.SimplexTableau:161 (Suspicious rank: ample 43, jaccard 43, ochiai 25, naish1 14789, gp13 43, naish2 43, tarantula 43, )
+[org.apache.commons.math.optimization.linear.SimplexTableau:161](https://github.com/apache/commons-math/blob/10cdc1066f9ae92219382bee25aeeac724298bc9/src/java//org/apache/commons/math/optimization/linear/SimplexTableau.java#L161) (Suspicious rank: ample 43, jaccard 43, ochiai 25, naish1 14789, gp13 43, naish2 43, tarantula 43, )
 
 Patch type: PRECONDITION
 ```Java
@@ -3981,7 +3981,7 @@ index a6d7419..ba57722 100644
 
 ## Patch #74 Nopol 
 
-org.apache.commons.math.optimization.linear.SimplexTableau:352 (Suspicious rank: ample 1, jaccard 1, ochiai 1, naish1 14715, gp13 1, naish2 1, tarantula 1, )
+[org.apache.commons.math.optimization.linear.SimplexTableau:352](https://github.com/apache/commons-math/blob/ca9d46257a9d4026d790adec555096d453e3f629/src/java//org/apache/commons/math/optimization/linear/SimplexTableau.java#L352) (Suspicious rank: ample 1, jaccard 1, ochiai 1, naish1 14715, gp13 1, naish2 1, tarantula 1, )
 
 Patch type: PRECONDITION
 ```Java
@@ -4080,7 +4080,7 @@ index 59aeb07..3959403 100644
 
 ## Patch #75 jGenProg 
 
-org.apache.commons.math.distribution.FDistributionImpl:144 (Suspicious rank: ample 1393, jaccard 105, ochiai 105, naish1 8365, gp13 105, naish2 105, tarantula 83, )
+[org.apache.commons.math.distribution.FDistributionImpl:144](https://github.com/apache/commons-math/blob/e1e21f2f6895333304f6efe8272549d32ede20be/src/java//org/apache/commons/math/distribution/FDistributionImpl.java#L144) (Suspicious rank: ample 1393, jaccard 105, ochiai 105, naish1 8365, gp13 105, naish2 105, tarantula 83, )
 
 Patch type: REPLACE 
  
@@ -4092,7 +4092,7 @@ Grid5000 node: graphene-65.nancy.grid5000.fr
 
 ## Patch #76 jKali 
 
-org.apache.commons.math.distribution.FDistributionImpl:144 (Suspicious rank: ample 1393, jaccard 105, ochiai 105, naish1 8365, gp13 105, naish2 105, tarantula 83, )
+[org.apache.commons.math.distribution.FDistributionImpl:144](https://github.com/apache/commons-math/blob/e1e21f2f6895333304f6efe8272549d32ede20be/src/java//org/apache/commons/math/distribution/FDistributionImpl.java#L144) (Suspicious rank: ample 1393, jaccard 105, ochiai 105, naish1 8365, gp13 105, naish2 105, tarantula 83, )
 
 Patch type: INSERT_BEFORE 
  
@@ -4208,7 +4208,7 @@ index 57f64a9..01a9ee5 100644
 
 ## Patch #77 Nopol 
 
-org.apache.commons.math.analysis.BrentSolver:136 (Suspicious rank: ample 924, jaccard 68, ochiai 68, naish1 6894, gp13 68, naish2 68, tarantula 68, )
+[org.apache.commons.math.analysis.BrentSolver:136](https://github.com/apache/commons-math/blob/0010754c0b2eb5a5dc490acdf4f4948330363e23/src/java//org/apache/commons/math/analysis/BrentSolver.java#L136) (Suspicious rank: ample 924, jaccard 68, ochiai 68, naish1 6894, gp13 68, naish2 68, tarantula 68, )
 
 Patch type: PRECONDITION
 ```Java
@@ -4293,7 +4293,7 @@ index ba2c4db..8c565cb 100644
 
 ## Patch #78 Nopol 
 
-org.apache.commons.math.special.Gamma:162 (Suspicious rank: ample 3683, jaccard 88, ochiai 88, naish1 6243, gp13 88, naish2 88, tarantula 88, )
+[org.apache.commons.math.special.Gamma:162](https://github.com/apache/commons-math/blob/5bc120c5dff3cdc44f9168800a9d0a1fa538e44d/src/java//org/apache/commons/math/special/Gamma.java#L162) (Suspicious rank: ample 3683, jaccard 88, ochiai 88, naish1 6243, gp13 88, naish2 88, tarantula 88, )
 
 Patch type: CONDITIONAL
 ```Java
@@ -4363,7 +4363,7 @@ index d9fa592..c105a41 100644
 
 ## Patch #79 Nopol 
 
-org.apache.commons.math.stat.regression.SimpleRegression:108 (Suspicious rank: ample 562, jaccard 79, ochiai 70, naish1 4336, gp13 79, naish2 79, tarantula 79, )
+[org.apache.commons.math.stat.regression.SimpleRegression:108](https://github.com/apache/commons-math/blob/00b139a1c49c230bfb7b0f1ec5b8c22d560d3447/src/java//org/apache/commons/math/stat/regression/SimpleRegression.java#L108) (Suspicious rank: ample 562, jaccard 79, ochiai 70, naish1 4336, gp13 79, naish2 79, tarantula 79, )
 
 Patch type: PRECONDITION
 ```Java
@@ -4413,7 +4413,7 @@ index 8e8e603..aaf0a0f 100644
 
 ## Patch #80 jGenProg 
 
-org.joda.time.field.ZeroIsMaxDateTimeField:138 (Suspicious rank: ample 1, jaccard 1, ochiai 2, naish1 10426, gp13 1, naish2 1, tarantula 1, )
+[org.joda.time.field.ZeroIsMaxDateTimeField:138](https://github.com/JodaOrg/joda-time/blob/bcb044669b4d1f8d334861ccbd169924d6ef3b54/src/main/java//org/joda/time/field/ZeroIsMaxDateTimeField.java#L138) (Suspicious rank: ample 1, jaccard 1, ochiai 2, naish1 10426, gp13 1, naish2 1, tarantula 1, )
 
 Patch type: REPLACE 
  
@@ -4425,7 +4425,7 @@ Grid5000 node: graphene-77.nancy.grid5000.fr
 
 ## Patch #81 jKali 
 
-org.joda.time.field.ZeroIsMaxDateTimeField:178 (Suspicious rank: ample 3, jaccard 3, ochiai 3, naish1 10438, gp13 3, naish2 3, tarantula 3, )
+[org.joda.time.field.ZeroIsMaxDateTimeField:178](https://github.com/JodaOrg/joda-time/blob/bcb044669b4d1f8d334861ccbd169924d6ef3b54/src/main/java//org/joda/time/field/ZeroIsMaxDateTimeField.java#L178) (Suspicious rank: ample 3, jaccard 3, ochiai 3, naish1 10438, gp13 3, naish2 3, tarantula 3, )
 
 Patch type: INSERT_BEFORE 
  
@@ -4476,7 +4476,7 @@ index 64da5ea..6efe071 100644
 
 ## Patch #82 jGenProg 
 
-org.joda.time.tz.DateTimeZoneBuilder:1460
+[org.joda.time.tz.DateTimeZoneBuilder:1460](https://github.com/JodaOrg/joda-time/blob/6d5104753470c130336e319a64009c0553b29c96/src/main/java//org/joda/time/tz/DateTimeZoneBuilder.java#L1460)
 
 Patch type: DELETE 
  
@@ -4488,7 +4488,7 @@ Grid5000 node: graphene-7.nancy.grid5000.fr
 
 ## Patch #83 jKali 
 
-org.joda.time.tz.DateTimeZoneBuilder:1460
+[org.joda.time.tz.DateTimeZoneBuilder:1460](https://github.com/JodaOrg/joda-time/blob/6d5104753470c130336e319a64009c0553b29c96/src/main/java//org/joda/time/tz/DateTimeZoneBuilder.java#L1460)
 
 Patch type: DELETE 
  
@@ -4500,7 +4500,7 @@ Grid5000 node: graphene-115.nancy.grid5000.fr
 
 ## Patch #84 Nopol 
 
-org.joda.time.tz.DateTimeZoneBuilder:372 (Suspicious rank: ample 108, jaccard 108, ochiai 110, naish1 10249, gp13 108, naish2 108, tarantula 108, )
+[org.joda.time.tz.DateTimeZoneBuilder:372](https://github.com/JodaOrg/joda-time/blob/6d5104753470c130336e319a64009c0553b29c96/src/main/java//org/joda/time/tz/DateTimeZoneBuilder.java#L372) (Suspicious rank: ample 108, jaccard 108, ochiai 110, naish1 10249, gp13 108, naish2 108, tarantula 108, )
 
 Patch type: PRECONDITION
 ```Java
