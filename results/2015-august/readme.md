@@ -338,6 +338,8 @@ Patch type: DELETE
 remove
 ```
 
+Execution time: 0:09:27.133000
+
 Grid5000 node: graphene-75.nancy.grid5000.fr
 
 ## Patch #2 jKali 
@@ -349,6 +351,8 @@ Patch type: DELETE
 ```Java
 remove
 ```
+
+Execution time: 0:26:04.335000
 
 Grid5000 node: graphene-67.nancy.grid5000.fr
 
@@ -390,6 +394,8 @@ Patch type: INSERT_BEFORE
 ```Java
 findBoundsByIteration()
 ```
+
+Execution time: 0:01:47.511000
 
 Grid5000 node: graphene-75.nancy.grid5000.fr
 
@@ -456,6 +462,8 @@ Patch type: REPLACE
 this.data.add(new org.jfree.data.xy.XYDataItem(x , y))
 ```
 
+Execution time: 0:02:24.405000
+
 Grid5000 node: graphene-68.nancy.grid5000.fr
 
 ## Patch #6 jKali 
@@ -471,6 +479,8 @@ if (false) {
 	this.data.add(new org.jfree.data.xy.XYDataItem(x , y));
 }
 ```
+
+Execution time: 0:17:49.472000
 
 Grid5000 node: graphene-68.nancy.grid5000.fr
 
@@ -531,6 +541,8 @@ Patch type: REPLACE
 ```Java
 return this.maxEndIndex
 ```
+
+Execution time: 0:01:50.659000
 
 Grid5000 node: graphene-75.nancy.grid5000.fr
 
@@ -1158,6 +1170,8 @@ Patch type: INSERT_BEFORE
 this.leftBlock = null
 ```
 
+Execution time: 0:01:20.483000
+
 Grid5000 node: graphene-76.nancy.grid5000.fr
 
 ## Patch #10 jKali 
@@ -1169,6 +1183,8 @@ Patch type: DELETE
 ```Java
 remove
 ```
+
+Execution time: 0:18:07.694000
 
 Grid5000 node: graphene-62.nancy.grid5000.fr
 
@@ -1241,6 +1257,8 @@ Patch type: REPLACE
 fireChartChanged()
 ```
 
+Execution time: 0:02:13.026000
+
 Grid5000 node: graphene-69.nancy.grid5000.fr
 
 ## Patch #13 jKali 
@@ -1254,6 +1272,8 @@ if (true)
 	return ;
 
 ```
+
+Execution time: 0:42:06.935000
 
 Grid5000 node: graphene-73.nancy.grid5000.fr
 
@@ -1666,6 +1686,8 @@ Patch type: DELETE
 remove
 ```
 
+Execution time: 0:01:12.917000
+
 Grid5000 node: graphene-53.nancy.grid5000.fr
 
 ## Patch #16 jKali 
@@ -1679,6 +1701,8 @@ if (true)
 	return ;
 
 ```
+
+Execution time: 0:45:29.915000
 
 Grid5000 node: graphene-66.nancy.grid5000.fr
 
@@ -1792,6 +1816,8 @@ if (true)
 	return ;
 
 ```
+
+Execution time: 1:01:15.299000
 
 Grid5000 node: griffon-8.nancy.grid5000.fr
 
@@ -2296,6 +2322,8 @@ Patch type: REPLACE
 tmp = mu + (k * sigma)
 ```
 
+Execution time: 0:11:09.223000
+
 Grid5000 node: graphene-37.nancy.grid5000.fr
 
 ## Patch #28 jKali 
@@ -2307,6 +2335,8 @@ Patch type: DELETE
 ```Java
 remove
 ```
+
+Execution time: 1:01:01.774000
 
 Grid5000 node: griffon-2.nancy.grid5000.fr
 
@@ -2346,6 +2376,8 @@ Patch type: REPLACE
 ```Java
 return org.apache.commons.math3.complex.Complex.INF
 ```
+
+Execution time: 0:21:51.272000
 
 Grid5000 node: graphene-39.nancy.grid5000.fr
 
@@ -2405,6 +2437,8 @@ Patch type: DELETE
 remove
 ```
 
+Execution time: 0:19:12.515000
+
 Grid5000 node: graphene-4.nancy.grid5000.fr
 
 ## Patch #31 jKali 
@@ -2416,6 +2450,8 @@ Patch type: DELETE
 ```Java
 remove
 ```
+
+Execution time: 0:43:56.789000
 
 Grid5000 node: graphene-64.nancy.grid5000.fr
 
@@ -2505,6 +2541,8 @@ Patch type: DELETE
 remove
 ```
 
+Execution time: 0:13:35.100000
+
 Grid5000 node: graphene-19.nancy.grid5000.fr
 
 ## Patch #33 jKali 
@@ -2521,6 +2559,8 @@ if (true) {
 	} 
 } 
 ```
+
+Execution time: 0:57:37.844000
 
 Grid5000 node: graphene-7.nancy.grid5000.fr
 
@@ -2568,6 +2608,8 @@ if (false) {
 	setBarycenter(new org.apache.commons.math3.geometry.euclidean.twod.Vector2D(0 , 0));
 }
 ```
+
+Execution time: 0:18:13.678000
 
 Grid5000 node: graphene-18.nancy.grid5000.fr
 
@@ -2679,6 +2721,8 @@ Patch type: INSERT_BEFORE
 signChangeIndex++
 ```
 
+Execution time: 0:18:34.778000
+
 Grid5000 node: graphene-27.nancy.grid5000.fr
 
 ## Patch #38 jKali 
@@ -2694,6 +2738,8 @@ if (true) {
 	--end;
 }
 ```
+
+Execution time: 1:27:19.902000
 
 Grid5000 node: graphene-20.nancy.grid5000.fr
 
@@ -2827,6 +2873,8 @@ Patch type: REPLACE
 entries.put(index, value)
 ```
 
+Execution time: 0:08:53.228000
+
 Grid5000 node: graphene-61.nancy.grid5000.fr
 
 ## Patch #42 jKali 
@@ -2842,6 +2890,8 @@ if (true) {
 	entries.remove(index);
 } 
 ```
+
+Execution time: 0:31:56.407000
 
 Grid5000 node: graphene-62.nancy.grid5000.fr
 
@@ -2906,6 +2956,8 @@ Patch type: DELETE
 remove
 ```
 
+Execution time: 0:05:12.210000
+
 Grid5000 node: graphene-78.nancy.grid5000.fr
 
 ## Patch #45 jKali 
@@ -2917,6 +2969,8 @@ Patch type: DELETE
 ```Java
 remove
 ```
+
+Execution time: 0:26:11.292000
 
 Grid5000 node: griffon-10.nancy.grid5000.fr
 
@@ -2976,6 +3030,8 @@ if ((isNaN) || (rhs.isNaN)) {
 	return org.apache.commons.math.complex.Complex.NaN;
 } 
 ```
+
+Execution time: 0:05:02.971000
 
 Grid5000 node: graphene-77.nancy.grid5000.fr
 
@@ -3151,6 +3207,8 @@ Patch type: REPLACE
 return solve(f, min, max)
 ```
 
+Execution time: 0:01:38.100000
+
 Grid5000 node: graphene-42.nancy.grid5000.fr
 
 # Math 71
@@ -3271,6 +3329,8 @@ if ((pendingEvent) && ((java.lang.Math.abs((t1 - (pendingEventTime)))) <= (conve
 } 
 ```
 
+Execution time: 0:20:32.376000
+
 Grid5000 node: griffon-23.nancy.grid5000.fr
 
 ## Patch #53 Nopol 
@@ -3352,6 +3412,8 @@ Patch type: REPLACE
 ```Java
 return solve(f, min, max)
 ```
+
+Execution time: 0:01:05.979000
 
 Grid5000 node: graphene-64.nancy.grid5000.fr
 
@@ -3448,6 +3510,8 @@ Patch type: DELETE
 remove
 ```
 
+Execution time: 0:02:32.501000
+
 Grid5000 node: graphene-76.nancy.grid5000.fr
 
 ## Patch #57 jKali 
@@ -3459,6 +3523,8 @@ Patch type: DELETE
 ```Java
 remove
 ```
+
+Execution time: 0:11:59.666000
 
 Grid5000 node: graphene-64.nancy.grid5000.fr
 
@@ -3516,6 +3582,8 @@ Patch type: DELETE
 remove
 ```
 
+Execution time: 0:01:02.271000
+
 Grid5000 node: graphene-76.nancy.grid5000.fr
 
 ## Patch #60 jKali 
@@ -3529,6 +3597,8 @@ if (true)
 	return false;
 
 ```
+
+Execution time: 0:49:56.649000
 
 Grid5000 node: graphene-72.nancy.grid5000.fr
 
@@ -3612,6 +3682,8 @@ Patch type: DELETE
 remove
 ```
 
+Execution time: 0:01:03.937000
+
 Grid5000 node: griffon-10.nancy.grid5000.fr
 
 ## Patch #63 jKali 
@@ -3625,6 +3697,8 @@ if (true)
 	return ;
 
 ```
+
+Execution time: 0:52:08.522000
 
 Grid5000 node: graphene-61.nancy.grid5000.fr
 
@@ -3687,6 +3761,8 @@ Patch type: DELETE
 remove
 ```
 
+Execution time: 0:06:41.314000
+
 Grid5000 node: graphene-42.nancy.grid5000.fr
 
 ## Patch #66 jKali 
@@ -3698,6 +3774,8 @@ Patch type: DELETE
 ```Java
 remove
 ```
+
+Execution time: 0:16:08.666000
 
 Grid5000 node: graphene-65.nancy.grid5000.fr
 
@@ -3772,6 +3850,8 @@ Patch type: REPLACE
 return 
 ```
 
+Execution time: 0:17:39.817000
+
 Grid5000 node: graphene-25.nancy.grid5000.fr
 
 ## Patch #69 jKali 
@@ -3785,6 +3865,8 @@ if (true)
 	return ;
 
 ```
+
+Execution time: 0:29:26.655000
 
 Grid5000 node: graphene-71.nancy.grid5000.fr
 
@@ -3825,6 +3907,8 @@ Patch type: DELETE
 remove
 ```
 
+Execution time: 0:05:17.263000
+
 Grid5000 node: graphene-70.nancy.grid5000.fr
 
 ## Patch #71 jKali 
@@ -3836,6 +3920,8 @@ Patch type: DELETE
 ```Java
 remove
 ```
+
+Execution time: 0:31:22.750000
 
 Grid5000 node: graphene-70.nancy.grid5000.fr
 
@@ -4090,6 +4176,8 @@ Patch type: REPLACE
 return numeratorDegreesOfFreedom
 ```
 
+Execution time: 0:00:40.294000
+
 Grid5000 node: graphene-65.nancy.grid5000.fr
 
 ## Patch #76 jKali 
@@ -4103,6 +4191,8 @@ if (true)
 	return 0d;
 
 ```
+
+Execution time: 0:18:11.549000
 
 Grid5000 node: graphene-78.nancy.grid5000.fr
 
@@ -4423,6 +4513,8 @@ Patch type: REPLACE
 return (getWrappedField().getMaximumValue()) + 1
 ```
 
+Execution time: 0:01:30.522000
+
 Grid5000 node: graphene-77.nancy.grid5000.fr
 
 ## Patch #81 jKali 
@@ -4436,6 +4528,8 @@ if (true)
 	return 0;
 
 ```
+
+Execution time: 0:30:36.624000
 
 Grid5000 node: graphene-108.nancy.grid5000.fr
 
@@ -4486,6 +4580,8 @@ Patch type: DELETE
 remove
 ```
 
+Execution time: 0:01:17.251000
+
 Grid5000 node: graphene-7.nancy.grid5000.fr
 
 ## Patch #83 jKali 
@@ -4497,6 +4593,8 @@ Patch type: DELETE
 ```Java
 remove
 ```
+
+Execution time: 0:33:25.817000
 
 Grid5000 node: graphene-115.nancy.grid5000.fr
 

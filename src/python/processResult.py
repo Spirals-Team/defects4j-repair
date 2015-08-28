@@ -310,6 +310,8 @@ for project in sorted(os.listdir(root)):
 					body += "Nb analyzed Statement: %d\n\n" % resultsBug[tool]['nbStatement']
 				if 'executionTime' in resultsBug[tool]:
 					body += "Execution time: %s\n\n" % datetime.timedelta(milliseconds=resultsBug[tool]['executionTime'])
+				if 'timeTotal' in resultsBug[tool]:
+					body += "Execution time: %s\n\n" % datetime.timedelta(milliseconds=int(resultsBug[tool]['timeTotal']))
 				if 'node' in resultsBug[tool]:
 					body += "Grid5000 node: %s\n\n" % resultsBug[tool]['node']
 
