@@ -2,12 +2,12 @@
 
  #   | BugId             | jGenProg  | jKali     | Nopol     | Total
 ---- | ----------------- | --------- | --------- | --------- | ------
-   1 | [C1](#chart-1)    | Yes       | Yes       | TIMEOUT   |      2
+   1 | [C1](#chart-1)    | Yes       | Yes       | No        |      2
    3 | [C3](#chart-3)    | Yes       | No       | Yes       |      2
    5 | [C5](#chart-5)    | Yes       | Yes       | Yes       |      3
-   7 | [C7](#chart-7)    | Yes       | No       | TIMEOUT   |      1
+   7 | [C7](#chart-7)    | Yes       | No       | No        |      1
   13 | [C13](#chart-13)  | Yes       | Yes       | Yes       |      3
-  15 | [C15](#chart-15)  | Yes       | Yes       | TIMEOUT   |      2
+  15 | [C15](#chart-15)  | Yes       | Yes       | No        |      2
   21 | [C21](#chart-21)  | No    | No    | Yes       |      1
   25 | [C25](#chart-25)  | Yes       | Yes       | Yes       |      3
   26 | [C26](#chart-26)  | No    | Yes       | Yes       |      2
@@ -18,7 +18,7 @@
   79 | [L53](#lang-53)   | No       | No       | Yes       |      1
   81 | [L55](#lang-55)   | No    | No    | Yes       |      1
   84 | [L58](#lang-58)   | No       | No       | Yes       |      1
-  93 | [M2](#math-2)     | Yes       | Yes       | TIMEOUT   |      2
+  93 | [M2](#math-2)     | Yes       | Yes       | No        |      2
   96 | [M5](#math-5)     | Yes       | No       | No        |      1
   99 | [M8](#math-8)     | Yes       | Yes       | No        |      2
  119 | [M28](#math-28)   | Yes       | Yes       | No        |      2
@@ -30,10 +30,10 @@
  141 | [M50](#math-50)   | Yes       | Yes       | Yes       |      3
  144 | [M53](#math-53)   | Yes       | No       | No        |      1
  148 | [M57](#math-57)   | No       | No       | Yes       |      1
- 149 | [M58](#math-58)   | No    | TIMEOUT   | Yes       |      1
+ 149 | [M58](#math-58)   | No    | No        | Yes       |      1
  160 | [M69](#math-69)   | No       | No       | Yes       |      1
  161 | [M70](#math-70)   | Yes       | No       | No        |      1
- 162 | [M71](#math-71)   | Yes       | TIMEOUT   | Yes       |      2
+ 162 | [M71](#math-71)   | Yes       | No        | Yes       |      2
  164 | [M73](#math-73)   | Yes       | No       | Yes       |      2
  169 | [M78](#math-78)   | Yes       | Yes       | Yes       |      3
  171 | [M80](#math-80)   | Yes       | Yes       | Yes       |      3
@@ -63,22 +63,22 @@ Total execution time: 17 days, 14:14:07.606000
 
  #   | BugId             | jGenProg  | jKali     | Nopol     | Total
 ---- | ----------------- | --------- | --------- | --------- | ------
-   1 | [C1](#chart-1)    | Yes       | Yes       | TIMEOUT   |      2
-   2 | [C2](#chart-2)    | No       | No       | TIMEOUT   |      0
+   1 | [C1](#chart-1)    | Yes       | Yes       | No        |      2
+   2 | [C2](#chart-2)    | No       | No       | No        |      0
    3 | [C3](#chart-3)    | Yes       | No       | Yes       |      2
-   4 | [C4](#chart-4)    | No       | No       | TIMEOUT   |      0
+   4 | [C4](#chart-4)    | No       | No       | No        |      0
    5 | [C5](#chart-5)    | Yes       | Yes       | Yes       |      3
    6 | [C6](#chart-6)    | No    | No       | No        |      0
-   7 | [C7](#chart-7)    | Yes       | No       | TIMEOUT   |      1
+   7 | [C7](#chart-7)    | Yes       | No       | No        |      1
    8 | [C8](#chart-8)    | IGNORED   | IGNORED   | IGNORED   |      0
-   9 | [C9](#chart-9)    | No    | No       | TIMEOUT   |      0
+   9 | [C9](#chart-9)    | No    | No       | No        |      0
   10 | [C10](#chart-10)  | No       | No       | No        |      0
-  11 | [C11](#chart-11)  | No       | No       | TIMEOUT   |      0
+  11 | [C11](#chart-11)  | No       | No       | No        |      0
   12 | [C12](#chart-12)  | No       | No       | No        |      0
   13 | [C13](#chart-13)  | Yes       | Yes       | Yes       |      3
   14 | [C14](#chart-14)  | No       | No       | No        |      0
-  15 | [C15](#chart-15)  | Yes       | Yes       | TIMEOUT   |      2
-  16 | [C16](#chart-16)  | No       | No       | TIMEOUT   |      0
+  15 | [C15](#chart-15)  | Yes       | Yes       | No        |      2
+  16 | [C16](#chart-16)  | No       | No       | No        |      0
   17 | [C17](#chart-17)  | No       | No       | No        |      0
   18 | [C18](#chart-18)  | No       | No       | No        |      0
   19 | [C19](#chart-19)  | No       | No       | No        |      0
@@ -98,19 +98,19 @@ Total execution time: 17 days, 14:14:07.606000
   33 | [L7](#lang-7)     | No    | No       | No        |      0
   34 | [L8](#lang-8)     | No       | No       | No        |      0
   35 | [L9](#lang-9)     | No       | No       | No        |      0
-  36 | [L10](#lang-10)   | No       | No    | TIMEOUT   |      0
+  36 | [L10](#lang-10)   | No       | No    | No        |      0
   37 | [L11](#lang-11)   | No       | No       | No        |      0
   38 | [L12](#lang-12)   | No       | No       | No        |      0
   39 | [L13](#lang-13)   | No       | No       | No        |      0
   40 | [L14](#lang-14)   | No       | No       | No        |      0
   41 | [L15](#lang-15)   | No       | No       | No        |      0
-  42 | [L16](#lang-16)   | No    | TIMEOUT   | No        |      0
-  43 | [L17](#lang-17)   | No    | TIMEOUT   | No        |      0
+  42 | [L16](#lang-16)   | No    | No        | No        |      0
+  43 | [L17](#lang-17)   | No    | No        | No        |      0
   44 | [L18](#lang-18)   | No    | No    | No        |      0
   45 | [L19](#lang-19)   | No       | No       | No        |      0
   46 | [L20](#lang-20)   | No    | No    | No        |      0
   47 | [L21](#lang-21)   | No    | No    | No        |      0
-  48 | [L22](#lang-22)   | No    | No    | TIMEOUT   |      0
+  48 | [L22](#lang-22)   | No    | No    | No        |      0
   49 | [L23](#lang-23)   | No       | No       | No        |      0
   50 | [L24](#lang-24)   | No       | No       | No        |      0
   51 | [L25](#lang-25)   | No    | No    | No        |      0
@@ -137,12 +137,12 @@ Total execution time: 17 days, 14:14:07.606000
   72 | [L46](#lang-46)   | No    | No    | Yes       |      1
   73 | [L47](#lang-47)   | No    | No    | No        |      0
   74 | [L48](#lang-48)   | No       | No       | No        |      0
-  75 | [L49](#lang-49)   | No    | TIMEOUT   | No        |      0
+  75 | [L49](#lang-49)   | No    | No        | No        |      0
   76 | [L50](#lang-50)   | No    | No    | No        |      0
   77 | [L51](#lang-51)   | No    | No    | Yes       |      1
   78 | [L52](#lang-52)   | No    | No    | No        |      0
   79 | [L53](#lang-53)   | No       | No       | Yes       |      1
-  80 | [L54](#lang-54)   | No    | TIMEOUT   | No        |      0
+  80 | [L54](#lang-54)   | No    | No        | No        |      0
   81 | [L55](#lang-55)   | No    | No    | Yes       |      1
   82 | [L56](#lang-56)   | No    | No    | No        |      0
   83 | [L57](#lang-57)   | No    | No    | No        |      0
@@ -155,32 +155,32 @@ Total execution time: 17 days, 14:14:07.606000
   90 | [L64](#lang-64)   | No    | No    | No        |      0
   91 | [L65](#lang-65)   | No       | No       | No        |      0
   92 | [M1](#math-1)     | No       | No       | No        |      0
-  93 | [M2](#math-2)     | Yes       | Yes       | TIMEOUT   |      2
+  93 | [M2](#math-2)     | Yes       | Yes       | No        |      2
   94 | [M3](#math-3)     | No       | No       | No        |      0
-  95 | [M4](#math-4)     | No       | No       | TIMEOUT   |      0
+  95 | [M4](#math-4)     | No       | No       | No        |      0
   96 | [M5](#math-5)     | Yes       | No       | No        |      1
   97 | [M6](#math-6)     | ERROR     | ERROR     | No        |      0
-  98 | [M7](#math-7)     | No    | TIMEOUT   | TIMEOUT   |      0
+  98 | [M7](#math-7)     | No    | No        | No        |      0
   99 | [M8](#math-8)     | Yes       | Yes       | No        |      2
  100 | [M9](#math-9)     | No       | No    | No        |      0
  101 | [M10](#math-10)   | No       | No       | No        |      0
- 102 | [M11](#math-11)   | No       | No       | TIMEOUT   |      0
- 103 | [M12](#math-12)   | No       | TIMEOUT   | TIMEOUT   |      0
- 104 | [M13](#math-13)   | No       | TIMEOUT   | No        |      0
- 105 | [M14](#math-14)   | No       | TIMEOUT   | No        |      0
- 106 | [M15](#math-15)   | No       | TIMEOUT   | No        |      0
- 107 | [M16](#math-16)   | No       | TIMEOUT   | TIMEOUT   |      0
+ 102 | [M11](#math-11)   | No       | No       | No        |      0
+ 103 | [M12](#math-12)   | No       | No        | No        |      0
+ 104 | [M13](#math-13)   | No       | No        | No        |      0
+ 105 | [M14](#math-14)   | No       | No        | No        |      0
+ 106 | [M15](#math-15)   | No       | No        | No        |      0
+ 107 | [M16](#math-16)   | No       | No        | No        |      0
  108 | [M17](#math-17)   | No       | No       | No        |      0
- 109 | [M18](#math-18)   | No       | TIMEOUT   | No        |      0
+ 109 | [M18](#math-18)   | No       | No        | No        |      0
  110 | [M19](#math-19)   | No       | No       | No        |      0
- 111 | [M20](#math-20)   | ERROR     | ERROR     | TIMEOUT   |      0
+ 111 | [M20](#math-20)   | ERROR     | ERROR     | No        |      0
  112 | [M21](#math-21)   | No       | No       | No        |      0
  113 | [M22](#math-22)   | No       | No       | No        |      0
  114 | [M23](#math-23)   | No       | No    | No        |      0
- 115 | [M24](#math-24)   | No    | TIMEOUT   | No        |      0
+ 115 | [M24](#math-24)   | No    | No        | No        |      0
  116 | [M25](#math-25)   | No       | No       | No        |      0
  117 | [M26](#math-26)   | No    | No       | No        |      0
- 118 | [M27](#math-27)   | No       | No       | TIMEOUT   |      0
+ 118 | [M27](#math-27)   | No       | No       | No        |      0
  119 | [M28](#math-28)   | Yes       | Yes       | No        |      2
  120 | [M29](#math-29)   | No       | No       | No        |      0
  121 | [M30](#math-30)   | No    | No    | No        |      0
@@ -192,7 +192,7 @@ Total execution time: 17 days, 14:14:07.606000
  127 | [M36](#math-36)   | No       | No       | No        |      0
  128 | [M37](#math-37)   | No       | No       | No        |      0
  129 | [M38](#math-38)   | No       | No       | No        |      0
- 130 | [M39](#math-39)   | No       | TIMEOUT   | ERROR     |      0
+ 130 | [M39](#math-39)   | No       | No        | ERROR     |      0
  131 | [M40](#math-40)   | Yes       | Yes       | Yes       |      3
  132 | [M41](#math-41)   | No       | No       | No       |      0
  133 | [M42](#math-42)   | No       | No       | Yes       |      1
@@ -201,18 +201,18 @@ Total execution time: 17 days, 14:14:07.606000
  136 | [M45](#math-45)   | No       | No       | No        |      0
  137 | [M46](#math-46)   | No       | No       | No        |      0
  138 | [M47](#math-47)   | No       | No       | No        |      0
- 139 | [M48](#math-48)   | No       | No       | TIMEOUT   |      0
+ 139 | [M48](#math-48)   | No       | No       | No        |      0
  140 | [M49](#math-49)   | Yes       | Yes       | Yes       |      3
  141 | [M50](#math-50)   | Yes       | Yes       | Yes       |      3
- 142 | [M51](#math-51)   | ERROR     | ERROR     | TIMEOUT   |      0
+ 142 | [M51](#math-51)   | ERROR     | ERROR     | No        |      0
  143 | [M52](#math-52)   | No       | No       | No        |      0
  144 | [M53](#math-53)   | Yes       | No       | No        |      1
- 145 | [M54](#math-54)   | No       | TIMEOUT   | TIMEOUT   |      0
+ 145 | [M54](#math-54)   | No       | No        | No        |      0
  146 | [M55](#math-55)   | No       | No       | No        |      0
  147 | [M56](#math-56)   | No    | No       | No        |      0
  148 | [M57](#math-57)   | No       | No       | Yes       |      1
- 149 | [M58](#math-58)   | No    | TIMEOUT   | Yes       |      1
- 150 | [M59](#math-59)   | No       | TIMEOUT   | No        |      0
+ 149 | [M58](#math-58)   | No    | No        | Yes       |      1
+ 150 | [M59](#math-59)   | No       | No        | No        |      0
  151 | [M60](#math-60)   | No       | No       | No        |      0
  152 | [M61](#math-61)   | No       | No       | No        |      0
  153 | [M62](#math-62)   | No       | No       | No        |      0
@@ -224,7 +224,7 @@ Total execution time: 17 days, 14:14:07.606000
  159 | [M68](#math-68)   | No       | No       | No        |      0
  160 | [M69](#math-69)   | No       | No       | Yes       |      1
  161 | [M70](#math-70)   | Yes       | No       | No        |      1
- 162 | [M71](#math-71)   | Yes       | TIMEOUT   | Yes       |      2
+ 162 | [M71](#math-71)   | Yes       | No        | Yes       |      2
  163 | [M72](#math-72)   | No    | No       | No        |      0
  164 | [M73](#math-73)   | Yes       | No       | Yes       |      2
  165 | [M74](#math-74)   | No       | No       | No        |      0
@@ -262,11 +262,11 @@ Total execution time: 17 days, 14:14:07.606000
  197 | [M106](#math-106) | No       | No       | No        |      0
  198 | [T1](#time-1)     | No    | No       | No        |      0
  199 | [T2](#time-2)     | No    | No       | No        |      0
- 200 | [T3](#time-3)     | No       | No       | TIMEOUT   |      0
+ 200 | [T3](#time-3)     | No       | No       | No        |      0
  201 | [T4](#time-4)     | Yes       | Yes       | No        |      2
  202 | [T5](#time-5)     | No       | No       | No        |      0
  203 | [T6](#time-6)     | No       | No       | No        |      0
- 204 | [T7](#time-7)     | No       | No       | TIMEOUT   |      0
+ 204 | [T7](#time-7)     | No       | No       | No        |      0
  205 | [T8](#time-8)     | No       | No       | No        |      0
  206 | [T9](#time-9)     | No       | No       | No        |      0
  207 | [T10](#time-10)   | No       | No       | No        |      0
@@ -275,16 +275,16 @@ Total execution time: 17 days, 14:14:07.606000
  210 | [T13](#time-13)   | No       | No       | No        |      0
  211 | [T14](#time-14)   | No       | No       | No        |      0
  212 | [T15](#time-15)   | No       | No       | No        |      0
- 213 | [T16](#time-16)   | No       | No       | TIMEOUT   |      0
+ 213 | [T16](#time-16)   | No       | No       | No        |      0
  214 | [T17](#time-17)   | No       | No    | No        |      0
- 215 | [T18](#time-18)   | No       | No    | TIMEOUT   |      0
- 216 | [T19](#time-19)   | No       | TIMEOUT   | TIMEOUT   |      0
+ 215 | [T18](#time-18)   | No       | No    | No        |      0
+ 216 | [T19](#time-19)   | No       | No        | No        |      0
  217 | [T20](#time-20)   | No       | No       | No        |      0
- 218 | [T21](#time-21)   | No       | TIMEOUT   | No        |      0
+ 218 | [T21](#time-21)   | No       | No        | No        |      0
  219 | [T22](#time-22)   | No    | No    | No        |      0
  220 | [T23](#time-23)   | No       | No       | No        |      0
  221 | [T24](#time-24)   | No       | No    | No        |      0
- 222 | [T25](#time-25)   | No       | TIMEOUT   | No        |      0
+ 222 | [T25](#time-25)   | No       | No        | No        |      0
  223 | [T26](#time-26)   | No       | No       | No        |      0
  224 | [T27](#time-27)   | No    | No       | No        |      0
      | Total             | 27 (12%)  | 22 (9%)   | 35 (15%)  |     84
