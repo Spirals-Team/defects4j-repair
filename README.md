@@ -2,6 +2,8 @@
 
 This repository contains the raw experimental results of an experiment done at INRIA Lille on the automatic repair of the bugs of the Defects4J dataset.
 
+Latest results: 47 bugs repaired, see https://github.com/Spirals-Team/defects4j-repair/tree/master/results/2015-august
+
 See 
 [Automatic Repair of Real Bugs: An Experience Report on the Defects4J Dataset](http://arxiv.org/pdf/1505.07002) (Thomas Durieux, Matias Martinez, Martin Monperrus, Romain Sommerard, Jifeng Xuan), Technical report 1505.07002, Arxiv, 2015.
 
