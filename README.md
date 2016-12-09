@@ -12,7 +12,7 @@ This repository contains the raw experimental results of the experiments done at
  doi = {10.1007/s10664-016-9470-4},
 }
 ```
-Resuls of August 2016 on Defects4j version [0.1.0](https://github.com/rjust/defects4j/releases/tag/v0.1.0) (minus the Clojure bugs, discarded):
+Results of August 2015 on Defects4j version [0.1.0](https://github.com/rjust/defects4j/releases/tag/v0.1.0) (minus the Clojure bugs, discarded):
 
 * Nopol: 35 bugs fixed 
 * jGenprog/Astor: 27 bugs fixed
