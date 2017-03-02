@@ -6,7 +6,7 @@ class BrutpolPC(Nopol):
 		super(BrutpolPC, self).__init__("BrutpolPC")
 
 	def run(self, project, id):
-		log = self.runNopol(project, id, mode="repair", type="precondition", oracle="angelic", synthesis="brutpol")
+		log = self.runNopol(project, id, mode="repair", type="precondition", oracle="angelic", synthesis="dynamoth")
 		slittedLog = log.split('----INFORMATION----')
 		if(len(slittedLog) > 1):
 			print slittedLog[1]

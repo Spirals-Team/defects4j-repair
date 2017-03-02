@@ -29,10 +29,14 @@ for project in os.listdir(root):
 		projectCl = (TimeProject())
 	else:
 		continue
+	if project.lower() != "math":
+		continue
 	projectPath = os.path.join(root, project) 
 	if os.path.isfile(projectPath):
 		continue
 	for bugId in os.listdir(projectPath):
+		if bugId != "85":
+			continue
 		bugPath = os.path.join(projectPath, bugId) 
 		if os.path.isfile(bugPath):
 			continue
