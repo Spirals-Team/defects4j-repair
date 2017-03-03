@@ -1,0 +1,20 @@
+{
+    "date": "Fri Mar 03 04:51:00 UTC 2017", 
+    "executionTime": 33258, 
+    "nbAngelicValue": 1, 
+    "nbStatement": 1, 
+    "nb_classes": 559, 
+    "nb_methods": 5847, 
+    "node": "graphene-71.nancy.grid5000.fr\n", 
+    "patch": [
+        {
+            "nb_test_that_execute_statement": 10, 
+            "patch": "--- /tmp/chart_25_Nopol/source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java\n+++ /tmp/chart_25_Nopol/source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java\n@@ -206,10 +206,12 @@\n         PlotOrientation orientation = plot.getOrientation();\n-        if (orientation == PlotOrientation.HORIZONTAL) {\n-            drawHorizontalItem(g2, state, dataArea, plot, domainAxis, \n-                    rangeAxis, statData, row, column);\n+        if (0 == 1) {\n+            if (orientation == PlotOrientation.HORIZONTAL) {\n+                drawHorizontalItem(g2, state, dataArea, plot, domainAxis,\n+                rangeAxis, statData, row, column);\n+            }\n+            else if (orientation == PlotOrientation.VERTICAL) {\n+                drawVerticalItem(g2, state, dataArea, plot, domainAxis, rangeAxis,\n+                statData, row, column);\n+            }\n         }\n-        else if (orientation == PlotOrientation.VERTICAL) {\n-            drawVerticalItem(g2, state, dataArea, plot, domainAxis, rangeAxis, \n-                    statData, row, column);\n-        }\n     }\n", 
+            "patchLocation": {
+                "class": "org.jfree.chart.renderer.category.StatisticalBarRenderer", 
+                "line": 207
+            }, 
+            "patchType": "PRECONDITION"
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "date": "Thu Mar 02 21:20:36 UTC 2017", 
+    "executionTime": 40940, 
+    "nbAngelicValue": 1, 
+    "nbStatement": 11, 
+    "nb_classes": 156, 
+    "nb_methods": 2872, 
+    "node": "graphene-140.nancy.grid5000.fr\n", 
+    "patch": [
+        {
+            "nb_test_that_execute_statement": 54, 
+            "patch": "--- /tmp/time_16_Nopol/src/main/java/org/joda/time/format/DateTimeParserBucket.java\n+++ /tmp/time_16_Nopol/src/main/java/org/joda/time/format/DateTimeParserBucket.java\n@@ -357,3 +357,5 @@\n                 saveField(DateTimeFieldType.year(), iDefaultYear);\n-                return computeMillis(resetFields, text);\n+                if (resetFields) {\n+                    return computeMillis(resetFields, text);\n+                }\n             }\n", 
+            "patchLocation": {
+                "class": "org.joda.time.format.DateTimeParserBucket", 
+                "line": 358
+            }, 
+            "patchType": "PRECONDITION"
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "date": "Thu Mar 02 22:24:10 UTC 2017", 
+    "executionTime": 33410, 
+    "nbAngelicValue": 1, 
+    "nbStatement": 8, 
+    "nb_classes": 416, 
+    "nb_methods": 3017, 
+    "node": "graphene-53.nancy.grid5000.fr\n", 
+    "patch": [
+        {
+            "nb_test_that_execute_statement": 11, 
+            "patch": "--- /tmp/math_69_Nopol/src/main/java/org/apache/commons/math/stat/correlation/PearsonsCorrelation.java\n+++ /tmp/math_69_Nopol/src/main/java/org/apache/commons/math/stat/correlation/PearsonsCorrelation.java\n@@ -192,3 +192,5 @@\n               outMatrix.setEntry(i, j, corr);\n-              outMatrix.setEntry(j, i, corr);\n+              if (2 < nVars) {\n+                  outMatrix.setEntry(j, i, corr);\n+              }\n             }\n", 
+            "patchLocation": {
+                "class": "org.apache.commons.math.stat.correlation.PearsonsCorrelation", 
+                "line": 193
+            }, 
+            "patchType": "PRECONDITION"
+        }
+    ]
+}

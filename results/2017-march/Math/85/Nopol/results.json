@@ -1,0 +1,20 @@
+{
+    "date": "Thu Mar 02 22:05:53 UTC 2017", 
+    "executionTime": 37616, 
+    "nbAngelicValue": 1, 
+    "nbStatement": 21, 
+    "nb_classes": 386, 
+    "nb_methods": 2845, 
+    "node": "graphene-77.nancy.grid5000.fr\n", 
+    "patch": [
+        {
+            "nb_test_that_execute_statement": 17, 
+            "patch": "--- /tmp/math_85_Nopol/src/java/org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils.java\n+++ /tmp/math_85_Nopol/src/java/org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils.java\n@@ -197,9 +197,9 @@\n    \n-        if (fa * fb >= 0.0 ) {\n+        if (maximumIterations == initial) {\n             throw new ConvergenceException(\n-                      \"number of iterations={0}, maximum iterations={1}, \" +\n-                      \"initial={2}, lower bound={3}, upper bound={4}, final a value={5}, \" +\n-                      \"final b value={6}, f(a)={7}, f(b)={8}\",\n-                      numIterations, maximumIterations, initial,\n-                      lowerBound, upperBound, a, b, fa, fb);\n+            \"number of iterations={0}, maximum iterations={1}, \" +\n+            \"initial={2}, lower bound={3}, upper bound={4}, final a value={5}, \" +\n+            \"final b value={6}, f(a)={7}, f(b)={8}\",\n+            numIterations, maximumIterations, initial,\n+            lowerBound, upperBound, a, b, fa, fb);\n         }\n", 
+            "patchLocation": {
+                "class": "org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils", 
+                "line": 198
+            }, 
+            "patchType": "CONDITIONAL"
+        }
+    ]
+}

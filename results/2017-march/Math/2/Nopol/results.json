@@ -1,0 +1,20 @@
+{
+    "date": "Fri Mar 03 01:18:04 UTC 2017", 
+    "executionTime": 378177, 
+    "nbAngelicValue": 4, 
+    "nbStatement": 5, 
+    "nb_classes": 747, 
+    "nb_methods": 4947, 
+    "node": "graphene-20.nancy.grid5000.fr\n", 
+    "patch": [
+        {
+            "nb_test_that_execute_statement": 63, 
+            "patch": "--- /tmp/math_2_Nopol/src/main/java/org/apache/commons/math3/distribution/AbstractIntegerDistribution.java\n+++ /tmp/math_2_Nopol/src/main/java/org/apache/commons/math3/distribution/AbstractIntegerDistribution.java\n@@ -137,3 +137,5 @@\n             if (tmp < upper) {\n-                upper = ((int) Math.ceil(tmp)) - 1;\n+                if (tmp == -1) {\n+                    upper = ((int) Math.ceil(tmp)) - 1;\n+                }\n             }\n", 
+            "patchLocation": {
+                "class": "org.apache.commons.math3.distribution.AbstractIntegerDistribution", 
+                "line": 138
+            }, 
+            "patchType": "PRECONDITION"
+        }
+    ]
+}

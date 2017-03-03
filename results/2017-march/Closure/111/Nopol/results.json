@@ -1,0 +1,20 @@
+{
+    "date": "Thu Mar 02 18:27:16 UTC 2017", 
+    "executionTime": 169257, 
+    "nbAngelicValue": 2, 
+    "nbStatement": 19, 
+    "nb_classes": 431, 
+    "nb_methods": 5084, 
+    "node": "graphene-69.nancy.grid5000.fr\n", 
+    "patch": [
+        {
+            "nb_test_that_execute_statement": 381, 
+            "patch": "--- /tmp/closure_111_Nopol/src/com/google/javascript/rhino/testing/Asserts.java\n+++ /tmp/closure_111_Nopol/src/com/google/javascript/rhino/testing/Asserts.java\n@@ -102,3 +102,3 @@\n         (a == null) == (b == null));\n-    if (a == null) {\n+    if (message!=null) {\n       return;\n", 
+            "patchLocation": {
+                "class": "com.google.javascript.rhino.testing.Asserts", 
+                "line": 103
+            }, 
+            "patchType": "CONDITIONAL"
+        }
+    ]
+}

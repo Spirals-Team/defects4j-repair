@@ -1,0 +1,20 @@
+{
+    "date": "Thu Mar 02 21:13:41 UTC 2017", 
+    "executionTime": 127443, 
+    "nbAngelicValue": 1, 
+    "nbStatement": 3, 
+    "nb_classes": 412, 
+    "nb_methods": 4843, 
+    "node": "graphene-45.nancy.grid5000.fr\n", 
+    "patch": [
+        {
+            "nb_test_that_execute_statement": 17, 
+            "patch": "--- /tmp/closure_2_Nopol/src/com/google/javascript/jscomp/TypeCheck.java\n+++ /tmp/closure_2_Nopol/src/com/google/javascript/jscomp/TypeCheck.java\n@@ -1663,4 +1663,6 @@\n           currentProperties.clear();\n-          checkInterfaceConflictProperties(t, n, functionPrivateName,\n-              properties, currentProperties, interfaceType);\n+          if (com.google.javascript.jscomp.TypeCheck.this.unknownCount < com.google.javascript.jscomp.TypeCheck.this.typedCount) {\n+            checkInterfaceConflictProperties(t, n, functionPrivateName,\n+            properties, currentProperties, interfaceType);\n+          }\n           properties.putAll(currentProperties);\n", 
+            "patchLocation": {
+                "class": "com.google.javascript.jscomp.TypeCheck", 
+                "line": 1664
+            }, 
+            "patchType": "PRECONDITION"
+        }
+    ]
+}

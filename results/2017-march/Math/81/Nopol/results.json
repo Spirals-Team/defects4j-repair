@@ -1,0 +1,20 @@
+{
+    "date": "Thu Mar 02 22:14:52 UTC 2017", 
+    "executionTime": 40676, 
+    "nbAngelicValue": 1, 
+    "nbStatement": 12, 
+    "nb_classes": 393, 
+    "nb_methods": 2898, 
+    "node": "graphene-70.nancy.grid5000.fr\n", 
+    "patch": [
+        {
+            "nb_test_that_execute_statement": 4, 
+            "patch": "--- /tmp/math_81_Nopol/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java\n+++ /tmp/math_81_Nopol/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java\n@@ -1585,4 +1585,4 @@\n         case 1 : // one eigenvalue just deflated. use dMin1, dN1 for dMin and dN.\n-            if (dMin1 == dN1 && dMin2 == dN2) {\n-\n+            if (org.apache.commons.math.linear.EigenDecompositionImpl.this.main!=null) {\n+                \n                 // cases 7 and 8.\n@@ -1618,3 +1618,3 @@\n             } else {\n-\n+                \n                 // case 9.\n", 
+            "patchLocation": {
+                "class": "org.apache.commons.math.linear.EigenDecompositionImpl", 
+                "line": 1586
+            }, 
+            "patchType": "CONDITIONAL"
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+cd /tmp/math_85_Nopol;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;TZ="America/New_York"; export TZexport PATH="/home/tdurieux/jdk1.7.0_79/bin/:$PATH";cp -r /home/tdurieux/dynamoth-experiments/src/python/core/../../../libs/z3 lib/z3;time java -d64 -Xmx4g -Xms1g -XX:MaxPermSize=1024m -XX:+UseConcMarkSweepGC -XX:+CMSPermGenSweepingEnabled -XX:+CMSClassUnloadingEnabled -cp /home/tdurieux/dynamoth-experiments/src/python/core/../../..//libs/nopol.jar:/home/tdurieux/jdk1.7.0_79/bin//../lib/tools.jar fr.inria.lille.repair.Main --flocal gzoltar  --maxTime 300  --json  --mode repair --type pre_then_cond --oracle angelic --synthesis smt --solver z3 --solver-path /home/tdurieux/dynamoth-experiments/src/python/core/../../..//libs/z3/z3 --complianceLevel 5 --source /tmp/math_85_Nopol/src/java/ --classpath /tmp/math_85_Nopol/target/classes/:/tmp/math_85_Nopol/target/test-classes/:/tmp/math_85_Nopol/lib/commons-discovery-0.5.jar:/home/tdurieux/dynamoth-experiments/src/python/core/../../..//libs/nopol.jar;echo "
+
+Node: `hostname`
+";echo "
+Date: `date`
+";
+
+22:05:53.435 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb classes : 386
+22:05:53.435 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb methods : 2845
+22:05:53.436 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements Analyzed : 21
+22:05:53.436 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements with Angelic Value Found : 1
+22:05:53.436 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb inputs in SMT : 303
+22:05:53.436 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb SMT level: 2
+22:05:53.436 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb SMT components: [4] [== of arity: 2, != of arity: 2, < of arity: 2, <= of arity: 2]
+22:05:53.436 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol -                   class java.lang.Boolean: 4
+22:05:53.436 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb variables in SMT : 17
+22:05:53.436 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - NoPol Execution time : 37616ms
+22:05:53.436 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - ----PATCH FOUND----
+22:05:53.436 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - maximumIterations == initial
+22:05:53.559 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb test that executes the patch: 17
+22:05:53.559 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils:198: CONDITIONAL
+22:05:53.573 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - --- /tmp/math_85_Nopol/src/java/org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils.java
++++ /tmp/math_85_Nopol/src/java/org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils.java
+@@ -197,9 +197,9 @@
+    
+-        if (fa * fb >= 0.0 ) {
++        if (maximumIterations == initial) {
+             throw new ConvergenceException(
+-                      "number of iterations={0}, maximum iterations={1}, " +
+-                      "initial={2}, lower bound={3}, upper bound={4}, final a value={5}, " +
+-                      "final b value={6}, f(a)={7}, f(b)={8}",
+-                      numIterations, maximumIterations, initial,
+-                      lowerBound, upperBound, a, b, fa, fb);
++            "number of iterations={0}, maximum iterations={1}, " +
++            "initial={2}, lower bound={3}, upper bound={4}, final a value={5}, " +
++            "final b value={6}, f(a)={7}, f(b)={8}",
++            numIterations, maximumIterations, initial,
++            lowerBound, upperBound, a, b, fa, fb);
+         }
+
+
+
+Node: graphene-77.nancy.grid5000.fr
+
+
+Date: Thu Mar  2 23:05:53 CET 2017
+
+

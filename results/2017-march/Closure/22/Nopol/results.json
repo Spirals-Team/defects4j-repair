@@ -1,0 +1,20 @@
+{
+    "date": "Thu Mar 02 19:53:44 UTC 2017", 
+    "executionTime": 144238, 
+    "nbAngelicValue": 1, 
+    "nbStatement": 6, 
+    "nb_classes": 403, 
+    "nb_methods": 4723, 
+    "node": "graphite-2.nancy.grid5000.fr\n", 
+    "patch": [
+        {
+            "nb_test_that_execute_statement": 3, 
+            "patch": "--- /tmp/closure_22_Nopol/src/com/google/javascript/jscomp/CheckSideEffects.java\n+++ /tmp/closure_22_Nopol/src/com/google/javascript/jscomp/CheckSideEffects.java\n@@ -115,6 +115,8 @@\n             continue;\n-          if (ancestorType != Token.EXPR_RESULT && ancestorType != Token.BLOCK)\n+          if (com.google.javascript.jscomp.CheckSideEffects.PROTECTOR_FN.length()==0) {\n+            if (ancestorType != Token.EXPR_RESULT && ancestorType != Token.BLOCK)\n             return;\n-          else\n+            else\n             break;\n+          }\n         }\n", 
+            "patchLocation": {
+                "class": "com.google.javascript.jscomp.CheckSideEffects", 
+                "line": 116
+            }, 
+            "patchType": "PRECONDITION"
+        }
+    ]
+}

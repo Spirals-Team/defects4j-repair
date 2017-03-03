@@ -1,0 +1,37 @@
+cd /tmp/time_12_Nopol;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;TZ="America/New_York"; export TZexport PATH="/home/tdurieux/jdk1.7.0_79/bin/:$PATH";cp -r /home/tdurieux/dynamoth-experiments/src/python/core/../../../libs/z3 lib/z3;time java -d64 -Xmx4g -Xms1g -XX:MaxPermSize=1024m -XX:+UseConcMarkSweepGC -XX:+CMSPermGenSweepingEnabled -XX:+CMSClassUnloadingEnabled -cp /home/tdurieux/dynamoth-experiments/src/python/core/../../..//libs/nopol.jar:/home/tdurieux/jdk1.7.0_79/bin//../lib/tools.jar fr.inria.lille.repair.Main --flocal gzoltar  --maxTime 300  --json  --mode repair --type pre_then_cond --oracle angelic --synthesis smt --solver z3 --solver-path /home/tdurieux/dynamoth-experiments/src/python/core/../../..//libs/z3/z3 --complianceLevel 5 --source /tmp/time_12_Nopol/src/main/java/ --classpath /tmp/time_12_Nopol/build/classes/:/tmp/time_12_Nopol/build/tests/:/tmp/time_12_Nopol/lib/joda-convert-1.2.jar:/home/tdurieux/dynamoth-experiments/src/python/core/../../..//libs/nopol.jar;echo "
+
+Node: `hostname`
+";echo "
+Date: `date`
+";
+
+21:22:27.837 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb classes : 156
+21:22:27.837 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb methods : 2878
+21:22:27.837 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements Analyzed : 51
+21:22:27.837 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements with Angelic Value Found : 1
+21:22:27.837 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb inputs in SMT : 6
+21:22:27.837 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb SMT level: 3
+21:22:27.837 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb SMT components: [7] [== of arity: 2, != of arity: 2, < of arity: 2, <= of arity: 2, ! of arity: 1, || of arity: 2, && of arity: 2]
+21:22:27.837 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol -                   class java.lang.Boolean: 7
+21:22:27.837 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb variables in SMT : 20
+21:22:27.837 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - NoPol Execution time : 89357ms
+21:22:27.837 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - ----PATCH FOUND----
+21:22:27.837 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - ((this) == partial) || (!(org.joda.time.LocalDateTime.MONTH_OF_YEAR < org.joda.time.LocalDateTime.this.iLocalMillis))
+21:22:28.159 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb test that executes the patch: 159
+21:22:28.160 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - org.joda.time.LocalDateTime:663: CONDITIONAL
+21:22:28.230 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - --- /tmp/time_12_Nopol/src/main/java/org/joda/time/LocalDateTime.java
++++ /tmp/time_12_Nopol/src/main/java/org/joda/time/LocalDateTime.java
+@@ -662,3 +662,3 @@
+         // override to perform faster
+-        if (this == partial) {
++        if (((this) == partial) || (!(org.joda.time.LocalDateTime.MONTH_OF_YEAR < org.joda.time.LocalDateTime.this.iLocalMillis))) {
+             return true;
+
+
+
+Node: graphene-75.nancy.grid5000.fr
+
+
+Date: Thu Mar  2 22:22:28 CET 2017
+
+

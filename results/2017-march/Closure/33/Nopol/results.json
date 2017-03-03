@@ -1,0 +1,20 @@
+{
+    "date": "Thu Mar 02 19:38:03 UTC 2017", 
+    "executionTime": 112754, 
+    "nbAngelicValue": 1, 
+    "nbStatement": 2, 
+    "nb_classes": 400, 
+    "nb_methods": 4617, 
+    "node": "graphene-57.nancy.grid5000.fr\n", 
+    "patch": [
+        {
+            "nb_test_that_execute_statement": 8, 
+            "patch": "--- /tmp/closure_33_Nopol/src/com/google/javascript/rhino/jstype/PrototypeObjectType.java\n+++ /tmp/closure_33_Nopol/src/com/google/javascript/rhino/jstype/PrototypeObjectType.java\n@@ -572,4 +572,6 @@\n           if (!hasProperty(prop)) {\n-            typeToInfer = getNativeType(JSTypeNative.VOID_TYPE)\n-                .getLeastSupertype(propType);\n+            if (com.google.javascript.rhino.jstype.PrototypeObjectType.this.prettyPrint) {\n+              typeToInfer = getNativeType(JSTypeNative.VOID_TYPE)\n+              .getLeastSupertype(propType);\n+            }\n           }\n", 
+            "patchLocation": {
+                "class": "com.google.javascript.rhino.jstype.PrototypeObjectType", 
+                "line": 573
+            }, 
+            "patchType": "PRECONDITION"
+        }
+    ]
+}

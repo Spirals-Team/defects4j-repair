@@ -1,0 +1,38 @@
+cd /tmp/chart_4_Nopol;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;TZ="America/New_York"; export TZexport PATH="/home/tdurieux/jdk1.7.0_79/bin/:$PATH";cp -r /home/tdurieux/dynamoth-experiments/src/python/core/../../../libs/z3 lib/z3;time java -d64 -Xmx4g -Xms1g -XX:MaxPermSize=1024m -XX:+UseConcMarkSweepGC -XX:+CMSPermGenSweepingEnabled -XX:+CMSClassUnloadingEnabled -cp /home/tdurieux/dynamoth-experiments/src/python/core/../../..//libs/nopol.jar:/home/tdurieux/jdk1.7.0_79/bin//../lib/tools.jar fr.inria.lille.repair.Main --flocal gzoltar  --maxTime 300  --json  --mode repair --type pre_then_cond --oracle angelic --synthesis smt --solver z3 --solver-path /home/tdurieux/dynamoth-experiments/src/python/core/../../..//libs/z3/z3 --complianceLevel 4 --source /tmp/chart_4_Nopol/source/ --classpath /tmp/chart_4_Nopol/build/:/tmp/chart_4_Nopol/build-tests/:/tmp/chart_4_Nopol/lib/cobertura-lib/servlet-api-2.5-6.1.14.jar:/tmp/chart_4_Nopol/lib/servlet.jar:/home/tdurieux/dynamoth-experiments/src/python/core/../../..//libs/nopol.jar;echo "
+
+Node: `hostname`
+";echo "
+Date: `date`
+";
+
+05:30:02.190 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb classes : 635
+05:30:02.190 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb methods : 7103
+05:30:02.190 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements Analyzed : 449
+05:30:02.190 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements with Angelic Value Found : 1
+05:30:02.190 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb inputs in SMT : 3
+05:30:02.190 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb SMT level: 1
+05:30:02.190 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb SMT components: [0] []
+05:30:02.191 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb variables in SMT : 86
+05:30:02.191 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - NoPol Execution time : 452976ms
+05:30:02.191 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - ----PATCH FOUND----
+05:30:02.191 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - renderer!=null
+05:30:02.343 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb test that executes the patch: 18
+05:30:02.344 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - org.jfree.chart.plot.XYPlot:1607: PRECONDITION
+05:30:02.511 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - --- /tmp/chart_4_Nopol/source/org/jfree/chart/plot/XYPlot.java
++++ /tmp/chart_4_Nopol/source/org/jfree/chart/plot/XYPlot.java
+@@ -1606,3 +1606,5 @@
+     public void setRenderer(XYItemRenderer renderer) {
+-        setRenderer(0, renderer);
++        if (renderer!=null) {
++            setRenderer(0, renderer);
++        }
+     }
+
+
+
+Node: graphene-27.nancy.grid5000.fr
+
+
+Date: Fri Mar  3 06:30:03 CET 2017
+
+

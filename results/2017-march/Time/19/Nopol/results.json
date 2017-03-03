@@ -1,0 +1,20 @@
+{
+    "date": "Thu Mar 02 21:22:53 UTC 2017", 
+    "executionTime": 204909, 
+    "nbAngelicValue": 1, 
+    "nbStatement": 172, 
+    "nb_classes": 156, 
+    "nb_methods": 2871, 
+    "node": "graphene-43.nancy.grid5000.fr\n", 
+    "patch": [
+        {
+            "nb_test_that_execute_statement": 2139, 
+            "patch": "--- /tmp/time_19_Nopol/src/main/java/org/joda/time/DateTimeZone.java\n+++ /tmp/time_19_Nopol/src/main/java/org/joda/time/DateTimeZone.java\n@@ -899,3 +899,3 @@\n             }\n-        } else if (offsetLocal > 0) {\n+        } else if (org.joda.time.DateTimeZone.this.iID!=null) {\n             long prev = previousTransition(instantAdjusted);\n", 
+            "patchLocation": {
+                "class": "org.joda.time.DateTimeZone", 
+                "line": 900
+            }, 
+            "patchType": "CONDITIONAL"
+        }
+    ]
+}

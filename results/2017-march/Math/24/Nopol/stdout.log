@@ -1,0 +1,39 @@
+cd /tmp/math_24_Nopol;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;TZ="America/New_York"; export TZexport PATH="/home/tdurieux/jdk1.7.0_79/bin/:$PATH";cp -r /home/tdurieux/dynamoth-experiments/src/python/core/../../../libs/z3 lib/z3;time java -d64 -Xmx4g -Xms1g -XX:MaxPermSize=1024m -XX:+UseConcMarkSweepGC -XX:+CMSPermGenSweepingEnabled -XX:+CMSClassUnloadingEnabled -cp /home/tdurieux/dynamoth-experiments/src/python/core/../../..//libs/nopol.jar:/home/tdurieux/jdk1.7.0_79/bin//../lib/tools.jar fr.inria.lille.repair.Main --flocal gzoltar  --maxTime 300  --json  --mode repair --type pre_then_cond --oracle angelic --synthesis smt --solver z3 --solver-path /home/tdurieux/dynamoth-experiments/src/python/core/../../..//libs/z3/z3 --complianceLevel 5 --source /tmp/math_24_Nopol/src/main/java/ --classpath /tmp/math_24_Nopol/target/classes/:/tmp/math_24_Nopol/target/test-classes/:/tmp/math_24_Nopol/lib/commons-discovery-0.5.jar:/home/tdurieux/dynamoth-experiments/src/python/core/../../..//libs/nopol.jar;echo "
+
+Node: `hostname`
+";echo "
+Date: `date`
+";
+
+23:48:39.775 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb classes : 601
+23:48:39.775 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb methods : 4022
+23:48:39.775 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements Analyzed : 1
+23:48:39.775 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements with Angelic Value Found : 1
+23:48:39.775 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb inputs in SMT : 10
+23:48:39.775 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb SMT level: 3
+23:48:39.775 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb SMT components: [7] [== of arity: 2, != of arity: 2, < of arity: 2, <= of arity: 2, ! of arity: 1, || of arity: 2, && of arity: 2]
+23:48:39.775 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol -                   class java.lang.Boolean: 7
+23:48:39.776 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb variables in SMT : 6
+23:48:39.776 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - NoPol Execution time : 593593ms
+23:48:39.776 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - ----PATCH FOUND----
+23:48:39.776 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - (0 < r) || (!(-1 <= r))
+23:48:39.950 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb test that executes the patch: 2
+23:48:39.951 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - org.apache.commons.math3.analysis.FunctionUtils$4:146: PRECONDITION
+23:48:39.972 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - --- /tmp/math_24_Nopol/src/main/java/org/apache/commons/math3/analysis/FunctionUtils.java
++++ /tmp/math_24_Nopol/src/main/java/org/apache/commons/math3/analysis/FunctionUtils.java
+@@ -145,3 +145,5 @@
+                 for (int i = 1; i < f.length; i++) {
+-                    r += f[i].value(x);
++                    if ((0 < r) || (!(-1 <= r))) {
++                        r += f[i].value(x);
++                    }
+                 }
+
+
+
+Node: graphene-136.nancy.grid5000.fr
+
+
+Date: Fri Mar  3 00:48:40 CET 2017
+
+

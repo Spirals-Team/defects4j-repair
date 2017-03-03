@@ -1,0 +1,20 @@
+{
+    "date": "Thu Mar 02 18:59:35 UTC 2017", 
+    "executionTime": 141702, 
+    "nbAngelicValue": 1, 
+    "nbStatement": 7, 
+    "nb_classes": 391, 
+    "nb_methods": 4433, 
+    "node": "graphene-137.nancy.grid5000.fr\n", 
+    "patch": [
+        {
+            "nb_test_that_execute_statement": 166, 
+            "patch": "--- /tmp/closure_66_Nopol/src/com/google/javascript/jscomp/TypeCheck.java\n+++ /tmp/closure_66_Nopol/src/com/google/javascript/jscomp/TypeCheck.java\n@@ -821,3 +821,5 @@\n     if (type == null) {\n-      nullCount++;\n+      if (com.google.javascript.jscomp.TypeCheck.this.inExterns) {\n+        nullCount++;\n+      }\n     } else if (type.isUnknownType()) {\n", 
+            "patchLocation": {
+                "class": "com.google.javascript.jscomp.TypeCheck", 
+                "line": 822
+            }, 
+            "patchType": "PRECONDITION"
+        }
+    ]
+}

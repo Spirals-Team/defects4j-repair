@@ -1,0 +1,20 @@
+{
+    "date": "Thu Mar 02 19:57:08 UTC 2017", 
+    "executionTime": 119197, 
+    "nbAngelicValue": 1, 
+    "nbStatement": 3, 
+    "nb_classes": 403, 
+    "nb_methods": 4723, 
+    "node": "graphene-31.nancy.grid5000.fr\n", 
+    "patch": [
+        {
+            "nb_test_that_execute_statement": 2, 
+            "patch": "--- /tmp/closure_21_Nopol/src/com/google/javascript/jscomp/CheckSideEffects.java\n+++ /tmp/closure_21_Nopol/src/com/google/javascript/jscomp/CheckSideEffects.java\n@@ -117,7 +117,9 @@\n       if (n == parent.getLastChild()) {\n-        for (Node an : parent.getAncestors()) {\n-          int ancestorType = an.getType();\n-          if (ancestorType == Token.COMMA) continue;\n-          if (ancestorType != Token.EXPR_RESULT && ancestorType != Token.BLOCK) return;\n-          else break;\n+        if (com.google.javascript.jscomp.CheckSideEffects.PROTECTOR_FN.length()==0) {\n+          for (Node an : parent.getAncestors()) {\n+            int ancestorType = an.getType();\n+            if (ancestorType == Token.COMMA) continue;\n+            if (ancestorType != Token.EXPR_RESULT && ancestorType != Token.BLOCK) return;\n+            else break;\n+          }\n         }\n", 
+            "patchLocation": {
+                "class": "com.google.javascript.jscomp.CheckSideEffects", 
+                "line": 118
+            }, 
+            "patchType": "PRECONDITION"
+        }
+    ]
+}

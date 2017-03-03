@@ -1,0 +1,46 @@
+cd /tmp/closure_21_Nopol;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;TZ="America/New_York"; export TZexport PATH="/home/tdurieux/jdk1.7.0_79/bin/:$PATH";cp -r /home/tdurieux/dynamoth-experiments/src/python/core/../../../libs/z3 lib/z3;time java -d64 -Xmx4g -Xms1g -XX:MaxPermSize=1024m -XX:+UseConcMarkSweepGC -XX:+CMSPermGenSweepingEnabled -XX:+CMSClassUnloadingEnabled -cp /home/tdurieux/dynamoth-experiments/src/python/core/../../..//libs/nopol.jar:/home/tdurieux/jdk1.7.0_79/bin//../lib/tools.jar fr.inria.lille.repair.Main --flocal gzoltar  --maxTime 300  --json  --mode repair --type pre_then_cond --oracle angelic --synthesis smt --solver z3 --solver-path /home/tdurieux/dynamoth-experiments/src/python/core/../../..//libs/z3/z3 --complianceLevel 6 --source /tmp/closure_21_Nopol/src/ --classpath /tmp/closure_21_Nopol/build/classes:/tmp/closure_21_Nopol/build/test:/tmp/closure_21_Nopol/build/lib/rhino.jar:/tmp/closure_21_Nopol/lib/ant.jar:/tmp/closure_21_Nopol/lib/ant-launcher.jar:/tmp/closure_21_Nopol/lib/args4j.jar:/tmp/closure_21_Nopol/lib/guava.jar:/tmp/closure_21_Nopol/lib/jarjar.jar:/tmp/closure_21_Nopol/lib/json.jar:/tmp/closure_21_Nopol/lib/jsr305.jar:/tmp/closure_21_Nopol/lib/junit.jar:/tmp/closure_21_Nopol/lib/caja-r4314.jar:/tmp/closure_21_Nopol/lib/protobuf-java.jar:/home/tdurieux/dynamoth-experiments/src/python/core/../../..//libs/nopol.jar;echo "
+
+Node: `hostname`
+";echo "
+Date: `date`
+";
+
+19:57:05.240 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb classes : 403
+19:57:05.240 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb methods : 4723
+19:57:05.240 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements Analyzed : 3
+19:57:05.240 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements with Angelic Value Found : 1
+19:57:05.240 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb inputs in SMT : 2
+19:57:05.240 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb SMT level: 1
+19:57:05.240 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb SMT components: [0] []
+19:57:05.240 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb variables in SMT : 20
+19:57:05.241 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - NoPol Execution time : 119197ms
+19:57:05.241 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - ----PATCH FOUND----
+19:57:05.241 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - com.google.javascript.jscomp.CheckSideEffects.PROTECTOR_FN.length()==0
+19:57:08.315 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb test that executes the patch: 2
+19:57:08.315 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - com.google.javascript.jscomp.CheckSideEffects:118: PRECONDITION
+19:57:08.330 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - --- /tmp/closure_21_Nopol/src/com/google/javascript/jscomp/CheckSideEffects.java
++++ /tmp/closure_21_Nopol/src/com/google/javascript/jscomp/CheckSideEffects.java
+@@ -117,7 +117,9 @@
+       if (n == parent.getLastChild()) {
+-        for (Node an : parent.getAncestors()) {
+-          int ancestorType = an.getType();
+-          if (ancestorType == Token.COMMA) continue;
+-          if (ancestorType != Token.EXPR_RESULT && ancestorType != Token.BLOCK) return;
+-          else break;
++        if (com.google.javascript.jscomp.CheckSideEffects.PROTECTOR_FN.length()==0) {
++          for (Node an : parent.getAncestors()) {
++            int ancestorType = an.getType();
++            if (ancestorType == Token.COMMA) continue;
++            if (ancestorType != Token.EXPR_RESULT && ancestorType != Token.BLOCK) return;
++            else break;
++          }
+         }
+
+
+
+Node: graphene-31.nancy.grid5000.fr
+
+
+Date: Thu Mar  2 20:57:11 CET 2017
+
+

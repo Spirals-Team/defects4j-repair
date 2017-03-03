@@ -1,0 +1,20 @@
+{
+    "date": "Thu Mar 02 23:02:42 UTC 2017", 
+    "executionTime": 279378, 
+    "nbAngelicValue": 1, 
+    "nbStatement": 1, 
+    "nb_classes": 578, 
+    "nb_methods": 3768, 
+    "node": "graphene-63.nancy.grid5000.fr\n", 
+    "patch": [
+        {
+            "nb_test_that_execute_statement": 16, 
+            "patch": "--- /tmp/math_42_Nopol/src/main/java/org/apache/commons/math/optimization/linear/SimplexTableau.java\n+++ /tmp/math_42_Nopol/src/main/java/org/apache/commons/math/optimization/linear/SimplexTableau.java\n@@ -346,3 +346,5 @@\n           if (getBasicRow(col) == null) {\n-            columnsToDrop.add(col);\n+            if (1 <= org.apache.commons.math.optimization.linear.SimplexTableau.this.numSlackVariables) {\n+                columnsToDrop.add(col);\n+            }\n           }\n", 
+            "patchLocation": {
+                "class": "org.apache.commons.math.optimization.linear.SimplexTableau", 
+                "line": 347
+            }, 
+            "patchType": "PRECONDITION"
+        }
+    ]
+}

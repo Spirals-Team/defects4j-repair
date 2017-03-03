@@ -1,0 +1,20 @@
+{
+    "date": "Thu Mar 02 21:21:52 UTC 2017", 
+    "executionTime": 53316, 
+    "nbAngelicValue": 1, 
+    "nbStatement": 10, 
+    "nb_classes": 157, 
+    "nb_methods": 2880, 
+    "node": "graphene-44.nancy.grid5000.fr\n", 
+    "patch": [
+        {
+            "nb_test_that_execute_statement": 18, 
+            "patch": "--- /tmp/time_11_Nopol/src/main/java/org/joda/time/tz/DateTimeZoneBuilder.java\n+++ /tmp/time_11_Nopol/src/main/java/org/joda/time/tz/DateTimeZoneBuilder.java\n@@ -1457,7 +1457,6 @@\n             if (tailZone != null) {\n-                if (tailZone.iStartRecurrence.getNameKey()\n-                    .equals(tailZone.iEndRecurrence.getNameKey())) {\n+                if (id.length()==0) {\n                     if (ZoneInfoCompiler.verbose()) {\n                         System.out.println(\"Fixing duplicate recurrent name key - \" +\n-                                           tailZone.iStartRecurrence.getNameKey());\n+                        tailZone.iStartRecurrence.getNameKey());\n                     }\n@@ -1465,12 +1464,12 @@\n                         tailZone = new DSTZone(\n-                            tailZone.getID(),\n-                            tailZone.iStandardOffset,\n-                            tailZone.iStartRecurrence.renameAppend(\"-Summer\"),\n-                            tailZone.iEndRecurrence);\n+                        tailZone.getID(),\n+                        tailZone.iStandardOffset,\n+                        tailZone.iStartRecurrence.renameAppend(\"-Summer\"),\n+                        tailZone.iEndRecurrence);\n                     } else {\n                         tailZone = new DSTZone(\n-                            tailZone.getID(),\n-                            tailZone.iStandardOffset,\n-                            tailZone.iStartRecurrence,\n-                            tailZone.iEndRecurrence.renameAppend(\"-Summer\"));\n+                        tailZone.getID(),\n+                        tailZone.iStandardOffset,\n+                        tailZone.iStartRecurrence,\n+                        tailZone.iEndRecurrence.renameAppend(\"-Summer\"));\n                     }\n", 
+            "patchLocation": {
+                "class": "org.joda.time.tz.DateTimeZoneBuilder$PrecalculatedZone", 
+                "line": 1458
+            }, 
+            "patchType": "CONDITIONAL"
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "date": "Fri Mar 03 05:23:56 UTC 2017", 
+    "executionTime": 50957, 
+    "nbAngelicValue": 1, 
+    "nbStatement": 20, 
+    "nb_classes": 656, 
+    "nb_methods": 7313, 
+    "node": "graphene-25.nancy.grid5000.fr\n", 
+    "patch": [
+        {
+            "nb_test_that_execute_statement": 86, 
+            "patch": "--- /tmp/chart_3_Nopol/source/org/jfree/data/time/TimeSeries.java\n+++ /tmp/chart_3_Nopol/source/org/jfree/data/time/TimeSeries.java\n@@ -884,3 +884,3 @@\n             }\n-            if (removed) {\n+            if (((removed) && (removed)) || (org.jfree.data.time.TimeSeries.DEFAULT_RANGE_DESCRIPTION.length() <= org.jfree.data.time.TimeSeries.this.maxY)) {\n                 findBoundsByIteration();\n", 
+            "patchLocation": {
+                "class": "org.jfree.data.time.TimeSeries", 
+                "line": 885
+            }, 
+            "patchType": "CONDITIONAL"
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "date": "Thu Mar 02 23:37:07 UTC 2017", 
+    "executionTime": 631572, 
+    "nbAngelicValue": 1, 
+    "nbStatement": 3, 
+    "nb_classes": 587, 
+    "nb_methods": 3829, 
+    "node": "graphene-41.nancy.grid5000.fr\n", 
+    "patch": [
+        {
+            "nb_test_that_execute_statement": 4, 
+            "patch": "--- /tmp/math_28_Nopol/src/main/java/org/apache/commons/math3/optimization/linear/SimplexSolver.java\n+++ /tmp/math_28_Nopol/src/main/java/org/apache/commons/math3/optimization/linear/SimplexSolver.java\n@@ -150,3 +150,5 @@\n                 }\n-                return minRow;\n+                if (minRatioPositions.isEmpty()) {\n+                    return minRow;\n+                }\n         }\n", 
+            "patchLocation": {
+                "class": "org.apache.commons.math3.optimization.linear.SimplexSolver", 
+                "line": 151
+            }, 
+            "patchType": "PRECONDITION"
+        }
+    ]
+}

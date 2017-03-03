@@ -1,0 +1,43 @@
+cd /tmp/math_81_Nopol;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;TZ="America/New_York"; export TZexport PATH="/home/tdurieux/jdk1.7.0_79/bin/:$PATH";cp -r /home/tdurieux/dynamoth-experiments/src/python/core/../../../libs/z3 lib/z3;time java -d64 -Xmx4g -Xms1g -XX:MaxPermSize=1024m -XX:+UseConcMarkSweepGC -XX:+CMSPermGenSweepingEnabled -XX:+CMSClassUnloadingEnabled -cp /home/tdurieux/dynamoth-experiments/src/python/core/../../..//libs/nopol.jar:/home/tdurieux/jdk1.7.0_79/bin//../lib/tools.jar fr.inria.lille.repair.Main --flocal gzoltar  --maxTime 300  --json  --mode repair --type pre_then_cond --oracle angelic --synthesis smt --solver z3 --solver-path /home/tdurieux/dynamoth-experiments/src/python/core/../../..//libs/z3/z3 --complianceLevel 5 --source /tmp/math_81_Nopol/src/main/java/ --classpath /tmp/math_81_Nopol/target/classes/:/tmp/math_81_Nopol/target/test-classes/:/tmp/math_81_Nopol/lib/commons-discovery-0.5.jar:/home/tdurieux/dynamoth-experiments/src/python/core/../../..//libs/nopol.jar;echo "
+
+Node: `hostname`
+";echo "
+Date: `date`
+";
+
+22:14:52.293 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb classes : 393
+22:14:52.294 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb methods : 2898
+22:14:52.294 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements Analyzed : 12
+22:14:52.294 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements with Angelic Value Found : 1
+22:14:52.294 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb inputs in SMT : 2
+22:14:52.294 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb SMT level: 1
+22:14:52.294 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb SMT components: [0] []
+22:14:52.294 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb variables in SMT : 71
+22:14:52.294 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - NoPol Execution time : 40676ms
+22:14:52.294 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - ----PATCH FOUND----
+22:14:52.294 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - org.apache.commons.math.linear.EigenDecompositionImpl.this.main!=null
+22:14:52.423 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb test that executes the patch: 4
+22:14:52.423 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - org.apache.commons.math.linear.EigenDecompositionImpl:1586: CONDITIONAL
+22:14:52.542 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - --- /tmp/math_81_Nopol/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java
++++ /tmp/math_81_Nopol/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java
+@@ -1585,4 +1585,4 @@
+         case 1 : // one eigenvalue just deflated. use dMin1, dN1 for dMin and dN.
+-            if (dMin1 == dN1 && dMin2 == dN2) {
+-
++            if (org.apache.commons.math.linear.EigenDecompositionImpl.this.main!=null) {
++                
+                 // cases 7 and 8.
+@@ -1618,3 +1618,3 @@
+             } else {
+-
++                
+                 // case 9.
+
+
+
+Node: graphene-70.nancy.grid5000.fr
+
+
+Date: Thu Mar  2 23:14:52 CET 2017
+
+

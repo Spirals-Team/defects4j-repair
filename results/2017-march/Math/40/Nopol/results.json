@@ -1,0 +1,20 @@
+{
+    "date": "Thu Mar 02 23:11:45 UTC 2017", 
+    "executionTime": 633883, 
+    "nbAngelicValue": 2, 
+    "nbStatement": 33, 
+    "nb_classes": 578, 
+    "nb_methods": 3764, 
+    "node": "graphene-72.nancy.grid5000.fr\n", 
+    "patch": [
+        {
+            "nb_test_that_execute_statement": 19, 
+            "patch": "--- /tmp/math_40_Nopol/src/main/java/org/apache/commons/math/analysis/solvers/BracketingNthOrderBrentSolver.java\n+++ /tmp/math_40_Nopol/src/main/java/org/apache/commons/math/analysis/solvers/BracketingNthOrderBrentSolver.java\n@@ -259,3 +259,3 @@\n                     // we try again with a lower interpolation order\n-                    if (signChangeIndex - start >= end - signChangeIndex) {\n+                    if (((signChangeIndex - start) >= (end - signChangeIndex)) || (xA <= org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver.REDUCTION_FACTOR)) {\n                         // we have more points before the sign change, drop the lowest point\n", 
+            "patchLocation": {
+                "class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver", 
+                "line": 260
+            }, 
+            "patchType": "CONDITIONAL"
+        }
+    ]
+}

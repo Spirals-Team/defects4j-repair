@@ -1,0 +1,20 @@
+{
+    "date": "Thu Mar 02 18:58:50 MST 2017", 
+    "executionTime": 35692, 
+    "nbAngelicValue": 1, 
+    "nbStatement": 23, 
+    "nb_classes": 77, 
+    "nb_methods": 1730, 
+    "node": "graphene-53.nancy.grid5000.fr\n", 
+    "patch": [
+        {
+            "nb_test_that_execute_statement": 6, 
+            "patch": "--- /tmp/lang_53_Nopol/src/java/org/apache/commons/lang/time/DateUtils.java\n+++ /tmp/lang_53_Nopol/src/java/org/apache/commons/lang/time/DateUtils.java\n@@ -665,3 +665,5 @@\n             date.setTime(time);\n-            val.setTime(date);\n+            if (org.apache.commons.lang.time.DateUtils.RANGE_WEEK_CENTER == millisecs) {\n+                val.setTime(date);\n+            }\n         }\n", 
+            "patchLocation": {
+                "class": "org.apache.commons.lang.time.DateUtils", 
+                "line": 666
+            }, 
+            "patchType": "PRECONDITION"
+        }
+    ]
+}

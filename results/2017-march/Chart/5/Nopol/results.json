@@ -1,0 +1,20 @@
+{
+    "date": "Fri Mar 03 05:22:14 UTC 2017", 
+    "executionTime": 38442, 
+    "nbAngelicValue": 1, 
+    "nbStatement": 5, 
+    "nb_classes": 596, 
+    "nb_methods": 6707, 
+    "node": "graphene-25.nancy.grid5000.fr\n", 
+    "patch": [
+        {
+            "nb_test_that_execute_statement": 6, 
+            "patch": "--- /tmp/chart_5_Nopol/source/org/jfree/data/xy/XYSeries.java\n+++ /tmp/chart_5_Nopol/source/org/jfree/data/xy/XYSeries.java\n@@ -562,3 +562,3 @@\n             // append the value to the list...\n-            if (this.autoSort) {\n+            if (overwritten!=null) {\n                 this.data.add(-index - 1, new XYDataItem(x, y));\n", 
+            "patchLocation": {
+                "class": "org.jfree.data.xy.XYSeries", 
+                "line": 563
+            }, 
+            "patchType": "CONDITIONAL"
+        }
+    ]
+}

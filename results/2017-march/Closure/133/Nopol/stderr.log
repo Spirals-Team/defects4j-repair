@@ -1,0 +1,3078 @@
+mkdir: cannot create directory ‘lib/’: File exists
+cp: cannot stat ‘/home/tdurieux/defects4j/framework/projects/Closure/lib/*’: No such file or directory
+Running ant (compile)...................................................... OK
+Running ant (compile.tests)................................................ OK
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
+Please use CMSClassUnloadingEnabled in place of CMSPermGenSweepingEnabled in the future
+Mar 02, 2017 6:24:59 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: i0:1: WARNING - Message MSG_HI has no description. Add @desc JsDoc tag.
+var goog = {}; goog.getMsg = function() {};/** @desc xyz */ var MSG_HI = goog.getMsg('hi');
+                                                                ^
+
+Mar 02, 2017 6:24:59 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 1 warning(s)
+Mar 02, 2017 6:24:59 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: i0:1: ERROR - Parse error. unlabelled break must be inside loop or switch
+function f() { try { } catch(e) { break; } }
+                                  ^
+
+Mar 02, 2017 6:24:59 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 1 error(s), 0 warning(s), 100% typed
+Mar 02, 2017 6:24:59 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: i0:1: ERROR - Variable f has been deprecated.
+/** @deprecated */ function f() { } function g() { f(); }
+                                                   ^
+
+Mar 02, 2017 6:24:59 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 1 error(s), 0 warning(s), 100% typed
+Mar 02, 2017 6:24:59 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: i0:1: ERROR - Parse error. unnamed function statement
+function () {}
+^
+
+Mar 02, 2017 6:24:59 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 1 error(s), 0 warning(s)
+Mar 02, 2017 6:24:59 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: i0:1: ERROR - Parse error. missing { before function body
+var foo = {bar: function(e) }
+                            ^
+
+Mar 02, 2017 6:24:59 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: i0:1: ERROR - Parse error. missing } after property list
+var foo = {bar: function(e) }
+                            ^
+
+Mar 02, 2017 6:24:59 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 2 error(s), 0 warning(s)
+Mar 02, 2017 6:24:59 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: i0:1: ERROR - Parse error. Unsupported syntax: ERROR
+function hi
+^
+
+Mar 02, 2017 6:24:59 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: i0:1: ERROR - Parse error. missing ( before function parameters.
+function hi
+          ^
+
+Mar 02, 2017 6:24:59 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: i0:1: ERROR - Parse error. missing ) after formal parameters
+function hi
+          ^
+
+Mar 02, 2017 6:24:59 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: i0:1: ERROR - Parse error. missing formal parameter
+function hi
+          ^
+
+Mar 02, 2017 6:24:59 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: i0:1: ERROR - Parse error. missing { before function body
+function hi
+          ^
+
+Mar 02, 2017 6:24:59 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: i0:1: ERROR - Parse error. missing } after function body
+function hi
+          ^
+
+Mar 02, 2017 6:24:59 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 6 error(s), 0 warning(s)
+Mar 02, 2017 6:24:59 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: i0:1: ERROR - Parse error. missing ] after element list
+var x = [1, 2
+            ^
+
+Mar 02, 2017 6:24:59 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 1 error(s), 0 warning(s)
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: in1:2: WARNING - Property dom never defined on goog
+goog.dom.DomHelper = function(){};
+^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: in1:3: WARNING - Property dom never defined on goog
+var y = goog.dom.DomHelper;
+        ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: in1:2: ERROR - variable goog is undeclared
+goog.dom.DomHelper = function(){};
+^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 1 error(s), 4 warning(s), 60% typed
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 90.9% typed
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: in1:12: WARNING - Property inherits never defined on goog
+goog.inherits(a.b.DerivedClass, a.b.BaseClass);
+^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: in1:5: ERROR - variable alert is undeclared
+  alert('hi');
+  ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: in1:12: ERROR - variable goog is undeclared
+goog.inherits(a.b.DerivedClass, a.b.BaseClass);
+^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 2 error(s), 3 warning(s), 92.6% typed
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: in1:1: WARNING - Suspicious code. The result of the 'add' operator is not being used.
+/** @constructor */ var DomHelper = function(){};/** method */ DomHelper.method = function() {};function f() { var x = DomHelper; x.method() + x.method(); }
+                                                                                                                                  ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 3 warning(s), 100% typed
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: in1:3: WARNING - Bad type annotation. Unknown type Missing
+ * @extends {Missing}
+             ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 3 warning(s), 78.6% typed
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s)
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: in1:1: WARNING - dangerous use of the global this object
+this.foo = {}; this.foo.bar = {};
+^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: in1:1: WARNING - dangerous use of the global this object
+this.foo = {}; this.foo.bar = {};
+               ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 4 warning(s), 87.5% typed
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 28.6% typed
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: in1:1: ERROR - variable x is undeclared
+/** @constructor */ var DomHelper = function(){};DomHelper.prototype.method = function() {   this.field = 3;  return x.field;}
+                                                                                                                     ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 1 error(s), 2 warning(s), 83.3% typed
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s)
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 99.1% typed
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: in1:2: WARNING - goog.dom.Foo defined before its owner. goog.dom is defined at in1:3
+/** @constructor */ goog.dom.Foo = function() {};
+                    ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 3 warning(s), 100% typed
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s)
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s)
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 50% typed
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: in1:1: WARNING - Suspicious code. The result of the 'getprop' operator is not being used.
+/** @constructor */ function Foo() {} this.Foo;
+                                      ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: in1:1: WARNING - dangerous use of the global this object
+/** @constructor */ function Foo() {} this.Foo;
+                                      ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 4 warning(s), 100% typed
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: in1:9: WARNING - Property c never defined on A.prototype.b
+  var x; if (x) { x = a.b.b; } else { x = a.b.c; }
+                                          ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 3 warning(s), 86.7% typed
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: in1:1: ERROR - variable goog is undeclared
+/** @constructor */ goog.Foo = function(){};
+                    ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 1 error(s), 2 warning(s), 66.7% typed
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: in1:3: WARNING - Bad type annotation. Unknown type Missing
+ * @extends {Missing}
+             ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 3 warning(s), 78.6% typed
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: in1:1: WARNING - dangerous use of the global this object
+function F() {  this.field1 = 3;}F.prototype.method1 = function() {  this.field1 = 5;};(new F()).method1();
+                ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: in1:1: WARNING - cannot instantiate non-constructor
+function F() {  this.field1 = 3;}F.prototype.method1 = function() {  this.field1 = 5;};(new F()).method1();
+                                                                                        ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 4 warning(s), 75% typed
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: in1:2: WARNING - Property require never defined on goog
+goog.require('foo.bar')
+^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: in1:1: ERROR - variable foo is undeclared
+foo.bar = function(){};  // definition
+^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: in1:2: ERROR - variable goog is undeclared
+goog.require('foo.bar')
+^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 2 error(s), 3 warning(s), 57.1% typed
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: testcode:5: WARNING - Unable to determine return type for exported function internalName
+internalName = function(a) {  return 6;
+               ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 1 warning(s), 100% typed
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: testcode:5: WARNING - Unable to determine return type for exported function internalName
+internalName = function(a) {  return a;
+               ^
+
+Mar 02, 2017 6:25:00 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 1 warning(s), 100% typed
+Mar 02, 2017 6:25:01 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: testcode:7: WARNING - Unable to determine return type for exported function internalName
+internalName = function(param1) {return /** @type {V} */ (param1);};goog.exportSymbol('externalName', internalName)
+               ^
+
+Mar 02, 2017 6:25:01 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: testcode:7: WARNING - Unable to determine type of parameter internalName for exported function param1
+internalName = function(param1) {return /** @type {V} */ (param1);};goog.exportSymbol('externalName', internalName)
+                        ^
+
+Mar 02, 2017 6:25:01 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: testcode:7: WARNING - Bad type annotation. Unknown type V
+internalName = function(param1) {return /** @type {V} */ (param1);};goog.exportSymbol('externalName', internalName)
+                                                   ^
+
+Mar 02, 2017 6:25:01 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 3 warning(s), 87.5% typed
+Mar 02, 2017 6:25:01 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: testcode:7: WARNING - Unable to determine return type for exported function internalName
+internalName = function(param1) {return param1;};goog.exportSymbol('externalName', internalName)
+               ^
+
+Mar 02, 2017 6:25:01 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: testcode:7: WARNING - Unable to determine type of parameter internalName for exported function param1
+internalName = function(param1) {return param1;};goog.exportSymbol('externalName', internalName)
+                        ^
+
+Mar 02, 2017 6:25:01 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 93.3% typed
+Mar 02, 2017 6:25:01 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: testcode:4: WARNING - Unable to determine type of parameter InternalName for exported function b
+ var InternalName = function(a,b,c) {  return 6;};goog.exportSymbol('ExternalName', InternalName)
+                               ^
+
+Mar 02, 2017 6:25:01 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: testcode:4: WARNING - Unable to determine type of parameter InternalName for exported function c
+ var InternalName = function(a,b,c) {  return 6;};goog.exportSymbol('ExternalName', InternalName)
+                                 ^
+
+Mar 02, 2017 6:25:01 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: i0:1: ERROR - Parse error. unlabelled break must be inside loop or switch
+function f() { try { } catch(e) { break; } }
+                                  ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 1 error(s), 0 warning(s), 100% typed
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: i0:1: ERROR - Variable f has been deprecated.
+/** @deprecated */ function f() { } function g() { f(); }
+                                                   ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 1 error(s), 0 warning(s), 100% typed
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: i0:1: ERROR - Parse error. unnamed function statement
+function () {}
+^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 1 error(s), 0 warning(s)
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: i0:1: ERROR - Parse error. missing { before function body
+var foo = {bar: function(e) }
+                            ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: i0:1: ERROR - Parse error. missing } after property list
+var foo = {bar: function(e) }
+                            ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 2 error(s), 0 warning(s)
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: i0:1: ERROR - Parse error. Unsupported syntax: ERROR
+function hi
+^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: i0:1: ERROR - Parse error. missing ( before function parameters.
+function hi
+          ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: i0:1: ERROR - Parse error. missing ) after formal parameters
+function hi
+          ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: i0:1: ERROR - Parse error. missing formal parameter
+function hi
+          ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: i0:1: ERROR - Parse error. missing { before function body
+function hi
+          ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: i0:1: ERROR - Parse error. missing } after function body
+function hi
+          ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 6 error(s), 0 warning(s)
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: i0:1: ERROR - Parse error. missing ] after element list
+var x = [1, 2
+            ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 1 error(s), 0 warning(s)
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: in1:2: WARNING - Property dom never defined on goog
+goog.dom.DomHelper = function(){};
+^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: in1:3: WARNING - Property dom never defined on goog
+var y = goog.dom.DomHelper;
+        ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: in1:2: ERROR - variable goog is undeclared
+goog.dom.DomHelper = function(){};
+^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 1 error(s), 4 warning(s), 60% typed
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 90.9% typed
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: in1:12: WARNING - Property inherits never defined on goog
+goog.inherits(a.b.DerivedClass, a.b.BaseClass);
+^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: in1:5: ERROR - variable alert is undeclared
+  alert('hi');
+  ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: in1:12: ERROR - variable goog is undeclared
+goog.inherits(a.b.DerivedClass, a.b.BaseClass);
+^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 2 error(s), 3 warning(s), 92.6% typed
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: in1:1: WARNING - Suspicious code. The result of the 'add' operator is not being used.
+/** @constructor */ var DomHelper = function(){};/** method */ DomHelper.method = function() {};function f() { var x = DomHelper; x.method() + x.method(); }
+                                                                                                                                  ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 3 warning(s), 100% typed
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: in1:3: WARNING - Bad type annotation. Unknown type Missing
+ * @extends {Missing}
+             ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 3 warning(s), 78.6% typed
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s)
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: in1:1: WARNING - dangerous use of the global this object
+this.foo = {}; this.foo.bar = {};
+^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: in1:1: WARNING - dangerous use of the global this object
+this.foo = {}; this.foo.bar = {};
+               ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 4 warning(s), 87.5% typed
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 28.6% typed
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: in1:1: ERROR - variable x is undeclared
+/** @constructor */ var DomHelper = function(){};DomHelper.prototype.method = function() {   this.field = 3;  return x.field;}
+                                                                                                                     ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 1 error(s), 2 warning(s), 83.3% typed
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s)
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 99.1% typed
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: in1:2: WARNING - goog.dom.Foo defined before its owner. goog.dom is defined at in1:3
+/** @constructor */ goog.dom.Foo = function() {};
+                    ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 3 warning(s), 100% typed
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s)
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s)
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 50% typed
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: in1:1: WARNING - Suspicious code. The result of the 'getprop' operator is not being used.
+/** @constructor */ function Foo() {} this.Foo;
+                                      ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: in1:1: WARNING - dangerous use of the global this object
+/** @constructor */ function Foo() {} this.Foo;
+                                      ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 4 warning(s), 100% typed
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: in1:9: WARNING - Property c never defined on A.prototype.b
+  var x; if (x) { x = a.b.b; } else { x = a.b.c; }
+                                          ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 3 warning(s), 86.7% typed
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: in1:1: ERROR - variable goog is undeclared
+/** @constructor */ goog.Foo = function(){};
+                    ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 1 error(s), 2 warning(s), 66.7% typed
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: in1:3: WARNING - Bad type annotation. Unknown type Missing
+ * @extends {Missing}
+             ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 3 warning(s), 78.6% typed
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: in1:1: WARNING - dangerous use of the global this object
+function F() {  this.field1 = 3;}F.prototype.method1 = function() {  this.field1 = 5;};(new F()).method1();
+                ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: in1:1: WARNING - cannot instantiate non-constructor
+function F() {  this.field1 = 3;}F.prototype.method1 = function() {  this.field1 = 5;};(new F()).method1();
+                                                                                        ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 4 warning(s), 75% typed
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: in1:2: WARNING - Property require never defined on goog
+goog.require('foo.bar')
+^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: in1:1: ERROR - variable foo is undeclared
+foo.bar = function(){};  // definition
+^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: in1:2: ERROR - variable goog is undeclared
+goog.require('foo.bar')
+^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 2 error(s), 3 warning(s), 57.1% typed
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: testcode:5: WARNING - Unable to determine return type for exported function internalName
+internalName = function(a) {  return 6;
+               ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 1 warning(s), 100% typed
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: testcode:5: WARNING - Unable to determine return type for exported function internalName
+internalName = function(a) {  return a;
+               ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 1 warning(s), 100% typed
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: testcode:7: WARNING - Unable to determine return type for exported function internalName
+internalName = function(param1) {return /** @type {V} */ (param1);};goog.exportSymbol('externalName', internalName)
+               ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: testcode:7: WARNING - Unable to determine type of parameter internalName for exported function param1
+internalName = function(param1) {return /** @type {V} */ (param1);};goog.exportSymbol('externalName', internalName)
+                        ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: testcode:7: WARNING - Bad type annotation. Unknown type V
+internalName = function(param1) {return /** @type {V} */ (param1);};goog.exportSymbol('externalName', internalName)
+                                                   ^
+
+Mar 02, 2017 6:25:02 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 3 warning(s), 87.5% typed
+Mar 02, 2017 6:25:03 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: testcode:7: WARNING - Unable to determine return type for exported function internalName
+internalName = function(param1) {return param1;};goog.exportSymbol('externalName', internalName)
+               ^
+
+Mar 02, 2017 6:25:03 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: testcode:7: WARNING - Unable to determine type of parameter internalName for exported function param1
+internalName = function(param1) {return param1;};goog.exportSymbol('externalName', internalName)
+                        ^
+
+Mar 02, 2017 6:25:03 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 93.3% typed
+Mar 02, 2017 6:25:03 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: testcode:4: WARNING - Unable to determine type of parameter InternalName for exported function b
+ var InternalName = function(a,b,c) {  return 6;};goog.exportSymbol('ExternalName', InternalName)
+                               ^
+
+Mar 02, 2017 6:25:03 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: testcode:4: WARNING - Unable to determine type of parameter InternalName for exported function c
+ var InternalName = function(a,b,c) {  return 6;};goog.exportSymbol('ExternalName', InternalName)
+                                 ^
+
+Mar 02, 2017 6:25:03 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:05 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: i0:1: ERROR - Parse error. unlabelled break must be inside loop or switch
+function f() { try { } catch(e) { break; } }
+                                  ^
+
+Mar 02, 2017 6:25:05 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 1 error(s), 0 warning(s), 100% typed
+Mar 02, 2017 6:25:05 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: i0:1: ERROR - Variable f has been deprecated.
+/** @deprecated */ function f() { } function g() { f(); }
+                                                   ^
+
+Mar 02, 2017 6:25:05 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 1 error(s), 0 warning(s), 100% typed
+Mar 02, 2017 6:25:05 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: i0:1: ERROR - Parse error. unnamed function statement
+function () {}
+^
+
+Mar 02, 2017 6:25:05 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 1 error(s), 0 warning(s)
+Mar 02, 2017 6:25:05 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: i0:1: ERROR - Parse error. missing { before function body
+var foo = {bar: function(e) }
+                            ^
+
+Mar 02, 2017 6:25:05 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: i0:1: ERROR - Parse error. missing } after property list
+var foo = {bar: function(e) }
+                            ^
+
+Mar 02, 2017 6:25:05 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 2 error(s), 0 warning(s)
+Mar 02, 2017 6:25:05 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: i0:1: ERROR - Parse error. Unsupported syntax: ERROR
+function hi
+^
+
+Mar 02, 2017 6:25:05 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: i0:1: ERROR - Parse error. missing ( before function parameters.
+function hi
+          ^
+
+Mar 02, 2017 6:25:05 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: i0:1: ERROR - Parse error. missing ) after formal parameters
+function hi
+          ^
+
+Mar 02, 2017 6:25:05 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: i0:1: ERROR - Parse error. missing formal parameter
+function hi
+          ^
+
+Mar 02, 2017 6:25:05 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: i0:1: ERROR - Parse error. missing { before function body
+function hi
+          ^
+
+Mar 02, 2017 6:25:05 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: i0:1: ERROR - Parse error. missing } after function body
+function hi
+          ^
+
+Mar 02, 2017 6:25:05 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 6 error(s), 0 warning(s)
+Mar 02, 2017 6:25:05 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: i0:1: ERROR - Parse error. missing ] after element list
+var x = [1, 2
+            ^
+
+Mar 02, 2017 6:25:05 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 1 error(s), 0 warning(s)
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: in1:2: WARNING - Property dom never defined on goog
+goog.dom.DomHelper = function(){};
+^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: in1:3: WARNING - Property dom never defined on goog
+var y = goog.dom.DomHelper;
+        ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: in1:2: ERROR - variable goog is undeclared
+goog.dom.DomHelper = function(){};
+^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 1 error(s), 4 warning(s), 60% typed
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 90.9% typed
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: in1:12: WARNING - Property inherits never defined on goog
+goog.inherits(a.b.DerivedClass, a.b.BaseClass);
+^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: in1:5: ERROR - variable alert is undeclared
+  alert('hi');
+  ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: in1:12: ERROR - variable goog is undeclared
+goog.inherits(a.b.DerivedClass, a.b.BaseClass);
+^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 2 error(s), 3 warning(s), 92.6% typed
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: in1:1: WARNING - Suspicious code. The result of the 'add' operator is not being used.
+/** @constructor */ var DomHelper = function(){};/** method */ DomHelper.method = function() {};function f() { var x = DomHelper; x.method() + x.method(); }
+                                                                                                                                  ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 3 warning(s), 100% typed
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: in1:3: WARNING - Bad type annotation. Unknown type Missing
+ * @extends {Missing}
+             ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 3 warning(s), 78.6% typed
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s)
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: in1:1: WARNING - dangerous use of the global this object
+this.foo = {}; this.foo.bar = {};
+^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: in1:1: WARNING - dangerous use of the global this object
+this.foo = {}; this.foo.bar = {};
+               ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 4 warning(s), 87.5% typed
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 28.6% typed
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: in1:1: ERROR - variable x is undeclared
+/** @constructor */ var DomHelper = function(){};DomHelper.prototype.method = function() {   this.field = 3;  return x.field;}
+                                                                                                                     ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 1 error(s), 2 warning(s), 83.3% typed
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s)
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 99.1% typed
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: in1:2: WARNING - goog.dom.Foo defined before its owner. goog.dom is defined at in1:3
+/** @constructor */ goog.dom.Foo = function() {};
+                    ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 3 warning(s), 100% typed
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s)
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s)
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 50% typed
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: in1:1: WARNING - Suspicious code. The result of the 'getprop' operator is not being used.
+/** @constructor */ function Foo() {} this.Foo;
+                                      ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: in1:1: WARNING - dangerous use of the global this object
+/** @constructor */ function Foo() {} this.Foo;
+                                      ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 4 warning(s), 100% typed
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:06 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:07 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:07 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:07 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:07 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:07 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:07 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:07 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:07 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:07 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: in1:9: WARNING - Property c never defined on A.prototype.b
+  var x; if (x) { x = a.b.b; } else { x = a.b.c; }
+                                          ^
+
+Mar 02, 2017 6:25:07 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 3 warning(s), 86.7% typed
+Mar 02, 2017 6:25:07 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:07 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:07 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:07 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:07 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:07 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: in1:1: ERROR - variable goog is undeclared
+/** @constructor */ goog.Foo = function(){};
+                    ^
+
+Mar 02, 2017 6:25:07 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 1 error(s), 2 warning(s), 66.7% typed
+Mar 02, 2017 6:25:07 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:07 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:07 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: in1:3: WARNING - Bad type annotation. Unknown type Missing
+ * @extends {Missing}
+             ^
+
+Mar 02, 2017 6:25:07 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 3 warning(s), 78.6% typed
+Mar 02, 2017 6:25:07 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:07 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:07 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:07 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:07 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:07 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:07 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:07 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:07 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:07 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:07 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:07 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:07 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:07 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:07 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: in1:1: WARNING - dangerous use of the global this object
+function F() {  this.field1 = 3;}F.prototype.method1 = function() {  this.field1 = 5;};(new F()).method1();
+                ^
+
+Mar 02, 2017 6:25:07 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: in1:1: WARNING - cannot instantiate non-constructor
+function F() {  this.field1 = 3;}F.prototype.method1 = function() {  this.field1 = 5;};(new F()).method1();
+                                                                                        ^
+
+Mar 02, 2017 6:25:07 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 4 warning(s), 75% typed
+Mar 02, 2017 6:25:07 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:07 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:07 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: in1:2: WARNING - Property require never defined on goog
+goog.require('foo.bar')
+^
+
+Mar 02, 2017 6:25:07 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: in1:1: ERROR - variable foo is undeclared
+foo.bar = function(){};  // definition
+^
+
+Mar 02, 2017 6:25:07 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: in1:2: ERROR - variable goog is undeclared
+goog.require('foo.bar')
+^
+
+Mar 02, 2017 6:25:07 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 2 error(s), 3 warning(s), 57.1% typed
+Mar 02, 2017 6:25:07 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Mar 02, 2017 6:25:07 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Mar 02, 2017 6:25:07 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 6:25:07 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: testcode:5: WARNING - Unable to determine return type for exported function internalName
+internalName = function(a) {  return 6;
+               ^
+
+Mar 02, 2017 6:25:07 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 1 warning(s), 100% typed
+Mar 02, 2017 6:25:07 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: testcode:5: WARNING - Unable to determine return type for exported function internalName
+internalName = function(a) {  return a;
+               ^
+
+Mar 02, 2017 6:25:07 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 1 warning(s), 100% typed
+Mar 02, 2017 6:25:07 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: testcode:7: WARNING - Unable to determine return type for exported function internalName
+internalName = function(param1) {return /** @type {V} */ (param1);};goog.exportSymbol('externalName', internalName)
+               ^
+
+Mar 02, 2017 6:25:07 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: testcode:7: WARNING - Unable to determine type of parameter internalName for exported function param1
+internalName = function(param1) {return /** @type {V} */ (param1);};goog.exportSymbol('externalName', internalName)
+                        ^
+
+Mar 02, 2017 6:25:07 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: testcode:7: WARNING - Bad type annotation. Unknown type V
+internalName = function(param1) {return /** @type {V} */ (param1);};goog.exportSymbol('externalName', internalName)
+                                                   ^
+
+Mar 02, 2017 6:25:07 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 3 warning(s), 87.5% typed
+Mar 02, 2017 6:25:07 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: testcode:7: WARNING - Unable to determine return type for exported function internalName
+internalName = function(param1) {return param1;};goog.exportSymbol('externalName', internalName)
+               ^
+
+Mar 02, 2017 6:25:07 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: testcode:7: WARNING - Unable to determine type of parameter internalName for exported function param1
+internalName = function(param1) {return param1;};goog.exportSymbol('externalName', internalName)
+                        ^
+
+Mar 02, 2017 6:25:07 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 93.3% typed
+Mar 02, 2017 6:25:07 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: testcode:4: WARNING - Unable to determine type of parameter InternalName for exported function b
+ var InternalName = function(a,b,c) {  return 6;};goog.exportSymbol('ExternalName', InternalName)
+                               ^
+
+Mar 02, 2017 6:25:07 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: testcode:4: WARNING - Unable to determine type of parameter InternalName for exported function c
+ var InternalName = function(a,b,c) {  return 6;};goog.exportSymbol('ExternalName', InternalName)
+                                 ^
+
+Mar 02, 2017 6:25:07 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+538.84user 11.87system 4:32.66elapsed 201%CPU (0avgtext+0avgdata 4509060maxresident)k
+41184inputs+8752outputs (2major+1908541minor)pagefaults 0swaps

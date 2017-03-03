@@ -1,0 +1,20 @@
+{
+    "date": "Fri Mar 03 05:16:56 UTC 2017", 
+    "executionTime": 34129, 
+    "nbAngelicValue": 1, 
+    "nbStatement": 1, 
+    "nb_classes": 580, 
+    "nb_methods": 6290, 
+    "node": "graphene-50.nancy.grid5000.fr\n", 
+    "patch": [
+        {
+            "nb_test_that_execute_statement": 4, 
+            "patch": "--- /tmp/chart_9_Nopol/source/org/jfree/data/time/TimeSeries.java\n+++ /tmp/chart_9_Nopol/source/org/jfree/data/time/TimeSeries.java\n@@ -882,3 +882,5 @@\n         if (end < start) {\n-            throw new IllegalArgumentException(\"Requires start <= end.\");\n+            if (org.jfree.data.time.TimeSeries.this.data.size() == org.jfree.data.time.TimeSeries.this.range.length()) {\n+                throw new IllegalArgumentException(\"Requires start <= end.\");\n+            }\n         }\n", 
+            "patchLocation": {
+                "class": "org.jfree.data.time.TimeSeries", 
+                "line": 883
+            }, 
+            "patchType": "PRECONDITION"
+        }
+    ]
+}

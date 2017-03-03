@@ -1,0 +1,20 @@
+{
+    "date": "Thu Mar 02 21:22:28 UTC 2017", 
+    "executionTime": 89357, 
+    "nbAngelicValue": 1, 
+    "nbStatement": 51, 
+    "nb_classes": 156, 
+    "nb_methods": 2878, 
+    "node": "graphene-75.nancy.grid5000.fr\n", 
+    "patch": [
+        {
+            "nb_test_that_execute_statement": 159, 
+            "patch": "--- /tmp/time_12_Nopol/src/main/java/org/joda/time/LocalDateTime.java\n+++ /tmp/time_12_Nopol/src/main/java/org/joda/time/LocalDateTime.java\n@@ -662,3 +662,3 @@\n         // override to perform faster\n-        if (this == partial) {\n+        if (((this) == partial) || (!(org.joda.time.LocalDateTime.MONTH_OF_YEAR < org.joda.time.LocalDateTime.this.iLocalMillis))) {\n             return true;\n", 
+            "patchLocation": {
+                "class": "org.joda.time.LocalDateTime", 
+                "line": 663
+            }, 
+            "patchType": "CONDITIONAL"
+        }
+    ]
+}

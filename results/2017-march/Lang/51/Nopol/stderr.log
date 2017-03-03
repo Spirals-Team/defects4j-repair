@@ -1,0 +1,20 @@
+Running ant (compile)...................................................... OK
+Running ant (compile.tests)................................................ OK
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
+Please use CMSClassUnloadingEnabled in place of CMSPermGenSweepingEnabled in the future
+spoon.compiler.ModelBuildingException: Syntax error on token "enum", Identifier expected at /tmp/lang_51_Nopol/src/java/org/apache/commons/lang/enum/EnumUtils.java:17
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.report(JDTBasedSpoonCompiler.java:579)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.reportProblems(JDTBasedSpoonCompiler.java:560)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.build(JDTBasedSpoonCompiler.java:121)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.build(JDTBasedSpoonCompiler.java:102)
+	at fr.inria.lille.commons.spoon.util.SpoonModelLibrary.modelFor(SpoonModelLibrary.java:56)
+	at fr.inria.lille.commons.spoon.SpoonedFile.<init>(SpoonedFile.java:62)
+	at fr.inria.lille.commons.spoon.SpoonedProject.<init>(SpoonedProject.java:17)
+	at fr.inria.lille.repair.nopol.NoPol.<init>(NoPol.java:100)
+	at fr.inria.lille.repair.Main$1.call(Main.java:90)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+46.55user 1.22system 0:29.28elapsed 163%CPU (0avgtext+0avgdata 586588maxresident)k
+0inputs+5256outputs (0major+384680minor)pagefaults 0swaps

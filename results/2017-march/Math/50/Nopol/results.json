@@ -1,0 +1,20 @@
+{
+    "date": "Thu Mar 02 22:51:52 UTC 2017", 
+    "executionTime": 502889, 
+    "nbAngelicValue": 2, 
+    "nbStatement": 4, 
+    "nb_classes": 569, 
+    "nb_methods": 3619, 
+    "node": "griffon-59.nancy.grid5000.fr\n", 
+    "patch": [
+        {
+            "nb_test_that_execute_statement": 21, 
+            "patch": "--- /tmp/math_50_Nopol/src/main/java/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java\n+++ /tmp/math_50_Nopol/src/main/java/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java\n@@ -236,15 +236,17 @@\n                                                      atol)) {\n-                switch (allowed) {\n-                case ANY_SIDE:\n-                    return x1;\n-                case LEFT_SIDE:\n-                    return inverted ? x1 : x0;\n-                case RIGHT_SIDE:\n-                    return inverted ? x0 : x1;\n-                case BELOW_SIDE:\n-                    return (f1 <= 0) ? x1 : x0;\n-                case ABOVE_SIDE:\n-                    return (f1 >= 0) ? x1 : x0;\n-                default:\n-                    throw new MathInternalError();\n+                if ((((atol) != (org.apache.commons.math.analysis.solvers.BaseSecantSolver.DEFAULT_ABSOLUTE_ACCURACY)) && (org.apache.commons.math.analysis.solvers.BaseSecantSolver.this.method!=null)) || (f0 <= atol)) {\n+                    switch (allowed) {\n+                        case ANY_SIDE:\n+                        return x1;\n+                        case LEFT_SIDE:\n+                        return inverted ? x1 : x0;\n+                        case RIGHT_SIDE:\n+                        return inverted ? x0 : x1;\n+                        case BELOW_SIDE:\n+                        return (f1 <= 0) ? x1 : x0;\n+                        case ABOVE_SIDE:\n+                        return (f1 >= 0) ? x1 : x0;\n+                        default:\n+                        throw new MathInternalError();\n+                    }\n                 }\n", 
+            "patchLocation": {
+                "class": "org.apache.commons.math.analysis.solvers.BaseSecantSolver", 
+                "line": 237
+            }, 
+            "patchType": "PRECONDITION"
+        }
+    ]
+}

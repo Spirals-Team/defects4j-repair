@@ -1,0 +1,62 @@
+cd /tmp/time_11_Nopol;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;TZ="America/New_York"; export TZexport PATH="/home/tdurieux/jdk1.7.0_79/bin/:$PATH";cp -r /home/tdurieux/dynamoth-experiments/src/python/core/../../../libs/z3 lib/z3;time java -d64 -Xmx4g -Xms1g -XX:MaxPermSize=1024m -XX:+UseConcMarkSweepGC -XX:+CMSPermGenSweepingEnabled -XX:+CMSClassUnloadingEnabled -cp /home/tdurieux/dynamoth-experiments/src/python/core/../../..//libs/nopol.jar:/home/tdurieux/jdk1.7.0_79/bin//../lib/tools.jar fr.inria.lille.repair.Main --flocal gzoltar  --maxTime 300  --json  --mode repair --type pre_then_cond --oracle angelic --synthesis smt --solver z3 --solver-path /home/tdurieux/dynamoth-experiments/src/python/core/../../..//libs/z3/z3 --complianceLevel 5 --source /tmp/time_11_Nopol/src/main/java/ --classpath /tmp/time_11_Nopol/target/classes/:/tmp/time_11_Nopol/target/test-classes/:/tmp/time_11_Nopol/lib/joda-convert-1.2.jar:/home/tdurieux/dynamoth-experiments/src/python/core/../../..//libs/nopol.jar;echo "
+
+Node: `hostname`
+";echo "
+Date: `date`
+";
+
+21:21:51.998 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb classes : 157
+21:21:51.998 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb methods : 2880
+21:21:51.998 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements Analyzed : 10
+21:21:51.998 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements with Angelic Value Found : 1
+21:21:51.998 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb inputs in SMT : 3
+21:21:51.998 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb SMT level: 1
+21:21:51.998 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb SMT components: [0] []
+21:21:51.998 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb variables in SMT : 62
+21:21:51.998 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - NoPol Execution time : 53316ms
+21:21:51.998 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - ----PATCH FOUND----
+21:21:51.998 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - id.length()==0
+21:21:52.296 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb test that executes the patch: 18
+21:21:52.297 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - org.joda.time.tz.DateTimeZoneBuilder$PrecalculatedZone:1458: CONDITIONAL
+21:21:52.380 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - --- /tmp/time_11_Nopol/src/main/java/org/joda/time/tz/DateTimeZoneBuilder.java
++++ /tmp/time_11_Nopol/src/main/java/org/joda/time/tz/DateTimeZoneBuilder.java
+@@ -1457,7 +1457,6 @@
+             if (tailZone != null) {
+-                if (tailZone.iStartRecurrence.getNameKey()
+-                    .equals(tailZone.iEndRecurrence.getNameKey())) {
++                if (id.length()==0) {
+                     if (ZoneInfoCompiler.verbose()) {
+                         System.out.println("Fixing duplicate recurrent name key - " +
+-                                           tailZone.iStartRecurrence.getNameKey());
++                        tailZone.iStartRecurrence.getNameKey());
+                     }
+@@ -1465,12 +1464,12 @@
+                         tailZone = new DSTZone(
+-                            tailZone.getID(),
+-                            tailZone.iStandardOffset,
+-                            tailZone.iStartRecurrence.renameAppend("-Summer"),
+-                            tailZone.iEndRecurrence);
++                        tailZone.getID(),
++                        tailZone.iStandardOffset,
++                        tailZone.iStartRecurrence.renameAppend("-Summer"),
++                        tailZone.iEndRecurrence);
+                     } else {
+                         tailZone = new DSTZone(
+-                            tailZone.getID(),
+-                            tailZone.iStandardOffset,
+-                            tailZone.iStartRecurrence,
+-                            tailZone.iEndRecurrence.renameAppend("-Summer"));
++                        tailZone.getID(),
++                        tailZone.iStandardOffset,
++                        tailZone.iStartRecurrence,
++                        tailZone.iEndRecurrence.renameAppend("-Summer"));
+                     }
+
+
+
+Node: graphene-44.nancy.grid5000.fr
+
+
+Date: Thu Mar  2 22:21:53 CET 2017
+
+

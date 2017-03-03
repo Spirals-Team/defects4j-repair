@@ -1,0 +1,20 @@
+{
+    "date": "Fri Mar 03 05:30:02 UTC 2017", 
+    "executionTime": 452976, 
+    "nbAngelicValue": 1, 
+    "nbStatement": 449, 
+    "nb_classes": 635, 
+    "nb_methods": 7103, 
+    "node": "graphene-27.nancy.grid5000.fr\n", 
+    "patch": [
+        {
+            "nb_test_that_execute_statement": 18, 
+            "patch": "--- /tmp/chart_4_Nopol/source/org/jfree/chart/plot/XYPlot.java\n+++ /tmp/chart_4_Nopol/source/org/jfree/chart/plot/XYPlot.java\n@@ -1606,3 +1606,5 @@\n     public void setRenderer(XYItemRenderer renderer) {\n-        setRenderer(0, renderer);\n+        if (renderer!=null) {\n+            setRenderer(0, renderer);\n+        }\n     }\n", 
+            "patchLocation": {
+                "class": "org.jfree.chart.plot.XYPlot", 
+                "line": 1607
+            }, 
+            "patchType": "PRECONDITION"
+        }
+    ]
+}

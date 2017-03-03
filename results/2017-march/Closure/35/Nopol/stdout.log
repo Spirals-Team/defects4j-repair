@@ -1,0 +1,49 @@
+cd /tmp/closure_35_Nopol;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;TZ="America/New_York"; export TZexport PATH="/home/tdurieux/jdk1.7.0_79/bin/:$PATH";cp -r /home/tdurieux/dynamoth-experiments/src/python/core/../../../libs/z3 lib/z3;time java -d64 -Xmx4g -Xms1g -XX:MaxPermSize=1024m -XX:+UseConcMarkSweepGC -XX:+CMSPermGenSweepingEnabled -XX:+CMSClassUnloadingEnabled -cp /home/tdurieux/dynamoth-experiments/src/python/core/../../..//libs/nopol.jar:/home/tdurieux/jdk1.7.0_79/bin//../lib/tools.jar fr.inria.lille.repair.Main --flocal gzoltar  --maxTime 300  --json  --mode repair --type pre_then_cond --oracle angelic --synthesis smt --solver z3 --solver-path /home/tdurieux/dynamoth-experiments/src/python/core/../../..//libs/z3/z3 --complianceLevel 6 --source /tmp/closure_35_Nopol/src/ --classpath /tmp/closure_35_Nopol/build/classes:/tmp/closure_35_Nopol/build/test:/tmp/closure_35_Nopol/build/lib/rhino.jar:/tmp/closure_35_Nopol/lib/ant.jar:/tmp/closure_35_Nopol/lib/ant-launcher.jar:/tmp/closure_35_Nopol/lib/args4j.jar:/tmp/closure_35_Nopol/lib/guava.jar:/tmp/closure_35_Nopol/lib/jarjar.jar:/tmp/closure_35_Nopol/lib/json.jar:/tmp/closure_35_Nopol/lib/jsr305.jar:/tmp/closure_35_Nopol/lib/junit.jar:/tmp/closure_35_Nopol/lib/caja-r4314.jar:/tmp/closure_35_Nopol/lib/protobuf-java.jar:/home/tdurieux/dynamoth-experiments/src/python/core/../../..//libs/nopol.jar;echo "
+
+Node: `hostname`
+";echo "
+Date: `date`
+";
+
+19:37:49.653 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb classes : 397
+19:37:49.653 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb methods : 4584
+19:37:49.653 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements Analyzed : 11
+19:37:49.653 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements with Angelic Value Found : 1
+19:37:49.653 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb inputs in SMT : 15
+19:37:49.653 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb SMT level: 2
+19:37:49.653 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb SMT components: [4] [== of arity: 2, != of arity: 2, < of arity: 2, <= of arity: 2]
+19:37:49.653 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol -                   class java.lang.Boolean: 4
+19:37:49.653 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb variables in SMT : 52
+19:37:49.653 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - NoPol Execution time : 163845ms
+19:37:49.653 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - ----PATCH FOUND----
+19:37:49.654 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - (fieldName.length()) != (5)
+19:37:52.650 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb test that executes the patch: 26
+19:37:52.650 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - com.google.javascript.rhino.jstype.JSTypeRegistry:1655: PRECONDITION
+19:37:52.729 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - --- /tmp/closure_35_Nopol/src/com/google/javascript/rhino/jstype/JSTypeRegistry.java
++++ /tmp/closure_35_Nopol/src/com/google/javascript/rhino/jstype/JSTypeRegistry.java
+@@ -1654,8 +1654,10 @@
+       // Add the property to the record.
+-      if (builder.addProperty(fieldName, fieldType, fieldNameNode) == null) {
+-        // Duplicate field name, warning and skip
+-        reporter.warning(
+-            "Duplicate record field " + fieldName,
+-            sourceName,
+-            n.getLineno(), fieldNameNode.getCharno());
++      if ((fieldName.length()) != (5)) {
++        if (builder.addProperty(fieldName, fieldType, fieldNameNode) == null) {
++          // Duplicate field name, warning and skip
++          reporter.warning(
++          "Duplicate record field " + fieldName,
++          sourceName,
++          n.getLineno(), fieldNameNode.getCharno());
++        }
+       }
+
+
+
+Node: graphene-138.nancy.grid5000.fr
+
+
+Date: Thu Mar  2 20:37:56 CET 2017
+
+

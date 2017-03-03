@@ -1,0 +1,20 @@
+{
+    "date": "Thu Mar 02 18:46:00 UTC 2017", 
+    "executionTime": 92823, 
+    "nbAngelicValue": 1, 
+    "nbStatement": 1, 
+    "nb_classes": 383, 
+    "nb_methods": 4330, 
+    "node": "graphene-37.nancy.grid5000.fr\n", 
+    "patch": [
+        {
+            "nb_test_that_execute_statement": 2, 
+            "patch": "--- /tmp/closure_72_Nopol/src/com/google/javascript/rhino/Node.java\n+++ /tmp/closure_72_Nopol/src/com/google/javascript/rhino/Node.java\n@@ -1381,7 +1381,9 @@\n       if (diff != null) {\n-        return \"Node tree inequality:\" +\n-            \"\\nTree1:\\n\" + toStringTree() +\n-            \"\\n\\nTree2:\\n\" + node2.toStringTree() +\n-            \"\\n\\nSubtree1: \" + diff.nodeA.toStringTree() +\n-            \"\\n\\nSubtree2: \" + diff.nodeB.toStringTree();\n+        if ((com.google.javascript.rhino.Node.this.type) != (node2.type)) {\n+          return \"Node tree inequality:\" +\n+          \"\\nTree1:\\n\" + toStringTree() +\n+          \"\\n\\nTree2:\\n\" + node2.toStringTree() +\n+          \"\\n\\nSubtree1: \" + diff.nodeA.toStringTree() +\n+          \"\\n\\nSubtree2: \" + diff.nodeB.toStringTree();\n+        }\n       }\n", 
+            "patchLocation": {
+                "class": "com.google.javascript.rhino.Node", 
+                "line": 1382
+            }, 
+            "patchType": "PRECONDITION"
+        }
+    ]
+}

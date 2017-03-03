@@ -1,0 +1,20 @@
+{
+    "date": "Thu Mar 02 22:18:46 UTC 2017", 
+    "executionTime": 34400, 
+    "nbAngelicValue": 1, 
+    "nbStatement": 20, 
+    "nb_classes": 399, 
+    "nb_methods": 2923, 
+    "node": "graphene-69.nancy.grid5000.fr\n", 
+    "patch": [
+        {
+            "nb_test_that_execute_statement": 5, 
+            "patch": "--- /tmp/math_73_Nopol/src/main/java/org/apache/commons/math/analysis/solvers/UnivariateRealSolverImpl.java\n+++ /tmp/math_73_Nopol/src/main/java/org/apache/commons/math/analysis/solvers/UnivariateRealSolverImpl.java\n@@ -224,6 +224,6 @@\n     protected void verifySequence(final double lower, final double initial, final double upper) {\n-        if (!isSequence(lower, initial, upper)) {\n+        if (((!((1) != (lower))) && (org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl.this.result < org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl.this.defaultFunctionValueAccuracy)) || (initial <= lower)) {\n             throw MathRuntimeException.createIllegalArgumentException(\n-                    \"invalid interval, initial value parameters:  lower={0}, initial={1}, upper={2}\",\n-                    lower, initial, upper);\n+            \"invalid interval, initial value parameters:  lower={0}, initial={1}, upper={2}\",\n+            lower, initial, upper);\n         }\n", 
+            "patchLocation": {
+                "class": "org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl", 
+                "line": 225
+            }, 
+            "patchType": "CONDITIONAL"
+        }
+    ]
+}

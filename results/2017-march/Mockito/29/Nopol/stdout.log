@@ -1,0 +1,38 @@
+cd /tmp/mockito_29_Nopol;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;TZ="America/New_York"; export TZexport PATH="/home/tdurieux/jdk1.7.0_79/bin/:$PATH";cp -r /home/tdurieux/dynamoth-experiments/src/python/core/../../../libs/z3 lib/z3;time java -d64 -Xmx4g -Xms1g -XX:MaxPermSize=1024m -XX:+UseConcMarkSweepGC -XX:+CMSPermGenSweepingEnabled -XX:+CMSClassUnloadingEnabled -cp /home/tdurieux/dynamoth-experiments/src/python/core/../../..//libs/nopol.jar:/home/tdurieux/jdk1.7.0_79/bin//../lib/tools.jar fr.inria.lille.repair.Main --flocal gzoltar  --maxTime 300  --json  --mode repair --type pre_then_cond --oracle angelic --synthesis smt --solver z3 --solver-path /home/tdurieux/dynamoth-experiments/src/python/core/../../..//libs/z3/z3 --complianceLevel 5 --source /tmp/mockito_29_Nopol/src --classpath /tmp/mockito_29_Nopol/target/classes:/tmp/mockito_29_Nopol/target/test-classes:/tmp/mockito_29_Nopol/lib/asm-all-5.0.4.jar:/tmp/mockito_29_Nopol/lib/cglib-and-asm-1.0.jar:/tmp/mockito_29_Nopol/lib/fest-assert-1.3.jar:/tmp/mockito_29_Nopol/lib/hamcrest-all-1.3.jar:/tmp/mockito_29_Nopol/lib/objenesis-2.1.jar:/tmp/mockito_29_Nopol/lib/powermock-reflect-1.2.5.jar:/tmp/mockito_29_Nopol/lib/assertj-core-2.1.0.jar:/tmp/mockito_29_Nopol/lib/cobertura-2.0.3.jar:/tmp/mockito_29_Nopol/lib/fest-util-1.1.4.jar:/tmp/mockito_29_Nopol/lib/objenesis-2.2.jar:/home/tdurieux/dynamoth-experiments/src/python/core/../../..//libs/nopol.jar;echo "
+
+Node: `hostname`
+";echo "
+Date: `date`
+";
+
+18:18:21.926 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb classes : 240
+18:18:21.926 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb methods : 789
+18:18:21.926 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements Analyzed : 7
+18:18:21.926 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements with Angelic Value Found : 1
+18:18:21.926 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb inputs in SMT : 3
+18:18:21.926 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb SMT level: 1
+18:18:21.926 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb SMT components: [0] []
+18:18:21.926 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb variables in SMT : 7
+18:18:21.926 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - NoPol Execution time : 18482ms
+18:18:21.927 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - ----PATCH FOUND----
+18:18:21.927 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - org.mockito.internal.matchers.Same.this.wanted!=null
+18:18:22.089 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb test that executes the patch: 5
+18:18:22.089 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - org.mockito.internal.matchers.Same:29: PRECONDITION
+18:18:22.098 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - --- /tmp/mockito_29_Nopol/src/org/mockito/internal/matchers/Same.java
++++ /tmp/mockito_29_Nopol/src/org/mockito/internal/matchers/Same.java
+@@ -28,3 +28,5 @@
+         appendQuoting(description);
+-        description.appendText(wanted.toString());
++        if (org.mockito.internal.matchers.Same.this.wanted!=null) {
++            description.appendText(wanted.toString());
++        }
+         appendQuoting(description);
+
+
+
+Node: graphene-140.nancy.grid5000.fr
+
+
+Date: Thu Mar  2 19:18:22 CET 2017
+
+

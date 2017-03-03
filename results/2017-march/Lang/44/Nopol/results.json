@@ -1,0 +1,20 @@
+{
+    "date": "Fri Mar 03 02:27:14 UTC 2017", 
+    "executionTime": 29598, 
+    "nbAngelicValue": 1, 
+    "nbStatement": 7, 
+    "nb_classes": 85, 
+    "nb_methods": 1887, 
+    "node": "graphene-41.nancy.grid5000.fr\n", 
+    "patch": [
+        {
+            "nb_test_that_execute_statement": 3, 
+            "patch": "--- /tmp/lang_44_Nopol/src/java/org/apache/commons/lang/NumberUtils.java\n+++ /tmp/lang_44_Nopol/src/java/org/apache/commons/lang/NumberUtils.java\n@@ -192,5 +192,3 @@\n                 case 'L' :\n-                    if (dec == null\n-                        && exp == null\n-                        && (numeric.charAt(0) == '-' && isDigits(numeric.substring(1)) || isDigits(numeric))) {\n+                    if (((dec == null) && (exp == null))) {\n                         try {\n@@ -201,3 +199,3 @@\n                         return createBigInteger(numeric);\n-\n+                        \n                     }\n", 
+            "patchLocation": {
+                "class": "org.apache.commons.lang.NumberUtils", 
+                "line": 193
+            }, 
+            "patchType": "CONDITIONAL"
+        }
+    ]
+}

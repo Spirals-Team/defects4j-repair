@@ -1,0 +1,20 @@
+{
+    "date": "Thu Mar 02 22:48:57 UTC 2017", 
+    "executionTime": 198366, 
+    "nbAngelicValue": 2, 
+    "nbStatement": 6, 
+    "nb_classes": 569, 
+    "nb_methods": 3620, 
+    "node": "graphene-63.nancy.grid5000.fr\n", 
+    "patch": [
+        {
+            "nb_test_that_execute_statement": 3, 
+            "patch": "--- /tmp/math_49_Nopol/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java\n+++ /tmp/math_49_Nopol/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java\n@@ -666,3 +666,5 @@\n         } else if (entries.containsKey(index)) {\n-            entries.remove(index);\n+            if (org.apache.commons.math.linear.OpenMapRealVector.DEFAULT_ZERO_TOLERANCE == org.apache.commons.math.linear.OpenMapRealVector.this.epsilon) {\n+                entries.remove(index);\n+            }\n         }\n", 
+            "patchLocation": {
+                "class": "org.apache.commons.math.linear.OpenMapRealVector", 
+                "line": 667
+            }, 
+            "patchType": "PRECONDITION"
+        }
+    ]
+}

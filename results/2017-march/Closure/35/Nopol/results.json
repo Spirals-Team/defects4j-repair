@@ -1,0 +1,20 @@
+{
+    "date": "Thu Mar 02 19:37:52 UTC 2017", 
+    "executionTime": 163845, 
+    "nbAngelicValue": 1, 
+    "nbStatement": 11, 
+    "nb_classes": 397, 
+    "nb_methods": 4584, 
+    "node": "graphene-138.nancy.grid5000.fr\n", 
+    "patch": [
+        {
+            "nb_test_that_execute_statement": 26, 
+            "patch": "--- /tmp/closure_35_Nopol/src/com/google/javascript/rhino/jstype/JSTypeRegistry.java\n+++ /tmp/closure_35_Nopol/src/com/google/javascript/rhino/jstype/JSTypeRegistry.java\n@@ -1654,8 +1654,10 @@\n       // Add the property to the record.\n-      if (builder.addProperty(fieldName, fieldType, fieldNameNode) == null) {\n-        // Duplicate field name, warning and skip\n-        reporter.warning(\n-            \"Duplicate record field \" + fieldName,\n-            sourceName,\n-            n.getLineno(), fieldNameNode.getCharno());\n+      if ((fieldName.length()) != (5)) {\n+        if (builder.addProperty(fieldName, fieldType, fieldNameNode) == null) {\n+          // Duplicate field name, warning and skip\n+          reporter.warning(\n+          \"Duplicate record field \" + fieldName,\n+          sourceName,\n+          n.getLineno(), fieldNameNode.getCharno());\n+        }\n       }\n", 
+            "patchLocation": {
+                "class": "com.google.javascript.rhino.jstype.JSTypeRegistry", 
+                "line": 1655
+            }, 
+            "patchType": "PRECONDITION"
+        }
+    ]
+}

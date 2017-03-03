@@ -1,0 +1,20 @@
+{
+    "date": "Thu Mar 02 21:23:52 UTC 2017", 
+    "executionTime": 56462, 
+    "nbAngelicValue": 1, 
+    "nbStatement": 14, 
+    "nb_classes": 157, 
+    "nb_methods": 2880, 
+    "node": "graphene-68.nancy.grid5000.fr\n", 
+    "patch": [
+        {
+            "nb_test_that_execute_statement": 75, 
+            "patch": "--- /tmp/time_4_Nopol/src/main/java/org/joda/time/Partial.java\n+++ /tmp/time_4_Nopol/src/main/java/org/joda/time/Partial.java\n@@ -458,3 +458,5 @@\n             newTypes[i] = fieldType;\n-            newValues[i] = value;\n+            if (((20) - (value + newTypes.length) < value) || ((2) != (org.joda.time.Partial.this.iTypes.length))) {\n+                newValues[i] = value;\n+            }\n             System.arraycopy(iTypes, i, newTypes, i + 1, newTypes.length - i - 1);\n", 
+            "patchLocation": {
+                "class": "org.joda.time.Partial", 
+                "line": 459
+            }, 
+            "patchType": "PRECONDITION"
+        }
+    ]
+}

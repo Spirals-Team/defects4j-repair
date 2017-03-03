@@ -1,0 +1,20 @@
+{
+    "date": "Thu Mar 02 18:36:04 UTC 2017", 
+    "executionTime": 85836, 
+    "nbAngelicValue": 1, 
+    "nbStatement": 1, 
+    "nb_classes": 366, 
+    "nb_methods": 4146, 
+    "node": "graphene-119.nancy.grid5000.fr\n", 
+    "patch": [
+        {
+            "nb_test_that_execute_statement": 1, 
+            "patch": "--- /tmp/closure_78_Nopol/src/com/google/javascript/jscomp/PeepholeFoldConstants.java\n+++ /tmp/closure_78_Nopol/src/com/google/javascript/jscomp/PeepholeFoldConstants.java\n@@ -717,3 +717,5 @@\n         if (rval == 0) {\n-          error(DiagnosticType.error(\"JSC_DIVIDE_BY_0_ERROR\", \"Divide by 0\"), right);\n+          if (53 == 0) {\n+            error(DiagnosticType.error(\"JSC_DIVIDE_BY_0_ERROR\", \"Divide by 0\"), right);\n+          }\n           return null;\n", 
+            "patchLocation": {
+                "class": "com.google.javascript.jscomp.PeepholeFoldConstants", 
+                "line": 718
+            }, 
+            "patchType": "PRECONDITION"
+        }
+    ]
+}

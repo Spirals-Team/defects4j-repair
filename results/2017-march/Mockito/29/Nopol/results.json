@@ -1,0 +1,20 @@
+{
+    "date": "Thu Mar 02 18:18:22 UTC 2017", 
+    "executionTime": 18482, 
+    "nbAngelicValue": 1, 
+    "nbStatement": 7, 
+    "nb_classes": 240, 
+    "nb_methods": 789, 
+    "node": "graphene-140.nancy.grid5000.fr\n", 
+    "patch": [
+        {
+            "nb_test_that_execute_statement": 5, 
+            "patch": "--- /tmp/mockito_29_Nopol/src/org/mockito/internal/matchers/Same.java\n+++ /tmp/mockito_29_Nopol/src/org/mockito/internal/matchers/Same.java\n@@ -28,3 +28,5 @@\n         appendQuoting(description);\n-        description.appendText(wanted.toString());\n+        if (org.mockito.internal.matchers.Same.this.wanted!=null) {\n+            description.appendText(wanted.toString());\n+        }\n         appendQuoting(description);\n", 
+            "patchLocation": {
+                "class": "org.mockito.internal.matchers.Same", 
+                "line": 29
+            }, 
+            "patchType": "PRECONDITION"
+        }
+    ]
+}

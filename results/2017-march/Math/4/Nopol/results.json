@@ -1,0 +1,20 @@
+{
+    "date": "Fri Mar 03 01:16:12 UTC 2017", 
+    "executionTime": 367642, 
+    "nbAngelicValue": 1, 
+    "nbStatement": 7, 
+    "nb_classes": 732, 
+    "nb_methods": 4877, 
+    "node": "graphene-70.nancy.grid5000.fr\n", 
+    "patch": [
+        {
+            "nb_test_that_execute_statement": 24, 
+            "patch": "--- /tmp/math_4_Nopol/src/main/java/org/apache/commons/math3/geometry/euclidean/twod/Line.java\n+++ /tmp/math_4_Nopol/src/main/java/org/apache/commons/math3/geometry/euclidean/twod/Line.java\n@@ -199,3 +199,5 @@\n         if (FastMath.abs(d) < 1.0e-10) {\n-            return null;\n+            if ((((d) != (org.apache.commons.math3.geometry.euclidean.twod.Line.this.originOffset)) && (other!=null)) || (other.sin < 1)) {\n+                return null;\n+            }\n         }\n", 
+            "patchLocation": {
+                "class": "org.apache.commons.math3.geometry.euclidean.twod.Line", 
+                "line": 200
+            }, 
+            "patchType": "PRECONDITION"
+        }
+    ]
+}

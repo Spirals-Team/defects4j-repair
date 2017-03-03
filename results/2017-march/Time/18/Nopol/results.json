@@ -1,0 +1,20 @@
+{
+    "date": "Thu Mar 02 21:27:17 UTC 2017", 
+    "executionTime": 468003, 
+    "nbAngelicValue": 2, 
+    "nbStatement": 67, 
+    "nb_classes": 156, 
+    "nb_methods": 2871, 
+    "node": "graphene-42.nancy.grid5000.fr\n", 
+    "patch": [
+        {
+            "nb_test_that_execute_statement": 3456, 
+            "patch": "--- /tmp/time_18_Nopol/src/main/java/org/joda/time/chrono/BasicChronology.java\n+++ /tmp/time_18_Nopol/src/main/java/org/joda/time/chrono/BasicChronology.java\n@@ -604,3 +604,5 @@\n         FieldUtils.verifyValueBounds(DateTimeFieldType.monthOfYear(), monthOfYear, 1, getMaxMonth(year));\n-        FieldUtils.verifyValueBounds(DateTimeFieldType.dayOfMonth(), dayOfMonth, 1, getDaysInYearMonth(year, monthOfYear));\n+        if ((!(10 == monthOfYear)) && (((31) - (2)) != (dayOfMonth))) {\n+            FieldUtils.verifyValueBounds(DateTimeFieldType.dayOfMonth(), dayOfMonth, 1, getDaysInYearMonth(year, monthOfYear));\n+        }\n         return getYearMonthDayMillis(year, monthOfYear, dayOfMonth);\n", 
+            "patchLocation": {
+                "class": "org.joda.time.chrono.BasicChronology", 
+                "line": 605
+            }, 
+            "patchType": "PRECONDITION"
+        }
+    ]
+}

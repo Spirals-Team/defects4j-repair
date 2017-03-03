@@ -1,0 +1,20 @@
+{
+    "date": "Thu Mar 02 18:26:49 UTC 2017", 
+    "executionTime": 142584, 
+    "nbAngelicValue": 1, 
+    "nbStatement": 5, 
+    "nb_classes": 428, 
+    "nb_methods": 5053, 
+    "node": "graphene-71.nancy.grid5000.fr\n", 
+    "patch": [
+        {
+            "nb_test_that_execute_statement": 26, 
+            "patch": "--- /tmp/closure_113_Nopol/src/com/google/javascript/jscomp/ProcessClosurePrimitives.java\n+++ /tmp/closure_113_Nopol/src/com/google/javascript/jscomp/ProcessClosurePrimitives.java\n@@ -328,3 +328,3 @@\n       // let them be caught in the subsequent run.\n-      if (provided != null) {\n+      if ((provided!=null) || (!(ns.length() < 10))) {\n         parent.detachFromParent();\n", 
+            "patchLocation": {
+                "class": "com.google.javascript.jscomp.ProcessClosurePrimitives", 
+                "line": 329
+            }, 
+            "patchType": "CONDITIONAL"
+        }
+    ]
+}

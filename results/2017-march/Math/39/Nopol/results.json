@@ -1,0 +1,20 @@
+{
+    "date": "Thu Mar 02 23:09:17 UTC 2017", 
+    "executionTime": 409503, 
+    "nbAngelicValue": 1, 
+    "nbStatement": 73, 
+    "nb_classes": 575, 
+    "nb_methods": 3731, 
+    "node": "graphene-141.nancy.grid5000.fr\n", 
+    "patch": [
+        {
+            "nb_test_that_execute_statement": 101, 
+            "patch": "--- /tmp/math_39_Nopol/src/main/java/org/apache/commons/math/ode/nonstiff/AdaptiveStepsizeIntegrator.java\n+++ /tmp/math_39_Nopol/src/main/java/org/apache/commons/math/ode/nonstiff/AdaptiveStepsizeIntegrator.java\n@@ -263,3 +263,5 @@\n       ratio         = yDot0[j] / scale[j];\n-      yDotOnScale2 += ratio * ratio;\n+      if ((scale.length) != (org.apache.commons.math.ode.nonstiff.AdaptiveStepsizeIntegrator.this.maxStep)) {\n+        yDotOnScale2 += ratio * ratio;\n+      }\n     }\n", 
+            "patchLocation": {
+                "class": "org.apache.commons.math.ode.nonstiff.AdaptiveStepsizeIntegrator", 
+                "line": 264
+            }, 
+            "patchType": "PRECONDITION"
+        }
+    ]
+}

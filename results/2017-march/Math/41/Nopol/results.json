@@ -1,0 +1,20 @@
+{
+    "date": "Thu Mar 02 23:03:00 UTC 2017", 
+    "executionTime": 271305, 
+    "nbAngelicValue": 20, 
+    "nbStatement": 24, 
+    "nb_classes": 578, 
+    "nb_methods": 3768, 
+    "node": "graphene-14.nancy.grid5000.fr\n", 
+    "patch": [
+        {
+            "nb_test_that_execute_statement": 6, 
+            "patch": "--- /tmp/math_41_Nopol/src/main/java/org/apache/commons/math/stat/descriptive/moment/Mean.java\n+++ /tmp/math_41_Nopol/src/main/java/org/apache/commons/math/stat/descriptive/moment/Mean.java\n@@ -216,3 +216,5 @@\n             }\n-            return xbarw + (correction/sumw);\n+            if (xbarw < length) {\n+                return xbarw + (correction/sumw);\n+            }\n         }\n", 
+            "patchLocation": {
+                "class": "org.apache.commons.math.stat.descriptive.moment.Mean", 
+                "line": 217
+            }, 
+            "patchType": "PRECONDITION"
+        }
+    ]
+}

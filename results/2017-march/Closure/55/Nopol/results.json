@@ -1,0 +1,20 @@
+{
+    "date": "Thu Mar 02 19:07:19 UTC 2017", 
+    "executionTime": 134650, 
+    "nbAngelicValue": 1, 
+    "nbStatement": 16, 
+    "nb_classes": 405, 
+    "nb_methods": 4642, 
+    "node": "graphene-24.nancy.grid5000.fr\n", 
+    "patch": [
+        {
+            "nb_test_that_execute_statement": 11, 
+            "patch": "--- /tmp/closure_55_Nopol/src/com/google/javascript/jscomp/FunctionRewriter.java\n+++ /tmp/closure_55_Nopol/src/com/google/javascript/jscomp/FunctionRewriter.java\n@@ -92,10 +92,12 @@\n       // reductions if doing so will result in some savings.\n-      if (savings > (helperCodeCost + SAVINGS_THRESHOLD)) {\n-        for (Reduction reduction : reductions) {\n-          reduction.apply();\n+      if (((1) != (reductions.size())) && (!(reducers.size() < reductions.size()))) {\n+        if (savings > (helperCodeCost + SAVINGS_THRESHOLD)) {\n+          for (Reduction reduction : reductions) {\n+            reduction.apply();\n+          }\n+          \n+          Node addingRoot = compiler.getNodeForCodeInsertion(null);\n+          addingRoot.addChildrenToFront(helperCode);\n+          compiler.reportCodeChange();\n         }\n-\n-        Node addingRoot = compiler.getNodeForCodeInsertion(null);\n-        addingRoot.addChildrenToFront(helperCode);\n-        compiler.reportCodeChange();\n       }\n", 
+            "patchLocation": {
+                "class": "com.google.javascript.jscomp.FunctionRewriter", 
+                "line": 93
+            }, 
+            "patchType": "PRECONDITION"
+        }
+    ]
+}

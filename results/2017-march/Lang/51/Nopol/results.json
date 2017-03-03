@@ -1,0 +1,20 @@
+{
+    "date": "Fri Mar 03 02:00:21 UTC 2017", 
+    "executionTime": 28045, 
+    "nbAngelicValue": 1, 
+    "nbStatement": 9, 
+    "nb_classes": 77, 
+    "nb_methods": 1734, 
+    "node": "graphene-53.nancy.grid5000.fr\n", 
+    "patch": [
+        {
+            "nb_test_that_execute_statement": 1, 
+            "patch": "--- /tmp/lang_51_Nopol/src/java/org/apache/commons/lang/BooleanUtils.java\n+++ /tmp/lang_51_Nopol/src/java/org/apache/commons/lang/BooleanUtils.java\n@@ -676,6 +676,6 @@\n                 }\n-                if (ch == 'Y') {\n-                    return \n-                        (str.charAt(1) == 'E' || str.charAt(1) == 'e') &&\n-                        (str.charAt(2) == 'S' || str.charAt(2) == 's');\n+                if (str!=null) {\n+                    return\n+                    (str.charAt(1) == 'E' || str.charAt(1) == 'e') &&\n+                    (str.charAt(2) == 'S' || str.charAt(2) == 's');\n                 }\n", 
+            "patchLocation": {
+                "class": "org.apache.commons.lang.BooleanUtils", 
+                "line": 677
+            }, 
+            "patchType": "CONDITIONAL"
+        }
+    ]
+}

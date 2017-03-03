@@ -1,0 +1,20 @@
+{
+    "date": "Thu Mar 02 22:31:18 UTC 2017", 
+    "executionTime": 941810, 
+    "nbAngelicValue": 5, 
+    "nbStatement": 75, 
+    "nb_classes": 393, 
+    "nb_methods": 2901, 
+    "node": "graphene-24.nancy.grid5000.fr\n", 
+    "patch": [
+        {
+            "nb_test_that_execute_statement": 116, 
+            "patch": "--- /tmp/math_78_Nopol/src/main/java/org/apache/commons/math/analysis/solvers/BrentSolver.java\n+++ /tmp/math_78_Nopol/src/main/java/org/apache/commons/math/analysis/solvers/BrentSolver.java\n@@ -260,3 +260,3 @@\n                 // it should NOT be replaced by proximity test\n-                if (x0 == x2) {\n+                if (((1 < x2) && (!(y0 <= i))) || (x0 == x2)) {\n                     // Linear interpolation.\n", 
+            "patchLocation": {
+                "class": "org.apache.commons.math.analysis.solvers.BrentSolver", 
+                "line": 261
+            }, 
+            "patchType": "CONDITIONAL"
+        }
+    ]
+}

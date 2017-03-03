@@ -1,0 +1,47 @@
+cd /tmp/closure_76_Nopol;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;TZ="America/New_York"; export TZexport PATH="/home/tdurieux/jdk1.7.0_79/bin/:$PATH";cp -r /home/tdurieux/dynamoth-experiments/src/python/core/../../../libs/z3 lib/z3;time java -d64 -Xmx4g -Xms1g -XX:MaxPermSize=1024m -XX:+UseConcMarkSweepGC -XX:+CMSPermGenSweepingEnabled -XX:+CMSClassUnloadingEnabled -cp /home/tdurieux/dynamoth-experiments/src/python/core/../../..//libs/nopol.jar:/home/tdurieux/jdk1.7.0_79/bin//../lib/tools.jar fr.inria.lille.repair.Main --flocal gzoltar  --maxTime 300  --json  --mode repair --type pre_then_cond --oracle angelic --synthesis smt --solver z3 --solver-path /home/tdurieux/dynamoth-experiments/src/python/core/../../..//libs/z3/z3 --complianceLevel 6 --source /tmp/closure_76_Nopol/src/ --classpath /tmp/closure_76_Nopol/build/classes:/tmp/closure_76_Nopol/build/test:/tmp/closure_76_Nopol/lib/ant.jar:/tmp/closure_76_Nopol/lib/ant-launcher.jar:/tmp/closure_76_Nopol/lib/args4j.jar:/tmp/closure_76_Nopol/lib/guava.jar:/tmp/closure_76_Nopol/lib/json.jar:/tmp/closure_76_Nopol/lib/jsr305.jar:/tmp/closure_76_Nopol/lib/junit.jar:/tmp/closure_76_Nopol/lib/caja-r4314.jar:/tmp/closure_76_Nopol/lib/protobuf-java.jar:/tmp/closure_76_Nopol/lib/libtrunk_rhino_parser_jarjared.jar:/home/tdurieux/dynamoth-experiments/src/python/core/../../..//libs/nopol.jar;echo "
+
+Node: `hostname`
+";echo "
+Date: `date`
+";
+
+18:38:49.662 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb classes : 366
+18:38:49.662 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb methods : 4148
+18:38:49.662 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements Analyzed : 1
+18:38:49.662 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements with Angelic Value Found : 1
+18:38:49.662 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb inputs in SMT : 2
+18:38:49.662 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb SMT level: 2
+18:38:49.662 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb SMT components: [4] [== of arity: 2, != of arity: 2, < of arity: 2, <= of arity: 2]
+18:38:49.663 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol -                   class java.lang.Boolean: 4
+18:38:49.663 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb variables in SMT : 148
+18:38:49.663 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - NoPol Execution time : 90951ms
+18:38:49.663 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - ----PATCH FOUND----
+18:38:49.663 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - node2.type < com.google.javascript.rhino.Node.FUNCTION_PROP
+18:38:52.103 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb test that executes the patch: 5
+18:38:52.103 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - com.google.javascript.rhino.Node:1369: PRECONDITION
+18:38:52.244 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - --- /tmp/closure_76_Nopol/src/com/google/javascript/rhino/Node.java
++++ /tmp/closure_76_Nopol/src/com/google/javascript/rhino/Node.java
+@@ -1368,7 +1368,9 @@
+       if (diff != null) {
+-        return "Node tree inequality:" +
+-            "\nTree1:\n" + toStringTree() +
+-            "\n\nTree2:\n" + node2.toStringTree() +
+-            "\n\nSubtree1: " + diff.nodeA.toStringTree() +
+-            "\n\nSubtree2: " + diff.nodeB.toStringTree();
++        if (node2.type < com.google.javascript.rhino.Node.FUNCTION_PROP) {
++          return "Node tree inequality:" +
++          "\nTree1:\n" + toStringTree() +
++          "\n\nTree2:\n" + node2.toStringTree() +
++          "\n\nSubtree1: " + diff.nodeA.toStringTree() +
++          "\n\nSubtree2: " + diff.nodeB.toStringTree();
++        }
+       }
+
+
+
+Node: graphene-24.nancy.grid5000.fr
+
+
+Date: Thu Mar  2 19:38:54 CET 2017
+
+

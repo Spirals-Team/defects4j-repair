@@ -1,0 +1,37 @@
+cd /tmp/math_40_Nopol;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;TZ="America/New_York"; export TZexport PATH="/home/tdurieux/jdk1.7.0_79/bin/:$PATH";cp -r /home/tdurieux/dynamoth-experiments/src/python/core/../../../libs/z3 lib/z3;time java -d64 -Xmx4g -Xms1g -XX:MaxPermSize=1024m -XX:+UseConcMarkSweepGC -XX:+CMSPermGenSweepingEnabled -XX:+CMSClassUnloadingEnabled -cp /home/tdurieux/dynamoth-experiments/src/python/core/../../..//libs/nopol.jar:/home/tdurieux/jdk1.7.0_79/bin//../lib/tools.jar fr.inria.lille.repair.Main --flocal gzoltar  --maxTime 300  --json  --mode repair --type pre_then_cond --oracle angelic --synthesis smt --solver z3 --solver-path /home/tdurieux/dynamoth-experiments/src/python/core/../../..//libs/z3/z3 --complianceLevel 5 --source /tmp/math_40_Nopol/src/main/java/ --classpath /tmp/math_40_Nopol/target/classes/:/tmp/math_40_Nopol/target/test-classes/:/tmp/math_40_Nopol/lib/commons-discovery-0.5.jar:/home/tdurieux/dynamoth-experiments/src/python/core/../../..//libs/nopol.jar;echo "
+
+Node: `hostname`
+";echo "
+Date: `date`
+";
+
+23:11:45.150 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb classes : 578
+23:11:45.150 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb methods : 3764
+23:11:45.150 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements Analyzed : 33
+23:11:45.150 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements with Angelic Value Found : 2
+23:11:45.150 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb inputs in SMT : 304
+23:11:45.150 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb SMT level: 3
+23:11:45.150 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb SMT components: [7] [== of arity: 2, != of arity: 2, < of arity: 2, <= of arity: 2, ! of arity: 1, || of arity: 2, && of arity: 2]
+23:11:45.150 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol -                   class java.lang.Boolean: 7
+23:11:45.150 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb variables in SMT : 34
+23:11:45.150 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - NoPol Execution time : 633883ms
+23:11:45.150 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - ----PATCH FOUND----
+23:11:45.151 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - ((signChangeIndex - start) >= (end - signChangeIndex)) || (xA <= org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver.REDUCTION_FACTOR)
+23:11:45.306 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb test that executes the patch: 19
+23:11:45.306 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:260: CONDITIONAL
+23:11:45.328 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - --- /tmp/math_40_Nopol/src/main/java/org/apache/commons/math/analysis/solvers/BracketingNthOrderBrentSolver.java
++++ /tmp/math_40_Nopol/src/main/java/org/apache/commons/math/analysis/solvers/BracketingNthOrderBrentSolver.java
+@@ -259,3 +259,3 @@
+                     // we try again with a lower interpolation order
+-                    if (signChangeIndex - start >= end - signChangeIndex) {
++                    if (((signChangeIndex - start) >= (end - signChangeIndex)) || (xA <= org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver.REDUCTION_FACTOR)) {
+                         // we have more points before the sign change, drop the lowest point
+
+
+
+Node: graphene-72.nancy.grid5000.fr
+
+
+Date: Fri Mar  3 00:11:45 CET 2017
+
+

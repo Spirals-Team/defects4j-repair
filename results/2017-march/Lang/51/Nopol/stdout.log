@@ -1,0 +1,42 @@
+cd /tmp/lang_51_Nopol;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;TZ="America/New_York"; export TZexport PATH="/home/tdurieux/jdk1.7.0_79/bin/:$PATH";cp -r /home/tdurieux/dynamoth-experiments/src/python/core/../../../libs/z3 lib/z3;time java -d64 -Xmx4g -Xms1g -XX:MaxPermSize=1024m -XX:+UseConcMarkSweepGC -XX:+CMSPermGenSweepingEnabled -XX:+CMSClassUnloadingEnabled -cp /home/tdurieux/dynamoth-experiments/src/python/core/../../..//libs/nopol.jar:/home/tdurieux/jdk1.7.0_79/bin//../lib/tools.jar fr.inria.lille.repair.Main --flocal gzoltar  --maxTime 300  --json  --mode repair --type pre_then_cond --oracle angelic --synthesis smt --solver z3 --solver-path /home/tdurieux/dynamoth-experiments/src/python/core/../../..//libs/z3/z3 --complianceLevel 7 --source /tmp/lang_51_Nopol/src/java/ --classpath /tmp/lang_51_Nopol/target/classes/:/tmp/lang_51_Nopol/target/tests/:/tmp/lang_51_Nopol/lib/asm.jar:/tmp/lang_51_Nopol/lib/cglib.jar:/tmp/lang_51_Nopol/lib/commons-io.jar:/tmp/lang_51_Nopol/lib/easymock.jar:/home/tdurieux/dynamoth-experiments/src/python/core/../../..//libs/nopol.jar;echo "
+
+Node: `hostname`
+";echo "
+Date: `date`
+";
+
+02:00:21.251 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb classes : 77
+02:00:21.251 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb methods : 1734
+02:00:21.252 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements Analyzed : 9
+02:00:21.252 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements with Angelic Value Found : 1
+02:00:21.252 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb inputs in SMT : 3
+02:00:21.252 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb SMT level: 1
+02:00:21.252 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb SMT components: [0] []
+02:00:21.252 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb variables in SMT : 13
+02:00:21.252 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - NoPol Execution time : 28045ms
+02:00:21.252 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - ----PATCH FOUND----
+02:00:21.252 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - str!=null
+02:00:21.269 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb test that executes the patch: 1
+02:00:21.269 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - org.apache.commons.lang.BooleanUtils:677: CONDITIONAL
+02:00:21.313 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - --- /tmp/lang_51_Nopol/src/java/org/apache/commons/lang/BooleanUtils.java
++++ /tmp/lang_51_Nopol/src/java/org/apache/commons/lang/BooleanUtils.java
+@@ -676,6 +676,6 @@
+                 }
+-                if (ch == 'Y') {
+-                    return 
+-                        (str.charAt(1) == 'E' || str.charAt(1) == 'e') &&
+-                        (str.charAt(2) == 'S' || str.charAt(2) == 's');
++                if (str!=null) {
++                    return
++                    (str.charAt(1) == 'E' || str.charAt(1) == 'e') &&
++                    (str.charAt(2) == 'S' || str.charAt(2) == 's');
+                 }
+
+
+
+Node: graphene-53.nancy.grid5000.fr
+
+
+Date: Fri Mar  3 03:00:21 CET 2017
+
+

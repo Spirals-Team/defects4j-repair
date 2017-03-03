@@ -1,0 +1,42 @@
+cd /tmp/math_73_Nopol;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;TZ="America/New_York"; export TZexport PATH="/home/tdurieux/jdk1.7.0_79/bin/:$PATH";cp -r /home/tdurieux/dynamoth-experiments/src/python/core/../../../libs/z3 lib/z3;time java -d64 -Xmx4g -Xms1g -XX:MaxPermSize=1024m -XX:+UseConcMarkSweepGC -XX:+CMSPermGenSweepingEnabled -XX:+CMSClassUnloadingEnabled -cp /home/tdurieux/dynamoth-experiments/src/python/core/../../..//libs/nopol.jar:/home/tdurieux/jdk1.7.0_79/bin//../lib/tools.jar fr.inria.lille.repair.Main --flocal gzoltar  --maxTime 300  --json  --mode repair --type pre_then_cond --oracle angelic --synthesis smt --solver z3 --solver-path /home/tdurieux/dynamoth-experiments/src/python/core/../../..//libs/z3/z3 --complianceLevel 5 --source /tmp/math_73_Nopol/src/main/java/ --classpath /tmp/math_73_Nopol/target/classes/:/tmp/math_73_Nopol/target/test-classes/:/tmp/math_73_Nopol/lib/commons-discovery-0.5.jar:/home/tdurieux/dynamoth-experiments/src/python/core/../../..//libs/nopol.jar;echo "
+
+Node: `hostname`
+";echo "
+Date: `date`
+";
+
+22:18:46.324 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb classes : 399
+22:18:46.324 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb methods : 2923
+22:18:46.324 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements Analyzed : 20
+22:18:46.325 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements with Angelic Value Found : 1
+22:18:46.325 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb inputs in SMT : 20
+22:18:46.325 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb SMT level: 3
+22:18:46.325 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb SMT components: [7] [== of arity: 2, != of arity: 2, < of arity: 2, <= of arity: 2, ! of arity: 1, || of arity: 2, && of arity: 2]
+22:18:46.325 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol -                   class java.lang.Boolean: 7
+22:18:46.325 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb variables in SMT : 13
+22:18:46.325 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - NoPol Execution time : 34400ms
+22:18:46.325 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - ----PATCH FOUND----
+22:18:46.325 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - ((!((1) != (lower))) && (org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl.this.result < org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl.this.defaultFunctionValueAccuracy)) || (initial <= lower)
+22:18:46.451 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb test that executes the patch: 5
+22:18:46.451 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl:225: CONDITIONAL
+22:18:46.468 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - --- /tmp/math_73_Nopol/src/main/java/org/apache/commons/math/analysis/solvers/UnivariateRealSolverImpl.java
++++ /tmp/math_73_Nopol/src/main/java/org/apache/commons/math/analysis/solvers/UnivariateRealSolverImpl.java
+@@ -224,6 +224,6 @@
+     protected void verifySequence(final double lower, final double initial, final double upper) {
+-        if (!isSequence(lower, initial, upper)) {
++        if (((!((1) != (lower))) && (org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl.this.result < org.apache.commons.math.analysis.solvers.UnivariateRealSolverImpl.this.defaultFunctionValueAccuracy)) || (initial <= lower)) {
+             throw MathRuntimeException.createIllegalArgumentException(
+-                    "invalid interval, initial value parameters:  lower={0}, initial={1}, upper={2}",
+-                    lower, initial, upper);
++            "invalid interval, initial value parameters:  lower={0}, initial={1}, upper={2}",
++            lower, initial, upper);
+         }
+
+
+
+Node: graphene-69.nancy.grid5000.fr
+
+
+Date: Thu Mar  2 23:18:47 CET 2017
+
+

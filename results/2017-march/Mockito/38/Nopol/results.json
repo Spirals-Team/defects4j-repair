@@ -1,0 +1,20 @@
+{
+    "date": "Thu Mar 02 18:21:03 UTC 2017", 
+    "executionTime": 192364, 
+    "nbAngelicValue": 5, 
+    "nbStatement": 21, 
+    "nb_classes": 169, 
+    "nb_methods": 623, 
+    "node": "graphene-68.nancy.grid5000.fr\n", 
+    "patch": [
+        {
+            "nb_test_that_execute_statement": 173, 
+            "patch": "--- /tmp/mockito_38_Nopol/src/org/mockito/internal/matchers/Equals.java\n+++ /tmp/mockito_38_Nopol/src/org/mockito/internal/matchers/Equals.java\n@@ -19,3 +19,3 @@\n     public boolean matches(Object actual) {\n-        if (this.wanted == null) {\n+        if (!((actual!=null) && (actual!=null))) {\n             return actual == null;\n", 
+            "patchLocation": {
+                "class": "org.mockito.internal.matchers.Equals", 
+                "line": 20
+            }, 
+            "patchType": "CONDITIONAL"
+        }
+    ]
+}

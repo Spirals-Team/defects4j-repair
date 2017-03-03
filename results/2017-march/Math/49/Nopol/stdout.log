@@ -1,0 +1,39 @@
+cd /tmp/math_49_Nopol;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;TZ="America/New_York"; export TZexport PATH="/home/tdurieux/jdk1.7.0_79/bin/:$PATH";cp -r /home/tdurieux/dynamoth-experiments/src/python/core/../../../libs/z3 lib/z3;time java -d64 -Xmx4g -Xms1g -XX:MaxPermSize=1024m -XX:+UseConcMarkSweepGC -XX:+CMSPermGenSweepingEnabled -XX:+CMSClassUnloadingEnabled -cp /home/tdurieux/dynamoth-experiments/src/python/core/../../..//libs/nopol.jar:/home/tdurieux/jdk1.7.0_79/bin//../lib/tools.jar fr.inria.lille.repair.Main --flocal gzoltar  --maxTime 300  --json  --mode repair --type pre_then_cond --oracle angelic --synthesis smt --solver z3 --solver-path /home/tdurieux/dynamoth-experiments/src/python/core/../../..//libs/z3/z3 --complianceLevel 5 --source /tmp/math_49_Nopol/src/main/java/ --classpath /tmp/math_49_Nopol/target/classes/:/tmp/math_49_Nopol/target/test-classes/:/tmp/math_49_Nopol/lib/commons-discovery-0.5.jar:/home/tdurieux/dynamoth-experiments/src/python/core/../../..//libs/nopol.jar;echo "
+
+Node: `hostname`
+";echo "
+Date: `date`
+";
+
+22:48:56.825 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb classes : 569
+22:48:56.825 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb methods : 3620
+22:48:56.825 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements Analyzed : 6
+22:48:56.825 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements with Angelic Value Found : 2
+22:48:56.825 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb inputs in SMT : 8
+22:48:56.826 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb SMT level: 2
+22:48:56.826 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb SMT components: [4] [== of arity: 2, != of arity: 2, < of arity: 2, <= of arity: 2]
+22:48:56.826 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol -                   class java.lang.Boolean: 4
+22:48:56.826 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb variables in SMT : 13
+22:48:56.826 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - NoPol Execution time : 198366ms
+22:48:56.826 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - ----PATCH FOUND----
+22:48:56.826 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - org.apache.commons.math.linear.OpenMapRealVector.DEFAULT_ZERO_TOLERANCE == org.apache.commons.math.linear.OpenMapRealVector.this.epsilon
+22:48:56.986 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb test that executes the patch: 3
+22:48:56.986 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - org.apache.commons.math.linear.OpenMapRealVector:667: PRECONDITION
+22:48:57.042 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - --- /tmp/math_49_Nopol/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java
++++ /tmp/math_49_Nopol/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java
+@@ -666,3 +666,5 @@
+         } else if (entries.containsKey(index)) {
+-            entries.remove(index);
++            if (org.apache.commons.math.linear.OpenMapRealVector.DEFAULT_ZERO_TOLERANCE == org.apache.commons.math.linear.OpenMapRealVector.this.epsilon) {
++                entries.remove(index);
++            }
+         }
+
+
+
+Node: graphene-63.nancy.grid5000.fr
+
+
+Date: Thu Mar  2 23:48:57 CET 2017
+
+

@@ -1,0 +1,20 @@
+{
+    "date": "Thu Mar 02 19:34:34 UTC 2017", 
+    "executionTime": 191296, 
+    "nbAngelicValue": 1, 
+    "nbStatement": 26, 
+    "nb_classes": 395, 
+    "nb_methods": 4556, 
+    "node": "graphene-23.nancy.grid5000.fr\n", 
+    "patch": [
+        {
+            "nb_test_that_execute_statement": 1665, 
+            "patch": "--- /tmp/closure_38_Nopol/src/com/google/javascript/jscomp/CodeConsumer.java\n+++ /tmp/closure_38_Nopol/src/com/google/javascript/jscomp/CodeConsumer.java\n@@ -244,3 +244,3 @@\n     boolean negativeZero = isNegativeZero(x);\n-    if (x < 0 && prev == '-') {\n+    if ((prev == '-')) {\n       add(\" \");\n", 
+            "patchLocation": {
+                "class": "com.google.javascript.jscomp.CodeConsumer", 
+                "line": 245
+            }, 
+            "patchType": "CONDITIONAL"
+        }
+    ]
+}

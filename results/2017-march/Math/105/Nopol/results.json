@@ -1,0 +1,20 @@
+{
+    "date": "Thu Mar 02 21:25:04 UTC 2017", 
+    "executionTime": 35025, 
+    "nbAngelicValue": 4, 
+    "nbStatement": 40, 
+    "nb_classes": 139, 
+    "nb_methods": 978, 
+    "node": "graphene-54.nancy.grid5000.fr\n", 
+    "patch": [
+        {
+            "nb_test_that_execute_statement": 9, 
+            "patch": "--- /tmp/math_105_Nopol/src/java/org/apache/commons/math/stat/regression/SimpleRegression.java\n+++ /tmp/math_105_Nopol/src/java/org/apache/commons/math/stat/regression/SimpleRegression.java\n@@ -107,3 +107,5 @@\n             xbar = x;\n-            ybar = y;\n+            if (y <= x) {\n+                ybar = y;\n+            }\n         } else {\n", 
+            "patchLocation": {
+                "class": "org.apache.commons.math.stat.regression.SimpleRegression", 
+                "line": 108
+            }, 
+            "patchType": "PRECONDITION"
+        }
+    ]
+}

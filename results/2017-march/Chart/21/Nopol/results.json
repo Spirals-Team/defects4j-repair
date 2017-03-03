@@ -1,0 +1,20 @@
+{
+    "date": "Fri Mar 03 04:57:05 UTC 2017", 
+    "executionTime": 37270, 
+    "nbAngelicValue": 1, 
+    "nbStatement": 11, 
+    "nb_classes": 560, 
+    "nb_methods": 5878, 
+    "node": "graphene-62.nancy.grid5000.fr\n", 
+    "patch": [
+        {
+            "nb_test_that_execute_statement": 12, 
+            "patch": "--- /tmp/chart_21_Nopol/source/org/jfree/data/Range.java\n+++ /tmp/chart_21_Nopol/source/org/jfree/data/Range.java\n@@ -334,3 +334,5 @@\n         if (!(this.lower == range.lower)) {\n-            return false;\n+            if (((1 + org.jfree.data.Range.this.lower) - (-1) < org.jfree.data.Range.this.upper) || (org.jfree.data.Range.this.lower <= 0)) {\n+                return false;\n+            }\n         }\n", 
+            "patchLocation": {
+                "class": "org.jfree.data.Range", 
+                "line": 335
+            }, 
+            "patchType": "PRECONDITION"
+        }
+    ]
+}

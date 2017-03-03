@@ -1,0 +1,63 @@
+cd /tmp/math_50_Nopol;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;TZ="America/New_York"; export TZexport PATH="/home/tdurieux/jdk1.7.0_79/bin/:$PATH";cp -r /home/tdurieux/dynamoth-experiments/src/python/core/../../../libs/z3 lib/z3;time java -d64 -Xmx4g -Xms1g -XX:MaxPermSize=1024m -XX:+UseConcMarkSweepGC -XX:+CMSPermGenSweepingEnabled -XX:+CMSClassUnloadingEnabled -cp /home/tdurieux/dynamoth-experiments/src/python/core/../../..//libs/nopol.jar:/home/tdurieux/jdk1.7.0_79/bin//../lib/tools.jar fr.inria.lille.repair.Main --flocal gzoltar  --maxTime 300  --json  --mode repair --type pre_then_cond --oracle angelic --synthesis smt --solver z3 --solver-path /home/tdurieux/dynamoth-experiments/src/python/core/../../..//libs/z3/z3 --complianceLevel 5 --source /tmp/math_50_Nopol/src/main/java/ --classpath /tmp/math_50_Nopol/target/classes/:/tmp/math_50_Nopol/target/test-classes/:/tmp/math_50_Nopol/lib/commons-discovery-0.5.jar:/home/tdurieux/dynamoth-experiments/src/python/core/../../..//libs/nopol.jar;echo "
+
+Node: `hostname`
+";echo "
+Date: `date`
+";
+
+22:51:52.110 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb classes : 569
+22:51:52.110 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb methods : 3619
+22:51:52.110 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements Analyzed : 4
+22:51:52.110 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements with Angelic Value Found : 2
+22:51:52.110 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb inputs in SMT : 59
+22:51:52.110 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb SMT level: 3
+22:51:52.111 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb SMT components: [7] [== of arity: 2, != of arity: 2, < of arity: 2, <= of arity: 2, ! of arity: 1, || of arity: 2, && of arity: 2]
+22:51:52.111 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol -                   class java.lang.Boolean: 7
+22:51:52.111 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb variables in SMT : 17
+22:51:52.111 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - NoPol Execution time : 502889ms
+22:51:52.111 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - ----PATCH FOUND----
+22:51:52.111 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - (((atol) != (org.apache.commons.math.analysis.solvers.BaseSecantSolver.DEFAULT_ABSOLUTE_ACCURACY)) && (org.apache.commons.math.analysis.solvers.BaseSecantSolver.this.method!=null)) || (f0 <= atol)
+22:51:52.300 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb test that executes the patch: 21
+22:51:52.300 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - org.apache.commons.math.analysis.solvers.BaseSecantSolver:237: PRECONDITION
+22:51:52.321 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - --- /tmp/math_50_Nopol/src/main/java/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java
++++ /tmp/math_50_Nopol/src/main/java/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java
+@@ -236,15 +236,17 @@
+                                                      atol)) {
+-                switch (allowed) {
+-                case ANY_SIDE:
+-                    return x1;
+-                case LEFT_SIDE:
+-                    return inverted ? x1 : x0;
+-                case RIGHT_SIDE:
+-                    return inverted ? x0 : x1;
+-                case BELOW_SIDE:
+-                    return (f1 <= 0) ? x1 : x0;
+-                case ABOVE_SIDE:
+-                    return (f1 >= 0) ? x1 : x0;
+-                default:
+-                    throw new MathInternalError();
++                if ((((atol) != (org.apache.commons.math.analysis.solvers.BaseSecantSolver.DEFAULT_ABSOLUTE_ACCURACY)) && (org.apache.commons.math.analysis.solvers.BaseSecantSolver.this.method!=null)) || (f0 <= atol)) {
++                    switch (allowed) {
++                        case ANY_SIDE:
++                        return x1;
++                        case LEFT_SIDE:
++                        return inverted ? x1 : x0;
++                        case RIGHT_SIDE:
++                        return inverted ? x0 : x1;
++                        case BELOW_SIDE:
++                        return (f1 <= 0) ? x1 : x0;
++                        case ABOVE_SIDE:
++                        return (f1 >= 0) ? x1 : x0;
++                        default:
++                        throw new MathInternalError();
++                    }
+                 }
+
+
+
+Node: griffon-59.nancy.grid5000.fr
+
+
+Date: Thu Mar  2 23:51:52 CET 2017
+
+

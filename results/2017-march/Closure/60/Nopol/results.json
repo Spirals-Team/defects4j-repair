@@ -1,0 +1,20 @@
+{
+    "date": "Thu Mar 02 19:14:22 UTC 2017", 
+    "executionTime": 732162, 
+    "nbAngelicValue": 2, 
+    "nbStatement": 243, 
+    "nb_classes": 397, 
+    "nb_methods": 4499, 
+    "node": "graphene-73.nancy.grid5000.fr\n", 
+    "patch": [
+        {
+            "nb_test_that_execute_statement": 31, 
+            "patch": "--- /tmp/closure_60_Nopol/src/com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntax.java\n+++ /tmp/closure_60_Nopol/src/com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntax.java\n@@ -1196,3 +1196,5 @@\n     if (!newNode.isEquivalentTo(n)) {\n-      parent.replaceChild(n, newNode);\n+      if (com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax.this.late) {\n+        parent.replaceChild(n, newNode);\n+      }\n       reportCodeChange();\n", 
+            "patchLocation": {
+                "class": "com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax", 
+                "line": 1197
+            }, 
+            "patchType": "PRECONDITION"
+        }
+    ]
+}

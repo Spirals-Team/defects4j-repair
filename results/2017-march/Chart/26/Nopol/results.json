@@ -1,0 +1,20 @@
+{
+    "date": "Fri Mar 03 04:47:57 UTC 2017", 
+    "executionTime": 100232, 
+    "nbAngelicValue": 1, 
+    "nbStatement": 57, 
+    "nb_classes": 555, 
+    "nb_methods": 5772, 
+    "node": "graphene-69.nancy.grid5000.fr\n", 
+    "patch": [
+        {
+            "nb_test_that_execute_statement": 48, 
+            "patch": "--- /tmp/chart_26_Nopol/source/org/jfree/chart/plot/CategoryPlot.java\n+++ /tmp/chart_26_Nopol/source/org/jfree/chart/plot/CategoryPlot.java\n@@ -2537,3 +2537,3 @@\n         boolean b2 = (area.getHeight() <= MINIMUM_HEIGHT_TO_DRAW);\n-        if (b1 || b2) {\n+        if (org.jfree.chart.plot.CategoryPlot.DEFAULT_CROSSHAIR_STROKE!=null) {\n             return;\n", 
+            "patchLocation": {
+                "class": "org.jfree.chart.plot.CategoryPlot", 
+                "line": 2538
+            }, 
+            "patchType": "CONDITIONAL"
+        }
+    ]
+}

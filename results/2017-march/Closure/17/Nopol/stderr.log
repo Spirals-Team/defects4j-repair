@@ -1,0 +1,43 @@
+mkdir: cannot create directory ‘lib/’: File exists
+cp: cannot stat ‘/home/tdurieux/defects4j/framework/projects/Closure/lib/*’: No such file or directory
+Running ant (compile)...................................................... OK
+Running ant (compile.tests)................................................ OK
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
+Please use CMSClassUnloadingEnabled in place of CMSPermGenSweepingEnabled in the future
+Mar 02, 2017 8:26:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: in1:2: WARNING - attempted re-definition of type goog.dom.Foo
+found   : function (new:goog.dom.Foo): ?
+expected: function (new:goog.dom.Foo): undefined
+/** @constructor */ goog.dom.Foo = function() {};
+                    ^
+
+Mar 02, 2017 8:26:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: in1:2: WARNING - goog.dom.Foo defined before its owner. goog.dom is defined at in1:3
+/** @constructor */ goog.dom.Foo = function() {};
+                    ^
+
+Mar 02, 2017 8:26:02 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Mar 02, 2017 8:26:02 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: in1:2: WARNING - goog.dom.Foo defined before its owner. goog.dom is defined at in1:3
+/** @constructor */ goog.dom.Foo = function() {};
+                    ^
+
+Mar 02, 2017 8:26:02 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 1 warning(s), 100% typed
+Mar 02, 2017 8:26:07 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: in1:2: WARNING - attempted re-definition of type goog.dom.Foo
+found   : function (new:goog.dom.Foo): ?
+expected: function (new:goog.dom.Foo): undefined
+/** @constructor */ goog.dom.Foo = function() {};
+                    ^
+
+Mar 02, 2017 8:26:07 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: in1:2: WARNING - goog.dom.Foo defined before its owner. goog.dom is defined at in1:3
+/** @constructor */ goog.dom.Foo = function() {};
+                    ^
+
+Mar 02, 2017 8:26:07 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+303.38user 4.60system 2:09.88elapsed 237%CPU (0avgtext+0avgdata 4056664maxresident)k
+0inputs+6488outputs (0major+1795108minor)pagefaults 0swaps

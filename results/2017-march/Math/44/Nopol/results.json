@@ -1,0 +1,20 @@
+{
+    "date": "Thu Mar 02 23:00:45 UTC 2017", 
+    "executionTime": 430929, 
+    "nbAngelicValue": 1, 
+    "nbStatement": 255, 
+    "nb_classes": 587, 
+    "nb_methods": 3744, 
+    "node": "graphene-141.nancy.grid5000.fr\n", 
+    "patch": [
+        {
+            "nb_test_that_execute_statement": 137, 
+            "patch": "--- /tmp/math_44_Nopol/src/main/java/org/apache/commons/math/ode/AbstractIntegrator.java\n+++ /tmp/math_44_Nopol/src/main/java/org/apache/commons/math/ode/AbstractIntegrator.java\n@@ -286,3 +286,5 @@\n                 }\n-                statesInitialized = true;\n+                if (1 == org.apache.commons.math.ode.AbstractIntegrator.this.stepHandlers.size()) {\n+                    statesInitialized = true;\n+                }\n             }\n", 
+            "patchLocation": {
+                "class": "org.apache.commons.math.ode.AbstractIntegrator", 
+                "line": 287
+            }, 
+            "patchType": "PRECONDITION"
+        }
+    ]
+}

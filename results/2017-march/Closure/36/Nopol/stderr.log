@@ -1,0 +1,265 @@
+mkdir: cannot create directory ‘lib/’: File exists
+cp: cannot stat ‘/home/tdurieux/defects4j/framework/projects/Closure/lib/*’: No such file or directory
+Running ant (compile)...................................................... OK
+Running ant (compile.tests)................................................ OK
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
+Please use CMSClassUnloadingEnabled in place of CMSPermGenSweepingEnabled in the future
+Mar 02, 2017 7:34:39 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+INFO: 0 error(s), 0 warning(s), 77.8% typed
+Mar 02, 2017 7:34:39 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: i0:1: ERROR - missing goog.getCssName around literal 'foo'
+var x = 'foo';
+        ^
+
+Mar 02, 2017 7:34:39 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 1 error(s), 0 warning(s)
+Mar 02, 2017 7:34:39 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: i0:8: WARNING - actual parameter 1 of goog.getCssName does not match formal parameter
+found   : number
+required: string
+var x = goog.getCssName(123, 'a');
+                        ^
+
+Mar 02, 2017 7:34:39 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 1 warning(s), 100% typed
+Mar 02, 2017 7:34:40 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs:1: WARNING - name extern is not undefined in the externs.
+extern.foo
+^
+
+Mar 02, 2017 7:34:40 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 1 warning(s)
+Mar 02, 2017 7:34:40 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: i0:1: ERROR - required "foo" namespace never provided
+var goog = {}; goog.require = function(x) {}; goog.require('foo');
+                                              ^
+
+Mar 02, 2017 7:34:40 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 1 error(s), 0 warning(s)
+Mar 02, 2017 7:34:40 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: i0:1: ERROR - dangerous use of the global this object
+function f() { this.y = 3; }
+               ^
+
+Mar 02, 2017 7:34:40 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 1 error(s), 0 warning(s)
+Mar 02, 2017 7:34:40 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+INFO: 0 error(s), 0 warning(s), 75% typed
+Mar 02, 2017 7:34:40 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+INFO: 0 error(s), 0 warning(s), 75% typed
+Mar 02, 2017 7:34:40 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: i0:1: WARNING - Function x.f: called with 1 argument(s). Function requires at least 0 argument(s) and no more than 0 argument(s).
+var x = x || {}; x.f = function() {}; x.f(3);
+                                      ^
+
+Mar 02, 2017 7:34:40 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 1 warning(s), 100% typed
+Mar 02, 2017 7:34:40 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: i0:1: ERROR - Variable referenced before declaration: x
+x = 3; var x = 5;
+^
+
+Mar 02, 2017 7:34:40 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 1 error(s), 0 warning(s)
+Mar 02, 2017 7:34:40 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: i0:2: WARNING - missing goog.provide('f')
+function f() { var arguments; }
+         ^
+
+Mar 02, 2017 7:34:40 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 1 warning(s)
+Mar 02, 2017 7:34:40 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: i0:1: ERROR - Parse error. getters are not supported in Internet Explorer
+var a = {get f(){}}
+^
+
+Mar 02, 2017 7:34:40 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 1 error(s), 0 warning(s)
+Mar 02, 2017 7:34:40 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: i0:1: ERROR - constant foo$bar assigned a value more than once
+var goog = {}; goog.provide('foo.bar'); function f() { foo.bar = {};}
+                                                       ^
+
+Mar 02, 2017 7:34:40 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 1 error(s), 0 warning(s)
+Mar 02, 2017 7:34:40 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: i0:1: WARNING - enum key a must be a syntactic constant
+/** @define {boolean} */ var COMPILED = false; var goog = {};goog.exportSymbol = function() {};goog.provide('Foo'); /** @enum */ Foo = {a: 3};
+                                                                                                                                        ^
+
+Mar 02, 2017 7:34:40 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 1 warning(s)
+Mar 02, 2017 7:34:40 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: i0:2: ERROR - unreachable code
+ 3; }
+ ^
+
+Mar 02, 2017 7:34:40 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 1 error(s), 0 warning(s)
+Mar 02, 2017 7:34:40 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+INFO: 0 error(s), 0 warning(s), 100% typed
+Mar 02, 2017 7:34:40 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: i0:1: ERROR - constant FOO assigned a value more than once
+var FOO = true; FOO = false
+                ^
+
+Mar 02, 2017 7:34:40 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 1 error(s), 0 warning(s)
+Mar 02, 2017 7:34:40 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: ERROR - TightenTypes requires type checking. Please use --check_types.
+
+Mar 02, 2017 7:34:40 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 1 error(s), 0 warning(s)
+Mar 02, 2017 7:34:40 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: i0:1: ERROR - Parse error. unlabelled break must be inside loop or switch
+function f() { try { } catch(e) { break; } }
+                                        ^
+
+Mar 02, 2017 7:34:40 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 1 error(s), 0 warning(s), 100% typed
+Mar 02, 2017 7:34:40 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+INFO: 0 error(s), 0 warning(s), 100% typed
+Mar 02, 2017 7:34:40 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: i0:1: WARNING - initializing variable
+found   : string
+required: number
+/** @type {number} */ var n = window.name;
+                              ^
+
+Mar 02, 2017 7:34:40 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 1 warning(s), 100% typed
+Mar 02, 2017 7:34:40 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: i0:1: ERROR - variable x is undeclared
+x = 3;
+^
+
+Mar 02, 2017 7:34:40 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 1 error(s), 0 warning(s)
+Mar 02, 2017 7:34:40 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+INFO: 0 error(s), 0 warning(s), 92.6% typed
+Mar 02, 2017 7:34:40 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: i0:1: ERROR - Variable f has been deprecated.
+/** @deprecated */ function f() { } function g() { f(); }
+                                                   ^
+
+Mar 02, 2017 7:34:40 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 1 error(s), 0 warning(s), 100% typed
+Mar 02, 2017 7:34:40 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: i0:1: ERROR - Missing return statement. Function expected to return number.
+/** @return {number} */ function f() { if (f) { return 3; } }
+                        ^
+
+Mar 02, 2017 7:34:40 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 1 error(s), 0 warning(s), 100% typed
+Mar 02, 2017 7:34:40 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: i0:1: ERROR - Parse error. Unsupported syntax: ERROR
+var foo = {bar: function(e) }
+^
+
+Mar 02, 2017 7:34:40 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: i0:1: ERROR - Parse error. missing { before function body
+var foo = {bar: function(e) }
+                             ^
+
+Mar 02, 2017 7:34:40 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: i0:1: ERROR - Parse error. missing } after property list
+var foo = {bar: function(e) }
+                             ^
+
+Mar 02, 2017 7:34:40 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: i0:1: ERROR - Parse error. syntax error
+var foo = {bar: function(e) }
+                             ^
+
+Mar 02, 2017 7:34:40 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 4 error(s), 0 warning(s)
+Mar 02, 2017 7:34:40 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: i0:1: WARNING - References to the global RegExp object prevents optimization of regular expressions.
+/(a)/.test("a");var a = RegExp.$1
+                        ^
+
+Mar 02, 2017 7:34:40 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 1 warning(s)
+Mar 02, 2017 7:34:40 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: i0:1: WARNING - Bad type annotation. Unknown type n
+/** @type {n} */ var n = window.name;
+           ^
+
+Mar 02, 2017 7:34:40 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 1 warning(s), 100% typed
+Mar 02, 2017 7:34:41 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: i0:1: ERROR - constant foo assigned a value more than once
+var goog = {}; goog.provide('foo'); function f() { foo = {};}
+                                                   ^
+
+Mar 02, 2017 7:34:41 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 1 error(s), 0 warning(s)
+Mar 02, 2017 7:34:41 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+INFO: 0 error(s), 0 warning(s), 100% typed
+Mar 02, 2017 7:34:41 PM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: i0:1: WARNING - enum key a must be a syntactic constant
+/** @define {boolean} */ var COMPILED = false; var goog = {};goog.exportSymbol = function() {};goog.provide('Foo'); /** @enum */ Foo = {a: 3};
+                                                                                                                                        ^
+
+Mar 02, 2017 7:34:41 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 1 warning(s), 100% typed
+Mar 02, 2017 7:34:41 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: i0:1: ERROR - Parse error. unnamed function statement
+function () {}
+^
+
+Mar 02, 2017 7:34:41 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 1 error(s), 0 warning(s)
+Mar 02, 2017 7:34:41 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: i0:1: ERROR - x.z is never defined
+var x = {}; var y = x.z;
+                    ^
+
+Mar 02, 2017 7:34:41 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 1 error(s), 0 warning(s)
+Mar 02, 2017 7:34:41 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: i1:1: ERROR - 'Foo' used but not goog.require'd
+new Foo();
+    ^
+
+Mar 02, 2017 7:34:41 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 1 error(s), 0 warning(s)
+Mar 02, 2017 7:34:41 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: i1:1: ERROR - Access to private variable f not allowed outside file i0.
+function g() { f(); }
+               ^
+
+Mar 02, 2017 7:34:41 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 1 error(s), 0 warning(s), 100% typed
+Mar 02, 2017 7:34:41 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: i0:1: ERROR - missing goog.provide('Foo')
+/** @constructor */ function Foo() {}
+                             ^
+
+Mar 02, 2017 7:34:41 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 1 error(s), 0 warning(s)
+Mar 02, 2017 7:34:41 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+INFO: 0 error(s), 0 warning(s), 57.1% typed
+Mar 02, 2017 7:34:41 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+INFO: 0 error(s), 0 warning(s), 57.1% typed
+Mar 02, 2017 7:34:41 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: i0:1: ERROR - variables, functions, and arguments cannot be deleted in ES5 strict mode
+var a  = 2; delete a;
+            ^
+
+Mar 02, 2017 7:34:41 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 1 error(s), 0 warning(s)
+Mar 02, 2017 7:34:41 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: i0:1: ERROR - dangerous use of the global this object
+function f() { this.y = 3; }
+               ^
+
+Mar 02, 2017 7:34:41 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 1 error(s), 0 warning(s)
+Mar 02, 2017 7:34:41 PM com.google.javascript.jscomp.LoggerErrorManager println
+SEVERE: ERROR - Rename prototypes and inline variables cannot be used together
+
+Mar 02, 2017 7:34:41 PM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 1 error(s), 0 warning(s)
+268.29user 4.41system 1:56.57elapsed 233%CPU (0avgtext+0avgdata 3709908maxresident)k
+0inputs+6168outputs (0major+1662817minor)pagefaults 0swaps

@@ -1,0 +1,20 @@
+{
+    "date": "Thu Mar 02 18:23:04 UTC 2017", 
+    "executionTime": 121144, 
+    "nbAngelicValue": 1, 
+    "nbStatement": 1, 
+    "nb_classes": 416, 
+    "nb_methods": 4924, 
+    "node": "graphene-65.nancy.grid5000.fr\n", 
+    "patch": [
+        {
+            "nb_test_that_execute_statement": 2, 
+            "patch": "--- /tmp/closure_126_Nopol/src/com/google/javascript/jscomp/MinimizeExitPoints.java\n+++ /tmp/closure_126_Nopol/src/com/google/javascript/jscomp/MinimizeExitPoints.java\n@@ -142,3 +142,5 @@\n         Node finallyBlock = n.getLastChild();\n-        tryMinimizeExits(finallyBlock, exitType, labelName);\n+        if (0 == 1) {\n+          tryMinimizeExits(finallyBlock, exitType, labelName);\n+        }\n       }\n", 
+            "patchLocation": {
+                "class": "com.google.javascript.jscomp.MinimizeExitPoints", 
+                "line": 143
+            }, 
+            "patchType": "PRECONDITION"
+        }
+    ]
+}

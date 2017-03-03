@@ -1,0 +1,20 @@
+{
+    "date": "Thu Mar 02 20:26:11 UTC 2017", 
+    "executionTime": 121167, 
+    "nbAngelicValue": 1, 
+    "nbStatement": 3, 
+    "nb_classes": 403, 
+    "nb_methods": 4723, 
+    "node": "graphene-35.nancy.grid5000.fr\n", 
+    "patch": [
+        {
+            "nb_test_that_execute_statement": 25, 
+            "patch": "--- /tmp/closure_17_Nopol/src/com/google/javascript/jscomp/TypedScopeCreator.java\n+++ /tmp/closure_17_Nopol/src/com/google/javascript/jscomp/TypedScopeCreator.java\n@@ -1294,3 +1294,5 @@\n                 // then we can safely use that.\n-                return rValue.getJSType();\n+                if (!(com.google.javascript.jscomp.TypedScopeCreator.DELEGATE_PROXY_SUFFIX.length() == -1 + com.google.javascript.jscomp.TypedScopeCreator.this.functionAnalysisResults.size())) {\n+                  return rValue.getJSType();\n+                }\n               } else if (rValue.isOr()) {\n", 
+            "patchLocation": {
+                "class": "com.google.javascript.jscomp.TypedScopeCreator$AbstractScopeBuilder", 
+                "line": 1295
+            }, 
+            "patchType": "PRECONDITION"
+        }
+    ]
+}

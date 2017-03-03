@@ -1,0 +1,21 @@
+mkdir: cannot create directory ‘lib/’: File exists
+Running ant (compile)...................................................... OK
+Running ant (compile.tests)................................................ OK
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
+Please use CMSClassUnloadingEnabled in place of CMSPermGenSweepingEnabled in the future
+spoon.compiler.ModelBuildingException: The type LocalizedMatcher must implement the inherited abstract method Matcher.describeMismatch(Object, Description) at /tmp/mockito_38_Nopol/src/org/mockito/internal/matchers/LocalizedMatcher.java:13
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.report(JDTBasedSpoonCompiler.java:579)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.reportProblems(JDTBasedSpoonCompiler.java:560)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.build(JDTBasedSpoonCompiler.java:121)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.build(JDTBasedSpoonCompiler.java:102)
+	at fr.inria.lille.commons.spoon.util.SpoonModelLibrary.modelFor(SpoonModelLibrary.java:56)
+	at fr.inria.lille.commons.spoon.SpoonedFile.<init>(SpoonedFile.java:62)
+	at fr.inria.lille.commons.spoon.SpoonedProject.<init>(SpoonedProject.java:17)
+	at fr.inria.lille.repair.nopol.NoPol.<init>(NoPol.java:100)
+	at fr.inria.lille.repair.Main$1.call(Main.java:90)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+224.74user 3.88system 3:15.11elapsed 117%CPU (0avgtext+0avgdata 786376maxresident)k
+104768inputs+7696outputs (40major+755175minor)pagefaults 0swaps

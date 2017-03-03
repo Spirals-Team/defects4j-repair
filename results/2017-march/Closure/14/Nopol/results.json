@@ -1,0 +1,20 @@
+{
+    "date": "Thu Mar 02 20:37:10 UTC 2017", 
+    "executionTime": 182554, 
+    "nbAngelicValue": 1, 
+    "nbStatement": 35, 
+    "nb_classes": 403, 
+    "nb_methods": 4722, 
+    "node": "graphene-26.nancy.grid5000.fr\n", 
+    "patch": [
+        {
+            "nb_test_that_execute_statement": 7, 
+            "patch": "--- /tmp/closure_14_Nopol/src/com/google/javascript/jscomp/ControlFlowAnalysis.java\n+++ /tmp/closure_14_Nopol/src/com/google/javascript/jscomp/ControlFlowAnalysis.java\n@@ -663,3 +663,5 @@\n     } else {\n-      finallyMap.put(lastJump, null);\n+      if (com.google.javascript.jscomp.ControlFlowAnalysis.this.shouldTraverseFunctions) {\n+        finallyMap.put(lastJump, null);\n+      }\n     }\n", 
+            "patchLocation": {
+                "class": "com.google.javascript.jscomp.ControlFlowAnalysis", 
+                "line": 664
+            }, 
+            "patchType": "PRECONDITION"
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+cd /tmp/chart_13_Nopol;export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8;TZ="America/New_York"; export TZexport PATH="/home/tdurieux/jdk1.7.0_79/bin/:$PATH";cp -r /home/tdurieux/dynamoth-experiments/src/python/core/../../../libs/z3 lib/z3;time java -d64 -Xmx4g -Xms1g -XX:MaxPermSize=1024m -XX:+UseConcMarkSweepGC -XX:+CMSPermGenSweepingEnabled -XX:+CMSClassUnloadingEnabled -cp /home/tdurieux/dynamoth-experiments/src/python/core/../../..//libs/nopol.jar:/home/tdurieux/jdk1.7.0_79/bin//../lib/tools.jar fr.inria.lille.repair.Main --flocal gzoltar  --maxTime 300  --json  --mode repair --type pre_then_cond --oracle angelic --synthesis smt --solver z3 --solver-path /home/tdurieux/dynamoth-experiments/src/python/core/../../..//libs/z3/z3 --complianceLevel 4 --source /tmp/chart_13_Nopol/source/ --classpath /tmp/chart_13_Nopol/build/:/tmp/chart_13_Nopol/build-tests/:/tmp/chart_13_Nopol/lib/cobertura-lib/servlet-api-2.5-6.1.14.jar:/tmp/chart_13_Nopol/lib/servlet.jar:/home/tdurieux/dynamoth-experiments/src/python/core/../../..//libs/nopol.jar;echo "
+
+Node: `hostname`
+";echo "
+Date: `date`
+";
+
+05:09:25.357 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb classes : 580
+05:09:25.357 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb methods : 6277
+05:09:25.357 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements Analyzed : 23
+05:09:25.357 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb Statements with Angelic Value Found : 1
+05:09:25.357 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb inputs in SMT : 32
+05:09:25.357 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb SMT level: 1
+05:09:25.357 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb SMT components: [0] []
+05:09:25.358 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb variables in SMT : 23
+05:09:25.358 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - NoPol Execution time : 42100ms
+05:09:25.358 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - ----PATCH FOUND----
+05:09:25.358 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - null!=null
+05:09:25.531 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - Nb test that executes the patch: 2
+05:09:25.531 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - org.jfree.chart.block.BorderArrangement:453: PRECONDITION
+05:09:25.566 [pool-2-thread-1] INFO  fr.inria.lille.repair.nopol.NoPol - --- /tmp/chart_13_Nopol/source/org/jfree/chart/block/BorderArrangement.java
++++ /tmp/chart_13_Nopol/source/org/jfree/chart/block/BorderArrangement.java
+@@ -452,9 +452,11 @@
+         h[3] = h[2];
+-        if (this.rightBlock != null) {
+-            RectangleConstraint c4 = new RectangleConstraint(0.0,
+-                    new Range(0.0, constraint.getWidth() - w[2]),
+-                    LengthConstraintType.RANGE, h[2], null,
+-                    LengthConstraintType.FIXED);
+-            Size2D size = this.rightBlock.arrange(g2, c4);
+-            w[3] = size.width;
++        if (null!=null) {
++            if (this.rightBlock != null) {
++                RectangleConstraint c4 = new RectangleConstraint(0.0,
++                new Range(0.0, constraint.getWidth() - w[2]),
++                LengthConstraintType.RANGE, h[2], null,
++                LengthConstraintType.FIXED);
++                Size2D size = this.rightBlock.arrange(g2, c4);
++                w[3] = size.width;
++            }
+         }
+
+
+
+Node: graphene-32.nancy.grid5000.fr
+
+
+Date: Fri Mar  3 06:09:26 CET 2017
+
+

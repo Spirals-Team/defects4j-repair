@@ -1,0 +1,20 @@
+{
+    "date": "Thu Mar 02 19:03:51 UTC 2017", 
+    "executionTime": 1441026, 
+    "nbAngelicValue": 7, 
+    "nbStatement": 241, 
+    "nb_classes": 377, 
+    "nb_methods": 4190, 
+    "node": "graphene-24.nancy.grid5000.fr\n", 
+    "patch": [
+        {
+            "nb_test_that_execute_statement": 3164, 
+            "patch": "--- /tmp/closure_75_Nopol/src/com/google/javascript/rhino/Node.java\n+++ /tmp/closure_75_Nopol/src/com/google/javascript/rhino/Node.java\n@@ -1410,3 +1410,5 @@\n       }\n-      res = n.checkTreeEqualsImpl(n2);\n+      if (com.google.javascript.rhino.Node.PROPERTY_FLAG == com.google.javascript.rhino.Node.this.first.getType()) {\n+        res = n.checkTreeEqualsImpl(n2);\n+      }\n       if (res != null) {\n", 
+            "patchLocation": {
+                "class": "com.google.javascript.rhino.Node", 
+                "line": 1411
+            }, 
+            "patchType": "PRECONDITION"
+        }
+    ]
+}

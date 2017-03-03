@@ -1,0 +1,20 @@
+{
+    "date": "Fri Mar 03 05:09:25 UTC 2017", 
+    "executionTime": 42100, 
+    "nbAngelicValue": 1, 
+    "nbStatement": 23, 
+    "nb_classes": 580, 
+    "nb_methods": 6277, 
+    "node": "graphene-32.nancy.grid5000.fr\n", 
+    "patch": [
+        {
+            "nb_test_that_execute_statement": 2, 
+            "patch": "--- /tmp/chart_13_Nopol/source/org/jfree/chart/block/BorderArrangement.java\n+++ /tmp/chart_13_Nopol/source/org/jfree/chart/block/BorderArrangement.java\n@@ -452,9 +452,11 @@\n         h[3] = h[2];\n-        if (this.rightBlock != null) {\n-            RectangleConstraint c4 = new RectangleConstraint(0.0,\n-                    new Range(0.0, constraint.getWidth() - w[2]),\n-                    LengthConstraintType.RANGE, h[2], null,\n-                    LengthConstraintType.FIXED);\n-            Size2D size = this.rightBlock.arrange(g2, c4);\n-            w[3] = size.width;\n+        if (null!=null) {\n+            if (this.rightBlock != null) {\n+                RectangleConstraint c4 = new RectangleConstraint(0.0,\n+                new Range(0.0, constraint.getWidth() - w[2]),\n+                LengthConstraintType.RANGE, h[2], null,\n+                LengthConstraintType.FIXED);\n+                Size2D size = this.rightBlock.arrange(g2, c4);\n+                w[3] = size.width;\n+            }\n         }\n", 
+            "patchLocation": {
+                "class": "org.jfree.chart.block.BorderArrangement", 
+                "line": 453
+            }, 
+            "patchType": "PRECONDITION"
+        }
+    ]
+}

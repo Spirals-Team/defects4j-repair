@@ -1,0 +1,20 @@
+{
+    "date": "Thu Mar 02 18:53:04 UTC 2017", 
+    "executionTime": 1922396, 
+    "nbAngelicValue": 17, 
+    "nbStatement": 95, 
+    "nb_classes": 428, 
+    "nb_methods": 5037, 
+    "node": "graphene-122.nancy.grid5000.fr\n", 
+    "patch": [
+        {
+            "nb_test_that_execute_statement": 394, 
+            "patch": "--- /tmp/closure_119_Nopol/src/com/google/javascript/jscomp/GlobalNamespace.java\n+++ /tmp/closure_119_Nopol/src/com/google/javascript/jscomp/GlobalNamespace.java\n@@ -690,3 +690,5 @@\n \n-      handleGet(module, scope, n, parent, name, type);\n+      if (((com.google.javascript.jscomp.GlobalNamespace.this.externsRoot!=null) && ((-1) != ((2) - (com.google.javascript.jscomp.GlobalNamespace.this.globalNames.size())))) || (!(com.google.javascript.jscomp.GlobalNamespace.this.externsScope!=null))) {\n+        handleGet(module, scope, n, parent, name, type);\n+      }\n     }\n", 
+            "patchLocation": {
+                "class": "com.google.javascript.jscomp.GlobalNamespace$BuildGlobalNamespace", 
+                "line": 691
+            }, 
+            "patchType": "PRECONDITION"
+        }
+    ]
+}
