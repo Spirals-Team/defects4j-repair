@@ -105,7 +105,7 @@
  101 | [T16](#time-16)   | Yes       |      1
  102 | [T18](#time-18)   | Yes       |      1
  103 | [T19](#time-19)   | Yes       |      1
-  -   | Total             | 103 (100%) |    103
+  x  | Total             | 103 (100%) |    103
 
 Fixed bugs: 103/103 (100%)
 
@@ -223,7 +223,7 @@ Total execution time: 6:40:48.015000
  101 | [T16](#time-16)   | Yes       |      1
  102 | [T18](#time-18)   | Yes       |      1
  103 | [T19](#time-19)   | Yes       |      1
-   -  | Total             | 103 (100%) |    103
+   x | Total             | 103 (100%) |    103
 
 Fixed bugs: 103/103 (100%)
 
