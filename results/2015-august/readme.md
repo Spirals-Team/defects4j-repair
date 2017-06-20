@@ -1,6 +1,6 @@
 # All fixed bugs
 
- #   | BugId             | jGenProg  | jKali     | Nopol     | Total
+ \#   | BugId             | jGenProg  | jKali     | Nopol     | Total
 ---- | ----------------- | --------- | --------- | --------- | ------
    1 | [C1](#chart-1)    | Yes       | Yes       | No        |      2
    3 | [C3](#chart-3)    | Yes       | No       | Yes       |      2
@@ -61,7 +61,7 @@ Nb bugs ends with the Grid5000 timeout: 46
 Total execution time: 17 days, 14:14:07.606000
 # All bugs
 
- #   | BugId             | jGenProg  | jKali     | Nopol     | Total
+ \#   | BugId             | jGenProg  | jKali     | Nopol     | Total
 ---- | ----------------- | --------- | --------- | --------- | ------
    1 | [C1](#chart-1)    | Yes       | Yes       | No        |      2
    2 | [C2](#chart-2)    | No       | No       | No        |      0
