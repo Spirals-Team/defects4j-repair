@@ -1,6 +1,6 @@
 # All fixed bugs
 
- #   | BugId             | Nopol     | Total
+ \#   | BugId             | Nopol     | Total
 ---- | ----------------- | --------- | ------
    1 | [C3](#chart-3)    | Yes       |      1
    2 | [C4](#chart-4)    | Yes       |      1
@@ -106,6 +106,7 @@
  102 | [T18](#time-18)   | Yes       |      1
  103 | [T19](#time-19)   | Yes       |      1
      | Total             | 103 (100%) |    103
+
 Fixed bugs: 103/103 (100%)
 
 Nb bugs ends with an execution error: 0
@@ -117,7 +118,7 @@ Nb bugs ends with the Grid5000 timeout: 0
 Total execution time: 6:40:48.015000
 # All bugs
 
- #   | BugId             | Nopol     | Total
+ \#   | BugId             | Nopol     | Total
 ---- | ----------------- | --------- | ------
    1 | [C3](#chart-3)    | Yes       |      1
    2 | [C4](#chart-4)    | Yes       |      1
