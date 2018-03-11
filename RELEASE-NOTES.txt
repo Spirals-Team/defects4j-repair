@@ -1,0 +1,71 @@
+Joda-Time version 2.2
+---------------------
+
+Joda-Time is a date and time handling library that seeks to replace the JDK
+Date and Calendar classes.
+
+This is the tenth release of Joda-Time.
+This release contains enhancements, bug fixes and a time zone update.
+
+We require JDK 1.5 or later as features such as generics are used.
+It may be possible to use retroweaver to compile this under an earlier JDK but we haven't tried.
+
+Joda-Time is licensed under the business-friendly Apache License Version 2.
+This is the same license as all of Apache, plus other open source projects such as Spring.
+The intent is to make the code available to the Java community with the minimum
+of restrictions. If the license causes you problems please contact the mailing list.
+
+**  Please also check out our related projects   **
+** http://joda-time.sourceforge.net/related.html **
+
+
+Enhancements since 2.1
+----------------------
+
+
+Compatibility with 2.1
+----------------------
+Binary compatible - Yes
+
+Source compatible - Yes
+
+Serialization compatible - Yes
+
+Data compatible - Yes, except
+ - DateTimeZone data updated to version 2012c
+
+Semantic compatible - Yes, except
+ - DateTimeFormatter.parseInto() retains the year if only month parsed (as it did in v1.x)
+
+
+Deprecations since 2.1
+----------------------
+None
+
+
+Bug fixes since 2.1
+-------------------
+- DateTimeFormatter.parseInto() [3522138]
+  The v2.0 changes to handle parsing of month/day on their own (for Feb 29th) cause
+  parseInto() to lose the year. This fix reverts behaviour to v1.x so that parseInto()
+  will use the supplied year, not the default year of the formatter.
+
+- FieldUtils.safeMultiply(long,int) [3520651]
+  Fix implementation to throw exception for (Long.MIN_VALUE, -1)
+
+- Javadoc fix to BaseChronology [3513326]
+
+
+Scala
+--------
+Joda-Time uses annotations from Joda-Convert.
+In the Java programming language, this dependency is optional, however in Scala it is not.
+Scala users must manually add the Joda-Convert v1.2 dependency.
+
+
+Feedback
+--------
+All feedback is welcomed via the joda-interest mailing list.
+
+The Joda team
+http://joda-time.sourceforge.net
