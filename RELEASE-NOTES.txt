@@ -1,0 +1,67 @@
+Joda-Time version 2.1
+---------------------
+
+Joda-Time is a date and time handling library that seeks to replace the JDK
+Date and Calendar classes.
+
+This is the ninth release of Joda-Time.
+This release contains enhancements, bug fixes and a time zone update.
+
+We require JDK 1.5 or later as features such as generics are used.
+It may be possible to use retroweaver to compile this under an earlier JDK but we haven't tried.
+
+Joda-Time is licensed under the business-friendly Apache License Version 2.
+This is the same license as all of Apache, plus other open source projects such as Spring.
+The intent is to make the code available to the Java community with the minimum
+of restrictions. If the license causes you problems please contact the mailing list.
+
+**  Please also check out our related projects   **
+** http://joda-time.sourceforge.net/related.html **
+
+
+Enhancements since 2.0
+----------------------
+
+
+Compatibility with 2.0
+----------------------
+Binary compatible - Yes
+
+Source compatible - Yes
+
+Serialization compatible - Yes
+
+Data compatible - Yes, except
+  - DateTimeZone data updated to version 2011h
+
+Semantic compatible - Yes, except
+ Time-zone names now return correct results on JDK1.6 for non-English locales
+
+ Interval/MutableInterval toString() now contains the time-zone offset
+
+
+Deprecations since 2.0
+----------------------
+None
+
+
+Bug fixes since 2.0
+-------------------
+- Time-zone names [3412910]
+  Names now returned in locales other than English
+  The names may differ between JDK1.5 and 1.6 due to the underlying JDK data
+
+- Time zone id parsing fixed for some longer time zones [3427389]
+  Time zones like "America/Dawson_Creek" were not parsed as "America/Dawson" was matched first
+
+- Interval/MutableInterval toString() now contains the time-zone offset [https://github.com/JodaOrg/joda-time/pull/2]
+
+- Javadoc fix to MutablePeriod [3413869]
+
+
+Feedback
+--------
+All feedback is welcomed via the joda-interest mailing list.
+
+The Joda team
+http://joda-time.sourceforge.net
