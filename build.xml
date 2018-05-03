@@ -1,0 +1,280 @@
+<!--
+ Copyright 2009 Google Inc.
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+<project name="compiler" basedir="." default="jar">
+
+  <!-- define other variables -->
+  <property name="src.dir" value="${basedir}/src" />
+  <property name="gen.dir" value="${basedir}/gen" />
+  <property name="test.dir" value="${basedir}/test" />
+  <property name="externs.dir" value="${basedir}/externs" />
+  <property name="build.dir" value="${basedir}/build" />
+  <property name="classes.dir" value="${build.dir}/classes" />
+  <property name="testClasses.dir" value="${build.dir}/test" />
+  <property name="javadoc.dir" value="${build.dir}/javadoc" />
+  <property name="stylesheetfile" value="" />
+  <property name="lib.dir" value="${basedir}/lib" />
+  <property name="tools.dir" value="${basedir}/tools" />
+  <property name="jarfile" value="${build.dir}/${ant.project.name}.jar" />
+  <property name="num-fuzz-tests" value="10000"/>
+  <property name="test" value="*Test"/>
+  <property name="version" value="HEAD"/>
+  <property name="jsonml.dir" value="${basedir}/src/com/google/javascript/jscomp/jsonml" />
+  <property name="jsonml-classes.dir" value = "${build.dir}/jsonml-classes" />
+  <property name="jsonml-jarfile" value="${build.dir}/secure_compiler.jar" />
+
+
+  <property file="build.properties" />
+
+  <!-- set the classpath for the project              -->
+  <!-- this includes the generated source class files -->
+  <!-- and every jar in the /lib directory            -->
+  <path id="classpath.path">
+    <pathelement location="${classes.dir}" />
+    <fileset dir="${lib.dir}">
+      <include name="*.jar" />
+    </fileset>
+  </path>
+
+  <target name="clean" description="delete generated files">
+    <delete dir="${build.dir}" />
+  </target>
+
+  <target name="compile" description="compile the source code">
+    <mkdir dir="${classes.dir}" />
+    <javac debug="true" srcdir="${gen.dir}"
+           destdir="${classes.dir}"
+           excludes=".svn"
+           >
+      <classpath refid="classpath.path" />
+    </javac>
+    <javac debug="true" srcdir="${src.dir}"
+           destdir="${classes.dir}"
+           excludes=".svn,/jsonml/"
+           >
+      <classpath refid="classpath.path" />
+    </javac>
+
+    <!-- Move Messages.properties where ScriptRuntime.java expects it. -->
+    <mkdir dir="${classes.dir}/rhino_ast/java/com/google/javascript/rhino/" />
+    <copy file="${src.dir}/com/google/javascript/rhino/Messages.properties"
+          todir="${classes.dir}/rhino_ast/java/com/google/javascript/rhino/" />
+
+    <!-- Move ParserConfig.properties where ParserRunner.java expects it. -->
+    <copy file="${src.dir}/com/google/javascript/jscomp/parsing/ParserConfig.properties"
+          todir="${classes.dir}/com/google/javascript/jscomp/parsing" />
+
+    <propertyfile
+        file="${classes.dir}/com/google/javascript/jscomp/parsing/ParserConfig.properties"
+        comment="Parser properties">
+      <entry key="compiler.date" type="date" value="now"/>
+      <entry key="compiler.version" value="${version}"/>
+    </propertyfile>
+
+    <!-- Move runtime_type_check.js where RuntimeTypeCheck.java expects it. -->
+    <mkdir dir="${classes.dir}/com/google/javascript/jscomp/js" />
+    <copy file="${src.dir}/com/google/javascript/jscomp/js/runtime_type_check.js"
+          todir="${classes.dir}/com/google/javascript/jscomp/js" />
+  </target>
+
+  <target name="jar"
+          depends="compile"
+          description="package compiler as an executable jar">
+    <zip destfile="${build.dir}/externs.zip" basedir="${externs.dir}" />
+    <jar destfile="${jarfile}" update="true">
+      <zipfileset src="${lib.dir}/args4j_deploy.jar" />
+      <zipfileset src="${lib.dir}/guava-r06.jar" />
+      <zipfileset src="${lib.dir}/jsr305.jar" />
+      <zipfileset src="${lib.dir}/protobuf-java-2.3.0.jar" />
+      <zipfileset src="${lib.dir}/libtrunk_rhino_parser_jarjared.jar" />
+      <fileset dir="${classes.dir}" />
+      <fileset dir="${build.dir}" includes="externs.zip" />
+      <manifest>
+        <attribute name="Main-Class"
+                   value="com.google.javascript.jscomp.CommandLineRunner" />
+      </manifest>
+    </jar>
+  </target>
+
+  <target name="compile-tests"
+          depends="compile"
+          description="compile the JUnit tests">
+    <mkdir dir="${testClasses.dir}" />
+    <javac debug="true" srcdir="${test.dir}"
+           destdir="${testClasses.dir}"
+           excludes=".svn">
+      <classpath refid="classpath.path" />
+    </javac>
+  </target>
+
+  <target name="all-classes-jar"
+          depends="compile,compile-tests"
+          description="package the compiler and its tests into one jar">
+    <jar destfile="${jarfile}" update="true">
+      <zipfileset src="${lib.dir}/ant_deploy.jar" />
+      <zipfileset src="${lib.dir}/args4j_deploy.jar" />
+      <zipfileset src="${lib.dir}/json.jar" />
+      <zipfileset src="${lib.dir}/junit.jar" />
+      <zipfileset src="${lib.dir}/hamcrest-core-1.1.jar" />
+      <zipfileset src="${lib.dir}/guava-r06.jar" />
+      <zipfileset src="${lib.dir}/jsr305.jar" />
+      <zipfileset src="${lib.dir}/protobuf-java-2.3.0.jar" />
+      <zipfileset src="${lib.dir}/libtrunk_rhino_parser_jarjared.jar" />
+      <fileset dir="${classes.dir}" />
+      <fileset dir="${testClasses.dir}" />
+    </jar>
+  </target>
+
+  <target name="test-forkless"
+      depends="compile-tests"
+      description="execute JUnit tests without forking the process">
+    <junit>
+      <classpath refid="classpath.path" />
+      <classpath>
+        <pathelement location="${build.dir}/test" />
+      </classpath>
+      <formatter type="plain" usefile="false" />
+      <batchtest>
+        <fileset dir="${build.dir}/test">
+          <include name="**/*Test.class" />
+        </fileset>
+      </batchtest>
+    </junit>
+  </target>
+
+  <target name="test"
+          depends="compile-tests"
+          description="compile and execute JUnit tests">
+    <junit printsummary="on" fork="true" forkmode="once" showoutput="true">
+      <classpath refid="classpath.path" />
+      <classpath>
+        <pathelement location="${build.dir}/test" />
+      </classpath>
+      <formatter type="plain" usefile="false" />
+      <batchtest haltonfailure="true">
+        <fileset dir="${build.dir}/test">
+          <include name="**/*Test.class" />
+        </fileset>
+      </batchtest>
+    </junit>
+  </target>
+
+  <target name="testclass"
+          depends="compile-tests"
+          description="compile and execute one JUnit class specified with the -Dtest flag.">
+    <junit printsummary="on" fork="true" forkmode="once" showoutput="true">
+      <classpath refid="classpath.path" />
+      <classpath>
+        <pathelement location="${build.dir}/test" />
+      </classpath>
+      <formatter type="plain" usefile="false" />
+      <batchtest>
+        <fileset dir="${build.dir}/test">
+          <include name="**/${test}.class" />
+        </fileset>
+      </batchtest>
+    </junit>
+  </target>
+
+  <target name="fuzz-test"
+          depends="all-classes-jar"
+          description="checks the compiler against a variety of js programs">
+      <exec executable="java" failonerror="true">
+        <arg value="-cp" />
+        <arg value="${jarfile}" />
+        <arg value="com.google.javascript.jscomp.regtests.CompileEachLineOfProgramOutput" />
+        <arg value="generatejs"/>
+        <arg value="--stdout"/>
+        <arg value="${num-fuzz-tests}"/>
+      </exec>
+  </target>
+
+  <target name="javadoc"
+          description="generate Javadoc">
+    <mkdir dir="${javadoc.dir}" />
+    <javadoc
+         destdir="${javadoc.dir}"
+         author="false"
+         protected="true"
+         windowtitle="Compiler"
+         additionalparam=" -notimestamp "
+         stylesheetfile="${stylesheetfile}">
+      <sourcepath>
+        <pathelement location="${src.dir}" />
+        <pathelement location="${gen.dir}" />
+      </sourcepath>
+      <classpath refid="classpath.path" />
+      <link href="http://java.sun.com/javase/6/docs/api/" />
+      <bottom><![CDATA[
+        <div id="footer">
+          <div id="footerlogo">
+            <img src="http://www.google.com/images/art.gif"
+                 alt="Google colored balls">
+          </div>
+
+          <div id="copyright">
+          <p>&copy; 2009 Google -
+            <a href="http://www.google.com/privacy.html">Privacy Policy</a> -
+            <a href="http://www.google.com/terms_of_service.html">Terms and Conditions</a> -
+            <a href="http://www.google.com/about.html">About Google</a>
+          </p>
+          </div>
+        </div>
+      ]]>
+      </bottom>
+    </javadoc>
+  </target>
+
+  <!-- JsonML package related targets                 -->
+  <!-- set the classpath for the project              -->
+  <!-- this includes the generated source class files -->
+  <!-- and every jar in the /lib directory            -->
+  <path id="jsonml-classpath.path">
+    <pathelement location="${classes.dir}" />
+    <fileset dir="${lib.dir}">
+      <include name="*.jar" />
+    </fileset>
+    <fileset dir="${classes.dir}">
+      <include name="*.class" />
+    </fileset>
+  </path>
+
+  <target name="jsonml-compile"
+          description="compile the source code of classes from JsonML package"
+          depends="compile">
+    <mkdir dir="${jsonml-classes.dir}" />
+    <javac debug="true" srcdir="${jsonml.dir}"
+           destdir="${jsonml-classes.dir}"
+           excludes=".svn"
+           >
+      <classpath refid="jsonml-classpath.path" />
+    </javac>
+  </target>
+
+   <target name="jsonml-jar"
+           description="package the compiler and JsonML clsses"
+           depends="jsonml-compile, compile">
+    <zip destfile="${build.dir}/externs.zip" basedir="${externs.dir}" />
+    <jar destfile="${jsonml-jarfile}" update="true">
+      <zipfileset src="${lib.dir}/guava-r06.jar" />
+      <zipfileset src="${lib.dir}/jsr305.jar" />
+      <zipfileset src="${lib.dir}/json.jar" />
+      <zipfileset src="${lib.dir}/libtrunk_rhino_parser_jarjared.jar" />
+      <fileset dir="${classes.dir}" />
+      <fileset dir="${jsonml-classes.dir}" />
+    </jar>
+   </target>
+</project>
+
