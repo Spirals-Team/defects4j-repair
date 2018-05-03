@@ -1,0 +1,119 @@
+/*
+TROUBLESHOOTING
+
+In case the release process from Travis CI fails, please try:
+  - push dummy commit
+  - update version.properties manually and push (can be done in the browser via GitHub gui)
+  - delete top release notes paragraph(s) so that they are recreated
+*/
+
+assert project == rootProject
+
+apply from: rootProject.file("gradle/publish.gradle")
+//apply from: rootProject.file("gradle/release-notes.gradle")
+
+task (release) {
+    onlyIf {
+        def branch = System.env.TRAVIS_BRANCH
+        def pr = System.env.TRAVIS_PULL_REQUEST
+        def releasable = pr == 'false' && branch == 'master'
+        logger.lifecycle("Skipping release: {}, branch: {}, pull request: {}.", !releasable, branch, pr)
+        releasable
+    }
+    doLast {
+        String currentVersion = project.version //the version loaded when Gradle build has started
+        String buildInfo = "by Travis CI build $System.env.TRAVIS_BUILD_NUMBER [ci skip]"
+        MaskedArg pushTarget = new MaskedArg(value: "https://szczepiq:${System.env.GH_TOKEN}@github.com/mockito/mockito.git")
+
+        //Release process. Should *not* run concurrently.
+        run "./gradlew", "bintrayUpload"
+        configureGit()
+        run "git", "pull", "--depth", "500" //We need good chunk of recent commits to build release notes correctly
+        updateReleaseNotes()
+        commitReleaseNotes(buildInfo)
+        pushTag(currentVersion, buildInfo, pushTarget)
+        commitUpdatedJavadoc(buildInfo)
+
+        /*
+            Now we'll start operating on master. This introduces a problem - someone might have pushed changes *after* release process has started
+            What can happen:
+             - bintrayUpload will fail saying that the version is already released
+             - git push fails saying that the pull is needed
+            Resolutions:
+             - see 'TROUBLESHOOTING' section at the top of this file
+        */
+        run "git", "checkout", "master"
+        run "git", "merge", "v$currentVersion" as String, "--squash", "--no-commit"
+        commitReleaseNotes(buildInfo)
+        commitIncrementedVersion(currentVersion, buildInfo)
+
+        run "git", "push", pushTarget, "master", "gh-pages"
+    }
+}
+
+private void updateReleaseNotes() {
+    //release-notes.gradle script plugin immediately updates the notes when it is applied
+    //I needed to implement it this way to avoid some weird classloader issues
+    //TODO SF now that the code live under buildSrc try fixing this configuration-time hack
+    //TODO SF allow dry-run generation of the release notes without GH_TOKEN
+    //TODO SF document how to work with release notes, e.g. that we only show closed tickets, etc.
+    project.apply from: rootProject.file("gradle/release-notes.gradle")
+}
+
+private void commitReleaseNotes(String buildInfo) {
+    def notesFile = project.file("doc/release-notes/official.md")
+    run "git", "add", "$notesFile" as String
+    run "git", "commit", "-m", '"Update release notes ' + buildInfo + '"', "$notesFile" as String
+}
+
+private void pushTag(String currentVersion, String buildInfo, MaskedArg pushTarget) {
+    String tag = "v${currentVersion}"
+    String tagMessage = "Create tag $tag ${buildInfo}"
+    run "git", "tag", "-a", tag, "-m", "$tagMessage" as String
+    run "git", "push", pushTarget, tag
+}
+
+private void configureGit() {
+    run "git", "config", "user.email", "szczepiq@gmail.com"
+    run "git", "config", "user.name", "Szczepan Faber"
+}
+
+private void commitIncrementedVersion(String currentVersion, String buildInfo) {
+    run "./gradlew", "incrementVersion"
+    String nextVersion = project.ext.loadVersion() //currently configured version in the file - TODO we don't need this, we infer changes from tags
+    String message = "Increment version '$currentVersion' -> '$nextVersion' $buildInfo"
+    run "git", "commit", "-m", "$message" as String, "version.properties"
+}
+
+private void commitUpdatedJavadoc(String buildInfo) {
+    run "git", "fetch", "origin", "+gh-pages:gh-pages", "--depth=1"
+    run "git", "checkout", "gh-pages"
+    run "git", "rm", "-r", "docs/current", "-q"
+    project.copy {
+        from "build/javadoc"
+        into "docs/$project.version"
+    }
+    project.copy {
+        from "build/javadoc"
+        into "docs/current"
+    }
+    run "git", "add", "docs"
+    run "git", "commit", "-m", '"Refresh javadoc ' + buildInfo + '"', "-q"
+}
+
+task updateJavadoc {
+    doLast {
+        commitUpdatedJavadoc("")
+    }
+}
+
+void run(Object ... args) {
+    logger.lifecycle("--- Executing: {}", args.join(" "))
+    exec { commandLine args.collect { it instanceof MaskedArg? it.value : it.toString()} }
+    logger.lifecycle("--- Completed!", args)
+}
+
+class MaskedArg {
+    String value
+    String toString() { "<masked>" }
+}
