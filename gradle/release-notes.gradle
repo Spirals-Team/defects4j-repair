@@ -1,0 +1,28 @@
+import org.mockito.release.notes.*
+
+def getNotesBuilder() {
+    new ReleaseNotesServices(project)
+        .gitHubToken(System.env.GH_TOKEN)
+        .ignoreImprovementsMatching("^[Rr]efactoring.*")
+        .createBuilder()
+}
+def notesFile = project.file("doc/release-notes/official.md")
+
+ext.updateReleaseNotes = {
+    notesBuilder.updateNotes(notesFile, "HEAD")
+}
+
+//TODO add task that calculates previous version
+ext.getPreviousVersion = {
+    return new ReleaseNotesServices(project).getPreviousVersionProvider(notesFile).getPreviousVersion()
+}
+
+//TODO SF allow dry-run generation of the release notes without GH_TOKEN
+//TODO SF document how to work with release notes, e.g. that we only show closed tickets, etc.
+task updateReleaseNotes {
+    description "Updates release notes file. Useful for previewing the relese notes."
+    doLast { updateReleaseNotes() }
+}
+
+//println notesBuilder.getContributionsBetween("v1.9.5", "HEAD")
+//println notesBuilder.buildNotesBetween("v1.9.5", "HEAD")
