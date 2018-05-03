@@ -1,0 +1,173 @@
+/*
+TROUBLESHOOTING
+
+In case the release process from Travis CI fails, please try:
+  - push dummy commit
+  - update version.properties manually and push (can be done in the browser via GitHub gui)
+  - delete top release notes paragraph(s) so that they are recreated
+*/
+
+assert project == rootProject
+
+apply from: rootProject.file("gradle/publish.gradle")
+
+apply plugin: 'release-notes'
+
+notes {
+    notesFile = project.file("doc/release-notes/official.md")
+}
+
+def dryRun = project.hasProperty('dryRun')
+
+configurations {
+    previousSrc
+    previousPom
+}
+
+dependencies {
+    previousSrc "org.mockito:mockito-core:${project.notes.getPreviousVersion()}:sources@jar"
+    previousPom "org.mockito:mockito-core:${project.notes.getPreviousVersion()}@pom"
+}
+
+task("comparePublications", type: org.mockito.release.comparison.PublicationsComparatorTask) {
+    dependsOn publishToMavenLocal, sourcesJar
+
+    compareBinaries({ configurations.previousSrc.singleFile }, { sourcesJar.archivePath })
+    comparePoms({ configurations.previousPom.singleFile.text }, { generatePomFileForMockitoCorePublication.destination.text })
+}
+
+/*
+Release process should *not* run concurrently.
+ */
+task("releaseNeeded") {
+    dependsOn comparePublications
+    doLast {
+        def branch = System.env.TRAVIS_BRANCH
+        def pr = System.env.TRAVIS_PULL_REQUEST
+        ext.needed = dryRun || (pr == 'false' && branch == 'master' && !comparePublications.publicationsEqual)
+        logger.lifecycle("Release needed: {}, branch: {}, pull request: {}, dry run: {}, publications equal: {}.", needed, branch, pr, dryRun, comparePublications.publicationsEqual)
+    }
+}
+
+bintrayUpload {
+    dependsOn releaseNeeded
+    onlyIf { releaseNeeded.needed }
+    doFirst {
+        if (dryRun) {
+            logger.lifecycle "Dry-running the release"
+        }
+    }
+}
+
+task("release") {
+    dependsOn bintrayUpload, releaseNeeded
+    onlyIf { releaseNeeded.needed }
+    doLast {
+        if (dryRun) {
+            logger.lifecycle "Dry-running the release"
+        }
+        String currentVersion = project.version //the version loaded when Gradle build has started
+        String buildInfo = "by Travis CI build $System.env.TRAVIS_BUILD_NUMBER [ci skip]"
+        String author = "Continuous Delivery Drone <continuous.delivery.drone@gmail.com>"
+        MaskedArg pushTarget = new MaskedArg(value: "https://szczepiq:${System.env.GH_TOKEN}@github.com/mockito/mockito.git")
+
+        configureGit()
+        //We need good chunk of recent commits to build release notes correctly
+        run "git", "pull", "--depth", "500"
+        project.notes.updateReleaseNotes()
+
+        //Operations on new tag
+        commitReleaseNotes(buildInfo, author)
+        createTag(currentVersion, buildInfo)
+
+        //Operations on gh-pages branch
+        commitUpdatedJavadoc(buildInfo, author)
+
+        /*
+            Now we'll start operating on master. This introduces a problem - someone might have pushed changes *after* release process has started
+            What can happen:
+             - bintrayUpload will fail saying that the version is already released
+             - git push fails saying that the pull is needed
+            Resolutions:
+             - see 'TROUBLESHOOTING' section at the top of this file
+        */
+        run "git", "checkout", "master"
+        run "git", "merge", "v$currentVersion" as String, "--squash", "--no-commit"
+        commitIncrementedVersion(currentVersion, buildInfo, author)
+        commitReleaseNotes(buildInfo, author) //we have it committed on a tag, now committing on master
+
+        def pushCommandLine = ["git", "push", pushTarget, "master", "gh-pages", "v$currentVersion"]
+        if (dryRun) {
+            pushCommandLine << '--dry-run'
+        }
+        run pushCommandLine
+    }
+}
+
+private void commitReleaseNotes(String buildInfo, String author) {
+    def notesFile = project.file("doc/release-notes/official.md")
+    run "git", "add", "$notesFile" as String
+    run "git", "commit", "--author", author, "-m", '"Update release notes ' + buildInfo + '"', "$notesFile" as String
+}
+
+private void createTag(String currentVersion, String buildInfo) {
+    String tag = "v${currentVersion}"
+    String tagMessage = "Create tag $tag ${buildInfo}"
+    run "git", "tag", "-a", tag, "-m", "$tagMessage" as String
+}
+
+private void configureGit() {
+    run "git", "config", "user.email", "continuous.delivery.drone@gmail.com"
+    run "git", "config", "user.name", "Continuous Delivery Drone"
+}
+
+private void commitIncrementedVersion(String currentVersion, String buildInfo, String author) {
+    String nextVersion = project.incrementVersion()
+    String message = "Increment version '$currentVersion' -> '$nextVersion' $buildInfo"
+    run "git", "commit", "--author", author, "-m", "$message" as String, "version.properties"
+}
+
+private void commitUpdatedJavadoc(String buildInfo, String author) {
+    run "git", "fetch", "origin", "+gh-pages:gh-pages"
+    run "git", "checkout", "gh-pages"
+    run "git", "rm", "-r", "docs/current", "-q"
+    project.copy {
+        from "build/javadoc"
+        into "docs/$project.version"
+    }
+    project.copy {
+        from "build/javadoc"
+        into "docs/current"
+    }
+    run "git", "add", "docs"
+    run "git", "commit", "--author", author, "-m", '"Refresh javadoc ' + buildInfo + '"', "-q"
+}
+
+void run(Object ... args) {
+    run(args as List)
+}
+
+void run(Collection args) {
+    logger.lifecycle("--- Executing: {}", args.join(" "))
+    exec { commandLine args.collect { it instanceof MaskedArg? it.value : it.toString()} }
+    logger.lifecycle("--- Completed!", args)
+}
+
+class MaskedArg {
+    String value
+    String toString() { "<masked>" }
+}
+
+/*
+TODO:
+-no new version publication if all binaries the same
+-update issues and tell which version contains a fix for given issue
+-release process performs dry run first, if it is successful it makes the actual release
+-steps are better described and log stuff verbosely only in case of failure
+-steps can be rolled back:
+  -configure git user back to the original
+  -tag removal
+  -new commits removal (git reset --hard) on all affected branches
+-clean up after release:
+ -?
+ */
