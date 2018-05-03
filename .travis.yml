@@ -1,0 +1,29 @@
+# When modifying you validate the structure of this file offline with travis-lint
+# gem install travis-lint
+# travis-lint .travis.yml	
+
+
+language: java
+
+jdk:
+    - oraclejdk7
+
+env:
+    - TERM=dumb
+
+before_install:
+# use Gradle 1.8 
+    - wget http://services.gradle.org/distributions/gradle-1.9-bin.zip
+    - unzip gradle-1.9-bin.zip
+    - export GRADLE_HOME=$PWD/gradle-1.9
+    - export PATH=$GRADLE_HOME/bin:$PATH
+
+install:
+    - true
+
+script: 
+    - gradle build
+
+after_success:
+    - gradle cobertura
+    - gradle coveralls
