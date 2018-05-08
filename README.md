@@ -1,6 +1,6 @@
 # Defects4j-Repair: open-science data for automatic repair on Defects4J
 
-This repository contains the raw experimental results of the experiments done at INRIA Lille on the automatic repair of the bugs of the Defects4J dataset. They are discussed in [Automatic Repair of Real Bugs in Java: A Large-Scale Experiment on the Defects4J Dataset (Matias Martinez, Thomas Durieux, Romain Sommerard, Jifeng Xuan and Martin Monperrus), In Springer Empirical Software Engineering, 2016.](https://hal.archives-ouvertes.fr/hal-01387556/document)
+This repository contains the raw experimental results of the experiments done at INRIA Lille on the automatic repair of the bugs of the Defects4J dataset. They are discussed in [Automatic Repair of Real Bugs in Java: A Large-Scale Experiment on the Defects4J Dataset](https://hal.archives-ouvertes.fr/hal-01387556/document) (Matias Martinez, Thomas Durieux, Romain Sommerard, Jifeng Xuan and Martin Monperrus), In Springer Empirical Software Engineering, 2016.
 
 ```
 @article{martinez2016,
@@ -30,7 +30,7 @@ Warning: this repo contains more than 8GB of data.
     * Time: 8 bugs repaired with one test-suite adequate patch
 
 
-[Results of August 2015](https://github.com/Spirals-Team/defects4j-repair/tree/master/results/2015-august) on 224 bugs of [Defects4j](https://github.com/rjust/defects4j) version [0.1.0](https://github.com/rjust/defects4j/releases/tag/v0.1.0) (minus the Clojure bugs, discarded):
+[Results of August 2015](https://github.com/Spirals-Team/defects4j-repair/tree/master/results/2015-august) on 224 bugs of [Defects4j](https://github.com/rjust/defects4j) version [0.1.0](https://github.com/rjust/defects4j/releases/tag/v0.1.0) (minus the Clojure bugs, discarded), used for [Automatic Repair of Real Bugs in Java: A Large-Scale Experiment on the Defects4J Dataset](https://hal.archives-ouvertes.fr/hal-01387556/document)
 
 * Nopol: 35 bugs with one test-suite adequate patch 
 * jGenprog/Astor: 27 bugs  with one test-suite adequate patch
