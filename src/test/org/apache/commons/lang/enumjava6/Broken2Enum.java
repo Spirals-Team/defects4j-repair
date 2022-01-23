@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.commons.lang.enum;
+package org.apache.commons.lang.enumjava6;
 
 import java.util.Iterator;
 import java.util.List;
@@ -26,28 +26,28 @@ import java.util.Map;
  * @author <a href="mailto:scolebourne@joda.org">Stephen Colebourne</a>
  * @version $Id$
  */
-public final class Broken1Enum extends Enum {
-    public static final Broken1Enum RED = new Broken1Enum("Red");
-    public static final Broken1Enum GREEN = new Broken1Enum("Green");
-    public static final Broken1Enum GREENISH = new Broken1Enum("Green");  // duplicate not allowed
+public final class Broken2Enum extends Enum {
+    public static final Broken2Enum RED = new Broken2Enum("Red");
+    public static final Broken2Enum GREEN = new Broken2Enum("Green");
+    public static final Broken2Enum BLUE = new Broken2Enum("");  // blank not allowed
 
-    private Broken1Enum(String color) {
+    private Broken2Enum(String color) {
         super(color);
     }
 
-    public static Broken1Enum getEnum(String color) {
-        return (Broken1Enum) getEnum(Broken1Enum.class, color);
+    public static Broken2Enum getEnum(String color) {
+        return (Broken2Enum) getEnum(Broken2Enum.class, color);
     }
 
     public static Map getEnumMap() {
-        return getEnumMap(Broken1Enum.class);
+        return getEnumMap(Broken2Enum.class);
     }
 
     public static List getEnumList() {
-        return getEnumList(Broken1Enum.class);
+        return getEnumList(Broken2Enum.class);
     }
 
     public static Iterator iterator() {
-        return iterator(Broken1Enum.class);
+        return iterator(Broken2Enum.class);
     }
 }

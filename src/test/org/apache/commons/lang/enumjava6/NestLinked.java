@@ -14,32 +14,43 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.commons.lang.enum;
+package org.apache.commons.lang.enumjava6;
 
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
 /**
- * Color enumeration demonstrating a normal simple nesting case.
- * All is well here as the nested enum class is really no different
- * to any other class.
+ * Color enumeration which demonstrates how to define the constants in a
+ * different class to the Enum. The extra <code>static{}</code> block is
+ * needed to ensure that the enum constants are created before the
+ * static methods on the ColorEnum are used.
+ * <p>
+ * The class loader sees the two classes here as independent - the enum
+ * class is nested, not an inner class. The static block thus forces the
+ * class load of the outer class, which is needed to initialise the enums.
  *
  * @author Stephen Colebourne
  * @version $Id$
  */
 
-public final class Nest {
+public final class NestLinked {
     
-    public Nest() {
+    public static final ColorEnum RED = new ColorEnum("Red");
+    public static final ColorEnum GREEN = new ColorEnum("Green");
+    public static final ColorEnum BLUE = new ColorEnum("Blue");
+    
+    public NestLinked() {
         super();
     }
     
     public static final class ColorEnum extends Enum {
-        public static final ColorEnum RED = new ColorEnum("Red");
-        public static final ColorEnum GREEN = new ColorEnum("Green");
-        public static final ColorEnum BLUE = new ColorEnum("Blue");
 
+        static {
+            // Explicitly reference the class where the enums are defined
+            Object obj = NestLinked.RED;
+        }
+        
         private ColorEnum(String color) {
             super(color);
         }

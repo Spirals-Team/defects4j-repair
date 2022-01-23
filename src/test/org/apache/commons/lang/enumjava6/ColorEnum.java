@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.commons.lang.enum;
+package org.apache.commons.lang.enumjava6;
 
 import java.util.Iterator;
 import java.util.List;
@@ -27,32 +27,28 @@ import java.util.Map;
  * @version $Id$
  */
 
-public final class ValuedColorEnum extends ValuedEnum {
-    public static final ValuedColorEnum RED = new ValuedColorEnum("Red", 1);
-    public static final ValuedColorEnum GREEN = new ValuedColorEnum("Green", 2);
-    public static final ValuedColorEnum BLUE = new ValuedColorEnum("Blue", 3);
+public final class ColorEnum extends Enum {
+    public static final ColorEnum RED = new ColorEnum("Red");
+    public static final ColorEnum GREEN = new ColorEnum("Green");
+    public static final ColorEnum BLUE = new ColorEnum("Blue");
 
-    private ValuedColorEnum(String color, int value) {
-        super(color, value);
+    private ColorEnum(String color) {
+        super(color);
     }
 
-    public static ValuedColorEnum getEnum(String color) {
-        return (ValuedColorEnum) getEnum(ValuedColorEnum.class, color);
-    }
-
-    public static ValuedColorEnum getEnum(int value) {
-        return (ValuedColorEnum) getEnum(ValuedColorEnum.class, value);
+    public static ColorEnum getEnum(String color) {
+        return (ColorEnum) getEnum(ColorEnum.class, color);
     }
 
     public static Map getEnumMap() {
-        return getEnumMap(ValuedColorEnum.class);
+        return getEnumMap(ColorEnum.class);
     }
 
     public static List getEnumList() {
-        return getEnumList(ValuedColorEnum.class);
+        return getEnumList(ColorEnum.class);
     }
 
     public static Iterator iterator() {
-        return iterator(ValuedColorEnum.class);
+        return iterator(ColorEnum.class);
     }
 }
