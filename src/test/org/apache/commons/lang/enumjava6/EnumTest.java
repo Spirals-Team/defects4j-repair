@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.apache.commons.lang.enum;
+package org.apache.commons.lang.enumjava6;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -44,7 +44,7 @@ import org.apache.commons.lang.SerializationUtils;
 
 public final class EnumTest extends TestCase {
 
-    private static final String ENUM_CLASS_NAME = "org.apache.commons.lang.enum.ColorEnum";
+    private static final String ENUM_CLASS_NAME = "org.apache.commons.lang.enumjava6.ColorEnum";
 
     public EnumTest(String name) {
         super(name);
